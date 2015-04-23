@@ -1,0 +1,15 @@
+---
+title: Forvaltningsregime
+id: 04
+layout: default
+---
+
+Utarbeidelse av nye versjoner av «Standard for beskrivelse av datakataloger og datasett» initieres av Difi, og den primære kilden til nye versjoner vil være endringer i DCAT-AP. Difi vil derfor ha ansvar for å følge med på EUs bruk av, og endringsarbeid knyttet til, DCAT-AP. Arbeidet med en ny versjon av den nasjonale standarden skal som vanlig forankres i relevante organer via høring og behandling i Standardiseringsrådet.
+
+Difi vil i forbindelse med nye versjoner av DCAT-AP avgjøre om endringene er så store at det bør nedsettes en egen arbeidsgruppe bestående av relevante aktører, eller om revisjonen kan utføres av Difi selv. Forslaget til ny versjon sendes uansett på høring. De innkomne høringskommentarene behandles hos Difi, og resulterer i et forslag som oversendes Standardiseringsrådet.
+
+Difi ønsker å gi brukerne mulighet til å gi tilbakemeldinger og innspill til standarden via Difis nettsider. Slike innspill vil tas med inn i arbeidet med revisjoner initiert av nye DCAT-AP- versjoner, men Difi vil også vurdere tilbakemeldingene en gang i året, for å se om noen av dem bør føre til oppdateringer utenom disse større revisjonene. Dette kan være aktuelt bl.a. fordi den nasjonale standard har noen tillegg til DCAT-AP som f.eks. kan vurderes.
+
+Dersom det oppdages mindre feil i standarden (stavefeil etc), vil ikke korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid dokumenteres i et vedlegg som følger den aktuelle standarden.
+
+Gjeldende og eventuelle tidligere versjoner av standarden skal være tilgjengelige på Difis nettsider, slik at det er enkelt å finne ut når tidligere versjoner var gyldige, og hvilke endringer som er foretatt mellom to versjoner.

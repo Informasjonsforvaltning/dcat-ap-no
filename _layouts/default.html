@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="no">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link rel="shortcut icon" href="//www.difi.no/profiles/difino/themes/difi3_difino/favicon.ico" type="image/vnd.microsoft.icon" />
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link type="text/css" rel="stylesheet" href="//www.difi.no/_style/site/difino/style.css" media="screen" />
+	<link href="assets/css/docs.min.css" rel="stylesheet">
+	<link type="text/css" rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7COpen+Sans+Condensed:300,700%7CSource+Sans+Pro:200,300,regular,600,700,900&amp;subset=latin-ext,vietnamese,latin" media="all" />
+
+	<!--[if lt IE 9]>
+		<script type="text/javascript" src="//www.difi.no/_style/lib/html5shiv/html5shiv-3.7.2.min.js"></script>
+		<script type="text/javascript" src="//www.difi.no/_style/lib/respond/respond-1.4.2.min.js"></script>
+	<![endif]-->
+
+	<style>
+		@media (min-width: 768px) {
+		  dt {
+		    float: left;
+		    width: 160px;
+		    clear: left;
+		    text-align: right;
+		    overflow: hidden;
+		    text-overflow: ellipsis;
+		    white-space: nowrap;
+		  }
+		  dd {
+		    margin-left: 180px;
+		  }
+		}	
+	</style>
+
+<body class="nodetype-subject content-article" >
+	<a id="top"/>
+	<div id="skip-link">
+	<a href="#content">Hopp til hovedinnhold</a>
+	</div>
+
+	<div id="page">
+		<header>
+			<div class="branding sub-portal">
+				<div class="logo">
+					<a href="/"><h1>{{site.siteUrlText}}</h1></a>
+				</div>
+
+				<div class="seperator"></div>
+				<div class="sub-portal">
+					<h1>{{site.name}}</h1>
+					<p>{{site.siteUrlText}}</p>
+				</div>
+			</div>
+
+			<div class="tools">
+				<div class="menu">
+					<h2>Sekundærmeny</h2>
+					<ul class="links">
+						{% for l in site.headerLinks %}
+							<li {% if forloop.first == true %} class="first" {% endif %}{% if forloop.last == true %} class="last" {% endif %}><a href="{{l.url}}">{{l.title}}</a></li>
+						{% endfor %}
+					</ul>
+				</div>
+
+				<section class="box block-search">
+					<div class="heading">
+
+					</div>
+					<div class="body">
+						<!--form action="/tilsyn2/" method="post" id="search-block-form" accept-charset="UTF-8">
+							<div>
+								<div class="container-inline">
+									<h2 class="element-invisible">Søkeskjema</h2>
+									<div class="form-item form-type-textfield form-item-search-block-form">
+										<label class="element-invisible" for="edit-search-block-form--2">Søk </label>
+										<input title="Skriv inn ønskede søkekriterier." placeholder="Søk" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+									</div>
+									<div class="form-actions form-wrapper" id="edit-actions">
+										<input type="submit" id="search_block_form_submit_button" name="op" value="Søk" class="form-submit" />
+									</div>
+									<input type="hidden" name="form_build_id" value="form-OknWENRrxLy_T8cly_-Uw37gQhDAWEWYaUdy6JmRc5o" />
+									<input type="hidden" name="form_id" value="search_block_form" />
+								</div>
+							</div>
+						</form-->
+					</div>
+				</section>
+			</div>
+
+			<div class="mobilesearch">
+				<!--div class="form">
+					<form>
+						<input type="text" class="form-text" />
+						<input type="submit" value="Søk" class="form-submit" />
+					</form>
+				</div>
+
+				<div class="seperator">
+					<hr />
+				</div-->
+			</div>
+		</header>		
+
+		<div id="main">
+			<section id="content" tabindex="-1">
+				{{content}}
+			</section>
+		</div>
+
+		<footer>
+			<div class="seperator">
+				<hr />
+			</div>
+
+			<address>
+				<ul>
+					<li>Kontakt: <a href="mailto:idporten@difi.no">idporten@difi.no</a></li>
+					<li>Telefon: +47 95 73 61 03</li>
+					<li>E-post: <a href="mailto:postmottak@difi.no">postmottak@difi.no</a></li>
+					<li>Org.no: 991 825 827</li>
+					<li ><a href="http://www.difi.no/artikkel/2014/12/difis-nettsteder">Difis nettsteder</a></li>
+					<li class="last"><a href="http://www.difi.no/artikkel/2014/12/personvernerklaering">Personvern</a></li>
+				</ul>
+			</address>
+		</footer>
+	</div>
+	<div role="complementary">
+		<a class="scroll-to-top" href="#top">
+			<span class="hidden">Go to top of page </span>
+			<div class="up-arrow">↑</div>
+		</a>
+	</div>
+	<script type="text/javascript" src="//www.difi.no/_style/lib/jquery/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="//www.difi.no/_style/lib/bootstrap3/js/bootstrap.js"></script>
+	<script type="text/javascript" src="//www.difi.no/themes/contrib/difi3/js/jquery.flexnav.min.js"></script>
+	<script type="text/javascript" src="assets/js/docs.min.js"></script>
+</body>
+</html>

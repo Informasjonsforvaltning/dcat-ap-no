@@ -1,0 +1,54 @@
+# name of the software
+name: DCAT-AP-NO
+siteUrlText: difi.github.io/dcat-ap-no
+
+# current version of the software
+# url of the download button
+#downloadUrl: https://github.com/difi/difi-sikker-digital-post-klient-dotnet/releases
+ 
+# licence of the software
+license: MIT License
+licenseUrl: http://opensource.org/licenses/MIT
+
+collections:
+  doks:
+    output: true
+
+# list of additional links on the right of the top menu
+headerLinks:
+  - title: Om standarden
+    url: about.html
+  - title: GitHub
+    url: https://github.com/difi/sikker-digital-post-net-klient
+  - title: Issues
+    url: https://github.com/difi/sikker-digital-post-net-klient/issues
+
+# github buttons
+githubButton:
+  user: difi
+  repo: sikker-digital-post-net-klient
+
+# twitter buttons
+twitter:
+  enabled: false
+  via:
+  hash:
+  account:
+
+# facebook buttons
+facebook:
+  enabled: false
+  profileUrl:
+
+# google analytics
+analytics:
+  account:
+  domain:
+
+# DON'T MODIFY
+highlight: rouge
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile']
+
+kramdown:
+  input: GFM
