@@ -4,7 +4,7 @@ siteUrlText: difi.github.io/dcat-ap-no
 
 # current version of the software
 # url of the download button
-#downloadUrl: https://github.com/difi/difi-sikker-digital-post-klient-dotnet/releases
+#downloadUrl: https://github.com/difi/dcat-ap-no/releases
  
 # licence of the software
 license: MIT License
@@ -19,14 +19,14 @@ headerLinks:
   - title: Om standarden
     url: about.html
   - title: GitHub
-    url: https://github.com/difi/sikker-digital-post-net-klient
+    url: https://github.com/difi/dcat-ap-no
   - title: Issues
-    url: https://github.com/difi/sikker-digital-post-net-klient/issues
+    url: https://github.com/difi/dcat-ap-no/issues
 
 # github buttons
 githubButton:
   user: difi
-  repo: sikker-digital-post-net-klient
+  repo: dcat-ap-no
 
 # twitter buttons
 twitter:
