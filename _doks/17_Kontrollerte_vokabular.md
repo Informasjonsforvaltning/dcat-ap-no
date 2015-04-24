@@ -9,17 +9,11 @@ Følgende er en liste over krav som er identifisert for kontrollerte vokabular s
 Kontrollerte vokabular bør: 
 
 * være publisert under en åpen lisens. 
-
 * brukes og / eller bli vedlikeholdt av en institusjon i Norge eller EU, av anerkjent standardiseringsorganisasjon eller en annen pålitelig organisasjon.
-
 * være skikkelig dokumentert. 
-
 * ha etiketter på flere språk 
-
 * inneholde et relativt lite antall begrep (f.eks 10-25) som er generelle nok til at et bredt spekter av ressurser kan klassifiseres.
-
 * har vilkår som er identifisert av URIer der hver URI viser til dokumentasjon av begrepet.
-
 * har en varighets- og versjonspolicy. 
 
 Disse kriteriene er ikke tenkt å definere et sett med krav til kontrollerte ordforråd generelt; de er kun ment brukt for utvelgelse av de kontrollerte vokabularene som er anbefalt for denne standarden
