@@ -6,7 +6,7 @@ layout: default
 
 Egenskaper for klassen Kategori
 
-### Kategori - foretrukket tittel
+### Kategori: foretrukket tittel
 URI
 : skos:prefLabel
 
