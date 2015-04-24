@@ -27,3 +27,4 @@ Avvikene fra den europeiske DCAT-AP v1.01 er i gjeldende versjon (DCAT-AP-NO 1.0
 De to første tilleggene ivaretar behov knyttet til at standarden også skal brukes på ikke-åpne data
 
 Vi gjør oppmerksom på at ISA har startet arbeidet med en revisjon av DCAT-AP. Fremtidige versjoner av DCAT-AP-NO vil ta opp i seg endringene for DCAT-AP. Det er sannsynlig at det kommer flere særnorske utvidelser i neste versjon av DCAT-AP-NO. Disse er omtalt i utredningen for standarden.
+<hr>
