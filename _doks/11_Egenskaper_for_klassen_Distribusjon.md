@@ -6,7 +6,7 @@ layout: default
 
 Egenskaper for klassen Distribusjon
 
-### Distribusjon - tilgangsURL
+### Distribusjon: tilgangsURL
 URI
 : dcat:accessURL
 
@@ -22,7 +22,7 @@ Kardinalitet
 Status	
 : Obligatorisk
 
-### Distribusjon - beskrivelse
+### Distribusjon: beskrivelse
 URI
 : dct:description
 
@@ -38,7 +38,7 @@ Kardinalitet
 Status	
 : Anbefalt 
 
-### Distribusjon - format
+### Distribusjon: format
 URI
 : dct:format
 
@@ -54,7 +54,7 @@ Kardinalitet
 Status	
 : Anbefalt
 
-### Distribusjon - lisens
+### Distribusjon: lisens
 URI
 : dct:license
 
@@ -70,7 +70,7 @@ Kardinalitet
 Status	
 : Anbefalt
 
-### Distribusjon - filstørrelse
+### Distribusjon: filstørrelse
 URI
 : dcat:byteSize
 
@@ -86,7 +86,7 @@ Kardinalitet
 Status	
 : Valgfri
 
-### Distribusjon - nedlastningslenke
+### Distribusjon: nedlastningslenke
 URI
 : dcat:downloadURL
 
@@ -102,7 +102,7 @@ Kardinalitet
 Status	
 : Valgfri
 
-### Distribusjon - mediatype
+### Distribusjon: mediatype
 URI
 : dcat:mediaType, subproperty of dct:format
 
@@ -118,7 +118,7 @@ Kardinalitet
 Status	
 : Valgfri
 
-### Distribusjon - utgivelsesdato
+### Distribusjon: utgivelsesdato
 URI
 : dct:issued
 
@@ -134,7 +134,7 @@ Kardinalitet
 Status	
 : Valgfri
 
-### Distribusjon - rettigheter
+### Distribusjon: rettigheter
 URI
 : dct:rights 
 
@@ -150,7 +150,7 @@ Kardinalitet
 Status	
 : Valgfri
 
-### Distribusjon - status
+### Distribusjon: status
 URI
 : adms:status
 
@@ -167,7 +167,7 @@ Status
 : Valgfri
 
 
-### Distribusjon - tittel
+### Distribusjon: tittel
 URI
 : dct:title
 
@@ -184,7 +184,7 @@ Status
 : Valgfri
 
 
-### Distribusjon - modifiseringsdato
+### Distribusjon: modifiseringsdato
 URI
 : dct:modified
 
