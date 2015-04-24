@@ -6,7 +6,7 @@ layout: default
 
 Egenskaper for klassen Lisensdokument
 
-### Lisensdokument - lisenstype
+### Lisensdokument: lisenstype
 URI
 : dct:type
 
