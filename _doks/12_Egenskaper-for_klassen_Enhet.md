@@ -6,7 +6,7 @@ layout: default
 
 Egenskaper for klassen Enhet
   
-### Enhet - navn
+### Enhet: navn
 URI
 : foaf:name
 
@@ -22,7 +22,7 @@ Kardinalitet
 Status	
 : Obligatorisk
 
-### Enhet - utgivertype
+### Enhet: utgivertype
 URI
 : dct:type
 
