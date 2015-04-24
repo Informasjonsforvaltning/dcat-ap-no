@@ -35,4 +35,4 @@ JSON-LD
 : <em>JavaScript Object Notation for Linked Data</em>. En JSON-basert serialisering av RDF. Anbefalt av W3C i januar 2014
 
 URI
-:<em>Uniform Resource Identifier</em> en kompakt streng av tegn som identifiserer en abstrakt eller fysisk ressurs 
+: <em>Uniform Resource Identifier</em> en kompakt streng av tegn som identifiserer en abstrakt eller fysisk ressurs 
