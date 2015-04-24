@@ -44,8 +44,10 @@ URI for vokabularet
 ### dcat:theme
 Brukt i klasse
 : Datasett
+
 Navn på vokabular
 : EuroVoc domains
+
 URI for vokabularet
 : http://eurovoc.europa.eu/
 
@@ -54,8 +56,10 @@ URI for vokabularet
 
 Brukt i klasse
 : Katalog
+
 Navn på vokabular
 : EuroVoc
+
 URI for vokabularet
 : http://eurovoc.europa.eu/ 
 
