@@ -23,7 +23,8 @@ Disse kriteriene er ikke tenkt å definere et sett med krav til kontrollerte ord
 Nedenfor er en rekke egenskaper oppført med kontrollerte vokabular som må brukes for de nevnte egenskapene.
 
 
-### dcat:mediaType
+URI
+: dcat:mediaType
 
 Brukt i klasse
 : Distribusjon
@@ -31,9 +32,9 @@ Brukt i klasse
 Navn
 : MDR File types Name Authority List
 
-URI
+URI for vokabular
 : http://publications.europa.eu/mdr/authority/file-type/
-
+<hr>
 
 ### dcat:theme
 Brukt i klasse
