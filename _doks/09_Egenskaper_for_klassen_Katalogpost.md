@@ -6,7 +6,7 @@ layout: default
 
 Egenskaper for klassen Katalogpost
  
-### Katalogpost - primærtema
+### Katalogpost: primærtema
 URI
 : foaf:primaryTopic
 
@@ -22,7 +22,7 @@ Kardinalitet
 Status	
 : Obligatorisk 
 
-### Katalogpost - modifiseringsdato
+### Katalogpost: modifiseringsdato
 URI
 : dct:modified 
 
@@ -38,7 +38,7 @@ Kardinalitet
 Status	
 : Obligatorisk 
 
-### Katalogpost - utlistingsdato
+### Katalogpost: utlistingsdato
 URI
 : dct:issued
 
@@ -54,7 +54,7 @@ Kardinalitet
 Status	
 : Anbefalt 
   
-### Katalogpost - endringstype
+### Katalogpost: endringstype
 URI
 : adms:status 
 
@@ -70,7 +70,7 @@ Kardinalitet
 Status	
 : Anbefalt 
 
-### Katalogpost - beskrivelse
+### Katalogpost: beskrivelse
 URI
 : dct:description
 
@@ -86,7 +86,7 @@ Kardinalitet
 Status	
 : Valgfri 
 
-### Katalogpost - tittel
+### Katalogpost: tittel
 URI
 : dct:title 
 
