@@ -1,10 +1,8 @@
 ---
-title: Kontrollerte vokabular
+title: Krav til kontrollerte vokabular
 id: 17
 layout: default
 ---
-
-## Krav til kontrollerte vokabular
 
 Følgende er en liste over krav som er identifisert for kontrollerte vokabular som er anbefalt av den underliggende applikasjonsprofilen DCAT-AP. 
 
