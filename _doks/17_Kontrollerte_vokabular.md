@@ -28,10 +28,10 @@ Nedenfor er en rekke egenskaper oppført med kontrollerte vokabular som må bruk
 Brukt i klasse
 : Distribusjon
 
-Navn på vokabular
+Navn
 : MDR File types Name Authority List
 
-URI for vokabularet
+URI
 : http://publications.europa.eu/mdr/authority/file-type/
 
 
@@ -39,10 +39,10 @@ URI for vokabularet
 Brukt i klasse
 : Datasett
 
-Navn på vokabular
+Navn
 : EuroVoc domains
 
-URI for vokabularet
+URI
 : http://eurovoc.europa.eu/
 
 
@@ -51,10 +51,10 @@ URI for vokabularet
 Brukt i klasse
 : Katalog
 
-Navn på vokabular
+Navn
 : EuroVoc
 
-URI for vokabularet
+URI
 : http://eurovoc.europa.eu/ 
 
 
@@ -63,10 +63,10 @@ URI for vokabularet
 Brukt i klasse
 : Datasett
 
-Navn på vokabular
+Navn
 : Dublin Core Collection Description Frequency Vocabulary
 
-URI for vokabularet
+URI
 : http://purl.org/cld/freq/ 
 
 
@@ -75,10 +75,10 @@ URI for vokabularet
 Brukt i klasse
 : Distribusjon
 
-Navn på vokabular
+Navn
 : MDR File Type Named Authority List
 
-URI for vokabularet
+URI
 : http://publications.europa.eu/mdr/authority/file-type/
 
 
@@ -87,10 +87,10 @@ URI for vokabularet
 Brukt i klasse
 : Katalog, Datasett
 
-Navn på vokabular
+Navn
 : MDR Languages Named Authority List
 
-URI for vokabularet
+URI
 : http://publications.europa.eu/mdr/authority/language/ 
 
 
@@ -99,10 +99,10 @@ URI for vokabularet
 Brukt i klasse
 : Katalog, Datasett
 
-Navn på vokabular
+Navn
 : MDR Corporate bodies Named Authority List
 
-URI for vokabularet
+URI
 : http://publications.europa.eu/mdr/authority/corporate-body/
 
 Beskrivelse
@@ -114,10 +114,10 @@ Beskrivelse
 Brukt i klasse
 : Katalog, Datasett
 
-Navn på vokabular
+Navn
 : MDR Countries Named Authority List, MDR Places Named Authority List
 
-URI for vokabularet
+URI
 : http://publications.europa.eu/mdr/authority/country/, http://publications.europa.eu/mdr/authority/place/ 
 
 Beskrivelse
@@ -129,10 +129,10 @@ Beskrivelse
 Brukt i klasse
 : Katalogpost
 
-Navn på vokabular
+Navn
 : ADMS change type vocabulary
 
-URI for vokabularet
+URI
 : http://purl.org/adms/changetype/
 
 Beskrivelse
@@ -144,10 +144,10 @@ Beskrivelse
 Brukt i klasse
 : Distribusjon
 
-Navn på vokabular
+Navn
 : ADMS status vocabulary
 
-URI for vokabularet
+URI
 : http://purl.org/adms/status/
 
 Beskrivelse
@@ -157,12 +157,12 @@ Beskrivelse
 ### dct:type
 
 Brukt i klasse
-: Enhet (agent) 
+: Enhet
 
-Navn på vokabular
+Navn
 : ADMS publisher type vocabulary
 
-URI for vokabularet
+URI
 : http://purl.org/adms/publishertype/Company 
 
 Beskrivelse
@@ -174,10 +174,10 @@ Beskrivelse
 Brukt i klasse
 : Lisensdokument
 
-Navn på vokabular
+Navn
 : ADMS licence type vocabulary
 
-URI for vokabularet
+URI
 : http://purl.org/adms/licencetype/ 
 
 Beskrivelse
