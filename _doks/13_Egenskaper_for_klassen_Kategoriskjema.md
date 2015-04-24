@@ -6,7 +6,7 @@ layout: default
 
 Egenskaper for klassen Kategoriskjema
 
-### Kategoriskjema - tittel
+### Kategoriskjema: tittel
 URI
 : dct:title
 
