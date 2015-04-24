@@ -1,5 +1,5 @@
 ---
-title: Datasett {#Datasett}
+title: Datasett
 id: 10
 layout: default
 ---
@@ -22,7 +22,7 @@ Kardinalitet
 Status
 : Obligatorisk 
 
-### Datasett - tittel
+### Datasett: tittel
 URI
 : dct:title 
 
@@ -38,7 +38,7 @@ Kardinalitet
 Status
 : Obligatorisk
 
-### Datasett - kontaktpunkt
+### Datasett: kontaktpunkt
 URI
 : adms:contactPoint
 
@@ -54,7 +54,7 @@ Kardinalitet
 Status
 : Anbefalt
 
-### Datasett - datasett distribusjon
+### Datasett: datasett distribusjon
 URI
 : dcat:distribution
 
@@ -70,7 +70,7 @@ Kardinalitet
 Status
 : Anbefalt
 
-### Datasett - emneord
+### Datasett: emneord
 URI
 : dcat:keyword 
 
@@ -86,7 +86,7 @@ Kardinalitet
 Status
 : Anbefalt
 
-### Datasett - utgiver
+### Datasett: utgiver
 URI
 : dct:publisher 
 
@@ -102,7 +102,7 @@ Kardinalitet
 Status
 : Anbefalt 
 
-### Datasett - tema
+### Datasett: tema
 URI
 : dcat:theme, subproperty of dct:subject 
 
@@ -118,7 +118,7 @@ Kardinalitet
 Status
 : Anbefalt
 
-### Datasett - tilgangsnivå
+### Datasett: tilgangsnivå
 URI
 : pod:accessLevel 
 
@@ -134,7 +134,7 @@ Kardinalitet
 Status
 : Anbefalt 
 
-### Datasett - skjermingshjemmel
+### Datasett: skjermingshjemmel
 URI
 : dct:accessRights
 
@@ -150,7 +150,7 @@ Kardinalitet
 Status
 : Anbefalt 
 
-### Datasett - i samsvar med
+### Datasett: i samsvar med
 URI
 : dct:conformsTo 
 
@@ -166,7 +166,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - frekvens
+### Datasett: frekvens
 URI
 : dct:accrualPeriodicity
 
@@ -182,7 +182,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - identifikator
+### Datasett: identifikator
 URI
 : dct:identifier
 
@@ -198,7 +198,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - landingsside
+### Datasett: landingsside
 URI
 : dcat:landingPage
 
@@ -214,7 +214,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - språk
+### Datasett: språk
 URI
 : dct:language
 
@@ -230,7 +230,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - annen identifikator
+### Datasett: annen identifikator
 URI
 : adms:identifier 
 
@@ -246,7 +246,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - utgivelsesdato
+### Datasett: utgivelsesdato
 URI
 : dct:issued 
 
@@ -262,7 +262,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - dekningsområde
+### Datasett: dekningsområde
 URI
 : dct:spatial
 
@@ -278,7 +278,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - tidsperiode
+### Datasett: tidsperiode
 URI
 : dct:temporal 
 
@@ -294,7 +294,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - modifisert
+### Datasett: modifisert
 URI
 : dct:modified
 
@@ -310,7 +310,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Datasett - versjon
+### Datasett: versjon
 URI
 : adms:version
 
@@ -326,7 +326,7 @@ Kardinalitet
 Status
 : Valgfri 
 
-### Datasett - versjonsnote
+### Datasett: versjonsnote
 URI
 : adms:versionNotes
 
