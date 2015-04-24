@@ -6,7 +6,7 @@ layout: default
 
 Egenskaper for klassen Datasett
 
-### Datasett - beskrivelse
+### Datasett: beskrivelse
 URI
 : dct:description 
 
