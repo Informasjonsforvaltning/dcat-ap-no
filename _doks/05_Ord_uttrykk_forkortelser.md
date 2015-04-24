@@ -36,3 +36,4 @@ JSON-LD
 
 URI
 : <em>Uniform Resource Identifier</em> en kompakt streng av tegn som identifiserer en abstrakt eller fysisk ressurs 
+---
