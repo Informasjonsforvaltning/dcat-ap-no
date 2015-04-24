@@ -6,7 +6,7 @@ layout: default
 
 Egenskaper for klassen Tidsperiode
 
-### Tidsperiode - startdato/tid
+### Tidsperiode: startdato/tid
 URI
 : schema:startDate
 
@@ -22,7 +22,7 @@ Kardinalitet
 Status
 : Valgfri
 
-### Tidsperiode - sluttdato/tid
+### Tidsperiode: sluttdato/tid
 URI
 : schema:endDate
 
