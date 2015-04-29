@@ -3,30 +3,43 @@ layout: default
 title: Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)
 ---
 
-<article class="one-col">
-	<h1 id="top"><span style="opacity: 1; transition: opacity 500ms; -webkit-transition: opacity 500ms;">{{page.title}}</span></h1>
-	<div class="body col-md-9" id="content">
-	{% if site.downloadUrl.length > 0 %}
-		<div class="button custom" data-button-type="0" data-url="{{ site.downloadUrl }}" role="button" tabindex="0">
-			<div class="logo">
-				<img alt="logo" src="//www.difi.no/modules/contrib/difi_ckeditor_widgets/plugins/difibutton/icons/difibutton.png">
+<div id="main" class="with-aside">
+	<section id="content" tabindex="-1">
+
+		<article class="one-col">		
+			{% if site.downloadUrl != "" %}
+				<div class="body">
+					<div class="button custom" data-button-type="0" data-url="{{ site.downloadUrl }}" role="button" tabindex="0">
+						<div class="logo">
+							<img alt="logo" src="//www.difi.no/modules/contrib/difi_ckeditor_widgets/plugins/difibutton/icons/difibutton.png">
+						</div>
+						<div class="text">
+							<div class="title">Last ned</div>
+							<div class="sub-title">Gå til {{ site.downloadUrl }}</div>
+						</div>
+						<div class="arrow">›</div>
+					</div>
+				</div>
+			{% endif %}
+
+			{% for dok in site.doks %}
+				<h2 id="{{dok.id}}">{{dok.title}}</h2>
+				<div class="body">
+					<p>{{dok.content}}</p>
+				</div>
+			{% endfor %}
+		</article>
+	</section>
+
+	<aside>
+		<section class="box">
+			<div class="heading">
+				<h2>Innhold</h2>
 			</div>
-			<div class="text">
-				<div class="title">Last ned</div>
-				<div class="sub-title">Gå til {{ site.downloadUrl }}</div>
+			<div class="body">
+				<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" id="aside-nav">
+				</nav>
 			</div>
-			<div class="arrow">›</div>
-		</div>
-	{% endif %}
-	{% for dok in site.doks %}
-		<h2 id="{{dok.id}}">{{dok.title}}</h2>
-		<p>{{dok.content}}</p>
-	{% endfor %}
-	</div>
-</article>
-<div class="col-md-3">
-	<div class="bs-docs-sidebar hidden-print">
-	  <ul class="nav bs-docs-sidenav">
-	  </ul>
-	</div>
+		</section>
+	</aside>	
 </div>
