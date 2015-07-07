@@ -4,7 +4,7 @@ id: 16
 layout: default
 ---
 
-Egenskaper for klassen Tidsperiode
+Egenskaper for klassen Tidsperiode (valgfri)
 
 ### Tidsperiode: startdato/tid
 URI
