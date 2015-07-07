@@ -4,7 +4,7 @@ id: 14
 layout: default
 ---
 
-Egenskaper for klassen Kategori
+Egenskaper for klassen Kategori (obligatorisk)
 
 ### Kategori: foretrukket tittel
 URI
