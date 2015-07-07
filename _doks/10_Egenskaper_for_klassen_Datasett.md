@@ -4,7 +4,7 @@ id: 10
 layout: default
 ---
 
-Egenskaper for klassen Datasett
+Egenskaper for klassen Datasett (obligatorisk)
 
 ### Datasett: beskrivelse
 URI
