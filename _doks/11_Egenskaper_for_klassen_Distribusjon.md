@@ -4,7 +4,7 @@ id: 11
 layout: default
 ---
 
-Egenskaper for klassen Distribusjon
+Egenskaper for klassen Distribusjon (anbefalt)
 
 ### Distribusjon: tilgangsURL
 URI
