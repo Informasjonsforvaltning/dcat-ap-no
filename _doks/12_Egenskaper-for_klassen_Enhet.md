@@ -4,7 +4,7 @@ id: 12
 layout: default
 ---
 
-Egenskaper for klassen Enhet
+Egenskaper for klassen Enhet (obligatorisk)
   
 ### Enhet: navn
 URI
