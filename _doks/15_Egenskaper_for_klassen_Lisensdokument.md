@@ -4,7 +4,7 @@ id: 15
 layout: default
 ---
 
-Egenskaper for klassen Lisensdokument
+Egenskaper for klassen Lisensdokument (valgfri)
 
 ### Lisensdokument: lisenstype
 URI
