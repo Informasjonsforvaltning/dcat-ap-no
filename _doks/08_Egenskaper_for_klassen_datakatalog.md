@@ -1,12 +1,12 @@
 ---
-title: Datakatalog
+title: Katalog
 id: 08
 layout: default
 ---
 
-Egenskaper for klassen Datakatalog:
+Egenskaper for klassen Katalog (obligatorisk):
 
-### Datakatalog: datasett
+### Katalog: datasett
 URI
 : dcat:dataset
 
@@ -22,7 +22,7 @@ Kardinalitet
 Status	
 :  Obligatorisk 
     
-### Datakatalog: beskrivelse
+### Katalog: beskrivelse
 URI
 : dct:description
 
@@ -38,7 +38,7 @@ Kardinalitet
 Status	
 : Obligatorisk
  
-### Datakatalog: utgiver
+### Katalog: utgiver
 URI
 : dct:publisher
 
@@ -54,7 +54,7 @@ Kardinalitet
 Status	
 : Obligatorisk
 
-### Datakatalog: tittel
+### Katalog: tittel
 URI
 : dct:title
 
@@ -70,7 +70,7 @@ Kardinalitet
 Status	
 : Obligatorisk  
 
-### Datakatalog: hjemmeside
+### Katalog: hjemmeside
 
 URI
 : foaf:homepage
@@ -87,7 +87,7 @@ Kardinalitet
 Status	
 : Anbefalt
 
-### Datakatalog: språk 
+### Katalog: språk 
 URI
 : dct:language
 
@@ -103,7 +103,7 @@ Kardinalitet
 Status	
 : Anbefalt
 
-### Datakatalog: lisens
+### Katalog: lisens
 URI
 : dct:license
 
@@ -119,7 +119,7 @@ Kardinalitet
 Status	
 : Anbefalt
 
-### Datakatalog: utgivelsesdato
+### Katalog: utgivelsesdato
 URI
 : dct:issued
 
@@ -135,7 +135,7 @@ Kardinalitet
 Status	
 : Anbefalt
 
-### Datakatalog: temaer
+### Katalog: temaer
 URI
 : dcat:themeTaxonomy
 
@@ -151,7 +151,7 @@ Kardinalitet
 Status	
 : Anbefalt   
 	
-### Datakatalog: modifiseringsdato
+### Katalog: modifiseringsdato
 
 URI
 : dct:modified
@@ -168,7 +168,7 @@ Kardinalitet
 Status	
 : Anbefalt
 
-### Datakatalog: katalogpost
+### Katalog: katalogpost
 URI
 : dcat:record
 
@@ -184,7 +184,7 @@ Kardinalitet
 Status	
 : Valgfri
 
-### Datakatalog: rettigheter
+### Katalog: rettigheter
 URI
 : dct:rights
 
@@ -200,7 +200,7 @@ Kardinalitet
 Status	
 : Valgfri
 
-### Datakatalog: dekningsområde
+### Katalog: dekningsområde
 URI
 : dct:spatial
 
