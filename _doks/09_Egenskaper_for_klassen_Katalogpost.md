@@ -4,7 +4,7 @@ id: 09
 layout: default
 ---
 
-Egenskaper for klassen Katalogpost
+Egenskaper for klassen Katalogpost (valgfri)
  
 ### Katalogpost: primærtema
 URI
