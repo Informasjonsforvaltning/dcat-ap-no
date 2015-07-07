@@ -4,7 +4,7 @@ id: 13
 layout: default
 ---
 
-Egenskaper for klassen Kategoriskjema
+Egenskaper for klassen Kategoriskjema (obligatorisk)
 
 ### Kategoriskjema: tittel
 URI
