@@ -10,7 +10,7 @@ Datasett
 ---
 Datakatalog
 : En <em>datakatalog</em> gjør det mulig å finne opplysninger om datasett, hvem som forvalter dem og hvordan de eventuelt er gjort tilgjengelig for andre. Datakatalogen kan inneholde beskrivelser av alle virksomhetens datasett,  uavhengig av om de er distribuert som fil for nedlasting, gjennom et Web API eller om distribusjon ikke eksisterer.
-
+---
 Web API
 : <em>Web Application Programming Interface</em> gjør at dataprogrammer kan gjøre oppslag i et datasett ved hjelp av World Wide Web. For eksempel kan et datasett over bomstasjoner i Norge bli gjort tilgjengeleg for utviklere gjennom en web-API, slik at et dataprogram kan bruke kommunenummer for å hente en liste over alle bomstasjoner i en kommune.
 
