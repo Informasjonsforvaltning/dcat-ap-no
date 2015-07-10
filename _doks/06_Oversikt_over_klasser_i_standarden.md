@@ -153,7 +153,7 @@ Status
 
 ### Dokument
 Engelsk
-: Documet
+: Document
   
 Beskrivelse
 : En tekstlig ressurs beregnet på mennesker som inneholder informasjon. For eksempel en nettside om et datasett.
