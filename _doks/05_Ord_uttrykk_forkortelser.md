@@ -7,6 +7,7 @@ layout: default
 Datasett
 : Et <em>datasett</em> er en samling med data, for eksempel i form av en tabell, liste eller en database som kan gjøres tilgjengelig som en nedlastbar fil, og/eller nåes via et Web-API. 
 
+
 Datakatalog
 : En <em>datakatalog</em> gjør det mulig å finne opplysninger om datasett, hvem som forvalter dem og hvordan de eventuelt er gjort tilgjengelig for andre. Datakatalogen kan inneholde beskrivelser av alle virksomhetens datasett,  uavhengig av om de er distribuert som fil for nedlasting, gjennom et Web API eller om distribusjon ikke eksisterer.
 
