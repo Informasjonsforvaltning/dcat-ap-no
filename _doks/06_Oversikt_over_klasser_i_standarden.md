@@ -40,13 +40,13 @@ Status
 
 ### Kategoriskjema
 Engelsk
-: Category
+: Category scheme
 
 Beskrivelse
-: Et emne for et datasett
+: En  samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert 
 
 URI
-: SKOS:Consept
+: SKOS:ConseptScheme
 
 Referanse
 : http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
