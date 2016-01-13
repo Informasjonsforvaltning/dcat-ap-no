@@ -3,7 +3,16 @@ title: Innledning
 id: 02
 layout: default
 ---
+
+***
 Dokumentet beskriver “Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)” som skal sikre at beskrivelser av offentlige data utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som skal, bør og kan være med i beskrivelsene, med spesifikasjon av dataformat.
+
+```Vi gjør oppmerksom på at ISA har revidert den underliggende DCAT-AP og revisjon av DCAT-AP-NO (dette dokumentet) er forventet å starte i 2. kvartal 2016. Vi anbefaler intill videre å følge [DCAT-AP versjon 1.1.](https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11)
+
+En oversikt over endringer i siste versjon av DCAT-AP finnes [her](https://docs.google.com/spreadsheets/d/1wGaezEymDAKwUbFafg82lsmC0L16r512zjnvEvYgDhY/edit?usp=sharing). Merk at dette er et uferdig arbeidsdokument som oppdateres fortløpende. Dokumentet er åpent for kommentering. Det også mulig å kontakte Difi på epost (opnedata@difi.no) for spørsmål.
+
+Fremtidige versjoner av DCAT-AP-NO vil ta opp i seg endringene for DCAT-AP. Det er sannsynlig at det kommer flere særnorske utvidelser i neste versjon av DCAT-AP-NO. Disse er omtalt i [utredningen for standarden.](http://standard.difi.no/filearchive/2015-02-04-utredning-dcat.pdf)```
+***
 
 Formålet med standarden er å legge tilrette for utveksling av beskrivelser av datasett, og å lette søk etter datasett. Standarden vil gjelde datasett som forvaltes av offentlig sektor, og som beskrives med tanke på oppføring i en katalog eller «inventarliste» . Standarden vil støtte søking i og deling av datasett på tvers av offentlig sektor (gjenbruk) og legge til rette for viderebruk i privat sektor. Standarden er således nyttig både for offentlig sektor selv og for næringsliv og sivilsamfunn for øvrig. 
 
@@ -27,4 +36,8 @@ Avvikene fra den europeiske DCAT-AP v1.01 er i gjeldende versjon (DCAT-AP-NO 1.0
 
 De to første tilleggene ivaretar behov knyttet til at standarden også skal brukes på ikke-åpne data
 
-Vi gjør oppmerksom på at ISA har startet arbeidet med en revisjon av DCAT-AP. Fremtidige versjoner av DCAT-AP-NO vil ta opp i seg endringene for DCAT-AP. Det er sannsynlig at det kommer flere særnorske utvidelser i neste versjon av DCAT-AP-NO. Disse er omtalt i utredningen for standarden.
+Vi gjør oppmerksom på at ISA har revidert den underliggende DCAT-AP og revisjon av DCAT-AP-NO (dette dokumentet) er forventet å starte i 2. kvartal 2016. Vi anbefaler intill videre å følge [DCAT-AP versjon 1.1.](https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11)
+
+En oversikt over endringer i siste versjon av DCAT-AP finnes [her](https://docs.google.com/spreadsheets/d/1wGaezEymDAKwUbFafg82lsmC0L16r512zjnvEvYgDhY/edit?usp=sharing). Merk at dette er et uferdig arbeidsdokument som oppdateres fortløpende. Dokumentet er åpent for kommentering. Det også mulig å kontakte Difi på epost (opnedata@difi.no) for spørsmål.
+
+Fremtidige versjoner av DCAT-AP-NO vil ta opp i seg endringene for DCAT-AP. Det er sannsynlig at det kommer flere særnorske utvidelser i neste versjon av DCAT-AP-NO. Disse er omtalt i [utredningen for standarden.](http://standard.difi.no/filearchive/2015-02-04-utredning-dcat.pdf)
