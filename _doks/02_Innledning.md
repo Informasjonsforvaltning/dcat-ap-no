@@ -10,7 +10,7 @@ Dokumentet beskriver “Standard for beskrivelse av datasett og datakataloger (D
 
 <em>
 Vi gjør oppmerksom på at ISA har revidert den underliggende DCAT-AP og revisjon av DCAT-AP-NO (dette dokumentet) er forventet å starte i 2. kvartal 2016. Vi anbefaler intill videre å følge [DCAT-AP versjon 1.1.](https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11)
-</em
+</em>
 <em>
 En oversikt over endringer i siste versjon av DCAT-AP finnes [her](https://docs.google.com/spreadsheets/d/1wGaezEymDAKwUbFafg82lsmC0L16r512zjnvEvYgDhY/edit?usp=sharing). Dokumentet er åpent for kommentering. Det også mulig å kontakte Difi på epost (opnedata@difi.no) for spørsmål.
 </em>
