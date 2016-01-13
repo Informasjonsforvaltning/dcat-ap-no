@@ -4,7 +4,6 @@ id: 02
 layout: default
 ---
 
-
 Dokumentet beskriver “Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)” som skal sikre at beskrivelser av offentlige data utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som skal, bør og kan være med i beskrivelsene, med spesifikasjon av dataformat.
 
 ***
