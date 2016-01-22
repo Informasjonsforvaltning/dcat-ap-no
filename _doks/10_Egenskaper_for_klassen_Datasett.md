@@ -120,23 +120,23 @@ Status
 
 ### Datasett: tilgangsnivå
 URI
-: pod:accessLevel 
+: dct:accessRights
 
 Range
-: rdfs:Literal 
+: dct:RightsStatement 
 
 Beskrivelse
 : Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Obligatoriske verdier : «offentlig», «begrenset offentlighet», «unntatt offentlighet». Ved bruk av verdiene «begrenset offentlighet» og «unntatt offentlighet» er egenskapen «skjermingshjemmel» anbefalt 
 
 Kardinalitet
-: 1..n
+: 0..1
 
 Status
 : Anbefalt 
 
 ### Datasett: skjermingshjemmel
 URI
-: dct:accessRights
+: (TBD)
 
 Range
 : dct:RightsStatement
@@ -158,7 +158,7 @@ Range
 : dct:Standard 
 
 Beskrivelse
-: Referer til en implementasjons-regel eller annen spesifikasjon, for eksempel lovhjemmel som ligger til grunn for opprettelsen av datasettet
+: Referer til en implementasjons-regel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet
 
 Kardinalitet
 : 0..n
