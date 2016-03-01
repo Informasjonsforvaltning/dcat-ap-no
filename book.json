@@ -1,0 +1,10 @@
+{
+  "plugins": ["-sharing"],
+  "links": {
+    "contribute": "https://github.com/difi/dcat-ap-no",
+    "issues": "https://github.com/difi/dcat-ap-no/issues"
+  },
+  "structure": {
+    "readme": "introduksjon.md"
+  }
+}

@@ -1,20 +1,16 @@
----
-title: URIer som er i bruk
-id: 07
-layout: default
----
+# URIer som er i bruk
 
 adms
-: [http://www.w3.org/ns/adms#](http://www.w3.org/ns/adms#) 
+: [http://www.w3.org/ns/adms#](http://www.w3.org/ns/adms#)
 
 dcat
 : [http://www.w3.org/ns/dcat#](http://www.w3.org/ns/dcat#)
-  
+
 dct
 : [http://purl.org/dc/terms/](http://purl.org/dc/terms/) 
 
 foaf
-: [http://xmlns.com/foaf/0.1/](http://xmlns.com/foaf/0.1/) 
+: [http://xmlns.com/foaf/0.1/](http://xmlns.com/foaf/0.1/)
 
 rdfs
 : [http://www.w3.org/2000/01/rdf-schema#](http://www.w3.org/2000/01/rdf-schema#) 

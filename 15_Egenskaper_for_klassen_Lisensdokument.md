@@ -1,8 +1,4 @@
----
-title: Lisensdokument
-id: 15
-layout: default
----
+# Lisensdokument
 
 Egenskaper for klassen Lisensdokument (valgfri)
 

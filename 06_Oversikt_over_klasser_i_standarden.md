@@ -1,8 +1,4 @@
----
-title: Klasser i standarden
-id: 06
-layout: default
----
+# Klasser i standarden
 
 ### Enhet
 Engelsk
@@ -43,7 +39,7 @@ Engelsk
 : Category scheme
 
 Beskrivelse
-: En  samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert 
+: En  samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
 
 URI
 : SKOS:ConseptScheme
@@ -143,21 +139,21 @@ Beskrivelse
 
 URI
 : dcat:CatalogRecord
-  
+
 Referanse
 : [http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record](http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record)
 
 Status
 : Valgfri
-  
+
 
 ### Dokument
 Engelsk
 : Document
-  
+
 Beskrivelse
 : En tekstlig ressurs beregnet på mennesker som inneholder informasjon. For eksempel en nettside om et datasett.
-  
+
 URI
 : foaf:Document
 
@@ -189,7 +185,7 @@ Engelsk
 
 Beskrivelse
 : En identifikator i en bestemt kontekst, bestående av strengen som er identifikatoren; en valgfri identifikator for identifikatorsystemet; en valgfri identifikator for versjonen av identifikatorsystemet; en valgfri identifikator for etaten som administrerer identifikatorsystemet
-  
+
 URI
 : adms:Identifier
 
@@ -205,10 +201,10 @@ Engelsk
 
 Beskrivelse
 : En juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.
-  
+
 URI
 : dct:LicenseDocument
-  
+
 Referanse
 : [http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument](http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument)
 

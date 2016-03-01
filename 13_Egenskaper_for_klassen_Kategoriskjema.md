@@ -1,8 +1,4 @@
----
-title: Kategoriskjema
-id: 13
-layout: default
----
+# Kategoriskjema
 
 Egenskaper for klassen Kategoriskjema (obligatorisk)
 

@@ -1,8 +1,4 @@
----
-title: Tidsperiode
-id: 16
-layout: default
----
+# Tidsperiode
 
 Egenskaper for klassen Tidsperiode (valgfri)
 

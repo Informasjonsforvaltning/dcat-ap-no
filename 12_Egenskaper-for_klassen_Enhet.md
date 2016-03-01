@@ -1,11 +1,7 @@
----
-title: Enhet
-id: 12
-layout: default
----
+# Enhet
 
 Egenskaper for klassen Enhet (obligatorisk)
-  
+
 ### Enhet: navn
 URI
 : foaf:name
@@ -19,7 +15,7 @@ Beskrivelse
 Kardinalitet
 : 1..n
 
-Status	
+Status
 : Obligatorisk
 
 ### Enhet: utgivertype
@@ -35,5 +31,5 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Anbefalt

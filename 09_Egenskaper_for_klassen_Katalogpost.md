@@ -1,11 +1,7 @@
----
-title: Katalogpost
-id: 09
-layout: default
----
+# Katalogpost
 
 Egenskaper for klassen Katalogpost (valgfri)
- 
+
 ### Katalogpost: primærtema
 URI
 : foaf:primaryTopic
@@ -14,17 +10,17 @@ Range
 : dcat:Dataset
 
 Beskrivelse
-: Denne egenskapen lenker katalogposten til datasettet som er beskrevet i katalogposten 
+: Denne egenskapen lenker katalogposten til datasettet som er beskrevet i katalogposten
 
 Kardinalitet
-: 1..1 
+: 1..1
 
-Status	
-: Obligatorisk 
+Status
+: Obligatorisk
 
 ### Katalogpost: modifiseringsdato
 URI
-: dct:modified 
+: dct:modified
 
 Range
 : rdfs:Literal typed as xsd:date or xsd:dateTime
@@ -35,8 +31,8 @@ Beskrivelse
 Kardinalitet
 : 1..1
 
-Status	
-: Obligatorisk 
+Status
+: Obligatorisk
 
 ### Katalogpost: utlistingsdato
 URI
@@ -46,29 +42,29 @@ Range
 : rdfs:Literal typed as xsd:date or xsd:dateTime
 
 Beskrivelse
-: Datoen for når beskrivelsen av datasett ble inkludert i datakatalogen. 
+: Datoen for når beskrivelsen av datasett ble inkludert i datakatalogen.
 
 Kardinalitet
-: 0..1 
+: 0..1
 
-Status	
-: Anbefalt 
-  
+Status
+: Anbefalt
+
 ### Katalogpost: endringstype
 URI
-: adms:status 
+: adms:status
 
 Range
-: skos:Concept 
+: skos:Concept
 
 Beskrivelse
 : Type endring for siste revisjon av en datasettbeskrivelse i katalogen. MÅ ha en av verdiene :created, :updated eller :deleted avhengig av om denne siste revisjonen er et resultat av en ny post, oppdatering eller sletting.
 
 Kardinalitet
-: 0..1 
+: 0..1
 
-Status	
-: Anbefalt 
+Status
+: Anbefalt
 
 ### Katalogpost: beskrivelse
 URI
@@ -81,23 +77,23 @@ Beskrivelse
 : Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen kan gjentas for parallelle språkversjoner av beskrivelsen.
 
 Kardinalitet
-: 0..n 
+: 0..n
 
-Status	
-: Valgfri 
+Status
+: Valgfri
 
 ### Katalogpost: tittel
 URI
-: dct:title 
+: dct:title
 
 Range
-: rdfs:Literal 
+: rdfs:Literal
 
 Beskrivelse
-: Navnet på katalogen. Denne egenskapen kan gjentas for parallelle språkversjoner av navnet. 
+: Navnet på katalogen. Denne egenskapen kan gjentas for parallelle språkversjoner av navnet.
 
 Kardinalitet
 : 0..n
 
-Status	
+Status
 : Valgfri

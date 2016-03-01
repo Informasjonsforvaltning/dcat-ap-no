@@ -1,14 +1,10 @@
----
-title: Datasett
-id: 10
-layout: default
----
+# Datasett
 
 Egenskaper for klassen Datasett (obligatorisk)
 
 ### Datasett: beskrivelse
 URI
-: dct:description 
+: dct:description
 
 Range
 : rdfs:Literal
@@ -17,14 +13,14 @@ Beskrivelse
 : Inneholder fritekstbeskrivelse av datasettet. Kan gjentas for parallelle språkversjoner
 
 Kardinalitet
-: 1..n 
+: 1..n
 
 Status
-: Obligatorisk 
+: Obligatorisk
 
 ### Datasett: tittel
 URI
-: dct:title 
+: dct:title
 
 Range
 : rdfs:Literal
@@ -72,10 +68,10 @@ Status
 
 ### Datasett: emneord
 URI
-: dcat:keyword 
+: dcat:keyword
 
 Range
-: rdfs:Literal 
+: rdfs:Literal
 
 Beskrivelse
 : Inneholder emneord (eller tag) som beskriver datasettet
@@ -88,7 +84,7 @@ Status
 
 ### Datasett: utgiver
 URI
-: dct:publisher 
+: dct:publisher
 
 Range
 : foaf:Agent
@@ -100,11 +96,11 @@ Kardinalitet
 : 1..n
 
 Status
-: Anbefalt 
+: Anbefalt
 
 ### Datasett: tema
 URI
-: dcat:theme, subproperty of dct:subject 
+: dcat:theme, subproperty of dct:subject
 
 Range
 : skos:Concept
@@ -123,16 +119,16 @@ URI
 : dct:accessRights
 
 Range
-: dct:RightsStatement 
+: dct:RightsStatement
 
 Beskrivelse
-: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Obligatoriske verdier : «offentlig», «begrenset offentlighet», «unntatt offentlighet». Ved bruk av verdiene «begrenset offentlighet» og «unntatt offentlighet» er egenskapen «skjermingshjemmel» anbefalt 
+: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Obligatoriske verdier : «offentlig», «begrenset offentlighet», «unntatt offentlighet». Ved bruk av verdiene «begrenset offentlighet» og «unntatt offentlighet» er egenskapen «skjermingshjemmel» anbefalt
 
 Kardinalitet
 : 0..1
 
 Status
-: Anbefalt 
+: Anbefalt
 
 ### Datasett: skjermingshjemmel
 URI
@@ -145,17 +141,17 @@ Beskrivelse
 : Henvisning til hjemmel (kilde for påstand) i offentlighetsloven, sikkerhetsloven, beskyttelsesinstruksen eller annet loverk som ligger til grunn for vurdering av tilgangsnivå. Egenskapen er anbefalt dersom «tilgangsnivå» har verdiene «begrenset offentlighet» eller «unntatt offentlighet»
 
 Kardinalitet
-: 0..n 
+: 0..n
 
 Status
-: Anbefalt 
+: Anbefalt
 
 ### Datasett: i samsvar med
 URI
-: dct:conformsTo 
+: dct:conformsTo
 
 Range
-: dct:Standard 
+: dct:Standard
 
 Beskrivelse
 : Referer til en implementasjons-regel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet
@@ -232,7 +228,7 @@ Status
 
 ### Datasett: annen identifikator
 URI
-: adms:identifier 
+: adms:identifier
 
 Range
 : adms:Identifier
@@ -248,13 +244,13 @@ Status
 
 ### Datasett: utgivelsesdato
 URI
-: dct:issued 
+: dct:issued
 
 Range
-: rdfs:Literal typed as xsd:dateTime 
+: rdfs:Literal typed as xsd:dateTime
 
 Beskrivelse
-: Dato for den formelle utgivelsen av datasettet 
+: Dato for den formelle utgivelsen av datasettet
 
 Kardinalitet
 : 0..1
@@ -280,7 +276,7 @@ Status
 
 ### Datasett: tidsperiode
 URI
-: dct:temporal 
+: dct:temporal
 
 Range
 : dct:PeriodOfTime
@@ -315,7 +311,7 @@ URI
 : adms:version
 
 Range
-: rdfs:Literal 
+: rdfs:Literal
 
 Beskrivelse
 : Et versjonsnummer eller annen versjonsbetegnelse for datasettet
@@ -324,7 +320,7 @@ Kardinalitet
 : 0..1
 
 Status
-: Valgfri 
+: Valgfri
 
 ### Datasett: versjonsnote
 URI

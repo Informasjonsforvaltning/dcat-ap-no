@@ -1,8 +1,4 @@
----
-title: Forvaltningsregime
-id: 04
-layout: default
----
+# Forvaltningsregime
 
 Utarbeidelse av nye versjoner av «Standard for beskrivelse av datakataloger og datasett» initieres av Difi, og den primære kilden til nye versjoner vil være endringer i DCAT-AP. Difi vil derfor ha ansvar for å følge med på EUs bruk av, og endringsarbeid knyttet til, DCAT-AP. Arbeidet med en ny versjon av den nasjonale standarden skal som vanlig forankres i relevante organer via høring og behandling i Standardiseringsrådet.
 

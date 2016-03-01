@@ -1,8 +1,4 @@
----
-title: Kategori
-id: 14
-layout: default
----
+# Kategori
 
 Egenskaper for klassen Kategori (obligatorisk)
 

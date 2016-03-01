@@ -1,8 +1,4 @@
----
-title: Distribusjon
-id: 11
-layout: default
----
+# Distribusjon
 
 Egenskaper for klassen Distribusjon (anbefalt)
 
@@ -19,7 +15,7 @@ Beskrivelse
 Kardinalitet
 : 1..n
 
-Status	
+Status
 : Obligatorisk
 
 ### Distribusjon: beskrivelse
@@ -35,8 +31,8 @@ Beskrivelse
 Kardinalitet
 : 0..n
 
-Status	
-: Anbefalt 
+Status
+: Anbefalt
 
 ### Distribusjon: format
 URI
@@ -51,7 +47,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Anbefalt
 
 ### Distribusjon: lisens
@@ -67,7 +63,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Anbefalt
 
 ### Distribusjon: filstørrelse
@@ -83,7 +79,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Valgfri
 
 ### Distribusjon: nedlastningslenke
@@ -99,7 +95,7 @@ Beskrivelse
 Kardinalitet
 : 0..n
 
-Status	
+Status
 : Valgfri
 
 ### Distribusjon: mediatype
@@ -113,9 +109,9 @@ Beskrivelse
 : Referer til distribusjonens medietype dersom denne er definert i IANA
 
 Kardinalitet
-: 0..1 
+: 0..1
 
-Status	
+Status
 : Valgfri
 
 ### Distribusjon: utgivelsesdato
@@ -123,20 +119,20 @@ URI
 : dct:issued
 
 Range
-: rdfs:Literal typed as xsd:date or xsd:dateTime 
+: rdfs:Literal typed as xsd:date or xsd:dateTime
 
 Beskrivelse
 : Dato for formell utgivelse/publisering av distribusjonen
 
 Kardinalitet
-: 0..1 
+: 0..1
 
-Status	
+Status
 : Valgfri
 
 ### Distribusjon: rettigheter
 URI
-: dct:rights 
+: dct:rights
 
 Range
 : dct:RightsStatement
@@ -147,7 +143,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Valgfri
 
 ### Distribusjon: status
@@ -163,7 +159,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Valgfri
 
 
@@ -180,7 +176,7 @@ Beskrivelse
 Kardinalitet
 : 0..n
 
-Status	
+Status
 : Valgfri
 
 
@@ -197,5 +193,5 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Valgfri

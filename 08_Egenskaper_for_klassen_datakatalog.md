@@ -1,8 +1,4 @@
----
-title: Katalog
-id: 08
-layout: default
----
+# Katalog
 
 Egenskaper for klassen Katalog (obligatorisk):
 
@@ -19,9 +15,9 @@ Beskrivelse
 Kardinalitet
 : 1..n
 
-Status	
-:  Obligatorisk 
-    
+Status
+:  Obligatorisk
+
 ### Katalog: beskrivelse
 URI
 : dct:description
@@ -35,9 +31,9 @@ Beskrivelse
 Kardinalitet
 : 1..n
 
-Status	
+Status
 : Obligatorisk
- 
+
 ### Katalog: utgiver
 URI
 : dct:publisher
@@ -51,7 +47,7 @@ Beskrivelse
 Kardinalitet
 : 1..1
 
-Status	
+Status
 : Obligatorisk
 
 ### Katalog: tittel
@@ -67,7 +63,7 @@ Beskrivelse
 Kardinalitet
 : 1..n
 
-Status	
+Status
 : Obligatorisk  
 
 ### Katalog: hjemmeside
@@ -84,10 +80,10 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Anbefalt
 
-### Katalog: språk 
+### Katalog: språk
 URI
 : dct:language
 
@@ -100,7 +96,7 @@ Beskrivelse
 Kardinalitet
 : 0..n
 
-Status	
+Status
 : Anbefalt
 
 ### Katalog: lisens
@@ -116,7 +112,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Anbefalt
 
 ### Katalog: utgivelsesdato
@@ -132,7 +128,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Anbefalt
 
 ### Katalog: temaer
@@ -148,9 +144,9 @@ Beskrivelse
 Kardinalitet
 : 0..n
 
-Status	
+Status
 : Anbefalt   
-	
+
 ### Katalog: modifiseringsdato
 
 URI
@@ -165,7 +161,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Anbefalt
 
 ### Katalog: katalogpost
@@ -181,7 +177,7 @@ Beskrivelse
 Kardinalitet
 : 0..n
 
-Status	
+Status
 : Valgfri
 
 ### Katalog: rettigheter
@@ -197,7 +193,7 @@ Beskrivelse
 Kardinalitet
 : 0..1
 
-Status	
+Status
 : Valgfri
 
 ### Katalog: dekningsområde
@@ -213,5 +209,5 @@ Beskrivelse
 Kardinalitet
 : 0..n
 
-Status	
+Status
 : Valgfri
