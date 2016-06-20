@@ -1,0 +1,11 @@
+= Kategoriskjema
+
+Egenskaper for klassen Kategoriskjema (obligatorisk)
+
+== Kategoriskjema: tittel [[kategoriskjema-tittel]]
+
+URI:: dct:title
+Range:: rdfs:Literal
+Beskrivelse:: Navn på kategori-skjemaet. Kan gjentas for forskjellige versjoner av navnet
+Kardinalitet:: 1..n
+Status:: Oblibatorisk
