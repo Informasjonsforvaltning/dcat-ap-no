@@ -28,175 +28,81 @@ Status:: Obligatorisk
 
 == Katalog: tittel [[katalog-tittel]]
 
-URI +
-: dct:title
-
-Range +
-: rdfs:Literal
-
-Beskrivelse +
-: Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for
-parallelle språkversjoner av navnet.
-
-Kardinalitet +
-: 1..n
-
-Status +
-: Obligatorisk
+URI:: dct:title
+Range:: rdfs:Literal
+Beskrivelse:: Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av navnet.
+Kardinalitet:: 1..n
+Status:: Obligatorisk
 
 == Katalog: hjemmeside [[katalog-hjemmeside]]
 
-URI +
-: foaf:homepage
-
-Range +
-: foaf:Document
-
-Beskrivelse +
-: Nettside som fungerer som hovedside for katalogen
-
-Kardinalitet +
-: 0..1
-
-Status +
-: Anbefalt
+URI:: foaf:homepage
+Range:: foaf:Document
+Beskrivelse:: Nettside som fungerer som hovedside for katalogen
+Kardinalitet:: 0..1
+Status:: Anbefalt
 
 == Katalog: språk [[katalog-sprak]]
 
-URI +
-: dct:language
-
-Range +
-: dct:LinguisticSystem
-
-Beskrivelse +
-: Viser til et språk som brukes i tekstlige metadata som beskriver
-titler, beskrivelser, osv av datasettene i katalogen. Egenskapen kan
-gjentas hvis metadata er gitt i flere språk.
-
-Kardinalitet +
-: 0..n
-
-Status +
-: Anbefalt
+URI:: dct:language
+Range:: dct:LinguisticSystem
+Beskrivelse:: Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
+Kardinalitet:: 0..n
+Status:: Anbefalt
 
 == Katalog: lisens [[katalog-lisens]]
 
-URI +
-: dct:license
-
-Range +
-: dct:LicenseDocument
-
-Beskrivelse +
-: Viser til lisens for datakatalogen som beskriver hvordan den kan
-viderebrukes.
-
-Kardinalitet +
-: 0..1
-
-Status +
-: Anbefalt
+URI:: dct:license
+Range:: dct:LicenseDocument
+Beskrivelse:: Viser til lisens for datakatalogen som beskriver hvordan den kan viderebrukes.
+Kardinalitet:: 0..1
+Status:: Anbefalt
 
 == Katalog: utgivelsesdato [[katalog-utgivelsesdato]]
 
-URI +
-: dct:issued
-
-Range +
-: rdfs:Literal typed as xsd:date or xsd:dateTime
-
-Beskrivelse +
-: Dato for formell utgivelse (publisering) av katalogen.
-
-Kardinalitet +
-: 0..1
-
-Status +
-: Anbefalt
+URI:: dct:issued
+Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
+Beskrivelse:: Dato for formell utgivelse (publisering) av katalogen.
+Kardinalitet:: 0..1
+Status:: Anbefalt
 
 == Katalog: temaer [[katalog-temaer]]
 
-URI +
-: dcat:themeTaxonomy
-
-Range +
-: skos:ConceptScheme
-
-Beskrivelse +
-: Referer til et kunnskapsorganiseringssystem (KOS) som er brukt for å
-klassifisere katalogens datasett
-
-Kardinalitet +
-: 0..n
-
-Status +
-: Anbefalt
+URI:: dcat:themeTaxonomy
+Range:: skos:ConceptScheme
+Beskrivelse:: Referer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett
+Kardinalitet:: 0..n
+Status:: Anbefalt
 
 == Katalog: modifiseringsdato [[katalog-modifiseringsdato]]
 
-URI +
-: dct:modified
-
-Range +
-: rdfs:Literal typed as xsd:date or xsd:dateTime
-
-Beskrivelse +
-: Dato for siste oppdatering/endring av katalogen
-
-Kardinalitet +
-: 0..1
-
-Status +
-: Anbefalt
+URI:: dct:modified
+Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
+Beskrivelse:: Dato for siste oppdatering/endring av katalogen
+Kardinalitet:: 0..1
+Status:: Anbefalt
 
 == Katalog: katalogpost [[katalog-katalogpost]]
 
-URI +
-: dcat:record
-
-Range +
-: dcat:CatalogRecord
-
-Beskrivelse +
-: Referer til en katalogpost som er del av katalogen
-
-Kardinalitet +
-: 0..n
-
-Status +
-: Valgfri
+URI:: dcat:record
+Range:: dcat:CatalogRecord
+Beskrivelse:: Referer til en katalogpost som er del av katalogen
+Kardinalitet:: 0..n
+Status:: Valgfri
 
 == Katalog: rettigheter [[katalog-rettigheter]]
 
-URI +
-: dct:rights
-
-Range +
-: dct:RightsStatement
-
-Beskrivelse +
-: Uttalelse som spesifiserer rettigheter knyttet til katalogen
-
-Kardinalitet +
-: 0..1
-
-Status +
-: Valgfri
+URI:: dct:rights
+Range:: dct:RightsStatement
+Beskrivelse:: Uttalelse som spesifiserer rettigheter knyttet til katalogen
+Kardinalitet:: 0..1
+Status:: Valgfri
 
 == Katalog: dekningsområde [[katalog-dekningsomrade]]
 
-URI +
-: dct:spatial
+URI:: dct:spatial
+Range:: dct:Location
+Beskrivelse:: Referanse til et geografisk område som er dekket av katalogen
+Kardinalitet:: 0..n
+Status:: Valgfri
 
-Range +
-: dct:Location
-
-Beskrivelse +
-: Referanse til et geografisk område som er dekket av katalogen
-
-Kardinalitet +
-: 0..n
-
-Status +
-: Valgfri

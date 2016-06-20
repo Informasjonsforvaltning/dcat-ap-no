@@ -4,36 +4,16 @@ Egenskaper for klassen Enhet (obligatorisk)
 
 == Enhet: navn [[enhet-navn]]
 
-URI +
-: foaf:name
-
-Range +
-: rdfs:Literal
-
-Beskrivelse +
-: Navn på enheten. Denne egenskapen kan gjentas for ulike versjoner av
-navnet (som navnet på forskjellige språk)
-
-Kardinalitet +
-: 1..n
-
-Status +
-: Obligatorisk
+URI:: foaf:name
+Range:: rdfs:Literal
+Beskrivelse:: Navn på enheten. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk)
+Kardinalitet:: 1..n
+Status:: Obligatorisk
 
 == Enhet: utgivertype [[enhet-utgivertype]]
 
-URI +
-: dct:type
-
-Range +
-: skos:Concept
-
-Beskrivelse +
-: Refererer til type for enheten som gjør katalogen eller datasett
-tilgjengelig
-
-Kardinalitet +
-: 0..1
-
-Status +
-: Anbefalt
+URI:: dct:type
+Range:: skos:Concept
+Beskrivelse:: Refererer til type for enheten som gjør katalogen eller datasett tilgjengelig
+Kardinalitet:: 0..1
+Status:: Anbefalt

@@ -30,55 +30,85 @@ må brukes for de nevnte egenskapene.
 URI:: dcat:mediaType
 Brukt i klasse:: Distribusjon
 Navn:: MDR File types Name Authority List
-
 URI for vokabular:: http://publications.europa.eu/mdr/authority/file-type/:
+
+'''
+
 URI:: dcat:theme
 Brukt i klasse:: Datasett
 Navn:: EuroVoc domains
 URI for vokabular:: http://eurovoc.europa.eu/
+
+'''
+
 URI:: dcat:themeTaxonomy
 Brukt i klasse:: Katalog
 Navn:: EuroVoc
 URI for vokabular:: http://eurovoc.europa.eu/
+
+'''
+
 URI:: dct:accrualPeriodicity
 Brukt i klasse:: Datasett
 Navn:: Dublin Core Collection Description Frequency Vocabulary
 URI for vokabular:: http://purl.org/cld/freq/
+
+'''
+
 URI:: dct:format
 Brukt i klasse:: Distribusjon
 Navn:: MDR File Type Named Authority List
 URI for vokabular:: http://publications.europa.eu/mdr/authority/file-type/
+
+'''
+
 URI:: dct:language
 Brukt i klasse:: Katalog, Datasett
 Navn:: MDR Languages Named Authority List
 URI for vokabular:: http://publications.europa.eu/mdr/authority/language/
+
+'''
+
 URI:: dct:publisher
 Brukt i klasse:: Katalog, Datasett
 Navn:: MDR Corporate bodies Named Authority List
 URI for vokabular:: http://publications.europa.eu/mdr/authority/corporate-body/
-Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med
-internasjonale organisasjoner. Ved andre typer organisasjoner, bør
-nasjonale, regionale eller lokale vokabular brukes.
+Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør nasjonale, regionale eller lokale vokabular brukes.
+
+'''
+
 URI:: dct:spatial
 Brukt i klasse:: Katalog, Datasett
 Navn:: MDR Countries Named Authority List, MDR Places Named Authority List
 URI for vokabular:: http://publications.europa.eu/mdr/authority/country/, http://publications.europa.eu/mdr/authority/place/
 Beskrivelse:: Vokabularet for land skal brukes hvis dekningsområde er et spesielt land. Vokabularet for steder skal brukes hvis dekningsområde er en del av et land.
+
+'''
+
 URI:: adms:status
 Brukt i klasse:: Katalogpost
 Navn:: ADMS change type vocabulary
 URI for vokabular:: http://purl.org/adms/changetype/
 Beskrivelse:: :created, :updated, :deleted
+
+'''
+
 URI:: adms:status
 Brukt i klasse:: Distribusjon
 Navn:: ADMS status vocabulary
 URI for vokabular:: http://purl.org/adms/status/
 Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
+
+'''
+
 URI:: dct:type
 Brukt i klasse:: Enhet
 Navn:: ADMS publisher type vocabulary
 URI for vokabular:: http://purl.org/adms/publishertype/Company
 Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
+
+'''
+
 URI:: dct:type
 Brukt i klasse:: Lisensdokument
 Navn:: ADMS licence type vocabulary
