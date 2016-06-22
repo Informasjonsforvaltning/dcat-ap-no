@@ -82,6 +82,22 @@ Beskrivelse:: Dato for siste oppdatering/endring av katalogen
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
+== Katalog: er del av [[katalog-er-del-av]]
+
+URI:: dct:isPartOf
+Range:: dcat:Catalog
+Beskrivelse:: Refereranse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+== Katalog: har del [[katalog-har-del]]
+
+URI:: dct:hasPart
+Range:: dcat:Catalog
+Beskrivelse:: Referanse til en beslektet katalog som er en del av den beskrevne katalogen
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 == Katalog: katalogpost [[katalog-katalogpost]]
 
 URI:: dcat:record

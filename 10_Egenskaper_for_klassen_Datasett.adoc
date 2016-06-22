@@ -20,10 +20,10 @@ Status:: Obligatorisk
 
 == Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
 
-URI:: adms:contactPoint
-Range:: v:Vcard
-Beskrivelse:: Inneholder kontaktinformasjon som kan brukes for å melde om feil i datasettet eller sende kommentarer
-Kardinalitet:: 1..n
+URI:: dcat:contactPoint
+Range:: vcard:Kind
+Beskrivelse:: Refererer til kontaktinformasjon som kan brukes for å melde om feil i datasettet eller sende kommentarer
+Kardinalitet:: 0..n
 Status:: Anbefalt
 
 == Datasett: datasett distribusjon [[datasett-datasett-distribusjon]]
@@ -82,12 +82,28 @@ Beskrivelse:: Referer til en implementasjons-regel eller annen spesifikasjon, so
 Kardinalitet:: 0..n
 Status:: Valgfri
 
+== Datasett: dokumentasjon [[datasett-dokumentasjon]]
+
+URI:: foaf:page
+Range:: foaf:Document
+Beskrivelse:: Referanse til en side som dokumenterer datasettet
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 == Datasett: frekvens [[datasett-frekvens]]
 
 URI:: dct:accrualPeriodicity
 Range:: dct:Frequency
-Beskrivelse:: Referer til oppdateringsfrekvensen for datasettet
+Beskrivelse:: Referer til oppdateringsfrekvensen for datasettet. Skal bruke begrep fra 'Frequency Name Authority List' som vedlikeholdes av Publications Office (i stedet for 'Dublin Core Collection Description Frequency')
 Kardinalitet:: 0..1
+Status:: Valgfri
+
+== Datasett: har versjon [[datasett-har-versjon]]
+
+URI:: dct:hasVersion
+Range:: dcat:Dataset
+Beskrivelse:: Referanse til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet
+Kardinalitet:: 0..n
 Status:: Valgfri
 
 == Datasett: identifikator [[datasett-identifikator]]
@@ -98,12 +114,20 @@ Beskrivelse:: Hovedindentifikator for datasettet, feks URIen eller annen identif
 Kardinalitet:: 0..n
 Status:: Valgfri
 
+== Datasett: er versjon av [[datasett-er-versjon-av]]
+
+URI:: dct:isVersionOf
+Range:: dcat:Dataset
+Beskrivelse:: Referanse til et beslektet datasett som det beskrevne datasettet er en versjon, utgave, eller tilpasning av
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 == Datasett: landingsside [[datasett-landingsside]]
 
 URI:: dcat:landingPage
 Range:: foaf:Document
 Beskrivelse:: Referanse til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Dokumentasjon som ikke er spesifikt definisjon av felter, hører hjemme her.
-Kardinalitet:: 0..1
+Kardinalitet:: 0..n
 Status:: Valgfri
 
 == Datasett: språk [[datasett-sprak]]
@@ -122,12 +146,44 @@ Beskrivelse:: Referanse til en sekundær identifikator av datasettet som MAST/AD
 Kardinalitet:: 0..n
 Status:: Valgfri
 
+== Datasett: opphav [[datasett-opphav]]
+
+URI:: dct:provenance
+Range:: dct:ProvenanceStatement
+Beskrivelse:: Referanse til objekt som beskriver hvor datasettet kommer fra, hvordan det er produsert og hvilken kvalitet det har
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+== Datasett: relatert ressurs [[datasett-relatertressurs]]
+
+URI:: dct:relation
+Range:: rdfs:Resource
+Beskrivelse:: Referanse til en beslektet ressurs
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 == Datasett: utgivelsesdato [[datasett-utgivelsesdato]]
 
 URI:: dct:issued
 Range:: rdfs:Literal typed as xsd:dateTime
 Beskrivelse:: Dato for den formelle utgivelsen av datasettet
 Kardinalitet:: 0..1
+Status:: Valgfri
+
+== Datasett: eksempeldata [[datasett-eksempeldata]]
+
+URI:: adms:sample
+Range:: dcat:Distribution
+Beskrivelse:: Referanse til eksempeldata
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+== Datasett: kilde [[datasett-kilde]]
+
+URI:: dct:source
+Range:: dcat:Dataset
+Beskrivelse:: Referanse til et datasett som gjeldende datasett er avledet fra
+Kardinalitet:: 0..n
 Status:: Valgfri
 
 == Datasett: dekningsområde [[datasett-dekningsomrade]]
@@ -146,6 +202,14 @@ Beskrivelse:: Referanse til en tidsperiode datasettet gjelder for (startdato og 
 Kardinalitet:: 0..n
 Status:: Valgfri
 
+== Datasett: type [[datasett-type]]
+
+URI:: dct:type
+Range:: skos:Concept
+Beskrivelse:: Referanse til en type datasett. Noe kontrollert vokabular har ikke blitt etablert.
+Kardinalitet:: 0..1
+Status:: Valgfri
+
 == Datasett: modifisert [[datasett-modifisert]]
 
 URI:: dct:modified
@@ -156,7 +220,7 @@ Status:: Valgfri
 
 == Datasett: versjon [[datasett-versjon]]
 
-URI:: adms:version
+URI:: owl:versionInfoversion
 Range:: rdfs:Literal
 Beskrivelse:: Et versjonsnummer eller annen versjonsbetegnelse for datasettet
 Kardinalitet:: 0..1
@@ -167,5 +231,5 @@ Status:: Valgfri
 URI:: adms:versionNotes
 Range:: rdfs:Literal
 Beskrivelse:: En beskrivelse av endringene fra forrige versjon til denne versjonen av datasettet
-Kardinalitet:: 0..1
+Kardinalitet:: 0..n
 Status:: Valgfri
