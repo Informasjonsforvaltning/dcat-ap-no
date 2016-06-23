@@ -63,10 +63,10 @@ Status:: Anbefalt
 
 URI:: dcat:theme, subproperty of dct:subject
 Range:: skos:Concept
-Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema
+Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema. Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabluar er anbefalt.
 Kardinalitet:: 1..n
 Status:: Anbefalt
-Kommentar:: Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabluar er anbefalt.
+
 
 == Datasett: tilgangsnivå [[datasett-tilgangsniva]]
 
@@ -75,6 +75,8 @@ Range:: dct:RightsStatement
 Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Obligatoriske verdier : «offentlig», «begrenset offentlighet», «unntatt offentlighet». Ved bruk av verdiene «begrenset offentlighet» og «unntatt offentlighet» er egenskapen «skjermingshjemmel» anbefalt.
 Kardinalitet:: 0..1
 Status:: Anbefalt
+
+note: Se <<datasett-skjermingshjemmel>>
 
 == Datasett: skjermingshjemmel [[datasett-skjermingshjemmel]]
 
