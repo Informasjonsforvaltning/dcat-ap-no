@@ -18,6 +18,15 @@ Beskrivelse:: Inneholder navnet på datasettet. Kan gjentas for parallelle språ
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
+== Datasett: identifikator [[datasett-identifikator]]
+
+URI:: dct:identifier
+Range:: rdfs:Literal
+Beskrivelse:: Hovedindentifikator for datasettet, feks URIen eller annen identifikator som er unik i kontekst av katalogen
+Kardinalitet:: 1..n
+Status:: Obligatorisk
+Kommentar:: Her har Norge valgt å gjøre er en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedindentifikator. Denne kan f.eks. være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
+
 == Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
 
 URI:: dcat:contactPoint
@@ -57,6 +66,7 @@ Range:: skos:Concept
 Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema
 Kardinalitet:: 1..n
 Status:: Anbefalt
+Kommentar:: Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabluar er anbefalt.
 
 == Datasett: tilgangsnivå [[datasett-tilgangsniva]]
 
@@ -68,11 +78,12 @@ Status:: Anbefalt
 
 == Datasett: skjermingshjemmel [[datasett-skjermingshjemmel]]
 
-URI:: (TBD)
-Range:: dct:RightsStatement
+URI:: dcatno:accessRightsComment
+Range:: skos:Concept
 Beskrivelse:: Henvisning til hjemmel (kilde for påstand) i offentlighetsloven, sikkerhetsloven, beskyttelsesinstruksen eller annet loverk som ligger til grunn for vurdering av tilgangsnivå. Egenskapen er anbefalt dersom «tilgangsnivå» har verdiene «begrenset offentlighet» eller «unntatt offentlighet»
 Kardinalitet:: 0..n
 Status:: Anbefalt
+Kommentar:: Norsk utvidelse.
 
 == Datasett: i samsvar med [[datasett-i-samsvar-med]]
 
@@ -103,14 +114,6 @@ Status:: Valgfri
 URI:: dct:hasVersion
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
-
-== Datasett: identifikator [[datasett-identifikator]]
-
-URI:: dct:identifier
-Range:: rdfs:Literal
-Beskrivelse:: Hovedindentifikator for datasettet, feks URIen eller annen identifikator som er unik i kontekst av katalogen
 Kardinalitet:: 0..n
 Status:: Valgfri
 
@@ -220,7 +223,7 @@ Status:: Valgfri
 
 == Datasett: versjon [[datasett-versjon]]
 
-URI:: owl:versionInfoversion
+URI:: owl:versionInfo
 Range:: rdfs:Literal
 Beskrivelse:: Et versjonsnummer eller annen versjonsbetegnelse for datasettet
 Kardinalitet:: 0..1
@@ -233,3 +236,102 @@ Range:: rdfs:Literal
 Beskrivelse:: En beskrivelse av endringene fra forrige versjon til denne versjonen av datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
+
+== Datasett: begrep [[datasett-begrep]]
+
+URI:: dct:subject
+Range:: skos:Concept
+Beskrivelse:: Referanser (URI’er) til definisjoner for sentrale begrep som inngår i datasettet. URI’ene representere enkeltbegrep.
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: rettighetshaver [[datasett-rettighetshaver]]
+
+URI:: dct:rightsHolder
+Range:: rdfs:Resource
+Beskrivelse:: Relasjon til ressurs som har et rettighetsforhold til datasettet
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: skaper [[datasett-skaper]]
+
+URI:: dct:creator
+Range:: rdfs:Resource
+Beskrivelse:: Relasjon til produsent av datasettet
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: referer til [[datasett-refererer-til]]
+
+URI:: dct:references
+Range:: dcat:Dataset
+Beskrivelse:: Relasjon til dataset som det refereres til
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: er referert av [[datasett-er-referert-av]]
+
+URI:: dct:isReferencedBy
+Range:: dcat:Dataset
+Beskrivelse:: Relasjon til dataset som refererer til dette datasettet
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: er del av [[datasett-er-del-av]]
+
+URI:: dct:isPartOf
+Range:: dcat:Dataset
+Beskrivelse:: Relasjon til dataset som dette datasettet er en del av
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: har del [[datasett-har-del]]
+
+URI:: dct:hasPart
+Range:: dcat:Dataset
+Beskrivelse:: Relasjon til dataset som er en del av dette datasettet
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: krever [[datasett-krever]]
+
+URI:: dct:requires
+Range:: dcat:Dataset
+Beskrivelse:: Relasjon til dataset som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett. 
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: er påkrevd av [[datasett-er-pakrevd-av]]
+
+URI:: dct:isRequiredBy
+Range:: dcat:Dataset
+Beskrivelse:: Relasjon til dataset som dette datasettet er nødvendig for 
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: erstatter [[datasett-erstatter]]
+
+URI:: dct:replaces
+Range:: dcat:Dataset
+Beskrivelse:: Relasjon til dataset dette datasettet skal erstatte
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
+
+== Datasett: erstattes av [[datasett-erstattes-av]]
+
+URI:: dct:isReplacedBy
+Range:: dcat:Dataset
+Beskrivelse:: Relasjon til dataset som erstatter dette datasettet
+Kardinalitet:: 0..n
+Status:: Valgfri
+Kommentar:: Norsk utvidelse
