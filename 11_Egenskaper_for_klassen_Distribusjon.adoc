@@ -42,6 +42,22 @@ Beskrivelse:: Distribusjonens størrelse oppgitt i bytes
 Kardinalitet:: 0..1
 Status:: Valgfri
 
+== Distribusjon: sjekksum [[distribusjon-sjekksum]]
+
+URI:: spdx:checksum
+Range:: spdx:Checksum
+Beskrivelse:: Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg)
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+== Distribusjon: dokumentasjon [[distribusjon-dokumentasjon]]
+
+URI:: foaf:page
+Range:: foaf:Document
+Beskrivelse:: Referanse til en side eller et dokument som beskriver distribusjonen
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 == Distribusjon: nedlastningslenke [[distribusjon-nedlastningslenke]]
 
 URI:: dcat:downloadURL
@@ -50,13 +66,29 @@ Beskrivelse:: Direktelenke (URL) til en nedlastbar fil i et gitt format
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Distribusjon: mediatype [[distribusjon-mediatype]]
+== Distribusjon: språk [[distribusjon-sprak]]
+
+URI:: dct:language
+Range:: dct:LinguisticSystem
+Beskrivelse:: Referanse til språk som er brukt i distribusjonen
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+== Distribusjon: i samsvar med [[distribusjon-i-samsvar-med]]
+
+URI:: dct:conformsTo
+Range:: dct:Standard
+Beskrivelse:: Referanse til et etablert skjema som distribusjonen er i samsvar med
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+== Distribusjon: [underline]#mediatype# [[distribusjon-mediatype]]
 
 URI:: dcat:mediaType, subproperty of dct:format
 Range:: dct:MediaTypeOrExtent
 Beskrivelse:: Referer til distribusjonens medietype dersom denne er definert i IANA
 Kardinalitet:: 0..1
-Status:: Valgfri
+Status:: *Ikke bruk*
 
 == Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
 

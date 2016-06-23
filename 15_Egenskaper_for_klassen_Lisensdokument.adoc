@@ -1,6 +1,6 @@
 = Lisensdokument
 
-Egenskaper for klassen Lisensdokument (valgfri)
+Egenskaper for klassen Lisensdokument (anbefalt)
 
 == Lisensdokument: lisenstype
 

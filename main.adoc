@@ -40,7 +40,11 @@ include::14_Egenskaper_for_klassen_Kategori.adoc[]
 
 include::15_Egenskaper_for_klassen_Lisensdokument.adoc[]
 
+include::15i_Egenskaper_for_klassen_Sjekksum.adoc[]
+
 include::16_Egenskaper_for_klassen_Tidsperiode.adoc[]
+
+
 
 :leveloffset: -1
 

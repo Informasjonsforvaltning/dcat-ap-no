@@ -64,12 +64,28 @@ URI:: dcat:Distribution
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution
 Status:: Anbefalt
 
+== Lisensdokument
+
+Engelsk:: License document
+Beskrivelse:: En juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.
+URI:: dct:LicenseDocument
+Referanse:: http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
+Status:: Anbefalt
+
 == Katalogpost
 
 Engelsk:: Catalogue Record
 Beskrivelse:: En beskrivelse av en datasettoppføring i katalogen.
 URI:: dcat:CatalogRecord
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record
+Status:: Valgfri
+
+== Sjekksum
+
+Engelsk:: Checksum
+Beskrivelse:: En beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
+URI:: spdx:Checksum
+Referanse:: http://spdx.org/rdf/terms#Checksum
 Status:: Valgfri
 
 == Dokument
@@ -96,12 +112,12 @@ URI:: adms:Identifier
 Referanse:: http://www.w3.org/TR/vocab-adms/#identifier
 Status:: Valgfri
 
-== Lisensdokument
+== Kontaktpunkt
 
-Engelsk:: License document
-Beskrivelse:: En juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.
-URI:: dct:LicenseDocument
-Referanse:: http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
+Engelsk:: Kind
+Beskrivelse:: En beskrivelse av et kontaktpunkt i henhold til vCard spesifikasjonen. Her kan man for eksempel oppgi telefonnr og/eller epost. Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe. 
+URI:: vcard:Kind
+Referanse:: http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181
 Status:: Valgfri
 
 == Språksystem
@@ -168,10 +184,10 @@ URI:: skos:Concept
 Referanse:: http://www.w3.org/TR/vocab-adms/#status
 Status:: Valgfri
 
-== VCard
+== Opphav
 
-Engelsk:: Vcard
-Beskrivelse:: En beskrivelse etter vCard-spesifikasjon, f.eks telefonnummer og e-post adresse for et kontaktpunkt.
-URI:: v:VCard
-Referanse:: http://www.w3.org/2006/vcard/ns-2006.html#VCard
+Engelsk:: ProvenanceStatement
+Beskrivelse:: En beskrivelse av opphavet, eierforhold og endringer i eierforholdet til en ressurs. Skal brukes til å vurdere autentisitet, integritet og autorisasjon.
+URI:: skos:Concept
+Referanse:: http://www.w3.org/TR/vocab-adms/#status
 Status:: Valgfri

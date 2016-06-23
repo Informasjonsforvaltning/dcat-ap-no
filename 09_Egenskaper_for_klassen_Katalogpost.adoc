@@ -18,11 +18,11 @@ Beskrivelse:: Denne egenskapen inneholder den nyeste datoen for når katalogpost
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 
-== Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
+== Katalogpost: i samsvar med [[katalogpost-i-samsvar-med]]
 
-URI:: dct:issued
-Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Datoen for når beskrivelsen av datasett ble inkludert i datakatalogen.
+URI:: dct:conformsTo
+Range:: rdfs:Resource
+Beskrivelse:: Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
@@ -34,11 +34,35 @@ Beskrivelse:: Type endring for siste revisjon av en datasettbeskrivelse i katalo
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
+== Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
+
+URI:: dct:issued
+Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
+Beskrivelse:: Datoen for når beskrivelsen av datasett ble inkludert i datakatalogen.
+Kardinalitet:: 0..1
+Status:: Anbefalt
+
 == Katalogpost: beskrivelse [[katalogpost-beskrivelse]]
 
 URI:: dct:description
 Range:: rdfs:Literal
 Beskrivelse:: Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen kan gjentas for parallelle språkversjoner av beskrivelsen.
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+== Katalogpost: språk [[katalogpost-sprak]]
+
+URI:: dct:language
+Range:: dct:LinguisticSystem
+Beskrivelse:: Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+== Katalogpost:  [[katalogpost-kilde]]
+
+URI:: dct:source
+Range:: dcat:CatalogRecord
+Beskrivelse:: Referanse til de originale metadata som er brukt for å skape metadata for datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 
