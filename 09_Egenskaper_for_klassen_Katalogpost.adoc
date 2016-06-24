@@ -62,7 +62,7 @@ Status:: Valgfri
 
 URI:: dct:source
 Range:: dcat:CatalogRecord
-Beskrivelse:: Referanse til de originale metadata som er brukt for å skape metadata for datasettet
+Beskrivelse:: Referanse til den originale katalogposten (metadata) som er brukt for å skape denne katalogposten (metadata) for datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 

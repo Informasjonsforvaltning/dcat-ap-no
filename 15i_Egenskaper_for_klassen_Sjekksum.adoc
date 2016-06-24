@@ -2,18 +2,18 @@
 
 Egenskaper for klassen Sjekksum (valgfri)
 
-== Sjekksum: algoritme
+== Sjekksum: algoritme [[sjekksum-algoritme]]
 
 URI:: spdx:algorithm
 Range:: spdx:checksumAlgorithm_sha1
-Beskrivelse:: For øyeblikket er SHA-1 den eneste algoritmen som er støttet. Det er forventet støtte for andre algoritmer på et senere tidspunkt.
+Beskrivelse:: Identifiserer algoritmen som er brukt til å produsere sjekksum. For øyeblikket er SHA-1 den eneste algoritmen som er støttet. Det er forventet støtte for andre algoritmer på et senere tidspunkt.  
 Kardinalitet:: 1..1
-Status:: Valgfri
+Status:: Obligatorisk
 
-== Sjekksum: sjekksumverdi
+== Sjekksum: sjekksumverdi [[sjekksum-sjekksumverdi]]
 
-URI:: spdx:checksum
-Range:: spdx:Checksum
-Beskrivelse:: En verdi som gjør at innholdet i en fil kan godkjennes. Denne klassen gjør det mulig å representere resultat fra en rekke sjekksum- og kryptografiske meldingsalgoritmer
+URI:: spdx:checksumValue
+Range:: rdfs:Literal typed as xsd:hexBinary
+Beskrivelse:: Denne egenskapen brukes til å oppgi en heksadesimal-kodet verdi med små bokstaver, produsert ved hjelp av en spesifikk algoritme.
 Kardinalitet:: 1..1
-Status:: Valgfri
+Status:: Obligatorisk

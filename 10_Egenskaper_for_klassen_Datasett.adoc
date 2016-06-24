@@ -22,16 +22,24 @@ Status:: Obligatorisk
 
 URI:: dct:identifier
 Range:: rdfs:Literal
-Beskrivelse:: Hovedindentifikator for datasettet, feks URIen eller annen identifikator som er unik i kontekst av katalogen
+Beskrivelse:: Hovedindentifikator for datasettet, f.eks. en URI eller annen identifikator som er globalt unik
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 Kommentar:: Her har Norge valgt å gjøre er en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedindentifikator. Denne kan f.eks. være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
+
+== Datasett: tema [[datasett-tema]]
+
+URI:: dcat:theme, subproperty of dct:subject
+Range:: skos:Concept
+Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema. Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabluar er anbefalt.
+Kardinalitet:: 1..n
+Status:: Obligatorisk
 
 == Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
 
 URI:: dcat:contactPoint
 Range:: vcard:Kind
-Beskrivelse:: Refererer til kontaktinformasjon som kan brukes for å melde om feil i datasettet eller sende kommentarer
+Beskrivelse:: Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
@@ -59,15 +67,6 @@ Beskrivelse:: Refererer til en enhet (organisasjon) som er ansvarlig for å gjø
 Kardinalitet:: 1..n
 Status:: Anbefalt
 
-== Datasett: tema [[datasett-tema]]
-
-URI:: dcat:theme, subproperty of dct:subject
-Range:: skos:Concept
-Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema. Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabluar er anbefalt.
-Kardinalitet:: 1..n
-Status:: Anbefalt
-
-
 == Datasett: tilgangsnivå [[datasett-tilgangsniva]]
 
 URI:: dct:accessRights
@@ -75,8 +74,7 @@ Range:: dct:RightsStatement
 Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Obligatoriske verdier : «offentlig», «begrenset offentlighet», «unntatt offentlighet». Ved bruk av verdiene «begrenset offentlighet» og «unntatt offentlighet» er egenskapen «skjermingshjemmel» anbefalt.
 Kardinalitet:: 0..1
 Status:: Anbefalt
-
-note: Se <<datasett-skjermingshjemmel>>
+NOTE: Se <<datasett-skjermingshjemmel>>
 
 == Datasett: skjermingshjemmel [[datasett-skjermingshjemmel]]
 
@@ -86,6 +84,16 @@ Beskrivelse:: Henvisning til hjemmel (kilde for påstand) i offentlighetsloven, 
 Kardinalitet:: 0..n
 Status:: Anbefalt
 Kommentar:: Norsk utvidelse.
+
+== Datasett: begrep [[datasett-begrep]]
+
+URI:: dct:subject
+Range:: skos:Concept
+Beskrivelse:: Referanse til sentrale begrep som er viktige for å forstå og tolke datasettet. Representeres som URI-er.
+Kardinalitet:: 0..n
+Status:: Anbefalt
+Kommentar:: Norsk utvidelse
+
 
 == Datasett: i samsvar med [[datasett-i-samsvar-med]]
 
@@ -99,7 +107,7 @@ Status:: Valgfri
 
 URI:: foaf:page
 Range:: foaf:Document
-Beskrivelse:: Referanse til en side som dokumenterer datasettet
+Beskrivelse:: Referanse til en side eller et dokument som beskriver datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 
@@ -107,7 +115,7 @@ Status:: Valgfri
 
 URI:: dct:accrualPeriodicity
 Range:: dct:Frequency
-Beskrivelse:: Referer til oppdateringsfrekvensen for datasettet. Skal bruke begrep fra 'Frequency Name Authority List' som vedlikeholdes av Publications Office (i stedet for 'Dublin Core Collection Description Frequency')
+Beskrivelse:: Referanse til oppdateringsfrekvensen for datasettet. Skal bruke begrep fra 'Frequency Name Authority List' som vedlikeholdes av Publications Office (i stedet for 'Dublin Core Collection Description Frequency')
 Kardinalitet:: 0..1
 Status:: Valgfri
 
@@ -131,7 +139,7 @@ Status:: Valgfri
 
 URI:: dcat:landingPage
 Range:: foaf:Document
-Beskrivelse:: Referanse til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Dokumentasjon som ikke er spesifikt definisjon av felter, hører hjemme her.
+Beskrivelse:: Referanse til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren. 
 Kardinalitet:: 0..n
 Status:: Valgfri
 
@@ -195,7 +203,7 @@ Status:: Valgfri
 
 URI:: dct:spatial
 Range:: dct:Location
-Beskrivelse:: Referanse til et geografisk område datasettet gjelder for
+Beskrivelse:: Referanse til et geografisk område dekket av datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 
@@ -211,7 +219,7 @@ Status:: Valgfri
 
 URI:: dct:type
 Range:: skos:Concept
-Beskrivelse:: Referanse til en type datasett. Noe kontrollert vokabular har ikke blitt etablert.
+Beskrivelse:: Referanse til et begrep som identifiserer datasettets type. Noe kontrollert vokabular har ikke blitt etablert.
 Kardinalitet:: 0..1
 Status:: Valgfri
 
@@ -235,24 +243,15 @@ Status:: Valgfri
 
 URI:: adms:versionNotes
 Range:: rdfs:Literal
-Beskrivelse:: En beskrivelse av endringene fra forrige versjon til denne versjonen av datasettet
+Beskrivelse:: Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Kan gjentas for parallelle språkversjoner av versjonsnotater.
 Kardinalitet:: 0..n
 Status:: Valgfri
-
-== Datasett: begrep [[datasett-begrep]]
-
-URI:: dct:subject
-Range:: skos:Concept
-Beskrivelse:: Referanser (URI’er) til definisjoner for sentrale begrep som inngår i datasettet. URI’ene representere enkeltbegrep.
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
 
 == Datasett: rettighetshaver [[datasett-rettighetshaver]]
 
 URI:: dct:rightsHolder
 Range:: rdfs:Resource
-Beskrivelse:: Relasjon til ressurs som har et rettighetsforhold til datasettet
+Beskrivelse:: Referanse til ressurs som har et rettighetsforhold til datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -261,7 +260,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:creator
 Range:: rdfs:Resource
-Beskrivelse:: Relasjon til produsent av datasettet
+Beskrivelse:: Referanse til produsent av datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -270,7 +269,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:references
 Range:: dcat:Dataset
-Beskrivelse:: Relasjon til dataset som det refereres til
+Beskrivelse:: Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -279,7 +278,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:isReferencedBy
 Range:: dcat:Dataset
-Beskrivelse:: Relasjon til dataset som refererer til dette datasettet
+Beskrivelse:: Referanse til datasett som refererer til dette datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -288,7 +287,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:isPartOf
 Range:: dcat:Dataset
-Beskrivelse:: Relasjon til dataset som dette datasettet er en del av
+Beskrivelse:: Referanse til datasett som dette datasettet er en del av
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -297,7 +296,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:hasPart
 Range:: dcat:Dataset
-Beskrivelse:: Relasjon til dataset som er en del av dette datasettet
+Beskrivelse:: Referanse til datasett som er en del av dette datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -306,7 +305,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:requires
 Range:: dcat:Dataset
-Beskrivelse:: Relasjon til dataset som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett. 
+Beskrivelse:: Referanse til dataset som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett. 
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -315,7 +314,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:isRequiredBy
 Range:: dcat:Dataset
-Beskrivelse:: Relasjon til dataset som dette datasettet er nødvendig for 
+Beskrivelse:: Relasjon til datasett som dette datasettet er nødvendig for 
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -324,7 +323,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:replaces
 Range:: dcat:Dataset
-Beskrivelse:: Relasjon til dataset dette datasettet skal erstatte
+Beskrivelse:: Referanse til datasett dette datasettet er ment å erstatte
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
@@ -333,7 +332,7 @@ Kommentar:: Norsk utvidelse
 
 URI:: dct:isReplacedBy
 Range:: dcat:Dataset
-Beskrivelse:: Relasjon til dataset som erstatter dette datasettet
+Beskrivelse:: Referanse til datasett som er ment å erstatte dette datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse

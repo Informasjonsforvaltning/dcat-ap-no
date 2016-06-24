@@ -22,10 +22,10 @@ Status:: Anbefalt
 
 URI:: dct:format
 Range:: dct:MediaTypeOrExtent
-Beskrivelse:: Referanse til distribusjonens filformat
+Beskrivelse:: Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 Kardinalitet:: 1..n
 Status:: Obligatorisk
-Kommentar:: Norsk utvidelse - Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater. Dette har overflødiggjort <<distribusjon-mediatype>> 
+Kommentar:: Norsk utvidelse - Denne egenskapen skal brukes istedetfor  <<distribusjon-mediatype>> 
 
 == Distribusjon: lisens [[distribusjon-lisens]]
 
@@ -75,7 +75,7 @@ Beskrivelse:: Referanse til språk som er brukt i distribusjonen
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Distribusjon: i samsvar med [[distribusjon-i-samsvar-med]]
+== Distribusjon: samsvarer med [[distribusjon-samsvarer-med]]
 
 URI:: dct:conformsTo
 Range:: dct:Standard
