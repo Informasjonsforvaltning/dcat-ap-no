@@ -3,13 +3,13 @@
 Egenskaper for klassen Datasett (obligatorisk)
 
 == Datasett: beskrivelse [[datasett-beskrivelse]]
-
+----
 URI:: dct:description
 Range:: rdfs:Literal
 Beskrivelse:: Inneholder fritekstbeskrivelse av datasettet. Kan gjentas for parallelle språkversjoner
 Kardinalitet:: 1..n
 Status:: Obligatorisk
-
+----
 == Datasett: tittel [[datasett-tittel]]
 
 URI:: dct:title
