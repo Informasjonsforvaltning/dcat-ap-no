@@ -76,7 +76,7 @@ Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjen
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
-note: Se <<datasett-skjermingshjemmel>>
+NOTE: Se <<datasett-skjermingshjemmel>>
 
 == Datasett: skjermingshjemmel [[datasett-skjermingshjemmel]]
 
