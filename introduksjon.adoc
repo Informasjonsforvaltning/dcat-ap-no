@@ -45,34 +45,30 @@ egenskapsnavn i form av URIer benyttes.
 Egenskapsnavnene fra den underliggende DCAT-AP v1.01 er i «Norsk
 standard for beskrivelse av datasett og datakataloger» gitt norske navn.
 
-Avvikene fra den europeiske DCAT-AP v1.01 er i gjeldende versjon
-(DCAT-AP-NO 1.0) disse:
+== Avvik fra den europeiske DCAT-AP v1.1
+ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende DCAT-AP versjon 1.1 på følgende punkter. :
 
-* For klassen Datasett er «tilgangsnivå» lagt til som anbefalt egenskap
-* For klassen Datasett er «skjermingshjemmel» lagt til som anbefalt
-egenskap
-* JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til
+
+=== For klassen Datasett:
+* link:#datasett-tilgangsniva[tilgangsnivå] er endret fra valgfri til anbefalt egenskap
+* "skjermingshjemmel" er lagt til som ny anbefalt egenskap
+* "begrep" er lagt til som ny anbefalt egenskap
+* identifikator er endret fra valgfri til obligatorisk egenskap 
+* identifikator endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
+* tema er endret fra anbefalt til obligatorisk og LOS er er lagt til som anbefalt vokabular
+* skaper er lagt til som valgfri egenskap
+* rettighetshaver?
+* relasjonene er del av/ har del er lagt til som ny egenskaper
+* relasjonene krever / er påkrevd av er lagt til som nye egenskaper
+* relasjonene erstatter/ erstattes av er lagt til som nye egenskaper
+* relasjonene refererer til / er referert av er lagt til som nye egenskaper
+
+=== For klassen Distribusjon:
+* egenskapen *mediatype* er fjernet
+* for egenskapen format er kardinalitet endret fra 0..1 til 1..n 
+
+*Annet:* 
+* JSON*LD er lagt til som anbefalt publiseringsformat i tillegg til
 RDF/XML
-* Egenskapene er gitt norske navn (URIer skal brukes - ikke navnet på
+* Egenskapene er gitt norske navn (URIer skal brukes * ikke navnet på
 egenskapene)
-
-De to første tilleggene ivaretar behov knyttet til at standarden også
-skal brukes på ikke-åpne data
-
-Vi gjør oppmerksom på at ISA har revidert den underliggende DCAT-AP og
-revisjon av DCAT-AP-NO (dette dokumentet) er forventet å starte i 2.
-kvartal 2016. Vi anbefaler intill videre å følge
-https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11[DCAT-AP
-versjon 1.1.]
-
-En oversikt over endringer i siste versjon av DCAT-AP finnes
-https://docs.google.com/spreadsheets/d/1wGaezEymDAKwUbFafg82lsmC0L16r512zjnvEvYgDhY/edit?usp=sharing[her].
-Merk at dette er et uferdig arbeidsdokument som oppdateres fortløpende.
-Dokumentet er åpent for kommentering. Det også mulig å kontakte Difi på
-epost (opnedata@difi.no) for spørsmål.
-
-Fremtidige versjoner av DCAT-AP-NO vil ta opp i seg endringene for
-DCAT-AP. Det er sannsynlig at det kommer flere særnorske utvidelser i
-neste versjon av DCAT-AP-NO. Disse er omtalt i
-http://standard.difi.no/filearchive/2015-02-04-utredning-dcat.pdf[utredningen
-for standarden.]
