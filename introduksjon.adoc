@@ -49,6 +49,7 @@ standard for beskrivelse av datasett og datakataloger» gitt norske navn.
 Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende DCAT-AP versjon 1.1 på følgende punkter:
 
 *For klassen Datasett:*
+
 * link:#datasett-utgiver[utgiver] er endret fra anbefalt til obligatorisk egenskap. Anbefaling om bruk av URI eller org.nummer er lagt til i beskrivelsen.
 * link:#datasett-tema[tema] er endret fra anbefalt til obligatorisk og http://psi.norge.no/los/struktur.html[LOS] er er lagt til som anbefalt vokabular
 * link:#datasett-identifikator[identifikator] er endret fra valgfri til obligatorisk egenskap 
@@ -63,11 +64,13 @@ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underligg
 * relasjonene link:#datasett-refererer-til[refererer til] / link:datasett-er-referert-av[er referert av] er lagt til som nye valgfrie egenskaper
 
 *For klassen Distribusjon*
+
 * egenskapen link:#distribusjon-format[format] er endret fra anbefalt til obligatorisk
 * egenskapen link:#distribusjon-format[format] er endret til å tillate flere verdier (kardinaliteten endret fra 0..1 til 1..n) 
 * egenskapen *mediatype* er fjernet fordi egenskapen link:#distribusjon-format[format] dekker behovet
 
 
 *Andre endringer* 
+
 * JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML
 * Egenskapene er gitt norske navn (URIer skal brukes -  ikke navnet på egenskapene)
