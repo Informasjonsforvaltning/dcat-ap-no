@@ -34,6 +34,14 @@ Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan ass
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
+== Datasett: utgiver [[datasett-utgiver]]
+
+URI:: dct:publisher
+Range:: foaf:Agent
+Beskrivelse:: Refererer til en enhet (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+Kardinalitet:: 1..1
+Status:: Obligatorisk
+
 == Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
 
 URI:: dcat:contactPoint
@@ -56,14 +64,6 @@ URI:: dcat:keyword
 Range:: rdfs:Literal
 Beskrivelse:: Inneholder emneord (eller tag) som beskriver datasettet
 Kardinalitet:: 0..n
-Status:: Anbefalt
-
-== Datasett: utgiver [[datasett-utgiver]]
-
-URI:: dct:publisher
-Range:: foaf:Agent
-Beskrivelse:: Refererer til en enhet (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
-Kardinalitet:: 1..n
 Status:: Anbefalt
 
 == Datasett: tilgangsnivå [[datasett-tilgangsniva]]
