@@ -63,14 +63,14 @@ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underligg
 * relasjonene link:#datasett-erstatter[erstatter] / link:#datasett-erstattes-av[erstattes av] er lagt til som nye valgfrie egenskaper
 * relasjonene link:#datasett-refererer-til[refererer til] / link:datasett-er-referert-av[er referert av] er lagt til som nye valgfrie egenskaper
 
-*For klassen Distribusjon*
+*For klassen Distribusjon:*
 
 * egenskapen link:#distribusjon-format[format] er endret fra anbefalt til obligatorisk
 * egenskapen link:#distribusjon-format[format] er endret til å tillate flere verdier (kardinaliteten endret fra 0..1 til 1..n) 
 * egenskapen *mediatype* er fjernet fordi egenskapen link:#distribusjon-format[format] dekker behovet
 
 
-*Andre endringer* 
+*Andre endringer:* 
 
 * JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML
 * Egenskapene er gitt norske navn (URIer skal brukes -  ikke navnet på egenskapene)
