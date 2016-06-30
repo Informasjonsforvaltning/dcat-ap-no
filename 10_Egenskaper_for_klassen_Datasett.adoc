@@ -30,7 +30,7 @@ Kommentar:: Her har Norge valgt å gjøre er en innskjerping (i forhold til EU) 
 
 URI:: dcat:theme, subproperty of dct:subject
 Range:: skos:Concept
-Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema. Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabluar er anbefalt.
+Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema. Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabular er anbefalt.
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
@@ -70,7 +70,7 @@ Status:: Anbefalt
 
 URI:: dct:accessRights
 Range:: dct:RightsStatement
-Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publication Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen #datasett-skjermingshjemmel[skjermingshjemmel] anbefalt.
+Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publication Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen link:#datasett-skjermingshjemmel[skjermingshjemmel] anbefalt.
 Kardinalitet:: 0..1
 Status:: Anbefalt
 NOTE: Se <<datasett-skjermingshjemmel>>
