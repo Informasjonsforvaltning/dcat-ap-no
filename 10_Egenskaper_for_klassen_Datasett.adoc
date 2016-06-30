@@ -70,7 +70,7 @@ Status:: Anbefalt
 
 URI:: dct:accessRights
 Range:: dct:RightsStatement
-Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Obligatoriske verdier : «offentlig», «begrenset offentlighet», «unntatt offentlighet». Ved bruk av verdiene «begrenset offentlighet» og «unntatt offentlighet» er egenskapen «skjermingshjemmel» anbefalt.
+Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publication Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen #datasett-skjermingshjemmel[skjermingshjemmel] anbefalt.
 Kardinalitet:: 0..1
 Status:: Anbefalt
 NOTE: Se <<datasett-skjermingshjemmel>>
