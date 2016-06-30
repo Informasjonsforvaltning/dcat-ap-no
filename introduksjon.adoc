@@ -49,24 +49,25 @@ standard for beskrivelse av datasett og datakataloger» gitt norske navn.
 Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende DCAT-AP versjon 1.1 på følgende punkter:
 
 === For klassen Datasett:
+* link:#datasett-utgiver[utgiver] er endret fra anbefalt til obligatorisk egenskap. Anbefaling om bruk av URI eller org.nummer er lagt til i beskrivelsen.
+* link:#datasett-tema[tema] er endret fra anbefalt til obligatorisk og http://psi.norge.no/los/struktur.html[LOS] er er lagt til som anbefalt vokabular
+* link:#datasett-identifikator[identifikator] er endret fra valgfri til obligatorisk egenskap 
+* link:#datasett-identifikator[identifikator] endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
 * link:#datasett-tilgangsniva[tilgangsnivå] er endret fra valgfri til anbefalt egenskap
 * link:#datasett-skjermingshjemmel[skjermingshjemmel] er lagt til som ny anbefalt egenskap
 * link:#datasett-begrep[begrep] er lagt til som ny anbefalt egenskap
-* link:#datasett-identifikator[identifikator] er endret fra valgfri til obligatorisk egenskap 
-* link:#datasett-identifikator[identifikator] endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
-* link:#datasett-tema[tema] er endret fra anbefalt til obligatorisk og http://psi.norge.no/los/struktur.html[LOS] er er lagt til som anbefalt vokabular
-* link:#datasett-skaper[skaper] er lagt til som valgfri egenskap
-* relasjonene link:#datasett-er-del-av[er del av]/ link:#datasett-har-del[har del] er lagt til som ny egenskaper
-* relasjonene link:#datasett-krever[krever] / link:#datasett-er-pakrevd-av[er påkrevd av] er lagt til som nye egenskaper
-* relasjonene link:#datasett-erstatter[erstatter] / link:#datasett-erstattes-av[erstattes av] er lagt til som nye egenskaper
-* relasjonene link:#datasett-refererer-til[refererer til] / link:datasett-er-referert-av[er referert av] er lagt til som nye egenskaper
+* link:#datasett-skaper[skaper] er lagt til som ny valgfri egenskap
+* relasjonene link:#datasett-er-del-av[er del av]/ link:#datasett-har-del[har del] er lagt til som nye valgfrie egenskaper
+* relasjonene link:#datasett-krever[krever] / link:#datasett-er-pakrevd-av[er påkrevd av] er lagt til som nye valgfrie egenskaper
+* relasjonene link:#datasett-erstatter[erstatter] / link:#datasett-erstattes-av[erstattes av] er lagt til som nye valgfrie egenskaper
+* relasjonene link:#datasett-refererer-til[refererer til] / link:datasett-er-referert-av[er referert av] er lagt til som nye valgfrie egenskaper
 
 === For klassen Distribusjon:
+* egenskapen link:#distribusjon-format[format] er endret fra anbefalt til obligatorisk
+* egenskapen link:#distribusjon-format[format] er endret til å tillate flere verdier (kardinaliteten endret fra 0..1 til 1..n) 
 * egenskapen *mediatype* er fjernet fordi egenskapen link:#distribusjon-format[format] dekker behovet
-* for egenskapen link:#distribusjon-format[format] er kardinaliteten endret fra 0..1 til 1..n 
+
 
 === Andre endringer: 
-* JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til
-RDF/XML
-* Egenskapene er gitt norske navn (URIer skal brukes -  ikke navnet på
-egenskapene)
+* JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML
+* Egenskapene er gitt norske navn (URIer skal brukes -  ikke navnet på egenskapene)
