@@ -50,7 +50,7 @@ Status:: Obligatorisk
 
 == Ressurs
 
-Engelsk: Resource
+Engelsk:: Resource
 Beskrivelse:: Objekter som ikke er strenger eller primitiver med datatyper.
 URI:: rdfs:Resource
 Referanse:: http://www.w3.org/TR/rdf-schema/#ch_resource
