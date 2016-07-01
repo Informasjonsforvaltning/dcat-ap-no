@@ -1,3 +1,3 @@
 = Diagram
 UML-diagram over alle klassene og egenskapene i DCAT-AP-NO
-image::dcat-ap-no/dcat-ap-no-1-1-diagram.png
+image::dcat-ap-no/dcat-ap-no-1-1-diagram.png[]
