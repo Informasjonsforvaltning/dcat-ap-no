@@ -74,7 +74,7 @@ I tabellen under er en oversikt over kontrollerte vokabular som *må* brukes for
 |Katalog, Datasett
 |Geonames
 |http://sws.geonames.org/
-En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
+|En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
 
 |adms:status
 |Katalogpost
