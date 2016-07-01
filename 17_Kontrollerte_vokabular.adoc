@@ -1,8 +1,6 @@
 = Krav til kontrollerte vokabular
 
-Følgende er en liste over krav som er identifisert for kontrollerte
-vokabular som er anbefalt av den underliggende applikasjonsprofilen
-DCAT-AP.
+Følgende krav er gjeldende for vokabular som skal anbefales brukt i DCAT-AP-NO
 
 Kontrollerte vokabular bør:
 
@@ -24,101 +22,86 @@ de kontrollerte vokabularene som er anbefalt for denne standarden
 
 == Kontrollerte vokabular som skal brukes
 
-Nedenfor er en rekke egenskaper oppført med kontrollerte vokabular som
-må brukes for de nevnte egenskapene.
+I tabellen under er en oversikt over kontrollerte vokabular som *må* brukes for egenskapene i listen. Etablering av disse kontrollerte vokabularene som  obligatoriske, sikrer et minimum av samhandlingsevne 
 
-URI:: dcat:mediaType
-Brukt i klasse:: Distribusjon
-Navn:: MDR File types Name Authority List
-URI for vokabular:: http://publications.europa.eu/mdr/authority/file-type/:
+.Kontrollerte vokabular som skal brukes
+|===
+|URI for egenskap |Brukt i klasse |Navn |Uri for vokabular |Beskrivelse
 
-'''
+|dcat:mediaType
+|Distribusjon
+|MDR File types Name Authority List
+|http://publications.europa.eu/mdr/authority/file-type/:
+|NOTE: Egenskapen dcat:mediaType er foreslått fjernet, og vokabularet blir dermed ikke lenger relevant
 
-URI:: dcat:theme
-Brukt i klasse:: Datasett
-Navn:: EuroVoc domains
-URI for vokabular:: http://eurovoc.europa.eu/
+|dcat:theme
+|Datasett
+|Dataset Theme Vocabulary
+|http://publications.europa.eu/resource/authority/datatheme
+|Verdiene som skal brukes for denne egenskapen er URIene for begrepene i vokabularet skal brukes
 
-'''
+|dcat:themeTaxonomy
+|Katalog
+|Dataset Theme Vocabulary
+|http://publications.europa.eu/resource/authority/datatheme
+|Verdiene som skal brukes for denne egenskapen er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet
 
-URI:: dcat:themeTaxonomy
-Brukt i klasse:: Katalog
-Navn:: EuroVoc
-URI for vokabular:: http://eurovoc.europa.eu/
+|dct:accrualPeriodicity
+|Datasett
+|Dublin Core Collection Description Frequency Vocabulary
+|http://purl.org/cld/freq/
+|
 
-'''
+|dct:format
+|Distribusjon
+|MDR File Type Named Authority List
+|http://publications.europa.eu/mdr/authority/file-type/
+|
 
-URI:: dct:accrualPeriodicity
-Brukt i klasse:: Datasett
-Navn:: Dublin Core Collection Description Frequency Vocabulary
-URI for vokabular:: http://purl.org/cld/freq/
+|dct:language
+|Katalog, Datasett
+|MDR Languages Named Authority List
+|http://publications.europa.eu/mdr/authority/language/
+|
 
-'''
+|dct:publisher
+|Katalog, Datasett
+|MDR Corporate bodies Named Authority List
+|http://publications.europa.eu/mdr/authority/corporate-body/
+|Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
 
-URI:: dct:format
-Brukt i klasse:: Distribusjon
-Navn:: MDR File Type Named Authority List
-URI for vokabular:: http://publications.europa.eu/mdr/authority/file-type/
+|dct:spatial
+|Katalog, Datasett
+|Geonames
+|http://sws.geonames.org/
+En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
 
-'''
+|adms:status
+|Katalogpost
+|ADMS change type vocabulary
+|http://purl.org/adms/changetype/
+|created, :updated, :deleted
 
-URI:: dct:language
-Brukt i klasse:: Katalog, Datasett
-Navn:: MDR Languages Named Authority List
-URI for vokabular:: http://publications.europa.eu/mdr/authority/language/
+|adms:status
+|Distribusjon
+|ADMS status vocabulary
+|http://purl.org/adms/status/
+|Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
 
-'''
+|dct:type
+|Enhet
+|ADMS publisher type vocabulary
+|http://purl.org/adms/publishertype/
+|Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
 
-URI:: dct:publisher
-Brukt i klasse:: Katalog, Datasett
-Navn:: MDR Corporate bodies Named Authority List
-URI for vokabular:: http://publications.europa.eu/mdr/authority/corporate-body/
-Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør nasjonale, regionale eller lokale vokabular brukes.
+|dct:type
+|Lisensdokument
+|ADMS licence type vocabulary
+|http://purl.org/adms/licencetype/
+|Listen over begrep i ADMS-vokabularet for lisenstype er inkludert i ADMS spesifikasjonen
 
-'''
 
-URI:: dct:spatial
-Brukt i klasse:: Katalog, Datasett
-Navn:: MDR Countries Named Authority List, MDR Places Named Authority List
-URI for vokabular:: http://publications.europa.eu/mdr/authority/country/, http://publications.europa.eu/mdr/authority/place/
-Beskrivelse:: Vokabularet for land skal brukes hvis dekningsområde er et spesielt land. Vokabularet for steder skal brukes hvis dekningsområde er en del av et land.
-
-'''
-
-URI:: adms:status
-Brukt i klasse:: Katalogpost
-Navn:: ADMS change type vocabulary
-URI for vokabular:: http://purl.org/adms/changetype/
-Beskrivelse:: :created, :updated, :deleted
-
-'''
-
-URI:: adms:status
-Brukt i klasse:: Distribusjon
-Navn:: ADMS status vocabulary
-URI for vokabular:: http://purl.org/adms/status/
-Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
-
-'''
-
-URI:: dct:type
-Brukt i klasse:: Enhet
-Navn:: ADMS publisher type vocabulary
-URI for vokabular:: http://purl.org/adms/publishertype/Company
-Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
-
-'''
-
-URI:: dct:type
-Brukt i klasse:: Lisensdokument
-Navn:: ADMS licence type vocabulary
-URI for vokabular:: http://purl.org/adms/licencetype/
-Beskrivelse:: Listen over begrep i ADMS-vokabularet for lisenstype er inkludert iADMS spesifikasjonen:
-
-I tillegg til de foreslåtte felles vokabularene ovenfor, kan ytterligere
-domenespesifikke vokabular brukes. Selv om de ikke blir akseptert av
-generelle implementeringer av standarden, kan de bidra til å øke
-interoperabilitet på tvers av applikasjoner innenfor samme domene.
-Eksempler her er komplett sett med begreper i EuroVoc, CERIFs
-standardvokabular, Deweys desimalklassifikasjon og en rekke andre
+I tillegg til de foreslåtte felles-vokabularene ovenfor, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller
+domenespesifikke vokabular som er tilgjengelig på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.
+Eksempler her er komplett sett med begreper i LOS, EuroVoc, CERIFs standardvokabular, Deweys desimalklassifikasjon og en rekke andre
 vokabular.
