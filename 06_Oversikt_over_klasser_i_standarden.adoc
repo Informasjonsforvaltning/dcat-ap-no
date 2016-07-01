@@ -96,7 +96,7 @@ URI:: foaf:Document
 Referanse:: http://xmlns.com/foaf/spec/#term_Document
 Status:: Valgfri
 
-== Frekvens \{#klasser-frekvens}
+== Frekvens
 
 Engelsk:: Frequency
 Beskrivelse:: En frekvensen om noe som gjentar seg, f.eks publisering av et datasett.
