@@ -23,6 +23,8 @@ include::06_Oversikt_over_klasser_i_standarden.adoc[]
 
 include::07_Oversikt_over_URIer_i_bruk.adoc[]
 
+= Egenskaper i standarden per klasse
+
 :leveloffset: +1
 
 include::08_Egenskaper_for_klassen_datakatalog.adoc[]
