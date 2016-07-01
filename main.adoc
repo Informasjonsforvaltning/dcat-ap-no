@@ -23,6 +23,8 @@ include::06_Oversikt_over_klasser_i_standarden.adoc[]
 
 include::07_Oversikt_over_URIer_i_bruk.adoc[]
 
+include::07b_diagram.adoc[]
+
 = Egenskaper pr. klasse
 
 :leveloffset: +1
