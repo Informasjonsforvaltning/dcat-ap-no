@@ -3,3 +3,7 @@
 UML-diagram over alle klassene og egenskapene i DCAT-AP-NO
 
 image::images/dcat-ap-no-1-1-diagram.png[]
+
+link:dcat-ap-no/images/dcat-ap-no-1-1-diagram.png[Last ned diagram som png]. 
+
+link:https://drive.google.com/file/d/0B3HDAWa9wXrZMFJnR2d3cEhjWEk/view?usp=sharing[Last ned diagram som uxf]
