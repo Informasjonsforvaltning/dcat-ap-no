@@ -22,83 +22,78 @@ de kontrollerte vokabularene som er anbefalt for denne standarden
 
 == Kontrollerte vokabular som skal brukes
 
-I tabellen under er en oversikt over kontrollerte vokabular som *må* brukes for egenskapene i listen. Etablering av disse kontrollerte vokabularene som  obligatoriske, sikrer et minimum av samhandlingsevne 
+Under følger en oversikt over kontrollerte vokabular som *må* brukes for egenskapene i listen. Etablering av disse kontrollerte vokabularene som  obligatoriske, sikrer et minimum av samhandlingsevne
 
-.Kontrollerte vokabular som skal brukes
-|===
-|URI for egenskap |Brukt i klasse |Navn |Uri for vokabular |Beskrivelse
+URI:: dcat:mediaType
+Brukt i (klasse):: Distribusjon
+Navn:: IANA Media Types
+URI for vokabularet:: http://www.iana.org/assignments/media-types/mediatypes.xhtml
+WARNING: Egenskapen dcat:mediaType er foreslått fjernet fra klassen Distribusjon
 
-|dcat:mediaType
-|Distribusjon
-|MDR File types Name Authority List
-|http://publications.europa.eu/mdr/authority/file-type/:
-|NOTE: Egenskapen dcat:mediaType er foreslått fjernet, og vokabularet blir dermed ikke lenger relevant
+URI:: dcat:theme
+Brukt i (klasse):: Datasett
+Navn:: Dataset Theme Vocabulary
+URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
+Beskrivelse:: Verdiene som skal brukes for denne egenskapen er URIene for begrepene i vokabularet skal brukes
 
-|dcat:theme
-|Datasett
-|Dataset Theme Vocabulary
-|http://publications.europa.eu/resource/authority/datatheme
-|Verdiene som skal brukes for denne egenskapen er URIene for begrepene i vokabularet skal brukes
+URI:: dcat:themeTaxonomy
+Brukt i (klasse):: Katalog
+Navn:: Dataset Theme Vocabulary
+URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
+Beskrivelse:: Verdiene som skal brukes for denne egenskapen er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet
 
-|dcat:themeTaxonomy
-|Katalog
-|Dataset Theme Vocabulary
-|http://publications.europa.eu/resource/authority/datatheme
-|Verdiene som skal brukes for denne egenskapen er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet
+URI:: dct:accrualPeriodicity
+Brukt i (klasse):: Datasett
+Navn:: Dublin Core Collection Description Frequency Vocabulary
+URI for vokabularet:: http://purl.org/cld/freq/
 
-|dct:accrualPeriodicity
-|Datasett
-|Dublin Core Collection Description Frequency Vocabulary
-|http://purl.org/cld/freq/
-|
+URI:: dct:format
+Brukt i (klasse):: Distribusjon
+Navn:: IANA Media Types
+URI for vokabularet:: http://www.iana.org/assignments/media-types/media-types.xhtml
+Beskrivelse:: Dersom aktuelt filformat ikke finnes hos IANA, angis filformatet etter samme oppbygging
+WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/file-type/[MDR File Type Named Authority List] er endret til IANA Media Types.
 
-|dct:format
-|Distribusjon
-|MDR File Type Named Authority List
-|http://publications.europa.eu/mdr/authority/file-type/
-|
+URI:: dct:language
+Brukt i (klasse):: Katalog, Datasett
+Navn:: MDR Languages Named Authority List
+URI for vokabularet:: http://publications.europa.eu/mdr/authority/language/
 
-|dct:language
-|Katalog, Datasett
-|MDR Languages Named Authority List
-|http://publications.europa.eu/mdr/authority/language/
-|
+URI:: dct:publisher
+Brukt i (klasse):: Katalog, Datasett
+Navn:: MDR Corporate bodies Named Authority List
+URI for vokabularet:: http://publications.europa.eu/mdr/authority/corporate-body/
+Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
 
-|dct:publisher
-|Katalog, Datasett
-|MDR Corporate bodies Named Authority List
-|http://publications.europa.eu/mdr/authority/corporate-body/
-|Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
+URI:: dct:spatial
+Brukt i (klasse):: Katalog, Datasett
+Navn:: Geonames
+URI for vokabularet:: http://sws.geonames.org/
+Beskrivelse:: En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
 
-|dct:spatial
-|Katalog, Datasett
-|Geonames
-|http://sws.geonames.org/
-|En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
+URI:: adms:status
+Brukt i (klasse):: Katalogpost
+Navn:: ADMS change type vocabulary
+URI for vokabularet:: http://purl.org/adms/changetype/
+Beskrivelse:: created, :updated, :deleted
 
-|adms:status
-|Katalogpost
-|ADMS change type vocabulary
-|http://purl.org/adms/changetype/
-|created, :updated, :deleted
+URI:: adms:status
+Brukt i (klasse):: Distribusjon
+Navn:: ADMS status vocabulary
+URI for vokabularet:: http://purl.org/adms/status/
+Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
 
-|adms:status
-|Distribusjon
-|ADMS status vocabulary
-|http://purl.org/adms/status/
-|Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
+URI:: dct:type
+Brukt i (klasse):: Enhet
+Navn:: ADMS publisher type vocabulary
+URI for vokabularet:: http://purl.org/adms/publishertype/
+Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
 
-|dct:type
-|Enhet
-|ADMS publisher type vocabulary
-|http://purl.org/adms/publishertype/
-|Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
-
-|dct:type
-|Lisensdokument
-|ADMS licence type vocabulary
-|http://purl.org/adms/licencetype/
-|Listen over begrep i ADMS-vokabularet for lisenstype er inkludert i ADMS spesifikasjonen
+URI:: dct:type
+Brukt i (klasse):: Lisensdokument
+Navn:: ADMS licence type vocabulary
+URI for vokabularet:: http://purl.org/adms/licencetype/
+Beskrivelse:: Listen over begrep i ADMS-vokabularet for lisenstype er inkludert i ADMS spesifikasjonen
 
 
 I tillegg til de foreslåtte felles-vokabularene ovenfor, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller
