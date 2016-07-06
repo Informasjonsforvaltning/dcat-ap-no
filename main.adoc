@@ -1,9 +1,9 @@
 = Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)
+:docinfo:
 :icons: font
 :toc: left
 :toclevels: 3
 :sectlinks:
-:source-highlighter: coderay
 
 link:https:difi.no[Direktoratet for forvaltning og IKT]
 
@@ -53,5 +53,3 @@ include::16_Egenskaper_for_klassen_Tidsperiode.adoc[]
 :leveloffset: -1
 
 include::17_Kontrollerte_vokabular.adoc[]
-
-:leveloffset: -1
