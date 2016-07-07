@@ -35,6 +35,6 @@ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underligg
 . <<distribusjon-format>> er endret til å tillate flere verdier (kardinaliteten er endret fra 0..1 til 1..n)
 . <<distribusjon-format>> har endret beskrivelse: IANA Media Types skal brukes. Formater som ikke er på IANA-listen legges til etter samme struktur.
 . egenskapen *mediatype* er fjernet fordi egenskapen <<distribusjon-format>> er vurdert til å dekke behovet
-. egenskapen <<enhet-organisasjonsidentifikator>> er lagt til som ny egenskap 
+. egenskapen <<enhet-organisasjonsidentifikator>> er lagt til som ny egenskap
 . JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML
 . Egenskapene er gitt norske navn (URIer skal brukes -  ikke navnet på egenskapene)
