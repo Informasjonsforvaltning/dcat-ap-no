@@ -73,7 +73,7 @@ Beskrivelse:: En referanse til administrativ enhet (nivå 1 eller 2) i geonames,
 URI:: adms:status
 Brukt i (klasse):: <<Katalogpost>>
 URI for vokabularet:: http://purl.org/adms/changetype/
-Beskrivelse:: created, :updated, :deleted
+Beskrivelse:: :created, :updated, :deleted
 
 == ADMS status vocabulary
 
