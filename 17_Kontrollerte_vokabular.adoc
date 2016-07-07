@@ -24,17 +24,9 @@ Under følger en oversikt over kontrollerte vokabular som *må* brukes for egens
 
 [vocabular]
 URI:: dcat:theme
-Brukt i (klasse):: Datasett
+Brukt i (klasse):: <<Datasett>>, <<Katalog>>
 URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
-Beskrivelse:: Verdiene som skal brukes for denne egenskapen er URIene for begrepene i vokabularet skal brukes
-
-== Dataset Theme Vocabulary
-
-[vocabular]
-URI:: dcat:themeTaxonomy
-Brukt i (klasse):: Katalog
-URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
-Beskrivelse:: Verdiene som skal brukes for denne egenskapen er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet
+Beskrivelse:: Verdiene som skal brukes for <<datasett-tema>>  er URIene for begrepene i selve vokabularene som brukes. Verdiene som skal brukes for <<katalog-temaer>> er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet.
 
 == Dublin Core Collection Description Frequency Vocabulary
 
