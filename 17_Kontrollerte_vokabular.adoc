@@ -39,7 +39,7 @@ URI for vokabularet:: http://purl.org/cld/freq/
 
 [vocabular]
 URI:: dct:format
-Brukt i (klasse):: Distribusjon
+Brukt i (klasse):: <<Distribusjon>>
 URI for vokabularet:: http://www.iana.org/assignments/media-types/media-types.xhtml
 Beskrivelse:: Dersom aktuelt filformat ikke finnes hos IANA, angis filformatet etter samme oppbygging
 WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/file-type/[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
@@ -48,14 +48,14 @@ WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/f
 
 [vocabular]
 URI:: dct:language
-Brukt i (klasse):: Katalog, Datasett
+Brukt i (klasse):: <<Katalog>>, <<Datasett>>
 URI for vokabularet:: http://publications.europa.eu/mdr/authority/language/
 
 == MDR Corporate bodies Named Authority List
 
 [vocabular]
 URI:: dct:publisher
-Brukt i (klasse):: Katalog, Datasett
+Brukt i (klasse):: <<Katalog>>, <<Datasett>>
 URI for vokabularet:: http://publications.europa.eu/mdr/authority/corporate-body/
 Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
 
@@ -63,7 +63,7 @@ Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med inter
 
 [vocabular]
 URI:: dct:spatial
-Brukt i (klasse):: Katalog, Datasett
+Brukt i (klasse):: <<Katalog>>, <<Datasett>>
 URI for vokabularet:: http://sws.geonames.org/
 Beskrivelse:: En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
 
@@ -71,7 +71,7 @@ Beskrivelse:: En referanse til administrativ enhet (nivå 1 eller 2) i geonames,
 
 [vocabular]
 URI:: adms:status
-Brukt i (klasse):: Katalogpost
+Brukt i (klasse):: <<Katalogpost>>
 URI for vokabularet:: http://purl.org/adms/changetype/
 Beskrivelse:: created, :updated, :deleted
 
@@ -79,7 +79,7 @@ Beskrivelse:: created, :updated, :deleted
 
 [vocabular]
 URI:: adms:status
-Brukt i (klasse):: Distribusjon
+Brukt i (klasse):: <<Distribusjon>>
 URI for vokabularet:: http://purl.org/adms/status/
 Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
 
@@ -87,7 +87,7 @@ Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-s
 
 [vocabular]
 URI:: dct:type
-Brukt i (klasse):: Enhet
+Brukt i (klasse):: <<Enhet>>
 URI for vokabularet:: http://purl.org/adms/publishertype/
 Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
 
@@ -95,7 +95,7 @@ Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert
 
 [vocabular]
 URI:: dct:type
-Brukt i (klasse):: Lisensdokument
+Brukt i (klasse):: <<Lisensdokument>>
 URI for vokabularet:: http://purl.org/adms/licencetype/
 Beskrivelse:: Listen over begrep i ADMS-vokabularet for lisenstype er inkludert i ADMS spesifikasjonen
 
