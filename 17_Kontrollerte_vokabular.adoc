@@ -1,8 +1,8 @@
 = Krav til kontrollerte vokabular
 
-Følgende krav er gjeldende for vokabular som skal anbefales brukt i DCAT-AP-NO
+Følgende kriterier er gjeldende for vokabular som skal anbefales i dette dokumentet.
 
-Kontrollerte vokabular bør:
+Alle vokabular som skal anbefales for bruk i denne standarden bør:
 
 * være publisert under en åpen lisens.
 * brukes og / eller bli vedlikeholdt av en institusjon i Norge eller EU,
@@ -10,91 +10,112 @@ av anerkjent standardiseringsorganisasjon eller en annen pålitelig
 organisasjon.
 * være skikkelig dokumentert.
 * ha etiketter på flere språk.
-* inneholde et relativt lite antall begrep (f.eks 10-25) som er
+* inneholde et relativt lite antall begreper (f.eks 10-25) som er
 generelle nok til at et bredt spekter av ressurser kan klassifiseres.
-* har vilkår som er identifisert av URI for vokabularer der hver URI for
-vokabular viser til dokumentasjon av begrepet.
-* har en varighets- og versjonspolicy.
+* ha begreper som er identifisert av URIer der hver URI peker til dokumentasjon av begrepene.
+* ha en varighets- og versjonspolicy.
 
 Disse kriteriene er ikke tenkt å definere et sett med krav til
-kontrollerte ordforråd generelt; de er kun ment brukt for utvelgelse av
+kontrollerte vokabular generelt; de er kun ment brukt for utvelgelse av
 de kontrollerte vokabularene som er anbefalt for denne standarden
 
-== Kontrollerte vokabular som skal brukes
+= Kontrollerte vokabular som skal brukes
 
 Under følger en oversikt over kontrollerte vokabular som *må* brukes for egenskapene i listen. Etablering av disse kontrollerte vokabularene som  obligatoriske, sikrer et minimum av samhandlingsevne
 
+== IANA Media Types
+
 URI:: dcat:mediaType
 Brukt i (klasse):: Distribusjon
-Navn:: IANA Media Types
 URI for vokabularet:: http://www.iana.org/assignments/media-types/mediatypes.xhtml
 WARNING: Egenskapen dcat:mediaType er foreslått fjernet fra klassen Distribusjon
 
+== Dataset Theme Vocabulary
+
+[vocabular]
 URI:: dcat:theme
 Brukt i (klasse):: Datasett
-Navn:: Dataset Theme Vocabulary
 URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
 Beskrivelse:: Verdiene som skal brukes for denne egenskapen er URIene for begrepene i vokabularet skal brukes
 
+== Dataset Theme Vocabulary
+
+[vocabular]
 URI:: dcat:themeTaxonomy
 Brukt i (klasse):: Katalog
-Navn:: Dataset Theme Vocabulary
 URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
 Beskrivelse:: Verdiene som skal brukes for denne egenskapen er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet
 
+== Dublin Core Collection Description Frequency Vocabulary
+
+[vocabular]
 URI:: dct:accrualPeriodicity
 Brukt i (klasse):: Datasett
-Navn:: Dublin Core Collection Description Frequency Vocabulary
 URI for vokabularet:: http://purl.org/cld/freq/
 
+== IANA Media Types
+
+[vocabular]
 URI:: dct:format
 Brukt i (klasse):: Distribusjon
-Navn:: IANA Media Types
 URI for vokabularet:: http://www.iana.org/assignments/media-types/media-types.xhtml
 Beskrivelse:: Dersom aktuelt filformat ikke finnes hos IANA, angis filformatet etter samme oppbygging
-WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/file-type/[MDR File Type Named Authority List] er endret til IANA Media Types.
+WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/file-type/[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
 
+== MDR Languages Named Authority List
+
+[vocabular]
 URI:: dct:language
 Brukt i (klasse):: Katalog, Datasett
-Navn:: MDR Languages Named Authority List
 URI for vokabularet:: http://publications.europa.eu/mdr/authority/language/
 
+== MDR Corporate bodies Named Authority List
+
+[vocabular]
 URI:: dct:publisher
 Brukt i (klasse):: Katalog, Datasett
-Navn:: MDR Corporate bodies Named Authority List
 URI for vokabularet:: http://publications.europa.eu/mdr/authority/corporate-body/
 Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
 
+== Geonames
+
+[vocabular]
 URI:: dct:spatial
 Brukt i (klasse):: Katalog, Datasett
-Navn:: Geonames
 URI for vokabularet:: http://sws.geonames.org/
 Beskrivelse:: En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
 
+== ADMS change type vocabulary
+
+[vocabular]
 URI:: adms:status
 Brukt i (klasse):: Katalogpost
-Navn:: ADMS change type vocabulary
 URI for vokabularet:: http://purl.org/adms/changetype/
 Beskrivelse:: created, :updated, :deleted
 
+== ADMS status vocabulary
+
+[vocabular]
 URI:: adms:status
 Brukt i (klasse):: Distribusjon
-Navn:: ADMS status vocabulary
 URI for vokabularet:: http://purl.org/adms/status/
 Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
 
+== ADMS publisher type vocabulary
+
+[vocabular]
 URI:: dct:type
 Brukt i (klasse):: Enhet
-Navn:: ADMS publisher type vocabulary
 URI for vokabularet:: http://purl.org/adms/publishertype/
 Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
 
+== ADMS licence type vocabulary
+
+[vocabular]
 URI:: dct:type
 Brukt i (klasse):: Lisensdokument
-Navn:: ADMS licence type vocabulary
 URI for vokabularet:: http://purl.org/adms/licencetype/
 Beskrivelse:: Listen over begrep i ADMS-vokabularet for lisenstype er inkludert i ADMS spesifikasjonen
-
 
 I tillegg til de foreslåtte felles-vokabularene ovenfor, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller
 domenespesifikke vokabular som er tilgjengelig på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.
