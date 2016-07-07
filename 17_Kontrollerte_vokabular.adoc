@@ -1,13 +1,11 @@
 = Krav til kontrollerte vokabular
 
-Følgende kriterier er gjeldende for vokabular som skal anbefales i dette dokumentet.
+Følgende kriterier er gjeldende for vokabular som skal anbefales for bruk i denne standarden:
 
-Alle vokabular som skal anbefales for bruk i denne standarden bør:
+De bør:
 
 * være publisert under en åpen lisens.
-* brukes og / eller bli vedlikeholdt av en institusjon i Norge eller EU,
-av anerkjent standardiseringsorganisasjon eller en annen pålitelig
-organisasjon.
+* brukes og / eller bli vedlikeholdt av en institusjon i Norge eller EU, av et anerkjent standardiseringsorganisasjon eller en annen pålitelig organisasjon.
 * være skikkelig dokumentert.
 * ha etiketter på flere språk.
 * inneholde et relativt lite antall begreper (f.eks 10-25) som er
@@ -15,20 +13,12 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres.
 * ha begreper som er identifisert av URIer der hver URI peker til dokumentasjon av begrepene.
 * ha en varighets- og versjonspolicy.
 
-Disse kriteriene er ikke tenkt å definere et sett med krav til
-kontrollerte vokabular generelt; de er kun ment brukt for utvelgelse av
-de kontrollerte vokabularene som er anbefalt for denne standarden
+Disse kriteriene er ikke tenkt å definere et sett med krav til kontrollerte vokabular generelt; de er kun ment brukt for utvelgelse av de kontrollerte vokabularene som er anbefalt for denne standarden
 
 = Kontrollerte vokabular som skal brukes
 
 Under følger en oversikt over kontrollerte vokabular som *må* brukes for egenskapene i listen. Etablering av disse kontrollerte vokabularene som  obligatoriske, sikrer et minimum av samhandlingsevne
 
-== IANA Media Types
-
-URI:: dcat:mediaType
-Brukt i (klasse):: Distribusjon
-URI for vokabularet:: http://www.iana.org/assignments/media-types/mediatypes.xhtml
-WARNING: Egenskapen dcat:mediaType er foreslått fjernet fra klassen Distribusjon
 
 == Dataset Theme Vocabulary
 
@@ -117,7 +107,6 @@ Brukt i (klasse):: Lisensdokument
 URI for vokabularet:: http://purl.org/adms/licencetype/
 Beskrivelse:: Listen over begrep i ADMS-vokabularet for lisenstype er inkludert i ADMS spesifikasjonen
 
-I tillegg til de foreslåtte felles-vokabularene ovenfor, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller
-domenespesifikke vokabular som er tilgjengelig på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.
+I tillegg til de foreslåtte felles-vokabularene ovenfor, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabular som er tilgjengelig på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.
 Eksempler her er komplett sett med begreper i LOS, EuroVoc, CERIFs standardvokabular, Deweys desimalklassifikasjon og en rekke andre
 vokabular.
