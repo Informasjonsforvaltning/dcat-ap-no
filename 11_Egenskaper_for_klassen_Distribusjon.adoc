@@ -4,6 +4,7 @@ Egenskaper for klassen Distribusjon (anbefalt)
 
 == Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
 
+[properties]
 URI:: dcat:accessURL
 Range:: rdfs:Resource
 Beskrivelse:: En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til i datasettet
@@ -12,6 +13,7 @@ Status:: Obligatorisk
 
 == Distribusjon: beskrivelse [[distribusjon-beskrivelse]]
 
+[properties]
 URI:: dct:description
 Range:: rdfs:Literal
 Beskrivelse:: Fritekstbeskrivelse av distribusjonen. Kan repeteres for parallelle språkversjoner
@@ -20,6 +22,7 @@ Status:: Anbefalt
 
 == Distribusjon: format [[distribusjon-format]]
 
+[properties]
 URI:: dct:format
 Range:: dct:MediaTypeOrExtent
 Beskrivelse:: Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
@@ -29,6 +32,7 @@ Kommentar:: Norsk utvidelse - Denne egenskapen skal brukes istedetfor  <<distrib
 
 == Distribusjon: lisens [[distribusjon-lisens]]
 
+[properties]
 URI:: dct:license
 Range:: dct:LicenseDocument
 Beskrivelse:: Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, feks http://data.norge.no/nlod/no/1.0
@@ -37,6 +41,7 @@ Status:: Anbefalt
 
 == Distribusjon: filstørrelse [[distribusjon-filstrrelse]]
 
+[properties]
 URI:: dcat:byteSize
 Range:: rdfs:Literal typed as xsd:decimal
 Beskrivelse:: Distribusjonens størrelse oppgitt i bytes
@@ -45,6 +50,7 @@ Status:: Valgfri
 
 == Distribusjon: sjekksum [[distribusjon-sjekksum]]
 
+[properties]
 URI:: spdx:checksum
 Range:: spdx:Checksum
 Beskrivelse:: Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg)
@@ -53,6 +59,7 @@ Status:: Valgfri
 
 == Distribusjon: dokumentasjon [[distribusjon-dokumentasjon]]
 
+[properties]
 URI:: foaf:page
 Range:: foaf:Document
 Beskrivelse:: Referanse til en side eller et dokument som beskriver distribusjonen
@@ -61,6 +68,7 @@ Status:: Valgfri
 
 == Distribusjon: nedlastningslenke [[distribusjon-nedlastningslenke]]
 
+[properties]
 URI:: dcat:downloadURL
 Range:: rdfs:Resource
 Beskrivelse:: Direktelenke (URL) til en nedlastbar fil i et gitt format
@@ -69,6 +77,7 @@ Status:: Valgfri
 
 == Distribusjon: språk [[distribusjon-sprak]]
 
+[properties]
 URI:: dct:language
 Range:: dct:LinguisticSystem
 Beskrivelse:: Referanse til språk som er brukt i distribusjonen
@@ -77,6 +86,7 @@ Status:: Valgfri
 
 == Distribusjon: samsvarer med [[distribusjon-samsvarer-med]]
 
+[properties]
 URI:: dct:conformsTo
 Range:: dct:Standard
 Beskrivelse:: Referanse til et etablert skjema som distribusjonen er i samsvar med
@@ -85,6 +95,7 @@ Status:: Valgfri
 
 == Distribusjon: [line-through]#mediatype# [[distribusjon-mediatype]]
 
+[properties]
 URI:: dcat:mediaType, subproperty of dct:format
 Range:: dct:MediaTypeOrExtent
 Beskrivelse:: Referer til distribusjonens medietype dersom denne er definert i IANA
@@ -94,6 +105,7 @@ Kommentar:: Norsk restriksjon - skal ikke brukes da <<distribusjon-format>> dekk
 
 == Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
 
+[properties]
 URI:: dct:issued
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Dato for formell utgivelse/publisering av distribusjonen
@@ -102,6 +114,7 @@ Status:: Valgfri
 
 == Distribusjon: rettigheter [[distribusjon-rettigheter]]
 
+[properties]
 URI:: dct:rights
 Range:: dct:RightsStatement
 Beskrivelse:: Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
@@ -110,6 +123,7 @@ Status:: Valgfri
 
 == Distribusjon: status [[distribusjon-status]]
 
+[properties]
 URI:: adms:status
 Range:: skos:Concept
 Beskrivelse:: Distribusjonens modenhet (fullført, under utvikling, utgått, trekt tilbake)
@@ -118,6 +132,7 @@ Status:: Valgfri
 
 == Distribusjon: tittel [[distribusjon-tittel]]
 
+[properties]
 URI:: dct:title
 Range:: rdfs:Literal
 Beskrivelse:: Navn på distribusjonen
@@ -126,6 +141,7 @@ Status:: Valgfri
 
 == Distribusjon: modifiseringsdato [[distribusjon-modifiseringsdato]]
 
+[properties]
 URI:: dct:modified
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Dato for siste modifisering av distribusjonen

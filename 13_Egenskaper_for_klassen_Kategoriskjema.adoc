@@ -4,6 +4,7 @@ Egenskaper for klassen Kategoriskjema (obligatorisk)
 
 == Kategoriskjema: tittel [[kategoriskjema-tittel]]
 
+[properties]
 URI:: dct:title
 Range:: rdfs:Literal
 Beskrivelse:: Navn på kategori-skjemaet. Kan gjentas for forskjellige versjoner av navnet

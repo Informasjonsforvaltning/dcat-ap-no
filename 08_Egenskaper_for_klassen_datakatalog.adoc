@@ -4,6 +4,7 @@ Egenskaper for klassen Katalog (obligatorisk):
 
 == Katalog: datasett [[katalog-datasett]]
 
+[properties]
 URI:: dcat:dataset
 Range:: dcat:Dataset
 Beskrivelse:: Kobler katalogen til datasett som er en del av katalogen
@@ -12,6 +13,7 @@ Status:: Obligatorisk
 
 == Katalog: beskrivelse [[katalog-beskrivelse]]
 
+[properties]
 URI:: dct:description
 Range:: rdfs:Literal
 Beskrivelse:: Fritekst-beskrivelse av innholdet i katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av beskrivelsen.
@@ -20,6 +22,7 @@ Status:: Obligatorisk
 
 == Katalog: utgiver [[katalog-utgiver]]
 
+[properties]
 URI:: dct:publisher
 Range:: foaf:Agent
 Beskrivelse:: Referer til en enhet (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
@@ -28,6 +31,7 @@ Status:: Obligatorisk
 
 == Katalog: tittel [[katalog-tittel]]
 
+[properties]
 URI:: dct:title
 Range:: rdfs:Literal
 Beskrivelse:: Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av navnet.
@@ -36,6 +40,7 @@ Status:: Obligatorisk
 
 == Katalog: hjemmeside [[katalog-hjemmeside]]
 
+[properties]
 URI:: foaf:homepage
 Range:: foaf:Document
 Beskrivelse:: Nettside som fungerer som hovedside for katalogen
@@ -44,6 +49,7 @@ Status:: Anbefalt
 
 == Katalog: språk [[katalog-sprak]]
 
+[properties]
 URI:: dct:language
 Range:: dct:LinguisticSystem
 Beskrivelse:: Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
@@ -52,6 +58,7 @@ Status:: Anbefalt
 
 == Katalog: lisens [[katalog-lisens]]
 
+[properties]
 URI:: dct:license
 Range:: dct:LicenseDocument
 Beskrivelse:: Viser til lisens for datakatalogen som beskriver hvordan den kan viderebrukes.
@@ -60,6 +67,7 @@ Status:: Anbefalt
 
 == Katalog: utgivelsesdato [[katalog-utgivelsesdato]]
 
+[properties]
 URI:: dct:issued
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Dato for formell utgivelse (publisering) av katalogen.
@@ -68,6 +76,7 @@ Status:: Anbefalt
 
 == Katalog: temaer [[katalog-temaer]]
 
+[properties]
 URI:: dcat:themeTaxonomy
 Range:: skos:ConceptScheme
 Beskrivelse:: Referer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett
@@ -76,6 +85,7 @@ Status:: Anbefalt
 
 == Katalog: modifiseringsdato [[katalog-modifiseringsdato]]
 
+[properties]
 URI:: dct:modified
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Dato for siste oppdatering/endring av katalogen
@@ -84,6 +94,7 @@ Status:: Anbefalt
 
 == Katalog: er del av [[katalog-er-del-av]]
 
+[properties]
 URI:: dct:isPartOf
 Range:: dcat:Catalog
 Beskrivelse:: Refereranse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
@@ -92,6 +103,7 @@ Status:: Valgfri
 
 == Katalog: har del [[katalog-har-del]]
 
+[properties]
 URI:: dct:hasPart
 Range:: dcat:Catalog
 Beskrivelse:: Referanse til en beslektet katalog som er en del av den beskrevne katalogen
@@ -100,6 +112,7 @@ Status:: Valgfri
 
 == Katalog: katalogpost [[katalog-katalogpost]]
 
+[properties]
 URI:: dcat:record
 Range:: dcat:CatalogRecord
 Beskrivelse:: Referer til en katalogpost som er del av katalogen
@@ -108,6 +121,7 @@ Status:: Valgfri
 
 == Katalog: rettigheter [[katalog-rettigheter]]
 
+[properties]
 URI:: dct:rights
 Range:: dct:RightsStatement
 Beskrivelse:: Uttalelse som spesifiserer rettigheter knyttet til katalogen
@@ -116,6 +130,7 @@ Status:: Valgfri
 
 == Katalog: dekningsområde [[katalog-dekningsomrade]]
 
+[properties]
 URI:: dct:spatial
 Range:: dct:Location
 Beskrivelse:: Referanse til et geografisk område som er dekket av katalogen

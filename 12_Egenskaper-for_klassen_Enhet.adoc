@@ -8,6 +8,7 @@ Egenskaper for klassen Enhet (obligatorisk).
 
 == Enhet: navn [[enhet-navn]]
 
+[properties]
 URI:: foaf:name
 Range:: rdfs:Literal
 Beskrivelse:: Navn på enheten. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk)
@@ -16,6 +17,7 @@ Status:: Obligatorisk
 
 == Enhet: utgivertype [[enhet-utgivertype]]
 
+[properties]
 URI:: dct:type
 Range:: skos:Concept
 Beskrivelse:: Refererer til type for enheten som gjør katalogen eller datasett tilgjengelig
@@ -25,6 +27,7 @@ Status:: Anbefalt
 
 == Enhet: organisasjonsidentifikator [[enhet-organisasjonsidentifikator]]
 
+[properties]
 URI:: dcatno:orgid
 Range:: rdfs:Literal
 Beskrivelse:: Egenskap som angir organisasjonens identifikasjonsnummer, f.eks. i henhold til Enhetsregisterets organisasjonsnummer

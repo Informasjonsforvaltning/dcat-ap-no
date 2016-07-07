@@ -4,6 +4,7 @@ Egenskaper for klassen Tidsperiode (valgfri)
 
 == Tidsperiode: startdato/tid
 
+[properties]
 URI:: schema:startDate
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Definerer starten på perioden
@@ -12,6 +13,7 @@ Status:: Valgfri
 
 == Tidsperiode: sluttdato/tid
 
+[properties]
 URI:: schema:endDate
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Definerer slutten på perioden

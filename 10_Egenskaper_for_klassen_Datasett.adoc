@@ -3,6 +3,8 @@
 Egenskaper for klassen Datasett (obligatorisk)
 
 == Datasett: beskrivelse [[datasett-beskrivelse]]
+
+[properties]
 URI:: dct:description
 Range:: rdfs:Literal
 Beskrivelse:: Inneholder fritekstbeskrivelse av datasettet. Kan gjentas for parallelle språkversjoner
@@ -11,6 +13,7 @@ Status:: Obligatorisk
 
 == Datasett: tittel [[datasett-tittel]]
 
+[properties]
 URI:: dct:title
 Range:: rdfs:Literal
 Beskrivelse:: Inneholder navnet på datasettet. Kan gjentas for parallelle språkversjoner av navnet
@@ -19,6 +22,7 @@ Status:: Obligatorisk
 
 == Datasett: identifikator [[datasett-identifikator]]
 
+[properties]
 URI:: dct:identifier
 Range:: rdfs:Literal
 Beskrivelse:: Hovedindentifikator for datasettet, f.eks. en URI eller annen identifikator som er globalt unik
@@ -28,6 +32,7 @@ Kommentar:: Her har Norge valgt å gjøre er en innskjerping (i forhold til EU) 
 
 == Datasett: tema [[datasett-tema]]
 
+[properties]
 URI:: dcat:theme, subproperty of dct:subject
 Range:: skos:Concept
 Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema. Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabular er anbefalt.
@@ -36,6 +41,7 @@ Status:: Obligatorisk
 
 == Datasett: utgiver [[datasett-utgiver]]
 
+[properties]
 URI:: dct:publisher
 Range:: foaf:Agent
 Beskrivelse:: Refererer til en enhet (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
@@ -44,6 +50,7 @@ Status:: Obligatorisk
 
 == Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
 
+[properties]
 URI:: dcat:contactPoint
 Range:: vcard:Kind
 Beskrivelse:: Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.
@@ -52,6 +59,7 @@ Status:: Anbefalt
 
 == Datasett: datasett distribusjon [[datasett-datasett-distribusjon]]
 
+[properties]
 URI:: dcat:distribution
 Range:: dcat:Distribution
 Beskrivelse:: Koblingen mellom datasettet og en tilgjengelig distribusjon
@@ -60,6 +68,7 @@ Status:: Anbefalt
 
 == Datasett: emneord [[datasett-emneord]]
 
+[properties]
 URI:: dcat:keyword
 Range:: rdfs:Literal
 Beskrivelse:: Inneholder emneord (eller tag) som beskriver datasettet
@@ -68,6 +77,7 @@ Status:: Anbefalt
 
 == Datasett: tilgangsnivå [[datasett-tilgangsniva]]
 
+[properties]
 URI:: dct:accessRights
 Range:: dct:RightsStatement
 Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publication Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen link:#datasett-skjermingshjemmel[skjermingshjemmel] anbefalt.
@@ -77,6 +87,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 
 == Datasett: skjermingshjemmel [[datasett-skjermingshjemmel]]
 
+[properties]
 URI:: dcatno:accessRightsComment
 Range:: skos:Concept
 Beskrivelse:: Henvisning til hjemmel (kilde for påstand) i offentlighetsloven, sikkerhetsloven, beskyttelsesinstruksen eller annet loverk som ligger til grunn for vurdering av tilgangsnivå. Egenskapen er anbefalt dersom «tilgangsnivå» har verdiene «begrenset offentlighet» eller «unntatt offentlighet»
@@ -86,6 +97,7 @@ Kommentar:: Norsk utvidelse.
 
 == Datasett: begrep [[datasett-begrep]]
 
+[properties]
 URI:: dct:subject
 Range:: skos:Concept
 Beskrivelse:: Referanse til sentrale begrep som er viktige for å forstå og tolke datasettet. Representeres som URI-er.
@@ -96,6 +108,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: i samsvar med [[datasett-i-samsvar-med]]
 
+[properties]
 URI:: dct:conformsTo
 Range:: dct:Standard
 Beskrivelse:: Referer til en implementasjons-regel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet
@@ -104,6 +117,7 @@ Status:: Valgfri
 
 == Datasett: dokumentasjon [[datasett-dokumentasjon]]
 
+[properties]
 URI:: foaf:page
 Range:: foaf:Document
 Beskrivelse:: Referanse til en side eller et dokument som beskriver datasettet
@@ -112,6 +126,7 @@ Status:: Valgfri
 
 == Datasett: frekvens [[datasett-frekvens]]
 
+[properties]
 URI:: dct:accrualPeriodicity
 Range:: dct:Frequency
 Beskrivelse:: Referanse til oppdateringsfrekvensen for datasettet. Skal bruke begrep fra 'Frequency Name Authority List' som vedlikeholdes av Publications Office (i stedet for 'Dublin Core Collection Description Frequency')
@@ -120,6 +135,7 @@ Status:: Valgfri
 
 == Datasett: har versjon [[datasett-har-versjon]]
 
+[properties]
 URI:: dct:hasVersion
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet
@@ -128,6 +144,7 @@ Status:: Valgfri
 
 == Datasett: er versjon av [[datasett-er-versjon-av]]
 
+[properties]
 URI:: dct:isVersionOf
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til et beslektet datasett som det beskrevne datasettet er en versjon, utgave, eller tilpasning av
@@ -136,6 +153,7 @@ Status:: Valgfri
 
 == Datasett: landingsside [[datasett-landingsside]]
 
+[properties]
 URI:: dcat:landingPage
 Range:: foaf:Document
 Beskrivelse:: Referanse til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren. 
@@ -144,6 +162,7 @@ Status:: Valgfri
 
 == Datasett: språk [[datasett-sprak]]
 
+[properties]
 URI:: dct:language
 Range:: dct:LinguisticSystem
 Beskrivelse:: Referanse til språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet
@@ -152,6 +171,7 @@ Status:: Valgfri
 
 == Datasett: annen identifikator [[datasett-annen-identifikator]]
 
+[properties]
 URI:: adms:identifier
 Range:: adms:Identifier
 Beskrivelse:: Referanse til en sekundær identifikator av datasettet som MAST/ADS, DataCite, DOI, EZID eller W3ID.
@@ -160,6 +180,7 @@ Status:: Valgfri
 
 == Datasett: opphav [[datasett-opphav]]
 
+[properties]
 URI:: dct:provenance
 Range:: dct:ProvenanceStatement
 Beskrivelse:: Referanse til objekt som beskriver hvor datasettet kommer fra, hvordan det er produsert og hvilken kvalitet det har
@@ -168,6 +189,7 @@ Status:: Valgfri
 
 == Datasett: relatert ressurs [[datasett-relatertressurs]]
 
+[properties]
 URI:: dct:relation
 Range:: rdfs:Resource
 Beskrivelse:: Referanse til en beslektet ressurs
@@ -176,6 +198,7 @@ Status:: Valgfri
 
 == Datasett: utgivelsesdato [[datasett-utgivelsesdato]]
 
+[properties]
 URI:: dct:issued
 Range:: rdfs:Literal typed as xsd:dateTime
 Beskrivelse:: Dato for den formelle utgivelsen av datasettet
@@ -184,6 +207,7 @@ Status:: Valgfri
 
 == Datasett: eksempeldata [[datasett-eksempeldata]]
 
+[properties]
 URI:: adms:sample
 Range:: dcat:Distribution
 Beskrivelse:: Referanse til eksempeldata
@@ -192,6 +216,7 @@ Status:: Valgfri
 
 == Datasett: kilde [[datasett-kilde]]
 
+[properties]
 URI:: dct:source
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til et datasett som gjeldende datasett er avledet fra
@@ -200,6 +225,7 @@ Status:: Valgfri
 
 == Datasett: dekningsområde [[datasett-dekningsomrade]]
 
+[properties]
 URI:: dct:spatial
 Range:: dct:Location
 Beskrivelse:: Referanse til et geografisk område dekket av datasettet
@@ -208,6 +234,7 @@ Status:: Valgfri
 
 == Datasett: tidsperiode [[datasett-tidsperiode]]
 
+[properties]
 URI:: dct:temporal
 Range:: dct:PeriodOfTime
 Beskrivelse:: Referanse til en tidsperiode datasettet gjelder for (startdato og sluttdato)
@@ -216,6 +243,7 @@ Status:: Valgfri
 
 == Datasett: type [[datasett-type]]
 
+[properties]
 URI:: dct:type
 Range:: skos:Concept
 Beskrivelse:: Referanse til et begrep som identifiserer datasettets type. Noe kontrollert vokabular har ikke blitt etablert.
@@ -224,6 +252,7 @@ Status:: Valgfri
 
 == Datasett: modifisert [[datasett-modifisert]]
 
+[properties]
 URI:: dct:modified
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Dato for siste oppdatering av datasettet
@@ -232,6 +261,7 @@ Status:: Valgfri
 
 == Datasett: versjon [[datasett-versjon]]
 
+[properties]
 URI:: owl:versionInfo
 Range:: rdfs:Literal
 Beskrivelse:: Et versjonsnummer eller annen versjonsbetegnelse for datasettet
@@ -240,6 +270,7 @@ Status:: Valgfri
 
 == Datasett: versjonsnote [[datasett-versjonsnote]]
 
+[properties]
 URI:: adms:versionNotes
 Range:: rdfs:Literal
 Beskrivelse:: Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Kan gjentas for parallelle språkversjoner av versjonsnotater.
@@ -248,6 +279,7 @@ Status:: Valgfri
 
 == Datasett: rettighetshaver [[datasett-rettighetshaver]]
 
+[properties]
 URI:: dct:rightsHolder
 Range:: rdfs:Resource
 Beskrivelse:: Referanse til ressurs som har et rettighetsforhold til datasettet
@@ -257,6 +289,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: skaper [[datasett-skaper]]
 
+[properties]
 URI:: dct:creator
 Range:: rdfs:Resource
 Beskrivelse:: Referanse til produsent av datasettet
@@ -266,6 +299,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: referer til [[datasett-refererer-til]]
 
+[properties]
 URI:: dct:references
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på
@@ -275,6 +309,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: er referert av [[datasett-er-referert-av]]
 
+[properties]
 URI:: dct:isReferencedBy
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til datasett som refererer til dette datasettet
@@ -284,6 +319,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: er del av [[datasett-er-del-av]]
 
+[properties]
 URI:: dct:isPartOf
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til datasett som dette datasettet er en del av
@@ -293,6 +329,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: har del [[datasett-har-del]]
 
+[properties]
 URI:: dct:hasPart
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til datasett som er en del av dette datasettet
@@ -302,6 +339,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: krever [[datasett-krever]]
 
+[properties]
 URI:: dct:requires
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til dataset som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett. 
@@ -311,6 +349,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: er påkrevd av [[datasett-er-pakrevd-av]]
 
+[properties]
 URI:: dct:isRequiredBy
 Range:: dcat:Dataset
 Beskrivelse:: Relasjon til datasett som dette datasettet er nødvendig for 
@@ -320,6 +359,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: erstatter [[datasett-erstatter]]
 
+[properties]
 URI:: dct:replaces
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til datasett dette datasettet er ment å erstatte
@@ -329,6 +369,7 @@ Kommentar:: Norsk utvidelse
 
 == Datasett: erstattes av [[datasett-erstattes-av]]
 
+[properties]
 URI:: dct:isReplacedBy
 Range:: dcat:Dataset
 Beskrivelse:: Referanse til datasett som er ment å erstatte dette datasettet

@@ -4,6 +4,7 @@ Egenskaper for klassen Katalogpost (valgfri)
 
 == Katalogpost: primærtema [[katalogpost-primrtema]]
 
+[properties]
 URI:: foaf:primaryTopic
 Range:: dcat:Dataset
 Beskrivelse:: Denne egenskapen lenker katalogposten til datasettet som er beskrevet i katalogposten
@@ -12,6 +13,7 @@ Status:: Obligatorisk
 
 == Katalogpost: modifiseringsdato [[katalogpost-modifiseringsdato]]
 
+[properties]
 URI:: dct:modified
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Denne egenskapen inneholder den nyeste datoen for når katalogposten ble endret eller modifisert.
@@ -20,6 +22,7 @@ Status:: Obligatorisk
 
 == Katalogpost: i samsvar med [[katalogpost-i-samsvar-med]]
 
+[properties]
 URI:: dct:conformsTo
 Range:: rdfs:Resource
 Beskrivelse:: Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med
@@ -28,6 +31,7 @@ Status:: Anbefalt
 
 == Katalogpost: endringstype [[katalogpost-endringstype]]
 
+[properties]
 URI:: adms:status
 Range:: skos:Concept
 Beskrivelse:: Type endring for siste revisjon av en datasettbeskrivelse i katalogen. MÅ ha en av verdiene :created, :updated eller :deleted avhengig av om denne siste revisjonen er et resultat av en ny post, oppdatering eller sletting.
@@ -36,6 +40,7 @@ Status:: Anbefalt
 
 == Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
 
+[properties]
 URI:: dct:issued
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
 Beskrivelse:: Datoen for når beskrivelsen av datasett ble inkludert i datakatalogen.
@@ -44,6 +49,7 @@ Status:: Anbefalt
 
 == Katalogpost: beskrivelse [[katalogpost-beskrivelse]]
 
+[properties]
 URI:: dct:description
 Range:: rdfs:Literal
 Beskrivelse:: Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen kan gjentas for parallelle språkversjoner av beskrivelsen.
@@ -52,6 +58,7 @@ Status:: Valgfri
 
 == Katalogpost: språk [[katalogpost-sprak]]
 
+[properties]
 URI:: dct:language
 Range:: dct:LinguisticSystem
 Beskrivelse:: Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk
@@ -60,6 +67,7 @@ Status:: Valgfri
 
 == Katalogpost:  [[katalogpost-kilde]]
 
+[properties]
 URI:: dct:source
 Range:: dcat:CatalogRecord
 Beskrivelse:: Referanse til den originale katalogposten (metadata) som er brukt for å skape denne katalogposten (metadata) for datasettet
@@ -68,6 +76,7 @@ Status:: Valgfri
 
 == Katalogpost: tittel [[katalogpost-tittel]]
 
+[properties]
 URI:: dct:title
 Range:: rdfs:Literal
 Beskrivelse:: Navnet på katalogen. Denne egenskapen kan gjentas for parallelle språkversjoner av navnet.
