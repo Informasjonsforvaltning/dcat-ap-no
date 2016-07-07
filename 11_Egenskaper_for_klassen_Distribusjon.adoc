@@ -28,7 +28,7 @@ Range:: dct:MediaTypeOrExtent
 Beskrivelse:: Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 Kardinalitet:: 1..n
 Status:: Obligatorisk
-Kommentar:: Norsk utvidelse - Denne egenskapen skal brukes istedetfor  <<distribusjon-mediatype>> 
+Kommentar:: Norsk utvidelse - Denne egenskapen skal brukes istedetfor  <<distribusjon-mediatype>>
 
 == Distribusjon: lisens [[distribusjon-lisens]]
 
@@ -92,16 +92,6 @@ Range:: dct:Standard
 Beskrivelse:: Referanse til et etablert skjema som distribusjonen er i samsvar med
 Kardinalitet:: 0..n
 Status:: Valgfri
-
-== Distribusjon: [line-through]#mediatype# [[distribusjon-mediatype]]
-
-[properties]
-URI:: dcat:mediaType, subproperty of dct:format
-Range:: dct:MediaTypeOrExtent
-Beskrivelse:: Referer til distribusjonens medietype dersom denne er definert i IANA
-Kardinalitet:: 0..1
-Status:: Valgfri
-Kommentar:: Norsk restriksjon - skal ikke brukes da <<distribusjon-format>> dekker behovet.
 
 == Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
 
