@@ -11,9 +11,7 @@ Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede dat
 DCAT-AP-NO er basert på den europeiske DCAT-profilen https://joinup.ec.europa.eu/asset/dcat_application_profile/description[DCAT
 application profile for data portals in Europe] som er forvaltet av http://ec.europa.eu/isa/[EU-kommisjonens ISA-program].
 
-Egenskapsnavnene fra den underliggende DCAT-AP er i denne standarden gitt norske navn.
-
-NOTE: Siden standarden legger til rette for internasjonal utveksling, skal engelske egenskapsnavn i form av URIer benyttes.
+Egenskapsnavnene fra den underliggende DCAT-AP er i denne standarden gitt norske navn. Siden standarden legger til rette for internasjonal utveksling, skal engelske egenskapsnavn i form av URIer benyttes.
 
 == Avvik fra EUs DCAT-AP
 Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende link:https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11[DCAT-AP versjon 1.1] på følgende punkter:
@@ -24,7 +22,7 @@ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underligg
 . <<datasett-tema>> har endret beskrivelse: http://psi.norge.no/los/struktur.html[LOS] lagt til som anbefalt vokabular
 . <<datasett-identifikator>> er endret fra valgfri til obligatorisk egenskap
 . <<datasett-identifikator>> er endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
-. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List] link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Bruk av link:http://sws.geonames.org/[Geonames] er endret til påkrevd
+. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List],  link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Bruk av link:http://sws.geonames.org/[Geonames] er endret til påkrevd
 . <<datasett-tilgangsniva>> er endret fra valgfri til anbefalt egenskap
 . <<datasett-skjermingshjemmel>> er lagt til som ny anbefalt egenskap
 . <<datasett-begrep>> er lagt til som ny anbefalt egenskap
