@@ -25,10 +25,10 @@ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underligg
 . <<datasett-identifikator>> er endret fra valgfri til obligatorisk egenskap
 . <<datasett-identifikator>> er endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
 . for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List] link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Bruk av link:http://sws.geonames.org/[Geonames] er endret til påkrevd
-. <<tilgangsnivå>> er endret fra valgfri til anbefalt egenskap
-. <<skjermingshjemmel>> er lagt til som ny anbefalt egenskap
-. <<begrep>> er lagt til som ny anbefalt egenskap
-. <<skaper>> (opphavsorganisasjon) er lagt til som ny valgfri egenskap
+. <<datasett-tilgangsniva>> er endret fra valgfri til anbefalt egenskap
+. <<datasett-skjermingshjemmel>> er lagt til som ny anbefalt egenskap
+. <<datasett-begrep>> er lagt til som ny anbefalt egenskap
+. <<datasett-skaper>> (opphavsorganisasjon) er lagt til som ny valgfri egenskap
 . relasjonene <<datasett-er-del-av>> og <<datasett-har-del>> er lagt til som nye valgfrie egenskaper
 . relasjonene <<datasett-krever>> og <<datasett-er-pakrevd-av>> er lagt til som nye valgfrie egenskaper
 . relasjonene <<datasett-erstatter>> og <<datasett-erstattes-av>> er lagt til som nye valgfrie egenskaper
