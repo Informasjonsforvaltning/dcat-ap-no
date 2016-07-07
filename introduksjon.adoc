@@ -18,32 +18,24 @@ NOTE: Siden standarden legger til rette for internasjonal utveksling, skal engel
 == Avvik fra EUs DCAT-AP
 Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende link:https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11[DCAT-AP versjon 1.1] på følgende punkter:
 
-*For klassen Datasett:*
-
-. <<datasett-utgiver>> er endret fra anbefalt til obligatorisk egenskap. Anbefaling om bruk av URI eller org.nummer fra enhetsregisteret er lagt til i beskrivelsen.
-. link:#datasett-tema[tema] er endret fra anbefalt til obligatorisk
-. for link:#datasett-tema[tema] er http://psi.norge.no/los/struktur.html[LOS] lagt til som anbefalt vokabular
-. link:#datasett-identifikator[identifikator] er endret fra valgfri til obligatorisk egenskap
-. link:#datasett-identifikator[identifikator] endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
-. for egenskapen link:#datasett-dekningsomrade[dekningsområde] er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List] link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Bruk av link:http://sws.geonames.org/[Geonames] er endret til påkrevd
-. link:#datasett-tilgangsniva[tilgangsnivå] er endret fra valgfri til anbefalt egenskap
-. link:#datasett-skjermingshjemmel[skjermingshjemmel] er lagt til som ny anbefalt egenskap
-. link:#datasett-begrep[begrep] er lagt til som ny anbefalt egenskap
-. link:#datasett-skaper[skaper] er lagt til som ny valgfri egenskap
-. relasjonene link:#datasett-er-del-av[er del av]/ link:#datasett-har-del[har del] er lagt til som nye valgfrie egenskaper
-. relasjonene link:#datasett-krever[krever] / link:#datasett-er-pakrevd-av[er påkrevd av] er lagt til som nye valgfrie egenskaper
-. relasjonene link:#datasett-erstatter[erstatter] / link:#datasett-erstattes-av[erstattes av] er lagt til som nye valgfrie egenskaper
-. relasjonene link:#datasett-refererer-til[refererer til] / link:datasett-er-referert-av[er referert av] er lagt til som nye valgfrie egenskaper
-
-*For klassen Distribusjon:*
-
-. egenskapen link:#distribusjon-format[format] er endret fra anbefalt til obligatorisk.
-. egenskapen link:#distribusjon-format[format] er endret til å tillate flere verdier (kardinaliteten endret fra 0..1 til 1..n)
-. egenskapen link:#distribusjon-format[format] har endret beskrivelse: IANA Media Types skal brukes. Formater som ikke er på IANA-listen legges til etter samme struktur.
-. egenskapen *mediatype* er fjernet fordi egenskapen link:#distribusjon-format[format] dekker behovet
-
-
-*Andre endringer:*
-
-* JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML
-* Egenskapene er gitt norske navn (URIer skal brukes -  ikke navnet på egenskapene)
+. <<datasett-utgiver>> er endret fra anbefalt til obligatorisk egenskap.
+. <<datasett-utgiver>> har endret beskrivelse: Anbefaling om bruk av autorativ URI eller organisasjonsnummer er lagt til i beskrivelsen.
+. <<datasett-tema>> er endret fra anbefalt til obligatorisk egenskap.
+. <<datasett-tema>> har endret beskrivelse: http://psi.norge.no/los/struktur.html[LOS] lagt til som anbefalt vokabular
+. <<datasett-identifikator>> er endret fra valgfri til obligatorisk egenskap
+. <<datasett-identifikator>> er endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
+. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List] link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Bruk av link:http://sws.geonames.org/[Geonames] er endret til påkrevd
+. <<tilgangsnivå>> er endret fra valgfri til anbefalt egenskap
+. <<skjermingshjemmel>> er lagt til som ny anbefalt egenskap
+. <<begrep>> er lagt til som ny anbefalt egenskap
+. <<skaper>> (opphavsorganisasjon) er lagt til som ny valgfri egenskap
+. relasjonene <<datasett-er-del-av>> og <<datasett-har-del>> er lagt til som nye valgfrie egenskaper
+. relasjonene <<datasett-krever>> og <<datasett-er-pakrevd-av>> er lagt til som nye valgfrie egenskaper
+. relasjonene <<datasett-erstatter>> og <<datasett-erstattes-av>> er lagt til som nye valgfrie egenskaper
+. relasjonene <<datasett-refererer-til>> og <<datasett-er-referert-av>> er lagt til som nye valgfrie egenskaper
+. <<distribusjon-format>> er endret fra anbefalt til obligatorisk.
+. <<distribusjon-format>> er endret til å tillate flere verdier (kardinaliteten er endret fra 0..1 til 1..n)
+. <<distribusjon-format>> har endret beskrivelse: IANA Media Types skal brukes. Formater som ikke er på IANA-listen legges til etter samme struktur.
+. egenskapen *mediatype* er fjernet fordi egenskapen <<distribusjon-format>> er vurdert til å dekke behovet
+. JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML
+. Egenskapene er gitt norske navn (URIer skal brukes -  ikke navnet på egenskapene)
