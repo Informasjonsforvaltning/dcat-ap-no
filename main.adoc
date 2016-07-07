@@ -7,7 +7,7 @@
 
 link:https:difi.no[Direktoratet for forvaltning og IKT]
 
-WARNING: Dette er et høringsutkast til versjon 1.1 av standarden. Frist for tilbakemeldinger er 25. august 2016. Les mer på https://www.difi.no/artikkel/2016/07/revisjonsnotat-standarder-beskrivelse-av-datasett-og-datakataloger[difi.no]  Endelig versjon blir lagt frem for Standardiseringsrådet 15. september 2016.
+WARNING: Dette er et høringsutkast til versjon 1.1 av standarden. Frist for tilbakemeldinger er 25. august 2016. Les mer på https://www.difi.no/artikkel/2016/07/revisjonsnotat-standarder-beskrivelse-av-datasett-og-datakataloger[difi.no]. Endelig versjon blir lagt frem for Standardiseringsrådet 15. september 2016.
 
 Lenke til gjeldende versjon (1.0): http://difi.github.io/dcat-ap-no/
 
