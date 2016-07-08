@@ -3,10 +3,14 @@
 Dokumentet beskriver “Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)” som skal sikre at beskrivelser av offentlige
 data utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
 
-Formålet med standarden er å legge tilrette for utveksling av beskrivelser av datasett, og å lette søk etter datasett. Standarden vil
+Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett, og å lette søk etter datasett. Standarden vil
 gjelde datasett som forvaltes av offentlig sektor, og som beskrives med tanke på oppføring i en katalog eller «inventarliste». Standarden vil støtte søking i og deling av datasett på tvers av offentlig sektor (gjenbruk) og legge til rette for viderebruk i privat sektor. Standarden er således nyttig både for offentlig sektor selv og for næringsliv og sivilsamfunn for øvrig.
 
-Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: http://www.w3.org/TR/swbp-vocab-pub/[Best Practice Recipes for Publishing RDF Vocabularies], http://www.w3.org/TR/ld-bp[Best Practices for Publishing Linked Data] og ISA-rapporten https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs]. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden. Språk bør angis for alle literaler i tråd med http://www.loc.gov/standards/iso639-2/php/code_list.php[ISO 639].
+Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: http://www.w3.org/TR/swbp-vocab-pub/[Best Practice Recipes for Publishing RDF Vocabularies], http://www.w3.org/TR/ld-bp[Best Practices for Publishing Linked Data] og ISA-rapporten https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs]. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden.
+
+NOTE: Difi har utredet behovet for anbefalte og obligatoriske standarder for pekere til offentlige ressurser på nett. link:https://www.difi.no/artikkel/2016/05/utredning-av-standarder-pekere-til-offentlige-ressurser-pa-nett-v10[Les mer på standard.difi.no]
+
+Språk bør angis for alle literaler i tråd med http://www.loc.gov/standards/iso639-2/php/code_list.php[ISO 639].
 
 DCAT-AP-NO er basert på den europeiske DCAT-profilen https://joinup.ec.europa.eu/asset/dcat_application_profile/description[DCAT
 application profile for data portals in Europe] som er forvaltet av http://ec.europa.eu/isa/[EU-kommisjonens ISA-program].
@@ -17,12 +21,12 @@ Egenskapsnavnene fra den underliggende DCAT-AP er i denne standarden gitt norske
 Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende link:https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11[DCAT-AP versjon 1.1] på følgende punkter:
 
 . <<datasett-utgiver>> er endret fra anbefalt til obligatorisk egenskap.
-. <<datasett-utgiver>> har endret beskrivelse: Anbefaling om bruk av autorativ URI eller organisasjonsnummer er lagt til i beskrivelsen.
+. <<datasett-utgiver>> har endret beskrivelse: Anbefaling om bruk av autoritativ URI eller organisasjonsnummer er lagt til i beskrivelsen.
 . <<datasett-tema>> er endret fra anbefalt til obligatorisk egenskap.
 . <<datasett-tema>> har endret beskrivelse: http://psi.norge.no/los/struktur.html[LOS] lagt til som anbefalt vokabular
 . <<datasett-identifikator>> er endret fra valgfri til obligatorisk egenskap
 . <<datasett-identifikator>> er endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
-. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List],  link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Bruk av link:http://sws.geonames.org/[Geonames] er endret til påkrevd
+. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List],  link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Bruk av link:http://sws.geonames.org/[Geonames] er endret til obligatorisk
 . <<datasett-tilgangsniva>> er endret fra valgfri til anbefalt egenskap
 . <<datasett-skjermingshjemmel>> er lagt til som ny anbefalt egenskap
 . <<datasett-begrep>> er lagt til som ny anbefalt egenskap
