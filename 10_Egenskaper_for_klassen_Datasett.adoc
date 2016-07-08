@@ -25,10 +25,10 @@ Status:: Obligatorisk
 [properties]
 URI:: dct:identifier
 Range:: rdfs:Literal
-Beskrivelse:: Hovedindentifikator for datasettet, f.eks. en URI eller annen identifikator som er globalt unik
+Beskrivelse:: Hovedindentifikator for datasettet, for eksempel en URI eller annen identifikator som er globalt unik
 Kardinalitet:: 1..n
 Status:: Obligatorisk
-Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedindentifikator. Denne kan f.eks. være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
+Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedindentifikator. Denne kan for eksempel være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
 
 == Datasett: tema [[datasett-tema]]
 
@@ -90,7 +90,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 [properties]
 URI:: dcatno:accessRightsComment
 Range:: skos:Concept
-Beskrivelse:: Referanse til hjemmel (kilde for påstand) i offentlighetsloven, sikkerhetsloven, beskyttelsesinstruksen eller annet loverk som ligger til grunn for vurdering av tilgangsnivå. Egenskapen er anbefalt dersom «tilgangsnivå» har verdiene «begrenset offentlighet» eller «unntatt offentlighet»
+Beskrivelse:: Referanse til hjemmel (kilde for påstand) i offentlighetsloven, sikkerhetsloven, beskyttelsesinstruksen eller annet lovverk som ligger til grunn for vurdering av tilgangsnivå. Egenskapen er anbefalt dersom «tilgangsnivå» har verdiene «restricted» eller «non-public»
 Kardinalitet:: 0..n
 Status:: Anbefalt
 Kommentar:: Norsk utvidelse. Et eget vokabular skal publiseres av Difi.
