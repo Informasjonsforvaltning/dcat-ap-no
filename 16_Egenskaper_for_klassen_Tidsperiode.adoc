@@ -22,7 +22,7 @@ Status:: Valgfri
 Kommentar:: Vær oppmerksom på at mens begge egenskapene er valgfrie, må en av de to være til stede.
 
 Starten av perioden skal forstås som starten på dato, time, minutt etc.
-gitt (f.eks starter ved midnatt på begynnelsen av dagen hvis verdien er
+gitt (for eksempel starter ved midnatt på begynnelsen av dagen hvis verdien er
 en dato); slutten av perioden skal forstås som i slutten av dato, time,
-minutt etc. gitt (f.eks slutter ved midnatt på slutten av dagen hvis
+minutt etc. gitt (for eksempel slutter ved midnatt på slutten av dagen hvis
 verdien er en dato)
