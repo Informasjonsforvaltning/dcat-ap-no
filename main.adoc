@@ -2,6 +2,7 @@
 :docinfo:
 :icons: font
 :toc: left
+:toc-title: Innholdsfortegnelse
 :toclevels: 3
 :sectlinks:
 
