@@ -1,12 +1,12 @@
 = Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)
+Direktoratet for forvaltning og IKT
+:doctype: book
 :docinfo:
 :icons: font
 :toc: left
 :toc-title: Innholdsfortegnelse
 :toclevels: 3
 :sectlinks:
-
-link:https:difi.no[Direktoratet for forvaltning og IKT]
 
 WARNING: Dette er et høringsutkast til versjon 1.1 av standarden. Frist for tilbakemeldinger er 25. august 2016. Les mer på https://www.difi.no/artikkel/2016/07/revisjonsnotat-standarder-beskrivelse-av-datasett-og-datakataloger[difi.no]. Endelig versjon blir lagt frem for Standardiseringsrådet 15. september 2016.
 
