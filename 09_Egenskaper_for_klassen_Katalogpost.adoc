@@ -65,7 +65,7 @@ Beskrivelse:: Refererer til et språk som er brukt i tekstlige metadata som besk
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Katalogpost:  [[katalogpost-kilde]]
+== Katalogpost: kilde [[katalogpost-kilde]]
 
 [properties]
 URI:: dct:source
