@@ -1,7 +1,7 @@
 = Enhet
 
-Det anbefales at URI til Enhet (foaf:Agent) er identisk med 
-den URI som Enhetsregisteret (Brønnøysundregistrene) har på 
+Det anbefales at URI til Enhet (foaf:Agent) er identisk med
+den URI som Enhetsregisteret (Brønnøysundregistrene) har på
 enheten/virksomheten hvis den finnes i registerert.
 
 Egenskaper for klassen Enhet (obligatorisk).
@@ -28,9 +28,9 @@ Status:: Anbefalt
 == Enhet: organisasjonsidentifikator [[enhet-organisasjonsidentifikator]]
 
 [properties]
-URI:: dcatno:orgid
+URI:: dct:identifier
 Range:: rdfs:Literal
-Beskrivelse:: Egenskap som angir organisasjonens identifikasjonsnummer, f.eks. i henhold til Enhetsregisterets organisasjonsnummer
+Beskrivelse:: Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer
 Kardinalitet:: 0..1
 Status:: Anbefalt
 Kommentar:: Norsk utvidelse

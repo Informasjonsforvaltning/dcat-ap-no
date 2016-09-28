@@ -43,7 +43,7 @@ Status:: Anbefalt
 [properties]
 URI:: dct:issued
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Datoen for når beskrivelsen av datasett ble inkludert i datakatalogen.
+Beskrivelse:: Datoen for når beskrivelsen av datasettet ble inkludert i datakatalogen.
 Kardinalitet:: 0..1
 Status:: Anbefalt
 

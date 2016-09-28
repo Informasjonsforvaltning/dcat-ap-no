@@ -25,7 +25,7 @@ Status:: Obligatorisk
 [properties]
 URI:: dct:identifier
 Range:: rdfs:Literal
-Beskrivelse:: Hovedindentifikator for datasettet, for eksempel en URI eller annen identifikator som er globalt unik
+Beskrivelse:: Hovedidentifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedindentifikator. Denne kan for eksempel være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
@@ -35,7 +35,7 @@ Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved
 [properties]
 URI:: dcat:theme, subproperty of dct:subject
 Range:: skos:Concept
-Beskrivelse:: Referanse til en tema/kategori for datasettet. Et datasett kan assosieres med flere tema. Bruk av EU Publication Office sine "Dataset themes" er påkrevd. Bruk av Difis LOS-vokabular er anbefalt.
+Beskrivelse:: Referanse til et hovudtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/mdr/authority/data-theme/index.html[Data theme] som er publisert av EUs Publication Offices er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Difis Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
@@ -129,7 +129,7 @@ Status:: Valgfri
 [properties]
 URI:: dct:accrualPeriodicity
 Range:: dct:Frequency
-Beskrivelse:: Referanse til oppdateringsfrekvensen for datasettet. Skal bruke begrep fra 'Frequency Name Authority List' som vedlikeholdes av Publications Office (i stedet for 'Dublin Core Collection Description Frequency')
+Beskrivelse:: Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra http://publications.europa.eu/mdr/authority/frequency/index.html[Frequency] Name Authority List som vedlikeholdes av Publications Office.
 Kardinalitet:: 0..1
 Status:: Valgfri
 
@@ -228,7 +228,7 @@ Status:: Valgfri
 [properties]
 URI:: dct:spatial
 Range:: dct:Location
-Beskrivelse:: Referanse til et geografisk område dekket av datasettet
+Beskrivelse:: Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)
 Kardinalitet:: 0..n
 Status:: Valgfri
 
@@ -237,7 +237,7 @@ Status:: Valgfri
 [properties]
 URI:: dct:temporal
 Range:: dct:PeriodOfTime
-Beskrivelse:: Referanse til en tidsperiode datasettet gjelder for (startdato og sluttdato)
+Beskrivelse:: Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601)
 Kardinalitet:: 0..n
 Status:: Valgfri
 

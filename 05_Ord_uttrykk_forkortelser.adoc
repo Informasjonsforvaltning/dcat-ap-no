@@ -13,7 +13,7 @@ Distribusjon::
 En _distribusjon_  er en spesifikk måte å gjøre et datasettet tilgjengelig på. Hvert datasett kan være tilgjengelig på flere måter, for eksempel i ulike format eller fra ulike nettadresser. Eksempel på distribusjoner kan være nedlastbar CSV-fil, et API eller en RSS-strøm.
 
 Åpne data::
-Data som er fritt tilgjengelig for bruk av alle, både mennesker og maskiner. Dataforvaltere kan ikke kreve mer enn å bli oppgitt som kilde.
+Åpne data er digitale data som er gjort tilgjengelig med de tekniske og juridiske egenskaper som er nødvendige for at de skal kunne brukes fritt, og bli distribuert av hvem som helst, når som helst og hvor som helst.
 
 RDF::
 _Resource Description Framework_. En gruppe W3C-spesifikasjoner som beskriver en modell for å representere metadata (data om data). Spesifikasjonene brukes i mange ulike sammenhenger for å beskrive informasjon og er et viktig element i visjonen om den semantiske webben.
@@ -25,7 +25,7 @@ DCAT-AP::
 _DCAT Application profile for data portals in Europe_. En spesifikasjon basert på DCAT for å beskrive offentlige datasett i Europa
 
 DCAT-AP-NO::
-Kortnavnet på denne standarden ("Standard for beskrivelse av datakataloger og datasett").
+Kortnavnet på denne standarden ("Standard for beskrivelse av datasett og datakataloger").
 
 JSON-LD::
 _JavaScript Object Notation for Linked Data_. En JSON-basert serialisering av RDF. Anbefalt av W3C i januar 2014
