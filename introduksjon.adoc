@@ -20,13 +20,10 @@ Egenskapsnavnene fra den underliggende DCAT-AP er i denne standarden gitt norske
 == Avvik fra EUs DCAT-AP
 Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende link:https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11[DCAT-AP versjon 1.1] på følgende punkter:
 
-. <<datasett-utgiver>> er endret fra anbefalt til obligatorisk egenskap.
-. <<datasett-utgiver>> har endret beskrivelse: Anbefaling om bruk av autoritativ URI eller organisasjonsnummer er lagt til i beskrivelsen.
-. <<datasett-tema>> er endret fra anbefalt til obligatorisk egenskap.
-. <<datasett-tema>> har endret beskrivelse: http://psi.norge.no/los/struktur.html[LOS] lagt til som anbefalt vokabular
-. <<datasett-identifikator>> er endret fra valgfri til obligatorisk egenskap
-. <<datasett-identifikator>> er endret fra å være unik i kontekst av katalogen til en globalt unik identifikator
-. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List],  link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Bruk av link:http://sws.geonames.org/[Geonames] er endret til obligatorisk
+. <<datasett-utgiver>> er endret fra anbefalt til obligatorisk egenskap. Anbefaling om bruk av autoritativ URI eller organisasjonsnummer er lagt til i beskrivelsen.
+. <<datasett-tema>> er endret fra anbefalt til obligatorisk egenskap. http://psi.norge.no/los/struktur.html[Los] er lagt til som anbefalt vokabular i beskrivelsen.
+. <<datasett-identifikator>> er endret fra valgfri til obligatorisk egenskap. Beskrivelsen er endret fra å være unik i kontekst av katalogen til en stabil og globalt unik identifikator
+. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List],  link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Beskrivelsen er endret til: _Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)_
 . <<datasett-tilgangsniva>> er endret fra valgfri til anbefalt egenskap
 . <<datasett-skjermingshjemmel>> er lagt til som ny anbefalt egenskap
 . <<datasett-begrep>> er lagt til som ny anbefalt egenskap
@@ -35,9 +32,7 @@ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underligg
 . relasjonene <<datasett-krever>> og <<datasett-er-pakrevd-av>> er lagt til som nye valgfrie egenskaper
 . relasjonene <<datasett-erstatter>> og <<datasett-erstattes-av>> er lagt til som nye valgfrie egenskaper
 . relasjonene <<datasett-refererer-til>> og <<datasett-er-referert-av>> er lagt til som nye valgfrie egenskaper
-. <<distribusjon-format>> er endret fra anbefalt til obligatorisk.
-. <<distribusjon-format>> er endret til å tillate flere verdier (kardinaliteten er endret fra 0..1 til 1..n)
-. <<distribusjon-format>> har endret beskrivelse: IANA Media Types skal brukes. Formater som ikke er på IANA-listen legges til etter samme struktur.
+. <<distribusjon-format>> er endret fra anbefalt til obligatorisk og er samtidig endret til å tillate flere verdier (1..n). Beskrivelsen er endret til: IANA Media Types skal brukes. Formater som ikke er på IANA-listen legges til etter samme struktur.
 . egenskapen *mediatype* er fjernet fordi egenskapen <<distribusjon-format>> er vurdert til å dekke behovet
 . egenskapen <<enhet-organisasjonsidentifikator>> er lagt til som ny egenskap
 . JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML
