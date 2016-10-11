@@ -20,7 +20,7 @@ til standarden via Difis nettsider. Slike innspill vil tas med inn i
 arbeidet med revisjoner initiert av nye DCAT-AP- versjoner, men Difi vil
 også vurdere tilbakemeldingene en gang i året, for å se om noen av dem
 bør føre til oppdateringer utenom disse større revisjonene. Dette kan
-være aktuelt blant annet fordi den nasjonale standard har noen tillegg til
+være aktuelt blant annet fordi den nasjonale standarden har noen tillegg til
 DCAT-AP som for eksempel kan vurderes.
 
 Dersom det oppdages mindre feil i standarden (stavefeil etc), vil ikke
