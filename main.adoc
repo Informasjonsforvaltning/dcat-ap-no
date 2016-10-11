@@ -10,6 +10,12 @@ Direktoratet for forvaltning og IKT
 
 :leveloffset: +1
 
+Versjon: 1.1
+Status: Gjeldende
+Publisert: 11.10.2016
+Lenke til foregående versjon: http://difi.github.io/dcat-ap-no/
+Lenke til siste versjon: https://doc.difi.no/dcat-ap-no/
+
 include::introduksjon.adoc[]
 
 include::03_Omfang_og_avgrensing.adoc[]
