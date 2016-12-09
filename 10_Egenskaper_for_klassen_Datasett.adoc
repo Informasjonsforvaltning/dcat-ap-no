@@ -57,7 +57,7 @@ Beskrivelse:: Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse k
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-== Datasett: datasett distribusjon [[datasett-datasett-distribusjon]]
+== Datasett: datasettdistribusjon [[datasett-datasett-distribusjon]]
 
 [properties]
 URI:: dcat:distribution
@@ -232,7 +232,7 @@ Beskrivelse:: Referanse, primært i form av en URI for et administrativt område
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: tidsperiode [[datasett-tidsperiode]]
+== Datasett: tidsrom [[datasett-tidsrom]]
 
 [properties]
 URI:: dct:temporal

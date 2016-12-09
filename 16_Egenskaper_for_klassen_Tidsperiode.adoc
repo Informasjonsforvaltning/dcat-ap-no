@@ -1,28 +1,28 @@
-= Tidsperiode
+= Tidsrom
 
-Egenskaper for klassen Tidsperiode (valgfri)
+Egenskaper for klassen Tidsrom (valgfri)
 
-== Tidsperiode: startdato/tid
+== Tidsrom: startdato/tid
 
 [properties]
 URI:: schema:startDate
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Definerer starten på perioden
+Beskrivelse:: Definerer starten på tidsrommet
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Tidsperiode: sluttdato/tid
+== Tidsrom: sluttdato/tid
 
 [properties]
 URI:: schema:endDate
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Definerer slutten på perioden
+Beskrivelse:: Definerer slutten på tidsrommet
 Kardinalitet:: 0..1
 Status:: Valgfri
 Kommentar:: Vær oppmerksom på at mens begge egenskapene er valgfrie, må en av de to være til stede.
 
-Starten av perioden skal forstås som starten på dato, time, minutt etc.
+Starten av tidsrommet skal forstås som starten på dato, time, minutt etc.
 gitt (for eksempel starter ved midnatt på begynnelsen av dagen hvis verdien er
-en dato); slutten av perioden skal forstås som i slutten av dato, time,
+en dato); slutten av tidsrommet skal forstås som i slutten av dato, time,
 minutt etc. gitt (for eksempel slutter ved midnatt på slutten av dagen hvis
 verdien er en dato)

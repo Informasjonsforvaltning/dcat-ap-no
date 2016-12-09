@@ -129,7 +129,7 @@ Beskrivelse:: Navn på distribusjonen
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Distribusjon: modifiseringsdato [[distribusjon-modifiseringsdato]]
+== Distribusjon: endringsdato [[distribusjon-endringsdato]]
 
 [properties]
 URI:: dct:modified

@@ -83,7 +83,7 @@ Beskrivelse:: Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt f
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-== Katalog: modifiseringsdato [[katalog-modifiseringsdato]]
+== Katalog: endringsdato [[katalog-endringsdato]]
 
 [properties]
 URI:: dct:modified
