@@ -162,7 +162,7 @@ URI:: dct:MediaTypeOrExtent
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-MediaTypeOrExtent
 Status:: Valgfri
 
-== Tidsperiode
+== Tidsrom
 
 [properties]
 Engelsk:: Period of time
