@@ -134,6 +134,6 @@ Status:: Valgfri
 [properties]
 URI:: dct:modified
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Dato for siste modifisering av distribusjonen
+Beskrivelse:: Dato for siste endring av distribusjonen
 Kardinalitet:: 0..1
 Status:: Valgfri

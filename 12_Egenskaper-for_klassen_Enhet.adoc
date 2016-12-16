@@ -2,7 +2,7 @@
 
 Det anbefales at URI til Enhet (foaf:Agent) er identisk med
 den URI som Enhetsregisteret (Brønnøysundregistrene) har på
-enheten/virksomheten hvis den finnes i registerert.
+enheten/virksomheten hvis den finnes i registeret.
 
 Egenskaper for klassen Enhet (obligatorisk).
 
