@@ -11,7 +11,7 @@ Beskrivelse:: Denne egenskapen lenker katalogposten til datasettet som er beskre
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 
-== Katalogpost: modifiseringsdato [[katalogpost-modifiseringsdato]]
+== Katalogpost: endringsdato [[katalogpost-endringsdato]]
 
 [properties]
 URI:: dct:modified
