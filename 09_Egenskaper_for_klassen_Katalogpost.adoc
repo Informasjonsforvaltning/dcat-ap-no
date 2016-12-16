@@ -16,7 +16,7 @@ Status:: Obligatorisk
 [properties]
 URI:: dct:modified
 Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Denne egenskapen inneholder den nyeste datoen for når katalogposten ble endret eller modifisert.
+Beskrivelse:: Denne egenskapen inneholder den nyeste datoen for når katalogposten ble endret.
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 

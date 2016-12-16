@@ -28,7 +28,7 @@ Range:: rdfs:Literal
 Beskrivelse:: Hovedidentifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik
 Kardinalitet:: 1..n
 Status:: Obligatorisk
-Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedindentifikator. Denne kan for eksempel være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
+Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedidentifikator. Denne kan for eksempel være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
 
 == Datasett: tema [[datasett-tema]]
 
@@ -250,7 +250,7 @@ Beskrivelse:: Referanse til et begrep som identifiserer datasettets type. Noe ko
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Datasett: modifisert [[datasett-modifisert]]
+== Datasett: endret [[datasett-endret]]
 
 [properties]
 URI:: dct:modified
