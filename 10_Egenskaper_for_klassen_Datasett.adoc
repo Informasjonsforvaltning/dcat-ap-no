@@ -250,7 +250,7 @@ Beskrivelse:: Referanse til et begrep som identifiserer datasettets type. Noe ko
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Datasett: endret [[datasett-endret]]
+== Datasett: endringsdato [[datasett-endringsdato]]
 
 [properties]
 URI:: dct:modified
