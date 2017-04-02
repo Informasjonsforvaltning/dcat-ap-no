@@ -1,5 +1,5 @@
 = Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)
-Direktoratet for forvaltning og IKT
+Direktoratet for forvaltning og IKT - Versjon 1.1
 :doctype: book
 :docinfo:
 :icons: font
@@ -10,12 +10,14 @@ Direktoratet for forvaltning og IKT
 
 :leveloffset: +1
 
-Versjon: 1.1 +
 Status: Gjeldende +
 Publisert: 11.10.2016 +
-Lenke til foregående versjon: http://difi.github.io/dcat-ap-no/ +
 Lenke til siste versjon: https://doc.difi.no/dcat-ap-no/ +
 
+Dette dokumentet beskriver “Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)” som skal sikre at beskrivelser av offentlige data utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
+
+NOTE: _Innmelding av feil og mangler_ +
+Dersom du finner feil eller mangler i dokumentet ber vi om at det meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis.
 
 include::introduksjon.adoc[]
 
