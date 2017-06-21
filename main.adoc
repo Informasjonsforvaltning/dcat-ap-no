@@ -16,8 +16,12 @@ Lenke til siste versjon: https://doc.difi.no/dcat-ap-no/ +
 
 Dette dokumentet beskriver “Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)” som skal sikre at beskrivelser av offentlige data utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
 
-NOTE: _Innmelding av feil og mangler_ +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis.
+NOTE: *Innmelding av feil og mangler:* +
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis. +
+ +
+ *Test datakatalogen din med Difis valideringsverktøy:* +
+ Difi har utviklet https://difi.github.io/dcat-ap-no-validator/[en online validator for testing av DCAP-AP-NO-datakataloger]
+
 
 include::introduksjon.adoc[]
 
