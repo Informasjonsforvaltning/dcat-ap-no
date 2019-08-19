@@ -1,0 +1,9 @@
+
+=== Type
+
+----
+dct:type a owl:ObjectProperty ;
+  rdfs:label “type”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range skos:Concept . # refererer til EU publication office typer, se http://publications.europa.eu/mdr/authority/dataset-type/index.html + egendefinerte typer
+----

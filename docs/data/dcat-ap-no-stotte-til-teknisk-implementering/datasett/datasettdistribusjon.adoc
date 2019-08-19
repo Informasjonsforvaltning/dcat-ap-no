@@ -1,0 +1,9 @@
+
+=== Datasettdistribusjon
+
+----
+dcat:distribution a owl:ObjectProperty ;
+  rdfs:label “datasettdistribusjon”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dcat:Distribution .
+----

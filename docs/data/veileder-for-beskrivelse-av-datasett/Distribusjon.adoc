@@ -1,0 +1,201 @@
+== Distribusjon
+
+En distribusjon er en spesifikk måte å gjøre et datasettet tilgjengelig på. Hvert datasett kan være tilgjengelig på flere måter, for eksempel i ulike format eller fra ulike nettadresser. Eksempel på distribusjoner kan være nedlastbar CSV-fil, et API eller en RSS-strøm.
+
+Dersom datasettet allerede har en distribusjon og kan deles, registrerer du det som datasettbeskrivelser og opplyser om de distribusjoner man kan levere.
+
+Det er imidlertid ikke alle datasett som blir distribuert. Hvis datasettet ikke har en distribusjon, registrerer du dette som en datasettbeskrivelse _uten_ distribusjon. Det er bedre å registrere disse datasettene i en katalog og dermed informere andre om at de faktisk finnes, enn å vente på å få en avansert løsning for distribusjon.
+
+Hver distribusjon skal kun ha ett format av data. I teorien skal alle distribusjonene av et datasett inneholde de samme dataene, men i praksis vil man ofte måtte gjøre noen unntak fra dette. Hvis data distribueres både gjennom en fil og et programmeringsgrensesnitt, kan det være at sistnevnte har en annen oppdateringsfrekvens. Dette betyr at det kan være innholdsmessige forskjeller, noe som gjør at distribusjonen egentlig er et annet datasett. Dersom alt annet er likt, kan det likevel være mest hensiktsmessig å beskrive det som ulike distribusjoner av samme datasett. I slike tilfeller blir det viktig å opplyse om avvik i distribusjonens egenskap beskrivelse.
+
+Distribusjonen bør så nært som mulig følge datasettets beskrivelse innholdsmessig.
+
+=== Beskrivelse
+
+.Sammendrag
+Kort beskrivelse av distribusjonen som skiller dem fra hverandre dersom der er flere.
+
+.Anbefalinger
+Beskrivelse skal beskrive egenskaper ved de ulike distribusjonene
+
+ * Er det kun en distribusjon kan beskrivelsen utelates
+ * Ved flere distribusjoner bør beskrivelsen benyttes for å skille dem
+ * Dersom det er et utsnitt spesifikt for distribusjonen/formål til distribusjonen benyttes beskrivelse
+
+.Eksempler
+Eksempler to distributører:
+
+* [*] “Enhetsregisteret via Datahotellet”
+* [*] “Enhetsregisteret i sanntid”
+
+Eksempel to ulike variasjoner av innhold:
+
+* [*] “Mottakere med tilhørende profiler”
+* [*] “Mottakere med tilhørende evner”
+
+
+=== Distribusjonstype
+
+.Sammendrag
+
+En distribusjon kan bli levert på ulike vis. Angi distribusjonens type (Nedlastbar fil, API, Feed, Søkeside)
+
+.Anbefalinger
+En distribusjon kan bli levert på ulike vis
+
+ * Det skal angis distribusjonens type
+ * Bruk Nedlastbar fil dersom hele distribusjonen kan hentes ned i maskinlesbart format
+ * Bruk API dersom deler av datasettet lastes ned gjennom et programmeringsgrensesnitt, typisk REST-API
+ * Bruk Feed dersom det i prinsippet er   endringer som hentes gjennom f.eks. RSS, Atom eller meldingsformidling
+ * Bruk Søkeside når det refereres til en landingsside som er ment for mennesker.
+ * Se EU publication office (http://publications.europa.eu/mdr/resource/authority/distribution-type/html/distribution-types-eng.html[http://publications.europa.eu/mdr/resource/authority/distribution-type/html/distribution-types-eng.html])
+
+.Eksempler
+----
+<> <http://data.brreg.no/datakatalog/distribution/124>
+      dct:type <http://data.brreg.no/datakatalog/distribusjonstype/API> .
+----
+
+[.distribution]
+=== Format
+
+.Sammendrag
+[.summary]
+--
+Hver distribusjon har format for utveksling. Format er et obligatorisk felt for en distribusjon.
+--
+
+.Anbefalinger
+[.recommendation]
+--
+Hver distribusjon har format for utveksling. Format er et obligatorisk felt for en distribusjon.
+
+ * Det skal angis mediatype (e.g. application/json) fra https://www.iana.org/assignments/media-types/media-types.xhtml[IANAs liste over offisielle medietyper]
+ * Det kan angis mediatyper utover denne listen ved å bruke mønsteret  x.+{filakronym}, f.eks. “application/x.sosi”
+ * Flere formater skal kun brukes når et og samme API eller sluttbrukerapplikasjoner som tilbyr flere formater
+--
+
+.Eksempler
+[.example]
+----
+<> <http://data.brreg.no/datakatalog/distribution/124>
+      dct:format "application/json" .
+----
+
+=== Tilgangslenke
+
+.Sammendrag
+Lenke til distribusjonen.
+
+.Anbefalinger
+Lenke til eller sekundært informasjon om distribusjonen av datasettet. Tilgangslenke er et obligatorisk felt.
+
+ * bør primært peke direkte til en distribusjon av data.
+ * skal benyttes for tjenesteendepunkter eller lenke til filnedlasting.
+ * kan peke til en nettside med informasjon om hvordan man får tilgang til distribusjonen.
+
+----
+<> <http://data.brreg.no/datakatalog/distribution/124>
+      dcat:accessURL <http://hotell.difi.no/?dataset=brreg/partiregisteret> .
+----
+
+
+=== Nedlastingslenke
+
+.Sammendrag
+Direktelenke til en nedlastbar fil i et gitt format
+
+.Anbefalinger
+Direktelenke til en nedlastbar fil i et gitt format. Det anbefales heller å benytte Tilgangslenke.
+
+ * kan benyttes dersom alle data tilgjengelig via en tjeneste også er tilgjengelig for nedlasting som en fil.
+ * En nedlastingslenke er en direktelenke (URL) til en nedlastbar fil i et gitt format. Dersom nedlastingslenken er den eneste tilgjengelige lenken til datasettet må denne dupliseres i feltet for TilgangsURL
+
+.Eksempler
+----
+<> <http://data.brreg.no/datakatalog/distribution/124>
+     dcat:downloadURL <http://hotell.difi.no/?dataset=brreg/partiregisteret> .
+----
+
+=== I samsvar med
+
+.Sammendrag
+Benyttes for å angi et etablert skjema som distribusjonen er i samsvar med, for eksempel et XSD-dokument.
+
+.Anbefalinger
+Benyttes for å angi et etablert skjema som distribusjonen er i samsvar med, for eksempel et XSD-dokument.
+
+.Eksempler
+----
+<> <http://data.brreg.no/datakatalog/distribution/12>
+    dcat:conformsTo <https://confluence.brreg.no/display/DBNPUB/Informasjonsmodell+for+Enhetsregisteret+og+Foretaksregisteret> .
+----
+
+=== Dokumentasjon
+
+.Sammendrag
+
+Referanse til en side eller et dokument som beskriver og dokumenterer innhold og struktur spesifikk for distribusjonen.
+
+.Anbefalinger
+Referanse til en side eller et dokument som beskriver og dokumenterer innhold og struktur spesifikk for distribusjonen.
+
+.Eksempler
+----
+<> <http://data.brreg.no/datakatalog/distribution/12>
+    foaf:page <https://confluence.brreg.no/display/DBNPUB/API> .
+----
+
+=== Utgivelse
+
+.Sammendrag
+Dato/tid når distribusjonen (f.eks. api) først ble publisert i tilknytning til et datasett.
+
+.Anbefalinger
+Dato/tid når distribusjonen (f.eks. api) først ble publisert i tilknytning til et datasett. Når innholdet i datasettene ble gjort tilgjengelige.
+
+.Eksempler
+
+* [*] 01.01.2017 00:00
+
+----
+<> <http://data.brreg.no/datakatalog/distribution/12>
+     dct:issued “2017-01-01T00:00:00+01:00”^xsd:DateTime .
+----
+
+=== Sist oppdatert
+
+.Sammendrag
+Dato/tid sist distribusjonen (API-et, filen eller feeden) sist ble endret.
+
+.Anbefalinger
+Dato/tid sist distribusjonen (API-et, filen eller feeden) sist ble endret.
+
+.Eksempler
+
+* [*] 01.01.2017 00:00
+
+----
+<> <http://data.brreg.no/datakatalog/distribution/12>
+     dct:modified “2017-01-01T00:00:00+01:00”^xsd:DateTime .
+----
+=== Lisens
+
+
+.Sammendrag
+Referanse til lisensen som datasettet gjøres tilgjengelig under. Lisens er påkrevd for alle åpne offentlige data.
+
+.Anbefalinger
+Referanse til lisensen som datasettet gjøres tilgjengelig under. Lisens er påkrevd for alle åpne offentlige data.
+
+ * Dersom data som tilgjengeliggjøres er beskyttet etter åndsverkloven (herunder databasevern), https://www.regjeringen.no/id2536870/[anbefaler Regjeringen] at virksomheten sier ifra seg sine egne eksklusive økonomiske rettigheter til bruk av datasettet. Dette kan enkelt gjøres ved å bruke åpne standardlisenser som Creative Commons 4.0 eller Norsk lisens for offentlige data (NLOD). Disse standardlisensene sikrer en helhetlig praksis for hvilke rettigheter brukerne har, og fritar samtidig utgiver for juridisk ansvar knyttet til datakvalitet og hva data blir brukt til.
+ * Oppgi URI for lisensen som gis, eksempelvis:
+ ** For NLOD: http://data.norge.no/nlod/[http://data.norge.no/nlod/]
+ ** For CC-0: http://creativecommons.org/publicdomain/zero/1.0/deed.no[http://creativecommons.org/publicdomain/zero/1.0/deed.no]
+ ** For CC-BY 4.0: http://creativecommons.org/licenses/by/4.0/deed.no[http://creativecommons.org/licenses/by/4.0/deed.no]
+
+.Eksempler
+----
+<> <http://data.brreg.no/datakatalog/distribution/12>
+      dct:license: "http://data.norge.no/nlod/" .
+----

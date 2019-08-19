@@ -1,0 +1,8 @@
+
+=== Landingsside
+
+----
+dcat:landingPage a owl:ObjectProperty ;
+     rdfs:domain dcat:Dataset ;
+     rdfs:range foaf:Document .
+----

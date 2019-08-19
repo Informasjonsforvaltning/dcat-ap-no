@@ -1,0 +1,59 @@
+== Enhet
+
+Relasjonen eier og skaper fra datasettbeskrivelsen peker på en klasse Enhet. Offentlig sektors datasett skal ha organisasjoner som ansvarlige eiere.
+
+ * Det anbefales å referere direkte til Enhetsregisteret, som vil hente opplysningene direkte derfra
+ * Sekundært benytte egenskapene under med eller uten en sameas lenke.
+
+=== Enhetsnavn
+
+.Sammendrag
+
+Navnet på enheten benyttes i visninger
+
+.Anbefalinger
+
+Navnet på enheten benyttes i visninger
+
+.Eksempler
+----
+<> a foaf:Agent ;
+   foaf:name “Brønnøysundregistrene”@no .
+----
+
+=== Organisasjonsnummer
+
+.Sammendrag
+Enheter skal oppgis med organisasjonsnummer.
+
+.Anbefalinger
+Enheter skal oppgis med organisasjonsnummer.
+
+.Eksempler
+
+----
+<> a foaf:Agent ;
+   dct:identifier “974760673” .
+----
+
+=== Utgivertype
+
+
+.Sammendrag
+
+Enheter angis med organisasjonstype for å skille mellom offentlige og private datasetteiere.
+
+.Anbefalinger
+
+Enheter angis med organisasjonstype for å skille mellom offentlige og private datasetteiere
+ * Brukes organisasjonsnummer hentes dette fra Enhetsregisteret
+
+Eksempler
+
+----
+<> a foaf:Agent ;
+   er:orgform [
+       skos:prefLabel "ORGL";
+       dct:description "Organisasjonsledd";
+   ]  .
+----

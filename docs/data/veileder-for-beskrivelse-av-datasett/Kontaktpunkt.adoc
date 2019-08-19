@@ -1,0 +1,78 @@
+== Kontaktpunkt
+
+Relasjonen kontaktpunkt fra datasettbeskrivelsen peker på en klasse Organisasjonsenhet
+
+=== Organisasjonsenhet
+
+
+.Sammendrag
+
+Kontaktpunkt angis med organisasjonsenhet. Dette kan være navnet til en gruppe, avdeling, seksjon eller liknende i organisasjonen
+
+
+.Anbefalinger
+
+Kontaktpunkt angis med organisasjonsenhet
+ * Dette kan være navnet til en avdeling, seksjon, kontor, gruppe eller liknende i organisasjonen.
+ * Kontaktinformasjon på person frarådes.
+
+.Eksempler
+
+----
+<> <http://data.brreg.no/datakatalog/kontaktpunkt/a-7>
+      a vcard:Organization ;
+      vcard:organization-unit  "Difi ID porten" .
+----
+
+=== E-post
+
+
+.Sammendrag
+Angi e-postadresse for kontaktpunktet dersom dette er en ønsket kontaktform
+
+.Anbefalinger
+Angi e-postadresse for kontaktpunktet dersom dette er en ønsket kontaktform
+
+.Eksempler
+
+----
+<> <http://data.brreg.no/datakatalog/kontaktpunkt/a-7>
+      vcard:hasEmail     <mailto:idporten@difi.no> .
+----
+
+=== Telefon
+
+
+.Sammendrag
+
+Angi telefonnummer for kontaktpunktet dersom dette er en ønsket kontaktform
+
+.Anbefalinger
+
+Angi telefonnummer for kontaktpunktet dersom dette er en ønsket kontaktform
+
+.Eksempler
+
+----
+<> <http://data.brreg.no/datakatalog/kontaktpunkt/a-7>
+      vcard:hasTelephone <tel:80030300> .
+----
+
+=== Kontaktskjema
+
+
+.Sammendrag
+
+Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform
+
+.Anbefalinger
+
+Angi referanse til kontaktskjema på web dersom dette er en ønsket kontaktform
+ * Hvis det finnes et web-basert kontaktskjema bør dette benyttes
+
+.Eksempler
+
+----
+<> <http://data.brreg.no/datakatalog/kontaktpunkt/a-7>
+      vcard:hasURL <http://eid.difi.no/en/contact-support> .
+----

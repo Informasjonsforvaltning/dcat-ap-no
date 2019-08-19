@@ -1,0 +1,9 @@
+
+=== Skaper
+
+----
+dct:creator a owl:DatatypeProperty ;
+     rdfs:label “Skaper”@ ;
+     rdfs:domain dcat:Dataset ;
+     rdfs:range rdfs:Literal .
+----

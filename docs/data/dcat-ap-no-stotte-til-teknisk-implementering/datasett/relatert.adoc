@@ -1,0 +1,9 @@
+
+=== Relatert
+
+----
+dct:relation a owl:ObjectProperty ;
+  rdfs:label “relatert”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dcat:Dataset .
+----

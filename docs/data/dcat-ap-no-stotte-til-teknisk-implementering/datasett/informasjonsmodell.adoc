@@ -1,0 +1,11 @@
+
+=== Informasjonsmodell*
+
+// ikke del av dcat-ap-no v1.1
+----
+dcatno:informationModel a owl:ObjectProperty;
+  rdfs:subPropertyOf dcat:conformsTo ;
+  rdfs:label “innholdsspesifikasjon”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dct:Standard . # skal lenke til et maskinlesbart dokument
+----

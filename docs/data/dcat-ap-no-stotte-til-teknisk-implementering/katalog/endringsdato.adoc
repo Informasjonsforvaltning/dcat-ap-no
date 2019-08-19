@@ -1,0 +1,8 @@
+
+=== Endringsdato (Sist oppdatert)
+
+----
+dct:modified a owl:DatatypeProperty ;
+     rdfs:domain dcat:Catalog ;
+     rdfs:range xsd:DateTime .
+----

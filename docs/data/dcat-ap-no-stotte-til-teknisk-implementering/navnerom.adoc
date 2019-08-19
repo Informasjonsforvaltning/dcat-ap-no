@@ -1,0 +1,14 @@
+
+=== Navnerom
+----
+@prefix dct: <> . # dublin core terms
+@prefix rdfs: <> . # rdf schema
+@prefix owl: <> . # web ontology language
+@prefix dcat: <> . # data catalog vocabulary
+@prefix adms: <> . # asset description metadata schema
+@prefix dcatno: <> . # data catalog norwegian extension
+
+@prefix ot: <> .
+@prefix iso: <> .
+
+----

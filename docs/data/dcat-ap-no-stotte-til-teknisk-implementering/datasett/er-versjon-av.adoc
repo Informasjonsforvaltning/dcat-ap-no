@@ -1,0 +1,20 @@
+
+=== Er versjon av
+
+----
+dct:isVersionOf a owl:ObjectProperty ;
+  rdfs:label “versjon av”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dcat:Dataset .
+
+dcat:hasVersion a owl:ObjectProperty ;
+  owl:inversePropertyOf dcat:versionOf ;
+  rdfs:label “har versjon”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dcat:Dataset .
+
+adms:versionNotes a owl:DatatypeProperty ;
+  rdfs:label “versjonsnote”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range rdfs:Literal .
+----

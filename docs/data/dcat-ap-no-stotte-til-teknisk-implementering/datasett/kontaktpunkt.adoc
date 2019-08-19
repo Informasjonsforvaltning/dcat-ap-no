@@ -1,0 +1,8 @@
+
+=== Kontaktpunkt
+
+----
+dcat:contactPoint a owl:ObjectProperty ;
+     rdfs:domain dcat:Dataset ;
+     rdfs:range vcard:Organization .
+----

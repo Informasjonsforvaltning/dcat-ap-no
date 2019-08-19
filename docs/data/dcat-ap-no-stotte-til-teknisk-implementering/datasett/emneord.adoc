@@ -1,0 +1,8 @@
+
+=== Emneord (Søkeord)
+
+----
+dcat:keyword a owl:DatatypeProperty ;
+     rdfs:domain dcat:Dataset ;
+     rdfs:range rdfs:Literal .
+----

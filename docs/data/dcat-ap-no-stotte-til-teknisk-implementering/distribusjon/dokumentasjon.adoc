@@ -1,0 +1,9 @@
+
+=== Dokumentasjon
+
+----
+dcat:documentation a owl:ObjectProperty ;
+   rdfs:label “Dokumentasjon”@no ;
+   rdfs:domain dcat:Distribution ;
+   rdfs:range foaf:Document .
+----

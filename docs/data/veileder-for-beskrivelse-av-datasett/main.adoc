@@ -1,0 +1,35 @@
+include::../shared/translation.adoc[]
+
+= Veileder for beskrivelse av datasett
+Direktoratet for forvaltning og IKT
+v1.0
+:description:
+:doctype: book
+:docinfo:
+:icons: font
+:toc: left
+:toclevels: 3
+:sectanchors:
+:title-logo-image: utils/logo.jpg
+:sectnums:
+:sectnumlevels: 4
+
+{description}
+
+include::../shared/download.adoc[]
+
+// :leveloffset: +1
+
+// Innhold her.
+include::Innledning.adoc[]
+include::Hva_er_et_datasett.adoc[]
+include::Datasett.adoc[]
+include::Enhet.adoc[]
+include::Kontaktpunkt.adoc[]
+include::Distribusjon.adoc[]
+include::Datakatalog.adoc[]
+include::Referanser.adoc[]
+
+
+
+include::../shared/stats.adoc[]

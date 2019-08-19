@@ -1,0 +1,18 @@
+
+=== Tilgangsnivå
+
+----
+dct:accessRights a owl:ObjectProperty ;
+  rdfs:label “Tilgangsnivå”@no . # ledetekst på norsk
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dct:RightsStatement .
+
+dct:RightsStatement a owl:Class . # Peker på eu publication office verdier http://publications.europa.eu/mdr/authority/access-right/index.html
+
+# kodelisten (første innslag)
+<http://publications.europa.eu/resource/authority/access-right/PUBLIC>
+   a skos:Concept ;
+   skos:inScheme <http://publications.europa.eu/resource/authority/access-right>;
+   dct:identifier “Public” ;
+   skos:prefLabel “Offentlig”@no .
+----
