@@ -1,0 +1,7 @@
+sudo: required
+
+services:
+  - docker
+
+script:
+  - docker run --rm -it -v $(pwd):/documents -e "epub=true" -e "pdf=true" difi/asciidoctor

@@ -1,0 +1,8 @@
+
+=== Språk
+
+----
+dct:language a owl:ObjectProperty ;
+     rdfs:domain dcat:Dataset ;
+     rdfs:range dct:LinguisticSystem .
+----

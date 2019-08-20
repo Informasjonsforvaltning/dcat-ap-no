@@ -1,0 +1,9 @@
+
+=== Beskrivelse
+
+----
+dct:description a owl:DatatypeProperty ;
+   rdfs:label “tittel”@no ;
+   rdfs:domain dcat:Distribution ;
+   rdfs:range rdfs:Literal .
+----

@@ -1,0 +1,15 @@
+
+=== Erstattet av
+
+----
+dct:isReplacedBy a owl:ObjectProperty ;
+  rdfs:label “erstattet av”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dcat:Dataset .
+
+dcat:hasReplaced a owl:ObjectProperty;
+  owl:inversePropertyOf dcat:replacedBy ;
+  rdfs:label “har erstattet”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dcat:Dataset .
+----

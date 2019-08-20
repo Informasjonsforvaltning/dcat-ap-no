@@ -1,0 +1,9 @@
+
+=== Eksempeldata
+
+----
+adms:sample a owl:ObjectProperty ;
+  rdfs:label “eksempeldata”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dcat:Distribution .
+----

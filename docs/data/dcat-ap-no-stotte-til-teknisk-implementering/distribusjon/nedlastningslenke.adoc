@@ -1,0 +1,9 @@
+
+=== Nedlastingslenke
+
+----
+dcat:downloadURL a owl:ObjectProperty ;
+   rdfs:label “nedlastingslenke”@no ;
+   rdfs:domain dcat:Distribution ;
+   rdfs:range rdfs:Resource .
+----

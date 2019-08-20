@@ -1,0 +1,9 @@
+
+=== Beskrivelse
+
+----
+dct:description a owl:DatatypeProperty ;
+            rdfs:label “beskrivelse”@nb ; # norsk oversettelse
+            rdfs:domain dcat:Dataset ;
+            rdfs:range rdfs:Literal .
+----

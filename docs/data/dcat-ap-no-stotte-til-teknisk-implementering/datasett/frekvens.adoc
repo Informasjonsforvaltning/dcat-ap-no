@@ -1,0 +1,9 @@
+
+=== Frekvens
+----
+dct:accrualPeriodicity a owl:ObjectProperty;
+  rdfs:label “innholdsspesifikasjon”@no ;
+  rdfs:domain dcat:Dataset ;
+  rdfs:range dct:Frequency . # Skal peke på Frequency Name Authority List som vedlikeholdes av Publications Office.
+
+----

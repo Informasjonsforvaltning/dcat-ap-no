@@ -1,0 +1,10 @@
+
+=== Formål*
+
+//ikke del av dcat-ap-no v. 1.1
+----
+dcatno:objective a owl:DatatypeProperty ;
+            rdfs:label “formål”@nb ; # norsk oversettelse
+            rdfs:domain dcat:Dataset ;
+            rdfs:range rdfs:Literal .
+----
