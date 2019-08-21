@@ -24,12 +24,14 @@ Kardinalitet:: 1..n
 Status:: Obligatorisk
 ````
 
-Synliggjøring av endringer
-
 For å synliggjøre hva som er nytt, endret og slettet i standarden skal du gjøre følgende:
 
 For nye egenskaper legges "(ny)" til i tittelen slik (fiktivt eksempel): 
 ````
-== Datasett: Alternativ tittel [[datasett-alt-tittel]]
+== Datasett: Alternativ tittel (ny) [[datasett-alt-tittel]]
 ````
 For egenskaper som er endret legges (endret) og (slettet) til på samme måte.
+
+##Tips til editor
+
+For å redigere i adoc-dokumenter med forhåndsvisning av output kan du for eksempel bruke Asciidic FX  (https://asciidocfx.com/) eller Atom (https://atom.io/). For Atom-brukere anbefales å installere  "AsciiDoc Preview"-tillegget. Merk at stylingen i editor-preview vil avvike noe fra https://doc.difi.no/review/dcat-ap-no/  
