@@ -32,6 +32,6 @@ For nye egenskaper legges "(ny)" til i tittelen slik (fiktivt eksempel):
 ````
 For egenskaper som er endret legges (endret) og (slettet) til på samme måte.
 
-##Tips til editor
+## Tips til editor
 
 For å redigere i adoc-dokumenter med forhåndsvisning av output kan du for eksempel bruke Asciidic FX  (https://asciidocfx.com/) eller Atom (https://atom.io/). For Atom-brukere anbefales å installere  "AsciiDoc Preview"-tillegget. Merk at stylingen i editor-preview vil avvike noe fra https://doc.difi.no/review/dcat-ap-no/  
