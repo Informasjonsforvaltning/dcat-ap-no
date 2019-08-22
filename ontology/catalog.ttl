@@ -1,0 +1,133 @@
+# An example file to be used for the revision of DCAT-AP-NO
+#
+# The example is based on excerpts of the content of the data catalog for The Brønnøysund Register Center 2019-08-13
+# reflecting the existing DCAT-AP-NO - https://doc.difi.no/dcat-ap-no/
+
+@prefix schema: <http://schema.org/> .
+@prefix iso:   <http://www.w3.org/ns/dqvNS#> .
+@prefix adms:  <http://www.w3.org/ns/adms#> .
+@prefix dcatapi: <http://dcat.no/dcatapi/> .
+@prefix dqv:   <http://www.w3.org/ns/dqvNS#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix oa:    <http://www.w3.org/ns/prov#> .
+@prefix dct:   <http://purl.org/dc/terms/> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcatno: <http://difi.no/dcatno#> .
+@prefix dcat:  <http://www.w3.org/ns/dcat#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+
+
+<http://registration-api:8080/catalogs/974760673>
+        a              dcat:Catalog ;
+        dct:publisher  <https://data.brreg.no/enhetsregisteret/api/enheter/974760673> ;
+        dct:title      "Datakatalog for REGISTERENHETEN I BRØNNØYSUND"@nb ;
+        dcat:dataset   <http://brreg.no/catalogs/974760673/datasets/ef600ed8-cba1-4bc4-863f-6d41c836f18c>;
+        dcat:service <etapi> . # Liste over API-er som tilhører katalogen
+# TODO: Generelt: Skal vi benytte anledningen til å utvide DCAT-AP-NO med hvordan man inkluderer de øvrige elementene i FDK, begrep, informasjonsmodeller, tjenester (cpsv), annet?
+
+
+# TODO: Verifiser at alle egenskapene her kan ha dcat:dataService som domain
+<etapi> a dcat:DataService; # TODO: Sett inn reelle verdier
+        dcat:endpointDescription <https://raw.githubusercontent.com/brreg/openAPI/master/specs/enhetsregisteret.json>; # Nytt i DCAT 2. Tilsvarer apiSpecUrl i FDK (del av APIDocument informasjonsmodellen) ("The url of the specification which are used to harvest the sepcification").
+        dcat:endpointURL <https://data.brreg.no/enhetsregisteret/api>; # Nytt i DCAT 2. tilsvarer url i OAS "servers". Tilsvarer url i FDK (del av Endpoint informasjonsmodellen) TODO: API: Uklart hvordan håndtere flere miljø/flere endpoints og deres "description"
+        dct:license <https://data.norge.no/nlod/no/>; # Tilsvarer DCAT-AP-NO for "distribusjon" - https://doc.difi.no/dcat-ap-no/#distribusjon-lisens TODO: API:  I dagens GUI har lisens et navn (OAS har name + URL for lisenser). Dagens DCAT-AP-NO har kun en URL som verdi
+        dcat:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED>; # Tilsvarer dagens verdi for datasett i DCAT-AP-NO # TODO: API: For API-er har vi valgt et alternativ til accessRights: "isOpenAccess, isOpenLicense, isFree" som besvares individuelt ved registrering
+        dcat:servesDataset <http://brreg.no/catalogs/974760673/datasets/ef600ed8-cba1-4bc4-863f-6d41c836f18c>; # Nytt i DCAT 2, måte å håndtere koblingen til datasett. Kun URI. Tittel på datasettet må hentes fra oppslag på datasettet. FDK har DatasetReference med id, uri og title
+        dcat:contactPoint               [ a                        vcard:Organization ; # Samme som DCAT-AP-NO, i DCAT-AP-NO tillatt for andre subjekter enn datasett. I DCAT-AP-NO er range vcard:Kind. Tilsvarer contactPoint med Contact i FDK
+                                          vcard:hasEmail           <mailto:OA-fagstillinger@brreg.no> ;
+                                          vcard:organization-unit  "Brønnøysundregistrene - Forenkling og Brukerdialog, Forenklingseksjonen"
+                                        ] ;
+        dct:title "Åpne Data fra Enhetsregisteret - API Dokumentasjon"
+        dct:description "(lang beskrivelse ...)"; # Som i DCAT-AP-NO idag. TODO: FDK godtar tekst med Markdown og html, noe som ikke reflektert i dagens DCAT-AP-NO standard eller veileder, bør det legges til?
+        dcatno:authoritative "true"; TODO: Mangler i DCAT-AP-NO, foreslås lagt til. Literal med typen xsd:boolean
+        dct:publisher <http://data.brreg.no/enhetsregisteret/enhet/974760673.json> ; # tilsvarer DCAT-AP-NO
+        dct:conformsTo "Kontopplysninger"; # TODO: conformsTo har range dct:Standard, som tilsynelatende ikke har noen nærmere spesifikasjon av hvordan innholdet skal være (literal, URI?)
+        dct:mediaType "application/json"; # TODO: DCAT 2 har både format og mediaType (sistnevnte er spesialisering), mens DCAT-AP-NO bare har format
+        dct:format "application/json-ld"; # TODO: Kan man bruke både mediaType _og_ format? application/json-ld er ikke en IANA-registrert type.
+                                          # TODO: dct:format har ikke noe domain, men kan tilsynelatende bare brukes på "distribution". dct:mediaType har "distribution" som domain. Kan de brukes for dataService?
+        dct:issued "2019-08-20"^^xsd:date; # TODO: Dette er ikke de datoene som står øverst og viser når oppføringen dukket opp og ble endret i katalogen
+        dct:modified "2019-08-21"^^xsd:date; # TODO: Dette er ikke de datoene som står øverst og viser når oppføringen dukket opp og ble endret i katalogen
+        dcat:landingPage <http://merdokumentasjonhosansvarligvirksomhet.no/>;
+        dcatno:apiRateLimit "1000 kall pr time";
+        dcatno:capacity "Gjennomsnittlig svartid er 100 ms";
+        dcatno:availability "99,9 %";
+        dcat:theme <http://psi.norge.no/los/tema/individ-og-samfunn>, <http://publications.europa.eu/resource/authority/data-theme/JUST> , <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; # TODO: Skal vi  tillate både EU-tema og LOS, eller bare LOS + automatisk mapping
+        dct:subject <https://fellesdatakatalog.brreg.no/api/concepts/ad177f07-3fdc-4031-be9a-97eb18aa0234> , <https://fellesdatakatalog.brreg.no/api/concepts/ab5b81db-a47d-4666-838b-3aac4cbe8bd9> , <https://fellesdatakatalog.brreg.no/api/concepts/60113aac-2dd4-4272-8ad2-c3ede5b4b096> , <https://fellesdatakatalog.brreg.no/api/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c> ;
+
+
+
+
+
+
+<http://brreg.no/catalogs/974760673/datasets/ef600ed8-cba1-4bc4-863f-6d41c836f18c>
+        a                               dcat:Dataset ;
+        dcatno:legalBasisForAccess      [ a               dct:RightsStatement , skos:Concept ;
+                                          dct:source      "https://lovdata.no/dokument/NL/lov/1994-06-03-15/KAPITTEL_6#§22" ;
+                                          skos:prefLabel  "Lov om Enhetsregisteret §22"@nb
+                                        ] ;
+        dcatno:legalBasisForAccess      [ a               dct:RightsStatement , skos:Concept ;
+                                          dct:source      "https://lovdata.no/dokument/SF/forskrift/2015-12-11-1668/§6#§6" ;
+                                          skos:prefLabel  "Forskrift om gebyr til Brønnøysundregistrene §6"@nb
+                                        ] ;
+        dcatno:legalBasisForProcessing  [ a               dct:RightsStatement , skos:Concept ;
+                                          dct:source      "https://lovdata.no/dokument/NL/lov/1994-06-03-15/KAPITTEL_2#§6" ;
+                                          skos:prefLabel  "Lov om Enhetsregisteret §6"@nb
+                                        ] ;
+        dcatno:legalBasisForProcessing  [ a               dct:RightsStatement , skos:Concept ;
+                                          dct:source      "https://lovdata.no/dokument/NL/lov/1994-06-03-15/KAPITTEL_2#§5" ;
+                                          skos:prefLabel  "Lov om Enhetsregisteret §5"@nb
+                                        ] ;
+        dcatno:legalBasisForRestriction
+                [ a               dct:RightsStatement , skos:Concept ;
+                  dct:source      "https://lovdata.no/dokument/NL/lov/1994-06-03-15/KAPITTEL_6#§22" ;
+                  skos:prefLabel  "Lov om Enhetsregisteret §22"@nb
+                ] ;
+        dcatno:legalBasisForRestriction
+                [ a               dct:RightsStatement , skos:Concept ;
+                  dct:source      "https://lovdata.no/dokument/NL/lov/1994-06-03-15/KAPITTEL_2#§5" ;
+                  skos:prefLabel  "Lov om Enhetsregisteret §5"@nb
+                ] ;
+        dcatno:objective                "Enhetsregisteret samordner grunndata om enheter i næringslivet og offentlig sektor som finnes i ulike offentlige registre, og skal entydig identifisere registreringsenhetene ved tildeling av organisasjonsnummer. \nPersonopplysninger benyttes for å kunne entydig identifisere roller og ansvar hos registreringsenhetene.\n"@nb ;
+        dct:accessRights                <http://publications.europa.eu/resource/authority/access-right/RESTRICTED> ;
+        dct:accrualPeriodicity          <http://publications.europa.eu/resource/authority/frequency/CONT> ;
+        dct:description                 "Datasettet fra Enhetsregisteret inneholder informasjon om alle registrerte virksomheter innen næringsliv, offentlig- og frivillig sektor. Enhetsregisteret inneholder personopplysninger. Datasettet har derfor begrenset offentlighet. Det finnes imidlertid distribusjoner som leveres uten personopplysninger og som derfor er offentlig tilgjengelig. Se under \"Distribusjoner\" for mer informasjon.\n\n"@nb ;
+        dct:language                    <http://publications.europa.eu/resource/authority/language/NOR> ;
+        dct:provenance                  <http://data.brreg.no/datakatalog/provinens/nasjonal> ;
+        dct:publisher                   <http://data.brreg.no/enhetsregisteret/enhet/974760673.json> ;
+        dct:relation                    <http://brreg.no/catalogs/974760673/datasets/738d67e0-da45-4535-b006-66402eaf371f> , <http://brreg.no/catalogs/974760673/datasets/c50854ed-e754-462b-9cfc-9d1df0cb57fd> , <http://brreg.no/catalogs/974760673/datasets/4f87729a-1ef3-4f79-9866-832df00dc075> ;
+        dct:subject                     <https://fellesdatakatalog.brreg.no/api/concepts/ad177f07-3fdc-4031-be9a-97eb18aa0234> , <https://fellesdatakatalog.brreg.no/api/concepts/ab5b81db-a47d-4666-838b-3aac4cbe8bd9> , <https://fellesdatakatalog.brreg.no/api/concepts/60113aac-2dd4-4272-8ad2-c3ede5b4b096> , <https://fellesdatakatalog.brreg.no/api/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c> ;
+        dct:title                       "Enhetsregisteret"@nb ;
+        dct:type                        "Data" ;
+        dcat:contactPoint               [ a                        vcard:Organization ;
+                                          vcard:hasEmail           <mailto:OA-fagstillinger@brreg.no> ;
+                                          vcard:organization-unit  "Brønnøysundregistrene - Forenkling og Brukerdialog, Forenklingseksjonen"
+                                        ] ;
+        dcat:distribution               [ a                      dcat:Distribution ;
+                                          dcatapi:accessService  <32b623ca-fe46-4ea3-87d6-93363d0bce04> ;
+                                          dct:type               "API"
+                                        ] ;
+        dcat:keyword                    "Virksomhet"@nb , "Underenhet"@nb , "Foretaksregisteret"@nb , "Enhet"@nb , "Rolleopplysninger"@nb , "Enhetsregisteret"@nb , "Brønnøysundregistrene"@nb , "Foretak"@nb , "Styremedlem"@nb , "Næringsliv"@nb , "Bedrift"@nb , "organisasjonsform "@nb , "Daglig leder"@nb , "Grunndata"@nb ;
+        dcat:landingPage                <https://www.brreg.no/produkter-og-tjenester/bestille-produkter/maskinlesbare-data-enhetsregisteret/> ;
+        dcat:theme                      <http://publications.europa.eu/resource/authority/data-theme/JUST> , <http://publications.europa.eu/resource/authority/data-theme/GOVE> ;
+        dqv:hasQualityAnnotation        [ a                dqv:QualityAnnotation ;
+                                          dqv:inDimension  <http://iso.org/25012/2008/dataquality/Accuracy> ;
+                                          oa:hasBody       [ rdf:value  "Nøyaktigheten avhenger av at den enkelte registreringsenhet rapporterer endringer til Enhetsregisteret, jfr. https://lovdata.no/lov/1994-06-03-15/§15.   \n "@nb ]
+                                        ] ;
+        dqv:hasQualityAnnotation        [ a                dqv:QualityAnnotation ;
+                                          dqv:inDimension  <http://iso.org/25012/2008/dataquality/Completeness> ;
+                                          oa:hasBody       []
+                                        ] ;
+        dqv:hasQualityAnnotation        [ a                dqv:QualityAnnotation ;
+                                          dqv:inDimension  <http://iso.org/25012/2008/dataquality/Availability> ;
+                                          oa:hasBody       [ rdf:value  "Offentlige aktører og foretak som har konsesjon for å drive kredittopplysningsforetak har tilgang på fødselsnummer. Andre private aktører har bare tilgang til fødselsdato. "@nb ]
+                                        ] ;
+        dqv:hasQualityAnnotation        [ a                dqv:QualityAnnotation ;
+                                          dqv:inDimension  <http://iso.org/25012/2008/dataquality/Relevance> ;
+                                          oa:hasBody       [ rdf:value  "- Velegnet for gjenbruk, pre-utfylling og kontroll av opplysninger.                                              \n\n- §22 i Lov om Enhetsregisteret; Sammenstilling av opplysninger om person kan bare gis når det gjelder personens registrerte tilknytning til næringsvirksomhet."@nb ]
+                                        ] ;
+        dqv:hasQualityAnnotation        [ a                dqv:QualityAnnotation ;
+                                          dqv:inDimension  <http://iso.org/25012/2008/dataquality/Currentness> ;
+                                          oa:hasBody       [ rdf:value  "Antall ansatte oppdateres ca.10. hver måned. \nMVA oppdateres en gang i døgnet.\nDaglig oppdatering fra Folkeregisteret."@nb ]
+                                        ] .
