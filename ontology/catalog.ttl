@@ -28,12 +28,15 @@
 # TODO: Generelt: Skal vi benytte anledningen til å utvide DCAT-AP-NO med hvordan man inkluderer de øvrige elementene i FDK, begrep, informasjonsmodeller, tjenester (cpsv), annet?
 
 
-# TODO: Verifiser at alle egenskapene her kan ha dcat:dataService som domain
-<etapi> a dcat:DataService; # TODO: Sett inn reelle verdier
+# For vurderinger se: https://docs.google.com/spreadsheets/d/1j7q_wOER0v8tX1yeldb4rNtFMBPxyRRsLmOqLXKVipU/edit#gid=0
+<etapi> a dcat:DataService;
         dcat:endpointDescription <https://raw.githubusercontent.com/brreg/openAPI/master/specs/enhetsregisteret.json>; # Nytt i DCAT 2. Tilsvarer apiSpecUrl i FDK (del av APIDocument informasjonsmodellen) ("The url of the specification which are used to harvest the sepcification").
         dcat:endpointURL <https://data.brreg.no/enhetsregisteret/api>; # Nytt i DCAT 2. tilsvarer url i OAS "servers". Tilsvarer url i FDK (del av Endpoint informasjonsmodellen) TODO: API: Uklart hvordan håndtere flere miljø/flere endpoints og deres "description"
         dct:license <https://data.norge.no/nlod/no/>; # Tilsvarer DCAT-AP-NO for "distribusjon" - https://doc.difi.no/dcat-ap-no/#distribusjon-lisens TODO: API:  I dagens GUI har lisens et navn (OAS har name + URL for lisenser). Dagens DCAT-AP-NO har kun en URL som verdi
         dcat:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED>; # Tilsvarer dagens verdi for datasett i DCAT-AP-NO # TODO: API: For API-er har vi valgt et alternativ til accessRights: "isOpenAccess, isOpenLicense, isFree" som besvares individuelt ved registrering
+        dcatno:isFree "true";
+        dcatno:isOpenForAll "true";
+        dcatno:isOpenLicence "true";
         dcat:servesDataset <http://brreg.no/catalogs/974760673/datasets/ef600ed8-cba1-4bc4-863f-6d41c836f18c>; # Nytt i DCAT 2, måte å håndtere koblingen til datasett. Kun URI. Tittel på datasettet må hentes fra oppslag på datasettet. FDK har DatasetReference med id, uri og title
         dcat:contactPoint               [ a                        vcard:Organization ; # Samme som DCAT-AP-NO, i DCAT-AP-NO tillatt for andre subjekter enn datasett. I DCAT-AP-NO er range vcard:Kind. Tilsvarer contactPoint med Contact i FDK
                                           vcard:hasEmail           <mailto:OA-fagstillinger@brreg.no> ;
@@ -41,20 +44,25 @@
                                         ] ;
         dct:title "Åpne Data fra Enhetsregisteret - API Dokumentasjon"
         dct:description "(lang beskrivelse ...)"; # Som i DCAT-AP-NO idag. TODO: FDK godtar tekst med Markdown og html, noe som ikke reflektert i dagens DCAT-AP-NO standard eller veileder, bør det legges til?
-        dcatno:authoritative "true"; TODO: Mangler i DCAT-AP-NO, foreslås lagt til. Literal med typen xsd:boolean
+        brregdcat:isAuthoritative "true"; TODO: Kontroller at dette er riktig prefix for BRegDCAT-AP. Hva er URL-en?
         dct:publisher <http://data.brreg.no/enhetsregisteret/enhet/974760673.json> ; # tilsvarer DCAT-AP-NO
-        dct:conformsTo "Kontopplysninger"; # TODO: conformsTo har range dct:Standard, som tilsynelatende ikke har noen nærmere spesifikasjon av hvordan innholdet skal være (literal, URI?)
-        dct:mediaType "application/json"; # TODO: DCAT 2 har både format og mediaType (sistnevnte er spesialisering), mens DCAT-AP-NO bare har format
-        dct:format "application/json-ld"; # TODO: Kan man bruke både mediaType _og_ format? application/json-ld er ikke en IANA-registrert type.
-                                          # TODO: dct:format har ikke noe domain, men kan tilsynelatende bare brukes på "distribution". dct:mediaType har "distribution" som domain. Kan de brukes for dataService?
+        dct:conformsTo <http://forvaltningsstandarder/kodeliste/kontoppslag>, <http://forvaltningsstandarder/kodeliste/eOppslag>; # TODO: conformsTo har range dct:Standard, som tilsynelatende ikke har noen nærmere spesifikasjon av hvordan innholdet skal være (literal, URI?)
+        # LØST: DCAT 2 har både format og mediaType (sistnevnte er spesialisering), mens DCAT-AP-NO bare har format. Konklusjon: Fortsetter med kun "format"
+        dct:format "application/json"; # TODO: Kan man bruke både mediaType _og_ format? application/json-ld er ikke en IANA-registrert type.
+                                          # LØST: dct:format har ikke noe domain, men kan tilsynelatende bare brukes på "distribution". dct:mediaType har "distribution" som domain. Kan de brukes for dataService? Konklusjon: Melder som issue at format må kunne brukes for DataService også
         dct:issued "2019-08-20"^^xsd:date; # TODO: Dette er ikke de datoene som står øverst og viser når oppføringen dukket opp og ble endret i katalogen
         dct:modified "2019-08-21"^^xsd:date; # TODO: Dette er ikke de datoene som står øverst og viser når oppføringen dukket opp og ble endret i katalogen
         dcat:landingPage <http://merdokumentasjonhosansvarligvirksomhet.no/>;
-        dcatno:apiRateLimit "1000 kall pr time";
+        dcatno:apiRateLimit "Resultatsettet er begrenset til 10 000 enheter pr. spørring";
         dcatno:capacity "Gjennomsnittlig svartid er 100 ms";
         dcatno:availability "99,9 %";
         dcat:theme <http://psi.norge.no/los/tema/individ-og-samfunn>, <http://publications.europa.eu/resource/authority/data-theme/JUST> , <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; # TODO: Skal vi  tillate både EU-tema og LOS, eller bare LOS + automatisk mapping
         dct:subject <https://fellesdatakatalog.brreg.no/api/concepts/ad177f07-3fdc-4031-be9a-97eb18aa0234> , <https://fellesdatakatalog.brreg.no/api/concepts/ab5b81db-a47d-4666-838b-3aac4cbe8bd9> , <https://fellesdatakatalog.brreg.no/api/concepts/60113aac-2dd4-4272-8ad2-c3ede5b4b096> , <https://fellesdatakatalog.brreg.no/api/concepts/f6639f5e-280e-4dbb-991e-3faca3bf622c> ;
+        dct:type "http REST"; # TODO: Trenger et kontrollert vokabular/anbefalinger  for å angi type API, f.eks. REST, SOAP, MQ ...
+        dct:conformsTo <https://fellesdatakatalog.brreg.no/informationModels/c35a9083-daf3-49f9-9f3b-e93552ff2955>; # TODO: Bør vi ha en mer spesifikk relasjon enn dct:relation? DCAT-AP bruker conformsTo for å beskrive relasjon til schema
+        dcatno:lifeCycle "under avvikling";
+        sdo:temporalCoverage "../2019-10-01T13:00:00Z"; # Schema.org bruker ISO 8601 men med mulighet for å la start eller slutt stå åpen, se https://schema.org/temporalCoverage
+        dct:isReplacedBy <url-til-ny> .
 
 
 
