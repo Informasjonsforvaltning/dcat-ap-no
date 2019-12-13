@@ -14,7 +14,7 @@ Status:: Obligatorisk
 [properties]
 Engelsk:: Category
 Beskrivelse:: Et emne for et datasett
-URI:: SKOS:Consept
+URI:: SKOS:Concept
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
 Status:: Obligatorisk
 
@@ -23,7 +23,7 @@ Status:: Obligatorisk
 [properties]
 Engelsk:: Category scheme
 Beskrivelse:: En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
-URI:: SKOS:ConseptScheme
+URI:: SKOS:ConceptScheme
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
 Status:: Obligatorisk
 
