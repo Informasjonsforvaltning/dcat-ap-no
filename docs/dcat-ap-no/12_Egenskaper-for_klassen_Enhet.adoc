@@ -4,7 +4,7 @@ Det anbefales at URI til Enhet (foaf:Agent) er identisk med
 den URI som Enhetsregisteret (Brønnøysundregistrene) har på
 enheten/virksomheten hvis den finnes i registeret.
 
-Egenskaper for klassen Enhet (obligatorisk).
+== Obligatoriske egenskaper for klassen _Enhet_
 
 == Enhet: navn [[enhet-navn]]
 
@@ -15,7 +15,9 @@ Beskrivelse:: Navn på enheten. Denne egenskapen kan gjentas for ulike versjoner
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-== Enhet: utgivertype [[enhet-utgivertype]]
+== Anbefalte egenskaper for klassen _Enhet_
+
+=== Enhet: utgivertype [[enhet-utgivertype]]
 
 [properties]
 URI:: dct:type
@@ -25,7 +27,7 @@ Kardinalitet:: 0..1
 Status:: Anbefalt
 
 
-== Enhet: organisasjonsidentifikator [[enhet-organisasjonsidentifikator]]
+=== Enhet: organisasjonsidentifikator [[enhet-organisasjonsidentifikator]]
 
 [properties]
 URI:: dct:identifier
