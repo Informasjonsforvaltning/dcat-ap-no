@@ -1,8 +1,8 @@
 = Lisensdokument
 
-Egenskaper for klassen Lisensdokument (anbefalt)
+== Anbefalte egenskaper for klassen Lisensdokument
 
-== Lisensdokument: lisenstype
+=== Lisensdokument: lisenstype
 
 [properties]
 URI:: dct:type

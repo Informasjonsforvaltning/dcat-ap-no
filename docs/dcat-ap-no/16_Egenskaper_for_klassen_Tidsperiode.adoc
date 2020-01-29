@@ -1,8 +1,8 @@
 = Tidsrom
 
-Egenskaper for klassen Tidsrom (valgfri)
+== Valgfrie egenskaper for klassen _Tidsrom_
 
-== Tidsrom: startdato/tid
+=== Tidsrom: startdato/tid
 
 [properties]
 URI:: schema:startDate
@@ -11,7 +11,7 @@ Beskrivelse:: Definerer starten på tidsrommet
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Tidsrom: sluttdato/tid
+=== Tidsrom: sluttdato/tid
 
 [properties]
 URI:: schema:endDate
