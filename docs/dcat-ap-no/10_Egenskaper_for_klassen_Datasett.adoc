@@ -1,8 +1,8 @@
 = Datasett
 
-Egenskaper for klassen Datasett (obligatorisk)
+== Obligatoriske egenskaper for klassen _Datasett_
 
-== Datasett: beskrivelse [[datasett-beskrivelse]]
+=== Datasett: beskrivelse [[datasett-beskrivelse]]
 
 [properties]
 URI:: dct:description
@@ -11,7 +11,7 @@ Beskrivelse:: Inneholder fritekstbeskrivelse av datasettet. Kan gjentas for para
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-== Datasett: tittel [[datasett-tittel]]
+=== Datasett: tittel [[datasett-tittel]]
 
 [properties]
 URI:: dct:title
@@ -20,7 +20,7 @@ Beskrivelse:: Inneholder navnet på datasettet. Kan gjentas for parallelle språ
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-== Datasett: identifikator [[datasett-identifikator]]
+=== Datasett: identifikator [[datasett-identifikator]]
 
 [properties]
 URI:: dct:identifier
@@ -30,7 +30,7 @@ Kardinalitet:: 1..n
 Status:: Obligatorisk
 Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedidentifikator. Denne kan for eksempel være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
 
-== Datasett: tema [[datasett-tema]]
+=== Datasett: tema [[datasett-tema]]
 
 [properties]
 URI:: dcat:theme, subproperty of dct:subject
@@ -39,7 +39,7 @@ Beskrivelse:: Referanse til et hovudtema for datasettet. Et datasett kan assosie
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-== Datasett: utgiver [[datasett-utgiver]]
+=== Datasett: utgiver [[datasett-utgiver]]
 
 [properties]
 URI:: dct:publisher
@@ -48,7 +48,8 @@ Beskrivelse:: Referanse til en enhet (organisasjon) som er ansvarlig for å gjø
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 
-== Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
+== Anbefalte egenskaper for klassen _Datasett_
+=== Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
 
 [properties]
 URI:: dcat:contactPoint
@@ -57,7 +58,7 @@ Beskrivelse:: Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse k
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-== Datasett: datasettdistribusjon [[datasett-datasett-distribusjon]]
+=== Datasett: datasettdistribusjon [[datasett-datasett-distribusjon]]
 
 [properties]
 URI:: dcat:distribution
@@ -66,7 +67,7 @@ Beskrivelse:: Koblingen mellom datasettet og en tilgjengelig distribusjon
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-== Datasett: emneord [[datasett-emneord]]
+=== Datasett: emneord [[datasett-emneord]]
 
 [properties]
 URI:: dcat:keyword
@@ -75,7 +76,7 @@ Beskrivelse:: Inneholder emneord (eller tag) som beskriver datasettet
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-== Datasett: tilgangsnivå [[datasett-tilgangsniva]]
+=== Datasett: tilgangsnivå [[datasett-tilgangsniva]]
 
 [properties]
 URI:: dct:accessRights
@@ -85,7 +86,7 @@ Kardinalitet:: 0..1
 Status:: Anbefalt
 NOTE: Se <<datasett-skjermingshjemmel>>
 
-== Datasett: skjermingshjemmel [[datasett-skjermingshjemmel]]
+=== Datasett: skjermingshjemmel [[datasett-skjermingshjemmel]]
 
 [properties]
 URI:: dcatno:accessRightsComment
@@ -95,7 +96,7 @@ Kardinalitet:: 0..n
 Status:: Anbefalt
 Kommentar:: Norsk utvidelse. Et eget vokabular skal publiseres av Digitaliseringsdirektoratet.
 
-== Datasett: begrep [[datasett-begrep]]
+=== Datasett: begrep [[datasett-begrep]]
 
 [properties]
 URI:: dct:subject
@@ -106,7 +107,7 @@ Status:: Anbefalt
 Kommentar:: Norsk utvidelse
 
 
-== Datasett: i samsvar med [[datasett-i-samsvar-med]]
+=== Datasett: i samsvar med [[datasett-i-samsvar-med]]
 
 [properties]
 URI:: dct:conformsTo
@@ -115,7 +116,9 @@ Beskrivelse:: Referanse til en implementasjons-regel eller annen spesifikasjon, 
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: dokumentasjon [[datasett-dokumentasjon]]
+== Valgfrie egenskaper for klassen _Datasett_
+
+=== Datasett: dokumentasjon [[datasett-dokumentasjon]]
 
 [properties]
 URI:: foaf:page
@@ -124,7 +127,7 @@ Beskrivelse:: Referanse til en side eller et dokument som beskriver datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: frekvens [[datasett-frekvens]]
+=== Datasett: frekvens [[datasett-frekvens]]
 
 [properties]
 URI:: dct:accrualPeriodicity
@@ -133,7 +136,7 @@ Beskrivelse:: Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal pe
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Datasett: har versjon [[datasett-har-versjon]]
+=== Datasett: har versjon [[datasett-har-versjon]]
 
 [properties]
 URI:: dct:hasVersion
@@ -142,7 +145,7 @@ Beskrivelse:: Referanse til et datasett som er en versjon, utgave, eller tilpasn
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: er versjon av [[datasett-er-versjon-av]]
+=== Datasett: er versjon av [[datasett-er-versjon-av]]
 
 [properties]
 URI:: dct:isVersionOf
@@ -151,7 +154,7 @@ Beskrivelse:: Referanse til et beslektet datasett som det beskrevne datasettet e
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: landingsside [[datasett-landingsside]]
+=== Datasett: landingsside [[datasett-landingsside]]
 
 [properties]
 URI:: dcat:landingPage
@@ -160,7 +163,7 @@ Beskrivelse:: Referanse til nettside som gir tilgang til datasettet, dets distri
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: språk [[datasett-sprak]]
+=== Datasett: språk [[datasett-sprak]]
 
 [properties]
 URI:: dct:language
@@ -169,7 +172,7 @@ Beskrivelse:: Referanse til språket som datasettet er på. Kan repeteres dersom
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: annen identifikator [[datasett-annen-identifikator]]
+=== Datasett: annen identifikator [[datasett-annen-identifikator]]
 
 [properties]
 URI:: adms:identifier
@@ -178,7 +181,7 @@ Beskrivelse:: Referanse til en sekundær identifikator av datasettet som MAST/AD
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: opphav [[datasett-opphav]]
+=== Datasett: opphav [[datasett-opphav]]
 
 [properties]
 URI:: dct:provenance
@@ -187,7 +190,7 @@ Beskrivelse:: Referanse til objekt som beskriver hvor datasettet kommer fra, hvo
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Datasett: relatert ressurs [[datasett-relatertressurs]]
+=== Datasett: relatert ressurs [[datasett-relatertressurs]]
 
 [properties]
 URI:: dct:relation
@@ -196,7 +199,7 @@ Beskrivelse:: Referanse til en beslektet ressurs
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: utgivelsesdato [[datasett-utgivelsesdato]]
+=== Datasett: utgivelsesdato [[datasett-utgivelsesdato]]
 
 [properties]
 URI:: dct:issued
@@ -205,7 +208,7 @@ Beskrivelse:: Dato for den formelle utgivelsen av datasettet
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Datasett: eksempeldata [[datasett-eksempeldata]]
+=== Datasett: eksempeldata [[datasett-eksempeldata]]
 
 [properties]
 URI:: adms:sample
@@ -214,7 +217,7 @@ Beskrivelse:: Referanse til eksempeldata
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: kilde [[datasett-kilde]]
+=== Datasett: kilde [[datasett-kilde]]
 
 [properties]
 URI:: dct:source
@@ -223,7 +226,7 @@ Beskrivelse:: Referanse til et datasett som gjeldende datasett er avledet fra
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: dekningsområde [[datasett-dekningsomrade]]
+=== Datasett: dekningsområde [[datasett-dekningsomrade]]
 
 [properties]
 URI:: dct:spatial
@@ -232,7 +235,7 @@ Beskrivelse:: Referanse, primært i form av en URI for et administrativt område
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: tidsrom [[datasett-tidsrom]]
+=== Datasett: tidsrom [[datasett-tidsrom]]
 
 [properties]
 URI:: dct:temporal
@@ -241,7 +244,7 @@ Beskrivelse:: Definerer starten og slutten på perioden med årstall-måned-dag,
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: type [[datasett-type]]
+=== Datasett: type [[datasett-type]]
 
 [properties]
 URI:: dct:type
@@ -250,7 +253,7 @@ Beskrivelse:: Referanse til et begrep som identifiserer datasettets type. Noe ko
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Datasett: endringsdato [[datasett-endringsdato]]
+=== Datasett: endringsdato [[datasett-endringsdato]]
 
 [properties]
 URI:: dct:modified
@@ -259,7 +262,7 @@ Beskrivelse:: Dato for siste oppdatering av datasettet
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Datasett: versjon [[datasett-versjon]]
+=== Datasett: versjon [[datasett-versjon]]
 
 [properties]
 URI:: owl:versionInfo
@@ -268,7 +271,7 @@ Beskrivelse:: Et versjonsnummer eller annen versjonsbetegnelse for datasettet
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Datasett: versjonsnote [[datasett-versjonsnote]]
+=== Datasett: versjonsnote [[datasett-versjonsnote]]
 
 [properties]
 URI:: adms:versionNotes
@@ -277,7 +280,7 @@ Beskrivelse:: Egenskap som beskriver forskjellene mellom denne og en tidligere v
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Datasett: skaper [[datasett-skaper]]
+=== Datasett: skaper [[datasett-skaper]]
 
 [properties]
 URI:: dct:creator
@@ -287,7 +290,7 @@ Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
 
-== Datasett: refererer til [[datasett-refererer-til]]
+=== Datasett: refererer til [[datasett-refererer-til]]
 
 [properties]
 URI:: dct:references
@@ -297,7 +300,7 @@ Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
 
-== Datasett: er referert av [[datasett-er-referert-av]]
+=== Datasett: er referert av [[datasett-er-referert-av]]
 
 [properties]
 URI:: dct:isReferencedBy
@@ -307,7 +310,7 @@ Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
 
-== Datasett: er del av [[datasett-er-del-av]]
+=== Datasett: er del av [[datasett-er-del-av]]
 
 [properties]
 URI:: dct:isPartOf
@@ -317,7 +320,7 @@ Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
 
-== Datasett: har del [[datasett-har-del]]
+=== Datasett: har del [[datasett-har-del]]
 
 [properties]
 URI:: dct:hasPart
@@ -327,7 +330,7 @@ Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
 
-== Datasett: krever [[datasett-krever]]
+=== Datasett: krever [[datasett-krever]]
 
 [properties]
 URI:: dct:requires
@@ -337,7 +340,7 @@ Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
 
-== Datasett: er påkrevd av [[datasett-er-pakrevd-av]]
+=== Datasett: er påkrevd av [[datasett-er-pakrevd-av]]
 
 [properties]
 URI:: dct:isRequiredBy
@@ -347,7 +350,7 @@ Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
 
-== Datasett: erstatter [[datasett-erstatter]]
+=== Datasett: erstatter [[datasett-erstatter]]
 
 [properties]
 URI:: dct:replaces
@@ -357,7 +360,7 @@ Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
 
-== Datasett: erstattes av [[datasett-erstattes-av]]
+=== Datasett: erstattes av [[datasett-erstattes-av]]
 
 [properties]
 URI:: dct:isReplacedBy
