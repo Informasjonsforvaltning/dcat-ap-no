@@ -1,8 +1,8 @@
 = Distribusjon
 
-Egenskaper for klassen Distribusjon (anbefalt)
+== Obligatoriske egenskaper for klassen _Distribusjon_
 
-== Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
+=== Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
 
 [properties]
 URI:: dcat:accessURL
@@ -11,16 +11,7 @@ Beskrivelse:: En URL som gir tilgang til en distribusjon av datasettet. Ressurse
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-== Distribusjon: beskrivelse [[distribusjon-beskrivelse]]
-
-[properties]
-URI:: dct:description
-Range:: rdfs:Literal
-Beskrivelse:: Fritekstbeskrivelse av distribusjonen. Kan repeteres for parallelle språkversjoner
-Kardinalitet:: 0..n
-Status:: Anbefalt
-
-== Distribusjon: format [[distribusjon-format]]
+=== Distribusjon: format [[distribusjon-format]]
 
 [properties]
 URI:: dct:format
@@ -30,7 +21,18 @@ Kardinalitet:: 1..n
 Status:: Obligatorisk
 Kommentar:: Norsk utvidelse - Denne egenskapen skal brukes istedetfor  <<distribusjon-mediatype>>
 
-== Distribusjon: lisens [[distribusjon-lisens]]
+== Anbefalte egenskaper for klassen _Distribusjon_
+
+=== Distribusjon: beskrivelse [[distribusjon-beskrivelse]]
+
+[properties]
+URI:: dct:description
+Range:: rdfs:Literal
+Beskrivelse:: Fritekstbeskrivelse av distribusjonen. Kan repeteres for parallelle språkversjoner
+Kardinalitet:: 0..n
+Status:: Anbefalt
+
+=== Distribusjon: lisens [[distribusjon-lisens]]
 
 [properties]
 URI:: dct:license
@@ -39,7 +41,9 @@ Beskrivelse:: Referanse til lisensen distribusjonen er gjort tilgjengelig under.
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
-== Distribusjon: filstørrelse [[distribusjon-filstrrelse]]
+== Valgfrie egenskaper for klassen _Distribusjon_
+
+=== Distribusjon: filstørrelse [[distribusjon-filstrrelse]]
 
 [properties]
 URI:: dcat:byteSize
@@ -48,7 +52,7 @@ Beskrivelse:: Distribusjonens størrelse oppgitt i bytes
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Distribusjon: sjekksum [[distribusjon-sjekksum]]
+=== Distribusjon: sjekksum [[distribusjon-sjekksum]]
 
 [properties]
 URI:: spdx:checksum
@@ -57,7 +61,7 @@ Beskrivelse:: Referanse til sjekksuminformasjon (en mekanisme for å verifisere 
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Distribusjon: dokumentasjon [[distribusjon-dokumentasjon]]
+=== Distribusjon: dokumentasjon [[distribusjon-dokumentasjon]]
 
 [properties]
 URI:: foaf:page
@@ -66,7 +70,7 @@ Beskrivelse:: Referanse til en side eller et dokument som beskriver distribusjon
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Distribusjon: nedlastningslenke [[distribusjon-nedlastningslenke]]
+=== Distribusjon: nedlastningslenke [[distribusjon-nedlastningslenke]]
 
 [properties]
 URI:: dcat:downloadURL
@@ -75,7 +79,7 @@ Beskrivelse:: Direktelenke (URL) til en nedlastbar fil i et gitt format
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Distribusjon: språk [[distribusjon-sprak]]
+=== Distribusjon: språk [[distribusjon-sprak]]
 
 [properties]
 URI:: dct:language
@@ -84,7 +88,7 @@ Beskrivelse:: Referanse til språk som er brukt i distribusjonen
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Distribusjon: samsvarer med [[distribusjon-samsvarer-med]]
+=== Distribusjon: samsvarer med [[distribusjon-samsvarer-med]]
 
 [properties]
 URI:: dct:conformsTo
@@ -93,7 +97,7 @@ Beskrivelse:: Referanse til et etablert skjema som distribusjonen er i samsvar m
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
+=== Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
 
 [properties]
 URI:: dct:issued
@@ -102,7 +106,7 @@ Beskrivelse:: Dato for formell utgivelse/publisering av distribusjonen
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Distribusjon: rettigheter [[distribusjon-rettigheter]]
+=== Distribusjon: rettigheter [[distribusjon-rettigheter]]
 
 [properties]
 URI:: dct:rights
@@ -111,7 +115,7 @@ Beskrivelse:: Viser til en uttalelse som angir rettigheter knyttet til distribus
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Distribusjon: status [[distribusjon-status]]
+=== Distribusjon: status [[distribusjon-status]]
 
 [properties]
 URI:: adms:status
@@ -120,7 +124,7 @@ Beskrivelse:: Distribusjonens modenhet (fullført, under utvikling, utgått, tre
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Distribusjon: tittel [[distribusjon-tittel]]
+=== Distribusjon: tittel [[distribusjon-tittel]]
 
 [properties]
 URI:: dct:title
@@ -129,7 +133,7 @@ Beskrivelse:: Navn på distribusjonen
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Distribusjon: endringsdato [[distribusjon-endringsdato]]
+=== Distribusjon: endringsdato [[distribusjon-endringsdato]]
 
 [properties]
 URI:: dct:modified
