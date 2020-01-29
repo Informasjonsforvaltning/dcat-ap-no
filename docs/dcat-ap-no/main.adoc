@@ -46,7 +46,7 @@ include::10_Egenskaper_for_klassen_Datasett.adoc[]
 
 include::11_Egenskaper_for_klassen_Distribusjon.adoc[]
 
-include::12_Egenskaper-for_klassen_Enhet.adoc[]
+include::12_Egenskaper-for_klassen_Aktor.adoc[]
 
 include::13_Egenskaper_for_klassen_Kategoriskjema.adoc[]
 
