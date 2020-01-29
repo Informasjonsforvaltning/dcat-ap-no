@@ -1,8 +1,8 @@
 = Kategori
 
-Egenskaper for klassen Kategori (obligatorisk)
+== Obligatoriske egenskaper for klassen _Kategori_
 
-== Kategori: foretrukket tittel
+=== Kategori: foretrukket tittel
 
 [properties]
 URI:: skos:prefLabel
