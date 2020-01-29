@@ -44,7 +44,7 @@ Status:: Obligatorisk
 [properties]
 URI:: dct:publisher
 Range:: foaf:Agent
-Beskrivelse:: Referanse til en enhet (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+Beskrivelse:: Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 

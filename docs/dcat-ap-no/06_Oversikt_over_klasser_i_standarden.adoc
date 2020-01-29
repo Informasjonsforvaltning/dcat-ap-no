@@ -1,10 +1,10 @@
 = Klasser i standarden
 
-== Enhet
+== Aktør
 
 [properties]
 Engelsk:: Agent
-Beskrivelse:: Enhet som er assosiert med katalogen og/eller datasettene. Dersom enheten er en organisasjon er det anbefalt å bruke «Organization Ontology»
+Beskrivelse:: Aktør som er assosiert med katalogen og/eller datasettene. Dersom aktøren er en organisasjon er det anbefalt å bruke «Organization Ontology»
 URI:: foaf:Agent
 Referanse:: http://xmlns.com/foaf/spec/#term_Agent , http://www.w3.org/TR/vocab-org/
 Status:: Obligatorisk
@@ -40,7 +40,7 @@ Status:: Obligatorisk
 
 [properties]
 Engelsk:: Dataset
-Beskrivelse:: En konseptuell enhet som representerer informasjonen som publiseres
+Beskrivelse:: En konseptuell aktøren som representerer informasjonen som publiseres
 URI:: dcat:Dataset
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
 Status:: Obligatorisk
