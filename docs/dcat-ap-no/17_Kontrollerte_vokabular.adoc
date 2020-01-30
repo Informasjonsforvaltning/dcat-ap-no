@@ -48,8 +48,8 @@ WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/f
 
 [vocabular]
 URI:: dct:language
-Brukt i (klasse):: <<Katalog>>, <<Datasett>>
-URI for vokabularet:: http://publications.europa.eu/mdr/authority/language/
+Brukt i (klasse):: <<Katalog>>, <<Datasett>>, <<Katalogpost>>, <<Distribusjon>>
+URI for vokabularet:: http://publications.europa.eu/resource/authority/language
 
 == MDR Corporate bodies Named Authority List
 
@@ -87,7 +87,7 @@ Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-s
 
 [vocabular]
 URI:: dct:type
-Brukt i (klasse):: <<Enhet>>
+Brukt i (klasse):: <<Aktør>>
 URI for vokabularet:: http://purl.org/adms/publishertype/
 Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
 
