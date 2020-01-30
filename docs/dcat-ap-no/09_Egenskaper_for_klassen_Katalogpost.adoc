@@ -2,12 +2,12 @@
 
 == Obligatoriske egenskaper for _Katalogpost_
 
-=== Katalogpost: primærtema [[katalogpost-primrtema]]
+=== Katalogpost: primærtema [[katalogpost-primartema]]
 
 [properties]
 URI:: foaf:primaryTopic
-Range:: dcat:Dataset
-Beskrivelse:: Denne egenskapen lenker katalogposten til datasettet som er beskrevet i katalogposten
+Range:: dcat:Dataset, dcat:Dataservice eller dcat:Catalog
+Beskrivelse:: Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 
