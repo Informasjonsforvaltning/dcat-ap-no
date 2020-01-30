@@ -1,4 +1,4 @@
-= Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)
+= Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
 Digitalseringsdirektoratet - Arbeidsdokument  - Versjon 2.0
 :doctype: book
 :docinfo:
@@ -66,11 +66,8 @@ include::20_Tidsrom.adoc[]
 
 include::21_Relasjoner.adoc[]
 
+:leveloffset: -1
+
 include::22_Kontrollerte_vokabular.adoc[]
 
 include::XX_endringslogg.adoc[]
-
-
-:leveloffset: -1
-
-include::17_Kontrollerte_vokabular.adoc[]
