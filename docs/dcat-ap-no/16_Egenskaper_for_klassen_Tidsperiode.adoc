@@ -1,28 +1,39 @@
 = Tidsrom
 
-== Valgfrie egenskaper for klassen _Tidsrom_
+== Anbefalte egenskaper for klassen _Tidsrom_
 
-=== Tidsrom: startdato/tid
-
+=== Tidsrom: startdato
 [properties]
-URI:: schema:startDate
-Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
+URI:: dcat:startDate
+Range:: rdfs:Literal skrevet som xsd:date eller xsd:dateTime
 Beskrivelse:: Definerer starten på tidsrommet
 Kardinalitet:: 0..1
-Status:: Valgfri
+Status:: Anbefalt
 
 === Tidsrom: sluttdato/tid
 
 [properties]
-URI:: schema:endDate
-Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
+URI:: dcat:endDate
+Range:: rdfs:Literal skrevet som xsd:date eller xsd:dateTime
 Beskrivelse:: Definerer slutten på tidsrommet
 Kardinalitet:: 0..1
-Status:: Valgfri
-Kommentar:: Vær oppmerksom på at mens begge egenskapene er valgfrie, må en av de to være til stede.
+Status:: Anbefalt
 
-Starten av tidsrommet skal forstås som starten på dato, time, minutt etc.
-gitt (for eksempel starter ved midnatt på begynnelsen av dagen hvis verdien er
-en dato); slutten av tidsrommet skal forstås som i slutten av dato, time,
-minutt etc. gitt (for eksempel slutter ved midnatt på slutten av dagen hvis
-verdien er en dato)
+NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to være til stede for hver forekomst av klassen dct: PeriodOfTime (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato)
+
+== Valgfrie egenskaper for klassen _Tidsrom_
+
+=== Tidsrom: begynnelse
+URI:: time:hasBeginning
+Range:: time:Instant
+Beskrivelse:: Definerer begynnelsen på et tidsrommet eller intervall
+Kardinalitet:: 0..1
+Status:: Valgfritt
+
+
+=== Tidsrom: slutt
+URI:: time:hasEnd
+Range:: time:Instant
+Beskrivelse:: Definerer slutten på et tidsromm eller intervall
+Kardinalitet:: 0..1
+Status:: Valgfritt
