@@ -15,11 +15,11 @@ Status:: Obligatorisk
 
 [properties]
 URI:: dct:format
-Range:: dct:MediaTypeOrExtent
+Range:: dct:MediaType
 Beskrivelse:: Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 Kardinalitet:: 1..n
 Status:: Obligatorisk
-Kommentar:: Norsk utvidelse - Denne egenskapen skal brukes istedetfor  <<distribusjon-mediatype>>
+Kommentar:: Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal brukes i stedet for  <<distribusjon-mediatype>>
 
 == Anbefalte egenskaper for klassen _Distribusjon_
 
