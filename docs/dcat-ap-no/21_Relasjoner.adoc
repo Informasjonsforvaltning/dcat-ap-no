@@ -1,3 +1,20 @@
-= Relasjoner (Relationships)
+= Relasjoner
 
-Innhold kommer
+== Obligatoriske egenskaper for klassen _Relasjoner_
+
+=== Relasjoner: rolle
+[properties]
+URI:: dcat:hadRole
+Range:: dcat:Role
+Beskrivelse:: Refererer til funksjonen til en aktør i forhold til en annen aktør eller ressurs.
+Kardinalitet:: 1..n
+Status:: Obligatorisk
+
+
+=== Relasjoner: relasjon
+[properties]
+URI:: dct:relation
+Range:: rdfs:Resource
+Beskrivelse:: Refererer til funksjonen til en aktør i forhold til en annen aktør eller ressurs.
+Kardinalitet:: 1..n
+Status:: Obligatorisk
