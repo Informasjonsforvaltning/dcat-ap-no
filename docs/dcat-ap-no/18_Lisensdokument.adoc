@@ -6,7 +6,7 @@
 
 [properties]
 URI:: dct:type
-Range:: rdfs:Class
-Beskrivelse:: Refererer til en type lisens, f.eks "åpen lisens" eller "royalties kreves".
-Kardinalitet:: 0..1
+Range:: skos:Concept
+Beskrivelse:: Refererer til type lisens, f.eks som indikerer "fri bruk" (Public Domain) eller "royalties kreves". Egenskapen kan gjentas i de tilfellene der flere lisenstyper gjelder for et lisensdokument.
+Kardinalitet:: 0..n
 Status:: Anbefalt
