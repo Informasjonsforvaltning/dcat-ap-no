@@ -35,7 +35,7 @@ Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved
 [properties]
 URI:: dcat:theme, subproperty of dct:subject
 Range:: skos:Concept
-Beskrivelse:: Referanse til et hovudtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/mdr/authority/data-theme/index.html[Data theme] som er publisert av EUs Publication Offices er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
+Beskrivelse:: Referanse til et hovudtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/resource/authority/data-theme[Data theme] som er publisert av EUs Publication Offices er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
@@ -132,7 +132,7 @@ Status:: Valgfri
 [properties]
 URI:: dct:accrualPeriodicity
 Range:: dct:Frequency
-Beskrivelse:: Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra http://publications.europa.eu/mdr/authority/frequency/index.html[Frequency] Name Authority List som vedlikeholdes av Publications Office.
+Beskrivelse:: Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra http://publications.europa.eu/resource/authority/frequency[Frequency] Name Authority List som vedlikeholdes av Publications Office.
 Kardinalitet:: 0..1
 Status:: Valgfri
 

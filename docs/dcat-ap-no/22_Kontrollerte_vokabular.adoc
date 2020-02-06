@@ -42,7 +42,7 @@ URI:: dct:format
 Brukt i (klasse):: <<Distribusjon>>
 URI for vokabularet:: http://www.iana.org/assignments/media-types/media-types.xhtml
 Beskrivelse:: Dersom aktuelt filformat ikke finnes hos IANA, angis filformatet etter samme oppbygging
-WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/file-type/[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
+WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/authority/file-type[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
 
 == MDR Languages Named Authority List
 
@@ -56,7 +56,7 @@ URI for vokabularet:: http://publications.europa.eu/resource/authority/language
 [vocabular]
 URI:: dct:publisher
 Brukt i (klasse):: <<Katalog>>, <<Datasett>>
-URI for vokabularet:: http://publications.europa.eu/mdr/authority/corporate-body/
+URI for vokabularet:: http://publications.europa.eu/resource/authority/corporate-body
 Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
 
 == Geonames
