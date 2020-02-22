@@ -28,12 +28,12 @@ Brukt i (klasse):: <<Datasett>>, <<Katalog>>
 URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
 Beskrivelse:: Verdiene som skal brukes for <<datasett-tema>>  er URIene for begrepene i selve vokabularene som brukes. Verdiene som skal brukes for <<katalog-temaer>> er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet.
 
-== Dublin Core Collection Description Frequency Vocabulary
+== EU Vocabularies Frequency
 
 [vocabular]
 URI:: dct:accrualPeriodicity
 Brukt i (klasse):: Datasett
-URI for vokabularet:: http://purl.org/cld/freq/
+URI for vokabularet:: http://publications.europa.eu/resource/authority/frequency
 
 == IANA Media Types
 
@@ -44,14 +44,14 @@ URI for vokabularet:: http://www.iana.org/assignments/media-types/media-types.xh
 Beskrivelse:: Dersom aktuelt filformat ikke finnes hos IANA, angis filformatet etter samme oppbygging
 WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/authority/file-type[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
 
-== MDR Languages Named Authority List
+== EU Vocabularies Languages Named Authority List
 
 [vocabular]
 URI:: dct:language
 Brukt i (klasse):: <<Katalog>>, <<Datasett>>, <<Katalogpost>>, <<Distribusjon>>
 URI for vokabularet:: http://publications.europa.eu/resource/authority/language
 
-== MDR Corporate bodies Named Authority List
+== EU Vocabularies Corporate bodies Named Authority List
 
 [vocabular]
 URI:: dct:publisher

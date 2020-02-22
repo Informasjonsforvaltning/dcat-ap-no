@@ -76,6 +76,24 @@ Beskrivelse:: Inneholder emneord (eller tag) som beskriver datasettet
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
+=== Datasett: dekningsområde [[datasett-dekningsomrade]]
+
+[properties]
+URI:: dct:spatial
+Range:: dct:Location
+Beskrivelse:: Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)
+Kardinalitet:: 0..n
+Status:: Anbefalt
+
+=== Datasett: tidsrom [[datasett-tidsrom]]
+
+[properties]
+URI:: dct:temporal
+Range:: dct:PeriodOfTime
+Beskrivelse:: Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601)
+Kardinalitet:: 0..n
+Status:: Anbefalt
+
 === Datasett: tilgangsnivå [[datasett-tilgangsniva]]
 
 [properties]
@@ -226,23 +244,6 @@ Beskrivelse:: Referanse til et datasett som gjeldende datasett er avledet fra
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-=== Datasett: dekningsområde [[datasett-dekningsomrade]]
-
-[properties]
-URI:: dct:spatial
-Range:: dct:Location
-Beskrivelse:: Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)
-Kardinalitet:: 0..n
-Status:: Valgfri
-
-=== Datasett: tidsrom [[datasett-tidsrom]]
-
-[properties]
-URI:: dct:temporal
-Range:: dct:PeriodOfTime
-Beskrivelse:: Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601)
-Kardinalitet:: 0..n
-Status:: Valgfri
 
 === Datasett: type [[datasett-type]]
 
