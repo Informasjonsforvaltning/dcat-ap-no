@@ -31,14 +31,6 @@ Beskrivelse:: Referanse til en applikasjonsprofil som datasettets metadata er i 
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
-=== Katalogpost: endringstype [[katalogpost-endringstype]]
-
-[properties]
-URI:: adms:status
-Range:: skos:Concept
-Beskrivelse:: Type endring for siste revisjon av en datasettbeskrivelse i katalogen. MÅ ha en av verdiene :created, :updated eller :deleted avhengig av om denne siste revisjonen er et resultat av en ny post, oppdatering eller sletting.
-Kardinalitet:: 0..1
-Status:: Anbefalt
 
 === Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
 
