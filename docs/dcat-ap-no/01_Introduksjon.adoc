@@ -7,7 +7,8 @@ Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede dat
 
 Digitaliseringsdirektoratet har utredet behovet for anbefalte og obligatoriske standarder for pekere til offentlige ressurser på nett. link:https://www.difi.no/artikkel/2016/05/utredning-av-standarder-pekere-til-offentlige-ressurser-pa-nett-v10[Les mer på standard.difi.no]
 
-NOTE: Språk skal angis for alle literaler i tråd med http://www.loc.gov/standards/iso639-2/php/code_list.php[ISO 639].
+NOTE: Alle forekomster av egenskapen `dct:language` (som kan gjentas dersom metadata er angitt på flere språk) MÅ ha en URI som sitt objekt - ikke en tekststreng fra ISO 639. [Mer om hva dette betyr i praksis]
+
 
 DCAT-AP-NO er basert på den europeiske DCAT-profilen https://joinup.ec.europa.eu/asset/dcat_application_profile/description[DCAT
 application profile for data portals in Europe] som er forvaltet av http://ec.europa.eu/isa/[EU-kommisjonens ISA-program].
