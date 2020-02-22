@@ -95,6 +95,15 @@ Beskrivelse:: Dato for siste oppdatering/endring av katalogen
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
+=== Katalog: dekningsområde [[katalog-dekningsomrade]]
+
+[properties]
+URI:: dct:spatial
+Range:: dct:Location
+Beskrivelse:: Referanse til et geografisk område som er dekket av katalogen
+Kardinalitet:: 0..n
+Status:: Anbefalt
+
 == Valgfrie egenskaper for _Katalog_
 
 === Katalog: er del av [[katalog-er-del-av]]
@@ -131,13 +140,4 @@ URI:: dct:rights
 Range:: dct:RightsStatement
 Beskrivelse:: Uttalelse som spesifiserer rettigheter knyttet til katalogen
 Kardinalitet:: 0..1
-Status:: Valgfri
-
-=== Katalog: dekningsområde [[katalog-dekningsomrade]]
-
-[properties]
-URI:: dct:spatial
-Range:: dct:Location
-Beskrivelse:: Referanse til et geografisk område som er dekket av katalogen
-Kardinalitet:: 0..n
 Status:: Valgfri
