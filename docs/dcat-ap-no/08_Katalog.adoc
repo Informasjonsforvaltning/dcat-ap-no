@@ -143,15 +143,28 @@ Beskrivelse:: Uttalelse som spesifiserer rettigheter knyttet til katalogen
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-=== Katalog: datatjeneste [[katalog-tjeneste]]
+=== Katalog: datatjeneste [[katalog-datatjeneste]]
+
+[properties]
 URI:: dcat:service
-mer kommer
+Range:: dcat:DataService
+Beskrivelse:: Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 
 === Katalog: katalog [[katalog-katalog]]
+
+[properties]
 URI:: dcat:catalog
-mer kommer
+Range:: dcat:Catalog
+Beskrivelse:: Refererer til en annen katalog som er relevant for denne katalogen
+Kardinalitet:: 0..1
+Status:: Valgfri
 
 === Katalog: produsent [[katalog-produsent]]
+
+[properties]
 URI:: dct:creator
 Range:: foaf:Agent
 Beskrivelse:: Refererer til enheten som er hovedansvarlig for å produsere katalogen.
