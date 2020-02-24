@@ -23,6 +23,16 @@ Kommentar:: Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal bru
 
 == Anbefalte egenskaper for klassen _Distribusjon_
 
+=== Distribusjon: tilgjengelighet [[distribusjon-tilgjengelighet]]
+
+[properties]
+URI:: dcatap:availability
+Range:: skos:Concept
+Beskrivelse:: En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier:  `temporary`, `experimental`, `available`, `stable`
+Kardinalitet:: 0..1
+Status:: Anbefalt
+
+
 === Distribusjon: beskrivelse [[distribusjon-beskrivelse]]
 
 [properties]
