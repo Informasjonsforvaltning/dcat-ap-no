@@ -1,2 +1,64 @@
+
 = Datatjeneste (Dataservice)
-Innhold kommer
+
+== Obligatoriske egenskaper for _Datatjeneste_
+
+=== EndepunktsURL
+
+[properties]
+URI:: dcat:endpointURL
+Range:: rdfs:Resource
+Beskrivelse:: Rotplassering eller primært endepunkt for tjenesten (en IRI)
+Kardinalitet:: 1..n
+Status:: Obligatorisk
+
+=== Tittel
+
+[properties]
+URI:: dct:title
+Range:: rdfs:Literal
+Beskrivelse:: Navn på datatjenesten. Kan gjentas for parallelle språkversjoner.
+Kardinalitet:: 1..n
+Status:: Obligatorisk
+
+=== Endepunktsbeskrivelse
+
+[properties]
+URI:: dcat:endpointDescription
+Range:: rdfs:Resource
+Beskrivelse:: Denne egenskapen inneholder en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens dct:conformsTo brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.
+Kardinalitet:: 0..n
+Status:: Anbefalt
+
+=== Tilgjengeliggjør datasett
+
+[properties]
+URI:: dcat:servesDataset
+Range:: dcat:Dataset
+Beskrivelse:: Refererer til en samling av data som datatjenesten kan distribuere.
+Kardinalitet:: 0..n
+Status:: Anbefalt
+
+=== Tilgangsrettigheter
+[properties]
+URI:: dct:accessRights
+Range:: dct:RightsStatement
+Beskrivelse:: Denne egenskapen KAN inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+=== Beskrivelse
+[properties]
+URI:: dct:description
+Range:: rdfs:Literal
+Beskrivelse:: Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen kan gjentas for parallelle språkversjoner.
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+=== Lisens
+[properties]
+URI:: dct:license
+Range:: dct:LicenseDocument
+Beskrivelse:: Inneholder lisensen som datatjenesten blir gjort tilgjengelig under.
+Kardinalitet:: 0..1
+Status:: Valgfri
