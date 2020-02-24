@@ -1,6 +1,8 @@
 = Klasser i standarden
 
-== Aktør
+== Obligatoriske klasser
+
+=== Aktør
 
 [properties]
 Engelsk:: Agent
@@ -9,25 +11,7 @@ URI:: foaf:Agent
 Referanse:: http://xmlns.com/foaf/spec/#term_Agent , http://www.w3.org/TR/vocab-org/
 Status:: Obligatorisk
 
-== Kategori
-
-[properties]
-Engelsk:: Category
-Beskrivelse:: Et emne for et datasett
-URI:: SKOS:Concept
-Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
-Status:: Obligatorisk
-
-== Kategoriskjema
-
-[properties]
-Engelsk:: Category scheme
-Beskrivelse:: En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
-URI:: SKOS:ConceptScheme
-Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
-Status:: Obligatorisk
-
-== Katalog
+=== Katalog
 
 [properties]
 Engelsk:: Catalogue
@@ -36,7 +20,7 @@ URI:: dcat:Catalog
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog
 Status:: Obligatorisk
 
-== Datasett
+=== Datasett
 
 [properties]
 Engelsk:: Dataset
@@ -45,7 +29,7 @@ URI:: dcat:Dataset
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
 Status:: Obligatorisk
 
-== Literal
+=== Literal
 
 [properties]
 Engelsk:: Literal
@@ -54,7 +38,7 @@ URI:: rdfs:Literal
 Referanse:: https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#section-Graph-Literal
 Status:: Obligatorisk
 
-== Ressurs
+=== Ressurs
 
 [properties]
 Engelsk:: Resource
@@ -63,7 +47,29 @@ URI:: rdfs:Resource
 Referanse:: http://www.w3.org/TR/rdf-schema/#ch_resource
 Status:: Obligatorisk
 
-== Distribusjon
+=== Kategori
+
+[properties]
+Engelsk:: Category
+Beskrivelse:: Et emne for et datasett
+URI:: SKOS:Concept
+Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+Status:: Obligatorisk
+Kommmentar:: Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
+
+=== Kategoriskjema
+
+[properties]
+Engelsk:: Category scheme
+Beskrivelse:: En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
+URI:: SKOS:ConceptScheme
+Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+Status:: Obligatorisk
+Kommmentar:: Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
+
+== Anbefalte klasser
+
+=== Distribusjon
 
 [properties]
 Engelsk:: Distribution
@@ -72,7 +78,7 @@ URI:: dcat:Distribution
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution
 Status:: Anbefalt
 
-== Lisensdokument
+=== Lisensdokument
 
 [properties]
 Engelsk:: License document
@@ -81,7 +87,9 @@ URI:: dct:LicenseDocument
 Referanse:: http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
 Status:: Anbefalt
 
-== Katalogpost
+== Valgrie klasser
+
+=== Katalogpost
 
 [properties]
 Engelsk:: Catalogue Record
@@ -90,7 +98,17 @@ URI:: dcat:CatalogRecord
 Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record
 Status:: Valgfri
 
-== Sjekksum
+=== Datatjeneste
+
+[properties]
+Engelsk:: Data Service
+Beskrivelse:: En samling av operasjoner som gir tilgang til ett eller flere datasett eller databehandlingsfunksjoner.
+URI:: dcat:DataService
+Referanse:: https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service
+Status:: Valgfri
+
+
+=== Sjekksum
 
 [properties]
 Engelsk:: Checksum
@@ -99,7 +117,7 @@ URI:: spdx:Checksum
 Referanse:: http://spdx.org/rdf/terms#Checksum
 Status:: Valgfri
 
-== Dokument
+=== Dokument
 
 [properties]
 Engelsk:: Document
@@ -108,7 +126,7 @@ URI:: foaf:Document
 Referanse:: http://xmlns.com/foaf/spec/#term_Document
 Status:: Valgfri
 
-== Frekvens
+=== Frekvens
 
 [properties]
 Engelsk:: Frequency
@@ -117,7 +135,7 @@ URI:: dct:Frequency
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-Frequency
 Status:: Valgfri
 
-== Identifikator
+=== Identifikator
 
 [properties]
 Engelsk:: Identifier
@@ -126,7 +144,7 @@ URI:: adms:Identifier
 Referanse:: http://www.w3.org/TR/vocab-adms/#identifier
 Status:: Valgfri
 
-== Kontaktpunkt
+=== Kontaktpunkt
 
 [properties]
 Engelsk:: Kind
@@ -135,7 +153,7 @@ URI:: vcard:Kind
 Referanse:: http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181
 Status:: Valgfri
 
-== Språksystem
+=== Språksystem
 
 [properties]
 Engelsk:: Linguistic system
@@ -144,7 +162,7 @@ URI:: dct:LinguisticSystem
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem
 Status:: Valgfri
 
-== Lokasjon
+=== Lokasjon
 
 [properties]
 Engelsk:: Location
@@ -153,7 +171,7 @@ URI:: dct:Location
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-Location
 Status:: Valgfri
 
-== Mediatype eller omfang
+=== Mediatype eller omfang
 
 [properties]
 Engelsk:: Media type or extent
@@ -162,7 +180,7 @@ URI:: dct:MediaTypeOrExtent
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-MediaTypeOrExtent
 Status:: Valgfri
 
-== Tidsrom
+=== Tidsrom
 
 [properties]
 Engelsk:: Period of time
@@ -171,7 +189,7 @@ URI:: dct:PeriodOfTime
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-PeriodOfTime
 Status:: Valgfri
 
-== Utgivertype
+=== Utgivertype
 
 [properties]
 Engelsk:: Publisher type
@@ -180,7 +198,7 @@ URI:: skos:Concept
 Referanse:: http://www.w3.org/TR/vocab-adms/#dcterms-type
 Status:: Valgfri
 
-== Rettighetsutsagn
+=== Rettighetsutsagn
 
 [properties]
 Engelsk:: Rights statement
@@ -189,7 +207,7 @@ URI:: dct:RightsStatement
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement
 Status:: Valgfri
 
-== Standard
+=== Standard
 
 [properties]
 Engelsk:: Standard
@@ -198,7 +216,7 @@ URI:: dct:Standard
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-Standard
 Status:: Valgfri
 
-== Status
+=== Status
 
 [properties]
 Engelsk:: Status
@@ -207,7 +225,7 @@ URI:: skos:Concept
 Referanse:: http://www.w3.org/TR/vocab-adms/#status
 Status:: Valgfri
 
-== Opphav
+=== Opphav
 
 [properties]
 Engelsk:: ProvenanceStatement
