@@ -11,3 +11,12 @@ Range:: rdfs:Resource
 Beskrivelse:: Rotplassering eller primært endepunkt for tjenesten (en IRI)
 Kardinalitet:: 1..n
 Status:: Obligatorisk
+
+=== Tittel
+
+[properties]
+URI:: dct:title
+Range:: rdfs:Literal
+Beskrivelse:: Navn på datatjenesten. Kan gjentas for parallelle språkversjoner.
+Kardinalitet:: 1..n
+Status:: Obligatorisk
