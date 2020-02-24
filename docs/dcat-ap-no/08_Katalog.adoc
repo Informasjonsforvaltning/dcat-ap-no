@@ -106,6 +106,15 @@ Status:: Anbefalt
 
 == Valgfrie egenskaper for _Katalog_
 
+=== Katalog: har del [[katalog-har-del]]
+
+[properties]
+URI:: dct:hasPart
+Range:: dcat:Catalog
+Beskrivelse:: Referanse til en beslektet katalog som er en del av den beskrevne katalogen
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 === Katalog: er del av [[katalog-er-del-av]]
 
 [properties]
@@ -115,14 +124,6 @@ Beskrivelse:: Refereranse til en beslektet katalog som denne katalogen er fysisk
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-=== Katalog: har del [[katalog-har-del]]
-
-[properties]
-URI:: dct:hasPart
-Range:: dcat:Catalog
-Beskrivelse:: Referanse til en beslektet katalog som er en del av den beskrevne katalogen
-Kardinalitet:: 0..n
-Status:: Valgfri
 
 === Katalog: katalogpost [[katalog-katalogpost]]
 
@@ -139,5 +140,33 @@ Status:: Valgfri
 URI:: dct:rights
 Range:: dct:RightsStatement
 Beskrivelse:: Uttalelse som spesifiserer rettigheter knyttet til katalogen
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+=== Katalog: datatjeneste [[katalog-datatjeneste]]
+
+[properties]
+URI:: dcat:service
+Range:: dcat:DataService
+Beskrivelse:: Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+
+=== Katalog: katalog [[katalog-katalog]]
+
+[properties]
+URI:: dcat:catalog
+Range:: dcat:Catalog
+Beskrivelse:: Refererer til en annen katalog som er relevant for denne katalogen
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+=== Katalog: produsent [[katalog-produsent]]
+
+[properties]
+URI:: dct:creator
+Range:: foaf:Agent
+Beskrivelse:: Refererer til enheten som er hovedansvarlig for å produsere katalogen.
 Kardinalitet:: 0..1
 Status:: Valgfri
