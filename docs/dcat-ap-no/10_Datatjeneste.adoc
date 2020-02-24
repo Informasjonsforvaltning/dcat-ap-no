@@ -3,7 +3,7 @@
 
 == Obligatoriske egenskaper for _Datatjeneste_
 
-=== EndepunktsURL
+=== Datatjeneste: endepunktsURL [[datatjeneste-endepunktsurl]]
 
 [properties]
 URI:: dcat:endpointURL
@@ -12,7 +12,7 @@ Beskrivelse:: Rotplassering eller primært endepunkt for tjenesten (en IRI)
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-=== Tittel
+=== Datatjeneste: tittel [[datatjeneste-tittel]]
 
 [properties]
 URI:: dct:title
@@ -21,7 +21,10 @@ Beskrivelse:: Navn på datatjenesten. Kan gjentas for parallelle språkversjoner
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-=== Endepunktsbeskrivelse
+
+== Anbefalte egenskaper for _Datatjeneste_
+
+=== Datatjeneste: endepunktsbeskrivelse [[datatjeneste-endepunktsbeskrivelse]]
 
 [properties]
 URI:: dcat:endpointDescription
@@ -30,7 +33,7 @@ Beskrivelse:: Denne egenskapen inneholder en beskrivelse av tjenestene som er ti
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-=== Tilgjengeliggjør datasett
+=== Datatjeneste: tilgjengeliggjør datasett [[datatjeneste-tilgjengeliggjor-datasett]]
 
 [properties]
 URI:: dcat:servesDataset
@@ -39,7 +42,9 @@ Beskrivelse:: Refererer til en samling av data som datatjenesten kan distribuere
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-=== Tilgangsrettigheter
+== Valgfrie egenskaper for _Datatjeneste_
+
+=== Datatjeneste: tilgangsrettigheter [[datatjeneste-tilgangsrettigheter]]
 [properties]
 URI:: dct:accessRights
 Range:: dct:RightsStatement
@@ -47,7 +52,7 @@ Beskrivelse:: Denne egenskapen KAN inkludere informasjon angående tilgang eller
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-=== Beskrivelse
+=== Datatjeneste: beskrivelse [[datatjeneste-beskrivelse]]
 [properties]
 URI:: dct:description
 Range:: rdfs:Literal
@@ -55,7 +60,7 @@ Beskrivelse:: Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen kan
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-=== Lisens
+=== Datatjeneste: lisens [[datatjeneste-lisens]]
 [properties]
 URI:: dct:license
 Range:: dct:LicenseDocument
