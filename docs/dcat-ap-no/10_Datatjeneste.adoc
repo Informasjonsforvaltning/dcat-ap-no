@@ -1,2 +1,13 @@
+
 = Datatjeneste (Dataservice)
-Innhold kommer
+
+== Obligatoriske egenskaper for _Datatjeneste_
+
+=== EndepunktsURL
+
+[properties]
+URI:: dcat:endpointURL
+Range:: rdfs:Resource
+Beskrivelse:: Rotplassering eller primært endepunkt for tjenesten (en IRI)
+Kardinalitet:: 1..n
+Status:: Obligatorisk
