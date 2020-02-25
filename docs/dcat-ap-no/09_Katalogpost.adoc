@@ -1,4 +1,6 @@
-= Katalogpost (valgfri) [[katalogpost]]
+= Katalogpost [[katalogpost]]
+
+Klassen _Katalogpost_ er valgfri
 
 == Obligatoriske egenskaper for _Katalogpost_
 

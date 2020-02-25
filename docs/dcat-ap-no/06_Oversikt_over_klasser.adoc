@@ -87,7 +87,7 @@ URI:: dct:LicenseDocument
 Referanse:: http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
 Status:: Anbefalt
 
-== Valgrie klasser
+== Valgfrie klasser
 
 === Katalogpost
 

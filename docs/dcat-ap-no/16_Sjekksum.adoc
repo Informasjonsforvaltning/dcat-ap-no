@@ -1,5 +1,7 @@
 = Sjekksum
 
+Klassen _Sjekksum_ er valgfri
+
 == Obligatoriske egenskaper for klassen _Sjekksum_
 
 === Sjekksum: algoritme [[sjekksum-algoritme]]

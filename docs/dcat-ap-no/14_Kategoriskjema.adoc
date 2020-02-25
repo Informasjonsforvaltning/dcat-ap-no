@@ -1,4 +1,5 @@
 = Kategoriskjema
+Klassen _Kategoriskjema_ er obligatorisk
 
 == Obligatriske egenskaper for klassen _Kategoriskjema_
 

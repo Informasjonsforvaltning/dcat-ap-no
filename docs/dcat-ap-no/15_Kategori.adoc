@@ -1,4 +1,5 @@
 = Kategori
+Klassen _Kategori_ er obligatorisk
 
 == Obligatoriske egenskaper for klassen _Kategori_
 

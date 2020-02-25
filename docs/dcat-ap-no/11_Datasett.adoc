@@ -1,4 +1,5 @@
 = Datasett
+Klassen _Datasett_ er obligatorisk
 
 == Obligatoriske egenskaper for klassen _Datasett_
 

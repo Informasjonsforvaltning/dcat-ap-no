@@ -1,5 +1,7 @@
 = Distribusjon
 
+Klassen _Distribusjon_ er anbefalt 
+
 == Obligatoriske egenskaper for klassen _Distribusjon_
 
 === Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
