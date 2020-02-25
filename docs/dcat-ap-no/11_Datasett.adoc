@@ -218,6 +218,16 @@ Beskrivelse:: Viser til en lenke til en _Aktør_ som har en eller annen form for
 Kardinalitet:: 0..n
 Status:: Valgfri
 
+=== Datasett: kvalifisert relasjon [[kvalifisert-relasjon]]
+
+[properties]
+URI:: dcat:qualifiedRelation
+Range:: dcat:Relationship
+Beskrivelse:: En beslektet ressurs, for eksempel en publikasjon, som refererer, siterer eller på annen måte peker til datasettet.
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+
 === Datasett: relatert ressurs [[datasett-relatertressurs]]
 
 [properties]
