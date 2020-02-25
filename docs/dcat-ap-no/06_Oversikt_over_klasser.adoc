@@ -21,7 +21,7 @@ Status:: Obligatorisk
 
 === Datasett [[klasse-datasett]]
 
-[stripes=even]
+[cols="30,70", stripes=even]
 |===
 |Engelsk | Dataset
 |Beskrivelse | En konseptuell aktøren som representerer informasjonen som publiseres
