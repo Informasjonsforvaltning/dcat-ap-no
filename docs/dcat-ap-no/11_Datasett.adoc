@@ -370,3 +370,12 @@ Beskrivelse:: Referanse til datasett som er ment å erstatte dette datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
 Kommentar:: Norsk utvidelse
+
+=== Datasett: ble generert av [[datasett-ble-generert-av]]
+
+[properties]
+URI:: prov:wasGeneratedBy
+Range:: prov:Activity
+Beskrivelse:: Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for opretting av det.
+Kardinalitet:: 0..n
+Status:: Valgfri
