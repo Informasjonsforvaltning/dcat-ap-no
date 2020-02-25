@@ -164,11 +164,11 @@ Beskrivelse:: Viser til en uttalelse som angir rettigheter knyttet til distribus
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-=== Distribusjon: Romlig oppløsning [[romlig-opplosning]]
+=== Distribusjon: geografisk oppløsning [[geografisk-opplosning]]
 [properties]
 URI:: dcat:spatialResolutionInMeters
 Range:: xsd:decimal
-Beskrivelse:: Refererer til den minste romlige oppdelingen for en datasettdistribusjon målt i meter
+Beskrivelse:: Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter
 Kardinalitet:: 0..n
 Status:: Valgfri
 
