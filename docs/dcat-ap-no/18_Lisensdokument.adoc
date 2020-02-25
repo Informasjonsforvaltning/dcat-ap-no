@@ -1,5 +1,7 @@
 = Lisensdokument
 
+Klassen _Lisensdokument_ er anbefalt
+
 == Anbefalte egenskaper for klassen Lisensdokument
 
 === Lisensdokument: lisenstype

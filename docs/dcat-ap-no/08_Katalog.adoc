@@ -1,5 +1,6 @@
 
-= Katalog (obligatorisk) [[katalog]]
+= Katalog [[katalog]]
+Klassen _Katalog_ er obligatorisk
 
 == Obligatoriske egenskaper for _Katalog_
 

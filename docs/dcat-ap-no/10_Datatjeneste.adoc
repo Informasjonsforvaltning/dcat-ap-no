@@ -1,5 +1,7 @@
 
-= Datatjeneste (Dataservice)
+= Datatjeneste
+
+Klassen _Datatjeneste_ er valgfri
 
 == Obligatoriske egenskaper for _Datatjeneste_
 
