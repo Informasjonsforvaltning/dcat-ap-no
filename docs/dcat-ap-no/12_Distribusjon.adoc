@@ -128,7 +128,7 @@ Beskrivelse:: Referanse til språk som er brukt i distribusjonen
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-=== Distribusjon: samsvarer med [[distribusjon-samsvarer-med]]
+=== Distribusjon: i samsvar med [[distribusjon-i-samsvar-med]]
 
 [properties]
 URI:: dct:conformsTo
