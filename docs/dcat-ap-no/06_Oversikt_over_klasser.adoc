@@ -216,6 +216,16 @@ URI:: dct:Standard
 Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-Standard
 Status:: Valgfri
 
+=== Rolle
+
+[properties]
+Engelsk:: Role
+Beskrivelse:: En rolle er funksjonen til en ressurs eller aktør i forhold til en annen ressurs. Her brukt i sammenheng med ressurshenvisning (resource attribution) eller ressursrelasjoner. Merk at det er en underklasse av `skos:Concept`.
+URI:: dcat:Role
+Referanse:: https://www.w3.org/TR/vocab-dcat-2/#Class:Role
+Status:: Valgfri
+
+
 === Status
 
 [properties]
