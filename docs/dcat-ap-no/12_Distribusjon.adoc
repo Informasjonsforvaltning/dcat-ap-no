@@ -1,6 +1,6 @@
 = Distribusjon
 
-Klassen _Distribusjon_ er anbefalt 
+Klassen _Distribusjon_ er anbefalt
 
 == Obligatoriske egenskaper for klassen _Distribusjon_
 
@@ -55,7 +55,17 @@ Status:: Anbefalt
 
 == Valgfrie egenskaper for klassen _Distribusjon_
 
-=== Distribusjon: filstørrelse [[distribusjon-filstrrelse]]
+=== Distribusjon: tilgangstjeneste [[distribusjon-tilganstjeneste]]
+
+[properties]
+URI:: dcat:accessService
+Range:: dcat:DataService
+Beskrivelse:: Refererer til en datatjeneste som gir tilgang til distribusjonen av datasettet.
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+
+=== Distribusjon: filstørrelse [[distribusjon-filstorrelse]]
 
 [properties]
 URI:: dcat:byteSize
@@ -64,12 +74,21 @@ Beskrivelse:: Distribusjonens størrelse oppgitt i bytes
 Kardinalitet:: 0..1
 Status:: Valgfri
 
+
 === Distribusjon: sjekksum [[distribusjon-sjekksum]]
 
 [properties]
 URI:: spdx:checksum
 Range:: spdx:Checksum
 Beskrivelse:: Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg)
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+=== Distribusjon: komprimeringsformat [[distribusjon-komprimeringsformat]]
+[properties]
+URI:: dcat:compressFormat
+Range:: dct:MediaType
+Beskrivelse:: Komprimeringsformatet for distribusjonen som dataene er i dersom de er i en komprimert form, f.eks. for å redusere størrelsen på den nedlastbare filen.
 Kardinalitet:: 0..1
 Status:: Valgfri
 
@@ -91,6 +110,15 @@ Beskrivelse:: Direktelenke (URL) til en nedlastbar fil i et gitt format
 Kardinalitet:: 0..n
 Status:: Valgfri
 
+=== Distribusjon: policy
+[properties]
+URI:: odrl:hasPolicy
+Range:: odrl:Policy
+Beskrivelse:: Refererer til policyen som uttrykker rettighetene knyttet til distribusjonen hvis de bruker ODRL-vokabularet.
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+
 === Distribusjon: språk [[distribusjon-sprak]]
 
 [properties]
@@ -108,6 +136,15 @@ Range:: dct:Standard
 Beskrivelse:: Referanse til et etablert skjema som distribusjonen er i samsvar med
 Kardinalitet:: 0..n
 Status:: Valgfri
+
+=== Distribusjon: pakkeformat [[distribusjon-pakkeformat]]
+[properties]
+URI:: dcat:packageFormat
+Range:: dct:MediaType
+Beskrivelse:: Refererer til formatet til filen der en eller flere datafiler er gruppert sammen, f.eks. for å gjøre det mulig å laste ned et sett relaterte filer.
+Kardinalitet:: 0..1
+Status:: Valgfri
+
 
 === Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
 
@@ -127,14 +164,32 @@ Beskrivelse:: Viser til en uttalelse som angir rettigheter knyttet til distribus
 Kardinalitet:: 0..1
 Status:: Valgfri
 
+=== Romlig oppløsning [[romlig-opplosning]]
+[properties]
+URI:: dcat:spatialResolutionInMeters
+Range:: xsd:decimal
+Beskrivelse:: Refererer til den minste romlige oppdelingen for en datasettdistribusjon målt i meter
+Kardinalitet:: 0..n
+Status:: Valgfri
+
+
 === Distribusjon: status [[distribusjon-status]]
 
 [properties]
 URI:: adms:status
 Range:: skos:Concept
-Beskrivelse:: Distribusjonens modenhet (fullført, under utvikling, utgått, trekt tilbake)
+Beskrivelse:: Distribusjonens modenhet.  Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
 Kardinalitet:: 0..1
 Status:: Valgfri
+
+=== Distribusjon: tidsromsoppløsning
+[properties]
+URI:: dcat:temporalResolution
+Range:: xsd:duration
+Beskrivelse:: Refererer til minste tidsrommet som kan utledes fra datasett-distribusjonen ("resolvable in the dataset distribution").
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 
 === Distribusjon: tittel [[distribusjon-tittel]]
 
