@@ -15,6 +15,6 @@ Status:: Obligatorisk
 [properties]
 URI:: dct:relation
 Range:: rdfs:Resource
-Beskrivelse:: Refererer til funksjonen til en aktør i forhold til en annen aktør eller ressurs.
+Beskrivelse:: Refererer til ressursen som har relasjon til kilderessursen.
 Kardinalitet:: 1..n
 Status:: Obligatorisk
