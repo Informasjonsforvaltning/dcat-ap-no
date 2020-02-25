@@ -4,7 +4,7 @@
 
 === Aktør [[klasse-aktor]]
 
-[properties]
+[horizontal]
 Engelsk:: Agent
 Beskrivelse:: Aktør som er assosiert med katalogen og/eller datasettene. Dersom aktøren er en organisasjon er det anbefalt å bruke «Organization Ontology»
 URI:: foaf:Agent
@@ -13,7 +13,7 @@ Status:: Obligatorisk
 
 === Katalog [[klasse-katalog]]
 
-[properties]
+[horizontal]
 Engelsk:: Catalogue
 Beskrivelse:: En katalog eller repository som inneholder beskrivelsene av datasettene som er beskrevet.
 URI:: dcat:Catalog
