@@ -12,7 +12,6 @@ Referanse:: http://xmlns.com/foaf/spec/#term_Agent , http://www.w3.org/TR/vocab-
 Status:: Obligatorisk
 
 === Katalog [[klasse-katalog]]
-
 [horizontal]
 Engelsk:: Catalogue
 Beskrivelse:: En katalog eller repository som inneholder beskrivelsene av datasettene som er beskrevet.
@@ -22,6 +21,7 @@ Status:: Obligatorisk
 
 === Datasett [[klasse-datasett]]
 
+[stripes=even]
 |===
 |Engelsk | Dataset
 |Beskrivelse | En konseptuell aktøren som representerer informasjonen som publiseres
