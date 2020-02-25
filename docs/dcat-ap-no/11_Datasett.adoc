@@ -209,6 +209,15 @@ Beskrivelse:: Referanse til objekt som beskriver hvor datasettet kommer fra, hvo
 Kardinalitet:: 0..1
 Status:: Valgfri
 
+=== Datasett: kvalifisert navngivelse [[kvalifisert-navngivelse]]
+
+[properties]
+URI:: prov:qualifiedAttribution
+Range:: prov:Attribution
+Beskrivelse:: Viser til en lenke til en _Aktør_ som har en eller annen form for ansvar for ressursen
+Kardinalitet:: 0..n
+Status:: Valgfri
+
 === Datasett: relatert ressurs [[datasett-relatertressurs]]
 
 [properties]
