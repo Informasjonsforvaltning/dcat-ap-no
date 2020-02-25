@@ -6,7 +6,7 @@
 [properties]
 URI:: dcat:hadRole
 Range:: dcat:Role
-Beskrivelse:: Refererer til funksjonen til en aktør i forhold til en annen aktør eller ressurs.
+Beskrivelse:: Refererer til funksjonen til en enhet eller aktør i forhold til en annen enhet eller ressurs.
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
