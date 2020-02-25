@@ -110,7 +110,7 @@ Beskrivelse:: Direktelenke (URL) til en nedlastbar fil i et gitt format
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-=== Distribusjon: policy
+=== Distribusjon: policy [[distribusjon-policy]]
 [properties]
 URI:: odrl:hasPolicy
 Range:: odrl:Policy
@@ -164,7 +164,7 @@ Beskrivelse:: Viser til en uttalelse som angir rettigheter knyttet til distribus
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-=== Romlig oppløsning [[romlig-opplosning]]
+=== Distribusjon: Romlig oppløsning [[romlig-opplosning]]
 [properties]
 URI:: dcat:spatialResolutionInMeters
 Range:: xsd:decimal
