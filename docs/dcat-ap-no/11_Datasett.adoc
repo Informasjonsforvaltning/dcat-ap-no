@@ -264,6 +264,14 @@ Beskrivelse:: Referanse til et datasett som gjeldende datasett er avledet fra
 Kardinalitet:: 0..n
 Status:: Valgfri
 
+=== Datasett: geografisk oppløsning [[geografisk-oppløsning]]
+
+[properties]
+URI:: dcat:spatialResolutionInMeters
+Range:: xsd:decimal
+Beskrivelse::  Refererer til den minimale geografiske oppløsningen for et datasett målt i meter.
+Kardinalitet:: 0..n
+Status:: Valgfri
 
 === Datasett: type [[datasett-type]]
 
