@@ -22,12 +22,14 @@ Status:: Obligatorisk
 
 === Datasett [[klasse-datasett]]
 
-[properties]
-Engelsk:: Dataset
-Beskrivelse:: En konseptuell aktøren som representerer informasjonen som publiseres
-URI:: dcat:Dataset
-Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
-Status:: Obligatorisk
+|===
+|Engelsk | Dataset
+|Beskrivelse | En konseptuell aktøren som representerer informasjonen som publiseres
+|URI | dcat:Dataset
+|Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
+|Status | Obligatorisk
+
+|===
 
 === Literal [[klasse-literal]]
 
