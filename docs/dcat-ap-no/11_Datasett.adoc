@@ -282,15 +282,14 @@ Beskrivelse:: Egenskap som beskriver forskjellene mellom denne og en tidligere v
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-=== Datasett: skaper [[datasett-skaper]]
+=== Datasett: produsent [[datasett-produsent]]
 
 [properties]
 URI:: dct:creator
-Range:: rdfs:Resource
-Beskrivelse:: Referanse til produsent av datasettet
+Range:: foaf:Agent
+Beskrivelse:: Referanse til enhet som er produsent av datasettet
 Kardinalitet:: 0..n
 Status:: Valgfri
-Kommentar:: Norsk utvidelse
 
 === Datasett: refererer til [[datasett-refererer-til]]
 
