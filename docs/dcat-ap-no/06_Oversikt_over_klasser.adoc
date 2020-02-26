@@ -4,243 +4,292 @@
 
 === Aktør [[klasse-aktor]]
 
-[horizontal]
-Engelsk:: Agent
-Beskrivelse:: Aktør som er assosiert med katalogen og/eller datasettene. Dersom aktøren er en organisasjon er det anbefalt å bruke «Organization Ontology»
-URI:: foaf:Agent
-Referanse:: http://xmlns.com/foaf/spec/#term_Agent , http://www.w3.org/TR/vocab-org/
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Agent
+| Beskrivelse: | Aktør som er assosiert med katalogen og/eller datasettene. Dersom aktøren er en organisasjon er det anbefalt å bruke «Organization Ontology»
+| URI: | foaf:Agent
+| Referanse: | http://xmlns.com/foaf/spec/#term_Agent , http://www.w3.org/TR/vocab-org/
+| Status: | Obligatorisk
+|===
 
 === Katalog [[klasse-katalog]]
-[horizontal]
-Engelsk:: Catalogue
-Beskrivelse:: En katalog eller repository som inneholder beskrivelsene av datasettene som er beskrevet.
-URI:: dcat:Catalog
-Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog
-Status:: Obligatorisk
+
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Catalogue
+| Beskrivelse: | En katalog eller repository som inneholder beskrivelsene av datasettene som er beskrevet.
+| URI: | dcat:Catalog
+| Referanse: | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog
+| Status: | Obligatorisk
+|===
 
 === Datasett [[klasse-datasett]]
 
+[cols="30s,70d"]
 |===
-|Engelsk | Dataset
-|Beskrivelse | En konseptuell enhet som representerer informasjonen som publiseres
-|URI | dcat:Dataset
-|Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
-|Status | Obligatorisk
-
+|Engelsk navn: | Dataset
+|Beskrivelse: | En konseptuell enhet som representerer informasjonen som publiseres
+|URI: | dcat:Dataset
+|Referanse: | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
+|Status: | Obligatorisk
 |===
 
 === Literal [[klasse-literal]]
 
-[properties]
-Engelsk:: Literal
-Beskrivelse:: En literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som innholder maskinlesbar tekst har en valgfri språk-tag, definert av BCP47 (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk)
-URI:: rdfs:Literal
-Referanse:: https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#section-Graph-Literal
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Literal
+| Beskrivelse: | En literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som innholder maskinlesbar tekst har en valgfri språk-tag, definert av BCP47 (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk)
+| URI: | rdfs:Literal
+| Referanse: | https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#section-Graph-Literal
+| Status: | Obligatorisk
+|===
 
 === Ressurs [[klasse-ressurs]]
 
-[properties]
-Engelsk:: Resource
-Beskrivelse:: Hva som helst som er beskrevet med RDF
-URI:: rdfs:Resource
-Referanse:: http://www.w3.org/TR/rdf-schema/#ch_resource
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Resource
+| Beskrivelse: | Hva som helst som er beskrevet med RDF
+| URI: | rdfs:Resource
+| Referanse: | http://www.w3.org/TR/rdf-schema/#ch_resource
+| Status: | Obligatorisk
+|===
 
 === Kategori [[klasse-kategori]]
 
-[properties]
-Engelsk:: Category
-Beskrivelse:: Et emne for et datasett
-URI:: SKOS:Concept
-Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
-Status:: Obligatorisk
-Kommmentar:: Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Category
+| Beskrivelse: | Et emne for et datasett
+| URI: | SKOS:Concept
+| Referanse: | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+| Status: | Obligatorisk
+|Kommentar: | Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
+|===
 
 === Kategoriskjema [[klasse-kategoriskjema]]
 
-[properties]
-Engelsk:: Category scheme
-Beskrivelse:: En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
-URI:: SKOS:ConceptScheme
-Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
-Status:: Obligatorisk
-Kommmentar:: Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Category scheme
+| Beskrivelse: | En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
+| URI: | SKOS:ConceptScheme
+| Referanse: | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+| Status: | Obligatorisk
+| Kommmentar:| Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
+|===
 
 == Anbefalte klasser
 
 === Distribusjon [[klasse-distribusjon]]
 
-[properties]
-Engelsk:: Distribution
-Beskrivelse:: En fysisk utførelse av datasettet i et bestemt format.
-URI:: dcat:Distribution
-Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Distribution
+| Beskrivelse: | En fysisk utførelse av datasettet i et bestemt format.
+| URI: | dcat:Distribution
+| Referanse: | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution
+| Status: | Anbefalt
+|===
 
 === Lisensdokument [[klasse-lisensdokument]]
 
-[properties]
-Engelsk:: License document
-Beskrivelse:: En juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.
-URI:: dct:LicenseDocument
-Referanse:: http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+| Engelsk navn: | License document
+| Beskrivelse: | En juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.
+| URI: | dct:LicenseDocument
+| Referanse: | http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
+| Status: | Anbefalt
+|===
 
 == Valgfrie klasser
 
 === Katalogpost [[klasse-katalogpost]]
 
-[properties]
-Engelsk:: Catalogue Record
-Beskrivelse:: En beskrivelse av en datasettoppføring i katalogen.
-URI:: dcat:CatalogRecord
-Referanse:: http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Catalogue Record
+| Beskrivelse: | En beskrivelse av en datasettoppføring i katalogen.
+| URI: | dcat:CatalogRecord
+| Referanse: | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record
+| Status: | Valgfri
+|===
 
 === Datatjeneste [[klasse-datatjeneste]]
 
-[properties]
-Engelsk:: Data Service
-Beskrivelse:: En samling av operasjoner som gir tilgang til ett eller flere datasett eller databehandlingsfunksjoner.
-URI:: dcat:DataService
-Referanse:: https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service
-Status:: Valgfri
-
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Data Service
+| Beskrivelse: | En samling av operasjoner som gir tilgang til ett eller flere datasett eller databehandlingsfunksjoner.
+| URI: | dcat:DataService
+| Referanse: | https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service
+| Status: | Valgfri
+|===
 
 === Sjekksum [[klasse-sjekksum]]
 
-[properties]
-Engelsk:: Checksum
-Beskrivelse:: En beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
-URI:: spdx:Checksum
-Referanse:: http://spdx.org/rdf/terms#Checksum
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Checksum
+| Beskrivelse: | En beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
+| URI: | spdx:Checksum
+| Referanse: | http://spdx.org/rdf/terms#Checksum
+| Status: | Valgfri
+|===
 
 === Dokument  [[klasse-dokument]]
 
-[properties]
-Engelsk:: Document
-Beskrivelse:: En tekstlig ressurs beregnet på mennesker som inneholder informasjon. For eksempel en nettside om et datasett.
-URI:: foaf:Document
-Referanse:: http://xmlns.com/foaf/spec/#term_Document
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Document
+| Beskrivelse: | En tekstlig ressurs beregnet på mennesker som inneholder informasjon. For eksempel en nettside om et datasett.
+| URI: | foaf:Document
+| Referanse: | http://xmlns.com/foaf/spec/#term_Document
+| Status: | Valgfri
+|===
 
 === Frekvens [[klasse-frekvens]]
 
-[properties]
-Engelsk:: Frequency
-Beskrivelse:: Hvor ofte noe skjer, for eksempel publisering av et datasett.
-URI:: dct:Frequency
-Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-Frequency
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Frequency
+| Beskrivelse: | Hvor ofte noe skjer, for eksempel publisering av et datasett.
+| URI: | dct:Frequency
+| Referanse: | http://dublincore.org/documents/dcmi-terms/#terms-Frequency
+| Status: | Valgfri
+|===
 
 === Identifikator [[klasse-identifikator]]
 
-[properties]
-Engelsk:: Identifier
-Beskrivelse:: En identifikator i en bestemt kontekst, bestående av strengen som er identifikatoren; en valgfri identifikator for identifikatorsystemet; en valgfri identifikator for versjonen av identifikatorsystemet; en valgfri identifikator for etaten som administrerer identifikatorsystemet
-URI:: adms:Identifier
-Referanse:: http://www.w3.org/TR/vocab-adms/#identifier
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Identifier
+| Beskrivelse: | En identifikator i en bestemt kontekst, bestående av strengen som er identifikatoren; en valgfri identifikator for identifikatorsystemet; en valgfri identifikator for versjonen av identifikatorsystemet; en valgfri identifikator for etaten som administrerer identifikatorsystemet
+| URI: | adms:Identifier
+| Referanse: | http://www.w3.org/TR/vocab-adms/#identifier
+| Status: | Valgfri
+|===
 
 === Kontaktpunkt [[klasse-kontaktpunkt]]
 
-[properties]
-Engelsk:: Kind
-Beskrivelse:: En beskrivelse av et kontaktpunkt i henhold til vCard spesifikasjonen. Her kan man for eksempel oppgi telefonnr og/eller epost. Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.
-URI:: vcard:Kind
-Referanse:: http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Kind
+| Beskrivelse: | En beskrivelse av et kontaktpunkt i henhold til vCard spesifikasjonen. Her kan man for eksempel oppgi telefonnr og/eller epost. Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.
+| URI: | vcard:Kind
+| Referanse: | http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181
+| Status: | Valgfri
+|===
 
 === Språksystem [[klasse-spraksystem]]
 
-[properties]
-Engelsk:: Linguistic system
-Beskrivelse:: Et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk
-URI:: dct:LinguisticSystem
-Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Linguistic system
+| Beskrivelse: | Et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk
+| URI: | dct:LinguisticSystem
+| Referanse: | http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem
+| Status: | Valgfri
+|===
 
 === Lokasjon [[klasse-lokasjon]]
 
-[properties]
-Engelsk:: Location
-Beskrivelse:: En region eller et navngitt sted. Det kan representeres ved hjelp av et kontrollert vokabular eller med geografiske koordinater.
-URI:: dct:Location
-Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-Location
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Location
+| Beskrivelse: | En region eller et navngitt sted. Det kan representeres ved hjelp av et kontrollert vokabular eller med geografiske koordinater.
+| URI: | dct:Location
+| Referanse: | http://dublincore.org/documents/dcmi-terms/#terms-Location
+| Status: | Valgfri
 
+|===
 === Mediatype eller omfang [[klasse-mediatype-eller-omfang]]
 
-[properties]
-Engelsk:: Media type or extent
-Beskrivelse:: En medietype eller omfang, for eksempel formatet til en datafil
-URI:: dct:MediaTypeOrExtent
-Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-MediaTypeOrExtent
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Media type or extent
+| Beskrivelse: | En medietype eller omfang, for eksempel formatet til en datafil
+| URI: | dct:MediaTypeOrExtent
+| Referanse: | http://dublincore.org/documents/dcmi-terms/#terms-MediaTypeOrExtent
+| Status: | Valgfri
 
+|===
 === Tidsrom [[klasse-tidsom]]
 
-[properties]
-Engelsk:: Period of time
-Beskrivelse:: Et tidsintervall som er navngitt eller definert av en start- og sluttdato.
-URI:: dct:PeriodOfTime
-Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-PeriodOfTime
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Period of time
+| Beskrivelse: | Et tidsintervall som er navngitt eller definert av en start- og sluttdato.
+| URI: | dct:PeriodOfTime
+| Referanse: | http://dublincore.org/documents/dcmi-terms/#terms-PeriodOfTime
+| Status: | Valgfri
+|===
 
 === Utgivertype [[klasse-utgivertype]]
 
-[properties]
-Engelsk:: Publisher type
-Beskrivelse:: Type organisasjon som fungerer som en utgiver
-URI:: skos:Concept
-Referanse:: http://www.w3.org/TR/vocab-adms/#dcterms-type
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Publisher type
+| Beskrivelse: | Type organisasjon som fungerer som en utgiver
+| URI: | skos:Concept
+| Referanse: | http://www.w3.org/TR/vocab-adms/#dcterms-type
+| Status: | Valgfri
+|===
 
 === Rettighetsutsagn [[klasse-rettighetsutsagn]]
 
-[properties]
-Engelsk:: Rights statement
-Beskrivelse:: En utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
-URI:: dct:RightsStatement
-Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Rights statement
+| Beskrivelse: | En utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
+| URI: | dct:RightsStatement
+| Referanse: | http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement
+| Status: | Valgfri
+|===
 
 === Standard [[klasse-standard]]
 
-[properties]
-Engelsk:: Standard
-Beskrivelse:: En standard eller annen spesifikasjon som et datasett er i samsvar med
-URI:: dct:Standard
-Referanse:: http://dublincore.org/documents/dcmi-terms/#terms-Standard
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Standard
+| Beskrivelse: | En standard eller annen spesifikasjon som et datasett er i samsvar med
+| URI: | dct:Standard
+| Referanse: | http://dublincore.org/documents/dcmi-terms/#terms-Standard
+| Status: | Valgfri
+|===
 
 === Rolle [[klasse-rolle]]
 
-[properties]
-Engelsk:: Role
-Beskrivelse:: En rolle er funksjonen til en ressurs eller aktør i forhold til en annen ressurs. Her brukt i sammenheng med ressurshenvisning (resource attribution) eller ressursrelasjoner. Merk at det er en underklasse av `skos:Concept`.
-URI:: dcat:Role
-Referanse:: https://www.w3.org/TR/vocab-dcat-2/#Class:Role
-Status:: Valgfri
-
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Role
+| Beskrivelse: | En rolle er funksjonen til en ressurs eller aktør i forhold til en annen ressurs. Her brukt i sammenheng med ressurshenvisning (resource attribution) eller ressursrelasjoner. Merk at det er en underklasse av `skos:Concept`.
+| URI: | dcat:Role
+| Referanse: | https://www.w3.org/TR/vocab-dcat-2/#Class:Role
+| Status: | Valgfri
+|===
 
 === Status [[klasse-status]]
 
-[properties]
-Engelsk:: Status
-Beskrivelse:: En indikasjon på modenhet for en distribusjon
-URI:: skos:Concept
-Referanse:: http://www.w3.org/TR/vocab-adms/#status
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | Status
+| Beskrivelse: | En indikasjon på modenhet for en distribusjon
+| URI: | skos:Concept
+| Referanse: | http://www.w3.org/TR/vocab-adms/#status
+| Status: | Valgfri
+|===
 
 === Opphav [[klasse-opphav]]
 
-[properties]
-Engelsk:: ProvenanceStatement
-Beskrivelse:: En beskrivelse av opphavet, eierforhold og endringer i eierforholdet til en ressurs. Skal brukes til å vurdere autentisitet, integritet og autorisasjon.
-URI:: skos:Concept
-Referanse:: http://www.w3.org/TR/vocab-adms/#status
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+| Engelsk navn: | ProvenanceStatement
+| Beskrivelse: | En beskrivelse av opphavet, eierforhold og endringer i eierforholdet til en ressurs. Skal brukes til å vurdere autentisitet, integritet og autorisasjon.
+| URI: | skos:Concept
+| Referanse: | http://www.w3.org/TR/vocab-adms/#status
+| Status: | Valgfri
+|===
