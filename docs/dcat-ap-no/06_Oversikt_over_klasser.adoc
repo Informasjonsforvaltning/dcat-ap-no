@@ -21,10 +21,9 @@ Status:: Obligatorisk
 
 === Datasett [[klasse-datasett]]
 
-[cols="30,70", stripes=even]
 |===
 |Engelsk | Dataset
-|Beskrivelse | En konseptuell aktøren som representerer informasjonen som publiseres
+|Beskrivelse | En konseptuell enhet som representerer informasjonen som publiseres
 |URI | dcat:Dataset
 |Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
 |Status | Obligatorisk
