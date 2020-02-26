@@ -8,7 +8,7 @@ Digitalseringsdirektoratet - Arbeidsdokument  - Versjon 2.0
 :toclevels: 4
 :sectlinks:
 :table-stripes: even
-:table-cols: 30s,70d
+:table-cols: "30s,70d"
 :leveloffset: +1
 
 Status: Under arbeid +
