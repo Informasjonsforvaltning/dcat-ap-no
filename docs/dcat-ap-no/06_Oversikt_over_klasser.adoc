@@ -288,8 +288,8 @@
 [cols="30s,70d"]
 |===
 | Engelsk navn: | ProvenanceStatement
-| Beskrivelse: | En beskrivelse av opphavet, eierforhold og endringer i eierforholdet til en ressurs. Skal brukes til å vurdere autentisitet, integritet og autorisasjon.
-| URI: | skos:Concept
-| Referanse: | http://www.w3.org/TR/vocab-adms/#status
+| Beskrivelse: | En beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autensitet, integritet og fortolkning.
+| URI: | dct:ProvenanceStatement
+| Referanse: | http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement
 | Status: | Valgfri
 |===
