@@ -7,7 +7,7 @@ Digitalseringsdirektoratet - Arbeidsdokument  - Versjon 2.0
 :toc-title: Innholdsfortegnelse
 :toclevels: 4
 :sectlinks:
-
+:table-stripes: even
 :leveloffset: +1
 
 Status: Under arbeid +
