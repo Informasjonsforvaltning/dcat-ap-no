@@ -510,7 +510,7 @@ En angivelse hvor ofte datasettet blir oppdatert.
 .Eksempler
 
 ----
-<> dct:accruralPeriodicity  <http://publications.europa.eu/resource/authority/frequency/MONTHLY>
+<> dct:accrualPeriodicity  <http://publications.europa.eu/resource/authority/frequency/MONTHLY>
 ----
 
 === Sist oppdatert
