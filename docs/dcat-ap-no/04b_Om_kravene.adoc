@@ -2,7 +2,7 @@
 
 Forklaringen under på ordene «obligatorisk», «anbefalt» og «valgfri», er en fornorsking av tilsvarende forklaring i 
 https://joinup.ec.europa.eu/solution/abr-specification-registry-registries/document/specification-registry-registries-version-100[BRegDCAT-AP] 
-som en utvidelse av DCAT-AP fra EU.
+som er en utvidelse av DCAT-AP fra EU.
 
 Klasse::
 Obligatorisk (verb: skal, må)::: produsent/avsender av data skal oppgi informasjon om instanser av klassen; konsument/mottaker av data skal være i stand til å prosessere informasjon om instanser av klassen. 
