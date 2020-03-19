@@ -26,6 +26,8 @@ include::03_Omfang_og_avgrensing.adoc[]
 
 include::04_Forvaltningsregime.adoc[]
 
+include::04b_Om_kravene.adoc[]
+
 include::05_Ord_uttrykk_forkortelser.adoc[]
 
 include::06_Oversikt_over_klasser.adoc[]
