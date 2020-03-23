@@ -1,4 +1,4 @@
-== Om kravene i denne standarden [[om-kravene]]
+= Om kravene i denne standarden [[om-kravene]]
 
 Forklaringen under på ordene «obligatorisk», «anbefalt» og «valgfri», er en fornorsking av tilsvarende forklaring i 
 https://joinup.ec.europa.eu/solution/abr-specification-registry-registries/document/specification-registry-registries-version-100[BRegDCAT-AP] 
