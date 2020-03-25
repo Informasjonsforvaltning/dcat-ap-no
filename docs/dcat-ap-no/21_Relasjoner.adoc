@@ -3,18 +3,22 @@
 == Obligatoriske egenskaper for klassen _Relasjoner_
 
 === Relasjoner: rolle
-[properties]
-URI:: dcat:hadRole
-Range:: dcat:Role
-Beskrivelse:: Refererer til funksjonen til en enhet eller aktør i forhold til en annen enhet eller ressurs.
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dcat:hadRole
+|Range| dcat:Role
+|Beskrivelse| Refererer til funksjonen til en enhet eller aktør i forhold til en annen enhet eller ressurs.
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|===
 
 
 === Relasjoner: relasjon
-[properties]
-URI:: dct:relation
-Range:: rdfs:Resource
-Beskrivelse:: Refererer til ressursen som har relasjon til kilderessursen.
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:relation
+|Range| rdfs:Resource
+|Beskrivelse| Refererer til ressursen som har relasjon til kilderessursen.
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|===
