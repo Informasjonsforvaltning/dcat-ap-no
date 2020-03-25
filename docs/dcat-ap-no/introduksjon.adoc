@@ -1,4 +1,3 @@
-
 = Innledning
 
 Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett, og å lette søk etter datasett. Standarden vil
@@ -6,10 +5,9 @@ gjelde datasett som forvaltes av offentlig sektor, og som beskrives med tanke p�
 
 Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: http://www.w3.org/TR/swbp-vocab-pub/[Best Practice Recipes for Publishing RDF Vocabularies], http://www.w3.org/TR/ld-bp[Best Practices for Publishing Linked Data] og ISA-rapporten https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs]. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden.
 
-Digitaliseringsdirektoratet har utredet behovet for anbefalte og obligatoriske standarder for pekere til offentlige ressurser på nett. link:https://www.difi.no/artikkel/2016/05/utredning-av-standarder-pekere-til-offentlige-ressurser-pa-nett-v10[Les mer på standard.difi.no]
+Difi har utredet behovet for anbefalte og obligatoriske standarder for pekere til offentlige ressurser på nett. link:https://www.difi.no/artikkel/2016/05/utredning-av-standarder-pekere-til-offentlige-ressurser-pa-nett-v10[Les mer på standard.difi.no]
 
-NOTE: Alle forekomster av egenskapen `dct:language` (som kan gjentas dersom metadata er angitt på flere språk) MÅ ha en URI som sitt objekt - ikke en tekststreng fra ISO 639. [Mer om hva dette betyr i praksis]
-
+NOTE: Språk skal angis for alle literaler i tråd med http://www.loc.gov/standards/iso639-2/php/code_list.php[ISO 639].
 
 DCAT-AP-NO er basert på den europeiske DCAT-profilen https://joinup.ec.europa.eu/asset/dcat_application_profile/description[DCAT
 application profile for data portals in Europe] som er forvaltet av http://ec.europa.eu/isa/[EU-kommisjonens ISA-program].
@@ -22,7 +20,7 @@ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underligg
 . <<datasett-utgiver>> er endret fra anbefalt til obligatorisk egenskap. Anbefaling om bruk av autoritativ URI eller organisasjonsnummer er lagt til i beskrivelsen.
 . <<datasett-tema>> er endret fra anbefalt til obligatorisk egenskap. http://psi.norge.no/los/struktur.html[Los] er lagt til som anbefalt vokabular i beskrivelsen.
 . <<datasett-identifikator>> er endret fra valgfri til obligatorisk egenskap. Beskrivelsen er endret fra å være unik i kontekst av katalogen til en stabil og globalt unik identifikator
-. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/resource/authority/continent/[EU Vocabularies Continents Named Authority List],  link:http://publications.europa.eu/resource/authority/country[EU Vocabularies Countries Named Authority List] og link:http://publications.europa.eu/resource/authority/place/[EU Vocabularies Places Named Authority List] fjernet. Beskrivelsen er endret til: _Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)_
+. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/mdr/authority/continent/[MDR Continents Named Authority List],  link:http://publications.europa.eu/mdr/authority/country/[MDR Countries Named Authority List] og link:http://publications.europa.eu/mdr/authority/place/[MDR Places Named Authority List] fjernet. Beskrivelsen er endret til: _Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)_
 . <<datasett-tilgangsniva>> er endret fra valgfri til anbefalt egenskap
 . <<datasett-skjermingshjemmel>> er lagt til som ny anbefalt egenskap
 . <<datasett-begrep>> er lagt til som ny anbefalt egenskap

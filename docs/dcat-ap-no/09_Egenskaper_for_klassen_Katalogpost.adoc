@@ -1,19 +1,17 @@
-= Katalogpost [[katalogpost]]
+= Katalogpost
 
-Klassen _Katalogpost_ er valgfri
+Egenskaper for klassen Katalogpost (valgfri)
 
-== Obligatoriske egenskaper for _Katalogpost_
-
-=== Katalogpost: primærtema [[katalogpost-primartema]]
+== Katalogpost: primærtema [[katalogpost-primrtema]]
 
 [properties]
 URI:: foaf:primaryTopic
-Range:: dcat:Dataset, dcat:Dataservice eller dcat:Catalog
-Beskrivelse:: Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten
+Range:: dcat:Dataset
+Beskrivelse:: Denne egenskapen lenker katalogposten til datasettet som er beskrevet i katalogposten
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 
-=== Katalogpost: endringsdato [[katalogpost-endringsdato]]
+== Katalogpost: endringsdato [[katalogpost-endringsdato]]
 
 [properties]
 URI:: dct:modified
@@ -22,9 +20,7 @@ Beskrivelse:: Denne egenskapen inneholder den nyeste datoen for når katalogpost
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 
-== Anbefalte egenskaper for _Katalogpost_
-
-=== Katalogpost: i samsvar med [[katalogpost-i-samsvar-med]]
+== Katalogpost: i samsvar med [[katalogpost-i-samsvar-med]]
 
 [properties]
 URI:: dct:conformsTo
@@ -33,8 +29,16 @@ Beskrivelse:: Referanse til en applikasjonsprofil som datasettets metadata er i 
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
+== Katalogpost: endringstype [[katalogpost-endringstype]]
 
-=== Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
+[properties]
+URI:: adms:status
+Range:: skos:Concept
+Beskrivelse:: Type endring for siste revisjon av en datasettbeskrivelse i katalogen. MÅ ha en av verdiene :created, :updated eller :deleted avhengig av om denne siste revisjonen er et resultat av en ny post, oppdatering eller sletting.
+Kardinalitet:: 0..1
+Status:: Anbefalt
+
+== Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
 
 [properties]
 URI:: dct:issued
@@ -43,9 +47,7 @@ Beskrivelse:: Datoen for når beskrivelsen av datasettet ble inkludert i datakat
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
-== Valgfrie egenskaper for _Katalogpost_
-
-=== Katalogpost: beskrivelse [[katalogpost-beskrivelse]]
+== Katalogpost: beskrivelse [[katalogpost-beskrivelse]]
 
 [properties]
 URI:: dct:description
@@ -54,7 +56,7 @@ Beskrivelse:: Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskap
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-=== Katalogpost: språk [[katalogpost-sprak]]
+== Katalogpost: språk [[katalogpost-sprak]]
 
 [properties]
 URI:: dct:language
@@ -63,7 +65,7 @@ Beskrivelse:: Refererer til et språk som er brukt i tekstlige metadata som besk
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-=== Katalogpost: kilde [[katalogpost-kilde]]
+== Katalogpost: kilde [[katalogpost-kilde]]
 
 [properties]
 URI:: dct:source
@@ -72,7 +74,7 @@ Beskrivelse:: Referanse til den originale katalogposten (metadata) som er brukt 
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-=== Katalogpost: tittel [[katalogpost-tittel]]
+== Katalogpost: tittel [[katalogpost-tittel]]
 
 [properties]
 URI:: dct:title

@@ -1,5 +1,0 @@
-= Identifikator
-
-Klassen _Identifikator_ er valgfri
-
-Innhold kommer
