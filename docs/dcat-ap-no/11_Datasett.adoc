@@ -5,404 +5,490 @@ Klassen _Datasett_ er obligatorisk
 
 === Datasett: beskrivelse [[datasett-beskrivelse]]
 
-[properties]
-URI:: dct:description
-Range:: rdfs:Literal
-Beskrivelse:: Inneholder fritekstbeskrivelse av datasettet. Kan gjentas for parallelle språkversjoner
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI | dct:description
+|Range| rdfs:Literal
+|Beskrivelse| Inneholder fritekstbeskrivelse av datasettet. Kan gjentas for parallelle språkversjoner
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|===
 
 === Datasett: tittel [[datasett-tittel]]
 
-[properties]
-URI:: dct:title
-Range:: rdfs:Literal
-Beskrivelse:: Inneholder navnet på datasettet. Kan gjentas for parallelle språkversjoner av navnet
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Inneholder navnet på datasettet. Kan gjentas for parallelle språkversjoner av navnet
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|===
 
 === Datasett: identifikator [[datasett-identifikator]]
 
-[properties]
-URI:: dct:identifier
-Range:: rdfs:Literal
-Beskrivelse:: Hovedidentifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik
-Kardinalitet:: 1..n
-Status:: Obligatorisk
-Kommentar:: Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedidentifikator. Denne kan for eksempel være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
+[cols="30s,70d"]
+|===
+|URI| dct:identifier
+|Range| rdfs:Literal
+|Beskrivelse| Hovedidentifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|Kommentar| Her har Norge valgt å gjøre en innskjerping (i forhold til EU) ved å si at ethvert datasett skal ha minst én hovedidentifikator. Denne kan for eksempel være URI’en eller annen identifikator som er globalt unik (ikke bare innenfor DCAT-katalogen).
+|===
 
 === Datasett: tema [[datasett-tema]]
 
-[properties]
-URI:: dcat:theme, subproperty of dct:subject
-Range:: skos:Concept
-Beskrivelse:: Referanse til et hovudtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/resource/authority/data-theme[Data theme] som er publisert av EUs Publication Offices er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dcat:theme, subproperty of dct:subject
+|Range| skos:Concept
+|Beskrivelse| Referanse til et hovudtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/resource/authority/data-theme[Data theme] som er publisert av EUs Publication Offices er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|===
 
 === Datasett: utgiver [[datasett-utgiver]]
 
-[properties]
-URI:: dct:publisher
-Range:: foaf:Agent
-Beskrivelse:: Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
-Kardinalitet:: 1..1
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:publisher
+|Range| foaf:Agent
+|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+|Kardinalitet| 1..1
+|Status| Obligatorisk
+|===
 
 == Anbefalte egenskaper for klassen _Datasett_
 === Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
 
-[properties]
-URI:: dcat:contactPoint
-Range:: vcard:Kind
-Beskrivelse:: Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dcat:contactPoint
+|Range| vcard:Kind
+|Beskrivelse| Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.
+|Kardinalitet| 0..n
+|Status| Anbefalt
+|===
 
 === Datasett: datasettdistribusjon [[datasett-datasett-distribusjon]]
 
-[properties]
-URI:: dcat:distribution
-Range:: dcat:Distribution
-Beskrivelse:: Koblingen mellom datasettet og en tilgjengelig distribusjon
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dcat:distribution
+|Range| dcat:Distribution
+|Beskrivelse| Koblingen mellom datasettet og en tilgjengelig distribusjon
+|Kardinalitet| 0..n
+|Status| Anbefalt
+|===
 
 === Datasett: emneord [[datasett-emneord]]
 
-[properties]
-URI:: dcat:keyword
-Range:: rdfs:Literal
-Beskrivelse:: Inneholder emneord (eller tag) som beskriver datasettet
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dcat:keyword
+|Range| rdfs:Literal
+|Beskrivelse| Inneholder emneord (eller tag) som beskriver datasettet
+|Kardinalitet| 0..n
+|Status| Anbefalt
+|===
 
 === Datasett: dekningsområde [[datasett-dekningsomrade]]
 
-[properties]
-URI:: dct:spatial
-Range:: dct:Location
-Beskrivelse:: Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:spatial
+|Range| dct:Location
+|Beskrivelse| Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)
+|Kardinalitet| 0..n
+|Status| Anbefalt
+|===
 
 === Datasett: tidsrom [[datasett-tidsrom]]
 
-[properties]
-URI:: dct:temporal
-Range:: dct:PeriodOfTime
-Beskrivelse:: Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601)
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:temporal
+|Range| dct:PeriodOfTime
+|Beskrivelse| Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601)
+|Kardinalitet| 0..n
+|Status| Anbefalt
+|===
 
 === Datasett: tilgangsnivå [[datasett-tilgangsniva]]
 
-[properties]
-URI:: dct:accessRights
-Range:: dct:RightsStatement
-Beskrivelse:: Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publication Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen link:#datasett-skjermingshjemmel[skjermingshjemmel] anbefalt.
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:accessRights
+|Range| dct:RightsStatement
+|Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publication Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen link:#datasett-skjermingshjemmel[skjermingshjemmel] anbefalt.
+|Kardinalitet| 0..1
+|Status| Anbefalt
+|===
 NOTE: Se <<datasett-skjermingshjemmel>>
 
 === Datasett: skjermingshjemmel [[datasett-skjermingshjemmel]]
 
-[properties]
-URI:: dcatno:accessRightsComment
-Range:: skos:Concept
-Beskrivelse:: Referanse til hjemmel (kilde for påstand) i offentlighetsloven, sikkerhetsloven, beskyttelsesinstruksen eller annet lovverk som ligger til grunn for vurdering av tilgangsnivå. Egenskapen er anbefalt dersom «tilgangsnivå» har verdiene «restricted» eller «non-public»
-Kardinalitet:: 0..n
-Status:: Anbefalt
-Kommentar:: Norsk utvidelse. Et eget vokabular skal publiseres av Digitaliseringsdirektoratet.
+[cols="30s,70d"]
+|===
+|URI| dcatno:accessRightsComment
+|Range| skos:Concept
+|Beskrivelse| Referanse til hjemmel (kilde for påstand) i offentlighetsloven, sikkerhetsloven, beskyttelsesinstruksen eller annet lovverk som ligger til grunn for vurdering av tilgangsnivå. Egenskapen er anbefalt dersom «tilgangsnivå» har verdiene «restricted» eller «non-public»
+|Kardinalitet| 0..n
+|Status| Anbefalt
+|Kommentar| Norsk utvidelse. Et eget vokabular skal publiseres av Digitaliseringsdirektoratet.
+|===
 
 === Datasett: begrep [[datasett-begrep]]
 
-[properties]
-URI:: dct:subject
-Range:: skos:Concept
-Beskrivelse:: Referanse til sentrale begrep som er viktige for å forstå og tolke datasettet. Representeres som URI-er.
-Kardinalitet:: 0..n
-Status:: Anbefalt
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:subject
+|Range| skos:Concept
+|Beskrivelse| Referanse til sentrale begrep som er viktige for å forstå og tolke datasettet. Representeres som URI-er.
+|Kardinalitet| 0..n
+|Status| Anbefalt
+|Kommentar| Norsk utvidelse
+|===
 
 
 === Datasett: i samsvar med [[datasett-i-samsvar-med]]
 
-[properties]
-URI:: dct:conformsTo
-Range:: dct:Standard
-Beskrivelse:: Referanse til en implementasjons-regel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:conformsTo
+|Range| dct:Standard
+|Beskrivelse| Referanse til en implementasjons-regel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 == Valgfrie egenskaper for klassen _Datasett_
 
 === Datasett: dokumentasjon [[datasett-dokumentasjon]]
 
-[properties]
-URI:: foaf:page
-Range:: foaf:Document
-Beskrivelse:: Referanse til en side eller et dokument som beskriver datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| foaf:page
+|Range| foaf:Document
+|Beskrivelse| Referanse til en side eller et dokument som beskriver datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: frekvens [[datasett-frekvens]]
 
-[properties]
-URI:: dct:accrualPeriodicity
-Range:: dct:Frequency
-Beskrivelse:: Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra http://publications.europa.eu/resource/authority/frequency[Frequency] Name Authority List som vedlikeholdes av Publications Office.
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:accrualPeriodicity
+|Range| dct:Frequency
+|Beskrivelse| Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra http://publications.europa.eu/resource/authority/frequency[Frequency] Name Authority List som vedlikeholdes av Publications Office.
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
 
 === Datasett: har versjon [[datasett-har-versjon]]
 
-[properties]
-URI:: dct:hasVersion
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:hasVersion
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: er versjon av [[datasett-er-versjon-av]]
 
-[properties]
-URI:: dct:isVersionOf
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til et beslektet datasett som det beskrevne datasettet er en versjon, utgave, eller tilpasning av
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:isVersionOf
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til et beslektet datasett som det beskrevne datasettet er en versjon, utgave, eller tilpasning av
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: landingsside [[datasett-landingsside]]
 
-[properties]
-URI:: dcat:landingPage
-Range:: foaf:Document
-Beskrivelse:: Referanse til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dcat:landingPage
+|Range| foaf:Document
+|Beskrivelse| Referanse til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: språk [[datasett-sprak]]
 
-[properties]
-URI:: dct:language
-Range:: dct:LinguisticSystem
-Beskrivelse:: Referanse til språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:language
+|Range| dct:LinguisticSystem
+|Beskrivelse| Referanse til språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: annen identifikator [[datasett-annen-identifikator]]
 
-[properties]
-URI:: adms:identifier
-Range:: adms:Identifier
-Beskrivelse:: Referanse til en sekundær identifikator av datasettet som MAST/ADS, DataCite, DOI, EZID eller W3ID.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| adms:identifier
+|Range| adms:Identifier
+|Beskrivelse| Referanse til en sekundær identifikator av datasettet som MAST/ADS, DataCite, DOI, EZID eller W3ID.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: opphav [[datasett-opphav]]
 
-[properties]
-URI:: dct:provenance
-Range:: dct:ProvenanceStatement
-Beskrivelse:: Referanse til objekt som beskriver hvor datasettet kommer fra, hvordan det er produsert og hvilken kvalitet det har
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:provenance
+|Range| dct:ProvenanceStatement
+|Beskrivelse| Referanse til objekt som beskriver hvor datasettet kommer fra, hvordan det er produsert og hvilken kvalitet det har
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
 
 === Datasett: kvalifisert navngivelse [[kvalifisert-navngivelse]]
 
-[properties]
-URI:: prov:qualifiedAttribution
-Range:: prov:Attribution
-Beskrivelse:: Viser til en lenke til en _Aktør_ som har en eller annen form for ansvar for ressursen
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| prov:qualifiedAttribution
+|Range| prov:Attribution
+|Beskrivelse| Viser til en lenke til en _Aktør_ som har en eller annen form for ansvar for ressursen
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: kvalifisert relasjon [[kvalifisert-relasjon]]
 
-[properties]
-URI:: dcat:qualifiedRelation
-Range:: dcat:Relationship
-Beskrivelse:: En beslektet ressurs, for eksempel en publikasjon, som refererer, siterer eller på annen måte peker til datasettet.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dcat:qualifiedRelation
+|Range| dcat:Relationship
+|Beskrivelse| En beslektet ressurs, for eksempel en publikasjon, som refererer, siterer eller på annen måte peker til datasettet.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 
 === Datasett: relatert ressurs [[datasett-relatertressurs]]
 
-[properties]
-URI:: dct:relation
-Range:: rdfs:Resource
-Beskrivelse:: Referanse til en beslektet ressurs
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:relation
+|Range| rdfs:Resource
+|Beskrivelse| Referanse til en beslektet ressurs
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: utgivelsesdato [[datasett-utgivelsesdato]]
 
-[properties]
-URI:: dct:issued
-Range:: rdfs:Literal typed as xsd:dateTime
-Beskrivelse:: Dato for den formelle utgivelsen av datasettet
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:issued
+|Range| rdfs:Literal typed as xsd:dateTime
+|Beskrivelse| Dato for den formelle utgivelsen av datasettet
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
 
 === Datasett: eksempeldata [[datasett-eksempeldata]]
 
-[properties]
-URI:: adms:sample
-Range:: dcat:Distribution
-Beskrivelse:: Referanse til eksempeldata
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| adms:sample
+|Range| dcat:Distribution
+|Beskrivelse| Referanse til eksempeldata
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: kilde [[datasett-kilde]]
 
-[properties]
-URI:: dct:source
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til et datasett som gjeldende datasett er avledet fra
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:source
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til et datasett som gjeldende datasett er avledet fra
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: geografisk oppløsning [[geografisk-oppløsning]]
 
-[properties]
-URI:: dcat:spatialResolutionInMeters
-Range:: xsd:decimal
-Beskrivelse::  Refererer til den minimale geografiske oppløsningen for et datasett målt i meter.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dcat:spatialResolutionInMeters
+|Range| xsd:decimal
+|Beskrivelse|  Refererer til den minimale geografiske oppløsningen for et datasett målt i meter.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: type [[datasett-type]]
 
-[properties]
-URI:: dct:type
-Range:: skos:Concept
-Beskrivelse:: Referanse til et begrep som identifiserer datasettets type. Noe kontrollert vokabular har ikke blitt etablert.
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:type
+|Range| skos:Concept
+|Beskrivelse| Referanse til et begrep som identifiserer datasettets type. Noe kontrollert vokabular har ikke blitt etablert.
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
 
 === Datasett: endringsdato [[datasett-endringsdato]]
 
-[properties]
-URI:: dct:modified
-Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Dato for siste oppdatering av datasettet
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:modified
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Dato for siste oppdatering av datasettet
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
 
 === Datasett: versjon [[datasett-versjon]]
 
-[properties]
-URI:: owl:versionInfo
-Range:: rdfs:Literal
-Beskrivelse:: Et versjonsnummer eller annen versjonsbetegnelse for datasettet
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| owl:versionInfo
+|Range| rdfs:Literal
+|Beskrivelse| Et versjonsnummer eller annen versjonsbetegnelse for datasettet
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
 
 === Datasett: versjonsnote [[datasett-versjonsnote]]
 
-[properties]
-URI:: adms:versionNotes
-Range:: rdfs:Literal
-Beskrivelse:: Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Kan gjentas for parallelle språkversjoner av versjonsnotater.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| adms:versionNotes
+|Range| rdfs:Literal
+|Beskrivelse| Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Kan gjentas for parallelle språkversjoner av versjonsnotater.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: produsent [[datasett-produsent]]
 
-[properties]
-URI:: dct:creator
-Range:: foaf:Agent
-Beskrivelse:: Referanse til enhet som er produsent av datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:creator
+|Range| foaf:Agent
+|Beskrivelse| Referanse til enhet som er produsent av datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Datasett: refererer til [[datasett-refererer-til]]
 
-[properties]
-URI:: dct:references
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:references
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på
+|Kardinalitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse
+|===
 
 === Datasett: er referert av [[datasett-er-referert-av]]
 
-[properties]
-URI:: dct:isReferencedBy
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til datasett som refererer til dette datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:isReferencedBy
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til datasett som refererer til dette datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse
+|===
 
 === Datasett: er del av [[datasett-er-del-av]]
 
-[properties]
-URI:: dct:isPartOf
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til datasett som dette datasettet er en del av
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:isPartOf
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til datasett som dette datasettet er en del av
+|Kardinalitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse
+|===
 
 === Datasett: har del [[datasett-har-del]]
 
-[properties]
-URI:: dct:hasPart
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til datasett som er en del av dette datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:hasPart
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til datasett som er en del av dette datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse
+|===
 
 === Datasett: krever [[datasett-krever]]
 
-[properties]
-URI:: dct:requires
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til dataset som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:requires
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til dataset som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse
+|===
 
 === Datasett: er påkrevd av [[datasett-er-pakrevd-av]]
 
-[properties]
-URI:: dct:isRequiredBy
-Range:: dcat:Dataset
-Beskrivelse:: Relasjon til datasett som dette datasettet er nødvendig for
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:isRequiredBy
+|Range| dcat:Dataset
+|Beskrivelse| Relasjon til datasett som dette datasettet er nødvendig for
+|Kardinalitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse
+|===
 
 === Datasett: erstatter [[datasett-erstatter]]
 
-[properties]
-URI:: dct:replaces
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til datasett dette datasettet er ment å erstatte
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:replaces
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til datasett dette datasettet er ment å erstatte
+|Kardinalitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse
+|===
 
 === Datasett: erstattes av [[datasett-erstattes-av]]
 
-[properties]
-URI:: dct:isReplacedBy
-Range:: dcat:Dataset
-Beskrivelse:: Referanse til datasett som er ment å erstatte dette datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:isReplacedBy
+|Range| dcat:Dataset
+|Beskrivelse| Referanse til datasett som er ment å erstatte dette datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse
+|===
 
 === Datasett: ble generert av [[datasett-ble-generert-av]]
 
-[properties]
-URI:: prov:wasGeneratedBy
-Range:: prov:Activity
-Beskrivelse:: Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for opretting av det.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| prov:wasGeneratedBy
+|Range| prov:Activity
+|Beskrivelse| Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for opretting av det.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
