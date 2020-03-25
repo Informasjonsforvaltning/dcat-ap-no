@@ -6,77 +6,93 @@ Klassen _Katalogpost_ er valgfri
 
 === Katalogpost: primærtema [[katalogpost-primartema]]
 
-[properties]
-URI:: foaf:primaryTopic
-Range:: dcat:Dataset, dcat:Dataservice eller dcat:Catalog
-Beskrivelse:: Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten
-Kardinalitet:: 1..1
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| foaf:primaryTopic
+|Range| dcat:Dataset, dcat:Dataservice eller dcat:Catalog
+|Beskrivelse| Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten
+|Kardinalitet| 1..1
+|Status| Obligatorisk
+|===
 
 === Katalogpost: endringsdato [[katalogpost-endringsdato]]
 
-[properties]
-URI:: dct:modified
-Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Denne egenskapen inneholder den nyeste datoen for når katalogposten ble endret.
-Kardinalitet:: 1..1
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:modified
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Denne egenskapen inneholder den nyeste datoen for når katalogposten ble endret.
+|Kardinalitet| 1..1
+|Status| Obligatorisk
+|===
 
 == Anbefalte egenskaper for _Katalogpost_
 
 === Katalogpost: i samsvar med [[katalogpost-i-samsvar-med]]
 
-[properties]
-URI:: dct:conformsTo
-Range:: rdfs:Resource
-Beskrivelse:: Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:conformsTo
+|Range| rdfs:Resource
+|Beskrivelse| Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med
+|Kardinalitet| 0..1
+|Status| Anbefalt
+|===
 
 
 === Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
 
-[properties]
-URI:: dct:issued
-Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Datoen for når beskrivelsen av datasettet ble inkludert i datakatalogen.
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:issued
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Datoen for når beskrivelsen av datasettet ble inkludert i datakatalogen.
+|Kardinalitet| 0..1
+|Status| Anbefalt
+|===
 
 == Valgfrie egenskaper for _Katalogpost_
 
 === Katalogpost: beskrivelse [[katalogpost-beskrivelse]]
 
-[properties]
-URI:: dct:description
-Range:: rdfs:Literal
-Beskrivelse:: Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen kan gjentas for parallelle språkversjoner av beskrivelsen.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:description
+|Range| rdfs:Literal
+|Beskrivelse| Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen kan gjentas for parallelle språkversjoner av beskrivelsen.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Katalogpost: språk [[katalogpost-sprak]]
 
-[properties]
-URI:: dct:language
-Range:: dct:LinguisticSystem
-Beskrivelse:: Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:language
+|Range| dct:LinguisticSystem
+|Beskrivelse| Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Katalogpost: kilde [[katalogpost-kilde]]
 
-[properties]
-URI:: dct:source
-Range:: dcat:CatalogRecord
-Beskrivelse:: Referanse til den originale katalogposten (metadata) som er brukt for å skape denne katalogposten (metadata) for datasettet
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:source
+|Range| dcat:CatalogRecord
+|Beskrivelse| Referanse til den originale katalogposten (metadata) som er brukt for å skape denne katalogposten (metadata) for datasettet
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
 
 === Katalogpost: tittel [[katalogpost-tittel]]
 
-[properties]
-URI:: dct:title
-Range:: rdfs:Literal
-Beskrivelse:: Navnet på katalogen. Denne egenskapen kan gjentas for parallelle språkversjoner av navnet.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Navnet på katalogen. Denne egenskapen kan gjentas for parallelle språkversjoner av navnet.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
