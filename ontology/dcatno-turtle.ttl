@@ -1,0 +1,113 @@
+@prefix : <https://data.norge.no/vocabulary/dcatno#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcatno: <https://data.norege.no/vocabulary/dcatno#> .
+@base <https://data.norge.no/vocabulary/dcatno#> .
+
+<https://data.norge.no/vocabulary/dcatno#> rdf:type owl:Ontology ;
+                                            owl:versionIRI <dcatno:0.3> ;
+                                            rdfs:comment "Controlled vocabulary used in/with DCAT-AP-NO"@en ,
+                                                         "Kontrollert vokabular brukt i/ifm. DCAT-AP-NO"@nb ;
+                                            rdfs:isDefinedBy "Digitaliseringsdirektoratet"@en ,
+                                                             "Norwegian Digitalisation Agency"@en ;
+                                            rdfs:label "dcatno"@en ,
+                                                       "dcatno"@nb .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#altLabel
+skos:altLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#definition
+skos:definition rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#example
+skos:example rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#prefLabel
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2004/02/skos/core#scopeNote
+skos:scopeNote rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.w3.org/2004/02/skos/core#Concept
+skos:Concept rdf:type owl:Class .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://data.norege.no/vocabulary/dcatno#codelistDataset
+dcatno:codelistDataset rdf:type owl:NamedIndividual ,
+                                skos:Concept ;
+                       skos:altLabel "code list"@en ,
+                                     "klassifikasjon"@nb ,
+                                     "kodeliste"@nb ,
+                                     "kodeverk"@nb ;
+                       skos:definition "type dataset containing one or more codelists"@en ,
+                                       "type datasett som inneholder en eller flere kodelister"@nb ;
+                       skos:example "<https://datasets.example.com/datasets/aCodeListDataset> a dcat:Dataset; dct:type dcatno:codeListDataset ."@en ,
+                                    "<https://datasets.example.com/datasets/aCodeListDataset> a dcat:Dataset; dct:type dcatno:codeListDataset ."@nb ;
+                       skos:prefLabel "dataset with codelist"@en ,
+                                      "datasett med kodeliste"@nb .
+
+
+###  https://data.norege.no/vocabulary/dcatno#syntheticDataset
+dcatno:syntheticDataset rdf:type owl:NamedIndividual ,
+                                 skos:Concept ;
+                        skos:altLabel "syntektisk data"@nb ,
+                                      "synthetic data"@en ;
+                        skos:definition "type dataset containing synthetic data"@en ,
+                                        "type datasett som inneholder syntetiske data"@nb ;
+                        skos:example "<https://datasets.example.com/datasets/aSyntheticDataset> a dcat:Dataset; dct:type dcatno:syntheticDataset ."@en ,
+                                     "<https://datasets.example.com/datasets/aSyntheticDataset> a dcat:Dataset; dct:type dcatno:syntheticDataset ."@nb ;
+                        skos:prefLabel "dataset with synthetic data"@en ,
+                                       "datasett med syntetisk data"@nb .
+
+
+###  https://data.norege.no/vocabulary/dcatno#testDataset
+dcatno:testDataset rdf:type owl:NamedIndividual ,
+                            skos:Concept ;
+                   skos:altLabel "sample"@en ,
+                                 "sample data"@en ,
+                                 "sample dataset"@en ,
+                                 "test data"@en ,
+                                 "testdata"@nb ;
+                   skos:definition "type dataset containing test data"@en ,
+                                   "type datasett som inneholder testdata"@nb ;
+                   skos:example "<https://datasets.example.com/datasets/aTestDataset> a dcat:Dataset; dct:type dcatno:testDataset ."@en ,
+                                "<https://datasets.example.com/datasets/aTestDataset> a dcat:Dataset; dct:type dcatno:testDataset ."@nb ;
+                   skos:prefLabel "dataset with test data"@en ,
+                                  "datasett med testdata"@nb .
+
+
+###  https://data.norege.no/vocabulary/dcatno#unspecifiedDatasetType
+dcatno:unspecifiedDatasetType rdf:type owl:NamedIndividual ,
+                                       skos:Concept ;
+                              rdfs:comment "Den aktuelle typebeskrivelsen tas med ved å bruke skos:scopeNote."@nb ,
+                                           "The actual dataset type is to be described using skos:scopeNote."@en ;
+                              skos:definition "dataset type which is not pre-defined"@en ,
+                                              "datasett-type som ikke er predefinert"@nb ;
+                              skos:example "<https://datasets.example.com/datasets/aDataset> a dcat:Dataset; dct:type dcatno:unspecifiedDatasetType; skos:scopeNote \"dataset type as defined in the reference\"@en; rdfs:seeAlso <https://datasets.example.com/typeDefinitions/aType> ."@en ,
+                                           "<https://datasets.example.com/datasets/aDataset> a dcat:Dataset; dct:type dcatno:unspecifiedDatasetType; skos:scopeNote \"datasett-type som definert i referansen\"@nb; rdfs:seeAlso <https://datasets.example.com/typeDefinitions/aType> ."@nb ;
+                              skos:prefLabel "dataset of unspecified type"@en ,
+                                             "datasett av uspesifisert type"@nb .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

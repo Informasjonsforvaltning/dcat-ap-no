@@ -1,5 +1,7 @@
 = URIer som er i bruk
 
+(ikke oppdatert)
+
 [properties]
 adms:: http://www.w3.org/ns/adms#
 dcat:: http://www.w3.org/ns/dcat#

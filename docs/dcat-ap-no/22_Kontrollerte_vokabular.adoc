@@ -28,12 +28,12 @@ Brukt i (klasse):: <<Datasett>>, <<Katalog>>
 URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
 Beskrivelse:: Verdiene som skal brukes for <<datasett-tema>>  er URIene for begrepene i selve vokabularene som brukes. Verdiene som skal brukes for <<katalog-temaer>> er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet.
 
-== Dublin Core Collection Description Frequency Vocabulary
+== EU Vocabularies Frequency
 
 [vocabular]
 URI:: dct:accrualPeriodicity
 Brukt i (klasse):: Datasett
-URI for vokabularet:: http://purl.org/cld/freq/
+URI for vokabularet:: http://publications.europa.eu/resource/authority/frequency
 
 == IANA Media Types
 
@@ -42,21 +42,21 @@ URI:: dct:format
 Brukt i (klasse):: <<Distribusjon>>
 URI for vokabularet:: http://www.iana.org/assignments/media-types/media-types.xhtml
 Beskrivelse:: Dersom aktuelt filformat ikke finnes hos IANA, angis filformatet etter samme oppbygging
-WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/file-type/[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
+WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/authority/file-type[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
 
-== MDR Languages Named Authority List
+== EU Vocabularies Languages Named Authority List
 
 [vocabular]
 URI:: dct:language
-Brukt i (klasse):: <<Katalog>>, <<Datasett>>
-URI for vokabularet:: http://publications.europa.eu/mdr/authority/language/
+Brukt i (klasse):: <<Katalog>>, <<Datasett>>, <<Katalogpost>>, <<Distribusjon>>
+URI for vokabularet:: http://publications.europa.eu/resource/authority/language
 
-== MDR Corporate bodies Named Authority List
+== EU Vocabularies Corporate bodies Named Authority List
 
 [vocabular]
 URI:: dct:publisher
 Brukt i (klasse):: <<Katalog>>, <<Datasett>>
-URI for vokabularet:: http://publications.europa.eu/mdr/authority/corporate-body/
+URI for vokabularet:: http://publications.europa.eu/resource/authority/corporate-body
 Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
 
 == Geonames
@@ -87,7 +87,7 @@ Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-s
 
 [vocabular]
 URI:: dct:type
-Brukt i (klasse):: <<Enhet>>
+Brukt i (klasse):: <<Aktør>>
 URI for vokabularet:: http://purl.org/adms/publishertype/
 Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
 

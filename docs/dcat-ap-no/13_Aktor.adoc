@@ -1,0 +1,36 @@
+= Aktør
+Klassen _Aktør_ er obligatorisk. Det anbefales at URI til Aktør (foaf:Agent) er identisk med den URI som Enhetsregisteret (Brønnøysundregistrene) har på
+enheten/virksomheten dersom den finnes i registeret.
+
+== Obligatoriske egenskaper for klassen _Aktør_
+
+== Aktør: navn [[aktor-navn]]
+
+[properties]
+URI:: foaf:name
+Range:: rdfs:Literal
+Beskrivelse:: Navn på aktøren. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk)
+Kardinalitet:: 1..n
+Status:: Obligatorisk
+
+== Anbefalte egenskaper for klassen _Aktør_
+
+=== Aktør: utgivertype [[aktor-utgivertype]]
+
+[properties]
+URI:: dct:type
+Range:: skos:Concept
+Beskrivelse:: Refererer til type aktør som gjør katalogen eller datasett tilgjengelig
+Kardinalitet:: 0..1
+Status:: Anbefalt
+
+
+=== Aktør: organisasjonsidentifikator [[aktor-organisasjonsidentifikator]]
+
+[properties]
+URI:: dct:identifier
+Range:: rdfs:Literal
+Beskrivelse:: Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer
+Kardinalitet:: 0..1
+Status:: Anbefalt
+Kommentar:: Norsk utvidelse

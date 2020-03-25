@@ -1,8 +1,10 @@
-= Katalog
 
-Egenskaper for klassen Katalog (obligatorisk):
+= Katalog [[katalog]]
+Klassen _Katalog_ er obligatorisk
 
-== Katalog: datasett [[katalog-datasett]]
+== Obligatoriske egenskaper for _Katalog_
+
+=== Katalog: datasett [[katalog-datasett]]
 
 [properties]
 URI:: dcat:dataset
@@ -11,7 +13,7 @@ Beskrivelse:: Kobler katalogen til datasett som er en del av katalogen
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-== Katalog: beskrivelse [[katalog-beskrivelse]]
+=== Katalog: beskrivelse [[katalog-beskrivelse]]
 
 [properties]
 URI:: dct:description
@@ -20,16 +22,16 @@ Beskrivelse:: Fritekst-beskrivelse av innholdet i katalogen. Egenskapen kan bli 
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-== Katalog: utgiver [[katalog-utgiver]]
+=== Katalog: utgiver [[katalog-utgiver]]
 
 [properties]
 URI:: dct:publisher
 Range:: foaf:Agent
-Beskrivelse:: Refererer til en enhet (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+Beskrivelse:: Refererer til en aktøren (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
 Kardinalitet:: 1..1
 Status:: Obligatorisk
 
-== Katalog: tittel [[katalog-tittel]]
+=== Katalog: tittel [[katalog-tittel]]
 
 [properties]
 URI:: dct:title
@@ -38,7 +40,9 @@ Beskrivelse:: Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for p
 Kardinalitet:: 1..n
 Status:: Obligatorisk
 
-== Katalog: hjemmeside [[katalog-hjemmeside]]
+== Anbefalte egenskaper for _Katalog_
+
+=== Katalog: hjemmeside [[katalog-hjemmeside]]
 
 [properties]
 URI:: foaf:homepage
@@ -47,7 +51,7 @@ Beskrivelse:: Nettside som fungerer som hovedside for katalogen
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
-== Katalog: språk [[katalog-sprak]]
+=== Katalog: språk [[katalog-sprak]]
 
 [properties]
 URI:: dct:language
@@ -56,7 +60,7 @@ Beskrivelse:: Viser til et språk som brukes i tekstlige metadata som beskriver 
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-== Katalog: lisens [[katalog-lisens]]
+=== Katalog: lisens [[katalog-lisens]]
 
 [properties]
 URI:: dct:license
@@ -65,7 +69,7 @@ Beskrivelse:: Viser til lisens for datakatalogen som beskriver hvordan den kan v
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
-== Katalog: utgivelsesdato [[katalog-utgivelsesdato]]
+=== Katalog: utgivelsesdato [[katalog-utgivelsesdato]]
 
 [properties]
 URI:: dct:issued
@@ -74,7 +78,7 @@ Beskrivelse:: Dato for formell utgivelse (publisering) av katalogen.
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
-== Katalog: temaer [[katalog-temaer]]
+=== Katalog: temaer [[katalog-temaer]]
 
 [properties]
 URI:: dcat:themeTaxonomy
@@ -83,7 +87,7 @@ Beskrivelse:: Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt f
 Kardinalitet:: 0..n
 Status:: Anbefalt
 
-== Katalog: endringsdato [[katalog-endringsdato]]
+=== Katalog: endringsdato [[katalog-endringsdato]]
 
 [properties]
 URI:: dct:modified
@@ -92,16 +96,18 @@ Beskrivelse:: Dato for siste oppdatering/endring av katalogen
 Kardinalitet:: 0..1
 Status:: Anbefalt
 
-== Katalog: er del av [[katalog-er-del-av]]
+=== Katalog: dekningsområde [[katalog-dekningsomrade]]
 
 [properties]
-URI:: dct:isPartOf
-Range:: dcat:Catalog
-Beskrivelse:: Refereranse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
-Kardinalitet:: 0..1
-Status:: Valgfri
+URI:: dct:spatial
+Range:: dct:Location
+Beskrivelse:: Referanse til et geografisk område som er dekket av katalogen
+Kardinalitet:: 0..n
+Status:: Anbefalt
 
-== Katalog: har del [[katalog-har-del]]
+== Valgfrie egenskaper for _Katalog_
+
+=== Katalog: har del [[katalog-har-del]]
 
 [properties]
 URI:: dct:hasPart
@@ -110,7 +116,17 @@ Beskrivelse:: Referanse til en beslektet katalog som er en del av den beskrevne 
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Katalog: katalogpost [[katalog-katalogpost]]
+=== Katalog: er del av [[katalog-er-del-av]]
+
+[properties]
+URI:: dct:isPartOf
+Range:: dcat:Catalog
+Beskrivelse:: Refereranse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+
+=== Katalog: katalogpost [[katalog-katalogpost]]
 
 [properties]
 URI:: dcat:record
@@ -119,7 +135,7 @@ Beskrivelse:: Refererer til en katalogpost som er del av katalogen
 Kardinalitet:: 0..n
 Status:: Valgfri
 
-== Katalog: rettigheter [[katalog-rettigheter]]
+=== Katalog: rettigheter [[katalog-rettigheter]]
 
 [properties]
 URI:: dct:rights
@@ -128,11 +144,30 @@ Beskrivelse:: Uttalelse som spesifiserer rettigheter knyttet til katalogen
 Kardinalitet:: 0..1
 Status:: Valgfri
 
-== Katalog: dekningsområde [[katalog-dekningsomrade]]
+=== Katalog: datatjeneste [[katalog-datatjeneste]]
 
 [properties]
-URI:: dct:spatial
-Range:: dct:Location
-Beskrivelse:: Referanse til et geografisk område som er dekket av katalogen
+URI:: dcat:service
+Range:: dcat:DataService
+Beskrivelse:: Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
 Kardinalitet:: 0..n
+Status:: Valgfri
+
+
+=== Katalog: katalog [[katalog-katalog]]
+
+[properties]
+URI:: dcat:catalog
+Range:: dcat:Catalog
+Beskrivelse:: Refererer til en annen katalog som er relevant for denne katalogen
+Kardinalitet:: 0..1
+Status:: Valgfri
+
+=== Katalog: produsent [[katalog-produsent]]
+
+[properties]
+URI:: dct:creator
+Range:: foaf:Agent
+Beskrivelse:: Refererer til enheten som er hovedansvarlig for å produsere katalogen.
+Kardinalitet:: 0..1
 Status:: Valgfri

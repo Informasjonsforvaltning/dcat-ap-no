@@ -1,8 +1,9 @@
 = Kategoriskjema
+Klassen _Kategoriskjema_ er obligatorisk
 
-Egenskaper for klassen Kategoriskjema (obligatorisk)
+== Obligatriske egenskaper for klassen _Kategoriskjema_
 
-== Kategoriskjema: tittel [[kategoriskjema-tittel]]
+=== Kategoriskjema: tittel [[kategoriskjema-tittel]]
 
 [properties]
 URI:: dct:title
