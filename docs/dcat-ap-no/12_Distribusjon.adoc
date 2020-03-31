@@ -11,7 +11,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:accessURL
 |Range| rdfs:Resource
 |Beskrivelse| En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til i datasettet
-|Kardinalitet| 1..n
+|Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
 
@@ -22,7 +22,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:format
 |Range| dct:MediaType
 |Beskrivelse| Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
-|Kardinalitet| 1..n
+|Multiplisitet| 1..n
 |Status| Obligatorisk
 |Kommentar| Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal brukes i stedet for  <<distribusjon-mediatype>>
 |===
@@ -36,7 +36,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcatap:availability
 |Range| skos:Concept
 |Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier:  `temporary`, `experimental`, `available`, `stable`
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
@@ -48,7 +48,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:description
 |Range| rdfs:Literal
 |Beskrivelse| Fritekstbeskrivelse av distribusjonen. Kan repeteres for parallelle språkversjoner
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Anbefalt
 |===
 
@@ -59,7 +59,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:license
 |Range| dct:LicenseDocument
 |Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, feks http://data.norge.no/nlod/no/1.0
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
@@ -72,7 +72,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:accessService
 |Range| dcat:DataService
 |Beskrivelse| Refererer til en datatjeneste som gir tilgang til distribusjonen av datasettet.
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -84,7 +84,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:byteSize
 |Range| rdfs:Literal typed as xsd:decimal
 |Beskrivelse| Distribusjonens størrelse oppgitt i bytes
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -96,7 +96,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| spdx:checksum
 |Range| spdx:Checksum
 |Beskrivelse| Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg)
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -106,7 +106,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:compressFormat
 |Range| dct:MediaType
 |Beskrivelse| Komprimeringsformatet for distribusjonen som dataene er i dersom de er i en komprimert form, f.eks. for å redusere størrelsen på den nedlastbare filen.
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -117,7 +117,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| foaf:page
 |Range| foaf:Document
 |Beskrivelse| Referanse til en side eller et dokument som beskriver distribusjonen
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -128,7 +128,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:downloadURL
 |Range| rdfs:Resource
 |Beskrivelse| Direktelenke (URL) til en nedlastbar fil i et gitt format
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -138,7 +138,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| odrl:hasPolicy
 |Range| odrl:Policy
 |Beskrivelse| Refererer til policyen som uttrykker rettighetene knyttet til distribusjonen hvis de bruker ODRL-vokabularet.
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -150,7 +150,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:language
 |Range| dct:LinguisticSystem
 |Beskrivelse| Referanse til språk som er brukt i distribusjonen
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -161,7 +161,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:conformsTo
 |Range| dct:Standard
 |Beskrivelse| Referanse til et etablert skjema som distribusjonen er i samsvar med
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -171,7 +171,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:packageFormat
 |Range| dct:MediaType
 |Beskrivelse| Refererer til formatet til filen der en eller flere datafiler er gruppert sammen, f.eks. for å gjøre det mulig å laste ned et sett relaterte filer.
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -183,7 +183,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:issued
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for formell utgivelse/publisering av distribusjonen
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -194,7 +194,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:rights
 |Range| dct:RightsStatement
 |Beskrivelse| Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -204,7 +204,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:spatialResolutionInMeters
 |Range| xsd:decimal
 |Beskrivelse| Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -216,7 +216,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| adms:status
 |Range| skos:Concept
 |Beskrivelse| Distribusjonens modenhet.  Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -227,7 +227,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:temporalResolution
 |Range| xsd:duration
 |Beskrivelse| Refererer til minste tidsrommet som kan utledes fra datasett-distribusjonen ("resolvable in the dataset distribution").
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -239,7 +239,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:title
 |Range| rdfs:Literal
 |Beskrivelse| Navn på distribusjonen
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -250,6 +250,6 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dct:modified
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for siste endring av distribusjonen
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===

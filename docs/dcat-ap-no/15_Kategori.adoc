@@ -10,6 +10,6 @@ Klassen _Kategori_ er obligatorisk
 |URI| skos:prefLabel
 |Range| rdfs:Literal
 |Beskrivelse| Foretrukket tittel for kategorien. Kan gjentas for parallelle språkversjoner av etiketten.
-|Kardinalitet| 1..n
+|Multiplisitet| 1..n
 |Status| Obligatorisk
 |===

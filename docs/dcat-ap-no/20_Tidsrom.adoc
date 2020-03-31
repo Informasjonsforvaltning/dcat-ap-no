@@ -8,7 +8,7 @@
 |URI| dcat:startDate
 |Range| rdfs:Literal skrevet som xsd:date eller xsd:dateTime
 |Beskrivelse| Definerer starten på tidsrommet
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
@@ -19,7 +19,7 @@
 |URI| dcat:endDate
 |Range| rdfs:Literal skrevet som xsd:date eller xsd:dateTime
 |Beskrivelse| Definerer slutten på tidsrommet
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
@@ -33,7 +33,7 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |URI| time:hasBeginning
 |Range| time:Instant
 |Beskrivelse| Definerer begynnelsen på et tidsrommet eller intervall
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfritt
 |===
 
@@ -44,6 +44,6 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |URI| time:hasEnd
 |Range| time:Instant
 |Beskrivelse| Definerer slutten på et tidsromm eller intervall
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfritt
 |===
