@@ -420,6 +420,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Kardinalitet| 0..n
 |Status| Valgfri
 |Kommentar| Norsk utvidelse
+|Eksempel | Kan brukes til å beskrive tidsserier, se under <<datasett-har-del>>
 |===
 
 === Datasett: har del [[datasett-har-del]]
@@ -432,6 +433,26 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Kardinalitet| 0..n
 |Status| Valgfri
 |Kommentar| Norsk utvidelse
+|Eksempel a| Kan brukes til å beskrive tidsserier:
+```
+:enTidsserie
+   a dcat:Dataset ;
+   dct:hasPart :del1, :del2 .
+
+:del1
+   a dcat:Dataset ;
+   dct:isPartOf :enTidsserie ;
+   dct:temporal [a dct:PeriodOfTime ;
+   dcat:startDate "2017-01-01"^^xsd:date ;
+   dcat:endDate "2017-12-31"^^xsd:date ; ] .
+
+:del2
+   a dcat:Dataset ;
+   dct:isPartOf :enTidsserie ;
+   dct:temporal [a dct:PeriodOfTime ;
+   dcat:startDate "2018-01-01"^^xsd:date ;
+   dcat:endDate   "2018-12-31"^^xsd:date ; ] .
+```
 |===
 
 === Datasett: krever [[datasett-krever]]
