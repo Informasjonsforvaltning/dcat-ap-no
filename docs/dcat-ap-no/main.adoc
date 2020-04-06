@@ -20,7 +20,7 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis. +
  +
  *Test datakatalogen din med Difis valideringsverktøy:* +
- Difi har utviklet https://difi.github.io/dcat-ap-no-validator/[en online validator for testing av DCAP-AP-NO-datakataloger]
+ Difi har utviklet https://difi.github.io/dcat-ap-no-validator/[en online validator for testing av DCAT-AP-NO-datakataloger]
 
 
 include::introduksjon.adoc[]
