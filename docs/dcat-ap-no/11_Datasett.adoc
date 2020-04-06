@@ -60,6 +60,7 @@ Klassen _Datasett_ er obligatorisk
 |===
 
 == Anbefalte egenskaper for klassen _Datasett_
+
 === Datasett: kontaktpunkt [[datasett-kontaktpunkt]]
 
 [cols="30s,70d"]
@@ -242,18 +243,18 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Status| Valgfri
 |===
 
-=== Datasett: opphav [[datasett-opphav]]
+=== Datasett: proveniensbeskrivelse [[datasett-proveniensbeskrivelse]]
 
 [cols="30s,70d"]
 |===
 |URI| dct:provenance
 |Range| dct:ProvenanceStatement
-|Beskrivelse| Referanse til objekt som beskriver hvor datasettet kommer fra, hvordan det er produsert og hvilken kvalitet det har
+|Beskrivelse| Referanse til objekt som beskriver arvelinjen/proveniens til datasettet (dvs. endring av eierskap etc. etter at datasettet ble skapt, som kan ha betydning for datasettets autentisitet, integritet og fortolkning)
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
-=== Datasett: kvalifisert navngivelse [[kvalifisert-navngivelse]]
+=== Datasett: kvalifisert navngivelse [[datasett-kvalifisert-navngivelse]]
 
 [cols="30s,70d"]
 |===
@@ -264,7 +265,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Status| Valgfri
 |===
 
-=== Datasett: kvalifisert relasjon [[kvalifisert-relasjon]]
+=== Datasett: kvalifisert relasjon [[datasett-kvalifisert-relasjon]]
 
 [cols="30s,70d"]
 |===
@@ -292,7 +293,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 [cols="30s,70d"]
 |===
 |URI| dct:issued
-|Range| rdfs:Literal typed as xsd:dateTime
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for den formelle utgivelsen av datasettet
 |Multiplisitet| 0..1
 |Status| Valgfri
@@ -320,13 +321,24 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Status| Valgfri
 |===
 
-=== Datasett: geografisk oppløsning [[geografisk-oppløsning]]
+=== Datasett: geografisk oppløsning [[datasett-geografisk-oppløsning]]
 
 [cols="30s,70d"]
 |===
 |URI| dcat:spatialResolutionInMeters
 |Range| xsd:decimal
-|Beskrivelse|  Refererer til den minimale geografiske oppløsningen for et datasett målt i meter.
+|Beskrivelse|  Refererer til den minste geografiske oppløsningen for et datasett målt i meter.
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
+
+=== Datasett: tidsromsoppløsning [[datasett-tidsromsoppløsning]]
+
+[cols="30s,70d"]
+|===
+|URI| dcat:temporalResolution
+|Range| xsd:duration
+|Beskrivelse|  Refererer til den minste oppløsningen for tidsperiode i et datasett.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -382,7 +394,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |URI| dct:creator
 |Range| foaf:Agent
 |Beskrivelse| Referanse til enhet som er produsent av datasettet
-|Multiplisitet| 0..n
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -391,7 +403,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 [cols="30s,70d"]
 |===
 |URI| dct:references
-|Range| dcat:Dataset
+|Range| rdfs:Resource
 |Beskrivelse| Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på
 |Multiplisitet| 0..n
 |Status| Valgfri
@@ -403,7 +415,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 [cols="30s,70d"]
 |===
 |URI| dct:isReferencedBy
-|Range| dcat:Dataset
+|Range| rdfs:Resource
 |Beskrivelse| Referanse til datasett som refererer til dette datasettet
 |Multiplisitet| 0..n
 |Status| Valgfri
