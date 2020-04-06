@@ -2,4 +2,11 @@
 
 Klassen _Identifikator_ er valgfri
 
-Innhold kommer
+[cols="30s,70d"]
+|===
+|URI| skos:notation
+|Range| rdfs:Literal typed with the URI of one of the members of the DataCite Resource Identifier Scheme
+|Beskrivelse| Identifikator i henhold til nevnte identifikatorskjema.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===

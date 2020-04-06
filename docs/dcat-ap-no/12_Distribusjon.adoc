@@ -72,7 +72,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| dcat:accessService
 |Range| dcat:DataService
 |Beskrivelse| Refererer til en datatjeneste som gir tilgang til distribusjonen av datasettet.
-|Multiplisitet| 0..1
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -165,6 +165,16 @@ Klassen _Distribusjon_ er anbefalt
 |Status| Valgfri
 |===
 
+=== Distribusjon: medietype [[distribusjon-medietype]]
+[cols="30s,70d"]
+|===
+|URI| dcat:mediaType, subproperty of dct:format
+|Range| dct:MediaType
+|Beskrivelse| Refererer til medietype av en distribusjon.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
+
 === Distribusjon: pakkeformat [[distribusjon-pakkeformat]]
 [cols="30s,70d"]
 |===
@@ -216,7 +226,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| adms:status
 |Range| skos:Concept
 |Beskrivelse| Distribusjonens modenhet.  Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
-|Multiplisitet| 0..1
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 

@@ -212,7 +212,7 @@
 |===
 | Engelsk navn | Media type or extent
 | Beskrivelse | En medietype eller omfang, for eksempel formatet til en datafil
-| URI | dct:MediaTypeOrExtent
+| URI | dct:MediaType
 | Referanse | http://dublincore.org/documents/dcmi-terms/#terms-MediaTypeOrExtent
 | Status | Valgfri
 
@@ -236,6 +236,17 @@
 | Beskrivelse | Type organisasjon som fungerer som en utgiver
 | URI | skos:Concept
 | Referanse | http://www.w3.org/TR/vocab-adms/#dcterms-type
+| Status | Valgfri
+|===
+
+=== Relasjon [[klasse-relasjon]]
+
+[cols="30s,70d"]
+|===
+| Engelsk navn | Relationship
+| Beskrivelse | For å knytte ytterligere informasjon til en relasjon mellom ressurser
+| URI | dcat:Relationship
+| Referanse | https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship
 | Status | Valgfri
 |===
 

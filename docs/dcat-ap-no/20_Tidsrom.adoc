@@ -6,7 +6,7 @@
 [cols="30s,70d"]
 |===
 |URI| dcat:startDate
-|Range| rdfs:Literal skrevet som xsd:date eller xsd:dateTime
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Definerer starten på tidsrommet
 |Multiplisitet| 0..1
 |Status| Anbefalt
@@ -17,7 +17,7 @@
 [cols="30s,70d"]
 |===
 |URI| dcat:endDate
-|Range| rdfs:Literal skrevet som xsd:date eller xsd:dateTime
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Definerer slutten på tidsrommet
 |Multiplisitet| 0..1
 |Status| Anbefalt

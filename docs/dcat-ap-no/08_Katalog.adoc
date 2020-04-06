@@ -193,7 +193,7 @@ Klassen _Katalog_ er obligatorisk
 |URI| dcat:catalog
 |Range| dcat:Catalog
 |Beskrivelse| Refererer til en annen katalog som er relevant for denne katalogen
-|Multiplisitet| 0..1
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
