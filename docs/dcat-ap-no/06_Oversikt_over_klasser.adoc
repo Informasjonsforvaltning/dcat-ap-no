@@ -64,7 +64,7 @@
 | Engelsk navn | Category
 | Beskrivelse | Et emne for et datasett
 | URI | skos:Concept
-| Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Concept
 | Status | Obligatorisk
 |Kommentar | Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
 |===
@@ -76,7 +76,7 @@
 | Engelsk navn | Category scheme
 | Beskrivelse | En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
 | URI | skos:ConceptScheme
-| Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme
 | Status | Obligatorisk
 | Kommentar| Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
 |===
