@@ -43,7 +43,7 @@ Klassen _Datasett_ er obligatorisk
 |===
 |URI| dcat:theme, subproperty of dct:subject
 |Range| skos:Concept
-|Beskrivelse| Referanse til et hovudtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/resource/authority/data-theme[Data theme] som er publisert av EUs Publication Offices er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
+|Beskrivelse| Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/resource/authority/data-theme[Data theme] som er publisert av EUs Publications Office er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -100,7 +100,7 @@ Klassen _Datasett_ er obligatorisk
 |===
 |URI| dct:spatial
 |Range| dct:Location
-|Beskrivelse| Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)
+|Beskrivelse| Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf. ISO 19115)
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -122,7 +122,7 @@ Klassen _Datasett_ er obligatorisk
 |===
 |URI| dct:accessRights
 |Range| dct:RightsStatement
-|Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publication Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen link:#datasett-skjermingshjemmel[skjermingshjemmel] anbefalt.
+|Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publications Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen link:#datasett-skjermingshjemmel[skjermingshjemmel] anbefalt.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -183,7 +183,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |===
 |URI| dct:accrualPeriodicity
 |Range| dct:Frequency
-|Beskrivelse| Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra http://publications.europa.eu/resource/authority/frequency[Frequency] Name Authority List som vedlikeholdes av Publications Office.
+|Beskrivelse| Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra http://publications.europa.eu/resource/authority/frequency[Frequency] Name Authority List som vedlikeholdes av EUs Publications Office.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -249,7 +249,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |===
 |URI| dct:provenance
 |Range| dct:ProvenanceStatement
-|Beskrivelse| Referanse til beskrivelse endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autensitet, integritet og fortolkning.
+|Beskrivelse| Referanse til beskrivelse endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -364,14 +364,14 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 
 :etTestDatasett
    a dcat:Dataset ;
-   dct:type dcatno:TestDataset .
+   dct:type dcatno:testDataset .
 
 :etSyntetiskDatasett
    a dcat:Dataset ;
-   dct:type dcatno:SyntheticDataset .
+   dct:type dcatno:syntheticDataset .
 ----
 
-Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. Inntil videre brukes `dcatno:TestDataset` og `dcatno:SyntheticDataset` som er `skos:Concept`.
+Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. Inntil videre brukes `dcatno:testDataset` og `dcatno:syntheticDataset` som er `skos:Concept`.
 |===
 
 === Datasett: endringsdato [[datasett-endringsdato]]
@@ -483,7 +483,7 @@ Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til 
    dct:isPartOf :enTidsserie ;
    dct:temporal [a dct:PeriodOfTime ;
    dcat:startDate "2018-01-01"^^xsd:date ;
-   dcat:endDate   "2018-12-31"^^xsd:date ; ] .
+   dcat:endDate "2018-12-31"^^xsd:date ; ] .
 ```
 |===
 
@@ -493,7 +493,7 @@ Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til 
 |===
 |URI| dct:requires
 |Range| dcat:Dataset
-|Beskrivelse| Referanse til dataset som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
+|Beskrivelse| Referanse til datasett som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |Kommentar| Norsk utvidelse
@@ -541,13 +541,13 @@ Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til 
 |===
 |URI| prov:wasGeneratedBy
 |Range| prov:Activity
-|Beskrivelse| Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for opretting av det.
+|Beskrivelse| Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for oppretting av det.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |Eksempel a|
 [source]
 ----
-@prefix prov:  <https://www.w3.org/TR/prov-o/#>
+@prefix prov: <https://www.w3.org/TR/prov-o/#>
 @prefix provno: <https://data.norge.no/vocabulary/provno#>
 
 <datasett1>
@@ -562,5 +562,5 @@ Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til 
    a dcat:Dataset ;
    prov:wasGeneratedBy provno:collectingFromUser .
 ----
-der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` (innhenting fra tredjepart) og `provno:collectingFromUser` (innhenting fra bruker) er  `prov:Activity`.
+der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` (innhenting fra tredjepart) og `provno:collectingFromUser` (innhenting fra bruker) er `prov:Activity`.
 |===

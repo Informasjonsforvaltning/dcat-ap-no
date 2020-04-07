@@ -10,7 +10,7 @@ Klassen _Lisensdokument_ er anbefalt
 |===
 |URI| dct:type
 |Range| skos:Concept
-|Beskrivelse| Refererer til type lisens, f.eks som indikerer "fri bruk" (Public Domain) eller "royalties kreves". Egenskapen kan gjentas i de tilfellene der flere lisenstyper gjelder for et lisensdokument.
+|Beskrivelse| Refererer til type lisens, f.eks. som indikerer "fri bruk" (Public Domain) eller "royalties kreves". Egenskapen kan gjentas i de tilfellene der flere lisenstyper gjelder for et lisensdokument.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
