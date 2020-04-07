@@ -249,8 +249,8 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |===
 |URI| dct:provenance
 |Range| dct:ProvenanceStatement
-|Beskrivelse| Referanse til objekt som beskriver arvelinjen/proveniens til datasettet (dvs. endring av eierskap etc. etter at datasettet ble skapt, som kan ha betydning for datasettets autentisitet, integritet og fortolkning)
-|Multiplisitet| 0..1
+|Beskrivelse| Referanse til beskrivelse endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autensitet, integritet og fortolkning.
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
