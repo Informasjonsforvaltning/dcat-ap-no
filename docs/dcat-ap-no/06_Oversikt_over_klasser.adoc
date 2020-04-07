@@ -20,7 +20,7 @@
 | Engelsk navn | Catalogue
 | Beskrivelse | En katalog eller repository som inneholder beskrivelsene av datasettene som er beskrevet.
 | URI | dcat:Catalog
-| Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Catalog
 | Status | Obligatorisk
 |===
 
@@ -31,7 +31,7 @@
 |Engelsk navn | Dataset
 |Beskrivelse | En konseptuell enhet som representerer informasjonen som publiseres
 |URI | dcat:Dataset
-|Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
+|Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Dataset
 |Status | Obligatorisk
 |===
 
@@ -64,7 +64,7 @@
 | Engelsk navn | Category
 | Beskrivelse | Et emne for et datasett
 | URI | skos:Concept
-| Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Concept
 | Status | Obligatorisk
 |Kommentar | Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
 |===
@@ -76,7 +76,7 @@
 | Engelsk navn | Category scheme
 | Beskrivelse | En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
 | URI | skos:ConceptScheme
-| Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme
 | Status | Obligatorisk
 | Kommentar| Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
 |===
@@ -90,7 +90,7 @@
 | Engelsk navn | Distribution
 | Beskrivelse | En fysisk utførelse av datasettet i et bestemt format.
 | URI | dcat:Distribution
-| Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Distribution
 | Status | Anbefalt
 |===
 
@@ -114,7 +114,7 @@
 | Engelsk navn | Catalogue Record
 | Beskrivelse | En beskrivelse av en datasettoppføring i katalogen.
 | URI | dcat:CatalogRecord
-| Referanse | http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record
 | Status | Valgfri
 |===
 
@@ -125,7 +125,7 @@
 | Engelsk navn | Data Service
 | Beskrivelse | En samling av operasjoner som gir tilgang til ett eller flere datasett eller databehandlingsfunksjoner.
 | URI | dcat:DataService
-| Referanse | https://www.w3.org/TR/vocab-dcat-2/#Class:Data_Service
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Data_Service
 | Status | Valgfri
 |===
 
