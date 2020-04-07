@@ -349,7 +349,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |===
 |URI| dct:type
 |Range| skos:Concept
-|Beskrivelse| Referanse til et begrep som identifiserer datasettets type. 
+|Beskrivelse| Referanse til et begrep som identifiserer datasettets type.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |Eksempel a|
@@ -371,7 +371,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
    dct:type dcatno:SyntheticDataset .
 ----
 
-Merknad: Det er sendt inn forslag til Publications Office av EU, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. Inntil videre brukes `dcatno:TestDataset` og `dcatno:SyntheticDataset` som er `skos:Concept`.
+Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. Inntil videre brukes `dcatno:TestDataset` og `dcatno:SyntheticDataset` som er `skos:Concept`.
 |===
 
 === Datasett: endringsdato [[datasett-endringsdato]]
