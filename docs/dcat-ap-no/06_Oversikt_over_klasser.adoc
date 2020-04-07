@@ -206,14 +206,14 @@
 | Status | Valgfri
 
 |===
-=== Mediatype eller omfang [[klasse-mediatype-eller-omfang]]
+=== Medietype [[klasse-medietype]]
 
 [cols="30s,70d"]
 |===
-| Engelsk navn | Media type or extent
-| Beskrivelse | En medietype eller omfang, for eksempel formatet til en datafil
+| Engelsk navn | Media type
+| Beskrivelse | En medietype, for eksempel formatet til en datafil
 | URI | dct:MediaType
-| Referanse | http://dublincore.org/documents/dcmi-terms/#terms-MediaTypeOrExtent
+| Referanse | http://purl.org/dc/terms/MediaType
 | Status | Valgfri
 
 |===
@@ -294,7 +294,7 @@
 | Status | Valgfri
 |===
 
-=== Opphav [[klasse-opphav]]
+=== Proveniensbeskrivelse [[klasse-proveniensbeskrivelse]]
 
 [cols="30s,70d"]
 |===
