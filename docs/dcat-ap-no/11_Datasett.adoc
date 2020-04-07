@@ -349,9 +349,29 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |===
 |URI| dct:type
 |Range| skos:Concept
-|Beskrivelse| Referanse til et begrep som identifiserer datasettets type. Noe kontrollert vokabular har ikke blitt etablert.
+|Beskrivelse| Referanse til et begrep som identifiserer datasettets type. 
 |Multiplisitet| 0..1
 |Status| Valgfri
+|Eksempel a|
+[source]
+----
+@prefix dcatno: <https://data.norege.no/vocabulary/dcatno#> .
+@prefix eupodt: <http://publications.europa.eu/resource/authority/dataset-type#> .
+
+:enKodeliste
+   a dcat:Dataset ;
+   dct:type eupodt:CODE_LIST .
+
+:etTestDatasett
+   a dcat:Dataset ;
+   dct:type dcatno:TestDataset .
+
+:etSyntetiskDatasett
+   a dcat:Dataset ;
+   dct:type dcatno:SyntheticDataset .
+----
+
+Merknad: Det er sendt inn forslag til Publications Office av EU, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. Inntil videre brukes `dcatno:TestDataset` og `dcatno:SyntheticDataset` som er `skos:Concept`.
 |===
 
 === Datasett: endringsdato [[datasett-endringsdato]]
@@ -542,5 +562,5 @@ NOTE: Se <<datasett-skjermingshjemmel>>
    a dcat:Dataset ;
    prov:wasGeneratedBy provno:collectingFromUser .
 ----
-der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` (innhenting fra tredjepart) og `provno:collectingFromUser` (innhenting fra bruker) er  `prov:Activity`. 
+der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` (innhenting fra tredjepart) og `provno:collectingFromUser` (innhenting fra bruker) er  `prov:Activity`.
 |===
