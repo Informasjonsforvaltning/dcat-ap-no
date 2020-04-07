@@ -40,7 +40,7 @@
 [cols="30s,70d"]
 |===
 | Engelsk navn | Literal
-| Beskrivelse | En literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som innholder maskinlesbar tekst har en valgfri språk-tag, definert av BCP47 (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk)
+| Beskrivelse | En literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som inneholder maskinlesbar tekst har en valgfri språk-tag, definert av BCP47 (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk)
 | URI | rdfs:Literal
 | Referanse | https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#section-Graph-Literal
 | Status | Obligatorisk
@@ -299,7 +299,7 @@
 [cols="30s,70d"]
 |===
 | Engelsk navn | ProvenanceStatement
-| Beskrivelse | En beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autensitet, integritet og fortolkning.
+| Beskrivelse | En beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.
 | URI | dct:ProvenanceStatement
 | Referanse | http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement
 | Status | Valgfri

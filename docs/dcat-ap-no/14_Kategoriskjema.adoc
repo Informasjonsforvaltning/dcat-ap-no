@@ -1,7 +1,7 @@
 = Kategoriskjema
 Klassen _Kategoriskjema_ er obligatorisk
 
-== Obligatriske egenskaper for klassen _Kategoriskjema_
+== Obligatoriske egenskaper for klassen _Kategoriskjema_
 
 === Kategoriskjema: tittel [[kategoriskjema-tittel]]
 

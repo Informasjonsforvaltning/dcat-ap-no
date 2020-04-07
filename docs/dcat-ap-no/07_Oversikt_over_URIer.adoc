@@ -1,6 +1,6 @@
 = URIer som er i bruk
 
-(ikke oppdatert)
+WARNING: Ikke oppdatert (oppdateres til slutt)
 
 [properties]
 adms:: http://www.w3.org/ns/adms#

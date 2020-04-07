@@ -17,12 +17,15 @@ application profile for data portals in Europe] som er forvaltet av http://ec.eu
 Egenskapsnavnene fra den underliggende DCAT-AP er i denne standarden gitt norske navn. Siden standarden legger til rette for internasjonal utveksling, skal engelske egenskapsnavn i form av URIer benyttes.
 
 == Avvik fra EUs DCAT-AP
+
+WARNING: IKKE oppdatert (oppdateres til slutt)
+
 Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende link:https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11[DCAT-AP versjon 1.1] på følgende punkter:
 
 . <<datasett-utgiver>> er endret fra anbefalt til obligatorisk egenskap. Anbefaling om bruk av autoritativ URI eller organisasjonsnummer er lagt til i beskrivelsen.
 . <<datasett-tema>> er endret fra anbefalt til obligatorisk egenskap. http://psi.norge.no/los/struktur.html[Los] er lagt til som anbefalt vokabular i beskrivelsen.
 . <<datasett-identifikator>> er endret fra valgfri til obligatorisk egenskap. Beskrivelsen er endret fra å være unik i kontekst av katalogen til en stabil og globalt unik identifikator
-. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/resource/authority/continent/[EU Vocabularies Continents Named Authority List],  link:http://publications.europa.eu/resource/authority/country[EU Vocabularies Countries Named Authority List] og link:http://publications.europa.eu/resource/authority/place/[EU Vocabularies Places Named Authority List] fjernet. Beskrivelsen er endret til: _Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)_
+. for egenskapen <<datasett-dekningsomrade>> er anbefalingen om bruk av vokabularene link:http://publications.europa.eu/resource/authority/continent/[EU Vocabularies Continents Named Authority List], link:http://publications.europa.eu/resource/authority/country[EU Vocabularies Countries Named Authority List] og link:http://publications.europa.eu/resource/authority/place/[EU Vocabularies Places Named Authority List] fjernet. Beskrivelsen er endret til: _Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)_
 . <<datasett-tilgangsniva>> er endret fra valgfri til anbefalt egenskap
 . <<datasett-skjermingshjemmel>> er lagt til som ny anbefalt egenskap
 . <<datasett-begrep>> er lagt til som ny anbefalt egenskap
@@ -35,4 +38,4 @@ Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underligg
 . egenskapen *mediatype* er fjernet fordi egenskapen <<distribusjon-format>> er vurdert til å dekke behovet
 . egenskapen <<enhet-organisasjonsidentifikator>> er lagt til som ny egenskap
 . JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML
-. Egenskapene er gitt norske navn (URIer skal brukes -  ikke navnet på egenskapene)
+. Egenskapene er gitt norske navn (URIer skal brukes - ikke navnet på egenskapene)

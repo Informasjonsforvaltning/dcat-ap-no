@@ -24,7 +24,7 @@ Klassen _Distribusjon_ er anbefalt
 |Beskrivelse| Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal brukes i stedet for  <<distribusjon-mediatype>>
+|Kommentar| Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal brukes i stedet for <<distribusjon-mediatype>>
 |===
 
 == Anbefalte egenskaper for klassen _Distribusjon_
@@ -35,7 +35,7 @@ Klassen _Distribusjon_ er anbefalt
 |===
 |URI| dcatap:availability
 |Range| skos:Concept
-|Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier:  `temporary`, `experimental`, `available`, `stable`
+|Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier: `temporary`, `experimental`, `available`, `stable`
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -225,7 +225,7 @@ Klassen _Distribusjon_ er anbefalt
 |===
 |URI| adms:status
 |Range| skos:Concept
-|Beskrivelse| Distribusjonens modenhet.  Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
+|Beskrivelse| Distribusjonens modenhet. Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===

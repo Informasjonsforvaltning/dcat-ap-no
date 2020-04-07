@@ -67,7 +67,7 @@ Klassen _Katalog_ er obligatorisk
 |===
 |URI| dct:language
 |Range| dct:LinguisticSystem
-|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
+|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv. av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -146,7 +146,7 @@ Klassen _Katalog_ er obligatorisk
 |===
 |URI| dct:isPartOf
 |Range| dcat:Catalog
-|Beskrivelse| Refereranse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
+|Beskrivelse| Referanse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
