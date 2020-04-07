@@ -9,6 +9,6 @@ Klassen _Identifikator_ er valgfri
 |URI| skos:notation
 |Range| rdfs:Literal typed with the URI of one of the members of the DataCite Resource Identifier Scheme
 |Beskrivelse| Identifikator i henhold til nevnte identifikatorskjema.
-|Multiplisitet| 0..1
-|Status| Valgfri
+|Multiplisitet| 1..1
+|Status| Obligatorisk
 |===
