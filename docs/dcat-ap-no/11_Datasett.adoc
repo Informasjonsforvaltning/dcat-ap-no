@@ -515,7 +515,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Kommentar| Norsk utvidelse
 |===
 
-=== Datasett: ble generert av [[datasett-ble-generert-av]]
+=== Datasett: ble generert ved [[datasett-ble-generert-ved]]
 
 [cols="30s,70d"]
 |===
@@ -524,4 +524,23 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Beskrivelse| Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for opretting av det.
 |Multiplisitet| 0..n
 |Status| Valgfri
+|Eksempel a|
+[source]
+----
+@prefix prov:  <https://www.w3.org/TR/prov-o/#>
+@prefix provno: <https://data.norge.no/vocabulary/provno#>
+
+<datasett1>
+   a dcat:Dataset ;
+   prov:wasGeneratedBy provno:administrativeDecision .
+
+<datasett2>
+   a dcat:Dataset ;
+   prov:wasGeneratedBy provno:collectingFromThirdparty .
+
+<datasett3>
+   a dcat:Dataset ;
+   prov:wasGeneratedBy provno:collectingFromUser .
+----
+der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` (innhenting fra tredjepart) og `provno:collectingFromUser` (innhenting fra bruker) er  `prov:Activity`. 
 |===
