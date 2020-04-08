@@ -86,6 +86,6 @@ Status:: Valgfri
 [properties]
 URI:: dct:conformsTo
 Range:: dct:Standard
-Beskrivelse:: Referanse til en spesifkasjon eller standard som datatjenesten implementerer.
+Beskrivelse:: Referanse til en spesifikasjon eller standard som datatjenesten implementerer.
 Kardinalitet:: 0..n
 Status:: Valgfri
