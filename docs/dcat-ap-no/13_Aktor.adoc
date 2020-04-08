@@ -6,31 +6,37 @@ enheten/virksomheten dersom den finnes i registeret.
 
 == Aktør: navn [[aktor-navn]]
 
-[properties]
-URI:: foaf:name
-Range:: rdfs:Literal
-Beskrivelse:: Navn på aktøren. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk)
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| foaf:name
+|Range| rdfs:Literal
+|Beskrivelse| Navn på aktøren. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk)
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===
 
 == Anbefalte egenskaper for klassen _Aktør_
 
 === Aktør: utgivertype [[aktor-utgivertype]]
 
-[properties]
-URI:: dct:type
-Range:: skos:Concept
-Beskrivelse:: Refererer til type aktør som gjør katalogen eller datasett tilgjengelig
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:type
+|Range| skos:Concept
+|Beskrivelse| Refererer til type aktør som gjør katalogen eller datasett tilgjengelig
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
 
 
 === Aktør: organisasjonsidentifikator [[aktor-organisasjonsidentifikator]]
 
-[properties]
-URI:: dct:identifier
-Range:: rdfs:Literal
-Beskrivelse:: Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer
-Kardinalitet:: 0..1
-Status:: Anbefalt
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:identifier
+|Range| rdfs:Literal
+|Beskrivelse| Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|Kommentar| Norsk utvidelse
+|===

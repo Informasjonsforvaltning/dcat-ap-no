@@ -6,168 +6,204 @@ Klassen _Katalog_ er obligatorisk
 
 === Katalog: datasett [[katalog-datasett]]
 
-[properties]
-URI:: dcat:dataset
-Range:: dcat:Dataset
-Beskrivelse:: Kobler katalogen til datasett som er en del av katalogen
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dcat:dataset
+|Range| dcat:Dataset
+|Beskrivelse| Kobler katalogen til datasett som er en del av katalogen
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===
 
 === Katalog: beskrivelse [[katalog-beskrivelse]]
 
-[properties]
-URI:: dct:description
-Range:: rdfs:Literal
-Beskrivelse:: Fritekst-beskrivelse av innholdet i katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av beskrivelsen.
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:description
+|Range| rdfs:Literal
+|Beskrivelse| Fritekst-beskrivelse av innholdet i katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av beskrivelsen.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===
 
 === Katalog: utgiver [[katalog-utgiver]]
 
-[properties]
-URI:: dct:publisher
-Range:: foaf:Agent
-Beskrivelse:: Refererer til en aktøren (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
-Kardinalitet:: 1..1
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:publisher
+|Range| foaf:Agent
+|Beskrivelse| Refererer til en aktøren (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+|Multiplisitet| 1..1
+|Status| Obligatorisk
+|===
 
 === Katalog: tittel [[katalog-tittel]]
 
-[properties]
-URI:: dct:title
-Range:: rdfs:Literal
-Beskrivelse:: Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av navnet.
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av navnet.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===
 
 == Anbefalte egenskaper for _Katalog_
 
 === Katalog: hjemmeside [[katalog-hjemmeside]]
 
-[properties]
-URI:: foaf:homepage
-Range:: foaf:Document
-Beskrivelse:: Nettside som fungerer som hovedside for katalogen
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| foaf:homepage
+|Range| foaf:Document
+|Beskrivelse| Nettside som fungerer som hovedside for katalogen
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
 
 === Katalog: språk [[katalog-sprak]]
 
-[properties]
-URI:: dct:language
-Range:: dct:LinguisticSystem
-Beskrivelse:: Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:language
+|Range| dct:LinguisticSystem
+|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv. av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
 
 === Katalog: lisens [[katalog-lisens]]
 
-[properties]
-URI:: dct:license
-Range:: dct:LicenseDocument
-Beskrivelse:: Viser til lisens for datakatalogen som beskriver hvordan den kan viderebrukes.
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:license
+|Range| dct:LicenseDocument
+|Beskrivelse| Viser til lisens for datakatalogen som beskriver hvordan den kan viderebrukes.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
 
 === Katalog: utgivelsesdato [[katalog-utgivelsesdato]]
 
-[properties]
-URI:: dct:issued
-Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Dato for formell utgivelse (publisering) av katalogen.
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:issued
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Dato for formell utgivelse (publisering) av katalogen.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
 
 === Katalog: temaer [[katalog-temaer]]
 
-[properties]
-URI:: dcat:themeTaxonomy
-Range:: skos:ConceptScheme
-Beskrivelse:: Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dcat:themeTaxonomy
+|Range| skos:ConceptScheme
+|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
 
 === Katalog: endringsdato [[katalog-endringsdato]]
 
-[properties]
-URI:: dct:modified
-Range:: rdfs:Literal typed as xsd:date or xsd:dateTime
-Beskrivelse:: Dato for siste oppdatering/endring av katalogen
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:modified
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Dato for siste oppdatering/endring av katalogen
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
 
 === Katalog: dekningsområde [[katalog-dekningsomrade]]
 
-[properties]
-URI:: dct:spatial
-Range:: dct:Location
-Beskrivelse:: Referanse til et geografisk område som er dekket av katalogen
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:spatial
+|Range| dct:Location
+|Beskrivelse| Referanse til et geografisk område som er dekket av katalogen
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
 
 == Valgfrie egenskaper for _Katalog_
 
 === Katalog: har del [[katalog-har-del]]
 
-[properties]
-URI:: dct:hasPart
-Range:: dcat:Catalog
-Beskrivelse:: Referanse til en beslektet katalog som er en del av den beskrevne katalogen
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:hasPart
+|Range| dcat:Catalog
+|Beskrivelse| Referanse til en beslektet katalog som er en del av den beskrevne katalogen
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
 
 === Katalog: er del av [[katalog-er-del-av]]
 
-[properties]
-URI:: dct:isPartOf
-Range:: dcat:Catalog
-Beskrivelse:: Refereranse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:isPartOf
+|Range| dcat:Catalog
+|Beskrivelse| Referanse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
 
 
 === Katalog: katalogpost [[katalog-katalogpost]]
 
-[properties]
-URI:: dcat:record
-Range:: dcat:CatalogRecord
-Beskrivelse:: Refererer til en katalogpost som er del av katalogen
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dcat:record
+|Range| dcat:CatalogRecord
+|Beskrivelse| Refererer til en katalogpost som er del av katalogen
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
 
 === Katalog: rettigheter [[katalog-rettigheter]]
 
-[properties]
-URI:: dct:rights
-Range:: dct:RightsStatement
-Beskrivelse:: Uttalelse som spesifiserer rettigheter knyttet til katalogen
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:rights
+|Range| dct:RightsStatement
+|Beskrivelse| Uttalelse som spesifiserer rettigheter knyttet til katalogen
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
 
 === Katalog: datatjeneste [[katalog-datatjeneste]]
 
-[properties]
-URI:: dcat:service
-Range:: dcat:DataService
-Beskrivelse:: Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dcat:service
+|Range| dcat:DataService
+|Beskrivelse| Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
 
 
 === Katalog: katalog [[katalog-katalog]]
 
-[properties]
-URI:: dcat:catalog
-Range:: dcat:Catalog
-Beskrivelse:: Refererer til en annen katalog som er relevant for denne katalogen
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dcat:catalog
+|Range| dcat:Catalog
+|Beskrivelse| Refererer til en annen katalog som er relevant for denne katalogen
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
 
 === Katalog: produsent [[katalog-produsent]]
 
-[properties]
-URI:: dct:creator
-Range:: foaf:Agent
-Beskrivelse:: Refererer til enheten som er hovedansvarlig for å produsere katalogen.
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:creator
+|Range| foaf:Agent
+|Beskrivelse| Refererer til enheten som er hovedansvarlig for å produsere katalogen.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===

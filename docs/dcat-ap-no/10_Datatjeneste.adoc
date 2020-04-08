@@ -7,60 +7,72 @@ Klassen _Datatjeneste_ er valgfri
 
 === Datatjeneste: endepunktsURL [[datatjeneste-endepunktsurl]]
 
-[properties]
-URI:: dcat:endpointURL
-Range:: rdfs:Resource
-Beskrivelse:: Rotplassering eller primært endepunkt for tjenesten (en IRI)
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dcat:endpointURL
+|Range| rdfs:Resource
+|Beskrivelse| Rotplassering eller primært endepunkt for tjenesten (en IRI)
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===
 
 === Datatjeneste: tittel [[datatjeneste-tittel]]
 
-[properties]
-URI:: dct:title
-Range:: rdfs:Literal
-Beskrivelse:: Navn på datatjenesten. Kan gjentas for parallelle språkversjoner.
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Navn på datatjenesten. Kan gjentas for parallelle språkversjoner.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===
 
 
 == Anbefalte egenskaper for _Datatjeneste_
 
 === Datatjeneste: endepunktsbeskrivelse [[datatjeneste-endepunktsbeskrivelse]]
 
-[properties]
-URI:: dcat:endpointDescription
-Range:: rdfs:Resource
-Beskrivelse:: Denne egenskapen inneholder en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens dct:conformsTo brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dcat:endpointDescription
+|Range| rdfs:Resource
+|Beskrivelse| Denne egenskapen inneholder en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens dct:conformsTo brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
 
 === Datatjeneste: tilgjengeliggjør datasett [[datatjeneste-tilgjengeliggjor-datasett]]
 
-[properties]
-URI:: dcat:servesDataset
-Range:: dcat:Dataset
-Beskrivelse:: Refererer til en samling av data som datatjenesten kan distribuere.
-Kardinalitet:: 0..n
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dcat:servesDataset
+|Range| dcat:Dataset
+|Beskrivelse| Refererer til en samling av data som datatjenesten kan distribuere.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
 
 == Valgfrie egenskaper for _Datatjeneste_
 
 === Datatjeneste: tilgangsrettigheter [[datatjeneste-tilgangsrettigheter]]
-[properties]
-URI:: dct:accessRights
-Range:: dct:RightsStatement
-Beskrivelse:: Denne egenskapen KAN inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:accessRights
+|Range| dct:RightsStatement
+|Beskrivelse| Denne egenskapen KAN inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
 
 === Datatjeneste: beskrivelse [[datatjeneste-beskrivelse]]
-[properties]
-URI:: dct:description
-Range:: rdfs:Literal
-Beskrivelse:: Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen kan gjentas for parallelle språkversjoner.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:description
+|Range| rdfs:Literal
+|Beskrivelse| Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen kan gjentas for parallelle språkversjoner.
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
 
 === Datatjeneste: lisens [[datatjeneste-lisens]]
 [properties]

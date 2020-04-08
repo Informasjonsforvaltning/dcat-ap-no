@@ -3,37 +3,47 @@
 == Anbefalte egenskaper for klassen _Tidsrom_
 
 === Tidsrom: startdato
-[properties]
-URI:: dcat:startDate
-Range:: rdfs:Literal skrevet som xsd:date eller xsd:dateTime
-Beskrivelse:: Definerer starten på tidsrommet
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dcat:startDate
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Definerer starten på tidsrommet
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
 
 === Tidsrom: sluttdato/tid
 
-[properties]
-URI:: dcat:endDate
-Range:: rdfs:Literal skrevet som xsd:date eller xsd:dateTime
-Beskrivelse:: Definerer slutten på tidsrommet
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dcat:endDate
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Definerer slutten på tidsrommet
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
 
-NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to være til stede for hver forekomst av klassen dct: PeriodOfTime (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato)
+NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to være til stede for hver forekomst av klassen `dct:PeriodOfTime` (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato)
 
 == Valgfrie egenskaper for klassen _Tidsrom_
 
 === Tidsrom: begynnelse
-URI:: time:hasBeginning
-Range:: time:Instant
-Beskrivelse:: Definerer begynnelsen på et tidsrommet eller intervall
-Kardinalitet:: 0..1
-Status:: Valgfritt
+[cols="30s,70d"]
+|===
+|URI| time:hasBeginning
+|Range| time:Instant
+|Beskrivelse| Definerer begynnelsen på et tidsrommet eller intervall
+|Multiplisitet| 0..1
+|Status| Valgfritt
+|===
 
 
 === Tidsrom: slutt
-URI:: time:hasEnd
-Range:: time:Instant
-Beskrivelse:: Definerer slutten på et tidsromm eller intervall
-Kardinalitet:: 0..1
-Status:: Valgfritt
+[cols="30s,70d"]
+|===
+|URI| time:hasEnd
+|Range| time:Instant
+|Beskrivelse| Definerer slutten på et tidsrom eller intervall
+|Multiplisitet| 0..1
+|Status| Valgfritt
+|===

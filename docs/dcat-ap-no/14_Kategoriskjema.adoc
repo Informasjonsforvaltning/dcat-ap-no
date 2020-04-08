@@ -1,13 +1,15 @@
 = Kategoriskjema
 Klassen _Kategoriskjema_ er obligatorisk
 
-== Obligatriske egenskaper for klassen _Kategoriskjema_
+== Obligatoriske egenskaper for klassen _Kategoriskjema_
 
 === Kategoriskjema: tittel [[kategoriskjema-tittel]]
 
-[properties]
-URI:: dct:title
-Range:: rdfs:Literal
-Beskrivelse:: Navn på kategori-skjemaet. Kan gjentas for forskjellige versjoner av navnet
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Navn på kategori-skjemaet. Kan gjentas for forskjellige versjoner av navnet
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===
