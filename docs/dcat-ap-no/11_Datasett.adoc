@@ -249,7 +249,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |===
 |URI| dct:provenance
 |Range| dct:ProvenanceStatement
-|Beskrivelse| Referanse til beskrivelse endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
+|Beskrivelse| Referanse til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
