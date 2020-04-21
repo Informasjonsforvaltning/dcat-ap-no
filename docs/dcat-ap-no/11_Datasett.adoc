@@ -57,6 +57,7 @@ Klassen _Datasett_ er obligatorisk
 |Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
+|kommentar| Norsk utvidelse - Denne egenskapen er gjort obligatorisk.
 |===
 
 == Anbefalte egenskaper for klassen _Datasett_
@@ -152,6 +153,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Kommentar| Norsk utvidelse
 |===
 
+== Valgfrie egenskaper for klassen _Datasett_
 
 === Datasett: i samsvar med [[datasett-i-samsvar-med]]
 
@@ -163,8 +165,6 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
-
-== Valgfrie egenskaper for klassen _Datasett_
 
 === Datasett: dokumentasjon [[datasett-dokumentasjon]]
 
@@ -249,7 +249,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |===
 |URI| dct:provenance
 |Range| dct:ProvenanceStatement
-|Beskrivelse| Referanse til beskrivelse endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
+|Beskrivelse| Referanse til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===

@@ -24,7 +24,7 @@ Klassen _Distribusjon_ er anbefalt
 |Beskrivelse| Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal brukes i stedet for <<distribusjon-mediatype>>
+|Kommentar| Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal brukes i stedet for <<distribusjon-medietype>>
 |===
 
 == Anbefalte egenskaper for klassen _Distribusjon_

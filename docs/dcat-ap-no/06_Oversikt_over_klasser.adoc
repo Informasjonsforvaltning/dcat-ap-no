@@ -298,7 +298,7 @@
 
 [cols="30s,70d"]
 |===
-| Engelsk navn | ProvenanceStatement
+| Engelsk navn | Provenance Statement
 | Beskrivelse | En beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.
 | URI | dct:ProvenanceStatement
 | Referanse | http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement
