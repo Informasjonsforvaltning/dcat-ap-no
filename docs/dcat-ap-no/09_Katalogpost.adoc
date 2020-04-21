@@ -9,7 +9,7 @@ Klassen _Katalogpost_ er valgfri
 [cols="30s,70d"]
 |===
 |URI| foaf:primaryTopic
-|Range| dcat:Dataset, dcat:Dataservice eller dcat:Catalog
+|Range| dcat:Dataset or dcat:Dataservice or dcat:Catalog
 |Beskrivelse| Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten
 |Multiplisitet| 1..1
 |Status| Obligatorisk
@@ -33,12 +33,22 @@ Klassen _Katalogpost_ er valgfri
 [cols="30s,70d"]
 |===
 |URI| dct:conformsTo
-|Range| rdfs:Resource
+|Range| dct:Standard
 |Beskrivelse| Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
+=== Katalogpost: status [[katalogpost-status]]
+
+[cols="30s,70d"]
+|===
+|URI| adms:status
+|Range| skos:Concept
+|Beskrivelse| Brukes til å indikere status av bl.a. distribusjon eller datasettbeskrivelsen i katalogen (f.eks. opprettet, slettet eller utdatert).
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
 
 === Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
 
@@ -82,7 +92,7 @@ Klassen _Katalogpost_ er valgfri
 |URI| dct:source
 |Range| dcat:CatalogRecord
 |Beskrivelse| Referanse til den originale katalogposten (metadata) som er brukt for å skape denne katalogposten (metadata) for datasettet
-|Multiplisitet| 0..n
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
