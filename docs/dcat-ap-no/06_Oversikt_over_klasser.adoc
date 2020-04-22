@@ -288,7 +288,7 @@
 [cols="30s,70d"]
 |===
 | Engelsk navn | Status
-| Beskrivelse | En indikasjon på modenhet for en distribusjon
+| Beskrivelse | Brukes til å indikere status av bl.a. en distribusjon eller en katalogpost i katalogen (f.eks. opprettet, slettet eller utdatert).
 | URI | skos:Concept
 | Referanse | http://www.w3.org/TR/vocab-adms/#status
 | Status | Valgfri
