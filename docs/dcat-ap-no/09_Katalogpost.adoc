@@ -45,7 +45,7 @@ Klassen _Katalogpost_ er valgfri
 |===
 |URI| adms:status
 |Range| skos:Concept
-|Beskrivelse| Brukes til å indikere status av bl.a. distribusjon eller datasettbeskrivelsen i katalogen (f.eks. opprettet, slettet eller utdatert).
+|Beskrivelse| Brukes til å indikere status av en katalogpost i katalogen.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
