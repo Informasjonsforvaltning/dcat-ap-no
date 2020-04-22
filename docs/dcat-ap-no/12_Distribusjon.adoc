@@ -226,7 +226,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| adms:status
 |Range| skos:Concept
 |Beskrivelse| Distribusjonens modenhet. Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
-|Multiplisitet| 0..n
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
