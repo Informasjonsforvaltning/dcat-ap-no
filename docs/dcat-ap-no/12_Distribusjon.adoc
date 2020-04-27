@@ -21,7 +21,7 @@ Klassen _Distribusjon_ er anbefalt
 |===
 |URI| dct:format
 |Range| dct:MediaType
-|Beskrivelse| Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
+|Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |Kommentar| Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal brukes i stedet for <<distribusjon-medietype>>
@@ -226,7 +226,7 @@ Klassen _Distribusjon_ er anbefalt
 |URI| adms:status
 |Range| skos:Concept
 |Beskrivelse| Distribusjonens modenhet. Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
-|Multiplisitet| 0..n
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
