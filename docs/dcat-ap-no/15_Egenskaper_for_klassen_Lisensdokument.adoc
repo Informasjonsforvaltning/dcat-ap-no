@@ -4,9 +4,11 @@ Egenskaper for klassen Lisensdokument (anbefalt)
 
 == Lisensdokument: lisenstype
 
-[properties]
-URI:: dct:type
-Range:: rdfs:Class
-Beskrivelse:: Refererer til en type lisens, f.eks "åpen lisens" eller "royalties kreves".
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:type
+|Range| rdfs:Class
+|Beskrivelse| Refererer til en type lisens, f.eks "åpen lisens" eller "royalties kreves".
+|Kardinalitet| 0..1
+|Status| Anbefalt
+|===
