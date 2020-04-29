@@ -26,7 +26,7 @@ Under følger en oversikt over kontrollerte vokabular som *må* brukes for egens
 |===
 |URI| dcat:theme
 |Brukt i (klasse)| <<Datasett>>, <<Katalog>>
-|URI for vokabularet| http://publications.europa.eu/resource/authority/datatheme
+|URI for vokabularet| http://publications.europa.eu/resource/authority/data-theme
 |Beskrivelse| Verdiene som skal brukes for <<datasett-tema>> er URIene for begrepene i selve vokabularene som brukes. Verdiene som skal brukes for <<katalog-temaer>> er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet.
 |===
 

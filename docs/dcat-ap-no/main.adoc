@@ -30,9 +30,9 @@ include::04b_Om_kravene.adoc[]
 
 include::05_Ord_uttrykk_forkortelser.adoc[]
 
-include::06_Oversikt_over_klasser.adoc[]
-
 include::07_Oversikt_over_URIer.adoc[]
+
+include::06_Oversikt_over_klasser.adoc[]
 
 include::07b_diagram.adoc[]
 
