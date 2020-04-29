@@ -8,29 +8,35 @@ Egenskaper for klassen Enhet (obligatorisk).
 
 == Enhet: navn [[enhet-navn]]
 
-[properties]
-URI:: foaf:name
-Range:: rdfs:Literal
-Beskrivelse:: Navn på enheten. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk)
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| foaf:name
+|Range| rdfs:Literal
+|Beskrivelse| Navn på enheten. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk)
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|===
 
 == Enhet: utgivertype [[enhet-utgivertype]]
 
-[properties]
-URI:: dct:type
-Range:: skos:Concept
-Beskrivelse:: Refererer til type for enheten som gjør katalogen eller datasett tilgjengelig
-Kardinalitet:: 0..1
-Status:: Anbefalt
+[cols="30s,70d"]
+|===
+|URI| dct:type
+|Range| skos:Concept
+|Beskrivelse| Refererer til type for enheten som gjør katalogen eller datasett tilgjengelig
+|Kardinalitet| 0..1
+|Status| Anbefalt
+|===
 
 
 == Enhet: organisasjonsidentifikator [[enhet-organisasjonsidentifikator]]
 
-[properties]
-URI:: dct:identifier
-Range:: rdfs:Literal
-Beskrivelse:: Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer
-Kardinalitet:: 0..1
-Status:: Anbefalt
-Kommentar:: Norsk utvidelse
+[cols="30s,70d"]
+|===
+|URI| dct:identifier
+|Range| rdfs:Literal
+|Beskrivelse| Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer
+|Kardinalitet| 0..1
+|Status| Anbefalt
+|Kommentar| Norsk utvidelse
+|===
