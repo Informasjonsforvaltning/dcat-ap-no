@@ -75,17 +75,21 @@ Klassen _Datatjeneste_ er valgfri
 |===
 
 === Datatjeneste: lisens [[datatjeneste-lisens]]
-[properties]
-URI:: dct:license
-Range:: dct:LicenseDocument
-Beskrivelse:: Inneholder lisensen som datatjenesten blir gjort tilgjengelig under.
-Kardinalitet:: 0..1
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:license
+|Range| dct:LicenseDocument
+|Beskrivelse| Inneholder lisensen som datatjenesten blir gjort tilgjengelig under.
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
 
 === Datatjeneste: i samsvar med [[datatjeneste-i-samsvar-med]]
-[properties]
-URI:: dct:conformsTo
-Range:: dct:Standard
-Beskrivelse:: Referanse til en spesifikasjon eller standard som datatjenesten implementerer.
-Kardinalitet:: 0..n
-Status:: Valgfri
+[cols="30s,70d"]
+|===
+|URI| dct:conformsTo
+|Range| dct:Standard
+|Beskrivelse| Referanse til en spesifikasjon eller standard som datatjenesten implementerer.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
