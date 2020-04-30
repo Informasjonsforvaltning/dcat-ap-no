@@ -58,7 +58,7 @@ Klassen _Distribusjon_ er anbefalt
 |===
 |URI| dct:license
 |Range| dct:LicenseDocument
-|Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, feks http://data.norge.no/nlod/no/1.0
+|Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, f.eks. https://data.norge.no/nlod/
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
