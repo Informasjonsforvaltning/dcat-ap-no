@@ -4,9 +4,11 @@ Egenskaper for klassen Kategori (obligatorisk)
 
 == Kategori: foretrukket tittel
 
-[properties]
-URI:: skos:prefLabel
-Range:: rdfs:Literal
-Beskrivelse:: Foretrukket tittel for kategorien. Kan gjentas for parallelle språkversjoner av etiketten.
-Kardinalitet:: 1..n
-Status:: Obligatorisk
+[cols="30s,70d"]
+|===
+|URI| skos:prefLabel
+|Range| rdfs:Literal
+|Beskrivelse| Foretrukket tittel for kategorien. Kan gjentas for parallelle språkversjoner av etiketten.
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|===
