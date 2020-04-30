@@ -22,82 +22,102 @@ Under følger en oversikt over kontrollerte vokabular som *må* brukes for egens
 
 == Dataset Theme Vocabulary
 
-[vocabular]
-URI:: dcat:theme
-Brukt i (klasse):: <<Datasett>>, <<Katalog>>
-URI for vokabularet:: http://publications.europa.eu/resource/authority/datatheme
-Beskrivelse:: Verdiene som skal brukes for <<datasett-tema>>  er URIene for begrepene i selve vokabularene som brukes. Verdiene som skal brukes for <<katalog-temaer>> er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet.
+[cols="30s,70d"]
+|===
+|URI| dcat:theme
+|Brukt i (klasse)| <<Datasett>>, <<Katalog>>
+|URI for vokabularet| http://publications.europa.eu/resource/authority/datatheme
+|Beskrivelse| Verdiene som skal brukes for <<datasett-tema>>  er URIene for begrepene i selve vokabularene som brukes. Verdiene som skal brukes for <<katalog-temaer>> er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet.
+|===
 
 == Dublin Core Collection Description Frequency Vocabulary
 
-[vocabular]
-URI:: dct:accrualPeriodicity
-Brukt i (klasse):: Datasett
-URI for vokabularet:: http://purl.org/cld/freq/
+[cols="30s,70d"]
+|===
+|URI| dct:accrualPeriodicity
+|Brukt i (klasse)| Datasett
+|URI for vokabularet| http://purl.org/cld/freq/
+|===
 
 == IANA Media Types
 
-[vocabular]
-URI:: dct:format
-Brukt i (klasse):: <<Distribusjon>>
-URI for vokabularet:: http://www.iana.org/assignments/media-types/media-types.xhtml
-Beskrivelse:: Dersom aktuelt filformat ikke finnes hos IANA, angis filformatet etter samme oppbygging
+[cols="30s,70d"]
+|===
+|URI| dct:format
+|Brukt i (klasse)| <<Distribusjon>>
+|URI for vokabularet| http://www.iana.org/assignments/media-types/media-types.xhtml
+|Beskrivelse| Dersom aktuelt filformat ikke finnes hos IANA, angis filformatet etter samme oppbygging
+|===
 WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/mdr/authority/file-type/[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
 
 == MDR Languages Named Authority List
 
-[vocabular]
-URI:: dct:language
-Brukt i (klasse):: <<Katalog>>, <<Datasett>>
-URI for vokabularet:: http://publications.europa.eu/mdr/authority/language/
+[cols="30s,70d"]
+|===
+|URI| dct:language
+|Brukt i (klasse)| <<Katalog>>, <<Datasett>>
+|URI for vokabularet| http://publications.europa.eu/mdr/authority/language/
+|===
 
 == MDR Corporate bodies Named Authority List
 
-[vocabular]
-URI:: dct:publisher
-Brukt i (klasse):: <<Katalog>>, <<Datasett>>
-URI for vokabularet:: http://publications.europa.eu/mdr/authority/corporate-body/
-Beskrivelse:: Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
+[cols="30s,70d"]
+|===
+|URI| dct:publisher
+|Brukt i (klasse)| <<Katalog>>, <<Datasett>>
+|URI for vokabularet| http://publications.europa.eu/mdr/authority/corporate-body/
+|Beskrivelse| Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
+|===
 
 == Geonames
 
-[vocabular]
-URI:: dct:spatial
-Brukt i (klasse):: <<Katalog>>, <<Datasett>>
-URI for vokabularet:: http://sws.geonames.org/
-Beskrivelse:: En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
+[cols="30s,70d"]
+|===
+|URI| dct:spatial
+|Brukt i (klasse)| <<Katalog>>, <<Datasett>>
+|URI for vokabularet| http://sws.geonames.org/
+|Beskrivelse| En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
+|===
 
 == ADMS change type vocabulary
 
-[vocabular]
-URI:: adms:status
-Brukt i (klasse):: <<Katalogpost>>
-URI for vokabularet:: http://purl.org/adms/changetype/
-Beskrivelse:: :created, :updated, :deleted
+[cols="30s,70d"]
+|===
+|URI| adms:status
+|Brukt i (klasse)| <<Katalogpost>>
+|URI for vokabularet| http://purl.org/adms/changetype/
+|Beskrivelse| :created, :updated, :deleted
+|===
 
 == ADMS status vocabulary
 
-[vocabular]
-URI:: adms:status
-Brukt i (klasse):: <<Distribusjon>>
-URI for vokabularet:: http://purl.org/adms/status/
-Beskrivelse:: Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
+[cols="30s,70d"]
+|===
+|URI| adms:status
+|Brukt i (klasse)| <<Distribusjon>>
+|URI for vokabularet| http://purl.org/adms/status/
+|Beskrivelse| Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
+|===
 
 == ADMS publisher type vocabulary
 
-[vocabular]
-URI:: dct:type
-Brukt i (klasse):: <<Enhet>>
-URI for vokabularet:: http://purl.org/adms/publishertype/
-Beskrivelse:: Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
+[cols="30s,70d"]
+|===
+|URI| dct:type
+|Brukt i (klasse)| <<Enhet>>
+|URI for vokabularet| http://purl.org/adms/publishertype/
+|Beskrivelse| Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
+|===
 
 == ADMS licence type vocabulary
 
-[vocabular]
-URI:: dct:type
-Brukt i (klasse):: <<Lisensdokument>>
-URI for vokabularet:: http://purl.org/adms/licencetype/
-Beskrivelse:: Listen over begrep i ADMS-vokabularet for lisenstype er inkludert i ADMS spesifikasjonen
+[cols="30s,70d"]
+|===
+|URI| dct:type
+|Brukt i (klasse)| <<Lisensdokument>>
+|URI for vokabularet| http://purl.org/adms/licencetype/
+|Beskrivelse| Listen over begrep i ADMS-vokabularet for lisenstype er inkludert i ADMS spesifikasjonen
+|===
 
 I tillegg til de foreslåtte felles-vokabularene ovenfor, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabular som er tilgjengelig på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.
 Eksempler her er komplett sett med begreper i LOS, EuroVoc, CERIFs standardvokabular, Deweys desimalklassifikasjon og en rekke andre
