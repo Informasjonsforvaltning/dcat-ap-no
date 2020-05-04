@@ -1,8 +1,0 @@
-
-=== Endringsdato (modifisert)
-
-----
-dct:modified a owl:DatatypeProperty ;
-     rdfs:domain dcat:Dataset ;
-     rdfs:range xsd:DateTime .
-----

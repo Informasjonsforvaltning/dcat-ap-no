@@ -1,8 +1,0 @@
-
-=== Skjermingshjemmel
-
-----
-dcatno:accessRightsComment a owl:DatatypeProperty;
-  rdfs:domain dcat:Dataset ;
-  rdfs:range skos:Concept .
-----

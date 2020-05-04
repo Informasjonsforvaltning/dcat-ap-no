@@ -1,8 +1,0 @@
-
-=== Utgiver (Eier)
-
-----
-dct:publisher a owl:ObjectProperty ;
-     rdfs:domain dcat:Dataset ;
-     rdfs:range foaf:Organization .
-----

@@ -1,9 +1,0 @@
-
-=== Tittel
-
-----
-dct:title a owl:DatatypeProperty ;
-            rdfs:label “tittel”@no ; # norsk oversettelse
-            rdfs:domain dcat:Catalog ;
-            rdfs:range rdfs:Literal .
-----

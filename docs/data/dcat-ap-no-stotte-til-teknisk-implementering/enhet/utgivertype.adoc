@@ -1,9 +1,0 @@
-
-=== Utgivertype
-
-----
-dct:type a owl:ObjectProperty ;
-   rdfs:label “utgivertype”@no ;
-   rdfs:domain foaf:Agent ;
-   rdfs:range skos:Concept . # Refererer til institusjonellSektorkode fra Enhetsregisteret
-----

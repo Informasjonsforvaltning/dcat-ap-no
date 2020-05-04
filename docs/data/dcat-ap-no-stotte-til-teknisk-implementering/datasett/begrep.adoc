@@ -1,9 +1,0 @@
-
-=== Begrep
-
-----
-dct:subject a owl:ObjectProperty ;
-     rdfs:domain dcat:Dataset ;
-     # listen hentes fra egen begrepskatalog beskrevet i SKOS
-     rdfs:range skos:Concept .
-----

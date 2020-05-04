@@ -1,9 +1,0 @@
-
-=== I samsvar med
-
-----
-dcat:conformsTo a owl:ObjectProperty ;
-   rdfs:label “I samsvar med”@no ;
-   rdfs:domain dcat:Distribution ;
-   rdfs:range dct:Standard .
-----

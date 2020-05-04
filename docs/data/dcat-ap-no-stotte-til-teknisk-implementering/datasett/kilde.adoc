@@ -1,9 +1,0 @@
-
-=== Kilde
-
-----
-dcat:source a owl:ObjectProperty ;
-  rdfs:label “kilde”@no ;
-  rdfs:domain dcat:Dataset ;
-  rdfs:range rdfs:Resource . # kan være en hvilken som helst URI inkl. et datasett
-----

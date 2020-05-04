@@ -1,9 +1,0 @@
-
-=== Opphav
-
-----
-dct:provenance a owl:ObjectProperty;
-  rdfs:label “opphav”@no ;
-  rdfs:domain dcat:Dataset ;
-  rdfs:range dct:ProvenanceStatement .
-----
