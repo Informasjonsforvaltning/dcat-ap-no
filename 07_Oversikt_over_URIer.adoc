@@ -1,0 +1,19 @@
+= URIer som er i bruk
+
+WARNING: Ikke oppdatert (oppdateres til slutt)
+
+[cols="30s,70d"]
+|===
+|adms| http://www.w3.org/ns/adms#
+|dcat| http://www.w3.org/ns/dcat#
+|dcatno| https://data.norge.no/vocabulary/dcatno# 
+|dct| http://purl.org/dc/terms/
+|foaf| http://xmlns.com/foaf/0.1/
+|owl| http://www.w3.org/2002/07/owl#
+|rdfs| http://www.w3.org/2000/01/rdf-schema#
+|schema| http://schema.org/
+|skos| http://www.w3.org/2004/02/skos/core#
+|spdx| http://spdx.org/rdf/terms#
+|xsd| http://www.w3.org/2001/XMLSchema#
+|vcard| http://www.w3.org/2006/vcard/ns#
+|===

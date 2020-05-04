@@ -1,0 +1,5 @@
+= Diagram
+
+UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.0
+
+Innhold kommer...

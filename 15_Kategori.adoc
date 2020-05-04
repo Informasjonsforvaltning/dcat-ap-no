@@ -1,0 +1,15 @@
+= Kategori
+Klassen _Kategori_ er obligatorisk
+
+== Obligatoriske egenskaper for klassen _Kategori_
+
+=== Kategori: foretrukket tittel
+
+[cols="30s,70d"]
+|===
+|URI| skos:prefLabel
+|Range| rdfs:Literal
+|Beskrivelse| Foretrukket tittel for kategorien. Kan gjentas for parallelle språkversjoner av etiketten.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===

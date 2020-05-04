@@ -1,0 +1,39 @@
+= Lokasjon
+
+== Anbefalte egenskaper for klassen _Lokasjon_
+
+=== Lokasjon: område
+[cols="30s,70d"]
+|===
+|URI| dcat:bbox
+|Range| rdfs:Literal
+|Beskrivelse| Refererer til et avgrenset område (bounding box) for en ressurs.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
+
+=== Lokasjon: senterpunkt
+
+[cols="30s,70d"]
+|===
+|URI| dcat:centroid
+|Range| rdfs:Literal
+|Beskrivelse| Refererer til et geografisk senter (centroid) for en ressurs
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
+
+NOTE: Vær oppmerksom på at rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. Eksempel: hvis dekningsområde er et område, bruk 'dcat:bbox', ellers bruk 'locn:geometry'
+
+== Valgfrie egenskaper for klassen _Lokasjon_
+
+=== Lokasjon: geometri
+
+[cols="30s,70d"]
+|===
+|URI| locn:geometry
+|Range| rdfs:Literal
+|Beskrivelse| Denne egenskapen refererer alle typer ressurser til tilhørende dekningsområde.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
