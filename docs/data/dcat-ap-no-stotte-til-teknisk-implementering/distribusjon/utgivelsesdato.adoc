@@ -1,9 +1,0 @@
-
-=== Utgivelsesdato (Utgivelse)
-
-----
-dct:issued a owl:ObjectProperty ;
-   rdfs:label “distribusjonsdato”@no ;
-   rdfs:domain dcat:Distribution ;
-   rdfs:range xsd:DateTime .
-----

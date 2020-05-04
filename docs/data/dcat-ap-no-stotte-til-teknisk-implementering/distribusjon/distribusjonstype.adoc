@@ -1,9 +1,0 @@
-
-=== Distribusjonstype
-
-----
-dct:type a owl:ObjectProperty ;
-   rdfs:label “distribusjonstype”@no ;
-   rdfs:domain dcat:Distribution ;
-   rdfs:range skos:Concept .
-----

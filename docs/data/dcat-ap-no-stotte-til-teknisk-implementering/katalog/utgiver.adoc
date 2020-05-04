@@ -1,8 +1,0 @@
-
-=== Utgiver (Eier av katalog)
-
-----
-dct:publisher a owl:ObjectProperty ;
-     rdfs:domain dcat:Catalog ;
-     rdfs:range foaf:Organization .
-----

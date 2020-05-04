@@ -1,9 +1,0 @@
-
-=== TilgangsURL
-
-----
-dcat:accessURL a owl:ObjectProperty ;
-   rdfs:label “tilgangsURL”@no ;
-   rdfs:domain dcat:Distribution ;
-   rdfs:range rdfs:Resource . 
-----

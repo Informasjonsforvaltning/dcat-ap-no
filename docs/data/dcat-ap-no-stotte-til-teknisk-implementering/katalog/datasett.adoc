@@ -1,9 +1,0 @@
-
-=== Datasett
-
-----
-dcat:dataset a owl:ObjectProperty ;
-            rdfs:label “datasett”@no ; # norsk oversettelse
-            rdfs:domain dcat:Catalog ;
-            rdfs:range dcat:Dataset .
-----

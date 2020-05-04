@@ -1,9 +1,0 @@
-
-=== I samsvar med
-
-----
-dct:conformsTo a owl:ObjectProperty;
-  rdfs:label “i samsvar med standard”@no ;
-  rdfs:domain dcat:Dataset ;
-  rdfs:range dct:Standard . # kan lenke til ethvert dokument
-----

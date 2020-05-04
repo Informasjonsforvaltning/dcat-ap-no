@@ -1,9 +1,0 @@
-
-=== Navn (Enhetsnavn)
-
-----
-foaf:name a owl:DatatypeProperty ;
-  rdfs:label “enhetsnavn”@no ;
-  rdfs:domain foaf:Agent ;
-  rdfs:range rdfs:Literal .
-----
