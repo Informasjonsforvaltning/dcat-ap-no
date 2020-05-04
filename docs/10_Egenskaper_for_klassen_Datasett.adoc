@@ -42,7 +42,7 @@ Egenskaper for klassen Datasett (obligatorisk)
 |===
 |URI| dcat:theme, subproperty of dct:subject
 |Range| skos:Concept
-|Beskrivelse| Referanse til et hovudtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/mdr/authority/data-theme/index.html[Data theme] som er publisert av EUs Publication Offices er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Difis Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
+|Beskrivelse| Referanse til et hovudtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/mdr/authority/data-theme/index.html[Data theme] som er publisert av EUs Publication Offices er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
 |Kardinalitet| 1..n
 |Status| Obligatorisk
 |===
@@ -112,7 +112,7 @@ NOTE: Se <<datasett-skjermingshjemmel>>
 |Beskrivelse| Referanse til hjemmel (kilde for påstand) i offentlighetsloven, sikkerhetsloven, beskyttelsesinstruksen eller annet lovverk som ligger til grunn for vurdering av tilgangsnivå. Egenskapen er anbefalt dersom «tilgangsnivå» har verdiene «restricted» eller «non-public»
 |Kardinalitet| 0..n
 |Status| Anbefalt
-|Kommentar| Norsk utvidelse. Et eget vokabular skal publiseres av Difi.
+|Kommentar| Norsk utvidelse. Et eget vokabular skal publiseres av Digitaliseringsdirektoratet.
 |===
 
 == Datasett: begrep [[datasett-begrep]]
