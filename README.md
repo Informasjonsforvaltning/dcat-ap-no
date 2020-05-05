@@ -2,12 +2,12 @@
 
 Repo for revisjon av standarden.
 
-Gjeldende versjon: http://doc.difi.no/dcat-ap-no/
-Høringsutkast (under arbeid): https://doc.difi.no/review/dcat-ap-no/  
+Gjeldende versjon: https://data.norge.no/specification/dcat-ap-no  
+Høringsutkast (under arbeid): https://informasjonsforvaltning.github.io/dcat-ap-no/  
 
 Standarden er under revisjon høsten 2019. Meld inn behov som Issues innen 1. september 2019.
 
-Endringer i forbindelse med revisjonsprosessen utføres mot "review"-greina og blir eksponert i html her https://doc.difi.no/review/dcat-ap-no/
+Endringer i forbindelse med revisjonsprosessen utføres mot "review"-greina og blir eksponert i html her https://informasjonsforvaltning.github.io/dcat-ap-no/  
 
 Tekst formateres som AsciiDoc. Se detaljer om syntaks her: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 
@@ -21,4 +21,4 @@ For egenskaper som er endret legges (endret) og (slettet) til på samme måte.
 
 ## Tips til editor
 
-For å redigere i adoc-dokumenter med forhåndsvisning av output kan du for eksempel bruke Asciidic FX  (https://asciidocfx.com/) eller Atom (https://atom.io/). For Atom-brukere anbefales å installere  "AsciiDoc Preview"-tillegget. Merk at stylingen i editor-preview vil avvike noe fra https://doc.difi.no/review/dcat-ap-no/  
+For å redigere i adoc-dokumenter med forhåndsvisning av output kan du for eksempel bruke Asciidic FX  (https://asciidocfx.com/) eller Atom (https://atom.io/). For Atom-brukere anbefales å installere  "AsciiDoc Preview"-tillegget. Merk at stylingen i editor-preview vil avvike noe fra https://informasjonsforvaltning.github.io/dcat-ap-no/

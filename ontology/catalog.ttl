@@ -1,7 +1,7 @@
 # An example file to be used for the revision of DCAT-AP-NO
 #
 # The example is based on excerpts of the content of the data catalog for The Brønnøysund Register Center 2019-08-13
-# reflecting the existing DCAT-AP-NO - https://doc.difi.no/dcat-ap-no/
+# reflecting the existing DCAT-AP-NO - https://data.norge.no/specification/dcat-ap-no
 
 @prefix schema: <http://schema.org/> .
 @prefix iso:   <http://www.w3.org/ns/dqvNS#> .
@@ -32,7 +32,7 @@
 <etapi> a dcat:DataService;
         dcat:endpointDescription <https://raw.githubusercontent.com/brreg/openAPI/master/specs/enhetsregisteret.json>; # Nytt i DCAT 2. Tilsvarer apiSpecUrl i FDK (del av APIDocument informasjonsmodellen) ("The url of the specification which are used to harvest the sepcification").
         dcat:endpointURL <https://data.brreg.no/enhetsregisteret/api>; # Nytt i DCAT 2. tilsvarer url i OAS "servers". Tilsvarer url i FDK (del av Endpoint informasjonsmodellen) TODO: API: Uklart hvordan håndtere flere miljø/flere endpoints og deres "description"
-        dct:license <https://data.norge.no/nlod/no/>; # Tilsvarer DCAT-AP-NO for "distribusjon" - https://doc.difi.no/dcat-ap-no/#distribusjon-lisens TODO: API:  I dagens GUI har lisens et navn (OAS har name + URL for lisenser). Dagens DCAT-AP-NO har kun en URL som verdi
+        dct:license <https://data.norge.no/nlod/no/>; # Tilsvarer DCAT-AP-NO for "distribusjon" - https://data.norge.no/specification/dcat-ap-no/#distribusjon-lisens TODO: API:  I dagens GUI har lisens et navn (OAS har name + URL for lisenser). Dagens DCAT-AP-NO har kun en URL som verdi
         dcat:accessRights <http://publications.europa.eu/resource/authority/access-right/RESTRICTED>; # Tilsvarer dagens verdi for datasett i DCAT-AP-NO # TODO: API: For API-er har vi valgt et alternativ til accessRights: "isOpenAccess, isOpenLicense, isFree" som besvares individuelt ved registrering
         dcatno:isFree "true";
         dcatno:isOpenForAll "true";
