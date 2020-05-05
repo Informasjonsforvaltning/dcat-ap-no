@@ -5,7 +5,7 @@ gjelde datasett som forvaltes av offentlig sektor, og som beskrives med tanke p�
 
 Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: http://www.w3.org/TR/swbp-vocab-pub/[Best Practice Recipes for Publishing RDF Vocabularies], http://www.w3.org/TR/ld-bp[Best Practices for Publishing Linked Data] og ISA-rapporten https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs]. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden.
 
-Difi har utredet behovet for anbefalte og obligatoriske standarder for pekere til offentlige ressurser på nett. link:https://www.difi.no/artikkel/2016/05/utredning-av-standarder-pekere-til-offentlige-ressurser-pa-nett-v10[Les mer på standard.difi.no]
+Digitaliseringsdirektoratet har utredet behovet for anbefalte og obligatoriske standarder for pekere til offentlige ressurser på nett. link:https://www.difi.no/artikkel/2016/05/utredning-av-standarder-pekere-til-offentlige-ressurser-pa-nett-v10[Les mer]
 
 NOTE: Språk skal angis for alle literaler i tråd med http://www.loc.gov/standards/iso639-2/php/code_list.php[ISO 639].
 
