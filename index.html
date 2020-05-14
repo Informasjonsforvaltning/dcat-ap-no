@@ -469,13 +469,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
-<li><a href="#_innledning">Innledning</a>
-<ul class="sectlevel2">
-<li><a href="#_avvik_fra_eus_dcat_ap">Avvik fra EUs DCAT-AP</a></li>
-</ul>
-</li>
+<li><a href="#_innledning">Innledning</a></li>
 <li><a href="#_omfang_og_avgrensing">Omfang og avgrensing</a></li>
 <li><a href="#_forvaltningsregime">Forvaltningsregime</a></li>
+<li><a href="#_avvik_fra_eu_standard">Avvik fra EU-standard</a></li>
 <li><a href="#om-kravene">Om kravene i denne standarden</a></li>
 <li><a href="#_ord_uttrykk_og_forkortelser">Ord, uttrykk og forkortelser</a></li>
 <li><a href="#_urier_som_er_i_bruk">URIer som er i bruk</a></li>
@@ -853,106 +850,13 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <h2 id="_innledning"><a class="link" href="#_innledning">Innledning</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett, og å lette søk etter datasett. Standarden vil
-gjelde datasett som forvaltes av offentlig sektor, og som beskrives med tanke på oppføring i en katalog eller «inventarliste». Standarden vil støtte søking i og deling av datasett på tvers av offentlig sektor (gjenbruk) og legge til rette for viderebruk i privat sektor. Standarden er således nyttig både for offentlig sektor selv og for næringsliv og sivilsamfunn for øvrig.</p>
+<p>Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett og datatjenester, og å lette søk etter datasett og datatjenester. Standarden vil gjelde datasett og datatjenester som forvaltes av offentlig sektor, og som beskrives med tanke på oppføring i en katalog eller «inventarliste». Standarden vil støtte søking i og deling av datasett på tvers av offentlig sektor (gjenbruk) og legge til rette for viderebruk i privat sektor. Standarden er således nyttig både for offentlig sektor selv og for næringsliv og sivilsamfunn for øvrig.</p>
 </div>
 <div class="paragraph">
-<p>Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: <a href="http://www.w3.org/TR/swbp-vocab-pub/">Best Practice Recipes for Publishing RDF Vocabularies</a>, <a href="http://www.w3.org/TR/ld-bp">Best Practices for Publishing Linked Data</a> og ISA-rapporten <a href="https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris">10 Rules for Persistent URIs</a>. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden.</p>
+<p>Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: <a href="http://www.w3.org/TR/swbp-vocab-pub/">Best Practice Recipes for Publishing RDF Vocabularies</a>, <a href="http://www.w3.org/TR/ld-bp">Best Practices for Publishing Linked Data</a> og ISA-rapporten <a href="https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris">10 Rules for Persistent URIs</a>. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden, se <a href="https://www.difi.no/referansekatalogen/pekere-til-offentlige-ressurser-pa-nett">anbefalt standard for pekere til offentlige ressurser på nett i Referansekatalogen</a>.</p>
 </div>
 <div class="paragraph">
-<p>Digitaliseringsdirektoratet har utredet behovet for anbefalte og obligatoriske standarder for pekere til offentlige ressurser på nett. <a href="https://www.difi.no/artikkel/2016/05/utredning-av-standarder-pekere-til-offentlige-ressurser-pa-nett-v10">Les mer på standard.difi.no</a></p>
-</div>
-<div class="admonitionblock note">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-note" title="Merk"></i>
-</td>
-<td class="content">
-Alle forekomster av egenskapen <code>dct:language</code> (som kan gjentas dersom metadata er angitt på flere språk) MÅ ha en URI som sitt objekt - ikke en tekststreng fra ISO 639. [Mer om hva dette betyr i praksis]
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>DCAT-AP-NO er basert på den europeiske DCAT-profilen <a href="https://joinup.ec.europa.eu/asset/dcat_application_profile/description">DCAT
-application profile for data portals in Europe</a> som er forvaltet av <a href="http://ec.europa.eu/isa/">EU-kommisjonens ISA-program</a>.</p>
-</div>
-<div class="paragraph">
-<p>Egenskapsnavnene fra den underliggende DCAT-AP er i denne standarden gitt norske navn. Siden standarden legger til rette for internasjonal utveksling, skal engelske egenskapsnavn i form av URIer benyttes.</p>
-</div>
-<div class="sect2">
-<h3 id="_avvik_fra_eus_dcat_ap"><a class="link" href="#_avvik_fra_eus_dcat_ap">Avvik fra EUs DCAT-AP</a></h3>
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-IKKE oppdatert (oppdateres til slutt)
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p>Denne versjonen av standarden (DCAT-AP-NO versjon 1.1) avviker fra den underliggende <a href="https://joinup.ec.europa.eu/asset/dcat_application_profile/asset_release/dcat-ap-v11">DCAT-AP versjon 1.1</a> på følgende punkter:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p><a href="#datasett-utgiver">Datasett: utgiver</a> er endret fra anbefalt til obligatorisk egenskap. Anbefaling om bruk av autoritativ URI eller organisasjonsnummer er lagt til i beskrivelsen.</p>
-</li>
-<li>
-<p><a href="#datasett-tema">Datasett: tema</a> er endret fra anbefalt til obligatorisk egenskap. <a href="http://psi.norge.no/los/struktur.html">Los</a> er lagt til som anbefalt vokabular i beskrivelsen.</p>
-</li>
-<li>
-<p><a href="#datasett-identifikator">Datasett: identifikator</a> er endret fra valgfri til obligatorisk egenskap. Beskrivelsen er endret fra å være unik i kontekst av katalogen til en stabil og globalt unik identifikator</p>
-</li>
-<li>
-<p>for egenskapen <a href="#datasett-dekningsomrade">Datasett: dekningsområde</a> er anbefalingen om bruk av vokabularene <a href="http://publications.europa.eu/resource/authority/continent/">EU Vocabularies Continents Named Authority List</a>, <a href="http://publications.europa.eu/resource/authority/country">EU Vocabularies Countries Named Authority List</a> og <a href="http://publications.europa.eu/resource/authority/place/">EU Vocabularies Places Named Authority List</a> fjernet. Beskrivelsen er endret til: <em>Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf ISO 19115)</em></p>
-</li>
-<li>
-<p><a href="#datasett-tilgangsniva">Datasett: tilgangsnivå</a> er endret fra valgfri til anbefalt egenskap</p>
-</li>
-<li>
-<p><a href="#datasett-skjermingshjemmel">Datasett: skjermingshjemmel</a> er lagt til som ny anbefalt egenskap</p>
-</li>
-<li>
-<p><a href="#datasett-begrep">Datasett: begrep</a> er lagt til som ny anbefalt egenskap</p>
-</li>
-<li>
-<p><a href="#datasett-skaper">[datasett-skaper]</a> (opphavsorganisasjon) er lagt til som ny valgfri egenskap</p>
-</li>
-<li>
-<p>relasjonene <a href="#datasett-er-del-av">Datasett: er del av</a> og <a href="#datasett-har-del">Datasett: har del</a> er lagt til som nye valgfrie egenskaper</p>
-</li>
-<li>
-<p>relasjonene <a href="#datasett-krever">Datasett: krever</a> og <a href="#datasett-er-pakrevd-av">Datasett: er påkrevd av</a> er lagt til som nye valgfrie egenskaper</p>
-</li>
-<li>
-<p>relasjonene <a href="#datasett-erstatter">Datasett: erstatter</a> og <a href="#datasett-erstattes-av">Datasett: erstattes av</a> er lagt til som nye valgfrie egenskaper</p>
-</li>
-<li>
-<p>relasjonene <a href="#datasett-refererer-til">Datasett: refererer til</a> og <a href="#datasett-er-referert-av">Datasett: er referert av</a> er lagt til som nye valgfrie egenskaper</p>
-</li>
-<li>
-<p><a href="#distribusjon-format">Distribusjon: format</a> er endret fra anbefalt til obligatorisk og er samtidig endret til å tillate flere verdier (1..n). Beskrivelsen er endret til: IANA Media Types skal brukes. Formater som ikke er på IANA-listen legges til etter samme struktur.</p>
-</li>
-<li>
-<p>egenskapen <strong>mediatype</strong> er fjernet fordi egenskapen <a href="#distribusjon-format">Distribusjon: format</a> er vurdert til å dekke behovet</p>
-</li>
-<li>
-<p>egenskapen <a href="#enhet-organisasjonsidentifikator">[enhet-organisasjonsidentifikator]</a> er lagt til som ny egenskap</p>
-</li>
-<li>
-<p>JSON-LD er lagt til som anbefalt publiseringsformat i tillegg til RDF/XML</p>
-</li>
-<li>
-<p>Egenskapene er gitt norske navn (URIer skal brukes - ikke navnet på egenskapene)</p>
-</li>
-</ol>
-</div>
+<p>Klasser og egenskaper er i denne standarden gitt norske navn. Siden standarden legger til rette for internasjonal utveksling, skal engelske egenskapsnavn i form av URIer benyttes.</p>
 </div>
 </div>
 </div>
@@ -960,11 +864,23 @@ IKKE oppdatert (oppdateres til slutt)
 <h2 id="_omfang_og_avgrensing"><a class="link" href="#_omfang_og_avgrensing">Omfang og avgrensing</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Standarden er anbefalt brukt for å beskrive datasett og datakataloger i
-offentlig sektor. Den vil gjelde for alle datasett i offentlig sektor
-(inkludert åpne data) <em>som beskrives med tanke på oppføring i en
+<p>Standarden er anbefalt brukt for å beskrive datasett og datatjenester, samt kataloger med datasett og datatjenester. Den vil gjelde for alle datasett (inkludert åpne data) og datatjenester i offentlig sektor
+<em>som beskrives med tanke på oppføring i en
 katalog eller «inventarliste» (intern eller ekstern)</em>. Standarden er
 ikke tenkt brukt for å beskrive dokumenter eller fagsystem.</p>
+</div>
+<div class="paragraph">
+<p>Istedenfor å ha alt spesifisert i denne standarden, er det utarbeidet flere andre spesifikasjoner for å beskrive ulike aspekter ved datasett/datatjenester:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Kvalitetsbeskrivelser</strong>: Denne standarden bruker <a href="https://www.w3.org/TR/vocab-dqv/">DQV (Data Quality Vocabulary) fra W3C</a> til å beskrive kvalitet på datasett/datatjenester. Det er utarbeidet en <a href="https://informasjonsforvaltning.github.io/dqv-ap-no/">norsk applikasjonsprofil av DQV (DQV-AP-NO)</a>, som supplerer denne standarden med kvalitetsbeskrivelser.</p>
+</li>
+<li>
+<p><strong>Informasjonsmodeller</strong>: Det er utabeidet en norsk applikasjonsprofil av DCAT for beskrivelse og utveksling av informasjonsmodeller (<a href="https://informasjonsforvaltning.github.io/modelldcat-ap-no/">ModellDCAT-AP-NO</a>), for bl.a. å knytte en informasjonsmodell til et datasett eller en datatjeneste.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -972,41 +888,51 @@ ikke tenkt brukt for å beskrive dokumenter eller fagsystem.</p>
 <h2 id="_forvaltningsregime"><a class="link" href="#_forvaltningsregime">Forvaltningsregime</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Utarbeidelse av nye versjoner av «Standard for beskrivelse av
-datakataloger og datasett» initieres av Digitaliseringsdirektoratet, og den primære kilden til
-nye versjoner vil være endringer i DCAT-AP. Digitaliseringsdirektoratet vil derfor ha ansvar
-for å følge med på EUs bruk av, og endringsarbeid knyttet til, DCAT-AP.
-Arbeidet med en ny versjon av den nasjonale standarden skal som vanlig
-forankres i relevante organer via høring og behandling i
-Standardiseringsrådet.</p>
+<p>Utarbeidelse av nye versjoner av denne standarden initieres av Digitaliseringsdirektoratet. Den primære kilden til nye versjoner vil være endringer i EU-standarden <a href="https://joinup.ec.europa.eu/solution/abr-specification-registry-registries">BRegDCAT-AP</a> som denne standarden baseres på. Digitaliseringsdirektoratet vil derfor ha ansvar for å følge med på EUs bruk av, og endringsarbeid knyttet til, BRegDCAT-AP. Arbeidet med en ny versjon av den nasjonale standarden skal som vanlig forankres i relevante organer via høring og behandling i Arkitetktur- og standardiseringsrådet.</p>
 </div>
 <div class="paragraph">
-<p>Digitaliseringsdirektoratet vil i forbindelse med nye versjoner av DCAT-AP avgjøre om
-endringene er så store at det bør nedsettes en egen arbeidsgruppe
-bestående av relevante aktører, eller om revisjonen kan utføres av Digitaliseringsdirektoratet
-selv. Forslaget til ny versjon sendes uansett på høring. De innkomne
-høringskommentarene behandles hos Digitaliseringsdirektoratet, og resulterer i et forslag som
-oversendes Standardiseringsrådet.</p>
+<p>Digitaliseringsdirektoratet vil i forbindelse med nye versjoner av EU-standarden avgjøre om
+endringene er så store at det bør nedsettes en egen arbeidsgruppe bestående av relevante aktører, eller om revisjonen kan utføres av Digitaliseringsdirektoratet selv. Forslaget til ny versjon sendes uansett på høring. De innkomne høringskommentarene behandles hos Digitaliseringsdirektoratet, og resulterer i et forslag som oversendes Arkitektur- og standardiseringsrådet.</p>
 </div>
 <div class="paragraph">
-<p>Digitaliseringsdirektoratet ønsker å gi brukerne mulighet til å gi tilbakemeldinger og innspill
-til standarden via Digitaliseringsdirektoratets nettsider. Slike innspill vil tas med inn i
-arbeidet med revisjoner initiert av nye DCAT-AP- versjoner, men Digitaliseringsdirektoratet vil
-også vurdere tilbakemeldingene en gang i året, for å se om noen av dem
-bør føre til oppdateringer utenom disse større revisjonene. Dette kan
-være aktuelt blant annet fordi den nasjonale standarden har noen tillegg til
-DCAT-AP som for eksempel kan vurderes.</p>
+<p>Digitaliseringsdirektoratet ønsker å gi brukerne mulighet til å gi tilbakemeldinger og innspill til standarden via Digitaliseringsdirektoratets nettsider. Slike innspill vil tas med inn i arbeidet med revisjoner initiert av nye versjoner av EU-standarden. Digitaliseringsdirektoratet vil også vurdere tilbakemeldingene en gang i året, for å se om noen av dem bør føre til oppdateringer utenom disse større revisjonene. Dette kan være aktuelt blant annet fordi den nasjonale standarden har noen tillegg som for eksempel kan vurderes.</p>
 </div>
 <div class="paragraph">
-<p>Dersom det oppdages mindre feil i standarden (stavefeil etc), vil ikke
-korrigering av disse utløse en ny versjon. Disse korrigeringene skal
-imidlertid dokumenteres i et vedlegg som følger den aktuelle standarden.</p>
+<p>Dersom det oppdages mindre feil i standarden (stavefeil etc.), vil ikke
+korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid dokumenteres.</p>
 </div>
 <div class="paragraph">
-<p>Gjeldende og eventuelle tidligere versjoner av standarden skal være
-tilgjengelige på Digitaliseringsdirektoratets nettsider, slik at det er enkelt å finne ut når
-tidligere versjoner var gyldige, og hvilke endringer som er foretatt
-mellom to versjoner.</p>
+<p>Gjeldende og eventuelle tidligere versjoner av standarden skal være tilgjengelige på Digitaliseringsdirektoratets nettsider, slik at det er enkelt å finne ut når tidligere versjoner var gyldige, og hvilke endringer som er foretatt mellom to versjoner.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_avvik_fra_eu_standard"><a class="link" href="#_avvik_fra_eu_standard">Avvik fra EU-standard</a></h2>
+<div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Advarsel"></i>
+</td>
+<td class="content">
+Kommer &#8230;&#8203; (skrives til slutt)
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Denne versjonen av DCAT-AP-NO er basert på den kommende DCAT-profilen BRegDCAT-AP som er utviklet og forvaltet av <a href="https://ec.europa.eu/isa2/home_en">EU-kommisjonens ISA-program</a>. BRegDCAT-AP er i skrivende stund under ferdigstilling og skal etter planen ferdigstilles innen november 2020. Se <a href="https://joinup.ec.europa.eu/solution/abr-specification-registry-registries">under ABR - Specification of a Registry of Registries</a>.</p>
+</div>
+<div class="paragraph">
+<p>Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP på følngede måter:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>&lt;kommer &#8230;&#8203;&gt;</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -1071,6 +997,18 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <div class="sect1">
 <h2 id="_ord_uttrykk_og_forkortelser"><a class="link" href="#_ord_uttrykk_og_forkortelser">Ord, uttrykk og forkortelser</a></h2>
 <div class="sectionbody">
+<div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Advarsel"></i>
+</td>
+<td class="content">
+Ikke oppdatert (oppdateres til slutt)
+</td>
+</tr>
+</table>
+</div>
 <div class="dlist">
 <dl>
 <dt class="hdlist1">Datasett</dt>
@@ -7482,7 +7420,7 @@ vokabular.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-05-05 10:34:56 UTC
+Sist oppdatert 2020-05-14 10:42:46 UTC
 </div>
 </div>
 </body>

@@ -1,0 +1,9 @@
+= Avvik fra EU-standard
+
+WARNING: Kommer ... (skrives til slutt)
+
+Denne versjonen av DCAT-AP-NO er basert på den kommende DCAT-profilen BRegDCAT-AP som er utviklet og forvaltet av https://ec.europa.eu/isa2/home_en[EU-kommisjonens ISA-program]. BRegDCAT-AP er i skrivende stund under ferdigstilling og skal etter planen ferdigstilles innen november 2020. Se https://joinup.ec.europa.eu/solution/abr-specification-registry-registries[under ABR - Specification of a Registry of Registries].
+
+Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP på følngede måter:
+
+* <kommer ...>
