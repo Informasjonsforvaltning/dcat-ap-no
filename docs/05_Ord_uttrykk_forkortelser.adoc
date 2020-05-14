@@ -1,5 +1,7 @@
 = Ord, uttrykk og forkortelser
 
+WARNING: Ikke oppdatert (oppdateres til slutt)
+
 Datasett::
 Et _datasett_ er en samling med data (for eksempel i form av en tabell, liste eller en database) som kan gjøres tilgjengelig som en nedlastbar fil, og/eller nåes via et Web-API.
 
