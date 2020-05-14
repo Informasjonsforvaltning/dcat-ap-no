@@ -1,8 +1,12 @@
 = Omfang og avgrensing
 
-Standarden er anbefalt brukt for å beskrive datasett og datakataloger i
-offentlig sektor. Den vil gjelde for alle datasett i offentlig sektor
-(inkludert åpne data) __som beskrives med tanke på oppføring i en
+Standarden er anbefalt brukt for å beskrive datasett og datatjenester, samt kataloger med datasett og datatjenester. Den vil gjelde for alle datasett (inkludert åpne data) og datatjenester i offentlig sektor
+__som beskrives med tanke på oppføring i en
 katalog eller «inventarliste» (intern eller ekstern)__. Standarden er
 ikke tenkt brukt for å beskrive dokumenter eller fagsystem.
 
+Istedenfor å ha alt spesifisert i denne standarden, er det utarbeidet flere andre spesifikasjoner for å beskrive ulike aspekter ved datasett/datatjenester:
+
+* *Kvalitetsbeskrivelser*: Denne standarden bruker https://www.w3.org/TR/vocab-dqv/[DQV (Data Quality Vocabulary) fra W3C] til å beskrive kvalitet på datasett/datatjenester. Det er utarbeidet en https://informasjonsforvaltning.github.io/dqv-ap-no/[norsk applikasjonsprofil av DQV (DQV-AP-NO)], som supplerer denne standarden med kvalitetsbeskrivelser.
+
+* *Informasjonsmodeller*: Det er utabeidet en norsk applikasjonsprofil av DCAT for beskrivelse og utveksling av informasjonsmodeller (https://informasjonsforvaltning.github.io/modelldcat-ap-no/[ModellDCAT-AP-NO]), for bl.a. å knytte en informasjonsmodell til et datasett eller en datatjeneste.
