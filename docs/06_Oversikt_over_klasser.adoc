@@ -22,7 +22,7 @@
 | URI | dcat:Catalog
 | Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Catalog
 | Status | Obligatorisk
-|Kommentar| "Registry catalogue" er det engelske navnet til denne klassen er i BRegDCAT-AP.
+|Kommentar| "Registry catalogue" er det engelske navnet til denne klassen i BRegDCAT-AP.
 |===
 
 === Katalogisert ressurs [[klasse-katalogisert-ressurs]]
@@ -63,12 +63,12 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 
 [cols="30s,70d"]
 |===
-| Engelsk navn | Public servive
+| Engelsk navn | Public service
 | Beskrivelse | Brukes til å representere en offentlig tjeneste, bl.a. tjeneste som skaper og/eller forvalter grunndataregistre/basisregistre eller oversikter over registre (såkalt «register over register»).
 | URI | cpsv:PublicService
 | Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
 | Status | Obligatorisk
-|Kommentar| "Public Registry Service" er det engelske navnet til denne klassen er i BRegDCAT-AP.
+|Kommentar| "Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.
 |Eksempel| Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.
 |===
 
@@ -81,7 +81,7 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 | URI | skos:Concept
 | Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Concept
 | Status | Obligatorisk
-|Kommentar | Avvik fra BRegDCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
+|Kommentar | Avvik fra BRegDCAT-AP: Endret fra anbefalt til obligatorisk i DCAT-AP-NO.
 |===
 
 === Tematisk skjema [[klasse-tematisk-skjema]]
@@ -93,7 +93,7 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 | URI | skos:ConceptScheme
 | Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme
 | Status | Obligatorisk
-| Kommentar| Avvik fra BregDCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO
+| Kommentar| Avvik fra BregDCAT-AP: Endret fra anbefalt til obligatorisk i DCAT-AP-NO.
 |===
 
 == Anbefalte klasser
@@ -107,7 +107,7 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 |URI | dcat:Dataset
 |Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Dataset
 | Status | Anbefalt
-| Kommentar| dcat:Dataset er p.t. obligatorisk i BRegDCAT-AP. Etter dialog med ABR-teamet i ISA-programmet som har ansvar for å ferdigstille BRegDCAT-AP, forstår vi det slik at de kommer til å endre dette til anbefalt også.
+| Kommentar| Denne klassen er p.t. obligatorisk i BRegDCAT-AP. ABR-teamet i ISA-programmet som har ansvaret for å ferdigstille BRegDCAT-AP har sagt at denne klassen kommer til å bli anbefalt.
 |===
 
 === Distribusjon [[klasse-distribusjon]]
@@ -157,23 +157,12 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 
 == Valgfrie klasser
 
-=== Katalogpost [[klasse-katalogpost]]
-
-[cols="30s,70d"]
-|===
-| Engelsk navn | Catalogue record
-| Beskrivelse | En beskrivelse av en datasettoppføring i katalogen.
-| URI | dcat:CatalogRecord
-| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record
-| Status | Valgfri
-|===
-
 === Datastrukturdefinisjon [[klasse-datastrukturdefinisjon]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Data structure definition
-| Beskrivelse | Brukes til å representere modellen som definerer strukturen av et datasett, dvs. mål, dimensjoner og attributter.
+| Beskrivelse | Brukes til å representere modellen som definerer strukturen i et datasett, dvs. mål, dimensjoner og attributter.
 | URI | qb:DataStructureDefinition
 | Referanse | https://www.w3.org/TR/vocab-data-cube/#dfn-qb-datastructuredefinition
 | Status | Valgfri
@@ -221,6 +210,17 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 | Beskrivelse | En identifikator i en bestemt kontekst, bestående av strengen som er identifikatoren; en valgfri identifikator for identifikatorsystemet; en valgfri identifikator for versjonen av identifikatorsystemet; en valgfri identifikator for etaten som administrerer identifikatorsystemet
 | URI | adms:Identifier
 | Referanse | http://www.w3.org/TR/vocab-adms/#identifier
+| Status | Valgfri
+|===
+
+=== Katalogpost [[klasse-katalogpost]]
+
+[cols="30s,70d"]
+|===
+| Engelsk navn | Catalogue record
+| Beskrivelse | En beskrivelse av en datasettoppføring i katalogen.
+| URI | dcat:CatalogRecord
+| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record
 | Status | Valgfri
 |===
 
