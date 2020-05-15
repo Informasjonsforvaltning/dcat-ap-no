@@ -1,19 +1,26 @@
 = URIer som er i bruk
 
-WARNING: Ikke oppdatert (oppdateres til slutt)
-
-[cols="30s,70d"]
+[cols="10s,45d,45d"]
 |===
-|adms| http://www.w3.org/ns/adms#
-|dcat| http://www.w3.org/ns/dcat#
-|dcatno| https://data.norge.no/vocabulary/dcatno# 
-|dct| http://purl.org/dc/terms/
-|foaf| http://xmlns.com/foaf/0.1/
-|owl| http://www.w3.org/2002/07/owl#
-|rdfs| http://www.w3.org/2000/01/rdf-schema#
-|schema| http://schema.org/
-|skos| http://www.w3.org/2004/02/skos/core#
-|spdx| http://spdx.org/rdf/terms#
-|xsd| http://www.w3.org/2001/XMLSchema#
-|vcard| http://www.w3.org/2006/vcard/ns#
+|adms|http://www.w3.org/ns/adms#|Asset Description Metadata Schema
+|cv|http://data.europa.eu/m8g/|Core Vocabulary
+|cpsv|http://purl.org/vocab/cpsv#|Core Public Service Vocabulary
+|dc|http://purl.org/dc/elements/1.1/|Dublin Core Metadata Element Set, v1.1
+|dcat|http://www.w3.org/ns/dcat#|Data Catalog Vocabulary
+|dcatap|http://data.europa.eu/r5r/|DCAT Application Profile
+|dct|http://purl.org/dc/terms/|DCMI Metadata Terms
+|dctype|http://purl.org/dc/dcmitype/|DCMI Type Vocabulary
+|dqv|http://www.w3.org/ns/dqv#|Data Quality Vocabulary
+|eli|http://data.europa.eu/eli/ontology#|European Legislation Identifier
+|foaf|http://xmlns.com/foaf/0.1/|FOAF Vocabulary
+|locn|http://www.w3.org/ns/locn#|ISA Programme Core Location Vocabulary
+|owl|http://www.w3.org/2002/07/owl#|OWL Web Ontology Language
+|prov|http://www.w3.org/ns/prov#|PROV-O: The PROV Ontology
+|qb|http://purl.org/linked-data/cube#|Data Cube Vocabulary
+|rdf|http://www.w3.org/1999/02/22-rdf-syntax-ns#|Resource Description Framework (RDF): Concepts and Abstract Syntax
+|rdfs|http://www.w3.org/2000/01/rdf-schema#|RDF Vocabulary Description Language 1.0: RDF Schema
+|schema|http://schema.org/|schema.org
+|skos|http://www.w3.org/2004/02/skos/core#|SKOS Simple Knowledge Organization System - Reference
+|vcard|http://www.w3.org/2006/vcard/ns#|vCard Ontology
+|xsd|http://www.w3.org/2001/XMLSchema#|XML Schema Part 2: Datatypes Second Edition
 |===
