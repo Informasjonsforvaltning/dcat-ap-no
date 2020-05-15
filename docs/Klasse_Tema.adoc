@@ -1,9 +1,9 @@
-= Kategori
-Klassen _Kategori_ er obligatorisk
+= Tema [[tema]]
+Klassen _Tema_ er obligatorisk
 
-== Obligatoriske egenskaper for klassen _Kategori_
+== Obligatoriske egenskaper for klassen _Tema_
 
-=== Kategori: foretrukket tittel
+=== Tema: foretrukket tittel
 
 [cols="30s,70d"]
 |===

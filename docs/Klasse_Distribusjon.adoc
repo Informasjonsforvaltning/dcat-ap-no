@@ -1,4 +1,4 @@
-= Distribusjon
+= Distribusjon [[distribusjon]]
 
 Klassen _Distribusjon_ er anbefalt
 

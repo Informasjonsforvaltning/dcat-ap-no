@@ -1,4 +1,4 @@
-= Lokasjon
+= Lokasjon [[lokasjon]]
 
 == Anbefalte egenskaper for klassen _Lokasjon_
 

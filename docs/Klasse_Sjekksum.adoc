@@ -1,4 +1,4 @@
-= Sjekksum
+= Sjekksum [[sjekksum]]
 
 Klassen _Sjekksum_ er valgfri
 
