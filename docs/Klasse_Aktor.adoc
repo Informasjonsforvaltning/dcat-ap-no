@@ -1,4 +1,5 @@
-= Aktør
+= Aktør [[aktør]]
+
 Klassen _Aktør_ er obligatorisk. Det anbefales at URI til Aktør (foaf:Agent) er identisk med den URI som Enhetsregisteret (Brønnøysundregistrene) har på
 enheten/virksomheten dersom den finnes i registeret.
 
