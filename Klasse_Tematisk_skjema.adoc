@@ -1,0 +1,15 @@
+= Tematisk skjema [[tematisk-skjema]]
+Klassen _Tematisk skjema_ er obligatorisk
+
+== Obligatoriske egenskaper for klassen _Tematisk skjema_
+
+=== Tematisk skjema: tittel [[tematisk-skjema-tittel]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Navn på det tematiske skjemaet. Kan gjentas for forskjellige versjoner av navnet
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===

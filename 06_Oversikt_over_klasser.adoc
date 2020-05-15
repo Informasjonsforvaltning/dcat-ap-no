@@ -137,7 +137,7 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 [cols="30s,70d"]
 |===
 | Engelsk navn | Rule
-| Beskrivelse | Brukes til å representere regler/dokumenter som setter spesifikke retningslinjer eller prosedyrer som skal følges av en offentlig tjeneste, en datatjeneste, et datasett osv. Det kan inkludere krav til informasjon som forvaltes og tjenester som tilbys av et offentlig basisregister.
+| Beskrivelse | Brukes til å representere regler/dokumenter som setter spesifikke retningslinjer eller prosedyrer som skal følges av en offentlig tjeneste, en datatjeneste, et datasett osv. Det kan inkludere krav til informasjon som forvaltes og tjenester som tilbys.
 | URI | cpsv:Rule
 | Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
 | Status | Anbefalt
