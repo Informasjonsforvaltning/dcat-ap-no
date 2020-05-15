@@ -482,39 +482,43 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#klasse-aktor">Aktør</a></li>
 <li><a href="#klasse-katalog">Katalog</a></li>
-<li><a href="#klasse-datasett">Datasett</a></li>
+<li><a href="#klasse-katalogisert-ressurs">Katalogisert ressurs</a></li>
 <li><a href="#klasse-literal">Literal</a></li>
-<li><a href="#klasse-ressurs">Ressurs</a></li>
-<li><a href="#klasse-kategori">Kategori</a></li>
-<li><a href="#klasse-kategoriskjema">Kategoriskjema</a></li>
+<li><a href="#klasse-offentlig-organisasjon">Offentlig organisasjon</a></li>
+<li><a href="#klasse-offentlig-tjeneste">Offentlig tjeneste</a></li>
+<li><a href="#klasse-tema">Tema</a></li>
+<li><a href="#klasse-tematisk-skjema">Tematisk skjema</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_klasser">Anbefalte klasser</a>
 <ul class="sectlevel3">
+<li><a href="#klasse-datasett">Datasett</a></li>
 <li><a href="#klasse-distribusjon">Distribusjon</a></li>
 <li><a href="#klasse-lisensdokument">Lisensdokument</a></li>
+<li><a href="#klasse-regel">Regel</a></li>
+<li><a href="#klasse-regulativ-ressurs">Regulativ ressurs</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_klasser">Valgfrie klasser</a>
 <ul class="sectlevel3">
-<li><a href="#klasse-katalogpost">Katalogpost</a></li>
+<li><a href="#klasse-datastrukturdefinisjon">Datastrukturdefinisjon</a></li>
 <li><a href="#klasse-datatjeneste">Datatjeneste</a></li>
-<li><a href="#klasse-sjekksum">Sjekksum</a></li>
 <li><a href="#klasse-dokument">Dokument </a></li>
 <li><a href="#klasse-frekvens">Frekvens</a></li>
 <li><a href="#klasse-identifikator">Identifikator</a></li>
+<li><a href="#klasse-katalogpost">Katalogpost</a></li>
+<li><a href="#klasse-komponentspesifikasjon">Komponentspesifikasjon</a></li>
 <li><a href="#klasse-kontaktpunkt">Kontaktpunkt</a></li>
-<li><a href="#klasse-spraksystem">Språksystem</a></li>
 <li><a href="#klasse-lokasjon">Lokasjon</a></li>
 <li><a href="#klasse-medietype">Medietype</a></li>
+<li><a href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse</a></li>
+<li><a href="#klasse-rettighetsutsagn">Rettighetsutsagn</a></li>
+<li><a href="#klasse-sjekksum">Sjekksum</a></li>
+<li><a href="#klasse-spraksystem">Språksystem</a></li>
+<li><a href="#klasse-standard">Standard</a></li>
+<li><a href="#klasse-status">Status</a></li>
 <li><a href="#klasse-tidsom">Tidsrom</a></li>
 <li><a href="#klasse-utgivertype">Utgivertype</a></li>
-<li><a href="#klasse-relasjon">Relasjon</a></li>
-<li><a href="#klasse-rettighetsutsagn">Rettighetsutsagn</a></li>
-<li><a href="#klasse-standard">Standard</a></li>
-<li><a href="#klasse-rolle">Rolle</a></li>
-<li><a href="#klasse-status">Status</a></li>
-<li><a href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse</a></li>
 </ul>
 </li>
 </ul>
@@ -1062,71 +1066,117 @@ Ikke oppdatert (oppdateres til slutt)
 <div class="sect1">
 <h2 id="_urier_som_er_i_bruk"><a class="link" href="#_urier_som_er_i_bruk">URIer som er i bruk</a></h2>
 <div class="sectionbody">
-<div class="admonitionblock warning">
-<table>
-<tr>
-<td class="icon">
-<i class="fa icon-warning" title="Advarsel"></i>
-</td>
-<td class="content">
-Ikke oppdatert (oppdateres til slutt)
-</td>
-</tr>
-</table>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
+<col style="width: 10%;">
+<col style="width: 45%;">
+<col style="width: 45%;">
 </colgroup>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>adms</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/adms#" class="bare">http://www.w3.org/ns/adms#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Asset Description Metadata Schema</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/m8g/" class="bare">http://data.europa.eu/m8g/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Core Vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>cpsv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/vocab/cpsv#" class="bare">http://purl.org/vocab/cpsv#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Core Public Service Vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dc</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/elements/1.1/" class="bare">http://purl.org/dc/elements/1.1/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dublin Core Metadata Element Set, v1.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcat</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/dcat#" class="bare">http://www.w3.org/ns/dcat#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Catalog Vocabulary</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcatno</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/dcatno#" class="bare">https://data.norge.no/vocabulary/dcatno#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcatap</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/r5r/" class="bare">http://data.europa.eu/r5r/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DCAT Application Profile</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/" class="bare">http://purl.org/dc/terms/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DCMI Metadata Terms</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dctype</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/dcmitype/" class="bare">http://purl.org/dc/dcmitype/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">DCMI Type Vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dqv</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/dqv#" class="bare">http://www.w3.org/ns/dqv#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Quality Vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eli</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/eli/ontology#" class="bare">http://data.europa.eu/eli/ontology#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">European Legislation Identifier</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>foaf</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/0.1/" class="bare">http://xmlns.com/foaf/0.1/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FOAF Vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>locn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/locn#" class="bare">http://www.w3.org/ns/locn#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ISA Programme Core Location Vocabulary</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>owl</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2002/07/owl#" class="bare">http://www.w3.org/2002/07/owl#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">OWL Web Ontology Language</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>prov</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/prov#" class="bare">http://www.w3.org/ns/prov#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PROV-O: The PROV Ontology</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>qb</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/linked-data/cube#" class="bare">http://purl.org/linked-data/cube#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data Cube Vocabulary</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdf</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#" class="bare">http://www.w3.org/1999/02/22-rdf-syntax-ns#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resource Description Framework (RDF): Concepts and Abstract Syntax</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>rdfs</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2000/01/rdf-schema#" class="bare">http://www.w3.org/2000/01/rdf-schema#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">RDF Vocabulary Description Language 1.0: RDF Schema</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>schema</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://schema.org/" class="bare">http://schema.org/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">schema.org</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>skos</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2004/02/skos/core#" class="bare">http://www.w3.org/2004/02/skos/core#</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>spdx</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://spdx.org/rdf/terms#" class="bare">http://spdx.org/rdf/terms#</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema#" class="bare">http://www.w3.org/2001/XMLSchema#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">SKOS Simple Knowledge Organization System - Reference</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>vcard</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2006/vcard/ns#" class="bare">http://www.w3.org/2006/vcard/ns#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vCard Ontology</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>xsd</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/2001/XMLSchema#" class="bare">http://www.w3.org/2001/XMLSchema#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">XML Schema Part 2: Datatypes Second Edition</p></td>
 </tr>
 </tbody>
 </table>
@@ -1196,11 +1246,15 @@ Ikke oppdatert (oppdateres til slutt)
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Registry catalogue" er det engelske navnet til denne klassen i BRegDCAT-AP.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-datasett"><a class="link" href="#klasse-datasett">Datasett</a></h4>
+<h4 id="klasse-katalogisert-ressurs"><a class="link" href="#klasse-katalogisert-ressurs">Katalogisert ressurs</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1209,19 +1263,19 @@ Ikke oppdatert (oppdateres til slutt)
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogued resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En konseptuell enhet som representerer informasjonen som publiseres</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en ressurs som er beskrevet i en katalog.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Dataset" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Dataset</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Resource" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Resource</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1252,7 +1306,7 @@ Ikke oppdatert (oppdateres til slutt)
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#section-Graph-Literal" class="bare">https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#section-Graph-Literal</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-concepts/#section-Literals" class="bare">https://www.w3.org/TR/rdf-concepts/#section-Literals</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1262,7 +1316,7 @@ Ikke oppdatert (oppdateres til slutt)
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-ressurs"><a class="link" href="#klasse-ressurs">Ressurs</a></h4>
+<h4 id="klasse-offentlig-organisasjon"><a class="link" href="#klasse-offentlig-organisasjon">Offentlig organisasjon</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1271,19 +1325,20 @@ Ikke oppdatert (oppdateres til slutt)
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Public organisation</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hva som helst som er beskrevet med RDF</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en aktør som er ansvarlig for å yte en offentlig tjeneste.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganization</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/rdf-schema/#ch_resource" class="bare">http://www.w3.org/TR/rdf-schema/#ch_resource</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a>
+<a href="http://www.w3.org/TR/vocab-org/" class="bare">http://www.w3.org/TR/vocab-org/</a>; <a href="https://www.w3.org/TR/vocab-org/" class="bare">https://www.w3.org/TR/vocab-org/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1293,7 +1348,7 @@ Ikke oppdatert (oppdateres til slutt)
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-kategori"><a class="link" href="#klasse-kategori">Kategori</a></h4>
+<h4 id="klasse-offentlig-tjeneste"><a class="link" href="#klasse-offentlig-tjeneste">Offentlig tjeneste</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1302,11 +1357,50 @@ Ikke oppdatert (oppdateres til slutt)
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Category</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Public service</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Et emne for et datasett</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en offentlig tjeneste, bl.a. tjeneste som skaper og/eller forvalter grunndataregistre/basisregistre eller oversikter over registre (såkalt «register over register»).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-tema"><a class="link" href="#klasse-tema">Tema</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Theme</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et tema/temaområde for et datasett, en datatjeneste, et register og/eller en katalog.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1322,13 +1416,13 @@ Ikke oppdatert (oppdateres til slutt)
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avvik fra BRegDCAT-AP: Endret fra anbefalt til obligatorisk i DCAT-AP-NO.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-kategoriskjema"><a class="link" href="#klasse-kategoriskjema">Kategoriskjema</a></h4>
+<h4 id="klasse-tematisk-skjema"><a class="link" href="#klasse-tematisk-skjema">Tematisk skjema</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1337,11 +1431,11 @@ Ikke oppdatert (oppdateres til slutt)
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Category scheme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thematic scheme</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En taksonomi eller en annen type kontrollert vokabular hvor emnet er definert</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1357,7 +1451,7 @@ Ikke oppdatert (oppdateres til slutt)
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Avvik fra DCAT-AP: Er endret fra anbefalt til obligatorisk i DCAT-AP-NO</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Avvik fra BregDCAT-AP: Endret fra anbefalt til obligatorisk i DCAT-AP-NO.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1365,6 +1459,41 @@ Ikke oppdatert (oppdateres til slutt)
 </div>
 <div class="sect2">
 <h3 id="_anbefalte_klasser"><a class="link" href="#_anbefalte_klasser">Anbefalte klasser</a></h3>
+<div class="sect3">
+<h4 id="klasse-datasett"><a class="link" href="#klasse-datasett">Datasett</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En konseptuell enhet som representerer informasjonen som publiseres</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Dataset" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Dataset</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne klassen er p.t. obligatorisk i BRegDCAT-AP. ABR-teamet i ISA-programmet som har ansvaret for å ferdigstille BRegDCAT-AP har sagt at denne klassen kommer til å bli anbefalt.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="sect3">
 <h4 id="klasse-distribusjon"><a class="link" href="#klasse-distribusjon">Distribusjon</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -1410,7 +1539,7 @@ Ikke oppdatert (oppdateres til slutt)
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1427,11 +1556,8 @@ Ikke oppdatert (oppdateres til slutt)
 </tbody>
 </table>
 </div>
-</div>
-<div class="sect2">
-<h3 id="_valgfrie_klasser"><a class="link" href="#_valgfrie_klasser">Valgfrie klasser</a></h3>
 <div class="sect3">
-<h4 id="klasse-katalogpost"><a class="link" href="#klasse-katalogpost">Katalogpost</a></h4>
+<h4 id="klasse-regel"><a class="link" href="#klasse-regel">Regel</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1440,23 +1566,103 @@ Ikke oppdatert (oppdateres til slutt)
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue Record</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rule</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En beskrivelse av en datasettoppføring i katalogen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere regler/dokumenter som setter spesifikke retningslinjer eller prosedyrer som skal følges av en offentlig tjeneste, en datatjeneste, et datasett osv. Det kan inkludere krav til informasjon som forvaltes og tjenester som tilbys av et offentlig basisregister.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:CatalogRecord</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-regulativ-ressurs"><a class="link" href="#klasse-regulativ-ressurs">Regulativ ressurs</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Legal resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere regelverk, policy, retningslinjer og ulike reguleringer som regulerer forvaltningen av en datatjeneste, et datasett eller en offentlig tjeneste.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://publications.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1" class="bare">https://publications.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_valgfrie_klasser"><a class="link" href="#_valgfrie_klasser">Valgfrie klasser</a></h3>
+<div class="sect3">
+<h4 id="klasse-datastrukturdefinisjon"><a class="link" href="#klasse-datastrukturdefinisjon">Datastrukturdefinisjon</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data structure definition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere modellen som definerer strukturen i et datasett, dvs. mål, dimensjoner og attributter.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">qb:DataStructureDefinition</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-data-cube/#dfn-qb-datastructuredefinition" class="bare">https://www.w3.org/TR/vocab-data-cube/#dfn-qb-datastructuredefinition</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Advarsel"></i>
+</td>
+<td class="content">
+I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
+</td>
+</tr>
+</table>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -1471,7 +1677,7 @@ Ikke oppdatert (oppdateres til slutt)
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Data Service</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Data service</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
@@ -1484,37 +1690,6 @@ Ikke oppdatert (oppdateres til slutt)
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Data_Service" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Data_Service</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-sjekksum"><a class="link" href="#klasse-sjekksum">Sjekksum</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Checksum</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:Checksum</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://spdx.org/rdf/terms#Checksum" class="bare">http://spdx.org/rdf/terms#Checksum</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1617,6 +1792,83 @@ Ikke oppdatert (oppdateres til slutt)
 </table>
 </div>
 <div class="sect3">
+<h4 id="klasse-katalogpost"><a class="link" href="#klasse-katalogpost">Katalogpost</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Catalogue record</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En beskrivelse av en datasettoppføring i katalogen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:CatalogRecord</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-komponentspesifikasjon"><a class="link" href="#klasse-komponentspesifikasjon">Komponentspesifikasjon</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Component specification</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere definisjon av egenskaper til en komponent (f.eks. attributt, dimensjon og målinger) i en datastrukturdefinisjon.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">qb:ComponentSpecification</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentspecification" class="bare">https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentspecification</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="admonitionblock warning">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-warning" title="Advarsel"></i>
+</td>
+<td class="content">
+I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
+</td>
+</tr>
+</table>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
 <h4 id="klasse-kontaktpunkt"><a class="link" href="#klasse-kontaktpunkt">Kontaktpunkt</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1639,37 +1891,6 @@ Ikke oppdatert (oppdateres til slutt)
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181" class="bare">http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-spraksystem"><a class="link" href="#klasse-spraksystem">Språksystem</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Linguistic system</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LinguisticSystem</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1741,6 +1962,197 @@ Ikke oppdatert (oppdateres til slutt)
 </table>
 </div>
 <div class="sect3">
+<h4 id="klasse-proveniensbeskrivelse"><a class="link" href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Provenance Statement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:ProvenanceStatement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-rettighetsutsagn"><a class="link" href="#klasse-rettighetsutsagn">Rettighetsutsagn</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rights statement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:RightsStatement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-sjekksum"><a class="link" href="#klasse-sjekksum">Sjekksum</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Checksum</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:Checksum</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://spdx.org/rdf/terms#Checksum" class="bare">http://spdx.org/rdf/terms#Checksum</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. Denne klassen er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-spraksystem"><a class="link" href="#klasse-spraksystem">Språksystem</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Linguistic system</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LinguisticSystem</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-standard"><a class="link" href="#klasse-standard">Standard</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En standard eller annen spesifikasjon som et datasett er i samsvar med</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Standard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-Standard" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-Standard</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-status"><a class="link" href="#klasse-status">Status</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å indikere status på en distribusjon eller
+ en katalogpost i katalogen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/vocab-adms/#status" class="bare">http://www.w3.org/TR/vocab-adms/#status</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
 <h4 id="klasse-tidsom"><a class="link" href="#klasse-tidsom">Tidsrom</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1799,192 +2211,9 @@ Ikke oppdatert (oppdateres til slutt)
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-relasjon"><a class="link" href="#klasse-relasjon">Relasjon</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For å knytte ytterligere informasjon til en relasjon mellom ressurser</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Relationship</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship" class="bare">https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-rettighetsutsagn"><a class="link" href="#klasse-rettighetsutsagn">Rettighetsutsagn</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rights statement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:RightsStatement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-standard"><a class="link" href="#klasse-standard">Standard</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En standard eller annen spesifikasjon som et datasett er i samsvar med</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Standard</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-Standard" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-Standard</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-rolle"><a class="link" href="#klasse-rolle">Rolle</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Role</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En rolle er funksjonen til en ressurs eller aktør i forhold til en annen ressurs. Her brukt i sammenheng med ressurshenvisning (resource attribution) eller ressursrelasjoner. Merk at det er en underklasse av <code>skos:Concept</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Role</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Role" class="bare">https://www.w3.org/TR/vocab-dcat-2/#Class:Role</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-status"><a class="link" href="#klasse-status">Status</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Status</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å indikere status på en distribusjon eller
- en katalogpost i katalogen.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/vocab-adms/#status" class="bare">http://www.w3.org/TR/vocab-adms/#status</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-proveniensbeskrivelse"><a class="link" href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Provenance Statement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:ProvenanceStatement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. Denne klassen er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7420,7 +7649,7 @@ vokabular.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-05-14 10:42:46 UTC
+Sist oppdatert 2020-05-15 12:51:35 UTC
 </div>
 </div>
 </body>
