@@ -1,5 +1,6 @@
-= Datasett
-Klassen _Datasett_ er obligatorisk
+= Datasett [[datasett]]
+
+Klassen _Datasett_ er anbefalt
 
 == Obligatoriske egenskaper for klassen _Datasett_
 

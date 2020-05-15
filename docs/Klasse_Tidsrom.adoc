@@ -1,4 +1,4 @@
-= Tidsrom
+= Tidsrom [[tidsrom]]
 
 == Anbefalte egenskaper for klassen _Tidsrom_
 

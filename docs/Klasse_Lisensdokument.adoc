@@ -1,4 +1,4 @@
-= Lisensdokument
+= Lisensdokument [[lisensdokument]]
 
 Klassen _Lisensdokument_ er anbefalt
 

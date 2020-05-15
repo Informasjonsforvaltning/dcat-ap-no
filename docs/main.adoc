@@ -43,33 +43,46 @@ include::07b_diagram.adoc[]
 
 :leveloffset: +1
 
-include::08_Katalog.adoc[]
+include::Klasse_Aktor.adoc[]
 
-include::09_Katalogpost.adoc[]
+include::Klasse_Datasett.adoc[]
 
-include::10_Datatjeneste.adoc[]
+include::Klasse_Datastrukturdefinisjon.adoc[]
 
-include::11_Datasett.adoc[]
+include::Klasse_Datatjeneste.adoc[]
 
-include::12_Distribusjon.adoc[]
+include::Klasse_Distribusjon.adoc[]
 
-include::13_Aktor.adoc[]
+include::Klasse_Identifikator.adoc[]
 
-include::14_Kategoriskjema.adoc[]
+include::Klasse_Katalog.adoc[]
 
-include::15_Kategori.adoc[]
+include::Klasse_Katalogpost.adoc[]
 
-include::16_Sjekksum.adoc[]
+include::Klasse_Komponentspesifikasjon.adoc[]
 
-include::17_Identifikator.adoc[]
+include::Klasse_Lisensdokument.adoc[]
 
-include::18_Lisensdokument.adoc[]
+include::Klasse_Lokasjon.adoc[]
 
-include::19_Lokasjon.adoc[]
+include::Klasse_Offentlig_organisasjon.adoc[]
 
-include::20_Tidsrom.adoc[]
+include::Klasse_Offentlig_tjeneste.adoc[]
 
-include::21_Relasjoner.adoc[]
+include::Klasse_Regel.adoc[]
+
+include::Klasse_Regulativ_ressurs.adoc[]
+
+include::Klasse_Relasjoner.adoc[]
+
+include::Klasse_Sjekksum.adoc[]
+
+include::Klasse_Tema.adoc[]
+
+include::Klasse_Tematisk_skjema.adoc[]
+
+include::Klasse_Tidsrom.adoc[]
+
 
 :leveloffset: -1
 

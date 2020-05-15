@@ -1,4 +1,4 @@
-= Identifikator
+= Identifikator [[identifikator]]
 
 Klassen _Identifikator_ er valgfri
 

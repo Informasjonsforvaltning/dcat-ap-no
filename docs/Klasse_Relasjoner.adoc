@@ -1,4 +1,4 @@
-= Relasjoner
+= Relasjoner [[relasjoner]]
 
 == Obligatoriske egenskaper for klassen _Relasjoner_
 
