@@ -1,27 +1,29 @@
 = Katalogpost [[katalogpost]]
 
-Klassen _Katalogpost_ er valgfri
+Klassen _Katalogpost_ er valgfri.
 
 == Obligatoriske egenskaper for _Katalogpost_
-
-=== Katalogpost: primærtema [[katalogpost-primartema]]
-
-[cols="30s,70d"]
-|===
-|URI| foaf:primaryTopic
-|Range| dcat:Dataset or dcat:Dataservice or dcat:Catalog
-|Beskrivelse| Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten
-|Multiplisitet| 1..1
-|Status| Obligatorisk
-|===
 
 === Katalogpost: endringsdato [[katalogpost-endringsdato]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| last update
 |URI| dct:modified
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Denne egenskapen inneholder den nyeste datoen for når katalogposten ble endret.
+|Multiplisitet| 1..1
+|Status| Obligatorisk
+|===
+
+=== Katalogpost: primærtema [[katalogpost-primartema]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| primary topic
+|URI| foaf:primaryTopic
+|Range| dcat:Dataset or dcat:Dataservice or dcat:Catalog
+|Beskrivelse| Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten
 |Multiplisitet| 1..1
 |Status| Obligatorisk
 |===
@@ -32,6 +34,7 @@ Klassen _Katalogpost_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| application profile
 |URI| dct:conformsTo
 |Range| dct:Standard
 |Beskrivelse| Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med
@@ -43,6 +46,7 @@ Klassen _Katalogpost_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| status
 |URI| adms:status
 |Range| skos:Concept
 |Beskrivelse| Brukes til å indikere status av en katalogpost i katalogen.
@@ -54,6 +58,7 @@ Klassen _Katalogpost_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| release date
 |URI| dct:issued
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Datoen for når beskrivelsen av datasettet ble inkludert i datakatalogen.
@@ -67,20 +72,10 @@ Klassen _Katalogpost_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen kan gjentas for parallelle språkversjoner av beskrivelsen.
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-=== Katalogpost: språk [[katalogpost-sprak]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:language
-|Range| dct:LinguisticSystem
-|Beskrivelse| Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -89,6 +84,7 @@ Klassen _Katalogpost_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| source metadata
 |URI| dct:source
 |Range| dcat:CatalogRecord
 |Beskrivelse| Referanse til den originale katalogposten (metadata) som er brukt for å skape denne katalogposten (metadata) for datasettet
@@ -96,10 +92,23 @@ Klassen _Katalogpost_ er valgfri
 |Status| Valgfri
 |===
 
+=== Katalogpost: språk [[katalogpost-sprak]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| language
+|URI| dct:language
+|Range| dct:LinguisticSystem
+|Beskrivelse| Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
+
 === Katalogpost: tittel [[katalogpost-tittel]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
 |Beskrivelse| Navnet på katalogen. Denne egenskapen kan gjentas for parallelle språkversjoner av navnet.
