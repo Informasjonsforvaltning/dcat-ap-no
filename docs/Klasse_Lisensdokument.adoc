@@ -1,6 +1,6 @@
 = Lisensdokument [[lisensdokument]]
 
-Klassen _Lisensdokument_ er anbefalt
+Klassen _Lisensdokument_ er anbefalt.
 
 == Anbefalte egenskaper for klassen Lisensdokument
 
@@ -8,9 +8,11 @@ Klassen _Lisensdokument_ er anbefalt
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| licence type
 |URI| dct:type
 |Range| skos:Concept
 |Beskrivelse| Refererer til type lisens, f.eks. som indikerer "fri bruk" (Public Domain) eller "royalties kreves". Egenskapen kan gjentas i de tilfellene der flere lisenstyper gjelder for et lisensdokument.
 |Multiplisitet| 0..n
 |Status| Anbefalt
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
