@@ -1,3 +1,73 @@
 = Komponentspesifikasjon [[komponentspesifikasjon]]
 
-< kommer >
+Klassen _Komponentspesifikasjon_ er valgfri.
+
+WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
+
+== Anbefalte egenskaper for _Komponentspesifikasjon_
+
+=== Komponentspesifikasjon: begrep [[komponentspesifikasjon-begrep]]
+|===
+|Engelsk navn|concept
+|URI|qb:concept
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til begrepet som komponenten representerer.
+|Multiplisitet|0..1
+|Status|Anbefalt
+|Kommentar|Norsk utvidelse.
+|===
+
+== Valgfrie egenskaper for _Komponentspesifikasjon_
+
+=== Komponentspesifikasjon: attributt [[komponentspesifikasjon-attributt]]
+|===
+|Engelsk navn|attribute
+|URI|qb:attribute
+|Range|qb:AttributeProperty
+|Beskrivelse|Brukes til å definere en attributtkomponent.
+|Multiplisitet|0..n
+|Status|Valgfri
+|Kommentar|SDMX-standarden inkluderer et sett med felles statistiske begreper med tilhørende kodelister som er ment å kunne gjenbrukes på tvers av sektorer:http://purl.org/linked-data/sdmx/2009/attribute[http://purl.org/linked-data/sdmx/2009/attribute[ ]]http://purl.org/linked-data/sdmx/2009/attribute[http://purl.org/linked-data/sdmx/2009/attribute#]
+|===
+
+=== Komponentspesifikasjon: dimensjon [[komponentspesifikasjon-dimensjon]]
+|===
+|Engelsk navn|dimension
+|URI|qb:dimension
+|Range|qb:DimensionProperty
+|Beskrivelse|Brukes til å definere en dimensjonskomponent.
+|Multiplisitet|0..n
+|Status|Valgfri
+|Kommentar|SDMX-standarden inkluderer et sett med predefinerte dimensjonskomponenter:      	http://purl.org/linked-data/sdmx/2009/dimension[http://purl.org/linked-data/sdmx/2009/dimension#]
+|===
+
+=== Komponentspesifikasjon: komponent påkrevd [[komponentspesifikasjon-komponent-påkrevd]]
+|===
+|Engelsk navn|component required
+|URI|qb:componentRequired
+|Range|rdfs:Literal (xsd:boolean)
+|Beskrivelse|Brukes til å indikere hvorvidt komponenten er påkrevd (sann/true) eller valgfri (usann/false). Gjelder bare attributtkomponent. Default verdi er usann/false.
+|Multiplisitet|0..n
+|Status|Valgfri
+|===
+
+=== Komponentspesifikasjon: mål [[komponentspesifikasjon-mål]]
+|===
+|Engelsk navn|measure
+|URI|qb:measure
+|Range|qb:MeasureProperty
+|Beskrivelse|Brukes til å definere en målkomponent.
+|Multiplisitet|0..n
+|Status|Valgfri
+|Kommentar|SDMX-standarden inkluderer et sett med predefinerte målkomponenter:http://purl.org/linked-data/sdmx/2009/measure[http://purl.org/linked-data/sdmx/2009/measure[ ]]http://purl.org/linked-data/sdmx/2009/measure[http://purl.org/linked-data/sdmx/2009/measure#]
+|===
+
+=== Komponentspesifikasjon: ordenstall [[komponentspesifikasjon-ordenstall]]
+|===
+|Engelsk navn|order
+|URI|qb:order
+|Range|rdfs:Literal (xsd:int)
+|Beskrivelse|Brukes til å indikere plassering av en komponent i et sett av komponenter i en datastruktur. Lavere ordenstall kommer foran høyere ordenstall, unummererte kommer sist.
+|Multiplisitet|0..n
+|Status|Valgfri
+|===
