@@ -1,13 +1,27 @@
 = Distribusjon [[distribusjon]]
 
-Klassen _Distribusjon_ er anbefalt
+Klassen _Distribusjon_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Distribusjon_
+
+=== Distribusjon: format [[distribusjon-format]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| format
+|URI| dct:format
+|Range| dct:MediaType
+|Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <<distribusjon-medietype>>.
+|===
 
 === Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| access URL
 |URI| dcat:accessURL
 |Range| rdfs:Resource
 |Beskrivelse| En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til i datasettet
@@ -15,36 +29,14 @@ Klassen _Distribusjon_ er anbefalt
 |Status| Obligatorisk
 |===
 
-=== Distribusjon: format [[distribusjon-format]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:format
-|Range| dct:MediaType
-|Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
-|Multiplisitet| 1..n
-|Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er gjort obligatorisk og skal brukes i stedet for <<distribusjon-medietype>>
-|===
 
 == Anbefalte egenskaper for klassen _Distribusjon_
-
-=== Distribusjon: tilgjengelighet [[distribusjon-tilgjengelighet]]
-
-[cols="30s,70d"]
-|===
-|URI| dcatap:availability
-|Range| skos:Concept
-|Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier: `temporary`, `experimental`, `available`, `stable`
-|Multiplisitet| 0..1
-|Status| Anbefalt
-|===
-
 
 === Distribusjon: beskrivelse [[distribusjon-beskrivelse]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
 |Beskrivelse| Fritekstbeskrivelse av distribusjonen. Kan repeteres for parallelle språkversjoner
@@ -56,6 +48,7 @@ Klassen _Distribusjon_ er anbefalt
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| licence
 |URI| dct:license
 |Range| dct:LicenseDocument
 |Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, f.eks. https://data.norge.no/nlod/
@@ -63,192 +56,29 @@ Klassen _Distribusjon_ er anbefalt
 |Status| Anbefalt
 |===
 
+=== Distribusjon: tilgjengelighet [[distribusjon-tilgjengelighet]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| availability
+|URI| dcatap:availability
+|Range| skos:Concept
+|Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier: `temporary`, `experimental`, `available`, `stable`
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
+
+
 == Valgfrie egenskaper for klassen _Distribusjon_
-
-=== Distribusjon: tilgangstjeneste [[distribusjon-tilganstjeneste]]
-
-[cols="30s,70d"]
-|===
-|URI| dcat:accessService
-|Range| dcat:DataService
-|Beskrivelse| Refererer til en datatjeneste som gir tilgang til distribusjonen av datasettet.
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-
-=== Distribusjon: filstørrelse [[distribusjon-filstorrelse]]
-
-[cols="30s,70d"]
-|===
-|URI| dcat:byteSize
-|Range| rdfs:Literal typed as xsd:decimal
-|Beskrivelse| Distribusjonens størrelse oppgitt i bytes
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-
-=== Distribusjon: sjekksum [[distribusjon-sjekksum]]
-
-[cols="30s,70d"]
-|===
-|URI| spdx:checksum
-|Range| spdx:Checksum
-|Beskrivelse| Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg)
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-=== Distribusjon: komprimeringsformat [[distribusjon-komprimeringsformat]]
-[cols="30s,70d"]
-|===
-|URI| dcat:compressFormat
-|Range| dct:MediaType
-|Beskrivelse| Komprimeringsformatet for distribusjonen som dataene er i dersom de er i en komprimert form, f.eks. for å redusere størrelsen på den nedlastbare filen.
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
 
 === Distribusjon: dokumentasjon [[distribusjon-dokumentasjon]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| page (documentation)
 |URI| foaf:page
 |Range| foaf:Document
 |Beskrivelse| Referanse til en side eller et dokument som beskriver distribusjonen
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-=== Distribusjon: nedlastningslenke [[distribusjon-nedlastningslenke]]
-
-[cols="30s,70d"]
-|===
-|URI| dcat:downloadURL
-|Range| rdfs:Resource
-|Beskrivelse| Direktelenke (URL) til en nedlastbar fil i et gitt format
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-=== Distribusjon: policy [[distribusjon-policy]]
-[cols="30s,70d"]
-|===
-|URI| odrl:hasPolicy
-|Range| odrl:Policy
-|Beskrivelse| Refererer til policyen som uttrykker rettighetene knyttet til distribusjonen hvis de bruker ODRL-vokabularet.
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-
-=== Distribusjon: språk [[distribusjon-sprak]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:language
-|Range| dct:LinguisticSystem
-|Beskrivelse| Referanse til språk som er brukt i distribusjonen
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-=== Distribusjon: i samsvar med [[distribusjon-i-samsvar-med]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:conformsTo
-|Range| dct:Standard
-|Beskrivelse| Referanse til et etablert skjema som distribusjonen er i samsvar med
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-=== Distribusjon: medietype [[distribusjon-medietype]]
-[cols="30s,70d"]
-|===
-|URI| dcat:mediaType, subproperty of dct:format
-|Range| dct:MediaType
-|Beskrivelse| Refererer til medietype av en distribusjon.
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-=== Distribusjon: pakkeformat [[distribusjon-pakkeformat]]
-[cols="30s,70d"]
-|===
-|URI| dcat:packageFormat
-|Range| dct:MediaType
-|Beskrivelse| Refererer til formatet til filen der en eller flere datafiler er gruppert sammen, f.eks. for å gjøre det mulig å laste ned et sett relaterte filer.
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-
-=== Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:issued
-|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for formell utgivelse/publisering av distribusjonen
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-=== Distribusjon: rettigheter [[distribusjon-rettigheter]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:rights
-|Range| dct:RightsStatement
-|Beskrivelse| Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-=== Distribusjon: geografisk oppløsning [[geografisk-opplosning]]
-[cols="30s,70d"]
-|===
-|URI| dcat:spatialResolutionInMeters
-|Range| xsd:decimal
-|Beskrivelse| Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-
-=== Distribusjon: status [[distribusjon-status]]
-
-[cols="30s,70d"]
-|===
-|URI| adms:status
-|Range| skos:Concept
-|Beskrivelse| Distribusjonens modenhet. Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-=== Distribusjon: tidsromsoppløsning
-
-[cols="30s,70d"]
-|===
-|URI| dcat:temporalResolution
-|Range| xsd:duration
-|Beskrivelse| Refererer til minste tidsrommet som kan utledes fra datasett-distribusjonen ("resolvable in the dataset distribution").
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-
-=== Distribusjon: tittel [[distribusjon-tittel]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:title
-|Range| rdfs:Literal
-|Beskrivelse| Navn på distribusjonen
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -257,9 +87,205 @@ Klassen _Distribusjon_ er anbefalt
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| modified (last update)
 |URI| dct:modified
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for siste endring av distribusjonen
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
+
+=== Distribusjon: filstørrelse [[distribusjon-filstorrelse]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| byte size
+|URI| dcat:byteSize
+|Range| rdfs:Literal typed as xsd:decimal
+|Beskrivelse| Distribusjonens størrelse oppgitt i bytes
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
+
+=== Distribusjon: geografisk oppløsning [[geografisk-opplosning]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| spatial resolution
+|URI| dcat:spatialResolutionInMeters
+|Range| xsd:decimal
+|Beskrivelse| Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter
+|Multiplisitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Distribusjon: i samsvar med [[distribusjon-i-samsvar-med]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| linked schemas
+|URI| dct:conformsTo
+|Range| dct:Standard
+|Beskrivelse| Referanse til et etablert skjema som distribusjonen er i samsvar med
+|Multiplisitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Distribusjon: komprimeringsformat [[distribusjon-komprimeringsformat]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| compression format
+|URI| dcat:compressFormat
+|Range| dct:MediaType
+|Beskrivelse| Komprimeringsformatet for distribusjonen som dataene er i dersom de er i en komprimert form, f.eks. for å redusere størrelsen på den nedlastbare filen.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
+
+=== Distribusjon: medietype [[distribusjon-medietype]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| media type
+|URI| dcat:mediaType, subproperty of dct:format
+|Range| dct:MediaType
+|Beskrivelse| Refererer til medietype av en distribusjon.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
+
+=== Distribusjon: nedlastningslenke [[distribusjon-nedlastningslenke]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| download URL
+|URI| dcat:downloadURL
+|Range| rdfs:Resource
+|Beskrivelse| Direktelenke (URL) til en nedlastbar fil i et gitt format
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
+
+=== Distribusjon: pakkeformat [[distribusjon-pakkeformat]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| packaging format
+|URI| dcat:packageFormat
+|Range| dct:MediaType
+|Beskrivelse| Refererer til formatet til filen der en eller flere datafiler er gruppert sammen, f.eks. for å gjøre det mulig å laste ned et sett relaterte filer.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Distribusjon: policy [[distribusjon-policy]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| has policy
+|URI| odrl:hasPolicy
+|Range| odrl:Policy
+|Beskrivelse| Refererer til policyen som uttrykker rettighetene knyttet til distribusjonen hvis de bruker ODRL-vokabularet.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Distribusjon: rettigheter [[distribusjon-rettigheter]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| rights
+|URI| dct:rights
+|Range| dct:RightsStatement
+|Beskrivelse| Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Distribusjon: sjekksum [[distribusjon-sjekksum]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| checksum
+|URI| spdx:checksum
+|Range| spdx:Checksum
+|Beskrivelse| Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg)
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
+
+=== Distribusjon: språk [[distribusjon-sprak]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| language
+|URI| dct:language
+|Range| dct:LinguisticSystem
+|Beskrivelse| Referanse til språk som er brukt i distribusjonen
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
+
+=== Distribusjon: status [[distribusjon-status]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| status
+|URI| adms:status
+|Range| skos:Concept
+|Beskrivelse| Distribusjonens modenhet. Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Distribusjon: tidsromsoppløsning
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| temporal resolution
+|URI| dcat:temporalResolution
+|Range| xsd:duration
+|Beskrivelse| Refererer til minste tidsrommet som kan utledes fra datasett-distribusjonen ("resolvable in the dataset distribution").
+|Multiplisitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Distribusjon: tilgangstjeneste [[distribusjon-tilganstjeneste]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| access service
+|URI| dcat:accessService
+|Range| dcat:DataService
+|Beskrivelse| Refererer til en datatjeneste som gir tilgang til distribusjonen av datasettet.
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
+
+=== Distribusjon: tittel [[distribusjon-tittel]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| title
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Navn på distribusjonen
+|Multiplisitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| issued
+|URI| dct:issued
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Dato for formell utgivelse/publisering av distribusjonen
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
