@@ -1,7 +1,7 @@
 
 = Datatjeneste [[datatjeneste]]
 
-Klassen _Datatjeneste_ er valgfri
+Klassen _Datatjeneste_ er valgfri.
 
 == Obligatoriske egenskaper for _Datatjeneste_
 
@@ -9,6 +9,7 @@ Klassen _Datatjeneste_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| endpoint URL
 |URI| dcat:endpointURL
 |Range| rdfs:Resource
 |Beskrivelse| Rotplassering eller primært endepunkt for tjenesten (en IRI)
@@ -16,10 +17,23 @@ Klassen _Datatjeneste_ er valgfri
 |Status| Obligatorisk
 |===
 
+=== Datatjeneste: identifikator [[datatjeneste-identifikator]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi identifikator til datatjenesten.
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|===
+
 === Datatjeneste: tittel [[datatjeneste-tittel]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
 |Beskrivelse| Navn på datatjenesten. Kan gjentas for parallelle språkversjoner.
@@ -34,6 +48,7 @@ Klassen _Datatjeneste_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| endpoint description
 |URI| dcat:endpointDescription
 |Range| rdfs:Resource
 |Beskrivelse| Denne egenskapen inneholder en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens dct:conformsTo brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.
@@ -45,6 +60,7 @@ Klassen _Datatjeneste_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| serves dataset
 |URI| dcat:servesDataset
 |Range| dcat:Dataset
 |Beskrivelse| Refererer til en samling av data som datatjenesten kan distribuere.
@@ -54,19 +70,10 @@ Klassen _Datatjeneste_ er valgfri
 
 == Valgfrie egenskaper for _Datatjeneste_
 
-=== Datatjeneste: tilgangsrettigheter [[datatjeneste-tilgangsrettigheter]]
-[cols="30s,70d"]
-|===
-|URI| dct:accessRights
-|Range| dct:RightsStatement
-|Beskrivelse| Denne egenskapen KAN inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
 === Datatjeneste: beskrivelse [[datatjeneste-beskrivelse]]
 [cols="30s,70d"]
 |===
+|Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen kan gjentas for parallelle språkversjoner.
@@ -74,9 +81,32 @@ Klassen _Datatjeneste_ er valgfri
 |Status| Valgfri
 |===
 
+=== Datatjeneste: følger [[datatjeneste-følger]]
+[cols="30s,70d"]
+|===
+|Engelsk navn|follows
+|URI|cpsv:follows
+|Range|cpsv:Rule
+|Beskrivelse|Brukes til å referere til en regel som definerer den juridiske rammen for datatjenesten.
+|Multiplisitet|0..n
+|Status|Valgfri
+|===
+
+=== Datatjeneste: i samsvar med [[datatjeneste-i-samsvar-med]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| conforms to
+|URI| dct:conformsTo
+|Range| dct:Standard
+|Beskrivelse| Referanse til en spesifikasjon eller standard som datatjenesten implementerer.
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
+
 === Datatjeneste: lisens [[datatjeneste-lisens]]
 [cols="30s,70d"]
 |===
+|Engelsk navn| licence
 |URI| dct:license
 |Range| dct:LicenseDocument
 |Beskrivelse| Inneholder lisensen som datatjenesten blir gjort tilgjengelig under.
@@ -84,12 +114,13 @@ Klassen _Datatjeneste_ er valgfri
 |Status| Valgfri
 |===
 
-=== Datatjeneste: i samsvar med [[datatjeneste-i-samsvar-med]]
+=== Datatjeneste: tilgangsrettigheter [[datatjeneste-tilgangsrettigheter]]
 [cols="30s,70d"]
 |===
-|URI| dct:conformsTo
-|Range| dct:Standard
-|Beskrivelse| Referanse til en spesifikasjon eller standard som datatjenesten implementerer.
-|Kardinalitet| 0..n
+|Engelsk navn| access rights
+|URI| dct:accessRights
+|Range| dct:RightsStatement
+|Beskrivelse| Denne egenskapen KAN inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===

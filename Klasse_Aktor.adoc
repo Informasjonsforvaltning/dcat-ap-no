@@ -1,19 +1,21 @@
 = Aktør [[aktør]]
 
 Klassen _Aktør_ er obligatorisk. Det anbefales at URI til Aktør (foaf:Agent) er identisk med den URI som Enhetsregisteret (Brønnøysundregistrene) har på
-enheten/virksomheten dersom den finnes i registeret.
+enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\https://data.brreg.no/enhetsregisteret/api/enheter/974760673>`.
 
 == Obligatoriske egenskaper for klassen _Aktør_
 
-== Aktør: navn [[aktor-navn]]
+=== Aktør: navn [[aktor-navn]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| name
 |URI| foaf:name
 |Range| rdfs:Literal
 |Beskrivelse| Navn på aktøren. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk)
 |Multiplisitet| 1..n
 |Status| Obligatorisk
+|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1.
 |===
 
 == Anbefalte egenskaper for klassen _Aktør_
@@ -22,11 +24,13 @@ enheten/virksomheten dersom den finnes i registeret.
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| type
 |URI| dct:type
 |Range| skos:Concept
 |Beskrivelse| Refererer til type aktør som gjør katalogen eller datasett tilgjengelig
 |Multiplisitet| 0..1
 |Status| Anbefalt
+|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1.
 |===
 
 
@@ -34,10 +38,11 @@ enheten/virksomheten dersom den finnes i registeret.
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| identifier
 |URI| dct:identifier
 |Range| rdfs:Literal
 |Beskrivelse| Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer
 |Multiplisitet| 0..1
 |Status| Anbefalt
-|Kommentar| Norsk utvidelse
+|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1 og allerede da som en norsk utvidelse.
 |===

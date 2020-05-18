@@ -1,24 +1,15 @@
 
 = Katalog [[katalog]]
-Klassen _Katalog_ er obligatorisk
+
+Klassen _Katalog_ er obligatorisk.
 
 == Obligatoriske egenskaper for _Katalog_
-
-=== Katalog: datasett [[katalog-datasett]]
-
-[cols="30s,70d"]
-|===
-|URI| dcat:dataset
-|Range| dcat:Dataset
-|Beskrivelse| Kobler katalogen til datasett som er en del av katalogen
-|Multiplisitet| 1..n
-|Status| Obligatorisk
-|===
 
 === Katalog: beskrivelse [[katalog-beskrivelse]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
 |Beskrivelse| Fritekst-beskrivelse av innholdet i katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av beskrivelsen.
@@ -26,13 +17,14 @@ Klassen _Katalog_ er obligatorisk
 |Status| Obligatorisk
 |===
 
-=== Katalog: utgiver [[katalog-utgiver]]
+=== Katalog: identifikator [[katalog-identifikator]]
 
 [cols="30s,70d"]
 |===
-|URI| dct:publisher
-|Range| foaf:Agent
-|Beskrivelse| Refererer til en aktøren (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+|Engelsk navn| identifier
+|URI| dct:identifier
+|Range| rdfs:Literal
+|Beskrivelse| Refererer til identifikatoren av katalogen.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
 |===
@@ -41,6 +33,7 @@ Klassen _Katalog_ er obligatorisk
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av navnet.
@@ -48,59 +41,41 @@ Klassen _Katalog_ er obligatorisk
 |Status| Obligatorisk
 |===
 
+=== Katalog: utgiver [[katalog-utgiver]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| publisher
+|URI| dct:publisher
+|Range| foaf:Agent
+|Beskrivelse| Refererer til en aktøren (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+|Multiplisitet| 1..1
+|Status| Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til obligatorisk.
+|===
+
 == Anbefalte egenskaper for _Katalog_
 
-=== Katalog: hjemmeside [[katalog-hjemmeside]]
+=== Katalog: datasett [[katalog-datasett]]
 
 [cols="30s,70d"]
 |===
-|URI| foaf:homepage
-|Range| foaf:Document
-|Beskrivelse| Nettside som fungerer som hovedside for katalogen
-|Multiplisitet| 0..1
-|Status| Anbefalt
+|Engelsk navn| dataset
+|URI| dcat:dataset
+|Range| dcat:Dataset
+|Beskrivelse| Kobler katalogen til datasett som er en del av katalogen
+|Multiplisitet| 1..n
+|Status| Obligatorisk
 |===
 
-=== Katalog: språk [[katalog-sprak]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:language
-|Range| dct:LinguisticSystem
-|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv. av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
-|Multiplisitet| 0..n
-|Status| Anbefalt
-|===
-
-=== Katalog: lisens [[katalog-lisens]]
+=== Katalog: dekningsområde [[katalog-dekningsomrade]]
 
 [cols="30s,70d"]
 |===
-|URI| dct:license
-|Range| dct:LicenseDocument
-|Beskrivelse| Viser til lisens for datakatalogen som beskriver hvordan den kan viderebrukes.
-|Multiplisitet| 0..1
-|Status| Anbefalt
-|===
-
-=== Katalog: utgivelsesdato [[katalog-utgivelsesdato]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:issued
-|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for formell utgivelse (publisering) av katalogen.
-|Multiplisitet| 0..1
-|Status| Anbefalt
-|===
-
-=== Katalog: temaer [[katalog-temaer]]
-
-[cols="30s,70d"]
-|===
-|URI| dcat:themeTaxonomy
-|Range| skos:ConceptScheme
-|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett
+|Engelsk navn| spatial/geographic
+|URI| dct:spatial
+|Range| dct:Location
+|Beskrivelse| Referanse til et geografisk område som er dekket av katalogen
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -109,6 +84,7 @@ Klassen _Katalog_ er obligatorisk
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| modified (last update)
 |URI| dct:modified
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for siste oppdatering/endring av katalogen
@@ -116,26 +92,100 @@ Klassen _Katalog_ er obligatorisk
 |Status| Anbefalt
 |===
 
-=== Katalog: dekningsområde [[katalog-dekningsomrade]]
+=== Katalog: frekvens [[katalog-frekvens]]
 
 [cols="30s,70d"]
 |===
-|URI| dct:spatial
-|Range| dct:Location
-|Beskrivelse| Referanse til et geografisk område som er dekket av katalogen
+|Engelsk navn| accrual periodicity
+|URI| dct:accrualPeriodicity
+|Range| dct:Frequency
+|Beskrivelse| Referanse (URI) til oppdateringsfrekvensen for datasettet.  Skal peke på begrep fra http://publications.europa.eu/resource/authority/frequency[Frequency Name Authority List] som vedlikeholdes av EUs Publications Office.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
+
+=== Katalog: hjemmeside [[katalog-hjemmeside]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| homepage
+|URI| foaf:homepage
+|Range| foaf:Document
+|Beskrivelse| Nettside som fungerer som hovedside for katalogen
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
+
+=== Katalog: lisens [[katalog-lisens]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| licence
+|URI| dct:license
+|Range| dct:LicenseDocument
+|Beskrivelse| Viser til lisens for datakatalogen som beskriver hvordan den kan viderebrukes.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
+
+=== Katalog: proveniens [[katalog-proveniens]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| provenance (authenticity)
+|URI| dct:provenance
+|Range| dct:ProvenanceStatement
+|Beskrivelse| Referanse til beskrivelse av autentisitet og integritet til datasettene i katalogen.
 |Multiplisitet| 0..n
+|Status| Anbefalt
+|===
+
+=== Katalog: språk [[katalog-sprak]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| language
+|URI| dct:language
+|Range| dct:LinguisticSystem
+|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv. av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
+
+=== Katalog: temaer [[katalog-temaer]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| themes
+|URI| dcat:themeTaxonomy
+|Range| skos:ConceptScheme
+|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
+
+=== Katalog: utgivelsesdato [[katalog-utgivelsesdato]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| issued (release date)
+|URI| dct:issued
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Dato for formell utgivelse (publisering) av katalogen.
+|Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
 == Valgfrie egenskaper for _Katalog_
 
-=== Katalog: har del [[katalog-har-del]]
+=== Katalog: datatjeneste [[katalog-datatjeneste]]
 
 [cols="30s,70d"]
 |===
-|URI| dct:hasPart
-|Range| dcat:Catalog
-|Beskrivelse| Referanse til en beslektet katalog som er en del av den beskrevne katalogen
+|Engelsk navn| service
+|URI| dcat:service
+|Range| dcat:DataService
+|Beskrivelse| Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -144,10 +194,37 @@ Klassen _Katalog_ er obligatorisk
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| is part of
 |URI| dct:isPartOf
 |Range| dcat:Catalog
 |Beskrivelse| Referanse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
 |Multiplisitet| 0..1
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Katalog: har del [[katalog-har-del]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| has part
+|URI| dct:hasPart
+|Range| dcat:Catalog
+|Beskrivelse| Referanse til en beslektet katalog som er en del av den beskrevne katalogen
+|Multiplisitet| 0..n
+|Status| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|===
+
+=== Katalog: katalog [[katalog-katalog]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| catalogue
+|URI| dcat:catalog
+|Range| dcat:Catalog
+|Beskrivelse| Refererer til en annen katalog som er relevant for denne katalogen
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -156,43 +233,10 @@ Klassen _Katalog_ er obligatorisk
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| record
 |URI| dcat:record
 |Range| dcat:CatalogRecord
 |Beskrivelse| Refererer til en katalogpost som er del av katalogen
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-=== Katalog: rettigheter [[katalog-rettigheter]]
-
-[cols="30s,70d"]
-|===
-|URI| dct:rights
-|Range| dct:RightsStatement
-|Beskrivelse| Uttalelse som spesifiserer rettigheter knyttet til katalogen
-|Multiplisitet| 0..1
-|Status| Valgfri
-|===
-
-=== Katalog: datatjeneste [[katalog-datatjeneste]]
-
-[cols="30s,70d"]
-|===
-|URI| dcat:service
-|Range| dcat:DataService
-|Beskrivelse| Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
-|Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-
-=== Katalog: katalog [[katalog-katalog]]
-
-[cols="30s,70d"]
-|===
-|URI| dcat:catalog
-|Range| dcat:Catalog
-|Beskrivelse| Refererer til en annen katalog som er relevant for denne katalogen
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -201,9 +245,22 @@ Klassen _Katalog_ er obligatorisk
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| creator
 |URI| dct:creator
 |Range| foaf:Agent
 |Beskrivelse| Refererer til enheten som er hovedansvarlig for å produsere katalogen.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
+
+=== Katalog: rettigheter [[katalog-rettigheter]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| rights (use terms)
+|URI| dct:rights
+|Range| dct:RightsStatement
+|Beskrivelse| Uttalelse som spesifiserer rettigheter knyttet til katalogen
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===

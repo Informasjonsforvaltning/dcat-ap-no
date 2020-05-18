@@ -1,3 +1,29 @@
 = Datastrukturdefinisjon [[datastrukturdefinisjon]]
 
-<kommer>
+Klassen _Datastrukturdefinisjon_ er valgfri.
+
+WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
+
+== Obligatoriske egenskaper for _Datastrukturdefinisjon_
+
+=== Datastrukturdefinisjon: beskrivelse
+[cols="30s,70d"]
+|===
+|Engelsk navn|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til en tekstlig beskrivelse av datastrukturen. Beskrivelsen bør gjentas når den finnes i flere ulike språk/målformer.
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|===
+
+=== Datastrukturdefinisjon: komponent
+[cols="30s,70d"]
+|===
+|Engelsk navn|component
+|URI|qb:component
+|Range|qb:ComponentSpecification
+|Beskrivelse|Brukes til å referere til en komponent (attributt, dimensjon, mål) som er spesifikk for datasettet.
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|===
