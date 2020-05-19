@@ -1,3 +1,71 @@
 = Regulativ ressurs [[regulativ-ressurs]]
 
-< kommer >
+Klassen _Regulativ ressurs_ er anbefalt.
+
+== Obligatoriske egenskaper for klassen _Regulativ ressurs_
+
+===  Regulativ ressurs: type [[regulativ-ressurs-type]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|type
+|URI|dct:type
+|Range|eli:ResourceType
+|Beskrivelse|Brukes til å referere til typen av en regulativ ressurs (f.eks. direktiv, forordning).
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|Kommentar|EU oppfordrer medlemslandene til å etablere sine egne kodelister. EUs Publications Office har også enhttps://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[ ]]https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[liste over verdier for EUs ressurstyper].
+|===
+
+== Anbefalte egenskaper for klassen _Regulativ ressurs_
+
+===  Regulativ ressurs: beskrivelse [[regulativ-ressurs-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å referere til en tekstlig beskrivelse av ressursen. Beskrivelsen bør gjentas når den finnes i flere ulike språk/målformer.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+=== Regulativ ressurs: identifikator [[regulativ-ressurs-identifikator]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi en identifikator til ressursen.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+=== Regulativ ressurs: referanse [[regulativ-ressurs-referanse]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|reference
+|URI|rdfs:seeAlso
+|Range|xsd:anyURI
+|Beskrivelse|Brukes til å oppgi referanse til regelverksressurs.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|Kommentar|Norsk utvidelse, for å kunne oppgi referanse til en regulativ ressurs.
+|===
+
+== Valgfrie egenskaper for klassen _Regulativ ressurs_
+
+===  Regulativ ressurs: relatert regulativ ressurs [[regulativ-ressurs-relatert-regulativ-ressurs]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|related
+|URI|dct:relation
+|Range|eli:LegalResource
+|Beskrivelse|Brukes til å referere til en annen relatert regulativ ressurs.
+|Multiplisitet|0..n
+|Status|Valgfri
+|===
