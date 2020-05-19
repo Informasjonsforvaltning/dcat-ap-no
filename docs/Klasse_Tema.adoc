@@ -1,6 +1,6 @@
 = Tema [[tema]]
 
-Klassen _Tema_ er anbefalt.
+Klassen _Tema_ er obligatorisk.
 
 == Obligatoriske egenskaper for klassen _Tema_
 
