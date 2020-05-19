@@ -1,4 +1,6 @@
-= Krav til kontrollerte vokabular
+= Om bruk av kontrollerte vokabularer [[kontrollerte-vokabularer]]
+
+== Krav til kontrollerte vokabular [[krav-til-kontrollerte-vokabularer]]
 
 Følgende kriterier er gjeldende for vokabular som skal anbefales for bruk i denne standarden:
 
@@ -15,12 +17,12 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres.
 
 Disse kriteriene er ikke tenkt å definere et sett med krav til kontrollerte vokabularer generelt; de er kun ment brukt for utvelgelse av de kontrollerte vokabularene som er anbefalt for denne standarden
 
-= Kontrollerte vokabular som skal brukes
+== Kontrollerte vokabular som skal brukes [[kontrollerte-vokabularer-som-skal-brukes]]
 
-Under følger en oversikt over kontrollerte vokabular som *må* brukes for egenskapene i listen. Etablering av disse kontrollerte vokabularene som obligatoriske, sikrer et minimum av samhandlingsevne
+Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= obligatorisk) for egenskapene i listen. Etablering av disse kontrollerte vokabularene som obligatoriske, sikrer et minimum av samhandlingsevne
 
 
-== Dataset Theme Vocabulary
+=== Dataset Theme Vocabulary
 
 [cols="30s,70d"]
 |===
@@ -30,7 +32,7 @@ Under følger en oversikt over kontrollerte vokabular som *må* brukes for egens
 |Beskrivelse| Verdiene som skal brukes for <<datasett-tema>> er URIene for begrepene i selve vokabularene som brukes. Verdiene som skal brukes for <<katalog-temaer>> er URIen til selve vokabularet. Det vil si begrepsskjemaet (concept scheme), ikke URIene for begrepene i vokabularet.
 |===
 
-== EU Vocabularies Frequency
+=== EU Vocabularies Frequency
 
 [cols="30s,70d"]
 |===
@@ -39,7 +41,7 @@ Under følger en oversikt over kontrollerte vokabular som *må* brukes for egens
 |URI for vokabularet| http://publications.europa.eu/resource/authority/frequency
 |===
 
-== IANA Media Types
+=== IANA Media Types
 
 [cols="30s,70d"]
 |===
@@ -51,7 +53,7 @@ Under følger en oversikt over kontrollerte vokabular som *må* brukes for egens
 WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/authority/file-type[MDR File Type Named Authority List] er endret til IANA Media Types for klassen format.
 |===
 
-== EU Vocabularies Languages Named Authority List
+=== EU Vocabularies Languages Named Authority List
 
 [cols="30s,70d"]
 |===
@@ -60,7 +62,7 @@ WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/author
 |URI for vokabularet| http://publications.europa.eu/resource/authority/language
 |===
 
-== EU Vocabularies Corporate bodies Named Authority List
+=== EU Vocabularies Corporate bodies Named Authority List
 
 [cols="30s,70d"]
 |===
@@ -70,7 +72,7 @@ WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/author
 |Beskrivelse| Skal brukes for europeiske institusjoner og et lite sett med internasjonale organisasjoner. Ved andre typer organisasjoner, bør URIer eller organisasjonsnummer fra Enhetsregisteret brukes.
 |===
 
-== Geonames
+=== Geonames
 
 [cols="30s,70d"]
 |===
@@ -80,7 +82,7 @@ WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/author
 |Beskrivelse| En referanse til administrativ enhet (nivå 1 eller 2) i geonames, for eksempel http://sws.geonames.org/6453366/
 |===
 
-== ADMS change type vocabulary
+=== ADMS change type vocabulary
 
 [cols="30s,70d"]
 |===
@@ -90,7 +92,7 @@ WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/author
 |Beskrivelse| :created, :updated, :deleted
 |===
 
-== ADMS status vocabulary
+=== ADMS status vocabulary
 
 [cols="30s,70d"]
 |===
@@ -100,7 +102,7 @@ WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/author
 |Beskrivelse| Listen over begrep i ADMS status-vokabularet er inkludert i ADMS-spesifikasjonen
 |===
 
-== ADMS publisher type vocabulary
+=== ADMS publisher type vocabulary
 
 [cols="30s,70d"]
 |===
@@ -110,7 +112,7 @@ WARNING: DCAT-APs krav om å bruke http://publications.europa.eu/resource/author
 |Beskrivelse| Listen over begrep i ADMS-vokabularet for utgivertype er inkludert i ADMS-spesifikasjonen
 |===
 
-== ADMS licence type vocabulary
+=== ADMS licence type vocabulary
 
 [cols="30s,70d"]
 |===
