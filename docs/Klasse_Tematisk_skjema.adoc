@@ -1,6 +1,6 @@
 = Tematisk skjema [[tematisk-skjema]]
 
-Klassen _Tematisk skjema_ er anbefalt.
+Klassen _Tematisk skjema_ er obligatorisk.
 
 == Obligatoriske egenskaper for klassen _Tematisk skjema_
 
