@@ -48,10 +48,9 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| publisher
 |URI| dct:publisher
 |Range| foaf:Agent
-|Beskrivelse| Refererer til en aktøren (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+|Beskrivelse| Refererer til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til obligatorisk.
 |===
 
 == Anbefalte egenskaper for _Katalog_
@@ -63,7 +62,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| dataset
 |URI| dcat:dataset
 |Range| dcat:Dataset
-|Beskrivelse| Kobler katalogen til datasett som er en del av katalogen
+|Beskrivelse| Kobler katalogen til datasett som er en del av katalogen.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -75,7 +74,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| spatial/geographic
 |URI| dct:spatial
 |Range| dct:Location
-|Beskrivelse| Referanse til et geografisk område som er dekket av katalogen
+|Beskrivelse| Referanse til et geografisk område som er dekket av katalogen.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -87,7 +86,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| modified (last update)
 |URI| dct:modified
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for siste oppdatering/endring av katalogen
+|Beskrivelse| Dato for siste oppdatering/endring av katalogen.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -111,7 +110,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| homepage
 |URI| foaf:homepage
 |Range| foaf:Document
-|Beskrivelse| Nettside som fungerer som hovedside for katalogen
+|Beskrivelse| Nettside som fungerer som hovedside for katalogen.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -159,7 +158,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| themes
 |URI| dcat:themeTaxonomy
 |Range| skos:ConceptScheme
-|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett
+|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -197,7 +196,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| is part of
 |URI| dct:isPartOf
 |Range| dcat:Catalog
-|Beskrivelse| Referanse til en beslektet katalog som denne katalogen er fysisk eller logisk inkludert i
+|Beskrivelse| Referanse til en beslektet katalog som denne katalogen fysisk eller logisk er inkludert i.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
@@ -210,7 +209,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| has part
 |URI| dct:hasPart
 |Range| dcat:Catalog
-|Beskrivelse| Referanse til en beslektet katalog som er en del av den beskrevne katalogen
+|Beskrivelse| Referanse til en beslektet katalog som er en del av den beskrevne katalogen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
@@ -223,7 +222,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| catalogue
 |URI| dcat:catalog
 |Range| dcat:Catalog
-|Beskrivelse| Refererer til en annen katalog som er relevant for denne katalogen
+|Beskrivelse| Refererer til en annen katalog som er relevant for denne katalogen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -236,7 +235,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| record
 |URI| dcat:record
 |Range| dcat:CatalogRecord
-|Beskrivelse| Refererer til en katalogpost som er del av katalogen
+|Beskrivelse| Refererer til en katalogpost som er del av katalogen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -248,7 +247,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| creator
 |URI| dct:creator
 |Range| foaf:Agent
-|Beskrivelse| Refererer til enheten som er hovedansvarlig for å produsere katalogen.
+|Beskrivelse| Refererer til aktøren som er hovedansvarlig for å produsere katalogen.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -260,7 +259,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| rights (use terms)
 |URI| dct:rights
 |Range| dct:RightsStatement
-|Beskrivelse| Uttalelse som spesifiserer rettigheter knyttet til katalogen
+|Beskrivelse| Uttalelse som spesifiserer rettigheter knyttet til katalogen.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
