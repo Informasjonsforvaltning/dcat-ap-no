@@ -9,9 +9,8 @@
 |dc|http://purl.org/dc/elements/1.1/|Dublin Core Metadata Element Set, v1.1
 |dcat|http://www.w3.org/ns/dcat#|Data Catalog Vocabulary
 |dcatap|http://data.europa.eu/r5r/|DCAT Application Profile, EU
-|dcatapno|https://data.norge.no/vocabulary/dcatapno#|Norsk applikasjonsprofil av DCAT
+|dcatno|https://data.norge.no/vocabulary/dcatno#|Norsk applikasjonsprofil av DCAT
 |dct|http://purl.org/dc/terms/|DCMI Metadata Terms
-|dctype|http://purl.org/dc/dcmitype/|DCMI Type Vocabulary
 |dqv|http://www.w3.org/ns/dqv#|Data Quality Vocabulary
 |eli|http://data.europa.eu/eli/ontology#|European Legislation Identifier
 |foaf|http://xmlns.com/foaf/0.1/|FOAF Vocabulary
@@ -21,12 +20,10 @@
 |prov|http://www.w3.org/ns/prov#|PROV-O: The PROV Ontology
 |provno|https://data.norge.no/vocabulary/provno#|Norsk applikasjonsprofil av PROV-O
 |qb|http://purl.org/linked-data/cube#|Data Cube Vocabulary
-|rdf|http://www.w3.org/1999/02/22-rdf-syntax-ns#|Resource Description Framework (RDF): Concepts and Abstract Syntax
 |rdfs|http://www.w3.org/2000/01/rdf-schema#|RDF Vocabulary Description Language 1.0: RDF Schema
 |schema|http://schema.org/|schema.org
 |skos|http://www.w3.org/2004/02/skos/core#|SKOS Simple Knowledge Organization System - Reference
 |spdx|http://spdx.org/rdf/terms#|Software Package Data Exchange®
-|vann|http://purl.org/vocab/vann/|A vocabulary for annotating vocabulary descriptions
 |vcard|http://www.w3.org/2006/vcard/ns#|vCard Ontology
 |voaf|http://purl.org/vocommons/voaf#|Vocabulary of a Friend (VOAF)
 |xsd|http://www.w3.org/2001/XMLSchema#|XML Schema Part 2: Datatypes Second Edition
