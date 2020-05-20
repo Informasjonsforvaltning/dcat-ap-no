@@ -2,7 +2,7 @@
 
 Klassen _Offentlig tjeneste_ er obligatorisk.
 
-== Obligatoriske egenskaper for klassen Offentlig tjeneste
+== Obligatoriske egenskaper for klassen _Offentlig tjeneste_
 
 === Offentlig tjeneste: beskrivelse [[offentlig-tjeneste-beskrivelse]]
 
@@ -48,12 +48,12 @@ Klassen _Offentlig tjeneste_ er obligatorisk.
 |Engelsk navn|title
 |URI|dct:title
 |Range|Text
-|Beskrivelse|Brukes til det offisielle navnet på tjenesten. Denne egenskapen bør gjentas når navnet finnes i flere ulike språk/målformer.
+|Beskrivelse|Brukes til det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet|1..n
 |Status|Obligatorisk
 |===
 
-== Anbefalte egenskaper for klassen Offentlig tjeneste
+== Anbefalte egenskaper for klassen _Offentlig tjeneste_
 
 === Offentlig tjeneste: dekningsområde [[offentlig-tjeneste-dekningsområde]]
 
@@ -112,7 +112,7 @@ Klassen _Offentlig tjeneste_ er obligatorisk.
 |Engelsk navn|produces (data resource)
 |URI|cpsv:produces
 |Range|cv:Output, described as a dcat:Catalog, a dcat:Dataset or a dcat:DataService
-|Beskrivelse|Brukes til å definere output av tjenesten. Outputen skal dessuten beskrives som en katalog (dcat:Catalog), et datasett (dcat:Dataset) eller en datatjeneste (dcat:DataService).
+|Beskrivelse|Brukes til å definere output av tjenesten. Outputen skal dessuten beskrives som en katalog (`dcat:Catalog`), et datasett (`dcat:Dataset`) eller en datatjeneste (`dcat:DataService`).
 |Multiplisitet|0..n
 |Status|Anbefalt
 |===
@@ -148,12 +148,12 @@ Klassen _Offentlig tjeneste_ er obligatorisk.
 |Engelsk navn|type
 |URI|dct:type
 |Range|skos:Concept
-|Beskrivelse|Brukes til å indikere type tjeneste, som beskrevet i et kontrollert vokabular (f.eks. «basisregister», «register over basisregister»).
+|Beskrivelse|Brukes til å indikere type tjeneste i henhold til et kontrollert vokabular.
 |Multiplisitet|0..n
 |Status|Anbefalt
 |===
 
-== Valgfrie egenskaper for klassen Offentlig tjeneste
+== Valgfrie egenskaper for klassen _Offentlig tjeneste_
 
 === Offentlig tjeneste: følger [[offentlig-tjeneste-følger]]
 
@@ -174,7 +174,7 @@ Klassen _Offentlig tjeneste_ er obligatorisk.
 |Engelsk navn|has contact point
 |URI|cv:hasContactPoint
 |Range|schema:ContactPoint
-|Beskrivelse|Brukes til å referere til kontaktpunkt for tjenesten. Denne kontaktinformasjonen bør være relevant for tjenesten som kan være ulik kontaktinformasjonen for den ansvarlige organisasjonen (competent authority).
+|Beskrivelse|Brukes til å referere til kontaktpunkt for tjenesten. Denne kontaktinformasjonen bør være relevant for tjenesten og kan være ulik kontaktinformasjonen for den ansvarlige organisasjonen (competent authority).
 |Multiplisitet|0..n
 |Status|Valgfri
 |Kommentar|For å være kompatibel med CPSV-AP, har BRegDCAT-AP valgt en annen måte å representere kontaktpunkt på her i denne klassen, enn for f.eks. klassen Datasett (dcat:Dataset).
