@@ -14,7 +14,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Beskrivelse|Brukes til å referere til typen av en regulativ ressurs (f.eks. direktiv, forordning).
 |Multiplisitet|1..n
 |Status|Obligatorisk
-|Kommentar|EU oppfordrer medlemslandene til å etablere sine egne kodelister. EUs Publications Office har også enhttps://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[ ]]https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[liste over verdier for EUs ressurstyper].
+|Kommentar|EU oppfordrer medlemslandene til å etablere sine egne kodelister. EUs Publications Office har også en https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[liste over verdier for EUs ressurstyper].
 |===
 
 == Anbefalte egenskaper for klassen _Regulativ ressurs_
