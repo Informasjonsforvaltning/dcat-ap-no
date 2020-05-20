@@ -1,3 +1,93 @@
 = Offentlig organisasjon [[offentlig-organisasjon]]
 
-< kommer >
+Klassen _Offentlig organisasjon_ er obligatorisk.
+
+== Obligatoriske egenskaper for klassen _Offentlig organisasjon_
+
+=== Offentlig organisasjon: dekningsområde [[offentlig-organisasjon-dekningsområde]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|spatial coverage
+|URI|dct:spatial
+|Range|dct:Location
+|Beskrivelse|Brukes til å referere til et geografisk eller administrativt område dekket av organisasjonen.
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|Kommentar|Verdien bør være URI fra https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu[Administrative Territorial Units - Named Authority List] forvaltet av EUs Publications Office.
+|===
+
+=== Offentlig organisasjon: foretrukket navn [[offentlig-organisasjon-foretrukket-navn]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|preferred label
+|URI|skos:prefLabel
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi det foretrukne navnet til organisasjonen. Denne egenskapen bør gjentas når navnet finnes i flere ulike språk/målformer.
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|===
+
+=== Offentlig organisasjon: identifikator [[offentlig-organisasjon-identifikator]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi identifikatoren til organisasjonen.
+|Multiplisitet|1..1
+|Status|Obligatorisk
+|===
+
+=== Offentlig organisasjon: navn [[offentlig-organisasjon-navn]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|name
+|URI|dct:title
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi navnet til organisasjonen.
+|Multiplisitet|1..1
+|Status|Obligatorisk
+|Kommentar|Denne egenskapen er satt obligatorisk i BRegDCAT-AP for å være kompatiblel med CPSV-AP.
+|===
+
+== Anbefalte egenskaper for klassen _Offentlig organisasjon_
+
+=== Offentlig organisasjon: adresse [[offentlig-organisasjon-adresse]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|address
+|URI|locn:address
+|Range|locn:Address
+|Beskrivelse|Brukes til å oppgi en adresse til organisasjonen.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+=== Offentlig organisasjon: hjemmeside [[offentlig-organisasjon-hjemmeside]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|homepage
+|URI|foaf:homepage
+|Range|foaf:Document
+|Beskrivelse|Brukes til å referere til hjemmesiden til organisasjonen.
+|Multiplisitet|0..1
+|Status|Anbefalt
+|===
+
+=== Offentlig organisasjon: klassifisering [[offentlig-organisasjon-klassifisering]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|classification
+|URI|org:classification
+|Range|skos:Concept
+|Beskrivelse|Brukes til å indikere klassifisering av organisasjonen i henhold til et klassifikasjonsskjema.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===

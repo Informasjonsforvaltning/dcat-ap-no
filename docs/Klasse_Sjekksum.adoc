@@ -1,6 +1,6 @@
 = Sjekksum [[sjekksum]]
 
-Klassen _Sjekksum_ er valgfri
+Klassen _Sjekksum_ er valgfri.
 
 == Obligatoriske egenskaper for klassen _Sjekksum_
 
@@ -8,20 +8,24 @@ Klassen _Sjekksum_ er valgfri
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| algorithm
 |URI| spdx:algorithm
 |Range| spdx:checksumAlgorithm_sha1
 |Beskrivelse| Identifiserer algoritmen som er brukt til å produsere sjekksum. For øyeblikket er SHA-1 den eneste algoritmen som er støttet. Det er forventet støtte for andre algoritmer på et senere tidspunkt.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Sjekksum: sjekksumverdi [[sjekksum-sjekksumverdi]]
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| checksum value
 |URI| spdx:checksumValue
 |Range| rdfs:Literal typed as xsd:hexBinary
 |Beskrivelse| Denne egenskapen brukes til å oppgi en heksadesimal-kodet verdi med små bokstaver, produsert ved hjelp av en spesifikk algoritme.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===

@@ -1,24 +1,31 @@
 = Relasjoner [[relasjoner]]
 
+Klassen _Relasjoner_ er valgfri. 
+
 == Obligatoriske egenskaper for klassen _Relasjoner_
 
-=== Relasjoner: rolle
+=== Relasjoner: rolle [[relasjoner-rolle]]
+
 [cols="30s,70d"]
 |===
+|Engelsk navn| had role
 |URI| dcat:hadRole
 |Range| dcat:Role
 |Beskrivelse| Refererer til funksjonen til en enhet eller aktør i forhold til en annen enhet eller ressurs.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
+=== Relasjoner: relasjon [[relasjoner-relasjon]]
 
-=== Relasjoner: relasjon
 [cols="30s,70d"]
 |===
+|Engelsk navn| relation
 |URI| dct:relation
 |Range| rdfs:Resource
 |Beskrivelse| Refererer til ressursen som har relasjon til kilderessursen.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===

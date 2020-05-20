@@ -1,5 +1,6 @@
 = Tematisk skjema [[tematisk-skjema]]
-Klassen _Tematisk skjema_ er obligatorisk
+
+Klassen _Tematisk skjema_ er obligatorisk.
 
 == Obligatoriske egenskaper for klassen _Tematisk skjema_
 
@@ -7,9 +8,11 @@ Klassen _Tematisk skjema_ er obligatorisk
 
 [cols="30s,70d"]
 |===
+|Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
 |Beskrivelse| Navn på det tematiske skjemaet. Kan gjentas for forskjellige versjoner av navnet
 |Multiplisitet| 1..n
 |Status| Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
