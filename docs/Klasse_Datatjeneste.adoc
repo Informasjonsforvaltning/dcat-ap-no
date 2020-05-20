@@ -3,7 +3,7 @@
 
 Klassen _Datatjeneste_ er valgfri.
 
-== Obligatoriske egenskaper for _Datatjeneste_
+== Obligatoriske egenskaper for klassen _Datatjeneste_
 
 === Datatjeneste: endepunktsURL [[datatjeneste-endepunktsurl]]
 
@@ -42,7 +42,7 @@ Klassen _Datatjeneste_ er valgfri.
 |===
 
 
-== Anbefalte egenskaper for _Datatjeneste_
+== Anbefalte egenskaper for klassen _Datatjeneste_
 
 === Datatjeneste: endepunktsbeskrivelse [[datatjeneste-endepunktsbeskrivelse]]
 
@@ -68,7 +68,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-== Valgfrie egenskaper for _Datatjeneste_
+== Valgfrie egenskaper for klassen _Datatjeneste_
 
 === Datatjeneste: beskrivelse [[datatjeneste-beskrivelse]]
 [cols="30s,70d"]
