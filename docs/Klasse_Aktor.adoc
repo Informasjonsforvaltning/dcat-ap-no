@@ -20,20 +20,6 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 
 == Anbefalte egenskaper for klassen _Aktør_
 
-=== Aktør: utgivertype [[aktor-utgivertype]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| type
-|URI| dct:type
-|Range| skos:Concept
-|Beskrivelse| Refererer til type aktør som gjør katalogen eller ressursen tilgjengelig.
-|Multiplisitet| 0..1
-|Status| Anbefalt
-|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1.
-|===
-
-
 === Aktør: organisasjonsidentifikator [[aktor-organisasjonsidentifikator]]
 
 [cols="30s,70d"]
@@ -45,4 +31,17 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1 og allerede da som en norsk utvidelse.
+|===
+
+=== Aktør: utgivertype [[aktor-utgivertype]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| type
+|URI| dct:type
+|Range| skos:Concept
+|Beskrivelse| Refererer til type aktør som gjør katalogen eller ressursen tilgjengelig.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1.
 |===
