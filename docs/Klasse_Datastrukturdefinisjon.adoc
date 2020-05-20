@@ -4,7 +4,7 @@ Klassen _Datastrukturdefinisjon_ er valgfri.
 
 WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
 
-== Obligatoriske egenskaper for _Datastrukturdefinisjon_
+== Obligatoriske egenskaper for klassen _Datastrukturdefinisjon_
 
 === Datastrukturdefinisjon: beskrivelse
 [cols="30s,70d"]
