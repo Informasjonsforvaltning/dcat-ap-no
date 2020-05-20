@@ -451,7 +451,7 @@ dqvno:isAuthoritative
 ----
 |===
 
-=== Datasett: Datasett: har kvantifiserbart måleresultat [[datasett-har-kvantifiserbart-måleresultat]]
+=== Datasett: har kvantifiserbart måleresultat [[datasett-har-kvantifiserbart-måleresultat]]
 
 [cols="30s,70"]
 |===
