@@ -75,7 +75,7 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen kan gjentas for parallelle språkversjoner av beskrivelsen.
+|Beskrivelse| Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen bør gjentas for parallelle språkversjoner av beskrivelsen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
