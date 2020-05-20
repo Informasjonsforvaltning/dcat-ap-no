@@ -4,7 +4,7 @@ Klassen _Komponentspesifikasjon_ er valgfri.
 
 WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
 
-== Anbefalte egenskaper for _Komponentspesifikasjon_
+== Anbefalte egenskaper for klassen _Komponentspesifikasjon_
 
 === Komponentspesifikasjon: begrep [[komponentspesifikasjon-begrep]]
 
@@ -19,7 +19,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Kommentar|Norsk utvidelse.
 |===
 
-== Valgfrie egenskaper for _Komponentspesifikasjon_
+== Valgfrie egenskaper for klassen _Komponentspesifikasjon_
 
 === Komponentspesifikasjon: attributt [[komponentspesifikasjon-attributt]]
 
