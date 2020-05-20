@@ -2,7 +2,7 @@
 
 Klassen _Katalogpost_ er valgfri.
 
-== Obligatoriske egenskaper for _Katalogpost_
+== Obligatoriske egenskaper for klassen _Katalogpost_
 
 === Katalogpost: endringsdato [[katalogpost-endringsdato]]
 
@@ -28,7 +28,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Obligatorisk
 |===
 
-== Anbefalte egenskaper for _Katalogpost_
+== Anbefalte egenskaper for klassen _Katalogpost_
 
 === Katalogpost: i samsvar med [[katalogpost-i-samsvar-med]]
 
@@ -66,7 +66,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Anbefalt
 |===
 
-== Valgfrie egenskaper for _Katalogpost_
+== Valgfrie egenskaper for klassen _Katalogpost_
 
 === Katalogpost: beskrivelse [[katalogpost-beskrivelse]]
 
