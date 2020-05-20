@@ -12,7 +12,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Engelsk navn| endpoint URL
 |URI| dcat:endpointURL
 |Range| rdfs:Resource
-|Beskrivelse| Rotplassering eller primært endepunkt for tjenesten (en IRI)
+|Beskrivelse| Rotplassering eller primært endepunkt for tjenesten (en IRI).
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
