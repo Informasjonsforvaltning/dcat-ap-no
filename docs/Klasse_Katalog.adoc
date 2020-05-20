@@ -3,7 +3,7 @@
 
 Klassen _Katalog_ er obligatorisk.
 
-== Obligatoriske egenskaper for _Katalog_
+== Obligatoriske egenskaper for klassen _Katalog_
 
 === Katalog: beskrivelse [[katalog-beskrivelse]]
 
@@ -53,7 +53,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Obligatorisk
 |===
 
-== Anbefalte egenskaper for _Katalog_
+== Anbefalte egenskaper for klassen _Katalog_
 
 === Katalog: datasett [[katalog-datasett]]
 
@@ -175,7 +175,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-== Valgfrie egenskaper for _Katalog_
+== Valgfrie egenskaper for klassen _Katalog_
 
 === Katalog: datatjeneste [[katalog-datatjeneste]]
 
