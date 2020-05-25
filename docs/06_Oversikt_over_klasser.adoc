@@ -157,18 +157,6 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 
 == Valgfrie klasser
 
-=== Datastrukturdefinisjon [[klasse-datastrukturdefinisjon]]
-
-[cols="30s,70d"]
-|===
-| Engelsk navn | Data structure definition
-| Beskrivelse | Brukes til å representere modellen som definerer strukturen i et datasett, dvs. mål, dimensjoner og attributter.
-| URI | qb:DataStructureDefinition
-| Referanse | https://www.w3.org/TR/vocab-data-cube/#dfn-qb-datastructuredefinition
-| Status | Valgfri
-| Kommentar a| WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
-|===
-
 === Datatjeneste [[klasse-datatjeneste]]
 
 [cols="30s,70d"]
@@ -222,18 +210,6 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 | URI | dcat:CatalogRecord
 | Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record
 | Status | Valgfri
-|===
-
-=== Komponentspesifikasjon [[klasse-komponentspesifikasjon]]
-
-[cols="30s,70d"]
-|===
-| Engelsk navn | Component specification
-| Beskrivelse | Brukes til å representere definisjon av egenskaper til en komponent (f.eks. attributt, dimensjon og målinger) i en datastrukturdefinisjon.
-| URI | qb:ComponentSpecification
-| Referanse | https://www.w3.org/TR/vocab-data-cube/#dfn-qb-componentspecification
-| Status | Valgfri
-| Kommentar a| WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
 |===
 
 === Kontaktpunkt [[klasse-kontaktpunkt]]
