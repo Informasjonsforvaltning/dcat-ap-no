@@ -14,7 +14,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <<distribusjon-medietype>>.
+|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <<distribusjon-medietype>> (også i DCAT-AP-NO v.1.1).
 |===
 
 === Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
@@ -24,7 +24,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| access URL
 |URI| dcat:accessURL
 |Range| rdfs:Resource
-|Beskrivelse| En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til i datasettet
+|Beskrivelse| En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til datasettet.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -39,7 +39,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
-|Beskrivelse| Fritekstbeskrivelse av distribusjonen. Kan repeteres for parallelle språkversjoner
+|Beskrivelse| Fritekstbeskrivelse av distribusjonen. Bør repeteres for parallelle språkversjoner.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -51,7 +51,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| licence
 |URI| dct:license
 |Range| dct:LicenseDocument
-|Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, f.eks. https://data.norge.no/nlod/
+|Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, f.eks. https://data.norge.no/nlod/.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -63,7 +63,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| availability
 |URI| dcatap:availability
 |Range| skos:Concept
-|Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier: `temporary`, `experimental`, `available`, `stable`
+|Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier: `temporary`, `experimental`, `available`, `stable`.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -78,7 +78,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| page (documentation)
 |URI| foaf:page
 |Range| foaf:Document
-|Beskrivelse| Referanse til en side eller et dokument som beskriver distribusjonen
+|Beskrivelse| Referanse til en side eller et dokument som beskriver distribusjonen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -90,7 +90,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| modified (last update)
 |URI| dct:modified
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for siste endring av distribusjonen
+|Beskrivelse| Dato for siste endring av distribusjonen.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -102,7 +102,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| byte size
 |URI| dcat:byteSize
 |Range| rdfs:Literal typed as xsd:decimal
-|Beskrivelse| Distribusjonens størrelse oppgitt i bytes
+|Beskrivelse| Distribusjonens størrelse oppgitt i bytes.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -113,7 +113,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| spatial resolution
 |URI| dcat:spatialResolutionInMeters
 |Range| xsd:decimal
-|Beskrivelse| Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter
+|Beskrivelse| Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
@@ -126,7 +126,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| linked schemas
 |URI| dct:conformsTo
 |Range| dct:Standard
-|Beskrivelse| Referanse til et etablert skjema som distribusjonen er i samsvar med
+|Beskrivelse| Referanse til et etablert skjema som distribusjonen er i samsvar med.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
@@ -161,7 +161,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| download URL
 |URI| dcat:downloadURL
 |Range| rdfs:Resource
-|Beskrivelse| Direktelenke (URL) til en nedlastbar fil i et gitt format
+|Beskrivelse| Direktelenke (URL) til en nedlastbar fil i et gitt format.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -200,7 +200,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
 |Multiplisitet| 0..1
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: sjekksum [[distribusjon-sjekksum]]
@@ -210,7 +210,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| checksum
 |URI| spdx:checksum
 |Range| spdx:Checksum
-|Beskrivelse| Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg)
+|Beskrivelse| Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg).
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -222,7 +222,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| language
 |URI| dct:language
 |Range| dct:LinguisticSystem
-|Beskrivelse| Referanse til språk som er brukt i distribusjonen
+|Beskrivelse| Referanse til språk som er brukt i distribusjonen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -237,7 +237,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Distribusjonens modenhet. Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
 |Multiplisitet| 0..1
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: tidsromsoppløsning
@@ -272,7 +272,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
-|Beskrivelse| Navn på distribusjonen
+|Beskrivelse| Navn på distribusjonen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
@@ -285,7 +285,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| issued
 |URI| dct:issued
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for formell utgivelse/publisering av distribusjonen
+|Beskrivelse| Dato for formell utgivelse/publisering av distribusjonen.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===

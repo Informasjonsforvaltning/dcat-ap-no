@@ -2,7 +2,7 @@
 
 Klassen _Katalogpost_ er valgfri.
 
-== Obligatoriske egenskaper for _Katalogpost_
+== Obligatoriske egenskaper for klassen _Katalogpost_
 
 === Katalogpost: endringsdato [[katalogpost-endringsdato]]
 
@@ -23,12 +23,12 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| primary topic
 |URI| foaf:primaryTopic
 |Range| dcat:Dataset or dcat:Dataservice or dcat:Catalog
-|Beskrivelse| Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten
+|Beskrivelse| Denne egenskapen lenker katalogposten til datasettet, datatjenesten eller datakatalogen som er beskrevet i katalogposten.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
 |===
 
-== Anbefalte egenskaper for _Katalogpost_
+== Anbefalte egenskaper for klassen _Katalogpost_
 
 === Katalogpost: i samsvar med [[katalogpost-i-samsvar-med]]
 
@@ -37,7 +37,7 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| application profile
 |URI| dct:conformsTo
 |Range| dct:Standard
-|Beskrivelse| Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med
+|Beskrivelse| Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -66,7 +66,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Anbefalt
 |===
 
-== Valgfrie egenskaper for _Katalogpost_
+== Valgfrie egenskaper for klassen _Katalogpost_
 
 === Katalogpost: beskrivelse [[katalogpost-beskrivelse]]
 
@@ -75,7 +75,7 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen kan gjentas for parallelle språkversjoner av beskrivelsen.
+|Beskrivelse| Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen bør gjentas for parallelle språkversjoner av beskrivelsen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -87,7 +87,7 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| source metadata
 |URI| dct:source
 |Range| dcat:CatalogRecord
-|Beskrivelse| Referanse til den originale katalogposten (metadata) som er brukt for å skape denne katalogposten (metadata) for datasettet
+|Beskrivelse| Referanse til den originale katalogposten (metadata) som er brukt for å skape denne katalogposten (metadata) for datasettet.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -99,7 +99,7 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| language
 |URI| dct:language
 |Range| dct:LinguisticSystem
-|Beskrivelse| Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk
+|Beskrivelse| Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===

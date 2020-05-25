@@ -2,9 +2,9 @@
 
 Klassen _Lisensdokument_ er anbefalt.
 
-== Anbefalte egenskaper for klassen Lisensdokument
+== Anbefalte egenskaper for klassen _Lisensdokument_
 
-=== Lisensdokument: lisenstype
+=== Lisensdokument: lisenstype [[lisensdokument-lisenstype]]
 
 [cols="30s,70d"]
 |===

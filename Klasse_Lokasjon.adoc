@@ -22,12 +22,13 @@ Klassen _Lokasjon_ er valgfri.
 |Engelsk navn| centroid
 |URI| dcat:centroid
 |Range| rdfs:Literal
-|Beskrivelse| Refererer til et geografisk senter (centroid) for en ressurs
+|Beskrivelse| Refererer til et geografisk senter (centroid) for en ressurs.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
-NOTE: Vær oppmerksom på at rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. Eksempel: hvis dekningsområde er et område, bruk 'dcat:bbox', ellers bruk 'locn:geometry'
+NOTE: Vær oppmerksom på rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. +
+Eksempel: hvis dekningsområde er et område, bruk `dcat:bbox`, ellers bruk `locn:geometry`.
 
 == Valgfrie egenskaper for klassen _Lokasjon_
 

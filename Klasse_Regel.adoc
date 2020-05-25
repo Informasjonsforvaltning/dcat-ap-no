@@ -49,7 +49,7 @@ Klassen _Regel_ er anbefalt.
 |Engelsk navn|implements
 |URI|cpsv:implements
 |Range|eli:LegalResource
-|Beskrivelse|Brukes til å referere til regelverk eller policy-dokument som regelen er definert inn under.
+|Beskrivelse|Brukes til å referere til en regulativ ressurs som regelen er definert inn under.
 |Multiplisitet|0..n
 |Status|Anbefalt
 |===
