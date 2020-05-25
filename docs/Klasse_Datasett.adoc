@@ -79,9 +79,7 @@ Klassen _Datasett_ er anbefalt.
 |Beskrivelse| Referanse til sentrale begrep som er viktige for å forstå og tolke datasettet. Representeres som URI-er.
 |Multiplisitet| 0..n
 |Status| Anbefalt
-|Kommentar a| Norsk utvidelse i DCAT-AP-NO v.1.1.
-
-WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary. Data Cube Vocabulary har en egenskap `qb:concept` med range `skos:Concept` som vil kunne brukes for dette formål. Se link:#komponentspesifikasjon-begrep[Komponentspesifikasjon: begrep]
+|Kommentar a| Norsk utvidelse (allerede i DCAT-AP-NO v.1.1).
 |===
 
 === Datasett: datasettdistribusjon [[datasett-datasettdistribusjon]]
@@ -371,21 +369,6 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Beskrivelse|  Refererer til den minste geografiske oppløsningen for et datasett målt i meter.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|===
-
-=== Datasett: har datastrukturdefinisjon [[datasett-har-datastrukturdefinisjon]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn|structure
-|URI|qb:structure
-|Range|qb:DataStructureDefinition
-|Beskrivelse|Brukes til å referere til strukturen som datasettet er i samsvar med.
-|Multiplisitet|0..n
-|Status|Valgfri
-|Kommentar a|Denne brukes kun når strukturen av datasettet ikke er beskrevet med informasjonsmodell. Se https://informasjonsforvaltning.github.io/modelldcat-ap-no/[ModellDCAT-AP-NO] for spesifikasjon for beskrivelse av informasjonsmodeller.
-
-WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne egenskapen er hentet fra.
 |===
 
 === Datasett: har del [[datasett-har-del]]
