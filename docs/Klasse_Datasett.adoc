@@ -11,7 +11,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| description
 |URI | dct:description
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder fritekstbeskrivelse av datasettet. Kan gjentas for parallelle språkversjoner
+|Beskrivelse| Inneholder fritekstbeskrivelse av datasettet. Bør gjentas for parallelle språkversjoner.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -23,7 +23,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| identifier
 |URI| dct:identifier
 |Range| rdfs:Literal
-|Beskrivelse| Hovedidentifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik
+|Beskrivelse| Hovedidentifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |Kommentar|
@@ -36,10 +36,10 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| theme
 |URI| dcat:theme
 |Range| skos:Concept
-|Beskrivelse| Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/resource/authority/data-theme[Data theme] som er publisert av EUs Publications Office er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller denne standardens krav til kontrollerte vokabular.
+|Beskrivelse| Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/resource/authority/data-theme[Data theme] som er publisert av EUs Publications Office er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller <<krav-til-kontrollerte-vokabularer, denne standardens krav til kontrollerte vokabularer>>.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk.
+|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
 |===
 
 === Datasett: tittel [[datasett-tittel]]
@@ -49,7 +49,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder navnet på datasettet. Kan gjentas for parallelle språkversjoner av navnet
+|Beskrivelse| Inneholder navnet på datasettet. Kan gjentas for parallelle språkversjoner av navnet.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -61,10 +61,10 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| publisher
 |URI| dct:publisher
 |Range| foaf:Agent
-|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, sekundært organisasjonsnummer.
+|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for enhet, f.eks. `dct:publisher <\https://data.brreg.no/enhetsregisteret/api/enheter/974760673>`.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk.
+|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
 |===
 
 == Anbefalte egenskaper for klassen _Datasett_
@@ -79,9 +79,7 @@ Klassen _Datasett_ er anbefalt.
 |Beskrivelse| Referanse til sentrale begrep som er viktige for å forstå og tolke datasettet. Representeres som URI-er.
 |Multiplisitet| 0..n
 |Status| Anbefalt
-|Kommentar a| Norsk utvidelse.
-
-WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary. Data Cube Vocabulary har en egenskap `qb:concept` med range `skos:Concept` som vil kunne brukes for dette formål. Se link:#komponentspesifikasjon-begrep[Komponentspesifikasjon: begrep]
+|Kommentar a| Norsk utvidelse (allerede i DCAT-AP-NO v.1.1).
 |===
 
 === Datasett: datasettdistribusjon [[datasett-datasettdistribusjon]]
@@ -91,7 +89,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Engelsk navn| dataset distribution
 |URI| dcat:distribution
 |Range| dcat:Distribution
-|Beskrivelse| Koblingen mellom datasettet og en tilgjengelig distribusjon
+|Beskrivelse| Koblingen mellom datasettet og en tilgjengelig distribusjon.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -103,7 +101,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Engelsk navn| spatial coverage
 |URI| dct:spatial
 |Range| dct:Location
-|Beskrivelse| Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf. ISO 19115)
+|Beskrivelse| Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf. ISO 19115).
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -115,7 +113,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Engelsk navn| keyword
 |URI| dcat:keyword
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder emneord (eller tag) som beskriver datasettet
+|Beskrivelse| Inneholder emneord (eller tag) som beskriver datasettet.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -175,7 +173,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsrelatert regel) og `cpsvno: ruleFor
 |Engelsk navn| temporal coverage
 |URI| dct:temporal
 |Range| dct:PeriodOfTime
-|Beskrivelse| Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601)
+|Beskrivelse| Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601).
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -187,10 +185,10 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsrelatert regel) og `cpsvno: ruleFor
 |Engelsk navn| access rights
 |URI| dct:accessRights
 |Range| dct:RightsStatement
-|Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (:public, :restricted og :non-public) vil bli opprettet og forvaltet av EUs Publications Office. Ved bruk av verdiene ":restricted" og ":non-public" er egenskapen link:#datasett-følger[Datasett: følger] anbefalt.
+|Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (`:public`, `:restricted` og `:non-public`) vil bli opprettet og forvaltet av EUs Publications Office. Ved bruk av verdiene `:restricted` og `:non-public` er egenskapen link:#datasett-følger[Datasett: følger] anbefalt.
 |Multiplisitet| 0..1
 |Status| Anbefalt
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt.
+|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt (også i DCAT-AP-NO v.1.1).
 |===
 
 
@@ -243,7 +241,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| page (documentation)
 |URI| foaf:page
 |Range| foaf:Document
-|Beskrivelse| Referanse til en side eller et dokument som beskriver datasettet
+|Beskrivelse| Referanse til en side eller et dokument som beskriver datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -255,7 +253,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| sample
 |URI| adms:sample
 |Range| dcat:Distribution
-|Beskrivelse| Referanse til eksempeldata
+|Beskrivelse| Referanse til eksempeldata.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -267,7 +265,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| modified (last update)
 |URI| dct:modified
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for siste oppdatering av datasettet
+|Beskrivelse| Dato for siste oppdatering av datasettet.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -279,11 +277,10 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| is part of
 |URI| dct:isPartOf
 |Range| dcat:Dataset
-|Beskrivelse| Referanse til datasett som dette datasettet er en del av
+|Beskrivelse| Referanse til et annet datasett som dette datasettet er en del av.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar|
-|Eksempel | Kan brukes til å beskrive tidsserier, se under <<datasett-har-del>>
+|Eksempel | Kan brukes til å beskrive tidsserier, se under <<datasett-har-del>>.
 |===
 
 === Datasett: er påkrevd av [[datasett-er-pakrevd-av]]
@@ -293,10 +290,10 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| is required by
 |URI| dct:isRequiredBy
 |Range| dcat:Dataset
-|Beskrivelse| Relasjon til datasett som dette datasettet er nødvendig for
+|Beskrivelse| Referanse til et annet datasett som dette datasettet er nødvendig for.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: er referert av [[datasett-er-referert-av]]
@@ -306,10 +303,10 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| is referenced by
 |URI| dct:isReferencedBy
 |Range| rdfs:Resource
-|Beskrivelse| Referanse til datasett som refererer til dette datasettet
+|Beskrivelse| Referanse til et annet datasett som refererer til dette datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse. Denne finnes i DCAT-AP v.2.0.0 som BregDCAT-AP er basert på.
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Datasett: er versjon av [[datasett-er-versjon-av]]
@@ -319,7 +316,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| is version of
 |URI| dct:isVersionOf
 |Range| dcat:Dataset
-|Beskrivelse| Referanse til et beslektet datasett som det beskrevne datasettet er en versjon, utgave, eller tilpasning av
+|Beskrivelse| Referanse til et beslektet datasett som det beskrevne datasettet er en versjon, utgave, eller tilpasning av.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -331,10 +328,10 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| replaces
 |URI| dct:replaces
 |Range| dcat:Dataset
-|Beskrivelse| Referanse til datasett dette datasettet er ment å erstatte
+|Beskrivelse| Referanse til et annet datasett som dette datasettet er ment å erstatte.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: erstattes av [[datasett-erstattes-av]]
@@ -344,10 +341,10 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| is replaced by
 |URI| dct:isReplacedBy
 |Range| dcat:Dataset
-|Beskrivelse| Referanse til datasett som er ment å erstatte dette datasettet
+|Beskrivelse| Referanse til datasett som er ment å erstatte dette datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: frekvens [[datasett-frekvens]]
@@ -374,19 +371,6 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Status| Valgfri
 |===
 
-=== Datasett: har datastrukturdefinisjon [[datasett-har-datastrukturdefinisjon]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn|structure
-|URI|qb:structure
-|Range|qb:DataStructureDefinition
-|Beskrivelse|Brukes til å referere til strukturen som datasettet er i samsvar med.
-|Multiplisitet|0..n
-|Status|Valgfri
-|Kommentar|Denne brukes kun når strukturen av datasettet ikke er beskrevet med informasjonsmodell. Se https://informasjonsforvaltning.github.io/modelldcat-ap-no/[ModellDCAT-AP-NO] for spesifikasjon for beskrivelse av informasjonsmodeller.
-|===
-
 === Datasett: har del [[datasett-har-del]]
 
 [cols="30s,70d"]
@@ -394,10 +378,9 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| has part
 |URI| dct:hasPart
 |Range| dcat:Dataset
-|Beskrivelse| Referanse til datasett som er en del av dette datasettet
+|Beskrivelse| Referanse til et annet datasett som er en del av dette datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar|
 |Eksempel a| Kan brukes til å beskrive tidsserier:
 ```
 :enTidsserie
@@ -451,7 +434,7 @@ dqvno:isAuthoritative
 ----
 |===
 
-=== Datasett: Datasett: har kvantifiserbart måleresultat [[datasett-har-kvantifiserbart-måleresultat]]
+=== Datasett: har kvantifiserbart måleresultat [[datasett-har-kvantifiserbart-måleresultat]]
 
 [cols="30s,70"]
 |===
@@ -490,7 +473,7 @@ dqvno:isAuthoritative
 |Engelsk navn| conforms to
 |URI| dct:conformsTo
 |Range| dct:Standard
-|Beskrivelse| Referanse til en implementasjons-regel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet
+|Beskrivelse| Referanse til en implementasjonsregel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -502,7 +485,7 @@ dqvno:isAuthoritative
 |Engelsk navn| source
 |URI| dct:source
 |Range| dcat:Dataset
-|Beskrivelse| Referanse til et datasett som gjeldende datasett er avledet fra
+|Beskrivelse| Referanse til et datasett som gjeldende datasett er avledet fra.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -514,10 +497,10 @@ dqvno:isAuthoritative
 |Engelsk navn| requires
 |URI| dct:requires
 |Range| dcat:Dataset
-|Beskrivelse| Referanse til datasett som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
+|Beskrivelse| Referanse til et annet datasett som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: kvalifisert navngivelse [[datasett-kvalifisert-navngivelse]]
@@ -527,7 +510,7 @@ dqvno:isAuthoritative
 |Engelsk navn| qualified attribution
 |URI| prov:qualifiedAttribution
 |Range| prov:Attribution
-|Beskrivelse| Viser til en lenke til en _Aktør_ som har en eller annen form for ansvar for ressursen
+|Beskrivelse| Viser til en lenke til en _Aktør_ som har en eller annen form for ansvar for ressursen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -563,7 +546,7 @@ dqvno:isAuthoritative
 |Engelsk navn| creator
 |URI| dct:creator
 |Range| foaf:Agent
-|Beskrivelse| Referanse til enhet som er produsent av datasettet
+|Beskrivelse| Referanse til enhet som er produsent av datasettet.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -587,10 +570,10 @@ dqvno:isAuthoritative
 |Engelsk navn| references
 |URI| dct:references
 |Range| rdfs:Resource
-|Beskrivelse| Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på
+|Beskrivelse| Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse
+|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: relatert ressurs [[datasett-relatertressurs]]
@@ -600,7 +583,7 @@ dqvno:isAuthoritative
 |Engelsk navn| related resource
 |URI| dct:relation
 |Range| rdfs:Resource
-|Beskrivelse| Referanse til en beslektet ressurs
+|Beskrivelse| Referanse til en beslektet ressurs.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -612,7 +595,7 @@ dqvno:isAuthoritative
 |Engelsk navn| language
 |URI| dct:language
 |Range| dct:LinguisticSystem
-|Beskrivelse| Referanse til språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet
+|Beskrivelse| Referanse til språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -659,7 +642,7 @@ dqvno:isAuthoritative
    dct:type dcatno:syntheticDataset .
 ----
 
-Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. Inntil videre brukes `dcatno:testDataset` og `dcatno:syntheticDataset` som er `skos:Concept`. Neste versjon av datasett-typer fra EU kommer rundt 25. juni 2020.
+Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. EUs Publications Office svarte med at de foreslåtte typene vil bli tatt med i neste versjon av datasett-typer som kommer rundt 25. juni 2020. Inntil videre brukes `dcatno:testDataset` og `dcatno:syntheticDataset` som er `skos:Concept`.
 |===
 
 === Datasett: utgivelsesdato [[datasett-utgivelsesdato]]
@@ -669,7 +652,7 @@ Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til 
 |Engelsk navn| issued (release date)
 |URI| dct:issued
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for den formelle utgivelsen av datasettet
+|Beskrivelse| Dato for den formelle utgivelsen av datasettet.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
@@ -681,7 +664,7 @@ Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til 
 |Engelsk navn| version
 |URI| owl:versionInfo
 |Range| rdfs:Literal
-|Beskrivelse| Et versjonsnummer eller annen versjonsbetegnelse for datasettet
+|Beskrivelse| Et versjonsnummer eller annen versjonsbetegnelse for datasettet.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===

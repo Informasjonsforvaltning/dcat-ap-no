@@ -4,9 +4,11 @@ Klassen _Komponentspesifikasjon_ er valgfri.
 
 WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-programmet, om man skal bruke Data Cube Vocabulary som denne klassen er hentet fra.
 
-== Anbefalte egenskaper for _Komponentspesifikasjon_
+== Anbefalte egenskaper for klassen _Komponentspesifikasjon_
 
 === Komponentspesifikasjon: begrep [[komponentspesifikasjon-begrep]]
+
+[cols="30s,70d"]
 |===
 |Engelsk navn|concept
 |URI|qb:concept
@@ -17,9 +19,11 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Kommentar|Norsk utvidelse.
 |===
 
-== Valgfrie egenskaper for _Komponentspesifikasjon_
+== Valgfrie egenskaper for klassen _Komponentspesifikasjon_
 
 === Komponentspesifikasjon: attributt [[komponentspesifikasjon-attributt]]
+
+[cols="30s,70d"]
 |===
 |Engelsk navn|attribute
 |URI|qb:attribute
@@ -27,10 +31,12 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Beskrivelse|Brukes til å definere en attributtkomponent.
 |Multiplisitet|0..n
 |Status|Valgfri
-|Kommentar|SDMX-standarden inkluderer et sett med felles statistiske begreper med tilhørende kodelister som er ment å kunne gjenbrukes på tvers av sektorer:http://purl.org/linked-data/sdmx/2009/attribute[http://purl.org/linked-data/sdmx/2009/attribute[ ]]http://purl.org/linked-data/sdmx/2009/attribute[http://purl.org/linked-data/sdmx/2009/attribute#]
+|Kommentar|SDMX-standarden inkluderer et sett med felles http://purl.org/linked-data/sdmx/2009/attribute#[statistiske begreper med tilhørende kodelister] som er ment å kunne gjenbrukes på tvers av sektorer.
 |===
 
 === Komponentspesifikasjon: dimensjon [[komponentspesifikasjon-dimensjon]]
+
+[cols="30s,70d"]
 |===
 |Engelsk navn|dimension
 |URI|qb:dimension
@@ -38,20 +44,24 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Beskrivelse|Brukes til å definere en dimensjonskomponent.
 |Multiplisitet|0..n
 |Status|Valgfri
-|Kommentar|SDMX-standarden inkluderer et sett med predefinerte dimensjonskomponenter:      	http://purl.org/linked-data/sdmx/2009/dimension[http://purl.org/linked-data/sdmx/2009/dimension#]
+|Kommentar|SDMX-standarden inkluderer et sett med http://purl.org/linked-data/sdmx/2009/dimension#[predefinerte dimensjonskomponenter].
 |===
 
 === Komponentspesifikasjon: komponent påkrevd [[komponentspesifikasjon-komponent-påkrevd]]
+
+[cols="30s,70d"]
 |===
 |Engelsk navn|component required
 |URI|qb:componentRequired
 |Range|rdfs:Literal (xsd:boolean)
-|Beskrivelse|Brukes til å indikere hvorvidt komponenten er påkrevd (sann/true) eller valgfri (usann/false). Gjelder bare attributtkomponent. Default verdi er usann/false.
+|Beskrivelse|Brukes til å indikere hvorvidt komponenten er påkrevd (`sann`/`true`) eller valgfri (`usann`/`false`). Gjelder bare attributtkomponent. Default verdi er `usann`/`false`.
 |Multiplisitet|0..n
 |Status|Valgfri
 |===
 
 === Komponentspesifikasjon: mål [[komponentspesifikasjon-mål]]
+
+[cols="30s,70d"]
 |===
 |Engelsk navn|measure
 |URI|qb:measure
@@ -59,10 +69,12 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Beskrivelse|Brukes til å definere en målkomponent.
 |Multiplisitet|0..n
 |Status|Valgfri
-|Kommentar|SDMX-standarden inkluderer et sett med predefinerte målkomponenter:http://purl.org/linked-data/sdmx/2009/measure[http://purl.org/linked-data/sdmx/2009/measure[ ]]http://purl.org/linked-data/sdmx/2009/measure[http://purl.org/linked-data/sdmx/2009/measure#]
+|Kommentar|SDMX-standarden inkluderer et sett med http://purl.org/linked-data/sdmx/2009/measure#[predefinerte målkomponenter].
 |===
 
 === Komponentspesifikasjon: ordenstall [[komponentspesifikasjon-ordenstall]]
+
+[cols="30s,70d"]
 |===
 |Engelsk navn|order
 |URI|qb:order
