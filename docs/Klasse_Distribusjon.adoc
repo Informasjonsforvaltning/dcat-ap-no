@@ -24,7 +24,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| access URL
 |URI| dcat:accessURL
 |Range| rdfs:Resource
-|Beskrivelse| En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til i datasettet.
+|Beskrivelse| En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til datasettet.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
