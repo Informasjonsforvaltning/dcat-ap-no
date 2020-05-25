@@ -286,7 +286,7 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 [cols="30s,70d"]
 |===
 | Engelsk navn | Rights statement
-| Beskrivelse | Brukes til å representere en utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
+| Beskrivelse | Brukes til å representere et utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
 | URI | dct:RightsStatement
 | Referanse | http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement
 | Status | Valgfri
