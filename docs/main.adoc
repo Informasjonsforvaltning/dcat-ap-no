@@ -47,8 +47,6 @@ include::Klasse_Aktor.adoc[]
 
 include::Klasse_Datasett.adoc[]
 
-include::Klasse_Datastrukturdefinisjon.adoc[]
-
 include::Klasse_Datatjeneste.adoc[]
 
 include::Klasse_Distribusjon.adoc[]
@@ -58,8 +56,6 @@ include::Klasse_Identifikator.adoc[]
 include::Klasse_Katalog.adoc[]
 
 include::Klasse_Katalogpost.adoc[]
-
-include::Klasse_Komponentspesifikasjon.adoc[]
 
 include::Klasse_Lisensdokument.adoc[]
 
