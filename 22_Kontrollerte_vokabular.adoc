@@ -8,7 +8,7 @@ Følgende kriterier er gjeldende for vokabularer som skal anbefales for bruk i d
 De bør:
 
 * være publisert under en åpen lisens,
-* brukes og/eller bli vedlikeholdt av en institusjon i Norge eller EU, av et anerkjent standardiseringsorganisasjon eller en annen pålitelig organisasjon,
+* brukes og/eller bli vedlikeholdt av en institusjon i Norge eller EU, av en anerkjent standardiseringsorganisasjon eller en annen pålitelig organisasjon,
 * være skikkelig dokumentert,
 * ha etiketter på flere språk,
 * inneholde et relativt lite antall begreper (f.eks. 10-25) som er
