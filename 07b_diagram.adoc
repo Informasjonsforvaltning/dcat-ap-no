@@ -2,4 +2,6 @@
 
 UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.0
 
-Innhold kommer...
+image::images/DCATAPNO2UML2.png[]
+
+link:images/DCATAPNO2UML2.png[Last ned diagram som png]
