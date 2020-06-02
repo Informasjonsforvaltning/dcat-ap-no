@@ -80,6 +80,8 @@ Klassen _Datasett_ er anbefalt.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |Kommentar a| Norsk utvidelse (allerede i DCAT-AP-NO v.1.1).
+
+NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. informasjonsmodell som beskriver datasettet (se https://informasjonsforvaltning.github.io/modelldcat-ap-no/[ModellDCAT-AP-NO] for referanse til begrep fra en informasjonsmodell).
 |===
 
 === Datasett: datasettdistribusjon [[datasett-datasettdistribusjon]]

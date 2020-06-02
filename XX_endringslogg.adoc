@@ -1,15 +1,72 @@
 
-== Endringslogg
+= Endringslogg
 
-Dette dokumentet beskriver endringer i DCAT-AP-NO.
+Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.1 til denne versjonen av DCAT-AP-NO. Redaksjonelle justeringer av tekster (inkl. tekstlige beskrivelser, kommentarer og eksempler) er ikke tatt med i oversikten.
 
-WARNING: ikke oppdatert (olppdateres til slutt).
-
-.Endringslogg - versjon 2.0
-[width="100%",options="header,footer"]
-|====================
-|  |  |
-|  |  |
-|  |  |
-|  |  |
-|====================
+[cols="15,15,35,35"]
+|===
+|*Klasse-/egenskapsnavn* |*URI for klassen/egenskapen* |*Endring* |*Forklaring*
+|Aktør |foaf:Agent |Klassenavnet på norsk endret fra `Enhet` til `Aktør` |Bedre dekkende navn
+|Datasett |dcat:Dataset |Endret fra obligatorisk til anbefalt |Dette i henhold til BRegDCAT-AP
+|Datasett: ble generert ved |prov:wasGeneratedBy |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: dekningsområde |dct:spatial |Endret fra valgfri til anbefalt |Dette i henhold til BRegDCAT-AP
+|Datasett: er referert av |dct:isReferencedBy |Range endret fra `dcat:Dataset` til `rdfs:Resource` |Dette i henhold til BRegDCAT-AP
+|Datasett: følger |cpsv:follows |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: geografisk oppløsning |dcat:spatialResolutionInMeters |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: har del |dct:hasPart |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: har kvalitetsnote |dqv:hasQualityAnnotation |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: har kvantifiserbart måleresultat |dqv:hasQualityMeasurement |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: kvalifisert navngivelse |prov:qualifiedAttribution |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: kvalifisert relasjon |dcat:qualifiedRelation |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: produsent |dct:creator |Norsk navn endret fra `Datasett: skaper` til `Datasett: produsent` |Bedre dekkende navn
+|Datasett: produsent |dct:creator |Range er endret fra `rdfs:Resource` til `foaf:Agent` |Dette i henhold til BRegDCAT-AP
+|Datasett: proveniensbeskrivelse |dct:provenance |Norsk navn endret fra `Datasett: opphav` til `Datasett: proveniensbeskrivelse` |Bedre dekkende navn
+|Datasett: refererer til |dct:references |Range endret fra `dcat:Dataset` til `rdfs:Resource` |Dette i henhold til BRegDCAT-AP
+|[.line-through]#Datasett: skjermingshjemmel# |[.line-through]#dcatno:accessRightsComment# |Fjernet. Erstattes med `Datasett: følger (cpsv:follows)` |Unødvendig med dette norske avvik
+|Datasett: tidsrom |dct:temporal |Endret fra valgfri til anbefalt |Dette i henhold til BRegDCAT-AP
+|Datasett: tidsromsoppløsning |dcat:temporalResolution |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: utgivelsesdato |dct:issued |Range endret fra `rdfs:Literal typed as xsd:dateTime` til `rdfs:Literal typed as xsd:date or xsd:dateTime` |Dette i henhold til BRegDCAT-AP
+|Datatjeneste |dcat:DataService |Hele klassen er ny  |Dette i henhold til BRegDCAT-AP
+|Distribusjon: geografisk oppløsning |dcat:spatialResolutionInMeters |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: i samsvar med |dct:conformsTo |Norsk navn endret fra `Distribusjon: samsvarer med` til `Distribusjon: i samsvar med` |
+|Distribusjon: komprimeringsformat |dcat:compressFormat |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: medietype |dcat:mediaType, subproperty of dct:format |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: pakkeformat |dcat:packageFormat |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: policy |odrl:hasPolicy |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: tidsromsoppløsning |dcat:temporalResolution |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: tilgangstjeneste |dcat:accessService |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: tilgjengelighet |dcatap:availability |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Identifikator: notasjon |skos:notation |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Katalog: datatjeneste|dcat:service|Ny egenskap|Dette i henhold til BRegDCAT-AP
+|Katalog: dekningsområde|dct:spatial|Endret fra valgfri til anbefalt|Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Katalog: identifikator|dct:identifier|Ny egenskap|Dette i henhold til BRegDCAT-AP
+|Katalog: katalog|dcat:catalog|Ny egenskap|Dette i henhold til BRegDCAT-AP
+|Katalog: produsent|dct:creator|Ny egenskap|Dette i henhold til BRegDCAT-AP
+|Katalog: proveniens|dct:spatial
+dct:provenance|Ny egenskap|Dette i henhold til BRegDCAT-AP
+|Katalogisert ressurs|dcat:Resource|Norsk navn endret fra `Ressurs` til `Katalogisert ressurs`|Bedre dekkende navn
+|Katalogpost: i samsvar med |dct:conformsTo |Range er endret fra `rdfs:Resource` til `dct:Standard` |Dette i henhold til BRegDCAT-AP
+|Katalogpost: kilde |dct:source |Multiplisitet er endret fra `0..n` til `0..1` |Dette i henhold til BRegDCAT-AP
+|Katalogpost: primærtema |foaf:primaryTopic |Range er endret fra `dcat:Dataset` til `dcat:Dataset or dcat:Dataservice or dcat:Catalog` |Dette i henhold til BRegDCAT-AP
+|Katalogpost: status |adms:status |Norsk navn er endret fra `Katalogpost: endringstype` til `Katalogpost: status' |
+|Lisensdokument: lisenstype |dct:type |Multiplisitet endret fra `0..1` til `0..n` |Dette i henhold til BRegDCAT-AP
+|Lokasjon: geometri |locn:geometry |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Lokasjon: område |dcat:bbox |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Lokasjon: senterpunkt |dcat:centroid |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Medietype|dct:MediaType|Range endret fra `dct:MediaTypeOrExtent` til `dct:MediaType` |Dette i henhold til BRegDCAT-AP
+|Medietype|dct:MediaType|Norsk navn endret fra `Mediatype eller omfang` til `Medietype`|Bedre dekkende navn
+|Offentlig organisasjon|cv:PublicOrganization|Hele klassen er ny|Dette i henhold til BRegDCAT-AP
+|Offentlig tjeneste|cpsv:PublicService|Hele klassen er ny|Dette i henhold til BRegDCAT-AP
+|Proveniensbeskrivelse|dct:ProvenanceStatement|Norsk navn endret fra `Opphav` til `Proveniensbeskrivelse`|Bedre dekkende navn
+|Proveniensbeskrivelse|dct:ProvenanceStatement|Range endret fra `skos:Concept` til `dct:ProvenanceStatement`|Dette i henhold til BRegDCAT-AP
+|Regel|cpsv:Rule |Hele klassen er ny |Dette i henhold til BRegDCAT-AP
+|Regulativ ressurs |eli:LegalResource |Hele klassen er ny  |Dette i henhold til BRegDCAT-AP
+|Relasjon: relasjon |dct:relation |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Relasjon: rolle |dcat:hadRole |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Tema|skos:Concept|Norsk navn endret fra `Kategori` til `Tema`|Bedre dekkende navn
+|Tema|skos:Concept|Range endret fra `SKOS:Concept` til `skos:Concept`|Skrivefeil i DCAT-AP-NO v.1.1
+|Tematisk skjema|skos:ConceptScheme|Norsk navn endret fra `Kategoriskjema` til `Tematisk skjema`|Bedre dekkende navn
+|Tematisk skjema|skos:ConceptScheme|Range endret fra `SKOS:ConceptScheme` til `skos:ConceptScheme`|Skrivefeil i DCAT-AP-NO v.1.1
+|Tidsrom: begynnelse |time:hasBeginning |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Tidsrom: slutt |time:hasEnd |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|===

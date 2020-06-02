@@ -15,7 +15,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 |Beskrivelse| Navn på aktøren. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1.
+|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 == Anbefalte egenskaper for klassen _Aktør_
@@ -43,5 +43,5 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 |Beskrivelse| Refererer til type aktør som gjør katalogen eller ressursen tilgjengelig.
 |Multiplisitet| 0..1
 |Status| Anbefalt
-|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1.
+|Kommentar| Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
