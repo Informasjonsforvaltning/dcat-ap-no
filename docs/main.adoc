@@ -9,7 +9,6 @@ Høringsutkast til Versjon 2.0
 :sectlinks:
 :table-stripes: even
 :leveloffset: +1
-
 :title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
 image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
