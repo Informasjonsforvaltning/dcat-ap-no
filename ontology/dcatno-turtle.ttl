@@ -91,7 +91,7 @@ dcatno:codelistDataset rdf:type owl:NamedIndividual ,
 dcatno:syntheticDataset rdf:type owl:NamedIndividual ,
                                  skos:Concept ;
                         skos:altLabel "kunstig data"@nb ,
-                                      "syntektisk data"@nb ,
+                                      "syntetisk data"@nb ,
                                       "synthetic data"@en ;
                         skos:definition "Data which is (artificially) created entirely or partially for use in tests, and to meet specific needs or conditions in the real-world that (existing) real-world data may not represent."@en ;
                         skos:exactMatch <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> ;
