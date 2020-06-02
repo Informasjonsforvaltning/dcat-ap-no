@@ -1,5 +1,5 @@
 = Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
-Digitalseringsdirektoratet - Arbeidsdokument  - Versjon 2.0
+Høringsutkast til Versjon 2.0
 :doctype: book
 :docinfo:
 :icons: font
@@ -10,14 +10,19 @@ Digitalseringsdirektoratet - Arbeidsdokument  - Versjon 2.0
 :table-stripes: even
 :leveloffset: +1
 
-Status: Under arbeid +
-Publisert: (ikke publisert) +
+:title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
+
+image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
+
+
+Status: Høringsutkast +
+Publisert: 2020-06-02 +
 Lenke til gjeldende versjon: https://data.norge.no/specification/dcat-ap-no +
 
-Dette er et arbeidsdokument for den kommende versjon 2.0 av “Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)”. Standarder skal sikre at beskrivelser av offentlige data utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
+Dette er et høringsutkast til versjon 2.0 av “Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)”. Standarden skal sikre at beskrivelser av offentlige data og datatjenester utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
 
 NOTE: *Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis. +
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis.
 
 include::locale/attributes.adoc[]
 
@@ -27,11 +32,7 @@ include::03_Omfang_og_avgrensing.adoc[]
 
 include::04_Forvaltningsregime.adoc[]
 
-include::02_Avvik.adoc[]
-
 include::04b_Om_kravene.adoc[]
-
-include::05_Ord_uttrykk_forkortelser.adoc[]
 
 include::07_Oversikt_over_URIer.adoc[]
 
@@ -83,5 +84,7 @@ include::Klasse_Tidsrom.adoc[]
 :leveloffset: -1
 
 include::22_Kontrollerte_vokabular.adoc[]
+
+include::02_Avvik.adoc[]
 
 include::XX_endringslogg.adoc[]

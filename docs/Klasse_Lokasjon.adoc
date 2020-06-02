@@ -15,20 +15,17 @@ Klassen _Lokasjon_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Lokasjon: senterpunkt [[lokasjon-senterpunkt]]
+=== Lokasjon: geografisk midtpunkt [[lokasjon-geografisk-midtpunkt]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| centroid
 |URI| dcat:centroid
 |Range| rdfs:Literal
-|Beskrivelse| Refererer til et geografisk senter (centroid) for en ressurs.
+|Beskrivelse| Refererer til et geografisk midtpunkt (centroid) for en ressurs.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
-
-NOTE: Vær oppmerksom på rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. +
-Eksempel: hvis dekningsområde er et område, bruk `dcat:bbox`, ellers bruk `locn:geometry`.
 
 == Valgfrie egenskaper for klassen _Lokasjon_
 
@@ -43,3 +40,6 @@ Eksempel: hvis dekningsområde er et område, bruk `dcat:bbox`, ellers bruk `loc
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
+
+NOTE: Vær oppmerksom på rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. +
+Eksempel: hvis dekningsområde er et område, bruk område (`dcat:bbox`), ellers bruk geometri (`locn:geometry`).
