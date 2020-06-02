@@ -6,19 +6,19 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix dcatno: <https://data.norege.no/vocabulary/dcatno#> .
-@prefix eupodt: <http://publications.europa.eu/resource/authority/dataset-type#> .
+@prefix eupodt: <http://publications.europa.eu/resource/authority/dataset-type/> .
 @base <https://data.norge.no/vocabulary/dcatno#> .
 
 <https://data.norge.no/vocabulary/dcatno#> rdf:type owl:Ontology ;
-                                            owl:versionIRI <dcatno:0.4> ;
+                                            owl:versionIRI <dcatno:0.5> ;
                                             rdfs:comment "Controlled vocabulary used in/with DCAT-AP-NO"@en ,
                                                          "Kontrollert vokabular brukt i/ifm. DCAT-AP-NO"@nb ;
                                             rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
                                                              "Norwegian Digitalisation Agency"@en ;
                                             rdfs:label "dcatno"@en ,
                                                        "dcatno"@nb ;
-                                            owl:versionInfo "Added dcatno:exampleDataset"@en ,
-                                                            "Føyet til dcatno:exampleDataset"@nb .
+                                            owl:versionInfo "Endret fra syntetisk til kunstig, samt lagt inn / justert definisjonene."@nb ,
+                                                            "Norwegian word syntetisk -> kunstig, plus adjusting/adding definitions."@en .
 
 #################################################################
 #    Annotation properties
@@ -60,12 +60,16 @@ skos:Concept rdf:type owl:Class .
 #    Individuals
 #################################################################
 
-###  http://publications.europa.eu/resource/authority/dataset-type#CODE_LIST
+###  http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST
 eupodt:CODE_LIST rdf:type owl:NamedIndividual ,
                           skos:Concept ;
                  owl:sameAs dcatno:codelistDataset ;
                  rdfs:isDefinedBy "http://publications.europa.eu/resource/authority/dataset-type#"@en ;
-                 skos:prefLabel "code list"@en .
+                 rdfs:seeAlso "https://op.europa.eu/en/web/eu-vocabularies/at-concept/-/resource/authority/dataset-type/CODE_LIST/?uri=http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST"@en ;
+                 skos:definition "Complete set of data element values of a coded simple data element."@en ;
+                 skos:prefLabel "code list"@en ,
+                                "kodeliste"@nb ,
+                                "kodeliste"@nn .
 
 
 ###  https://data.norege.no/vocabulary/dcatno#codelistDataset
@@ -73,28 +77,30 @@ dcatno:codelistDataset rdf:type owl:NamedIndividual ,
                                 skos:Concept ;
                        skos:altLabel "code list"@en ,
                                      "klassifikasjon"@nb ,
-                                     "kodeliste"@nb ,
                                      "kodeverk"@nb ;
-                       skos:definition "type dataset containing one or more codelists"@en ,
-                                       "type datasett som inneholder en eller flere kodelister"@nb ;
                        skos:example "<https://datasets.example.com/datasets/aCodeListDataset> a dcat:Dataset; dct:type dcatno:codeListDataset ."@en ,
                                     "<https://datasets.example.com/datasets/aCodeListDataset> a dcat:Dataset; dct:type dcatno:codeListDataset ."@nb ;
                        skos:prefLabel "dataset with codelist"@en ,
-                                      "datasett med kodeliste"@nb .
+                                      "kodeliste"@nb ,
+                                      "kodeliste"@nn ;
+                       skos:scopeNote "Brukes til å indikere datasett med en eller flere kodelister"@nb ,
+                                      "To indicate dataset containing one or more codelists"@en .
 
 
 ###  https://data.norege.no/vocabulary/dcatno#syntheticDataset
 dcatno:syntheticDataset rdf:type owl:NamedIndividual ,
                                  skos:Concept ;
-                        skos:altLabel "syntektisk data"@nb ,
+                        skos:altLabel "kunstig data"@nb ,
+                                      "syntektisk data"@nb ,
                                       "synthetic data"@en ;
-                        skos:definition "type dataset containing synthetic data"@en ,
-                                        "type datasett som inneholder syntetiske data"@nb ;
-                        skos:exactMatch <http://publications.europa.eu/resource/authority/dataset-typeCODE_LIST> ;
+                        skos:definition "Data which is (artificially) created entirely or partially for use in tests, and to meet specific needs or conditions in the real-world that (existing) real-world data may not represent."@en ;
+                        skos:exactMatch <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> ;
                         skos:example "<https://datasets.example.com/datasets/aSyntheticDataset> a dcat:Dataset; dct:type dcatno:syntheticDataset ."@en ,
                                      "<https://datasets.example.com/datasets/aSyntheticDataset> a dcat:Dataset; dct:type dcatno:syntheticDataset ."@nb ;
                         skos:prefLabel "dataset with synthetic data"@en ,
-                                       "datasett med syntetisk data"@nb .
+                                       "datasett med kunstig data"@nb ;
+                        skos:scopeNote "Brukes til å indikere datasett med kunstig data"@nb ,
+                                       "To indicate dataset containing synthetic data."@en .
 
 
 ###  https://data.norege.no/vocabulary/dcatno#testDataset
@@ -104,13 +110,15 @@ dcatno:testDataset rdf:type owl:NamedIndividual ,
                                  "sample data"@en ,
                                  "sample dataset"@en ,
                                  "test data"@en ,
-                                 "testdata"@nb ;
-                   skos:definition "type dataset containing test data"@en ,
-                                   "type datasett som inneholder testdata"@nb ;
+                                 "testdata"@nb ,
+                                 "testdata"@nn ;
+                   skos:definition "Data which is created for use in tests, which should be syntactically correct but which may not necessarily represent any real-world phenomena."@en ;
                    skos:example "<https://datasets.example.com/datasets/aTestDataset> a dcat:Dataset; dct:type dcatno:testDataset ."@en ,
                                 "<https://datasets.example.com/datasets/aTestDataset> a dcat:Dataset; dct:type dcatno:testDataset ."@nb ;
                    skos:prefLabel "dataset with test data"@en ,
-                                  "datasett med testdata"@nb .
+                                  "datasett med testdata"@nb ;
+                   skos:scopeNote "Brukes til å indikere datasett med testdata"@nb ,
+                                  "To indicate dataset containing test data"@en .
 
 
 ###  https://data.norge.no/vocabulary/dcatno#exampleDataset
@@ -118,12 +126,12 @@ dcatno:testDataset rdf:type owl:NamedIndividual ,
                          skos:Concept ;
                 skos:altLabel "eksempeldata"@nb ,
                               "example data"@en ;
-                skos:definition "dataset which exemplifies the usage of a specification and/or data from some application domains"@en ,
-                                "datasett som eksemplifiserer bruken av en spesifikasjon og/eller data fra noen anvendelsesområder."@nb ;
                 skos:prefLabel "eksempeldatasett"@nb ,
                                "example dataset"@en ;
                 skos:scopeNote "An example dataset is not necessarily complete, neither regarding the content nor the requirements in the specification. E.g., not all mandatory properties are necessarily given values."@en ,
-                               "Et eksempeldatasett er ikke nødvendigvis komplett, hverken når det gjelder innholdet eller med hensyn til kravene i spesifikasjonen. F.eks.: ikke alle obligatoriske verdier er nødvendigvis tatt med."@nb .
+                               "Brukes til å indikere datasett som eksemplifiserer bruken av en spesifikasjon og/eller data fra noen anvendelsesområder."@nb ,
+                               "Et eksempeldatasett er ikke nødvendigvis komplett, hverken når det gjelder innholdet eller med hensyn til kravene i spesifikasjonen. F.eks.: ikke alle obligatoriske verdier er nødvendigvis tatt med."@nb ,
+                               "To indicate dataset which exemplifies the usage of a specification and/or data from some application domains"@en .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
