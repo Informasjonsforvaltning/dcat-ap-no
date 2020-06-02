@@ -24,6 +24,8 @@ Dette er et høringsutkast til versjon 2.0 av “Standard for beskrivelse av dat
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis.
 
+include::shared/download.adoc[]
+
 include::locale/attributes.adoc[]
 
 include::01_Introduksjon.adoc[]
