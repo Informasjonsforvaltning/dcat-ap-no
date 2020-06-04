@@ -38,13 +38,14 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |Distribusjon: tilgjengelighet |dcatap:availability |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Identifikator: notasjon |skos:notation |Ny egenskap |Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Katalog: datatjeneste|dcat:service|Ny egenskap|Dette i henhold til BRegDCAT-AP
-|Katalog: dekningsområde|dct:spatial|Endret fra valgfri til anbefalt|Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Katalog: dekningsområde|dct:spatial|Endret fra valgfri til anbefalt|Dette i henhold til BRegDCAT-AP
 |Katalog: identifikator|dct:identifier|Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Katalog: katalog|dcat:catalog|Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Katalog: produsent|dct:creator|Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Katalog: proveniens|dct:spatial
 dct:provenance|Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Katalogisert ressurs|dcat:Resource|Norsk navn endret fra `Ressurs` til `Katalogisert ressurs`|Bedre dekkende navn
+|Katalogisert ressurs|dcat:Resource|Range er endret fra `rdfs:Resource` til `dcat:Resource`|Dette i henhold til BRegDCAT-AP
 |Katalogpost: i samsvar med |dct:conformsTo |Range er endret fra `rdfs:Resource` til `dct:Standard` |Dette i henhold til BRegDCAT-AP
 |Katalogpost: kilde |dct:source |Multiplisitet er endret fra `0..n` til `0..1` |Dette i henhold til BRegDCAT-AP
 |Katalogpost: primærtema |foaf:primaryTopic |Range er endret fra `dcat:Dataset` til `dcat:Dataset or dcat:Dataservice or dcat:Catalog` |Dette i henhold til BRegDCAT-AP
