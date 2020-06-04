@@ -63,8 +63,8 @@ Klassen _Katalog_ er obligatorisk.
 |URI| dcat:dataset
 |Range| dcat:Dataset
 |Beskrivelse| Kobler katalogen til datasett som er en del av katalogen.
-|Multiplisitet| 1..n
-|Status| Obligatorisk
+|Multiplisitet| 0..n
+|Status| Anbefalt
 |===
 
 === Katalog: dekningsområde [[katalog-dekningsomrade]]
