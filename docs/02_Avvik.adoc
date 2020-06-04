@@ -11,10 +11,10 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP på følgende måter:
 |Aktør: organisasjonsidentifikator|dct:identifier|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
 |Aktør: utgivertype|dct:type|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Datasett: begrep|dct:subject|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
-|Datasett: erstatter|dct:replaces|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
-|Datasett: erstattes av|dct:isReplacedBy|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
 |Datasett: er påkrevd av|dct:isRequiredBy|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
 |Datasett: er referert av|dct:isReferencedBy|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Datasett: erstatter|dct:replaces|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
+|Datasett: erstattes av|dct:isReplacedBy|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
 |Datasett: følger|cpsv:follows|Endret fra valgfri til anbefalt|Denne erstatter anbefalt egenskap `Datasett: skjermingshjemmel` i DCAT-AP-NO v.1.1
 |Datasett: krever|dct:requires|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
 |Datasett: refererer til|dct:references|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
@@ -29,7 +29,7 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP på følgende måter:
 |Distribusjon: pakkeformat|dcat:packageFormat|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Distribusjon: policy|odrl:hasPolicy|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Distribusjon: rettigheter|dct:rights|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
-|Distribusjon: status|adms:status|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
+|Distribusjon: status|adms:status|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Distribusjon: tidsromsoppløsning|dcat:temporalResolution|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Distribusjon: tittel|dct:title|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Identifikator: notasjon|skos:notation|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
