@@ -76,7 +76,7 @@ Klassen _Regel_ er anbefalt.
 |URI|dct:type
 |Range|skos:Concept
 |Beskrivelse|Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.
-|Multiplisitet|0..1
+|Multiplisitet|0..n
 |Status|Valgfri
 |Eksempel| Se eksempelet under egenskapen <<Datasett: følger>>.
 |===
