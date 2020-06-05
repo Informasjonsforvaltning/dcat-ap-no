@@ -24,6 +24,7 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP på følgende måter:
 |Datatjeneste: i samsvar med|dct:conformsTo|Ikke eksplisitt tatt med i BRegDCAT-AP|For bl.a. å kunne referere til en informasjonsmodell
 |Distribusjon: format|dct:format|Endret fra anbefalt til obligatorisk|Allerede i DCAT-AP-NO v.1.1
 |Distribusjon: format|dct:format|Range endret fra `dct:MediaTypeOrExtent` til `dct:MediaType` |
+|Distribusjon: format|dct:format|Multiplisitet endret fra 0..*1* til 1..*n* |Allerede i DCAT-AP-NO v.1.1
 |Distribusjon: geografisk oppløsning|dcat:spatialResolutionInMeters|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Distribusjon: i samsvar med|dct:conformsTo|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på
 |Distribusjon: pakkeformat|dcat:packageFormat|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på

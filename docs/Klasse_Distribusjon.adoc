@@ -14,7 +14,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <<distribusjon-medietype>> (også i DCAT-AP-NO v.1.1).
+|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <<distribusjon-medietype>> (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..*1* til 1..*n* (allerede i DCAT-AP-NO v.1.1).
 |===
 
 === Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
