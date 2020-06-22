@@ -71,7 +71,7 @@ Klassen _Katalog_ er obligatorisk.
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| spatial/geographic
+|Engelsk navn| spatial coverage
 |URI| dct:spatial
 |Range| dct:Location
 |Beskrivelse| Referanse til et geografisk område som er dekket av katalogen.
@@ -155,7 +155,7 @@ Klassen _Katalog_ er obligatorisk.
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| themes
+|Engelsk navn| theme taxonomy
 |URI| dcat:themeTaxonomy
 |Range| skos:ConceptScheme
 |Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett.
@@ -199,7 +199,6 @@ Klassen _Katalog_ er obligatorisk.
 |Beskrivelse| Referanse til en beslektet katalog som denne katalogen fysisk eller logisk er inkludert i.
 |Multiplisitet| 0..1
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Katalog: har del [[katalog-har-del]]
@@ -212,7 +211,6 @@ Klassen _Katalog_ er obligatorisk.
 |Beskrivelse| Referanse til en beslektet katalog som er en del av den beskrevne katalogen.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Katalog: katalog [[katalog-katalog]]
