@@ -295,7 +295,6 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Beskrivelse| Referanse til et annet datasett som dette datasettet er nødvendig for.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: er referert av [[datasett-er-referert-av]]
@@ -308,7 +307,6 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Beskrivelse| Referanse til et annet datasett som refererer til dette datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Datasett: er versjon av [[datasett-er-versjon-av]]
@@ -333,7 +331,6 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Beskrivelse| Referanse til et annet datasett som dette datasettet er ment å erstatte.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: erstattes av [[datasett-erstattes-av]]
@@ -346,7 +343,6 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Beskrivelse| Referanse til datasett som er ment å erstatte dette datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: frekvens [[datasett-frekvens]]
@@ -502,7 +498,6 @@ dqvno:isAuthoritative
 |Beskrivelse| Referanse til et annet datasett som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: kvalifisert navngivelse [[datasett-kvalifisert-navngivelse]]
@@ -575,7 +570,6 @@ dqvno:isAuthoritative
 |Beskrivelse| Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.
 |===
 
 === Datasett: relatert ressurs [[datasett-relatertressurs]]
