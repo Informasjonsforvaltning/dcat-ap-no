@@ -116,7 +116,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: i samsvar med [[distribusjon-i-samsvar-med]]
@@ -129,7 +128,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Referanse til et etablert skjema som distribusjonen er i samsvar med.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: komprimeringsformat [[distribusjon-komprimeringsformat]]
@@ -175,7 +173,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Refererer til formatet til filen der en eller flere datafiler er gruppert sammen, f.eks. for å gjøre det mulig å laste ned et sett relaterte filer.
 |Multiplisitet| 0..1
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: policy [[distribusjon-policy]]
@@ -187,7 +184,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Refererer til policyen som uttrykker rettighetene knyttet til distribusjonen hvis de bruker ODRL-vokabularet.
 |Multiplisitet| 0..1
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: rettigheter [[distribusjon-rettigheter]]
@@ -200,7 +196,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
 |Multiplisitet| 0..1
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: sjekksum [[distribusjon-sjekksum]]
@@ -237,7 +232,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Distribusjonens modenhet. Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
 |Multiplisitet| 0..1
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: tidsromsoppløsning
@@ -250,7 +244,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Refererer til minste tidsrommet som kan utledes fra datasett-distribusjonen ("resolvable in the dataset distribution").
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: tilgangstjeneste [[distribusjon-tilganstjeneste]]
@@ -275,7 +268,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Navn på distribusjonen.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
