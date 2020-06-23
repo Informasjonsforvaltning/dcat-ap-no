@@ -129,7 +129,7 @@ NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. i
 |Range|cpsv:Rule
 |Beskrivelse|Brukes til å referere til reglen som definerer den juridiske rammen for datasettet.
 |Multiplisitet|0..n
-|Status|Anefalt
+|Status|Anbefalt
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt.
 |Eksempel a| [source]
 ----
