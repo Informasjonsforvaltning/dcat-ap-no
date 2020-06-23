@@ -1,4 +1,3 @@
-
 = Datatjeneste [[datatjeneste]]
 
 Klassen _Datatjeneste_ er valgfri.
