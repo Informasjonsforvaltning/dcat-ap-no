@@ -165,6 +165,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |Brukt i klasse|<<datasett-tema, Datasett (`dcat:Dataset`)>>
 |Navn på vokabularet|EuroVoc; Data Theme Taxonomy NAL
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/eurovoc[http://publications.europa.eu/resource/dataset/eurovoc];
+http://publications.europa.eu/resource/authority/datatheme[http://publications.europa.eu/resource/authority/datatheme]
 |Kommentar|https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til EuroVoc og Data Theme fra EU.
 |Status|Obligatorisk
 |===
