@@ -53,7 +53,6 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |Navn på vokabularet|Distribution availability vocabulary
 |URI til vokabularet|http://data.europa.eu/r5r/availability/[http://data.europa.eu/r5r/availability/]
 |Status|Obligatorisk
-|Kommentar|Denne er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === For egenskapen dct:creator
@@ -131,6 +130,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |Brukt i klasse|<<datasett-dekningsomrade, Datasett (`dcat:Dataset`)>>; <<katalog-dekningsomrade, Katalog (`dcat:Catalog`)>>; <<offentlig-organisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganization`)>>; <<offentlig-tjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
 |Navn på vokabularet|Continents NAL, Countries NAL, Places NAL, GeoNames (GeoNames er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på)
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/continent[http://publications.europa.eu/resource/dataset/continent];
+http://publications.europa.eu/resource/dataset/country[http://publications.europa.eu/resource/dataset/country]; http://publications.europa.eu/resource/dataset/place[http://publications.europa.eu/resource/dataset/place]; http://sws.geonames.org/[http://sws.geonames.org/]
 |Status|Obligatorisk
 |===
 
@@ -165,6 +165,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |Brukt i klasse|<<datasett-tema, Datasett (`dcat:Dataset`)>>
 |Navn på vokabularet|EuroVoc; Data Theme Taxonomy NAL
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/eurovoc[http://publications.europa.eu/resource/dataset/eurovoc];
+http://publications.europa.eu/resource/authority/datatheme[http://publications.europa.eu/resource/authority/datatheme]
 |Kommentar|https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til EuroVoc og Data Theme fra EU.
 |Status|Obligatorisk
 |===

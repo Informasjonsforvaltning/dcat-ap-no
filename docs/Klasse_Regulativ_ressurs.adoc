@@ -49,11 +49,11 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |===
 |Engelsk navn|reference
 |URI|rdfs:seeAlso
-|Range|xsd:anyURI
+|Range|rdfs:Resource
 |Beskrivelse|Brukes til å oppgi referanse til regelverksressurs.
 |Multiplisitet|0..n
 |Status|Anbefalt
-|Kommentar|Norsk utvidelse, for å kunne oppgi referanse til en regulativ ressurs.
+|Kommentar|For referanse til Lovdata bør ELI-URI brukes, se https://lovdata.no/eli/[beskrivelsen hos Lovdata].
 |===
 
 == Valgfrie egenskaper for klassen _Regulativ ressurs_

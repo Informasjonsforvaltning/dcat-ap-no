@@ -1,6 +1,6 @@
 = Offentlig tjeneste [[offentlig-tjeneste]]
 
-Klassen _Offentlig tjeneste_ er obligatorisk.
+Klassen _Offentlig tjeneste_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Offentlig tjeneste_
 
