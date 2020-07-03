@@ -1,3 +1,4 @@
+include::locale/attributes.adoc[]
 = Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
 Høringsutkast til Versjon 2.0
 :doctype: book
@@ -14,18 +15,20 @@ Høringsutkast til Versjon 2.0
 image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
 
-Status: Høringsutkast +
-Publisert: 2020-06-02 +
-Lenke til gjeldende versjon: https://data.norge.no/specification/dcat-ap-no +
+*Status*: Høringsutkast +
+*Publisert*: 2020-06-02 +
+*Oppdatert*: 2020-07-03 +
+*Lenke til gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no
+
+IMPORTANT: *Dette er en oppdatert versjon av høringsutkastet*: +
+Etter at høringsutkastet ble publisert 2. juni 2020, har det blitt  oppdateringer i EU sin BRegDCAT-AP som denne standarden er basert på. Den oppdaterte versjonen av BRegDCAT-AP dekker norske behov betydelig bedre, slik at de aller fleste norske utvidelsene ikke lenger trenger å være norske utvidelser. Høringsutkastet er derfor også blitt oppdatert. Se <<endringer-høringsutkastet, endringsloggen>> for oversikt over endringene.
 
 Dette er et høringsutkast til versjon 2.0 av “Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)”. Standarden skal sikre at beskrivelser av offentlige data og datatjenester utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
 
 NOTE: *Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis.
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 include::shared/download.adoc[]
-
-include::locale/attributes.adoc[]
 
 include::01_Introduksjon.adoc[]
 
