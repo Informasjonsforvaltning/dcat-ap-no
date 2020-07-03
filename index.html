@@ -4098,8 +4098,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>@prefix dcatno: &lt;https://data.norege.no/vocabulary/dcatno#&gt; .
-@prefix eupodt: &lt;http://publications.europa.eu/resource/authority/dataset-type#&gt; .
+<pre class="highlight"><code>@prefix eupodt: &lt;http://publications.europa.eu/resource/authority/dataset-type#&gt; .
 
 :enKodeliste
    a dcat:Dataset ;
@@ -4107,15 +4106,12 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 
 :etTestDatasett
    a dcat:Dataset ;
-   dct:type dcatno:testDataset .
+   dct:type eupodt:TEST_DATA .
 
-:etSyntetiskDatasett
+:etKunstigDatasett
    a dcat:Dataset ;
-   dct:type dcatno:syntheticDataset .</code></pre>
+   dct:type eupodt:SYNTHETIC_DATA .</code></pre>
 </div>
-</div>
-<div class="paragraph">
-<p>Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på <a href="https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type">listen over datasett typer</a>. EUs Publications Office svarte med at de foreslåtte typene vil bli tatt med i neste versjon av datasett-typer som kommer rundt 25. juni 2020. Inntil videre brukes <code>dcatno:testDataset</code> og <code>dcatno:syntheticDataset</code> som er <code>skos:Concept</code>.</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -10267,7 +10263,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-07-03 10:49:11 UTC
+Sist oppdatert 2020-07-03 11:39:13 UTC
 </div>
 </div>
 </body>
