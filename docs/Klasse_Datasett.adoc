@@ -500,7 +500,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: kvalifisert navngivelse [[datasett-kvalifisert-navngivelse]]
+=== Datasett: kvalifisert kreditering [[datasett-kvalifisert-kreditering]]
 
 [cols="30s,70d"]
 |===
