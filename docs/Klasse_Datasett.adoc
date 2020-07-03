@@ -622,7 +622,6 @@ dqvno:isAuthoritative
 |Eksempel a|
 [source]
 ----
-@prefix dcatno: <https://data.norege.no/vocabulary/dcatno#> .
 @prefix eupodt: <http://publications.europa.eu/resource/authority/dataset-type#> .
 
 :enKodeliste
@@ -631,14 +630,12 @@ dqvno:isAuthoritative
 
 :etTestDatasett
    a dcat:Dataset ;
-   dct:type dcatno:testDataset .
+   dct:type eupodt:TEST_DATA .
 
-:etSyntetiskDatasett
+:etKunstigDatasett
    a dcat:Dataset ;
-   dct:type dcatno:syntheticDataset .
+   dct:type eupodt:SYNTHETIC_DATA .
 ----
-
-Merknad: Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. EUs Publications Office svarte med at de foreslåtte typene vil bli tatt med i neste versjon av datasett-typer som kommer rundt 25. juni 2020. Inntil videre brukes `dcatno:testDataset` og `dcatno:syntheticDataset` som er `skos:Concept`.
 |===
 
 === Datasett: utgivelsesdato [[datasett-utgivelsesdato]]
