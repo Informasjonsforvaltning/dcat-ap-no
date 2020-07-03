@@ -14,7 +14,6 @@ Klassen _Relasjon_ er valgfri.
 |Beskrivelse| Refererer til ressursen som har relasjon til kilderessursen.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Relasjon: rolle [[relasjon-rolle]]
@@ -27,5 +26,4 @@ Klassen _Relasjon_ er valgfri.
 |Beskrivelse| Refererer til funksjonen til en enhet eller aktør i forhold til en annen enhet eller ressurs.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===

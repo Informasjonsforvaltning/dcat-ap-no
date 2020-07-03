@@ -47,31 +47,6 @@
 | Status | Obligatorisk
 |===
 
-=== Offentlig organisasjon [[klasse-offentlig-organisasjon]]
-
-[cols="30s,70d"]
-|===
-| Engelsk navn | Public organisation
-| Beskrivelse | Brukes til å representere en aktør som er ansvarlig for å yte en offentlig tjeneste.
-| URI | cv:PublicOrganization
-| Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
-http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
-| Status | Obligatorisk
-|===
-
-=== Offentlig tjeneste [[klasse-offentlig-tjeneste]]
-
-[cols="30s,70d"]
-|===
-| Engelsk navn | Public service
-| Beskrivelse | Brukes til å representere en offentlig tjeneste, bl.a. tjeneste som skaper og/eller forvalter grunndataregistre/basisregistre eller oversikter over registre (såkalt «register over register»).
-| URI | cpsv:PublicService
-| Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
-| Status | Obligatorisk
-|Kommentar| "Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.
-|Eksempel| Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.
-|===
-
 === Tema [[klasse-tema]]
 
 [cols="30s,70d"]
@@ -107,7 +82,6 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 |URI | dcat:Dataset
 |Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Dataset
 | Status | Anbefalt
-| Kommentar| Denne klassen er p.t. obligatorisk i BRegDCAT-AP. ABR-teamet i ISA-programmet som har ansvaret for å ferdigstille BRegDCAT-AP har sagt at denne klassen kommer til å bli anbefalt.
 |===
 
 === Distribusjon [[klasse-distribusjon]]
@@ -130,6 +104,31 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 | URI | dct:LicenseDocument
 | Referanse | http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
 | Status | Anbefalt
+|===
+
+=== Offentlig organisasjon [[klasse-offentlig-organisasjon]]
+
+[cols="30s,70d"]
+|===
+| Engelsk navn | Public organisation
+| Beskrivelse | Brukes til å representere en aktør som er ansvarlig for å yte en offentlig tjeneste.
+| URI | cv:PublicOrganization
+| Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
+http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
+| Status | Anbefalt
+|===
+
+=== Offentlig tjeneste [[klasse-offentlig-tjeneste]]
+
+[cols="30s,70d"]
+|===
+| Engelsk navn | Public service
+| Beskrivelse | Brukes til å representere en offentlig tjeneste, bl.a. tjeneste som skaper og/eller forvalter grunndataregistre/basisregistre eller oversikter over registre (såkalt «register over register»).
+| URI | cpsv:PublicService
+| Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
+| Status | Anbefalt
+|Kommentar| "Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.
+|Eksempel| Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.
 |===
 
 === Regel [[klasse-regel]]
@@ -257,6 +256,18 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 |===
 
 
+=== Relasjon [[klasse-relasjon]]
+
+[cols="30s,70d"]
+|===
+| Engelsk navn | Relationship
+| Beskrivelse | Brukes til å knytte tilleggsinformasjon til en relasjon mellom ressurser.
+| URI | dcat:Relationship
+| Referanse | https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship
+| Status | Valgfri
+|===
+
+
 === Rettighetsutsagn [[klasse-rettighetsutsagn]]
 
 [cols="30s,70d"]
@@ -265,6 +276,19 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 | Beskrivelse | Brukes til å representere et utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
 | URI | dct:RightsStatement
 | Referanse | http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement
+| Status | Valgfri
+|===
+
+
+=== Rolle [[klasse-rolle]]
+
+[cols="30s,70d"]
+|===
+| Engelsk navn | Role
+| Beskrivelse | Brukes til å representere funksjonen til en ressurs eller aktør i relasjon til en annen ressurs.
+| URI | dcat:Role
+|Subklasse av|skos:Concept
+| Referanse | https://www.w3.org/TR/vocab-dcat-2/#Class:Role
 | Status | Valgfri
 |===
 
@@ -278,7 +302,6 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 | URI | spdx:Checksum
 | Referanse | http://spdx.org/rdf/terms#Checksum
 | Status | Valgfri
-| Kommentar | Norsk utvidelse. Denne klassen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Språksystem [[klasse-spraksystem]]
@@ -336,5 +359,4 @@ http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
 | URI | skos:Concept
 | Referanse | http://www.w3.org/TR/vocab-adms/#dcterms-type
 | Status | Valgfri
-| Kommentar | Norsk utvidelse. Denne klassen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===

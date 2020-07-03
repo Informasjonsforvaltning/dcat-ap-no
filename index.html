@@ -483,8 +483,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#klasse-katalog">Katalog</a></li>
 <li><a href="#klasse-katalogisert-ressurs">Katalogisert ressurs</a></li>
 <li><a href="#klasse-literal">Literal</a></li>
-<li><a href="#klasse-offentlig-organisasjon">Offentlig organisasjon</a></li>
-<li><a href="#klasse-offentlig-tjeneste">Offentlig tjeneste</a></li>
 <li><a href="#klasse-tema">Tema</a></li>
 <li><a href="#klasse-tematisk-skjema">Tematisk skjema</a></li>
 </ul>
@@ -494,6 +492,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#klasse-datasett">Datasett</a></li>
 <li><a href="#klasse-distribusjon">Distribusjon</a></li>
 <li><a href="#klasse-lisensdokument">Lisensdokument</a></li>
+<li><a href="#klasse-offentlig-organisasjon">Offentlig organisasjon</a></li>
+<li><a href="#klasse-offentlig-tjeneste">Offentlig tjeneste</a></li>
 <li><a href="#klasse-regel">Regel</a></li>
 <li><a href="#klasse-regulativ-ressurs">Regulativ ressurs</a></li>
 </ul>
@@ -509,7 +509,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#klasse-lokasjon">Lokasjon</a></li>
 <li><a href="#klasse-medietype">Medietype</a></li>
 <li><a href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse</a></li>
+<li><a href="#klasse-relasjon">Relasjon</a></li>
 <li><a href="#klasse-rettighetsutsagn">Rettighetsutsagn</a></li>
+<li><a href="#klasse-rolle">Rolle</a></li>
 <li><a href="#klasse-sjekksum">Sjekksum</a></li>
 <li><a href="#klasse-spraksystem">Språksystem</a></li>
 <li><a href="#klasse-standard">Standard</a></li>
@@ -582,7 +584,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#datasett-i-samsvar-med">Datasett: i samsvar med</a></li>
 <li><a href="#datasett-kilde">Datasett: kilde</a></li>
 <li><a href="#datasett-krever">Datasett: krever</a></li>
-<li><a href="#datasett-kvalifisert-navngivelse">Datasett: kvalifisert navngivelse</a></li>
+<li><a href="#datasett-kvalifisert-kreditering">Datasett: kvalifisert kreditering</a></li>
 <li><a href="#datasett-kvalifisert-relasjon">Datasett: kvalifisert relasjon</a></li>
 <li><a href="#datasett-landingsside">Datasett: landingsside</a></li>
 <li><a href="#datasett-produsent">Datasett: produsent</a></li>
@@ -610,17 +612,24 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_datatjeneste">Anbefalte egenskaper for klassen <em>Datatjeneste</em></a>
 <ul class="sectlevel4">
+<li><a href="#datatjeneste-emneord">Datatjeneste: emneord</a></li>
 <li><a href="#datatjeneste-endepunktsbeskrivelse">Datatjeneste: endepunktsbeskrivelse</a></li>
+<li><a href="#datatjeneste-kontaktpunkt">Datatjeneste: kontaktpunkt</a></li>
+<li><a href="#datatjeneste-tema">Datatjeneste: tema</a></li>
 <li><a href="#datatjeneste-tilgjengeliggjor-datasett">Datatjeneste: tilgjengeliggjør datasett</a></li>
+<li><a href="#datatjeneste-utgiver">Datatjeneste: utgiver</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_datatjeneste">Valgfrie egenskaper for klassen <em>Datatjeneste</em></a>
 <ul class="sectlevel4">
 <li><a href="#datatjeneste-beskrivelse">Datatjeneste: beskrivelse</a></li>
+<li><a href="#datatjeneste-dokumentasjon">Datatjeneste: dokumentasjon</a></li>
 <li><a href="#datatjeneste-følger">Datatjeneste: følger</a></li>
 <li><a href="#datatjeneste-i-samsvar-med">Datatjeneste: i samsvar med</a></li>
+<li><a href="#datatjeneste-landingsside">Datatjeneste: landingsside</a></li>
 <li><a href="#datatjeneste-lisens">Datatjeneste: lisens</a></li>
 <li><a href="#datatjeneste-tilgangsrettigheter">Datatjeneste: tilgangsrettigheter</a></li>
+<li><a href="#datatjeneste-type">Datatjeneste: type</a></li>
 </ul>
 </li>
 </ul>
@@ -941,7 +950,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#_avvik_fra_eu_standarden_bregdcat_ap">Avvik fra EU-standarden BRegDCAT-AP</a></li>
-<li><a href="#_endringslogg">Endringslogg</a></li>
+<li><a href="#_endringslogg">Endringslogg</a>
+<ul class="sectlevel2">
+<li><a href="#endringer-høringsutkastet">Endringer fra høringsutkastet datert 2. juni 2020, til denne versjonen</a></li>
+<li><a href="#_endringer_fra_versjon_1_1_til_denne_versjonen">Endringer fra versjon 1.1 til denne versjonen</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -954,9 +968,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p>Status: Høringsutkast<br>
-Publisert: 2020-06-02<br>
-Lenke til gjeldende versjon: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br></p>
+<p><strong>Status</strong>: Høringsutkast<br>
+<strong>Publisert</strong>: 2020-06-02<br>
+<strong>Oppdatert</strong>: 2020-07-03<br>
+<strong>Lenke til gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a></p>
+</div>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Viktig"></i>
+</td>
+<td class="content">
+<strong>Dette er en oppdatert versjon av høringsutkastet</strong>:<br>
+Etter at høringsutkastet ble publisert 2. juni 2020, har det blitt  oppdateringer i EU sin BRegDCAT-AP som denne standarden er basert på. Den oppdaterte versjonen av BRegDCAT-AP dekker norske behov betydelig bedre, slik at de aller fleste norske utvidelsene ikke lenger trenger å være norske utvidelser. Høringsutkastet er derfor også blitt oppdatert. Se <a href="#endringer-høringsutkastet">endringsloggen</a> for oversikt over endringene.
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
 <p>Dette er et høringsutkast til versjon 2.0 av “Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)”. Standarden skal sikre at beskrivelser av offentlige data og datatjenester utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som <em>skal</em>, <em>bør</em> og <em>kan</em> være med i beskrivelsene, med spesifikasjon av dataformat.</p>
@@ -965,11 +993,11 @@ Lenke til gjeldende versjon: <a href="https://data.norge.no/specification/dcat-a
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Note"></i>
+<i class="fa icon-note" title="Merk"></i>
 </td>
 <td class="content">
 <strong>Innmelding av feil og mangler:</strong><br>
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på <a href="https://github.com/difi/dcat-ap-no/issues">Github Issues</a>. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis.
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på <a href="https://github.com/difi/dcat-ap-no/issues">Github Issues</a>. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 </td>
 </tr>
 </table>
@@ -978,7 +1006,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-tip" title="Tip"></i>
+<i class="fa icon-tip" title="Tips"></i>
 </td>
 <td class="content">
 Dette dokumentet kan også lastes ned <a href="document.pdf">som PDF</a>.
@@ -1395,77 +1423,6 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-offentlig-organisasjon"><a class="link" href="#klasse-offentlig-organisasjon">Offentlig organisasjon</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Public organisation</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en aktør som er ansvarlig for å yte en offentlig tjeneste.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganization</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a>
-<a href="http://www.w3.org/TR/vocab-org/" class="bare">http://www.w3.org/TR/vocab-org/</a>; <a href="https://www.w3.org/TR/vocab-org/" class="bare">https://www.w3.org/TR/vocab-org/</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="klasse-offentlig-tjeneste"><a class="link" href="#klasse-offentlig-tjeneste">Offentlig tjeneste</a></h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Public service</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en offentlig tjeneste, bl.a. tjeneste som skaper og/eller forvalter grunndataregistre/basisregistre eller oversikter over registre (såkalt «register over register»).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
 <h4 id="klasse-tema"><a class="link" href="#klasse-tema">Tema</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1566,10 +1523,6 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne klassen er p.t. obligatorisk i BRegDCAT-AP. ABR-teamet i ISA-programmet som har ansvaret for å ferdigstille BRegDCAT-AP har sagt at denne klassen kommer til å bli anbefalt.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -1631,6 +1584,77 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-offentlig-organisasjon"><a class="link" href="#klasse-offentlig-organisasjon">Offentlig organisasjon</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Public organisation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en aktør som er ansvarlig for å yte en offentlig tjeneste.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a>
+<a href="http://www.w3.org/TR/vocab-org/" class="bare">http://www.w3.org/TR/vocab-org/</a>; <a href="https://www.w3.org/TR/vocab-org/" class="bare">https://www.w3.org/TR/vocab-org/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-offentlig-tjeneste"><a class="link" href="#klasse-offentlig-tjeneste">Offentlig tjeneste</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Public service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en offentlig tjeneste, bl.a. tjeneste som skaper og/eller forvalter grunndataregistre/basisregistre eller oversikter over registre (såkalt «register over register»).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1980,6 +2004,37 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
+<h4 id="klasse-relasjon"><a class="link" href="#klasse-relasjon">Relasjon</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relationship</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å knytte tilleggsinformasjon til en relasjon mellom ressurser.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Relationship</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship" class="bare">https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
 <h4 id="klasse-rettighetsutsagn"><a class="link" href="#klasse-rettighetsutsagn">Rettighetsutsagn</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2002,6 +2057,41 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="klasse-rolle"><a class="link" href="#klasse-rolle">Rolle</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Role</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere funksjonen til en ressurs eller aktør i relasjon til en annen ressurs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Role</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Role" class="bare">https://www.w3.org/TR/vocab-dcat-2/#Class:Role</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2037,10 +2127,6 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. Denne klassen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2198,10 +2284,6 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. Denne klassen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -2251,10 +2333,6 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -2293,10 +2371,6 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1 og allerede da som en norsk utvidelse.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -2331,10 +2405,6 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. Denne er ikke eksplisitt tatt med i BRegDCAT-AP, men var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -2726,7 +2796,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
@@ -3143,10 +3213,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -3181,10 +3247,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3256,10 +3318,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -3294,10 +3352,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.</p></td>
 </tr>
 </tbody>
 </table>
@@ -3690,15 +3744,11 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-kvalifisert-navngivelse"><a class="link" href="#datasett-kvalifisert-navngivelse">Datasett: kvalifisert navngivelse</a></h5>
+<h5 id="datasett-kvalifisert-kreditering"><a class="link" href="#datasett-kvalifisert-kreditering">Datasett: kvalifisert kreditering</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3903,10 +3953,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1.</p></td>
 </tr>
 </tbody>
 </table>
@@ -4298,6 +4344,41 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_datatjeneste"><a class="link" href="#_anbefalte_egenskaper_for_klassen_datatjeneste">Anbefalte egenskaper for klassen <em>Datatjeneste</em></a></h4>
 <div class="sect4">
+<h5 id="datatjeneste-emneord"><a class="link" href="#datatjeneste-emneord">Datatjeneste: emneord</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">keyword</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:keyword</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder emneord (eller tag) som beskriver datatjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
 <h5 id="datatjeneste-endepunktsbeskrivelse"><a class="link" href="#datatjeneste-endepunktsbeskrivelse">Datatjeneste: endepunktsbeskrivelse</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4320,6 +4401,76 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen inneholder en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens dct:conformsTo brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="datatjeneste-kontaktpunkt"><a class="link" href="#datatjeneste-kontaktpunkt">Datatjeneste: kontaktpunkt</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">contact point</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:Kind</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="datatjeneste-tema"><a class="link" href="#datatjeneste-tema">Datatjeneste: tema</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">theme</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:theme</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til et hovedtema for datatjenesten. En datatjeneste kan assosieres med flere tema.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4367,6 +4518,41 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tbody>
 </table>
 </div>
+<div class="sect4">
+<h5 id="datatjeneste-utgiver"><a class="link" href="#datatjeneste-utgiver">Datatjeneste: utgiver</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">publisher</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:publisher</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. dct:publisher <a href="https://data.brreg.no/enhetsregisteret/api/enheter/974760673" class="bare">https://data.brreg.no/enhetsregisteret/api/enheter/974760673</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_datatjeneste"><a class="link" href="#_valgfrie_egenskaper_for_klassen_datatjeneste">Valgfrie egenskaper for klassen <em>Datatjeneste</em></a></h4>
@@ -4393,6 +4579,41 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen bør gjentas for parallelle språkversjoner.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="datatjeneste-dokumentasjon"><a class="link" href="#datatjeneste-dokumentasjon">Datatjeneste: dokumentasjon</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">page (documentation)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til en side eller et dokument som beskriver datatjenesten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4476,6 +4697,41 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
+<h5 id="datatjeneste-landingsside"><a class="link" href="#datatjeneste-landingsside">Datatjeneste: landingsside</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">landing page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:landingPage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til nettside som gir tilgang til datatjenesten, dens distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kardinalitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
 <h5 id="datatjeneste-lisens"><a class="link" href="#datatjeneste-lisens">Datatjeneste: lisens</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4533,6 +4789,41 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen KAN inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="datatjeneste-type"><a class="link" href="#datatjeneste-type">Datatjeneste: type</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til et begrep som identifiserer datatjenestens type.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4876,10 +5167,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -4914,10 +5201,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -5059,10 +5342,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -5098,10 +5377,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -5136,10 +5411,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -5246,10 +5517,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -5284,10 +5551,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -5358,10 +5621,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -5441,10 +5700,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -5646,7 +5901,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spatial/geographic</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spatial coverage</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -5891,7 +6146,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">themes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">theme taxonomy</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -6021,10 +6276,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -6059,10 +6310,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -6578,10 +6825,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -6720,7 +6963,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect2">
 <h3 id="offentlig-organisasjon"><a class="link" href="#offentlig-organisasjon">Offentlig organisasjon</a></h3>
 <div class="paragraph">
-<p>Klassen <em>Offentlig organisasjon</em> er obligatorisk.</p>
+<p>Klassen <em>Offentlig organisasjon</em> er anbefalt.</p>
 </div>
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_offentlig_organisasjon"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_offentlig_organisasjon">Obligatoriske egenskaper for klassen <em>Offentlig organisasjon</em></a></h4>
@@ -6985,7 +7228,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect2">
 <h3 id="offentlig-tjeneste"><a class="link" href="#offentlig-tjeneste">Offentlig tjeneste</a></h3>
 <div class="paragraph">
-<p>Klassen <em>Offentlig tjeneste</em> er obligatorisk.</p>
+<p>Klassen <em>Offentlig tjeneste</em> er anbefalt.</p>
 </div>
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_offentlig_tjeneste"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_offentlig_tjeneste">Obligatoriske egenskaper for klassen <em>Offentlig tjeneste</em></a></h4>
@@ -7904,7 +8147,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:anyURI</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
@@ -7920,7 +8163,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse, for å kunne oppgi referanse til en regulativ ressurs.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For referanse til Lovdata bør ELI-URI brukes, se <a href="https://lovdata.no/eli/">beskrivelsen hos Lovdata</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8004,10 +8247,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -8042,10 +8281,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8091,10 +8326,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -8129,10 +8360,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8178,10 +8405,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -8226,10 +8449,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -8273,10 +8492,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8325,10 +8540,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to vær
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -8367,10 +8578,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to vær
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfritt</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
@@ -8405,10 +8612,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to vær
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfritt</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8552,10 +8755,6 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8772,7 +8971,8 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/continent">http://publications.europa.eu/resource/dataset/continent</a>;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/continent">http://publications.europa.eu/resource/dataset/continent</a>;
+<a href="http://publications.europa.eu/resource/dataset/country">http://publications.europa.eu/resource/dataset/country</a>; <a href="http://publications.europa.eu/resource/dataset/place">http://publications.europa.eu/resource/dataset/place</a>; <a href="http://sws.geonames.org/">http://sws.geonames.org/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -8869,7 +9069,8 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/eurovoc">http://publications.europa.eu/resource/dataset/eurovoc</a>;</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/eurovoc">http://publications.europa.eu/resource/dataset/eurovoc</a>;
+<a href="http://publications.europa.eu/resource/authority/datatheme">http://publications.europa.eu/resource/authority/datatheme</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
@@ -9233,50 +9434,8 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring</strong></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Aktør: navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:name</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Aktør: organisasjonsidentifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Aktør: utgivertype</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: begrep</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:subject</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: er påkrevd av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isRequiredBy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: er referert av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isReferencedBy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: erstatter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:replaces</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: erstattes av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isReplacedBy</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1</p></td>
 </tr>
@@ -9284,24 +9443,12 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: følger</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:follows</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra valgfri til anbefalt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne erstatter anbefalt egenskap <code>Datasett: skjermingshjemmel</code> i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: krever</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:requires</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: refererer til</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:references</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne erstatter egenskap Datasett: skjermingshjemmel som var anbefalt i DCAT-AP-NO v.1.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: tema</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:theme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra anbefalt til obligatorisk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra anbefalt til obligatorisk, dermed også kardinalitet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allerede i DCAT-AP-NO v.1.1</p></td>
 </tr>
 <tr>
@@ -9313,158 +9460,20 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: utgiver</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:publisher</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra anbefalt til obligatorisk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Allerede i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: i samsvar med</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For bl.a. å kunne referere til en informasjonsmodell</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: format</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra anbefalt til obligatorisk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra anbefalt til obligatorisk, dermed også kardinalitet</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allerede i DCAT-AP-NO v.1.1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: format</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Range endret fra <code>dct:MediaTypeOrExtent</code> til <code>dct:MediaType</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra anbefalt til obligatorisk, dermed også kardinalitet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Allerede i DCAT-AP-NO v.1.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Range endret fra dct:MediaTypeOrExtent til dct:MediaType</p></td>
 <td class="tableblock halign-left valign-top"></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: format</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..<strong>1</strong> til 1..<strong>n</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Allerede i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: geografisk oppløsning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: i samsvar med</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: pakkeformat</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:packageFormat</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: policy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">odrl:hasPolicy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: rettigheter</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:rights</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: status</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: tidsromsoppløsning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:temporalResolution</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: tittel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator: notasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:notation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: er del av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: har del</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:hasPart</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lisensdokument: lisenstype</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon: geometri</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locn:geometry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon: område</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:bbox</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon: senterpunkt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:centroid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs: referanse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:seeAlso</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne ha med referanse til en regulativ ressurs</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Relasjon: relasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:relation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Relasjon: rolle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:hadRole</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sjekksum</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:Checksum</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sjekksum: algoritme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:algorithm</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sjekksum: sjekksumverdi</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:checksumValue</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tema</p></td>
@@ -9473,52 +9482,10 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allerede i DCAT-AP-NO v.1.1</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tema: foretrukket tittel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:prefLabel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tematisk skjema</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra anbefalt til obligatorisk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Allerede i DCAT-AP-NO v.1.1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tematisk skjema: tittel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: begynnelse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:hasBeginning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: slutt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">time:hasEnd</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: sluttdato/tid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:endDate</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: startdato/tid</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:startDate</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Utgivertype</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.1.1 og DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
 </tr>
 </tbody>
 </table>
@@ -9527,6 +9494,333 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <div class="sect1">
 <h2 id="_endringslogg"><a class="link" href="#_endringslogg">Endringslogg</a></h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="endringer-høringsutkastet"><a class="link" href="#endringer-høringsutkastet">Endringer fra høringsutkastet datert 2. juni 2020, til denne versjonen</a></h3>
+<div class="paragraph">
+<p>Etter at høringsutkastet ble publisert 2. juni 2020, er det blitt oppdateringer i EU sin BRegDCAT-AP som DCAT-AP-NO er basert på. Den oppdaterte versjonen av BRegDCAT-AP (v.1.05) dekker norske behov betydelig bedre, slik at de aller fleste norske utvidelsene ikke lenger trenger å være norske utvidelser. Høringsutkastet er derfor også blitt oppdatert.</p>
+</div>
+<div class="paragraph">
+<p>Tabellen under oppsummerer endringer som følger av ny versjon av BRegDCAT-AP (v.1.05).</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3335%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Klasse-/egenskapsnavn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI for klassen/egenskapen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Endring</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om at klassen var obligatorisk, men skulle vært anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå anbefalt i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig organisasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra obligatorisk til anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig tjeneste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra obligatorisk til anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Relationship</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eksplisitt tatt med i oversikt over valgfrie klasser</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rolle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Role</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Eksplisitt tatt med i oversikt over valgfrie klasser</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sjekksum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:Checksum</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utgivertype</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aktør: navn</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:name</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aktør: organisasjonsidentifikator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Aktør: utgivertype</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: er påkrevd av</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isRequiredBy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: er referert av</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isReferencedBy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: erstatter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:replaces</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: erstattes av</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isReplacedBy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: krever</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:requires</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: kvalifisert kreditering</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prov:qualifiedAttribution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det norske navnet er endret fra "kvalifisert navngivelse" til "kvalifisert kreditering"</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gjenspeiler bedre "qualified attribution"</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: refererer til</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:references</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: dokumentasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:page</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: emneord</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:keyword</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: kontaktpunkt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: landingsside</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:landingPage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: tema</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:theme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: utgiver</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:publisher</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: geografisk oppløsning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: i samsvar med</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: pakkeformat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:packageFormat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: policy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrl:hasPolicy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: rettigheter</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:rights</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: tidsromsoppløsning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:temporalResolution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: tittel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator: notasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:notation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: dekningsområde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Engelsk navn endret fra <code>spatial/geographic</code> til <code>spatial coverage</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: er del av</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: har del</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:hasPart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: temaer</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:themeTaxonomy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Engelsk navn endret fra ` themes` til ` theme taxonomy`</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lisensdokument: lisenstype</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs: referanse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:seeAlso</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs: referanse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:seeAlso</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Range endret fra <code>xsd:anyURI</code> til <code>rdfs:Resource</code>. Føyet til kommentar om å bruke ELI-URI der relevant.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Range endret, i henhold til BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relasjon: relasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:relation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relasjon: rolle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:hadRole</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sjekksum: algoritme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:algorithm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sjekksum: sjekksumverdi</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:checksumValue</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tema: foretrukket tittel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:prefLabel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tematisk skjema: tittel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: begynnelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:hasBeginning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: slutt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">time:hasEnd</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: sluttdato/tid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:endDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: startdato/tid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:startDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
+<h3 id="_endringer_fra_versjon_1_1_til_denne_versjonen"><a class="link" href="#_endringer_fra_versjon_1_1_til_denne_versjonen">Endringer fra versjon 1.1 til denne versjonen</a></h3>
 <div class="paragraph">
 <p>Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.1 til denne versjonen av DCAT-AP-NO. Redaksjonelle justeringer av tekster (inkl. tekstlige beskrivelser, kommentarer og eksempler) er ikke tatt med i oversikten.</p>
 </div>
@@ -9605,7 +9899,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: kvalifisert navngivelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: kvalifisert kreditering</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">prov:qualifiedAttribution</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
@@ -9635,6 +9929,12 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bedre dekkende navn</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: proveniensbeskrivelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:provenance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kardinalitet endret fra <code>0..1</code> til <code>0..n</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: refererer til</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:references</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Range endret fra <code>dcat:Dataset</code> til <code>rdfs:Resource</code></p></td>
@@ -9645,6 +9945,12 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><span class="line-through">dcatno:accessRightsComment</span></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fjernet. Erstattes med <code>Datasett: følger (cpsv:follows)</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Unødvendig med dette norske avvik</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: tema</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:theme</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Range endret fra <code>dcat:theme, subproperty of dct:subject</code> til <code>dcat:them</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: tidsrom</p></td>
@@ -9669,6 +9975,12 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DataService</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hele klassen er ny</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Range endret fra <code>dct:MediaTypeOrExtent</code> til <code>dct:MediaType</code></p></td>
+<td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: geografisk oppløsning</p></td>
@@ -9728,7 +10040,13 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator: notasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:notation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: datasett</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:dataset</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra obligatorisk til anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: datatjeneste</p></td>
@@ -9740,6 +10058,12 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: dekningsområde</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra valgfri til anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog: frekvens</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:accrualPeriodicity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
@@ -9801,7 +10125,7 @@ dct:provenance</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalogpost: status</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk navn er endret fra <code>Katalogpost: endringstype</code> til `Katalogpost: status'</p></td>
-<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bedre dekkende navn</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lisensdokument: lisenstype</p></td>
@@ -9813,19 +10137,19 @@ dct:provenance</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon: geometri</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">locn:geometry</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold tilBRegDCAT-AP</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon: område</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:bbox</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold tilBRegDCAT-AP</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon: senterpunkt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:centroid</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold tilBRegDCAT-AP</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Medietype</p></td>
@@ -9876,16 +10200,16 @@ dct:provenance</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Relasjon: relasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:relation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Relasjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Relationship</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hele klassen er ny</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Relasjon: rolle</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:hadRole</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rolle</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Role</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hele klassen er ny</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tema</p></td>
@@ -9915,22 +10239,35 @@ dct:provenance</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: begynnelse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">time:hasBeginning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold tilBRegDCAT-AP</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: slutt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">time:hasEnd</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: sluttdato/tid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:endDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra valgfri til anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom: startdato/tid</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:startDate</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Endret fra valgfri til anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 </div>
 </div>
+</div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-06-05 11:08:53 UTC
+Sist oppdatert 2020-07-03 10:49:11 UTC
 </div>
 </div>
 </body>

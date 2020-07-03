@@ -14,7 +14,6 @@ Klassen _Tidsrom_ er valgfri.
 |Beskrivelse| Definerer slutten på tidsrommet.
 |Multiplisitet| 0..1
 |Status| Anbefalt
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to være til stede for hver forekomst av klassen `dct:PeriodOfTime` (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato).
@@ -28,7 +27,6 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Beskrivelse| Definerer starten på tidsrommet.
 |Multiplisitet| 0..1
 |Status| Anbefalt
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den var med i DCAT-AP-NO v.1.1 og i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 == Valgfrie egenskaper for klassen _Tidsrom_
@@ -42,7 +40,6 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Beskrivelse| Definerer begynnelsen på et tidsrommet eller intervall.
 |Multiplisitet| 0..1
 |Status| Valgfritt
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === Tidsrom: slutt [[tidsrom-slutt]]
@@ -54,5 +51,4 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Beskrivelse| Definerer slutten på et tidsrom eller intervall.
 |Multiplisitet| 0..1
 |Status| Valgfritt
-|Kommentar| Norsk utvidelse - Denne egenskapen er ikke eksplisitt tatt med i BRegDCAT-AP, men den er i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
