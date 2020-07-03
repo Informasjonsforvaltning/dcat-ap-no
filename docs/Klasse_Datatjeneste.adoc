@@ -43,6 +43,18 @@ Klassen _Datatjeneste_ er valgfri.
 
 == Anbefalte egenskaper for klassen _Datatjeneste_
 
+=== Datatjeneste: emneord [[datatjeneste-emneord]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| keyword
+|URI| dcat:keyword
+|Range| rdfs:Literal
+|Beskrivelse| Inneholder emneord (eller tag) som beskriver datatjenesten.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
+
 === Datatjeneste: endepunktsbeskrivelse [[datatjeneste-endepunktsbeskrivelse]]
 
 [cols="30s,70d"]
@@ -51,6 +63,31 @@ Klassen _Datatjeneste_ er valgfri.
 |URI| dcat:endpointDescription
 |Range| rdfs:Resource
 |Beskrivelse| Denne egenskapen inneholder en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens dct:conformsTo brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
+
+
+=== Datatjeneste: kontaktpunkt [[datatjeneste-kontaktpunkt]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| contact point
+|URI| dcat:contactPoint
+|Range| vcard:Kind
+|Beskrivelse| Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
+
+=== Datatjeneste: tema [[datatjeneste-tema]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| theme
+|URI| dcat:theme
+|Range| skos:Concept
+|Beskrivelse| Referanse til et hovedtema for datatjenesten. En datatjeneste kan assosieres med flere tema.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -67,6 +104,19 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
+=== Datatjeneste: utgiver [[datatjeneste-utgiver]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| publisher
+|URI| dct:publisher
+|Range| foaf:Agent
+|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673>.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|===
+
+
 == Valgfrie egenskaper for klassen _Datatjeneste_
 
 === Datatjeneste: beskrivelse [[datatjeneste-beskrivelse]]
@@ -76,6 +126,17 @@ Klassen _Datatjeneste_ er valgfri.
 |URI| dct:description
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen bør gjentas for parallelle språkversjoner.
+|Multiplisitet| 0..n
+|Status| Valgfri
+|===
+
+=== Datatjeneste: dokumentasjon [[datatjeneste-dokumentasjon]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| page (documentation)
+|URI| foaf:page
+|Range| foaf:Document
+|Beskrivelse| Referanse til en side eller et dokument som beskriver datatjenesten.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -102,6 +163,17 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
+=== Datatjeneste: landingsside [[datatjeneste-landingsside]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| landing page
+|URI| dcat:landingPage
+|Range| foaf:Document
+|Beskrivelse| Referanse til nettside som gir tilgang til datatjenesten, dens distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
+
 === Datatjeneste: lisens [[datatjeneste-lisens]]
 [cols="30s,70d"]
 |===
@@ -120,6 +192,17 @@ Klassen _Datatjeneste_ er valgfri.
 |URI| dct:accessRights
 |Range| dct:RightsStatement
 |Beskrivelse| Denne egenskapen KAN inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
+|Multiplisitet| 0..1
+|Status| Valgfri
+|===
+
+=== Datatjeneste: type [[datatjeneste-type]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| type
+|URI| dct:type
+|Range| skos:Concept
+|Beskrivelse| Referanse til et begrep som identifiserer datatjenestens type.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
