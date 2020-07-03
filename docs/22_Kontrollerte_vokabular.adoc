@@ -53,7 +53,6 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |Navn på vokabularet|Distribution availability vocabulary
 |URI til vokabularet|http://data.europa.eu/r5r/availability/[http://data.europa.eu/r5r/availability/]
 |Status|Obligatorisk
-|Kommentar|Denne er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
 |===
 
 === For egenskapen dct:creator
