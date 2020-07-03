@@ -24,6 +24,7 @@ Tabellen under oppsummerer endringer som følger av ny versjon av BRegDCAT-AP (v
 |Datasett: erstatter|dct:replaces|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
 |Datasett: erstattes av|dct:isReplacedBy|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
 |Datasett: krever|dct:requires|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
+|Datasett: kvalifisert kreditering | prov:qualifiedAttribution | Det norske navnet er endret fra "kvalifisert navngivelse" til "kvalifisert kreditering" | Gjenspeiler bedre "qualified attribution"
 |Datasett: refererer til|dct:references|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
 |Datatjeneste: dokumentasjon|foaf:page|Ny egenskap|Dette i henhold til BRegDCAT-AP v.1.05
 |Datatjeneste: emneord|dcat:keyword|Ny egenskap|Dette i henhold til BRegDCAT-AP v.1.05
