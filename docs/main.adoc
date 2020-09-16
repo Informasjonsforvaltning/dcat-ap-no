@@ -1,6 +1,6 @@
 include::locale/attributes.adoc[]
 = Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
-Høringsutkast til Versjon 2.0
+Utkast til Versjon 2.0
 :doctype: book
 :docinfo:
 :icons: font
@@ -15,15 +15,12 @@ Høringsutkast til Versjon 2.0
 image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
 
-*Status*: Høringsutkast +
-*Publisert*: 2020-06-02 +
-*Oppdatert*: 2020-07-03 +
+*Status*: [yellow-background]#Under publisering# +
+*Publisert*: [yellow-background]#<dato kommer># +
 *Lenke til gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no
 
-IMPORTANT: *Dette er en oppdatert versjon av høringsutkastet*: +
-Etter at høringsutkastet ble publisert 2. juni 2020, har det blitt  oppdateringer i EU sin BRegDCAT-AP som denne standarden er basert på. Den oppdaterte versjonen av BRegDCAT-AP dekker norske behov betydelig bedre, slik at de aller fleste norske utvidelsene ikke lenger trenger å være norske utvidelser. Høringsutkastet er derfor også blitt oppdatert. Se <<endringer-høringsutkastet, endringsloggen>> for oversikt over endringene.
-
-Dette er et høringsutkast til versjon 2.0 av “Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)”. Standarden skal sikre at beskrivelser av offentlige data og datatjenester utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
+WARNING: *Det pågår løpende justeringer*: +
+Inntil standarden blir endelig pbulisert som gjeldende versjon (se over), blir utkastet (denne publiseringen) løpende justert for bl.a. å hensynta kommentarer og innspill fra høringsrunden.
 
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
