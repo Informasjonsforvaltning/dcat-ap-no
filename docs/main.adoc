@@ -75,6 +75,8 @@ include::Klasse_Relasjoner.adoc[]
 
 include::Klasse_Sjekksum.adoc[]
 
+include::Klasse_Standard.adoc[]
+
 include::Klasse_Tema.adoc[]
 
 include::Klasse_Tematisk_skjema.adoc[]
