@@ -6,7 +6,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 
 == Obligatoriske egenskaper for klassen _Datastrukturdefinisjon_
 
-=== Datastrukturdefinisjon: beskrivelse
+=== Datastrukturdefinisjon: beskrivelse (dct:description)
 [cols="30s,70d"]
 |===
 |Engelsk navn|description
@@ -17,7 +17,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Status|Obligatorisk
 |===
 
-=== Datastrukturdefinisjon: komponent
+=== Datastrukturdefinisjon: komponent (qb:component)
 [cols="30s,70d"]
 |===
 |Engelsk navn|component

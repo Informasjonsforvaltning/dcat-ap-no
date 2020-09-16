@@ -2,7 +2,7 @@
 
 == Obligatoriske klasser [[Obligatoriske_klasser]]
 
-=== Aktør [[klasse-aktor]]
+=== Aktør (foaf:Agent) [[klasse-aktor]]
 
 [cols="30s,70d"]
 |===
@@ -12,7 +12,7 @@
 | Status | Obligatorisk
 |===
 
-=== Katalog [[klasse-katalog]]
+=== Katalog (dcat:Catalog) [[klasse-katalog]]
 
 [cols="30s,70d"]
 |===
@@ -23,7 +23,7 @@
 |Kommentar| "Registry catalogue" er det engelske navnet til denne klassen i BRegDCAT-AP.
 |===
 
-=== Katalogisert ressurs [[klasse-katalogisert-ressurs]]
+=== Katalogisert ressurs (dcat:Resource) [[klasse-katalogisert-ressurs]]
 
 [cols="30s,70d"]
 |===
@@ -33,7 +33,7 @@
 | Status | Obligatorisk
 |===
 
-=== Literal [[klasse-literal]]
+=== Literal (rdfs:Literal) [[klasse-literal]]
 
 [cols="30s,70d"]
 |===
@@ -43,7 +43,7 @@
 | Status | Obligatorisk
 |===
 
-=== Tema [[klasse-tema]]
+=== Tema (skos:Concept) [[klasse-tema]]
 
 [cols="30s,70d"]
 |===
@@ -54,7 +54,7 @@
 |Kommentar | Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
 |===
 
-=== Tematisk skjema [[klasse-tematisk-skjema]]
+=== Tematisk skjema (skos:ConceptScheme) [[klasse-tematisk-skjema]]
 
 [cols="30s,70d"]
 |===
@@ -67,7 +67,7 @@
 
 == Anbefalte klasser [[Anbefalte_klasser]]
 
-=== Datasett [[klasse-datasett]]
+=== Datasett (dcat:Dataset) [[klasse-datasett]]
 
 [cols="30s,70d"]
 |===
@@ -77,7 +77,7 @@
 | Status | Anbefalt
 |===
 
-=== Distribusjon [[klasse-distribusjon]]
+=== Distribusjon (dcat:Distribution) [[klasse-distribusjon]]
 
 [cols="30s,70d"]
 |===
@@ -87,7 +87,7 @@
 | Status | Anbefalt
 |===
 
-=== Lisensdokument [[klasse-lisensdokument]]
+=== Lisensdokument (dct:LicenseDocument) [[klasse-lisensdokument]]
 
 [cols="30s,70d"]
 |===
@@ -97,7 +97,7 @@
 | Status | Anbefalt
 |===
 
-=== Offentlig organisasjon [[klasse-offentlig-organisasjon]]
+=== Offentlig organisasjon (cv:PublicOrganization) [[klasse-offentlig-organisasjon]]
 
 [cols="30s,70d"]
 |===
@@ -107,7 +107,7 @@
 | Status | Anbefalt
 |===
 
-=== Offentlig tjeneste [[klasse-offentlig-tjeneste]]
+=== Offentlig tjeneste (cpsv:PublicService) [[klasse-offentlig-tjeneste]]
 
 [cols="30s,70d"]
 |===
@@ -119,7 +119,7 @@
 |Eksempel| Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.
 |===
 
-=== Regel [[klasse-regel]]
+=== Regel (cpsv:Rule) [[klasse-regel]]
 
 [cols="30s,70d"]
 |===
@@ -129,7 +129,7 @@
 | Status | Anbefalt
 |===
 
-=== Regulativ ressurs [[klasse-regulativ-ressurs]]
+=== Regulativ ressurs (eli:LegalResource) [[klasse-regulativ-ressurs]]
 
 [cols="30s,70d"]
 |===
@@ -142,7 +142,7 @@
 
 == Valgfrie klasser [[Valgfrie_klasser]]
 
-=== Datatjeneste [[klasse-datatjeneste]]
+=== Datatjeneste (dcat:DataService) [[klasse-datatjeneste]]
 
 [cols="30s,70d"]
 |===
@@ -152,7 +152,7 @@
 | Status | Valgfri
 |===
 
-=== Dokument  [[klasse-dokument]]
+=== Dokument (foaf:Document) [[klasse-dokument]]
 
 [cols="30s,70d"]
 |===
@@ -162,7 +162,7 @@
 | Status | Valgfri
 |===
 
-=== Frekvens [[klasse-frekvens]]
+=== Frekvens (dct:Frequency) [[klasse-frekvens]]
 
 [cols="30s,70d"]
 |===
@@ -172,7 +172,7 @@
 | Status | Valgfri
 |===
 
-=== Identifikator [[klasse-identifikator]]
+=== Identifikator (adms:Identifier) [[klasse-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -182,7 +182,7 @@
 | Status | Valgfri
 |===
 
-=== Katalogpost [[klasse-katalogpost]]
+=== Katalogpost (dcat:CatalogRecord) [[klasse-katalogpost]]
 
 [cols="30s,70d"]
 |===
@@ -192,7 +192,7 @@
 | Status | Valgfri
 |===
 
-=== Kontaktpunkt [[klasse-kontaktpunkt]]
+=== Kontaktpunkt (vcard:Kind) [[klasse-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
@@ -202,7 +202,7 @@
 | Status | Valgfri
 |===
 
-=== Lokasjon [[klasse-lokasjon]]
+=== Lokasjon (dct:Location) [[klasse-lokasjon]]
 
 [cols="30s,70d"]
 |===
@@ -212,7 +212,7 @@
 | Status | Valgfri
 |===
 
-=== Medietype [[klasse-medietype]]
+=== Medietype (dct:MediaType) [[klasse-medietype]]
 
 [cols="30s,70d"]
 |===
@@ -222,7 +222,7 @@
 | Status | Valgfri
 |===
 
-=== Proveniensbeskrivelse [[klasse-proveniensbeskrivelse]]
+=== Proveniensbeskrivelse (dct:ProvenanceStatement) [[klasse-proveniensbeskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -233,7 +233,7 @@
 |===
 
 
-=== Relasjon [[klasse-relasjon]]
+=== Relasjon (dcat:Relationship) [[klasse-relasjon]]
 
 [cols="30s,70d"]
 |===
@@ -244,7 +244,7 @@
 |===
 
 
-=== Rettighetsutsagn [[klasse-rettighetsutsagn]]
+=== Rettighetsutsagn (dct:RightsStatement) [[klasse-rettighetsutsagn]]
 
 [cols="30s,70d"]
 |===
@@ -255,7 +255,7 @@
 |===
 
 
-=== Rolle [[klasse-rolle]]
+=== Rolle (dcat:Role) [[klasse-rolle]]
 
 [cols="30s,70d"]
 |===
@@ -267,7 +267,7 @@
 |===
 
 
-=== Sjekksum [[klasse-sjekksum]]
+=== Sjekksum (spdx:Checksum) [[klasse-sjekksum]]
 
 [cols="30s,70d"]
 |===
@@ -277,7 +277,7 @@
 | Status | Valgfri
 |===
 
-=== Språksystem [[klasse-spraksystem]]
+=== Språksystem (dct:LinguisticSystem) [[klasse-spraksystem]]
 
 [cols="30s,70d"]
 |===
@@ -287,7 +287,7 @@
 | Status | Valgfri
 |===
 
-=== Standard [[klasse-standard]]
+=== Standard (dct:Standard) [[klasse-standard]]
 
 [cols="30s,70d"]
 |===
@@ -297,7 +297,7 @@
 | Status | Valgfri
 |===
 
-=== Status [[klasse-status]]
+=== Status (skos:Concept) [[klasse-status]]
 
 [cols="30s,70d"]
 |===
@@ -309,7 +309,7 @@
 |===
 
 
-=== Tidsrom [[klasse-tidsom]]
+=== Tidsrom (dct:PeriodOfTime) [[klasse-tidsom]]
 
 [cols="30s,70d"]
 |===
@@ -319,7 +319,7 @@
 | Status | Valgfri
 |===
 
-=== Utgivertype [[klasse-utgivertype]]
+=== Utgivertype (skos:Concept) [[klasse-utgivertype]]
 
 [cols="30s,70d"]
 |===

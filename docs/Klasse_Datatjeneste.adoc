@@ -4,7 +4,7 @@ Klassen _Datatjeneste_ er valgfri.
 
 == Obligatoriske egenskaper for klassen _Datatjeneste_
 
-=== Datatjeneste: endepunktsURL [[datatjeneste-endepunktsurl]]
+=== Datatjeneste: endepunktsURL (dcat:endpointURL) [[datatjeneste-endepunktsurl]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Datatjeneste: identifikator [[datatjeneste-identifikator]]
+=== Datatjeneste: identifikator (dct:identifier) [[datatjeneste-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -28,7 +28,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status|Obligatorisk
 |===
 
-=== Datatjeneste: tittel [[datatjeneste-tittel]]
+=== Datatjeneste: tittel (dct:title) [[datatjeneste-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -43,7 +43,7 @@ Klassen _Datatjeneste_ er valgfri.
 
 == Anbefalte egenskaper for klassen _Datatjeneste_
 
-=== Datatjeneste: emneord [[datatjeneste-emneord]]
+=== Datatjeneste: emneord (dcat:keyword) [[datatjeneste-emneord]]
 
 [cols="30s,70d"]
 |===
@@ -55,7 +55,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: endepunktsbeskrivelse [[datatjeneste-endepunktsbeskrivelse]]
+=== Datatjeneste: endepunktsbeskrivelse (dcat:endpointDescription) [[datatjeneste-endepunktsbeskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -68,7 +68,7 @@ Klassen _Datatjeneste_ er valgfri.
 |===
 
 
-=== Datatjeneste: kontaktpunkt [[datatjeneste-kontaktpunkt]]
+=== Datatjeneste: kontaktpunkt (dcat:contactPoint) [[datatjeneste-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
@@ -80,7 +80,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: tema [[datatjeneste-tema]]
+=== Datatjeneste: tema (dcat:theme) [[datatjeneste-tema]]
 
 [cols="30s,70d"]
 |===
@@ -92,7 +92,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: tilgjengeliggjør datasett [[datatjeneste-tilgjengeliggjor-datasett]]
+=== Datatjeneste: tilgjengeliggjør datasett (dcat:servesDataset) [[datatjeneste-tilgjengeliggjor-datasett]]
 
 [cols="30s,70d"]
 |===
@@ -104,7 +104,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: utgiver [[datatjeneste-utgiver]]
+=== Datatjeneste: utgiver (dct:publisher) [[datatjeneste-utgiver]]
 
 [cols="30s,70d"]
 |===
@@ -119,7 +119,7 @@ Klassen _Datatjeneste_ er valgfri.
 
 == Valgfrie egenskaper for klassen _Datatjeneste_
 
-=== Datatjeneste: beskrivelse [[datatjeneste-beskrivelse]]
+=== Datatjeneste: beskrivelse (dct:description) [[datatjeneste-beskrivelse]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| description
@@ -130,7 +130,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: dokumentasjon [[datatjeneste-dokumentasjon]]
+=== Datatjeneste: dokumentasjon (foaf:page) [[datatjeneste-dokumentasjon]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| page (documentation)
@@ -141,7 +141,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: følger [[datatjeneste-følger]]
+=== Datatjeneste: følger (cpsv:follows) [[datatjeneste-følger]]
 [cols="30s,70d"]
 |===
 |Engelsk navn|follows
@@ -152,7 +152,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status|Valgfri
 |===
 
-=== Datatjeneste: i samsvar med [[datatjeneste-i-samsvar-med]]
+=== Datatjeneste: i samsvar med (dct:conformsTo) [[datatjeneste-i-samsvar-med]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| conforms to
@@ -163,7 +163,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: landingsside [[datatjeneste-landingsside]]
+=== Datatjeneste: landingsside (dcat:landingPage) [[datatjeneste-landingsside]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| landing page
@@ -174,7 +174,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: lisens [[datatjeneste-lisens]]
+=== Datatjeneste: lisens (dct:license) [[datatjeneste-lisens]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| licence
@@ -185,7 +185,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: tilgangsrettigheter [[datatjeneste-tilgangsrettigheter]]
+=== Datatjeneste: tilgangsrettigheter (dct:accessRights) [[datatjeneste-tilgangsrettigheter]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| access rights
@@ -196,7 +196,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: type [[datatjeneste-type]]
+=== Datatjeneste: type (dct:type) [[datatjeneste-type]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| type

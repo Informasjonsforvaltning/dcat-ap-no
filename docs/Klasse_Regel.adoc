@@ -4,7 +4,7 @@ Klassen _Regel_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Regel_
 
-=== Regel: beskrivelse [[regel-beskrivelse]]
+=== Regel: beskrivelse (dct:description) [[regel-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Regel_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Regel: identifikator [[regel-identifikator]]
+=== Regel: identifikator (dct:identifier) [[regel-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -28,7 +28,7 @@ Klassen _Regel_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Regel: tittel [[regel-tittel]]
+=== Regel: tittel (dct:title) [[regel-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -42,7 +42,7 @@ Klassen _Regel_ er anbefalt.
 
 == Anbefalte egenskaper for klassen _Regel_
 
-=== Regel: implementerer [[regel-implementerer]]
+=== Regel: implementerer (cpsv:implements) [[regel-implementerer]]
 
 [cols="30s,70d"]
 |===
@@ -54,7 +54,7 @@ Klassen _Regel_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Regel: språk [[regel-språk]]
+=== Regel: språk (dct:language) [[regel-språk]]
 
 [cols="30s,70d"]
 |===
@@ -68,7 +68,7 @@ Klassen _Regel_ er anbefalt.
 
 == Valgfrie egenskaper for klassen _Regel_
 
-=== Regel: type [[regel-type]]
+=== Regel: type (dct:type) [[regel-type]]
 
 [cols="30s,70d"]
 |===

@@ -4,7 +4,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Offentlig organisasjon_
 
-=== Offentlig organisasjon: dekningsområde [[offentlig-organisasjon-dekningsområde]]
+=== Offentlig organisasjon: dekningsområde (dct:spatial) [[offentlig-organisasjon-dekningsområde]]
 
 [cols="30s,70d"]
 |===
@@ -17,7 +17,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Kommentar|Verdien bør være URI fra https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu[Administrative Territorial Units - Named Authority List] forvaltet av EUs Publications Office.
 |===
 
-=== Offentlig organisasjon: foretrukket navn [[offentlig-organisasjon-foretrukket-navn]]
+=== Offentlig organisasjon: foretrukket navn (skos:prefLabel) [[offentlig-organisasjon-foretrukket-navn]]
 
 [cols="30s,70d"]
 |===
@@ -29,7 +29,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Offentlig organisasjon: identifikator [[offentlig-organisasjon-identifikator]]
+=== Offentlig organisasjon: identifikator (dct:identifier) [[offentlig-organisasjon-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -41,7 +41,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Offentlig organisasjon: navn [[offentlig-organisasjon-navn]]
+=== Offentlig organisasjon: navn (dct:title) [[offentlig-organisasjon-navn]]
 
 [cols="30s,70d"]
 |===
@@ -56,7 +56,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 
 == Anbefalte egenskaper for klassen _Offentlig organisasjon_
 
-=== Offentlig organisasjon: adresse [[offentlig-organisasjon-adresse]]
+=== Offentlig organisasjon: adresse (locn:address) [[offentlig-organisasjon-adresse]]
 
 [cols="30s,70d"]
 |===
@@ -68,7 +68,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Offentlig organisasjon: hjemmeside [[offentlig-organisasjon-hjemmeside]]
+=== Offentlig organisasjon: hjemmeside (foaf:homepage) [[offentlig-organisasjon-hjemmeside]]
 
 [cols="30s,70d"]
 |===
@@ -80,7 +80,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Offentlig organisasjon: klassifisering [[offentlig-organisasjon-klassifisering]]
+=== Offentlig organisasjon: klassifisering (org:classification) [[offentlig-organisasjon-klassifisering]]
 
 [cols="30s,70d"]
 |===
