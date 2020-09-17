@@ -45,6 +45,8 @@ include::06_Oversikt_over_klasser.adoc[]
 
 :leveloffset: +1
 
+include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
+
 include::Klasse_Aktor.adoc[]
 
 include::Klasse_Datasett.adoc[]

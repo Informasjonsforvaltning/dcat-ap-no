@@ -14,7 +14,6 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Beskrivelse|Brukes til å referere til et geografisk eller administrativt område dekket av organisasjonen.
 |Multiplisitet|1..n
 |Status|Obligatorisk
-|Kommentar|Verdien bør være URI fra https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu[Administrative Territorial Units - Named Authority List] forvaltet av EUs Publications Office.
 |===
 
 === Offentlig organisasjon: foretrukket navn (skos:prefLabel) [[offentlig-organisasjon-foretrukket-navn]]

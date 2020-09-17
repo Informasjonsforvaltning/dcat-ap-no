@@ -36,7 +36,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| theme
 |URI| dcat:theme
 |Range| skos:Concept
-|Beskrivelse| Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet http://publications.europa.eu/resource/authority/data-theme[Data theme] som er publisert av EUs Publications Office er påkrevd. Bruk av http://psi.norge.no/los/struktur.html[Digitaliseringsdirektoratets Los-vokabular] er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller <<krav-til-kontrollerte-vokabularer, denne standardens krav til kontrollerte vokabularer>>.
+|Beskrivelse| Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
@@ -352,7 +352,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Engelsk navn| accrual periodicity
 |URI| dct:accrualPeriodicity
 |Range| dct:Frequency
-|Beskrivelse| Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra http://publications.europa.eu/resource/authority/frequency[Frequency Name Authority List] som vedlikeholdes av EUs Publications Office.
+|Beskrivelse| Referanse til oppdateringsfrekvensen for datasettet.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===

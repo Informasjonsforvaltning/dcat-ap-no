@@ -97,7 +97,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| accrual periodicity
 |URI| dct:accrualPeriodicity
 |Range| dct:Frequency
-|Beskrivelse| Referanse (URI) til oppdateringsfrekvensen for datasettet.  Skal peke på begrep fra http://publications.europa.eu/resource/authority/frequency[Frequency Name Authority List] som vedlikeholdes av EUs Publications Office.
+|Beskrivelse| Referanse til oppdateringsfrekvensen for datasettet.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===

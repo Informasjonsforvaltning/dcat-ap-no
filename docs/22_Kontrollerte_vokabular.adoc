@@ -18,7 +18,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,
 
 Disse kriteriene er ikke tenkt å definere et sett med krav til kontrollerte vokabularer generelt; de er kun ment brukt for utvelgelse av de kontrollerte vokabularene som er anbefalt for denne standarden
 
-== Kontrollerte vokabularer som skal brukes [[kontrollerte-vokabularer-som-skal-brukes]]
+== Kontrollerte vokabularer som skal brukes [[Kontrollerte_vokabularer_som_skal_brukes]]
 
 Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= obligatorisk) for egenskapene i listen, dette for å sikre et minimum av samhandlingsevne.
 
@@ -213,7 +213,7 @@ http://publications.europa.eu/resource/authority/datatheme[http://publications.e
 |Status|Obligatorisk
 |===
 
-== Kontrollerte vokabularer som bør og kan brukes
+== Kontrollerte vokabularer som bør og kan brukes [[Kontrollerte_vokabularer_som_bør_og_kan_brukes]]
 
 I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene. Eksempler her er komplett sett med begreper i Los, EuroVoc, CERIFs standardvokabular, Deweys desimalklassifikasjon og en rekke andre vokabular.
 
