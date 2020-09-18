@@ -263,8 +263,6 @@ I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordr
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/dataset-type[http://publications.europa.eu/resource/dataset/dataset-type]
 |Status|Anbefalt
 |Kommentar|Norsk utvidelse.
-
-Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type[listen over datasett typer]. EUs Publications Office svarte med at de foreslåtte typene vil bli tatt med i neste versjon av datasett-typer som kommer rundt 25. juni 2020. Inntil videre brukes `dcatno:testDataset` og `dcatno:syntheticDataset` som er `skos:Concept`
 |===
 
 [cols="30s,70d"]
