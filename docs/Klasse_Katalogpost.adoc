@@ -4,7 +4,7 @@ Klassen _Katalogpost_ er valgfri.
 
 == Obligatoriske egenskaper for klassen _Katalogpost_
 
-=== Katalogpost: endringsdato [[katalogpost-endringsdato]]
+=== Katalogpost: endringsdato (dct:modified) [[katalogpost-endringsdato]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Katalogpost: primærtema [[katalogpost-primartema]]
+=== Katalogpost: primærtema (foaf:primaryTopic) [[katalogpost-primartema]]
 
 [cols="30s,70d"]
 |===
@@ -30,7 +30,7 @@ Klassen _Katalogpost_ er valgfri.
 
 == Anbefalte egenskaper for klassen _Katalogpost_
 
-=== Katalogpost: i samsvar med [[katalogpost-i-samsvar-med]]
+=== Katalogpost: i samsvar med (dct:conformsTo) [[katalogpost-i-samsvar-med]]
 
 [cols="30s,70d"]
 |===
@@ -42,7 +42,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Katalogpost: status [[katalogpost-status]]
+=== Katalogpost: status (adms:status) [[katalogpost-status]]
 
 [cols="30s,70d"]
 |===
@@ -54,7 +54,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Katalogpost: utlistingsdato [[katalogpost-utlistingsdato]]
+=== Katalogpost: utlistingsdato (dct:issued) [[katalogpost-utlistingsdato]]
 
 [cols="30s,70d"]
 |===
@@ -68,7 +68,7 @@ Klassen _Katalogpost_ er valgfri.
 
 == Valgfrie egenskaper for klassen _Katalogpost_
 
-=== Katalogpost: beskrivelse [[katalogpost-beskrivelse]]
+=== Katalogpost: beskrivelse (dct:description) [[katalogpost-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -80,7 +80,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Katalogpost: kilde [[katalogpost-kilde]]
+=== Katalogpost: kilde (dct:source) [[katalogpost-kilde]]
 
 [cols="30s,70d"]
 |===
@@ -92,7 +92,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Katalogpost: språk [[katalogpost-sprak]]
+=== Katalogpost: språk (dct:language) [[katalogpost-sprak]]
 
 [cols="30s,70d"]
 |===
@@ -104,7 +104,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Katalogpost: tittel [[katalogpost-tittel]]
+=== Katalogpost: tittel (dct:title) [[katalogpost-tittel]]
 
 [cols="30s,70d"]
 |===

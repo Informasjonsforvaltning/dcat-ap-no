@@ -1,0 +1,49 @@
+= Standard [[Standard]]
+
+Klassen _Standard_ er valgfri.
+
+== Obligatoriske egenskaper for klassen _Standard_ [[Standard_obligatoriske_egenskaper]]
+
+=== Standard: har tittel (dct:title) [[Standard_harTittel]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| has title
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Brukes til å referere til tittelen til standarden/spesifikasjonen.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|Kommentar|Norsk utvidelse. For å kunne ha tittel til standard/spesifikasjon.
+Egenskapen kan gjentas for hvert språk tittelen finnes i.
+|===
+
+== Anbefalte egenskaper for klassen _Standard_ [[Standard_anbefalte_egenskaper]]
+
+=== Standard: har referanse (rdfs:seeAlso)  [[Standard_harReferanse]]
+
+[cols="30s,70"]
+|===
+|Engelsk navn|has reference
+|URI|rdfs:seeAlso
+|Range|rdfs:Resource
+|Beskrivelse|Brukes til å referere til en referanse til standarden/spesifikasjonen.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|Kommentar|Norsk utvidelse. For å kunne ha referanse til standard/spesifikasjon.
+|===
+
+== Valgfrie egenskaper for klassen _Standard_ [[Standard_valgfrie_egenskaper]]
+
+=== Standard: har versjonsnummer (owl:versionInfo)  [[Standard_harVersjonsnr]]
+
+[cols="30s,70"]
+|===
+|Engelsk navn|has version number
+|URI| owl:versionInfo
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å referere til versjonsnummer.
+|Multiplisitet|0..1
+|Status|Valgfri
+|Kommentar|Norsk utvidelse. For å kunne refefere til versjonsnummer.
+|===

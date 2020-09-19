@@ -4,7 +4,7 @@ Klassen _Relasjon_ er valgfri.
 
 == Obligatoriske egenskaper for klassen _Relasjon_
 
-=== Relasjon: relasjon [[relasjon-relasjon]]
+=== Relasjon: relasjon (dct:relation) [[relasjon-relasjon]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Relasjon_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Relasjon: rolle [[relasjon-rolle]]
+=== Relasjon: rolle (dcat:hadRole) [[relasjon-rolle]]
 
 [cols="30s,70d"]
 |===

@@ -1,362 +1,330 @@
-= Klasser i standarden
+= Klasser i standarden [[Klasser_i_standarden]]
 
-== Obligatoriske klasser
+== Obligatoriske klasser [[Obligatoriske_klasser]]
 
-=== Aktør [[klasse-aktor]]
+=== Aktør (foaf:Agent) [[klasse-aktor]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Agent
-| Beskrivelse | Brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. Dersom aktøren er en organisasjon er det anbefalt å bruke «Organization Ontology».
-| URI | foaf:Agent
-| Referanse | http://xmlns.com/foaf/spec/#term_Agent , http://www.w3.org/TR/vocab-org/
+| Beskrivelse | Brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. Dersom aktøren er en organisasjon er det anbefalt å bruke http://www.w3.org/TR/vocab-org/[Organization Ontology].
+| URI | http://xmlns.com/foaf/spec/#term_Agent[foaf:Agent]
 | Status | Obligatorisk
 |===
 
-=== Katalog [[klasse-katalog]]
+=== Katalog (dcat:Catalog) [[klasse-katalog]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Catalogue
 | Beskrivelse | Brukes til å representere en katalog eller repository som inneholder beskrivelser av ressurser som f.eks. datasett og datatjenester.
-| URI | dcat:Catalog
-| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Catalog
+| URI | https://www.w3.org/TR/vocab-dcat/#Class:Catalog[dcat:Catalog]
 | Status | Obligatorisk
 |Kommentar| "Registry catalogue" er det engelske navnet til denne klassen i BRegDCAT-AP.
 |===
 
-=== Katalogisert ressurs [[klasse-katalogisert-ressurs]]
+=== Katalogisert ressurs (dcat:Resource) [[klasse-katalogisert-ressurs]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Catalogued resource
 | Beskrivelse | Brukes til å representere en ressurs som er beskrevet i en katalog.
-| URI | dcat:Resource
-| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Resource
+| URI | https://www.w3.org/TR/vocab-dcat/#Class:Resource[dcat:Resource]
 | Status | Obligatorisk
 |===
 
-=== Literal [[klasse-literal]]
+=== Literal (rdfs:Literal) [[klasse-literal]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Literal
 | Beskrivelse | Brukes til å representere en literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som inneholder maskinlesbar tekst har en valgfri språk-tag, definert av BCP47 (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk).
-| URI | rdfs:Literal
-| Referanse | https://www.w3.org/TR/rdf-concepts/#section-Literals
+| URI | https://www.w3.org/TR/rdf-concepts/#section-Literals[rdfs:Literal]
 | Status | Obligatorisk
 |===
 
-=== Tema [[klasse-tema]]
+=== Tema (skos:Concept) [[klasse-tema]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Theme
 | Beskrivelse | Brukes til å representere et tema/temaområde for en ressurs beskrevet i en katalog.
-| URI | skos:Concept
-| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Concept
+| URI | https://www.w3.org/TR/vocab-dcat/#Class:Concept[skos:Concept]
 | Status | Obligatorisk
 |Kommentar | Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
 |===
 
-=== Tematisk skjema [[klasse-tematisk-skjema]]
+=== Tematisk skjema (skos:ConceptScheme) [[klasse-tematisk-skjema]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Thematic scheme
 | Beskrivelse | Brukes til å representere en taksonomi eller en annen type kontrollert vokabular hvor emnet er definert.
-| URI | skos:ConceptScheme
-| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme
+| URI | https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme[skos:ConceptScheme]
 | Status | Obligatorisk
 | Kommentar| Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
 |===
 
-== Anbefalte klasser
+== Anbefalte klasser [[Anbefalte_klasser]]
 
-=== Datasett [[klasse-datasett]]
+=== Datasett (dcat:Dataset) [[klasse-datasett]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn | Dataset
 |Beskrivelse | Brukes til å representere en konseptuell enhet som representerer informasjonen som publiseres.
-|URI | dcat:Dataset
-|Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Dataset
+|URI | https://www.w3.org/TR/vocab-dcat/#Class:Dataset[dcat:Dataset]
 | Status | Anbefalt
 |===
 
-=== Distribusjon [[klasse-distribusjon]]
+=== Distribusjon (dcat:Distribution) [[klasse-distribusjon]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Distribution
 | Beskrivelse | Brukes til å representere en fysisk utførelse av datasettet i et bestemt format.
-| URI | dcat:Distribution
-| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Distribution
+| URI | https://www.w3.org/TR/vocab-dcat/#Class:Distribution[dcat:Distribution]
 | Status | Anbefalt
 |===
 
-=== Lisensdokument [[klasse-lisensdokument]]
+=== Lisensdokument (dct:LicenseDocument) [[klasse-lisensdokument]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | License document
 | Beskrivelse | Brukes til å representere et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.
-| URI | dct:LicenseDocument
-| Referanse | http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/#terms-LicenseDocument[dct:LicenseDocument]
 | Status | Anbefalt
 |===
 
-=== Offentlig organisasjon [[klasse-offentlig-organisasjon]]
+=== Offentlig organisasjon (cv:PublicOrganization) [[klasse-offentlig-organisasjon]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Public organisation
 | Beskrivelse | Brukes til å representere en aktør som er ansvarlig for å yte en offentlig tjeneste.
-| URI | cv:PublicOrganization
-| Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
-http://www.w3.org/TR/vocab-org/; https://www.w3.org/TR/vocab-org/
+| URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cv:PublicOrganization]
 | Status | Anbefalt
 |===
 
-=== Offentlig tjeneste [[klasse-offentlig-tjeneste]]
+=== Offentlig tjeneste (cpsv:PublicService) [[klasse-offentlig-tjeneste]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Public service
 | Beskrivelse | Brukes til å representere en offentlig tjeneste, bl.a. tjeneste som skaper og/eller forvalter grunndataregistre/basisregistre eller oversikter over registre (såkalt «register over register»).
-| URI | cpsv:PublicService
-| Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
+| URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cpsv:PublicService]
 | Status | Anbefalt
 |Kommentar| "Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.
 |Eksempel| Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.
 |===
 
-=== Regel [[klasse-regel]]
+=== Regel (cpsv:Rule) [[klasse-regel]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Rule
 | Beskrivelse | Brukes til å representere regler/dokumenter som setter spesifikke retningslinjer eller prosedyrer som skal følges av en offentlig tjeneste, en datatjeneste, et datasett osv. Det kan inkludere krav til informasjon som forvaltes og tjenester som tilbys.
-| URI | cpsv:Rule
-| Referanse | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary
+| URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cpsv:Rule]
 | Status | Anbefalt
 |===
 
-=== Regulativ ressurs [[klasse-regulativ-ressurs]]
+=== Regulativ ressurs (eli:LegalResource) [[klasse-regulativ-ressurs]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Legal resource
 | Beskrivelse | Brukes til å representere regelverk, policy, retningslinjer og ulike reguleringer som regulerer forvaltningen av en datatjeneste, et datasett eller en offentlig tjeneste.
-| URI | eli:LegalResource
-| Referanse | https://publications.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1
+| URI | https://publications.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1[eli:LegalResource]
 | Status | Anbefalt
 |===
 
 
-== Valgfrie klasser
+== Valgfrie klasser [[Valgfrie_klasser]]
 
-=== Datatjeneste [[klasse-datatjeneste]]
+=== Datatjeneste (dcat:DataService) [[klasse-datatjeneste]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Data service
 | Beskrivelse | Brukes til å representere en samling av operasjoner som gir tilgang til ett eller flere datasett eller databehandlingsfunksjoner.
-| URI | dcat:DataService
-| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Data_Service
+| URI | https://www.w3.org/TR/vocab-dcat/#Class:Data_Service[dcat:DataService]
 | Status | Valgfri
 |===
 
-=== Dokument  [[klasse-dokument]]
+=== Dokument (foaf:Document) [[klasse-dokument]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Document
 | Beskrivelse | Brukes til å representere en tekstlig ressurs som inneholder informasjon beregnet på mennesker. For eksempel en nettside om et datasett.
-| URI | foaf:Document
-| Referanse | http://xmlns.com/foaf/spec/#term_Document
+| URI | http://xmlns.com/foaf/spec/#term_Document[foaf:Document]
 | Status | Valgfri
 |===
 
-=== Frekvens [[klasse-frekvens]]
+=== Frekvens (dct:Frequency) [[klasse-frekvens]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Frequency
 | Beskrivelse | Brukes til å beskrive hvor ofte noe skjer, for eksempel publisering av et datasett.
-| URI | dct:Frequency
-| Referanse | http://dublincore.org/documents/dcmi-terms/#terms-Frequency
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Frequency[dct:Frequency]
 | Status | Valgfri
 |===
 
-=== Identifikator [[klasse-identifikator]]
+=== Identifikator (adms:Identifier) [[klasse-identifikator]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Identifier
 | Beskrivelse | Brukes til å representere en identifikator i en bestemt kontekst, bestående av strengen som er identifikatoren; en valgfri identifikator for identifikatorsystemet; en valgfri identifikator for versjonen av identifikatorsystemet; en valgfri identifikator for etaten som administrerer identifikatorsystemet.
-| URI | adms:Identifier
-| Referanse | http://www.w3.org/TR/vocab-adms/#identifier
+| URI | http://www.w3.org/TR/vocab-adms/#identifier[adms:Identifier]
 | Status | Valgfri
 |===
 
-=== Katalogpost [[klasse-katalogpost]]
+=== Katalogpost (dcat:CatalogRecord) [[klasse-katalogpost]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Catalogue record
 | Beskrivelse | Brukes til å representere en beskrivelse av en oppføring av en ressurs i katalogen.
-| URI | dcat:CatalogRecord
-| Referanse | https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record
+| URI | https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record[dcat:CatalogRecord]
 | Status | Valgfri
 |===
 
-=== Kontaktpunkt [[klasse-kontaktpunkt]]
+=== Kontaktpunkt (vcard:Kind) [[klasse-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Kind
 | Beskrivelse | Brukes til å representere en beskrivelse av et kontaktpunkt i henhold til vCard-spesifikasjonen. Her kan man for eksempel oppgi telefonnr og/eller epost. Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.
-| URI | vcard:Kind
-| Referanse | http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181
+| URI | https://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e1819[vcard:Kind]
 | Status | Valgfri
 |===
 
-=== Lokasjon [[klasse-lokasjon]]
+=== Lokasjon (dct:Location) [[klasse-lokasjon]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Location
 | Beskrivelse | Brukes til å representere en region eller et navngitt sted. Det kan representeres ved hjelp av et kontrollert vokabular eller med geografiske koordinater.
-| URI | dct:Location
-| Referanse | http://dublincore.org/documents/dcmi-terms/#terms-Location
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Location[dct:Location]
 | Status | Valgfri
 |===
 
-=== Medietype [[klasse-medietype]]
+=== Medietype (dct:MediaType) [[klasse-medietype]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Media type
 | Beskrivelse | Brukes til å representere en medietype, for eksempel formatet til en datafil.
-| URI | dct:MediaType
-| Referanse | http://purl.org/dc/terms/MediaType
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/MediaType[dct:MediaType]
 | Status | Valgfri
 |===
 
-=== Proveniensbeskrivelse [[klasse-proveniensbeskrivelse]]
+=== Proveniensbeskrivelse (dct:ProvenanceStatement) [[klasse-proveniensbeskrivelse]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Provenance Statement
 | Beskrivelse | Brukes til å representere en beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.
-| URI | dct:ProvenanceStatement
-| Referanse | http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/ProvenanceStatement[dct:ProvenanceStatement]
 | Status | Valgfri
 |===
 
 
-=== Relasjon [[klasse-relasjon]]
+=== Relasjon (dcat:Relationship) [[klasse-relasjon]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Relationship
 | Beskrivelse | Brukes til å knytte tilleggsinformasjon til en relasjon mellom ressurser.
-| URI | dcat:Relationship
-| Referanse | https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship
+| URI | https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship[dcat:Relationship]
 | Status | Valgfri
 |===
 
 
-=== Rettighetsutsagn [[klasse-rettighetsutsagn]]
+=== Rettighetsutsagn (dct:RightsStatement) [[klasse-rettighetsutsagn]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Rights statement
 | Beskrivelse | Brukes til å representere et utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
-| URI | dct:RightsStatement
-| Referanse | http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/RightsStatement[dct:RightsStatement]
 | Status | Valgfri
 |===
 
 
-=== Rolle [[klasse-rolle]]
+=== Rolle (dcat:Role) [[klasse-rolle]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Role
 | Beskrivelse | Brukes til å representere funksjonen til en ressurs eller aktør i relasjon til en annen ressurs.
-| URI | dcat:Role
+| URI | https://www.w3.org/TR/vocab-dcat-2/#Class:Role[dcat:Role]
 |Subklasse av|skos:Concept
-| Referanse | https://www.w3.org/TR/vocab-dcat-2/#Class:Role
 | Status | Valgfri
 |===
 
 
-=== Sjekksum [[klasse-sjekksum]]
+=== Sjekksum (spdx:Checksum) [[klasse-sjekksum]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Checksum
 | Beskrivelse | Brukes til å representere en beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
-| URI | spdx:Checksum
-| Referanse | http://spdx.org/rdf/terms#Checksum
+| URI | https://spdx.org/rdf/terms/#d4e1930[spdx:Checksum]
 | Status | Valgfri
 |===
 
-=== Språksystem [[klasse-spraksystem]]
+=== Språksystem (dct:LinguisticSystem) [[klasse-spraksystem]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Linguistic system
 | Beskrivelse | Brukes til å representere et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk.
-| URI | dct:LinguisticSystem
-| Referanse | http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/LinguisticSystem[dct:LinguisticSystem]
 | Status | Valgfri
 |===
 
-=== Standard [[klasse-standard]]
+=== Standard (dct:Standard) [[klasse-standard]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Standard
 | Beskrivelse | Brukes til å representere en standard eller annen spesifikasjon som en ressurs er i samsvar med.
-| URI | dct:Standard
-| Referanse | http://dublincore.org/documents/dcmi-terms/#terms-Standard
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Standard[dct:Standard]
 | Status | Valgfri
 |===
 
-=== Status [[klasse-status]]
+=== Status (skos:Concept) [[klasse-status]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Status
 | Beskrivelse | Brukes til å indikere status på en distribusjon eller
  en katalogpost i katalogen.
-| URI | skos:Concept
-| Referanse | http://www.w3.org/TR/vocab-adms/#status
+| URI | http://www.w3.org/TR/vocab-adms/#status[skos:Concept]
 | Status | Valgfri
 |===
 
 
-=== Tidsrom [[klasse-tidsom]]
+=== Tidsrom (dct:PeriodOfTime) [[klasse-tidsom]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Period of time
 | Beskrivelse | Brukes til å representere et tidsintervall som er navngitt eller definert av en start- og sluttdato.
-| URI | dct:PeriodOfTime
-| Referanse | http://dublincore.org/documents/dcmi-terms/#terms-PeriodOfTime
+| URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/PeriodOfTime[dct:PeriodOfTime]
 | Status | Valgfri
 |===
 
-=== Utgivertype [[klasse-utgivertype]]
+=== Utgivertype (skos:Concept) [[klasse-utgivertype]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Publisher type
 | Beskrivelse | Brukes til å representere type organisasjon som fungerer som en utgiver av en ressurs i en katalog eller av en katalog.
-| URI | skos:Concept
-| Referanse | http://www.w3.org/TR/vocab-adms/#dcterms-type
+| URI | http://www.w3.org/TR/vocab-adms/#dcterms-type[skos:Concept]
 | Status | Valgfri
 |===

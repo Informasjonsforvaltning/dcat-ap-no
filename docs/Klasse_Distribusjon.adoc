@@ -4,7 +4,7 @@ Klassen _Distribusjon_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Distribusjon_
 
-=== Distribusjon: format [[distribusjon-format]]
+=== Distribusjon: format (dct:format) [[distribusjon-format]]
 
 [cols="30s,70d"]
 |===
@@ -17,7 +17,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <<distribusjon-medietype>> (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..*1* til 1..*n* (allerede i DCAT-AP-NO v.1.1).
 |===
 
-=== Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
+=== Distribusjon: tilgangsURL (dcat:accessURL) [[distribusjon-tilgangsurl]]
 
 [cols="30s,70d"]
 |===
@@ -32,7 +32,7 @@ Klassen _Distribusjon_ er anbefalt.
 
 == Anbefalte egenskaper for klassen _Distribusjon_
 
-=== Distribusjon: beskrivelse [[distribusjon-beskrivelse]]
+=== Distribusjon: beskrivelse (dct:description) [[distribusjon-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -44,7 +44,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Anbefalt
 |===
 
-=== Distribusjon: lisens [[distribusjon-lisens]]
+=== Distribusjon: lisens (dct:license) [[distribusjon-lisens]]
 
 [cols="30s,70d"]
 |===
@@ -56,7 +56,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Anbefalt
 |===
 
-=== Distribusjon: tilgjengelighet [[distribusjon-tilgjengelighet]]
+=== Distribusjon: tilgjengelighet (dcatap:availability) [[distribusjon-tilgjengelighet]]
 
 [cols="30s,70d"]
 |===
@@ -71,11 +71,11 @@ Klassen _Distribusjon_ er anbefalt.
 
 == Valgfrie egenskaper for klassen _Distribusjon_
 
-=== Distribusjon: dokumentasjon [[distribusjon-dokumentasjon]]
+=== Distribusjon: dokumentasjon (foaf:page) [[distribusjon-dokumentasjon]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| page (documentation)
+|Engelsk navn| page (foaf:page) (documentation)
 |URI| foaf:page
 |Range| foaf:Document
 |Beskrivelse| Referanse til en side eller et dokument som beskriver distribusjonen.
@@ -83,7 +83,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: endringsdato [[distribusjon-endringsdato]]
+=== Distribusjon: endringsdato (dct:modified) [[distribusjon-endringsdato]]
 
 [cols="30s,70d"]
 |===
@@ -95,7 +95,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: filstørrelse [[distribusjon-filstorrelse]]
+=== Distribusjon: filstørrelse (dcat:byteSize) [[distribusjon-filstorrelse]]
 
 [cols="30s,70d"]
 |===
@@ -107,7 +107,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: geografisk oppløsning [[geografisk-opplosning]]
+=== Distribusjon: geografisk oppløsning (dcat:spatialResolutionInMeters) [[geografisk-opplosning]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| spatial resolution
@@ -118,7 +118,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: i samsvar med [[distribusjon-i-samsvar-med]]
+=== Distribusjon: i samsvar med (dct:conformsTo) [[distribusjon-i-samsvar-med]]
 
 [cols="30s,70d"]
 |===
@@ -130,7 +130,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: komprimeringsformat [[distribusjon-komprimeringsformat]]
+=== Distribusjon: komprimeringsformat (dcat:compressFormat) [[distribusjon-komprimeringsformat]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| compression format
@@ -141,7 +141,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: medietype [[distribusjon-medietype]]
+=== Distribusjon: medietype (dcat:mediaType) [[distribusjon-medietype]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| media type
@@ -152,7 +152,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: nedlastningslenke [[distribusjon-nedlastningslenke]]
+=== Distribusjon: nedlastningslenke (dcat:downloadURL) [[distribusjon-nedlastningslenke]]
 
 [cols="30s,70d"]
 |===
@@ -164,7 +164,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: pakkeformat [[distribusjon-pakkeformat]]
+=== Distribusjon: pakkeformat (dcat:packageFormat) [[distribusjon-pakkeformat]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| packaging format
@@ -175,7 +175,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: policy [[distribusjon-policy]]
+=== Distribusjon: policy (odrl:hasPolicy) [[distribusjon-policy]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| has policy
@@ -186,7 +186,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: rettigheter [[distribusjon-rettigheter]]
+=== Distribusjon: rettigheter (dct:rights) [[distribusjon-rettigheter]]
 
 [cols="30s,70d"]
 |===
@@ -198,7 +198,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: sjekksum [[distribusjon-sjekksum]]
+=== Distribusjon: sjekksum (spdx:checksum) [[distribusjon-sjekksum]]
 
 [cols="30s,70d"]
 |===
@@ -210,7 +210,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: språk [[distribusjon-sprak]]
+=== Distribusjon: språk (dct:language) [[distribusjon-sprak]]
 
 [cols="30s,70d"]
 |===
@@ -222,7 +222,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: status [[distribusjon-status]]
+=== Distribusjon: status (adms:status) [[distribusjon-status]]
 
 [cols="30s,70d"]
 |===
@@ -234,7 +234,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: tidsromsoppløsning
+=== Distribusjon: tidsromsoppløsning (dcat:temporalResolution [[distribusjon_tidsromsoppløsning]])
 
 [cols="30s,70d"]
 |===
@@ -246,7 +246,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: tilgangstjeneste [[distribusjon-tilganstjeneste]]
+=== Distribusjon: tilgangstjeneste (dcat:accessService) [[distribusjon-tilganstjeneste]]
 
 [cols="30s,70d"]
 |===
@@ -258,7 +258,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: tittel [[distribusjon-tittel]]
+=== Distribusjon: tittel (dct:title) [[distribusjon-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -270,7 +270,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
+=== Distribusjon: utgivelsesdato (dct:issued) [[distribusjon-utgivelsesdato]]
 
 [cols="30s,70d"]
 |===

@@ -5,7 +5,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 
 == Obligatoriske egenskaper for klassen _Aktør_
 
-=== Aktør: navn [[aktor-navn]]
+=== Aktør: navn (foaf:name) [[aktor-navn]]
 
 [cols="30s,70d"]
 |===
@@ -19,7 +19,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 
 == Anbefalte egenskaper for klassen _Aktør_
 
-=== Aktør: organisasjonsidentifikator [[aktor-organisasjonsidentifikator]]
+=== Aktør: organisasjonsidentifikator (dct:identifier) [[aktor-organisasjonsidentifikator]]
 
 [cols="30s,70d"]
 |===
@@ -31,7 +31,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 |Status| Anbefalt
 |===
 
-=== Aktør: utgivertype [[aktor-utgivertype]]
+=== Aktør: utgivertype (dct:type) [[aktor-utgivertype]]
 
 [cols="30s,70d"]
 |===

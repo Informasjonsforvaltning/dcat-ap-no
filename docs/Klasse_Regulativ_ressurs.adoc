@@ -4,7 +4,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Regulativ ressurs_
 
-===  Regulativ ressurs: type [[regulativ-ressurs-type]]
+===  Regulativ ressurs: type (dct:type) [[regulativ-ressurs-type]]
 
 [cols="30s,70d"]
 |===
@@ -19,7 +19,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 
 == Anbefalte egenskaper for klassen _Regulativ ressurs_
 
-===  Regulativ ressurs: beskrivelse [[regulativ-ressurs-beskrivelse]]
+===  Regulativ ressurs: beskrivelse (dct:description) [[regulativ-ressurs-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -31,7 +31,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Regulativ ressurs: identifikator [[regulativ-ressurs-identifikator]]
+=== Regulativ ressurs: identifikator (dct:identifier) [[regulativ-ressurs-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -43,7 +43,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Regulativ ressurs: referanse [[regulativ-ressurs-referanse]]
+=== Regulativ ressurs: referanse (rdfs:seeAlso) [[regulativ-ressurs-referanse]]
 
 [cols="30s,70d"]
 |===
@@ -58,7 +58,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 
 == Valgfrie egenskaper for klassen _Regulativ ressurs_
 
-===  Regulativ ressurs: relatert regulativ ressurs [[regulativ-ressurs-relatert-regulativ-ressurs]]
+===  Regulativ ressurs: relatert regulativ ressurs (dct:relation) [[regulativ-ressurs-relatert-regulativ-ressurs]]
 
 [cols="30s,70d"]
 |===

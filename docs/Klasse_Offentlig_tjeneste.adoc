@@ -4,7 +4,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Offentlig tjeneste_
 
-=== Offentlig tjeneste: beskrivelse [[offentlig-tjeneste-beskrivelse]]
+=== Offentlig tjeneste: beskrivelse (dct:description) [[offentlig-tjeneste-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Offentlig tjeneste: har kompetent organ [[offentlig-tjeneste-har-kompetent-organ]]
+=== Offentlig tjeneste: har kompetent organ (cv:hasCompetentAuthority) [[offentlig-tjeneste-har-kompetent-organ]]
 
 [cols="30s,70d"]
 |===
@@ -29,7 +29,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Kommentar|Begrepet ‘competent authority’ er definert i Services Directive (2006/123/EC) som: “any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof”.
 |===
 
-=== Offentlig tjeneste: identifikator [[offentlig-tjeneste-identifikator]]
+=== Offentlig tjeneste: identifikator (dct:identifier) [[offentlig-tjeneste-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -41,7 +41,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Offentlig tjeneste: tittel [[offentlig-tjeneste-tittel]]
+=== Offentlig tjeneste: tittel (dct:title) [[offentlig-tjeneste-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -55,7 +55,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 
 == Anbefalte egenskaper for klassen _Offentlig tjeneste_
 
-=== Offentlig tjeneste: dekningsområde [[offentlig-tjeneste-dekningsområde]]
+=== Offentlig tjeneste: dekningsområde (dct:spatial) [[offentlig-tjeneste-dekningsområde]]
 
 [cols="30s,70d"]
 |===
@@ -67,7 +67,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Offentlig tjeneste: er del av [[offentlig-tjeneste-er-del-av]]
+=== Offentlig tjeneste: er del av (dct:isPartOf) [[offentlig-tjeneste-er-del-av]]
 
 [cols="30s,70d"]
 |===
@@ -80,7 +80,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Kommentar|
 |===
 
-=== Offentlig tjeneste: har del [[offentlig-tjeneste-har-del]]
+=== Offentlig tjeneste: har del (dct:hasPart) [[offentlig-tjeneste-har-del]]
 
 [cols="30s,70d"]
 |===
@@ -93,7 +93,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Kommentar|
 |===
 
-=== Offentlig tjeneste: hjemmeside [[offentlig-tjeneste-hjemmeside]]
+=== Offentlig tjeneste: hjemmeside (foaf:homepage) [[offentlig-tjeneste-hjemmeside]]
 
 [cols="30s,70d"]
 |===
@@ -105,7 +105,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Offentlig tjeneste: produserer (dataressurser) [[offentlig-tjeneste-produserer]]
+=== Offentlig tjeneste: produserer (dataressurser) (cpsv:produces) [[offentlig-tjeneste-produserer]]
 
 [cols="30s,70d"]
 |===
@@ -117,7 +117,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Offentlig tjeneste: status [[offentlig-tjeneste-status]]
+=== Offentlig tjeneste: status (adms:status) [[offentlig-tjeneste-status]]
 
 [cols="30s,70d"]
 |===
@@ -129,7 +129,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Offentlig tjeneste: temaområde [[offentlig-tjeneste-temaområde]]
+=== Offentlig tjeneste: temaområde (cv:thematicArea) [[offentlig-tjeneste-temaområde]]
 
 [cols="30s,70d"]
 |===
@@ -141,7 +141,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Offentlig tjeneste: type [[offentlig-tjeneste-type]]
+=== Offentlig tjeneste: type (dct:type) [[offentlig-tjeneste-type]]
 
 [cols="30s,70d"]
 |===
@@ -155,7 +155,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 
 == Valgfrie egenskaper for klassen _Offentlig tjeneste_
 
-=== Offentlig tjeneste: følger [[offentlig-tjeneste-følger]]
+=== Offentlig tjeneste: følger (cpsv:follows) [[offentlig-tjeneste-følger]]
 
 [cols="30s,70d"]
 |===
@@ -167,7 +167,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Status|Valgfri
 |===
 
-=== Offentlig tjeneste: har kontaktpunkt [[offentlig-tjeneste-har-kontaktpunkt]]
+=== Offentlig tjeneste: har kontaktpunkt (cv:hasContactPoint) [[offentlig-tjeneste-har-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
@@ -180,7 +180,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Kommentar|For å være kompatibel med CPSV-AP, har BRegDCAT-AP valgt en annen måte å representere kontaktpunkt på her i denne klassen, enn for f.eks. klassen Datasett (dcat:Dataset).
 |===
 
-=== Offentlig tjeneste: har regulativ ressurs [[offentlig-tjeneste-har-regulativ-ressurs]]
+=== Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResouce) [[offentlig-tjeneste-har-regulativ-ressurs]]
 
 [cols="30s,70d"]
 |===

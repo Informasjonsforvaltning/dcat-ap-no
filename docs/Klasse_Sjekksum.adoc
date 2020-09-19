@@ -4,19 +4,19 @@ Klassen _Sjekksum_ er valgfri.
 
 == Obligatoriske egenskaper for klassen _Sjekksum_
 
-=== Sjekksum: algoritme [[sjekksum-algoritme]]
+=== Sjekksum: algoritme (spdx:algorithm) [[sjekksum-algoritme]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| algorithm
-|URI| spdx:algorithm
+|URI|spdx:algorithm
 |Range| spdx:checksumAlgorithm_sha1
 |Beskrivelse| Identifiserer algoritmen som er brukt til å produsere sjekksum. For øyeblikket er SHA-1 den eneste algoritmen som er støttet. Det er forventet støtte for andre algoritmer på et senere tidspunkt.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
 |===
 
-=== Sjekksum: sjekksumverdi [[sjekksum-sjekksumverdi]]
+=== Sjekksum: sjekksumverdi (spdx:checksumValue) [[sjekksum-sjekksumverdi]]
 
 [cols="30s,70d"]
 |===

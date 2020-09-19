@@ -4,7 +4,7 @@ Klassen _Tematisk skjema_ er obligatorisk.
 
 == Obligatoriske egenskaper for klassen _Tematisk skjema_
 
-=== Tematisk skjema: tittel [[tematisk-skjema-tittel]]
+=== Tematisk skjema: tittel (dct:title) [[tematisk-skjema-tittel]]
 
 [cols="30s,70d"]
 |===
