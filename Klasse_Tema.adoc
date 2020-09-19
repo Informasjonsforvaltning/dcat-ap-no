@@ -4,7 +4,7 @@ Klassen _Tema_ er obligatorisk.
 
 == Obligatoriske egenskaper for klassen _Tema_
 
-=== Tema: foretrukket tittel [[tema-foretrukket-tittel]]
+=== Tema: foretrukket tittel (skos:prefLabel) [[tema-foretrukket-tittel]]
 
 [cols="30s,70d"]
 |===

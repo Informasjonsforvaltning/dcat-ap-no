@@ -4,7 +4,7 @@ Klassen _Identifikator_ er valgfri.
 
 == Obligatoriske egenskaper for klassen _Identifikator_
 
-=== Identifikator: notasjon [[identifikator-notasjon]]
+=== Identifikator: notasjon (skos:notation) [[identifikator-notasjon]]
 
 [cols="30s,70d"]
 |===

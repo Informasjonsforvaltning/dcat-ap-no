@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="generator" content="Asciidoctor 2.0.10">
-<meta name="author" content="Høringsutkast til Versjon 2.0">
+<meta name="author" content="Utkast til Versjon 2.0">
 <title>Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -464,7 +464,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="header">
 <h1>Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)</h1>
 <div class="details">
-<span id="author" class="author">Høringsutkast til Versjon 2.0</span><br>
+<span id="author" class="author">Utkast til Versjon 2.0</span><br>
 </div>
 <div id="toc" class="toc2">
 <div id="toctitle">Innholdsfortegnelse</div>
@@ -475,66 +475,67 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#om-kravene">Om kravene i denne standarden</a></li>
 <li><a href="#_urier_som_er_i_bruk">URIer som er i bruk</a></li>
 <li><a href="#_diagram">Diagram</a></li>
-<li><a href="#_klasser_i_standarden">Klasser i standarden</a>
+<li><a href="#Klasser_i_standarden">Klasser i standarden</a>
 <ul class="sectlevel2">
-<li><a href="#_obligatoriske_klasser">Obligatoriske klasser</a>
+<li><a href="#Obligatoriske_klasser">Obligatoriske klasser</a>
 <ul class="sectlevel3">
-<li><a href="#klasse-aktor">Aktør</a></li>
-<li><a href="#klasse-katalog">Katalog</a></li>
-<li><a href="#klasse-katalogisert-ressurs">Katalogisert ressurs</a></li>
-<li><a href="#klasse-literal">Literal</a></li>
-<li><a href="#klasse-tema">Tema</a></li>
-<li><a href="#klasse-tematisk-skjema">Tematisk skjema</a></li>
+<li><a href="#klasse-aktor">Aktør (foaf:Agent)</a></li>
+<li><a href="#klasse-katalog">Katalog (dcat:Catalog)</a></li>
+<li><a href="#klasse-katalogisert-ressurs">Katalogisert ressurs (dcat:Resource)</a></li>
+<li><a href="#klasse-literal">Literal (rdfs:Literal)</a></li>
+<li><a href="#klasse-tema">Tema (skos:Concept)</a></li>
+<li><a href="#klasse-tematisk-skjema">Tematisk skjema (skos:ConceptScheme)</a></li>
 </ul>
 </li>
-<li><a href="#_anbefalte_klasser">Anbefalte klasser</a>
+<li><a href="#Anbefalte_klasser">Anbefalte klasser</a>
 <ul class="sectlevel3">
-<li><a href="#klasse-datasett">Datasett</a></li>
-<li><a href="#klasse-distribusjon">Distribusjon</a></li>
-<li><a href="#klasse-lisensdokument">Lisensdokument</a></li>
-<li><a href="#klasse-offentlig-organisasjon">Offentlig organisasjon</a></li>
-<li><a href="#klasse-offentlig-tjeneste">Offentlig tjeneste</a></li>
-<li><a href="#klasse-regel">Regel</a></li>
-<li><a href="#klasse-regulativ-ressurs">Regulativ ressurs</a></li>
+<li><a href="#klasse-datasett">Datasett (dcat:Dataset)</a></li>
+<li><a href="#klasse-distribusjon">Distribusjon (dcat:Distribution)</a></li>
+<li><a href="#klasse-lisensdokument">Lisensdokument (dct:LicenseDocument)</a></li>
+<li><a href="#klasse-offentlig-organisasjon">Offentlig organisasjon (cv:PublicOrganization)</a></li>
+<li><a href="#klasse-offentlig-tjeneste">Offentlig tjeneste (cpsv:PublicService)</a></li>
+<li><a href="#klasse-regel">Regel (cpsv:Rule)</a></li>
+<li><a href="#klasse-regulativ-ressurs">Regulativ ressurs (eli:LegalResource)</a></li>
 </ul>
 </li>
-<li><a href="#_valgfrie_klasser">Valgfrie klasser</a>
+<li><a href="#Valgfrie_klasser">Valgfrie klasser</a>
 <ul class="sectlevel3">
-<li><a href="#klasse-datatjeneste">Datatjeneste</a></li>
-<li><a href="#klasse-dokument">Dokument </a></li>
-<li><a href="#klasse-frekvens">Frekvens</a></li>
-<li><a href="#klasse-identifikator">Identifikator</a></li>
-<li><a href="#klasse-katalogpost">Katalogpost</a></li>
-<li><a href="#klasse-kontaktpunkt">Kontaktpunkt</a></li>
-<li><a href="#klasse-lokasjon">Lokasjon</a></li>
-<li><a href="#klasse-medietype">Medietype</a></li>
-<li><a href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse</a></li>
-<li><a href="#klasse-relasjon">Relasjon</a></li>
-<li><a href="#klasse-rettighetsutsagn">Rettighetsutsagn</a></li>
-<li><a href="#klasse-rolle">Rolle</a></li>
-<li><a href="#klasse-sjekksum">Sjekksum</a></li>
-<li><a href="#klasse-spraksystem">Språksystem</a></li>
-<li><a href="#klasse-standard">Standard</a></li>
-<li><a href="#klasse-status">Status</a></li>
-<li><a href="#klasse-tidsom">Tidsrom</a></li>
-<li><a href="#klasse-utgivertype">Utgivertype</a></li>
+<li><a href="#klasse-datatjeneste">Datatjeneste (dcat:DataService)</a></li>
+<li><a href="#klasse-dokument">Dokument (foaf:Document)</a></li>
+<li><a href="#klasse-frekvens">Frekvens (dct:Frequency)</a></li>
+<li><a href="#klasse-identifikator">Identifikator (adms:Identifier)</a></li>
+<li><a href="#klasse-katalogpost">Katalogpost (dcat:CatalogRecord)</a></li>
+<li><a href="#klasse-kontaktpunkt">Kontaktpunkt (vcard:Kind)</a></li>
+<li><a href="#klasse-lokasjon">Lokasjon (dct:Location)</a></li>
+<li><a href="#klasse-medietype">Medietype (dct:MediaType)</a></li>
+<li><a href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse (dct:ProvenanceStatement)</a></li>
+<li><a href="#klasse-relasjon">Relasjon (dcat:Relationship)</a></li>
+<li><a href="#klasse-rettighetsutsagn">Rettighetsutsagn (dct:RightsStatement)</a></li>
+<li><a href="#klasse-rolle">Rolle (dcat:Role)</a></li>
+<li><a href="#klasse-sjekksum">Sjekksum (spdx:Checksum)</a></li>
+<li><a href="#klasse-spraksystem">Språksystem (dct:LinguisticSystem)</a></li>
+<li><a href="#klasse-standard">Standard (dct:Standard)</a></li>
+<li><a href="#klasse-status">Status (skos:Concept)</a></li>
+<li><a href="#klasse-tidsom">Tidsrom (dct:PeriodOfTime)</a></li>
+<li><a href="#klasse-utgivertype">Utgivertype (skos:Concept)</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li><a href="#_egenskaper_pr_klasse">Egenskaper pr. klasse</a>
 <ul class="sectlevel2">
+<li><a href="#_krav_om_å_bruke_kontrollerte_vokabularer">Krav om å bruke kontrollerte vokabularer</a></li>
 <li><a href="#aktør">Aktør</a>
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_aktør">Obligatoriske egenskaper for klassen <em>Aktør</em></a>
 <ul class="sectlevel4">
-<li><a href="#aktor-navn">Aktør: navn</a></li>
+<li><a href="#aktor-navn">Aktør: navn (foaf:name)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_aktør">Anbefalte egenskaper for klassen <em>Aktør</em></a>
 <ul class="sectlevel4">
-<li><a href="#aktor-organisasjonsidentifikator">Aktør: organisasjonsidentifikator</a></li>
-<li><a href="#aktor-utgivertype">Aktør: utgivertype</a></li>
+<li><a href="#aktor-organisasjonsidentifikator">Aktør: organisasjonsidentifikator (dct:identifier)</a></li>
+<li><a href="#aktor-utgivertype">Aktør: utgivertype (dct:type)</a></li>
 </ul>
 </li>
 </ul>
@@ -543,60 +544,60 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_datasett">Obligatoriske egenskaper for klassen <em>Datasett</em></a>
 <ul class="sectlevel4">
-<li><a href="#datasett-beskrivelse">Datasett: beskrivelse</a></li>
-<li><a href="#datasett-identifikator">Datasett: identifikator</a></li>
-<li><a href="#datasett-tema">Datasett: tema</a></li>
-<li><a href="#datasett-tittel">Datasett: tittel</a></li>
-<li><a href="#datasett-utgiver">Datasett: utgiver</a></li>
+<li><a href="#datasett-beskrivelse">Datasett: beskrivelse (dct:description)</a></li>
+<li><a href="#datasett-identifikator">Datasett: identifikator (dct:identifier)</a></li>
+<li><a href="#datasett-tema">Datasett: tema (dcat:theme)</a></li>
+<li><a href="#datasett-tittel">Datasett: tittel (dct:title)</a></li>
+<li><a href="#datasett-utgiver">Datasett: utgiver (dct:publisher)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_datasett">Anbefalte egenskaper for klassen <em>Datasett</em></a>
 <ul class="sectlevel4">
-<li><a href="#datasett-begrep">Datasett: begrep</a></li>
-<li><a href="#datasett-datasettdistribusjon">Datasett: datasettdistribusjon</a></li>
-<li><a href="#datasett-dekningsomrade">Datasett: dekningsområde</a></li>
-<li><a href="#datasett-emneord">Datasett: emneord</a></li>
-<li><a href="#datasett-følger">Datasett: følger</a></li>
-<li><a href="#datasett-kontaktpunkt">Datasett: kontaktpunkt</a></li>
-<li><a href="#datasett-tidsrom">Datasett: tidsrom</a></li>
-<li><a href="#datasett-tilgangsniva">Datasett: tilgangsnivå</a></li>
+<li><a href="#datasett-begrep">Datasett: begrep (dct:subject)</a></li>
+<li><a href="#datasett-datasettdistribusjon">Datasett: datasettdistribusjon (dcat:distribution)</a></li>
+<li><a href="#datasett-dekningsomrade">Datasett: dekningsområde (dct:spatial)</a></li>
+<li><a href="#datasett-emneord">Datasett: emneord (dcat:keyword)</a></li>
+<li><a href="#datasett-følger">Datasett: følger (cpsv:follows)</a></li>
+<li><a href="#datasett-kontaktpunkt">Datasett: kontaktpunkt (dcat:contactPoint)</a></li>
+<li><a href="#datasett-tidsrom">Datasett: tidsrom (dct:temporal)</a></li>
+<li><a href="#datasett-tilgangsniva">Datasett: tilgangsnivå (dct:accessRights)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_datasett">Valgfrie egenskaper for klassen <em>Datasett</em></a>
 <ul class="sectlevel4">
-<li><a href="#datasett-annen-identifikator">Datasett: annen identifikator</a></li>
-<li><a href="#datasett-ble-generert-ved">Datasett: ble generert ved</a></li>
-<li><a href="#datasett-dokumentasjon">Datasett: dokumentasjon</a></li>
-<li><a href="#datasett-eksempeldata">Datasett: eksempeldata</a></li>
-<li><a href="#datasett-endringsdato">Datasett: endringsdato</a></li>
-<li><a href="#datasett-er-del-av">Datasett: er del av</a></li>
-<li><a href="#datasett-er-pakrevd-av">Datasett: er påkrevd av</a></li>
-<li><a href="#datasett-er-referert-av">Datasett: er referert av</a></li>
-<li><a href="#datasett-er-versjon-av">Datasett: er versjon av</a></li>
-<li><a href="#datasett-erstatter">Datasett: erstatter</a></li>
-<li><a href="#datasett-erstattes-av">Datasett: erstattes av</a></li>
-<li><a href="#datasett-frekvens">Datasett: frekvens</a></li>
-<li><a href="#datasett-geografisk-oppløsning">Datasett: geografisk oppløsning</a></li>
-<li><a href="#datasett-har-del">Datasett: har del</a></li>
-<li><a href="#datasett-har-kvalitetsnote">Datasett: har kvalitetsnote</a></li>
-<li><a href="#datasett-har-kvantifiserbart-måleresultat">Datasett: har kvantifiserbart måleresultat</a></li>
-<li><a href="#datasett-har-versjon">Datasett: har versjon</a></li>
-<li><a href="#datasett-i-samsvar-med">Datasett: i samsvar med</a></li>
-<li><a href="#datasett-kilde">Datasett: kilde</a></li>
-<li><a href="#datasett-krever">Datasett: krever</a></li>
-<li><a href="#datasett-kvalifisert-kreditering">Datasett: kvalifisert kreditering</a></li>
-<li><a href="#datasett-kvalifisert-relasjon">Datasett: kvalifisert relasjon</a></li>
-<li><a href="#datasett-landingsside">Datasett: landingsside</a></li>
-<li><a href="#datasett-produsent">Datasett: produsent</a></li>
-<li><a href="#datasett-proveniensbeskrivelse">Datasett: proveniensbeskrivelse</a></li>
-<li><a href="#datasett-refererer-til">Datasett: refererer til</a></li>
-<li><a href="#datasett-relatertressurs">Datasett: relatert ressurs</a></li>
-<li><a href="#datasett-sprak">Datasett: språk</a></li>
-<li><a href="#datasett-tidsromsoppløsning">Datasett: tidsromsoppløsning</a></li>
-<li><a href="#datasett-type">Datasett: type</a></li>
-<li><a href="#datasett-utgivelsesdato">Datasett: utgivelsesdato</a></li>
-<li><a href="#datasett-versjon">Datasett: versjon</a></li>
-<li><a href="#datasett-versjonsnote">Datasett: versjonsnote</a></li>
+<li><a href="#datasett-annen-identifikator">Datasett: annen identifikator (adms:identifier)</a></li>
+<li><a href="#datasett-ble-generert-ved">Datasett: ble generert ved (prov:wasGeneratedBy)</a></li>
+<li><a href="#datasett-dokumentasjon">Datasett: dokumentasjon (foaf:page)</a></li>
+<li><a href="#datasett-eksempeldata">Datasett: eksempeldata (adms:sample)</a></li>
+<li><a href="#datasett-endringsdato">Datasett: endringsdato (dct:modified)</a></li>
+<li><a href="#datasett-er-del-av">Datasett: er del av (dct:isPartOf)</a></li>
+<li><a href="#datasett-er-pakrevd-av">Datasett: er påkrevd av (dct:isRequiredBy)</a></li>
+<li><a href="#datasett-er-referert-av">Datasett: er referert av (dct:isReferencedBy)</a></li>
+<li><a href="#datasett-er-versjon-av">Datasett: er versjon av (dct:isVersionOf)</a></li>
+<li><a href="#datasett-erstatter">Datasett: erstatter (dct:replaces)</a></li>
+<li><a href="#datasett-erstattes-av">Datasett: erstattes av (dct:isReplacedBy)</a></li>
+<li><a href="#datasett-frekvens">Datasett: frekvens (dct:accrualPeriodicity)</a></li>
+<li><a href="#datasett-geografisk-oppløsning">Datasett: geografisk oppløsning (dcat:spatialResolutionInMeters)</a></li>
+<li><a href="#datasett-har-del">Datasett: har del (dct:hasPart)</a></li>
+<li><a href="#datasett-har-kvalitetsnote">Datasett: har kvalitetsnote (dqv:hasQualityAnnotation)</a></li>
+<li><a href="#datasett-har-kvantifiserbart-måleresultat">Datasett: har kvantifiserbart måleresultat (dqv:hasQualityMeasurement)</a></li>
+<li><a href="#datasett-har-versjon">Datasett: har versjon (dct:hasVersion)</a></li>
+<li><a href="#datasett-i-samsvar-med">Datasett: i samsvar med (dct:conformsTo)</a></li>
+<li><a href="#datasett-kilde">Datasett: kilde (dct:source)</a></li>
+<li><a href="#datasett-krever">Datasett: krever (dct:requires)</a></li>
+<li><a href="#datasett-kvalifisert-kreditering">Datasett: kvalifisert kreditering (prov:qualifiedAttribution)</a></li>
+<li><a href="#datasett-kvalifisert-relasjon">Datasett: kvalifisert relasjon (dcat:qualifiedRelation)</a></li>
+<li><a href="#datasett-landingsside">Datasett: landingsside (dcat:landingPage)</a></li>
+<li><a href="#datasett-produsent">Datasett: produsent (dct:creator)</a></li>
+<li><a href="#datasett-proveniensbeskrivelse">Datasett: proveniensbeskrivelse (dct:provenance)</a></li>
+<li><a href="#datasett-refererer-til">Datasett: refererer til (dct:references)</a></li>
+<li><a href="#datasett-relatertressurs">Datasett: relatert ressurs (dct:relation)</a></li>
+<li><a href="#datasett-sprak">Datasett: språk (dct:language)</a></li>
+<li><a href="#datasett-tidsromsoppløsning">Datasett: tidsromsoppløsning (dcat:temporalResolution)</a></li>
+<li><a href="#datasett-type">Datasett: type (dct:type)</a></li>
+<li><a href="#datasett-utgivelsesdato">Datasett: utgivelsesdato (dct:issued)</a></li>
+<li><a href="#datasett-versjon">Datasett: versjon (owl:versionInfo)</a></li>
+<li><a href="#datasett-versjonsnote">Datasett: versjonsnote (adms:versionNotes)</a></li>
 </ul>
 </li>
 </ul>
@@ -605,31 +606,31 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_datatjeneste">Obligatoriske egenskaper for klassen <em>Datatjeneste</em></a>
 <ul class="sectlevel4">
-<li><a href="#datatjeneste-endepunktsurl">Datatjeneste: endepunktsURL</a></li>
-<li><a href="#datatjeneste-identifikator">Datatjeneste: identifikator</a></li>
-<li><a href="#datatjeneste-tittel">Datatjeneste: tittel</a></li>
+<li><a href="#datatjeneste-endepunktsurl">Datatjeneste: endepunktsURL (dcat:endpointURL)</a></li>
+<li><a href="#datatjeneste-identifikator">Datatjeneste: identifikator (dct:identifier)</a></li>
+<li><a href="#datatjeneste-tittel">Datatjeneste: tittel (dct:title)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_datatjeneste">Anbefalte egenskaper for klassen <em>Datatjeneste</em></a>
 <ul class="sectlevel4">
-<li><a href="#datatjeneste-emneord">Datatjeneste: emneord</a></li>
-<li><a href="#datatjeneste-endepunktsbeskrivelse">Datatjeneste: endepunktsbeskrivelse</a></li>
-<li><a href="#datatjeneste-kontaktpunkt">Datatjeneste: kontaktpunkt</a></li>
-<li><a href="#datatjeneste-tema">Datatjeneste: tema</a></li>
-<li><a href="#datatjeneste-tilgjengeliggjor-datasett">Datatjeneste: tilgjengeliggjør datasett</a></li>
-<li><a href="#datatjeneste-utgiver">Datatjeneste: utgiver</a></li>
+<li><a href="#datatjeneste-emneord">Datatjeneste: emneord (dcat:keyword)</a></li>
+<li><a href="#datatjeneste-endepunktsbeskrivelse">Datatjeneste: endepunktsbeskrivelse (dcat:endpointDescription)</a></li>
+<li><a href="#datatjeneste-kontaktpunkt">Datatjeneste: kontaktpunkt (dcat:contactPoint)</a></li>
+<li><a href="#datatjeneste-tema">Datatjeneste: tema (dcat:theme)</a></li>
+<li><a href="#datatjeneste-tilgjengeliggjor-datasett">Datatjeneste: tilgjengeliggjør datasett (dcat:servesDataset)</a></li>
+<li><a href="#datatjeneste-utgiver">Datatjeneste: utgiver (dct:publisher)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_datatjeneste">Valgfrie egenskaper for klassen <em>Datatjeneste</em></a>
 <ul class="sectlevel4">
-<li><a href="#datatjeneste-beskrivelse">Datatjeneste: beskrivelse</a></li>
-<li><a href="#datatjeneste-dokumentasjon">Datatjeneste: dokumentasjon</a></li>
-<li><a href="#datatjeneste-følger">Datatjeneste: følger</a></li>
-<li><a href="#datatjeneste-i-samsvar-med">Datatjeneste: i samsvar med</a></li>
-<li><a href="#datatjeneste-landingsside">Datatjeneste: landingsside</a></li>
-<li><a href="#datatjeneste-lisens">Datatjeneste: lisens</a></li>
-<li><a href="#datatjeneste-tilgangsrettigheter">Datatjeneste: tilgangsrettigheter</a></li>
-<li><a href="#datatjeneste-type">Datatjeneste: type</a></li>
+<li><a href="#datatjeneste-beskrivelse">Datatjeneste: beskrivelse (dct:description)</a></li>
+<li><a href="#datatjeneste-dokumentasjon">Datatjeneste: dokumentasjon (foaf:page)</a></li>
+<li><a href="#datatjeneste-følger">Datatjeneste: følger (cpsv:follows)</a></li>
+<li><a href="#datatjeneste-i-samsvar-med">Datatjeneste: i samsvar med (dct:conformsTo)</a></li>
+<li><a href="#datatjeneste-landingsside">Datatjeneste: landingsside (dcat:landingPage)</a></li>
+<li><a href="#datatjeneste-lisens">Datatjeneste: lisens (dct:license)</a></li>
+<li><a href="#datatjeneste-tilgangsrettigheter">Datatjeneste: tilgangsrettigheter (dct:accessRights)</a></li>
+<li><a href="#datatjeneste-type">Datatjeneste: type (dct:type)</a></li>
 </ul>
 </li>
 </ul>
@@ -638,37 +639,37 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_distribusjon">Obligatoriske egenskaper for klassen <em>Distribusjon</em></a>
 <ul class="sectlevel4">
-<li><a href="#distribusjon-format">Distribusjon: format</a></li>
-<li><a href="#distribusjon-tilgangsurl">Distribusjon: tilgangsURL</a></li>
+<li><a href="#distribusjon-format">Distribusjon: format (dct:format)</a></li>
+<li><a href="#distribusjon-tilgangsurl">Distribusjon: tilgangsURL (dcat:accessURL)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_distribusjon">Anbefalte egenskaper for klassen <em>Distribusjon</em></a>
 <ul class="sectlevel4">
-<li><a href="#distribusjon-beskrivelse">Distribusjon: beskrivelse</a></li>
-<li><a href="#distribusjon-lisens">Distribusjon: lisens</a></li>
-<li><a href="#distribusjon-tilgjengelighet">Distribusjon: tilgjengelighet</a></li>
+<li><a href="#distribusjon-beskrivelse">Distribusjon: beskrivelse (dct:description)</a></li>
+<li><a href="#distribusjon-lisens">Distribusjon: lisens (dct:license)</a></li>
+<li><a href="#distribusjon-tilgjengelighet">Distribusjon: tilgjengelighet (dcatap:availability)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_distribusjon">Valgfrie egenskaper for klassen <em>Distribusjon</em></a>
 <ul class="sectlevel4">
-<li><a href="#distribusjon-dokumentasjon">Distribusjon: dokumentasjon</a></li>
-<li><a href="#distribusjon-endringsdato">Distribusjon: endringsdato</a></li>
-<li><a href="#distribusjon-filstorrelse">Distribusjon: filstørrelse</a></li>
-<li><a href="#geografisk-opplosning">Distribusjon: geografisk oppløsning</a></li>
-<li><a href="#distribusjon-i-samsvar-med">Distribusjon: i samsvar med</a></li>
-<li><a href="#distribusjon-komprimeringsformat">Distribusjon: komprimeringsformat</a></li>
-<li><a href="#distribusjon-medietype">Distribusjon: medietype</a></li>
-<li><a href="#distribusjon-nedlastningslenke">Distribusjon: nedlastningslenke</a></li>
-<li><a href="#distribusjon-pakkeformat">Distribusjon: pakkeformat</a></li>
-<li><a href="#distribusjon-policy">Distribusjon: policy</a></li>
-<li><a href="#distribusjon-rettigheter">Distribusjon: rettigheter</a></li>
-<li><a href="#distribusjon-sjekksum">Distribusjon: sjekksum</a></li>
-<li><a href="#distribusjon-sprak">Distribusjon: språk</a></li>
-<li><a href="#distribusjon-status">Distribusjon: status</a></li>
-<li><a href="#_distribusjon_tidsromsoppløsning">Distribusjon: tidsromsoppløsning</a></li>
-<li><a href="#distribusjon-tilganstjeneste">Distribusjon: tilgangstjeneste</a></li>
-<li><a href="#distribusjon-tittel">Distribusjon: tittel</a></li>
-<li><a href="#distribusjon-utgivelsesdato">Distribusjon: utgivelsesdato</a></li>
+<li><a href="#distribusjon-dokumentasjon">Distribusjon: dokumentasjon (foaf:page)</a></li>
+<li><a href="#distribusjon-endringsdato">Distribusjon: endringsdato (dct:modified)</a></li>
+<li><a href="#distribusjon-filstorrelse">Distribusjon: filstørrelse (dcat:byteSize)</a></li>
+<li><a href="#geografisk-opplosning">Distribusjon: geografisk oppløsning (dcat:spatialResolutionInMeters)</a></li>
+<li><a href="#distribusjon-i-samsvar-med">Distribusjon: i samsvar med (dct:conformsTo)</a></li>
+<li><a href="#distribusjon-komprimeringsformat">Distribusjon: komprimeringsformat (dcat:compressFormat)</a></li>
+<li><a href="#distribusjon-medietype">Distribusjon: medietype (dcat:mediaType)</a></li>
+<li><a href="#distribusjon-nedlastningslenke">Distribusjon: nedlastningslenke (dcat:downloadURL)</a></li>
+<li><a href="#distribusjon-pakkeformat">Distribusjon: pakkeformat (dcat:packageFormat)</a></li>
+<li><a href="#distribusjon-policy">Distribusjon: policy (odrl:hasPolicy)</a></li>
+<li><a href="#distribusjon-rettigheter">Distribusjon: rettigheter (dct:rights)</a></li>
+<li><a href="#distribusjon-sjekksum">Distribusjon: sjekksum (spdx:checksum)</a></li>
+<li><a href="#distribusjon-sprak">Distribusjon: språk (dct:language)</a></li>
+<li><a href="#distribusjon-status">Distribusjon: status (adms:status)</a></li>
+<li><a href="#_distribusjon_tidsromsoppløsning_dcattemporalresolution">Distribusjon: tidsromsoppløsning (dcat:temporalResolution )</a></li>
+<li><a href="#distribusjon-tilganstjeneste">Distribusjon: tilgangstjeneste (dcat:accessService)</a></li>
+<li><a href="#distribusjon-tittel">Distribusjon: tittel (dct:title)</a></li>
+<li><a href="#distribusjon-utgivelsesdato">Distribusjon: utgivelsesdato (dct:issued)</a></li>
 </ul>
 </li>
 </ul>
@@ -677,7 +678,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_identifikator">Obligatoriske egenskaper for klassen <em>Identifikator</em></a>
 <ul class="sectlevel4">
-<li><a href="#identifikator-notasjon">Identifikator: notasjon</a></li>
+<li><a href="#identifikator-notasjon">Identifikator: notasjon (skos:notation)</a></li>
 </ul>
 </li>
 </ul>
@@ -686,35 +687,35 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_katalog">Obligatoriske egenskaper for klassen <em>Katalog</em></a>
 <ul class="sectlevel4">
-<li><a href="#katalog-beskrivelse">Katalog: beskrivelse</a></li>
-<li><a href="#katalog-identifikator">Katalog: identifikator</a></li>
-<li><a href="#katalog-tittel">Katalog: tittel</a></li>
-<li><a href="#katalog-utgiver">Katalog: utgiver</a></li>
+<li><a href="#katalog-beskrivelse">Katalog: beskrivelse (dct:description)</a></li>
+<li><a href="#katalog-identifikator">Katalog: identifikator (dct:identifier)</a></li>
+<li><a href="#katalog-tittel">Katalog: tittel (dct:title)</a></li>
+<li><a href="#katalog-utgiver">Katalog: utgiver (dct:publisher)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_katalog">Anbefalte egenskaper for klassen <em>Katalog</em></a>
 <ul class="sectlevel4">
-<li><a href="#katalog-datasett">Katalog: datasett</a></li>
-<li><a href="#katalog-dekningsomrade">Katalog: dekningsområde</a></li>
-<li><a href="#katalog-endringsdato">Katalog: endringsdato</a></li>
-<li><a href="#katalog-frekvens">Katalog: frekvens</a></li>
-<li><a href="#katalog-hjemmeside">Katalog: hjemmeside</a></li>
-<li><a href="#katalog-lisens">Katalog: lisens</a></li>
-<li><a href="#katalog-proveniens">Katalog: proveniens</a></li>
-<li><a href="#katalog-sprak">Katalog: språk</a></li>
-<li><a href="#katalog-temaer">Katalog: temaer</a></li>
-<li><a href="#katalog-utgivelsesdato">Katalog: utgivelsesdato</a></li>
+<li><a href="#katalog-datasett">Katalog: datasett (dcat:dataset)</a></li>
+<li><a href="#katalog-dekningsomrade">Katalog: dekningsområde (dct:spatial)</a></li>
+<li><a href="#katalog-endringsdato">Katalog: endringsdato (dct:modified)</a></li>
+<li><a href="#katalog-frekvens">Katalog: frekvens (dct:accrualPeriodicity)</a></li>
+<li><a href="#katalog-hjemmeside">Katalog: hjemmeside (foaf:homepage)</a></li>
+<li><a href="#katalog-lisens">Katalog: lisens (dct:license)</a></li>
+<li><a href="#katalog-proveniens">Katalog: proveniens (dct:provenance)</a></li>
+<li><a href="#katalog-sprak">Katalog: språk (dct:language)</a></li>
+<li><a href="#katalog-temaer">Katalog: temaer (dcat:themeTaxonomy)</a></li>
+<li><a href="#katalog-utgivelsesdato">Katalog: utgivelsesdato (dct:issued)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_katalog">Valgfrie egenskaper for klassen <em>Katalog</em></a>
 <ul class="sectlevel4">
-<li><a href="#katalog-datatjeneste">Katalog: datatjeneste</a></li>
-<li><a href="#katalog-er-del-av">Katalog: er del av</a></li>
-<li><a href="#katalog-har-del">Katalog: har del</a></li>
-<li><a href="#katalog-katalog">Katalog: katalog</a></li>
-<li><a href="#katalog-katalogpost">Katalog: katalogpost</a></li>
-<li><a href="#katalog-produsent">Katalog: produsent</a></li>
-<li><a href="#katalog-rettigheter">Katalog: rettigheter</a></li>
+<li><a href="#katalog-datatjeneste">Katalog: datatjeneste (dcat:service)</a></li>
+<li><a href="#katalog-er-del-av">Katalog: er del av (dct:isPartOf)</a></li>
+<li><a href="#katalog-har-del">Katalog: har del (dct:hasPart)</a></li>
+<li><a href="#katalog-katalog">Katalog: katalog (dcat:catalog)</a></li>
+<li><a href="#katalog-katalogpost">Katalog: katalogpost (dcat:record)</a></li>
+<li><a href="#katalog-produsent">Katalog: produsent (dct:creator)</a></li>
+<li><a href="#katalog-rettigheter">Katalog: rettigheter (dct:rights)</a></li>
 </ul>
 </li>
 </ul>
@@ -723,23 +724,23 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_katalogpost">Obligatoriske egenskaper for klassen <em>Katalogpost</em></a>
 <ul class="sectlevel4">
-<li><a href="#katalogpost-endringsdato">Katalogpost: endringsdato</a></li>
-<li><a href="#katalogpost-primartema">Katalogpost: primærtema</a></li>
+<li><a href="#katalogpost-endringsdato">Katalogpost: endringsdato (dct:modified)</a></li>
+<li><a href="#katalogpost-primartema">Katalogpost: primærtema (foaf:primaryTopic)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_katalogpost">Anbefalte egenskaper for klassen <em>Katalogpost</em></a>
 <ul class="sectlevel4">
-<li><a href="#katalogpost-i-samsvar-med">Katalogpost: i samsvar med</a></li>
-<li><a href="#katalogpost-status">Katalogpost: status</a></li>
-<li><a href="#katalogpost-utlistingsdato">Katalogpost: utlistingsdato</a></li>
+<li><a href="#katalogpost-i-samsvar-med">Katalogpost: i samsvar med (dct:conformsTo)</a></li>
+<li><a href="#katalogpost-status">Katalogpost: status (adms:status)</a></li>
+<li><a href="#katalogpost-utlistingsdato">Katalogpost: utlistingsdato (dct:issued)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_katalogpost">Valgfrie egenskaper for klassen <em>Katalogpost</em></a>
 <ul class="sectlevel4">
-<li><a href="#katalogpost-beskrivelse">Katalogpost: beskrivelse</a></li>
-<li><a href="#katalogpost-kilde">Katalogpost: kilde</a></li>
-<li><a href="#katalogpost-sprak">Katalogpost: språk</a></li>
-<li><a href="#katalogpost-tittel">Katalogpost: tittel</a></li>
+<li><a href="#katalogpost-beskrivelse">Katalogpost: beskrivelse (dct:description)</a></li>
+<li><a href="#katalogpost-kilde">Katalogpost: kilde (dct:source)</a></li>
+<li><a href="#katalogpost-sprak">Katalogpost: språk (dct:language)</a></li>
+<li><a href="#katalogpost-tittel">Katalogpost: tittel (dct:title)</a></li>
 </ul>
 </li>
 </ul>
@@ -748,7 +749,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_anbefalte_egenskaper_for_klassen_lisensdokument">Anbefalte egenskaper for klassen <em>Lisensdokument</em></a>
 <ul class="sectlevel4">
-<li><a href="#lisensdokument-lisenstype">Lisensdokument: lisenstype</a></li>
+<li><a href="#lisensdokument-lisenstype">Lisensdokument: lisenstype (dct:type)</a></li>
 </ul>
 </li>
 </ul>
@@ -757,13 +758,13 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_anbefalte_egenskaper_for_klassen_lokasjon">Anbefalte egenskaper for klassen <em>Lokasjon</em></a>
 <ul class="sectlevel4">
-<li><a href="#lokalsjon-område">Lokasjon: område</a></li>
-<li><a href="#lokasjon-geografisk-midtpunkt">Lokasjon: geografisk midtpunkt</a></li>
+<li><a href="#lokalsjon-område">Lokasjon: område (dcat:bbox)</a></li>
+<li><a href="#lokasjon-geografisk-midtpunkt">Lokasjon: geografisk midtpunkt (dcat:centroid)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_lokasjon">Valgfrie egenskaper for klassen <em>Lokasjon</em></a>
 <ul class="sectlevel4">
-<li><a href="#lokasjon-geometri">Lokasjon: geometri</a></li>
+<li><a href="#lokasjon-geometri">Lokasjon: geometri (locn:geometry)</a></li>
 </ul>
 </li>
 </ul>
@@ -772,17 +773,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_offentlig_organisasjon">Obligatoriske egenskaper for klassen <em>Offentlig organisasjon</em></a>
 <ul class="sectlevel4">
-<li><a href="#offentlig-organisasjon-dekningsområde">Offentlig organisasjon: dekningsområde</a></li>
-<li><a href="#offentlig-organisasjon-foretrukket-navn">Offentlig organisasjon: foretrukket navn</a></li>
-<li><a href="#offentlig-organisasjon-identifikator">Offentlig organisasjon: identifikator</a></li>
-<li><a href="#offentlig-organisasjon-navn">Offentlig organisasjon: navn</a></li>
+<li><a href="#offentlig-organisasjon-dekningsområde">Offentlig organisasjon: dekningsområde (dct:spatial)</a></li>
+<li><a href="#offentlig-organisasjon-foretrukket-navn">Offentlig organisasjon: foretrukket navn (skos:prefLabel)</a></li>
+<li><a href="#offentlig-organisasjon-identifikator">Offentlig organisasjon: identifikator (dct:identifier)</a></li>
+<li><a href="#offentlig-organisasjon-navn">Offentlig organisasjon: navn (dct:title)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_offentlig_organisasjon">Anbefalte egenskaper for klassen <em>Offentlig organisasjon</em></a>
 <ul class="sectlevel4">
-<li><a href="#offentlig-organisasjon-adresse">Offentlig organisasjon: adresse</a></li>
-<li><a href="#offentlig-organisasjon-hjemmeside">Offentlig organisasjon: hjemmeside</a></li>
-<li><a href="#offentlig-organisasjon-klassifisering">Offentlig organisasjon: klassifisering</a></li>
+<li><a href="#offentlig-organisasjon-adresse">Offentlig organisasjon: adresse (locn:address)</a></li>
+<li><a href="#offentlig-organisasjon-hjemmeside">Offentlig organisasjon: hjemmeside (foaf:homepage)</a></li>
+<li><a href="#offentlig-organisasjon-klassifisering">Offentlig organisasjon: klassifisering (org:classification)</a></li>
 </ul>
 </li>
 </ul>
@@ -791,29 +792,29 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_offentlig_tjeneste">Obligatoriske egenskaper for klassen <em>Offentlig tjeneste</em></a>
 <ul class="sectlevel4">
-<li><a href="#offentlig-tjeneste-beskrivelse">Offentlig tjeneste: beskrivelse</a></li>
-<li><a href="#offentlig-tjeneste-har-kompetent-organ">Offentlig tjeneste: har kompetent organ</a></li>
-<li><a href="#offentlig-tjeneste-identifikator">Offentlig tjeneste: identifikator</a></li>
-<li><a href="#offentlig-tjeneste-tittel">Offentlig tjeneste: tittel</a></li>
+<li><a href="#offentlig-tjeneste-beskrivelse">Offentlig tjeneste: beskrivelse (dct:description)</a></li>
+<li><a href="#offentlig-tjeneste-har-kompetent-organ">Offentlig tjeneste: har kompetent organ (cv:hasCompetentAuthority)</a></li>
+<li><a href="#offentlig-tjeneste-identifikator">Offentlig tjeneste: identifikator (dct:identifier)</a></li>
+<li><a href="#offentlig-tjeneste-tittel">Offentlig tjeneste: tittel (dct:title)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_offentlig_tjeneste">Anbefalte egenskaper for klassen <em>Offentlig tjeneste</em></a>
 <ul class="sectlevel4">
-<li><a href="#offentlig-tjeneste-dekningsområde">Offentlig tjeneste: dekningsområde</a></li>
-<li><a href="#offentlig-tjeneste-er-del-av">Offentlig tjeneste: er del av</a></li>
-<li><a href="#offentlig-tjeneste-har-del">Offentlig tjeneste: har del</a></li>
-<li><a href="#offentlig-tjeneste-hjemmeside">Offentlig tjeneste: hjemmeside</a></li>
-<li><a href="#offentlig-tjeneste-produserer">Offentlig tjeneste: produserer (dataressurser)</a></li>
-<li><a href="#offentlig-tjeneste-status">Offentlig tjeneste: status</a></li>
-<li><a href="#offentlig-tjeneste-temaområde">Offentlig tjeneste: temaområde</a></li>
-<li><a href="#offentlig-tjeneste-type">Offentlig tjeneste: type</a></li>
+<li><a href="#offentlig-tjeneste-dekningsområde">Offentlig tjeneste: dekningsområde (dct:spatial)</a></li>
+<li><a href="#offentlig-tjeneste-er-del-av">Offentlig tjeneste: er del av (dct:isPartOf)</a></li>
+<li><a href="#offentlig-tjeneste-har-del">Offentlig tjeneste: har del (dct:hasPart)</a></li>
+<li><a href="#offentlig-tjeneste-hjemmeside">Offentlig tjeneste: hjemmeside (foaf:homepage)</a></li>
+<li><a href="#offentlig-tjeneste-produserer">Offentlig tjeneste: produserer (dataressurser) (cpsv:produces)</a></li>
+<li><a href="#offentlig-tjeneste-status">Offentlig tjeneste: status (adms:status)</a></li>
+<li><a href="#offentlig-tjeneste-temaområde">Offentlig tjeneste: temaområde (cv:thematicArea)</a></li>
+<li><a href="#offentlig-tjeneste-type">Offentlig tjeneste: type (dct:type)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_offentlig_tjeneste">Valgfrie egenskaper for klassen <em>Offentlig tjeneste</em></a>
 <ul class="sectlevel4">
-<li><a href="#offentlig-tjeneste-følger">Offentlig tjeneste: følger</a></li>
-<li><a href="#offentlig-tjeneste-har-kontaktpunkt">Offentlig tjeneste: har kontaktpunkt</a></li>
-<li><a href="#offentlig-tjeneste-har-regulativ-ressurs">Offentlig tjeneste: har regulativ ressurs</a></li>
+<li><a href="#offentlig-tjeneste-følger">Offentlig tjeneste: følger (cpsv:follows)</a></li>
+<li><a href="#offentlig-tjeneste-har-kontaktpunkt">Offentlig tjeneste: har kontaktpunkt (cv:hasContactPoint)</a></li>
+<li><a href="#offentlig-tjeneste-har-regulativ-ressurs">Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResouce)</a></li>
 </ul>
 </li>
 </ul>
@@ -822,20 +823,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_regel">Obligatoriske egenskaper for klassen <em>Regel</em></a>
 <ul class="sectlevel4">
-<li><a href="#regel-beskrivelse">Regel: beskrivelse</a></li>
-<li><a href="#regel-identifikator">Regel: identifikator</a></li>
-<li><a href="#regel-tittel">Regel: tittel</a></li>
+<li><a href="#regel-beskrivelse">Regel: beskrivelse (dct:description)</a></li>
+<li><a href="#regel-identifikator">Regel: identifikator (dct:identifier)</a></li>
+<li><a href="#regel-tittel">Regel: tittel (dct:title)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_regel">Anbefalte egenskaper for klassen <em>Regel</em></a>
 <ul class="sectlevel4">
-<li><a href="#regel-implementerer">Regel: implementerer</a></li>
-<li><a href="#regel-språk">Regel: språk</a></li>
+<li><a href="#regel-implementerer">Regel: implementerer (cpsv:implements)</a></li>
+<li><a href="#regel-språk">Regel: språk (dct:language)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_regel">Valgfrie egenskaper for klassen <em>Regel</em></a>
 <ul class="sectlevel4">
-<li><a href="#regel-type">Regel: type</a></li>
+<li><a href="#regel-type">Regel: type (dct:type)</a></li>
 </ul>
 </li>
 </ul>
@@ -844,19 +845,19 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_regulativ_ressurs">Obligatoriske egenskaper for klassen <em>Regulativ ressurs</em></a>
 <ul class="sectlevel4">
-<li><a href="#regulativ-ressurs-type">Regulativ ressurs: type</a></li>
+<li><a href="#regulativ-ressurs-type">Regulativ ressurs: type (dct:type)</a></li>
 </ul>
 </li>
 <li><a href="#_anbefalte_egenskaper_for_klassen_regulativ_ressurs">Anbefalte egenskaper for klassen <em>Regulativ ressurs</em></a>
 <ul class="sectlevel4">
-<li><a href="#regulativ-ressurs-beskrivelse">Regulativ ressurs: beskrivelse</a></li>
-<li><a href="#regulativ-ressurs-identifikator">Regulativ ressurs: identifikator</a></li>
-<li><a href="#regulativ-ressurs-referanse">Regulativ ressurs: referanse</a></li>
+<li><a href="#regulativ-ressurs-beskrivelse">Regulativ ressurs: beskrivelse (dct:description)</a></li>
+<li><a href="#regulativ-ressurs-identifikator">Regulativ ressurs: identifikator (dct:identifier)</a></li>
+<li><a href="#regulativ-ressurs-referanse">Regulativ ressurs: referanse (rdfs:seeAlso)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_regulativ_ressurs">Valgfrie egenskaper for klassen <em>Regulativ ressurs</em></a>
 <ul class="sectlevel4">
-<li><a href="#regulativ-ressurs-relatert-regulativ-ressurs">Regulativ ressurs: relatert regulativ ressurs</a></li>
+<li><a href="#regulativ-ressurs-relatert-regulativ-ressurs">Regulativ ressurs: relatert regulativ ressurs (dct:relation)</a></li>
 </ul>
 </li>
 </ul>
@@ -865,8 +866,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_relasjon">Obligatoriske egenskaper for klassen <em>Relasjon</em></a>
 <ul class="sectlevel4">
-<li><a href="#relasjon-relasjon">Relasjon: relasjon</a></li>
-<li><a href="#relasjon-rolle">Relasjon: rolle</a></li>
+<li><a href="#relasjon-relasjon">Relasjon: relasjon (dct:relation)</a></li>
+<li><a href="#relasjon-rolle">Relasjon: rolle (dcat:hadRole)</a></li>
 </ul>
 </li>
 </ul>
@@ -875,8 +876,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_sjekksum">Obligatoriske egenskaper for klassen <em>Sjekksum</em></a>
 <ul class="sectlevel4">
-<li><a href="#sjekksum-algoritme">Sjekksum: algoritme</a></li>
-<li><a href="#sjekksum-sjekksumverdi">Sjekksum: sjekksumverdi</a></li>
+<li><a href="#sjekksum-algoritme">Sjekksum: algoritme (spdx:algorithm)</a></li>
+<li><a href="#sjekksum-sjekksumverdi">Sjekksum: sjekksumverdi (spdx:checksumValue)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#Standard">Standard</a>
+<ul class="sectlevel3">
+<li><a href="#Standard_obligatoriske_egenskaper">Obligatoriske egenskaper for klassen <em>Standard</em></a>
+<ul class="sectlevel4">
+<li><a href="#Standard_harTittel">Standard: har tittel (dct:title)</a></li>
+</ul>
+</li>
+<li><a href="#Standard_anbefalte_egenskaper">Anbefalte egenskaper for klassen <em>Standard</em></a>
+<ul class="sectlevel4">
+<li><a href="#Standard_harReferanse">Standard: har referanse (rdfs:seeAlso) </a></li>
+</ul>
+</li>
+<li><a href="#Standard_valgfrie_egenskaper">Valgfrie egenskaper for klassen <em>Standard</em></a>
+<ul class="sectlevel4">
+<li><a href="#Standard_harVersjonsnr">Standard: har versjonsnummer (owl:versionInfo) </a></li>
 </ul>
 </li>
 </ul>
@@ -885,7 +905,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_tema">Obligatoriske egenskaper for klassen <em>Tema</em></a>
 <ul class="sectlevel4">
-<li><a href="#tema-foretrukket-tittel">Tema: foretrukket tittel</a></li>
+<li><a href="#tema-foretrukket-tittel">Tema: foretrukket tittel (skos:prefLabel)</a></li>
 </ul>
 </li>
 </ul>
@@ -894,7 +914,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_obligatoriske_egenskaper_for_klassen_tematisk_skjema">Obligatoriske egenskaper for klassen <em>Tematisk skjema</em></a>
 <ul class="sectlevel4">
-<li><a href="#tematisk-skjema-tittel">Tematisk skjema: tittel</a></li>
+<li><a href="#tematisk-skjema-tittel">Tematisk skjema: tittel (dct:title)</a></li>
 </ul>
 </li>
 </ul>
@@ -903,14 +923,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#_anbefalte_egenskaper_for_klassen_tidsrom">Anbefalte egenskaper for klassen <em>Tidsrom</em></a>
 <ul class="sectlevel4">
-<li><a href="#tidsrom-sluttdato">Tidsrom: sluttdato/tid</a></li>
-<li><a href="#tidsrom-startdato">Tidsrom: startdato/tid</a></li>
+<li><a href="#tidsrom-sluttdato">Tidsrom: sluttdato/tid (dcat:endDate)</a></li>
+<li><a href="#tidsrom-startdato">Tidsrom: startdato/tid (dcat:startDate)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_tidsrom">Valgfrie egenskaper for klassen <em>Tidsrom</em></a>
 <ul class="sectlevel4">
-<li><a href="#tidsrom-begynnelse">Tidsrom: begynnelse</a></li>
-<li><a href="#tidsrom-slutt">Tidsrom: slutt</a></li>
+<li><a href="#tidsrom-begynnelse">Tidsrom: begynnelse (time:hasBeginning)</a></li>
+<li><a href="#tidsrom-slutt">Tidsrom: slutt (time:hasEnd)</a></li>
 </ul>
 </li>
 </ul>
@@ -920,7 +940,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#kontrollerte-vokabularer">Om bruk av kontrollerte vokabularer</a>
 <ul class="sectlevel2">
 <li><a href="#krav-til-kontrollerte-vokabularer">Krav til kontrollerte vokabularer</a></li>
-<li><a href="#kontrollerte-vokabularer-som-skal-brukes">Kontrollerte vokabularer som skal brukes</a>
+<li><a href="#Kontrollerte_vokabularer_som_skal_brukes">Kontrollerte vokabularer som skal brukes</a>
 <ul class="sectlevel3">
 <li><a href="#_for_egenskapen_dctaccessrights">For egenskapen dct:accessRights</a></li>
 <li><a href="#_for_egenskapen_dctaccrualperiodicity">For egenskapen dct:accrualPeriodicity</a></li>
@@ -939,7 +959,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_for_egenskapen_dcttype">For egenskapen dct:type</a></li>
 </ul>
 </li>
-<li><a href="#_kontrollerte_vokabularer_som_bør_og_kan_brukes">Kontrollerte vokabularer som bør og kan brukes</a>
+<li><a href="#Kontrollerte_vokabularer_som_bør_og_kan_brukes">Kontrollerte vokabularer som bør og kan brukes</a>
 <ul class="sectlevel3">
 <li><a href="#_for_egenskapen_cvthematicarea_2">For egenskapen cv:thematicArea</a></li>
 <li><a href="#_for_egenskapen_dcattheme_2">For egenskapen dcat:theme</a></li>
@@ -968,26 +988,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: Høringsutkast<br>
-<strong>Publisert</strong>: 2020-06-02<br>
-<strong>Oppdatert</strong>: 2020-07-03<br>
+<p><strong>Status</strong>: <span class="yellow-background">Under publisering</span><br>
+<strong>Publisert</strong>: <span class="yellow-background">&lt;dato kommer&gt;</span><br>
 <strong>Lenke til gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a></p>
 </div>
-<div class="admonitionblock important">
+<div class="admonitionblock warning">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-important" title="Viktig"></i>
+<i class="fa icon-warning" title="Advarsel"></i>
 </td>
 <td class="content">
-<strong>Dette er en oppdatert versjon av høringsutkastet</strong>:<br>
-Etter at høringsutkastet ble publisert 2. juni 2020, har det blitt  oppdateringer i EU sin BRegDCAT-AP som denne standarden er basert på. Den oppdaterte versjonen av BRegDCAT-AP dekker norske behov betydelig bedre, slik at de aller fleste norske utvidelsene ikke lenger trenger å være norske utvidelser. Høringsutkastet er derfor også blitt oppdatert. Se <a href="#endringer-høringsutkastet">endringsloggen</a> for oversikt over endringene.
+<strong>Det pågår løpende justeringer</strong>:<br>
+Inntil standarden blir endelig pbulisert som gjeldende versjon (se over), blir utkastet (denne publiseringen) løpende justert for bl.a. å hensynta kommentarer og innspill fra høringsrunden.
 </td>
 </tr>
 </table>
-</div>
-<div class="paragraph">
-<p>Dette er et høringsutkast til versjon 2.0 av “Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)”. Standarden skal sikre at beskrivelser av offentlige data og datatjenester utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som <em>skal</em>, <em>bør</em> og <em>kan</em> være med i beskrivelsene, med spesifikasjon av dataformat.</p>
 </div>
 <div class="admonitionblock note">
 <table>
@@ -1048,7 +1064,7 @@ ikke tenkt brukt for å beskrive dokumenter eller fagsystem.</p>
 <p><strong>Kvalitetsbeskrivelser</strong>: Denne standarden bruker <a href="https://www.w3.org/TR/vocab-dqv/">DQV (Data Quality Vocabulary) fra W3C</a> til å beskrive kvalitet på datasett/datatjenester. Det er utarbeidet en <a href="https://informasjonsforvaltning.github.io/dqv-ap-no/">norsk applikasjonsprofil av DQV (DQV-AP-NO)</a>, som supplerer denne standarden med kvalitetsbeskrivelser.</p>
 </li>
 <li>
-<p><strong>Informasjonsmodeller</strong>: Det er utabeidet en norsk applikasjonsprofil av DCAT for beskrivelse og utveksling av informasjonsmodeller (<a href="https://informasjonsforvaltning.github.io/modelldcat-ap-no/">ModellDCAT-AP-NO</a>), for bl.a. å knytte en informasjonsmodell til et datasett eller en datatjeneste.</p>
+<p><strong>Informasjonsmodeller</strong>: Det er utabeidet en norsk applikasjonsprofil av DCAT for beskrivelse og utveksling av informasjonsmodeller, <a href="https://informasjonsforvaltning.github.io/modelldcat-ap-no/">ModellDCAT-AP-NO</a>. I ModellDCAT-AP-NO er informasjonsmodell subklasse av <code>dct:Standard</code>. Ved å bruke egenskapen <code>dct:conformsTo</code> kan et datasett eller en datatjeneste referere til en informasjonsmodell.</p>
 </li>
 </ul>
 </div>
@@ -1180,11 +1196,6 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DCAT Application Profile, EU</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcatno</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/dcatno#" class="bare">https://data.norge.no/vocabulary/dcatno#</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk applikasjonsprofil av DCAT</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/" class="bare">http://purl.org/dc/terms/</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DCMI Metadata Terms</p></td>
@@ -1290,12 +1301,12 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_klasser_i_standarden"><a class="link" href="#_klasser_i_standarden">Klasser i standarden</a></h2>
+<h2 id="Klasser_i_standarden"><a class="link" href="#Klasser_i_standarden">Klasser i standarden</a></h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_obligatoriske_klasser"><a class="link" href="#_obligatoriske_klasser">Obligatoriske klasser</a></h3>
+<h3 id="Obligatoriske_klasser"><a class="link" href="#Obligatoriske_klasser">Obligatoriske klasser</a></h3>
 <div class="sect3">
-<h4 id="klasse-aktor"><a class="link" href="#klasse-aktor">Aktør</a></h4>
+<h4 id="klasse-aktor"><a class="link" href="#klasse-aktor">Aktør (foaf:Agent)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1308,15 +1319,11 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. Dersom aktøren er en organisasjon er det anbefalt å bruke «Organization Ontology».</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. Dersom aktøren er en organisasjon er det anbefalt å bruke <a href="http://www.w3.org/TR/vocab-org/">Organization Ontology</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/spec/#term_Agent" class="bare">http://xmlns.com/foaf/spec/#term_Agent</a> , <a href="http://www.w3.org/TR/vocab-org/" class="bare">http://www.w3.org/TR/vocab-org/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/spec/#term_Agent">foaf:Agent</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1326,7 +1333,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-katalog"><a class="link" href="#klasse-katalog">Katalog</a></h4>
+<h4 id="klasse-katalog"><a class="link" href="#klasse-katalog">Katalog (dcat:Catalog)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1343,11 +1350,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Catalog</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Catalog" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Catalog</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Catalog">dcat:Catalog</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1361,7 +1364,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-katalogisert-ressurs"><a class="link" href="#klasse-katalogisert-ressurs">Katalogisert ressurs</a></h4>
+<h4 id="klasse-katalogisert-ressurs"><a class="link" href="#klasse-katalogisert-ressurs">Katalogisert ressurs (dcat:Resource)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1378,11 +1381,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Resource</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Resource" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Resource</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Resource">dcat:Resource</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1392,7 +1391,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-literal"><a class="link" href="#klasse-literal">Literal</a></h4>
+<h4 id="klasse-literal"><a class="link" href="#klasse-literal">Literal (rdfs:Literal)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1409,11 +1408,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-concepts/#section-Literals" class="bare">https://www.w3.org/TR/rdf-concepts/#section-Literals</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/rdf-concepts/#section-Literals">rdfs:Literal</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1423,7 +1418,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-tema"><a class="link" href="#klasse-tema">Tema</a></h4>
+<h4 id="klasse-tema"><a class="link" href="#klasse-tema">Tema (skos:Concept)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1440,11 +1435,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Concept" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Concept</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Concept">skos:Concept</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1458,7 +1449,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-tematisk-skjema"><a class="link" href="#klasse-tematisk-skjema">Tematisk skjema</a></h4>
+<h4 id="klasse-tematisk-skjema"><a class="link" href="#klasse-tematisk-skjema">Tematisk skjema (skos:ConceptScheme)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1475,11 +1466,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme">skos:ConceptScheme</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1494,9 +1481,9 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_anbefalte_klasser"><a class="link" href="#_anbefalte_klasser">Anbefalte klasser</a></h3>
+<h3 id="Anbefalte_klasser"><a class="link" href="#Anbefalte_klasser">Anbefalte klasser</a></h3>
 <div class="sect3">
-<h4 id="klasse-datasett"><a class="link" href="#klasse-datasett">Datasett</a></h4>
+<h4 id="klasse-datasett"><a class="link" href="#klasse-datasett">Datasett (dcat:Dataset)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1513,11 +1500,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Dataset" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Dataset</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Dataset">dcat:Dataset</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1527,7 +1510,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-distribusjon"><a class="link" href="#klasse-distribusjon">Distribusjon</a></h4>
+<h4 id="klasse-distribusjon"><a class="link" href="#klasse-distribusjon">Distribusjon (dcat:Distribution)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1544,11 +1527,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Distribution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Distribution" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Distribution</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Distribution">dcat:Distribution</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1558,7 +1537,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-lisensdokument"><a class="link" href="#klasse-lisensdokument">Lisensdokument</a></h4>
+<h4 id="klasse-lisensdokument"><a class="link" href="#klasse-lisensdokument">Lisensdokument (dct:LicenseDocument)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1575,11 +1554,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LicenseDocument</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument" class="bare">http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/#terms-LicenseDocument">dct:LicenseDocument</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1589,7 +1564,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-offentlig-organisasjon"><a class="link" href="#klasse-offentlig-organisasjon">Offentlig organisasjon</a></h4>
+<h4 id="klasse-offentlig-organisasjon"><a class="link" href="#klasse-offentlig-organisasjon">Offentlig organisasjon (cv:PublicOrganization)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1606,12 +1581,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganization</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a>
-<a href="http://www.w3.org/TR/vocab-org/" class="bare">http://www.w3.org/TR/vocab-org/</a>; <a href="https://www.w3.org/TR/vocab-org/" class="bare">https://www.w3.org/TR/vocab-org/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary">cv:PublicOrganization</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1621,7 +1591,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-offentlig-tjeneste"><a class="link" href="#klasse-offentlig-tjeneste">Offentlig tjeneste</a></h4>
+<h4 id="klasse-offentlig-tjeneste"><a class="link" href="#klasse-offentlig-tjeneste">Offentlig tjeneste (cpsv:PublicService)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1638,11 +1608,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary">cpsv:PublicService</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1660,7 +1626,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-regel"><a class="link" href="#klasse-regel">Regel</a></h4>
+<h4 id="klasse-regel"><a class="link" href="#klasse-regel">Regel (cpsv:Rule)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1677,11 +1643,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary" class="bare">https://joinup.ec.europa.eu/solution/core-public-service-vocabulary</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://joinup.ec.europa.eu/solution/core-public-service-vocabulary">cpsv:Rule</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1691,7 +1653,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-regulativ-ressurs"><a class="link" href="#klasse-regulativ-ressurs">Regulativ ressurs</a></h4>
+<h4 id="klasse-regulativ-ressurs"><a class="link" href="#klasse-regulativ-ressurs">Regulativ ressurs (eli:LegalResource)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1708,11 +1670,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://publications.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1" class="bare">https://publications.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://publications.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1">eli:LegalResource</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1723,9 +1681,9 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_valgfrie_klasser"><a class="link" href="#_valgfrie_klasser">Valgfrie klasser</a></h3>
+<h3 id="Valgfrie_klasser"><a class="link" href="#Valgfrie_klasser">Valgfrie klasser</a></h3>
 <div class="sect3">
-<h4 id="klasse-datatjeneste"><a class="link" href="#klasse-datatjeneste">Datatjeneste</a></h4>
+<h4 id="klasse-datatjeneste"><a class="link" href="#klasse-datatjeneste">Datatjeneste (dcat:DataService)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1742,11 +1700,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DataService</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Data_Service" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Data_Service</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Data_Service">dcat:DataService</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1756,7 +1710,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-dokument"><a class="link" href="#klasse-dokument">Dokument </a></h4>
+<h4 id="klasse-dokument"><a class="link" href="#klasse-dokument">Dokument (foaf:Document)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1773,11 +1727,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/spec/#term_Document" class="bare">http://xmlns.com/foaf/spec/#term_Document</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://xmlns.com/foaf/spec/#term_Document">foaf:Document</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1787,7 +1737,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-frekvens"><a class="link" href="#klasse-frekvens">Frekvens</a></h4>
+<h4 id="klasse-frekvens"><a class="link" href="#klasse-frekvens">Frekvens (dct:Frequency)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1804,11 +1754,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Frequency</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-Frequency" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-Frequency</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Frequency">dct:Frequency</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1818,7 +1764,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-identifikator"><a class="link" href="#klasse-identifikator">Identifikator</a></h4>
+<h4 id="klasse-identifikator"><a class="link" href="#klasse-identifikator">Identifikator (adms:Identifier)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1835,11 +1781,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">adms:Identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/vocab-adms/#identifier" class="bare">http://www.w3.org/TR/vocab-adms/#identifier</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/vocab-adms/#identifier">adms:Identifier</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1849,7 +1791,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-katalogpost"><a class="link" href="#klasse-katalogpost">Katalogpost</a></h4>
+<h4 id="klasse-katalogpost"><a class="link" href="#klasse-katalogpost">Katalogpost (dcat:CatalogRecord)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1866,11 +1808,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:CatalogRecord</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record" class="bare">https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record">dcat:CatalogRecord</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1880,7 +1818,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-kontaktpunkt"><a class="link" href="#klasse-kontaktpunkt">Kontaktpunkt</a></h4>
+<h4 id="klasse-kontaktpunkt"><a class="link" href="#klasse-kontaktpunkt">Kontaktpunkt (vcard:Kind)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1897,11 +1835,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:Kind</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181" class="bare">http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e1819">vcard:Kind</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1911,7 +1845,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-lokasjon"><a class="link" href="#klasse-lokasjon">Lokasjon</a></h4>
+<h4 id="klasse-lokasjon"><a class="link" href="#klasse-lokasjon">Lokasjon (dct:Location)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1928,11 +1862,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Location</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-Location" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-Location</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Location">dct:Location</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1942,7 +1872,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-medietype"><a class="link" href="#klasse-medietype">Medietype</a></h4>
+<h4 id="klasse-medietype"><a class="link" href="#klasse-medietype">Medietype (dct:MediaType)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1959,11 +1889,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:MediaType</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/dc/terms/MediaType" class="bare">http://purl.org/dc/terms/MediaType</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/MediaType">dct:MediaType</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -1973,7 +1899,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-proveniensbeskrivelse"><a class="link" href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse</a></h4>
+<h4 id="klasse-proveniensbeskrivelse"><a class="link" href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse (dct:ProvenanceStatement)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1990,11 +1916,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:ProvenanceStatement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-ProvenanceStatement</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/ProvenanceStatement">dct:ProvenanceStatement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2004,7 +1926,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-relasjon"><a class="link" href="#klasse-relasjon">Relasjon</a></h4>
+<h4 id="klasse-relasjon"><a class="link" href="#klasse-relasjon">Relasjon (dcat:Relationship)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2021,11 +1943,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Relationship</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship" class="bare">https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship">dcat:Relationship</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2035,7 +1953,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-rettighetsutsagn"><a class="link" href="#klasse-rettighetsutsagn">Rettighetsutsagn</a></h4>
+<h4 id="klasse-rettighetsutsagn"><a class="link" href="#klasse-rettighetsutsagn">Rettighetsutsagn (dct:RightsStatement)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2052,11 +1970,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:RightsStatement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/RightsStatement">dct:RightsStatement</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2066,7 +1980,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-rolle"><a class="link" href="#klasse-rolle">Rolle</a></h4>
+<h4 id="klasse-rolle"><a class="link" href="#klasse-rolle">Rolle (dcat:Role)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2083,15 +1997,11 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Role</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Role">dcat:Role</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-2/#Class:Role" class="bare">https://www.w3.org/TR/vocab-dcat-2/#Class:Role</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2101,7 +2011,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-sjekksum"><a class="link" href="#klasse-sjekksum">Sjekksum</a></h4>
+<h4 id="klasse-sjekksum"><a class="link" href="#klasse-sjekksum">Sjekksum (spdx:Checksum)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2118,11 +2028,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:Checksum</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://spdx.org/rdf/terms#Checksum" class="bare">http://spdx.org/rdf/terms#Checksum</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://spdx.org/rdf/terms/#d4e1930">spdx:Checksum</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2132,7 +2038,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-spraksystem"><a class="link" href="#klasse-spraksystem">Språksystem</a></h4>
+<h4 id="klasse-spraksystem"><a class="link" href="#klasse-spraksystem">Språksystem (dct:LinguisticSystem)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2149,11 +2055,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LinguisticSystem</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/LinguisticSystem">dct:LinguisticSystem</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2163,7 +2065,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-standard"><a class="link" href="#klasse-standard">Standard</a></h4>
+<h4 id="klasse-standard"><a class="link" href="#klasse-standard">Standard (dct:Standard)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2180,11 +2082,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Standard</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-Standard" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-Standard</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Standard">dct:Standard</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2194,7 +2092,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-status"><a class="link" href="#klasse-status">Status</a></h4>
+<h4 id="klasse-status"><a class="link" href="#klasse-status">Status (skos:Concept)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2212,11 +2110,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/vocab-adms/#status" class="bare">http://www.w3.org/TR/vocab-adms/#status</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/vocab-adms/#status">skos:Concept</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2226,7 +2120,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-tidsom"><a class="link" href="#klasse-tidsom">Tidsrom</a></h4>
+<h4 id="klasse-tidsom"><a class="link" href="#klasse-tidsom">Tidsrom (dct:PeriodOfTime)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2243,11 +2137,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:PeriodOfTime</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://dublincore.org/documents/dcmi-terms/#terms-PeriodOfTime" class="bare">http://dublincore.org/documents/dcmi-terms/#terms-PeriodOfTime</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/PeriodOfTime">dct:PeriodOfTime</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2257,7 +2147,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-utgivertype"><a class="link" href="#klasse-utgivertype">Utgivertype</a></h4>
+<h4 id="klasse-utgivertype"><a class="link" href="#klasse-utgivertype">Utgivertype (skos:Concept)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2274,11 +2164,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Referanse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/vocab-adms/#dcterms-type" class="bare">http://www.w3.org/TR/vocab-adms/#dcterms-type</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/TR/vocab-adms/#dcterms-type">skos:Concept</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -2294,6 +2180,21 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <h2 id="_egenskaper_pr_klasse"><a class="link" href="#_egenskaper_pr_klasse">Egenskaper pr. klasse</a></h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="_krav_om_å_bruke_kontrollerte_vokabularer"><a class="link" href="#_krav_om_å_bruke_kontrollerte_vokabularer">Krav om å bruke kontrollerte vokabularer</a></h3>
+<div class="admonitionblock important">
+<table>
+<tr>
+<td class="icon">
+<i class="fa icon-important" title="Viktig"></i>
+</td>
+<td class="content">
+For noen egenskaper er det obligatorisk og/eller anbefalt å bruke gitte kontrollerte vokabularer. Kravene er samlet under <a href="#Kontrollerte_vokabularer_som_skal_brukes">Kontrollerte vokabularer som skal brukes</a> og <a href="#Kontrollerte_vokabularer_som_bør_og_kan_brukes">Kontrollerte vokabularer som bør og kan brukes</a>.
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect2">
 <h3 id="aktør"><a class="link" href="#aktør">Aktør</a></h3>
 <div class="paragraph">
 <p>Klassen <em>Aktør</em> er obligatorisk. Det anbefales at URI til Aktør (foaf:Agent) er identisk med den URI som Enhetsregisteret (Brønnøysundregistrene) har på
@@ -2302,7 +2203,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_aktør"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_aktør">Obligatoriske egenskaper for klassen <em>Aktør</em></a></h4>
 <div class="sect4">
-<h5 id="aktor-navn"><a class="link" href="#aktor-navn">Aktør: navn</a></h5>
+<h5 id="aktor-navn"><a class="link" href="#aktor-navn">Aktør: navn (foaf:name)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2340,7 +2241,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_aktør"><a class="link" href="#_anbefalte_egenskaper_for_klassen_aktør">Anbefalte egenskaper for klassen <em>Aktør</em></a></h4>
 <div class="sect4">
-<h5 id="aktor-organisasjonsidentifikator"><a class="link" href="#aktor-organisasjonsidentifikator">Aktør: organisasjonsidentifikator</a></h5>
+<h5 id="aktor-organisasjonsidentifikator"><a class="link" href="#aktor-organisasjonsidentifikator">Aktør: organisasjonsidentifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2375,7 +2276,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </table>
 </div>
 <div class="sect4">
-<h5 id="aktor-utgivertype"><a class="link" href="#aktor-utgivertype">Aktør: utgivertype</a></h5>
+<h5 id="aktor-utgivertype"><a class="link" href="#aktor-utgivertype">Aktør: utgivertype (dct:type)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2419,7 +2320,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_datasett"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_datasett">Obligatoriske egenskaper for klassen <em>Datasett</em></a></h4>
 <div class="sect4">
-<h5 id="datasett-beskrivelse"><a class="link" href="#datasett-beskrivelse">Datasett: beskrivelse</a></h5>
+<h5 id="datasett-beskrivelse"><a class="link" href="#datasett-beskrivelse">Datasett: beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2454,7 +2355,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-identifikator"><a class="link" href="#datasett-identifikator">Datasett: identifikator</a></h5>
+<h5 id="datasett-identifikator"><a class="link" href="#datasett-identifikator">Datasett: identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2493,7 +2394,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-tema"><a class="link" href="#datasett-tema">Datasett: tema</a></h5>
+<h5 id="datasett-tema"><a class="link" href="#datasett-tema">Datasett: tema (dcat:theme)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2514,7 +2415,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema. Bruk av vokabularet <a href="http://publications.europa.eu/resource/authority/data-theme">Data theme</a> som er publisert av EUs Publications Office er påkrevd. Bruk av <a href="http://psi.norge.no/los/struktur.html">Digitaliseringsdirektoratets Los-vokabular</a> er anbefalt. Også andre nasjonale og internasjonale vokabular kan brukes om de oppfyller <a href="#krav-til-kontrollerte-vokabularer">denne standardens krav til kontrollerte vokabularer</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -2532,7 +2433,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-tittel"><a class="link" href="#datasett-tittel">Datasett: tittel</a></h5>
+<h5 id="datasett-tittel"><a class="link" href="#datasett-tittel">Datasett: tittel (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2567,7 +2468,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-utgiver"><a class="link" href="#datasett-utgiver">Datasett: utgiver</a></h5>
+<h5 id="datasett-utgiver"><a class="link" href="#datasett-utgiver">Datasett: utgiver (dct:publisher)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2609,7 +2510,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_datasett"><a class="link" href="#_anbefalte_egenskaper_for_klassen_datasett">Anbefalte egenskaper for klassen <em>Datasett</em></a></h4>
 <div class="sect4">
-<h5 id="datasett-begrep"><a class="link" href="#datasett-begrep">Datasett: begrep</a></h5>
+<h5 id="datasett-begrep"><a class="link" href="#datasett-begrep">Datasett: begrep (dct:subject)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2662,7 +2563,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-datasettdistribusjon"><a class="link" href="#datasett-datasettdistribusjon">Datasett: datasettdistribusjon</a></h5>
+<h5 id="datasett-datasettdistribusjon"><a class="link" href="#datasett-datasettdistribusjon">Datasett: datasettdistribusjon (dcat:distribution)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2697,7 +2598,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-dekningsomrade"><a class="link" href="#datasett-dekningsomrade">Datasett: dekningsområde</a></h5>
+<h5 id="datasett-dekningsomrade"><a class="link" href="#datasett-dekningsomrade">Datasett: dekningsområde (dct:spatial)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2732,7 +2633,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-emneord"><a class="link" href="#datasett-emneord">Datasett: emneord</a></h5>
+<h5 id="datasett-emneord"><a class="link" href="#datasett-emneord">Datasett: emneord (dcat:keyword)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2767,7 +2668,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-følger"><a class="link" href="#datasett-følger">Datasett: følger</a></h5>
+<h5 id="datasett-følger"><a class="link" href="#datasett-følger">Datasett: følger (cpsv:follows)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2835,7 +2736,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-kontaktpunkt"><a class="link" href="#datasett-kontaktpunkt">Datasett: kontaktpunkt</a></h5>
+<h5 id="datasett-kontaktpunkt"><a class="link" href="#datasett-kontaktpunkt">Datasett: kontaktpunkt (dcat:contactPoint)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2870,7 +2771,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-tidsrom"><a class="link" href="#datasett-tidsrom">Datasett: tidsrom</a></h5>
+<h5 id="datasett-tidsrom"><a class="link" href="#datasett-tidsrom">Datasett: tidsrom (dct:temporal)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2905,7 +2806,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-tilgangsniva"><a class="link" href="#datasett-tilgangsniva">Datasett: tilgangsnivå</a></h5>
+<h5 id="datasett-tilgangsniva"><a class="link" href="#datasett-tilgangsniva">Datasett: tilgangsnivå (dct:accessRights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2947,7 +2848,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_datasett"><a class="link" href="#_valgfrie_egenskaper_for_klassen_datasett">Valgfrie egenskaper for klassen <em>Datasett</em></a></h4>
 <div class="sect4">
-<h5 id="datasett-annen-identifikator"><a class="link" href="#datasett-annen-identifikator">Datasett: annen identifikator</a></h5>
+<h5 id="datasett-annen-identifikator"><a class="link" href="#datasett-annen-identifikator">Datasett: annen identifikator (adms:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2982,7 +2883,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-ble-generert-ved"><a class="link" href="#datasett-ble-generert-ved">Datasett: ble generert ved</a></h5>
+<h5 id="datasett-ble-generert-ved"><a class="link" href="#datasett-ble-generert-ved">Datasett: ble generert ved (prov:wasGeneratedBy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3038,7 +2939,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-dokumentasjon"><a class="link" href="#datasett-dokumentasjon">Datasett: dokumentasjon</a></h5>
+<h5 id="datasett-dokumentasjon"><a class="link" href="#datasett-dokumentasjon">Datasett: dokumentasjon (foaf:page)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3073,7 +2974,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-eksempeldata"><a class="link" href="#datasett-eksempeldata">Datasett: eksempeldata</a></h5>
+<h5 id="datasett-eksempeldata"><a class="link" href="#datasett-eksempeldata">Datasett: eksempeldata (adms:sample)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3108,7 +3009,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-endringsdato"><a class="link" href="#datasett-endringsdato">Datasett: endringsdato</a></h5>
+<h5 id="datasett-endringsdato"><a class="link" href="#datasett-endringsdato">Datasett: endringsdato (dct:modified)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3143,7 +3044,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-er-del-av"><a class="link" href="#datasett-er-del-av">Datasett: er del av</a></h5>
+<h5 id="datasett-er-del-av"><a class="link" href="#datasett-er-del-av">Datasett: er del av (dct:isPartOf)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3176,13 +3077,13 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kan brukes til å beskrive tidsserier, se under <a href="#datasett-har-del">Datasett: har del</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kan brukes til å beskrive tidsserier, se under <a href="#datasett-har-del">Datasett: har del (dct:hasPart)</a>.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-er-pakrevd-av"><a class="link" href="#datasett-er-pakrevd-av">Datasett: er påkrevd av</a></h5>
+<h5 id="datasett-er-pakrevd-av"><a class="link" href="#datasett-er-pakrevd-av">Datasett: er påkrevd av (dct:isRequiredBy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3217,7 +3118,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-er-referert-av"><a class="link" href="#datasett-er-referert-av">Datasett: er referert av</a></h5>
+<h5 id="datasett-er-referert-av"><a class="link" href="#datasett-er-referert-av">Datasett: er referert av (dct:isReferencedBy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3252,7 +3153,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-er-versjon-av"><a class="link" href="#datasett-er-versjon-av">Datasett: er versjon av</a></h5>
+<h5 id="datasett-er-versjon-av"><a class="link" href="#datasett-er-versjon-av">Datasett: er versjon av (dct:isVersionOf)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3287,7 +3188,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-erstatter"><a class="link" href="#datasett-erstatter">Datasett: erstatter</a></h5>
+<h5 id="datasett-erstatter"><a class="link" href="#datasett-erstatter">Datasett: erstatter (dct:replaces)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3322,7 +3223,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-erstattes-av"><a class="link" href="#datasett-erstattes-av">Datasett: erstattes av</a></h5>
+<h5 id="datasett-erstattes-av"><a class="link" href="#datasett-erstattes-av">Datasett: erstattes av (dct:isReplacedBy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3357,7 +3258,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-frekvens"><a class="link" href="#datasett-frekvens">Datasett: frekvens</a></h5>
+<h5 id="datasett-frekvens"><a class="link" href="#datasett-frekvens">Datasett: frekvens (dct:accrualPeriodicity)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3378,7 +3279,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse (URI) til oppdateringsfrekvensen for datasettet. Skal peke på begrep fra <a href="http://publications.europa.eu/resource/authority/frequency">Frequency Name Authority List</a> som vedlikeholdes av EUs Publications Office.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til oppdateringsfrekvensen for datasettet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -3392,7 +3293,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-geografisk-oppløsning"><a class="link" href="#datasett-geografisk-oppløsning">Datasett: geografisk oppløsning</a></h5>
+<h5 id="datasett-geografisk-oppløsning"><a class="link" href="#datasett-geografisk-oppløsning">Datasett: geografisk oppløsning (dcat:spatialResolutionInMeters)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3427,7 +3328,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-har-del"><a class="link" href="#datasett-har-del">Datasett: har del</a></h5>
+<h5 id="datasett-har-del"><a class="link" href="#datasett-har-del">Datasett: har del (dct:hasPart)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3489,7 +3390,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-har-kvalitetsnote"><a class="link" href="#datasett-har-kvalitetsnote">Datasett: har kvalitetsnote</a></h5>
+<h5 id="datasett-har-kvalitetsnote"><a class="link" href="#datasett-har-kvalitetsnote">Datasett: har kvalitetsnote (dqv:hasQualityAnnotation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3555,7 +3456,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-har-kvantifiserbart-måleresultat"><a class="link" href="#datasett-har-kvantifiserbart-måleresultat">Datasett: har kvantifiserbart måleresultat</a></h5>
+<h5 id="datasett-har-kvantifiserbart-måleresultat"><a class="link" href="#datasett-har-kvantifiserbart-måleresultat">Datasett: har kvantifiserbart måleresultat (dqv:hasQualityMeasurement)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3608,7 +3509,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-har-versjon"><a class="link" href="#datasett-har-versjon">Datasett: har versjon</a></h5>
+<h5 id="datasett-har-versjon"><a class="link" href="#datasett-har-versjon">Datasett: har versjon (dct:hasVersion)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3643,7 +3544,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-i-samsvar-med"><a class="link" href="#datasett-i-samsvar-med">Datasett: i samsvar med</a></h5>
+<h5 id="datasett-i-samsvar-med"><a class="link" href="#datasett-i-samsvar-med">Datasett: i samsvar med (dct:conformsTo)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3678,7 +3579,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-kilde"><a class="link" href="#datasett-kilde">Datasett: kilde</a></h5>
+<h5 id="datasett-kilde"><a class="link" href="#datasett-kilde">Datasett: kilde (dct:source)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3713,7 +3614,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-krever"><a class="link" href="#datasett-krever">Datasett: krever</a></h5>
+<h5 id="datasett-krever"><a class="link" href="#datasett-krever">Datasett: krever (dct:requires)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3748,7 +3649,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-kvalifisert-kreditering"><a class="link" href="#datasett-kvalifisert-kreditering">Datasett: kvalifisert kreditering</a></h5>
+<h5 id="datasett-kvalifisert-kreditering"><a class="link" href="#datasett-kvalifisert-kreditering">Datasett: kvalifisert kreditering (prov:qualifiedAttribution)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3783,7 +3684,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-kvalifisert-relasjon"><a class="link" href="#datasett-kvalifisert-relasjon">Datasett: kvalifisert relasjon</a></h5>
+<h5 id="datasett-kvalifisert-relasjon"><a class="link" href="#datasett-kvalifisert-relasjon">Datasett: kvalifisert relasjon (dcat:qualifiedRelation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3818,7 +3719,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-landingsside"><a class="link" href="#datasett-landingsside">Datasett: landingsside</a></h5>
+<h5 id="datasett-landingsside"><a class="link" href="#datasett-landingsside">Datasett: landingsside (dcat:landingPage)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3853,7 +3754,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-produsent"><a class="link" href="#datasett-produsent">Datasett: produsent</a></h5>
+<h5 id="datasett-produsent"><a class="link" href="#datasett-produsent">Datasett: produsent (dct:creator)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3888,7 +3789,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-proveniensbeskrivelse"><a class="link" href="#datasett-proveniensbeskrivelse">Datasett: proveniensbeskrivelse</a></h5>
+<h5 id="datasett-proveniensbeskrivelse"><a class="link" href="#datasett-proveniensbeskrivelse">Datasett: proveniensbeskrivelse (dct:provenance)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3923,7 +3824,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-refererer-til"><a class="link" href="#datasett-refererer-til">Datasett: refererer til</a></h5>
+<h5 id="datasett-refererer-til"><a class="link" href="#datasett-refererer-til">Datasett: refererer til (dct:references)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3958,7 +3859,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-relatertressurs"><a class="link" href="#datasett-relatertressurs">Datasett: relatert ressurs</a></h5>
+<h5 id="datasett-relatertressurs"><a class="link" href="#datasett-relatertressurs">Datasett: relatert ressurs (dct:relation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3993,7 +3894,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-sprak"><a class="link" href="#datasett-sprak">Datasett: språk</a></h5>
+<h5 id="datasett-sprak"><a class="link" href="#datasett-sprak">Datasett: språk (dct:language)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4028,7 +3929,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-tidsromsoppløsning"><a class="link" href="#datasett-tidsromsoppløsning">Datasett: tidsromsoppløsning</a></h5>
+<h5 id="datasett-tidsromsoppløsning"><a class="link" href="#datasett-tidsromsoppløsning">Datasett: tidsromsoppløsning (dcat:temporalResolution)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4063,7 +3964,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-type"><a class="link" href="#datasett-type">Datasett: type</a></h5>
+<h5 id="datasett-type"><a class="link" href="#datasett-type">Datasett: type (dct:type)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4118,7 +4019,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-utgivelsesdato"><a class="link" href="#datasett-utgivelsesdato">Datasett: utgivelsesdato</a></h5>
+<h5 id="datasett-utgivelsesdato"><a class="link" href="#datasett-utgivelsesdato">Datasett: utgivelsesdato (dct:issued)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4153,7 +4054,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-versjon"><a class="link" href="#datasett-versjon">Datasett: versjon</a></h5>
+<h5 id="datasett-versjon"><a class="link" href="#datasett-versjon">Datasett: versjon (owl:versionInfo)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4188,7 +4089,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-versjonsnote"><a class="link" href="#datasett-versjonsnote">Datasett: versjonsnote</a></h5>
+<h5 id="datasett-versjonsnote"><a class="link" href="#datasett-versjonsnote">Datasett: versjonsnote (adms:versionNotes)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4232,7 +4133,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_datatjeneste"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_datatjeneste">Obligatoriske egenskaper for klassen <em>Datatjeneste</em></a></h4>
 <div class="sect4">
-<h5 id="datatjeneste-endepunktsurl"><a class="link" href="#datatjeneste-endepunktsurl">Datatjeneste: endepunktsURL</a></h5>
+<h5 id="datatjeneste-endepunktsurl"><a class="link" href="#datatjeneste-endepunktsurl">Datatjeneste: endepunktsURL (dcat:endpointURL)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4267,7 +4168,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-identifikator"><a class="link" href="#datatjeneste-identifikator">Datatjeneste: identifikator</a></h5>
+<h5 id="datatjeneste-identifikator"><a class="link" href="#datatjeneste-identifikator">Datatjeneste: identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4302,7 +4203,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-tittel"><a class="link" href="#datatjeneste-tittel">Datatjeneste: tittel</a></h5>
+<h5 id="datatjeneste-tittel"><a class="link" href="#datatjeneste-tittel">Datatjeneste: tittel (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4340,7 +4241,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_datatjeneste"><a class="link" href="#_anbefalte_egenskaper_for_klassen_datatjeneste">Anbefalte egenskaper for klassen <em>Datatjeneste</em></a></h4>
 <div class="sect4">
-<h5 id="datatjeneste-emneord"><a class="link" href="#datatjeneste-emneord">Datatjeneste: emneord</a></h5>
+<h5 id="datatjeneste-emneord"><a class="link" href="#datatjeneste-emneord">Datatjeneste: emneord (dcat:keyword)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4375,7 +4276,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-endepunktsbeskrivelse"><a class="link" href="#datatjeneste-endepunktsbeskrivelse">Datatjeneste: endepunktsbeskrivelse</a></h5>
+<h5 id="datatjeneste-endepunktsbeskrivelse"><a class="link" href="#datatjeneste-endepunktsbeskrivelse">Datatjeneste: endepunktsbeskrivelse (dcat:endpointDescription)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4410,7 +4311,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-kontaktpunkt"><a class="link" href="#datatjeneste-kontaktpunkt">Datatjeneste: kontaktpunkt</a></h5>
+<h5 id="datatjeneste-kontaktpunkt"><a class="link" href="#datatjeneste-kontaktpunkt">Datatjeneste: kontaktpunkt (dcat:contactPoint)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4445,7 +4346,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-tema"><a class="link" href="#datatjeneste-tema">Datatjeneste: tema</a></h5>
+<h5 id="datatjeneste-tema"><a class="link" href="#datatjeneste-tema">Datatjeneste: tema (dcat:theme)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4480,7 +4381,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-tilgjengeliggjor-datasett"><a class="link" href="#datatjeneste-tilgjengeliggjor-datasett">Datatjeneste: tilgjengeliggjør datasett</a></h5>
+<h5 id="datatjeneste-tilgjengeliggjor-datasett"><a class="link" href="#datatjeneste-tilgjengeliggjor-datasett">Datatjeneste: tilgjengeliggjør datasett (dcat:servesDataset)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4515,7 +4416,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-utgiver"><a class="link" href="#datatjeneste-utgiver">Datatjeneste: utgiver</a></h5>
+<h5 id="datatjeneste-utgiver"><a class="link" href="#datatjeneste-utgiver">Datatjeneste: utgiver (dct:publisher)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4553,7 +4454,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_datatjeneste"><a class="link" href="#_valgfrie_egenskaper_for_klassen_datatjeneste">Valgfrie egenskaper for klassen <em>Datatjeneste</em></a></h4>
 <div class="sect4">
-<h5 id="datatjeneste-beskrivelse"><a class="link" href="#datatjeneste-beskrivelse">Datatjeneste: beskrivelse</a></h5>
+<h5 id="datatjeneste-beskrivelse"><a class="link" href="#datatjeneste-beskrivelse">Datatjeneste: beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4588,7 +4489,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-dokumentasjon"><a class="link" href="#datatjeneste-dokumentasjon">Datatjeneste: dokumentasjon</a></h5>
+<h5 id="datatjeneste-dokumentasjon"><a class="link" href="#datatjeneste-dokumentasjon">Datatjeneste: dokumentasjon (foaf:page)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4623,7 +4524,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-følger"><a class="link" href="#datatjeneste-følger">Datatjeneste: følger</a></h5>
+<h5 id="datatjeneste-følger"><a class="link" href="#datatjeneste-følger">Datatjeneste: følger (cpsv:follows)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4658,7 +4559,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-i-samsvar-med"><a class="link" href="#datatjeneste-i-samsvar-med">Datatjeneste: i samsvar med</a></h5>
+<h5 id="datatjeneste-i-samsvar-med"><a class="link" href="#datatjeneste-i-samsvar-med">Datatjeneste: i samsvar med (dct:conformsTo)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4693,7 +4594,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-landingsside"><a class="link" href="#datatjeneste-landingsside">Datatjeneste: landingsside</a></h5>
+<h5 id="datatjeneste-landingsside"><a class="link" href="#datatjeneste-landingsside">Datatjeneste: landingsside (dcat:landingPage)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4728,7 +4629,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-lisens"><a class="link" href="#datatjeneste-lisens">Datatjeneste: lisens</a></h5>
+<h5 id="datatjeneste-lisens"><a class="link" href="#datatjeneste-lisens">Datatjeneste: lisens (dct:license)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4763,7 +4664,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-tilgangsrettigheter"><a class="link" href="#datatjeneste-tilgangsrettigheter">Datatjeneste: tilgangsrettigheter</a></h5>
+<h5 id="datatjeneste-tilgangsrettigheter"><a class="link" href="#datatjeneste-tilgangsrettigheter">Datatjeneste: tilgangsrettigheter (dct:accessRights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4798,7 +4699,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-type"><a class="link" href="#datatjeneste-type">Datatjeneste: type</a></h5>
+<h5 id="datatjeneste-type"><a class="link" href="#datatjeneste-type">Datatjeneste: type (dct:type)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4842,7 +4743,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_distribusjon"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_distribusjon">Obligatoriske egenskaper for klassen <em>Distribusjon</em></a></h4>
 <div class="sect4">
-<h5 id="distribusjon-format"><a class="link" href="#distribusjon-format">Distribusjon: format</a></h5>
+<h5 id="distribusjon-format"><a class="link" href="#distribusjon-format">Distribusjon: format (dct:format)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4875,13 +4776,13 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <a href="#distribusjon-medietype">Distribusjon: medietype</a> (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..<strong>1</strong> til 1..<strong>n</strong> (allerede i DCAT-AP-NO v.1.1).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <a href="#distribusjon-medietype">Distribusjon: medietype (dcat:mediaType)</a> (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..<strong>1</strong> til 1..<strong>n</strong> (allerede i DCAT-AP-NO v.1.1).</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-tilgangsurl"><a class="link" href="#distribusjon-tilgangsurl">Distribusjon: tilgangsURL</a></h5>
+<h5 id="distribusjon-tilgangsurl"><a class="link" href="#distribusjon-tilgangsurl">Distribusjon: tilgangsURL (dcat:accessURL)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4919,7 +4820,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_distribusjon"><a class="link" href="#_anbefalte_egenskaper_for_klassen_distribusjon">Anbefalte egenskaper for klassen <em>Distribusjon</em></a></h4>
 <div class="sect4">
-<h5 id="distribusjon-beskrivelse"><a class="link" href="#distribusjon-beskrivelse">Distribusjon: beskrivelse</a></h5>
+<h5 id="distribusjon-beskrivelse"><a class="link" href="#distribusjon-beskrivelse">Distribusjon: beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4954,7 +4855,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-lisens"><a class="link" href="#distribusjon-lisens">Distribusjon: lisens</a></h5>
+<h5 id="distribusjon-lisens"><a class="link" href="#distribusjon-lisens">Distribusjon: lisens (dct:license)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4989,7 +4890,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-tilgjengelighet"><a class="link" href="#distribusjon-tilgjengelighet">Distribusjon: tilgjengelighet</a></h5>
+<h5 id="distribusjon-tilgjengelighet"><a class="link" href="#distribusjon-tilgjengelighet">Distribusjon: tilgjengelighet (dcatap:availability)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5027,7 +4928,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_distribusjon"><a class="link" href="#_valgfrie_egenskaper_for_klassen_distribusjon">Valgfrie egenskaper for klassen <em>Distribusjon</em></a></h4>
 <div class="sect4">
-<h5 id="distribusjon-dokumentasjon"><a class="link" href="#distribusjon-dokumentasjon">Distribusjon: dokumentasjon</a></h5>
+<h5 id="distribusjon-dokumentasjon"><a class="link" href="#distribusjon-dokumentasjon">Distribusjon: dokumentasjon (foaf:page)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5036,7 +4937,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">page (documentation)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">page (foaf:page) (documentation)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -5062,7 +4963,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-endringsdato"><a class="link" href="#distribusjon-endringsdato">Distribusjon: endringsdato</a></h5>
+<h5 id="distribusjon-endringsdato"><a class="link" href="#distribusjon-endringsdato">Distribusjon: endringsdato (dct:modified)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5097,7 +4998,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-filstorrelse"><a class="link" href="#distribusjon-filstorrelse">Distribusjon: filstørrelse</a></h5>
+<h5 id="distribusjon-filstorrelse"><a class="link" href="#distribusjon-filstorrelse">Distribusjon: filstørrelse (dcat:byteSize)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5132,7 +5033,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="geografisk-opplosning"><a class="link" href="#geografisk-opplosning">Distribusjon: geografisk oppløsning</a></h5>
+<h5 id="geografisk-opplosning"><a class="link" href="#geografisk-opplosning">Distribusjon: geografisk oppløsning (dcat:spatialResolutionInMeters)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5167,7 +5068,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-i-samsvar-med"><a class="link" href="#distribusjon-i-samsvar-med">Distribusjon: i samsvar med</a></h5>
+<h5 id="distribusjon-i-samsvar-med"><a class="link" href="#distribusjon-i-samsvar-med">Distribusjon: i samsvar med (dct:conformsTo)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5202,7 +5103,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-komprimeringsformat"><a class="link" href="#distribusjon-komprimeringsformat">Distribusjon: komprimeringsformat</a></h5>
+<h5 id="distribusjon-komprimeringsformat"><a class="link" href="#distribusjon-komprimeringsformat">Distribusjon: komprimeringsformat (dcat:compressFormat)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5237,7 +5138,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-medietype"><a class="link" href="#distribusjon-medietype">Distribusjon: medietype</a></h5>
+<h5 id="distribusjon-medietype"><a class="link" href="#distribusjon-medietype">Distribusjon: medietype (dcat:mediaType)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5272,7 +5173,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-nedlastningslenke"><a class="link" href="#distribusjon-nedlastningslenke">Distribusjon: nedlastningslenke</a></h5>
+<h5 id="distribusjon-nedlastningslenke"><a class="link" href="#distribusjon-nedlastningslenke">Distribusjon: nedlastningslenke (dcat:downloadURL)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5307,7 +5208,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-pakkeformat"><a class="link" href="#distribusjon-pakkeformat">Distribusjon: pakkeformat</a></h5>
+<h5 id="distribusjon-pakkeformat"><a class="link" href="#distribusjon-pakkeformat">Distribusjon: pakkeformat (dcat:packageFormat)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5342,7 +5243,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-policy"><a class="link" href="#distribusjon-policy">Distribusjon: policy</a></h5>
+<h5 id="distribusjon-policy"><a class="link" href="#distribusjon-policy">Distribusjon: policy (odrl:hasPolicy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5377,7 +5278,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-rettigheter"><a class="link" href="#distribusjon-rettigheter">Distribusjon: rettigheter</a></h5>
+<h5 id="distribusjon-rettigheter"><a class="link" href="#distribusjon-rettigheter">Distribusjon: rettigheter (dct:rights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5412,7 +5313,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-sjekksum"><a class="link" href="#distribusjon-sjekksum">Distribusjon: sjekksum</a></h5>
+<h5 id="distribusjon-sjekksum"><a class="link" href="#distribusjon-sjekksum">Distribusjon: sjekksum (spdx:checksum)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5447,7 +5348,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-sprak"><a class="link" href="#distribusjon-sprak">Distribusjon: språk</a></h5>
+<h5 id="distribusjon-sprak"><a class="link" href="#distribusjon-sprak">Distribusjon: språk (dct:language)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5482,7 +5383,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-status"><a class="link" href="#distribusjon-status">Distribusjon: status</a></h5>
+<h5 id="distribusjon-status"><a class="link" href="#distribusjon-status">Distribusjon: status (adms:status)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5517,7 +5418,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="_distribusjon_tidsromsoppløsning"><a class="link" href="#_distribusjon_tidsromsoppløsning">Distribusjon: tidsromsoppløsning</a></h5>
+<h5 id="_distribusjon_tidsromsoppløsning_dcattemporalresolution"><a class="link" href="#_distribusjon_tidsromsoppløsning_dcattemporalresolution">Distribusjon: tidsromsoppløsning (dcat:temporalResolution <a id="distribusjon_tidsromsoppløsning"></a>)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5552,7 +5453,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-tilganstjeneste"><a class="link" href="#distribusjon-tilganstjeneste">Distribusjon: tilgangstjeneste</a></h5>
+<h5 id="distribusjon-tilganstjeneste"><a class="link" href="#distribusjon-tilganstjeneste">Distribusjon: tilgangstjeneste (dcat:accessService)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5587,7 +5488,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-tittel"><a class="link" href="#distribusjon-tittel">Distribusjon: tittel</a></h5>
+<h5 id="distribusjon-tittel"><a class="link" href="#distribusjon-tittel">Distribusjon: tittel (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5622,7 +5523,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="distribusjon-utgivelsesdato"><a class="link" href="#distribusjon-utgivelsesdato">Distribusjon: utgivelsesdato</a></h5>
+<h5 id="distribusjon-utgivelsesdato"><a class="link" href="#distribusjon-utgivelsesdato">Distribusjon: utgivelsesdato (dct:issued)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5666,7 +5567,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_identifikator"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_identifikator">Obligatoriske egenskaper for klassen <em>Identifikator</em></a></h4>
 <div class="sect4">
-<h5 id="identifikator-notasjon"><a class="link" href="#identifikator-notasjon">Identifikator: notasjon</a></h5>
+<h5 id="identifikator-notasjon"><a class="link" href="#identifikator-notasjon">Identifikator: notasjon (skos:notation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5710,7 +5611,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_katalog"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_katalog">Obligatoriske egenskaper for klassen <em>Katalog</em></a></h4>
 <div class="sect4">
-<h5 id="katalog-beskrivelse"><a class="link" href="#katalog-beskrivelse">Katalog: beskrivelse</a></h5>
+<h5 id="katalog-beskrivelse"><a class="link" href="#katalog-beskrivelse">Katalog: beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5745,7 +5646,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-identifikator"><a class="link" href="#katalog-identifikator">Katalog: identifikator</a></h5>
+<h5 id="katalog-identifikator"><a class="link" href="#katalog-identifikator">Katalog: identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5780,7 +5681,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-tittel"><a class="link" href="#katalog-tittel">Katalog: tittel</a></h5>
+<h5 id="katalog-tittel"><a class="link" href="#katalog-tittel">Katalog: tittel (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5815,7 +5716,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-utgiver"><a class="link" href="#katalog-utgiver">Katalog: utgiver</a></h5>
+<h5 id="katalog-utgiver"><a class="link" href="#katalog-utgiver">Katalog: utgiver (dct:publisher)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5853,7 +5754,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_katalog"><a class="link" href="#_anbefalte_egenskaper_for_klassen_katalog">Anbefalte egenskaper for klassen <em>Katalog</em></a></h4>
 <div class="sect4">
-<h5 id="katalog-datasett"><a class="link" href="#katalog-datasett">Katalog: datasett</a></h5>
+<h5 id="katalog-datasett"><a class="link" href="#katalog-datasett">Katalog: datasett (dcat:dataset)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5888,7 +5789,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-dekningsomrade"><a class="link" href="#katalog-dekningsomrade">Katalog: dekningsområde</a></h5>
+<h5 id="katalog-dekningsomrade"><a class="link" href="#katalog-dekningsomrade">Katalog: dekningsområde (dct:spatial)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5923,7 +5824,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-endringsdato"><a class="link" href="#katalog-endringsdato">Katalog: endringsdato</a></h5>
+<h5 id="katalog-endringsdato"><a class="link" href="#katalog-endringsdato">Katalog: endringsdato (dct:modified)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5958,7 +5859,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-frekvens"><a class="link" href="#katalog-frekvens">Katalog: frekvens</a></h5>
+<h5 id="katalog-frekvens"><a class="link" href="#katalog-frekvens">Katalog: frekvens (dct:accrualPeriodicity)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5979,7 +5880,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse (URI) til oppdateringsfrekvensen for datasettet.  Skal peke på begrep fra <a href="http://publications.europa.eu/resource/authority/frequency">Frequency Name Authority List</a> som vedlikeholdes av EUs Publications Office.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til oppdateringsfrekvensen for datasettet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -5993,7 +5894,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-hjemmeside"><a class="link" href="#katalog-hjemmeside">Katalog: hjemmeside</a></h5>
+<h5 id="katalog-hjemmeside"><a class="link" href="#katalog-hjemmeside">Katalog: hjemmeside (foaf:homepage)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6028,7 +5929,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-lisens"><a class="link" href="#katalog-lisens">Katalog: lisens</a></h5>
+<h5 id="katalog-lisens"><a class="link" href="#katalog-lisens">Katalog: lisens (dct:license)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6063,7 +5964,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-proveniens"><a class="link" href="#katalog-proveniens">Katalog: proveniens</a></h5>
+<h5 id="katalog-proveniens"><a class="link" href="#katalog-proveniens">Katalog: proveniens (dct:provenance)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6098,7 +5999,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-sprak"><a class="link" href="#katalog-sprak">Katalog: språk</a></h5>
+<h5 id="katalog-sprak"><a class="link" href="#katalog-sprak">Katalog: språk (dct:language)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6133,7 +6034,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-temaer"><a class="link" href="#katalog-temaer">Katalog: temaer</a></h5>
+<h5 id="katalog-temaer"><a class="link" href="#katalog-temaer">Katalog: temaer (dcat:themeTaxonomy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6168,7 +6069,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-utgivelsesdato"><a class="link" href="#katalog-utgivelsesdato">Katalog: utgivelsesdato</a></h5>
+<h5 id="katalog-utgivelsesdato"><a class="link" href="#katalog-utgivelsesdato">Katalog: utgivelsesdato (dct:issued)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6206,7 +6107,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_katalog"><a class="link" href="#_valgfrie_egenskaper_for_klassen_katalog">Valgfrie egenskaper for klassen <em>Katalog</em></a></h4>
 <div class="sect4">
-<h5 id="katalog-datatjeneste"><a class="link" href="#katalog-datatjeneste">Katalog: datatjeneste</a></h5>
+<h5 id="katalog-datatjeneste"><a class="link" href="#katalog-datatjeneste">Katalog: datatjeneste (dcat:service)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6241,7 +6142,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-er-del-av"><a class="link" href="#katalog-er-del-av">Katalog: er del av</a></h5>
+<h5 id="katalog-er-del-av"><a class="link" href="#katalog-er-del-av">Katalog: er del av (dct:isPartOf)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6276,7 +6177,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-har-del"><a class="link" href="#katalog-har-del">Katalog: har del</a></h5>
+<h5 id="katalog-har-del"><a class="link" href="#katalog-har-del">Katalog: har del (dct:hasPart)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6311,7 +6212,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-katalog"><a class="link" href="#katalog-katalog">Katalog: katalog</a></h5>
+<h5 id="katalog-katalog"><a class="link" href="#katalog-katalog">Katalog: katalog (dcat:catalog)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6346,7 +6247,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-katalogpost"><a class="link" href="#katalog-katalogpost">Katalog: katalogpost</a></h5>
+<h5 id="katalog-katalogpost"><a class="link" href="#katalog-katalogpost">Katalog: katalogpost (dcat:record)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6381,7 +6282,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-produsent"><a class="link" href="#katalog-produsent">Katalog: produsent</a></h5>
+<h5 id="katalog-produsent"><a class="link" href="#katalog-produsent">Katalog: produsent (dct:creator)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6416,7 +6317,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-rettigheter"><a class="link" href="#katalog-rettigheter">Katalog: rettigheter</a></h5>
+<h5 id="katalog-rettigheter"><a class="link" href="#katalog-rettigheter">Katalog: rettigheter (dct:rights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6460,7 +6361,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_katalogpost"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_katalogpost">Obligatoriske egenskaper for klassen <em>Katalogpost</em></a></h4>
 <div class="sect4">
-<h5 id="katalogpost-endringsdato"><a class="link" href="#katalogpost-endringsdato">Katalogpost: endringsdato</a></h5>
+<h5 id="katalogpost-endringsdato"><a class="link" href="#katalogpost-endringsdato">Katalogpost: endringsdato (dct:modified)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6495,7 +6396,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalogpost-primartema"><a class="link" href="#katalogpost-primartema">Katalogpost: primærtema</a></h5>
+<h5 id="katalogpost-primartema"><a class="link" href="#katalogpost-primartema">Katalogpost: primærtema (foaf:primaryTopic)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6533,7 +6434,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_katalogpost"><a class="link" href="#_anbefalte_egenskaper_for_klassen_katalogpost">Anbefalte egenskaper for klassen <em>Katalogpost</em></a></h4>
 <div class="sect4">
-<h5 id="katalogpost-i-samsvar-med"><a class="link" href="#katalogpost-i-samsvar-med">Katalogpost: i samsvar med</a></h5>
+<h5 id="katalogpost-i-samsvar-med"><a class="link" href="#katalogpost-i-samsvar-med">Katalogpost: i samsvar med (dct:conformsTo)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6568,7 +6469,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalogpost-status"><a class="link" href="#katalogpost-status">Katalogpost: status</a></h5>
+<h5 id="katalogpost-status"><a class="link" href="#katalogpost-status">Katalogpost: status (adms:status)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6603,7 +6504,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalogpost-utlistingsdato"><a class="link" href="#katalogpost-utlistingsdato">Katalogpost: utlistingsdato</a></h5>
+<h5 id="katalogpost-utlistingsdato"><a class="link" href="#katalogpost-utlistingsdato">Katalogpost: utlistingsdato (dct:issued)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6641,7 +6542,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_katalogpost"><a class="link" href="#_valgfrie_egenskaper_for_klassen_katalogpost">Valgfrie egenskaper for klassen <em>Katalogpost</em></a></h4>
 <div class="sect4">
-<h5 id="katalogpost-beskrivelse"><a class="link" href="#katalogpost-beskrivelse">Katalogpost: beskrivelse</a></h5>
+<h5 id="katalogpost-beskrivelse"><a class="link" href="#katalogpost-beskrivelse">Katalogpost: beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6676,7 +6577,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalogpost-kilde"><a class="link" href="#katalogpost-kilde">Katalogpost: kilde</a></h5>
+<h5 id="katalogpost-kilde"><a class="link" href="#katalogpost-kilde">Katalogpost: kilde (dct:source)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6711,7 +6612,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalogpost-sprak"><a class="link" href="#katalogpost-sprak">Katalogpost: språk</a></h5>
+<h5 id="katalogpost-sprak"><a class="link" href="#katalogpost-sprak">Katalogpost: språk (dct:language)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6746,7 +6647,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalogpost-tittel"><a class="link" href="#katalogpost-tittel">Katalogpost: tittel</a></h5>
+<h5 id="katalogpost-tittel"><a class="link" href="#katalogpost-tittel">Katalogpost: tittel (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6790,7 +6691,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_lisensdokument"><a class="link" href="#_anbefalte_egenskaper_for_klassen_lisensdokument">Anbefalte egenskaper for klassen <em>Lisensdokument</em></a></h4>
 <div class="sect4">
-<h5 id="lisensdokument-lisenstype"><a class="link" href="#lisensdokument-lisenstype">Lisensdokument: lisenstype</a></h5>
+<h5 id="lisensdokument-lisenstype"><a class="link" href="#lisensdokument-lisenstype">Lisensdokument: lisenstype (dct:type)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6834,7 +6735,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_lokasjon"><a class="link" href="#_anbefalte_egenskaper_for_klassen_lokasjon">Anbefalte egenskaper for klassen <em>Lokasjon</em></a></h4>
 <div class="sect4">
-<h5 id="lokalsjon-område"><a class="link" href="#lokalsjon-område">Lokasjon: område</a></h5>
+<h5 id="lokalsjon-område"><a class="link" href="#lokalsjon-område">Lokasjon: område (dcat:bbox)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6869,7 +6770,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="lokasjon-geografisk-midtpunkt"><a class="link" href="#lokasjon-geografisk-midtpunkt">Lokasjon: geografisk midtpunkt</a></h5>
+<h5 id="lokasjon-geografisk-midtpunkt"><a class="link" href="#lokasjon-geografisk-midtpunkt">Lokasjon: geografisk midtpunkt (dcat:centroid)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6907,7 +6808,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_lokasjon"><a class="link" href="#_valgfrie_egenskaper_for_klassen_lokasjon">Valgfrie egenskaper for klassen <em>Lokasjon</em></a></h4>
 <div class="sect4">
-<h5 id="lokasjon-geometri"><a class="link" href="#lokasjon-geometri">Lokasjon: geometri</a></h5>
+<h5 id="lokasjon-geometri"><a class="link" href="#lokasjon-geometri">Lokasjon: geometri (locn:geometry)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6964,7 +6865,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_offentlig_organisasjon"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_offentlig_organisasjon">Obligatoriske egenskaper for klassen <em>Offentlig organisasjon</em></a></h4>
 <div class="sect4">
-<h5 id="offentlig-organisasjon-dekningsområde"><a class="link" href="#offentlig-organisasjon-dekningsområde">Offentlig organisasjon: dekningsområde</a></h5>
+<h5 id="offentlig-organisasjon-dekningsområde"><a class="link" href="#offentlig-organisasjon-dekningsområde">Offentlig organisasjon: dekningsområde (dct:spatial)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6995,15 +6896,11 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien bør være URI fra <a href="https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/atu">Administrative Territorial Units - Named Authority List</a> forvaltet av EUs Publications Office.</p></td>
-</tr>
 </tbody>
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-organisasjon-foretrukket-navn"><a class="link" href="#offentlig-organisasjon-foretrukket-navn">Offentlig organisasjon: foretrukket navn</a></h5>
+<h5 id="offentlig-organisasjon-foretrukket-navn"><a class="link" href="#offentlig-organisasjon-foretrukket-navn">Offentlig organisasjon: foretrukket navn (skos:prefLabel)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7038,7 +6935,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-organisasjon-identifikator"><a class="link" href="#offentlig-organisasjon-identifikator">Offentlig organisasjon: identifikator</a></h5>
+<h5 id="offentlig-organisasjon-identifikator"><a class="link" href="#offentlig-organisasjon-identifikator">Offentlig organisasjon: identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7073,7 +6970,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-organisasjon-navn"><a class="link" href="#offentlig-organisasjon-navn">Offentlig organisasjon: navn</a></h5>
+<h5 id="offentlig-organisasjon-navn"><a class="link" href="#offentlig-organisasjon-navn">Offentlig organisasjon: navn (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7115,7 +7012,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_offentlig_organisasjon"><a class="link" href="#_anbefalte_egenskaper_for_klassen_offentlig_organisasjon">Anbefalte egenskaper for klassen <em>Offentlig organisasjon</em></a></h4>
 <div class="sect4">
-<h5 id="offentlig-organisasjon-adresse"><a class="link" href="#offentlig-organisasjon-adresse">Offentlig organisasjon: adresse</a></h5>
+<h5 id="offentlig-organisasjon-adresse"><a class="link" href="#offentlig-organisasjon-adresse">Offentlig organisasjon: adresse (locn:address)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7150,7 +7047,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-organisasjon-hjemmeside"><a class="link" href="#offentlig-organisasjon-hjemmeside">Offentlig organisasjon: hjemmeside</a></h5>
+<h5 id="offentlig-organisasjon-hjemmeside"><a class="link" href="#offentlig-organisasjon-hjemmeside">Offentlig organisasjon: hjemmeside (foaf:homepage)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7185,7 +7082,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-organisasjon-klassifisering"><a class="link" href="#offentlig-organisasjon-klassifisering">Offentlig organisasjon: klassifisering</a></h5>
+<h5 id="offentlig-organisasjon-klassifisering"><a class="link" href="#offentlig-organisasjon-klassifisering">Offentlig organisasjon: klassifisering (org:classification)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7229,7 +7126,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_offentlig_tjeneste"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_offentlig_tjeneste">Obligatoriske egenskaper for klassen <em>Offentlig tjeneste</em></a></h4>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-beskrivelse"><a class="link" href="#offentlig-tjeneste-beskrivelse">Offentlig tjeneste: beskrivelse</a></h5>
+<h5 id="offentlig-tjeneste-beskrivelse"><a class="link" href="#offentlig-tjeneste-beskrivelse">Offentlig tjeneste: beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7264,7 +7161,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-har-kompetent-organ"><a class="link" href="#offentlig-tjeneste-har-kompetent-organ">Offentlig tjeneste: har kompetent organ</a></h5>
+<h5 id="offentlig-tjeneste-har-kompetent-organ"><a class="link" href="#offentlig-tjeneste-har-kompetent-organ">Offentlig tjeneste: har kompetent organ (cv:hasCompetentAuthority)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7303,7 +7200,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-identifikator"><a class="link" href="#offentlig-tjeneste-identifikator">Offentlig tjeneste: identifikator</a></h5>
+<h5 id="offentlig-tjeneste-identifikator"><a class="link" href="#offentlig-tjeneste-identifikator">Offentlig tjeneste: identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7338,7 +7235,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-tittel"><a class="link" href="#offentlig-tjeneste-tittel">Offentlig tjeneste: tittel</a></h5>
+<h5 id="offentlig-tjeneste-tittel"><a class="link" href="#offentlig-tjeneste-tittel">Offentlig tjeneste: tittel (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7376,7 +7273,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_offentlig_tjeneste"><a class="link" href="#_anbefalte_egenskaper_for_klassen_offentlig_tjeneste">Anbefalte egenskaper for klassen <em>Offentlig tjeneste</em></a></h4>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-dekningsområde"><a class="link" href="#offentlig-tjeneste-dekningsområde">Offentlig tjeneste: dekningsområde</a></h5>
+<h5 id="offentlig-tjeneste-dekningsområde"><a class="link" href="#offentlig-tjeneste-dekningsområde">Offentlig tjeneste: dekningsområde (dct:spatial)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7411,7 +7308,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-er-del-av"><a class="link" href="#offentlig-tjeneste-er-del-av">Offentlig tjeneste: er del av</a></h5>
+<h5 id="offentlig-tjeneste-er-del-av"><a class="link" href="#offentlig-tjeneste-er-del-av">Offentlig tjeneste: er del av (dct:isPartOf)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7450,7 +7347,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-har-del"><a class="link" href="#offentlig-tjeneste-har-del">Offentlig tjeneste: har del</a></h5>
+<h5 id="offentlig-tjeneste-har-del"><a class="link" href="#offentlig-tjeneste-har-del">Offentlig tjeneste: har del (dct:hasPart)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7489,7 +7386,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-hjemmeside"><a class="link" href="#offentlig-tjeneste-hjemmeside">Offentlig tjeneste: hjemmeside</a></h5>
+<h5 id="offentlig-tjeneste-hjemmeside"><a class="link" href="#offentlig-tjeneste-hjemmeside">Offentlig tjeneste: hjemmeside (foaf:homepage)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7524,7 +7421,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-produserer"><a class="link" href="#offentlig-tjeneste-produserer">Offentlig tjeneste: produserer (dataressurser)</a></h5>
+<h5 id="offentlig-tjeneste-produserer"><a class="link" href="#offentlig-tjeneste-produserer">Offentlig tjeneste: produserer (dataressurser) (cpsv:produces)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7559,7 +7456,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-status"><a class="link" href="#offentlig-tjeneste-status">Offentlig tjeneste: status</a></h5>
+<h5 id="offentlig-tjeneste-status"><a class="link" href="#offentlig-tjeneste-status">Offentlig tjeneste: status (adms:status)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7594,7 +7491,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-temaområde"><a class="link" href="#offentlig-tjeneste-temaområde">Offentlig tjeneste: temaområde</a></h5>
+<h5 id="offentlig-tjeneste-temaområde"><a class="link" href="#offentlig-tjeneste-temaområde">Offentlig tjeneste: temaområde (cv:thematicArea)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7629,7 +7526,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-type"><a class="link" href="#offentlig-tjeneste-type">Offentlig tjeneste: type</a></h5>
+<h5 id="offentlig-tjeneste-type"><a class="link" href="#offentlig-tjeneste-type">Offentlig tjeneste: type (dct:type)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7667,7 +7564,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_offentlig_tjeneste"><a class="link" href="#_valgfrie_egenskaper_for_klassen_offentlig_tjeneste">Valgfrie egenskaper for klassen <em>Offentlig tjeneste</em></a></h4>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-følger"><a class="link" href="#offentlig-tjeneste-følger">Offentlig tjeneste: følger</a></h5>
+<h5 id="offentlig-tjeneste-følger"><a class="link" href="#offentlig-tjeneste-følger">Offentlig tjeneste: følger (cpsv:follows)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7702,7 +7599,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-har-kontaktpunkt"><a class="link" href="#offentlig-tjeneste-har-kontaktpunkt">Offentlig tjeneste: har kontaktpunkt</a></h5>
+<h5 id="offentlig-tjeneste-har-kontaktpunkt"><a class="link" href="#offentlig-tjeneste-har-kontaktpunkt">Offentlig tjeneste: har kontaktpunkt (cv:hasContactPoint)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7741,7 +7638,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="offentlig-tjeneste-har-regulativ-ressurs"><a class="link" href="#offentlig-tjeneste-har-regulativ-ressurs">Offentlig tjeneste: har regulativ ressurs</a></h5>
+<h5 id="offentlig-tjeneste-har-regulativ-ressurs"><a class="link" href="#offentlig-tjeneste-har-regulativ-ressurs">Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResouce)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7785,7 +7682,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_regel"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_regel">Obligatoriske egenskaper for klassen <em>Regel</em></a></h4>
 <div class="sect4">
-<h5 id="regel-beskrivelse"><a class="link" href="#regel-beskrivelse">Regel: beskrivelse</a></h5>
+<h5 id="regel-beskrivelse"><a class="link" href="#regel-beskrivelse">Regel: beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7820,7 +7717,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="regel-identifikator"><a class="link" href="#regel-identifikator">Regel: identifikator</a></h5>
+<h5 id="regel-identifikator"><a class="link" href="#regel-identifikator">Regel: identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7855,7 +7752,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="regel-tittel"><a class="link" href="#regel-tittel">Regel: tittel</a></h5>
+<h5 id="regel-tittel"><a class="link" href="#regel-tittel">Regel: tittel (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7893,7 +7790,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_regel"><a class="link" href="#_anbefalte_egenskaper_for_klassen_regel">Anbefalte egenskaper for klassen <em>Regel</em></a></h4>
 <div class="sect4">
-<h5 id="regel-implementerer"><a class="link" href="#regel-implementerer">Regel: implementerer</a></h5>
+<h5 id="regel-implementerer"><a class="link" href="#regel-implementerer">Regel: implementerer (cpsv:implements)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7928,7 +7825,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="regel-språk"><a class="link" href="#regel-språk">Regel: språk</a></h5>
+<h5 id="regel-språk"><a class="link" href="#regel-språk">Regel: språk (dct:language)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7966,7 +7863,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_regel"><a class="link" href="#_valgfrie_egenskaper_for_klassen_regel">Valgfrie egenskaper for klassen <em>Regel</em></a></h4>
 <div class="sect4">
-<h5 id="regel-type"><a class="link" href="#regel-type">Regel: type</a></h5>
+<h5 id="regel-type"><a class="link" href="#regel-type">Regel: type (dct:type)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7999,7 +7896,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempelet under egenskapen <a href="#datasett-følger">Datasett: følger</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempelet under egenskapen <a href="#Datasett: følger">[Datasett: følger]</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8014,7 +7911,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_regulativ_ressurs"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_regulativ_ressurs">Obligatoriske egenskaper for klassen <em>Regulativ ressurs</em></a></h4>
 <div class="sect4">
-<h5 id="regulativ-ressurs-type"><a class="link" href="#regulativ-ressurs-type">Regulativ ressurs: type</a></h5>
+<h5 id="regulativ-ressurs-type"><a class="link" href="#regulativ-ressurs-type">Regulativ ressurs: type (dct:type)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8056,7 +7953,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_regulativ_ressurs"><a class="link" href="#_anbefalte_egenskaper_for_klassen_regulativ_ressurs">Anbefalte egenskaper for klassen <em>Regulativ ressurs</em></a></h4>
 <div class="sect4">
-<h5 id="regulativ-ressurs-beskrivelse"><a class="link" href="#regulativ-ressurs-beskrivelse">Regulativ ressurs: beskrivelse</a></h5>
+<h5 id="regulativ-ressurs-beskrivelse"><a class="link" href="#regulativ-ressurs-beskrivelse">Regulativ ressurs: beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8091,7 +7988,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="regulativ-ressurs-identifikator"><a class="link" href="#regulativ-ressurs-identifikator">Regulativ ressurs: identifikator</a></h5>
+<h5 id="regulativ-ressurs-identifikator"><a class="link" href="#regulativ-ressurs-identifikator">Regulativ ressurs: identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8126,7 +8023,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="regulativ-ressurs-referanse"><a class="link" href="#regulativ-ressurs-referanse">Regulativ ressurs: referanse</a></h5>
+<h5 id="regulativ-ressurs-referanse"><a class="link" href="#regulativ-ressurs-referanse">Regulativ ressurs: referanse (rdfs:seeAlso)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8168,7 +8065,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_regulativ_ressurs"><a class="link" href="#_valgfrie_egenskaper_for_klassen_regulativ_ressurs">Valgfrie egenskaper for klassen <em>Regulativ ressurs</em></a></h4>
 <div class="sect4">
-<h5 id="regulativ-ressurs-relatert-regulativ-ressurs"><a class="link" href="#regulativ-ressurs-relatert-regulativ-ressurs">Regulativ ressurs: relatert regulativ ressurs</a></h5>
+<h5 id="regulativ-ressurs-relatert-regulativ-ressurs"><a class="link" href="#regulativ-ressurs-relatert-regulativ-ressurs">Regulativ ressurs: relatert regulativ ressurs (dct:relation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8212,7 +8109,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_relasjon"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_relasjon">Obligatoriske egenskaper for klassen <em>Relasjon</em></a></h4>
 <div class="sect4">
-<h5 id="relasjon-relasjon"><a class="link" href="#relasjon-relasjon">Relasjon: relasjon</a></h5>
+<h5 id="relasjon-relasjon"><a class="link" href="#relasjon-relasjon">Relasjon: relasjon (dct:relation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8247,7 +8144,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="relasjon-rolle"><a class="link" href="#relasjon-rolle">Relasjon: rolle</a></h5>
+<h5 id="relasjon-rolle"><a class="link" href="#relasjon-rolle">Relasjon: rolle (dcat:hadRole)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8291,7 +8188,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_sjekksum"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_sjekksum">Obligatoriske egenskaper for klassen <em>Sjekksum</em></a></h4>
 <div class="sect4">
-<h5 id="sjekksum-algoritme"><a class="link" href="#sjekksum-algoritme">Sjekksum: algoritme</a></h5>
+<h5 id="sjekksum-algoritme"><a class="link" href="#sjekksum-algoritme">Sjekksum: algoritme (spdx:algorithm)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8326,7 +8223,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="sjekksum-sjekksumverdi"><a class="link" href="#sjekksum-sjekksumverdi">Sjekksum: sjekksumverdi</a></h5>
+<h5 id="sjekksum-sjekksumverdi"><a class="link" href="#sjekksum-sjekksumverdi">Sjekksum: sjekksumverdi (spdx:checksumValue)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8363,6 +8260,139 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </div>
 </div>
 <div class="sect2">
+<h3 id="Standard"><a class="link" href="#Standard">Standard</a></h3>
+<div class="paragraph">
+<p>Klassen <em>Standard</em> er valgfri.</p>
+</div>
+<div class="sect3">
+<h4 id="Standard_obligatoriske_egenskaper"><a class="link" href="#Standard_obligatoriske_egenskaper">Obligatoriske egenskaper for klassen <em>Standard</em></a></h4>
+<div class="sect4">
+<h5 id="Standard_harTittel"><a class="link" href="#Standard_harTittel">Standard: har tittel (dct:title)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til tittelen til standarden/spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. For å kunne ha tittel til standard/spesifikasjon.
+Egenskapen kan gjentas for hvert språk tittelen finnes i.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Standard_anbefalte_egenskaper"><a class="link" href="#Standard_anbefalte_egenskaper">Anbefalte egenskaper for klassen <em>Standard</em></a></h4>
+<div class="sect4">
+<h5 id="Standard_harReferanse"><a class="link" href="#Standard_harReferanse">Standard: har referanse (rdfs:seeAlso) </a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has reference</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:seeAlso</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til en referanse til standarden/spesifikasjonen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. For å kunne ha referanse til standard/spesifikasjon.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Standard_valgfrie_egenskaper"><a class="link" href="#Standard_valgfrie_egenskaper">Valgfrie egenskaper for klassen <em>Standard</em></a></h4>
+<div class="sect4">
+<h5 id="Standard_harVersjonsnr"><a class="link" href="#Standard_harVersjonsnr">Standard: har versjonsnummer (owl:versionInfo) </a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">has version number</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">owl:versionInfo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til versjonsnummer.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse. For å kunne refefere til versjonsnummer.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
 <h3 id="tema"><a class="link" href="#tema">Tema</a></h3>
 <div class="paragraph">
 <p>Klassen <em>Tema</em> er obligatorisk.</p>
@@ -8370,7 +8400,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_tema"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_tema">Obligatoriske egenskaper for klassen <em>Tema</em></a></h4>
 <div class="sect4">
-<h5 id="tema-foretrukket-tittel"><a class="link" href="#tema-foretrukket-tittel">Tema: foretrukket tittel</a></h5>
+<h5 id="tema-foretrukket-tittel"><a class="link" href="#tema-foretrukket-tittel">Tema: foretrukket tittel (skos:prefLabel)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8414,7 +8444,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_obligatoriske_egenskaper_for_klassen_tematisk_skjema"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_tematisk_skjema">Obligatoriske egenskaper for klassen <em>Tematisk skjema</em></a></h4>
 <div class="sect4">
-<h5 id="tematisk-skjema-tittel"><a class="link" href="#tematisk-skjema-tittel">Tematisk skjema: tittel</a></h5>
+<h5 id="tematisk-skjema-tittel"><a class="link" href="#tematisk-skjema-tittel">Tematisk skjema: tittel (dct:title)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8458,7 +8488,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect3">
 <h4 id="_anbefalte_egenskaper_for_klassen_tidsrom"><a class="link" href="#_anbefalte_egenskaper_for_klassen_tidsrom">Anbefalte egenskaper for klassen <em>Tidsrom</em></a></h4>
 <div class="sect4">
-<h5 id="tidsrom-sluttdato"><a class="link" href="#tidsrom-sluttdato">Tidsrom: sluttdato/tid</a></h5>
+<h5 id="tidsrom-sluttdato"><a class="link" href="#tidsrom-sluttdato">Tidsrom: sluttdato/tid (dcat:endDate)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8505,7 +8535,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to vær
 </div>
 </div>
 <div class="sect4">
-<h5 id="tidsrom-startdato"><a class="link" href="#tidsrom-startdato">Tidsrom: startdato/tid</a></h5>
+<h5 id="tidsrom-startdato"><a class="link" href="#tidsrom-startdato">Tidsrom: startdato/tid (dcat:startDate)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8543,7 +8573,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to vær
 <div class="sect3">
 <h4 id="_valgfrie_egenskaper_for_klassen_tidsrom"><a class="link" href="#_valgfrie_egenskaper_for_klassen_tidsrom">Valgfrie egenskaper for klassen <em>Tidsrom</em></a></h4>
 <div class="sect4">
-<h5 id="tidsrom-begynnelse"><a class="link" href="#tidsrom-begynnelse">Tidsrom: begynnelse</a></h5>
+<h5 id="tidsrom-begynnelse"><a class="link" href="#tidsrom-begynnelse">Tidsrom: begynnelse (time:hasBeginning)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8578,7 +8608,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to vær
 </table>
 </div>
 <div class="sect4">
-<h5 id="tidsrom-slutt"><a class="link" href="#tidsrom-slutt">Tidsrom: slutt</a></h5>
+<h5 id="tidsrom-slutt"><a class="link" href="#tidsrom-slutt">Tidsrom: slutt (time:hasEnd)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8658,7 +8688,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="kontrollerte-vokabularer-som-skal-brukes"><a class="link" href="#kontrollerte-vokabularer-som-skal-brukes">Kontrollerte vokabularer som skal brukes</a></h3>
+<h3 id="Kontrollerte_vokabularer_som_skal_brukes"><a class="link" href="#Kontrollerte_vokabularer_som_skal_brukes">Kontrollerte vokabularer som skal brukes</a></h3>
 <div class="paragraph">
 <p>Under følger en oversikt over kontrollerte vokabular som <strong>skal</strong> brukes (= obligatorisk) for egenskapene i listen, dette for å sikre et minimum av samhandlingsevne.</p>
 </div>
@@ -9211,7 +9241,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_kontrollerte_vokabularer_som_bør_og_kan_brukes"><a class="link" href="#_kontrollerte_vokabularer_som_bør_og_kan_brukes">Kontrollerte vokabularer som bør og kan brukes</a></h3>
+<h3 id="Kontrollerte_vokabularer_som_bør_og_kan_brukes"><a class="link" href="#Kontrollerte_vokabularer_som_bør_og_kan_brukes">Kontrollerte vokabularer som bør og kan brukes</a></h3>
 <div class="paragraph">
 <p>I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene. Eksempler her er komplett sett med begreper i Los, EuroVoc, CERIFs standardvokabular, Deweys desimalklassifikasjon og en rekke andre vokabular.</p>
 </div>
@@ -9350,8 +9380,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse.</p>
-<p class="tableblock">Det er sendt inn forslag til EUs Publications Office, for å føye til testdata og syntetisk data på <a href="https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/dataset-type">listen over datasett typer</a>. EUs Publications Office svarte med at de foreslåtte typene vil bli tatt med i neste versjon av datasett-typer som kommer rundt 25. juni 2020. Inntil videre brukes <code>dcatno:testDataset</code> og <code>dcatno:syntheticDataset</code> som er <code>skos:Concept</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse.</p></td>
 </tr>
 </tbody>
 </table>
@@ -10263,7 +10292,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-07-03 12:57:20 UTC
+Sist oppdatert 2020-09-19 06:28:40 UTC
 </div>
 </div>
 </body>

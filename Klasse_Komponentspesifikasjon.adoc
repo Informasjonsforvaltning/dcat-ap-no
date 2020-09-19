@@ -6,7 +6,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 
 == Anbefalte egenskaper for klassen _Komponentspesifikasjon_
 
-=== Komponentspesifikasjon: begrep [[komponentspesifikasjon-begrep]]
+=== Komponentspesifikasjon: begrep (qb:concept) [[komponentspesifikasjon-begrep]]
 
 [cols="30s,70d"]
 |===
@@ -21,7 +21,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 
 == Valgfrie egenskaper for klassen _Komponentspesifikasjon_
 
-=== Komponentspesifikasjon: attributt [[komponentspesifikasjon-attributt]]
+=== Komponentspesifikasjon: attributt (qb:attribute) [[komponentspesifikasjon-attributt]]
 
 [cols="30s,70d"]
 |===
@@ -34,7 +34,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Kommentar|SDMX-standarden inkluderer et sett med felles http://purl.org/linked-data/sdmx/2009/attribute#[statistiske begreper med tilhørende kodelister] som er ment å kunne gjenbrukes på tvers av sektorer.
 |===
 
-=== Komponentspesifikasjon: dimensjon [[komponentspesifikasjon-dimensjon]]
+=== Komponentspesifikasjon: dimensjon (qb:dimension) [[komponentspesifikasjon-dimensjon]]
 
 [cols="30s,70d"]
 |===
@@ -47,7 +47,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Kommentar|SDMX-standarden inkluderer et sett med http://purl.org/linked-data/sdmx/2009/dimension#[predefinerte dimensjonskomponenter].
 |===
 
-=== Komponentspesifikasjon: komponent påkrevd [[komponentspesifikasjon-komponent-påkrevd]]
+=== Komponentspesifikasjon: komponent påkrevd (qb:componentRequired) [[komponentspesifikasjon-komponent-påkrevd]]
 
 [cols="30s,70d"]
 |===
@@ -59,7 +59,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Status|Valgfri
 |===
 
-=== Komponentspesifikasjon: mål [[komponentspesifikasjon-mål]]
+=== Komponentspesifikasjon: mål (qb:measure) [[komponentspesifikasjon-mål]]
 
 [cols="30s,70d"]
 |===
@@ -72,7 +72,7 @@ WARNING: I skrivende stund pågår det en diskusjon i ABR-arbeidsgruppen i ISA-p
 |Kommentar|SDMX-standarden inkluderer et sett med http://purl.org/linked-data/sdmx/2009/measure#[predefinerte målkomponenter].
 |===
 
-=== Komponentspesifikasjon: ordenstall [[komponentspesifikasjon-ordenstall]]
+=== Komponentspesifikasjon: ordenstall (qb:order) [[komponentspesifikasjon-ordenstall]]
 
 [cols="30s,70d"]
 |===
