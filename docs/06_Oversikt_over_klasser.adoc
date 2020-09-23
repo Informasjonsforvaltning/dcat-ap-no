@@ -116,9 +116,9 @@
 | URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cpsv:PublicService]
 | Status | Anbefalt
 |Kommentar| "Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.
-|Eksempel| Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.
 
 Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over offentlige tjensester utover datatjenester. Det er derfor ingen direkte kopling mellom klassene Offentlig tjeneste (`cv:PublicService`) og Katalog (`dcat:Catalog`).
+|Eksempel| Tjenester som tilbys av offentlige forvaltningsorganer eller andre organisasjoner på deres vegne, for lagring og tilgjengeliggjøring av basis informasjon om autoritative data som personer, organisasjoner, kjøretøy, førerkort, bygninger, lokasjoner og veier.
 |===
 
 === Regel (cpsv:Rule) [[klasse-regel]]
