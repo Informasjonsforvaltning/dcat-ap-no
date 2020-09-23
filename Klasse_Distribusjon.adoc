@@ -14,7 +14,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <<distribusjon-medietype>> (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..*1* til 1..*n* (allerede i DCAT-AP-NO v.1.1).
+|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..*1* til 1..*n* (allerede i DCAT-AP-NO v.1.1).
 |===
 
 === Distribusjon: tilgangsURL (dcat:accessURL) [[distribusjon-tilgangsurl]]
@@ -148,8 +148,9 @@ Klassen _Distribusjon_ er anbefalt.
 |URI| dcat:mediaType, subproperty of dct:format
 |Range| dct:MediaType
 |Beskrivelse| Refererer til medietype av en distribusjon.
-|Multiplisitet| 0..1
+|Multiplisitet| 0..n
 |Status| Valgfri
+|Kommentar| Norsk utvidelse - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike mediatyper. 
 |===
 
 === Distribusjon: nedlastningslenke (dcat:downloadURL) [[distribusjon-nedlastningslenke]]

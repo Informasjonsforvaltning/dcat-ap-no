@@ -607,7 +607,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_obligatoriske_egenskaper_for_klassen_datatjeneste">Obligatoriske egenskaper for klassen <em>Datatjeneste</em></a>
 <ul class="sectlevel4">
 <li><a href="#datatjeneste-endepunktsurl">Datatjeneste: endepunktsURL (dcat:endpointURL)</a></li>
-<li><a href="#datatjeneste-identifikator">Datatjeneste: identifikator (dct:identifier)</a></li>
+<li><a href="#datatjeneste-format">Datatjeneste: format (dct:format)</a></li>
+<li><a href="#datatjeneste-identifikator">Datatjeneste: identifikator (dcat:identifier)</a></li>
 <li><a href="#datatjeneste-tittel">Datatjeneste: tittel (dct:title)</a></li>
 </ul>
 </li>
@@ -4168,7 +4169,46 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datatjeneste-identifikator"><a class="link" href="#datatjeneste-identifikator">Datatjeneste: identifikator (dct:identifier)</a></h5>
+<h5 id="datatjeneste-format"><a class="link" href="#datatjeneste-format">Datatjeneste: format (dct:format)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">format</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:MediaType</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opplysing om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å ha konsistens mellom distribusjon og datatjeneste.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="datatjeneste-identifikator"><a class="link" href="#datatjeneste-identifikator">Datatjeneste: identifikator (dcat:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4776,7 +4816,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk og skal brukes i stedet for <a href="#distribusjon-medietype">Distribusjon: medietype (dcat:mediaType)</a> (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..<strong>1</strong> til 1..<strong>n</strong> (allerede i DCAT-AP-NO v.1.1).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..<strong>1</strong> til 1..<strong>n</strong> (allerede i DCAT-AP-NO v.1.1).</p></td>
 </tr>
 </tbody>
 </table>
@@ -5163,11 +5203,15 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike mediatyper.</p></td>
 </tr>
 </tbody>
 </table>
@@ -10292,7 +10336,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-09-23 04:25:40 UTC
+Sist oppdatert 2020-09-23 08:15:31 UTC
 </div>
 </div>
 </body>
