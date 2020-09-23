@@ -357,14 +357,14 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Status| Valgfri
 |===
 
-=== Datasett: geografisk oppløsning (dcat:spatialResolutionInMeters) [[datasett-geografisk-oppløsning]]
+=== Datasett: romlig oppløsning (dcat:spatialResolutionInMeters) [[datasett-romlig-oppløsning]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| spatial resolution
 |URI| dcat:spatialResolutionInMeters
 |Range| xsd:decimal
-|Beskrivelse|  Refererer til den minste geografiske oppløsningen for et datasett målt i meter.
+|Beskrivelse|  Refererer til den minste romlige oppløsningen for et datasett målt i meter.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -432,7 +432,7 @@ dqvno:isAuthoritative
 ----
 |===
 
-=== Datasett: har kvantifiserbart måleresultat (dqv:hasQualityMeasurement) [[datasett-har-kvantifiserbart-måleresultat]]
+=== Datasett: har måleresultat (dqv:hasQualityMeasurement) [[datasett-har-måleresultat]]
 
 [cols="30s,70"]
 |===

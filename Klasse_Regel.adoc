@@ -78,5 +78,5 @@ Klassen _Regel_ er anbefalt.
 |Beskrivelse|Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.
 |Multiplisitet|0..n
 |Status|Valgfri
-|Eksempel| Se eksempelet under egenskapen <<Datasett: følger>>.
+|Eksempel| Se eksempelet under egenskapen <<datasett-følger, Datasett: følger>>.
 |===

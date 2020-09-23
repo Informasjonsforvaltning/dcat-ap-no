@@ -577,10 +577,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#datasett-erstatter">Datasett: erstatter (dct:replaces)</a></li>
 <li><a href="#datasett-erstattes-av">Datasett: erstattes av (dct:isReplacedBy)</a></li>
 <li><a href="#datasett-frekvens">Datasett: frekvens (dct:accrualPeriodicity)</a></li>
-<li><a href="#datasett-geografisk-oppløsning">Datasett: geografisk oppløsning (dcat:spatialResolutionInMeters)</a></li>
+<li><a href="#datasett-romlig-oppløsning">Datasett: romlig oppløsning (dcat:spatialResolutionInMeters)</a></li>
 <li><a href="#datasett-har-del">Datasett: har del (dct:hasPart)</a></li>
 <li><a href="#datasett-har-kvalitetsnote">Datasett: har kvalitetsnote (dqv:hasQualityAnnotation)</a></li>
-<li><a href="#datasett-har-kvantifiserbart-måleresultat">Datasett: har kvantifiserbart måleresultat (dqv:hasQualityMeasurement)</a></li>
+<li><a href="#datasett-har-måleresultat">Datasett: har måleresultat (dqv:hasQualityMeasurement)</a></li>
 <li><a href="#datasett-har-versjon">Datasett: har versjon (dct:hasVersion)</a></li>
 <li><a href="#datasett-i-samsvar-med">Datasett: i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#datasett-kilde">Datasett: kilde (dct:source)</a></li>
@@ -656,7 +656,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#distribusjon-dokumentasjon">Distribusjon: dokumentasjon (foaf:page)</a></li>
 <li><a href="#distribusjon-endringsdato">Distribusjon: endringsdato (dct:modified)</a></li>
 <li><a href="#distribusjon-filstorrelse">Distribusjon: filstørrelse (dcat:byteSize)</a></li>
-<li><a href="#geografisk-opplosning">Distribusjon: geografisk oppløsning (dcat:spatialResolutionInMeters)</a></li>
+<li><a href="#distribusjon-romlig-oppløsning">Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters)</a></li>
 <li><a href="#distribusjon-i-samsvar-med">Distribusjon: i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#distribusjon-komprimeringsformat">Distribusjon: komprimeringsformat (dcat:compressFormat)</a></li>
 <li><a href="#distribusjon-medietype">Distribusjon: medietype (dcat:mediaType)</a></li>
@@ -1207,6 +1207,11 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Data Quality Vocabulary</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dqvno</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.norge.no/vocabulary/dqvno#" class="bare">https://data.norge.no/vocabulary/dqvno#</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk applikasjonsprofil av DQV (Data Quality Vocabulary)</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>eli</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/eli/ontology#" class="bare">http://data.europa.eu/eli/ontology#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">European Legislation Identifier</p></td>
@@ -1617,7 +1622,8 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">"Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.</p>
+<p class="tableblock">Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over offentlige tjensester utover datatjenester. Det er derfor ingen direkte kopling mellom klassene Offentlig tjeneste (<code>cv:PublicService</code>) og Katalog (<code>dcat:Catalog</code>).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
@@ -3294,7 +3300,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-geografisk-oppløsning"><a class="link" href="#datasett-geografisk-oppløsning">Datasett: geografisk oppløsning (dcat:spatialResolutionInMeters)</a></h5>
+<h5 id="datasett-romlig-oppløsning"><a class="link" href="#datasett-romlig-oppløsning">Datasett: romlig oppløsning (dcat:spatialResolutionInMeters)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3315,7 +3321,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til den minste geografiske oppløsningen for et datasett målt i meter.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til den minste romlige oppløsningen for et datasett målt i meter.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -3457,7 +3463,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="datasett-har-kvantifiserbart-måleresultat"><a class="link" href="#datasett-har-kvantifiserbart-måleresultat">Datasett: har kvantifiserbart måleresultat (dqv:hasQualityMeasurement)</a></h5>
+<h5 id="datasett-har-måleresultat"><a class="link" href="#datasett-har-måleresultat">Datasett: har måleresultat (dqv:hasQualityMeasurement)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5073,7 +5079,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="geografisk-opplosning"><a class="link" href="#geografisk-opplosning">Distribusjon: geografisk oppløsning (dcat:spatialResolutionInMeters)</a></h5>
+<h5 id="distribusjon-romlig-oppløsning"><a class="link" href="#distribusjon-romlig-oppløsning">Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5094,7 +5100,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til den minste romlige oppløsningen for en datasettdistribusjon målt i meter.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -7940,7 +7946,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempelet under egenskapen <a href="#Datasett: følger">[Datasett: følger]</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se eksempelet under egenskapen <a href="#datasett-følger">Datasett: følger</a>.</p></td>
 </tr>
 </tbody>
 </table>
@@ -9730,7 +9736,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP v.1.05</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: geografisk oppløsning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: romlig oppløsning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tatt bort kommentar om norsk utvidelse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Er nå eksplisitt med i BRegDCAT-AP v.1.05</p></td>
@@ -9944,7 +9950,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: geografisk oppløsning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: romlig oppløsning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
@@ -10052,7 +10058,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: geografisk oppløsning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: romlig oppløsning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
@@ -10336,7 +10342,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-09-23 08:15:31 UTC
+Sist oppdatert 2020-09-23 15:32:36 UTC
 </div>
 </div>
 </body>
