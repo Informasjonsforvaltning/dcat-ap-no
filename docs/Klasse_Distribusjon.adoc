@@ -107,13 +107,13 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: geografisk oppløsning (dcat:spatialResolutionInMeters) [[geografisk-opplosning]]
+=== Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters) [[distribusjon-romlig-oppløsning]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| spatial resolution
 |URI| dcat:spatialResolutionInMeters
 |Range| xsd:decimal
-|Beskrivelse| Refererer til den minste geografiske oppløsningen for en datasettdistribusjon målt i meter.
+|Beskrivelse| Refererer til den minste romlige oppløsningen for en datasettdistribusjon målt i meter.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -150,7 +150,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Refererer til medietype av en distribusjon.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike mediatyper. 
+|Kommentar| Norsk utvidelse - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike mediatyper.
 |===
 
 === Distribusjon: nedlastningslenke (dcat:downloadURL) [[distribusjon-nedlastningslenke]]
