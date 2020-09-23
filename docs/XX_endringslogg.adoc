@@ -33,7 +33,7 @@ Tabellen under oppsummerer endringer som følger av ny versjon av BRegDCAT-AP (v
 |Datatjeneste: tema|dcat:theme|Ny egenskap|Dette i henhold til BRegDCAT-AP v.1.05
 |Datatjeneste: type|dct:type|Ny egenskap|Dette i henhold til BRegDCAT-AP v.1.05
 |Datatjeneste: utgiver|dct:publisher|Ny egenskap|Dette i henhold til BRegDCAT-AP v.1.05
-|Distribusjon: geografisk oppløsning|dcat:spatialResolutionInMeters|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
+|Distribusjon: romlig oppløsning|dcat:spatialResolutionInMeters|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
 |Distribusjon: i samsvar med|dct:conformsTo|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
 |Distribusjon: pakkeformat|dcat:packageFormat|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
 |Distribusjon: policy|odrl:hasPolicy|Tatt bort kommentar om norsk utvidelse|Er nå eksplisitt med i BRegDCAT-AP v.1.05
@@ -76,7 +76,7 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |Datasett: dekningsområde |dct:spatial |Endret fra valgfri til anbefalt |Dette i henhold til BRegDCAT-AP
 |Datasett: er referert av |dct:isReferencedBy |Range endret fra `dcat:Dataset` til `rdfs:Resource` |Dette i henhold til BRegDCAT-AP
 |Datasett: følger |cpsv:follows |Ny egenskap |Dette i henhold til BRegDCAT-AP
-|Datasett: geografisk oppløsning |dcat:spatialResolutionInMeters |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: romlig oppløsning |dcat:spatialResolutionInMeters |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: har del |dct:hasPart |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: har kvalitetsnote |dqv:hasQualityAnnotation |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: har kvantifiserbart måleresultat |dqv:hasQualityMeasurement |Ny egenskap |Dette i henhold til BRegDCAT-AP
@@ -94,7 +94,7 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |Datasett: utgivelsesdato |dct:issued |Range endret fra `rdfs:Literal typed as xsd:dateTime` til `rdfs:Literal typed as xsd:date or xsd:dateTime` |Dette i henhold til BRegDCAT-AP
 |Datatjeneste |dcat:DataService |Hele klassen er ny  |Dette i henhold til BRegDCAT-AP
 |Distribusjon: format|dct:format|Range endret fra `dct:MediaTypeOrExtent` til `dct:MediaType`|
-|Distribusjon: geografisk oppløsning |dcat:spatialResolutionInMeters |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: romlig oppløsning |dcat:spatialResolutionInMeters |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Distribusjon: i samsvar med |dct:conformsTo |Norsk navn endret fra `Distribusjon: samsvarer med` til `Distribusjon: i samsvar med` |
 |Distribusjon: komprimeringsformat |dcat:compressFormat |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Distribusjon: medietype |dcat:mediaType, subproperty of dct:format |Ny egenskap |Dette i henhold til BRegDCAT-AP
