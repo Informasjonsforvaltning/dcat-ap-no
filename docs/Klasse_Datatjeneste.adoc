@@ -16,16 +16,29 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Datatjeneste: identifikator (dct:identifier) [[datatjeneste-identifikator]]
+=== Datatjeneste: format (dct:format) [[datatjeneste-format]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn|identifier
-|URI|dct:identifier
-|Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi identifikator til datatjenesten.
+|Engelsk navn|format
+|URI|dct:format
+|Range|dct:MediaType
+|Beskrivelse|Opplysing om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet|1..n
 |Status|Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å ha konsistens mellom distribusjon og datatjeneste.
+|===
+
+=== Datatjeneste: identifikator (dcat:identifier) [[datatjeneste-identifikator]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| identifier
+|URI| dct:identifier
+|Range| rdfs:Literal
+|Beskrivelse| Brukes til å oppgi identifikator til datatjenesten.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
 |===
 
 === Datatjeneste: tittel (dct:title) [[datatjeneste-tittel]]
