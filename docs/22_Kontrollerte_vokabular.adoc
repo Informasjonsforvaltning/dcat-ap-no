@@ -188,7 +188,7 @@ http://publications.europa.eu/resource/authority/datatheme[http://publications.e
 |===
 |URI til egenskapen|dct:type
 |Brukt i klasse| <<aktor-utgivertype, Aktør (`foaf:Agent`)>>
-|Navn på vokabularet|ADMS publisher type vocabulary. Listen over termer i ADMS publisher type er inkludert i ADMS-spesifikasjonen. European Commission. Joinup. https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms[Asset Description Metadata Schema (ADMS)]
+|Navn på vokabularet|ADMS publisher type vocabulary. Listen over termer i ADMS publisher type er inkludert i ADMS-spesifikasjonen. https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms[Asset Description Metadata Schema (ADMS)]
 |URI til vokabularet|http://purl.org/adms/publishertype/[http://purl.org/adms/publishertype/]
 |Status|Obligatorisk
 |Kommentar|Denne er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.
