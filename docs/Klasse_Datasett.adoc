@@ -206,7 +206,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Engelsk navn| other identifier
 |URI| adms:identifier
 |Range| adms:Identifier
-|Beskrivelse| Referanse til en sekundær identifikator av datasettet som MAST/ADS, DataCite, DOI, EZID eller W3ID.
+|Beskrivelse| Referanse til en sekundær identifikator av datasettet som http://archive.stsci.edu/pub_dsn.html[MAST/ADS], DataCite, http://www.doi.org/[DOI], https://ezid.cdlib.org/[EZID] eller https://w3id.org/[W3ID].
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
