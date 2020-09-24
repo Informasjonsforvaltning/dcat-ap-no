@@ -138,14 +138,14 @@ Ved at et `dcat:Dataset cpsv:follows` en `cpsv:Rule`, og at en `cpsv:Rule cpsv:i
 ----
 :aDataset
    a dcat:Dataset ;
-   cpsv:follows :aNonDisclosureRule, :aDisclosuerRule .
+   cpsv:follows :aNonDisclosureRule, :aDisclosureRule .
 
 :aNonDisclosureRule
    a cpsv:Rule ;
    dct:type cpsvno:ruleForNonDisclosure ;
    dct:description "skjerminghjemmel"@nb , "legal basis for non-disclosure"@en .
 
-:aDisclosuerRule
+:aDisclosureRule
    a cpsv:Rule ;
    dct:type cpsvno:ruleForDisclosure ;
    dct:description "utleveringshjemmel"@nb , "legal basis for disclosure"@en ;
@@ -166,7 +166,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Engelsk navn| contact point
 |URI| dcat:contactPoint
 |Range| vcard:Kind
-|Beskrivelse| Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.
+|Beskrivelse| Referanse til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -178,7 +178,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Engelsk navn| temporal coverage
 |URI| dct:temporal
 |Range| dct:PeriodOfTime
-|Beskrivelse| Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601).
+|Beskrivelse| Definerer starten og slutten på perioden, eventuelt klokkeslett (se ISO 8601).
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===

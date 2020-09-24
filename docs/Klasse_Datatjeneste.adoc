@@ -88,7 +88,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Engelsk navn| contact point
 |URI| dcat:contactPoint
 |Range| vcard:Kind
-|Beskrivelse| Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
+|Beskrivelse| Referanse til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===

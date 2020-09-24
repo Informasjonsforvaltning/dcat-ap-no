@@ -157,7 +157,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| theme taxonomy
 |URI| dcat:themeTaxonomy
 |Range| skos:ConceptScheme
-|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett.
+|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere den katalogiserte ressursen.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
