@@ -26,7 +26,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Beskrivelse|Brukes til å oppgi det foretrukne navnet til organisasjonen. Denne egenskapen bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet|1..n
 |Status|Obligatorisk
-|Kommentar| I BRegDCAT-AP er både denne egenskap (`skos:prefLabel`) og <<offentlig-organisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`) obligatoriske. Inntil BRegDCAT-AP endres og for å være kompatibel med BRegDCAT-AP, er begge disse også obligatoriske i denne standarden. Vi anbefaler å bruke denne egenskapen (`skos:prefLabel`) primært og gjenta navnet i <<offentlig-organisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`). Gjentagelsen kan typisk håndteres av en dataapplikajson.  
+|Kommentar| I BRegDCAT-AP er både denne egenskap (`skos:prefLabel`) og <<offentlig-organisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`) obligatoriske. For å være kompatibel med BRegDCAT-AP er begge disse også obligatoriske i denne standarden. Vi anbefaler å bruke denne egenskapen (`skos:prefLabel`) primært og gjenta navnet i <<offentlig-organisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`). Gjentagelsen kan typisk håndteres av en dataapplikajson.  
 |===
 
 === Offentlig organisasjon: identifikator (dct:identifier) [[offentlig-organisasjon-identifikator]]
