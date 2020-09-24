@@ -6,7 +6,7 @@ som er en utvidelse av DCAT-AP fra EU.
 
 Klasse::
 Obligatorisk (verb: skal, må)::: produsent/avsender av data skal oppgi informasjon om instanser av klassen; konsument/mottaker av data skal være i stand til å prosessere informasjon om instanser av klassen.
-Anbefalt (verb: bør)::: produsent/avsender av data bør oppgi informasjon om instanser av klassen; produsent/avsender av data skal oppgi informasjon om instanser av klassen hvis informasjonen er tilgjengelig; konsument/mottaker av data skal være i sand til å prosessere informasjon om instanser av klassen.
+Anbefalt (verb: bør)::: produsent/avsender av data bør oppgi informasjon om instanser av klassen; produsent/avsender av data skal oppgi informasjon om instanser av klassen hvis informasjonen er tilgjengelig; konsument/mottaker av data skal være i stand til å prosessere informasjon om instanser av klassen.
 Valgfri (verb: kan)::: produsent/avsender av data kan oppgi informasjon om instanser av klassen, men det er ikke påkrevd; konsument/mottaker av data skal være i stand til å prosessere informasjon om instanser av klassen.
 
 

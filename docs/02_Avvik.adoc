@@ -9,10 +9,10 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP på følgende måter:
 |*Klasse-/egenskapsnavn*|*URI for klassen/egenskapen*|*Avvik*|*Forklaring*
 |Datasett: begrep|dct:subject|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
 |Datasett: følger|cpsv:follows|Endret fra valgfri til anbefalt|Denne erstatter egenskap Datasett: skjermingshjemmel som var anbefalt i DCAT-AP-NO v.1.1
-|Datasett: tema|dcat:theme|Endret fra anbefalt til obligatorisk, dermed også kardinalitet|Allerede i DCAT-AP-NO v.1.1
+|Datasett: tema|dcat:theme|Endret fra anbefalt til obligatorisk, dermed også multiplisitet|Allerede i DCAT-AP-NO v.1.1
 |Datasett: tilgangsnivå|dct:accessRights|Endret fra valgfri til anbefalt|Allerede i DCAT-AP-NO v.1.1
-|Datasett: utgiver|dct:publisher|Endret fra anbefalt til obligatorisk, dermed også kardinalitet|Allerede i DCAT-AP-NO v.1.1
-|Distribusjon: format|dct:format|Endret fra anbefalt til obligatorisk, dermed også kardinalitet|Allerede i DCAT-AP-NO v.1.1
+|Datasett: utgiver|dct:publisher|Endret fra anbefalt til obligatorisk, dermed også multiplisitet|Allerede i DCAT-AP-NO v.1.1
+|Distribusjon: format|dct:format|Endret fra anbefalt til obligatorisk, dermed også multiplisitet|Allerede i DCAT-AP-NO v.1.1
 |Distribusjon: format|dct:format|Range endret fra dct:MediaTypeOrExtent til dct:MediaType|
 |Tema|skos:Concept|Endret fra anbefalt til obligatorisk|Allerede i DCAT-AP-NO v.1.1
 |Tematisk skjema|skos:ConceptScheme|Endret fra anbefalt til obligatorisk|Allerede i DCAT-AP-NO v.1.1

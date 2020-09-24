@@ -50,7 +50,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Beskrivelse|Brukes til å oppgi navnet til organisasjonen.
 |Multiplisitet|1..1
 |Status|Obligatorisk
-|Kommentar|Denne egenskapen er satt obligatorisk i BRegDCAT-AP for å være kompatiblel med CPSV-AP.
+|Kommentar|Denne egenskapen er satt obligatorisk i BRegDCAT-AP for å være kompatibel med CPSV-AP.
 |===
 
 == Anbefalte egenskaper for klassen _Offentlig organisasjon_
