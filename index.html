@@ -974,7 +974,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_endringslogg">Endringslogg</a>
 <ul class="sectlevel2">
 <li><a href="#endringer-høringsutkastet">Endringer fra høringsutkastet datert 2. juni 2020, til denne versjonen</a></li>
-<li><a href="#_endringer_fra_versjon_1_1_til_denne_versjonen">Endringer fra versjon 1.1 til denne versjonen</a></li>
+<li><a href="#Endringer_fra_v1.1">Endringer fra versjon 1.1 til denne versjonen</a></li>
 </ul>
 </li>
 </ul>
@@ -2712,7 +2712,10 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Ved at et <code>dcat:Dataset cpsv:follows</code> en <code>cpsv:Rule</code>, og at en <code>cpsv:Rule cpsv:implements</code> en <code>eli:LegalResouce</code>, illustrerer eksempelet her hvordan  man kan referere fra et datasett til en lovhjemmel som regulerer f.eks. skjerming eller utlevering av datasettet.</p>
+</div>
+<div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>:aDataset
    a dcat:Dataset ;
@@ -2736,7 +2739,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </div>
 </div>
 <div class="paragraph">
-<p>der <code>cpsvno:ruleForNonDisclosure</code> (skjermingsrelatert regel) og <code>cpsvno: ruleForDisclosure</code> (utleveringsrelatert regel) er predefinerte instanser av <code>skos:Concept</code>.</p>
+<p>der <code>cpsvno:ruleForNonDisclosure</code> (skjermingsregel) og <code>cpsvno:ruleForDisclosure</code> (utleveringsegel) er predefinerte instanser av type regel (<code>skos:Concept</code>).</p>
 </div></div></td>
 </tr>
 </tbody>
@@ -6981,6 +6984,10 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">I BRegDCAT-AP er både denne egenskap (<code>skos:prefLabel</code>) og <a href="#offentlig-organisasjon-navn">Offentlig organisasjon: navn</a> (<code>dct:title</code>) obligatoriske. For at DCAT-AP-NO skal være kompatibel med BRegDCAT-AP er begge disse også obligatoriske i DCAT-AP-NO. Vi anbefaler å bruke denne egenskapen (<code>skos:prefLabel</code>) primært og gjenta navnet i <a href="#offentlig-organisasjon-navn">Offentlig organisasjon: navn</a> (<code>dct:title</code>). Gjentagelsen kan typisk håndteres av en dataapplikajson.</p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -9895,7 +9902,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect2">
-<h3 id="_endringer_fra_versjon_1_1_til_denne_versjonen"><a class="link" href="#_endringer_fra_versjon_1_1_til_denne_versjonen">Endringer fra versjon 1.1 til denne versjonen</a></h3>
+<h3 id="Endringer_fra_v1.1"><a class="link" href="#Endringer_fra_v1.1">Endringer fra versjon 1.1 til denne versjonen</a></h3>
 <div class="paragraph">
 <p>Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.1 til denne versjonen av DCAT-AP-NO. Redaksjonelle justeringer av tekster (inkl. tekstlige beskrivelser, kommentarer og eksempler) er ikke tatt med i oversikten.</p>
 </div>
@@ -9968,7 +9975,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: har kvantifiserbart måleresultat</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: har måleresultat</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dqv:hasQualityMeasurement</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ny egenskap</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette i henhold til BRegDCAT-AP</p></td>
@@ -10342,7 +10349,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-09-24 12:17:05 UTC
+Sist oppdatert 2020-09-24 12:53:56 UTC
 </div>
 </div>
 </body>

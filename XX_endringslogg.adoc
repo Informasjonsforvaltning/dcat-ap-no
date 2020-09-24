@@ -63,7 +63,7 @@ Tabellen under oppsummerer endringer som følger av ny versjon av BRegDCAT-AP (v
 
 
 
-== Endringer fra versjon 1.1 til denne versjonen
+== Endringer fra versjon 1.1 til denne versjonen [[Endringer_fra_v1.1]]
 
 Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.1 til denne versjonen av DCAT-AP-NO. Redaksjonelle justeringer av tekster (inkl. tekstlige beskrivelser, kommentarer og eksempler) er ikke tatt med i oversikten.
 
@@ -79,7 +79,7 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |Datasett: romlig oppløsning |dcat:spatialResolutionInMeters |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: har del |dct:hasPart |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: har kvalitetsnote |dqv:hasQualityAnnotation |Ny egenskap |Dette i henhold til BRegDCAT-AP
-|Datasett: har kvantifiserbart måleresultat |dqv:hasQualityMeasurement |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: har måleresultat |dqv:hasQualityMeasurement |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: kvalifisert kreditering |prov:qualifiedAttribution |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: kvalifisert relasjon |dcat:qualifiedRelation |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: produsent |dct:creator |Norsk navn endret fra `Datasett: skaper` til `Datasett: produsent` |Bedre dekkende navn
