@@ -85,7 +85,7 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |Datasett: produsent |dct:creator |Norsk navn endret fra `Datasett: skaper` til `Datasett: produsent` |Bedre dekkende navn
 |Datasett: produsent |dct:creator |Range er endret fra `rdfs:Resource` til `foaf:Agent` |Dette i henhold til BRegDCAT-AP
 |Datasett: proveniensbeskrivelse |dct:provenance |Norsk navn endret fra `Datasett: opphav` til `Datasett: proveniensbeskrivelse` |Bedre dekkende navn
-|Datasett: proveniensbeskrivelse |dct:provenance |Kardinalitet endret fra `0..1` til `0..n` |Dette i henhold til BRegDCAT-AP
+|Datasett: proveniensbeskrivelse |dct:provenance |Multiplisitet endret fra `0..1` til `0..n` |Dette i henhold til BRegDCAT-AP
 |Datasett: refererer til |dct:references |Range endret fra `dcat:Dataset` til `rdfs:Resource` |Dette i henhold til BRegDCAT-AP
 |[.line-through]#Datasett: skjermingshjemmel# |[.line-through]#dcatno:accessRightsComment# |Fjernet. Erstattes med `Datasett: følger (cpsv:follows)` |Unødvendig med dette norske avvik
 |Datasett: tema|dcat:theme|Range endret fra `dcat:theme, subproperty of dct:subject` til `dcat:them`|Dette i henhold til BRegDCAT-AP

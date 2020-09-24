@@ -172,7 +172,7 @@ Klassen _Datatjeneste_ er valgfri.
 |URI| dct:conformsTo
 |Range| dct:Standard
 |Beskrivelse| Referanse til en spesifikasjon eller standard som datatjenesten implementerer.
-|Kardinalitet| 0..n
+|Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
@@ -183,7 +183,7 @@ Klassen _Datatjeneste_ er valgfri.
 |URI| dcat:landingPage
 |Range| foaf:Document
 |Beskrivelse| Referanse til nettside som gir tilgang til datatjenesten, dens distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
@@ -194,7 +194,7 @@ Klassen _Datatjeneste_ er valgfri.
 |URI| dct:license
 |Range| dct:LicenseDocument
 |Beskrivelse| Inneholder lisensen som datatjenesten blir gjort tilgjengelig under.
-|Kardinalitet| 0..1
+|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
