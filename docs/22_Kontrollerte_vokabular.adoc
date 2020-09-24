@@ -28,7 +28,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:accessRights
 |Brukt i klasse|<<datasett-tilgangsniva, Datasett (`dcat:Dataset`)>>; <<datatjeneste-tilgangsrettigheter, Datatjeneste (`dcat:DataService`)>>
-|Navn på vokabularet|Access Rights NAL
+|Navn på vokabularet|Access Rights Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/authority/access-right[http://publications.europa.eu/resource/authority/access-right]
 |Status|Obligatorisk
 |===
@@ -39,7 +39,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:accrualPeriodicity
 |Brukt i klasse|<<datasett-frekvens, Datasett (`dcat:Dataset`)>>; <<katalog-frekvens, Katalog (`dcat:Catalog`)>>
-|Navn på vokabularet|Frequency NAL
+|Navn på vokabularet|Frequency Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/authority/frequency[http://publications.europa.eu/resource/authority/frequency]
 |Status|Obligatorisk
 |===
@@ -61,10 +61,10 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:creator
 |Brukt i klasse|<<datasett-produsent, Datasett (`dcat:Dataset`)>>; <<katalog-produsent, Katalog (`dcat:Catalog`)>>
-|Navn på vokabularet|Corporate Bodies NAL
+|Navn på vokabularet|Corporate Bodies Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body[http://publications.europa.eu/resource/dataset/corporate-body]
 |Status|Obligatorisk
-|Kommentar|EUs Corporate bodies NAL inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
+|Kommentar|EUs Corporate bodies Named Authority List inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
 |===
 
 === For egenskapen dct:format
@@ -73,7 +73,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:format
 |Brukt i klasse|<<distribusjon-format, Distribusjon (`dcat:Distribution`)>>
-|Navn på vokabularet|File Type NAL
+|Navn på vokabularet|File Type Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/authority/file-type[http://publications.europa.eu/resource/authority/file-type]
 |Status|Obligatorisk
 |===
@@ -84,7 +84,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:language
 |Brukt i klasse|<<datasett-sprak, Datasett (`dcat:Dataset`)>>; <<distribusjon-sprak, Distribusjon (`dcat:Distribution`)>>; <<katalog-sprak, Katalog (`dcat:Catalog`)>>; <<katalogpost-sprak, Katalogpost (`dcat:CatalogRecord`)>>; <<regel-språk, Regel (`cpsv:Rule`)>>
-|Navn på vokabularet|Languages NAL
+|Navn på vokabularet|Languages Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/authority/language[http://publications.europa.eu/resource/authority/language]
 |Status|Obligatorisk
 |===
@@ -95,7 +95,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:license
 |Brukt i klasse|<<distribusjon-lisens, Distribusjon (`dcat:Distribution`)>>
-|Navn på vokabularet|Licences NAL
+|Navn på vokabularet|Licences Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/licence[http://publications.europa.eu/resource/dataset/licence]
 |===
 
@@ -116,10 +116,10 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:publisher
 |Brukt i klasse|<<datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<katalog-utgiver, Katalog (`dcat:Catalog`)>>
-|Navn på vokabularet|Corporate Bodies NAL
+|Navn på vokabularet|Corporate Bodies Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body[http://publications.europa.eu/resource/dataset/corporate-body]
 |Status|Obligatorisk
-|Kommentar|EUs Corporate bodies NAL inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
+|Kommentar|EUs Corporate bodies Named Authority List inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
 |===
 
 === For egenskapen dct:spatial
@@ -128,7 +128,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:spatial
 |Brukt i klasse|<<datasett-dekningsomrade, Datasett (`dcat:Dataset`)>>; <<katalog-dekningsomrade, Katalog (`dcat:Catalog`)>>; <<offentlig-organisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganization`)>>; <<offentlig-tjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
-|Navn på vokabularet|Continents NAL, Countries NAL, Places NAL, GeoNames (GeoNames er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på)
+|Navn på vokabularet|Continents Named Authority List, Countries Named Authority List, Places Named Authority List, GeoNames (GeoNames er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på)
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/continent[http://publications.europa.eu/resource/dataset/continent];
 http://publications.europa.eu/resource/dataset/country[http://publications.europa.eu/resource/dataset/country]; http://publications.europa.eu/resource/dataset/place[http://publications.europa.eu/resource/dataset/place]; http://sws.geonames.org/[http://sws.geonames.org/]
 |Status|Obligatorisk
@@ -163,7 +163,7 @@ http://publications.europa.eu/resource/dataset/country[http://publications.europ
 |===
 |URI til egenskapen|dcat:theme
 |Brukt i klasse|<<datasett-tema, Datasett (`dcat:Dataset`)>>
-|Navn på vokabularet|EuroVoc; Data Theme Taxonomy NAL
+|Navn på vokabularet|EuroVoc; Data Theme Taxonomy Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/eurovoc[http://publications.europa.eu/resource/dataset/eurovoc];
 http://publications.europa.eu/resource/authority/datatheme[http://publications.europa.eu/resource/authority/datatheme]
 |Kommentar|https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til EuroVoc og Data Theme fra EU.
@@ -208,7 +208,7 @@ http://publications.europa.eu/resource/authority/datatheme[http://publications.e
 |===
 |URI til egenskapen|dct:type
 |Brukt i klasse| <<regulativ-ressurs-type, Regulativ ressurs (`eli:LegalResource`)>>
-|Navn på vokabularet|Resource Type NAL
+|Navn på vokabularet|Resource Type Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/authority/resource-type[http://publications.europa.eu/resource/authority/resource-type]
 |Status|Obligatorisk
 |===
@@ -259,7 +259,7 @@ I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordr
 |===
 |URI til egenskapen|dct:type
 |Brukt i klasse|<<datasett-type, Datasett (`dcat:Dataset`)>>
-|Navn på vokabularet|Dataset type NAL
+|Navn på vokabularet|Dataset type Named Authority List
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/dataset-type[http://publications.europa.eu/resource/dataset/dataset-type]
 |Status|Anbefalt
 |Kommentar|Norsk utvidelse.
