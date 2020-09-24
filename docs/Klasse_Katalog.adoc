@@ -11,7 +11,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
-|Beskrivelse| Fritekst-beskrivelse av innholdet i katalogen. Egenskapen bør gjentas for parallelle språkversjoner av beskrivelsen.
+|Beskrivelse| Fritekst-beskrivelse av innholdet i katalogen. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -35,7 +35,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av navnet.
+|Beskrivelse| Inneholder navnet på katalogen. Bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===

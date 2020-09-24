@@ -48,7 +48,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
-|Beskrivelse| Navn på datatjenesten. Kan gjentas for parallelle språkversjoner.
+|Beskrivelse| Navn på datatjenesten. Bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -138,7 +138,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen bør gjentas for parallelle språkversjoner.
+|Beskrivelse| Inneholder en fritekstbeskrivelse av datatjenesten. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===

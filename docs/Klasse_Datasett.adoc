@@ -11,7 +11,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| description
 |URI | dct:description
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder fritekstbeskrivelse av datasettet. Bør gjentas for parallelle språkversjoner.
+|Beskrivelse| Inneholder fritekstbeskrivelse av datasettet. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -49,7 +49,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| title
 |URI| dct:title
 |Range| rdfs:Literal
-|Beskrivelse| Inneholder navnet på datasettet. Kan gjentas for parallelle språkversjoner av navnet.
+|Beskrivelse| Inneholder navnet på datasettet. Bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
@@ -672,7 +672,7 @@ dqvno:isAuthoritative
 |Engelsk navn| version notes
 |URI| adms:versionNotes
 |Range| rdfs:Literal
-|Beskrivelse| Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Kan gjentas for parallelle språkversjoner av versjonsnotater.
+|Beskrivelse| Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Bør gjentas når noten finnes i flere ulike språk/målformer.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
