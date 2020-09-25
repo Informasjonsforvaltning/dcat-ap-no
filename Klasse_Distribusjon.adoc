@@ -76,7 +76,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| availability
 |URI| dcatap:availability
 |Range| skos:Concept
-|Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier: `temporary`, `experimental`, `available`, `stable`.
+|Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===

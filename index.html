@@ -2614,15 +2614,15 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>:datasett1
+<pre class="highlight"><code>:dataset1
    a dcat:Dataset ;
    prov:wasGeneratedBy provno:administrativeDecision .
 
-:datasett2
+:dataset2
    a dcat:Dataset ;
    prov:wasGeneratedBy provno:collectingFromThirdparty .
 
-:datasett3
+:dataset3
    a dcat:Dataset ;
    prov:wasGeneratedBy provno:collectingFromUser .</code></pre>
 </div>
@@ -3385,20 +3385,20 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code>:enTidsserie
+<pre class="highlight"><code>:aTimeSeries
    a dcat:Dataset ;
-   dct:hasPart :del1, :del2 .
+   dct:hasPart :part1, :part2 .
 
-:del1
+:part1
    a dcat:Dataset ;
-   dct:isPartOf :enTidsserie ;
+   dct:isPartOf :aTimeSeries ;
    dct:temporal [a dct:PeriodOfTime ;
    dcat:startDate "2017-01-01"^^xsd:date ;
    dcat:endDate "2017-12-31"^^xsd:date ; ] .
 
-:del2
+:part2
    a dcat:Dataset ;
-   dct:isPartOf :enTidsserie ;
+   dct:isPartOf :aTimeSeries ;
    dct:temporal [a dct:PeriodOfTime ;
    dcat:startDate "2018-01-01"^^xsd:date ;
    dcat:endDate "2018-12-31"^^xsd:date ; ] .</code></pre>
@@ -4020,15 +4020,15 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="content">
 <pre class="highlight"><code>@prefix eupodt: &lt;http://publications.europa.eu/resource/authority/dataset-type#&gt; .
 
-:enKodeliste
+:aCodeList
    a dcat:Dataset ;
    dct:type eupodt:CODE_LIST .
 
-:etTestDatasett
+:aTestDataset
    a dcat:Dataset ;
    dct:type eupodt:TEST_DATA .
 
-:etKunstigDatasett
+:aSyntheticDataset
    a dcat:Dataset ;
    dct:type eupodt:SYNTHETIC_DATA .</code></pre>
 </div>
@@ -5008,7 +5008,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig. Må være en av følgende verdier: <code>temporary</code>, <code>experimental</code>, <code>available</code>, <code>stable</code>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -8800,7 +8800,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/access-right">http://publications.europa.eu/resource/authority/access-right</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/access-right" class="bare">https://data.europa.eu/euodp/en/data/dataset/access-right</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -8831,7 +8831,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/frequency">http://publications.europa.eu/resource/authority/frequency</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/frequency" class="bare">https://data.europa.eu/euodp/en/data/dataset/frequency</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -8893,7 +8893,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/corporate-body">http://publications.europa.eu/resource/dataset/corporate-body</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/corporate-body" class="bare">https://data.europa.eu/euodp/en/data/dataset/corporate-body</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -8928,7 +8928,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/file-type">http://publications.europa.eu/resource/authority/file-type</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/file-type" class="bare">https://data.europa.eu/euodp/en/data/dataset/file-type</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -8963,7 +8963,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/language">http://publications.europa.eu/resource/authority/language</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/language" class="bare">https://data.europa.eu/euodp/en/data/dataset/language</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -8994,7 +8994,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/licence">http://publications.europa.eu/resource/dataset/licence</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/licence" class="bare">https://data.europa.eu/euodp/en/data/dataset/licence</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
@@ -9057,7 +9057,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/corporate-body">http://publications.europa.eu/resource/dataset/corporate-body</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/corporate-body" class="bare">https://data.europa.eu/euodp/en/data/dataset/corporate-body</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9088,12 +9088,17 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Continents Named Authority List, Countries Named Authority List, Places Named Authority List, GeoNames (GeoNames er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Continents Named Authority List;<br>
+Countries Named Authority List;<br>
+Places Named Authority List;<br>
+GeoNames (GeoNames er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/continent">http://publications.europa.eu/resource/dataset/continent</a>;
-<a href="http://publications.europa.eu/resource/dataset/country">http://publications.europa.eu/resource/dataset/country</a>; <a href="http://publications.europa.eu/resource/dataset/place">http://publications.europa.eu/resource/dataset/place</a>; <a href="http://sws.geonames.org/">http://sws.geonames.org/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/continent" class="bare">https://data.europa.eu/euodp/en/data/dataset/continent</a>;<br>
+<a href="https://data.europa.eu/euodp/en/data/dataset/country" class="bare">https://data.europa.eu/euodp/en/data/dataset/country</a>;<br>
+<a href="https://data.europa.eu/euodp/en/data/dataset/place" class="bare">https://data.europa.eu/euodp/en/data/dataset/place</a>;<br>
+<a href="http://sws.geonames.org/">http://sws.geonames.org/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9124,7 +9129,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/adms/status/">http://purl.org/adms/status/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/adms/status/">http://purl.org/adms/status/</a> (i RDF)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9159,11 +9164,11 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/eurovoc">http://publications.europa.eu/resource/dataset/eurovoc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc" class="bare">https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til EuroVoc fra EU.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9190,16 +9195,17 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EuroVoc; Data Theme Taxonomy Named Authority List</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EuroVoc;<br>
+Data Theme Taxonomy Named Authority List</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/eurovoc">http://publications.europa.eu/resource/dataset/eurovoc</a>;
-<a href="http://publications.europa.eu/resource/authority/datatheme">http://publications.europa.eu/resource/authority/datatheme</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc" class="bare">https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc</a>;<br>
+<a href="https://data.europa.eu/euodp/en/data/dataset/data-theme" class="bare">https://data.europa.eu/euodp/en/data/dataset/data-theme</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til EuroVoc og Data Theme fra EU.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9234,11 +9240,11 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/eurovoc">http://publications.europa.eu/resource/dataset/eurovoc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc" class="bare">https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til EuroVoc og Data Theme fra EU.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9269,7 +9275,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/adms/publishertype/">http://purl.org/adms/publishertype/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/adms/publishertype/">http://purl.org/adms/publishertype/</a> (i RDF)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9301,7 +9307,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/adms/licencetype/" class="bare">http://purl.org/adms/licencetype/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://purl.org/adms/licencetype/">http://purl.org/adms/licencetype/</a> (i RDF)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9333,7 +9339,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/resource-type">http://publications.europa.eu/resource/authority/resource-type</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/resource-type" class="bare">https://data.europa.eu/euodp/en/data/dataset/resource-type</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -9475,7 +9481,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/dataset-type">http://publications.europa.eu/resource/dataset/dataset-type</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/dataset-type" class="bare">https://data.europa.eu/euodp/en/data/dataset/dataset-type</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -10392,7 +10398,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-09-25 08:44:37 UTC
+Sist oppdatert 2020-09-25 11:45:03 UTC
 </div>
 </div>
 </body>
