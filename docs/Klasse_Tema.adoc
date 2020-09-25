@@ -11,7 +11,7 @@ Klassen _Tema_ er obligatorisk.
 |Engelsk navn| preferred label
 |URI| skos:prefLabel
 |Range| rdfs:Literal
-|Beskrivelse| Foretrukket tittel for kategorien. Kan gjentas for parallelle språkversjoner av etiketten.
+|Beskrivelse| Foretrukket tittel for kategorien. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |===
