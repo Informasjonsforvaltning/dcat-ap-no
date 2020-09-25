@@ -37,7 +37,7 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| application profile
 |URI| dct:conformsTo
 |Range| dct:Standard
-|Beskrivelse| Referanse til en applikasjonsprofil som datasettets metadata er i samsvar med.
+|Beskrivelse| Referanse til en applikasjonsprofil som ressursens metadata er i samsvar med.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -61,7 +61,7 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| release date
 |URI| dct:issued
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Datoen for når beskrivelsen av datasettet ble inkludert i datakatalogen.
+|Beskrivelse| Datoen for når katalogposten ble inkludert i datakatalogen.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -99,7 +99,7 @@ Klassen _Katalogpost_ er valgfri.
 |Engelsk navn| language
 |URI| dct:language
 |Range| dct:LinguisticSystem
-|Beskrivelse| Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av datasettene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk.
+|Beskrivelse| Refererer til et språk som er brukt i tekstlige metadata som beskriver tittel, beskrivelser osv. av ressursene i katalogen. Egenskapen kan repeteres dersom metadata er oppgitt på flere språk.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
