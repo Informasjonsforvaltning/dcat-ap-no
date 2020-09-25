@@ -98,15 +98,15 @@ NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. i
 |Eksempel a|
 [source]
 ----
-:datasett1
+:dataset1
    a dcat:Dataset ;
    prov:wasGeneratedBy provno:administrativeDecision .
 
-:datasett2
+:dataset2
    a dcat:Dataset ;
    prov:wasGeneratedBy provno:collectingFromThirdparty .
 
-:datasett3
+:dataset3
    a dcat:Dataset ;
    prov:wasGeneratedBy provno:collectingFromUser .
 ----
@@ -385,20 +385,20 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |Eksempel a| Kan brukes til å beskrive tidsserier:
 ```
-:enTidsserie
+:aTimeSeries
    a dcat:Dataset ;
-   dct:hasPart :del1, :del2 .
+   dct:hasPart :part1, :part2 .
 
-:del1
+:part1
    a dcat:Dataset ;
-   dct:isPartOf :enTidsserie ;
+   dct:isPartOf :aTimeSeries ;
    dct:temporal [a dct:PeriodOfTime ;
    dcat:startDate "2017-01-01"^^xsd:date ;
    dcat:endDate "2017-12-31"^^xsd:date ; ] .
 
-:del2
+:part2
    a dcat:Dataset ;
-   dct:isPartOf :enTidsserie ;
+   dct:isPartOf :aTimeSeries ;
    dct:temporal [a dct:PeriodOfTime ;
    dcat:startDate "2018-01-01"^^xsd:date ;
    dcat:endDate "2018-12-31"^^xsd:date ; ] .
@@ -628,15 +628,15 @@ dqvno:isAuthoritative
 ----
 @prefix eupodt: <http://publications.europa.eu/resource/authority/dataset-type#> .
 
-:enKodeliste
+:aCodeList
    a dcat:Dataset ;
    dct:type eupodt:CODE_LIST .
 
-:etTestDatasett
+:aTestDataset
    a dcat:Dataset ;
    dct:type eupodt:TEST_DATA .
 
-:etKunstigDatasett
+:aSyntheticDataset
    a dcat:Dataset ;
    dct:type eupodt:SYNTHETIC_DATA .
 ----
