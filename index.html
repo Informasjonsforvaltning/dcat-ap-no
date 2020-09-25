@@ -716,7 +716,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#katalog-katalog">Katalog: katalog (dcat:catalog)</a></li>
 <li><a href="#katalog-katalogpost">Katalog: katalogpost (dcat:record)</a></li>
 <li><a href="#katalog-produsent">Katalog: produsent (dct:creator)</a></li>
-<li><a href="#katalog-rettigheter">Katalog: rettigheter (dct:rights)</a></li>
+<li><a href="#katalog-rettigheter">Katalog: rettigheter (brukervilkår) (dct:rights)</a></li>
 </ul>
 </li>
 </ul>
@@ -733,7 +733,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel4">
 <li><a href="#katalogpost-i-samsvar-med">Katalogpost: i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#katalogpost-status">Katalogpost: status (adms:status)</a></li>
-<li><a href="#katalogpost-utlistingsdato">Katalogpost: utlistingsdato (dct:issued)</a></li>
+<li><a href="#katalogpost-utgivelsesdato">Katalogpost: utgivelsesdato (dct:issued)</a></li>
 </ul>
 </li>
 <li><a href="#_valgfrie_egenskaper_for_klassen_katalogpost">Valgfrie egenskaper for klassen <em>Katalogpost</em></a>
@@ -2388,7 +2388,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hovedidentifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4173,7 +4173,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rotplassering eller primært endepunkt for tjenesten (en IRI).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rotplassering eller primært endepunkt for tjenesten (en URI).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4934,7 +4934,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, f.eks. <a href="https://data.norge.no/nlod/" class="bare">https://data.norge.no/nlod/</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, f.eks. <a href="https://creativecommons.org/licenses/by/4.0/" class="bare">https://creativecommons.org/licenses/by/4.0/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -6383,7 +6383,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalog-rettigheter"><a class="link" href="#katalog-rettigheter">Katalog: rettigheter (dct:rights)</a></h5>
+<h5 id="katalog-rettigheter"><a class="link" href="#katalog-rettigheter">Katalog: rettigheter (brukervilkår) (dct:rights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6404,7 +6404,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Uttalelse som spesifiserer rettigheter knyttet til katalogen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Uttalelse som spesifiserer brukervilkår knyttet til katalogen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -6570,7 +6570,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="katalogpost-utlistingsdato"><a class="link" href="#katalogpost-utlistingsdato">Katalogpost: utlistingsdato (dct:issued)</a></h5>
+<h5 id="katalogpost-utgivelsesdato"><a class="link" href="#katalogpost-utgivelsesdato">Katalogpost: utgivelsesdato (dct:issued)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -10398,7 +10398,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-09-25 11:45:03 UTC
+Sist oppdatert 2020-09-25 12:46:45 UTC
 </div>
 </div>
 </body>

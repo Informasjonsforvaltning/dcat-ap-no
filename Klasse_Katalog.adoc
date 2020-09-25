@@ -249,14 +249,14 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Valgfri
 |===
 
-=== Katalog: rettigheter (dct:rights) [[katalog-rettigheter]]
+=== Katalog: rettigheter (brukervilkår) (dct:rights) [[katalog-rettigheter]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| rights (use terms)
 |URI| dct:rights
 |Range| dct:RightsStatement
-|Beskrivelse| Uttalelse som spesifiserer rettigheter knyttet til katalogen.
+|Beskrivelse| Uttalelse som spesifiserer brukervilkår knyttet til katalogen.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
