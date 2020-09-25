@@ -56,6 +56,19 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Anbefalt
 |===
 
+=== Distribusjon: status (adms:status) [[distribusjon-status]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| status
+|URI| adms:status
+|Range| skos:Concept
+|Beskrivelse| Distribusjonens modenhet.
+|Multiplisitet| 0..1
+|Status| Anbefalt
+|Kommentar|Norsk utvidelse - endret fra valgfri til anbefalt, fordi status på tjenesten er viktig å vite når man skal vurdere om en tjeneste skal/kan brukes.
+|===
+
 === Distribusjon: tilgjengelighet (dcatap:availability) [[distribusjon-tilgjengelighet]]
 
 [cols="30s,70d"]
@@ -220,18 +233,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:LinguisticSystem
 |Beskrivelse| Referanse til språk som er brukt i distribusjonen.
 |Multiplisitet| 0..n
-|Status| Valgfri
-|===
-
-=== Distribusjon: status (adms:status) [[distribusjon-status]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| status
-|URI| adms:status
-|Range| skos:Concept
-|Beskrivelse| Distribusjonens modenhet. Må ha en av verdiene `Completed`, `Deprecated`, `Under Development`, `Withdrawn`.
-|Multiplisitet| 0..1
 |Status| Valgfri
 |===
 
