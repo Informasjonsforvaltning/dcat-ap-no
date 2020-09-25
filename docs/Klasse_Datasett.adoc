@@ -23,7 +23,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| identifier
 |URI| dct:identifier
 |Range| rdfs:Literal
-|Beskrivelse| Hovedidentifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.
+|Beskrivelse| Identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |Kommentar|

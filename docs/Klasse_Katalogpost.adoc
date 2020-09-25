@@ -54,7 +54,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Katalogpost: utlistingsdato (dct:issued) [[katalogpost-utlistingsdato]]
+=== Katalogpost: utgivelsesdato (dct:issued) [[katalogpost-utgivelsesdato]]
 
 [cols="30s,70d"]
 |===
