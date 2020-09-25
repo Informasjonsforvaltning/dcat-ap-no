@@ -554,6 +554,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_anbefalte_egenskaper_for_klassen_datasett">Anbefalte egenskaper for klassen <em>Datasett</em></a>
 <ul class="sectlevel4">
 <li><a href="#datasett-begrep">Datasett: begrep (dct:subject)</a></li>
+<li><a href="#datasett-ble-generert-ved">Datasett: ble generert ved (prov:wasGeneratedBy)</a></li>
 <li><a href="#datasett-datasettdistribusjon">Datasett: datasettdistribusjon (dcat:distribution)</a></li>
 <li><a href="#datasett-dekningsomrade">Datasett: dekningsområde (dct:spatial)</a></li>
 <li><a href="#datasett-emneord">Datasett: emneord (dcat:keyword)</a></li>
@@ -566,7 +567,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_valgfrie_egenskaper_for_klassen_datasett">Valgfrie egenskaper for klassen <em>Datasett</em></a>
 <ul class="sectlevel4">
 <li><a href="#datasett-annen-identifikator">Datasett: annen identifikator (adms:identifier)</a></li>
-<li><a href="#datasett-ble-generert-ved">Datasett: ble generert ved (prov:wasGeneratedBy)</a></li>
 <li><a href="#datasett-dokumentasjon">Datasett: dokumentasjon (foaf:page)</a></li>
 <li><a href="#datasett-eksempeldata">Datasett: eksempeldata (adms:sample)</a></li>
 <li><a href="#datasett-endringsdato">Datasett: endringsdato (dct:modified)</a></li>
@@ -648,6 +648,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel4">
 <li><a href="#distribusjon-beskrivelse">Distribusjon: beskrivelse (dct:description)</a></li>
 <li><a href="#distribusjon-lisens">Distribusjon: lisens (dct:license)</a></li>
+<li><a href="#distribusjon-status">Distribusjon: status (adms:status)</a></li>
 <li><a href="#distribusjon-tilgjengelighet">Distribusjon: tilgjengelighet (dcatap:availability)</a></li>
 </ul>
 </li>
@@ -666,7 +667,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#distribusjon-rettigheter">Distribusjon: rettigheter (dct:rights)</a></li>
 <li><a href="#distribusjon-sjekksum">Distribusjon: sjekksum (spdx:checksum)</a></li>
 <li><a href="#distribusjon-sprak">Distribusjon: språk (dct:language)</a></li>
-<li><a href="#distribusjon-status">Distribusjon: status (adms:status)</a></li>
 <li><a href="#_distribusjon_tidsromsoppløsning_dcattemporalresolution">Distribusjon: tidsromsoppløsning (dcat:temporalResolution )</a></li>
 <li><a href="#distribusjon-tilganstjeneste">Distribusjon: tilgangstjeneste (dcat:accessService)</a></li>
 <li><a href="#distribusjon-tittel">Distribusjon: tittel (dct:title)</a></li>
@@ -943,29 +943,29 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#krav-til-kontrollerte-vokabularer">Krav til kontrollerte vokabularer</a></li>
 <li><a href="#Kontrollerte_vokabularer_som_skal_brukes">Kontrollerte vokabularer som skal brukes</a>
 <ul class="sectlevel3">
-<li><a href="#_for_egenskapen_dctaccessrights">For egenskapen dct:accessRights</a></li>
-<li><a href="#_for_egenskapen_dctaccrualperiodicity">For egenskapen dct:accrualPeriodicity</a></li>
-<li><a href="#_for_egenskapen_dcatapavailability">For egenskapen dcatap:availability</a></li>
-<li><a href="#_for_egenskapen_dctcreator">For egenskapen dct:creator</a></li>
-<li><a href="#_for_egenskapen_dctformat">For egenskapen dct:format</a></li>
-<li><a href="#_for_egenskapen_dctlanguage">For egenskapen dct:language</a></li>
-<li><a href="#_for_egenskapen_dctlicense">For egenskapen dct:license</a></li>
-<li><a href="#_for_egenskapen_dcatmediatype">For egenskapen dcat:mediaType</a></li>
-<li><a href="#_for_egenskapen_dctpublisher">For egenskapen dct:publisher</a></li>
-<li><a href="#_for_egenskapen_dctspatial">For egenskapen dct:spatial</a></li>
-<li><a href="#_for_egenskapen_admsstatus">For egenskapen adms:status</a></li>
-<li><a href="#_for_egenskapen_cvthematicarea">For egenskapen cv:thematicArea</a></li>
-<li><a href="#_for_egenskapen_dcattheme">For egenskapen dcat:theme</a></li>
-<li><a href="#_for_egenskapen_dcatthemetaxonomy">For egenskapen dcat:themeTaxonomy</a></li>
-<li><a href="#_for_egenskapen_dcttype">For egenskapen dct:type</a></li>
+<li><a href="#Skal_brukes_for_accessRights">For egenskapen dct:accessRights</a></li>
+<li><a href="#Skal_bruks_for_accrualPeriodicity">For egenskapen dct:accrualPeriodicity</a></li>
+<li><a href="#Skal_brukes_for_availability">For egenskapen dcatap:availability</a></li>
+<li><a href="#Skal_brukes_for_creator">For egenskapen dct:creator</a></li>
+<li><a href="#Skal_brukes_for_foramt">For egenskapen dct:format</a></li>
+<li><a href="#Skal_brukes_for_language">For egenskapen dct:language</a></li>
+<li><a href="#Skal_brukes_for_license">For egenskapen dct:license</a></li>
+<li><a href="#Skal_brukes_for_mediaType">For egenskapen dcat:mediaType</a></li>
+<li><a href="#Skal_brukes_for_publisher">For egenskapen dct:publisher</a></li>
+<li><a href="#Skal_brukes_for_spatial">For egenskapen dct:spatial</a></li>
+<li><a href="#Skal_brukes_for_status">For egenskapen adms:status</a></li>
+<li><a href="#Skal_brukes_for_thematicArea">For egenskapen cv:thematicArea</a></li>
+<li><a href="#Skal_brukes_for_theme">For egenskapen dcat:theme</a></li>
+<li><a href="#Skal_brukes_for_themeTaxonomy">For egenskapen dcat:themeTaxonomy</a></li>
+<li><a href="#Skal_brukes_for_type">For egenskapen dct:type</a></li>
 </ul>
 </li>
 <li><a href="#Kontrollerte_vokabularer_som_bør_og_kan_brukes">Kontrollerte vokabularer som bør og kan brukes</a>
 <ul class="sectlevel3">
-<li><a href="#_for_egenskapen_cvthematicarea_2">For egenskapen cv:thematicArea</a></li>
-<li><a href="#_for_egenskapen_dcattheme_2">For egenskapen dcat:theme</a></li>
-<li><a href="#_for_egenskapen_dcatthemetaxonomy_2">For egenskapen dcat:themeTaxonomy</a></li>
-<li><a href="#_for_egenskapen_dcttype_2">For egenskapen dct:type</a></li>
+<li><a href="#Bør_brukes_for_thematicArea">For egenskapen cv:thematicArea</a></li>
+<li><a href="#Bør_brukes_for_theme">For egenskapen dcat:theme</a></li>
+<li><a href="#Bør_brukes_for_themeTaxonomy">For egenskapen dcat:themeTaxonomy</a></li>
+<li><a href="#Bør_brukes_for_type">For egenskapen dct:type</a></li>
 </ul>
 </li>
 </ul>
@@ -2575,6 +2575,66 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
+<h5 id="datasett-ble-generert-ved"><a class="link" href="#datasett-ble-generert-ved">Datasett: ble generert ved (prov:wasGeneratedBy)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">was generated by</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prov:wasGeneratedBy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prov:Activity</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for oppretting av det.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - endret fra valgfri til anbefalt, fordi hvordan datasettet ble opprettet (ved vedtak, innhenting fra tredjepart eller ved innhenting fra brukeren) kan være viktig å vite når man skal vurdere om datasettet skal/kan gjenbrukes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>:datasett1
+   a dcat:Dataset ;
+   prov:wasGeneratedBy provno:administrativeDecision .
+
+:datasett2
+   a dcat:Dataset ;
+   prov:wasGeneratedBy provno:collectingFromThirdparty .
+
+:datasett3
+   a dcat:Dataset ;
+   prov:wasGeneratedBy provno:collectingFromUser .</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>der <code>provno:administrativeDecision</code> (vedtak), <code>provno:collectingFromThirdparty</code> (innhenting fra tredjepart) og <code>provno:collectingFromUser</code> (innhenting fra bruker) er <code>prov:Activity</code>.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
 <h5 id="datasett-datasettdistribusjon"><a class="link" href="#datasett-datasettdistribusjon">Datasett: datasettdistribusjon (dcat:distribution)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2893,62 +2953,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="datasett-ble-generert-ved"><a class="link" href="#datasett-ble-generert-ved">Datasett: ble generert ved (prov:wasGeneratedBy)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">was generated by</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prov:wasGeneratedBy</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prov:Activity</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for oppretting av det.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>:datasett1
-   a dcat:Dataset ;
-   prov:wasGeneratedBy provno:administrativeDecision .
-
-:datasett2
-   a dcat:Dataset ;
-   prov:wasGeneratedBy provno:collectingFromThirdparty .
-
-:datasett3
-   a dcat:Dataset ;
-   prov:wasGeneratedBy provno:collectingFromUser .</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>der <code>provno:administrativeDecision</code> (vedtak), <code>provno:collectingFromThirdparty</code> (innhenting fra tredjepart) og <code>provno:collectingFromUser</code> (innhenting fra bruker) er <code>prov:Activity</code>.</p>
-</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -4944,6 +4948,45 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
+<h5 id="distribusjon-status"><a class="link" href="#distribusjon-status">Distribusjon: status (adms:status)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">status</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjonens modenhet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - endret fra valgfri til anbefalt, fordi status på tjenesten er viktig å vite når man skal vurdere om en tjeneste skal/kan brukes.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
 <h5 id="distribusjon-tilgjengelighet"><a class="link" href="#distribusjon-tilgjengelighet">Distribusjon: tilgjengelighet (dcatap:availability)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5432,41 +5475,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="distribusjon-status"><a class="link" href="#distribusjon-status">Distribusjon: status (adms:status)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">status</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjonens modenhet. Må ha en av verdiene <code>Completed</code>, <code>Deprecated</code>, <code>Under Development</code>, <code>Withdrawn</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
@@ -7130,15 +7138,23 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til hjemmesiden til organisasjonen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer.</p></td>
 </tr>
 </tbody>
 </table>
@@ -7469,7 +7485,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til hjemmesiden til tjenesten.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å referere til hjemmesiden til tjenesten. Bør gjentas når tjenesten er beskrevet i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -7478,6 +7494,14 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8755,7 +8779,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <p>Under følger en oversikt over kontrollerte vokabular som <strong>skal</strong> brukes (= obligatorisk) for egenskapene i listen, dette for å sikre et minimum av samhandlingsevne.</p>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dctaccessrights"><a class="link" href="#_for_egenskapen_dctaccessrights">For egenskapen dct:accessRights</a></h4>
+<h4 id="Skal_brukes_for_accessRights"><a class="link" href="#Skal_brukes_for_accessRights">For egenskapen dct:accessRights</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8786,7 +8810,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dctaccrualperiodicity"><a class="link" href="#_for_egenskapen_dctaccrualperiodicity">For egenskapen dct:accrualPeriodicity</a></h4>
+<h4 id="Skal_bruks_for_accrualPeriodicity"><a class="link" href="#Skal_bruks_for_accrualPeriodicity">For egenskapen dct:accrualPeriodicity</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8817,7 +8841,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dcatapavailability"><a class="link" href="#_for_egenskapen_dcatapavailability">For egenskapen dcatap:availability</a></h4>
+<h4 id="Skal_brukes_for_availability"><a class="link" href="#Skal_brukes_for_availability">For egenskapen dcatap:availability</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8848,7 +8872,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dctcreator"><a class="link" href="#_for_egenskapen_dctcreator">For egenskapen dct:creator</a></h4>
+<h4 id="Skal_brukes_for_creator"><a class="link" href="#Skal_brukes_for_creator">For egenskapen dct:creator</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8883,7 +8907,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dctformat"><a class="link" href="#_for_egenskapen_dctformat">For egenskapen dct:format</a></h4>
+<h4 id="Skal_brukes_for_foramt"><a class="link" href="#Skal_brukes_for_foramt">For egenskapen dct:format</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8896,7 +8920,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Brukt i klasse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#distribusjon-format">Distribusjon (<code>dcat:Distribution</code>)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datatjeneste-format">Datatjeneste (<code>dcat:DataService</code>)</a>; <a href="#distribusjon-format">Distribusjon (<code>dcat:Distribution</code>)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
@@ -8910,11 +8934,15 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - gjelder også Datatjeneste (<code>dcat:DataService</code>)</p></td>
+</tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dctlanguage"><a class="link" href="#_for_egenskapen_dctlanguage">For egenskapen dct:language</a></h4>
+<h4 id="Skal_brukes_for_language"><a class="link" href="#Skal_brukes_for_language">For egenskapen dct:language</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8945,7 +8973,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dctlicense"><a class="link" href="#_for_egenskapen_dctlicense">For egenskapen dct:license</a></h4>
+<h4 id="Skal_brukes_for_license"><a class="link" href="#Skal_brukes_for_license">For egenskapen dct:license</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8958,7 +8986,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Brukt i klasse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#distribusjon-lisens">Distribusjon (<code>dcat:Distribution</code>)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datatjeneste-lisens">Datatjeneste (<code>dcat:DataService</code>)</a>; <a href="#distribusjon-lisens">Distribusjon (<code>dcat:Distribution</code>)</a>; <a href="#katalog-lisens">Katalog (<code>dcat:Catalog</code>)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
@@ -8968,11 +8996,16 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/dataset/licence">http://publications.europa.eu/resource/dataset/licence</a></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - gjelder også Datatjeneste (<code>dcat:DataService</code>) og Katalog (<code>dcat:Catalog</code>).</p>
+<p class="tableblock">Kravet fra EU er forklart slik: "This vocabulary must be used in case the licence [&#8230;&#8203;] is internationally recognised and included in the EU Publications Office NAL."</p></td>
+</tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dcatmediatype"><a class="link" href="#_for_egenskapen_dcatmediatype">For egenskapen dcat:mediaType</a></h4>
+<h4 id="Skal_brukes_for_mediaType"><a class="link" href="#Skal_brukes_for_mediaType">For egenskapen dcat:mediaType</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9003,7 +9036,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dctpublisher"><a class="link" href="#_for_egenskapen_dctpublisher">For egenskapen dct:publisher</a></h4>
+<h4 id="Skal_brukes_for_publisher"><a class="link" href="#Skal_brukes_for_publisher">For egenskapen dct:publisher</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9016,7 +9049,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Brukt i klasse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datasett-utgiver">Datasett (<code>dcat:Dataset</code>)</a>; <a href="#katalog-utgiver">Katalog (<code>dcat:Catalog</code>)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datasett-utgiver">Datasett (<code>dcat:Dataset</code>)</a>; <a href="#datatjeneste-utgiver">Datatjeneste (<code>dcat:DataService</code>)</a>; <a href="#katalog-utgiver">Katalog (<code>dcat:Catalog</code>)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
@@ -9038,7 +9071,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dctspatial"><a class="link" href="#_for_egenskapen_dctspatial">For egenskapen dct:spatial</a></h4>
+<h4 id="Skal_brukes_for_spatial"><a class="link" href="#Skal_brukes_for_spatial">For egenskapen dct:spatial</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9070,7 +9103,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_admsstatus"><a class="link" href="#_for_egenskapen_admsstatus">For egenskapen adms:status</a></h4>
+<h4 id="Skal_brukes_for_status"><a class="link" href="#Skal_brukes_for_status">For egenskapen adms:status</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9083,7 +9116,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Brukt i klasse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#distribusjon-status">Distribusjon (<code>dcat:Distribution</code>)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#distribusjon-status">Distribusjon (<code>dcat:Distribution</code>)</a>; <a href="#katalogpost-status">Katalogpost (<code>dcat:CatalogRecord</code>)</a>; <a href="#offentlig-tjeneste-status">Offentlig tjeneste (<code>cpsv:PublicService</code>)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
@@ -9097,11 +9130,15 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - gjelder også Katalogpost (<code>dcat:CatalogRecord</code>) og Offentlig tjeneste (<code>cpsv:PublicService</code>)</p></td>
+</tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_cvthematicarea"><a class="link" href="#_for_egenskapen_cvthematicarea">For egenskapen cv:thematicArea</a></h4>
+<h4 id="Skal_brukes_for_thematicArea"><a class="link" href="#Skal_brukes_for_thematicArea">For egenskapen cv:thematicArea</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9136,7 +9173,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dcattheme"><a class="link" href="#_for_egenskapen_dcattheme">For egenskapen dcat:theme</a></h4>
+<h4 id="Skal_brukes_for_theme"><a class="link" href="#Skal_brukes_for_theme">For egenskapen dcat:theme</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9149,7 +9186,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Brukt i klasse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datasett-tema">Datasett (<code>dcat:Dataset</code>)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datasett-tema">Datasett (<code>dcat:Dataset</code>)</a>; <a href="#datatjeneste-tema">Datatjeneste (<code>dcat:DataService</code>)</a>; <a href="#katalog-temaer">Katalog (<code>dcat:Catalog</code>)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
@@ -9168,11 +9205,15 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - gjelder også Datatjeneste (<code>dcat:DataService</code>) og Katalog (<code>dcat:Catalog</code>)</p></td>
+</tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dcatthemetaxonomy"><a class="link" href="#_for_egenskapen_dcatthemetaxonomy">For egenskapen dcat:themeTaxonomy</a></h4>
+<h4 id="Skal_brukes_for_themeTaxonomy"><a class="link" href="#Skal_brukes_for_themeTaxonomy">For egenskapen dcat:themeTaxonomy</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9207,7 +9248,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dcttype"><a class="link" href="#_for_egenskapen_dcttype">For egenskapen dct:type</a></h4>
+<h4 id="Skal_brukes_for_type"><a class="link" href="#Skal_brukes_for_type">For egenskapen dct:type</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9308,7 +9349,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <p>I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene. Eksempler her er komplett sett med begreper i Los, EuroVoc, CERIFs standardvokabular, Deweys desimalklassifikasjon og en rekke andre vokabular.</p>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_cvthematicarea_2"><a class="link" href="#_for_egenskapen_cvthematicarea_2">For egenskapen cv:thematicArea</a></h4>
+<h4 id="Bør_brukes_for_thematicArea"><a class="link" href="#Bør_brukes_for_thematicArea">For egenskapen cv:thematicArea</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9337,13 +9378,13 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til EuroVoc fra EU.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til det som er nevnt under <a href="#Skal_brukes_for_thematicArea">Kontrollerte vokabularer som skal brukes</a>.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dcattheme_2"><a class="link" href="#_for_egenskapen_dcattheme_2">For egenskapen dcat:theme</a></h4>
+<h4 id="Bør_brukes_for_theme"><a class="link" href="#Bør_brukes_for_theme">For egenskapen dcat:theme</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9356,7 +9397,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Brukt i klasse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datasett-tema">Datasett (<code>dcat:Dataset</code>)</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datasett-tema">Datasett (<code>dcat:Dataset</code>)</a>; <a href="#datatjeneste-tema">Datatjeneste (<code>dcat:DataService</code>)</a>; <a href="#katalog-temaer">Katalog (<code>dcat:Catalog</code>)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
@@ -9372,13 +9413,13 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til EuroVoc og Data Theme fra EU.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til det som er nevnt under <a href="#Skal_brukes_for_theme">Kontrollerte vokabularer som skal brukes</a>.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dcatthemetaxonomy_2"><a class="link" href="#_for_egenskapen_dcatthemetaxonomy_2">For egenskapen dcat:themeTaxonomy</a></h4>
+<h4 id="Bør_brukes_for_themeTaxonomy"><a class="link" href="#Bør_brukes_for_themeTaxonomy">For egenskapen dcat:themeTaxonomy</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9407,13 +9448,13 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til EuroVoc og Data Theme fra EU.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til det som er nevnt under <a href="#Skal_brukes_for_themeTaxonomy">Kontrollerte vokabularer som skal brukes</a>.</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect3">
-<h4 id="_for_egenskapen_dcttype_2"><a class="link" href="#_for_egenskapen_dcttype_2">For egenskapen dct:type</a></h4>
+<h4 id="Bør_brukes_for_type"><a class="link" href="#Bør_brukes_for_type">For egenskapen dct:type</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9475,18 +9516,15 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Norsk utvidelse.</p>
-</div>
-<div class="paragraph">
-<p>Vokabularet er p.t. under publisering. Det vil inneholde bl.a. følgende predefinerte instanser av <code>skos:Concept</code>:</p>
+<p>Norsk utvidelse - med følgende predefinerte regeltyper:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p><code>cpsvno:ruleForNonDisclosure</code>: skjermingsrelatert regel.</p>
+<p><code>cpsvno:ruleForNonDisclosure</code>: skjermingsregel.</p>
 </li>
 <li>
-<p><code>cpsvno:ruleForDisclosure</code>: utleverningsrelatert regel.</p>
+<p><code>cpsvno:ruleForDisclosure</code>: utleveringsregel.</p>
 </li>
 </ul>
 </div></div></td>
@@ -10354,7 +10392,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-09-25 04:32:28 UTC
+Sist oppdatert 2020-09-25 08:44:37 UTC
 </div>
 </div>
 </body>
