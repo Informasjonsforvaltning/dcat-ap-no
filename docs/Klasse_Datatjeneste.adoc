@@ -204,7 +204,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Engelsk navn| access rights
 |URI| dct:accessRights
 |Range| dct:RightsStatement
-|Beskrivelse| Denne egenskapen KAN inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
+|Beskrivelse| Denne egenskapen kan inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===
