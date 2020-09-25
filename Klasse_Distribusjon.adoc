@@ -39,7 +39,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| description
 |URI| dct:description
 |Range| rdfs:Literal
-|Beskrivelse| Fritekstbeskrivelse av distribusjonen. Bør repeteres for parallelle språkversjoner.
+|Beskrivelse| Fritekstbeskrivelse av distribusjonen. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===

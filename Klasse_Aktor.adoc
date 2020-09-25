@@ -38,7 +38,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 |Engelsk navn| type
 |URI| dct:type
 |Range| skos:Concept
-|Beskrivelse| Refererer til type aktør som gjør katalogen eller ressursen tilgjengelig.
+|Beskrivelse| Refererer til type aktør som gjør katalogen og/eller ressursen tilgjengelig.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===

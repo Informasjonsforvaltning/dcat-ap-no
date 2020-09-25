@@ -38,7 +38,7 @@
 [cols="30s,70d"]
 |===
 | Engelsk navn | Literal
-| Beskrivelse | Brukes til å representere en literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som inneholder maskinlesbar tekst har en valgfri språk-tag, definert av BCP47 (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk).
+| Beskrivelse | Brukes til å representere en literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som inneholder maskinlesbar tekst har en valgfri språk-tag, definert av https://www.rfc-editor.org/rfc/bcp/bcp47.txt[BCP47] (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk).
 | URI | https://www.w3.org/TR/rdf-concepts/#section-Literals[rdfs:Literal]
 | Status | Obligatorisk
 |===
@@ -59,7 +59,7 @@
 [cols="30s,70d"]
 |===
 | Engelsk navn | Thematic scheme
-| Beskrivelse | Brukes til å representere en taksonomi eller en annen type kontrollert vokabular hvor emnet er definert.
+| Beskrivelse | Brukes til å representere en taksonomi eller en annen type kontrollert vokabular hvor temaet er definert.
 | URI | https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme[skos:ConceptScheme]
 | Status | Obligatorisk
 | Kommentar| Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
@@ -274,7 +274,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 [cols="30s,70d"]
 |===
 | Engelsk navn | Checksum
-| Beskrivelse | Brukes til å representere en beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
+| Beskrivelse | Brukes til å representere en beskrivelse som muliggjør autentisering av innholdet i en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
 | URI | https://spdx.org/rdf/terms/#d4e1930[spdx:Checksum]
 | Status | Valgfri
 |===

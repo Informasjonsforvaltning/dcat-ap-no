@@ -1162,6 +1162,11 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </colgroup>
 <tbody>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><strong>Prefiks</strong></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navnerom</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>RDF-vokabular</strong></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>adms</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://www.w3.org/ns/adms#" class="bare">http://www.w3.org/ns/adms#</a></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Asset Description Metadata Schema</p></td>
@@ -1410,7 +1415,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som inneholder maskinlesbar tekst har en valgfri språk-tag, definert av BCP47 (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som inneholder maskinlesbar tekst har en valgfri språk-tag, definert av <a href="https://www.rfc-editor.org/rfc/bcp/bcp47.txt">BCP47</a> (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -1468,7 +1473,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en taksonomi eller en annen type kontrollert vokabular hvor emnet er definert.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en taksonomi eller en annen type kontrollert vokabular hvor temaet er definert.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -2031,7 +2036,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en beskrivelse som muliggjør autentisering av innholdet i en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
@@ -2304,7 +2309,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til type aktør som gjør katalogen eller ressursen tilgjengelig.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til type aktør som gjør katalogen og/eller ressursen tilgjengelig.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -2348,7 +2353,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder fritekstbeskrivelse av datasettet. Bør gjentas for parallelle språkversjoner.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder fritekstbeskrivelse av datasettet. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -2461,7 +2466,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. <code>dct:publisher 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder navnet på datasettet. Kan gjentas for parallelle språkversjoner av navnet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder navnet på datasettet. Bør gjentas når navnet finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -2719,14 +2724,14 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <div class="content">
 <pre class="highlight"><code>:aDataset
    a dcat:Dataset ;
-   cpsv:follows :aNonDisclosureRule, :aDisclosuerRule .
+   cpsv:follows :aNonDisclosureRule, :aDisclosureRule .
 
 :aNonDisclosureRule
    a cpsv:Rule ;
    dct:type cpsvno:ruleForNonDisclosure ;
    dct:description "skjerminghjemmel"@nb , "legal basis for non-disclosure"@en .
 
-:aDisclosuerRule
+:aDisclosureRule
    a cpsv:Rule ;
    dct:type cpsvno:ruleForDisclosure ;
    dct:description "utleveringshjemmel"@nb , "legal basis for disclosure"@en ;
@@ -2767,7 +2772,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -2802,7 +2807,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Definerer starten og slutten på perioden med årstall-måned-dag, eventuelt klokkeslett (se ISO 8601).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Definerer starten og slutten på perioden, eventuelt klokkeslett (se ISO 8601).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -2879,7 +2884,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til en sekundær identifikator av datasettet som MAST/ADS, DataCite, DOI, EZID eller W3ID.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til en sekundær identifikator av datasettet som <a href="http://archive.stsci.edu/pub_dsn.html">MAST/ADS</a>, DataCite, <a href="http://www.doi.org/">DOI</a>, <a href="https://ezid.cdlib.org/">EZID</a> eller <a href="https://w3id.org/">W3ID</a>.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4120,7 +4125,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Kan gjentas for parallelle språkversjoner av versjonsnotater.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Bør gjentas når noten finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4273,7 +4278,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Navn på datatjenesten. Kan gjentas for parallelle språkversjoner.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navn på datatjenesten. Bør gjentas når navnet finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4381,7 +4386,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til kontaktpunktsobjekt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4524,7 +4529,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder en fritekstbeskrivelse av datatjenesten. Egenskapen bør gjentas for parallelle språkversjoner.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder en fritekstbeskrivelse av datatjenesten. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4890,7 +4895,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fritekstbeskrivelse av distribusjonen. Bør repeteres for parallelle språkversjoner.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fritekstbeskrivelse av distribusjonen. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -5685,7 +5690,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fritekst-beskrivelse av innholdet i katalogen. Egenskapen bør gjentas for parallelle språkversjoner av beskrivelsen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fritekst-beskrivelse av innholdet i katalogen. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -5755,7 +5760,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder navnet på katalogen. Egenskapen kan bli gjentatt for parallelle språkversjoner av navnet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder navnet på katalogen. Bør gjentas når navnet finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -6108,7 +6113,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere katalogens datasett.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere den katalogiserte ressursen.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -6616,7 +6621,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder en fritekstbeskrivelse av katalogposten. Denne egenskapen bør gjentas for parallelle språkversjoner av beskrivelsen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inneholder en fritekstbeskrivelse av katalogposten. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -6721,7 +6726,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Navnet på katalogen. Denne egenskapen kan gjentas for parallelle språkversjoner av navnet.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Navnet på katalogen. Bør gjentas når navnet finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -8478,7 +8483,7 @@ Egenskapen kan gjentas for hvert språk tittelen finnes i.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Foretrukket tittel for kategorien. Kan gjentas for parallelle språkversjoner av etiketten.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Foretrukket tittel for kategorien. Bør gjentas når tittelen finnes i flere ulike språk/målformer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -9219,7 +9224,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ADMS publisher type vocabulary</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ADMS publisher type vocabulary. Listen over termer i ADMS publisher type er inkludert i ADMS-spesifikasjonen. European Commission. Joinup. <a href="https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms">Asset Description Metadata Schema (ADMS)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
@@ -10349,7 +10354,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-09-24 12:53:56 UTC
+Sist oppdatert 2020-09-25 04:32:09 UTC
 </div>
 </div>
 </body>
