@@ -16,19 +16,6 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Datatjeneste: format (dct:format) [[datatjeneste-format]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn|format
-|URI|dct:format
-|Range|dct:MediaType
-|Beskrivelse|Opplysing om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
-|Multiplisitet|1..n
-|Status|Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å ha konsistens mellom distribusjon og datatjeneste.
-|===
-
 === Datatjeneste: identifikator (dcat:identifier) [[datatjeneste-identifikator]]
 
 [cols="30s,70d"]
@@ -80,6 +67,18 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
+=== Datatjeneste: format (dct:format) [[datatjeneste-format]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|format
+|URI|dct:format
+|Range|dct:MediaType
+|Beskrivelse|Opplysing om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|Kommentar| Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å ha konsistens mellom distribusjon og datatjeneste.
+|===
 
 === Datatjeneste: kontaktpunkt (dcat:contactPoint) [[datatjeneste-kontaktpunkt]]
 
