@@ -4,7 +4,7 @@ Klassen _Dokument_ er valgfri.
 
 == Anbefalte egenskaper for klassen _Dokument_ [[Dokument_anbefalte_egenskaper]]
 
-=== Dokument: språk (dct:title) [[Dokument-språk]]
+=== Dokument: språk (dct:language) [[Dokument-språk]]
 
 [cols="30s,70d"]
 |===
