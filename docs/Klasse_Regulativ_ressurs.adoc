@@ -50,7 +50,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Engelsk navn|reference
 |URI|rdfs:seeAlso
 |Range|rdfs:Resource
-|Beskrivelse|Brukes til å oppgi referanse til regelverksressurs.
+|Beskrivelse|Brukes til å oppgi referanse til den regulative ressursen.
 |Multiplisitet|0..n
 |Status|Anbefalt
 |Kommentar|For referanse til Lovdata bør ELI-URI brukes, se https://lovdata.no/eli/[beskrivelsen hos Lovdata].

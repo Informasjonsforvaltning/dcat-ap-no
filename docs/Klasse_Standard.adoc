@@ -11,7 +11,7 @@ Klassen _Standard_ er valgfri.
 |Engelsk navn| has title
 |URI| dct:title
 |Range| rdfs:Literal
-|Beskrivelse| Brukes til å referere til tittelen til standarden/spesifikasjonen.
+|Beskrivelse| Brukes til å referere til tittelen til standarden/spesifikasjonen. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
 |Status| Obligatorisk
 |Kommentar|Norsk utvidelse. For å kunne ha tittel til standard/spesifikasjon.

@@ -52,6 +52,8 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Multiplisitet|1..1
 |Status|Obligatorisk
 |Kommentar|Denne egenskapen er satt obligatorisk i BRegDCAT-AP for å være kompatibel med CPSV-AP.
+
+Se kommentaren til <<offentlig-organisasjon-foretrukket-navn, Offentlig organisasjon: foretrukket navn>>. 
 |===
 
 == Anbefalte egenskaper for klassen _Offentlig organisasjon_
@@ -78,7 +80,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Beskrivelse|Brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes i flere ulike språk/målformer.
 |Multiplisitet|0..n
 |Status|Anbefalt
-|Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer. 
+|Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer.
 |===
 
 === Offentlig organisasjon: klassifisering (org:classification) [[offentlig-organisasjon-klassifisering]]

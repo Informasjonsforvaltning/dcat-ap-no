@@ -97,7 +97,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| accrual periodicity
 |URI| dct:accrualPeriodicity
 |Range| dct:Frequency
-|Beskrivelse| Referanse til oppdateringsfrekvensen for datasettet.
+|Beskrivelse| Referanse til oppdateringsfrekvensen for katalogen.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
@@ -145,7 +145,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| language
 |URI| dct:language
 |Range| dct:LinguisticSystem
-|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv. av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
+|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver ressursene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -157,7 +157,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| theme taxonomy
 |URI| dcat:themeTaxonomy
 |Range| skos:ConceptScheme
-|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere den katalogiserte ressursen.
+|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
@@ -183,7 +183,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| service
 |URI| dcat:service
 |Range| dcat:DataService
-|Beskrivelse| Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
+|Beskrivelse| Refererer til en datatjeneste som er oppført i katalogen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===

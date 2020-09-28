@@ -36,7 +36,7 @@ Klassen _Lokasjon_ er valgfri.
 |Engelsk navn| geometry
 |URI| locn:geometry
 |Range| rdfs:Literal
-|Beskrivelse| Denne egenskapen refererer alle typer ressurser til tilhørende dekningsområde.
+|Beskrivelse| Denne egenskapen knytter ressursen til tilhørende geometri.
 |Multiplisitet| 0..1
 |Status| Valgfri
 |===

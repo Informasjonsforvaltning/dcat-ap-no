@@ -308,7 +308,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Engelsk navn| is referenced by
 |URI| dct:isReferencedBy
 |Range| rdfs:Resource
-|Beskrivelse| Referanse til et annet datasett som refererer til dette datasettet.
+|Beskrivelse| Referanse til en annen ressurs som refererer til dette datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
@@ -571,7 +571,7 @@ dqvno:isAuthoritative
 |Engelsk navn| references
 |URI| dct:references
 |Range| rdfs:Resource
-|Beskrivelse| Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på.
+|Beskrivelse| Referanse til en annen ressurs som det kan være nyttig for brukere å være oppmerksom på.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
