@@ -34,5 +34,5 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
 |Egenskap dcat:theme | dcat:theme |"Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) og Katalog (dcat:Catalog) | For å ha konsistens mellom kravene for denne egenskapen
 |Egenskap dcat:theme | dcat:theme | https://psi.norge.no/los/struktur.html[Los] er føyet til som et "Bør brukes"-krav | For å kunne bruke norske Los
 |Egenskap dct:type | dct:type | "Bør brukes"-krav føyet til for  Datasett (dcat:Dataset) | For å kunne referere felles, predefinerte datasett-typer
-|Egenskap dct:type dct:type | "Bør brukes"-krav føyet til for Regel (cpsv:Rule) | Behov for å kunne referere felles, predefinerte regel-typer
+|Egenskap dct:type | dct:type | "Bør brukes"-krav føyet til for Regel (cpsv:Rule) | Behov for å kunne referere felles, predefinerte regel-typer
 |===
