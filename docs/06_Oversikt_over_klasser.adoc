@@ -194,12 +194,12 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Status | Valgfri
 |===
 
-=== Kontaktpunkt (vcard:Kind) [[klasse-kontaktpunkt]]
+=== Kontaktopplysning (vcard:Kind) [[klasse-kontaktopplysning]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Kind
-| Beskrivelse | Brukes til å representere en beskrivelse av et kontaktpunkt i henhold til vCard-spesifikasjonen. Her kan man for eksempel oppgi telefonnr og/eller epost. Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.
+| Beskrivelse | Brukes til å representere en beskrivelse av en kontaktopplysning i henhold til vCard-spesifikasjonen. Her kan man for eksempel oppgi telefonnr og/eller epost. Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.
 | URI | https://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e1819[vcard:Kind]
 | Status | Valgfri
 |===
