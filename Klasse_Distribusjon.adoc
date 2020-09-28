@@ -66,7 +66,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Distribusjonens modenhet.
 |Multiplisitet| 0..1
 |Status| Anbefalt
-|Kommentar|Norsk utvidelse - endret fra valgfri til anbefalt, fordi status på tjenesten er viktig å vite når man skal vurdere om en tjeneste skal/kan brukes.
+|Kommentar|Norsk utvidelse - endret fra valgfri til anbefalt, fordi status på distribusjon er viktig å vite når man skal vurdere om en distribusjon skal/kan brukes.
 |===
 
 === Distribusjon: tilgjengelighet (dcatap:availability) [[Distribusjon-tilgjengelighet]]
@@ -163,7 +163,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Beskrivelse| Refererer til medietype av en distribusjon.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Kommentar| Norsk utvidelse - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike mediatyper.
+|Kommentar| Norsk utvidelse - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike medietyper.
 |===
 
 === Distribusjon: nedlastningslenke (dcat:downloadURL) [[Distribusjon-nedlastningslenke]]
