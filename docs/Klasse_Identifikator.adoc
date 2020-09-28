@@ -1,10 +1,10 @@
-= Identifikator [[identifikator]]
+= Identifikator (adms:Identifier) [[Identifikator]]
 
 Klassen _Identifikator_ er valgfri.
 
-== Obligatoriske egenskaper for klassen _Identifikator_
+== Obligatoriske egenskaper for klassen _Identifikator_ [[Identifikator-obligatoriske-egenskaper]]
 
-=== Identifikator: notasjon (skos:notation) [[identifikator-notasjon]]
+=== Identifikator: notasjon (skos:notation) [[Identifikator-notasjon]]
 
 [cols="30s,70d"]
 |===

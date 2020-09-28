@@ -1,10 +1,10 @@
-= Regel [[regel]]
+= Regel (cpsv:Rule) [[Regel]]
 
 Klassen _Regel_ er anbefalt.
 
-== Obligatoriske egenskaper for klassen _Regel_
+== Obligatoriske egenskaper for klassen _Regel_ [[Regel-obligatoriske-egenskaper]]
 
-=== Regel: beskrivelse (dct:description) [[regel-beskrivelse]]
+=== Regel: beskrivelse (dct:description) [[Regel-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Regel_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Regel: identifikator (dct:identifier) [[regel-identifikator]]
+=== Regel: identifikator (dct:identifier) [[Regel-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -28,7 +28,7 @@ Klassen _Regel_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Regel: tittel (dct:title) [[regel-tittel]]
+=== Regel: tittel (dct:title) [[Regel-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -40,9 +40,9 @@ Klassen _Regel_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-== Anbefalte egenskaper for klassen _Regel_
+== Anbefalte egenskaper for klassen _Regel_ [[Regel-anbefalte-egenskaper]]
 
-=== Regel: implementerer (cpsv:implements) [[regel-implementerer]]
+=== Regel: implementerer (cpsv:implements) [[Regel-implementerer]]
 
 [cols="30s,70d"]
 |===
@@ -54,7 +54,7 @@ Klassen _Regel_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Regel: språk (dct:language) [[regel-språk]]
+=== Regel: språk (dct:language) [[Regel-språk]]
 
 [cols="30s,70d"]
 |===
@@ -66,9 +66,9 @@ Klassen _Regel_ er anbefalt.
 |Status|Anbefalt
 |===
 
-== Valgfrie egenskaper for klassen _Regel_
+== Valgfrie egenskaper for klassen _Regel_ [[Regel-valgfrie-egenskaper]]
 
-=== Regel: type (dct:type) [[regel-type]]
+=== Regel: type (dct:type) [[Regel-type]]
 
 [cols="30s,70d"]
 |===
@@ -78,5 +78,5 @@ Klassen _Regel_ er anbefalt.
 |Beskrivelse|Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.
 |Multiplisitet|0..n
 |Status|Valgfri
-|Eksempel| Se eksempelet under egenskapen <<datasett-følger, Datasett: følger>>.
+|Eksempel| Se eksempelet under egenskapen <<Datasett-følger, Datasett: følger>>.
 |===

@@ -1,10 +1,10 @@
-= Datasett [[datasett]]
+= Datasett (dcat:Dataset) [[Datasett]]
 
 Klassen _Datasett_ er anbefalt.
 
-== Obligatoriske egenskaper for klassen _Datasett_
+== Obligatoriske egenskaper for klassen _Datasett_ [[Datasett-obligatoriske-egenskaper]]
 
-=== Datasett: beskrivelse (dct:description) [[datasett-beskrivelse]]
+=== Datasett: beskrivelse (dct:description) [[Datasett-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Datasett_ er anbefalt.
 |Status| Obligatorisk
 |===
 
-=== Datasett: identifikator (dct:identifier) [[datasett-identifikator]]
+=== Datasett: identifikator (dct:identifier) [[Datasett-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -29,7 +29,7 @@ Klassen _Datasett_ er anbefalt.
 |Kommentar|
 |===
 
-=== Datasett: tema (dcat:theme) [[datasett-tema]]
+=== Datasett: tema (dcat:theme) [[Datasett-tema]]
 
 [cols="30s,70d"]
 |===
@@ -42,7 +42,7 @@ Klassen _Datasett_ er anbefalt.
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
 |===
 
-=== Datasett: tittel (dct:title) [[datasett-tittel]]
+=== Datasett: tittel (dct:title) [[Datasett-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -54,7 +54,7 @@ Klassen _Datasett_ er anbefalt.
 |Status| Obligatorisk
 |===
 
-=== Datasett: utgiver (dct:publisher) [[datasett-utgiver]]
+=== Datasett: utgiver (dct:publisher) [[Datasett-utgiver]]
 
 [cols="30s,70d"]
 |===
@@ -67,9 +67,9 @@ Klassen _Datasett_ er anbefalt.
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
 |===
 
-== Anbefalte egenskaper for klassen _Datasett_
+== Anbefalte egenskaper for klassen _Datasett_ [[Datasett-anbefalte-egenskaper]]
 
-=== Datasett: begrep (dct:subject) [[datasett-begrep]]
+=== Datasett: begrep (dct:subject) [[Datasett-begrep]]
 
 [cols="30s,70d"]
 |===
@@ -84,7 +84,7 @@ Klassen _Datasett_ er anbefalt.
 NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. informasjonsmodell som beskriver datasettet (se https://informasjonsforvaltning.github.io/modelldcat-ap-no/[ModellDCAT-AP-NO] for referanse til begrep fra en informasjonsmodell).
 |===
 
-=== Datasett: ble generert ved (prov:wasGeneratedBy) [[datasett-ble-generert-ved]]
+=== Datasett: ble generert ved (prov:wasGeneratedBy) [[Datasett-bleGenerertVed]]
 
 [cols="30s,70d"]
 |===
@@ -113,7 +113,7 @@ NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. i
 der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` (innhenting fra tredjepart) og `provno:collectingFromUser` (innhenting fra bruker) er `prov:Activity`.
 |===
 
-=== Datasett: datasettdistribusjon (dcat:distribution) [[datasett-datasettdistribusjon]]
+=== Datasett: datasettdistribusjon (dcat:distribution) [[Datasett-datasettdistribusjon]]
 
 [cols="30s,70d"]
 |===
@@ -125,7 +125,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Status| Anbefalt
 |===
 
-=== Datasett: dekningsområde (dct:spatial) [[datasett-dekningsomrade]]
+=== Datasett: dekningsområde (dct:spatial) [[Datasett-dekningsområde]]
 
 [cols="30s,70d"]
 |===
@@ -137,7 +137,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Status| Anbefalt
 |===
 
-=== Datasett: emneord (dcat:keyword) [[datasett-emneord]]
+=== Datasett: emneord (dcat:keyword) [[Datasett-emneord]]
 
 [cols="30s,70d"]
 |===
@@ -149,7 +149,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Status| Anbefalt
 |===
 
-=== Datasett: følger (cpsv:follows) [[datasett-følger]]
+=== Datasett: følger (cpsv:follows) [[Datasett-følger]]
 
 [cols="30s,70d"]
 |===
@@ -188,7 +188,7 @@ Ved at et `dcat:Dataset cpsv:follows` en `cpsv:Rule`, og at en `cpsv:Rule cpsv:i
 der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure` (utleveringsegel) er predefinerte instanser av type regel (`skos:Concept`).
 |===
 
-=== Datasett: kontaktpunkt (dcat:contactPoint) [[datasett-kontaktpunkt]]
+=== Datasett: kontaktpunkt (dcat:contactPoint) [[Datasett-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
@@ -200,7 +200,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Anbefalt
 |===
 
-=== Datasett: tidsrom (dct:temporal) [[datasett-tidsrom]]
+=== Datasett: tidsrom (dct:temporal) [[Datasett-tidsrom]]
 
 [cols="30s,70d"]
 |===
@@ -212,23 +212,23 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Anbefalt
 |===
 
-=== Datasett: tilgangsnivå (dct:accessRights) [[datasett-tilgangsniva]]
+=== Datasett: tilgangsnivå (dct:accessRights) [[Datasett-tilgangsnivå]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| access rights
 |URI| dct:accessRights
 |Range| dct:RightsStatement
-|Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (`:public`, `:restricted` og `:non-public`) vil bli opprettet og forvaltet av EUs Publications Office. Ved bruk av verdiene `:restricted` og `:non-public` er egenskapen link:#datasett-følger[Datasett: følger] anbefalt.
+|Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (`:public`, `:restricted` og `:non-public`) vil bli opprettet og forvaltet av EUs Publications Office. Ved bruk av verdiene `:restricted` og `:non-public` er egenskapen <<Datasett-følger, Datasett: følger>> anbefalt.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt (også i DCAT-AP-NO v.1.1).
 |===
 
 
-== Valgfrie egenskaper for klassen _Datasett_
+== Valgfrie egenskaper for klassen _Datasett_ [[Datasett-valgfrie-egenskaper]]
 
-=== Datasett: annen identifikator (adms:identifier) [[datasett-annen-identifikator]]
+=== Datasett: annen identifikator (adms:identifier) [[Datasett-annenIdentifikator]]
 
 [cols="30s,70d"]
 |===
@@ -240,7 +240,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: dokumentasjon (foaf:page) [[datasett-dokumentasjon]]
+=== Datasett: dokumentasjon (foaf:page) [[Datasett-dokumentasjon]]
 
 [cols="30s,70d"]
 |===
@@ -252,7 +252,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: eksempeldata (adms:sample) [[datasett-eksempeldata]]
+=== Datasett: eksempeldata (adms:sample) [[Datasett-eksempeldata]]
 
 [cols="30s,70d"]
 |===
@@ -264,7 +264,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: endringsdato (dct:modified) [[datasett-endringsdato]]
+=== Datasett: endringsdato (dct:modified) [[Datasett-endringsdato]]
 
 [cols="30s,70d"]
 |===
@@ -276,7 +276,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: er del av (dct:isPartOf) [[datasett-er-del-av]]
+=== Datasett: er del av (dct:isPartOf) [[Datasett-erDelAv]]
 
 [cols="30s,70d"]
 |===
@@ -286,10 +286,10 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Beskrivelse| Referanse til et annet datasett som dette datasettet er en del av.
 |Multiplisitet| 0..n
 |Status| Valgfri
-|Eksempel | Kan brukes til å beskrive tidsserier, se under <<datasett-har-del>>.
+|Eksempel | Kan brukes til å beskrive tidsserier, se under <<Datasett-harDel, Datasett: har del>>.
 |===
 
-=== Datasett: er påkrevd av (dct:isRequiredBy) [[datasett-er-pakrevd-av]]
+=== Datasett: er påkrevd av (dct:isRequiredBy) [[Datasett-erPåkrevdAv]]
 
 [cols="30s,70d"]
 |===
@@ -301,19 +301,19 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: er referert av (dct:isReferencedBy) [[datasett-er-referert-av]]
+=== Datasett: er referert av (dct:isReferencedBy) [[Datasett-erReferertAv]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| is referenced by
 |URI| dct:isReferencedBy
 |Range| rdfs:Resource
-|Beskrivelse| Referanse til et annet datasett som refererer til dette datasettet.
+|Beskrivelse| Referanse til en annen ressurs som refererer til dette datasettet.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
-=== Datasett: er versjon av (dct:isVersionOf) [[datasett-er-versjon-av]]
+=== Datasett: er versjon av (dct:isVersionOf) [[Datasett-erVersjonAv]]
 
 [cols="30s,70d"]
 |===
@@ -325,7 +325,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: erstatter (dct:replaces) [[datasett-erstatter]]
+=== Datasett: erstatter (dct:replaces) [[Datasett-erstatter]]
 
 [cols="30s,70d"]
 |===
@@ -337,7 +337,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: erstattes av (dct:isReplacedBy) [[datasett-erstattes-av]]
+=== Datasett: erstattes av (dct:isReplacedBy) [[Datasett-erstattesAv]]
 
 [cols="30s,70d"]
 |===
@@ -349,7 +349,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: frekvens (dct:accrualPeriodicity) [[datasett-frekvens]]
+=== Datasett: frekvens (dct:accrualPeriodicity) [[Datasett-frekvens]]
 
 [cols="30s,70d"]
 |===
@@ -361,7 +361,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: romlig oppløsning (dcat:spatialResolutionInMeters) [[datasett-romlig-oppløsning]]
+=== Datasett: romlig oppløsning (dcat:spatialResolutionInMeters) [[Datasett-romligOppløsning]]
 
 [cols="30s,70d"]
 |===
@@ -373,7 +373,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Status| Valgfri
 |===
 
-=== Datasett: har del (dct:hasPart) [[datasett-har-del]]
+=== Datasett: har del (dct:hasPart) [[Datasett-harDel]]
 
 [cols="30s,70d"]
 |===
@@ -405,7 +405,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 ```
 |===
 
-=== Datasett: har kvalitetsnote (dqv:hasQualityAnnotation) [[datasett-har-kvalitetsnote]]
+=== Datasett: har kvalitetsnote (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsnote]]
 
 [cols="30s,70"]
 |===
@@ -436,7 +436,7 @@ dqvno:isAuthoritative
 ----
 |===
 
-=== Datasett: har måleresultat (dqv:hasQualityMeasurement) [[datasett-har-måleresultat]]
+=== Datasett: har måleresultat (dqv:hasQualityMeasurement) [[Datasett-harMåleresultat]]
 
 [cols="30s,70"]
 |===
@@ -456,7 +456,7 @@ dqvno:isAuthoritative
 ----
 |===
 
-=== Datasett: har versjon (dct:hasVersion) [[datasett-har-versjon]]
+=== Datasett: har versjon (dct:hasVersion) [[Datasett-harVersjon]]
 
 [cols="30s,70d"]
 |===
@@ -468,7 +468,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: i samsvar med (dct:conformsTo) [[datasett-i-samsvar-med]]
+=== Datasett: i samsvar med (dct:conformsTo) [[Datasett-iSamsvarMed]]
 
 [cols="30s,70d"]
 |===
@@ -480,7 +480,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: kilde (dct:source) [[datasett-kilde]]
+=== Datasett: kilde (dct:source) [[Datasett-kilde]]
 
 [cols="30s,70d"]
 |===
@@ -492,7 +492,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: krever (dct:requires) [[datasett-krever]]
+=== Datasett: krever (dct:requires) [[Datasett-krever]]
 
 [cols="30s,70d"]
 |===
@@ -504,7 +504,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: kvalifisert kreditering (prov:qualifiedAttribution) [[datasett-kvalifisert-kreditering]]
+=== Datasett: kvalifisert kreditering (prov:qualifiedAttribution) [[Datasett-kvalifisertKreditering]]
 
 [cols="30s,70d"]
 |===
@@ -516,7 +516,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: kvalifisert relasjon (dcat:qualifiedRelation) [[datasett-kvalifisert-relasjon]]
+=== Datasett: kvalifisert relasjon (dcat:qualifiedRelation) [[Datasett-kvalifisertRelasjon]]
 
 [cols="30s,70d"]
 |===
@@ -528,7 +528,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: landingsside (dcat:landingPage) [[datasett-landingsside]]
+=== Datasett: landingsside (dcat:landingPage) [[Datasett-landingsside]]
 
 [cols="30s,70d"]
 |===
@@ -540,7 +540,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: produsent (dct:creator) [[datasett-produsent]]
+=== Datasett: produsent (dct:creator) [[Datasett-produsent]]
 
 [cols="30s,70d"]
 |===
@@ -552,7 +552,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: proveniensbeskrivelse (dct:provenance) [[datasett-proveniensbeskrivelse]]
+=== Datasett: proveniensbeskrivelse (dct:provenance) [[Datasett-proveniensbeskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -564,19 +564,19 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: refererer til (dct:references) [[datasett-refererer-til]]
+=== Datasett: refererer til (dct:references) [[Datasett-referererTil]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| references
 |URI| dct:references
 |Range| rdfs:Resource
-|Beskrivelse| Referanse til andre datasett som det kan være nyttig for brukere å være oppmerksom på.
+|Beskrivelse| Referanse til en annen ressurs som det kan være nyttig for brukere å være oppmerksom på.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
-=== Datasett: relatert ressurs (dct:relation) [[datasett-relatertressurs]]
+=== Datasett: relatert ressurs (dct:relation) [[Datasett-relatertRessurs]]
 
 [cols="30s,70d"]
 |===
@@ -588,7 +588,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: språk (dct:language) [[datasett-sprak]]
+=== Datasett: språk (dct:language) [[Datasett-språk]]
 
 [cols="30s,70d"]
 |===
@@ -601,7 +601,7 @@ dqvno:isAuthoritative
 |===
 
 
-=== Datasett: tidsromsoppløsning (dcat:temporalResolution) [[datasett-tidsromsoppløsning]]
+=== Datasett: tidsromsoppløsning (dcat:temporalResolution) [[Datasett-tidsromsoppløsning]]
 
 [cols="30s,70d"]
 |===
@@ -613,7 +613,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: type (dct:type) [[datasett-type]]
+=== Datasett: type (dct:type) [[Datasett-type]]
 
 [cols="30s,70d"]
 |===
@@ -642,7 +642,7 @@ dqvno:isAuthoritative
 ----
 |===
 
-=== Datasett: utgivelsesdato (dct:issued) [[datasett-utgivelsesdato]]
+=== Datasett: utgivelsesdato (dct:issued) [[Datasett-utgivelsesdato]]
 
 [cols="30s,70d"]
 |===
@@ -654,7 +654,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: versjon (owl:versionInfo) [[datasett-versjon]]
+=== Datasett: versjon (owl:versionInfo) [[Datasett-versjon]]
 
 [cols="30s,70d"]
 |===
@@ -666,7 +666,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: versjonsnote (adms:versionNotes) [[datasett-versjonsnote]]
+=== Datasett: versjonsnote (adms:versionNotes) [[Datasett-versjonsnote]]
 
 [cols="30s,70d"]
 |===

@@ -1,10 +1,10 @@
-= Regulativ ressurs [[regulativ-ressurs]]
+= Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
 
 Klassen _Regulativ ressurs_ er anbefalt.
 
-== Obligatoriske egenskaper for klassen _Regulativ ressurs_
+== Obligatoriske egenskaper for klassen _Regulativ ressurs_ [[RegulativRessurs-obligatoriske-egenskaper]]
 
-===  Regulativ ressurs: type (dct:type) [[regulativ-ressurs-type]]
+===  Regulativ ressurs: type (dct:type) [[RegulativRessurs-type]]
 
 [cols="30s,70d"]
 |===
@@ -17,9 +17,9 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Kommentar|EU oppfordrer medlemslandene til å etablere sine egne kodelister. EUs Publications Office har også en https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[liste over verdier for EUs ressurstyper].
 |===
 
-== Anbefalte egenskaper for klassen _Regulativ ressurs_
+== Anbefalte egenskaper for klassen _Regulativ ressurs_ [[RegulativRessurs-anbefalte-egenskaper]]
 
-===  Regulativ ressurs: beskrivelse (dct:description) [[regulativ-ressurs-beskrivelse]]
+===  Regulativ ressurs: beskrivelse (dct:description) [[RegulativRessurs-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -31,7 +31,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Regulativ ressurs: identifikator (dct:identifier) [[regulativ-ressurs-identifikator]]
+=== Regulativ ressurs: identifikator (dct:identifier) [[RegulativRessurs-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -43,22 +43,22 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Regulativ ressurs: referanse (rdfs:seeAlso) [[regulativ-ressurs-referanse]]
+=== Regulativ ressurs: referanse (rdfs:seeAlso) [[RegulativRessurs-referanse]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn|reference
 |URI|rdfs:seeAlso
 |Range|rdfs:Resource
-|Beskrivelse|Brukes til å oppgi referanse til regelverksressurs.
+|Beskrivelse|Brukes til å oppgi referanse til den regulative ressursen.
 |Multiplisitet|0..n
 |Status|Anbefalt
 |Kommentar|For referanse til Lovdata bør ELI-URI brukes, se https://lovdata.no/eli/[beskrivelsen hos Lovdata].
 |===
 
-== Valgfrie egenskaper for klassen _Regulativ ressurs_
+== Valgfrie egenskaper for klassen _Regulativ ressurs_ [[RegulativRessurs-valgfrie-egenskaper]]
 
-===  Regulativ ressurs: relatert regulativ ressurs (dct:relation) [[regulativ-ressurs-relatert-regulativ-ressurs]]
+===  Regulativ ressurs: relatert regulativ ressurs (dct:relation) [[RegulativRessurs-relatertRegulativRessurs]]
 
 [cols="30s,70d"]
 |===

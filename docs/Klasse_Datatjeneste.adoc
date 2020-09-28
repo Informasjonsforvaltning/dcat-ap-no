@@ -1,10 +1,10 @@
-= Datatjeneste [[datatjeneste]]
+= Datatjeneste (dcat:DataService) [[Datatjeneste]]
 
 Klassen _Datatjeneste_ er valgfri.
 
-== Obligatoriske egenskaper for klassen _Datatjeneste_
+== Obligatoriske egenskaper for klassen _Datatjeneste_ [[Datatjeneste-obligatoriske-egenskaper]]
 
-=== Datatjeneste: endepunktsURL (dcat:endpointURL) [[datatjeneste-endepunktsurl]]
+=== Datatjeneste: endepunktsURL (dcat:endpointURL) [[Datatjeneste-endepunktsurl]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Datatjeneste: identifikator (dcat:identifier) [[datatjeneste-identifikator]]
+=== Datatjeneste: identifikator (dcat:identifier) [[Datatjeneste-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -28,7 +28,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Datatjeneste: tittel (dct:title) [[datatjeneste-tittel]]
+=== Datatjeneste: tittel (dct:title) [[Datatjeneste-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -41,9 +41,9 @@ Klassen _Datatjeneste_ er valgfri.
 |===
 
 
-== Anbefalte egenskaper for klassen _Datatjeneste_
+== Anbefalte egenskaper for klassen _Datatjeneste_ [[Datatjeneste-anbefalte-egenskaper]]
 
-=== Datatjeneste: emneord (dcat:keyword) [[datatjeneste-emneord]]
+=== Datatjeneste: emneord (dcat:keyword) [[Datatjeneste-emneord]]
 
 [cols="30s,70d"]
 |===
@@ -55,7 +55,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: endepunktsbeskrivelse (dcat:endpointDescription) [[datatjeneste-endepunktsbeskrivelse]]
+=== Datatjeneste: endepunktsbeskrivelse (dcat:endpointDescription) [[Datatjeneste-endepunktsbeskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -67,7 +67,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: format (dct:format) [[datatjeneste-format]]
+=== Datatjeneste: format (dct:format) [[Datatjeneste-format]]
 
 [cols="30s,70d"]
 |===
@@ -80,7 +80,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Kommentar| Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å ha konsistens mellom distribusjon og datatjeneste.
 |===
 
-=== Datatjeneste: kontaktpunkt (dcat:contactPoint) [[datatjeneste-kontaktpunkt]]
+=== Datatjeneste: kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
@@ -92,7 +92,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: tema (dcat:theme) [[datatjeneste-tema]]
+=== Datatjeneste: tema (dcat:theme) [[Datatjeneste-tema]]
 
 [cols="30s,70d"]
 |===
@@ -104,34 +104,34 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: tilgjengeliggjør datasett (dcat:servesDataset) [[datatjeneste-tilgjengeliggjor-datasett]]
+=== Datatjeneste: tilgjengeliggjør datasett (dcat:servesDataset) [[Datatjeneste-tilgjengeliggjor-datasett]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| serves dataset
 |URI| dcat:servesDataset
 |Range| dcat:Dataset
-|Beskrivelse| Refererer til en samling av data som datatjenesten kan distribuere.
+|Beskrivelse| Refererer til datasett som datatjenesten kan distribuere.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
 
-=== Datatjeneste: utgiver (dct:publisher) [[datatjeneste-utgiver]]
+=== Datatjeneste: utgiver (dct:publisher) [[Datatjeneste-utgiver]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| publisher
 |URI| dct:publisher
 |Range| foaf:Agent
-|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/974760673>.
+|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher https://data.brreg.no/enhetsregisteret/api/enheter/974760673[<https://data.brreg.no/enhetsregisteret/api/enheter/974760673>]`.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
 
-== Valgfrie egenskaper for klassen _Datatjeneste_
+== Valgfrie egenskaper for klassen _Datatjeneste_ [[Datatjeneste-valgfrie-egenskaper]]
 
-=== Datatjeneste: beskrivelse (dct:description) [[datatjeneste-beskrivelse]]
+=== Datatjeneste: beskrivelse (dct:description) [[Datatjeneste-beskrivelse]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| description
@@ -142,7 +142,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: dokumentasjon (foaf:page) [[datatjeneste-dokumentasjon]]
+=== Datatjeneste: dokumentasjon (foaf:page) [[Datatjeneste-dokumentasjon]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| page (documentation)
@@ -153,7 +153,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: følger (cpsv:follows) [[datatjeneste-følger]]
+=== Datatjeneste: følger (cpsv:follows) [[Datatjeneste-følger]]
 [cols="30s,70d"]
 |===
 |Engelsk navn|follows
@@ -164,7 +164,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status|Valgfri
 |===
 
-=== Datatjeneste: i samsvar med (dct:conformsTo) [[datatjeneste-i-samsvar-med]]
+=== Datatjeneste: i samsvar med (dct:conformsTo) [[Datatjeneste-i-samsvar-med]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| conforms to
@@ -175,7 +175,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: landingsside (dcat:landingPage) [[datatjeneste-landingsside]]
+=== Datatjeneste: landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| landing page
@@ -186,7 +186,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: lisens (dct:license) [[datatjeneste-lisens]]
+=== Datatjeneste: lisens (dct:license) [[Datatjeneste-lisens]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| licence
@@ -197,7 +197,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: tilgangsrettigheter (dct:accessRights) [[datatjeneste-tilgangsrettigheter]]
+=== Datatjeneste: tilgangsrettigheter (dct:accessRights) [[Datatjeneste-tilgangsrettigheter]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| access rights
@@ -208,7 +208,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Datatjeneste: type (dct:type) [[datatjeneste-type]]
+=== Datatjeneste: type (dct:type) [[Datatjeneste-type]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| type

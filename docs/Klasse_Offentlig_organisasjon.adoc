@@ -1,10 +1,10 @@
-= Offentlig organisasjon [[offentlig-organisasjon]]
+= Offentlig organisasjon (cv:PublicOrganization) [[OffentligOrganisasjon]]
 
 Klassen _Offentlig organisasjon_ er anbefalt.
 
-== Obligatoriske egenskaper for klassen _Offentlig organisasjon_
+== Obligatoriske egenskaper for klassen _Offentlig organisasjon_ [[OffentligOrganisasjon-obligatoriske-egenskaper]]
 
-=== Offentlig organisasjon: dekningsområde (dct:spatial) [[offentlig-organisasjon-dekningsområde]]
+=== Offentlig organisasjon: dekningsområde (dct:spatial) [[OffentligOrganisasjon-dekningsområde]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Offentlig organisasjon: foretrukket navn (skos:prefLabel) [[offentlig-organisasjon-foretrukket-navn]]
+=== Offentlig organisasjon: foretrukket navn (skos:prefLabel) [[OffentligOrganisasjon-foretrukketNavn]]
 
 [cols="30s,70d"]
 |===
@@ -26,10 +26,10 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Beskrivelse|Brukes til å oppgi det foretrukne navnet til organisasjonen. Denne egenskapen bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet|1..n
 |Status|Obligatorisk
-|Kommentar| I BRegDCAT-AP er både denne egenskap (`skos:prefLabel`) og <<offentlig-organisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`) obligatoriske. For at DCAT-AP-NO skal være kompatibel med BRegDCAT-AP er begge disse også obligatoriske i DCAT-AP-NO. Vi anbefaler å bruke denne egenskapen (`skos:prefLabel`) primært og gjenta navnet i <<offentlig-organisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`). Gjentagelsen kan typisk håndteres av en dataapplikajson.
+|Kommentar| I BRegDCAT-AP er både denne egenskap (`skos:prefLabel`) og <<OffentligOrganisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`) obligatoriske. For at DCAT-AP-NO skal være kompatibel med BRegDCAT-AP er begge disse også obligatoriske i DCAT-AP-NO. Vi anbefaler å bruke denne egenskapen (`skos:prefLabel`) primært og gjenta navnet i <<OffentligOrganisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`). Gjentagelsen kan typisk håndteres av en dataapplikajson.
 |===
 
-=== Offentlig organisasjon: identifikator (dct:identifier) [[offentlig-organisasjon-identifikator]]
+=== Offentlig organisasjon: identifikator (dct:identifier) [[OffentligOrganisasjon-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -41,7 +41,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Status|Obligatorisk
 |===
 
-=== Offentlig organisasjon: navn (dct:title) [[offentlig-organisasjon-navn]]
+=== Offentlig organisasjon: navn (dct:title) [[OffentligOrganisasjon-navn]]
 
 [cols="30s,70d"]
 |===
@@ -52,11 +52,13 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Multiplisitet|1..1
 |Status|Obligatorisk
 |Kommentar|Denne egenskapen er satt obligatorisk i BRegDCAT-AP for å være kompatibel med CPSV-AP.
+
+Se kommentaren til <<OffentligOrganisasjon-foretrukketNavn, Offentlig organisasjon: foretrukket navn>>.
 |===
 
-== Anbefalte egenskaper for klassen _Offentlig organisasjon_
+== Anbefalte egenskaper for klassen _Offentlig organisasjon_ [[OffentligOrganisasjon-anbefalte-egenskaper]]
 
-=== Offentlig organisasjon: adresse (locn:address) [[offentlig-organisasjon-adresse]]
+=== Offentlig organisasjon: adresse (locn:address) [[OffentligOrganisasjon-adresse]]
 
 [cols="30s,70d"]
 |===
@@ -68,7 +70,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Status|Anbefalt
 |===
 
-=== Offentlig organisasjon: hjemmeside (foaf:homepage) [[offentlig-organisasjon-hjemmeside]]
+=== Offentlig organisasjon: hjemmeside (foaf:homepage) [[OffentligOrganisasjon-hjemmeside]]
 
 [cols="30s,70d"]
 |===
@@ -78,10 +80,10 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Beskrivelse|Brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes i flere ulike språk/målformer.
 |Multiplisitet|0..n
 |Status|Anbefalt
-|Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer. 
+|Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer.
 |===
 
-=== Offentlig organisasjon: klassifisering (org:classification) [[offentlig-organisasjon-klassifisering]]
+=== Offentlig organisasjon: klassifisering (org:classification) [[OffentligOrganisasjon-klassifisering]]
 
 [cols="30s,70d"]
 |===
