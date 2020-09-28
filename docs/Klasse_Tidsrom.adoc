@@ -1,10 +1,10 @@
-= Tidsrom [[tidsrom]]
+= Tidsrom (dct:PeriodOfTime) [[Tidsrom]]
 
 Klassen _Tidsrom_ er valgfri.
 
-== Anbefalte egenskaper for klassen _Tidsrom_
+== Anbefalte egenskaper for klassen _Tidsrom_ [[Tidsrom-anbefalte-egenskaper]]
 
-=== Tidsrom: sluttdato/tid (dcat:endDate) [[tidsrom-sluttdato]]
+=== Tidsrom: sluttdato/tid (dcat:endDate) [[Tidsrom-sluttdato]]
 
 [cols="30s,70d"]
 |===
@@ -18,7 +18,7 @@ Klassen _Tidsrom_ er valgfri.
 
 NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to være til stede for hver forekomst av klassen `dct:PeriodOfTime` (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato).
 
-=== Tidsrom: startdato/tid (dcat:startDate) [[tidsrom-startdato]]
+=== Tidsrom: startdato/tid (dcat:startDate) [[Tidsrom-startdato]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| start date
@@ -29,9 +29,9 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Status| Anbefalt
 |===
 
-== Valgfrie egenskaper for klassen _Tidsrom_
+== Valgfrie egenskaper for klassen _Tidsrom_ [[Tidsrom-valgfrie-egenskaper]]
 
-=== Tidsrom: begynnelse (time:hasBeginning) [[tidsrom-begynnelse]]
+=== Tidsrom: begynnelse (time:hasBeginning) [[Tidsrom-begynnelse]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| beginning
@@ -42,7 +42,7 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Status| Valgfritt
 |===
 
-=== Tidsrom: slutt (time:hasEnd) [[tidsrom-slutt]]
+=== Tidsrom: slutt (time:hasEnd) [[Tidsrom-slutt]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| end

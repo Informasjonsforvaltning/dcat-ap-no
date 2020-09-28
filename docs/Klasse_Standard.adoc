@@ -1,10 +1,10 @@
-= Standard [[Standard]]
+= Standard (dct:Standard) [[Standard]]
 
 Klassen _Standard_ er valgfri.
 
-== Obligatoriske egenskaper for klassen _Standard_ [[Standard_obligatoriske_egenskaper]]
+== Obligatoriske egenskaper for klassen _Standard_ [[Standard-obligatoriske-egenskaper]]
 
-=== Standard: har tittel (dct:title) [[Standard_harTittel]]
+=== Standard: har tittel (dct:title) [[Standard-harTittel]]
 
 [cols="30s,70d"]
 |===
@@ -18,9 +18,9 @@ Klassen _Standard_ er valgfri.
 Egenskapen kan gjentas for hvert språk tittelen finnes i.
 |===
 
-== Anbefalte egenskaper for klassen _Standard_ [[Standard_anbefalte_egenskaper]]
+== Anbefalte egenskaper for klassen _Standard_ [[Standard-anbefalte-egenskaper]]
 
-=== Standard: har referanse (rdfs:seeAlso)  [[Standard_harReferanse]]
+=== Standard: har referanse (rdfs:seeAlso)  [[Standard-harReferanse]]
 
 [cols="30s,70"]
 |===
@@ -33,9 +33,9 @@ Egenskapen kan gjentas for hvert språk tittelen finnes i.
 |Kommentar|Norsk utvidelse. For å kunne ha referanse til standard/spesifikasjon.
 |===
 
-== Valgfrie egenskaper for klassen _Standard_ [[Standard_valgfrie_egenskaper]]
+== Valgfrie egenskaper for klassen _Standard_ [[Standard-valgfrie-egenskaper]]
 
-=== Standard: har versjonsnummer (owl:versionInfo)  [[Standard_harVersjonsnr]]
+=== Standard: har versjonsnummer (owl:versionInfo)  [[Standard-harVersjonsnummer]]
 
 [cols="30s,70"]
 |===

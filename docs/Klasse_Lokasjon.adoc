@@ -1,10 +1,10 @@
-= Lokasjon [[lokasjon]]
+= Lokasjon (dct:Location) [[Lokasjon]]
 
 Klassen _Lokasjon_ er valgfri.
 
-== Anbefalte egenskaper for klassen _Lokasjon_
+== Anbefalte egenskaper for klassen _Lokasjon_ [[Lokasjon-anbefalte-egenskaper]]
 
-=== Lokasjon: område (dcat:bbox) [[lokalsjon-område]]
+=== Lokasjon: område (dcat:bbox) [[Lokasjon-område]]
 [cols="30s,70d"]
 |===
 |Engelsk navn| bounding box
@@ -15,7 +15,7 @@ Klassen _Lokasjon_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Lokasjon: geografisk midtpunkt (dcat:centroid) [[lokasjon-geografisk-midtpunkt]]
+=== Lokasjon: geografisk midtpunkt (dcat:centroid) [[Lokasjon-geografisk-midtpunkt]]
 
 [cols="30s,70d"]
 |===
@@ -29,7 +29,7 @@ Klassen _Lokasjon_ er valgfri.
 
 == Valgfrie egenskaper for klassen _Lokasjon_
 
-=== Lokasjon: geometri (locn:geometry) [[lokasjon-geometri]]
+=== Lokasjon: geometri (locn:geometry) [[Lokasjon-geometri]]
 
 [cols="30s,70d"]
 |===

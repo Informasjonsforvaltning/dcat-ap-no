@@ -1,10 +1,10 @@
-= Katalogpost [[katalogpost]]
+= Katalogpost (dcat:CatalogRecord) [[Katalogpost]]
 
 Klassen _Katalogpost_ er valgfri.
 
-== Obligatoriske egenskaper for klassen _Katalogpost_
+== Obligatoriske egenskaper for klassen _Katalogpost_ [[Katalogpost-obligatoriske-egenskaper]]
 
-=== Katalogpost: endringsdato (dct:modified) [[katalogpost-endringsdato]]
+=== Katalogpost: endringsdato (dct:modified) [[Katalogpost-endringsdato]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Katalogpost: primærtema (foaf:primaryTopic) [[katalogpost-primartema]]
+=== Katalogpost: primærtema (foaf:primaryTopic) [[Katalogpost-primartema]]
 
 [cols="30s,70d"]
 |===
@@ -28,9 +28,9 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Obligatorisk
 |===
 
-== Anbefalte egenskaper for klassen _Katalogpost_
+== Anbefalte egenskaper for klassen _Katalogpost_ [[Katalogpost-anbefalte-egenskaper]]
 
-=== Katalogpost: i samsvar med (dct:conformsTo) [[katalogpost-i-samsvar-med]]
+=== Katalogpost: i samsvar med (dct:conformsTo) [[Katalogpost-i-samsvar-med]]
 
 [cols="30s,70d"]
 |===
@@ -42,7 +42,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Katalogpost: status (adms:status) [[katalogpost-status]]
+=== Katalogpost: status (adms:status) [[Katalogpost-status]]
 
 [cols="30s,70d"]
 |===
@@ -54,7 +54,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Anbefalt
 |===
 
-=== Katalogpost: utgivelsesdato (dct:issued) [[katalogpost-utgivelsesdato]]
+=== Katalogpost: utgivelsesdato (dct:issued) [[Katalogpost-utgivelsesdato]]
 
 [cols="30s,70d"]
 |===
@@ -66,9 +66,9 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Anbefalt
 |===
 
-== Valgfrie egenskaper for klassen _Katalogpost_
+== Valgfrie egenskaper for klassen _Katalogpost_ [[Katalogpost-valgfrie-egenskaper]]
 
-=== Katalogpost: beskrivelse (dct:description) [[katalogpost-beskrivelse]]
+=== Katalogpost: beskrivelse (dct:description) [[Katalogpost-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -80,7 +80,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Katalogpost: kilde (dct:source) [[katalogpost-kilde]]
+=== Katalogpost: kilde (dct:source) [[Katalogpost-kilde]]
 
 [cols="30s,70d"]
 |===
@@ -92,7 +92,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Katalogpost: språk (dct:language) [[katalogpost-sprak]]
+=== Katalogpost: språk (dct:language) [[Katalogpost-sprak]]
 
 [cols="30s,70d"]
 |===
@@ -104,7 +104,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Katalogpost: tittel (dct:title) [[katalogpost-tittel]]
+=== Katalogpost: tittel (dct:title) [[Katalogpost-tittel]]
 
 [cols="30s,70d"]
 |===
