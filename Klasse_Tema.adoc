@@ -1,10 +1,10 @@
-= Tema [[tema]]
+= Tema (skos:Concept) [[Tema]]
 
 Klassen _Tema_ er obligatorisk.
 
-== Obligatoriske egenskaper for klassen _Tema_
+== Obligatoriske egenskaper for klassen _Tema_ [[Tema-obligatoriske-egenskaper]]
 
-=== Tema: foretrukket tittel (skos:prefLabel) [[tema-foretrukket-tittel]]
+=== Tema: foretrukket tittel (skos:prefLabel) [[Tema-foretrukketTittel]]
 
 [cols="30s,70d"]
 |===

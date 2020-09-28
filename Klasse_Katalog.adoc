@@ -1,10 +1,10 @@
-= Katalog [[katalog]]
+= Katalog (dcat:Catalog) [[Katalog]]
 
 Klassen _Katalog_ er obligatorisk.
 
-== Obligatoriske egenskaper for klassen _Katalog_
+== Obligatoriske egenskaper for klassen _Katalog_ [[Katalog-obligatoriske-egenskaper]]
 
-=== Katalog: beskrivelse (dct:description) [[katalog-beskrivelse]]
+=== Katalog: beskrivelse (dct:description) [[Katalog-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Obligatorisk
 |===
 
-=== Katalog: identifikator (dct:identifier) [[katalog-identifikator]]
+=== Katalog: identifikator (dct:identifier) [[Katalog-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -28,7 +28,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Obligatorisk
 |===
 
-=== Katalog: tittel (dct:title) [[katalog-tittel]]
+=== Katalog: tittel (dct:title) [[Katalog-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -40,7 +40,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Obligatorisk
 |===
 
-=== Katalog: utgiver (dct:publisher) [[katalog-utgiver]]
+=== Katalog: utgiver (dct:publisher) [[Katalog-utgiver]]
 
 [cols="30s,70d"]
 |===
@@ -52,9 +52,9 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Obligatorisk
 |===
 
-== Anbefalte egenskaper for klassen _Katalog_
+== Anbefalte egenskaper for klassen _Katalog_ [[Katalog-anbefalte-egenskaper]]
 
-=== Katalog: datasett (dcat:dataset) [[katalog-datasett]]
+=== Katalog: datasett (dcat:dataset) [[Katalog-datasett]]
 
 [cols="30s,70d"]
 |===
@@ -66,7 +66,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-=== Katalog: dekningsområde (dct:spatial) [[katalog-dekningsomrade]]
+=== Katalog: dekningsområde (dct:spatial) [[Katalog-dekningsomrade]]
 
 [cols="30s,70d"]
 |===
@@ -78,7 +78,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-=== Katalog: endringsdato (dct:modified) [[katalog-endringsdato]]
+=== Katalog: endringsdato (dct:modified) [[Katalog-endringsdato]]
 
 [cols="30s,70d"]
 |===
@@ -90,19 +90,19 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-=== Katalog: frekvens (dct:accrualPeriodicity) [[katalog-frekvens]]
+=== Katalog: frekvens (dct:accrualPeriodicity) [[Katalog-frekvens]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| accrual periodicity
 |URI| dct:accrualPeriodicity
 |Range| dct:Frequency
-|Beskrivelse| Referanse til oppdateringsfrekvensen for datasettet.
+|Beskrivelse| Referanse til oppdateringsfrekvensen for katalogen.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===
 
-=== Katalog: hjemmeside (foaf:homepage) [[katalog-hjemmeside]]
+=== Katalog: hjemmeside (foaf:homepage) [[Katalog-hjemmeside]]
 
 [cols="30s,70d"]
 |===
@@ -114,7 +114,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-=== Katalog: lisens (dct:license) [[katalog-lisens]]
+=== Katalog: lisens (dct:license) [[Katalog-lisens]]
 
 [cols="30s,70d"]
 |===
@@ -126,7 +126,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-=== Katalog: proveniens (dct:provenance) [[katalog-proveniens]]
+=== Katalog: proveniens (dct:provenance) [[Katalog-proveniens]]
 
 [cols="30s,70d"]
 |===
@@ -138,31 +138,31 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-=== Katalog: språk (dct:language) [[katalog-sprak]]
+=== Katalog: språk (dct:language) [[Katalog-språk]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| language
 |URI| dct:language
 |Range| dct:LinguisticSystem
-|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver titler, beskrivelser, osv. av datasettene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
+|Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver ressursene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
 
-=== Katalog: temaer (dcat:themeTaxonomy) [[katalog-temaer]]
+=== Katalog: temaer (dcat:themeTaxonomy) [[Katalog-temaer]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| theme taxonomy
 |URI| dcat:themeTaxonomy
 |Range| skos:ConceptScheme
-|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere den katalogiserte ressursen.
+|Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
 
-=== Katalog: utgivelsesdato (dct:issued) [[katalog-utgivelsesdato]]
+=== Katalog: utgivelsesdato (dct:issued) [[Katalog-utgivelsesdato]]
 
 [cols="30s,70d"]
 |===
@@ -174,21 +174,21 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-== Valgfrie egenskaper for klassen _Katalog_
+== Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
 
-=== Katalog: datatjeneste (dcat:service) [[katalog-datatjeneste]]
+=== Katalog: datatjeneste (dcat:service) [[Katalog-datatjeneste]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn| service
 |URI| dcat:service
 |Range| dcat:DataService
-|Beskrivelse| Refererer til nettsted eller et endepunktpunkt som er oppført i katalogen.
+|Beskrivelse| Refererer til en datatjeneste som er oppført i katalogen.
 |Multiplisitet| 0..n
 |Status| Valgfri
 |===
 
-=== Katalog: er del av (dct:isPartOf) [[katalog-er-del-av]]
+=== Katalog: er del av (dct:isPartOf) [[Katalog-er-del-av]]
 
 [cols="30s,70d"]
 |===
@@ -200,7 +200,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Valgfri
 |===
 
-=== Katalog: har del (dct:hasPart) [[katalog-har-del]]
+=== Katalog: har del (dct:hasPart) [[Katalog-har-del]]
 
 [cols="30s,70d"]
 |===
@@ -212,7 +212,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Valgfri
 |===
 
-=== Katalog: katalog (dcat:catalog) [[katalog-katalog]]
+=== Katalog: katalog (dcat:catalog) [[Katalog-katalog]]
 
 [cols="30s,70d"]
 |===
@@ -225,7 +225,7 @@ Klassen _Katalog_ er obligatorisk.
 |===
 
 
-=== Katalog: katalogpost (dcat:record) [[katalog-katalogpost]]
+=== Katalog: katalogpost (dcat:record) [[Katalog-katalogpost]]
 
 [cols="30s,70d"]
 |===
@@ -237,7 +237,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Valgfri
 |===
 
-=== Katalog: produsent (dct:creator) [[katalog-produsent]]
+=== Katalog: produsent (dct:creator) [[Katalog-produsent]]
 
 [cols="30s,70d"]
 |===
@@ -249,7 +249,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Valgfri
 |===
 
-=== Katalog: rettigheter (brukervilkår) (dct:rights) [[katalog-rettigheter]]
+=== Katalog: rettigheter (brukervilkår) (dct:rights) [[Katalog-rettigheter]]
 
 [cols="30s,70d"]
 |===

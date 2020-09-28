@@ -1,10 +1,10 @@
-= Sjekksum [[sjekksum]]
+= Sjekksum (spdx:Checksum) [[Sjekksum]]
 
 Klassen _Sjekksum_ er valgfri.
 
-== Obligatoriske egenskaper for klassen _Sjekksum_
+== Obligatoriske egenskaper for klassen _Sjekksum_ [[Sjekksum-obligatoriske-egenskaper]]
 
-=== Sjekksum: algoritme (spdx:algorithm) [[sjekksum-algoritme]]
+=== Sjekksum: algoritme (spdx:algorithm) [[Sjekksum-algoritme]]
 
 [cols="30s,70d"]
 |===
@@ -16,7 +16,7 @@ Klassen _Sjekksum_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Sjekksum: sjekksumverdi (spdx:checksumValue) [[sjekksum-sjekksumverdi]]
+=== Sjekksum: sjekksumverdi (spdx:checksumValue) [[Sjekksum-sjekksumverdi]]
 
 [cols="30s,70d"]
 |===

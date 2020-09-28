@@ -304,8 +304,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 [cols="30s,70d"]
 |===
 | Engelsk navn | Status
-| Beskrivelse | Brukes til å indikere status på en distribusjon eller
- en katalogpost i katalogen.
+| Beskrivelse | Brukes til å indikere status på en ressurs i katalogen.
 | URI | http://www.w3.org/TR/vocab-adms/#status[skos:Concept]
 | Status | Valgfri
 |===
