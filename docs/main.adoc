@@ -55,6 +55,8 @@ include::Klasse_Datatjeneste.adoc[]
 
 include::Klasse_Distribusjon.adoc[]
 
+include::Klasse_Dokument.adoc[]
+
 include::Klasse_Identifikator.adoc[]
 
 include::Klasse_Katalog.adoc[]
