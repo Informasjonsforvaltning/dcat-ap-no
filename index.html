@@ -508,7 +508,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#klasse-kontaktopplysning">Kontaktopplysning (vcard:Kind)</a></li>
 <li><a href="#klasse-lokasjon">Lokasjon (dct:Location)</a></li>
 <li><a href="#klasse-medietype">Medietype (dct:MediaType)</a></li>
-<li><a href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse (dct:ProvenanceStatement)</a></li>
+<li><a href="#klasse-opphavsbeskrivelse">Opphavsbeskrivelse (dct:ProvenanceStatement)</a></li>
 <li><a href="#klasse-relasjon">Relasjon (dcat:Relationship)</a></li>
 <li><a href="#klasse-rettighetsutsagn">Rettighetsutsagn (dct:RightsStatement)</a></li>
 <li><a href="#klasse-rolle">Rolle (dcat:Role)</a></li>
@@ -589,7 +589,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-kvalifisertRelasjon">Datasett: kvalifisert relasjon (dcat:qualifiedRelation)</a></li>
 <li><a href="#Datasett-landingsside">Datasett: landingsside (dcat:landingPage)</a></li>
 <li><a href="#Datasett-produsent">Datasett: produsent (dct:creator)</a></li>
-<li><a href="#Datasett-proveniensbeskrivelse">Datasett: proveniensbeskrivelse (dct:provenance)</a></li>
+<li><a href="#Datasett-opphav">Datasett: opphav (dct:provenance)</a></li>
 <li><a href="#Datasett-referererTil">Datasett: refererer til (dct:references)</a></li>
 <li><a href="#Datasett-relatertRessurs">Datasett: relatert ressurs (dct:relation)</a></li>
 <li><a href="#Datasett-språk">Datasett: språk (dct:language)</a></li>
@@ -712,7 +712,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Katalog-frekvens">Katalog: frekvens (dct:accrualPeriodicity)</a></li>
 <li><a href="#Katalog-hjemmeside">Katalog: hjemmeside (foaf:homepage)</a></li>
 <li><a href="#Katalog-lisens">Katalog: lisens (dct:license)</a></li>
-<li><a href="#Katalog-proveniens">Katalog: proveniens (dct:provenance)</a></li>
+<li><a href="#Katalog-opphav">Katalog: opphav (dct:provenance)</a></li>
 <li><a href="#Katalog-språk">Katalog: språk (dct:language)</a></li>
 <li><a href="#Katalog-temaer">Katalog: temaer (dcat:themeTaxonomy)</a></li>
 <li><a href="#Katalog-utgivelsesdato">Katalog: utgivelsesdato (dct:issued)</a></li>
@@ -1078,6 +1078,9 @@ ikke tenkt brukt for å beskrive dokumenter eller fagsystem.</p>
 </li>
 <li>
 <p><strong>Informasjonsmodeller</strong>: Det er utabeidet en norsk applikasjonsprofil av DCAT for beskrivelse og utveksling av informasjonsmodeller, <a href="https://informasjonsforvaltning.github.io/modelldcat-ap-no/">ModellDCAT-AP-NO</a>. I ModellDCAT-AP-NO er informasjonsmodell subklasse av <code>dct:Standard</code>. Ved å bruke egenskapen <code>dct:conformsTo</code> kan et datasett eller en datatjeneste referere til en informasjonsmodell.</p>
+</li>
+<li>
+<p><strong>Forvaltningsstandard for begrepsbeskrivelser</strong>: Denne standarden skal sikre at begrepene forvaltet av offentlig sektor, beskrives på en felles, strukturert måte. I denne sammenheng er den særlig relevant for begreper som er knyttet til datasett, datatjenester og informasjonsmodeller.</p>
 </li>
 </ul>
 </div>
@@ -1927,7 +1930,7 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </table>
 </div>
 <div class="sect3">
-<h4 id="klasse-proveniensbeskrivelse"><a class="link" href="#klasse-proveniensbeskrivelse">Proveniensbeskrivelse (dct:ProvenanceStatement)</a></h4>
+<h4 id="klasse-opphavsbeskrivelse"><a class="link" href="#klasse-opphavsbeskrivelse">Opphavsbeskrivelse (dct:ProvenanceStatement)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3823,7 +3826,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-proveniensbeskrivelse"><a class="link" href="#Datasett-proveniensbeskrivelse">Datasett: proveniensbeskrivelse (dct:provenance)</a></h5>
+<h5 id="Datasett-opphav"><a class="link" href="#Datasett-opphav">Datasett: opphav (dct:provenance)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6132,7 +6135,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="Katalog-proveniens"><a class="link" href="#Katalog-proveniens">Katalog: proveniens (dct:provenance)</a></h5>
+<h5 id="Katalog-opphav"><a class="link" href="#Katalog-opphav">Katalog: opphav (dct:provenance)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7128,7 +7131,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å oppgi identifikatoren til organisasjonen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -9447,7 +9450,7 @@ Data Theme Taxonomy Named Authority List</p></td>
 <div class="sect2">
 <h3 id="Kontrollerte-vokabularer-som-bør-og-kan-brukes"><a class="link" href="#Kontrollerte-vokabularer-som-bør-og-kan-brukes">Kontrollerte vokabularer som bør og kan brukes</a></h3>
 <div class="paragraph">
-<p>I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene. Eksempler her er komplett sett med begreper i Los, EuroVoc, CERIFs standardvokabular, Deweys desimalklassifikasjon og en rekke andre vokabular.</p>
+<p>I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.</p>
 </div>
 <div class="sect3">
 <h4 id="Bør-brukes-for-thematicArea"><a class="link" href="#Bør-brukes-for-thematicArea">For egenskapen cv:thematicArea</a></h4>
@@ -10291,7 +10294,7 @@ dct:provenance</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-09-29 10:48:01 UTC
+Sist oppdatert 2020-09-29 12:37:12 UTC
 </div>
 </div>
 </body>

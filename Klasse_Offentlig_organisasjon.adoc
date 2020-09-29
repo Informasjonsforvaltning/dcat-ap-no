@@ -36,7 +36,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Engelsk navn|identifier
 |URI|dct:identifier
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi identifikatoren til organisasjonen.
+|Beskrivelse|Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
 |Multiplisitet|1..1
 |Status|Obligatorisk
 |===

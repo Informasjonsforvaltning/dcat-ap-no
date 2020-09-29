@@ -225,7 +225,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Status | Valgfri
 |===
 
-=== Proveniensbeskrivelse (dct:ProvenanceStatement) [[klasse-proveniensbeskrivelse]]
+=== Opphavsbeskrivelse (dct:ProvenanceStatement) [[klasse-opphavsbeskrivelse]]
 
 [cols="30s,70d"]
 |===
