@@ -126,7 +126,7 @@ Klassen _Katalog_ er obligatorisk.
 |Status| Anbefalt
 |===
 
-=== Katalog: proveniens (dct:provenance) [[Katalog-proveniens]]
+=== Katalog: opphav (dct:provenance) [[Katalog-opphav]]
 
 [cols="30s,70d"]
 |===
