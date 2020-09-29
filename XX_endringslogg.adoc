@@ -28,7 +28,7 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |[.line-through]#Datasett: skjermingshjemmel# |[.line-through]#dcatno:accessRightsComment# |Fjernet. Erstattes med `Datasett: følger (cpsv:follows)` |Unødvendig med dette norske avvik
 |Datasett: tema|dcat:theme|Range endret fra `dcat:theme, subproperty of dct:subject` til `dcat:them`|Dette i henhold til BRegDCAT-AP
 |Datasett: tidsrom |dct:temporal |Endret fra valgfri til anbefalt |Dette i henhold til BRegDCAT-AP
-|Datasett: tidsromsoppløsning |dcat:temporalResolution |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: tidsoppløsning |dcat:temporalResolution |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: utgivelsesdato |dct:issued |Range endret fra `rdfs:Literal typed as xsd:dateTime` til `rdfs:Literal typed as xsd:date or xsd:dateTime` |Dette i henhold til BRegDCAT-AP
 |Datatjeneste |dcat:DataService |Hele klassen er ny  |Dette i henhold til BRegDCAT-AP
 |Distribusjon: format|dct:format|Range endret fra `dct:MediaTypeOrExtent` til `dct:MediaType`|
@@ -39,7 +39,7 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |Distribusjon: policy |odrl:hasPolicy |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Distribusjon: romlig oppløsning |dcat:spatialResolutionInMeters |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Distribusjon: status | adms:status | Endret fra valgfri til anbefalt | Fordi status på en distribusjon er viktig å vite når man skal vurdere om distribusjonen skal/kan brukes.
-|Distribusjon: tidsromsoppløsning |dcat:temporalResolution |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Distribusjon: tidsoppløsning |dcat:temporalResolution |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Distribusjon: tilgangstjeneste |dcat:accessService |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Distribusjon: tilgjengelighet |dcatap:availability |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Dokument: språk | dct:language |Ny egenskap | For å kunne referere til språk Dokumentet er i
