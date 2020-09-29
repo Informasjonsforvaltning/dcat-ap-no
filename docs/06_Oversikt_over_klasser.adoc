@@ -1,6 +1,6 @@
-= Klasser i standarden [[Klasser_i_standarden]]
+= Klasser i standarden [[Klasser-i-standarden]]
 
-== Obligatoriske klasser [[Obligatoriske_klasser]]
+== Obligatoriske klasser [[Obligatoriske-klasser]]
 
 === Aktør (foaf:Agent) [[klasse-aktor]]
 
@@ -65,7 +65,7 @@
 | Kommentar| Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
 |===
 
-== Anbefalte klasser [[Anbefalte_klasser]]
+== Anbefalte klasser [[Anbefalte-klasser]]
 
 === Datasett (dcat:Dataset) [[klasse-datasett]]
 
@@ -142,7 +142,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 |===
 
 
-== Valgfrie klasser [[Valgfrie_klasser]]
+== Valgfrie klasser [[Valgfrie-klasser]]
 
 === Datatjeneste (dcat:DataService) [[klasse-datatjeneste]]
 

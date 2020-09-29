@@ -1,7 +1,7 @@
-= Om bruk av kontrollerte vokabularer [[kontrollerte-vokabularer]]
+= Om bruk av kontrollerte vokabularer [[Kontrollerte-vokabularer]]
 
 
-== Krav til kontrollerte vokabularer [[krav-til-kontrollerte-vokabularer]]
+== Krav til kontrollerte vokabularer [[Krav-til-kontrollerte-vokabularer]]
 
 Følgende kriterier er gjeldende for vokabularer som skal anbefales for bruk i denne standarden:
 
@@ -18,84 +18,84 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,
 
 Disse kriteriene er ikke tenkt å definere et sett med krav til kontrollerte vokabularer generelt; de er kun ment brukt for utvelgelse av de kontrollerte vokabularene som er anbefalt for denne standarden
 
-== Kontrollerte vokabularer som skal brukes [[Kontrollerte_vokabularer_som_skal_brukes]]
+== Kontrollerte vokabularer som skal brukes [[Kontrollerte-vokabularer-som-skal-brukes]]
 
 Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= obligatorisk) for egenskapene i listen, dette for å sikre et minimum av samhandlingsevne.
 
-=== For egenskapen dct:accessRights [[Skal_brukes_for_accessRights]]
+=== For egenskapen dct:accessRights [[Skal-brukes-for-accessRights]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:accessRights
-|Brukt i klasse|<<datasett-tilgangsniva, Datasett (`dcat:Dataset`)>>; <<datatjeneste-tilgangsrettigheter, Datatjeneste (`dcat:DataService`)>>
+|Brukt i klasse|<<Datasett-tilgangsnivå, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-tilgangsrettigheter, Datatjeneste (`dcat:DataService`)>>
 |Navn på vokabularet|Access Rights Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/access-right
 |Status|Obligatorisk
 |===
 
-=== For egenskapen dct:accrualPeriodicity [[Skal_bruks_for_accrualPeriodicity]]
+=== For egenskapen dct:accrualPeriodicity [[Skal-bruks-for-accrualPeriodicity]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:accrualPeriodicity
-|Brukt i klasse|<<datasett-frekvens, Datasett (`dcat:Dataset`)>>; <<katalog-frekvens, Katalog (`dcat:Catalog`)>>
+|Brukt i klasse|<<Datasett-frekvens, Datasett (`dcat:Dataset`)>>; <<Katalog-frekvens, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|Frequency Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/frequency
 |Status|Obligatorisk
 |===
 
-=== For egenskapen dcatap:availability [[Skal_brukes_for_availability]]
+=== For egenskapen dcatap:availability [[Skal-brukes-for-availability]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dcatap:availability
-|Brukt i klasse|<<distribusjon-tilgjengelighet, Distribusjon (`dcat:Distribution`)>>
+|Brukt i klasse|<<Distribusjon-tilgjengelighet, Distribusjon (`dcat:Distribution`)>>
 |Navn på vokabularet|Distribution availability vocabulary
 |URI til vokabularet|http://data.europa.eu/r5r/availability/[http://data.europa.eu/r5r/availability/]
 |Status|Obligatorisk
 |===
 
-=== For egenskapen dct:creator [[Skal_brukes_for_creator]]
+=== For egenskapen dct:creator [[Skal-brukes-for-creator]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:creator
-|Brukt i klasse|<<datasett-produsent, Datasett (`dcat:Dataset`)>>; <<katalog-produsent, Katalog (`dcat:Catalog`)>>
+|Brukt i klasse|<<Datasett-produsent, Datasett (`dcat:Dataset`)>>; <<Katalog-produsent, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|Corporate Bodies Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body
 |Status|Obligatorisk
 |Kommentar|EUs Corporate bodies Named Authority List inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
 |===
 
-=== For egenskapen dct:format [[Skal_brukes_for_foramt]]
+=== For egenskapen dct:format [[Skal-brukes-for-foramt]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:format
-|Brukt i klasse|<<datatjeneste-format, Datatjeneste (`dcat:DataService`)>>; <<distribusjon-format, Distribusjon (`dcat:Distribution`)>>
+|Brukt i klasse|<<Datatjeneste-format, Datatjeneste (`dcat:DataService`)>>; <<Distribusjon-format, Distribusjon (`dcat:Distribution`)>>
 |Navn på vokabularet|File Type Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/file-type
 |Status|Obligatorisk
 |Kommentar|Norsk utvidelse - gjelder også Datatjeneste (`dcat:DataService`)
 |===
 
-=== For egenskapen dct:language [[Skal_brukes_for_language]]
+=== For egenskapen dct:language [[Skal-brukes-for-language]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:language
-|Brukt i klasse|<<datasett-sprak, Datasett (`dcat:Dataset`)>>; <<distribusjon-sprak, Distribusjon (`dcat:Distribution`)>>; <<katalog-sprak, Katalog (`dcat:Catalog`)>>; <<katalogpost-sprak, Katalogpost (`dcat:CatalogRecord`)>>; <<regel-språk, Regel (`cpsv:Rule`)>>
+|Brukt i klasse|<<Datasett-språk, Datasett (`dcat:Dataset`)>>; <<Distribusjon-språk, Distribusjon (`dcat:Distribution`)>>; <<Katalog-språk, Katalog (`dcat:Catalog`)>>; <<Katalogpost-språk, Katalogpost (`dcat:CatalogRecord`)>>; <<Regel-språk, Regel (`cpsv:Rule`)>>
 |Navn på vokabularet|Languages Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/language
 |Status|Obligatorisk
 |===
 
-=== For egenskapen dct:license [[Skal_brukes_for_license]]
+=== For egenskapen dct:license [[Skal-brukes-for-license]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:license
-|Brukt i klasse|<<datatjeneste-lisens, Datatjeneste (`dcat:DataService`)>>; <<distribusjon-lisens, Distribusjon (`dcat:Distribution`)>>; <<katalog-lisens, Katalog (`dcat:Catalog`)>>
+|Brukt i klasse|<<Datatjeneste-lisens, Datatjeneste (`dcat:DataService`)>>; <<Distribusjon-lisens, Distribusjon (`dcat:Distribution`)>>; <<Katalog-lisens, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|Licences Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/licence
 |Kommentar|Norsk utvidelse - gjelder også Datatjeneste (`dcat:DataService`) og Katalog (`dcat:Catalog`).
@@ -103,35 +103,35 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 Kravet fra EU er forklart slik: "This vocabulary must be used in case the licence [...] is internationally recognised and included in the EU Publications Office NAL."
 |===
 
-=== For egenskapen dcat:mediaType [[Skal_brukes_for_mediaType]]
+=== For egenskapen dcat:mediaType [[Skal-brukes-for-mediaType]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dcat:mediaType
-|Brukt i klasse|<<distribusjon-medietype, Distribusjon (`dcat:Distribution`)>>
+|Brukt i klasse|<<Distribusjon-medietype, Distribusjon (`dcat:Distribution`)>>
 |Navn på vokabularet|IANA Media Types
 |URI til vokabularet|https://www.iana.org/assignments/media-types/media-types.xhtml[https://www.iana.org/assignments/media-types/media-types.xhtml]
 |Status|Obligatorisk
 |===
 
-=== For egenskapen dct:publisher [[Skal_brukes_for_publisher]]
+=== For egenskapen dct:publisher [[Skal-brukes-for-publisher]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:publisher
-|Brukt i klasse|<<datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<datatjeneste-utgiver, Datatjeneste (`dcat:DataService`)>>; <<katalog-utgiver, Katalog (`dcat:Catalog`)>>
+|Brukt i klasse|<<Datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-utgiver, Datatjeneste (`dcat:DataService`)>>; <<Katalog-utgiver, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|Corporate Bodies Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body
 |Status|Obligatorisk
 |Kommentar|EUs Corporate bodies Named Authority List inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
 |===
 
-=== For egenskapen dct:spatial [[Skal_brukes_for_spatial]]
+=== For egenskapen dct:spatial [[Skal-brukes-for-spatial]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:spatial
-|Brukt i klasse|<<datasett-dekningsomrade, Datasett (`dcat:Dataset`)>>; <<katalog-dekningsomrade, Katalog (`dcat:Catalog`)>>; <<offentlig-organisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganization`)>>; <<offentlig-tjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
+|Brukt i klasse|<<Datasett-dekningsområde, Datasett (`dcat:Dataset`)>>; <<Katalog-dekningsområde, Katalog (`dcat:Catalog`)>>; <<OffentligOrganisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganization`)>>; <<OffentligTjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
 |Navn på vokabularet|
 Continents Named Authority List; +
 Countries Named Authority List; +
@@ -145,36 +145,36 @@ http://sws.geonames.org/[http://sws.geonames.org/]
 |Status|Obligatorisk
 |===
 
-=== For egenskapen adms:status [[Skal_brukes_for_status]]
+=== For egenskapen adms:status [[Skal-brukes-for-status]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|adms:status
-|Brukt i klasse|<<distribusjon-status, Distribusjon (`dcat:Distribution`)>>; <<katalogpost-status, Katalogpost (`dcat:CatalogRecord`)>>; <<offentlig-tjeneste-status, Offentlig tjeneste (`cpsv:PublicService`)>>
+|Brukt i klasse|<<Distribusjon-status, Distribusjon (`dcat:Distribution`)>>; <<Katalogpost-status, Katalogpost (`dcat:CatalogRecord`)>>; <<OffentligTjeneste-status, Offentlig tjeneste (`cpsv:PublicService`)>>
 |Navn på vokabularet|ADMS Status vocabulary
 |URI til vokabularet|http://purl.org/adms/status/[http://purl.org/adms/status/] (i RDF)
 |Status|Obligatorisk
 |Kommentar|Norsk utvidelse - gjelder også Katalogpost (`dcat:CatalogRecord`) og Offentlig tjeneste (`cpsv:PublicService`)
 |===
 
-=== For egenskapen cv:thematicArea [[Skal_brukes_for_thematicArea]]
+=== For egenskapen cv:thematicArea [[Skal-brukes-for-thematicArea]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|cv:thematicArea
-|Brukt i klasse|<<offentlig-tjeneste-temaområde, Offentlig tjeneste (`cpsv:PublicService`)>>
+|Brukt i klasse|<<OffentligTjeneste-temaområde, Offentlig tjeneste (`cpsv:PublicService`)>>
 |Navn på vokabularet|EuroVoc
 |URI til vokabularet|https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc
 |Kommentar|https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg.
 |Status|Obligatorisk
 |===
 
-=== For egenskapen dcat:theme [[Skal_brukes_for_theme]]
+=== For egenskapen dcat:theme [[Skal-brukes-for-theme]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dcat:theme
-|Brukt i klasse|<<datasett-tema, Datasett (`dcat:Dataset`)>>; <<datatjeneste-tema, Datatjeneste (`dcat:DataService`)>>; <<katalog-temaer, Katalog (`dcat:Catalog`)>>
+|Brukt i klasse|<<Datasett-tema, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-tema, Datatjeneste (`dcat:DataService`)>>; <<Katalog-temaer, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|
 EuroVoc; +
 Data Theme Taxonomy Named Authority List
@@ -185,24 +185,24 @@ https://data.europa.eu/euodp/en/data/dataset/data-theme
 |Kommentar|Norsk utvidelse - gjelder også Datatjeneste (`dcat:DataService`) og Katalog (`dcat:Catalog`)
 |===
 
-=== For egenskapen dcat:themeTaxonomy [[Skal_brukes_for_themeTaxonomy]]
+=== For egenskapen dcat:themeTaxonomy [[Skal-brukes-for-themeTaxonomy]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dcat:themeTaxonomy
-|Brukt i klasse|<<katalog-temaer, Katalog (`dcat:Catalog`)>>
+|Brukt i klasse|<<Katalog-temaer, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|EuroVoc
 |URI til vokabularet|https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc
 |Kommentar|https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg.
 |Status|Obligatorisk
 |===
 
-=== For egenskapen dct:type [[Skal_brukes_for_type]]
+=== For egenskapen dct:type [[Skal-brukes-for-type]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:type
-|Brukt i klasse| <<aktor-utgivertype, Aktør (`foaf:Agent`)>>
+|Brukt i klasse| <<Aktør-utgivertype, Aktør (`foaf:Agent`)>>
 |Navn på vokabularet|ADMS publisher type vocabulary. Listen over termer i ADMS publisher type er inkludert i ADMS-spesifikasjonen. https://joinup.ec.europa.eu/solution/asset-description-metadata-schema-adms[Asset Description Metadata Schema (ADMS)]
 |URI til vokabularet|http://purl.org/adms/publishertype/[http://purl.org/adms/publishertype/] (i RDF)
 |Status|Obligatorisk
@@ -212,7 +212,7 @@ https://data.europa.eu/euodp/en/data/dataset/data-theme
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:type
-|Brukt i klasse| <<lisensdokument-lisenstype, Lisensdokument (`dct:LicenseDocument`)>>
+|Brukt i klasse| <<Lisensdokument-lisenstype, Lisensdokument (`dct:LicenseDocument`)>>
 |Navn på vokabularet|ADMS licence type vocabulary
 |URI til vokabularet|http://purl.org/adms/licencetype/[http://purl.org/adms/licencetype/] (i RDF)
 |Status|Obligatorisk
@@ -222,58 +222,58 @@ https://data.europa.eu/euodp/en/data/dataset/data-theme
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:type
-|Brukt i klasse| <<regulativ-ressurs-type, Regulativ ressurs (`eli:LegalResource`)>>
+|Brukt i klasse| <<RegulativRessurs-type, Regulativ ressurs (`eli:LegalResource`)>>
 |Navn på vokabularet|Resource Type Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/resource-type
 |Status|Obligatorisk
 |===
 
-== Kontrollerte vokabularer som bør og kan brukes [[Kontrollerte_vokabularer_som_bør_og_kan_brukes]]
+== Kontrollerte vokabularer som bør og kan brukes [[Kontrollerte-vokabularer-som-bør-og-kan-brukes]]
 
 I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene. Eksempler her er komplett sett med begreper i Los, EuroVoc, CERIFs standardvokabular, Deweys desimalklassifikasjon og en rekke andre vokabular.
 
-=== For egenskapen cv:thematicArea [[Bør_brukes_for_thematicArea]]
+=== For egenskapen cv:thematicArea [[Bør-brukes-for-thematicArea]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|cv:thematicArea
-|Brukt i klasse|<<offentlig-tjeneste-temaområde, Offentlig tjeneste (`cpsv:PublicService`)>>
+|Brukt i klasse|<<OffentligTjeneste-temaområde, Offentlig tjeneste (`cpsv:PublicService`)>>
 |Navn på vokabularet|Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser
 |URI til vokabularet|https://psi.norge.no/los/struktur.html[https://psi.norge.no/los/struktur.html]
 |Status|Anbefalt
-|Kommentar|Norsk utvidelse - https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til det som er nevnt under <<Skal_brukes_for_thematicArea, Kontrollerte vokabularer som skal brukes>>.
+|Kommentar|Norsk utvidelse - https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til det som er nevnt under <<Skal-brukes-for-thematicArea, Kontrollerte vokabularer som skal brukes>>.
 |===
 
-=== For egenskapen dcat:theme [[Bør_brukes_for_theme]]
+=== For egenskapen dcat:theme [[Bør-brukes-for-theme]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dcat:theme
-|Brukt i klasse|<<datasett-tema, Datasett (`dcat:Dataset`)>>; <<datatjeneste-tema, Datatjeneste (`dcat:DataService`)>>; <<katalog-temaer, Katalog (`dcat:Catalog`)>>
+|Brukt i klasse|<<Datasett-tema, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-tema, Datatjeneste (`dcat:DataService`)>>; <<Katalog-temaer, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser
 |URI til vokabularet|https://psi.norge.no/los/struktur.html[https://psi.norge.no/los/struktur.html]
 |Status|Anbefalt
-|Kommentar|Norsk utvidelse - https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til det som er nevnt under <<Skal_brukes_for_theme, Kontrollerte vokabularer som skal brukes>>.
+|Kommentar|Norsk utvidelse - https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til det som er nevnt under <<Skal-brukes-for-theme, Kontrollerte vokabularer som skal brukes>>.
 |===
 
-=== For egenskapen dcat:themeTaxonomy [[Bør_brukes_for_themeTaxonomy]]
+=== For egenskapen dcat:themeTaxonomy [[Bør-brukes-for-themeTaxonomy]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dcat:themeTaxonomy
-|Brukt i klasse|<<katalog-temaer, Katalog (`dcat:Catalog`)>>
+|Brukt i klasse|<<Katalog-temaer, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|Los - felles vokabular for å kategorisere og beskrive offentlige tjenester og ressurser
 |URI til vokabularet|https://psi.norge.no/los/struktur.html[https://psi.norge.no/los/struktur.html]
 |Status|Anbefalt
-|Kommentar|Norsk utvidelse - https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til det som er nevnt under <<Skal_brukes_for_themeTaxonomy, Kontrollerte vokabularer som skal brukes>>.
+|Kommentar|Norsk utvidelse - https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg til det som er nevnt under <<Skal-brukes-for-themeTaxonomy, Kontrollerte vokabularer som skal brukes>>.
 |===
 
-=== For egenskapen dct:type [[Bør_brukes_for_type]]
+=== For egenskapen dct:type [[Bør-brukes-for-type]]
 
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:type
-|Brukt i klasse|<<datasett-type, Datasett (`dcat:Dataset`)>>
+|Brukt i klasse|<<Datasett-type, Datasett (`dcat:Dataset`)>>
 |Navn på vokabularet|Dataset type Named Authority List
 |URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/dataset-type
 |Status|Anbefalt
@@ -283,7 +283,7 @@ I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordr
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:type
-|Brukt i klasse|<<regel-type, Regel (`cpsv:Rule`)>>
+|Brukt i klasse|<<Regel-type, Regel (`cpsv:Rule`)>>
 |Navn på vokabularet|Kontrollert vokabular ifm. CPSV-AP-NO (norsk applikasjonsprofil av CPSV)
 |URI til vokabularet|https://data.norge.no/vocabulary/cpsvno#
 |Status|Anbefalt
