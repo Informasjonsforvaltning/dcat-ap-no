@@ -552,7 +552,7 @@ dqvno:isAuthoritative
 |Status| Valgfri
 |===
 
-=== Datasett: proveniensbeskrivelse (dct:provenance) [[Datasett-proveniensbeskrivelse]]
+=== Datasett: opphav (dct:provenance) [[Datasett-opphav]]
 
 [cols="30s,70d"]
 |===
