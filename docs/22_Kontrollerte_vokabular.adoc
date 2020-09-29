@@ -28,8 +28,8 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |===
 |URI til egenskapen|dct:accessRights
 |Brukt i klasse|<<Datasett-tilgangsnivå, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-tilgangsrettigheter, Datatjeneste (`dcat:DataService`)>>
-|Navn på vokabularet|Access Rights Named Authority List
-|URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/access-right
+|Navn på vokabularet|Access Right Named Authority List
+|URI til vokabularet|https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right
 |Status|Obligatorisk
 |===
 
