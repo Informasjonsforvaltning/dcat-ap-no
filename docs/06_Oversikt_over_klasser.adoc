@@ -31,6 +31,7 @@
 | Beskrivelse | Brukes til å representere en ressurs som er beskrevet i en katalog.
 | URI | https://www.w3.org/TR/vocab-dcat/#Class:Resource[dcat:Resource]
 | Status | Obligatorisk
+| Kommentar | Dette er en abstrakt klasse som i en konkret anvendelse/serialisering skal erstattes med instans av Datasett (`dcat:Dataset`) eller Datatjeneste (`dcat:DataService`).
 |===
 
 === Literal (rdfs:Literal) [[klasse-literal]]
