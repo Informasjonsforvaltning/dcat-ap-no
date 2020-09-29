@@ -1,4 +1,4 @@
-= URIer som er i bruk
+= URIer som er i bruk [[URIer-i-bruk]]
 
 [cols="10s,45d,45d"]
 |===

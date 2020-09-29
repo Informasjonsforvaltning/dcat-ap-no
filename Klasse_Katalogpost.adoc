@@ -16,7 +16,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Obligatorisk
 |===
 
-=== Katalogpost: primærtema (foaf:primaryTopic) [[Katalogpost-primartema]]
+=== Katalogpost: primærtema (foaf:primaryTopic) [[Katalogpost-primærtema]]
 
 [cols="30s,70d"]
 |===
@@ -92,7 +92,7 @@ Klassen _Katalogpost_ er valgfri.
 |Status| Valgfri
 |===
 
-=== Katalogpost: språk (dct:language) [[Katalogpost-sprak]]
+=== Katalogpost: språk (dct:language) [[Katalogpost-språk]]
 
 [cols="30s,70d"]
 |===

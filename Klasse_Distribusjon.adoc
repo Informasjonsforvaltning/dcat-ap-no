@@ -108,7 +108,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: filstørrelse (dcat:byteSize) [[Distribusjon-filstorrelse]]
+=== Distribusjon: filstørrelse (dcat:byteSize) [[Distribusjon-filstørrelse]]
 
 [cols="30s,70d"]
 |===
@@ -224,7 +224,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: språk (dct:language) [[Distribusjon-sprak]]
+=== Distribusjon: språk (dct:language) [[Distribusjon-språk]]
 
 [cols="30s,70d"]
 |===
@@ -236,7 +236,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: tidsromsoppløsning (dcat:temporalResolution [[Distribusjon_tidsromsoppløsning]])
+=== Distribusjon: tidsromsoppløsning (dcat:temporalResolution [[Distribusjon-tidsromsoppløsning]])
 
 [cols="30s,70d"]
 |===
