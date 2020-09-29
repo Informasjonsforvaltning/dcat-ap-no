@@ -16,7 +16,7 @@ image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
 
 *Status*: [yellow-background]#Til møtet i Arkitektur- og standardiseringsrådet# +
-*Publisert*: [yellow-background]#<2020-09-29># +
+*Publisert*: [yellow-background]#2020-09-29# +
 *Lenke til gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no
 
 WARNING: *Det pågår løpende justeringer*: +
