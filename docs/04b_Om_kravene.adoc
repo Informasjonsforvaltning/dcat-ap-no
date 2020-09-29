@@ -1,7 +1,7 @@
 = Om kravene i denne standarden [[Om-kravene]]
 
 Forklaringen under på ordene «obligatorisk», «anbefalt» og «valgfri», er en fornorsking av tilsvarende forklaring i
-https://joinup.ec.europa.eu/solution/abr-specification-registry-registries/document/specification-registry-registries-version-100[BRegDCAT-AP]
+https://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/news/check-major-release-bregdcat-ap-v200[BRegDCAT-AP]
 som er en utvidelse av DCAT-AP fra EU.
 
 Klasse::
