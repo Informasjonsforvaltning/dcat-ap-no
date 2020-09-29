@@ -67,7 +67,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |Kommentar|EUs Corporate bodies Named Authority List inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
 |===
 
-=== For egenskapen dct:format [[Skal-brukes-for-foramt]]
+=== For egenskapen dct:format [[Skal-brukes-for-format]]
 
 [cols="30s,70d"]
 |===
