@@ -236,7 +236,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Status| Valgfri
 |===
 
-=== Distribusjon: tidsromsoppløsning (dcat:temporalResolution [[Distribusjon-tidsromsoppløsning]])
+=== Distribusjon: tidsoppløsning (dcat:temporalResolution [[Distribusjon-tidsoppløsning]])
 
 [cols="30s,70d"]
 |===

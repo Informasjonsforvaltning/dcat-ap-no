@@ -73,7 +73,7 @@
 [cols="30s,70d"]
 |===
 |Engelsk navn | Dataset
-|Beskrivelse | Brukes til å representere en konseptuell enhet som representerer informasjonen som publiseres.
+|Beskrivelse | Brukes til å representere et datasett.
 |URI | https://www.w3.org/TR/vocab-dcat/#Class:Dataset[dcat:Dataset]
 | Status | Anbefalt
 |===
@@ -83,7 +83,7 @@
 [cols="30s,70d"]
 |===
 | Engelsk navn | Distribution
-| Beskrivelse | Brukes til å representere en fysisk utførelse av datasettet i et bestemt format.
+| Beskrivelse | Brukes til å representere en distribusjon.
 | URI | https://www.w3.org/TR/vocab-dcat/#Class:Distribution[dcat:Distribution]
 | Status | Anbefalt
 |===

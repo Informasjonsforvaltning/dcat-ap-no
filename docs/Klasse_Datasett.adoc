@@ -601,7 +601,7 @@ dqvno:isAuthoritative
 |===
 
 
-=== Datasett: tidsromsoppløsning (dcat:temporalResolution) [[Datasett-tidsromsoppløsning]]
+=== Datasett: tidsoppløsning (dcat:temporalResolution) [[Datasett-tidsoppløsning]]
 
 [cols="30s,70d"]
 |===
