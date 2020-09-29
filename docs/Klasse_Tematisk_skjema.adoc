@@ -2,7 +2,7 @@
 
 Klassen _Tematisk skjema_ er obligatorisk.
 
-== Obligatoriske egenskaper for klassen _Tematisk skjema_ [[TematiskSkjema_obligatoriske_egenskaper]]
+== Obligatoriske egenskaper for klassen _Tematisk skjema_ [[TematiskSkjema-obligatoriske-egenskaper]]
 
 === Tematisk skjema: tittel (dct:title) [[TematiskSkjema-tittel]]
 

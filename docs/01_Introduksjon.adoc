@@ -1,4 +1,4 @@
-= Innledning
+= Innledning [[Innledning]]
 
 Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett og datatjenester, og å lette søk etter datasett og datatjenester. Standarden vil gjelde datasett og datatjenester som forvaltes av offentlig sektor, og som beskrives med tanke på oppføring i en katalog eller «inventarliste». Privat sektor kan også gjerne bruke standarden til å beskrive sine datasett og datatjenester. Standarden vil støtte søking i og deling av datasett på tvers av offentlig sektor (gjenbruk) og legge til rette for viderebruk i privat sektor. Standarden er således nyttig både for offentlig sektor selv og for næringsliv og sivilsamfunn for øvrig.
 

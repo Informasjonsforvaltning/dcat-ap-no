@@ -2,7 +2,7 @@
 
 Klassen _Dokument_ er valgfri.
 
-== Anbefalte egenskaper for klassen _Dokument_ [[Dokument_anbefalte_egenskaper]]
+== Anbefalte egenskaper for klassen _Dokument_ [[Dokument-anbefalte-egenskaper]]
 
 === Dokument: språk (dct:language) [[Dokument-språk]]
 
