@@ -5,6 +5,8 @@ __som beskrives med tanke på oppføring i en
 katalog eller «inventarliste» (intern eller ekstern)__. Standarden er
 ikke tenkt brukt for å beskrive dokumenter eller fagsystem.
 
+DCAT-AP-NO er en applikasjonsprofil og ikke en direkte oversettelse av https://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/news/check-major-release-bregdcat-ap-v200[BRegDCAT-AP]. I tillegg til å beskrive hvordan klasser og egenskaper i BRegDCAT-AP brukes, tilpasses også BRegDCAT-AP til norske forhold ved å bruke norske utvidelser. 
+
 Istedenfor å ha alt spesifisert i denne standarden, er det utarbeidet flere andre spesifikasjoner for å beskrive ulike aspekter ved datasett/datatjenester:
 
 * *Kvalitetsbeskrivelser*: Denne standarden bruker https://www.w3.org/TR/vocab-dqv/[DQV (Data Quality Vocabulary) fra W3C] til å beskrive kvalitet på datasett/datatjenester. Det er utarbeidet en https://informasjonsforvaltning.github.io/dqv-ap-no/[norsk applikasjonsprofil av DQV (DQV-AP-NO)], som supplerer denne standarden med kvalitetsbeskrivelser.
