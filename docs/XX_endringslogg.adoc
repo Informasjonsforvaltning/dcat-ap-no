@@ -20,10 +20,9 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |Datasett: har måleresultat |dqv:hasQualityMeasurement |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: kvalifisert kreditering |prov:qualifiedAttribution |Ny egenskap |Dette i henhold til BRegDCAT-AP
 |Datasett: kvalifisert relasjon |dcat:qualifiedRelation |Ny egenskap |Dette i henhold til BRegDCAT-AP
+|Datasett: opphav |dct:provenance |Multiplisitet endret fra `0..1` til `0..n` |Dette i henhold til BRegDCAT-AP
 |Datasett: produsent |dct:creator |Norsk navn endret fra `Datasett: skaper` til `Datasett: produsent` |Bedre dekkende navn
 |Datasett: produsent |dct:creator |Range er endret fra `rdfs:Resource` til `foaf:Agent` |Dette i henhold til BRegDCAT-AP
-|Datasett: proveniensbeskrivelse |dct:provenance |Norsk navn endret fra `Datasett: opphav` til `Datasett: proveniensbeskrivelse` |Bedre dekkende navn
-|Datasett: proveniensbeskrivelse |dct:provenance |Multiplisitet endret fra `0..1` til `0..n` |Dette i henhold til BRegDCAT-AP
 |Datasett: refererer til |dct:references |Range endret fra `dcat:Dataset` til `rdfs:Resource` |Dette i henhold til BRegDCAT-AP
 |[.line-through]#Datasett: skjermingshjemmel# |[.line-through]#dcatno:accessRightsComment# |Fjernet. Erstattes med `Datasett: følger (cpsv:follows)` |Unødvendig med dette norske avvik
 |Datasett: tema|dcat:theme|Range endret fra `dcat:theme, subproperty of dct:subject` til `dcat:them`|Dette i henhold til BRegDCAT-AP
@@ -51,9 +50,8 @@ Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.
 |Katalog: frekvens|dct:accrualPeriodicity|Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Katalog: identifikator|dct:identifier|Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Katalog: katalog|dcat:catalog|Ny egenskap|Dette i henhold til BRegDCAT-AP
+|Katalog: opphav |dct:provenance |Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Katalog: produsent|dct:creator|Ny egenskap|Dette i henhold til BRegDCAT-AP
-|Katalog: proveniens|dct:spatial
-dct:provenance|Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Katalogisert ressurs|dcat:Resource|Norsk navn endret fra `Ressurs` til `Katalogisert ressurs`|Bedre dekkende navn
 |Katalogisert ressurs|dcat:Resource|Range er endret fra `rdfs:Resource` til `dcat:Resource`|Dette i henhold til BRegDCAT-AP
 |Katalogpost: i samsvar med |dct:conformsTo |Range er endret fra `rdfs:Resource` til `dct:Standard` |Dette i henhold til BRegDCAT-AP
@@ -68,8 +66,8 @@ dct:provenance|Ny egenskap|Dette i henhold til BRegDCAT-AP
 |Medietype|dct:MediaType|Norsk navn endret fra `Mediatype eller omfang` til `Medietype`|Bedre dekkende navn
 |Offentlig organisasjon|cv:PublicOrganization|Hele klassen er ny|Dette i henhold til BRegDCAT-AP
 |Offentlig tjeneste|cpsv:PublicService|Hele klassen er ny|Dette i henhold til BRegDCAT-AP
-|Proveniensbeskrivelse|dct:ProvenanceStatement|Norsk navn endret fra `Opphav` til `Proveniensbeskrivelse`|Bedre dekkende navn
-|Proveniensbeskrivelse|dct:ProvenanceStatement|Range endret fra `skos:Concept` til `dct:ProvenanceStatement`|Dette i henhold til BRegDCAT-AP
+|Opphavsbeskrivelse|dct:ProvenanceStatement|Norsk navn endret fra `Opphav` til `Opphavsbeskrivelse`|Bedre dekkende navn
+|Opphavsbeskrivelse|dct:ProvenanceStatement|Range endret fra `skos:Concept` til `dct:ProvenanceStatement`|Dette i henhold til BRegDCAT-AP
 |Regel|cpsv:Rule |Hele klassen er ny |Dette i henhold til BRegDCAT-AP
 |Regulativ ressurs |eli:LegalResource |Hele klassen er ny  |Dette i henhold til BRegDCAT-AP
 |Relasjon|dcat:Relationship|Hele klassen er ny |Dette i henhold til BRegDCAT-AP
