@@ -18,10 +18,12 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
 |Distribusjon: format|dct:format|Range endret fra dct:MediaTypeOrExtent til dct:MediaType|
 |Distribusjon: medietype |dcat:mediaType |Multiplisitet endret fra 0..1 til 0..n | For å kunne ta høyde for at en distribusjon kan være i flere ulike medietyper.
 |Distribusjon: status |adms:status |Endret fra valgfri til anbefalt | Status på en distribusjon er viktig å vite når man skal vurdere om distribusjonen skal/kan brukes.
+|Dokument: språk | dct:language | Ikke eksplisitt tatt med i BRegDCAT-AP | For å kunne referere til språk foaf:Document er i
+|Dokument: title | dct:title | Ikke eksplisitt tatt med i BRegDCAT-AP | For å kunne referere til tittel for foaf:Document
 |Offentlig organisasjon: hjemmeside |foaf:homepage |Multiplisitet er endret fra 0..1 til 0..n | For å kunne referere til ulike hjemmesider i ulike språk/målformer.
 |Offentlig tjeneste: hjemmeside |foaf:homepage |Multiplisitet er endret fra 0..1 til 0..n | For å kunne referere til ulike hjemmesider i ulike språk/målformer.
-|Standard: har tittel |dct:title |Ikke eksplisitt med i BRegDCAT-AP |For å kunne ha tittel til standard/spesifikasjon.
 |Standard: har referanse |rdfs:seeAlso |Ikke eksplisitt med i BRegDCAT-AP |For å kunne ha referanse til standard/spesifikasjon.
+|Standard: har tittel |dct:title |Ikke eksplisitt med i BRegDCAT-AP |For å kunne ha tittel til standard/spesifikasjon.
 |Standard: har versjonsnummer |owl:versionInfo |Ikke eksplisitt med i BRegDCAT-AP |For å kunne refefere til versjonsnummer.
 |Tema|skos:Concept|Endret fra anbefalt til obligatorisk|Allerede i DCAT-AP-NO v.1.1
 |Tematisk skjema|skos:ConceptScheme|Endret fra anbefalt til obligatorisk|Allerede i DCAT-AP-NO v.1.1
