@@ -29,8 +29,10 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
 |Tematisk skjema|skos:ConceptScheme|Endret fra anbefalt til obligatorisk|Allerede i DCAT-AP-NO v.1.1
 
 4+|*Krav til bruk av kontrollerte vokabularer*
+|Egenskap dct:creator | dct:creator | Endret fra obligatorisk til anbefalt | Fordi EUs _Corporate bodies Named Authority List_ inneholder ikke norske organisasjoner.
 |Egenskap dct:format |dct:format | "Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) | For å ha konsistens mellom kravene for denne egenskapen
 |Egenskap dct:license | dct:license | "Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) og Katalog (dcat:Catalog) |For å ha konsistens mellom kravene for denne egenskapen
+|Egenskap dct:publisher | dct:publisher | Endret fra obligatorisk til anbefalt | Fordi EUs _Corporate bodies Named Authority List_ inneholder ikke norske organisasjoner.
 |Egenskap adms:status | adms:status | "Skal brukes"-kravet gjelder også Katalogpost (dcat:CatalogRecord) og Offentlig tjeneste (cpsv:PublicService) | For å ha konsistens mellom kravene for denne egenskapen
 |Egenskap cv:thematicArea | cv:thematicArea | https://psi.norge.no/los/struktur.html[Los] er føyet til som et "Bør brukes"-krav | For å kunne bruke norske Los
 |Egenskap dcat:theme | dcat:theme |"Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) og Katalog (dcat:Catalog) | For å ha konsistens mellom kravene for denne egenskapen

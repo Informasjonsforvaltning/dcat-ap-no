@@ -55,18 +55,6 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |Status|Obligatorisk
 |===
 
-=== For egenskapen dct:creator [[Skal-brukes-for-creator]]
-
-[cols="30s,70d"]
-|===
-|URI til egenskapen|dct:creator
-|Brukt i klasse|<<Datasett-produsent, Datasett (`dcat:Dataset`)>>; <<Katalog-produsent, Katalog (`dcat:Catalog`)>>
-|Navn på vokabularet|Corporate Bodies Named Authority List
-|URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body
-|Status|Obligatorisk
-|Kommentar|EUs Corporate bodies Named Authority List inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
-|===
-
 === For egenskapen dct:format [[Skal-brukes-for-format]]
 
 [cols="30s,70d"]
@@ -112,18 +100,6 @@ Kravet fra EU er forklart slik: "This vocabulary must be used in case the licenc
 |Navn på vokabularet|IANA Media Types
 |URI til vokabularet|https://www.iana.org/assignments/media-types/media-types.xhtml[https://www.iana.org/assignments/media-types/media-types.xhtml]
 |Status|Obligatorisk
-|===
-
-=== For egenskapen dct:publisher [[Skal-brukes-for-publisher]]
-
-[cols="30s,70d"]
-|===
-|URI til egenskapen|dct:publisher
-|Brukt i klasse|<<Datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-utgiver, Datatjeneste (`dcat:DataService`)>>; <<Katalog-utgiver, Katalog (`dcat:Catalog`)>>
-|Navn på vokabularet|Corporate Bodies Named Authority List
-|URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body
-|Status|Obligatorisk
-|Kommentar|EUs Corporate bodies Named Authority List inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner.
 |===
 
 === For egenskapen dct:spatial [[Skal-brukes-for-spatial]]
@@ -231,6 +207,30 @@ https://data.europa.eu/euodp/en/data/dataset/data-theme
 == Kontrollerte vokabularer som bør og kan brukes [[Kontrollerte-vokabularer-som-bør-og-kan-brukes]]
 
 I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.
+
+=== For egenskapen dct:creator [[Bør-brukes-for-creator]]
+
+[cols="30s,70d"]
+|===
+|URI til egenskapen|dct:creator
+|Brukt i klasse|<<Datasett-produsent, Datasett (`dcat:Dataset`)>>; <<Katalog-produsent, Katalog (`dcat:Catalog`)>>
+|Navn på vokabularet|Corporate Bodies Named Authority List
+|URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body
+|Status|Anbefalt
+|Kommentar|Norsk utvidelse - endret fra obligatorisk til anbefalt. EUs _Corporate bodies Named Authority List_ inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner, men ingen norske organisasjoner. EU sin liste bør brukes når den aktuelle organisasjonen finnes på listen.
+|===
+
+=== For egenskapen dct:publisher [[Bør-brukes-for-publisher]]
+
+[cols="30s,70d"]
+|===
+|URI til egenskapen|dct:publisher
+|Brukt i klasse|<<Datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-utgiver, Datatjeneste (`dcat:DataService`)>>; <<Katalog-utgiver, Katalog (`dcat:Catalog`)>>
+|Navn på vokabularet|Corporate Bodies Named Authority List
+|URI til vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body
+|Status|Anbefalt
+|Kommentar|Norsk utvidelse - endret fra obligatorisk til anbefalt. EUs _Corporate bodies Named Authority List_ inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner, men ingen norske organisasjoner. EU sin liste bør brukes når den aktuelle organisasjonen finnes på listen.
+|===
 
 === For egenskapen cv:thematicArea [[Bør-brukes-for-thematicArea]]
 
