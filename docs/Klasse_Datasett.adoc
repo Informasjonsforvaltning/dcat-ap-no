@@ -61,7 +61,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| publisher
 |URI| dct:publisher
 |Range| foaf:Agent
-|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://data.brreg.no/enhetsregisteret/api/enheter/974760673>`.
+|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673>`.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
