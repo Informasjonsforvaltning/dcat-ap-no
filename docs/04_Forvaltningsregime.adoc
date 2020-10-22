@@ -6,14 +6,14 @@ nye versjoner vil være endringer i DCAT-AP. Digitaliseringsdirektoratet vil der
 for å følge med på EUs bruk av, og endringsarbeid knyttet til, DCAT-AP.
 Arbeidet med en ny versjon av den nasjonale standarden skal som vanlig
 forankres i relevante organer via høring og behandling i
-Standardiseringsrådet.
+Standardiseringsrådet (som har endret sitt navn til Arkitektur- og standardiseringsrådet).
 
 Digitaliseringsdirektoratet vil i forbindelse med nye versjoner av DCAT-AP avgjøre om
 endringene er så store at det bør nedsettes en egen arbeidsgruppe
 bestående av relevante aktører, eller om revisjonen kan utføres av Digitaliseringsdirektoratet
 selv. Forslaget til ny versjon sendes uansett på høring. De innkomne
 høringskommentarene behandles hos Digitaliseringsdirektoratet, og resulterer i et forslag som
-oversendes Standardiseringsrådet.
+oversendes Arkitektur- og standardiseringsrådet.
 
 Digitaliseringsdirektoratet ønsker å gi brukerne mulighet til å gi tilbakemeldinger og innspill
 til standarden via Digitaliseringsdirektoratets nettsider. Slike innspill vil tas med inn i
