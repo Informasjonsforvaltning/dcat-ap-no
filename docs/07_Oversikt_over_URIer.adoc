@@ -2,7 +2,7 @@
 
 [cols="10s,45d,45d"]
 |===
-|*Prefiks*|*Navnerom*|*RDF-vokabular*
+|Prefiks|*Navnerom*|*RDF-vokabular*
 |adms|http://www.w3.org/ns/adms#|Asset Description Metadata Schema
 |cv|http://data.europa.eu/m8g/|Core Vocabulary
 |cpsv|http://purl.org/vocab/cpsv#|Core Public Service Vocabulary
