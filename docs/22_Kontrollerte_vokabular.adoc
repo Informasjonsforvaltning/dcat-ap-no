@@ -217,8 +217,8 @@ I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordr
 |Brukt i klasse|<<Datasett-produsent, Datasett (`dcat:Dataset`)>>; <<Katalog-produsent, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body[Corporate Bodies Named Authority List]
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body
-|Status|Anbefalt
-|Kommentar|Norsk utvidelse - endret fra obligatorisk til anbefalt. EUs _Corporate bodies Named Authority List_ inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner, men ingen norske organisasjoner. EU sin liste bør brukes når den aktuelle organisasjonen finnes på listen.
+|Status|Obligatorisk
+|Kommentar|DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes _hvis_ organisasjonen er på listen.
 |===
 
 === For egenskapen dct:publisher [[Bør-brukes-for-publisher]]
@@ -229,8 +229,8 @@ I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordr
 |Brukt i klasse|<<Datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-utgiver, Datatjeneste (`dcat:DataService`)>>; <<Katalog-utgiver, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body[Corporate Bodies Named Authority List]
 |URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body
-|Status|Anbefalt
-|Kommentar|Norsk utvidelse - endret fra obligatorisk til anbefalt. EUs _Corporate bodies Named Authority List_ inneholder alle europeiske institusjoner og et begrenset antall internasjonale organisasjoner, men ingen norske organisasjoner. EU sin liste bør brukes når den aktuelle organisasjonen finnes på listen.
+|Status|Obligatorisk
+|Kommentar|DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes _hvis_ organisasjonen er på listen.
 |===
 
 === For egenskapen cv:thematicArea [[Bør-brukes-for-thematicArea]]
