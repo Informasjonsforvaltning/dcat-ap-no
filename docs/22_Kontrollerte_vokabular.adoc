@@ -55,6 +55,18 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |Status|Obligatorisk
 |===
 
+=== For egenskapen dct:creator [[Skal-brukes-for-creator]]
+
+[cols="30s,70d"]
+|===
+|URI til egenskapen|dct:creator
+|Brukt i klasse|<<Datasett-produsent, Datasett (`dcat:Dataset`)>>; <<Katalog-produsent, Katalog (`dcat:Catalog`)>>
+|Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body[Corporate Bodies Named Authority List]
+|URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body
+|Status|Obligatorisk
+|Kommentar|DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes _hvis_ organisasjonen er på listen.
+|===
+
 === For egenskapen dct:format [[Skal-brukes-for-format]]
 
 [cols="30s,70d"]
@@ -100,6 +112,18 @@ Kravet fra EU er forklart slik: "This vocabulary must be used in case the licenc
 |Navn på vokabularet|https://www.iana.org/assignments/media-types/media-types.xhtml[IANA Media Types]
 |URI til vokabularet|https://www.iana.org/assignments/media-types/media-types.xhtml[https://www.iana.org/assignments/media-types/media-types.xhtml]
 |Status|Obligatorisk
+|===
+
+=== For egenskapen dct:publisher [[Skal-brukes-for-publisher]]
+
+[cols="30s,70d"]
+|===
+|URI til egenskapen|dct:publisher
+|Brukt i klasse|<<Datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-utgiver, Datatjeneste (`dcat:DataService`)>>; <<Katalog-utgiver, Katalog (`dcat:Catalog`)>>
+|Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body[Corporate Bodies Named Authority List]
+|URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body
+|Status|Obligatorisk
+|Kommentar|DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes _hvis_ organisasjonen er på listen.
 |===
 
 === For egenskapen dct:spatial [[Skal-brukes-for-spatial]]
@@ -208,30 +232,6 @@ http://publications.europa.eu/resource/authority/datatheme
 == Kontrollerte vokabularer som bør og kan brukes [[Kontrollerte-vokabularer-som-bør-og-kan-brukes]]
 
 I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.
-
-=== For egenskapen dct:creator [[Bør-brukes-for-creator]]
-
-[cols="30s,70d"]
-|===
-|URI til egenskapen|dct:creator
-|Brukt i klasse|<<Datasett-produsent, Datasett (`dcat:Dataset`)>>; <<Katalog-produsent, Katalog (`dcat:Catalog`)>>
-|Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body[Corporate Bodies Named Authority List]
-|URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body
-|Status|Obligatorisk
-|Kommentar|DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes _hvis_ organisasjonen er på listen.
-|===
-
-=== For egenskapen dct:publisher [[Bør-brukes-for-publisher]]
-
-[cols="30s,70d"]
-|===
-|URI til egenskapen|dct:publisher
-|Brukt i klasse|<<Datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-utgiver, Datatjeneste (`dcat:DataService`)>>; <<Katalog-utgiver, Katalog (`dcat:Catalog`)>>
-|Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body[Corporate Bodies Named Authority List]
-|URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body
-|Status|Obligatorisk
-|Kommentar|DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes _hvis_ organisasjonen er på listen.
-|===
 
 === For egenskapen cv:thematicArea [[Bør-brukes-for-thematicArea]]
 
