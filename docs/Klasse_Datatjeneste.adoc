@@ -12,8 +12,9 @@ Klassen _Datatjeneste_ er valgfri.
 |URI| dcat:endpointURL
 |Range| rdfs:Resource
 |Beskrivelse| Rotplassering eller primært endepunkt for tjenesten (en URI).
-|Multiplisitet| 1..n
+|Multiplisitet| 1..1
 |Status| Obligatorisk
+|Kommentar | Norsk utvidelse - Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester.
 |===
 
 === Datatjeneste: identifikator (dcat:identifier) [[Datatjeneste-identifikator]]
