@@ -50,7 +50,7 @@
 |===
 | Engelsk navn | Theme
 | Beskrivelse | Brukes til å representere et tema/temaområde for en ressurs beskrevet i en katalog.
-| URI | https://www.w3.org/TR/vocab-dcat/#Class:Concept[skos:Concept]
+| URI | https://www.w3.org/TR/skos-reference/#concepts[skos:Concept]
 | Status | Obligatorisk
 |Kommentar | Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
 |===
@@ -61,7 +61,7 @@
 |===
 | Engelsk navn | Thematic scheme
 | Beskrivelse | Brukes til å representere en taksonomi eller en annen type kontrollert vokabular hvor temaet er definert.
-| URI | https://www.w3.org/TR/vocab-dcat/#Class:Concept_Scheme[skos:ConceptScheme]
+| URI | https://www.w3.org/TR/skos-reference/#schemes[skos:ConceptScheme]
 | Status | Obligatorisk
 | Kommentar| Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
 |===
@@ -265,7 +265,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Role
 | Beskrivelse | Brukes til å representere funksjonen til en ressurs eller aktør i relasjon til en annen ressurs.
 | URI | https://www.w3.org/TR/vocab-dcat-2/#Class:Role[dcat:Role]
-|Subklasse av|skos:Concept
+|Subklasse av|https://www.w3.org/TR/skos-reference/#concepts[skos:Concept]
 | Status | Valgfri
 |===
 
@@ -327,6 +327,6 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 |===
 | Engelsk navn | Publisher type
 | Beskrivelse | Brukes til å representere type organisasjon som fungerer som en utgiver av en ressurs i en katalog eller av en katalog.
-| URI | http://www.w3.org/TR/vocab-adms/#dcterms-type[skos:Concept]
+| URI | https://www.w3.org/TR/skos-reference/#concepts[skos:Concept]
 | Status | Valgfri
 |===
