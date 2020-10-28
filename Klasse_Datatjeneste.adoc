@@ -12,8 +12,9 @@ Klassen _Datatjeneste_ er valgfri.
 |URI| dcat:endpointURL
 |Range| rdfs:Resource
 |Beskrivelse| Rotplassering eller primært endepunkt for tjenesten (en URI).
-|Multiplisitet| 1..n
+|Multiplisitet| 1..1
 |Status| Obligatorisk
+|Kommentar | Norsk utvidelse - Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester.
 |===
 
 === Datatjeneste: identifikator (dcat:identifier) [[Datatjeneste-identifikator]]
@@ -123,7 +124,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Engelsk navn| publisher
 |URI| dct:publisher
 |Range| foaf:Agent
-|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher https://data.brreg.no/enhetsregisteret/api/enheter/974760673[<https://data.brreg.no/enhetsregisteret/api/enheter/974760673>]`.
+|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher <\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673>`.
 |Multiplisitet| 0..1
 |Status| Anbefalt
 |===

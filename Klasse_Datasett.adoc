@@ -61,7 +61,7 @@ Klassen _Datasett_ er anbefalt.
 |Engelsk navn| publisher
 |URI| dct:publisher
 |Range| foaf:Agent
-|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://data.brreg.no/enhetsregisteret/api/enheter/974760673>`.
+|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673>`.
 |Multiplisitet| 1..1
 |Status| Obligatorisk
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
@@ -81,7 +81,7 @@ Klassen _Datasett_ er anbefalt.
 |Status| Anbefalt
 |Kommentar a| Norsk utvidelse (allerede i DCAT-AP-NO v.1.1).
 
-NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. informasjonsmodell som beskriver datasettet (se https://informasjonsforvaltning.github.io/modelldcat-ap-no/[ModellDCAT-AP-NO] for referanse til begrep fra en informasjonsmodell).
+NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. informasjonsmodell som beskriver datasettet (se https://data.norge.no/specification/modelldcat-ap-no/[ModellDCAT-AP-NO] for referanse til begrep fra en informasjonsmodell).
 |===
 
 === Datasett: ble generert ved (prov:wasGeneratedBy) [[Datasett-bleGenerertVed]]
@@ -416,7 +416,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Referanse|https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityAnnotation[https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityAnnotation]
 |Multiplisitet|0..n
 |Status|Valgfri
-|Kommentar| Se https://informasjonsforvaltning.github.io/dqv-ap-no/[DQV-AP-NO (norsk applikasjonsprofil av DQV)].
+|Kommentar| Se https://data.norge.no/specification/dqv-ap-no/[DQV-AP-NO (norsk applikasjonsprofil av DQV)].
 
 Gjelder også Brukertilbakemelding (`dqv:UserQualityFeedback`) og Kvalitetssertifikat (`dqv:QualityCertificate`) som er subklasser av Kvalitetsnote (`dqv:QualityAnnotation`).
 |Eksempel a| [source]
@@ -447,7 +447,7 @@ dqvno:isAuthoritative
 |Referanse|https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityMeasurement[https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityMeasurement]
 |Multiplisitet|0..n
 |Status|Valgfri
-|Kommentar| Se https://informasjonsforvaltning.github.io/dqv-ap-no/[DQV-AP-NO (norsk applikasjonsprofil av DQV)].
+|Kommentar| Se https://data.norge.no/specification/dqv-ap-no/[DQV-AP-NO (norsk applikasjonsprofil av DQV)].
 |Eksempel a| [source]
 ----
 :aDataset
