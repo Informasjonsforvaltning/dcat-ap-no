@@ -1,33 +1,13 @@
-= Forvaltningsregime
+= Forvaltningsregime [[Forvaltningsregime]]
 
-Utarbeidelse av nye versjoner av «Standard for beskrivelse av
-datakataloger og datasett» initieres av Digitaliseringsdirektoratet, og den primære kilden til
-nye versjoner vil være endringer i DCAT-AP. Digitaliseringsdirektoratet vil derfor ha ansvar
-for å følge med på EUs bruk av, og endringsarbeid knyttet til, DCAT-AP.
-Arbeidet med en ny versjon av den nasjonale standarden skal som vanlig
-forankres i relevante organer via høring og behandling i
-Standardiseringsrådet.
+Utarbeidelse av nye versjoner av denne standarden initieres av Digitaliseringsdirektoratet. Den primære kilden til nye versjoner vil være endringer i EU-standarden https://joinup.ec.europa.eu/solution/abr-specification-registry-registries[BRegDCAT-AP] som denne standarden baseres på. Digitaliseringsdirektoratet vil derfor ha ansvar for å følge med på EUs bruk av, og endringsarbeid knyttet til, BRegDCAT-AP. Arbeidet med en ny versjon av den nasjonale standarden skal som vanlig forankres i relevante organer via høring og behandling i Arkitetktur- og standardiseringsrådet.
 
-Digitaliseringsdirektoratet vil i forbindelse med nye versjoner av DCAT-AP avgjøre om
-endringene er så store at det bør nedsettes en egen arbeidsgruppe
-bestående av relevante aktører, eller om revisjonen kan utføres av Digitaliseringsdirektoratet
-selv. Forslaget til ny versjon sendes uansett på høring. De innkomne
-høringskommentarene behandles hos Digitaliseringsdirektoratet, og resulterer i et forslag som
-oversendes Standardiseringsrådet.
+Digitaliseringsdirektoratet vil i forbindelse med nye versjoner av EU-standarden avgjøre om
+endringene er så store at det bør nedsettes en egen arbeidsgruppe bestående av relevante aktører, eller om revisjonen kan utføres av Digitaliseringsdirektoratet selv. Forslaget til ny versjon sendes uansett på høring. De innkomne høringskommentarene behandles hos Digitaliseringsdirektoratet, og resulterer i et forslag som oversendes Arkitektur- og standardiseringsrådet.
 
-Digitaliseringsdirektoratet ønsker å gi brukerne mulighet til å gi tilbakemeldinger og innspill
-til standarden via Digitaliseringsdirektoratets nettsider. Slike innspill vil tas med inn i
-arbeidet med revisjoner initiert av nye DCAT-AP- versjoner, men Digitaliseringsdirektoratet vil
-også vurdere tilbakemeldingene en gang i året, for å se om noen av dem
-bør føre til oppdateringer utenom disse større revisjonene. Dette kan
-være aktuelt blant annet fordi den nasjonale standarden har noen tillegg til
-DCAT-AP som for eksempel kan vurderes.
+Digitaliseringsdirektoratet ønsker å gi brukerne mulighet til å gi tilbakemeldinger og innspill til standarden via Digitaliseringsdirektoratets nettsider. Slike innspill vil tas med inn i arbeidet med revisjoner initiert av nye versjoner av EU-standarden. Digitaliseringsdirektoratet vil også vurdere tilbakemeldingene en gang i året, for å se om noen av dem bør føre til oppdateringer utenom disse større revisjonene. Dette kan være aktuelt blant annet fordi den nasjonale standarden har noen tillegg som for eksempel kan vurderes.
 
-Dersom det oppdages mindre feil i standarden (stavefeil etc), vil ikke
-korrigering av disse utløse en ny versjon. Disse korrigeringene skal
-imidlertid dokumenteres i et vedlegg som følger den aktuelle standarden.
+Dersom det oppdages mindre feil i standarden (stavefeil etc.), vil ikke
+korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid dokumenteres.
 
-Gjeldende og eventuelle tidligere versjoner av standarden skal være
-tilgjengelige på Digitaliseringsdirektoratets nettsider, slik at det er enkelt å finne ut når
-tidligere versjoner var gyldige, og hvilke endringer som er foretatt
-mellom to versjoner.
+Gjeldende og eventuelle tidligere versjoner av standarden skal være tilgjengelige på Digitaliseringsdirektoratets nettsider, slik at det er enkelt å finne ut når tidligere versjoner var gyldige, og hvilke endringer som er foretatt mellom to versjoner.
