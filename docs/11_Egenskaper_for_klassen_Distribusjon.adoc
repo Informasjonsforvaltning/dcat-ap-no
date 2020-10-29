@@ -1,0 +1,169 @@
+= Distribusjon
+
+Egenskaper for klassen Distribusjon (anbefalt)
+
+== Distribusjon: tilgangsURL [[distribusjon-tilgangsurl]]
+
+[cols="30s,70d"]
+|===
+|URI| dcat:accessURL
+|Range| rdfs:Resource
+|Beskrivelse| En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til i datasettet
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|===
+
+== Distribusjon: beskrivelse [[distribusjon-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:description
+|Range| rdfs:Literal
+|Beskrivelse| Fritekstbeskrivelse av distribusjonen. Kan repeteres for parallelle språkversjoner
+|Kardinalitet| 0..n
+|Status| Anbefalt
+|===
+
+== Distribusjon: format [[distribusjon-format]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:format
+|Range| dct:MediaTypeOrExtent
+|Beskrivelse| Opplysing om til distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
+|Kardinalitet| 1..n
+|Status| Obligatorisk
+|Kommentar| Norsk utvidelse - Denne egenskapen skal brukes istedetfor  <<distribusjon-mediatype>>
+|===
+
+== Distribusjon: lisens [[distribusjon-lisens]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:license
+|Range| dct:LicenseDocument
+|Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, feks http://data.norge.no/nlod/no/1.0
+|Kardinalitet| 0..1
+|Status| Anbefalt
+|===
+
+== Distribusjon: filstørrelse [[distribusjon-filstrrelse]]
+
+[cols="30s,70d"]
+|===
+|URI| dcat:byteSize
+|Range| rdfs:Literal typed as xsd:decimal
+|Beskrivelse| Distribusjonens størrelse oppgitt i bytes
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
+
+== Distribusjon: sjekksum [[distribusjon-sjekksum]]
+
+[cols="30s,70d"]
+|===
+|URI| spdx:checksum
+|Range| spdx:Checksum
+|Beskrivelse| Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg)
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
+
+== Distribusjon: dokumentasjon [[distribusjon-dokumentasjon]]
+
+[cols="30s,70d"]
+|===
+|URI| foaf:page
+|Range| foaf:Document
+|Beskrivelse| Referanse til en side eller et dokument som beskriver distribusjonen
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
+
+== Distribusjon: nedlastningslenke [[distribusjon-nedlastningslenke]]
+
+[cols="30s,70d"]
+|===
+|URI| dcat:downloadURL
+|Range| rdfs:Resource
+|Beskrivelse| Direktelenke (URL) til en nedlastbar fil i et gitt format
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
+
+== Distribusjon: språk [[distribusjon-sprak]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:language
+|Range| dct:LinguisticSystem
+|Beskrivelse| Referanse til språk som er brukt i distribusjonen
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
+
+== Distribusjon: samsvarer med [[distribusjon-samsvarer-med]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:conformsTo
+|Range| dct:Standard
+|Beskrivelse| Referanse til et etablert skjema som distribusjonen er i samsvar med
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
+
+== Distribusjon: utgivelsesdato [[distribusjon-utgivelsesdato]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:issued
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Dato for formell utgivelse/publisering av distribusjonen
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
+
+== Distribusjon: rettigheter [[distribusjon-rettigheter]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:rights
+|Range| dct:RightsStatement
+|Beskrivelse| Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
+
+== Distribusjon: status [[distribusjon-status]]
+
+[cols="30s,70d"]
+|===
+|URI| adms:status
+|Range| skos:Concept
+|Beskrivelse| Distribusjonens modenhet (fullført, under utvikling, utgått, trekt tilbake)
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
+
+== Distribusjon: tittel [[distribusjon-tittel]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:title
+|Range| rdfs:Literal
+|Beskrivelse| Navn på distribusjonen
+|Kardinalitet| 0..n
+|Status| Valgfri
+|===
+
+== Distribusjon: endringsdato [[distribusjon-endringsdato]]
+
+[cols="30s,70d"]
+|===
+|URI| dct:modified
+|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
+|Beskrivelse| Dato for siste endring av distribusjonen
+|Kardinalitet| 0..1
+|Status| Valgfri
+|===
