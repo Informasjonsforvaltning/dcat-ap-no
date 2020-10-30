@@ -19,8 +19,9 @@ NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-*Status*: [yellow-background]#Forberedende, rett før endelig publisering av v.2.0# +
-*Publisert*: [yellow-background]#Løpende oppdatert inntil endelig publisering# +
+*Status*: Gjeldende +
+*Versjon*: 2.0 +
+*Publisert*: 2020-10-29 +
 *Gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no +
 *Forrige versjon*: https://data.norge.no/specification/dcat-ap-no/v1.1/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/

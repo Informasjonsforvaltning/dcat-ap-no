@@ -233,6 +233,19 @@ http://publications.europa.eu/resource/authority/datatheme
 
 I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.
 
+=== For egenskapen dct:spatial [[Bør-brukes-for-spatial]]
+
+[cols="30s,70d"]
+|===
+|URI til egenskapen|dct:spatial
+|Brukt i klasse|<<Datasett-dekningsområde, Datasett (`dcat:Dataset`)>>; <<Katalog-dekningsområde, Katalog (`dcat:Catalog`)>>; <<OffentligOrganisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganization`)>>; <<OffentligTjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
+|Navn på vokabularet|https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter]
+|URI til vokabularet|Fylke https://data.geonorge.no/administrativeEnheter/fylke/id/; +
+Kommune https://data.geonorge.no/administrativeEnheter/kommune/id/
+|Status| Anbefalt
+|Kommentar | Norsk utvidelse - https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] bør brukes i tillegg til det som er nevnt under <<Skal-brukes-for-theme, Kontrollerte vokabularer som skal brukes>>.
+|===
+
 === For egenskapen cv:thematicArea [[Bør-brukes-for-thematicArea]]
 
 [cols="30s,70d"]

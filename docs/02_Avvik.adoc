@@ -32,11 +32,12 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
 4+|*Krav til bruk av kontrollerte vokabularer*
 |Egenskap dct:format |dct:format | "Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) | For å ha konsistens mellom kravene for denne egenskapen
 |Egenskap dct:license | dct:license | "Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) og Katalog (dcat:Catalog) |For å ha konsistens mellom kravene for denne egenskapen
+|Egenskap dct:spatial | dct:spatial | https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] er anbefalt brukt | For å kunne referere til dekningsområder i Norge
 |Egenskap adms:status | adms:status | "Skal brukes"-kravet gjelder også Katalogpost (dcat:CatalogRecord) og Offentlig tjeneste (cpsv:PublicService) | For å ha konsistens mellom kravene for denne egenskapen
-|Egenskap cv:thematicArea | cv:thematicArea | https://psi.norge.no/los/struktur.html[Los] er føyet til som et "Bør brukes"-krav | For å kunne bruke norske Los
+|Egenskap cv:thematicArea | cv:thematicArea | https://psi.norge.no/los/struktur.html[Los] er anbefalt brukt | For å kunne bruke norske Los
 |Egenskap dcat:theme | dcat:theme |"Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) og Katalog (dcat:Catalog) | For å ha konsistens mellom kravene for denne egenskapen
-|Egenskap dcat:theme | dcat:theme | https://psi.norge.no/los/struktur.html[Los] er føyet til som et "Bør brukes"-krav | For å kunne bruke norske Los
-|Egenskap dcat:themeTaxonomy | dcat:themeTaxonomy | https://psi.norge.no/los/struktur.html[Los] er føyet til som et "Bør brukes"-krav | For å kunne bruke norske Los
+|Egenskap dcat:theme | dcat:theme | https://psi.norge.no/los/struktur.html[Los] er anbefalt brukt | For å kunne bruke norske Los
+|Egenskap dcat:themeTaxonomy | dcat:themeTaxonomy | https://psi.norge.no/los/struktur.html[Los] er anbefalt brukt | For å kunne bruke norske Los
 |Egenskap dct:type | dct:type | "Bør brukes"-krav føyet til for  Datasett (dcat:Dataset) | For å kunne referere felles, predefinerte datasett-typer
 |Egenskap dct:type | dct:type | "Bør brukes"-krav føyet til for Regel (cpsv:Rule) | For å kunne referere felles, predefinerte regel-typer
 |===
