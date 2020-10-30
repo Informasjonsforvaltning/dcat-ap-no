@@ -1,0 +1,29 @@
+= Relasjon (dcat:Relationship) [[Relasjon]]
+
+Klassen _Relasjon_ er valgfri.
+
+== Obligatoriske egenskaper for klassen _Relasjon_ [[Relasjon-obligatoriske-egenskaper]]
+
+=== Relasjon: relasjon (dct:relation) [[Relasjon-relasjon]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| relation
+|URI| dct:relation
+|Range| rdfs:Resource
+|Beskrivelse| Refererer til ressursen som har relasjon til kilderessursen.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===
+
+=== Relasjon: rolle (dcat:hadRole) [[Relasjon-rolle]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| had role
+|URI| dcat:hadRole
+|Range| dcat:Role
+|Beskrivelse| Refererer til funksjonen til en enhet eller aktør i forhold til en annen enhet eller ressurs.
+|Multiplisitet| 1..n
+|Status| Obligatorisk
+|===

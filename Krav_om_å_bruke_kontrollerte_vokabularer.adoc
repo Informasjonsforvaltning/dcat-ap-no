@@ -1,0 +1,3 @@
+= Krav om å bruke kontrollerte vokabularer [[Krav-om-bruk-av-kontollerte-vokabularer]]
+
+IMPORTANT: For noen egenskaper er det obligatorisk og/eller anbefalt å bruke gitte kontrollerte vokabularer. Kravene er samlet under <<Kontrollerte-vokabularer-som-skal-brukes, Kontrollerte vokabularer som skal brukes>> og <<Kontrollerte-vokabularer-som-bør-og-kan-brukes, Kontrollerte vokabularer som bør og kan brukes>>. 

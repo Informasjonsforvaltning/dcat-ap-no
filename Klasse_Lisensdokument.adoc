@@ -1,0 +1,17 @@
+= Lisensdokument (dct:LicenseDocument) [[Lisensdokument]]
+
+Klassen _Lisensdokument_ er anbefalt.
+
+== Anbefalte egenskaper for klassen _Lisensdokument_ [[Lisensdokument-anbefalte-egenskaper]]
+
+=== Lisensdokument: lisenstype (dct:type) [[Lisensdokument-lisenstype]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| licence type
+|URI| dct:type
+|Range| skos:Concept
+|Beskrivelse| Refererer til type lisens, f.eks. som indikerer "fri bruk" (Public Domain) eller "royalties kreves". Egenskapen kan gjentas i de tilfellene der flere lisenstyper gjelder for et lisensdokument.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===

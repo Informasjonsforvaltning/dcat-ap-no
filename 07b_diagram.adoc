@@ -1,8 +1,7 @@
-= Diagram
+= UML-diagram [[UML-diagram]]
 
-UML-diagram over alle klassene og egenskapene i DCAT-AP-NO
+UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.0
 
-image::images/dcat-ap-no-1.1p3.png[]
+image::images/DCATAPNO2UML2.png[]
 
-link:images/dcat-ap-no-1.1p3.png[Last ned diagram som png].
-link:files/dcat-ap-no-1.1p3.uxf[Last ned diagram som uxf].
+Last ned modell: link:images/DCATAPNO2UML2.png[png] |  link:files/DCAT-AP-NO_v2.eap[XMI for EA]

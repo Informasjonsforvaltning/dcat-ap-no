@@ -1,72 +1,97 @@
-= Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)
-Direktoratet for forvaltning og IKT - Versjon 1.1
+include::locale/attributes.adoc[]
+= Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
 :doctype: book
 :docinfo:
 :icons: font
 :toc: left
 :toc-title: Innholdsfortegnelse
-:toclevels: 3
+:toclevels: 4
 :sectlinks:
-
-:leveloffset: +1
 :table-stripes: even
+:leveloffset: +1
+:title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
-Status: Gjeldende +
-Publisert: 11.10.2016 +
-Lenke til siste versjon: https://data.norge.no/specification/dcat-ap-no/ +
+image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
-Dette dokumentet beskriver “Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)” som skal sikre at beskrivelser av offentlige data utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
+include::shared/download.adoc[]
 
-NOTE: *En ny versjon av denne standarden er under utvikling og vil bli lagt ut på høring i løpet av høsten 2020*
-Lenke til arbeidsdokument for versjon 2.0: (lenke kommer)
-
-*Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/informasjonsforvaltning/dcat-ap-no/issues[Github Issues]. Dersom man ikke allerede har bruker på Github kan man opprette bruker gratis. +
- +
- *Test datakatalogen din med Digitaliseringsdirektoratets valideringsverktøy:* +
- Digitaliseringsdirektoratet har utviklet https://difi.github.io/dcat-ap-no-validator/[en online validator for testing av DCAT-AP-NO-datakataloger]
+NOTE: *Innmelding av feil og mangler:* +
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-include::introduksjon.adoc[]
+*Status*: Gjeldende +
+*Versjon*: 2.0 +
+*Publisert*: 2020-10-29 +
+*Gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no +
+*Forrige versjon*: https://data.norge.no/specification/dcat-ap-no/v1.1/ +
+*Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/
+
+
+include::01_Introduksjon.adoc[]
 
 include::03_Omfang_og_avgrensing.adoc[]
 
 include::04_Forvaltningsregime.adoc[]
 
-include::05_Ord_uttrykk_forkortelser.adoc[]
+include::04b_Om_kravene.adoc[]
 
-include::06_Oversikt_over_klasser_i_standarden.adoc[]
-
-include::07_Oversikt_over_URIer_i_bruk.adoc[]
+include::07_Oversikt_over_URIer.adoc[]
 
 include::07b_diagram.adoc[]
+
+include::06_Oversikt_over_klasser.adoc[]
 
 = Egenskaper pr. klasse
 
 :leveloffset: +1
 
-include::08_Egenskaper_for_klassen_datakatalog.adoc[]
+include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
 
-include::09_Egenskaper_for_klassen_Katalogpost.adoc[]
+include::Klasse_Aktor.adoc[]
 
-include::10_Egenskaper_for_klassen_Datasett.adoc[]
+include::Klasse_Datasett.adoc[]
 
-include::11_Egenskaper_for_klassen_Distribusjon.adoc[]
+include::Klasse_Datatjeneste.adoc[]
 
-include::12_Egenskaper-for_klassen_Enhet.adoc[]
+include::Klasse_Distribusjon.adoc[]
 
-include::13_Egenskaper_for_klassen_Kategoriskjema.adoc[]
+include::Klasse_Dokument.adoc[]
 
-include::14_Egenskaper_for_klassen_Kategori.adoc[]
+include::Klasse_Identifikator.adoc[]
 
-include::15_Egenskaper_for_klassen_Lisensdokument.adoc[]
+include::Klasse_Katalog.adoc[]
 
-include::15i_Egenskaper_for_klassen_Sjekksum.adoc[]
+include::Klasse_Katalogpost.adoc[]
 
-include::16_Egenskaper_for_klassen_Tidsperiode.adoc[]
+include::Klasse_Lisensdokument.adoc[]
 
+include::Klasse_Lokasjon.adoc[]
+
+include::Klasse_Offentlig_organisasjon.adoc[]
+
+include::Klasse_Offentlig_tjeneste.adoc[]
+
+include::Klasse_Regel.adoc[]
+
+include::Klasse_Regulativ_ressurs.adoc[]
+
+include::Klasse_Relasjoner.adoc[]
+
+include::Klasse_Sjekksum.adoc[]
+
+include::Klasse_Standard.adoc[]
+
+include::Klasse_Tema.adoc[]
+
+include::Klasse_Tematisk_skjema.adoc[]
+
+include::Klasse_Tidsrom.adoc[]
 
 
 :leveloffset: -1
 
-include::17_Kontrollerte_vokabular.adoc[]
+include::22_Kontrollerte_vokabular.adoc[]
+
+include::02_Avvik.adoc[]
+
+include::XX_endringslogg.adoc[]
