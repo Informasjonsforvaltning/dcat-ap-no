@@ -968,6 +968,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Kontrollerte-vokabularer-som-bør-og-kan-brukes">Kontrollerte vokabularer som bør og kan brukes</a>
 <ul class="sectlevel3">
+<li><a href="#Bør-brukes-for-spatial">For egenskapen dct:spatial</a></li>
 <li><a href="#Bør-brukes-for-thematicArea">For egenskapen cv:thematicArea</a></li>
 <li><a href="#Bør-brukes-for-theme">For egenskapen dcat:theme</a></li>
 <li><a href="#Bør-brukes-for-themeTaxonomy">For egenskapen dcat:themeTaxonomy</a></li>
@@ -1019,8 +1020,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: <span class="yellow-background">Forberedende, rett før endelig publisering av v.2.0</span><br>
-<strong>Publisert</strong>: <span class="yellow-background">Løpende oppdatert inntil endelig publisering</span><br>
+<p><strong>Status</strong>: Gjeldende<br>
+<strong>Versjon</strong>: 2.0<br>
+<strong>Publisert</strong>: 2020-10-29<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no/v1.1/" class="bare">https://data.norge.no/specification/dcat-ap-no/v1.1/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/" class="bare">https://informasjonsforvaltning.github.io/dcat-ap-no/</a></p>
@@ -9445,6 +9447,42 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <p>I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordres virksomheter til å publisere og bruke ytterligere regionale eller domenespesifikke vokabularer som er tilgjengelige på internett. Selv om de ikke alltid blir gjenkjent og brukt av generelle implementeringer av standarden, kan de bidra til å øke samhandlingsevne på tvers av applikasjoner innenfor samme domene.</p>
 </div>
 <div class="sect3">
+<h4 id="Bør-brukes-for-spatial"><a class="link" href="#Bør-brukes-for-spatial">For egenskapen dct:spatial</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til egenskapen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Brukt i klasse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Datasett-dekningsområde">Datasett (<code>dcat:Dataset</code>)</a>; <a href="#Katalog-dekningsområde">Katalog (<code>dcat:Catalog</code>)</a>; <a href="#OffentligOrganisasjon-dekningsområde">Offentlig organisasjon (<code>cv:PublicOrganization</code>)</a>; <a href="#OffentligTjeneste-dekningsområde">Offentlig tjeneste (<code>cpsv:PublicService</code>)</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fylke <a href="https://data.geonorge.no/administrativeEnheter/fylke/id/" class="bare">https://data.geonorge.no/administrativeEnheter/fylke/id/</a>;<br>
+Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" class="bare">https://data.geonorge.no/administrativeEnheter/kommune/id/</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Status</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> bør brukes i tillegg til det som er nevnt under <a href="#Skal-brukes-for-theme">Kontrollerte vokabularer som skal brukes</a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
 <h4 id="Bør-brukes-for-thematicArea"><a class="link" href="#Bør-brukes-for-thematicArea">For egenskapen cv:thematicArea</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -9796,6 +9834,12 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For å ha konsistens mellom kravene for denne egenskapen</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap dct:spatial</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> er anbefalt brukt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne referere til dekningsområder i Norge</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap adms:status</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">"Skal brukes"-kravet gjelder også Katalogpost (dcat:CatalogRecord) og Offentlig tjeneste (cpsv:PublicService)</p></td>
@@ -9804,7 +9848,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap cv:thematicArea</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cv:thematicArea</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> er føyet til som et "Bør brukes"-krav</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> er anbefalt brukt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne bruke norske Los</p></td>
 </tr>
 <tr>
@@ -9816,13 +9860,13 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap dcat:theme</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:theme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> er føyet til som et "Bør brukes"-krav</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> er anbefalt brukt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne bruke norske Los</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap dcat:themeTaxonomy</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:themeTaxonomy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> er føyet til som et "Bør brukes"-krav</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html">Los</a> er anbefalt brukt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne bruke norske Los</p></td>
 </tr>
 <tr>
@@ -10309,7 +10353,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2020-10-28 14:25:01 UTC
+Sist oppdatert 2020-10-30 11:15:41 UTC
 </div>
 </div>
 </body>
