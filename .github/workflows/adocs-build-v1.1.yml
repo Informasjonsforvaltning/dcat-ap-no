@@ -3,7 +3,7 @@ name: build adocs
 on:
   push:
     branches:
-    - master
+    - v1.1
 jobs:
   adoc_build:
     runs-on: ubuntu-18.04
@@ -28,3 +28,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: html
         publish_dir: ./docs
+        destination_dir: ./v1.1

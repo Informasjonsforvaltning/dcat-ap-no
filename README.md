@@ -7,7 +7,7 @@ Høringsutkast (under arbeid): https://informasjonsforvaltning.github.io/dcat-ap
 
 Standarden er under revisjon høsten 2019. Meld inn behov som Issues innen 1. september 2019.
 
-Endringer i forbindelse med revisjonsprosessen utføres mot "review"-greina og blir eksponert i html her https://informasjonsforvaltning.github.io/dcat-ap-no/  
+Endringer i forbindelse med revisjonsprosessen utføres mot "develop"-greina og blir eksponert i html her https://informasjonsforvaltning.github.io/dcat-ap-no/  
 
 Tekst formateres som AsciiDoc. Se detaljer om syntaks her: https://asciidoctor.org/docs/asciidoc-syntax-quick-reference/
 

@@ -3,7 +3,7 @@ name: build adocs
 on:
   push:
     branches:
-    - review
+    - develop
 jobs:
   adoc_build:
     runs-on: ubuntu-18.04
