@@ -1,0 +1,17 @@
+= Identifikator (adms:Identifier) [[Identifikator]]
+
+Klassen _Identifikator_ er valgfri.
+
+== Obligatoriske egenskaper for klassen _Identifikator_ [[Identifikator-obligatoriske-egenskaper]]
+
+=== Identifikator: notasjon (skos:notation) [[Identifikator-notasjon]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| notation
+|URI| skos:notation
+|Range| rdfs:Literal typed with the URI of one of the members of the DataCite Resource Identifier Scheme
+|Beskrivelse| Identifikator i henhold til nevnte identifikatorskjema.
+|Multiplisitet| 1..1
+|Status| Obligatorisk
+|===
