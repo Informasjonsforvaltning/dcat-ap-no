@@ -1,0 +1,192 @@
+= Offentlig tjeneste (cpsv:PublicService) [[OffentligTjeneste]]
+
+Klassen _Offentlig tjeneste_ er anbefalt.
+
+== Obligatoriske egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-obligatoriske-egenskaper]]
+
+=== Offentlig tjeneste: beskrivelse (dct:description) [[OffentligTjeneste-beskrivelse]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|description
+|URI|dct:description
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å beskrive tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere ulike språk/målformer.
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|===
+
+=== Offentlig tjeneste: har kompetent organ (cv:hasCompetentAuthority) [[OffentligTjeneste-harKompetentOrgan]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|has competent authority
+|URI|cv:hasCompetentAuthority
+|Range|cv:PublicOrganization
+|Beskrivelse|Brukes til å referere til organet som har ansvaret for tjenesten.
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|Kommentar|Begrepet ‘competent authority’ er definert i Services Directive (2006/123/EC) som: “any body or authority which has a supervisory or regulatory role in a Member State in relation to service activities, including, in particular, administrative authorities, including courts acting as such, professional bodies, and those professional associations or other professional organisations which, in the exercise of their legal autonomy, regulate in a collective manner access to service activities or the exercise thereof”.
+|===
+
+=== Offentlig tjeneste: identifikator (dct:identifier) [[OffentligTjeneste-identifikator]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|identifier
+|URI|dct:identifier
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til å oppgi en formell identifikasjon til tjenesten.
+|Multiplisitet|1..1
+|Status|Obligatorisk
+|===
+
+=== Offentlig tjeneste: tittel (dct:title) [[OffentligTjeneste-tittel]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|title
+|URI|dct:title
+|Range|rdfs:Literal
+|Beskrivelse|Brukes til det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes i flere ulike språk/målformer.
+|Multiplisitet|1..n
+|Status|Obligatorisk
+|===
+
+== Anbefalte egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-anbefalte-egenskaper]]
+
+=== Offentlig tjeneste: dekningsområde (dct:spatial) [[OffentligTjeneste-dekningsområde]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|spatial coverage
+|URI|dct:spatial
+|Range|dct:Location
+|Beskrivelse|Brukes til å referere til et geografisk eller administrativt område som dekkes av tjenesten.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+=== Offentlig tjeneste: er del av (dct:isPartOf) [[OffentligTjeneste-erDelAv]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|is part of
+|URI|dct:isPartOf
+|Range|cpsv:PublicService
+|Beskrivelse|Brukes til å referere til en annen tjeneste som denne tjenesten er en del av.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+=== Offentlig tjeneste: har del (dct:hasPart) [[OffentligTjeneste-harDel]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|has part
+|URI|dct:hasPart
+|Range|cpsv:PublicService
+|Beskrivelse|Brukes til å referere til en tjeneste som er inkludert enten fysisk eller logisk i tjenesten som beskrives.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+=== Offentlig tjeneste: hjemmeside (foaf:homepage) [[OffentligTjeneste-hjemmeside]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|homepage
+|URI|foaf:homepage
+|Range|foaf:Document
+|Beskrivelse|Brukes til å referere til hjemmesiden til tjenesten. Bør gjentas når tjenesten er beskrevet i flere ulike språk/målformer.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer.
+|===
+
+=== Offentlig tjeneste: produserer (dataressurser) (cpsv:produces) [[OffentligTjeneste-produserer]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|produces (data resource)
+|URI|cpsv:produces
+|Range|cv:Output, described as a dcat:Catalog, a dcat:Dataset or a dcat:DataService
+|Beskrivelse|Brukes til å definere output av tjenesten. Outputen skal dessuten beskrives som en katalog (`dcat:Catalog`), et datasett (`dcat:Dataset`) eller en datatjeneste (`dcat:DataService`).
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+=== Offentlig tjeneste: status (adms:status) [[OffentligTjeneste-status]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|status
+|URI|adms:status
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til status til tjenesten (f.eks. aktiv, inaktiv, under utvikling osv.) i henhold til et predefinert kontrollert vokabular.
+|Multiplisitet|0..1
+|Status|Anbefalt
+|===
+
+=== Offentlig tjeneste: temaområde (cv:thematicArea) [[OffentligTjeneste-temaområde]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|thematic area
+|URI|cv:thematicArea
+|Range|skos:Concept
+|Beskrivelse|Brukes til å referere til primært temaområde som dekkes av tjenesten.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+=== Offentlig tjeneste: type (dct:type) [[OffentligTjeneste-type]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|type
+|URI|dct:type
+|Range|skos:Concept
+|Beskrivelse|Brukes til å indikere type tjeneste i henhold til et kontrollert vokabular.
+|Multiplisitet|0..n
+|Status|Anbefalt
+|===
+
+== Valgfrie egenskaper for klassen _Offentlig tjeneste_ [[OffentligTjeneste-valgfrie-egenskaper]]
+
+=== Offentlig tjeneste: følger (cpsv:follows) [[OffentligTjeneste-følger]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|follows
+|URI|cpsv:follows
+|Range|cpsv:Rule
+|Beskrivelse|Brukes til å referere til regelen under hvilken tjenesten tilbys.
+|Multiplisitet|0..n
+|Status|Valgfri
+|===
+
+=== Offentlig tjeneste: har kontaktpunkt (cv:hasContactPoint) [[OffentligTjeneste-harKontaktpunkt]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|has contact point
+|URI|cv:hasContactPoint
+|Range|schema:ContactPoint
+|Beskrivelse|Brukes til å referere til kontaktpunkt for tjenesten. Denne kontaktinformasjonen bør være relevant for tjenesten og kan være ulik kontaktinformasjonen for den ansvarlige organisasjonen (competent authority).
+|Multiplisitet|0..n
+|Status|Valgfri
+|Kommentar|For å være kompatibel med CPSV-AP, har BRegDCAT-AP valgt en annen måte å representere kontaktpunkt på her i denne klassen, enn for f.eks. klassen Datasett (dcat:Dataset).
+|===
+
+=== Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResouce) [[OffentligTjeneste-harRegulativRessurs]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn|has legal resource
+|URI|cv:hasLegalResouce
+|Range|eli:LegalResource
+|Beskrivelse|Brukes til å referere til en regulativ ressurs som tjenesten er relatert til eller har som sin juridiske ramme.
+|Multiplisitet|0..n
+|Status|Valgfri
+|===
