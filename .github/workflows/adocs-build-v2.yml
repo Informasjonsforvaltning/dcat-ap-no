@@ -28,3 +28,4 @@ jobs:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_branch: html
         publish_dir: ./docs
+        destination_dir: ./v2

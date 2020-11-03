@@ -1,0 +1,18 @@
+name: build slash
+
+on:
+  push:
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    name: deploy index.html
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_branch: html
+        publish_dir: ./slash
+        destination_dir: .
