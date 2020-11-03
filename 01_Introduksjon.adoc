@@ -1,7 +1,0 @@
-= Innledning [[Innledning]]
-
-Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett og datatjenester, og å lette søk etter datasett og datatjenester. Standarden vil gjelde datasett og datatjenester som forvaltes av offentlig sektor, og som beskrives med tanke på oppføring i en katalog eller «inventarliste». Privat sektor kan også gjerne bruke standarden til å beskrive sine datasett og datatjenester. Standarden vil støtte søking i og deling av datasett på tvers av offentlig sektor (gjenbruk) og legge til rette for viderebruk i privat sektor. Standarden er således nyttig både for offentlig sektor selv og for næringsliv og sivilsamfunn for øvrig.
-
-Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: http://www.w3.org/TR/swbp-vocab-pub/[Best Practice Recipes for Publishing RDF Vocabularies], http://www.w3.org/TR/ld-bp[Best Practices for Publishing Linked Data] og ISA-rapporten https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris[10 Rules for Persistent URIs]. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden, se https://www.difi.no/referansekatalogen/pekere-til-offentlige-ressurser-pa-nett[anbefalt standard for pekere til offentlige ressurser på nett i Referansekatalogen].
-
-Klasser og egenskaper er i denne standarden gitt norske navn. Siden standarden legger til rette for internasjonal utveksling, skal engelske egenskapsnavn i form av URIer benyttes.
