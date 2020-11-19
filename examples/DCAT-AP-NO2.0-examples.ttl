@@ -285,7 +285,7 @@ dqvno:rateOfMissingObjects rdf:type owl:NamedIndividual ,
                                        :qmRateMissingObjects ;
              dct:description "An example dataset."@en ,
                              "Et eksempeldatasett."@nb ;
-             dct:identifier "https://exampledatasets.org/examples/dqvExamples#" ;
+             dct:identifier <https://exampledatasets.org/examples/dqvExamples#> ;
              dct:title "Buildings - an example dataset"@en ,
                        "Bygninger - et eksempeldatasett"@nb .
 
@@ -296,7 +296,7 @@ dqvno:rateOfMissingObjects rdf:type owl:NamedIndividual ,
            dcat:dataset :dsBuildings ;
            dct:description "An example catalog"@en ,
                            "En eksempelkatalog"@nb ;
-           dct:identifier dcat:Catalog ;
+           dct:identifier <https://examples.org/dcatno_Examples#exCatalog> ;
            dct:title "Eksempelkatalog"@nb ,
                      "Example catalog"@en .
 
