@@ -291,7 +291,8 @@ dqvno:rateOfMissingObjects rdf:type owl:NamedIndividual ,
 
 
 ###  https://examples.org/dcatno_Examples#exCatalog
-:exCatalog rdf:type owl:NamedIndividual ;
+:exCatalog rdf:type owl:NamedIndividual ,
+                    dcat:Catalog ;
            dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
            dcat:dataset :dsBuildings ;
            dct:description "An example catalog"@en ,
