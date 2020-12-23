@@ -13,7 +13,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Range|dct:Location
 |Beskrivelse|Brukes til å referere til et geografisk eller administrativt område dekket av organisasjonen.
 |Multiplisitet|1..n
-|Status|Obligatorisk
+|Kravsnivå|Obligatorisk
 |===
 
 === Offentlig organisasjon: foretrukket navn (skos:prefLabel) [[OffentligOrganisasjon-foretrukketNavn]]
@@ -25,7 +25,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi det foretrukne navnet til organisasjonen. Denne egenskapen bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet|1..n
-|Status|Obligatorisk
+|Kravsnivå|Obligatorisk
 |Kommentar| I BRegDCAT-AP er både denne egenskap (`skos:prefLabel`) og <<OffentligOrganisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`) obligatoriske. For at DCAT-AP-NO skal være kompatibel med BRegDCAT-AP er begge disse også obligatoriske i DCAT-AP-NO. Vi anbefaler å bruke denne egenskapen (`skos:prefLabel`) primært og gjenta navnet i <<OffentligOrganisasjon-navn, Offentlig organisasjon: navn>> (`dct:title`). Gjentagelsen kan typisk håndteres av en dataapplikajson.
 |===
 
@@ -38,7 +38,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Range|rdfs:Literal
 |Beskrivelse|Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
 |Multiplisitet|1..1
-|Status|Obligatorisk
+|Kravsnivå|Obligatorisk
 |===
 
 === Offentlig organisasjon: navn (dct:title) [[OffentligOrganisasjon-navn]]
@@ -50,7 +50,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi navnet til organisasjonen.
 |Multiplisitet|1..1
-|Status|Obligatorisk
+|Kravsnivå|Obligatorisk
 |Kommentar|Denne egenskapen er satt obligatorisk i BRegDCAT-AP for å være kompatibel med CPSV-AP.
 
 Se kommentaren til <<OffentligOrganisasjon-foretrukketNavn, Offentlig organisasjon: foretrukket navn>>.
@@ -67,7 +67,7 @@ Se kommentaren til <<OffentligOrganisasjon-foretrukketNavn, Offentlig organisasj
 |Range|locn:Address
 |Beskrivelse|Brukes til å oppgi en adresse til organisasjonen.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |===
 
 === Offentlig organisasjon: hjemmeside (foaf:homepage) [[OffentligOrganisasjon-hjemmeside]]
@@ -79,7 +79,7 @@ Se kommentaren til <<OffentligOrganisasjon-foretrukketNavn, Offentlig organisasj
 |Range|foaf:Document
 |Beskrivelse|Brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes i flere ulike språk/målformer.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer.
 |===
 
@@ -92,5 +92,5 @@ Se kommentaren til <<OffentligOrganisasjon-foretrukketNavn, Offentlig organisasj
 |Range|skos:Concept
 |Beskrivelse|Brukes til å indikere klassifisering av organisasjonen i henhold til et klassifikasjonsskjema.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |===
