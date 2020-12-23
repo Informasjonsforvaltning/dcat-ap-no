@@ -62,7 +62,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |URI til egenskapen|dct:creator
 |Brukt i klasse|<<Datasett-produsent, Datasett (`dcat:Dataset`)>>; <<Katalog-produsent, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body[Corporate Bodies Named Authority List]
-|URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body
+|URI til vokabularet|http://publications.europa.eu/resource/authority/corporate-body
 |Status|Obligatorisk
 |Kommentar|DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes _hvis_ organisasjonen er på listen.
 |===
@@ -97,7 +97,7 @@ Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= oblig
 |URI til egenskapen|dct:license
 |Brukt i klasse|<<Datatjeneste-lisens, Datatjeneste (`dcat:DataService`)>>; <<Distribusjon-lisens, Distribusjon (`dcat:Distribution`)>>; <<Katalog-lisens, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/licence[Licences Named Authority List]
-|URI til vokabularet|http://publications.europa.eu/resource/dataset/licence
+|URI til vokabularet|http://publications.europa.eu/resource/authority/licence
 |Kommentar|Norsk utvidelse - gjelder også Datatjeneste (`dcat:DataService`) og Katalog (`dcat:Catalog`).
 
 Kravet fra EU er forklart slik: "This vocabulary must be used in case the licence [...] is internationally recognised and included in the EU Publications Office NAL."
@@ -121,7 +121,7 @@ Kravet fra EU er forklart slik: "This vocabulary must be used in case the licenc
 |URI til egenskapen|dct:publisher
 |Brukt i klasse|<<Datasett-utgiver, Datasett (`dcat:Dataset`)>>; <<Datatjeneste-utgiver, Datatjeneste (`dcat:DataService`)>>; <<Katalog-utgiver, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/corporate-body[Corporate Bodies Named Authority List]
-|URI til vokabularet|http://publications.europa.eu/resource/dataset/corporate-body
+|URI til vokabularet|http://publications.europa.eu/resource/authority/corporate-body
 |Status|Obligatorisk
 |Kommentar|DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes _hvis_ organisasjonen er på listen.
 |===
@@ -138,9 +138,9 @@ https://data.europa.eu/euodp/en/data/dataset/country[Countries Named Authority L
 https://data.europa.eu/euodp/en/data/dataset/place[Places Named Authority List]; +
 http://sws.geonames.org/[GeoNames] (GeoNames er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på)
 |URI til vokabularet|
-http://publications.europa.eu/resource/dataset/continent; +
-http://publications.europa.eu/resource/dataset/country; +
-http://publications.europa.eu/resource/dataset/place; +
+http://publications.europa.eu/resource/authority/continent; +
+http://publications.europa.eu/resource/authority/country; +
+http://publications.europa.eu/resource/authority/place; +
 http://sws.geonames.org/[http://sws.geonames.org/]
 |Status|Obligatorisk
 |===
@@ -164,7 +164,7 @@ http://sws.geonames.org/[http://sws.geonames.org/]
 |URI til egenskapen|cv:thematicArea
 |Brukt i klasse|<<OffentligTjeneste-temaområde, Offentlig tjeneste (`cpsv:PublicService`)>>
 |Navn på vokabularet|https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc[EuroVoc]
-|URI til vokabularet|http://publications.europa.eu/resource/dataset/eurovoc
+|URI til vokabularet|http://publications.europa.eu/resource/authority/eurovoc
 |Kommentar|https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg.
 |Status|Obligatorisk
 |===
@@ -179,8 +179,8 @@ http://sws.geonames.org/[http://sws.geonames.org/]
 https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc[EuroVoc]; +
 https://data.europa.eu/euodp/en/data/dataset/data-theme[Data Theme Taxonomy Named Authority List]
 |URI til vokabularet|
-http://publications.europa.eu/resource/dataset/eurovoc; +
-http://publications.europa.eu/resource/authority/datatheme
+http://eurovoc.europa.eu/; +
+http://publications.europa.eu/resource/authority/data-theme
 |Kommentar|https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg.
 |Status|Obligatorisk
 |Kommentar|Norsk utvidelse - gjelder også Datatjeneste (`dcat:DataService`) og Katalog (`dcat:Catalog`)
@@ -193,7 +193,7 @@ http://publications.europa.eu/resource/authority/datatheme
 |URI til egenskapen|dcat:themeTaxonomy
 |Brukt i klasse|<<Katalog-temaer, Katalog (`dcat:Catalog`)>>
 |Navn på vokabularet|https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc[EuroVoc]
-|URI til vokabularet|http://publications.europa.eu/resource/dataset/eurovoc
+|URI til vokabularet|http://eurovoc.europa.eu/
 |Kommentar|https://psi.norge.no/los/struktur.html[Los] bør brukes i tillegg.
 |Status|Obligatorisk
 |===
@@ -289,7 +289,7 @@ Kommune https://data.geonorge.no/administrativeEnheter/kommune/id/
 |URI til egenskapen|dct:type
 |Brukt i klasse|<<Datasett-type, Datasett (`dcat:Dataset`)>>
 |Navn på vokabularet|https://data.europa.eu/euodp/en/data/dataset/dataset-type[Dataset type Named Authority List]
-|URI til vokabularet|http://publications.europa.eu/resource/dataset/dataset-type
+|URI til vokabularet|http://publications.europa.eu/resource/authority/dataset-type
 |Status|Anbefalt
 |Kommentar|Norsk utvidelse.
 |===
