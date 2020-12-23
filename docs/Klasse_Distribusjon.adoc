@@ -4,19 +4,6 @@ Klassen _Distribusjon_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Distribusjon_ [[Distribusjon-obligatoriske-egenskaper]]
 
-=== Distribusjon: format (dct:format) [[Distribusjon-format]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| format
-|URI| dct:format
-|Range| dct:MediaType
-|Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
-|Multiplisitet| 1..n
-|Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..*1* til 1..*n* (allerede i DCAT-AP-NO v.1.1).
-|===
-
 === Distribusjon: tilgangsURL (dcat:accessURL) [[Distribusjon-tilgangsurl]]
 
 [cols="30s,70d"]
@@ -40,6 +27,18 @@ Klassen _Distribusjon_ er anbefalt.
 |URI| dct:description
 |Range| rdfs:Literal
 |Beskrivelse| Fritekstbeskrivelse av distribusjonen. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
+|Multiplisitet| 0..n
+|Status| Anbefalt
+|===
+
+=== Distribusjon: format (dct:format) [[Distribusjon-format]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| format
+|URI| dct:format
+|Range| dct:MediaTypeOrExtent
+|Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet| 0..n
 |Status| Anbefalt
 |===
