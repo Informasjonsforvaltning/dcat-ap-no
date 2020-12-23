@@ -1,7 +1,16 @@
 = Endringslogg [[Endringslogg]]
 
+== Endringer fra versjon 2.0.0 til v.2.0.x [[Endringer_v2.0.x]]
 
-== Endringer fra versjon 1.1 til denne versjonen [[Endringer_fra_v1.1]]
+Fra v.2.0.0 til v.2.0.1:
+
+* Ledeteksten "Status" er endret til "Kravsnivå" i klasse- og egenskapsbeskrivelsestabellene. Dette fordi de aktuelle radene i tabellene sier hva slags krav det er (obligatorisk, anbefalt eller valgfri).
+
+* <<Distribusjon-format, dct:format i dcat:Distribution>>: Kravsnivå endret fra obligatorisk til anbefalt; multiplisitet endret fra 1..n til 0..n; range endret fra dct:MediaType til dct:MediaTypeOrExtent. Det er dermed ingen avvik fra BRegDCAT-AP for denne egenskap (aktuelle rader i avvikstabellen er slettet). Dette fordi det ikke finnes sterke nok grunner til å ha dette avviket.
+
+* Oppdatering av flere URIer til <<Kontrollerte-vokabularer-som-skal-brukes, kontrollerte vokabularer som skal brukes>> (hovedsakelig endret fra .../dataset/... til .../authority/...). Dette fordi de opprinnelige URIene oppgitt i BRegDCAT-AP pekte til ikke-RDF-formaterte ressuser.
+
+== Endringer fra versjon 1.1 til v.2.0.0 [[Endringer_fra_v1.1]]
 
 Tabellen under gir en oversikt over endringene i klasser og egenskaper, fra v.1.1 til denne versjonen av DCAT-AP-NO. Redaksjonelle justeringer av tekster (inkl. tekstlige beskrivelser, kommentarer og eksempler) er ikke tatt med i oversikten.
 
