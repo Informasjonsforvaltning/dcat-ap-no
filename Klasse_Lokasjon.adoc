@@ -12,7 +12,7 @@ Klassen _Lokasjon_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Refererer til et avgrenset område (bounding box) for en ressurs.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Lokasjon: geografisk midtpunkt (dcat:centroid) [[Lokasjon-geografisk-midtpunkt]]
@@ -24,7 +24,7 @@ Klassen _Lokasjon_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Refererer til et geografisk midtpunkt (centroid) for en ressurs.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 == Valgfrie egenskaper for klassen _Lokasjon_
@@ -38,7 +38,7 @@ Klassen _Lokasjon_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Denne egenskapen knytter ressursen til tilhørende geometri.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 NOTE: Vær oppmerksom på rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. +

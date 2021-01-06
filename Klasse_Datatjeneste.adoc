@@ -13,7 +13,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| rdfs:Resource
 |Beskrivelse| Rotplassering eller primært endepunkt for tjenesten (en URI).
 |Multiplisitet| 1..1
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |Kommentar | Norsk utvidelse - Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester.
 |===
 
@@ -26,7 +26,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Brukes til å oppgi identifikator til datatjenesten.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 === Datatjeneste: tittel (dct:title) [[Datatjeneste-tittel]]
@@ -38,7 +38,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Navn på datatjenesten. Bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 
@@ -53,7 +53,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder emneord (eller tag) som beskriver datatjenesten.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datatjeneste: endepunktsbeskrivelse (dcat:endpointDescription) [[Datatjeneste-endepunktsbeskrivelse]]
@@ -65,7 +65,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| rdfs:Resource
 |Beskrivelse| Denne egenskapen inneholder en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens dct:conformsTo brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datatjeneste: format (dct:format) [[Datatjeneste-format]]
@@ -77,7 +77,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range|dct:MediaType
 |Beskrivelse|Opplysing om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |Kommentar| Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å ha konsistens mellom distribusjon og datatjeneste.
 |===
 
@@ -90,7 +90,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| vcard:Kind
 |Beskrivelse| Referanse til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datatjeneste: tema (dcat:theme) [[Datatjeneste-tema]]
@@ -102,7 +102,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| skos:Concept
 |Beskrivelse| Referanse til et hovedtema for datatjenesten. En datatjeneste kan assosieres med flere tema.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datatjeneste: tilgjengeliggjør datasett (dcat:servesDataset) [[Datatjeneste-tilgjengeliggjor-datasett]]
@@ -114,7 +114,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| dcat:Dataset
 |Beskrivelse| Refererer til datasett som datatjenesten kan distribuere.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datatjeneste: utgiver (dct:publisher) [[Datatjeneste-utgiver]]
@@ -126,7 +126,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| foaf:Agent
 |Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher <\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673>`.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 
@@ -140,7 +140,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder en fritekstbeskrivelse av datatjenesten. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datatjeneste: dokumentasjon (foaf:page) [[Datatjeneste-dokumentasjon]]
@@ -151,7 +151,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| foaf:Document
 |Beskrivelse| Referanse til en side eller et dokument som beskriver datatjenesten.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datatjeneste: følger (cpsv:follows) [[Datatjeneste-følger]]
@@ -162,7 +162,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range|cpsv:Rule
 |Beskrivelse|Brukes til å referere til en regel som definerer den juridiske rammen for datatjenesten.
 |Multiplisitet|0..n
-|Status|Valgfri
+|Kravsnivå|Valgfri
 |===
 
 === Datatjeneste: i samsvar med (dct:conformsTo) [[Datatjeneste-i-samsvar-med]]
@@ -173,7 +173,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| dct:Standard
 |Beskrivelse| Referanse til en spesifikasjon eller standard som datatjenesten implementerer.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datatjeneste: landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
@@ -184,7 +184,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| foaf:Document
 |Beskrivelse| Referanse til nettside som gir tilgang til datatjenesten, dens distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datatjeneste: lisens (dct:license) [[Datatjeneste-lisens]]
@@ -195,7 +195,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| dct:LicenseDocument
 |Beskrivelse| Inneholder lisensen som datatjenesten blir gjort tilgjengelig under.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datatjeneste: tilgangsrettigheter (dct:accessRights) [[Datatjeneste-tilgangsrettigheter]]
@@ -206,7 +206,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| dct:RightsStatement
 |Beskrivelse| Denne egenskapen kan inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datatjeneste: type (dct:type) [[Datatjeneste-type]]
@@ -217,5 +217,5 @@ Klassen _Datatjeneste_ er valgfri.
 |Range| skos:Concept
 |Beskrivelse| Referanse til et begrep som identifiserer datatjenestens type.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===

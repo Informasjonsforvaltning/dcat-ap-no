@@ -16,7 +16,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 |Range| rdfs:Literal
 |Beskrivelse| Navn på aktøren. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 == Anbefalte egenskaper for klassen _Aktør_
@@ -30,7 +30,7 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 |Range| rdfs:Literal
 |Beskrivelse| Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Aktør: utgivertype (dct:type) [[Aktør-utgivertype]]
@@ -42,5 +42,5 @@ enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\htt
 |Range| skos:Concept
 |Beskrivelse| Refererer til type aktør som gjør katalogen og/eller ressursen tilgjengelig.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===

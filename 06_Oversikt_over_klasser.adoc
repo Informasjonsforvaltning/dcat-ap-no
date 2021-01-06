@@ -9,7 +9,7 @@
 | Engelsk navn | Agent
 | Beskrivelse | Brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. Dersom aktøren er en organisasjon er det anbefalt å bruke http://www.w3.org/TR/vocab-org/[Organization Ontology].
 | URI | http://xmlns.com/foaf/spec/#term_Agent[foaf:Agent]
-| Status | Obligatorisk
+| Kravsnivå | Obligatorisk
 |===
 
 === Katalog (dcat:Catalog) [[klasse-katalog]]
@@ -19,7 +19,7 @@
 | Engelsk navn | Catalogue
 | Beskrivelse | Brukes til å representere en katalog eller repository som inneholder beskrivelser av ressurser som f.eks. datasett og datatjenester.
 | URI | https://www.w3.org/TR/vocab-dcat/#Class:Catalog[dcat:Catalog]
-| Status | Obligatorisk
+| Kravsnivå | Obligatorisk
 |Kommentar| "Registry catalogue" er det engelske navnet til denne klassen i BRegDCAT-AP.
 |===
 
@@ -30,7 +30,7 @@
 | Engelsk navn | Catalogued resource
 | Beskrivelse | Brukes til å representere en ressurs som er beskrevet i en katalog.
 | URI | https://www.w3.org/TR/vocab-dcat/#Class:Resource[dcat:Resource]
-| Status | Obligatorisk
+| Kravsnivå | Obligatorisk
 | Kommentar | Dette er en abstrakt klasse som i en konkret anvendelse/serialisering skal erstattes med instans av Datasett (`dcat:Dataset`) eller Datatjeneste (`dcat:DataService`).
 |===
 
@@ -41,7 +41,7 @@
 | Engelsk navn | Literal
 | Beskrivelse | Brukes til å representere en literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som inneholder maskinlesbar tekst har en valgfri språk-tag, definert av https://www.rfc-editor.org/rfc/bcp/bcp47.txt[BCP47] (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk).
 | URI | https://www.w3.org/TR/rdf-concepts/#section-Literals[rdfs:Literal]
-| Status | Obligatorisk
+| Kravsnivå | Obligatorisk
 |===
 
 === Tema (skos:Concept) [[klasse-tema]]
@@ -51,7 +51,7 @@
 | Engelsk navn | Theme
 | Beskrivelse | Brukes til å representere et tema/temaområde for en ressurs beskrevet i en katalog.
 | URI | https://www.w3.org/TR/skos-reference/#concepts[skos:Concept]
-| Status | Obligatorisk
+| Kravsnivå | Obligatorisk
 |Kommentar | Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
 |===
 
@@ -62,7 +62,7 @@
 | Engelsk navn | Thematic scheme
 | Beskrivelse | Brukes til å representere en taksonomi eller en annen type kontrollert vokabular hvor temaet er definert.
 | URI | https://www.w3.org/TR/skos-reference/#schemes[skos:ConceptScheme]
-| Status | Obligatorisk
+| Kravsnivå | Obligatorisk
 | Kommentar| Norsk utvidelse. Endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1).
 |===
 
@@ -75,7 +75,7 @@
 |Engelsk navn | Dataset
 |Beskrivelse | Brukes til å representere et datasett.
 |URI | https://www.w3.org/TR/vocab-dcat/#Class:Dataset[dcat:Dataset]
-| Status | Anbefalt
+| Kravsnivå | Anbefalt
 |===
 
 === Distribusjon (dcat:Distribution) [[klasse-distribusjon]]
@@ -85,7 +85,7 @@
 | Engelsk navn | Distribution
 | Beskrivelse | Brukes til å representere en distribusjon.
 | URI | https://www.w3.org/TR/vocab-dcat/#Class:Distribution[dcat:Distribution]
-| Status | Anbefalt
+| Kravsnivå | Anbefalt
 |===
 
 === Lisensdokument (dct:LicenseDocument) [[klasse-lisensdokument]]
@@ -95,7 +95,7 @@
 | Engelsk navn | License document
 | Beskrivelse | Brukes til å representere et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/2012-06-14/#terms-LicenseDocument[dct:LicenseDocument]
-| Status | Anbefalt
+| Kravsnivå | Anbefalt
 |===
 
 === Offentlig organisasjon (cv:PublicOrganization) [[klasse-offentlig-organisasjon]]
@@ -105,7 +105,7 @@
 | Engelsk navn | Public organisation
 | Beskrivelse | Brukes til å representere en aktør som er ansvarlig for å yte en offentlig tjeneste.
 | URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cv:PublicOrganization]
-| Status | Anbefalt
+| Kravsnivå | Anbefalt
 |===
 
 === Offentlig tjeneste (cpsv:PublicService) [[klasse-offentlig-tjeneste]]
@@ -115,7 +115,7 @@
 | Engelsk navn | Public service
 | Beskrivelse | Brukes til å representere en offentlig tjeneste, bl.a. tjeneste som skaper og/eller forvalter grunndataregistre/basisregistre eller oversikter over registre (såkalt «register over register»).
 | URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cpsv:PublicService]
-| Status | Anbefalt
+| Kravsnivå | Anbefalt
 |Kommentar| "Public Registry Service" er det engelske navnet til denne klassen i BRegDCAT-AP.
 
 Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over offentlige tjensester utover datatjenester. Det er derfor ingen direkte kopling mellom klassene Offentlig tjeneste (`cv:PublicService`) og Katalog (`dcat:Catalog`).
@@ -129,7 +129,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Rule
 | Beskrivelse | Brukes til å representere regler/dokumenter som setter spesifikke retningslinjer eller prosedyrer som skal følges av en offentlig tjeneste, en datatjeneste, et datasett osv. Det kan inkludere krav til informasjon som forvaltes og tjenester som tilbys.
 | URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cpsv:Rule]
-| Status | Anbefalt
+| Kravsnivå | Anbefalt
 |===
 
 === Regulativ ressurs (eli:LegalResource) [[klasse-regulativ-ressurs]]
@@ -139,7 +139,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Legal resource
 | Beskrivelse | Brukes til å representere regelverk, policy, retningslinjer og ulike reguleringer som regulerer forvaltningen av en datatjeneste, et datasett eller en offentlig tjeneste.
 | URI | https://publications.europa.eu/en/publication-detail/-/publication/8159b75d-5efc-11e8-ab9c-01aa75ed71a1[eli:LegalResource]
-| Status | Anbefalt
+| Kravsnivå | Anbefalt
 |===
 
 
@@ -152,7 +152,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Data service
 | Beskrivelse | Brukes til å representere en samling av operasjoner som gir tilgang til ett eller flere datasett eller databehandlingsfunksjoner.
 | URI | https://www.w3.org/TR/vocab-dcat/#Class:Data_Service[dcat:DataService]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Dokument (foaf:Document) [[klasse-dokument]]
@@ -162,7 +162,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Document
 | Beskrivelse | Brukes til å representere en tekstlig ressurs som inneholder informasjon beregnet på mennesker. For eksempel en nettside om et datasett.
 | URI | http://xmlns.com/foaf/spec/#term_Document[foaf:Document]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Frekvens (dct:Frequency) [[klasse-frekvens]]
@@ -172,7 +172,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Frequency
 | Beskrivelse | Brukes til å beskrive hvor ofte noe skjer, for eksempel publisering av et datasett.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Frequency[dct:Frequency]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Identifikator (adms:Identifier) [[klasse-identifikator]]
@@ -182,7 +182,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Identifier
 | Beskrivelse | Brukes til å representere en identifikator i en bestemt kontekst, bestående av strengen som er identifikatoren; en valgfri identifikator for identifikatorsystemet; en valgfri identifikator for versjonen av identifikatorsystemet; en valgfri identifikator for etaten som administrerer identifikatorsystemet.
 | URI | http://www.w3.org/TR/vocab-adms/#identifier[adms:Identifier]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Katalogpost (dcat:CatalogRecord) [[klasse-katalogpost]]
@@ -192,7 +192,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Catalogue record
 | Beskrivelse | Brukes til å representere en beskrivelse av en oppføring av en ressurs i katalogen.
 | URI | https://www.w3.org/TR/vocab-dcat/#Class:Catalog_Record[dcat:CatalogRecord]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Kontaktopplysning (vcard:Kind) [[klasse-kontaktopplysning]]
@@ -202,7 +202,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Kind
 | Beskrivelse | Brukes til å representere en beskrivelse av en kontaktopplysning i henhold til vCard-spesifikasjonen. Her kan man for eksempel oppgi telefonnr og/eller epost. Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.
 | URI | https://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e1819[vcard:Kind]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Lokasjon (dct:Location) [[klasse-lokasjon]]
@@ -212,7 +212,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Location
 | Beskrivelse | Brukes til å representere en region eller et navngitt sted. Det kan representeres ved hjelp av et kontrollert vokabular eller med geografiske koordinater.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Location[dct:Location]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Medietype (dct:MediaType) [[klasse-medietype]]
@@ -222,7 +222,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Media type
 | Beskrivelse | Brukes til å representere en medietype, for eksempel formatet til en datafil.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/MediaType[dct:MediaType]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Opphavsbeskrivelse (dct:ProvenanceStatement) [[klasse-opphavsbeskrivelse]]
@@ -232,7 +232,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Provenance Statement
 | Beskrivelse | Brukes til å representere en beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/ProvenanceStatement[dct:ProvenanceStatement]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 
@@ -243,7 +243,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Relationship
 | Beskrivelse | Brukes til å knytte tilleggsinformasjon til en relasjon mellom ressurser.
 | URI | https://www.w3.org/TR/vocab-dcat-2/#Class:Relationship[dcat:Relationship]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 
@@ -254,7 +254,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Rights statement
 | Beskrivelse | Brukes til å representere et utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/RightsStatement[dct:RightsStatement]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 
@@ -266,7 +266,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Beskrivelse | Brukes til å representere funksjonen til en ressurs eller aktør i relasjon til en annen ressurs.
 | URI | https://www.w3.org/TR/vocab-dcat-2/#Class:Role[dcat:Role]
 |Subklasse av|https://www.w3.org/TR/skos-reference/#concepts[skos:Concept]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 
@@ -277,7 +277,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Checksum
 | Beskrivelse | Brukes til å representere en beskrivelse som muliggjør autentisering av innholdet i en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
 | URI | https://spdx.org/rdf/terms/#d4e1930[spdx:Checksum]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Språksystem (dct:LinguisticSystem) [[klasse-spraksystem]]
@@ -287,7 +287,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Linguistic system
 | Beskrivelse | Brukes til å representere et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/LinguisticSystem[dct:LinguisticSystem]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Standard (dct:Standard) [[klasse-standard]]
@@ -297,7 +297,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Standard
 | Beskrivelse | Brukes til å representere en standard eller annen spesifikasjon som en ressurs er i samsvar med.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/Standard[dct:Standard]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Status (skos:Concept) [[klasse-status]]
@@ -307,7 +307,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Status
 | Beskrivelse | Brukes til å indikere status på en ressurs i katalogen.
 | URI | http://www.w3.org/TR/vocab-adms/#status[skos:Concept]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 
@@ -318,7 +318,7 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Period of time
 | Beskrivelse | Brukes til å representere et tidsintervall som er navngitt eller definert av en start- og sluttdato.
 | URI | https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#http://purl.org/dc/terms/PeriodOfTime[dct:PeriodOfTime]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
 
 === Utgivertype (skos:Concept) [[klasse-utgivertype]]
@@ -328,5 +328,5 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 | Engelsk navn | Publisher type
 | Beskrivelse | Brukes til å representere type organisasjon som fungerer som en utgiver av en ressurs i en katalog eller av en katalog.
 | URI | https://www.w3.org/TR/skos-reference/#concepts[skos:Concept]
-| Status | Valgfri
+| Kravsnivå | Valgfri
 |===
