@@ -15,8 +15,6 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
 |Datasett: utgiver|dct:publisher|Endret fra anbefalt til obligatorisk, dermed også multiplisitet|Allerede i DCAT-AP-NO v.1.1
 |Datatjeneste: endepunktsURL | dcat:endpointURL | Multiplisitet endret fra 1..n til 1..1 | Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester
 |Datatjeneste: format |dct:format |Ikke eksplisitt tatt med i BRegDCAT-AP | Føyet til for å ha konsistens mellom distribusjon og datatjeneste.
-|Distribusjon: format|dct:format|Endret fra anbefalt til obligatorisk, dermed også multiplisitet|Allerede i DCAT-AP-NO v.1.1
-|Distribusjon: format|dct:format|Range endret fra dct:MediaTypeOrExtent til dct:MediaType|
 |Distribusjon: medietype |dcat:mediaType |Multiplisitet endret fra 0..1 til 0..n | For å kunne ta høyde for at en distribusjon kan være i flere ulike medietyper.
 |Distribusjon: status |adms:status |Endret fra valgfri til anbefalt | Status på en distribusjon er viktig å vite når man skal vurdere om distribusjonen skal/kan brukes.
 |Dokument: språk | dct:language | Ikke eksplisitt tatt med i BRegDCAT-AP | For å kunne referere til språk foaf:Document er i

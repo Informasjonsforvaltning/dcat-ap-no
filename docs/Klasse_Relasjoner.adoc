@@ -13,7 +13,7 @@ Klassen _Relasjon_ er valgfri.
 |Range| rdfs:Resource
 |Beskrivelse| Refererer til ressursen som har relasjon til kilderessursen.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 === Relasjon: rolle (dcat:hadRole) [[Relasjon-rolle]]
@@ -25,5 +25,5 @@ Klassen _Relasjon_ er valgfri.
 |Range| dcat:Role
 |Beskrivelse| Refererer til funksjonen til en enhet eller aktør i forhold til en annen enhet eller ressurs.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===

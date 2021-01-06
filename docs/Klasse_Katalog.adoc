@@ -13,7 +13,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| rdfs:Literal
 |Beskrivelse| Fritekst-beskrivelse av innholdet i katalogen. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 === Katalog: identifikator (dct:identifier) [[Katalog-identifikator]]
@@ -25,7 +25,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| rdfs:Literal
 |Beskrivelse| Refererer til identifikatoren av katalogen.
 |Multiplisitet| 1..1
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 === Katalog: tittel (dct:title) [[Katalog-tittel]]
@@ -37,7 +37,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder navnet på katalogen. Bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 === Katalog: utgiver (dct:publisher) [[Katalog-utgiver]]
@@ -49,7 +49,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| foaf:Agent
 |Beskrivelse| Refererer til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
 |Multiplisitet| 1..1
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 == Anbefalte egenskaper for klassen _Katalog_ [[Katalog-anbefalte-egenskaper]]
@@ -63,7 +63,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dcat:Dataset
 |Beskrivelse| Kobler katalogen til datasett som er en del av katalogen.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: dekningsområde (dct:spatial) [[Katalog-dekningsområde]]
@@ -75,7 +75,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dct:Location
 |Beskrivelse| Referanse til et geografisk område som er dekket av katalogen.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: endringsdato (dct:modified) [[Katalog-endringsdato]]
@@ -87,7 +87,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for siste oppdatering/endring av katalogen.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: frekvens (dct:accrualPeriodicity) [[Katalog-frekvens]]
@@ -99,7 +99,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dct:Frequency
 |Beskrivelse| Referanse til oppdateringsfrekvensen for katalogen.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: hjemmeside (foaf:homepage) [[Katalog-hjemmeside]]
@@ -111,7 +111,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| foaf:Document
 |Beskrivelse| Nettside som fungerer som hovedside for katalogen.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: lisens (dct:license) [[Katalog-lisens]]
@@ -123,7 +123,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dct:LicenseDocument
 |Beskrivelse| Viser til lisens for datakatalogen som beskriver hvordan den kan viderebrukes.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: opphav (dct:provenance) [[Katalog-opphav]]
@@ -135,7 +135,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dct:ProvenanceStatement
 |Beskrivelse| Referanse til beskrivelse av autentisitet og integritet til datasettene i katalogen.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: språk (dct:language) [[Katalog-språk]]
@@ -147,7 +147,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dct:LinguisticSystem
 |Beskrivelse| Viser til et språk som brukes i tekstlige metadata som beskriver ressursene i katalogen. Egenskapen kan gjentas hvis metadata er gitt i flere språk.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: temaer (dcat:themeTaxonomy) [[Katalog-temaer]]
@@ -159,7 +159,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| skos:ConceptScheme
 |Beskrivelse| Refererer til et kunnskapsorganiseringssystem (KOS) som er brukt for å klassifisere de katalogiserte ressursene i katalogen.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Katalog: utgivelsesdato (dct:issued) [[Katalog-utgivelsesdato]]
@@ -171,7 +171,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for formell utgivelse (publisering) av katalogen.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 == Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
@@ -185,7 +185,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dcat:DataService
 |Beskrivelse| Refererer til en datatjeneste som er oppført i katalogen.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Katalog: er del av (dct:isPartOf) [[Katalog-er-del-av]]
@@ -197,7 +197,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dcat:Catalog
 |Beskrivelse| Referanse til en beslektet katalog som denne katalogen fysisk eller logisk er inkludert i.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Katalog: har del (dct:hasPart) [[Katalog-har-del]]
@@ -209,7 +209,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dcat:Catalog
 |Beskrivelse| Referanse til en beslektet katalog som er en del av den beskrevne katalogen.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Katalog: katalog (dcat:catalog) [[Katalog-katalog]]
@@ -221,7 +221,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dcat:Catalog
 |Beskrivelse| Refererer til en annen katalog som er relevant for denne katalogen.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 
@@ -234,7 +234,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dcat:CatalogRecord
 |Beskrivelse| Refererer til en katalogpost som er del av katalogen.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Katalog: produsent (dct:creator) [[Katalog-produsent]]
@@ -246,7 +246,7 @@ Klassen _Katalog_ er obligatorisk.
 |Range| foaf:Agent
 |Beskrivelse| Refererer til aktøren som er hovedansvarlig for å produsere katalogen.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Katalog: rettigheter (brukervilkår) (dct:rights) [[Katalog-rettigheter]]
@@ -258,5 +258,5 @@ Klassen _Katalog_ er obligatorisk.
 |Range| dct:RightsStatement
 |Beskrivelse| Uttalelse som spesifiserer brukervilkår knyttet til katalogen.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===

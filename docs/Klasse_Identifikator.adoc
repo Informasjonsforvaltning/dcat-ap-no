@@ -13,5 +13,5 @@ Klassen _Identifikator_ er valgfri.
 |Range| rdfs:Literal typed with the URI of one of the members of the DataCite Resource Identifier Scheme
 |Beskrivelse| Identifikator i henhold til nevnte identifikatorskjema.
 |Multiplisitet| 1..1
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===

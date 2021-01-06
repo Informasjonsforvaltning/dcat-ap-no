@@ -13,7 +13,7 @@ Klassen _Dokument_ er valgfri.
 |Range| dct:LinguisticSystem
 |Beskrivelse| Brukes til å referere til språket som dokumentet er i.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |Kommentar| Norsk utvidelse - egenskapen er eksplisitt tatt med for å kunne oppgi språket for dokumentet.
 |===
 
@@ -26,6 +26,6 @@ Klassen _Dokument_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Brukes til å referere til tittel for dokumentet. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |Kommentar| Norsk utvidelse - egenskapen er eksplisitt tatt med for å kunne oppgi tittel for dokumentet.
 |===

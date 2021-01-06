@@ -13,7 +13,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Range|eli:ResourceType
 |Beskrivelse|Brukes til å referere til typen av en regulativ ressurs (f.eks. direktiv, forordning).
 |Multiplisitet|1..n
-|Status|Obligatorisk
+|Kravsnivå|Obligatorisk
 |Kommentar|EU oppfordrer medlemslandene til å etablere sine egne kodelister. EUs Publications Office har også en https://publications.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/resource-type[liste over verdier for EUs ressurstyper].
 |===
 
@@ -28,7 +28,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å referere til en tekstlig beskrivelse av ressursen. Beskrivelsen bør gjentas når den finnes i flere ulike språk/målformer.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |===
 
 === Regulativ ressurs: identifikator (dct:identifier) [[RegulativRessurs-identifikator]]
@@ -40,7 +40,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi en identifikator til ressursen.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |===
 
 === Regulativ ressurs: referanse (rdfs:seeAlso) [[RegulativRessurs-referanse]]
@@ -52,7 +52,7 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Range|rdfs:Resource
 |Beskrivelse|Brukes til å oppgi referanse til den regulative ressursen.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |Kommentar|For referanse til Lovdata bør ELI-URI brukes, se https://lovdata.no/eli/[beskrivelsen hos Lovdata].
 |===
 
@@ -67,5 +67,5 @@ Klassen _Regulativ ressurs_ er anbefalt.
 |Range|eli:LegalResource
 |Beskrivelse|Brukes til å referere til en annen relatert regulativ ressurs.
 |Multiplisitet|0..n
-|Status|Valgfri
+|Kravsnivå|Valgfri
 |===

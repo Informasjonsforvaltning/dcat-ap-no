@@ -13,7 +13,7 @@ Klassen _Standard_ er valgfri.
 |Range| rdfs:Literal
 |Beskrivelse| Brukes til å referere til tittelen til standarden/spesifikasjonen. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |Kommentar|Norsk utvidelse. For å kunne ha tittel til standard/spesifikasjon.
 Egenskapen kan gjentas for hvert språk tittelen finnes i.
 |===
@@ -29,7 +29,7 @@ Egenskapen kan gjentas for hvert språk tittelen finnes i.
 |Range|rdfs:Resource
 |Beskrivelse|Brukes til å referere til en referanse til standarden/spesifikasjonen.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |Kommentar|Norsk utvidelse. For å kunne ha referanse til standard/spesifikasjon.
 |===
 
@@ -44,6 +44,6 @@ Egenskapen kan gjentas for hvert språk tittelen finnes i.
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å referere til versjonsnummer.
 |Multiplisitet|0..1
-|Status|Valgfri
+|Kravsnivå|Valgfri
 |Kommentar|Norsk utvidelse. For å kunne refefere til versjonsnummer.
 |===
