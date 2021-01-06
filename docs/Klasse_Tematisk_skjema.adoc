@@ -13,5 +13,5 @@ Klassen _Tematisk skjema_ er obligatorisk.
 |Range| rdfs:Literal
 |Beskrivelse| Tittel for det tematiske skjemaet. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===

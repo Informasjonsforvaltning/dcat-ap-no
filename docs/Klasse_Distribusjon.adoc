@@ -4,19 +4,6 @@ Klassen _Distribusjon_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Distribusjon_ [[Distribusjon-obligatoriske-egenskaper]]
 
-=== Distribusjon: format (dct:format) [[Distribusjon-format]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| format
-|URI| dct:format
-|Range| dct:MediaType
-|Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
-|Multiplisitet| 1..n
-|Status| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (allerede i DCAT-AP-NO v.1.1). Multiplisiteten er også endret fra 0..*1* til 1..*n* (allerede i DCAT-AP-NO v.1.1).
-|===
-
 === Distribusjon: tilgangsURL (dcat:accessURL) [[Distribusjon-tilgangsurl]]
 
 [cols="30s,70d"]
@@ -26,7 +13,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| rdfs:Resource
 |Beskrivelse| En URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til datasettet.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 
@@ -41,7 +28,19 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| rdfs:Literal
 |Beskrivelse| Fritekstbeskrivelse av distribusjonen. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
+|===
+
+=== Distribusjon: format (dct:format) [[Distribusjon-format]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| format
+|URI| dct:format
+|Range| dct:MediaTypeOrExtent
+|Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
+|Multiplisitet| 0..n
+|Kravsnivå| Anbefalt
 |===
 
 === Distribusjon: lisens (dct:license) [[Distribusjon-lisens]]
@@ -53,7 +52,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:LicenseDocument
 |Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, f.eks. https://creativecommons.org/licenses/by/4.0/
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Distribusjon: status (adms:status) [[Distribusjon-status]]
@@ -65,7 +64,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| skos:Concept
 |Beskrivelse| Distribusjonens modenhet.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |Kommentar|Norsk utvidelse - endret fra valgfri til anbefalt, fordi status på distribusjon er viktig å vite når man skal vurdere om en distribusjon skal/kan brukes.
 |===
 
@@ -78,7 +77,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| skos:Concept
 |Beskrivelse| En angivelse av hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 
@@ -93,7 +92,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| foaf:Document
 |Beskrivelse| Referanse til en side eller et dokument som beskriver distribusjonen.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: endringsdato (dct:modified) [[Distribusjon-endringsdato]]
@@ -105,7 +104,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for siste endring av distribusjonen.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: filstørrelse (dcat:byteSize) [[Distribusjon-filstørrelse]]
@@ -117,7 +116,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| rdfs:Literal typed as xsd:decimal
 |Beskrivelse| Distribusjonens størrelse oppgitt i bytes.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters) [[Distribusjon-romlig-oppløsning]]
@@ -128,7 +127,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| xsd:decimal
 |Beskrivelse| Refererer til den minste romlige oppløsningen for en datasettdistribusjon målt i meter.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: i samsvar med (dct:conformsTo) [[Distribusjon-i-samsvar-med]]
@@ -140,7 +139,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:Standard
 |Beskrivelse| Referanse til et etablert skjema som distribusjonen er i samsvar med.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: komprimeringsformat (dcat:compressFormat) [[Distribusjon-komprimeringsformat]]
@@ -151,7 +150,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:MediaType
 |Beskrivelse| Komprimeringsformatet for distribusjonen som dataene er i dersom de er i en komprimert form, f.eks. for å redusere størrelsen på den nedlastbare filen.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: medietype (dcat:mediaType) [[Distribusjon-medietype]]
@@ -162,7 +161,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:MediaType
 |Beskrivelse| Refererer til medietype av en distribusjon.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |Kommentar| Norsk utvidelse - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike medietyper.
 |===
 
@@ -175,7 +174,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| rdfs:Resource
 |Beskrivelse| Direktelenke (URL) til en nedlastbar fil i et gitt format.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: pakkeformat (dcat:packageFormat) [[Distribusjon-pakkeformat]]
@@ -186,7 +185,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:MediaType
 |Beskrivelse| Refererer til formatet til filen der en eller flere datafiler er gruppert sammen, f.eks. for å gjøre det mulig å laste ned et sett relaterte filer.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: policy (odrl:hasPolicy) [[Distribusjon-policy]]
@@ -197,7 +196,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| odrl:Policy
 |Beskrivelse| Refererer til policyen som uttrykker rettighetene knyttet til distribusjonen hvis de bruker ODRL-vokabularet.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: rettigheter (dct:rights) [[Distribusjon-rettigheter]]
@@ -209,7 +208,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:RightsStatement
 |Beskrivelse| Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: sjekksum (spdx:checksum) [[Distribusjon-sjekksum]]
@@ -221,7 +220,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| spdx:Checksum
 |Beskrivelse| Referanse til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg).
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: språk (dct:language) [[Distribusjon-språk]]
@@ -233,7 +232,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:LinguisticSystem
 |Beskrivelse| Referanse til språk som er brukt i distribusjonen.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: tidsoppløsning (dcat:temporalResolution [[Distribusjon-tidsoppløsning]])
@@ -245,7 +244,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| xsd:duration
 |Beskrivelse| Refererer til minste tidsrommet som kan utledes fra datasett-distribusjonen ("resolvable in the dataset distribution").
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: tilgangstjeneste (dcat:accessService) [[Distribusjon-tilganstjeneste]]
@@ -257,7 +256,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dcat:DataService
 |Beskrivelse| Refererer til en datatjeneste som gir tilgang til distribusjonen av datasettet.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: tittel (dct:title) [[Distribusjon-tittel]]
@@ -269,7 +268,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| rdfs:Literal
 |Beskrivelse| Navn på distribusjonen.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Distribusjon: utgivelsesdato (dct:issued) [[Distribusjon-utgivelsesdato]]
@@ -281,5 +280,5 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for formell utgivelse/publisering av distribusjonen.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===

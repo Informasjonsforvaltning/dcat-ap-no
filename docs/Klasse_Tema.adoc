@@ -13,5 +13,5 @@ Klassen _Tema_ er obligatorisk.
 |Range| rdfs:Literal
 |Beskrivelse| Foretrukket tittel for kategorien. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
