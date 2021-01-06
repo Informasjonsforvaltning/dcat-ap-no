@@ -5,7 +5,7 @@ on:
     branches:
     - v1.1
     paths:
-    - docs
+    - docs/**
 
 jobs:
   adoc_build:
