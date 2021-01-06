@@ -50,7 +50,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| licence
 |URI| dct:license
 |Range| dct:LicenseDocument
-|Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under. Bør oppgis som URI, f.eks. https://creativecommons.org/licenses/by/4.0/
+|Beskrivelse| Referanse til lisensen distribusjonen er gjort tilgjengelig under.
 |Multiplisitet| 0..1
 |Kravsnivå| Anbefalt
 |===
