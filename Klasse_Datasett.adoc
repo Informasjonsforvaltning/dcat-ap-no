@@ -13,7 +13,7 @@ Klassen _Datasett_ er anbefalt.
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder fritekstbeskrivelse av datasettet. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 === Datasett: identifikator (dct:identifier) [[Datasett-identifikator]]
@@ -25,7 +25,7 @@ Klassen _Datasett_ er anbefalt.
 |Range| rdfs:Literal
 |Beskrivelse| Identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |Kommentar|
 |===
 
@@ -38,7 +38,7 @@ Klassen _Datasett_ er anbefalt.
 |Range| skos:Concept
 |Beskrivelse| Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
 |===
 
@@ -51,7 +51,7 @@ Klassen _Datasett_ er anbefalt.
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder navnet på datasettet. Bør gjentas når navnet finnes i flere ulike språk/målformer.
 |Multiplisitet| 1..n
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |===
 
 === Datasett: utgiver (dct:publisher) [[Datasett-utgiver]]
@@ -63,7 +63,7 @@ Klassen _Datasett_ er anbefalt.
 |Range| foaf:Agent
 |Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673>`.
 |Multiplisitet| 1..1
-|Status| Obligatorisk
+|Kravsnivå| Obligatorisk
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
 |===
 
@@ -78,7 +78,7 @@ Klassen _Datasett_ er anbefalt.
 |Range| skos:Concept
 |Beskrivelse| Referanse til sentrale begrep som er viktige for å forstå og tolke datasettet. Representeres som URI-er.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |Kommentar a| Norsk utvidelse (allerede i DCAT-AP-NO v.1.1).
 
 NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. informasjonsmodell som beskriver datasettet (se https://data.norge.no/specification/modelldcat-ap-no/[ModellDCAT-AP-NO] for referanse til begrep fra en informasjonsmodell).
@@ -93,7 +93,7 @@ NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. i
 |Range| prov:Activity
 |Beskrivelse| Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for oppretting av det.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |Kommentar|Norsk utvidelse - endret fra valgfri til anbefalt, fordi hvordan datasettet ble opprettet (ved vedtak, innhenting fra tredjepart eller ved innhenting fra brukeren) kan være viktig å vite når man skal vurdere om datasettet skal/kan gjenbrukes.
 |Eksempel a|
 [source]
@@ -122,7 +122,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Range| dcat:Distribution
 |Beskrivelse| Koblingen mellom datasettet og en tilgjengelig distribusjon.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datasett: dekningsområde (dct:spatial) [[Datasett-dekningsområde]]
@@ -134,7 +134,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Range| dct:Location
 |Beskrivelse| Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf. ISO 19115).
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datasett: emneord (dcat:keyword) [[Datasett-emneord]]
@@ -146,7 +146,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Range| rdfs:Literal
 |Beskrivelse| Inneholder emneord (eller tag) som beskriver datasettet.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datasett: følger (cpsv:follows) [[Datasett-følger]]
@@ -158,7 +158,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Range|cpsv:Rule
 |Beskrivelse|Brukes til å referere til reglen som definerer den juridiske rammen for datasettet.
 |Multiplisitet|0..n
-|Status|Anbefalt
+|Kravsnivå|Anbefalt
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt.
 |Eksempel a|
 Ved at et `dcat:Dataset cpsv:follows` en `cpsv:Rule`, og at en `cpsv:Rule cpsv:implements` en `eli:LegalResouce`, illustrerer eksempelet her hvordan  man kan referere fra et datasett til en lovhjemmel som regulerer f.eks. skjerming eller utlevering av datasettet.
@@ -197,7 +197,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| vcard:Kind
 |Beskrivelse| Referanse til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datasett: tidsrom (dct:temporal) [[Datasett-tidsrom]]
@@ -209,7 +209,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dct:PeriodOfTime
 |Beskrivelse| Definerer starten og slutten på perioden, eventuelt klokkeslett (se ISO 8601).
 |Multiplisitet| 0..n
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 === Datasett: tilgangsnivå (dct:accessRights) [[Datasett-tilgangsnivå]]
@@ -221,7 +221,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dct:RightsStatement
 |Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (`:public`, `:restricted` og `:non-public`) vil bli opprettet og forvaltet av EUs Publications Office. Ved bruk av verdiene `:restricted` og `:non-public` er egenskapen <<Datasett-følger, Datasett: følger>> anbefalt.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt (også i DCAT-AP-NO v.1.1).
 |===
 
@@ -237,7 +237,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| adms:Identifier
 |Beskrivelse| Referanse til en sekundær identifikator av datasettet som http://archive.stsci.edu/pub_dsn.html[MAST/ADS], DataCite, http://www.doi.org/[DOI], https://ezid.cdlib.org/[EZID] eller https://w3id.org/[W3ID].
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: dokumentasjon (foaf:page) [[Datasett-dokumentasjon]]
@@ -249,7 +249,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| foaf:Document
 |Beskrivelse| Referanse til en side eller et dokument som beskriver datasettet.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: eksempeldata (adms:sample) [[Datasett-eksempeldata]]
@@ -261,7 +261,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dcat:Distribution
 |Beskrivelse| Referanse til eksempeldata.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: endringsdato (dct:modified) [[Datasett-endringsdato]]
@@ -273,7 +273,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for siste oppdatering av datasettet.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: er del av (dct:isPartOf) [[Datasett-erDelAv]]
@@ -285,7 +285,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til et annet datasett som dette datasettet er en del av.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |Eksempel | Kan brukes til å beskrive tidsserier, se under <<Datasett-harDel, Datasett: har del>>.
 |===
 
@@ -298,7 +298,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til et annet datasett som dette datasettet er nødvendig for.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: er referert av (dct:isReferencedBy) [[Datasett-erReferertAv]]
@@ -310,7 +310,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| rdfs:Resource
 |Beskrivelse| Referanse til en annen ressurs som refererer til dette datasettet.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: er versjon av (dct:isVersionOf) [[Datasett-erVersjonAv]]
@@ -322,7 +322,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til et beslektet datasett som det beskrevne datasettet er en versjon, utgave, eller tilpasning av.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: erstatter (dct:replaces) [[Datasett-erstatter]]
@@ -334,7 +334,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til et annet datasett som dette datasettet er ment å erstatte.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: erstattes av (dct:isReplacedBy) [[Datasett-erstattesAv]]
@@ -346,7 +346,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til datasett som er ment å erstatte dette datasettet.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: frekvens (dct:accrualPeriodicity) [[Datasett-frekvens]]
@@ -358,7 +358,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dct:Frequency
 |Beskrivelse| Referanse til oppdateringsfrekvensen for datasettet.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: romlig oppløsning (dcat:spatialResolutionInMeters) [[Datasett-romligOppløsning]]
@@ -370,7 +370,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| xsd:decimal
 |Beskrivelse|  Refererer til den minste romlige oppløsningen for et datasett målt i meter.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: har del (dct:hasPart) [[Datasett-harDel]]
@@ -382,7 +382,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til et annet datasett som er en del av dette datasettet.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |Eksempel a| Kan brukes til å beskrive tidsserier:
 ```
 :aTimeSeries
@@ -415,7 +415,7 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Beskrivelse|Brukes til å referere til en kvalitetsnote.
 |Referanse|https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityAnnotation[https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityAnnotation]
 |Multiplisitet|0..n
-|Status|Valgfri
+|Kravsnivå|Valgfri
 |Kommentar| Se https://data.norge.no/specification/dqv-ap-no/[DQV-AP-NO (norsk applikasjonsprofil av DQV)].
 
 Gjelder også Brukertilbakemelding (`dqv:UserQualityFeedback`) og Kvalitetssertifikat (`dqv:QualityCertificate`) som er subklasser av Kvalitetsnote (`dqv:QualityAnnotation`).
@@ -446,7 +446,7 @@ dqvno:isAuthoritative
 |Beskrivelse|Brukes til å referere til et måleresultat.
 |Referanse|https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityMeasurement[https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityMeasurement]
 |Multiplisitet|0..n
-|Status|Valgfri
+|Kravsnivå|Valgfri
 |Kommentar| Se https://data.norge.no/specification/dqv-ap-no/[DQV-AP-NO (norsk applikasjonsprofil av DQV)].
 |Eksempel a| [source]
 ----
@@ -465,7 +465,7 @@ dqvno:isAuthoritative
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: i samsvar med (dct:conformsTo) [[Datasett-iSamsvarMed]]
@@ -477,7 +477,7 @@ dqvno:isAuthoritative
 |Range| dct:Standard
 |Beskrivelse| Referanse til en implementasjonsregel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: kilde (dct:source) [[Datasett-kilde]]
@@ -489,7 +489,7 @@ dqvno:isAuthoritative
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til et datasett som gjeldende datasett er avledet fra.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: krever (dct:requires) [[Datasett-krever]]
@@ -501,7 +501,7 @@ dqvno:isAuthoritative
 |Range| dcat:Dataset
 |Beskrivelse| Referanse til et annet datasett som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: kvalifisert kreditering (prov:qualifiedAttribution) [[Datasett-kvalifisertKreditering]]
@@ -513,7 +513,7 @@ dqvno:isAuthoritative
 |Range| prov:Attribution
 |Beskrivelse| Viser til en lenke til en _Aktør_ som har en eller annen form for ansvar for ressursen.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: kvalifisert relasjon (dcat:qualifiedRelation) [[Datasett-kvalifisertRelasjon]]
@@ -525,7 +525,7 @@ dqvno:isAuthoritative
 |Range| dcat:Relationship
 |Beskrivelse| En beslektet ressurs, for eksempel en publikasjon, som refererer, siterer eller på annen måte peker til datasettet.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: landingsside (dcat:landingPage) [[Datasett-landingsside]]
@@ -537,7 +537,7 @@ dqvno:isAuthoritative
 |Range| foaf:Document
 |Beskrivelse| Referanse til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: produsent (dct:creator) [[Datasett-produsent]]
@@ -549,7 +549,7 @@ dqvno:isAuthoritative
 |Range| foaf:Agent
 |Beskrivelse| Referanse til aktøren som er produsent av datasettet.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: opphav (dct:provenance) [[Datasett-opphav]]
@@ -561,7 +561,7 @@ dqvno:isAuthoritative
 |Range| dct:ProvenanceStatement
 |Beskrivelse| Referanse til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: refererer til (dct:references) [[Datasett-referererTil]]
@@ -573,7 +573,7 @@ dqvno:isAuthoritative
 |Range| rdfs:Resource
 |Beskrivelse| Referanse til en annen ressurs som det kan være nyttig for brukere å være oppmerksom på.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: relatert ressurs (dct:relation) [[Datasett-relatertRessurs]]
@@ -585,7 +585,7 @@ dqvno:isAuthoritative
 |Range| rdfs:Resource
 |Beskrivelse| Referanse til en beslektet ressurs.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: språk (dct:language) [[Datasett-språk]]
@@ -597,7 +597,7 @@ dqvno:isAuthoritative
 |Range| dct:LinguisticSystem
 |Beskrivelse| Referanse til språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 
@@ -610,7 +610,7 @@ dqvno:isAuthoritative
 |Range| xsd:duration
 |Beskrivelse|  Refererer til den minste oppløsningen for tidsperiode i et datasett.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: type (dct:type) [[Datasett-type]]
@@ -622,7 +622,7 @@ dqvno:isAuthoritative
 |Range| skos:Concept
 |Beskrivelse| Referanse til et begrep som identifiserer datasettets type.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |Eksempel a|
 [source]
 ----
@@ -651,7 +651,7 @@ dqvno:isAuthoritative
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Dato for den formelle utgivelsen av datasettet.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: versjon (owl:versionInfo) [[Datasett-versjon]]
@@ -663,7 +663,7 @@ dqvno:isAuthoritative
 |Range| rdfs:Literal
 |Beskrivelse| Et versjonsnummer eller annen versjonsbetegnelse for datasettet.
 |Multiplisitet| 0..1
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: versjonsnote (adms:versionNotes) [[Datasett-versjonsnote]]
@@ -675,5 +675,5 @@ dqvno:isAuthoritative
 |Range| rdfs:Literal
 |Beskrivelse| Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Bør gjentas når noten finnes i flere ulike språk/målformer.
 |Multiplisitet| 0..n
-|Status| Valgfri
+|Kravsnivå| Valgfri
 |===

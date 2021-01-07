@@ -13,7 +13,7 @@ Klassen _Tidsrom_ er valgfri.
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Definerer slutten på tidsrommet.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de to være til stede for hver forekomst av klassen `dct:PeriodOfTime` (hvis klassen er brukt). Starten av perioden bør forstås som starten på datoen, timen, minuttet (f.eks. starter ved midnatt på begynnelsen av dagen hvis verdien er en dato). Slutten av perioden skal forstås som slutten av datoen, timen, minuttet (f.eks. slutter ved midnatt på slutten av dagen hvis verdien er en dato).
@@ -26,7 +26,7 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Range| rdfs:Literal typed as xsd:date or xsd:dateTime
 |Beskrivelse| Definerer starten på tidsrommet.
 |Multiplisitet| 0..1
-|Status| Anbefalt
+|Kravsnivå| Anbefalt
 |===
 
 == Valgfrie egenskaper for klassen _Tidsrom_ [[Tidsrom-valgfrie-egenskaper]]
@@ -39,7 +39,7 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Range| time:Instant
 |Beskrivelse| Definerer begynnelsen på et tidsrommet eller intervall.
 |Multiplisitet| 0..1
-|Status| Valgfritt
+|Kravsnivå| Valgfritt
 |===
 
 === Tidsrom: slutt (time:hasEnd) [[Tidsrom-slutt]]
@@ -50,5 +50,5 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Range| time:Instant
 |Beskrivelse| Definerer slutten på et tidsrom eller intervall.
 |Multiplisitet| 0..1
-|Status| Valgfritt
+|Kravsnivå| Valgfritt
 |===
