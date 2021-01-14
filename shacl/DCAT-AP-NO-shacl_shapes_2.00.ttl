@@ -429,7 +429,7 @@
         sh:severity sh:Violation
     ], [
         sh:class dct:MediaTypeOrExtent ;
-        sh:maxCount 1 ;
+        # sh:maxCount 1 ; # Norwegian extension 0..n
         sh:path dct:format ;
         sh:severity sh:Violation
     ], [
