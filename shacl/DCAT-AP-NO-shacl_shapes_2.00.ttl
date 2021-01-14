@@ -428,9 +428,8 @@
         sh:path dct:description ;
         sh:severity sh:Violation
     ], [
-        sh:class dct:MediaType ; # Norwegian extension: Changed from dct:MediaTypeOrExtent
+        sh:class dct:MediaTypeOrExtent ;
         sh:maxCount 1 ;
-        sh:minCount 1 ; # Norwegian extension: Added minCount 1
         sh:path dct:format ;
         sh:severity sh:Violation
     ], [
