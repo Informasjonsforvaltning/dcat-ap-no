@@ -39,12 +39,12 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2020-11-20"^^xsd:date ;
+    dct:modified "2021-01-21"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
     dct:title "The constraints of DCAT-AP-NO"@en ;
-    owl:versionInfo "0.1" ;
+    owl:versionInfo "0.2" ;
     foaf:homepage <https://data.norge.no/specification/dcat-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -80,7 +80,9 @@
         sh:path dct:identifier ;
         sh:severity sh:Violation
     ] ;
-    sh:targetClass foaf:Agent .
+    sh:targetObjectsOf dct:publisher, dct:creator ;
+    # sh:targetClass foaf:Agent ;
+   .
 
 # Katalogpost (dcat:CatalogRecord), only added the Norwegian sh:name
 :CatalogRecord_Shape
