@@ -935,7 +935,8 @@
         sh:path rdfs:seeAlso ;
         sh:severity sh:Violation
     ] ;
-    sh:targetClass dct:Standard .
+    sh:targetObjectsOf dct:conformsTo ;
+ .
 
 # Tematisk skjema (skos:ConceptScheme), only sh:names
 :CategoryScheme_Shape
