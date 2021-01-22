@@ -1029,17 +1029,6 @@
         sh:path skos:inScheme
     ] .
 
-:CorporateBodyRestriction
-    a sh:NodeShape ;
-    rdfs:comment "Corporate Body Restriction" ;
-    rdfs:label "Corporate Body Restriction" ;
-    sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/corporate-body> ;
-        sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
-        sh:path skos:inScheme
-    ] .
-
 :CountryRestriction
     a sh:NodeShape ;
     rdfs:comment "Country restriction" ;
