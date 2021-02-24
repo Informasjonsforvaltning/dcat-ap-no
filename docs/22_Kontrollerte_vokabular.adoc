@@ -243,7 +243,7 @@ I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordr
 |URI til vokabularet|Fylke https://data.geonorge.no/administrativeEnheter/fylke/id/; +
 Kommune https://data.geonorge.no/administrativeEnheter/kommune/id/
 |Kravsnivå| Anbefalt
-|Kommentar | Norsk utvidelse - https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] bør brukes i tillegg til det som er nevnt under <<Skal-brukes-for-theme, Kontrollerte vokabularer som skal brukes>>.
+|Kommentar | Norsk utvidelse - https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] bør brukes i tillegg til det som er nevnt under <<Skal-brukes-for-spatial, Kontrollerte vokabularer som skal brukes>>.
 |===
 
 === For egenskapen cv:thematicArea [[Bør-brukes-for-thematicArea]]
