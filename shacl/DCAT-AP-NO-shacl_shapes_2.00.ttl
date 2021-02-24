@@ -39,12 +39,12 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2020-11-20"^^xsd:date ;
+    dct:modified "2021-01-21"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
     dct:title "The constraints of DCAT-AP-NO"@en ;
-    owl:versionInfo "0.1" ;
+    owl:versionInfo "0.2" ;
     foaf:homepage <https://data.norge.no/specification/dcat-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -80,7 +80,9 @@
         sh:path dct:identifier ;
         sh:severity sh:Violation
     ] ;
-    sh:targetClass foaf:Agent .
+    sh:targetObjectsOf dct:publisher, dct:creator ;
+    # sh:targetClass foaf:Agent ;
+   .
 
 # Katalogpost (dcat:CatalogRecord), only added the Norwegian sh:name
 :CatalogRecord_Shape
@@ -933,7 +935,8 @@
         sh:path rdfs:seeAlso ;
         sh:severity sh:Violation
     ] ;
-    sh:targetClass dct:Standard .
+    sh:targetObjectsOf dct:conformsTo ;
+ .
 
 # Tematisk skjema (skos:ConceptScheme), only sh:names
 :CategoryScheme_Shape
@@ -988,3 +991,419 @@
             sh:class dcat:DataService
         ]
     ) .
+
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# Sjekk mot obligatorisk bruk av kontrollerte vokabularer
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+:AccessRightsRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Access Rights restriction" ;
+    rdfs:label "Access Rights restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/access-right> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:AvailabilityRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Availability restriction" ;
+    rdfs:label "Availability restriction" ;
+    sh:property [
+        sh:hasValue <http://data.europa.eu/r5r/availability/1.0> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:ContinentRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Continent restriction" ;
+    rdfs:label "Continent restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/continent> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:CountryRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Country restriction" ;
+    rdfs:label "Country restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/country> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:Identifier_Shape
+    a sh:NodeShape ;
+    sh:property [
+        sh:pattern "^http://purl.org/spar/datacite/+$";
+        sh:datatype xsd:string ;
+        sh:path skos:notation ;
+        sh:severity sh:Warning
+    ] ;
+    sh:targetClass adms:Identifier.
+
+:SpatialRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Spatial Restriction" ;
+    rdfs:label "Spatial Restriction" ;
+    sh:or (:CountryRestriction
+                :PlaceRestriction
+                :ContinentRestriction
+                :GeoNamesRestriction
+            ) .
+
+:DataThemeRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Data Theme Restriction" ;
+    rdfs:label "Data Theme Restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:EurovocThemeRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Eurovoc Theme Restriction" ;
+    rdfs:label "Eurovoc Theme Restriction" ;
+    sh:property [
+        sh:pattern "^http://eurovoc.europa.eu/.+$";
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:FileTypeRestriction
+    a sh:NodeShape ;
+    rdfs:comment "File Type Restriction" ;
+    rdfs:label "File Type Restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/file-type> ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:FrequencyRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Frequency Restriction" ;
+    rdfs:label "Frequency Restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/frequency> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:GeoNamesRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Geo names restriction" ;
+    rdfs:label "Geo names restriction" ;
+    sh:property [
+        sh:hasValue <http://sws.geonames.org> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:LanguageRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Language Restriction" ;
+    rdfs:label "Language Restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/language> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:LicenceTypeRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Licence type restriction" ;
+    rdfs:label "Licence type restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/licence> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:PlaceRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Place restriction" ;
+    rdfs:label "Place restriction" ;
+    sh:property [
+        sh:class skos:ConceptScheme ;
+        sh:hasValue <http://publications.europa.eu/resource/authority/place> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:PublisherTypeRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Publisher type restriction" ;
+    rdfs:label "Publisher type restriction" ;
+    sh:property [
+        sh:class skos:ConceptScheme ;
+        sh:hasValue <http://purl.org/adms/publishertype/1.0> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:StatusRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Status restriction" ;
+    rdfs:label "Status restriction" ;
+    sh:property [
+        sh:class skos:ConceptScheme ;
+        sh:hasValue <http://purl.org/adms/status/1.0> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:LegalResourceTypeRestriction
+    a sh:NodeShape ;
+    rdfs:comment "Legal Resource Type restriction" ;
+    rdfs:label "Legal Resource Type restriction" ;
+    sh:property [
+        sh:class skos:ConceptScheme ;
+        sh:hasValue <http://publications.europa.eu/resource/authority/resource-type> ;
+        sh:minCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme
+    ] .
+
+:Legal_Resource_ShapeCV
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :LegalResourceTypeRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:type ;
+        sh:severity sh:Violation
+    ] ;
+    sh:targetClass eli:LegalResource .
+
+:LicenseDocument_ShapeCV
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :LicenceTypeRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:type
+    ] ;
+    sh:targetClass dct:LicenseDocument.
+
+:Catalog_ShapeCV
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :AccessRightsRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:accessRights ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :FrequencyRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:accrualPeriodicity ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :CorporateBodyRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:creator ;
+        sh:severity sh:Warning
+    ], [
+        sh:node :LanguageRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:language ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :CorporateBodyRestriction ;
+        sh:node :Publisher_ShapeCV ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:publisher ;
+        sh:severity sh:Warning
+    ], [
+        sh:node :SpatialRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:spatial ;
+        sh:severity sh:Warning
+    ], [
+        sh:node :StatusRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path adms:status ;
+        sh:maxCount 1 ;
+        sh:severity sh:Violation
+    ], [
+        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+        sh:nodeKind sh:IRI ;
+        sh:path dcat:themeTaxonomy ;
+    	sh:description "Multiple themes can be used but at least <http://publications.europa.eu/resource/authority/data-theme> should be present" ;
+        sh:severity sh:Warning
+    ], [
+        sh:pattern "^http://eurovoc.europa.eu/.+$";
+        sh:nodeKind sh:IRI ;
+        sh:path dcat:themeTaxonomy ;
+    	sh:description "Multiple themes can be used but at least <http://eurovoc.europa.eu/.+> should be present" ;
+        sh:severity sh:Warning
+    ] ;
+    sh:targetClass dcat:Catalog.
+
+:DataService_Shape
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :AccessRightsRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:accessRights ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :CorporateBodyRestriction ;
+        sh:node :Publisher_ShapeCV ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:publisher ;
+        sh:severity sh:Warning
+    ], [
+        sh:node [
+            a sh:NodeShape ;
+            sh:or (:DataThemeRestriction
+                    :EurovocThemeRestriction
+                    )
+            ];
+        sh:nodeKind sh:IRI ;
+        sh:path dcat:theme ;
+        sh:severity sh:Warning
+    ] ;
+    sh:targetClass dcat:DataService.
+
+:Dataset_ShapeCV
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :AccessRightsRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:accessRights ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :FrequencyRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:accrualPeriodicity ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :CorporateBodyRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:creator ;
+        sh:severity sh:Warning
+    ], [
+        sh:node :LanguageRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:language ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :CorporateBodyRestriction ;
+        sh:node :Publisher_ShapeCV ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:publisher ;
+        sh:severity sh:Warning
+    ], [
+        sh:node :SpatialRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:spatial ;
+        sh:severity sh:Warning
+    ], [
+        sh:node [
+            a sh:NodeShape ;
+            sh:or (:DataThemeRestriction
+                    :EurovocThemeRestriction
+                    )
+            ];
+        sh:nodeKind sh:IRI ;
+        sh:path dcat:theme ;
+        sh:severity sh:Warning
+    ] ;
+    sh:targetClass dcat:Dataset.
+
+# ------------------------------------------------------------------------------------------------------------------
+# The constraints for dcat:mediaType, dcat:compressFormat, dcat:packageFormat which are limited to the IANA codelist
+# cannot be expressed in SHACL unless a copy in RDF for the IANA codelist is being created
+# ------------------------------------------------------------------------------------------------------------------
+:Distribution_ShapeCV
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :AccessRightsRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:accessRights ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :FileTypeRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:format ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :LanguageRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:language ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :LicenceTypeRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:license ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :StatusRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path adms:status ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :AvailabilityRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dcatap:availability ;
+        sh:severity sh:Violation
+    ] ;
+    sh:targetClass dcat:Distribution.
+
+
+:Publisher_ShapeCV
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :PublisherTypeRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:type ;
+        sh:severity sh:Violation
+    ] .
+
+:Public_Service_ShapeCV
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :SpatialRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:spatial ;
+        sh:severity sh:Warning
+    ], [
+        sh:node :StatusRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path adms:status ;
+        sh:severity sh:Violation
+    ], [
+        sh:node :EurovocThemeRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path cv:thematicArea ;
+        sh:severity sh:Warning
+    ] ;
+    sh:targetClass cpsv:PublicService .
+
+:Rule_ShapeCV
+    a sh:NodeShape ;
+    sh:property [
+        sh:node :LanguageRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:language ;
+        sh:severity sh:Warning
+    ] ;
+    sh:targetClass cpsv:Rule.
