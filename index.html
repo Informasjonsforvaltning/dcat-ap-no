@@ -1026,7 +1026,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><strong>Status</strong>: Gjeldende<br>
 <strong>Versjon</strong>: 2.0.1 (se <a href="#Endringslogg">endringsloggen</a>)<br>
 <strong>Publisert</strong>: 2020-10-29<br>
-<strong>Oppdatert</strong>: 2021-01-14<br>
+<strong>Oppdatert</strong>: 2021-02-24<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no/v1.1/" class="bare">https://data.norge.no/specification/dcat-ap-no/v1.1/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/" class="bare">https://informasjonsforvaltning.github.io/dcat-ap-no/</a></p>
@@ -8888,7 +8888,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/at-dataset/-/resource/dataset/access-right">Access Right Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/access-right">Access right</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
@@ -8897,6 +8897,14 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:accessRights &lt;http://publications.europa.eu/resource/authority/access-right/PUBLIC&gt; .</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -8919,7 +8927,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/frequency">Frequency Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency">Frequency</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
@@ -8928,6 +8936,14 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:accrualPeriodicity &lt;http://publications.europa.eu/resource/authority/frequency/DAILY&gt; .</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -8954,11 +8970,19 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/r5r/availability/" class="bare">http://data.europa.eu/r5r/availability/</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://data.europa.eu/r5r/" class="bare">http://data.europa.eu/r5r/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dcatap:availability &lt;http://data.europa.eu/r5r/stable&gt; .</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -8981,11 +9005,11 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/corporate-body">Corporate Bodies Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/corporate-body">Corporate body</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/corporate-body" class="bare">http://publications.europa.eu/resource/authority/corporate-body</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/corporate-body/" class="bare">http://publications.europa.eu/resource/authority/corporate-body/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
@@ -8994,6 +9018,14 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes <em>hvis</em> organisasjonen er på listen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:creator &lt;http://publications.europa.eu/resource/authority/corporate-body/WHO&gt; .</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9016,7 +9048,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/file-type">File Type Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/file-type">File type</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
@@ -9029,6 +9061,14 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - gjelder også Datatjeneste (<code>dcat:DataService</code>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:format &lt;http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE&gt; .</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9051,15 +9091,23 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/language">Languages Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language">Language</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/language" class="bare">http://publications.europa.eu/resource/authority/language</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/language/" class="bare">http://publications.europa.eu/resource/authority/language/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:language &lt;http://publications.europa.eu/resource/authority/language/NOB&gt; . # Norsk bokmål</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9082,16 +9130,24 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/licence">Licences Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence">Licence</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/licence" class="bare">http://publications.europa.eu/resource/authority/licence</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/licence/" class="bare">http://publications.europa.eu/resource/authority/licence/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - gjelder også Datatjeneste (<code>dcat:DataService</code>) og Katalog (<code>dcat:Catalog</code>).</p>
 <p class="tableblock">Kravet fra EU er forklart slik: "This vocabulary must be used in case the licence [&#8230;&#8203;] is internationally recognised and included in the EU Publications Office NAL."</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:license &lt;http://publications.europa.eu/resource/authority/licence/CC_BY_4_0&gt; .</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9145,11 +9201,11 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/corporate-body">Corporate Bodies Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/corporate-body">Corporate body</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/corporate-body" class="bare">http://publications.europa.eu/resource/authority/corporate-body</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/corporate-body/" class="bare">http://publications.europa.eu/resource/authority/corporate-body/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
@@ -9158,6 +9214,14 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">DCAT-AP v.2.0.0 sier "The Corporate bodies NAL must be used for European institutions and a small set of international organisations. In case of other types of organisations, national, regional or local vocabularies should be used.", altså listen The Corporate bodies NAL skal brukes <em>hvis</em> organisasjonen er på listen.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:publisher &lt;http://publications.europa.eu/resource/authority/corporate-body/WHO&gt; .</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9180,21 +9244,29 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/continent">Continents Named Authority List</a>;<br>
-<a href="https://data.europa.eu/euodp/en/data/dataset/country">Countries Named Authority List</a>;<br>
-<a href="https://data.europa.eu/euodp/en/data/dataset/place">Places Named Authority List</a>;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent">Continent</a>;<br>
+<a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country">Country</a>;<br>
+<a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place">Place</a>;<br>
 <a href="http://sws.geonames.org/">GeoNames</a> (GeoNames er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/continent" class="bare">http://publications.europa.eu/resource/authority/continent</a>;<br>
-<a href="http://publications.europa.eu/resource/authority/country" class="bare">http://publications.europa.eu/resource/authority/country</a>;<br>
-<a href="http://publications.europa.eu/resource/authority/place" class="bare">http://publications.europa.eu/resource/authority/place</a>;<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/continent/" class="bare">http://publications.europa.eu/resource/authority/continent/</a>;<br>
+<a href="http://publications.europa.eu/resource/authority/country/" class="bare">http://publications.europa.eu/resource/authority/country/</a>;<br>
+<a href="http://publications.europa.eu/resource/authority/place/" class="bare">http://publications.europa.eu/resource/authority/place/</a>;<br>
 <a href="http://sws.geonames.org/">http://sws.geonames.org/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:spatial &lt;http://publications.europa.eu/resource/authority/country/NOR&gt; . # Norge</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9252,7 +9324,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc">EuroVoc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc">EuroVoc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
@@ -9287,13 +9359,13 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc">EuroVoc</a>;<br>
-<a href="https://data.europa.eu/euodp/en/data/dataset/data-theme">Data Theme Taxonomy Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc">EuroVoc</a>;<br>
+<a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/data-theme">Data theme</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://eurovoc.europa.eu/" class="bare">http://eurovoc.europa.eu/</a>;<br>
-<a href="http://publications.europa.eu/resource/authority/data-theme" class="bare">http://publications.europa.eu/resource/authority/data-theme</a></p></td>
+<a href="http://publications.europa.eu/resource/authority/data-theme/" class="bare">http://publications.europa.eu/resource/authority/data-theme/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
@@ -9306,6 +9378,14 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - gjelder også Datatjeneste (<code>dcat:DataService</code>) og Katalog (<code>dcat:Catalog</code>)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dcat:theme &lt;http://publications.europa.eu/resource/authority/data-theme/GOVE&gt; . # Government and public sector</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9328,7 +9408,7 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/th-dataset/-/resource/dataset/eurovoc">EuroVoc</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/eurovoc">EuroVoc</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
@@ -9377,6 +9457,15 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Denne er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; a foaf:Agent ;
+    dct:type &lt;http://purl.org/adms/publishertype/NationalAuthority&gt; .</pre>
+</div>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -9409,6 +9498,15 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Denne er obligatorisk i DCAT-AP v.2.0.0 som BRegDCAT-AP er basert på.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; a dct:LicenseDocument ;
+    dct:type &lt;http://purl.org/adms/licencetype/PublicDomain&gt; .</pre>
+</div>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -9427,11 +9525,11 @@ generelle nok til at et bredt spekter av ressurser kan klassifiseres,</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/resource-type">Resource Type Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/data/dataset/resource-type">Resource Type Named Authority List (i RDF)</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/resource-type" class="bare">http://publications.europa.eu/resource/authority/resource-type</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/resource-type/" class="bare">http://publications.europa.eu/resource/authority/resource-type/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
@@ -9477,7 +9575,17 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> bør brukes i tillegg til det som er nevnt under <a href="#Skal-brukes-for-theme">Kontrollerte vokabularer som skal brukes</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> bør brukes i tillegg til det som er nevnt under <a href="#Skal-brukes-for-spatial">Kontrollerte vokabularer som skal brukes</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dct:spatial &lt;https://data.geonorge.no/administrativeEnheter/fylke/id/173159&gt; . # Oslo som fylke
+
+&lt;&gt; dct:spatial &lt;https://data.geonorge.no/administrativeEnheter/kommune/id/173018&gt; . # Oslo som kommune</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9549,6 +9657,14 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - <a href="https://psi.norge.no/los/struktur.html">Los</a> bør brukes i tillegg til det som er nevnt under <a href="#Skal-brukes-for-theme">Kontrollerte vokabularer som skal brukes</a>.</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; dcat:theme &lt;https://psi.norge.no/los/tema/grunnskole&gt; .</pre>
+</div>
+</div></div></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -9605,11 +9721,11 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Navn på vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.europa.eu/euodp/en/data/dataset/dataset-type">Dataset type Named Authority List</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/dataset-type">Dataset type</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI til vokabularet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/dataset-type" class="bare">http://publications.europa.eu/resource/authority/dataset-type</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://publications.europa.eu/resource/authority/dataset-type/" class="bare">http://publications.europa.eu/resource/authority/dataset-type/</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
@@ -9618,6 +9734,15 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; a dcat:Dataset ;
+    dct:type &lt;http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST&gt; .</pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -9661,6 +9786,15 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <p><code>cpsvno:ruleForDisclosure</code>: utleveringsregel.</p>
 </li>
 </ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="listingblock">
+<div class="content">
+<pre>&lt;&gt; a cpsv:Rule ;
+    dct:type &lt;https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure&gt; .</pre>
+</div>
 </div></div></td>
 </tr>
 </tbody>
@@ -10366,7 +10500,7 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-01-18 12:15:45 UTC
+Sist oppdatert 2021-02-24 14:02:53 UTC
 </div>
 </div>
 </body>
