@@ -1245,12 +1245,12 @@
         sh:maxCount 1 ;
         sh:severity sh:Violation
     ], [
-        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
-#sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; # Endret til sh:pattern (se netse) fordi sh:hasValue ga merkelig feil
+#        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; # Endret til sh:pattern (se netse) fordi sh:hasValue ga merkelig feil
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
     	  sh:description "Multiple themes can be used but at least <http://publications.europa.eu/resource/authority/data-theme> should be present" ;
-        sh:severity sh:Warning ;
+        sh:severity sh:Warning
     ], [
         sh:pattern "^http://eurovoc.europa.eu/.+$";
         sh:nodeKind sh:IRI ;
