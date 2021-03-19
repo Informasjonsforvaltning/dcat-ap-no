@@ -39,12 +39,12 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2021-01-21"^^xsd:date ;
+    dct:modified "2021-02-04"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
     dct:title "The constraints of DCAT-AP-NO"@en ;
-    owl:versionInfo "0.2" ;
+    owl:versionInfo "0.3" ;
     foaf:homepage <https://data.norge.no/specification/dcat-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -131,6 +131,11 @@
     ], [
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:severity sh:Violation
+    ], [ ## Norwegian extension
+        sh:node :LicenceTypeRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:license ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dcat:CatalogRecord .
@@ -540,7 +545,9 @@
     ] ;
     sh:targetClass foaf:Document .
 
-# Identifikator (adms:Identifier), only added the Norwegian sh:name
+# Identifikator (adms:Identifier),
+# added the Norwegian sh:name
+# changed to sh:targetObjectsOf
 :Identifier_Shape
     a sh:NodeShape ;
     sh:name "Identifier"@en , "Identifikator"@nb ;
@@ -550,7 +557,9 @@
         sh:path skos:notation ;
         sh:severity sh:Violation
     ] ;
-    sh:targetClass adms:Identifier .
+    # sh:targetClass adms:Identifier ;
+    sh:targetObjectsOf adms:identifier ;
+    .
 
 # Regulativ ressurs (eli:LegalResource), only added the Norwegian sh:name
 :LegalResource_Shape
@@ -1040,16 +1049,6 @@
         sh:path skos:inScheme
     ] .
 
-:Identifier_Shape
-    a sh:NodeShape ;
-    sh:property [
-        sh:pattern "^http://purl.org/spar/datacite/+$";
-        sh:datatype xsd:string ;
-        sh:path skos:notation ;
-        sh:severity sh:Warning
-    ] ;
-    sh:targetClass adms:Identifier.
-
 :SpatialRestriction
     a sh:NodeShape ;
     rdfs:comment "Spatial Restriction" ;
@@ -1058,7 +1057,8 @@
                 :PlaceRestriction
                 :ContinentRestriction
                 :GeoNamesRestriction
-            ) .
+            ) ;
+     .
 
 :DataThemeRestriction
     a sh:NodeShape ;
@@ -1066,9 +1066,9 @@
     rdfs:label "Data Theme Restriction" ;
     sh:property [
         sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
-        sh:minCount 1 ;
+        sh:MinCount 1 ;
         sh:nodeKind sh:IRI ;
-        sh:path skos:inScheme
+        sh:path skos:inScheme ;
     ] .
 
 :EurovocThemeRestriction
@@ -1076,11 +1076,23 @@
     rdfs:comment "Eurovoc Theme Restriction" ;
     rdfs:label "Eurovoc Theme Restriction" ;
     sh:property [
-        sh:pattern "^http://eurovoc.europa.eu/.+$";
-        sh:minCount 1 ;
+        sh:pattern "^http://eurovoc.europa.eu/.+$" ;
+        sh:MinCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
     ] .
+
+:nonMandatoryThemeRestriction_ShapeCV
+    a sh:NodeShape ;
+    rdfs:comment "At least Data-theme is used, when dcat:theme is used"@en ;
+    sh:name "DataThemeRestriction when dcat:theme is not mandatory" ;
+    sh:property [
+        sh:qualifiedValueShape [ sh:node :DataThemeRestrictionn ] ;
+        sh:qualifiedMinCount 1 ;
+        sh:nodeKind sh:IRI ;
+        sh:path skos:inScheme ;
+    ] ;
+    .
 
 :FileTypeRestriction
     a sh:NodeShape ;
@@ -1216,26 +1228,16 @@
         sh:path dct:accrualPeriodicity ;
         sh:severity sh:Violation
     ], [
-        sh:node :CorporateBodyRestriction ;
-        sh:nodeKind sh:IRI ;
-        sh:path dct:creator ;
-        sh:severity sh:Warning
-    ], [
         sh:node :LanguageRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [
-        sh:node :CorporateBodyRestriction ;
-        sh:node :Publisher_ShapeCV ;
-        sh:nodeKind sh:IRI ;
-        sh:path dct:publisher ;
-        sh:severity sh:Warning
-    ], [
         sh:node :SpatialRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
-        sh:severity sh:Warning
+        sh:severity sh:Warning ;
+        sh:message "A non managed concept is used to indicate a spatial description, check if a corresponding exist"@en ;
     ], [
         sh:node :StatusRestriction ;
         sh:nodeKind sh:IRI ;
@@ -1243,44 +1245,41 @@
         sh:maxCount 1 ;
         sh:severity sh:Violation
     ], [
-        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+#        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; # Endret til sh:pattern (se netse) fordi sh:hasValue ga merkelig feil
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
-    	sh:description "Multiple themes can be used but at least <http://publications.europa.eu/resource/authority/data-theme> should be present" ;
+    	  sh:description "Multiple themes can be used but at least <http://publications.europa.eu/resource/authority/data-theme> should be present" ;
         sh:severity sh:Warning
     ], [
         sh:pattern "^http://eurovoc.europa.eu/.+$";
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
-    	sh:description "Multiple themes can be used but at least <http://eurovoc.europa.eu/.+> should be present" ;
-        sh:severity sh:Warning
+    	  sh:description "Multiple themes can be used but at least <http://eurovoc.europa.eu/.+> should be present" ;
+        sh:severity sh:Warning ;
     ] ;
     sh:targetClass dcat:Catalog.
 
-:DataService_Shape
+:DataService_ShapeCV
     a sh:NodeShape ;
     sh:property [
         sh:node :AccessRightsRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:accessRights ;
         sh:severity sh:Violation
-    ], [
-        sh:node :CorporateBodyRestriction ;
-        sh:node :Publisher_ShapeCV ;
-        sh:nodeKind sh:IRI ;
-        sh:path dct:publisher ;
-        sh:severity sh:Warning
-    ], [
-        sh:node [
-            a sh:NodeShape ;
-            sh:or (:DataThemeRestriction
-                    :EurovocThemeRestriction
-                    )
-            ];
-        sh:nodeKind sh:IRI ;
-        sh:path dcat:theme ;
-        sh:severity sh:Warning
     ] ;
+#--- denne virker ikke helt etter hensikt nå:
+#    sh:property [
+#        sh:path dcat:theme ;
+##        sh:node :nonMandatoryThemeRestriction_ShapeCV ;
+##-- følgende to setninger virker, men da blir dette mandatory som ikke er tilfelle
+#sh:qualifiedValueShape [ sh:node :DataThemeRestriction ] ; # NB! kun sjekk på Data-theme, ikke Eurovoc
+#sh:qualifiedMinCount 1 ;
+##--
+#
+#        sh:severity sh:Warning ;
+#        sh:message "Data-themes fra EU skal brukes for dcat:theme"@nb ;
+#    ] ;
     sh:targetClass dcat:DataService.
 
 :Dataset_ShapeCV
@@ -1296,36 +1295,28 @@
         sh:path dct:accrualPeriodicity ;
         sh:severity sh:Violation
     ], [
-        sh:node :CorporateBodyRestriction ;
-        sh:nodeKind sh:IRI ;
-        sh:path dct:creator ;
-        sh:severity sh:Warning
-    ], [
         sh:node :LanguageRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [
-        sh:node :CorporateBodyRestriction ;
-        sh:node :Publisher_ShapeCV ;
-        sh:nodeKind sh:IRI ;
-        sh:path dct:publisher ;
-        sh:severity sh:Warning
-    ], [
         sh:node :SpatialRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
-        sh:severity sh:Warning
-    ], [
-        sh:node [
-            a sh:NodeShape ;
-            sh:or (:DataThemeRestriction
-                    :EurovocThemeRestriction
-                    )
-            ];
+        sh:severity sh:Warning ;
+        sh:message "A non managed concept is used to indicate a spatial description, check if a corresponding exist"@en ;
+    ], [ # Norwegian extension
+        sh:node :LicenceTypeRestriction ;
         sh:nodeKind sh:IRI ;
+        sh:path dct:license ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
         sh:path dcat:theme ;
-        sh:severity sh:Warning
+        sh:qualifiedValueShape [ sh:node :DataThemeRestriction ] ; # NB! kun sjekk på Data-theme, ikke Eurovoc
+        sh:qualifiedMinCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "Data-themes fra EU skal brukes for dcat:theme"@nb ;
     ] ;
     sh:targetClass dcat:Dataset.
 
@@ -1365,6 +1356,11 @@
         sh:nodeKind sh:IRI ;
         sh:path dcatap:availability ;
         sh:severity sh:Violation
+    ], [ ## Norwegian extension
+        sh:node :FileTypeRestriction ;
+        sh:nodeKind sh:IRI ;
+        sh:path dct:format ;
+        sh:severity sh:Violation
     ] ;
     sh:targetClass dcat:Distribution.
 
@@ -1384,7 +1380,8 @@
         sh:node :SpatialRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
-        sh:severity sh:Warning
+        sh:severity sh:Warning ;
+        sh:message "A non managed concept is used to indicate a spatial description, check if a corresponding exist"@en ;
     ], [
         sh:node :StatusRestriction ;
         sh:nodeKind sh:IRI ;
