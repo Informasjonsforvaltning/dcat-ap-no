@@ -39,7 +39,7 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2021-03-19"^^xsd:date ;
+    dct:modified "2021-02-04"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
@@ -1246,16 +1246,17 @@
         sh:severity sh:Violation
     ], [
         sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+#sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; # Endret til sh:pattern (se netse) fordi sh:hasValue ga merkelig feil
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
     	  sh:description "Multiple themes can be used but at least <http://publications.europa.eu/resource/authority/data-theme> should be present" ;
-        sh:severity sh:Warning
+        sh:severity sh:Warning ;
     ], [
         sh:pattern "^http://eurovoc.europa.eu/.+$";
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
-    	sh:description "Multiple themes can be used but at least <http://eurovoc.europa.eu/.+> should be present" ;
-        sh:severity sh:Warning
+    	  sh:description "Multiple themes can be used but at least <http://eurovoc.europa.eu/.+> should be present" ;
+        sh:severity sh:Warning ;
     ] ;
     sh:targetClass dcat:Catalog.
 
