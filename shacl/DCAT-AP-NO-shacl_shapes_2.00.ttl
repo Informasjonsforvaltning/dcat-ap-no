@@ -39,12 +39,12 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2021-02-04"^^xsd:date ;
+    dct:modified "2021-03-22"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
     dct:title "The constraints of DCAT-AP-NO"@en ;
-    owl:versionInfo "0.3" ;
+    owl:versionInfo "0.4" ;
     foaf:homepage <https://data.norge.no/specification/dcat-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -444,6 +444,12 @@
         sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation
+    ], [ # dct:license anbefalt, warning hvis ikke med
+        sh:class dct:LicenseDocument ;
+        sh:minCount 1 ;
+        sh:path dct:license ;
+        sh:severity sh:Warning ;
+        sh:message "Lisens (dct:license) for Distribusjon er anbefalt, bør oppgis."@nb ;
     ], [
         sh:class dcat:DataService ;
         sh:path dcat:accessService ;
