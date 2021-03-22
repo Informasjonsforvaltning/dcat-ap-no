@@ -133,7 +133,7 @@
         sh:path dct:description ;
         sh:severity sh:Violation
     ], [ ## Norwegian extension
-        sh:node :LicenceTypeRestriction ;
+        sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation
@@ -596,7 +596,7 @@
     sh:targetClass eli:LegalResource .
 
 # Lisensdokument (dct:LicenseDocument), only added the Norwegian sh:name
-:LicenceDocument_Shape
+:LicenseDocument_Shape
     a sh:NodeShape ;
     sh:name "License Document"@en , "Lisensdokument"@nb ;
     sh:property [
@@ -1143,7 +1143,7 @@
         sh:path skos:inScheme
     ] .
 
-:LicenceTypeRestriction
+:LicenseTypeRestriction
     a sh:NodeShape ;
     rdfs:comment "License type restriction" ;
     rdfs:label "License type restriction" ;
@@ -1215,7 +1215,7 @@
 :LicenseDocument_ShapeCV
     a sh:NodeShape ;
     sh:property [
-        sh:node :LicenceTypeRestriction ;
+        sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:type
     ] ;
@@ -1312,7 +1312,7 @@ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; 
         sh:severity sh:Warning ;
         sh:message "A non managed concept is used to indicate a spatial description, check if a corresponding exist"@en ;
     ], [ # Norwegian extension
-        sh:node :LicenceTypeRestriction ;
+        sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation
@@ -1348,7 +1348,7 @@ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; 
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [
-        sh:node :LicenceTypeRestriction ;
+        sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation
