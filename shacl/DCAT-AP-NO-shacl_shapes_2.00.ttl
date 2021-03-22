@@ -207,7 +207,7 @@
     ], [
         sh:class dct:LicenseDocument ;
         sh:maxCount 1 ;
-        sh:path dct:licence ;
+        sh:path dct:license ;
         sh:severity sh:Violation
     ], [ # Norwegian extension: Added dct:format
         sh:class dct:MediaType ;
