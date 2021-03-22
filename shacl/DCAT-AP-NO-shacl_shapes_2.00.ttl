@@ -598,7 +598,7 @@
 # Lisensdokument (dct:LicenseDocument), only added the Norwegian sh:name
 :LicenceDocument_Shape
     a sh:NodeShape ;
-    sh:name "Licence Document"@en , "Lisensdokument"@nb ;
+    sh:name "License Document"@en , "Lisensdokument"@nb ;
     sh:property [
         sh:class skos:Concept ;
         sh:path dct:type ;
@@ -1145,8 +1145,8 @@
 
 :LicenceTypeRestriction
     a sh:NodeShape ;
-    rdfs:comment "Licence type restriction" ;
-    rdfs:label "Licence type restriction" ;
+    rdfs:comment "License type restriction" ;
+    rdfs:label "License type restriction" ;
     sh:property [
         sh:hasValue <http://publications.europa.eu/resource/authority/licence> ;
         sh:minCount 1 ;
