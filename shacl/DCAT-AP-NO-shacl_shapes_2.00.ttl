@@ -439,13 +439,20 @@
         # sh:maxCount 1 ; # Norwegian extension 0..n
         sh:path dct:format ;
         sh:severity sh:Violation
-    ], [
+    ], [ # sjekker kun klasse her
         sh:class dct:LicenseDocument ;
+#        sh:maxCount 1 ;
+        sh:path dct:license ;
+        sh:severity sh:Violation ;
+        sh:message "dct:license skal peke på en instans av dct:LicenseDocument. Feilen kan ligge hos den som publiserte lisensen."@nb ;
+    ], [ # sjekker kun maks. antall her
+#        sh:class dct:LicenseDocument ;
         sh:maxCount 1 ;
         sh:path dct:license ;
-        sh:severity sh:Violation
-    ], [ # dct:license anbefalt, warning hvis ikke med
-        sh:class dct:LicenseDocument ;
+        sh:severity sh:Violation ;
+        sh:message "dct:license kan ha maks. 1 verdi"@nb ;
+    ], [ # sjekker kun min. antall her, fordi dct:license er anbefalt, warning hvis ikke med
+#        sh:class dct:LicenseDocument ;
         sh:minCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Warning ;
