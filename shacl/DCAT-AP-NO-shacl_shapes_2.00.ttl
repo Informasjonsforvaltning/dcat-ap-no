@@ -444,19 +444,19 @@
 #        sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "dct:license skal peke på en instans av dct:LicenseDocument. Feilen kan ligge hos den som publiserte lisensen."@nb ;
+        sh:message "Klassefeil: Det som dct:license peker på er ikke en instans av dct:LicenseDocument."@nb ;
     ], [ # sjekker kun maks. antall her
 #        sh:class dct:LicenseDocument ;
         sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "dct:license kan ha maks. 1 verdi"@nb ;
+        sh:message "Kardinalitetsfeil: dct:license kan ha maks. 1 verdi"@nb ;
     ], [ # sjekker kun min. antall her, fordi dct:license er anbefalt, warning hvis ikke med
 #        sh:class dct:LicenseDocument ;
         sh:minCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Warning ;
-        sh:message "Lisens (dct:license) for Distribusjon er anbefalt, bør oppgis."@nb ;
+        sh:message "Kardinalitetsvarsel: Fant ingen lisens (dct:license) som er anbefalt for Distribusjon."@nb ;
     ], [
         sh:class dcat:DataService ;
         sh:path dcat:accessService ;
