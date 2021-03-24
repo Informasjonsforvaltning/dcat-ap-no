@@ -444,19 +444,19 @@
 #        sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Klassefeil: Det som dct:license peker på er ikke en instans av dct:LicenseDocument."@nb ;
+        sh:message "Range: Det som dct:license peker på er ikke en instans av dct:LicenseDocument."@nb ;
     ], [ # sjekker kun maks. antall her
 #        sh:class dct:LicenseDocument ;
         sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Kardinalitetsfeil: dct:license kan ha maks. 1 verdi"@nb ;
+        sh:message "Multiplisitet: dct:license kan ha maks. 1 verdi."@nb ;
     ], [ # sjekker kun min. antall her, fordi dct:license er anbefalt, warning hvis ikke med
 #        sh:class dct:LicenseDocument ;
         sh:minCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Warning ;
-        sh:message "Kardinalitetsvarsel: Fant ingen lisens (dct:license) som er anbefalt for Distribusjon."@nb ;
+        sh:message "Multiplisitet: Fant ingen lisens (dct:license). Lisens er anbefalt egenskap for Distribusjon."@nb ;
     ], [
         sh:class dcat:DataService ;
         sh:path dcat:accessService ;
@@ -1158,7 +1158,8 @@
         sh:hasValue <http://publications.europa.eu/resource/authority/licence> ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
-        sh:path skos:inScheme
+        sh:path skos:inScheme ;
+        sh:message "Verdi: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."
     ] .
 
 :PlaceRestriction
