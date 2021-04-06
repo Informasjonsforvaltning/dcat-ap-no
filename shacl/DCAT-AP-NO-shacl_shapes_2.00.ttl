@@ -136,7 +136,8 @@
         sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
     ] ;
     sh:targetClass dcat:CatalogRecord .
 
@@ -456,7 +457,7 @@
         sh:minCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Warning ;
-        sh:message "Multiplisitet: Fant ingen lisens (dct:license). Lisens er anbefalt egenskap for Distribusjon."@nb ;
+        sh:message "Kravsnivå: Fant ingen lisens (dct:license). Lisens er anbefalt egenskap for Distribusjon."@nb ;
     ], [
         sh:class dcat:DataService ;
         sh:path dcat:accessService ;
@@ -1159,7 +1160,8 @@
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme ;
-        sh:message "Verdi: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."
+# sh:message plassert her blir ikke brukt, ser det ut til
+#        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
     ] .
 
 :PlaceRestriction
@@ -1220,14 +1222,15 @@
     ] ;
     sh:targetClass eli:LegalResource .
 
-:LicenseDocument_ShapeCV
-    a sh:NodeShape ;
-    sh:property [
-        sh:node :LicenseTypeRestriction ;
-        sh:nodeKind sh:IRI ;
-        sh:path dct:type
-    ] ;
-    sh:targetClass dct:LicenseDocument.
+# Denne brukes av ingen, derfor kommenteres bort i første omgang:
+# :LicenseDocument_ShapeCV
+#    a sh:NodeShape ;
+#    sh:property [
+#        sh:node :LicenseTypeRestriction ;
+#        sh:nodeKind sh:IRI ;
+#        sh:path dct:type
+#    ] ;
+#    sh:targetClass dct:LicenseDocument.
 
 :Catalog_ShapeCV
     a sh:NodeShape ;
@@ -1323,7 +1326,8 @@ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; 
         sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
     ] ;
     sh:property [
         sh:path dcat:theme ;
@@ -1359,7 +1363,8 @@ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; 
         sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
     ], [
         sh:node :StatusRestriction ;
         sh:nodeKind sh:IRI ;
