@@ -39,12 +39,12 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2021-02-04"^^xsd:date ;
+    dct:modified "2021-04-06"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
     dct:title "The constraints of DCAT-AP-NO"@en ;
-    owl:versionInfo "0.3" ;
+    owl:versionInfo "0.4" ;
     foaf:homepage <https://data.norge.no/specification/dcat-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -133,10 +133,11 @@
         sh:path dct:description ;
         sh:severity sh:Violation
     ], [ ## Norwegian extension
-        sh:node :LicenceTypeRestriction ;
+        sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
     ] ;
     sh:targetClass dcat:CatalogRecord .
 
@@ -207,7 +208,7 @@
     ], [
         sh:class dct:LicenseDocument ;
         sh:maxCount 1 ;
-        sh:path dct:licence ;
+        sh:path dct:license ;
         sh:severity sh:Violation
     ], [ # Norwegian extension: Added dct:format
         sh:class dct:MediaType ;
@@ -439,11 +440,24 @@
         # sh:maxCount 1 ; # Norwegian extension 0..n
         sh:path dct:format ;
         sh:severity sh:Violation
-    ], [
+    ], [ # sjekker kun klasse her
         sh:class dct:LicenseDocument ;
+#        sh:maxCount 1 ;
+        sh:path dct:license ;
+        sh:severity sh:Violation ;
+        sh:message "Range: Det som dct:license peker på er ikke en instans av dct:LicenseDocument."@nb ;
+    ], [ # sjekker kun maks. antall her
+#        sh:class dct:LicenseDocument ;
         sh:maxCount 1 ;
         sh:path dct:license ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "Multiplisitet: dct:license kan ha maks. 1 verdi."@nb ;
+    ], [ # sjekker kun min. antall her, fordi dct:license er anbefalt, warning hvis ikke med
+#        sh:class dct:LicenseDocument ;
+        sh:minCount 1 ;
+        sh:path dct:license ;
+        sh:severity sh:Warning ;
+        sh:message "Kravsnivå: Fant ingen lisens (dct:license). Lisens er anbefalt egenskap for Distribusjon."@nb ;
     ], [
         sh:class dcat:DataService ;
         sh:path dcat:accessService ;
@@ -590,9 +604,9 @@
     sh:targetClass eli:LegalResource .
 
 # Lisensdokument (dct:LicenseDocument), only added the Norwegian sh:name
-:LicenceDocument_Shape
+:LicenseDocument_Shape
     a sh:NodeShape ;
-    sh:name "Licence Document"@en , "Lisensdokument"@nb ;
+    sh:name "License Document"@en , "Lisensdokument"@nb ;
     sh:property [
         sh:class skos:Concept ;
         sh:path dct:type ;
@@ -1137,15 +1151,17 @@
         sh:path skos:inScheme
     ] .
 
-:LicenceTypeRestriction
+:LicenseTypeRestriction
     a sh:NodeShape ;
-    rdfs:comment "Licence type restriction" ;
-    rdfs:label "Licence type restriction" ;
+    rdfs:comment "License type restriction" ;
+    rdfs:label "License type restriction" ;
     sh:property [
         sh:hasValue <http://publications.europa.eu/resource/authority/licence> ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
-        sh:path skos:inScheme
+        sh:path skos:inScheme ;
+# sh:message plassert her blir ikke brukt, ser det ut til
+#        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
     ] .
 
 :PlaceRestriction
@@ -1206,14 +1222,15 @@
     ] ;
     sh:targetClass eli:LegalResource .
 
-:LicenseDocument_ShapeCV
-    a sh:NodeShape ;
-    sh:property [
-        sh:node :LicenceTypeRestriction ;
-        sh:nodeKind sh:IRI ;
-        sh:path dct:type
-    ] ;
-    sh:targetClass dct:LicenseDocument.
+# Denne brukes av ingen, derfor kommenteres bort i første omgang:
+# :LicenseDocument_ShapeCV
+#    a sh:NodeShape ;
+#    sh:property [
+#        sh:node :LicenseTypeRestriction ;
+#        sh:nodeKind sh:IRI ;
+#        sh:path dct:type
+#    ] ;
+#    sh:targetClass dct:LicenseDocument.
 
 :Catalog_ShapeCV
     a sh:NodeShape ;
@@ -1306,10 +1323,11 @@ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; 
         sh:severity sh:Warning ;
         sh:message "A non managed concept is used to indicate a spatial description, check if a corresponding exist"@en ;
     ], [ # Norwegian extension
-        sh:node :LicenceTypeRestriction ;
+        sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
     ] ;
     sh:property [
         sh:path dcat:theme ;
@@ -1342,10 +1360,11 @@ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; 
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [
-        sh:node :LicenceTypeRestriction ;
+        sh:node :LicenseTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
     ], [
         sh:node :StatusRestriction ;
         sh:nodeKind sh:IRI ;
