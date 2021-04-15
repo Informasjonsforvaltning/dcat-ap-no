@@ -119,17 +119,6 @@ Klassen _Distribusjon_ er anbefalt.
 |Kravsnivå| Valgfri
 |===
 
-=== Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters) [[Distribusjon-romlig-oppløsning]]
-[cols="30s,70d"]
-|===
-|Engelsk navn| spatial resolution
-|URI| dcat:spatialResolutionInMeters
-|Range| xsd:decimal
-|Beskrivelse| Refererer til den minste romlige oppløsningen for en datasettdistribusjon målt i meter.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
 === Distribusjon: i samsvar med (dct:conformsTo) [[Distribusjon-i-samsvar-med]]
 
 [cols="30s,70d"]
@@ -208,6 +197,17 @@ Klassen _Distribusjon_ er anbefalt.
 |Range| dct:RightsStatement
 |Beskrivelse| Viser til en uttalelse som angir rettigheter knyttet til distribusjonen.
 |Multiplisitet| 0..1
+|Kravsnivå| Valgfri
+|===
+
+=== Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters) [[Distribusjon-romlig-oppløsning]]
+[cols="30s,70d"]
+|===
+|Engelsk navn| spatial resolution
+|URI| dcat:spatialResolutionInMeters
+|Range| xsd:decimal
+|Beskrivelse| Refererer til den minste romlige oppløsningen for en datasettdistribusjon målt i meter.
+|Multiplisitet| 0..n
 |Kravsnivå| Valgfri
 |===
 
