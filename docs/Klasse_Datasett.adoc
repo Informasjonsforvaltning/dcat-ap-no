@@ -361,6 +361,18 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Kravsnivå| Valgfri
 |===
 
+=== Datasett: romlig oppløsning (dcat:spatialResolutionInMeters) [[Datasett-romligOppløsning]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| spatial resolution
+|URI| dcat:spatialResolutionInMeters
+|Range| xsd:decimal
+|Beskrivelse|  Refererer til den minste romlige oppløsningen for et datasett målt i meter.
+|Multiplisitet| 0..n
+|Kravsnivå| Valgfri
+|===
+
 === Datasett: har del (dct:hasPart) [[Datasett-harDel]]
 
 [cols="30s,70d"]
@@ -528,18 +540,6 @@ dqvno:isAuthoritative
 |Kravsnivå| Valgfri
 |===
 
-=== Datasett: opphav (dct:provenance) [[Datasett-opphav]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| provenance
-|URI| dct:provenance
-|Range| dct:ProvenanceStatement
-|Beskrivelse| Referanse til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
 === Datasett: produsent (dct:creator) [[Datasett-produsent]]
 
 [cols="30s,70d"]
@@ -549,6 +549,18 @@ dqvno:isAuthoritative
 |Range| foaf:Agent
 |Beskrivelse| Referanse til aktøren som er produsent av datasettet.
 |Multiplisitet| 0..1
+|Kravsnivå| Valgfri
+|===
+
+=== Datasett: opphav (dct:provenance) [[Datasett-opphav]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| provenance
+|URI| dct:provenance
+|Range| dct:ProvenanceStatement
+|Beskrivelse| Referanse til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
+|Multiplisitet| 0..n
 |Kravsnivå| Valgfri
 |===
 
@@ -572,18 +584,6 @@ dqvno:isAuthoritative
 |URI| dct:relation
 |Range| rdfs:Resource
 |Beskrivelse| Referanse til en beslektet ressurs.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: romlig oppløsning (dcat:spatialResolutionInMeters) [[Datasett-romligOppløsning]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| spatial resolution
-|URI| dcat:spatialResolutionInMeters
-|Range| xsd:decimal
-|Beskrivelse|  Refererer til den minste romlige oppløsningen for et datasett målt i meter.
 |Multiplisitet| 0..n
 |Kravsnivå| Valgfri
 |===
