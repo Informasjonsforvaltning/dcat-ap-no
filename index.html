@@ -575,7 +575,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-erstatter">Datasett: erstatter (dct:replaces)</a></li>
 <li><a href="#Datasett-erstattesAv">Datasett: erstattes av (dct:isReplacedBy)</a></li>
 <li><a href="#Datasett-frekvens">Datasett: frekvens (dct:accrualPeriodicity)</a></li>
-<li><a href="#Datasett-romligOppløsning">Datasett: romlig oppløsning (dcat:spatialResolutionInMeters)</a></li>
 <li><a href="#Datasett-harDel">Datasett: har del (dct:hasPart)</a></li>
 <li><a href="#Datasett-harKvalitetsnote">Datasett: har kvalitetsnote (dqv:hasQualityAnnotation)</a></li>
 <li><a href="#Datasett-harMåleresultat">Datasett: har måleresultat (dqv:hasQualityMeasurement)</a></li>
@@ -586,10 +585,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-kvalifisertKreditering">Datasett: kvalifisert kreditering (prov:qualifiedAttribution)</a></li>
 <li><a href="#Datasett-kvalifisertRelasjon">Datasett: kvalifisert relasjon (dcat:qualifiedRelation)</a></li>
 <li><a href="#Datasett-landingsside">Datasett: landingsside (dcat:landingPage)</a></li>
-<li><a href="#Datasett-produsent">Datasett: produsent (dct:creator)</a></li>
 <li><a href="#Datasett-opphav">Datasett: opphav (dct:provenance)</a></li>
+<li><a href="#Datasett-produsent">Datasett: produsent (dct:creator)</a></li>
 <li><a href="#Datasett-referererTil">Datasett: refererer til (dct:references)</a></li>
 <li><a href="#Datasett-relatertRessurs">Datasett: relatert ressurs (dct:relation)</a></li>
+<li><a href="#Datasett-romligOppløsning">Datasett: romlig oppløsning (dcat:spatialResolutionInMeters)</a></li>
 <li><a href="#Datasett-språk">Datasett: språk (dct:language)</a></li>
 <li><a href="#Datasett-tidsoppløsning">Datasett: tidsoppløsning (dcat:temporalResolution)</a></li>
 <li><a href="#Datasett-type">Datasett: type (dct:type)</a></li>
@@ -655,7 +655,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Distribusjon-dokumentasjon">Distribusjon: dokumentasjon (foaf:page)</a></li>
 <li><a href="#Distribusjon-endringsdato">Distribusjon: endringsdato (dct:modified)</a></li>
 <li><a href="#Distribusjon-filstørrelse">Distribusjon: filstørrelse (dcat:byteSize)</a></li>
-<li><a href="#Distribusjon-romlig-oppløsning">Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters)</a></li>
 <li><a href="#Distribusjon-i-samsvar-med">Distribusjon: i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Distribusjon-komprimeringsformat">Distribusjon: komprimeringsformat (dcat:compressFormat)</a></li>
 <li><a href="#Distribusjon-medietype">Distribusjon: medietype (dcat:mediaType)</a></li>
@@ -663,6 +662,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Distribusjon-pakkeformat">Distribusjon: pakkeformat (dcat:packageFormat)</a></li>
 <li><a href="#Distribusjon-policy">Distribusjon: policy (odrl:hasPolicy)</a></li>
 <li><a href="#Distribusjon-rettigheter">Distribusjon: rettigheter (dct:rights)</a></li>
+<li><a href="#Distribusjon-romlig-oppløsning">Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters)</a></li>
 <li><a href="#Distribusjon-sjekksum">Distribusjon: sjekksum (spdx:checksum)</a></li>
 <li><a href="#Distribusjon-språk">Distribusjon: språk (dct:language)</a></li>
 <li><a href="#_distribusjon_tidsoppløsning_dcattemporalresolution">Distribusjon: tidsoppløsning (dcat:temporalResolution )</a></li>
@@ -3324,41 +3324,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-romligOppløsning"><a class="link" href="#Datasett-romligOppløsning">Datasett: romlig oppløsning (dcat:spatialResolutionInMeters)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spatial resolution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:decimal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til den minste romlige oppløsningen for et datasett målt i meter.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
 <h5 id="Datasett-harDel"><a class="link" href="#Datasett-harDel">Datasett: har del (dct:hasPart)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3785,41 +3750,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-produsent"><a class="link" href="#Datasett-produsent">Datasett: produsent (dct:creator)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">creator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:creator</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til aktøren som er produsent av datasettet.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
 <h5 id="Datasett-opphav"><a class="link" href="#Datasett-opphav">Datasett: opphav (dct:provenance)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3846,6 +3776,41 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Datasett-produsent"><a class="link" href="#Datasett-produsent">Datasett: produsent (dct:creator)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">creator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:creator</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til aktøren som er produsent av datasettet.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
@@ -3912,6 +3877,41 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til en beslektet ressurs.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Datasett-romligOppløsning"><a class="link" href="#Datasett-romligOppløsning">Datasett: romlig oppløsning (dcat:spatialResolutionInMeters)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spatial resolution</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:decimal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til den minste romlige oppløsningen for et datasett målt i meter.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -5142,41 +5142,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
-<h5 id="Distribusjon-romlig-oppløsning"><a class="link" href="#Distribusjon-romlig-oppløsning">Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spatial resolution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:decimal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til den minste romlige oppløsningen for en datasettdistribusjon målt i meter.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
 <h5 id="Distribusjon-i-samsvar-med"><a class="link" href="#Distribusjon-i-samsvar-med">Distribusjon: i samsvar med (dct:conformsTo)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5417,6 +5382,41 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Distribusjon-romlig-oppløsning"><a class="link" href="#Distribusjon-romlig-oppløsning">Distribusjon: romlig oppløsning (dcat:spatialResolutionInMeters)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">spatial resolution</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:decimal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refererer til den minste romlige oppløsningen for en datasettdistribusjon målt i meter.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
@@ -10500,7 +10500,7 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-02-24 14:02:53 UTC
+Sist oppdatert 2021-04-15 08:22:14 UTC
 </div>
 </div>
 </body>
