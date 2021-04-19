@@ -39,12 +39,12 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2021-04-06"^^xsd:date ;
+    dct:modified "2021-04-19"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
     dct:title "The constraints of DCAT-AP-NO"@en ;
-    owl:versionInfo "0.4" ;
+    owl:versionInfo "0.5" ;
     foaf:homepage <https://data.norge.no/specification/dcat-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -80,7 +80,15 @@
         sh:path dct:identifier ;
         sh:severity sh:Violation
     ] ;
-    sh:targetObjectsOf dct:publisher, dct:creator ;
+    sh:and (
+      sh:or (
+        [sh:targetObjectsOf dct:publisher]
+        [sh:targetObjectsOf dct:creator ] )
+      sh:or (
+        [sh:targetSubjectOf dcat:Dataset]
+        [sh:targetSubjectOf dcat:Catalog]
+        [sh:targetSUbjectOf dcat:DataService] )
+      ) ;
     # sh:targetClass foaf:Agent ;
    .
 
