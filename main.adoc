@@ -22,10 +22,11 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Status*: Gjeldende +
 *Versjon*: 2.0.1 (se <<Endringslogg, endringsloggen>>) +
 *Publisert*: 2020-10-29 +
-*Oppdatert*: 2021-02-24 +
+*Oppdatert*: 2021-04-23 +
 *Gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no +
 *Forrige versjon*: https://data.norge.no/specification/dcat-ap-no/v1.1/ +
-*Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/
+*Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/ +
+*Valideringsverktøy*: https://data.norge.no/validator
 
 
 include::01_Introduksjon.adoc[]
