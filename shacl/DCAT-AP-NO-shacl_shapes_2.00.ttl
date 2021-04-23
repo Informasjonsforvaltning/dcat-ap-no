@@ -1109,7 +1109,7 @@
     rdfs:comment "At least Data-theme is used, when dcat:theme is used"@en ;
     sh:name "DataThemeRestriction when dcat:theme is not mandatory" ;
     sh:property [
-        sh:qualifiedValueShape [ sh:node :DataThemeRestrictionn ] ;
+        sh:qualifiedValueShape [ sh:node :DataThemeRestriction ] ;
         sh:qualifiedMinCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme ;
