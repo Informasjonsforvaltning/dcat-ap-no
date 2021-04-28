@@ -179,12 +179,12 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Kommentar|For å være kompatibel med CPSV-AP, har BRegDCAT-AP valgt en annen måte å representere kontaktpunkt på her i denne klassen, enn for f.eks. klassen Datasett (dcat:Dataset).
 |===
 
-=== Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResouce) [[OffentligTjeneste-harRegulativRessurs]]
+=== Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResource) [[OffentligTjeneste-harRegulativRessurs]]
 
 [cols="30s,70d"]
 |===
 |Engelsk navn|has legal resource
-|URI|cv:hasLegalResouce
+|URI|cv:hasLegalResource
 |Range|eli:LegalResource
 |Beskrivelse|Brukes til å referere til en regulativ ressurs som tjenesten er relatert til eller har som sin juridiske ramme.
 |Multiplisitet|0..n
