@@ -182,6 +182,10 @@ Ved at et `dcat:Dataset cpsv:follows` en `cpsv:Rule`, og at en `cpsv:Rule cpsv:i
 
 :aLegalResource
    a eli:LegalResouce ;
+   dct:type [ a skos:Concept ;
+      skos:prefLabel "lov"@nb ; 
+      skos:definition "rettsregler som fastsetter rettigheter og plikter"@nb ;
+      ] ;
    dct:description "Eksempelregelverk"@nb , "Example legal resource"@en ;
    xsd:seeAlso <https:/example.com/eli/lov/2020/01/01/section/1> .
 ----
