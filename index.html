@@ -823,7 +823,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel4">
 <li><a href="#OffentligTjeneste-følger">Offentlig tjeneste: følger (cpsv:follows)</a></li>
 <li><a href="#OffentligTjeneste-harKontaktpunkt">Offentlig tjeneste: har kontaktpunkt (cv:hasContactPoint)</a></li>
-<li><a href="#OffentligTjeneste-harRegulativRessurs">Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResouce)</a></li>
+<li><a href="#OffentligTjeneste-harRegulativRessurs">Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResource)</a></li>
 </ul>
 </li>
 </ul>
@@ -1026,7 +1026,7 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <p><strong>Status</strong>: Gjeldende<br>
 <strong>Versjon</strong>: 2.0.1 (se <a href="#Endringslogg">endringsloggen</a>)<br>
 <strong>Publisert</strong>: 2020-10-29<br>
-<strong>Oppdatert</strong>: 2021-04-26<br>
+<strong>Oppdatert</strong>: 2021-04-28<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no/v1.1/" class="bare">https://data.norge.no/specification/dcat-ap-no/v1.1/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/" class="bare">https://informasjonsforvaltning.github.io/dcat-ap-no/</a><br>
@@ -2791,7 +2791,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
 <td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Ved at et <code>dcat:Dataset cpsv:follows</code> en <code>cpsv:Rule</code>, og at en <code>cpsv:Rule cpsv:implements</code> en <code>eli:LegalResouce</code>, illustrerer eksempelet her hvordan  man kan referere fra et datasett til en lovhjemmel som regulerer f.eks. skjerming eller utlevering av datasettet.</p>
+<p>Ved at et <code>dcat:Dataset cpsv:follows</code> en <code>cpsv:Rule</code>, og at en <code>cpsv:Rule cpsv:implements</code> en <code>eli:LegalResource</code>, illustrerer eksempelet her hvordan  man kan referere fra et datasett til en lovhjemmel som regulerer f.eks. skjerming eller utlevering av datasettet.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -2811,7 +2811,11 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
    cpsv:implements :aLegalResource .
 
 :aLegalResource
-   a eli:LegalResouce ;
+   a eli:LegalResource ;
+   dct:type [ a skos:Concept ;
+      skos:prefLabel "lov"@nb ;
+      skos:definition "rettsregler som fastsetter rettigheter og plikter"@nb ;
+      ] ;
    dct:description "Eksempelregelverk"@nb , "Example legal resource"@en ;
    xsd:seeAlso &lt;https:/example.com/eli/lov/2020/01/01/section/1&gt; .</code></pre>
 </div>
@@ -7817,7 +7821,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 <div class="sect4">
-<h5 id="OffentligTjeneste-harRegulativRessurs"><a class="link" href="#OffentligTjeneste-harRegulativRessurs">Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResouce)</a></h5>
+<h5 id="OffentligTjeneste-harRegulativRessurs"><a class="link" href="#OffentligTjeneste-harRegulativRessurs">Offentlig tjeneste: har regulativ ressurs (cv:hasLegalResource)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7830,7 +7834,7 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasLegalResouce</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasLegalResource</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -10501,7 +10505,7 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-04-26 08:38:32 UTC
+Sist oppdatert 2021-04-28 10:45:38 UTC
 </div>
 </div>
 </body>
