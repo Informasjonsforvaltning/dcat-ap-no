@@ -161,7 +161,7 @@ der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` 
 |Kravsnivå|Anbefalt
 |Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt.
 |Eksempel a|
-Ved at et `dcat:Dataset cpsv:follows` en `cpsv:Rule`, og at en `cpsv:Rule cpsv:implements` en `eli:LegalResouce`, illustrerer eksempelet her hvordan  man kan referere fra et datasett til en lovhjemmel som regulerer f.eks. skjerming eller utlevering av datasettet.
+Ved at et `dcat:Dataset cpsv:follows` en `cpsv:Rule`, og at en `cpsv:Rule cpsv:implements` en `eli:LegalResource`, illustrerer eksempelet her hvordan  man kan referere fra et datasett til en lovhjemmel som regulerer f.eks. skjerming eller utlevering av datasettet.
 
 [source]
 ----
@@ -181,9 +181,13 @@ Ved at et `dcat:Dataset cpsv:follows` en `cpsv:Rule`, og at en `cpsv:Rule cpsv:i
    cpsv:implements :aLegalResource .
 
 :aLegalResource
-   a eli:LegalResouce ;
+   a eli:LegalResource ;
+   dct:type [ a skos:Concept ;
+      skos:prefLabel "lov"@nb ;
+      skos:definition "rettsregler som fastsetter rettigheter og plikter"@nb ;
+      ] ;
    dct:description "Eksempelregelverk"@nb , "Example legal resource"@en ;
-   xsd:seeAlso <https:/example.com/eli/lov/2020/01/01/section/1> .
+   rdfs:seeAlso <https:/example.com/eli/lov/2020/01/01/section/1> .
 ----
 der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure` (utleveringsegel) er predefinerte instanser av type regel (`skos:Concept`).
 |===
