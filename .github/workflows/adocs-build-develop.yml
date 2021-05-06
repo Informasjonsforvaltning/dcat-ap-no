@@ -3,7 +3,10 @@ name: build adocs
 on:
   push:
     branches:
-    - master
+    - develop
+    paths:
+    - docs/**
+
 jobs:
   adoc_build:
     runs-on: ubuntu-18.04
@@ -26,5 +29,4 @@ jobs:
       uses: peaceiris/actions-gh-pages@v3
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_branch: html
         publish_dir: ./docs
