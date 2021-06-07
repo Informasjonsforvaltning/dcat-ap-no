@@ -25,6 +25,7 @@
 |schema|http://schema.org/|schema.org
 |skos|http://www.w3.org/2004/02/skos/core#|SKOS Simple Knowledge Organization System - Reference
 |spdx|http://spdx.org/rdf/terms#|Software Package Data Exchange®
+|time | http://www.w3.org/2006/time# | https://www.w3.org/TR/owl-time/[Time Ontology in OWL]
 |vcard|http://www.w3.org/2006/vcard/ns#|vCard Ontology
 |voaf|http://purl.org/vocommons/voaf#|Vocabulary of a Friend (VOAF)
 |xsd|http://www.w3.org/2001/XMLSchema#|XML Schema Part 2: Datatypes Second Edition
