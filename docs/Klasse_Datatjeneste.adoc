@@ -74,11 +74,11 @@ Klassen _Datatjeneste_ er valgfri.
 |===
 |Engelsk navn|format
 |URI|dct:format
-|Range|dct:MediaType
-|Beskrivelse|Opplysing om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
+|Range|dct:MediaTypeOrExtent
+|Beskrivelse|Opplysning om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt
-|Kommentar| Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å ha konsistens mellom distribusjon og datatjeneste.
+|Kommentar|Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å kunne uttrykke format(er) en datatjeneste kan tilby (istedenfor å måtte gå omveien via Distribusjon)
 |===
 
 === Datatjeneste: kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
@@ -196,6 +196,19 @@ Klassen _Datatjeneste_ er valgfri.
 |Beskrivelse| Inneholder lisensen som datatjenesten blir gjort tilgjengelig under.
 |Multiplisitet| 0..1
 |Kravsnivå| Valgfri
+|===
+
+=== Datatjeneste: medietype (dcat:mediaType) [[Datatjeneste-medietype]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| media type
+|URI| dcat:mediaType
+|Range| dct:MediaType
+|Beskrivelse| Opplysning om datatjenestens medietype. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere medietyper.
+|Multiplisitet| 0..n
+|Kravsnivå| Valgfri
+|Kommentar| Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å kunne uttrykke medietype(r) en datatjeneste kan tilby (istedenfor å måtte gå omveien via Distribusjon)
 |===
 
 === Datatjeneste: tilgangsrettigheter (dct:accessRights) [[Datatjeneste-tilgangsrettigheter]]
