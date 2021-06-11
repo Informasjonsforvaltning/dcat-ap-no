@@ -1,5 +1,12 @@
 = Endringslogg [[Endringslogg]]
 
+Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsbeskrivelser, lenker osv.) loggføres ikke.
+
+== Endringer fra versjon 2.0.x til 2.1 [[Endringer_v2.1]]
+
+* Range for egenskapen Datatjeneste: format (`dct:format`) endret fra `dct:dct:MediaType` til `dct:MediaTypeOrExtent`. Dette for å rette opp feil range.
+* Føyet til ny valgfri egenskap Datatjeneste: medietype (`dcat:mediaType`), med range `dct:MediaType` og multiplisitet `0..n`, og med samme krav til bruk av kontrollert vokabular som for den tilsvarende egenskapen `dct:mediaType` i `dcat:Distribution`. Dette for å kunne uttrykke datatjenestens medietype(r) (istedenfor å måtte gå omveien `dcat:DataService`/`dcat:servesDataset` -> `dcat:Dataset`/`dcat:distribution` -> `dcat:Distribution`/`dcat:mediaType`).
+
 == Endringer fra versjon 2.0.0 til v.2.0.x [[Endringer_v2.0.x]]
 
 Fra v.2.0.0 til v.2.0.1:

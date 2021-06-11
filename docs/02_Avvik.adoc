@@ -14,7 +14,8 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
 |Datasett: tilgangsnivå|dct:accessRights|Endret fra valgfri til anbefalt|Allerede i DCAT-AP-NO v.1.1
 |Datasett: utgiver|dct:publisher|Endret fra anbefalt til obligatorisk, dermed også multiplisitet|Allerede i DCAT-AP-NO v.1.1
 |Datatjeneste: endepunktsURL | dcat:endpointURL | Multiplisitet endret fra 1..n til 1..1 | Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester
-|Datatjeneste: format |dct:format |Ikke eksplisitt tatt med i BRegDCAT-AP | Føyet til for å ha konsistens mellom distribusjon og datatjeneste.
+|Datatjeneste: format |dct:format |Ikke eksplisitt tatt med i BRegDCAT-AP | Føyet til for å uttrykke datatjenestens format(er) (istedenfor å måtte gå omveien via Distribusjon).
+|Datatjeneste: medietype |dcat:mediaType |Ikke eksplisitt tatt med i BRegDCAT-AP | Føyet til for å uttrykke datatjenestens medietype(r) (istedenfor å måtte gå omveien via Distribusjon).
 |Distribusjon: format | dct:format | Multiplisitet endret fra 0..1 til 0..n | For å kunne ta høyde for at en distribusjon kan ha flere formater.
 |Distribusjon: medietype |dcat:mediaType |Multiplisitet endret fra 0..1 til 0..n | For å kunne ta høyde for at en distribusjon kan være i flere ulike medietyper.
 |Distribusjon: status |adms:status |Endret fra valgfri til anbefalt | Status på en distribusjon er viktig å vite når man skal vurdere om distribusjonen skal/kan brukes.
@@ -31,6 +32,7 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
 4+|*Krav til bruk av kontrollerte vokabularer*
 |Egenskap dct:format |dct:format | "Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) | For å ha konsistens mellom kravene for denne egenskapen
 |Egenskap dct:license | dct:license | "Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) og Katalog (dcat:Catalog) |For å ha konsistens mellom kravene for denne egenskapen
+|Egenskap dcat:mediaType | dcat:mediaType | "Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService) | For å ha konsistens mellom kravene for denne egenskapen
 |Egenskap dct:spatial | dct:spatial | https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter] er anbefalt brukt | For å kunne referere til dekningsområder i Norge
 |Egenskap adms:status | adms:status | "Skal brukes"-kravet gjelder også Katalogpost (dcat:CatalogRecord) og Offentlig tjeneste (cpsv:PublicService) | For å ha konsistens mellom kravene for denne egenskapen
 |Egenskap cv:thematicArea | cv:thematicArea | https://psi.norge.no/los/struktur.html[Los] er anbefalt brukt | For å kunne bruke norske Los
