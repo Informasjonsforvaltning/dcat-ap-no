@@ -38,7 +38,7 @@ Klassen _Distribusjon_ er anbefalt.
 |Engelsk navn| format
 |URI| dct:format
 |Range| dct:MediaTypeOrExtent
-|Beskrivelse| Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
+|Beskrivelse| Opplysning om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
 |Multiplisitet| 0..n
 |Kravsnivå| Anbefalt
 |===
@@ -146,7 +146,7 @@ Klassen _Distribusjon_ er anbefalt.
 [cols="30s,70d"]
 |===
 |Engelsk navn| media type
-|URI| dcat:mediaType, subproperty of dct:format
+|URI| dcat:mediaType
 |Range| dct:MediaType
 |Beskrivelse| Refererer til medietype av en distribusjon.
 |Multiplisitet| 0..n
