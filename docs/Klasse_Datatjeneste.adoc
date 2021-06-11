@@ -75,7 +75,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Engelsk navn|format
 |URI|dct:format
 |Range|dct:MediaTypeOrExtent
-|Beskrivelse|Opplysning om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.
+|Beskrivelse|Opplysning om datatjenestens dataformat. Kan gjentas for datatjenester som leverer data i flere formater.
 |Multiplisitet|0..n
 |Kravsnivå|Anbefalt
 |Kommentar|Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å kunne uttrykke format(er) en datatjeneste kan tilby (istedenfor å måtte gå omveien via Distribusjon)
