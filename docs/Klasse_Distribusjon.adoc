@@ -146,7 +146,7 @@ Klassen _Distribusjon_ er anbefalt.
 [cols="30s,70d"]
 |===
 |Engelsk navn| media type
-|URI| dcat:mediaType, subproperty of dct:format
+|URI| dcat:mediaType
 |Range| dct:MediaType
 |Beskrivelse| Refererer til medietype av en distribusjon.
 |Multiplisitet| 0..n
