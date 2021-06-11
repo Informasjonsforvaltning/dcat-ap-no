@@ -625,6 +625,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-i-samsvar-med">Datatjeneste: i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datatjeneste-landingsside">Datatjeneste: landingsside (dcat:landingPage)</a></li>
 <li><a href="#Datatjeneste-lisens">Datatjeneste: lisens (dct:license)</a></li>
+<li><a href="#Datatjeneste-medietype">Datatjeneste: medietype (dcat:mediaType)</a></li>
 <li><a href="#Datatjeneste-tilgangsrettigheter">Datatjeneste: tilgangsrettigheter (dct:accessRights)</a></li>
 <li><a href="#Datatjeneste-type">Datatjeneste: type (dct:type)</a></li>
 </ul>
@@ -979,6 +980,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Avvik-fra-EU-Standard">Avvik fra EU-standarden BRegDCAT-AP</a></li>
 <li><a href="#Endringslogg">Endringslogg</a>
 <ul class="sectlevel2">
+<li><a href="#Endringer_v2.1">Endringer fra versjon 2.0.x til 2.1</a></li>
 <li><a href="#Endringer_v2.0.x">Endringer fra versjon 2.0.0 til v.2.0.x</a></li>
 <li><a href="#Endringer_fra_v1.1">Endringer fra versjon 1.1 til v.2.0.0</a></li>
 </ul>
@@ -1021,9 +1023,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 2.0.1 (se <a href="#Endringslogg">endringsloggen</a>)<br>
+<strong>Versjon</strong>: 2.1 (se <a href="#Endringslogg">endringsloggen</a>)<br>
 <strong>Publisert</strong>: 2020-10-29<br>
-<strong>Oppdatert</strong>: 2021-06-07<br>
+<strong>Oppdatert</strong>: 2021-06-11<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no/v1.1/" class="bare">https://data.norge.no/specification/dcat-ap-no/v1.1/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/" class="bare">https://informasjonsforvaltning.github.io/dcat-ap-no/</a><br>
@@ -1308,15 +1310,15 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 <h2 id="UML-diagram"><a class="link" href="#UML-diagram">UML-diagram</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.0</p>
+<p>UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.1</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<a class="image" href="images/DCAT-AP-NO2_20210426.png"><img src="images/DCAT-AP-NO2_20210426.png" alt="DCAT AP NO2 20210426"></a>
+<a class="image" href="images/DCAT-AP-NO2_20210611.png"><img src="images/DCAT-AP-NO2_20210611.png" alt="DCAT AP NO2 20210611"></a>
 </div>
 </div>
 <div class="paragraph">
-<p>Last ned modell: <a href="images/DCAT-AP-NO2_20210426.png">png</a> |  <a href="files/DCAT-AP-NO2_20210426.eap">XMI for EA</a></p>
+<p>Last ned modell: <a href="images/DCAT-AP-NO2_20210611.png">png</a> |  <a href="files/DCAT-AP-NO2_20210611.eap">XMI for EA</a></p>
 </div>
 </div>
 </div>
@@ -4370,11 +4372,11 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:MediaType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:MediaTypeOrExtent</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Opplysing om datatjenestens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opplysning om datatjenestens dataformat. Kan gjentas for datatjenester som leverer data i flere formater.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -4386,7 +4388,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å ha konsistens mellom distribusjon og datatjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å kunne uttrykke format(er) en datatjeneste kan tilby (istedenfor å måtte gå omveien via Distribusjon)</p></td>
 </tr>
 </tbody>
 </table>
@@ -4745,6 +4747,45 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
+<h5 id="Datatjeneste-medietype"><a class="link" href="#Datatjeneste-medietype">Datatjeneste: medietype (dcat:mediaType)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">media type</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:mediaType</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:MediaType</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opplysning om datatjenestens medietype. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere medietyper.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kommentar</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å kunne uttrykke medietype(r) en datatjeneste kan tilby (istedenfor å måtte gå omveien via Distribusjon)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
 <h5 id="Datatjeneste-tilgangsrettigheter"><a class="link" href="#Datatjeneste-tilgangsrettigheter">Datatjeneste: tilgangsrettigheter (dct:accessRights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4918,7 +4959,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Opplysing om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Opplysning om distribusjonens filformat. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere formater.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
@@ -5232,7 +5273,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:mediaType, subproperty of dct:format</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:mediaType</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
@@ -9879,7 +9920,13 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: format</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Føyet til for å ha konsistens mellom distribusjon og datatjeneste.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Føyet til for å uttrykke datatjenestens format(er) (istedenfor å måtte gå omveien via Distribusjon).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste: medietype</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:mediaType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Føyet til for å uttrykke datatjenestens medietype(r) (istedenfor å måtte gå omveien via Distribusjon).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon: format</p></td>
@@ -9969,6 +10016,12 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <td class="tableblock halign-left valign-top"><p class="tableblock">For å ha konsistens mellom kravene for denne egenskapen</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap dcat:mediaType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:mediaType</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">"Skal brukes"-kravet gjelder også Datatjeneste (dcat:DataService)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å ha konsistens mellom kravene for denne egenskapen</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap dct:spatial</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163">Administrative enheter</a> er anbefalt brukt</p></td>
@@ -10023,6 +10076,22 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <div class="sect1">
 <h2 id="Endringslogg"><a class="link" href="#Endringslogg">Endringslogg</a></h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p>Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsbeskrivelser, lenker osv.) loggføres ikke.</p>
+</div>
+<div class="sect2">
+<h3 id="Endringer_v2.1"><a class="link" href="#Endringer_v2.1">Endringer fra versjon 2.0.x til 2.1</a></h3>
+<div class="ulist">
+<ul>
+<li>
+<p>Range for egenskapen Datatjeneste: format (<code>dct:format</code>) endret fra <code>dct:dct:MediaType</code> til <code>dct:MediaTypeOrExtent</code>. Dette for å rette opp feil range.</p>
+</li>
+<li>
+<p>Føyet til ny valgfri egenskap Datatjeneste: medietype (<code>dcat:mediaType</code>), med range <code>dct:MediaType</code> og multiplisitet <code>0..n</code>, og med samme krav til bruk av kontrollert vokabular som for den tilsvarende egenskapen <code>dct:mediaType</code> i <code>dcat:Distribution</code>. Dette for å kunne uttrykke datatjenestens medietype(r) (istedenfor å måtte gå omveien <code>dcat:DataService</code>/<code>dcat:servesDataset</code> &#8594; <code>dcat:Dataset</code>/<code>dcat:distribution</code> &#8594; <code>dcat:Distribution</code>/<code>dcat:mediaType</code>).</p>
+</li>
+</ul>
+</div>
+</div>
 <div class="sect2">
 <h3 id="Endringer_v2.0.x"><a class="link" href="#Endringer_v2.0.x">Endringer fra versjon 2.0.0 til v.2.0.x</a></h3>
 <div class="paragraph">
@@ -10507,7 +10576,7 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-06-07 09:26:56 UTC
+Sist oppdatert 2021-06-11 10:36:15 UTC
 </div>
 </div>
 </body>
