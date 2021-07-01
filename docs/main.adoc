@@ -4,6 +4,7 @@ include::locale/attributes.adoc[]
 :docinfo:
 :icons: font
 :toc: left
+ifdef::backend-pdf[:toc: macro]
 :toc-title: Innholdsfortegnelse
 :toclevels: 4
 :sectlinks:
@@ -21,13 +22,15 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 
 *Status*: Gjeldende +
 *Versjon*: 2.1 (se <<Endringslogg, endringsloggen>>) +
-*Publisert*: 2020-10-29 +
-*Oppdatert*: 2021-06-11 +
+*Publisert*: 2021-06-10 (v.2.1), 2020-10-29 (v.2.0) +
+*Oppdatert*: 2021-07-01 +
 *Gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no +
 *Forrige versjon*: https://data.norge.no/specification/dcat-ap-no/v1.1/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/ +
+*Veileder*: https://data.norge.no/guide/veileder-beskrivelse-av-datasett/ +
 *Valideringsverktøy*: https://data.norge.no/validator
 
+toc::[]
 
 include::01_Introduksjon.adoc[]
 
