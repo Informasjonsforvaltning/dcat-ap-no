@@ -182,7 +182,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Engelsk navn| landing page
 |URI| dcat:landingPage
 |Range| foaf:Document
-|Beskrivelse| Referanse til nettside som gir tilgang til datatjenesten, dens distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
+|Beskrivelse| Referanse til nettside som gir tilgang til datatjenesten og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
 |Multiplisitet| 0..1
 |Kravsnivå| Valgfri
 |===
