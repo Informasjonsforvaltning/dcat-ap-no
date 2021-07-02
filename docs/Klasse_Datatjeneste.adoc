@@ -17,7 +17,7 @@ Klassen _Datatjeneste_ er valgfri.
 |Kommentar | Norsk utvidelse - Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester.
 |===
 
-=== Datatjeneste: identifikator (dcat:identifier) [[Datatjeneste-identifikator]]
+=== Datatjeneste: identifikator (dct:identifier) [[Datatjeneste-identifikator]]
 
 [cols="30s,70d"]
 |===
