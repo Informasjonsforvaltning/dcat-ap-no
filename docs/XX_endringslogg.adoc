@@ -2,6 +2,11 @@
 
 Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsbeskrivelser, lenker osv.) loggføres ikke.
 
+== Endringer fra versjon 2.1 til 2.1.x
+
+Fra 2.1 til 2.1.1:
+* URIen for klassen Offentlig organisasjon var ikke i henhold til BRegDCAT-AP, og nå rettet opp til cv:PublicOrganisation (britisk engelsk), fra cv:PublicOrganization (amerikansk engelsk).  
+
 == Endringer fra versjon 2.0.x til 2.1 [[Endringer_v2.1]]
 
 * Range for egenskapen Datatjeneste: format (`dct:format`) endret fra `dct:dct:MediaType` til `dct:MediaTypeOrExtent`. Dette for å rette opp feil range.
