@@ -98,13 +98,13 @@
 | Kravsnivå | Anbefalt
 |===
 
-=== Offentlig organisasjon (cv:PublicOrganization) [[klasse-offentlig-organisasjon]]
+=== Offentlig organisasjon (cv:PublicOrganisation) [[klasse-offentlig-organisasjon]]
 
 [cols="30s,70d"]
 |===
 | Engelsk navn | Public organisation
 | Beskrivelse | Brukes til å representere en aktør som er ansvarlig for å yte en offentlig tjeneste.
-| URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cv:PublicOrganization]
+| URI | https://joinup.ec.europa.eu/solution/core-public-service-vocabulary[cv:PublicOrganisation]
 | Kravsnivå | Anbefalt
 |===
 
