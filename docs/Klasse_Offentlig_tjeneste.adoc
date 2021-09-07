@@ -22,7 +22,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |===
 |Engelsk navn|has competent authority
 |URI|cv:hasCompetentAuthority
-|Range|cv:PublicOrganization
+|Range|cv:PublicOrganisation
 |Beskrivelse|Brukes til å referere til organet som har ansvaret for tjenesten.
 |Multiplisitet|1..n
 |Kravsnivå|Obligatorisk

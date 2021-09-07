@@ -39,12 +39,12 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2021-06-11"^^xsd:date ;
+    dct:modified "2021-09-02"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
     dct:title "The constraints of DCAT-AP-NO"@en ;
-    owl:versionInfo "0.6" ;
+    owl:versionInfo "0.7" ;
     foaf:homepage <https://data.norge.no/specification/dcat-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -55,7 +55,7 @@
 
 
 #-------------------------------------------------------------------------
-# The shapes in this file cover all classes in DCAT-AP-NO 2.0.0.
+# The shapes in this file cover all classes in DCAT-AP-NO 2.x.y.
 #
 #
 #-------------------------------------------------------------------------
@@ -107,7 +107,7 @@
         sh:minCount 1 ;
         sh:path dct:modified ;
         sh:severity sh:Violation ;
-        sh:shape :DateOrDateTimeDataType_Shape
+        sh:node :DateOrDateTimeDataType_Shape
     ], [
         sh:class dct:Standard ;
         sh:maxCount 1 ;
@@ -347,7 +347,7 @@
         sh:maxCount 1 ;
         sh:path dct:issued ;
         sh:severity sh:Violation ;
-        sh:shape :DateOrDateTimeDataType_Shape
+        sh:node :DateOrDateTimeDataType_Shape
     ], [
         sh:class dct:LinguisticSystem ;
         sh:path dct:language ;
@@ -356,7 +356,7 @@
         sh:maxCount 1 ;
         sh:path dct:modified ;
         sh:severity sh:Violation ;
-        sh:shape :DateOrDateTimeDataType_Shape
+        sh:node :DateOrDateTimeDataType_Shape
     ], [
         sh:class adms:Identifier ;
         sh:path adms:identifier ;
@@ -661,7 +661,7 @@
         sh:maxCount 1 ;
         sh:path dcat:endDate ;
         sh:severity sh:Violation ;
-        sh:shape :DateOrDateTimeDataType_Shape
+        sh:node :DateOrDateTimeDataType_Shape
     ], [
         sh:class time:Instant ;
         sh:maxCount 1 ;
@@ -676,7 +676,7 @@
         sh:maxCount 1 ;
         sh:path dcat:startDate ;
         sh:severity sh:Violation ;
-        sh:shape :DateOrDateTimeDataType_Shape
+        sh:node :DateOrDateTimeDataType_Shape
     ] ;
     sh:targetClass dct:PeriodOfTime .
 

@@ -1,4 +1,4 @@
-= Offentlig organisasjon (cv:PublicOrganization) [[OffentligOrganisasjon]]
+= Offentlig organisasjon (cv:PublicOrganisation) [[OffentligOrganisasjon]]
 
 Klassen _Offentlig organisasjon_ er anbefalt.
 

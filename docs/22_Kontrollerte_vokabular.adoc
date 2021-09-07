@@ -163,7 +163,7 @@ Kravet fra EU er forklart slik: "This vocabulary must be used in case the licenc
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:spatial
-|Brukt i klasse|<<Datasett-dekningsområde, Datasett (`dcat:Dataset`)>>; <<Katalog-dekningsområde, Katalog (`dcat:Catalog`)>>; <<OffentligOrganisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganization`)>>; <<OffentligTjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
+|Brukt i klasse|<<Datasett-dekningsområde, Datasett (`dcat:Dataset`)>>; <<Katalog-dekningsområde, Katalog (`dcat:Catalog`)>>; <<OffentligOrganisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganisation`)>>; <<OffentligTjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
 |Navn på vokabularet|
 https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent[Continent]; +
 https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country[Country]; +
@@ -288,7 +288,7 @@ I tillegg til de foreslåtte felles-vokabularene som er listet opp her, oppfordr
 [cols="30s,70d"]
 |===
 |URI til egenskapen|dct:spatial
-|Brukt i klasse|<<Datasett-dekningsområde, Datasett (`dcat:Dataset`)>>; <<Katalog-dekningsområde, Katalog (`dcat:Catalog`)>>; <<OffentligOrganisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganization`)>>; <<OffentligTjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
+|Brukt i klasse|<<Datasett-dekningsområde, Datasett (`dcat:Dataset`)>>; <<Katalog-dekningsområde, Katalog (`dcat:Catalog`)>>; <<OffentligOrganisasjon-dekningsområde, Offentlig organisasjon (`cv:PublicOrganisation`)>>; <<OffentligTjeneste-dekningsområde, Offentlig tjeneste (`cpsv:PublicService`)>>
 |Navn på vokabularet|https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter]
 |URI til vokabularet|Fylke https://data.geonorge.no/administrativeEnheter/fylke/id/; +
 Kommune https://data.geonorge.no/administrativeEnheter/kommune/id/
@@ -374,6 +374,6 @@ Kommune https://data.geonorge.no/administrativeEnheter/kommune/id/
 |Eksempel a|
 ------
 <> a cpsv:Rule ;
-    dct:type <https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure> . 
+    dct:type <https://data.norge.no/vocabulary/cpsvno#ruleForNonDisclosure> .
 ------
 |===
