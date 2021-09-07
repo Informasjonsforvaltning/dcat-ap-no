@@ -2,7 +2,7 @@
 
 UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.1
 
-[link=images/DCAT-AP-NO2_20210611.png]
-image::images/DCAT-AP-NO2_20210611.png[]
+[link=images/DCAT-AP-NO2_20210903.png]
+image::images/DCAT-AP-NO2_20210903.png[]
 
-Last ned modell: link:images/DCAT-AP-NO2_20210611.png[png] |  link:files/DCAT-AP-NO2_20210611.eap[XMI for EA]
+Last ned modell: link:images/DCAT-AP-NO2_20210903.png[png] |  link:files/DCAT-AP-NO2_20210903.eap[XMI for EA]
