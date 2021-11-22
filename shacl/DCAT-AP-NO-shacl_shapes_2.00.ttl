@@ -145,7 +145,7 @@
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
     ] ;
     sh:targetClass dcat:CatalogRecord .
 
@@ -1201,7 +1201,7 @@
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme ;
 # sh:message plassert her blir ikke brukt, ser det ut til
-#        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
+#        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
     ] .
 
 :PlaceRestriction
@@ -1310,14 +1310,13 @@
         sh:maxCount 1 ;
         sh:severity sh:Violation
     ], [
-#        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
         sh:or (
           [sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$"]
           [sh:pattern "^https://publications.europa.eu/resource/authority/data-theme/.+$"] )
            ; # Endret til sh:pattern (se netse) fordi sh:hasValue ga merkelig feil
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
-    	  sh:description "Multiple themes can be used but at least <http://publications.europa.eu/resource/authority/data-theme> should be present" ;
+    	  sh:description "Multiple themes can be used but at least <http(s)://publications.europa.eu/resource/authority/data-theme> should be present" ;
         sh:severity sh:Warning
     ], [
         sh:or (
@@ -1380,7 +1379,7 @@
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
     ] ;
     sh:property [
         sh:path dcat:theme ;
@@ -1417,7 +1416,7 @@
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
     ], [
         sh:node :StatusRestriction ;
         sh:nodeKind sh:IRI ;
