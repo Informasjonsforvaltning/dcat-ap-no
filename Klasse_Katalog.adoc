@@ -219,7 +219,7 @@ Klassen _Katalog_ er obligatorisk.
 |Engelsk navn| catalogue
 |URI| dcat:catalog
 |Range| dcat:Catalog
-|Beskrivelse| Refererer til en annen katalog som er relevant for denne katalogen.
+|Beskrivelse| Refererer til en katalog som er listet opp i denne katalogen.
 |Multiplisitet| 0..n
 |Kravsnivå| Valgfri
 |===
