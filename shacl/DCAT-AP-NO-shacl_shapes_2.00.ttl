@@ -39,12 +39,12 @@
     ];
     dct:license <https://creativecommons.org/licenses/by/4.0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:modified "2021-09-02"^^xsd:date ;
+    dct:modified "2021-11-22"^^xsd:date ;
     dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes expressed by DCAT-AP-NO in SHACL."@en ;
     dct:title "The constraints of DCAT-AP-NO"@en ;
-    owl:versionInfo "0.7" ;
+    owl:versionInfo "0.8" ;
     foaf:homepage <https://data.norge.no/specification/dcat-ap-no/> ;
     foaf:maker [
         foaf:mbox <mailto:informasjonsforvaltning@digdir.no> ;
@@ -145,7 +145,7 @@
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
     ] ;
     sh:targetClass dcat:CatalogRecord .
 
@@ -1041,7 +1041,10 @@
     rdfs:comment "Access Rights restriction" ;
     rdfs:label "Access Rights restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/access-right> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/access-right>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/access-right>]
+        ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1052,7 +1055,9 @@
     rdfs:comment "Availability restriction" ;
     rdfs:label "Availability restriction" ;
     sh:property [
-        sh:hasValue <http://data.europa.eu/r5r/availability/1.0> ;
+        sh:or (
+          [sh:hasValue <http://data.europa.eu/r5r/availability/1.0>]
+          [sh:hasValue <https://data.europa.eu/r5r/availability/1.0>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1063,7 +1068,9 @@
     rdfs:comment "Continent restriction" ;
     rdfs:label "Continent restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/continent> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/continent>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/continent>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1074,7 +1081,9 @@
     rdfs:comment "Country restriction" ;
     rdfs:label "Country restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/country> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/country>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/country>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1096,7 +1105,9 @@
     rdfs:comment "Data Theme Restriction" ;
     rdfs:label "Data Theme Restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/data-theme>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/data-theme>] ) ;
         sh:MinCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme ;
@@ -1107,7 +1118,9 @@
     rdfs:comment "Eurovoc Theme Restriction" ;
     rdfs:label "Eurovoc Theme Restriction" ;
     sh:property [
-        sh:pattern "^http://eurovoc.europa.eu/.+$" ;
+        sh:or (
+          [sh:pattern "^http://eurovoc.europa.eu/.+$"]
+          [sh:pattern "^https://eurovoc.europa.eu/.+$"] ) ;
         sh:MinCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1130,7 +1143,9 @@
     rdfs:comment "File Type Restriction" ;
     rdfs:label "File Type Restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/file-type> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/file-type>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/file-type>] ) ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
     ] .
@@ -1140,7 +1155,9 @@
     rdfs:comment "Frequency Restriction" ;
     rdfs:label "Frequency Restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/frequency> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/frequency>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/frequency>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1151,7 +1168,9 @@
     rdfs:comment "Geo names restriction" ;
     rdfs:label "Geo names restriction" ;
     sh:property [
-        sh:hasValue <http://sws.geonames.org> ;
+        sh:or (
+          [sh:hasValue <http://sws.geonames.org>]
+          [sh:hasValue <https://sws.geonames.org>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1162,7 +1181,9 @@
     rdfs:comment "Language Restriction" ;
     rdfs:label "Language Restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/language> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/language>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/language>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1173,12 +1194,14 @@
     rdfs:comment "License type restriction" ;
     rdfs:label "License type restriction" ;
     sh:property [
-        sh:hasValue <http://publications.europa.eu/resource/authority/licence> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/licence>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/licence>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme ;
 # sh:message plassert her blir ikke brukt, ser det ut til
-#        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
+#        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
     ] .
 
 :PlaceRestriction
@@ -1187,7 +1210,9 @@
     rdfs:label "Place restriction" ;
     sh:property [
         sh:class skos:ConceptScheme ;
-        sh:hasValue <http://publications.europa.eu/resource/authority/place> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/place>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/place>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1199,7 +1224,9 @@
     rdfs:label "Publisher type restriction" ;
     sh:property [
         sh:class skos:ConceptScheme ;
-        sh:hasValue <http://purl.org/adms/publishertype/1.0> ;
+        sh:or (
+          [sh:hasValue <http://purl.org/adms/publishertype/1.0>]
+          [sh:hasValue <https://purl.org/adms/publishertype/1.0>] ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1211,7 +1238,9 @@
     rdfs:label "Status restriction" ;
     sh:property [
         sh:class skos:ConceptScheme ;
-        sh:hasValue <http://purl.org/adms/status/1.0> ;
+        sh:or (
+          [sh:hasValue <http://purl.org/adms/status/1.0>]
+          [sh:hasValue <https://purl.org/adms/status/1.0>] );
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1223,7 +1252,9 @@
     rdfs:label "Legal Resource Type restriction" ;
     sh:property [
         sh:class skos:ConceptScheme ;
-        sh:hasValue <http://publications.europa.eu/resource/authority/resource-type> ;
+        sh:or (
+          [sh:hasValue <http://publications.europa.eu/resource/authority/resource-type>]
+          [sh:hasValue <https://publications.europa.eu/resource/authority/resource-type>] );
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
         sh:path skos:inScheme
@@ -1279,14 +1310,18 @@
         sh:maxCount 1 ;
         sh:severity sh:Violation
     ], [
-#        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
-sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; # Endret til sh:pattern (se netse) fordi sh:hasValue ga merkelig feil
+        sh:or (
+          [sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$"]
+          [sh:pattern "^https://publications.europa.eu/resource/authority/data-theme/.+$"] )
+           ; # Endret til sh:pattern (se netse) fordi sh:hasValue ga merkelig feil
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
-    	  sh:description "Multiple themes can be used but at least <http://publications.europa.eu/resource/authority/data-theme> should be present" ;
+    	  sh:description "Multiple themes can be used but at least <http(s)://publications.europa.eu/resource/authority/data-theme> should be present" ;
         sh:severity sh:Warning
     ], [
-        sh:pattern "^http://eurovoc.europa.eu/.+$";
+        sh:or (
+          [sh:pattern "^http://eurovoc.europa.eu/.+$"]
+          [sh:pattern "^https://eurovoc.europa.eu/.+$"] ) ;
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
     	  sh:description "Multiple themes can be used but at least <http://eurovoc.europa.eu/.+> should be present" ;
@@ -1344,7 +1379,7 @@ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; 
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
     ] ;
     sh:property [
         sh:path dcat:theme ;
@@ -1381,7 +1416,7 @@ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme/.+$" ; 
         sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http://publications.europa.eu/resource/authority/licence)."@nb ;
+        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
     ], [
         sh:node :StatusRestriction ;
         sh:nodeKind sh:IRI ;

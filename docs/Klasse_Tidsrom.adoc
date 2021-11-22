@@ -37,7 +37,7 @@ NOTE: Vær oppmerksom på at selv om begge egenskapene anbefales, må en av de t
 |Engelsk navn| beginning
 |URI| time:hasBeginning
 |Range| time:Instant
-|Beskrivelse| Definerer begynnelsen på et tidsrommet eller intervall.
+|Beskrivelse| Definerer begynnelsen på et tidsrom eller intervall.
 |Multiplisitet| 0..1
 |Kravsnivå| Valgfritt
 |===
