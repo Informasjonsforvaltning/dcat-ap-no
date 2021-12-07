@@ -1,5 +1,3 @@
-# dcat-ap-no ontology
+# dcat-ap-no/ontology
 
-Referanseimplementasjon i OWL av <https://data.norge.no/specification/dcat-ap-no>
-
-dcatno-turtle.ttl er et kontrollert vokabular med begreper som trengs for/i dcat-ap-no.  
+dcatno.ttl er et vokabular / en ontologi som spesifiserer DCAT-AP-NO (https://data.norge.no/specification/dcat-ap-no) i RDF Turtle.
