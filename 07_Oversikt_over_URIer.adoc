@@ -1,0 +1,32 @@
+= URIer som er i bruk [[URIer-i-bruk]]
+
+[cols="10s,45d,45d"]
+|===
+|Prefiks|*Navnerom*|*RDF-vokabular*
+|adms|http://www.w3.org/ns/adms#|Asset Description Metadata Schema
+|cv|http://data.europa.eu/m8g/|Core Vocabulary
+|cpsv|http://purl.org/vocab/cpsv#|Core Public Service Vocabulary
+|cpsvno|https://data.norge.no/vocabulary/cpsvno#|Norsk applikasjonsprofil av CPSV
+|dc|http://purl.org/dc/elements/1.1/|Dublin Core Metadata Element Set, v1.1
+|dcat|http://www.w3.org/ns/dcat#|Data Catalog Vocabulary
+|dcatap|http://data.europa.eu/r5r/|DCAT Application Profile, EU
+|dct|http://purl.org/dc/terms/|DCMI Metadata Terms
+|dqv|http://www.w3.org/ns/dqv#|Data Quality Vocabulary
+|dqvno|https://data.norge.no/vocabulary/dqvno#|Norsk applikasjonsprofil av DQV (Data Quality Vocabulary)
+|eli|http://data.europa.eu/eli/ontology#|European Legislation Identifier
+|foaf|http://xmlns.com/foaf/0.1/|FOAF Vocabulary
+|locn|http://www.w3.org/ns/locn#|ISA Programme Core Location Vocabulary
+|owl|http://www.w3.org/2002/07/owl#|OWL Web Ontology Language
+|odrl|http://www.w3.org/ns/odrl/2/|The Open Digital Rights Language (ODRL)
+|prov|http://www.w3.org/ns/prov#|PROV-O: The PROV Ontology
+|provno|https://data.norge.no/vocabulary/provno#|Norsk applikasjonsprofil av PROV-O
+|qb|http://purl.org/linked-data/cube#|Data Cube Vocabulary
+|rdfs|http://www.w3.org/2000/01/rdf-schema#|RDF Vocabulary Description Language 1.0: RDF Schema
+|schema|http://schema.org/|schema.org
+|skos|http://www.w3.org/2004/02/skos/core#|SKOS Simple Knowledge Organization System - Reference
+|spdx|http://spdx.org/rdf/terms#|Software Package Data Exchange®
+|time | http://www.w3.org/2006/time# | https://www.w3.org/TR/owl-time/[Time Ontology in OWL]
+|vcard|http://www.w3.org/2006/vcard/ns#|vCard Ontology
+|voaf|http://purl.org/vocommons/voaf#|Vocabulary of a Friend (VOAF)
+|xsd|http://www.w3.org/2001/XMLSchema#|XML Schema Part 2: Datatypes Second Edition
+|===

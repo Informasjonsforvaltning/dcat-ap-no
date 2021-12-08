@@ -1,0 +1,29 @@
+= Sjekksum (spdx:Checksum) [[Sjekksum]]
+
+Klassen _Sjekksum_ er valgfri.
+
+== Obligatoriske egenskaper for klassen _Sjekksum_ [[Sjekksum-obligatoriske-egenskaper]]
+
+=== Sjekksum: algoritme (spdx:algorithm) [[Sjekksum-algoritme]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| algorithm
+|URI|spdx:algorithm
+|Range| spdx:checksumAlgorithm_sha1
+|Beskrivelse| Identifiserer algoritmen som er brukt til å produsere sjekksum. For øyeblikket er SHA-1 den eneste algoritmen som er støttet. Det er forventet støtte for andre algoritmer på et senere tidspunkt.
+|Multiplisitet| 1..1
+|Kravsnivå| Obligatorisk
+|===
+
+=== Sjekksum: sjekksumverdi (spdx:checksumValue) [[Sjekksum-sjekksumverdi]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| checksum value
+|URI| spdx:checksumValue
+|Range| rdfs:Literal typed as xsd:hexBinary
+|Beskrivelse| Denne egenskapen brukes til å oppgi en heksadesimal-kodet verdi med små bokstaver, produsert ved hjelp av en spesifikk algoritme.
+|Multiplisitet| 1..1
+|Kravsnivå| Obligatorisk
+|===
