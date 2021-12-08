@@ -2,3 +2,4 @@ index.html
 dcat-ap-no.pdf
 *.tmp
 !slash/index.html
+!ontology/index.html
