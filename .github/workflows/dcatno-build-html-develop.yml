@@ -3,36 +3,37 @@ name: build html dcatno develop
 on:
   push:
     branches:
-    - develop
+      - develop
     paths:
-    - ontology/**
+      - ontology/**
 
 jobs:
   build_html:
     runs-on: ubuntu-18.04
     name: html build
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
+      - name: Checkout code
+        uses: actions/checkout@v2
 
-    - name: make build directory
-      run: |
-        mkdir ontology/build
+      - name: make build directory
+        run: |
+          mkdir ontology/build
 
-    - name: copy index.html
-      uses: canastro/copy-file-action@master
-      with:
-        source: "ontology/index.html"
-        target: "ontology/build/index.html"
+      - name: copy index.html
+        uses: canastro/copy-file-action@master
+        with:
+          source: "ontology/index.html"
+          target: "ontology/build/index.html"
 
-    - name: copy dcatno.ttl
-      uses: canastro/copy-file-action@master
-      with:
-        source: "ontology/dcatno.ttl"
-        target: "ontology/build/dcatno.ttl"
+      - name: copy dcatno.ttl
+        uses: canastro/copy-file-action@master
+        with:
+          source: "ontology/dcatno.ttl"
+          target: "ontology/build/dcatno.ttl"
 
-    - name: Deploy
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ontology/build
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: dcatno-v2_vocabulary
+          publish_dir: ontology/build
