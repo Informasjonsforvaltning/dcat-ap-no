@@ -2,11 +2,9 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 
 @prefix cpsv: <http://purl.org/vocab/cpsv#> .
 @prefix cv: <http://data.europa.eu/m8g/> .
@@ -14,14 +12,12 @@
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatap: <http://data.europa.eu/r5r> .
 @prefix dcatno: <https://data.norege.no/vocabulary/dcatno#> .
-@base <https://data.norge.no/vocabulary/dcatno#> .
-@prefix : <https://data.norge.no/vocabulary/dcatno#> .
 
 ##### about this vocabulary
-<https://data.norge.no/vocabulary/dcatno#> rdf:type owl:Ontology ;
-  dct:modified "2021-12-07"^^xsd:date ;
+<https://data.norge.no/vocabulary/dcatno#> a owl:Ontology ;
+  dct:modified "2021-12-09"^^xsd:date ;
   owl:versionIRI <dcatno:0.6> ;
-  owl:versionInfo "Only the extensions with the namespace dcatno are specified in this version"@en ,
+  rdfs:comment "Only the extensions with the namespace dcatno are specified in this version"@en ,
     "Kun utvidelsene med navnerom dcatno er spesifisert i denne versjonen."@nb ;
   dcatap:availability <http://data.europa.eu/r5r/draft> ;
   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
@@ -46,19 +42,21 @@
 #### ObjectProperty dcatno:service
 dcatno:service a owl:ObjectProperty ;
   rdfs:subPropertyOf dct:hasPart;
+  rdfs:label "service"@en , "tjenestebeskrivelse"@nb ;
   rdfs:domain dcat:Catalog;
   rdfs:range cpsvno:Service, cpsv:PublicService ;
-  dct:description
+  rdfs:comment
     "To include the description of a (public) service in a catalog."@en ,
     "Brukes til å inkludere beskrivelsen av en (offentlig) tjeneste i en katalog."@nb ;
   .
 
 #### ObjectProperty dcatno:event
-dcatno:service a owl:ObjectProperty ;
+dcatno:event a owl:ObjectProperty ;
   rdfs:subPropertyOf dct:hasPart;
+  rdfs:label "event"@en , "hendelsesbeskrivelse"@nb ;
   rdfs:domain dcat:Catalog;
   rdfs:range cv:Event ;
-  dct:description
+  rdfs:comment
     "To include the description of an event in a catalog."@en ,
     "Brukes til å inkludere beskrivelsen av en hendelse i en katalog."@nb ;
   .
