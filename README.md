@@ -3,6 +3,7 @@
 Repo for forvaltning av DCAT-AP-NO med tilhørende eksempler, valideringsregler etc.
 
 Gjeldende versjon blir publisert til: <https://data.norge.no/specification/dcat-ap-no>
+
 Redaktørens utkast blir publisert til: <https://informasjonsforvaltning.github.io/dcat-ap-no/>
 
 ## Tips til redaktør

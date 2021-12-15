@@ -16,9 +16,17 @@
 
 ##### about this vocabulary
 <https://data.norge.no/vocabulary/dcatno#> a owl:Ontology ;
-  dct:modified "2021-12-09"^^xsd:date ;
+  dct:title
+    "Norwegian extensions in DCAT-AP-NO"@en ,
+    "Norske utvidelser i DCAT-AP-NO"@nb ;
+  dct:description
+    "This document specifies the Norwegian extensions in DCAT-AP-NO, currently not the whole DCAT-AP-NO."@en ,
+    "Denne versjonen spesifiserer norske utvidelser i DCAT-AP-NO, foreløpig ikke hele DCAT-AP-NO"@nb ;
+  rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
+  dct:modified "2021-12-15"^^xsd:date ;
   owl:versionIRI <dcatno:0.6> ;
-  rdfs:comment "Only the extensions with the namespace dcatno are specified in this version"@en ,
+  rdfs:comment
+    "Only the extensions with the namespace dcatno are specified in this version"@en ,
     "Kun utvidelsene med navnerom dcatno er spesifisert i denne versjonen."@nb ;
   dcatap:availability <http://data.europa.eu/r5r/draft> ;
   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
@@ -32,12 +40,6 @@
   cc:attributionURL <http://ec.europa.eu/> ;
   dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
   dct:relation <https://data.norge.no/specification/dcat-ap-no/> ;
-  dct:description "This document specifies the Norwegian extensions in DCAT-AP-NO, currently not the whole DCAT-AP-NO."@en ,
-    "Denne versjonen spesifiserer norske utvidelser i DCAT-AP-NO, foreløpig ikke hele DCAT-AP-NO"@nb ;
-  dct:title "Norwegian extensions in DCAT-AP-NO"@en ,
-    "Norske utvidelser i DCAT-AP-NO"@nb ;
-  rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb ,
-    "Norwegian Digitalisation Agency"@en ;
   .
 
 #### ObjectProperty dcatno:containsService
