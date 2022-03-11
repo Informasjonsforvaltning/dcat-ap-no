@@ -1,0 +1,286 @@
+@prefix dqv:    <http://www.w3.org/ns/dqv#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix dcat:   <http://www.w3.org/ns/dcat#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix dct:     <http://purl.org/dc/terms/> .
+@prefix cc:    <http://creativecommons.org/ns#> .
+@prefix digdir:     <https://data.norege.no/vocabulary/fdk-mqa#> .
+
+# about this vocabulary
+
+<https://data.norege.no/vocabulary/fdk-mqa#>
+   dct:title "Vokaublary for metadata quality of the Norwegian data portal"@nb ;
+   dct:description "This vocabulary specifies the metadata quality metrics for the Norwegian data portal data.norge.no."@en ;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+   dct:creator [
+        foaf:homepage <https://www.digdir.no/> ;
+        foaf:name "Digitaliseringsdirektoratet"@nb ,
+           "Norwegian Digitalisation Agency"@en ;
+    ];
+    cc:attributionURL <https://gitlab.com/dataeuropa/vocabularies/-/blob/master/piveau-dqv-vocabulary.ttl> ;
+    dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
+   .
+
+# Dimensions
+
+digdir:accessibility
+    a                       dqv:Dimension ;
+    skos:prefLabel          "Accessibility"@en ;
+    skos:definition         "Once the user finds the required data, she/he needs to know how can they be accessed, possibly including authentication and authorisation."@en .
+
+digdir:contextuality
+    a                       dqv:Dimension ;
+    skos:prefLabel          "Contextuality"@en ;
+    skos:definition         "Properties that provide more context for the user."@en .
+
+digdir:findability
+    a                       dqv:Dimension ;
+    skos:prefLabel          "Findability"@en ;
+    skos:definition         "Metadata and data should be easy to find for both humans and computers. Machine-readable metadata are essential for automatic discovery of datasets and services."@en .
+
+digdir:interoperability
+    a                       dqv:Dimension ;
+    skos:prefLabel          "Interoperability"@en ;
+    skos:definition         "Data usually needs to be integrated with other data. In addition, data needs to interoperate with applications or workflows for analysis, storage, and processing."@en .
+
+digdir:reusability
+    a                       dqv:Dimension ;
+    skos:prefLabel          "Reusability"@en ;
+    skos:definition         "Metadata and data should be well-described so that they can be replicated and/or combined in different settings."@en .
+
+
+# Five star
+
+digdir:OpenData5Star
+    a                       skos:ConceptScheme;
+    skos:prefLabel          "Open Data 5 Star"@en ;
+    skos:definition         "Five star rating based on https://5stardata.info"@en ;
+    dqv:inDimension         digdir:interoperability .
+
+
+digdir:zeroStars
+    a                       skos:Concept;
+    skos:inScheme           digdir:OpenData5Star ;
+    skos:prefLabel          "Zero stars"@en ;
+    skos:definition         "Dataset available on the web."@en .
+
+digdir:oneStar
+    a                       skos:Concept;
+    skos:inScheme           digdir:OpenData5Star ;
+    skos:prefLabel          "One star"@en ;
+    skos:definition         "Dataset available on the web with open licence."@en .
+
+digdir:twoStars
+    a                       skos:Concept;
+    skos:inScheme           digdir:OpenData5Star ;
+    skos:prefLabel          "Two stars"@en ;
+    skos:definition         "Dataset available on the web with open licence and structured, machine-readable format."@en .
+
+digdir:threeStars
+    a                       skos:Concept;
+    skos:inScheme           digdir:OpenData5Star ;
+    skos:prefLabel          "Three stars"@en ;
+    skos:definition         "Dataset available on the web with open licence and structured, machine-readable, non proprietary format."@en .
+
+digdir:fourStars
+    a                       skos:Concept;
+    skos:inScheme           digdir:OpenData5Star ;
+    skos:prefLabel          "Four stars"@en ;
+    skos:definition         "Dataset available on the web with open licence and structured, machine-readable, non proprietary format. It uses URIs to denote things."@en .
+
+digdir:fiveStars
+    a                       skos:Concept;
+    skos:inScheme           digdir:OpenData5Star ;
+    skos:prefLabel          "Five stars"@en ;
+    skos:definition         "Dataset available on the web with open licence and structured, machine-readable, non proprietary format. It uses URIs to denote things and links to other resources for context."@en .
+
+
+# Findability
+
+digdir:keywordAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether at least one dcat:keyword is specified in a dataset."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:findability .
+
+digdir:categoryAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether at least one dcat:theme is specified in a dataset."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:findability .
+
+digdir:spatialAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether at least one dct:spatial is specified in a dataset."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:findability .
+
+digdir:temporalAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether at least one dct:temporal is specified in a dataset."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:findability .
+
+
+
+# Accessibility
+
+digdir:accessUrlStatusCode
+    a                       dqv:Metric ;
+    skos:definition         "A distribution's dcat:accessURL is checked for accessibility via HTTP HEAD request. The response contains a numeric status code."@en ;
+    dqv:expectedDataType    xsd:integer ;
+    dqv:inDimension         digdir:accessibility .
+
+digdir:downloadUrlAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether at least one dcat:downloadUrl is specified in a distribution."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:accessibility .
+
+digdir:downloadUrlStatusCode
+    a                       dqv:Metric ;
+    skos:definition         "A distribution's dcat:downloadURL is checked for accessibility via HTTP HEAD request. The response contains a numeric status code."@en ;
+    dqv:expectedDataType    xsd:integer ;
+    dqv:inDimension         digdir:accessibility .
+
+
+
+# Interoperability
+
+digdir:formatAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dct:format is specified in a distribution."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+digdir:mediaTypeAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dcat:mediaType is specified in a distribution."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+digdir:formatMediaTypeVocabularyAlignment
+    a                       dqv:Metric ;
+    skos:definition         "Checks if both a distribution&apos;s dct:format and dcat:mediaType are aligned to the  controlled vocabulary specified by DCAT-AP."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+digdir:formatMediaTypeNonProprietary
+    a                       dqv:Metric ;
+    skos:definition         "Checks if at least one of a distribution&apos;s dct:format and dcat:mediaType is non-proprietary. If neither is set it is assumed the distribution uses a proprietary format/media type."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+digdir:formatMediaTypeMachineInterpretable
+    a                       dqv:Metric ;
+    skos:definition         "Checks if at least one of a distribution's dct:format and dcat:mediaType is machine-interpretable. If neither is set it is assumed the distribution uses a non-machine-interpretable format/media type."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+digdir:dcatApCompliance
+    a                       dqv:Metric ;
+    skos:definition         "A dataset is validated for conformity against the DCAT-AP specification using SHACL rules."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+digdir:formatMatch
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether a distributions's dct:format property resembles the actual format of the linked file."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+digdir:syntaxValid
+    a                       dqv:Metric ;
+    skos:definition         "It is checker whether a file's content is syntactically valid against the format's specification."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+digdir:atLeastFourStars
+    a                       dqv:Metric ;
+    skos:definition         "Checks if the dataset got at least a four stars rating." ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:interoperability .
+
+
+# Reusability
+
+digdir:licenceAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dct:license is specified in a distribution."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:reusability .
+
+digdir:knownLicence
+    a                       dqv:Metric ;
+    skos:definition         "It is checked if a distribution&apos;s licence is part of a predefined collection."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:reusability .
+
+digdir:accessRightsAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dct:accessRights is specified in a dataset."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:reusability .
+
+digdir:accessRightsVocabularyAlignment
+    a                       dqv:Metric ;
+    skos:definition         "Checks if a dataset&apos;s dct:accessRights is aligned to the controlled vocabulary specified by DCAT-AP."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:reusability .
+
+digdir:contactPointAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dcat:contactPoint is specified in a dataset."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:reusability .
+
+digdir:publisherAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether a dct:publisher is specified in a dataset."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:reusability .
+
+
+
+# Contextuality
+
+digdir:rightsAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dct:rights is specified in a distribution."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:contextuality .
+
+digdir:byteSizeAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dcat:byteSize is specified in a distribution."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:contextuality .
+
+digdir:dateIssuedAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dct:issued is specified in a distribution."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:contextuality .
+
+digdir:dateModifiedAvailability
+    a                       dqv:Metric ;
+    skos:definition         "It is checked whether dct:modified is specified in a distribution."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         digdir:contextuality .
+
+digdir:score
+    a                       dqv:Metric ;
+    skos:definition         "It is calculated a score from the measurements results based on the corresponding score values."@en ;
+    dqv:expectedDataType    xsd:integer ;
+    dqv:inDimension         digdir:contextuality .
+
+
+# additional properties
+
+digdir:trueScore
+    a                       rdfs:Property .
+
+digdir:falseScore
+    a                       rdfs:Property .
