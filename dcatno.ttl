@@ -9,10 +9,10 @@
 
 @prefix cpsv: <http://purl.org/vocab/cpsv#> .
 @prefix cv: <http://data.europa.eu/m8g/> .
-@prefix cpsvno: <https://data.norege.no/vocabulary/dcatno#> .
+@prefix cpsvno: <https://data.norge.no/vocabulary/dcatno#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatap: <http://data.europa.eu/r5r> .
-@prefix dcatno: <https://data.norege.no/vocabulary/dcatno#> .
+@prefix dcatno: <https://data.norge.no/vocabulary/dcatno#> .
 
 ##### about this vocabulary
 <https://data.norge.no/vocabulary/dcatno#> a owl:Ontology ;
@@ -23,7 +23,7 @@
     "This document specifies the Norwegian extensions in DCAT-AP-NO, currently not the whole DCAT-AP-NO."@en ,
     "Denne versjonen spesifiserer norske utvidelser i DCAT-AP-NO, foreløpig ikke hele DCAT-AP-NO"@nb ;
   rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
-  dct:modified "2021-12-15"^^xsd:date ;
+  dct:modified "2022-03-31"^^xsd:date ;
   owl:versionIRI <dcatno:0.6> ;
   rdfs:comment
     "Only the extensions with the namespace dcatno are specified in this version"@en ,
