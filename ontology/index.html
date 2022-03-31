@@ -1,1 +1,84 @@
-<meta http-equiv="refresh" content="0; url=https://data.norge.no/vocabulary/dcatno/dcatno.ttl" />
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=windows-1252"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.3.0.3 (Windows)"/>
+	<meta name="created" content="00:00:00"/>
+	<meta name="changed" content="00:00:00"/>
+	<style type="text/css">
+		@page { size: 21cm 29.7cm; margin: 2cm }
+		p { line-height: 115%; margin-bottom: 0.25cm; background: transparent }
+		pre { background: transparent }
+		pre.western { font-family: "Liberation Mono", monospace; font-size: 10pt }
+		pre.cjk { font-family: "NSimSun", monospace; font-size: 10pt }
+		pre.ctl { font-family: "Liberation Mono", monospace; font-size: 10pt }
+	</style>
+</head>
+<body lang="nb-NO" link="#000080" vlink="#800000" dir="ltr"><pre class="western">@prefix cc: &lt;http://creativecommons.org/ns#&gt; .
+@prefix dct: &lt;http://purl.org/dc/terms/&gt; .
+@prefix foaf: &lt;http://xmlns.com/foaf/0.1/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+@prefix vann: &lt;http://purl.org/vocab/vann/&gt; .
+
+@prefix cpsv: &lt;http://purl.org/vocab/cpsv#&gt; .
+@prefix cv: &lt;http://data.europa.eu/m8g/&gt; .
+@prefix cpsvno: &lt;https://data.norege.no/vocabulary/dcatno#&gt; .
+@prefix dcat: &lt;http://www.w3.org/ns/dcat#&gt; .
+@prefix dcatap: &lt;http://data.europa.eu/r5r&gt; .
+@prefix dcatno: &lt;https://data.norge.no/vocabulary/dcatno#&gt; .
+
+##### about this vocabulary
+&lt;https://data.norge.no/vocabulary/dcatno#&gt; a owl:Ontology ;
+  dct:title
+    &quot;Norwegian extensions in DCAT-AP-NO&quot;@en ,
+    &quot;Norske utvidelser i DCAT-AP-NO&quot;@nb ;
+  dct:description
+    &quot;This document specifies the Norwegian extensions in DCAT-AP-NO, currently not the whole DCAT-AP-NO.&quot;@en ,
+    &quot;Denne versjonen spesifiserer norske utvidelser i DCAT-AP-NO, forel&oslash;pig ikke hele DCAT-AP-NO&quot;@nb ;
+  rdfs:isDefinedBy &quot;Digitaliseringsdirektoratet&quot;@nb , &quot;Norwegian Digitalisation Agency&quot;@en ;
+  dct:modified &quot;2022-03-31&quot;^^xsd:date ;
+  owl:versionIRI &lt;dcatno:0.6&gt; ;
+  rdfs:comment
+    &quot;Only the extensions with the namespace dcatno are specified in this version&quot;@en ,
+    &quot;Kun utvidelsene med navnerom dcatno er spesifisert i denne versjonen.&quot;@nb ;
+  dcatap:availability &lt;http://data.europa.eu/r5r/draft&gt; ;
+  dct:format &lt;http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE&gt; ;
+  dct:creator [
+    foaf:homepage &lt;https://www.digdir.no/&gt; ;
+    foaf:name &quot;Digitaliseringsdirektoratet&quot;@nb ,
+      &quot;Norwegian Digitalisation Agency&quot;@en ;
+    foaf:mbox &lt;mailto:informasjonsforvaltning@digdir.no&gt; ;
+    ];
+  dct:license &lt;https://creativecommons.org/licenses/by/4.0&gt; ;
+  cc:attributionURL &lt;http://ec.europa.eu/&gt; ;
+  dct:publisher &lt;https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827&gt; ;
+  dct:relation &lt;https://data.norge.no/specification/dcat-ap-no/&gt; ;
+  .
+
+#### ObjectProperty dcatno:containsService
+dcatno:containsService a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf dct:hasPart , rdfs:member ;
+  rdfs:label &quot;contains service&quot;@en , &quot;inneholder tjeneste&quot;@nb ;
+  rdfs:domain dcat:Catalog ;
+  rdfs:range cpsvno:Service, cpsv:PublicService ;
+  rdfs:comment
+    &quot;To refer to a (public) service that is in the catalog.&quot;@en ,
+    &quot;Brukes til &aring; referere til en (offentlig) tjeneste som er i katalogen.&quot;@nb ;
+  .
+
+#### ObjectProperty dcatno:containsEvent
+dcatno:containsEvent a owl:ObjectProperty , rdf:Property ;
+  rdfs:subPropertyOf dct:hasPart , rdfs:member ;
+  rdfs:label &quot;contains event&quot;@en , &quot;inneholder hendelse&quot;@nb ;
+  rdfs:domain dcat:Catalog;
+  rdfs:range cv:Event ;
+  rdfs:comment
+    &quot;To refer to an event that is in the catalog.&quot;@en ,
+    &quot;Brukes til &aring; referere til en hendelse som er i katalogen.&quot;@nb ;
+  .</pre>
+</body>
+</html>
