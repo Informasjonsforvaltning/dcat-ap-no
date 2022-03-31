@@ -9,7 +9,7 @@
 
 @prefix cpsv: <http://purl.org/vocab/cpsv#> .
 @prefix cv: <http://data.europa.eu/m8g/> .
-@prefix cpsvno: <https://data.norege.no/vocabulary/dcatno#> .
+@prefix cpsvno: <https://data.norge.no/vocabulary/dcatno#> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatap: <http://data.europa.eu/r5r> .
 @prefix dcatno: <https://data.norge.no/vocabulary/dcatno#> .
