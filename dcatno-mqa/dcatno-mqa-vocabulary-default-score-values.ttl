@@ -1,0 +1,116 @@
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix cc:     <http://creativecommons.org/ns#> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcatno-mqa: <https://data.norge.no/vocabulary/dcatno-mqa#> .
+
+# about this vocabulary
+
+<https://data.norge.no/vocabulary/dcatno-mqa#>
+   dct:title "Vokaublary for metadata quality assessment of the Norwegian data portal"@nb ;
+   dct:description "This vocabulary specifies the metadata quality metrics for the Norwegian data portal data.norge.no."@en ;
+   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
+   dct:creator [
+        foaf:homepage <https://www.digdir.no/> ;
+        foaf:name "Digitaliseringsdirektoratet"@nb ,
+           "Norwegian Digitalisation Agency"@en ;
+    ];
+    cc:attributionURL <https://gitlab.com/dataeuropa/mqa/score/-/blob/master/src/main/resources/piveau-dqv-vocabulary-default-score-values.ttl> ;
+    dct:publisher <https://organization-catalog.data.norge.no/organizations/991825827> ;
+   .
+
+
+# Findability
+
+dcatno-mqa:keywordAvailability
+    dcatno-mqa:trueScore            "30"^^xsd:integer .
+
+dcatno-mqa:categoryAvailability
+    dcatno-mqa:trueScore            "30"^^xsd:integer .
+
+dcatno-mqa:spatialAvailability
+    dcatno-mqa:trueScore            "20"^^xsd:integer .
+
+dcatno-mqa:temporalAvailability
+    dcatno-mqa:trueScore            "20"^^xsd:integer .
+
+
+
+# Accessibility
+
+dcatno-mqa:accessUrlStatusCode
+    dcatno-mqa:trueScore            "50"^^xsd:integer .
+
+dcatno-mqa:downloadUrlAvailability
+    dcatno-mqa:trueScore            "20"^^xsd:integer .
+
+dcatno-mqa:downloadUrlStatusCode
+    dcatno-mqa:trueScore            "30"^^xsd:integer .
+
+
+
+# Interoperability
+
+dcatno-mqa:formatAvailability
+    dcatno-mqa:trueScore            "20"^^xsd:integer .
+#     dcatno-mqa:falseScore            "-5"^^xsd:integer .
+
+dcatno-mqa:mediaTypeAvailability
+    dcatno-mqa:trueScore            "10"^^xsd:integer .
+#     dcatno-mqa:falseScore            "-5"^^xsd:integer .
+
+dcatno-mqa:formatMediaTypeVocabularyAlignment
+    dcatno-mqa:trueScore            "10"^^xsd:integer .
+
+dcatno-mqa:formatMediaTypeNonProprietary
+    dcatno-mqa:trueScore            "20"^^xsd:integer .
+
+dcatno-mqa:formatMediaTypeMachineInterpretable
+    dcatno-mqa:trueScore            "20"^^xsd:integer .
+
+dcatno-mqa:dcatApCompliance
+    dcatno-mqa:trueScore           "30"^^xsd:integer .
+
+dcatno-mqa:formatMatch
+    dcatno-mqa:trueScore           "15"^^xsd:integer .
+
+dcatno-mqa:syntaxValid
+    dcatno-mqa:trueScore           "15"^^xsd:integer .
+
+
+
+# Reusability
+
+dcatno-mqa:licenceAvailability
+    dcatno-mqa:trueScore            "20"^^xsd:integer .
+
+dcatno-mqa:knownLicence
+    dcatno-mqa:trueScore            "10"^^xsd:integer .
+
+dcatno-mqa:accessRightsAvailability
+    dcatno-mqa:trueScore            "10"^^xsd:integer .
+
+dcatno-mqa:accessRightsVocabularyAlignment
+    dcatno-mqa:trueScore            "5"^^xsd:integer .
+
+dcatno-mqa:contactPointAvailability
+    dcatno-mqa:trueScore            "20"^^xsd:integer .
+
+dcatno-mqa:publisherAvailability
+    dcatno-mqa:trueScore            "10"^^xsd:integer .
+
+
+
+# Contextuality
+
+dcatno-mqa:rightsAvailability
+    dcatno-mqa:trueScore            "5"^^xsd:integer .
+
+dcatno-mqa:byteSizeAvailability
+    dcatno-mqa:trueScore            "5"^^xsd:integer .
+
+dcatno-mqa:dateIssuedAvailability
+    dcatno-mqa:trueScore            "5"^^xsd:integer .
+
+dcatno-mqa:dateModifiedAvailability
+    dcatno-mqa:trueScore            "5"^^xsd:integer .
