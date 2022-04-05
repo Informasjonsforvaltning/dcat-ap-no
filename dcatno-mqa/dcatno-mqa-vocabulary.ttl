@@ -20,7 +20,7 @@
            "Norwegian Digitalisation Agency"@en ;
     ];
     cc:attributionURL <https://gitlab.com/dataeuropa/vocabularies/-/blob/master/piveau-dqv-vocabulary.ttl> ;
-    dct:publisher <https://organization-catalogue.data.norge.no/organizations/991825827> ;
+    dct:publisher <https://organization-catalog.data.norge.no/organizations/991825827> ;
    .
 
 # Dimensions
