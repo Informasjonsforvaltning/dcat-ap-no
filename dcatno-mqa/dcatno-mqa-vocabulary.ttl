@@ -13,6 +13,7 @@
 <https://data.norge.no/vocabulary/dcatno-mqa#>
    dct:title "Vokaublary for metadata quality assessment of the Norwegian data portal"@nb ;
    dct:description "This vocabulary specifies the metadata quality metrics for the Norwegian data portal data.norge.no."@en ;
+   dct:modified "2022-04-12"^^xsd:date ;
    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
    dct:creator [
         foaf:homepage <https://www.digdir.no/> ;
@@ -242,6 +243,11 @@ dcatno-mqa:publisherAvailability
     dqv:expectedDataType    xsd:boolean ;
     dqv:inDimension         dcatno-mqa:reusability .
 
+dcatno-mqa:openLicense # Norwegian extension
+    a                       dqv:Metric ;
+    skos:definition         "It is checked if a distribution&apos;s licence is an open-source license."@en ;
+    dqv:expectedDataType    xsd:boolean ;
+    dqv:inDimension         dcatno-mqa:reusability .
 
 
 # Contextuality
