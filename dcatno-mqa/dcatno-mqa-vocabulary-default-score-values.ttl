@@ -7,7 +7,7 @@
 # about this vocabulary
 
 <https://data.norge.no/vocabulary/dcatno-mqa#>
-   dct:title "Vokaublary for metadata quality assessment of the Norwegian data portal"@nb ;
+   dct:title "Vocabulary for metadata quality assessment of the Norwegian data portal"@nb ;
    dct:description "This vocabulary specifies the metadata quality metrics for the Norwegian data portal data.norge.no."@en ;
    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
    dct:creator [
