@@ -1,0 +1,5 @@
+= Datasett serie (dcat:DatasetSeries) [[DatasettSerie]]
+
+Klassen _Datasett serie_ er valgfri.
+
+Denne klassen er en sub-klasse (spesialisering) av klassen _Datasett_, og den arver alle egenskaper fra denne.

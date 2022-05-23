@@ -145,6 +145,16 @@ Denne versjon av standarden dekker ennå ikke behov for å ha kataloger over off
 
 == Valgfrie klasser [[Valgfrie-klasser]]
 
+=== Datasett serie (dcat:DatasetSeries) [[klasse-datasettSerie]]
+
+[cols="30s,70d"]
+|===
+| Engelsk navn | Dataset Series
+| Beskrivelse | Brukes til å representere en samling av datasett som er publiserte enkeltvis, men som deler enkelte felles egenskaper som grupperer dem.
+| URI | https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series[dcat:DatasetSeries]
+| Kravsnivå | Valgfri
+|===
+
 === Datatjeneste (dcat:DataService) [[klasse-datatjeneste]]
 
 [cols="30s,70d"]

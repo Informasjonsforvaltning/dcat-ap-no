@@ -2,6 +2,11 @@
 
 Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsbeskrivelser, lenker osv.) loggføres ikke.
 
+== Endringer fra versjon 2.1.1 til 2.2
+
+Fra 2.1 til 2.2:
+* Lagt til ny egenskap Datasett: i serie (`dcat:inSeries`) og klassen Datsett serie (`dcat:DatasetSeries`) som er ny i DCAT 3.  
+
 == Endringer fra versjon 2.1 til 2.1.x
 
 Fra 2.1 til 2.1.1:
