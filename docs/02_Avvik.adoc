@@ -7,6 +7,11 @@ Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
 [cols="15,15,35,35"]
 |===
 |*Klasse-/egenskapsnavn*|*URI for klassen/egenskapen*|*Avvik*|*Forklaring*
+|Datasett: i serie|dcat:inSeries|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.2.1
+|Datasett serie |dcat:DatasetSeries|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.2.1
+|Datasett: første |dcat:first|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.2.1
+|Datasett: siste |dcat:last|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.2.1
+|Datasett: forrige |dcat:prev|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.2.1
 |Datasett: begrep|dct:subject|Ikke eksplisitt tatt med i BRegDCAT-AP|Er i DCAT-AP-NO v.1.1
 |Datasett: ble generert ved |prov:wasGeneratedBy |Endret fra valgfri til anbefalt | Hvordan et datasett ble opprettet (ved vedtak, innhenting fra tredjepart eller ved innhenting fra brukeren) kan være viktig å vite når man skal vurdere om datasettet skal/kan gjenbrukes.
 |Datasett: følger|cpsv:follows|Endret fra valgfri til anbefalt|Denne erstatter egenskap Datasett: skjermingshjemmel som var anbefalt i DCAT-AP-NO v.1.1

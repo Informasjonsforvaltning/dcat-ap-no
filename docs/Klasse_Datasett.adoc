@@ -353,40 +353,30 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Kravsnivå| Valgfri
 |===
 
-=== Datasett: i serie (dcat:inSeries) [[Datasett-iSerie]]
+=== Datasett: forrige (dcat:prev) [[Datasett-forrige]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| in series
-|URI| dcat:inSeries
-|Range| dcat:DatasetSeries
-|Beskrivelse| Referanse til en datasett serie som dette datasett er del av.
-|Multiplisitet| 0..n
+|Engelsk navn| previous
+|URI| dcat:prev
+|Domain| dcat:Dataset
+|Range| dcat:Dataset
+|Beskrivelse| Det forrige datasettet i en ordnet samling eller serie av datasett.
+|Multiplisitet| 0..1
 |Kravsnivå| Valgfri
-|Eksempel a| Kan brukes til å beskrive tidsserier:
-```
-:budget a dcat:DatasetSeries ;
-   dct:title "Budget data"@en ;
-   .
+|===
 
-:budget-2021 a dcat:Dataset ;
-   dct:title "Budget data for year 2021"@en ;
-   dcat:inSeries :budget ;
-   dct:temporal [a dct:PeriodOfTime ;
-   dcat:startDate "2021-01-01"^^xsd:date ;
-   dcat:endDate "2021-12-31"^^xsd:date ; ] ;
-   dcat:next :budget-2022 ;
-   .
+=== Datasett: første (dcat:first) [[Datasett-første]]
 
-:budget-2022 a dcat:Dataset ;
-   dct:title "Budget data for year 2022"@en ;
-   dcat:inSeries :budget ;
-   dct:temporal [a dct:PeriodOfTime ;
-   dcat:startDate "2022-01-01"^^xsd:date ;
-   dcat:endDate "2022-12-31"^^xsd:date ; ] ;
-   dcat:prev :budget-2021 ;
-   .
-```
+[cols="30s,70d"]
+|===
+|Engelsk navn| first
+|URI| dcat:first
+|Domain| dcat:DatasetSeries
+|Range| dcat:Dataset
+|Beskrivelse| Det første datasettet i en ordnet samling eller serie av datasett, som dette datasettet er en del av.
+|Multiplisitet| 0..1
+|Kravsnivå| Valgfri
 |===
 
 === Datasett: frekvens (dct:accrualPeriodicity) [[Datasett-frekvens]]
@@ -486,6 +476,53 @@ dqvno:isAuthoritative
 |Beskrivelse| Referanse til en implementasjonsregel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet.
 |Multiplisitet| 0..n
 |Kravsnivå| Valgfri
+|===
+
+=== Datasett: i serie (dcat:inSeries) [[Datasett-iSerie]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| in series
+|URI| dcat:inSeries
+|Range| dcat:DatasetSeries
+|Beskrivelse| Referanse til en datasett serie som dette datasett er del av.
+|Multiplisitet| 0..n
+|Kravsnivå| Valgfri
+|Eksempel a| Kan brukes til å beskrive tidsserier:
+```
+ex:EUCatalogue a dcat:Catalog ;
+  dcterms:title "European Data Catalogue"@en ;
+  dcat:dataset ex:budget  ;
+  .
+
+ex:budget a dcat:DatasetSeries ;
+  dcterms:title "Budget data"@en ;
+  dcat:first ex:budget-2018 ;
+  dcat:last ex:budget-2020 ;
+  .
+  
+ex:budget-2018 a dcat:Dataset ;
+  dcterms:title "Budget data for year 2018"@en ;
+  dcat:inSeries ex:budget ;
+  dcterms:issued "2019-01-01"^^xsd:date ;
+  dcat:next ex:budget-2019 ;
+  .
+  
+ex:budget-2019 a dcat:Dataset ;
+  dcterms:title "Budget data for year 2019"@en ;
+  dcat:inSeries ex:budget ;
+  dcterms:issued "2020-01-01"^^xsd:date ;
+  dcat:prev ex:budget-2018 ;
+  dcat:next ex:budget-2020 ;
+  .
+  
+ex:budget-2020 a dcat:Dataset ;
+  dcterms:title "Budget data for year 2020"@en ;
+  dcat:inSeries ex:budget ;
+  dcterms:issued "2021-01-01"^^xsd:date ;
+  dcat:prev ex:budget-2019 ;
+  .
+```
 |===
 
 === Datasett: kilde (dct:source) [[Datasett-kilde]]
@@ -605,6 +642,19 @@ dqvno:isAuthoritative
 |Range| xsd:decimal
 |Beskrivelse|  Refererer til den minste romlige oppløsningen for et datasett målt i meter.
 |Multiplisitet| 0..n
+|Kravsnivå| Valgfri
+|===
+
+=== Datasett: siste (dcat:last) [[Datasett-siste]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| last
+|URI| dcat:last
+|Domain| dcat:DatasetSeries
+|Range| dcat:Dataset
+|Beskrivelse| Det siste datasettet i en ordnet samling eller serie av datasett, som dette datasettet er en del av.
+|Multiplisitet| 0..1
 |Kravsnivå| Valgfri
 |===
 
