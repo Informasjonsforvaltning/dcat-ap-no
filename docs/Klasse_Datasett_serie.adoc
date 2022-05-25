@@ -15,8 +15,8 @@ Denne klassen er en sub-klasse (spesialisering) av klassen _Datasett_, og den ar
 |Domain| dcat:DatasetSeries
 |Range| dcat:Dataset
 |Beskrivelse| Det første datasettet i en ordnet samling eller serie av datasett.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
+|Multiplisitet| 1..1
+|Kravsnivå| Obligatorisk
 |===
 
 == Anbefalte egenskaper for klassen _Datasett serie_ [[DatasettSerie-anbefalte-egenskaper]]
@@ -31,5 +31,5 @@ Denne klassen er en sub-klasse (spesialisering) av klassen _Datasett_, og den ar
 |Range| dcat:Dataset
 |Beskrivelse| Det siste datasettet i en ordnet samling eller serie av datasett.
 |Multiplisitet| 0..1
-|Kravsnivå| Valgfri
+|Kravsnivå| Anbefalt
 |===
