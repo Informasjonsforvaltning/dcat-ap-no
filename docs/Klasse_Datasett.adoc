@@ -366,19 +366,6 @@ der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure
 |Kravsnivå| Valgfri
 |===
 
-=== Datasett: første (dcat:first) [[Datasett-første]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| first
-|URI| dcat:first
-|Domain| dcat:DatasetSeries
-|Range| dcat:Dataset
-|Beskrivelse| Det første datasettet i en ordnet samling eller serie av datasett, som dette datasettet er en del av.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|===
-
 === Datasett: frekvens (dct:accrualPeriodicity) [[Datasett-frekvens]]
 
 [cols="30s,70d"]
@@ -642,19 +629,6 @@ ex:budget-2020 a dcat:Dataset ;
 |Range| xsd:decimal
 |Beskrivelse|  Refererer til den minste romlige oppløsningen for et datasett målt i meter.
 |Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: siste (dcat:last) [[Datasett-siste]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| last
-|URI| dcat:last
-|Domain| dcat:DatasetSeries
-|Range| dcat:Dataset
-|Beskrivelse| Det siste datasettet i en ordnet samling eller serie av datasett, som dette datasettet er en del av.
-|Multiplisitet| 0..1
 |Kravsnivå| Valgfri
 |===
 
