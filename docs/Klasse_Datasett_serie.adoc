@@ -1,0 +1,35 @@
+= Datasett serie (dcat:DatasetSeries) [[DatasettSerie]]
+
+Klassen _Datasett serie_ er valgfri.
+
+Denne klassen er en sub-klasse (spesialisering) av klassen _Datasett_, og den arver alle egenskaper fra denne.
+
+== Obligatoriske egenskaper for klassen _Datasett serie_ [[DatasettSerie-obligatoriske-egenskaper]]
+
+=== Datasett serie: første (dcat:first) [[DatasettSerie-første]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| first
+|URI| dcat:first
+|Domain| dcat:DatasetSeries
+|Range| dcat:Dataset
+|Beskrivelse| Det første datasettet i en ordnet samling eller serie av datasett.
+|Multiplisitet| 1..1
+|Kravsnivå| Obligatorisk
+|===
+
+== Anbefalte egenskaper for klassen _Datasett serie_ [[DatasettSerie-anbefalte-egenskaper]]
+
+=== Datasett serie: siste (dcat:last) [[DatasettSerie-siste]]
+
+[cols="30s,70d"]
+|===
+|Engelsk navn| last
+|URI| dcat:last
+|Domain| dcat:DatasetSeries
+|Range| dcat:Dataset
+|Beskrivelse| Det siste datasettet i en ordnet samling eller serie av datasett.
+|Multiplisitet| 0..1
+|Kravsnivå| Anbefalt
+|===
