@@ -56,6 +56,8 @@ include::Klasse_Aktor.adoc[]
 
 include::Klasse_Datasett.adoc[]
 
+include::Klasse_Datasett_serie.adoc[]
+
 include::Klasse_Datatjeneste.adoc[]
 
 include::Klasse_Distribusjon.adoc[]

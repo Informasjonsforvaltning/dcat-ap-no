@@ -2,6 +2,12 @@
 
 Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsbeskrivelser, lenker osv.) loggføres ikke.
 
+== Endringer fra versjon 2.1.1 til 2.2
+
+Fra 2.1 til 2.2:
+* Lagt til nye egenskaper for Datasett: i serie (`dcat:inSeries`) og egenskapen forrige (`dcat:prev`) som er ny i DCAT 3.  
+* Lagt til ny klasse Datsett serie (`dcat:DatasetSeries`) og egenskapene første (`dcat:first`) og siste (`dcat:last`) som er nye i DCAT 3.  
+
 == Endringer fra versjon 2.1 til 2.1.x
 
 Fra 2.1 til 2.1.1:
