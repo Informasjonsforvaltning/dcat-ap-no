@@ -1,0 +1,57 @@
+    @prefix ex: <http://example.org/> .
+    @prefix dct: <http://purl.org/dc/terms/> .
+    @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+    @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+    @prefix dcat: <http://www.w3.org/ns/dcat#> .
+    @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+
+    ex:EUCatalog a dcat:Catalog ;
+        dct:identifier "EUCatalog" ;
+        dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
+        dct:title "European Data Catalog"@en ;
+        dct:description "A test catalog that shows an example of a dataset series"@en ;
+        dcat:dataset ex:budget  ;
+        .
+
+    ex:budget a dcat:DatasetSeries ;
+        dct:identifier "budget" ;
+        dct:title "Budget data"@en ;
+        dct:description "Budget data"@en ;
+        dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
+        dcat:first ex:budget-2018 ;
+        dcat:last ex:budget-2020 ;
+        dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+        .
+
+    ex:budget-2018 a dcat:Dataset ;
+        dct:identifier "eu-budget-2018" ;
+        dct:title "Budget data for year 2018"@en ;
+        dct:description "Budget data for year 2018"@en ;
+        dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
+        dcat:inSeries ex:budget ;
+        dct:issued "2019-01-01"^^xsd:date ;
+        dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+        .
+
+    ex:budget-2019 a dcat:Dataset ;
+        dct:identifier "eu-budget-2019" ;
+        dct:title "Budget data for year 2019"@en ;
+        dct:description "Budget data for year 2019"@en ;
+        dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
+        dcat:inSeries ex:budget ;
+        dct:issued "2020-01-01"^^xsd:date ;
+        dcat:prev ex:budget-2018 ;
+        dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+        .
+
+    ex:budget-2020 a dcat:Dataset ;
+        dct:identifier "eu-budget-2020" ;
+        dct:title "Budget data for year 2020"@en ;
+        dct:description "Budget data for year 2020"@en ;
+        dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
+        dcat:inSeries ex:budget ;
+        dct:issued "2021-01-01"^^xsd:date ;
+        dcat:prev ex:budget-2019 ;
+        dcat:theme <http://publications.europa.eu/resource/authority/data-theme/ECON> ;
+        .
