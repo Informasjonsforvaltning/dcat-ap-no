@@ -40,8 +40,8 @@
   rdf:type owl:Ontology ;
   owl:imports <https://www.w3.org/ns/regorg> ;
   owl:imports <https://www.w3.org/ns/org> ;
-  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/master/src/main/resources/ontology/org-status.ttl> ;
-  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/master/src/main/resources/ontology/org-type.ttl> ;
+  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/main/src/main/resources/ontology/org-status.ttl> ;
+  owl:imports <https://raw.githubusercontent.com/Informasjonsforvaltning/organization-catalog/main/src/main/resources/ontology/org-type.ttl> ;
   owl:imports <http://www.w3.org/2006/vcard/ns> ;
   .
 
