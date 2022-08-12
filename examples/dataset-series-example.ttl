@@ -9,7 +9,7 @@
     ex:EUCatalog a dcat:Catalog ;
         dct:identifier "EUCatalog" ;
         dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
-        dct:title "European Data Catalog"@en ;
+        dct:title "European Data Catalog"@en , "Europeisk Datakatalog"@nb ;
         dct:description "A test catalog that shows an example of a dataset series"@en ;
         dcat:dataset ex:budget  ;
         .
