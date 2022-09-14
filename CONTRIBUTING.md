@@ -60,8 +60,8 @@ For at det følgende skal virke på din maskin, må du ha programvare installert
 
 ```Shell
 % docker run -it -v $(pwd):/documents asciidoctor/docker-asciidoctor
-bash-5.0# asciidoctor -D docs -o index.html docs/main.adoc
-bash-5.0# asciidoctor-pdf -D docs -o dcat-ap-no.pdf docs/main.adoc
+bash-5.0# asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc
+bash-5.0# asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc
 ```
 
 Åpne filen index.html i din nettleser.
