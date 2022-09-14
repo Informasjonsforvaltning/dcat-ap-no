@@ -21,9 +21,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 
 
 *Status*: Gjeldende +
-*Versjon*: 2.1.1 (se <<Endringslogg, endringsloggen>>) +
+*Versjon*: 2.2 (se <<Endringslogg, endringsloggen>>) +
 *Publisert*: 2021-06-10 (v.2.1), 2020-10-29 (v.2.0) +
-*Oppdatert*: 2021-11-22 +
+*Oppdatert*: 2022-05-25  +
 *Gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no +
 *Forrige versjon*: https://data.norge.no/specification/dcat-ap-no/v1.1/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/ +
@@ -55,6 +55,8 @@ include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
 include::Klasse_Aktor.adoc[]
 
 include::Klasse_Datasett.adoc[]
+
+include::Klasse_Datasett_serie.adoc[]
 
 include::Klasse_Datatjeneste.adoc[]
 

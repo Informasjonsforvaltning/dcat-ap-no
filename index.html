@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.16">
+<meta name="generator" content="Asciidoctor 2.0.17">
 <title>Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -193,7 +193,8 @@ body.toc2.toc-right{padding-left:0;padding-right:20em}}
 #content h1>a.link:hover,h2>a.link:hover,h3>a.link:hover,#toctitle>a.link:hover,.sidebarblock>.content>.title>a.link:hover,h4>a.link:hover,h5>a.link:hover,h6>a.link:hover{color:#a53221}
 details,.audioblock,.imageblock,.literalblock,.listingblock,.stemblock,.videoblock{margin-bottom:1.25em}
 details{margin-left:1.25rem}
-details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;-webkit-tap-highlight-color:transparent}
+details>summary{cursor:pointer;display:block;position:relative;line-height:1.6;margin-bottom:.625rem;outline:none;-webkit-tap-highlight-color:transparent}
+details>summary::-webkit-details-marker{display:none}
 details>summary::before{content:"";border:solid transparent;border-left:solid;border-width:.3em 0 .3em .5em;position:absolute;top:.5em;left:-1.25rem;transform:translateX(15%)}
 details[open]>summary::before{border:solid transparent;border-top:solid;border-width:.5em .3em 0;transform:translateY(15%)}
 details>summary::after{content:"";width:1.25rem;height:1em;position:absolute;top:.3em;left:-1.25rem}
@@ -235,9 +236,8 @@ pre.prettyprint li:not(:first-child) code[data-lang]::before{display:none}
 table.linenotable{border-collapse:separate;border:0;margin-bottom:0;background:none}
 table.linenotable td[class]{color:inherit;vertical-align:top;padding:0;line-height:inherit;white-space:normal}
 table.linenotable td.code{padding-left:.75em}
-table.linenotable td.linenos{border-right:1px solid;opacity:.35;padding-right:.5em}
-pre.pygments .lineno{border-right:1px solid;opacity:.35;display:inline-block;margin-right:.75em}
-pre.pygments .lineno::before{content:"";margin-right:-.125em}
+table.linenotable td.linenos,pre.pygments .linenos{border-right:1px solid;opacity:.35;padding-right:.5em;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
+pre.pygments span.linenos{display:inline-block;margin-right:.75em}
 .quoteblock{margin:0 1em 1.25em 1.5em;display:table}
 .quoteblock:not(.excerpt)>.title{margin-left:-1.5em;margin-bottom:.75em}
 .quoteblock blockquote,.quoteblock p{color:rgba(0,0,0,.85);font-size:1.15rem;line-height:1.75;word-spacing:.1em;letter-spacing:0;font-style:italic;text-align:justify}
@@ -274,7 +274,7 @@ table.frame-none>colgroup+*>:first-child>*,table.frame-sides>colgroup+*>:first-c
 table.frame-none>:last-child>:last-child>*,table.frame-sides>:last-child>:last-child>*{border-bottom-width:0}
 table.frame-none>*>tr>:first-child,table.frame-ends>*>tr>:first-child{border-left-width:0}
 table.frame-none>*>tr>:last-child,table.frame-ends>*>tr>:last-child{border-right-width:0}
-table.stripes-all tr,table.stripes-odd tr:nth-of-type(odd),table.stripes-even tr:nth-of-type(even),table.stripes-hover tr:hover{background:#f8f8f7}
+table.stripes-all>*>tr,table.stripes-odd>*>tr:nth-of-type(odd),table.stripes-even>*>tr:nth-of-type(even),table.stripes-hover>*>tr:hover{background:#f8f8f7}
 th.halign-left,td.halign-left{text-align:left}
 th.halign-right,td.halign-right{text-align:right}
 th.halign-center,td.halign-center{text-align:center}
@@ -290,10 +290,11 @@ ol{margin-left:1.75em}
 ul li ol{margin-left:1.5em}
 dl dd{margin-left:1.125em}
 dl dd:last-child,dl dd:last-child>:last-child{margin-bottom:0}
-ol>li p,ul>li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
+li p,ul dd,ol dd,.olist .olist,.ulist .ulist,.ulist .olist,.olist .ulist{margin-bottom:.625em}
 ul.checklist,ul.none,ol.none,ul.no-bullet,ol.no-bullet,ol.unnumbered,ul.unstyled,ol.unstyled{list-style-type:none}
 ul.no-bullet,ol.no-bullet,ol.unnumbered{margin-left:.625em}
 ul.unstyled,ol.unstyled{margin-left:0}
+li>p:empty:only-child::before{content:"";display:inline-block}
 ul.checklist>li>p:first-child{margin-left:-1em}
 ul.checklist>li>p:first-child>.fa-square-o:first-child,ul.checklist>li>p:first-child>.fa-check-square-o:first-child{width:1.25em;font-size:.8em;position:relative;bottom:.125em}
 ul.checklist>li>p:first-child>input[type=checkbox]:first-child{margin-right:.25em}
@@ -336,8 +337,6 @@ sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
 #footnotes .footnote a:first-of-type{font-weight:bold;text-decoration:none;margin-left:-1.05em}
 #footnotes .footnote:last-of-type{margin-bottom:0}
 #content #footnotes{margin-top:-.625em;margin-bottom:0;padding:.75em 0}
-.gist .file-data>table{border:0;background:#fff;width:100%;margin-bottom:0}
-.gist .file-data>table td.line-data{width:99%}
 div.unbreakable{page-break-inside:avoid}
 .big{font-size:larger}
 .small{font-size:smaller}
@@ -497,6 +496,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Valgfrie-klasser">Valgfrie klasser</a>
 <ul class="sectlevel3">
+<li><a href="#klasse-datasettSerie">Datasett serie (dcat:DatasetSeries)</a></li>
 <li><a href="#klasse-datatjeneste">Datatjeneste (dcat:DataService)</a></li>
 <li><a href="#klasse-dokument">Dokument (foaf:Document)</a></li>
 <li><a href="#klasse-frekvens">Frekvens (dct:Frequency)</a></li>
@@ -573,12 +573,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-erVersjonAv">Datasett: er versjon av (dct:isVersionOf)</a></li>
 <li><a href="#Datasett-erstatter">Datasett: erstatter (dct:replaces)</a></li>
 <li><a href="#Datasett-erstattesAv">Datasett: erstattes av (dct:isReplacedBy)</a></li>
+<li><a href="#Datasett-forrige">Datasett: forrige (dcat:prev)</a></li>
 <li><a href="#Datasett-frekvens">Datasett: frekvens (dct:accrualPeriodicity)</a></li>
 <li><a href="#Datasett-harDel">Datasett: har del (dct:hasPart)</a></li>
 <li><a href="#Datasett-harKvalitetsnote">Datasett: har kvalitetsnote (dqv:hasQualityAnnotation)</a></li>
 <li><a href="#Datasett-harMåleresultat">Datasett: har måleresultat (dqv:hasQualityMeasurement)</a></li>
 <li><a href="#Datasett-harVersjon">Datasett: har versjon (dct:hasVersion)</a></li>
 <li><a href="#Datasett-iSamsvarMed">Datasett: i samsvar med (dct:conformsTo)</a></li>
+<li><a href="#Datasett-iSerie">Datasett: i serie (dcat:inSeries)</a></li>
 <li><a href="#Datasett-kilde">Datasett: kilde (dct:source)</a></li>
 <li><a href="#Datasett-krever">Datasett: krever (dct:requires)</a></li>
 <li><a href="#Datasett-kvalifisertKreditering">Datasett: kvalifisert kreditering (prov:qualifiedAttribution)</a></li>
@@ -595,6 +597,20 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-utgivelsesdato">Datasett: utgivelsesdato (dct:issued)</a></li>
 <li><a href="#Datasett-versjon">Datasett: versjon (owl:versionInfo)</a></li>
 <li><a href="#Datasett-versjonsnote">Datasett: versjonsnote (adms:versionNotes)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#DatasettSerie">Datasett serie (dcat:DatasetSeries)</a>
+<ul class="sectlevel3">
+<li><a href="#DatasettSerie-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Datasett serie</em></a>
+<ul class="sectlevel4">
+<li><a href="#DatasettSerie-første">Datasett serie: første (dcat:first)</a></li>
+</ul>
+</li>
+<li><a href="#DatasettSerie-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Datasett serie</em></a>
+<ul class="sectlevel4">
+<li><a href="#DatasettSerie-siste">Datasett serie: siste (dcat:last)</a></li>
 </ul>
 </li>
 </ul>
@@ -982,6 +998,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Avvik-fra-EU-Standard">Avvik fra EU-standarden BRegDCAT-AP</a></li>
 <li><a href="#Endringslogg">Endringslogg</a>
 <ul class="sectlevel2">
+<li><a href="#_endringer_fra_versjon_2_1_1_til_2_2">Endringer fra versjon 2.1.1 til 2.2</a></li>
 <li><a href="#_endringer_fra_versjon_2_1_til_2_1_x">Endringer fra versjon 2.1 til 2.1.x</a></li>
 <li><a href="#Endringer_v2.1">Endringer fra versjon 2.0.x til 2.1</a></li>
 <li><a href="#Endringer_v2.0.x">Endringer fra versjon 2.0.0 til v.2.0.x</a></li>
@@ -1006,7 +1023,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <i class="fa icon-tip" title="Tips"></i>
 </td>
 <td class="content">
-Dette dokumentet kan også lastes ned <a href="dcat-ap-no.pdf">som PDF</a>.
+Dette dokumentet kan også lastes ned <a href="files/dcat-ap-no.pdf">som PDF</a>.
 </td>
 </tr>
 </table>
@@ -1026,9 +1043,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 </div>
 <div class="paragraph">
 <p><strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 2.1.1 (se <a href="#Endringslogg">endringsloggen</a>)<br>
+<strong>Versjon</strong>: 2.2 (se <a href="#Endringslogg">endringsloggen</a>)<br>
 <strong>Publisert</strong>: 2021-06-10 (v.2.1), 2020-10-29 (v.2.0)<br>
-<strong>Oppdatert</strong>: 2021-11-22<br>
+<strong>Oppdatert</strong>: 2022-05-25 <br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no/v1.1/" class="bare">https://data.norge.no/specification/dcat-ap-no/v1.1/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/" class="bare">https://informasjonsforvaltning.github.io/dcat-ap-no/</a><br>
@@ -1714,6 +1731,33 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </div>
 <div class="sect2">
 <h3 id="Valgfrie-klasser"><a class="link" href="#Valgfrie-klasser">Valgfrie klasser</a></h3>
+<div class="sect3">
+<h4 id="klasse-datasettSerie"><a class="link" href="#klasse-datasettSerie">Datasett serie (dcat:DatasetSeries)</a></h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dataset Series</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å representere en samling av datasett som er publiserte enkeltvis, men som deler enkelte felles egenskaper som grupperer dem.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series">dcat:DatasetSeries</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
 <div class="sect3">
 <h4 id="klasse-datatjeneste"><a class="link" href="#klasse-datatjeneste">Datatjeneste (dcat:DataService)</a></h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -3303,6 +3347,45 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </table>
 </div>
 <div class="sect4">
+<h5 id="Datasett-forrige"><a class="link" href="#Datasett-forrige">Datasett: forrige (dcat:prev)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">previous</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:prev</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det forrige datasettet i en ordnet samling eller serie av datasett.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
 <h5 id="Datasett-frekvens"><a class="link" href="#Datasett-frekvens">Datasett: frekvens (dct:accrualPeriodicity)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -3368,33 +3451,6 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
-<p>Kan brukes til å beskrive tidsserier:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code>:aTimeSeries
-   a dcat:Dataset ;
-   dct:hasPart :part1, :part2 .
-
-:part1
-   a dcat:Dataset ;
-   dct:isPartOf :aTimeSeries ;
-   dct:temporal [a dct:PeriodOfTime ;
-   dcat:startDate "2017-01-01"^^xsd:date ;
-   dcat:endDate "2017-12-31"^^xsd:date ; ] .
-
-:part2
-   a dcat:Dataset ;
-   dct:isPartOf :aTimeSeries ;
-   dct:temporal [a dct:PeriodOfTime ;
-   dcat:startDate "2018-01-01"^^xsd:date ;
-   dcat:endDate "2018-12-31"^^xsd:date ; ] .</code></pre>
-</div>
-</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -3584,6 +3640,83 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Datasett-iSerie"><a class="link" href="#Datasett-iSerie">Datasett: i serie (dcat:inSeries)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">in series</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:inSeries</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DatasetSeries</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Referanse til en datasett serie som dette datasett er del av.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Kan brukes til å beskrive tidsserier:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>ex:EUCatalogue a dcat:Catalog ;
+  dcterms:title "European Data Catalogue"@en ;
+  dcat:dataset ex:budget  ;
+  .
+
+ex:budget a dcat:DatasetSeries ;
+  dcterms:title "Budget data"@en ;
+  dcat:first ex:budget-2018 ;
+  dcat:last ex:budget-2020 ;
+  .
+
+ex:budget-2018 a dcat:Dataset ;
+  dcterms:title "Budget data for year 2018"@en ;
+  dcat:inSeries ex:budget ;
+  dcterms:issued "2019-01-01"^^xsd:date ;
+  dcat:next ex:budget-2019 ;
+  .
+
+ex:budget-2019 a dcat:Dataset ;
+  dcterms:title "Budget data for year 2019"@en ;
+  dcat:inSeries ex:budget ;
+  dcterms:issued "2020-01-01"^^xsd:date ;
+  dcat:prev ex:budget-2018 ;
+  dcat:next ex:budget-2020 ;
+  .
+
+ex:budget-2020 a dcat:Dataset ;
+  dcterms:title "Budget data for year 2020"@en ;
+  dcat:inSeries ex:budget ;
+  dcterms:issued "2021-01-01"^^xsd:date ;
+  dcat:prev ex:budget-2019 ;
+  .</code></pre>
+</div>
+</div></div></td>
 </tr>
 </tbody>
 </table>
@@ -4164,6 +4297,99 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="DatasettSerie"><a class="link" href="#DatasettSerie">Datasett serie (dcat:DatasetSeries)</a></h3>
+<div class="paragraph">
+<p>Klassen <em>Datasett serie</em> er valgfri.</p>
+</div>
+<div class="paragraph">
+<p>Denne klassen er en sub-klasse (spesialisering) av klassen <em>Datasett</em>, og den arver alle egenskaper fra denne.</p>
+</div>
+<div class="sect3">
+<h4 id="DatasettSerie-obligatoriske-egenskaper"><a class="link" href="#DatasettSerie-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Datasett serie</em></a></h4>
+<div class="sect4">
+<h5 id="DatasettSerie-første"><a class="link" href="#DatasettSerie-første">Datasett serie: første (dcat:first)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">first</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DatasetSeries</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det første datasettet i en ordnet samling eller serie av datasett.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="DatasettSerie-anbefalte-egenskaper"><a class="link" href="#DatasettSerie-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Datasett serie</em></a></h4>
+<div class="sect4">
+<h5 id="DatasettSerie-siste"><a class="link" href="#DatasettSerie-siste">Datasett serie: siste (dcat:last)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Engelsk navn</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">last</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:last</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Domain</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DatasetSeries</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Range</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Beskrivelse</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det siste datasettet i en ordnet samling eller serie av datasett.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
 </tr>
 </tbody>
 </table>
@@ -9880,6 +10106,42 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring</strong></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: i serie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:inSeries</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.2.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å dekke behov for datasettserie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: forrige</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:prev</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å dekke behov for datasettserie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett serie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DatasetSeries</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å dekke behov for datasettserie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett serie: første</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.2.1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å dekke behov for datasettserie</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett serie: siste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:last</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Er i DCAT-AP-NO v.2.1</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett: begrep</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:subject</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt tatt med i BRegDCAT-AP</p></td>
@@ -10083,6 +10345,14 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <div class="sectionbody">
 <div class="paragraph">
 <p>Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsbeskrivelser, lenker osv.) loggføres ikke.</p>
+</div>
+<div class="sect2">
+<h3 id="_endringer_fra_versjon_2_1_1_til_2_2"><a class="link" href="#_endringer_fra_versjon_2_1_1_til_2_2">Endringer fra versjon 2.1.1 til 2.2</a></h3>
+<div class="paragraph">
+<p>Fra 2.1 til 2.2:
+* Lagt til nye egenskaper for Datasett: i serie (<code>dcat:inSeries</code>) og egenskapen forrige (<code>dcat:prev</code>) som er ny i DCAT 3.
+* Lagt til ny klasse Datsett serie (<code>dcat:DatasetSeries</code>) og egenskapene første (<code>dcat:first</code>) og siste (<code>dcat:last</code>) som er nye i DCAT 3.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_endringer_fra_versjon_2_1_til_2_1_x"><a class="link" href="#_endringer_fra_versjon_2_1_til_2_1_x">Endringer fra versjon 2.1 til 2.1.x</a></h3>
@@ -10588,7 +10858,7 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2021-11-22 13:31:23 UTC
+Sist oppdatert 2022-09-14 13:18:19 UTC
 </div>
 </div>
 </body>
