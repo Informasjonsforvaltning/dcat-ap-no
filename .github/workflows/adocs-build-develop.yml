@@ -23,7 +23,7 @@ jobs:
         id: adocbuild_pdf
         uses: avattathil/asciidoctor-action@master
         with:
-          program: "asciidoctor-pdf -D docs -o dcat-ap-no.pdf -a lang=nb docs/main.adoc"
+          program: "asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc"
         continue-on-error: true
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
