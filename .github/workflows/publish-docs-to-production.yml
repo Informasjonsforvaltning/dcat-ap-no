@@ -10,7 +10,7 @@ on:
 
 jobs:
   adoc_build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     name: asciidoctor build
 
     steps:
