@@ -9,7 +9,7 @@ on:
 
 jobs:
   build_html:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     name: html build
     steps:
       - name: Checkout code

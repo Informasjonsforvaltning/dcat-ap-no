@@ -1,21 +1,23 @@
-name: build adocs and publish to staging
+name: build adocs and publish v2 to production
 
 on:
   push:
     branches:
-      - develop
+      - v2
     paths:
       - docs/**
   workflow_dispatch:
 
 jobs:
   adoc_build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     name: asciidoctor build
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
+        with:
+          ref: v2
 
       - name: Build html
         id: adocbuild
@@ -36,8 +38,8 @@ jobs:
         with:
           ontology-type: "specification"
           ontology: "dcat-ap-no"
-          host: "https://staging.fellesdatakatalog.digdir.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
+          host: "https://fellesdatakatalog.digdir.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
           files: |
             docs/index.html text/html nb
             docs/files/dcat-ap-no.pdf application/pdf nb files/dcat-ap-no.pdf
