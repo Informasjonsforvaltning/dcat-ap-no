@@ -1,0 +1,49 @@
+name: build adocs and publish v1.1 to staging
+
+on:
+  push:
+    branches:
+      - v1.1
+    paths:
+      - docs/**
+  workflow_dispatch:
+
+jobs:
+  adoc_build:
+    runs-on: ubuntu-latest
+    name: asciidoctor build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          ref: v1.1
+
+      - name: Build html
+        id: adocbuild
+        uses: avattathil/asciidoctor-action@master
+        with:
+          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+
+      - name: Build pdf
+        id: adocbuild_pdf
+        uses: avattathil/asciidoctor-action@master
+        with:
+          program: "asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc"
+        continue-on-error: true
+
+      - name: Upload rdf to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+        id: upload-rdf
+        with:
+          ontology-type: "specification"
+          ontology: "dcat-ap-no"
+          version: "v1.1"
+          host: "https://staging.fellesdatakatalog.digdir.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
+          files: |
+            docs/index.html text/html nb
+            docs/files/dcat-ap-no.pdf application/pdf nb files/dcat-ap-no.pdf
+            docs/files/DCAT-AP-NO2_20210903.eap application/octet-stream nb files/DCAT-AP-NO2_20210903.eap
+            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
+            docs/images/DCAT-AP-NO2_20210903.png image/png nb images/DCAT-AP-NO2_20210903.png
