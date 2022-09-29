@@ -1,0 +1,66 @@
+= Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)
+Digitaliseringsdirektoratet - Versjon 1.1
+:doctype: book
+:docinfo:
+:icons: font
+:toc: left
+:toc-title: Innholdsfortegnelse
+:toclevels: 3
+:sectlinks:
+
+:leveloffset: +1
+:table-stripes: even
+
+Status: [yellow-background]#Fases ut# +
+Publisert: 11.10.2016 +
+Oppdatert: 22.10.2020 +
+Lenke til gjeldende versjon: https://data.norge.no/specification/dcat-ap-no/
+
+CAUTION: Denne versjonen av DCAT-AP-NO er på vei ut og vil ikke bli vedlikeholdt (inkl. ev. kjente feil/mangler). Vi oppfordrer sterkt til å bruke https://data.norge.no/specification/dcat-ap-no/[DCAT-AP-NO v.2.0+].
+
+
+Dette dokumentet beskriver “Standard for beskrivelse av datasett og datakataloger (DCAT-AP-NO)” som skal sikre at beskrivelser av offentlige data utføres på en felles, strukturert måte og i en maskinlesbar form. Standarden stiller krav til hva som _skal_, _bør_ og _kan_ være med i beskrivelsene, med spesifikasjon av dataformat.
+
+include::introduksjon.adoc[]
+
+include::03_Omfang_og_avgrensing.adoc[]
+
+include::04_Forvaltningsregime.adoc[]
+
+include::05_Ord_uttrykk_forkortelser.adoc[]
+
+include::06_Oversikt_over_klasser_i_standarden.adoc[]
+
+include::07_Oversikt_over_URIer_i_bruk.adoc[]
+
+include::07b_diagram.adoc[]
+
+= Egenskaper pr. klasse
+
+:leveloffset: +1
+
+include::08_Egenskaper_for_klassen_datakatalog.adoc[]
+
+include::09_Egenskaper_for_klassen_Katalogpost.adoc[]
+
+include::10_Egenskaper_for_klassen_Datasett.adoc[]
+
+include::11_Egenskaper_for_klassen_Distribusjon.adoc[]
+
+include::12_Egenskaper-for_klassen_Enhet.adoc[]
+
+include::13_Egenskaper_for_klassen_Kategoriskjema.adoc[]
+
+include::14_Egenskaper_for_klassen_Kategori.adoc[]
+
+include::15_Egenskaper_for_klassen_Lisensdokument.adoc[]
+
+include::15i_Egenskaper_for_klassen_Sjekksum.adoc[]
+
+include::16_Egenskaper_for_klassen_Tidsperiode.adoc[]
+
+
+
+:leveloffset: -1
+
+include::17_Kontrollerte_vokabular.adoc[]
