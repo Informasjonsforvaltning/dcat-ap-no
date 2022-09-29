@@ -44,6 +44,7 @@ jobs:
           files: |
             docs/index.html text/html nb
             docs/files/dcat-ap-no.pdf application/pdf nb files/dcat-ap-no.pdf
+            docs/files/dcat-ap-no-1.1p2.uxf text/xml nb files/dcat-ap-no-1.1p2.uxf
             docs/files/dcat-ap-no-1.1p3.png image/png nb files/dcat-ap-no-1.1p3.png
             docs/images/dcat-ap-no-1-1-diagram.png image/png nb images/dcat-ap-no-1-1-diagram.png
             docs/images/dcat-ap-no-1.1p3.png image/png nb images/dcat-ap-no-1.1p3.png
