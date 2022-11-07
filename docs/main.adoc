@@ -44,11 +44,11 @@ include::07b_diagram.adoc[]
 
 include::06_Oversikt_over_klasser.adoc[]
 
+include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
+
 = Egenskaper pr. klasse
 
 :leveloffset: +1
-
-include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
 
 include::Klasse_Aktor.adoc[]
 
