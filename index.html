@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.17">
+<meta name="generator" content="Asciidoctor 2.0.18">
 <title>Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -84,10 +84,10 @@ code{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;
 ul,ol,dl{line-height:1.6;margin-bottom:1.25em;list-style-position:outside;font-family:inherit}
 ul,ol{margin-left:1.5em}
 ul li ul,ul li ol{margin-left:1.25em;margin-bottom:0}
-ul.square li ul,ul.circle li ul,ul.disc li ul{list-style:inherit}
-ul.square{list-style-type:square}
 ul.circle{list-style-type:circle}
 ul.disc{list-style-type:disc}
+ul.square{list-style-type:square}
+ul.circle ul:not([class]),ul.disc ul:not([class]),ul.square ul:not([class]){list-style:inherit}
 ol li ul,ol li ol{margin-left:1.25em;margin-bottom:0}
 dl dt{margin-bottom:.3125em;font-weight:bold}
 dl dd{margin-bottom:1.25em}
@@ -470,7 +470,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Forvaltningsregime">Forvaltningsregime</a></li>
 <li><a href="#Om-kravene">Om kravene i denne standarden</a></li>
 <li><a href="#URIer-i-bruk">URIer som er i bruk</a></li>
-<li><a href="#UML-diagram">UML-diagram</a></li>
+<li><a href="#_uml_diagram_ikke_oppdatert">UML-diagram  <mark>(ikke oppdatert)</mark></a></li>
 <li><a href="#Klasser-i-standarden">Klasser i standarden</a>
 <ul class="sectlevel2">
 <li><a href="#Obligatoriske-klasser">Obligatoriske klasser</a>
@@ -519,9 +519,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#Krav-om-bruk-av-kontollerte-vokabularer">Krav om å bruke kontrollerte vokabularer</a></li>
 <li><a href="#_egenskaper_pr_klasse">Egenskaper pr. klasse</a>
 <ul class="sectlevel2">
-<li><a href="#Krav-om-bruk-av-kontollerte-vokabularer">Krav om å bruke kontrollerte vokabularer</a></li>
 <li><a href="#Aktør">Aktør (foaf:Agent)</a>
 <ul class="sectlevel3">
 <li><a href="#Aktør-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Aktør</em></a>
@@ -601,18 +601,17 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#DatasettSerie">Datasett serie (dcat:DatasetSeries)</a>
+<li><a href="#_datasett_serie_dcatdatasetseries"><mark>Datasett serie (dcat:DatasetSeries) </mark></a>
 <ul class="sectlevel3">
-<li><a href="#DatasettSerie-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Datasett serie</em></a>
+<li><a href="#_obligatoriske_egenskaper_for_klassen_datasett_serie"><mark>Obligatoriske egenskaper for klassen <em>Datasett serie</em> </mark></a></li>
+<li><a href="#_anbefalte_egenskaper_for_klassen_datasett_serie"><mark>Anbefalte egenskaper for klassen <em>Datasett serie</em> </mark></a>
 <ul class="sectlevel4">
-<li><a href="#DatasettSerie-første">Datasett serie: første (dcat:first)</a></li>
+<li><a href="#_datasett_serie_første_dcatfirst"><mark>Datasett serie: første (dcat:first) </mark></a></li>
+<li><a href="#_datasett_serie_siste_dcatlast"><mark>Datasett serie: siste (dcat:last) </mark></a></li>
 </ul>
 </li>
-<li><a href="#DatasettSerie-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Datasett serie</em></a>
-<ul class="sectlevel4">
-<li><a href="#DatasettSerie-siste">Datasett serie: siste (dcat:last)</a></li>
-</ul>
-</li>
+<li><a href="#_valgfrie_egenskaper_for_klassen_datasett_serie"><mark>Valgfrie egenskaper for klassen <em>Datasett serie</em> </mark></a></li>
+<li><a href="#_om_bruk_av_klassen_datasett_serie"><mark>Om bruk av klassen <em>Datasett serie</em> </mark></a></li>
 </ul>
 </li>
 <li><a href="#Datatjeneste">Datatjeneste (dcat:DataService)</a>
@@ -1028,24 +1027,22 @@ Dette dokumentet kan også lastes ned <a href="files/dcat-ap-no.pdf">som PDF</a>
 </tr>
 </table>
 </div>
-<div class="admonitionblock note">
+<div class="admonitionblock warning">
 <table>
 <tr>
 <td class="icon">
-<i class="fa icon-note" title="Merk"></i>
+<i class="fa icon-warning" title="Advarsel"></i>
 </td>
 <td class="content">
-<strong>Innmelding av feil og mangler:</strong><br>
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på <a href="https://github.com/difi/dcat-ap-no/issues">Github Issues</a>. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+Dette er utkast til neste versjon (v2.3) av DCAT-AP-NO. Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på <a href="https://github.com/Informasjonsforvaltning/dcat-ap-no/issues">Github Issues</a>. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 </td>
 </tr>
 </table>
 </div>
 <div class="paragraph">
-<p><strong>Status</strong>: Gjeldende<br>
-<strong>Versjon</strong>: 2.2 (se <a href="#Endringslogg">endringsloggen</a>)<br>
-<strong>Publisert</strong>: 2021-06-10 (v.2.1), 2020-10-29 (v.2.0)<br>
-<strong>Oppdatert</strong>: 2022-05-25 <br>
+<p><strong>Status</strong>: <mark>Redaktørens utkast</mark><br>
+<strong>Versjon</strong>: Utkast til versjon 2.3 (se <a href="#Endringslogg">endringsloggen</a>)<br>
+<strong>Oppdatert</strong>: 2022-11-07 <br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no/v1.1/" class="bare">https://data.norge.no/specification/dcat-ap-no/v1.1/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/" class="bare">https://informasjonsforvaltning.github.io/dcat-ap-no/</a><br>
@@ -1059,10 +1056,17 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <h2 id="Innledning"><a class="link" href="#Innledning">Innledning</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett og datatjenester, og å lette søk etter datasett og datatjenester. Standarden vil gjelde datasett og datatjenester som forvaltes av offentlig sektor, og som beskrives med tanke på oppføring i en katalog eller «inventarliste». Privat sektor kan også gjerne bruke standarden til å beskrive sine datasett og datatjenester. Standarden vil støtte søking i og deling av datasett på tvers av offentlig sektor (gjenbruk) og legge til rette for viderebruk i privat sektor. Standarden er således nyttig både for offentlig sektor selv og for næringsliv og sivilsamfunn for øvrig.</p>
+<p>Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett og datatjenester, og å lette søk etter datasett og datatjenester.</p>
 </div>
 <div class="paragraph">
-<p>Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: <a href="http://www.w3.org/TR/swbp-vocab-pub/">Best Practice Recipes for Publishing RDF Vocabularies</a>, <a href="http://www.w3.org/TR/ld-bp">Best Practices for Publishing Linked Data</a> og ISA-rapporten <a href="https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris">10 Rules for Persistent URIs</a>. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden, se <a href="https://www.difi.no/referansekatalogen/pekere-til-offentlige-ressurser-pa-nett">anbefalt standard for pekere til offentlige ressurser på nett i Referansekatalogen</a>.</p>
+<p><mark>Standarden gjør det mulig å beskrive datasett og datatjenester i en katalog ved hjelp av en felles modell med kontrollerte støttevokabularer. Dette letter maskinell utveksling, og sammenstilling av metadata fra flere kataloger, og bidrar til at flere datasett og datatjenester blir oppdaget og brukt. Standarden gjør det også mulig å ha en desentralisert tilnærming til publisering av datakataloger og gjør at en kan søke etter datasett og datatjenester på tvers av kataloger på flere nettsteder ved å bruke samme spørremekanisme og struktur.</mark></p>
+</div>
+<div class="paragraph">
+<p><mark>Standarden bør benyttes når offentlige virksomheter skal etablere og utveksle oversikt over datasett og datatjenester i ein katalog.
+Kravet i digitaliseringsrundskrivet om at offentlige virksomheter skal registrere datasett i Felles datakatalog (data.norge.no) er ivaretatt ved at en eksponerer en DCAT-AP-NO-katalog på internett og administrerer innhøsting av denne på data.norge.no.</mark></p>
+</div>
+<div class="paragraph">
+<p>Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: <a href="http://www.w3.org/TR/swbp-vocab-pub/">Best Practice Recipes for Publishing RDF Vocabularies</a>, <a href="http://www.w3.org/TR/ld-bp">Best Practices for Publishing Linked Data</a> og ISA-rapporten <a href="https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris">10 Rules for Persistent URIs</a>. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden, se <a href="https://www.digdir.no/standarder/beskriving-av-datasett-og-datakatalogar/1484">anbefalt standard for pekere til offentlige ressurser på nett i Referansekatalogen</a>.</p>
 </div>
 <div class="paragraph">
 <p>Klasser og egenskaper er i denne standarden gitt norske navn. Siden standarden legger til rette for internasjonal utveksling, skal engelske egenskapsnavn i form av URIer benyttes.</p>
@@ -1329,10 +1333,10 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="UML-diagram"><a class="link" href="#UML-diagram">UML-diagram</a></h2>
+<h2 id="_uml_diagram_ikke_oppdatert"><a class="link" href="#_uml_diagram_ikke_oppdatert">UML-diagram <a id="UML-diagram"></a> <mark>(ikke oppdatert)</mark></a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.1</p>
+<p>UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.1 <mark>(ikke oppdatert)</mark></p>
 </div>
 <div class="imageblock">
 <div class="content">
@@ -2252,10 +2256,8 @@ som er en utvidelse av DCAT-AP fra EU.</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_egenskaper_pr_klasse"><a class="link" href="#_egenskaper_pr_klasse">Egenskaper pr. klasse</a></h2>
+<h2 id="Krav-om-bruk-av-kontollerte-vokabularer"><a class="link" href="#Krav-om-bruk-av-kontollerte-vokabularer">Krav om å bruke kontrollerte vokabularer</a></h2>
 <div class="sectionbody">
-<div class="sect2">
-<h3 id="Krav-om-bruk-av-kontollerte-vokabularer"><a class="link" href="#Krav-om-bruk-av-kontollerte-vokabularer">Krav om å bruke kontrollerte vokabularer</a></h3>
 <div class="admonitionblock important">
 <table>
 <tr>
@@ -2269,6 +2271,10 @@ For noen egenskaper er det obligatorisk og/eller anbefalt å bruke gitte kontrol
 </table>
 </div>
 </div>
+</div>
+<div class="sect1">
+<h2 id="_egenskaper_pr_klasse"><a class="link" href="#_egenskaper_pr_klasse">Egenskaper pr. klasse</a></h2>
+<div class="sectionbody">
 <div class="sect2">
 <h3 id="Aktør"><a class="link" href="#Aktør">Aktør (foaf:Agent)</a></h3>
 <div class="paragraph">
@@ -3166,7 +3172,7 @@ Referanse til et begrep fra et datasett bør det være i samsvar med ev. informa
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kan brukes til å beskrive tidsserier, se under <a href="#Datasett-harDel">Datasett: har del</a>.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Kan brukes til å beskrive datasett som delmengde av et annet datasett. For tidsserier og geografisk inndelte del-datasett bør <a href="#Datasett-iSerie">Datasett: i serie (dcat:inSeries)</a> brukes.</mark></p></td>
 </tr>
 </tbody>
 </table>
@@ -4304,17 +4310,23 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect2">
-<h3 id="DatasettSerie"><a class="link" href="#DatasettSerie">Datasett serie (dcat:DatasetSeries)</a></h3>
+<h3 id="_datasett_serie_dcatdatasetseries"><a class="link" href="#_datasett_serie_dcatdatasetseries"><mark>Datasett serie (dcat:DatasetSeries) <a id="DatasettSerie"></a></mark></a></h3>
 <div class="paragraph">
-<p>Klassen <em>Datasett serie</em> er valgfri.</p>
+<p><mark>Klassen <em>Datasett serie</em> er valgfri.</mark></p>
 </div>
 <div class="paragraph">
-<p>Denne klassen er en sub-klasse (spesialisering) av klassen <em>Datasett</em>, og den arver alle egenskaper fra denne.</p>
+<p><mark>Denne klassen er en sub-klasse (spesialisering) av klassen <em>Datasett</em>, og den arver alle egenskaper fra denne.</mark></p>
 </div>
 <div class="sect3">
-<h4 id="DatasettSerie-obligatoriske-egenskaper"><a class="link" href="#DatasettSerie-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Datasett serie</em></a></h4>
+<h4 id="_obligatoriske_egenskaper_for_klassen_datasett_serie"><a class="link" href="#_obligatoriske_egenskaper_for_klassen_datasett_serie"><mark>Obligatoriske egenskaper for klassen <em>Datasett serie</em> <a id="DatasettSerie-obligatoriske-egenskaper"></a></mark></a></h4>
+<div class="paragraph">
+<p><mark>De obligatoriske egenskapene er de samme som for datasett: tittel, beskrivelse, identifikator, tema og utgiver.</mark></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_anbefalte_egenskaper_for_klassen_datasett_serie"><a class="link" href="#_anbefalte_egenskaper_for_klassen_datasett_serie"><mark>Anbefalte egenskaper for klassen <em>Datasett serie</em> <a id="DatasettSerie-anbefalte-egenskaper"></a></mark></a></h4>
 <div class="sect4">
-<h5 id="DatasettSerie-første"><a class="link" href="#DatasettSerie-første">Datasett serie: første (dcat:first)</a></h5>
+<h5 id="_datasett_serie_første_dcatfirst"><a class="link" href="#_datasett_serie_første_dcatfirst"><mark>Datasett serie: første (dcat:first) <a id="DatasettSerie-første"></a></mark></a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4343,20 +4355,17 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravsnivå</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt</p></td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
-<div class="sect3">
-<h4 id="DatasettSerie-anbefalte-egenskaper"><a class="link" href="#DatasettSerie-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Datasett serie</em></a></h4>
 <div class="sect4">
-<h5 id="DatasettSerie-siste"><a class="link" href="#DatasettSerie-siste">Datasett serie: siste (dcat:last)</a></h5>
+<h5 id="_datasett_serie_siste_dcatlast"><a class="link" href="#_datasett_serie_siste_dcatlast"><mark>Datasett serie: siste (dcat:last) <a id="DatasettSerie-siste"></a></mark></a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4393,6 +4402,43 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_valgfrie_egenskaper_for_klassen_datasett_serie"><a class="link" href="#_valgfrie_egenskaper_for_klassen_datasett_serie"><mark>Valgfrie egenskaper for klassen <em>Datasett serie</em> <a id="DatasettSerie-anbefalte-egenskaper"></a></mark></a></h4>
+<div class="paragraph">
+<p><mark>Alle øvrige egenskaper fra klassen <em>Datasett</em> er valgfrie. Angivelse av valgfrie egenskaper erstatter ikke behovet for å angi de samme opplysningene på underdatasettene som inngår i serien.</mark></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_om_bruk_av_klassen_datasett_serie"><a class="link" href="#_om_bruk_av_klassen_datasett_serie"><mark>Om bruk av klassen <em>Datasett serie</em> <a id="Om-DatasettSerie"></a></mark></a></h4>
+<div class="paragraph">
+<p><mark>Datasett kobles til en <em>datasett serie</em> ved hjelp av <code>dcat:inSeries</code> og rekkefølgen i serien defineres ved hjelp av datasettegenskapen <code>dcat:prev</code>. I beskrivelsen av selve serien kan en i tillegg definere første og siste datasett i serien ved hjelp av <code>dcat:first</code> og <code>dcat:last</code>.</mark></p>
+</div>
+<div class="paragraph">
+<p><mark>Bruken av enkelte egenskaper fra datasett-klassen endres noe i en serie-kontekst:</mark></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><mark><em>Oppdateringsfrekvens</em> skal samsvare med frekvensen en legger til nye underordnede datasett med.</mark></p>
+</li>
+<li>
+<p><mark><em>Tidsrom</em> skal samsvare med tidsommet for hele serien, altså fra det første definerte tidsommet for et underdatasett til det siste.</mark></p>
+</li>
+<li>
+<p><mark><em>Dekningsområde</em> skal omfatte summen av dekningsområde for alle underdatasett.</mark></p>
+</li>
+<li>
+<p><mark><em>Utgivelsesdato</em> (dct:issued) av datasettserien skal tilsvare den tidligste publiseringsdatoen for de underordnede datasettene.</mark></p>
+</li>
+<li>
+<p><mark><em>Endringsdato</em> (dct:modified) for datasettserien skal samsvare med siste publiserings- eller oppdateringsdato for de underordnede datasettene.</mark></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><mark>Øvrige egenskaper fra klassen <em>Datasett</em> bør bare benyttes dersom de er identiske for alle underdatasett i serien</mark></p>
 </div>
 </div>
 </div>
@@ -10089,7 +10135,7 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 <p>Denne versjonen av DCAT-AP-NO er basert på EU-standarden BRegDCAT-AP. BRegDCAT-AP er i skrivende stund under ferdigstilling og skal etter planen ferdigstilles innen november 2020. Se <a href="https://joinup.ec.europa.eu/solution/abr-specification-registry-registries">under ABR - Specification of a Registry of Registries</a>.</p>
 </div>
 <div class="paragraph">
-<p>Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:</p>
+<p>Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter: <mark>(ikke oppdatert)</mark></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -10858,7 +10904,7 @@ Kommune <a href="https://data.geonorge.no/administrativeEnheter/kommune/id/" cla
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2022-09-14 13:12:39 UTC
+Sist oppdatert 2022-11-16 14:16:06 UTC
 </div>
 </div>
 </body>

@@ -16,14 +16,12 @@ image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
 include::shared/download.adoc[]
 
-NOTE: *Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+WARNING: Dette er utkast til neste versjon (v2.3) av DCAT-AP-NO. Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/dcat-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
-*Status*: Gjeldende +
-*Versjon*: 2.2 (se <<Endringslogg, endringsloggen>>) +
-*Publisert*: 2021-06-10 (v.2.1), 2020-10-29 (v.2.0) +
-*Oppdatert*: 2022-05-25  +
+*Status*: #Redaktørens utkast# +
+*Versjon*: Utkast til versjon 2.3 (se <<Endringslogg, endringsloggen>>) +
+*Oppdatert*: 2022-11-07  +
 *Gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no +
 *Forrige versjon*: https://data.norge.no/specification/dcat-ap-no/v1.1/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/ +
@@ -46,11 +44,11 @@ include::07b_diagram.adoc[]
 
 include::06_Oversikt_over_klasser.adoc[]
 
+include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
+
 = Egenskaper pr. klasse
 
 :leveloffset: +1
-
-include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
 
 include::Klasse_Aktor.adoc[]
 
