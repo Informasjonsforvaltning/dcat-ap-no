@@ -2,7 +2,7 @@
 
 Denne versjonen av DCAT-AP-NO er basert på EU-standarden BRegDCAT-AP. BRegDCAT-AP er i skrivende stund under ferdigstilling og skal etter planen ferdigstilles innen november 2020. Se https://joinup.ec.europa.eu/solution/abr-specification-registry-registries[under ABR - Specification of a Registry of Registries].
 
-Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter:
+Denne versjonen av DCAT-AP-NO avviker BRegDCAT-AP (v.2.00) på følgende måter: #(ikke oppdatert)#
 
 [cols="15,15,35,35"]
 |===
