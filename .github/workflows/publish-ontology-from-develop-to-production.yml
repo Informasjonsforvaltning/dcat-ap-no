@@ -25,7 +25,7 @@ jobs:
           ontology-type: "vocabulary"
           ontology: "dcatno"
           host: "https://data.norge.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
           files: |
             ontology/dcatno.ttl text/turtle en
             ontology/index.html text/html nb
