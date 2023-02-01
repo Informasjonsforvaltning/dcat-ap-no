@@ -1,4 +1,4 @@
-name: Publish ontology to staging.fellesdatakatalog.digdir.no/vocabulary
+name: (ad hoc) Publish ontology from develop to data.norge.no/vocabulary
 
 on:
   push:
@@ -16,15 +16,15 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
-      - name: Upload rdf to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.0.0
-        id: upload-rdf
+      - name: Upload files to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+        id: upload-files
         with:
           ontology-type: "vocabulary"
           ontology: "dcatno"
-          host: "https://staging.fellesdatakatalog.digdir.no"
+          host: "https://data.norge.no"
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
           files: |
             ontology/dcatno.ttl text/turtle en
