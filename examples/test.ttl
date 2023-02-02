@@ -4,26 +4,29 @@
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://digdir.no> a dcat:Catalog ;
+<https://example.com/test/relasjon> a dcat:Catalog ;
+    dct:identifier "https://example.com/test/relasjon" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dct:title "Test"@nb ;
-    dcat:dataset <https://digdir.no/2f6ce2a2c65dd50709d389486da3947a> ;
+    dct:title "Test av relasjoner"@nb ;
+    dcat:dataset <https://example.com/test/relasjon/begrep> ;
          ns2:homepage <https://digdir.no> .
 
-<https://digdir.no/2f6ce2a2c65dd50709d389486da3947a> a dcat:Dataset ;
-    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+<https://example.com/test/relasjon/begrep> a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett."@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
-    dct:license <http://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:subject <https://data.nav.no/begrep/BEGREP-261>,
                 <https://demo.fellesdatakatalog.digdir.no/concepts/37b652de-9836-35a3-b024-9c625c20114b> ;
     dct:temporal [ a dct:PeriodOfTime ;
             dcat:endDate "2024-01-01"^^xsd:date ;
             dcat:startDate "2002-01-01"^^xsd:date ] ;
-    dct:title "Test"@nb ;
+    dct:title "Test av relasjon til begrep"@nb ;
     dcat:contactPoint [ a ns1:Organization ;
             ns1:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             ns1:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
     dcat:landingPage <https://www.digdir.no/> .
+
+<https://data.brreg.no/enhetsregisteret/enhet/991825827> a foaf:Agent ;
+    foaf:name "The Norwegian Digitalisation Agency"@en,
+        "Digitaliseringsdirektoratet"@nb .
