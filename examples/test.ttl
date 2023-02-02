@@ -1,0 +1,29 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://www.w3.org/2006/vcard/ns#> .
+@prefix ns2: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://digdir.no> a dcat:Catalog ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    dct:title "Test"@nb ;
+    dcat:dataset <https://digdir.no/2f6ce2a2c65dd50709d389486da3947a> ;
+         ns2:homepage <https://digdir.no> .
+
+<https://digdir.no/datapakke/2f6ce2a2c65dd50709d389486da3947a> a dcat:Dataset ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
+    dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett."@nb ;
+    dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
+    dct:license <http://creativecommons.org/licenses/by/4.0/deed.no> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    dct:spatial <http://sws.geonames.org/3144096/> ;
+	dct:subject <https://data.nav.no/begrep/BEGREP-261>
+    dct:temporal [ a dct:PeriodOfTime ;
+            dcat:endDate "2024-01-01"^^xsd:date ;
+            dcat:startDate "2002-01-01"^^xsd:date ] ;
+    dct:title "Test"@nb ;
+    dcat:contactPoint [ a ns1:Organization ;
+            ns1:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
+            ns1:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
+    dcat:landingPage <https://www.digdir.no/> .
