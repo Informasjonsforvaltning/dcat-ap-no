@@ -17,7 +17,6 @@
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:license <http://creativecommons.org/licenses/by/4.0/deed.no> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dct:spatial <http://sws.geonames.org/3144096/> ;
     dct:subject <https://data.nav.no/begrep/BEGREP-261> ;
     dct:temporal [ a dct:PeriodOfTime ;
             dcat:endDate "2024-01-01"^^xsd:date ;
