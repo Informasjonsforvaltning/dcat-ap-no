@@ -10,7 +10,7 @@
     dcat:dataset <https://digdir.no/2f6ce2a2c65dd50709d389486da3947a> ;
          ns2:homepage <https://digdir.no> .
 
-<https://digdir.no/datapakke/2f6ce2a2c65dd50709d389486da3947a> a dcat:Dataset ;
+<https://digdir.no/2f6ce2a2c65dd50709d389486da3947a> a dcat:Dataset ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett."@nb ;
