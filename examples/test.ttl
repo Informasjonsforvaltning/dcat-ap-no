@@ -18,7 +18,7 @@
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:subject <https://data.nav.no/begrep/BEGREP-261>,
-                <https://demo.fellesdatakatalog.digdir.no/concepts/37b652de-9836-35a3-b024-9c625c20114b> ;
+                <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388> ;
     dct:temporal [ a dct:PeriodOfTime ;
             dcat:endDate "2024-01-01"^^xsd:date ;
             dcat:startDate "2002-01-01"^^xsd:date ] ;
