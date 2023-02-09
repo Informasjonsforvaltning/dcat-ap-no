@@ -11,9 +11,9 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://example.com/test/begrep/ikkeHostet> a skos:Concept ;
+<https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet> a skos:Concept ;
     dct:modified "2023-02-09"^^xsd:date ;
-    dct:identifier "https://example.com/test/begrep/ikkeHostet"^^xsd:anyURI ;
+    dct:identifier "https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "ikke høstet"@nb ;
     skos:definisjon "dette er en test av relasjon mellom datasett og ett begrep som ikke er høstet."@nb ;
