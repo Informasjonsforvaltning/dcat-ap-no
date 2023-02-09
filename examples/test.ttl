@@ -23,7 +23,8 @@
                 <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388>,
                 <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f>,
                 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK>,
-                <http://begrepskatalogen/begrep/testURISomIkkeFungerer> ;
+                <http://begrepskatalogen/begrep/testURISomIkkeFungerer>,
+                <https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet> ;
     dct:temporal [ a dct:PeriodOfTime ;
             dcat:endDate "2024-01-01"^^xsd:date ;
             dcat:startDate "2002-01-01"^^xsd:date ] ;
