@@ -1,0 +1,32 @@
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix skosno: <http://difi.no/skosno#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xkos: <http://rdf-vocabulary.ddialliance.org/xkos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://example.com/test/begrep> a skos:Collection ;
+    rdfs:label "Test begrep"@nb ;
+    dct:description "Test av relasjoner mellom datasett og begrep" ;
+    dct:identifier <https://example.com/test/begrep> ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    skos:member <https://nav.no/begrep/>,
+        <https://example.com/test/begrep/ikkeHostet> ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
+            vcard:organizationUnit "DIGDIR Felles datakatalog"@nb ] .
+
+<https://example.com/test/begrep/ikkeHostet> a skos:Concept ;
+    dct:modified "2023-02-09"^^xsd:date ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    skos:prefLabel "ikke høstet"@nb ;
+    skos:definisjon "dette er en test av relasjon mellom datasett og ett begrep som ikke er høstet."@nb ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
+            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
