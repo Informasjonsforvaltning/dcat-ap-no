@@ -37,7 +37,7 @@
     foaf:name "The Norwegian Digitalisation Agency"@en,
         "Digitaliseringsdirektoratet"@nb .
 
-<https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628> a skos:Concept ;
+<https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f> a skos:Concept ;
     dct:identifier "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "Testeterm_endret09.02.23"@nb ;
