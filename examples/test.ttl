@@ -5,6 +5,7 @@
 @prefix ns2: <http://xmlns.com/foaf/0.1/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 
 <https://example.com/test/relasjon> a dcat:Catalog ;
     dct:identifier "https://example.com/test/relasjon" ;
