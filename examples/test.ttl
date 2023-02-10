@@ -47,15 +47,6 @@
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
 
-<https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f> a skos:Concept ;
-    dct:identifier "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    skos:prefLabel "Testeterm_endret09.02.23"@nb ;
-    skos:definisjon "Definert testing_endretViaDatasett09.02.23."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
-
 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> a skos:Concept ;
     dct:identifier "https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
