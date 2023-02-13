@@ -24,6 +24,7 @@
                 <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f>,
                 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK>,
                 <http://begrepskatalogen/begrep/testURISomIkkeFungerer>,
+                <http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel>,
                 <https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet> ;
     dct:temporal [ a dct:PeriodOfTime ;
             dcat:endDate "2024-01-01"^^xsd:date ;
@@ -52,6 +53,24 @@
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "begrepIkkeHostetTilFDK"@nb ;
     skos:definisjon "Definisjon til begrepIkkeHostetTilFDK."@nb ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
+            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+
+<https://data.nav.no/begrep/BEGREP-261> a skos:Concept ;
+    dct:identifier "https://data.nav.no/begrep/BEGREP-261"^^xsd:anyURI ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    skos:prefLabel "vilkår_endret13.02.23"@nb ;
+    skos:definisjon "betingelse som må være oppfylt for at en aktør får et rettslig bindende resultat_endretViaDatasett13.02.23."@nb ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
+            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+
+<http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel> a skos:Concept ;
+    dct:identifier "http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel"^^xsd:anyURI ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    skos:prefLabel "testURISomIkkeFungererMedPrefLabel"@nb ;
+    skos:definisjon "Test av URI som ikke fungerer med prefLabel forsøkt satt via datasett."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
