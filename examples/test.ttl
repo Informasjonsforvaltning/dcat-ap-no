@@ -43,7 +43,7 @@
     dct:identifier "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "Testeterm_endret09.02.23"@nb ;
-    skos:definisjon "Definert testing_endretViaDatasett09.02.23."@nb ;
+    skos:definition "Definert testing_endretViaDatasett09.02.23."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
@@ -52,7 +52,7 @@
     dct:identifier "https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "begrepIkkeHostetTilFDK"@nb ;
-    skos:definisjon "Definisjon til begrepIkkeHostetTilFDK."@nb ;
+    skos:definition "Definisjon til begrepIkkeHostetTilFDK."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
@@ -61,7 +61,7 @@
     dct:identifier "https://data.nav.no/begrep/BEGREP-261"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "vilkår_endret13.02.23"@nb ;
-    skos:definisjon "betingelse som må være oppfylt for at en aktør får et rettslig bindende resultat_endretViaDatasett13.02.23."@nb ;
+    skos:definition "betingelse som må være oppfylt for at en aktør får et rettslig bindende resultat_endretViaDatasett13.02.23."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
@@ -70,7 +70,7 @@
     dct:identifier "http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "testURISomIkkeFungererMedPrefLabel"@nb ;
-    skos:definisjon "Test av URI som ikke fungerer med prefLabel forsøkt satt via datasett."@nb ;
+    skos:definition "Test av URI som ikke fungerer med prefLabel forsøkt satt via datasett."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
