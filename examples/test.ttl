@@ -16,13 +16,13 @@
 
 <https://example.com/test/relasjon/begrep> a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dct:description "test."@nb ;
+    dct:description "test2."@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:subject <https://data.nav.no/begrep/BEGREP-261>,
                 <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388>,
                 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> ;
-    dct:title "Test av relasjon til begrep"@nb .
+    dct:title "Test av relasjon til begrep2"@nb .
 
 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> a skos:Concept ;
     dct:identifier "https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK"^^xsd:anyURI ;
