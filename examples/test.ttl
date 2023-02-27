@@ -11,6 +11,7 @@
     dct:identifier "https://example.com/test/relasjon" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:title "Test av relasjoner"@nb ;
+    dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
     dcat:dataset <https://example.com/test/relasjon/begrep> ;
          ns2:homepage <https://digdir.no> .
 
@@ -22,7 +23,6 @@
     dcat:theme <http://eurovoc.europa.eu/100145>,
                <http://publications.europa.eu/resource/authority/data-theme/ENER>,
                <http://eurovoc.europa.eu/100181> ;
-    dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
     dct:subject <https://data.nav.no/begrep/BEGREP-261>,
                 <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388>,
                 <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f>,
