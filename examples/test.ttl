@@ -17,74 +17,15 @@
 
 <https://example.com/test/relasjon/begrep> a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett_2702."@nb ;
+    dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett."@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dcat:theme <http://eurovoc.europa.eu/100145>,
-               <http://publications.europa.eu/resource/authority/data-theme/ENER>,
-               <http://eurovoc.europa.eu/100181>,
-               <https://psi.norge.no/los/ord/allergi> ;
     dct:subject <https://data.nav.no/begrep/BEGREP-261>,
                 <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388>,
-                <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f>,
-                <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK>,
-                <http://begrepskatalogen/begrep/testURISomIkkeFungerer>,
-                <http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel>,
-                <https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet> ;
-    dct:temporal [ a dct:PeriodOfTime ;
-            dcat:endDate "2024-01-01"^^xsd:date ;
-            dcat:startDate "2002-01-01"^^xsd:date ] ;
+                <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> ;
     dct:title "Test av relasjon til begrep"@nb ;
-    dcat:contactPoint [ a ns1:Organization ;
-            ns1:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            ns1:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
-    dcat:landingPage <https://www.digdir.no/> .
-
-<https://data.brreg.no/enhetsregisteret/enhet/991825827> a foaf:Agent ;
-    foaf:name "The Norwegian Digitalisation Agency"@en,
-        "Digitaliseringsdirektoratet"@nb .
-
-<https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388> a skos:Concept ;
-    dct:identifier "https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    skos:prefLabel "Organisasjonsplan_labelFraDatasett"@nb ;
-    skos:definition "Plan som viser foretakets organisasjonsstruktur, herunder overordnet ansvars- og myndighetsfordeling_kun gyldig i demomiljø_lagt til via Datasett."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
-
-<https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f> a skos:Concept ;
-    dct:identifier "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    skos:prefLabel "Testeterm_labelFraDatasett"@nb ;
-    skos:definition "Definert testing_kun gyldig i staging_lagt til via Datasett."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
 
 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> a skos:Concept ;
     dct:identifier "https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "begrepIkkeHostetTilFDK"@nb ;
-    skos:definition "Definisjon til begrepIkkeHostetTilFDK satt via datasett."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
-
-<https://data.nav.no/begrep/BEGREP-261> a skos:Concept ;
-    dct:identifier "https://data.nav.no/begrep/BEGREP-261"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    skos:prefLabel "vilkår_endret13.02.23"@nb ;
-    skos:definition "betingelse som må være oppfylt for at en aktør får et rettslig bindende resultat_endretViaDatasett13.02.23."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
-
-<http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel> a skos:Concept ;
-    dct:identifier "http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel"^^xsd:anyURI ;
-    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    skos:prefLabel "testURISomIkkeFungererMedPrefLabel"@nb ;
-    skos:definition "Test av URI som ikke fungerer med prefLabel og definition satt via datasett."@nb ;
-    dcat:contactPoint [ a vcard:Organization ;
-            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+    skos:definition "Definisjon til begrepIkkeHostetTilFDK satt via datasett."@nb .
