@@ -82,7 +82,7 @@
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
     dct:description "DCAT-based and machine readable metadata in JSON-format"@en ;
     dct:modified "2023-03-17"^^xsd:date ;
-    dct:title "Distribusjon3"@nb ;
+    dct:title "Distribusjon4"@nb ;
     dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon4/accessURL> ;
     dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon4/downloadURL> ;
     dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
