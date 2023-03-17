@@ -53,7 +53,7 @@
     dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon/downloadURL> ;
     dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
-    dcat:packageFormat "JSON" .
+    dcat:packageFormat "JSON_fritekst"@nb .
 
 <https://example.com/test/relasjon/begrep/distribusjon2> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
