@@ -37,7 +37,8 @@
     dct:title "Test av relasjon til begrep"@nb ;
     dcat:distribution <https://example.com/test/relasjon/begrep/distribusjon1>,
 		      <https://example.com/test/relasjon/begrep/distribusjon2>,
-		      <https://example.com/test/relasjon/begrep/distribusjon3> ;
+		      <https://example.com/test/relasjon/begrep/distribusjon3>,
+		      <https://example.com/test/relasjon/begrep/distribusjon4> ;
     dcat:contactPoint [ a ns1:Organization ;
             ns1:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             ns1:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
@@ -64,8 +65,7 @@
     dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon2/accessURL> ;
     dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon2/downloadURL> ;
     dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
-    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
-    dcat:packageFormat <http://publications.europa.eu/resource/authority/file-type/JSON> .
+    dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
 <https://example.com/test/relasjon/begrep/distribusjon3> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
@@ -75,6 +75,16 @@
     dct:title "Distribusjon3"@nb ;
     dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon3/accessURL> ;
     dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon3/downloadURL> ;
+    dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
+    dcat:packageFormat <https://www.iana.org/assignments/media-types/application/json> .
+
+<https://example.com/test/relasjon/begrep/distribusjon4> a dcat:Distribution ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
+    dct:description "DCAT-based and machine readable metadata in JSON-format"@en ;
+    dct:modified "2023-03-17"^^xsd:date ;
+    dct:title "Distribusjon3"@nb ;
+    dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon4/accessURL> ;
+    dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon4/downloadURL> ;
     dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
     dcat:packageFormat <https://www.iana.org/assignments/media-types/application/json> .
