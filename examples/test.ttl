@@ -46,7 +46,7 @@
 	
 <https://example.com/test/relasjon/begrep/distribusjon1> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
-    dct:description "DCAT-based and machine readable metadata in JSON-format"@en ;
+    dct:description "dct:format = .../file-type/JSON, dcat:mediaType = iana.../json, dcat:packageFormat = JSON_fritekst"@nb ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:modified "2023-03-17"^^xsd:date ;
     dct:title "Distribusjon1"@nb ;
@@ -58,7 +58,7 @@
 
 <https://example.com/test/relasjon/begrep/distribusjon2> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
-    dct:description "DCAT-based and machine readable metadata in JSON-format"@en ;
+    dct:description "dct:format = .../file-type/JSON, dcat:mediaType = iana.../json"@nb ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:modified "2023-03-17"^^xsd:date ;
     dct:title "Distribusjon2"@nb ;
@@ -69,7 +69,7 @@
 
 <https://example.com/test/relasjon/begrep/distribusjon3> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
-    dct:description "DCAT-based and machine readable metadata in JSON-format"@en ;
+    dct:description "dct:format = .../file-type/JSON, dcat:packageFormat = iana.../json"@nb ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:modified "2023-03-17"^^xsd:date ;
     dct:title "Distribusjon3"@nb ;
@@ -80,7 +80,7 @@
 
 <https://example.com/test/relasjon/begrep/distribusjon4> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
-    dct:description "DCAT-based and machine readable metadata in JSON-format"@en ;
+    dct:description "dcat:mediaType = iana.../json, dcat:packageFormat = .../file-type/JSON"@nb ;
     dct:modified "2023-03-17"^^xsd:date ;
     dct:title "Distribusjon4"@nb ;
     dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon4/accessURL> ;
