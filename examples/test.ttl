@@ -20,7 +20,7 @@
     dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett_2702."@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dct:type <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST>
+    dct:type <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> ;
     dcat:theme <http://eurovoc.europa.eu/100145>,
                <http://publications.europa.eu/resource/authority/data-theme/ENER>,
                <http://eurovoc.europa.eu/100181>,
