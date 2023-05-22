@@ -23,8 +23,8 @@
     "This document specifies the Norwegian extensions in DCAT-AP-NO, currently not the whole DCAT-AP-NO."@en ,
     "Denne versjonen spesifiserer norske utvidelser i DCAT-AP-NO, foreløpig ikke hele DCAT-AP-NO"@nb ;
   rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
-  dct:modified "2022-03-31"^^xsd:date ;
-  owl:versionIRI <dcatno:0.6> ;
+  dct:modified "2023-05-22"^^xsd:date ;
+  owl:versionIRI <dcatno:0.7> ;
   rdfs:comment
     "Only the extensions with the namespace dcatno are specified in this version"@en ,
     "Kun utvidelsene med navnerom dcatno er spesifisert i denne versjonen."@nb ;
