@@ -26,7 +26,7 @@
     dct:modified "2023-02-09"^^xsd:date ;
     dct:identifier "https://example.com/test/begrep/ikkeHostet"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    skos:prefLabel "ikke høstet"@nb, "nicht geerntet"@de ;
+    skos:prefLabel "ikke høstet"@nb ;
     skos:definisjon "dette er en test av relasjon mellom datasett og ett begrep som ikke er høstet."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
