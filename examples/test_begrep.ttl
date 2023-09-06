@@ -27,7 +27,12 @@
     dct:identifier "https://example.com/test/begrep/ikkeHostet"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "ikke høstet"@nb ;
+    skosxl:prefLabel  <https://example.com/test/begrep/ikkeHostet#prefLabel>
     skos:definisjon "dette er en test av relasjon mellom datasett og ett begrep som ikke er høstet."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+
+<https://example.com/test/begrep/ikkeHostet#prefLabel>
+        a                   skosxl:Label ;
+        skosxl:literalForm  "ikke høstet"@nb , "nicht geerntet"@de .
