@@ -377,6 +377,7 @@
         sh:path dcat:servesDataset ;
         sh:severity sh:Violation
     ], [ # utgiver
+        sh:minCount 1 ;
         sh:class foaf:Agent ;
         sh:path dct:publisher ;
         sh:severity sh:Violation
@@ -774,7 +775,7 @@
 :PublicOrganization_Shape
     a sh:NodeShape ;
     rdfs:label "Public Organisation"@en , "Offentlig organisasjon"@nb ;
-    sh:property [ # dekingsområde
+    sh:property [ # dekningsområde
         sh:class dct:Location ;
         sh:minCount 1 ;
         sh:path dct:spatial ;
@@ -917,7 +918,6 @@
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [ # type 
-        sh:minCount 1 ;
         sh:class skos:Concept ;
         sh:path dct:type ;
         sh:severity sh:Violation
