@@ -45,7 +45,8 @@
     dcat:contactPoint [ a ns1:Organization ;
             ns1:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             ns1:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
-    dcat:landingPage <https://www.digdir.no/> .
+    dcat:landingPage <https://www.digdir.no/> ;
+    dcat:inSeries <https://registrering.demo.fellesdatakatalog.digdir.no/catalogs/910298062/datasets/da97d601-c036-4743-8d25-2afacd79d318> .
 	
 <https://example.com/test/relasjon/begrep/distribusjon1> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
