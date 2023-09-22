@@ -17,6 +17,7 @@
 
 <https://example.com/test/relasjon/begrep> a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    dct:identifier "https://example.com/test/relasjon/begrep"
     dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett_2702."@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
@@ -46,7 +47,7 @@
             ns1:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             ns1:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
     dcat:landingPage <https://www.digdir.no/> ;
-    dcat:inSeries <https://registrering.demo.fellesdatakatalog.digdir.no/catalogs/910298062/datasets/da97d601-c036-4743-8d25-2afacd79d318> .
+    dcat:inSeries <https://example.com/test/relasjon/begrep/datasettserie> .
 	
 <https://example.com/test/relasjon/begrep/distribusjon1> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
@@ -97,6 +98,14 @@
     foaf:name "The Norwegian Digitalisation Agency"@en,
         "Digitaliseringsdirektoratet"@nb .
 
+<https://example.com/test/relasjon/begrep/datasettserie> a dcat:DatasetSeries ;
+        dct:identifier "https://example.com/test/relasjon/begrep/datasettserie" ;
+        dct:title "Test datasettserie"@en ;
+        dct:description "Test av relasjon mellom datasett og datasettserie via høsting."@en ;
+        dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
+        dcat:first https://example.com/test/relasjon/begrep ;
+        dcat:last https://example.com/test/relasjon/begrep .
+       
 <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388> a skos:Concept ;
     dct:identifier "https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
