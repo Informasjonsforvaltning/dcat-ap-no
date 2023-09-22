@@ -17,7 +17,7 @@
 
 <https://example.com/test/relasjon/begrep> a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dct:identifier "https://example.com/test/relasjon/begrep"
+    dct:identifier "https://example.com/test/relasjon/begrep" ;
     dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett_2702."@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
