@@ -100,8 +100,8 @@
 
 <https://example.com/test/relasjon/begrep/datasettserie> a dcat:DatasetSeries ;
         dct:identifier "https://example.com/test/relasjon/begrep/datasettserie" ;
-        dct:title "Test datasettserie"@en ;
-        dct:description "Test av relasjon mellom datasett og datasettserie via høsting."@en ;
+        dct:title "Test datasettserie"@nb ;
+        dct:description "Test av relasjon mellom datasett og datasettserie via høsting."@nb ;
         dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
         dcat:first https://example.com/test/relasjon/begrep ;
         dcat:last https://example.com/test/relasjon/begrep .
