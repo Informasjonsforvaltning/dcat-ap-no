@@ -103,7 +103,9 @@
         dct:identifier "https://example.com/test/relasjon/begrep/datasettserie" ;
         dct:title "Test datasettserie"@nb ;
         dct:description "Test av relasjon mellom datasett og datasettserie via høsting."@nb ;
-        dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> .
+        dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
+        dcat:first <https://example.com/test/relasjon/begrep> ;
+        dcat:last <https://example.com/test/relasjon/begrep> .
        
 <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388> a skos:Concept ;
     dct:identifier "https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388"^^xsd:anyURI ;
