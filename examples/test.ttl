@@ -12,8 +12,7 @@
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:title "Test av relasjoner"@nb ;
     dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
-    dcat:dataset <https://example.com/test/relasjon/begrep>,
-		<https://example.com/test/relasjon/begrep/datasettserie> ;
+    dcat:dataset <https://example.com/test/relasjon/begrep/datasettserie> ;
     ns2:homepage <https://digdir.no> .
 
 <https://example.com/test/relasjon/begrep> a dcat:Dataset ;
