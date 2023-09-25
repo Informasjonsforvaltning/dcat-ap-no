@@ -9,6 +9,7 @@
     dct:identifier "https://example.com/test/relasjon" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:title "Test av relasjoner"@nb ;
+    dct:description "Katalog for teste av relasjoner" ;	
     dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
     dcat:dataset <https://example.com/test/relasjon/begrep/datasettserie> ;
     foaf:homepage <https://digdir.no> .
