@@ -5,18 +5,18 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 
-<https://example.com/test/relasjon> a dcat:Catalog ;
-    dct:identifier "https://example.com/test/relasjon" ;
+<https://example.com/test/relasjon/testKatalog> a dcat:Catalog ;
+    dct:identifier "https://example.com/test/relasjon/testKatalog" ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:title "Test av relasjoner"@nb ;
     dct:description "Katalog for teste av relasjoner" ;	
     dcat:themeTaxonomy <http://eurovoc.europa.eu/100148> ;
-    dcat:dataset <https://example.com/test/relasjon/begrep/datasettserie> ;
+    dcat:dataset <https://example.com/test/relasjon/begrep/testDatasettserie> ;
     foaf:homepage <https://digdir.no> .
 
-<https://example.com/test/relasjon/begrep> a dcat:Dataset ;
+<https://example.com/test/relasjon/begrep/testDatasett> a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-    dct:identifier "https://example.com/test/relasjon/begrep" ;
+    dct:identifier "https://example.com/test/relasjon/begrep/testDatasett" ;
     dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett_2702."@nb ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
@@ -38,57 +38,57 @@
     dct:title "Test av relasjon til begrep"@nb,
 	      "Test of relation to concept"@en,
 	      "Test av relasjon til omgrep"@nn ;
-    dcat:distribution <https://example.com/test/relasjon/begrep/distribusjon1>,
-		      <https://example.com/test/relasjon/begrep/distribusjon2>,
-		      <https://example.com/test/relasjon/begrep/distribusjon3>,
-		      <https://example.com/test/relasjon/begrep/distribusjon4> ;
+    dcat:distribution <https://example.com/test/relasjon/begrep/testDistribusjon1>,
+		      <https://example.com/test/relasjon/begrep/testDistribusjon2>,
+		      <https://example.com/test/relasjon/begrep/testDdistribusjon3>,
+		      <https://example.com/test/relasjon/begrep/testDistribusjon4> ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
     dcat:landingPage <https://www.digdir.no/> ;
     dcat:inSeries <https://example.com/test/relasjon/begrep/datasettserie> .
 	
-<https://example.com/test/relasjon/begrep/distribusjon1> a dcat:Distribution ;
+<https://example.com/test/relasjon/begrep/testDistribusjon1> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
     dct:description "dct:format = .../file-type/JSON, dcat:mediaType = iana.../json, dcat:packageFormat = JSON_fritekst"@nb ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:modified "2023-03-17"^^xsd:date ;
     dct:title "Distribusjon1"@nb ;
-    dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon/accessURL> ;
-    dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon/downloadURL> ;
+    dcat:accessURL <https://example.com/test/relasjon/begrep/testDistribusjon1/accessURL> ;
+    dcat:downloadURL <https://example.com/test/relasjon/begrep/testDistribusjon1/downloadURL> ;
     dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
     dcat:packageFormat "JSON_fritekst"@nb .
 
-<https://example.com/test/relasjon/begrep/distribusjon2> a dcat:Distribution ;
+<https://example.com/test/relasjon/begrep/testDistribusjon2> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
     dct:description "dct:format = .../file-type/JSON, dcat:mediaType = iana.../json"@nb ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:modified "2023-03-17"^^xsd:date ;
     dct:title "Distribusjon2"@nb ;
-    dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon2/accessURL> ;
-    dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon2/downloadURL> ;
+    dcat:accessURL <https://example.com/test/relasjon/begrep/testDistribusjon2/accessURL> ;
+    dcat:downloadURL <https://example.com/test/relasjon/begrep/testDistribusjon2/downloadURL> ;
     dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> .
 
-<https://example.com/test/relasjon/begrep/distribusjon3> a dcat:Distribution ;
+<https://example.com/test/relasjon/begrep/testDistribusjon3> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
     dct:description "dct:format = .../file-type/JSON, dcat:packageFormat = iana.../json"@nb ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/JSON> ;
     dct:modified "2023-03-17"^^xsd:date ;
     dct:title "Distribusjon3"@nb ;
-    dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon3/accessURL> ;
-    dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon3/downloadURL> ;
+    dcat:accessURL <https://example.com/test/relasjon/begrep/testDistribusjon3/accessURL> ;
+    dcat:downloadURL <https://example.com/test/relasjon/begrep/testDistribusjon3/downloadURL> ;
     dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
     dcat:packageFormat <https://www.iana.org/assignments/media-types/application/json> .
 
-<https://example.com/test/relasjon/begrep/distribusjon4> a dcat:Distribution ;
+<https://example.com/test/relasjon/begrep/testDistribusjon4> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
     dct:description "dcat:mediaType = iana.../json, dcat:packageFormat = .../file-type/JSON"@nb ;
     dct:modified "2023-03-17"^^xsd:date ;
     dct:title "Distribusjon4"@nb ;
-    dcat:accessURL <https://example.com/test/relasjon/begrep/distribusjon4/accessURL> ;
-    dcat:downloadURL <https://example.com/test/relasjon/begrep/distribusjon4/downloadURL> ;
+    dcat:accessURL <https://example.com/test/relasjon/begrep/testDistribusjon4/accessURL> ;
+    dcat:downloadURL <https://example.com/test/relasjon/begrep/testDistribusjon4/downloadURL> ;
     dcat:language <http://publications.europa.eu/resource/authority/language/ENG> ;
     dcat:mediaType <https://www.iana.org/assignments/media-types/application/json> ;
     dcat:packageFormat <http://publications.europa.eu/resource/authority/file-type/JSON> .
@@ -97,13 +97,13 @@
     foaf:name "The Norwegian Digitalisation Agency"@en,
         "Digitaliseringsdirektoratet"@nb .
 
-<https://example.com/test/relasjon/begrep/datasettserie> a dcat:DatasetSeries ;
-        dct:identifier "https://example.com/test/relasjon/begrep/datasettserie" ;
+<https://example.com/test/relasjon/begrep/testDatasettserie> a dcat:DatasetSeries ;
+        dct:identifier "https://example.com/test/relasjon/begrep/TestDatasettserie" ;
         dct:title "Test datasettserie"@nb ;
         dct:description "Test av relasjon mellom datasett og datasettserie via høsting."@nb ;
         dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
-        dcat:first <https://example.com/test/relasjon/begrep> ;
-        dcat:last <https://example.com/test/relasjon/begrep> .
+        dcat:first <https://example.com/test/relasjon/begrep/testDatasett> ;
+        dcat:last <https://example.com/test/relasjon/begrep/testDatasett> .
        
 <https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388> a skos:Concept ;
     dct:identifier "https://concept-catalog.demo.fellesdatakatalog.digdir.no/collections/555111013/concepts/422c6ef9-99f8-4f55-a286-a9a9c9fbd388"^^xsd:anyURI ;
