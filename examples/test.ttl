@@ -31,7 +31,8 @@
                 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK>,
                 <http://begrepskatalogen/begrep/testURISomIkkeFungerer>,
                 <http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel>,
-                <https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet> ;
+                <https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet>,
+		<https://example.com/test/relasjon/begrep/begrepUlikIdentifierOgUR> ;
     dct:temporal [ a dct:PeriodOfTime ;
             dcat:endDate "2024-01-01"^^xsd:date ;
             dcat:startDate "2002-01-01"^^xsd:date ] ;
@@ -146,6 +147,15 @@
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "testURISomIkkeFungererMedPrefLabel"@nb ;
     skos:definition "Test av URI som ikke fungerer med prefLabel og definition satt via datasett."@nb ;
+    dcat:contactPoint [ a vcard:Organization ;
+            vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
+            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+
+<https://example.com/test/relasjon/begrep/begrepUlikURIOgIdentifier> a skos:Concept ;
+    dct:identifier "https://example.com/test/relasjon/begrep/begrepUlikIdentifierOgURI"^^xsd:anyURI ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    skos:prefLabel "begrepIkkeHostetTilFDK"@nb ;
+    skos:definition "Definisjon til begrepIkkeHostetTilFDK satt via datasett."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
