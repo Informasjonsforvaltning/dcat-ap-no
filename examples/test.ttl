@@ -151,7 +151,7 @@
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
 
-<https://example.com/test/relasjon/begrep/begrepUlikURIOgIdentifier> a skos:Concept ;
+<https://example.com/test/relasjon/begrep/begrepUlikIdentifierOgURI> a skos:Concept ;
     dct:identifier "https://example.com/test/relasjon/begrep/begrepUlikIdentifierOgURI"^^xsd:anyURI ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     skos:prefLabel "begrepUlikURIOgIdentifier"@nb ;
