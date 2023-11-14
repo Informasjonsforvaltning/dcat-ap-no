@@ -47,7 +47,7 @@
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
             vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
     dcat:landingPage <https://www.digdir.no/> ;
-    dcat:inSeries <https://example.com/test/relasjon/begrep/datasettserie> .
+    dcat:inSeries <https://example.com/test/relasjon/begrep/testDatasettserie> .
 	
 <https://example.com/test/relasjon/begrep/testDistribusjon1> a dcat:Distribution ;
     dct:accessRights <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC> ;
