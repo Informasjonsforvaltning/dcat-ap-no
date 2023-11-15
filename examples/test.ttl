@@ -32,7 +32,7 @@
                 <http://begrepskatalogen/begrep/testURISomIkkeFungerer>,
                 <http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel>,
                 <https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/develop/examples/begrepIkkeHostet>,
-		<https://example.com/test/relasjon/begrep/begrepUlikIdentifierOgURI> ;
+		<https://example.com/test/relasjon/begrep/begrepUlikURIOgIdentifier> ;
     dct:temporal [ a dct:PeriodOfTime ;
             dcat:endDate "2024-01-01"^^xsd:date ;
             dcat:startDate "2002-01-01"^^xsd:date ] ;
