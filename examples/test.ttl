@@ -45,7 +45,8 @@
 		      <https://example.com/test/relasjon/begrep/testDistribusjon4> ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] ;
+	    vcard:hasTelephone <tel:1233456> ;
+            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] ;
     dcat:landingPage <https://www.digdir.no/> ;
     dcat:inSeries <https://example.com/test/relasjon/begrep/testDatasettserie> .
 	
@@ -113,7 +114,8 @@
     skos:definition "Plan som viser foretakets organisasjonsstruktur, herunder overordnet ansvars- og myndighetsfordeling_kun gyldig i demomiljø_lagt til via Datasett."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+	    vcard:hasTelephone <tel:1233456> ;
+            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
 
 <https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f> a skos:Concept ;
     dct:identifier "https://concept-catalog.staging.fellesdatakatalog.digdir.no/collections/555111026/concepts/c8467f0b-f997-4bc6-80e5-a368af63628f"^^xsd:anyURI ;
@@ -122,7 +124,8 @@
     skos:definition "Definert testing_kun gyldig i staging_lagt til via Datasett."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+	    vcard:hasTelephone <tel:1233456> ;
+            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
 
 <https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK> a skos:Concept ;
     dct:identifier "https://example.com/test/relasjon/begrep/begrepIkkeHostetTilFDK"^^xsd:anyURI ;
@@ -131,7 +134,8 @@
     skos:definition "Definisjon til begrepIkkeHostetTilFDK satt via datasett."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+	    vcard:hasTelephone <tel:1233456> ;
+            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
 
 <https://data.nav.no/begrep/BEGREP-261> a skos:Concept ;
     dct:identifier "https://data.nav.no/begrep/BEGREP-261"^^xsd:anyURI ;
@@ -140,7 +144,8 @@
     skos:definition "betingelse som må være oppfylt for at en aktør får et rettslig bindende resultat_endretViaDatasett13.02.23."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+	    vcard:hasTelephone <tel:1233456> ;
+            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
 
 <http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel> a skos:Concept ;
     dct:identifier "http://begrepskatalogen/begrep/testURISomIkkeFungererMedPrefLabel"^^xsd:anyURI ;
@@ -149,13 +154,15 @@
     skos:definition "Test av URI som ikke fungerer med prefLabel og definition satt via datasett."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+	    vcard:hasTelephone <tel:1233456> ;
+            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
 
 <https://example.com/test/relasjon/begrep/begrepUlikIdentifierOgURI> a skos:Concept ;
-    dct:identifier 'https://example.com/test/relasjon/begrep/begrepUlikURIOgIdentifier'^^xsd:anyURI ;
-    dct:publisher 'https://data.brreg.no/enhetsregisteret/api/enheter/991825827' ;
-    skos:prefLabel 'begrepUlikURIOgIdentifier'@nb ;
-    skos:definition 'Definisjon til begrepUlikURIOgIdentifier satt via datasett.'@nb ;
+    dct:identifier "https://example.com/test/relasjon/begrep/begrepUlikURIOgIdentifier"^^xsd:anyURI ;
+    dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
+    skos:prefLabel "begrepUlikURIOgIdentifier"@nb ;
+    skos:definition "Definisjon til begrepUlikURIOgIdentifier satt via datasett."@nb ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
-            vcard:hasOrganizationName "DIGDIR Felles datakatalog"@nb ] .
+	    vcard:hasTelephone <tel:1233456> ;
+            vcard:organization-unit "Informasjonsforvaltningsgruppen"@nb ] .
