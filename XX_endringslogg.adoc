@@ -38,13 +38,16 @@ Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (#_
 | Datasett – har kvalitetsnote | dqv:hasQualityAnnotation | utgått | Dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"]
 | Datasett – har måleresultat | dqv:hasQualityMeasurement | utgått | Dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"]
 | Datasett – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til anbefalt; multiplisiteten endret tilsvarende fra 1..n til 0..n. | Følger DCAT-AP.
+| Datasett – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Datasett – krever | dct:requires | utgått | Følger DCAT-AP (ingen reell bruk).
 | Datasett – refererer til | dct:references | utgått | Følger DCAT-AP (invers egenskap).
 | Datasett – type | dct:type | Kravet til bruk av EUs kontrollerte vokabular "Dataset type" er endret fra SKAL til KAN brukes | Følger DCAT-AP.
 | Datasett – versjon | dcat:version | URIen endret fra owl:versionInfo til dcat:version | Følger DCAT-AP.
 | Datasett – versjon | dcat:version | Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP.
 |  Datasett serie | dcat:DatasetSeries | Datasettserie er subklasse av Katalogisert ressurs istedenfor Datasett | Følger DCAT-AP. 
-| Datasett serie – første |dcat:first | Kravnivået endret fra obligatorisk til anbefalt | #???#
+| Datasettserie – første |dcat:first | Kravnivået endret fra obligatorisk til anbefalt | #???#
+| Datasettserie – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige.
+| Datatjeneste – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Distribusjon – filstørrelse | dcat:byteSize | Verdiområdet endret fra xsd:decimal til  xsd:nonNegativeInteger | Følger DCAT-AP.
 | Katalog – er del av | dct:isPartOf | utgått | Følger DCAT-AP (invers egenskap).  
 | Katalog – frekvens | dct:accrualPeriodicity | utgått | Følger DCAT-AP.

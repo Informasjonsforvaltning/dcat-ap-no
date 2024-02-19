@@ -91,9 +91,9 @@ __(Norwegian extension) The value MUST be chosen from EU's controlled vocabulary
 _This property is used to specify the status of the distribution in the context of maturity lifecycle._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
+| Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
 
-__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
 | Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivå endret fra valgfri til anbefalt, fordi status på distribusjon er viktig å vite når man skal vurdere om en distribusjon skal/kan brukes.
 
 _Norwegian extension: The requirement level changed from optional to recommended._
