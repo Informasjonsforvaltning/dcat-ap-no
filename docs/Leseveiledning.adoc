@@ -2,6 +2,8 @@
 
 #_nytt kapittel_#
 
+#_husk å sjekke mot EUs "profile guidelines" hvorvidt/hvordan indikere om en egenskap er "reuse as-is", "reuse with extension" osv._#
+
 Alle krav i denne standarden uttrykkes i form av RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.
 
 [cols="30s,70"]

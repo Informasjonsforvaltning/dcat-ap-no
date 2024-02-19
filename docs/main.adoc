@@ -7,7 +7,8 @@ include::locale/attributes.adoc[]
 ifdef::backend-pdf[:toc: macro]
 :toc-title: Innholdsfortegnelse
 :toclevels: 4
-:sectlinks:
+// :sectlinks:
+:sectanchors:
 :table-stripes: even
 :title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
 
