@@ -47,6 +47,23 @@ _This property is used to specify the identifier to the data service._
 _Norwegian extension: Not explicitly specified in DCAT-AP._ 
 |===
 
+=== Datatjeneste – kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _contact point_
+| URI | dcat:contactPoint
+| Verdiområde / _Range_ | vcard:Kind
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
+
+_This property is used to specify contact information that can be used for sending comments about the Data Service._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
+
+_Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
+|===
+
 === Datatjeneste – tittel (dct:title) [[Datatjeneste-tittel]]
 
 [cols="30s,70d"]
@@ -107,20 +124,6 @@ _This property is used to specify the structure that can be returned by querying
 | Merknad / _Note_ | #Norsk utvidelse#: Kravnivå endret fra valgfri til anbefalt. 
 
 _Norwegian extension: The requirement level changed from optional to recommended._
-|===
-
-=== Datatjeneste – kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _contact point_
-| URI | dcat:contactPoint
-| Verdiområde / _Range_ | vcard:Kind
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
-
-_This property is used to specify contact information that can be used for sending comments about the Data Service._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
 === Datatjeneste – tema (dcat:theme) [[Datatjeneste-tema]]
