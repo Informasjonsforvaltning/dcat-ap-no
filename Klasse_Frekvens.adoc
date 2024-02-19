@@ -1,0 +1,13 @@
+= Klassen Frekvens (dct:Frequency) [[Frekvens]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ | _Frequency_
+| URI | dct:Frequency
+| Anvendelse / _Usage note_ | Klassen brukes til å beskrive hvor ofte noe skjer, for eksempel publisering av et datasett.
+
+_This class is used to describe a rate at which something recurs, e.g. the publication of a Dataset._
+| Eksempel | EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency[__Frequency__ &#x29C9;, window="_blank", role="ext-link"] inneholder et sett med predefinerte verdier for frekvens.
+|===

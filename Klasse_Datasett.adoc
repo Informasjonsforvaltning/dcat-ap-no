@@ -1,723 +1,753 @@
-= Datasett (dcat:Dataset) [[Datasett]]
+= Klassen Datasett (dcat:Dataset) [[Datasett]]
 
-Klassen _Datasett_ er anbefalt.
+[cols="30s,70"]
+|===
+| _English name_ | _Dataset_
+| URI | dcat:Dataset
+| Subklasse av / _Subclass of_ | dcat:Resource
+| Anvendelse / _Usage note_ | Klassen brukes til å representere et datasett, dvs. en konseptuell entitet som representerer publisert informasjon.
+
+_This class is used to represent a conceptual entity that represents the information published._
+| Merknad / _Note_ | _#hva betyr egentlig den engelske teksten "the properties listed below can be used additionally ..."? De fleste egenskapene under er jo for "vanlige datasett".#_
+
+_If a Dataset is used as part of a Dataset Series, the properties listed below can be used additionally, or slightly differently to those listed for the Dataset outside of a Dataset Series. For this usage, consult the guidelines in section #@@@@ General usage guidelines#._
+|===
+
 
 == Obligatoriske egenskaper for klassen _Datasett_ [[Datasett-obligatoriske-egenskaper]]
 
-=== Datasett: beskrivelse (dct:description) [[Datasett-beskrivelse]]
+=== Datasett – beskrivelse (dct:description) [[Datasett-beskrivelse]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| description
-|URI | dct:description
-|Range| rdfs:Literal
-|Beskrivelse| Inneholder fritekstbeskrivelse av datasettet. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
-|===
+| _English name_ | _description_
+| URI | dct:description
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettet. Egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk.
 
-=== Datasett: identifikator (dct:identifier) [[Datasett-identifikator]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| identifier
-|URI| dct:identifier
-|Range| rdfs:Literal
-|Beskrivelse| Identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og globalt unik.
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
-|Kommentar|
+_This property is used to specify a free-text account of the Dataset.This property can be repeated for parallel language versions of the description._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
-=== Datasett: tema (dcat:theme) [[Datasett-tema]]
+=== Datasett – identifikator (dct:identifier) [[Datasett-identifikator]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| theme
-|URI| dcat:theme
-|Range| skos:Concept
-|Beskrivelse| Referanse til et hovedtema for datasettet. Et datasett kan assosieres med flere tema.
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
-|===
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og unik innen konteksten av katalogen.
 
-=== Datasett: tittel (dct:title) [[Datasett-tittel]]
+_This property is used to specify the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri til obligatorisk. 
 
-[cols="30s,70d"]
-|===
-|Engelsk navn| title
-|URI| dct:title
-|Range| rdfs:Literal
-|Beskrivelse| Inneholder navnet på datasettet. Bør gjentas når navnet finnes i flere ulike språk/målformer.
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
+_Norwegian extension: The requirement level changed from optional to mandatory_
 |===
 
-=== Datasett: utgiver (dct:publisher) [[Datasett-utgiver]]
+=== Datasett – tema (dcat:theme) [[Datasett-tema]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| publisher
-|URI| dct:publisher
-|Range| foaf:Agent
-|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673>`.
-|Multiplisitet| 1..1
-|Kravsnivå| Obligatorisk
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra anbefalt til obligatorisk (også i DCAT-AP-NO v.1.1).
+| _English name_ | _theme_
+| URI | dcat:theme
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et hovedtema for datasettet. Et datasett kan assosieres med flere tema.
+
+_This property is used to specify the category of the dataset. A Dataset may be associated with multiple themes._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad 1 / _Note 1_ | Verdiene for denne egenskapen er URIer til begrepene i vokabularet https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]. 
+
+
+#Norsk utvidelse#: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
+
+__The values to be used for this property are the URIs of the concepts in the vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].__
+
+__Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivå er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
+
+_Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
+|===
+
+=== Datasett – tittel (dct:title) [[Datasett-tittel]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _title_
+| URI | dct:title
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til oppgi navnet på datasettet. Egenskapen bør gjentas når navnet finnes i flere ulike språk.
+
+_This property is used to specify a name given to the dataset. This property can be repeated for parallel language versions of the name._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+|===
+
+=== Datasett – utgiver (dct:publisher) [[Datasett-utgiver]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _publisher_
+| URI |  dct:publisher
+| Verdiområde / _Range_ | foaf:Agent
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
+
+_This property is used to specify the entity (organisation) responsible for making the Dataset available._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad 1 / _Note 1_ | (Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"]. 
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået er endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
+
+_Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1._
 |===
 
 == Anbefalte egenskaper for klassen _Datasett_ [[Datasett-anbefalte-egenskaper]]
 
-=== Datasett: begrep (dct:subject) [[Datasett-begrep]]
+=== Datasett – begrep (dct:subject) [[Datasett-begrep]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| concept
-|URI| dct:subject
-|Range| skos:Concept
-|Beskrivelse| Referanse til sentrale begrep som er viktige for å forstå og tolke datasettet. Representeres som URI-er.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|Kommentar a| Norsk utvidelse (allerede i DCAT-AP-NO v.1.1).
+| _English name_ | _concept_
+| URI | dct:subject
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til sentrale begrep som er viktige for å forstå og tolke datasettet. 
 
-NOTE: Referanse til et begrep fra et datasett bør det være i samsvar med ev. informasjonsmodell som beskriver datasettet (se https://data.norge.no/specification/modelldcat-ap-no/[ModellDCAT-AP-NO] for referanse til begrep fra en informasjonsmodell).
+_This property is used to refer to concepts that are important to understand and interpret the dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP.
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
-=== Datasett: ble generert ved (prov:wasGeneratedBy) [[Datasett-bleGenerertVed]]
+=== Datasett – ble generert ved (prov:wasGeneratedBy) [[Datasett-bleGenerertVed]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| was generated by
-|URI| prov:wasGeneratedBy
-|Range| prov:Activity
-|Beskrivelse| Referanse til en aktivitet som genererte datasettet, eller som gir forretningskontekst for oppretting av det.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|Kommentar|Norsk utvidelse - endret fra valgfri til anbefalt, fordi hvordan datasettet ble opprettet (ved vedtak, innhenting fra tredjepart eller ved innhenting fra brukeren) kan være viktig å vite når man skal vurdere om datasettet skal/kan gjenbrukes.
-|Eksempel a|
-[source]
+| _English name_ | _was generated by_
+| URI | prov:wasGeneratedBy
+| Verdiområde / _Range_ | prov:Activity
+| Anvendelse / _Usage note_ | Brukes til å referere til en aktivitet som genererte datasettet, eller som gir forretningskontekst for oppretting av det.
+
+_This property is used to refer to an activity that generated, or provides the business context for the creation of, the dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | #Norsk utvidelse#: Verdien BØR velges fra kontrollert vokabular https://data.norge.no/vocabulary/provenance-activity-type[Proveniensaktivitetstype &#x29C9;, window="_blank", role="ext-link"]. 
+
+__Norwegian extension: The value SHOULD be chosen from the controlled vocabulary https://data.norge.no/vocabulary/provenance-activity-type[Provenance activity type &#x29C9;, window="_blank", role="ext-link"].__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået er endret fra valgfri til anbefalt.
+
+_The requirement level is changed from optional to recommended._
+|===
+
+Eksempel i RDF Turtle: 
 ----
 :dataset1
    a dcat:Dataset ;
-   prov:wasGeneratedBy provno:administrativeDecision .
+   prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> .
 
 :dataset2
    a dcat:Dataset ;
-   prov:wasGeneratedBy provno:collectingFromThirdparty .
+   prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-third-party> .
 
 :dataset3
    a dcat:Dataset ;
-   prov:wasGeneratedBy provno:collectingFromUser .
+   prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-user> .
 ----
-der `provno:administrativeDecision` (vedtak), `provno:collectingFromThirdparty` (innhenting fra tredjepart) og `provno:collectingFromUser` (innhenting fra bruker) er `prov:Activity`.
+
+=== Datasett – datasettdistribusjon (dcat:distribution) [[Datasett-datasettdistribusjon]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _dataset distribution_
+| URI | dcat:distribution
+| Verdiområde / _Range_ | dcat:Distribution
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tilgjengelig distribusjon for datasettet.
+
+_This property is used to refer to an available Distribution for the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
-=== Datasett: datasettdistribusjon (dcat:distribution) [[Datasett-datasettdistribusjon]]
+=== Datasett – dekningsområde (dct:spatial) [[Datasett-dekningsområde]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| dataset distribution
-|URI| dcat:distribution
-|Range| dcat:Distribution
-|Beskrivelse| Koblingen mellom datasettet og en tilgjengelig distribusjon.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|===
+| _English name_ | _geographical coverage_
+| URI | dct:spatial
+| Verdiområde / _Range_ | dct:Location
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et geografisk område som er dekket av datasettet.
 
-=== Datasett: dekningsområde (dct:spatial) [[Datasett-dekningsområde]]
+_This property is used to refer to a geographic region that is covered by the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabularer https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[__Continent__ &#x29C9;, window="_blank", role="ext-link"], https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[__Countries and territories__ &#x29C9;, window="_blank", role="ext-link"] eller https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[__Place__ &#x29C9;, window="_blank", role="ext-link"], HVIS den finnes på listene; https://sws.geonames.org/[__GeoNames__ &#x29C9;, window="_blank", role="ext-link"] SKAL i andre tilfeller brukes. 
 
-[cols="30s,70d"]
-|===
-|Engelsk navn| spatial coverage
-|URI| dct:spatial
-|Range| dct:Location
-|Beskrivelse| Referanse, primært i form av en URI for et administrativt område, eller navn på sted eller område hentet fra et kontrollert vokabular (for eksempel Sentralt stedsnavnregister), eller geografiske koordinater (EU89) for området datasettet gjelder for (punkt eller geografisk grenseramme jf. ISO 19115).
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
+#Norsk utvidelse#: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
+
+__The value MUST be chosen from EU's controlled vocabularies https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent &#x29C9;, window="_blank", role="ext-link"], https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Countries and territories &#x29C9;, window="_blank", role="ext-link"] or https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place &#x29C9;, window="_blank", role="ext-link"], IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, https://sws.geonames.org/[GeoNames &#x29C9;, window="_blank", role="ext-link"] URIs MUST be used.__
+
+__Norwegian extension: To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 |===
 
-=== Datasett: emneord (dcat:keyword) [[Datasett-emneord]]
+=== Datasett – emneord (dcat:keyword) [[Datasett-emneord]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| keyword
-|URI| dcat:keyword
-|Range| rdfs:Literal
-|Beskrivelse| Inneholder emneord (eller tag) som beskriver datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|===
+| _English name_ | keyword
+| URI | dcat:keyword
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi emneord (eller tag) som beskriver datasettet. 
 
-=== Datasett: følger (cpsv:follows) [[Datasett-følger]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| follows
-|URI|cpsv:follows
-|Range|cpsv:Rule
-|Beskrivelse|Brukes til å referere til reglen som definerer den juridiske rammen for datasettet.
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt.
-|Eksempel a|
-Ved at et `dcat:Dataset cpsv:follows` en `cpsv:Rule`, og at en `cpsv:Rule cpsv:implements` en `eli:LegalResource`, illustrerer eksempelet her hvordan  man kan referere fra et datasett til en lovhjemmel som regulerer f.eks. skjerming eller utlevering av datasettet.
-
-[source]
-----
-:aDataset
-   a dcat:Dataset ;
-   cpsv:follows :aNonDisclosureRule, :aDisclosureRule .
-
-:aNonDisclosureRule
-   a cpsv:Rule ;
-   dct:type cpsvno:ruleForNonDisclosure ;
-   dct:description "skjerminghjemmel"@nb , "legal basis for non-disclosure"@en .
-
-:aDisclosureRule
-   a cpsv:Rule ;
-   dct:type cpsvno:ruleForDisclosure ;
-   dct:description "utleveringshjemmel"@nb , "legal basis for disclosure"@en ;
-   cpsv:implements :aLegalResource .
-
-:aLegalResource
-   a eli:LegalResource ;
-   dct:type [ a skos:Concept ;
-      skos:prefLabel "lov"@nb ;
-      skos:definition "rettsregler som fastsetter rettigheter og plikter"@nb ;
-      ] ;
-   dct:description "Eksempelregelverk"@nb , "Example legal resource"@en ;
-   rdfs:seeAlso <https:/example.com/eli/lov/2020/01/01/section/1> .
-----
-der `cpsvno:ruleForNonDisclosure` (skjermingsregel) og `cpsvno:ruleForDisclosure` (utleveringsegel) er predefinerte instanser av type regel (`skos:Concept`).
+_This property is used to specify a keyword or tag describing the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
-=== Datasett: kontaktpunkt (dcat:contactPoint) [[Datasett-kontaktpunkt]]
+=== Datasett – følger (cpsv:follows) [[Datasett-følger]]
 
-[cols="30s,70d"]
-|===
-|Engelsk navn| contact point
-|URI| dcat:contactPoint
-|Range| vcard:Kind
-|Beskrivelse| Referanse til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|===
+_#utgått#_
 
-=== Datasett: tidsrom (dct:temporal) [[Datasett-tidsrom]]
+=== Datasett – gjeldende lovgivning (dcatap:applicableLegislation) [[Datasett-gjeldendeLovgivning]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| temporal coverage
-|URI| dct:temporal
-|Range| dct:PeriodOfTime
-|Beskrivelse| Definerer starten og slutten på perioden, eventuelt klokkeslett (se ISO 8601).
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
+| _English name_ | _applicable legislation_
+| URI | dcatap:applicableLegislation
+| Verdiområde / _Range_ | eli:LegalResource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller behandling av datasettet.
+
+_This property is used to refer to the legislation that mandates the creation or management of the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri til anbefalt. 
+
+_Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
-=== Datasett: tilgangsnivå (dct:accessRights) [[Datasett-tilgangsnivå]]
+=== Datasett – kontaktpunkt (dcat:contactPoint) [[Datasett-kontaktpunkt]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| access rights
-|URI| dct:accessRights
-|Range| dct:RightsStatement
-|Beskrivelse| Dette feltet angir i hvilken grad datasettet kan bli gjort tilgjengelig for allmennheten, uten hensyn til om det er publisert eller ikke. Et kontrollert vokabular med tre verdier (`:public`, `:restricted` og `:non-public`) vil bli opprettet og forvaltet av EUs Publications Office. Ved bruk av verdiene `:restricted` og `:non-public` er egenskapen <<Datasett-følger, Datasett: følger>> anbefalt.
-|Multiplisitet| 0..1
-|Kravsnivå| Anbefalt
-|Kommentar| Norsk utvidelse - Denne egenskapen er endret fra valgfri til anbefalt (også i DCAT-AP-NO v.1.1).
+| _English name_ | _contact point_
+| URI | dcat:contactPoint
+| Verdiområde / _Range_ | vcard:Kind
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentar datasettet.
+
+_This property is used to specify contact information that can be used concerning questions and comments about the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+|===
+
+=== Datasett – tidsrom (dct:temporal) [[Datasett-tidsrom]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _temporal coverage_
+| URI | dct:temporal
+| Verdiområde / _Range_ | dct:PeriodOfTime
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et tidsrom som er dekket av datasettet.
+
+_This property is used to specify a temporal period that the Dataset covers._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
+|===
+
+=== Datasett – tilgangsnivå (dct:accessRights) [[Datasett-tilgangsnivå]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _access rights_
+| URI | dct:accessRights
+| Verdiområde / _Range_ | dct:RightsStatement
+| Anvendelse / _Usage note_ | Egenskapen brukes til å angi om det er allmenn tilgang, betinget tilgang eller ikke-allmenn tilgang til datasettet.
+
+_This property is used to specify information that indicates whether the Dataset is publicly accessible, has access restrictions or is not public._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Verdien SKAL være `:PUBLIC`, `:RESTRICTED` eller `:NON_PUBLIC` fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[__Access right__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value MUST be `:PUBLIC`, `:RESTRICTED` or `:NON_PUBLIC` from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[Access right &#x29C9;, window="_blank", role="ext-link"].__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået er endret fra valgfri til anbefalt.
+
+_Norwegian extension: The requirement level is changed from optional to recommended._
 |===
 
 
 == Valgfrie egenskaper for klassen _Datasett_ [[Datasett-valgfrie-egenskaper]]
 
-=== Datasett: annen identifikator (adms:identifier) [[Datasett-annenIdentifikator]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| other identifier
-|URI| adms:identifier
-|Range| adms:Identifier
-|Beskrivelse| Referanse til en sekundær identifikator av datasettet som http://archive.stsci.edu/pub_dsn.html[MAST/ADS], DataCite, http://www.doi.org/[DOI], https://ezid.cdlib.org/[EZID] eller https://w3id.org/[W3ID].
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: dokumentasjon (foaf:page) [[Datasett-dokumentasjon]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| page (documentation)
-|URI| foaf:page
-|Range| foaf:Document
-|Beskrivelse| Referanse til en side eller et dokument som beskriver datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: eksempeldata (adms:sample) [[Datasett-eksempeldata]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| sample
-|URI| adms:sample
-|Range| dcat:Distribution
-|Beskrivelse| Referanse til eksempeldata.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: endringsdato (dct:modified) [[Datasett-endringsdato]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| modified (last update)
-|URI| dct:modified
-|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for siste oppdatering av datasettet.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: er del av (dct:isPartOf) [[Datasett-erDelAv]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| is part of
-|URI| dct:isPartOf
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til et annet datasett som dette datasettet er en del av.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|Eksempel | #Kan brukes til å beskrive datasett som delmengde av et annet datasett. For tidsserier og geografisk inndelte del-datasett bør <<Datasett-iSerie>> brukes.#
-|===
-
-=== Datasett: er påkrevd av (dct:isRequiredBy) [[Datasett-erPåkrevdAv]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| is required by
-|URI| dct:isRequiredBy
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til et annet datasett som dette datasettet er nødvendig for.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: er referert av (dct:isReferencedBy) [[Datasett-erReferertAv]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| is referenced by
-|URI| dct:isReferencedBy
-|Range| rdfs:Resource
-|Beskrivelse| Referanse til en annen ressurs som refererer til dette datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: er versjon av (dct:isVersionOf) [[Datasett-erVersjonAv]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| is version of
-|URI| dct:isVersionOf
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til et beslektet datasett som det beskrevne datasettet er en versjon, utgave, eller tilpasning av.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: erstatter (dct:replaces) [[Datasett-erstatter]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| replaces
-|URI| dct:replaces
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til et annet datasett som dette datasettet er ment å erstatte.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: erstattes av (dct:isReplacedBy) [[Datasett-erstattesAv]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| is replaced by
-|URI| dct:isReplacedBy
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til datasett som er ment å erstatte dette datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: forrige (dcat:prev) [[Datasett-forrige]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| previous
-|URI| dcat:prev
-|Domain| dcat:Dataset
-|Range| dcat:Dataset
-|Beskrivelse| Det forrige datasettet i en ordnet samling eller serie av datasett.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: frekvens (dct:accrualPeriodicity) [[Datasett-frekvens]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| accrual periodicity
-|URI| dct:accrualPeriodicity
-|Range| dct:Frequency
-|Beskrivelse| Referanse til oppdateringsfrekvensen for datasettet.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: har del (dct:hasPart) [[Datasett-harDel]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| has part
-|URI| dct:hasPart
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til et annet datasett som er en del av dette datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: har kvalitetsnote (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsnote]]
+=== Datasett – annen identifikator (adms:identifier) [[Datasett-annenIdentifikator]]
 
 [cols="30s,70"]
 |===
-|Engelsk navn| has quality annotation
-|URI|dqv:hasQualityAnnotation
-|Range|dqv:QualityAnnotation
-|Beskrivelse|Brukes til å referere til en kvalitetsnote.
-|Referanse|https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityAnnotation[https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityAnnotation]
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri
-|Kommentar| Se https://data.norge.no/specification/dqv-ap-no/[DQV-AP-NO (norsk applikasjonsprofil av DQV)].
+| _English name_ | _other identifier_
+| URI | adms:identifier
+| Verdiområde / _Range_ | adms:Identifier
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en sekundær identifikator av datasettet som http://archive.stsci.edu/pub_dsn.html[MAST/ADS &#x29C9;, window="_blank", role="ext-link"], https://datacite.org/[DataCite &#x29C9;, window="_blank", role="ext-link"], http://www.doi.org/[DOI &#x29C9;, window="_blank", role="ext-link"], https://ezid.cdlib.org/[EZID &#x29C9;, window="_blank", role="ext-link"] eller https://w3id.org/[W3ID &#x29C9;, window="_blank", role="ext-link"].
 
-Gjelder også Brukertilbakemelding (`dqv:UserQualityFeedback`) og Kvalitetssertifikat (`dqv:QualityCertificate`) som er subklasser av Kvalitetsnote (`dqv:QualityAnnotation`).
-|Eksempel a| [source]
-----
-:aDataset
-   a dcat:Dataset ;
-   dqv:hasQualityAnnotation :aQAnnotation, :aUserFeedBack, dqvno:isAuthoritative .
-----
-der `dqvno:isAuthoritative` er en predefinert instans av Kvalitetssertifikat (`dqv:QualityCertificate`):
-[souce]
-----
-dqvno:isAuthoritative
-   a dqv:QualityCertificate ;
-   oa:motivatedBy dqv:qualityAssessment ;
-   skos:definition "kvalitetsbeskrivelse som uttrykker at noe er autoritativt"@nb , "quality description which states that something is authoritative"@en ;
-   skos:prefLabel "er autoritativ"@nb , "is authoritative"@en .
-----
+__This property is used to specify a secondary identifier of the Dataset, such as http://archive.stsci.edu/pub_dsn.html[MAST/ADS &#x29C9;, window="_blank", role="ext-link"], https://datacite.org/[DataCite &#x29C9;, window="_blank", role="ext-link"], http://www.doi.org/[DOI &#x29C9;, window="_blank", role="ext-link"], https://ezid.cdlib.org/[EZID &#x29C9;, window="_blank", role="ext-link"] or https://w3id.org/[W3ID &#x29C9;, window="_blank", role="ext-link"].__
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
 
-=== Datasett: har måleresultat (dqv:hasQualityMeasurement) [[Datasett-harMåleresultat]]
+=== Datasett – dokumentasjon (foaf:page) [[Datasett-dokumentasjon]]
 
 [cols="30s,70"]
 |===
-|Engelsk navn| has quality measurement
-|URI|dqv:hasQualityMeasurement
-|Range|dqv:QualityMeasurement
-|Beskrivelse|Brukes til å referere til et måleresultat.
-|Referanse|https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityMeasurement[https://www.w3.org/TR/vocab-dqv/#dqv:hasQualityMeasurement]
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri
-|Kommentar| Se https://data.norge.no/specification/dqv-ap-no/[DQV-AP-NO (norsk applikasjonsprofil av DQV)].
-|Eksempel a| [source]
-----
-:aDataset
-   a dcat:Dataset ;
-   dqv:hasQualityMeasurement :aQMeasurement .
-----
+| _English name_ | _documentation_
+| URI | foaf:page
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en side eller et dokument som beskriver datasettet.
+
+_This property is used to refer to a page or document about this Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
 
-=== Datasett: har versjon (dct:hasVersion) [[Datasett-harVersjon]]
+=== Datasett – eksempeldata (adms:sample) [[Datasett-eksempeldata]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| has version
-|URI| dct:hasVersion
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
+| _English name_ | _sample_
+| URI | adms:sample
+| Verdiområde / _Range_ | dcat:Distribution
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til eksempeldata.
 
-=== Datasett: i samsvar med (dct:conformsTo) [[Datasett-iSamsvarMed]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| conforms to
-|URI| dct:conformsTo
-|Range| dct:Standard
-|Beskrivelse| Referanse til en implementasjonsregel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+_This property is used to refer to a sample distribution of the dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
 
-=== Datasett: i serie (dcat:inSeries) [[Datasett-iSerie]]
+=== Datasett – endringsdato (dct:modified) [[Datasett-endringsdato]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| in series
-|URI| dcat:inSeries
-|Range| dcat:DatasetSeries
-|Beskrivelse| Referanse til en datasett serie som dette datasett er del av.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|Eksempel a| Kan brukes til å beskrive tidsserier:
-```
+| _English name_ | _modification date_
+| URI | dct:modified
+| Verdiområde / _Range_ | xsd:date or xsd:dateTime
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato for siste oppdatering av datasettet.
+
+_This property is used to specify the most recent date on which the Dataset was changed or modified._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+| Merknad / _Note_ | #Norsk utvidelse#: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
+
+_Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
+|===
+
+=== Datasett – er del av (dct:isPartOf) [[Datasett-erDelAv]]
+
+_#utgått (invers egenskap)#_
+
+
+=== Datasett – er påkrevd av (dct:isRequiredBy) [[Datasett-erPåkrevdAv]]
+
+_#utgått (invers egenskap)#_
+
+
+=== Datasett – er referert av (dct:isReferencedBy) [[Datasett-erReferertAv]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _is referenced by_
+| URI | dct:isReferencedBy
+| Verdiområde / _Range_ | rdfs:Resource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en annen ressurs som refererer til dette datasettet.
+
+_This property is used to refer to a related resource, such as a publication, that references, cites, or otherwise points to the dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+|===
+
+=== Datasett – er versjon av (dct:isVersionOf) [[Datasett-erVersjonAv]]
+
+_#utgått (invers egenskap)#_
+
+=== Datasett – erstatter (dct:replaces) [[Datasett-erstatter]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _replaces_
+| URI | dct:replaces
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet datasett som dette datasettet er ment å erstatte.
+
+_This property is used to refer to another dataset that this dataset replaces._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
+|===
+
+=== Datasett – erstattes av (dct:isReplacedBy) [[Datasett-erstattesAv]]
+
+_#utgått (invers egenskap)#_ 
+
+=== Datasett – forrige (dcat:prev) [[Datasett-forrige]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _previous_
+| URI | dcat:prev
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ | Egenskapen brukes itl å referere til det forrige datasettet i en ordnet samling eller serie av datasett.
+
+_This property is used to refer to the previous resource (before the current one) in an ordered collection or series of resources._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP.
+
+_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
+|===
+
+=== Datasett – frekvens (dct:accrualPeriodicity) [[Datasett-frekvens]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _frequency_
+| URI | dct:accrualPeriodicity
+| Verdiområde / _Range_ | dct:Frequency
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi oppdateringsfrekvensen for datasettet.
+
+_This property is used to specify the frequency at which the Dataset is updated._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+| Merknad / _Note_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[__Frequency__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frequency &#x29C9;, window="_blank", role="ext-link"]__.
+|===
+
+=== Datasett – har del (dct:hasPart) [[Datasett-harDel]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _has part_
+| URI | dct:hasPart
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet datasett som er en del av dette datasettet.
+
+_This property is used to refer to another dataset that is a part of this dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+
+_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
+|===
+
+=== Datasett – har kvalitetsnote (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsnote]]
+
+_#utgått (dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO])#_
+
+=== Datasett – har måleresultat (dqv:hasQualityMeasurement) [[Datasett-harMåleresultat]]
+
+_#utgått (dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO])#_
+
+=== Datasett – har versjon (dct:hasVersion) [[Datasett-harVersjon]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _has version_
+| URI | dct:hasVersion
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet. 
+
+_This property is used to refer to a related Dataset that is a version, edition, or adaptation of the described Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n 
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+|===
+
+=== Datasett – i samsvar med (dct:conformsTo) [[Datasett-iSamsvarMed]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _conforms to_
+| URI | dct:conformsTo
+| Verdiområde / _Range_ | dct:Standard
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en implementasjonsregel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet.
+
+_This property is used to refer to an implementing rule or other specification._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+|===
+
+=== Datasett – i serie (dcat:inSeries) [[Datasett-iSerie]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _in series_
+| URI | dcat:inSeries
+| Verdiområde / _Range_ | dcat:DatasetSeries
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en datasett serie som dette datasett er del av.
+
+_This property is used to refer to a dataset series of which the dataset is part._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+|===
+
+Eksempel i RDF Turtle
+-----
 ex:EUCatalogue a dcat:Catalog ;
-  dcterms:title "European Data Catalogue"@en ;
+  dct:title "European Data Catalogue"@en ;
   dcat:dataset ex:budget  ;
   .
 
 ex:budget a dcat:DatasetSeries ;
-  dcterms:title "Budget data"@en ;
+  dct:title "Budget data"@en ;
   dcat:first ex:budget-2018 ;
   dcat:last ex:budget-2020 ;
   .
 
 ex:budget-2018 a dcat:Dataset ;
-  dcterms:title "Budget data for year 2018"@en ;
+  dct:title "Budget data for year 2018"@en ;
   dcat:inSeries ex:budget ;
-  dcterms:issued "2019-01-01"^^xsd:date ;
-  dcat:next ex:budget-2019 ;
-  .
+  dct:issued "2019-01-01"^^xsd:date ;
+ .
 
 ex:budget-2019 a dcat:Dataset ;
-  dcterms:title "Budget data for year 2019"@en ;
+  dct:title "Budget data for year 2019"@en ;
   dcat:inSeries ex:budget ;
-  dcterms:issued "2020-01-01"^^xsd:date ;
+  dct:issued "2020-01-01"^^xsd:date ;
   dcat:prev ex:budget-2018 ;
-  dcat:next ex:budget-2020 ;
-  .
+ .
 
 ex:budget-2020 a dcat:Dataset ;
-  dcterms:title "Budget data for year 2020"@en ;
+  dct:title "Budget data for year 2020"@en ;
   dcat:inSeries ex:budget ;
-  dcterms:issued "2021-01-01"^^xsd:date ;
+  dct:issued "2021-01-01"^^xsd:date ;
   dcat:prev ex:budget-2019 ;
   .
-```
+-----
+
+=== Datasett – kilde (dct:source) [[Datasett-kilde]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _source_
+| URI | dct:source
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som gjeldende datasett er avledet fra.
+
+_This property is used to refer to a related Dataset from which the described Dataset is derived._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
 
-=== Datasett: kilde (dct:source) [[Datasett-kilde]]
+=== Datasett – krever (dct:requires) [[Datasett-krever]]
+
+_#utgått (ingen reell bruk)#_
+
+
+=== Datasett – kvalifisert kreditering (prov:qualifiedAttribution) [[Datasett-kvalifisertKreditering]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _qualified attribution_
+| URI | prov:qualifiedAttribution
+| Verdiområde / _Range_ | prov:Attribution
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør som har en eller annen form for ansvar for ressursen.
+
+_This property is used to refer to an Agent having some form of responsibility for the resource._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+|===
+
+=== Datasett – kvalifisert relasjon (dcat:qualifiedRelation) [[Datasett-kvalifisertRelasjon]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| source
-|URI| dct:source
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til et datasett som gjeldende datasett er avledet fra.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _qualified relation_
+| URI | dcat:qualifiedRelation
+| Verdiområde / _Range_ | dcat:Relationship
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en beskrivelse av en relasjon til en annen ressurs.
+
+_This property is used to refer to a description of a relationship with another resource._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett: krever (dct:requires) [[Datasett-krever]]
+=== Datasett – landingsside (dcat:landingPage) [[Datasett-landingsside]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| requires
-|URI| dct:requires
-|Range| dcat:Dataset
-|Beskrivelse| Referanse til et annet datasett som er nødvendig for å bruke dette datasettet riktig. Eksempel: et datasett kan bruke kodeverdier som er definert i et annet datasett.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _landing page_
+| URI | dcat:landingPage
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
+
+_This property is used to refer to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett: kvalifisert kreditering (prov:qualifiedAttribution) [[Datasett-kvalifisertKreditering]]
+=== Datasett – opphav (dct:provenance) [[Datasett-opphav]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| qualified attribution
-|URI| prov:qualifiedAttribution
-|Range| prov:Attribution
-|Beskrivelse| Viser til en lenke til en _Aktør_ som har en eller annen form for ansvar for ressursen.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _provenance_
+| URI | dct:provenance
+| Verdiområde / _Range_ | dct:ProvenanceStatement
+| Anvendelse / _Usage note_ | Egenskapen brukes itl å referere til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
+
+_This property is used to refer to a statement about the lineage of a Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett: kvalifisert relasjon (dcat:qualifiedRelation) [[Datasett-kvalifisertRelasjon]]
+=== Datasett – produsent (dct:creator) [[Datasett-produsent]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| qualified relation
-|URI| dcat:qualifiedRelation
-|Range| dcat:Relationship
-|Beskrivelse| En beslektet ressurs, for eksempel en publikasjon, som refererer, siterer eller på annen måte peker til datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _creator_
+| URI | dct:creator
+| Verdiområde / _Range_ | foaf:Agent
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til aktøren som er produsent av datasettet.
+
+_This property is used to refer to an entity responsible for producing the dataset._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett: landingsside (dcat:landingPage) [[Datasett-landingsside]]
+=== Datasett – relatert ressurs (dct:relation) [[Datasett-relatertRessurs]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| landing page
-|URI| dcat:landingPage
-|Range| foaf:Document
-|Beskrivelse| Referanse til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _related resource_
+| URI | dct:relation
+| Verdiområde / _Range_ | rdfs:Resource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en beslektet ressurs.
+
+_This property is used to refer to a related resource._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett: opphav (dct:provenance) [[Datasett-opphav]]
+=== Datasett – romlig oppløsning (dcat:spatialResolutionInMeters) [[Datasett-romligOppløsning]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| provenance
-|URI| dct:provenance
-|Range| dct:ProvenanceStatement
-|Beskrivelse| Referanse til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _spatial resolution_
+| URI | dcat:spatialResolutionInMeters
+| Verdiområde / _Range_ | xsd:decimal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi den minste romlige oppløsningen for et datasett målt i meter.
+
+_This property is used to specify the minimum spatial separation resolvable in a dataset, measured in meters._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett: produsent (dct:creator) [[Datasett-produsent]]
+=== Datasett – språk (dct:language) [[Datasett-språk]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| creator
-|URI| dct:creator
-|Range| foaf:Agent
-|Beskrivelse| Referanse til aktøren som er produsent av datasettet.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
+| _English name_ | _language_
+| URI | dct:language
+| Verdiområde / _Range_ | dct:LinguisticSystem
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet.
+
+_This property is used to specify a language of the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[__Language__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
-=== Datasett: refererer til (dct:references) [[Datasett-referererTil]]
+
+=== Datasett – tidsoppløsning (dcat:temporalResolution) [[Datasett-tidsoppløsning]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| references
-|URI| dct:references
-|Range| rdfs:Resource
-|Beskrivelse| Referanse til en annen ressurs som det kan være nyttig for brukere å være oppmerksom på.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _temporal resolution_
+| URI | dcat:temporalResolution
+| Verdiområde / _Range_ | xsd:duration
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til den minste oppløsningen for tidsperiode i datasettet.
+
+_This property is used to specify the minimum time period resolvable in the dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett: relatert ressurs (dct:relation) [[Datasett-relatertRessurs]]
+=== Datasett – type (dct:type) [[Datasett-type]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| related resource
-|URI| dct:relation
-|Range| rdfs:Resource
-|Beskrivelse| Referanse til en beslektet ressurs.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _type_
+| URI | dct:type
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et begrep som identifiserer datasettets type.
+
+_This property is used to specify the type of the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Verdien KAN velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[__Dataset type__ &#x29C9;, window="_blank", role="ext-link"].
+
+#NB! EU skriver "A recommended controlled vocabulary data-type is foreseen."# 
+
+__The value MAY be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[Dataset type &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
-=== Datasett: romlig oppløsning (dcat:spatialResolutionInMeters) [[Datasett-romligOppløsning]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| spatial resolution
-|URI| dcat:spatialResolutionInMeters
-|Range| xsd:decimal
-|Beskrivelse|  Refererer til den minste romlige oppløsningen for et datasett målt i meter.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: språk (dct:language) [[Datasett-språk]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| language
-|URI| dct:language
-|Range| dct:LinguisticSystem
-|Beskrivelse| Referanse til språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-
-=== Datasett: tidsoppløsning (dcat:temporalResolution) [[Datasett-tidsoppløsning]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| temporal resolution
-|URI| dcat:temporalResolution
-|Range| xsd:duration
-|Beskrivelse|  Refererer til den minste oppløsningen for tidsperiode i et datasett.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: type (dct:type) [[Datasett-type]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| type
-|URI| dct:type
-|Range| skos:Concept
-|Beskrivelse| Referanse til et begrep som identifiserer datasettets type.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|Eksempel a|
-[source]
+Eksempel i RDF Turtle:
 ----
-@prefix eupodt: <http://publications.europa.eu/resource/authority/dataset-type#> .
-
 :aCodeList
    a dcat:Dataset ;
-   dct:type eupodt:CODE_LIST .
+   dct:type <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> .
 
 :aTestDataset
    a dcat:Dataset ;
-   dct:type eupodt:TEST_DATA .
+   dct:type <http://publications.europa.eu/resource/authority/dataset-type/TEST_DATA> .
 
 :aSyntheticDataset
    a dcat:Dataset ;
-   dct:type eupodt:SYNTHETIC_DATA .
+   dct:type <http://publications.europa.eu/resource/authority/dataset-type/SYNTHETIC_DATA> .
 ----
-|===
 
-=== Datasett: utgivelsesdato (dct:issued) [[Datasett-utgivelsesdato]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| issued (release date)
-|URI| dct:issued
-|Range| rdfs:Literal typed as xsd:date or xsd:dateTime
-|Beskrivelse| Dato for den formelle utgivelsen av datasettet.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|===
-
-=== Datasett: versjon (owl:versionInfo) [[Datasett-versjon]]
+=== Datasett – utgivelsesdato (dct:issued) [[Datasett-utgivelsesdato]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| version
-|URI| owl:versionInfo
-|Range| rdfs:Literal
-|Beskrivelse| Et versjonsnummer eller annen versjonsbetegnelse for datasettet.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
+| _English name_ | _release date_
+| URI | dct:issued
+| Verdiområde / _Range_ | xsd:date or xsd:dateTime
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato for den formelle utgivelsen av datasettet.
+
+_This property is used to specify the date of formal issuance (e.g., publication) of the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | #Norsk utvidelse#: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
+
+_Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
 
-=== Datasett: versjonsnote (adms:versionNotes) [[Datasett-versjonsnote]]
+=== Datasett – versjon (dcat:version) [[Datasett-versjon]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| version notes
-|URI| adms:versionNotes
-|Range| rdfs:Literal
-|Beskrivelse| Egenskap som beskriver forskjellene mellom denne og en tidligere versjon av datasettet. Bør gjentas når noten finnes i flere ulike språk/målformer.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _version_
+| URI | dcat:version
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et versjonsnummer eller annen versjonsbetegnelse for ressursen.
+
+_This property is used to specify the version indicator (name or identifier) of a resource._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
+=== Datasett – versjonsnote (adms:versionNotes) [[Datasett-versjonsnote]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _version notes_
+| URI | adms:versionNotes
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskap brukes til å beskrive forskjellene mellom denne og en tidligere versjon av datasettet. Bør gjentas når noten finnes i flere ulike språk.
+
+_This property is used to specify a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===

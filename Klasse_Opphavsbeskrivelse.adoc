@@ -1,0 +1,13 @@
+= Klassen Opphavsbeskrivelse (dct:ProvenanceStatement) [[Opphavsbeskrivelse]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ | _Provenance statement_
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.
+
+_This class is used to represent a statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity and interpretation.#_
+| URI | dct:ProvenanceStatement
+|===
+

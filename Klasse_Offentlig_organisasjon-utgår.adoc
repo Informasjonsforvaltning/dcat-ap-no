@@ -1,0 +1,3 @@
+= Klassen Offentlig organisasjon (cv:PublicOrganisation) [[OffentligOrganisasjon]]
+
+#_hele klassen utgått_#

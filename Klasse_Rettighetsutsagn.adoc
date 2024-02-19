@@ -1,0 +1,13 @@
+= Klassen Rettighetsutsagn (dct:RightsStatement) [[Rettighetsutsagn]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ |  Rights statement
+| URI | dct:RightsStatement
+| Anvendelse / _Usage note_ | Klassen brukes til å representere et utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
+
+_This property is used to represent a statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights._
+|===
+

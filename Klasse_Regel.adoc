@@ -1,10 +1,10 @@
-= Regel (cpsv:Rule) [[Regel]]
+= Klassen Regel (cpsv:Rule) [[Regel]]
 
 Klassen _Regel_ er anbefalt.
 
 == Obligatoriske egenskaper for klassen _Regel_ [[Regel-obligatoriske-egenskaper]]
 
-=== Regel: beskrivelse (dct:description) [[Regel-beskrivelse]]
+=== Regel – beskrivelse (dct:description) [[Regel-beskrivelse]]
 
 [cols="30s,70d"]
 |===
@@ -13,10 +13,10 @@ Klassen _Regel_ er anbefalt.
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av regelen. Denne egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk
+|Kravnivå|Obligatorisk
 |===
 
-=== Regel: identifikator (dct:identifier) [[Regel-identifikator]]
+=== Regel – identifikator (dct:identifier) [[Regel-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -25,10 +25,10 @@ Klassen _Regel_ er anbefalt.
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi identifikatoren til regelen.
 |Multiplisitet|1..1
-|Kravsnivå|Obligatorisk
+|Kravnivå|Obligatorisk
 |===
 
-=== Regel: tittel (dct:title) [[Regel-tittel]]
+=== Regel – tittel (dct:title) [[Regel-tittel]]
 
 [cols="30s,70d"]
 |===
@@ -37,12 +37,12 @@ Klassen _Regel_ er anbefalt.
 |Range|rdfs:Literal
 |Beskrivelse|Brukes til å oppgi en beskrivende tittel eller navn for regelen. Denne egenskapen bør gjentas når tittelen/navnet finnes i flere ulike språk/målformer.
 |Multiplisitet|1..n
-|Kravsnivå|Obligatorisk
+|Kravnivå|Obligatorisk
 |===
 
 == Anbefalte egenskaper for klassen _Regel_ [[Regel-anbefalte-egenskaper]]
 
-=== Regel: implementerer (cpsv:implements) [[Regel-implementerer]]
+=== Regel – implementerer (cpsv:implements) [[Regel-implementerer]]
 
 [cols="30s,70d"]
 |===
@@ -51,10 +51,9 @@ Klassen _Regel_ er anbefalt.
 |Range|eli:LegalResource
 |Beskrivelse|Brukes til å referere til en regulativ ressurs som regelen er definert inn under.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt
 |===
 
-=== Regel: språk (dct:language) [[Regel-språk]]
+=== Regel – språk (dct:language) [[Regel-språk]]
 
 [cols="30s,70d"]
 |===
@@ -63,12 +62,12 @@ Klassen _Regel_ er anbefalt.
 |Range|dct:LinguisticSystem
 |Beskrivelse|Brukes til å referere til språk/målform som regelen er tilgjengelig i.
 |Multiplisitet|0..n
-|Kravsnivå|Anbefalt
+|Kravnivå|Anbefalt
 |===
 
 == Valgfrie egenskaper for klassen _Regel_ [[Regel-valgfrie-egenskaper]]
 
-=== Regel: type (dct:type) [[Regel-type]]
+=== Regel – type (dct:type) [[Regel-type]]
 
 [cols="30s,70d"]
 |===
@@ -77,6 +76,6 @@ Klassen _Regel_ er anbefalt.
 |Range|skos:Concept
 |Beskrivelse|Brukes til å spesifisere type regel. Denne egenskapen skal bruke et kontrollert vokabular.
 |Multiplisitet|0..n
-|Kravsnivå|Valgfri
-|Eksempel| Se eksempelet under egenskapen <<Datasett-følger, Datasett: følger>>.
+|Kravnivå|Valgfri
+|Eksempel| Se eksempelet under egenskapen <<Datasett-følger>>.
 |===

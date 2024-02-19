@@ -1,234 +1,322 @@
-= Datatjeneste (dcat:DataService) [[Datatjeneste]]
+= Klassen Datatjeneste (dcat:DataService) [[Datatjeneste]]
 
-Klassen _Datatjeneste_ er valgfri.
+[cols="30s,70d"]
+|===
+| _English name_ | _Data service_
+| URI | dcat:DataService
+| Subklasse av / _Subclass of_ | dcat:Resource
+| Beskrivelse | Klassen brukes til å representere en datatjeneste, dvs. en samling av operasjoner som gir tilgang til ett eller flere datasett eller databehandlingsfunksjoner.
+
+_This class is used to represent a data service, i.e., a collection of operations that provides access to one or more datasets or data processing functions._
+|===
+
 
 == Obligatoriske egenskaper for klassen _Datatjeneste_ [[Datatjeneste-obligatoriske-egenskaper]]
 
-=== Datatjeneste: endepunktsURL (dcat:endpointURL) [[Datatjeneste-endepunktsurl]]
+=== Datatjeneste – endepunktsURL (dcat:endpointURL) [[Datatjeneste-endepunktsurl]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| endpoint URL
-|URI| dcat:endpointURL
-|Range| rdfs:Resource
-|Beskrivelse| Rotplassering eller primært endepunkt for tjenesten (en URI).
-|Multiplisitet| 1..1
-|Kravsnivå| Obligatorisk
-|Kommentar | Norsk utvidelse - Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester.
+| _English name_ | _endpoint URL_
+| URI | dcat:endpointURL
+| Verdiområde / _Range_ | rdfs:Resource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til rotplassering eller primært endepunkt for tjenesten (en URI).
+
+_This property is used to refer to the root location or primary endpoint of the service (an IRI)._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | #Norsk utvidelse#: Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester.
+
+_Norwegian extension: The multiplicity is changed from 1..n to 1..1._
 |===
 
-=== Datatjeneste: identifikator (dct:identifier) [[Datatjeneste-identifikator]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| identifier
-|URI| dct:identifier
-|Range| rdfs:Literal
-|Beskrivelse| Brukes til å oppgi identifikator til datatjenesten.
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
-|===
-
-=== Datatjeneste: tittel (dct:title) [[Datatjeneste-tittel]]
+=== Datatjeneste – identifikator (dct:identifier) [[Datatjeneste-identifikator]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| title
-|URI| dct:title
-|Range| rdfs:Literal
-|Beskrivelse| Navn på datatjenesten. Bør gjentas når navnet finnes i flere ulike språk/målformer.
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator til datatjenesten.
+
+_This property is used to specify the identifier to the data service._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._ 
+|===
+
+=== Datatjeneste – tittel (dct:title) [[Datatjeneste-tittel]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _title_
+| URI | dct:title
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn på datatjenesten. Egenskapen bør gjentas når navnet finnes i flere ulike språk/målformer.
+
+_This property is used to specify the name to the data service. This property can be repeated for parallel language versions of the name._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
 
 == Anbefalte egenskaper for klassen _Datatjeneste_ [[Datatjeneste-anbefalte-egenskaper]]
 
-=== Datatjeneste: emneord (dcat:keyword) [[Datatjeneste-emneord]]
+=== Datatjeneste – emneord (dcat:keyword) [[Datatjeneste-emneord]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| keyword
-|URI| dcat:keyword
-|Range| rdfs:Literal
-|Beskrivelse| Inneholder emneord (eller tag) som beskriver datatjenesten.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
+| _English name_ | _keyword_
+| URI | dcat:keyword
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi emneord (eller tag) som beskriver datatjenesten.
+
+_This property is used to specify keywords or tags that describe the data service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
-=== Datatjeneste: endepunktsbeskrivelse (dcat:endpointDescription) [[Datatjeneste-endepunktsbeskrivelse]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| endpoint description
-|URI| dcat:endpointDescription
-|Range| rdfs:Resource
-|Beskrivelse| Denne egenskapen inneholder en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens dct:conformsTo brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|===
-
-=== Datatjeneste: format (dct:format) [[Datatjeneste-format]]
+=== Datatjeneste – endepunktsbeskrivelse (dcat:endpointDescription) [[Datatjeneste-endepunktsbeskrivelse]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn|format
-|URI|dct:format
-|Range|dct:MediaTypeOrExtent
-|Beskrivelse|Opplysning om datatjenestens dataformat. Kan gjentas for datatjenester som leverer data i flere formater.
-|Multiplisitet|0..n
-|Kravsnivå|Anbefalt
-|Kommentar|Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å kunne uttrykke format(er) en datatjeneste kan tilby (istedenfor å måtte gå omveien via Distribusjon)
+| _English name_ | _endpoint description_
+| URI | dcat:endpointDescription
+| Verdiområde / _Range_ | rdfs:Resource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en beskrivelse av tjenestene som er tilgjengelige via endepunktene, inkludert deres operasjoner, parametere osv. Egenskapen gir spesifikke detaljer om de faktiske endepunkt-instansene, mens egenskapen <<Datatjeneste-i-samsvar-med>> brukes til å indikere den generelle standarden eller spesifikasjonen som endepunktene implementerer.
+
+_This property is used to specify a description of the services available via the end-points, including their operations, parameters etc. The property gives specific details of the actual endpoint instances, while the property application profile (dct:conformsTo) is used to indicate the general standard or specification that the endpoints implement._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
-=== Datatjeneste: kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| contact point
-|URI| dcat:contactPoint
-|Range| vcard:Kind
-|Beskrivelse| Referanse til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|===
-
-=== Datatjeneste: tema (dcat:theme) [[Datatjeneste-tema]]
+=== Datatjeneste – format (dct:format) [[Datatjeneste-format]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| theme
-|URI| dcat:theme
-|Range| skos:Concept
-|Beskrivelse| Referanse til et hovedtema for datatjenesten. En datatjeneste kan assosieres med flere tema.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
+| _English name_ | _format_
+| URI | dct:format
+| Verdiområde / _Range_ | dct:MediaTypeOrExtent
+| Anvendelse / _Usage note_ | Egenskapen brukes til å spesifisere strukturen som kan returneres av spørring mot endepunktsURL. 
+
+_This property is used to specify the structure that can be returned by querying the endpointURL._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivå endret fra valgfri til anbefalt. 
+
+_Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
-=== Datatjeneste: tilgjengeliggjør datasett (dcat:servesDataset) [[Datatjeneste-tilgjengeliggjor-datasett]]
-
-[cols="30s,70d"]
-|===
-|Engelsk navn| serves dataset
-|URI| dcat:servesDataset
-|Range| dcat:Dataset
-|Beskrivelse| Refererer til datasett som datatjenesten kan distribuere.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|===
-
-=== Datatjeneste: utgiver (dct:publisher) [[Datatjeneste-utgiver]]
+=== Datatjeneste – kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| publisher
-|URI| dct:publisher
-|Range| foaf:Agent
-|Beskrivelse| Referanse til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher <\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673>`.
-|Multiplisitet| 0..1
-|Kravsnivå| Anbefalt
+| _English name_ | _contact point_
+| URI | dcat:contactPoint
+| Verdiområde / _Range_ | vcard:Kind
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
+
+_This property is used to specify contact information that can be used for sending comments about the Data Service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+|===
+
+=== Datatjeneste – tema (dcat:theme) [[Datatjeneste-tema]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _theme_
+| URI | dcat:theme
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et hovedtema for datatjenesten. En datatjeneste kan assosieres med flere tema.
+
+_This property is used to refer to themes for the data service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"]. 
+
+
+#Norsk utvidelse#: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].__
+
+__Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
+|===
+
+=== Datatjeneste – tilgjengeliggjør datasett (dcat:servesDataset) [[Datatjeneste-tilgjengeliggjor-datasett]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _serves dataset_
+| URI | dcat:servesDataset
+| Verdiområde / _Range_ | dcat:Dataset
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som datatjenesten kan distribuere.
+
+_This property is used to refer to a collection of data that this data service can distribute._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+|===
+
+=== Datatjeneste – utgiver (dct:publisher) [[Datatjeneste-utgiver]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _publisher_
+| URI | dct:publisher
+| Verdiområde / _Range_ | foaf:Agent
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
+
+_This property is used to refer the the agent (organisation) responsible for making the data service available._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad  / _Note_ | (Lite aktuelt for bruk i Norge) Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"] for EU-institusjoner og noen internasjonale organisasjoner. 
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
 |===
 
 
 == Valgfrie egenskaper for klassen _Datatjeneste_ [[Datatjeneste-valgfrie-egenskaper]]
 
-=== Datatjeneste: beskrivelse (dct:description) [[Datatjeneste-beskrivelse]]
+=== Datatjeneste – beskrivelse (dct:description) [[Datatjeneste-beskrivelse]]
 [cols="30s,70d"]
 |===
-|Engelsk navn| description
-|URI| dct:description
-|Range| rdfs:Literal
-|Beskrivelse| Inneholder en fritekstbeskrivelse av datatjenesten. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _description_
+| URI | dct:description
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datatjenesten. Bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
+
+_This property is used to specify a free-text account of the Data Service. This property can be repeated for parallel language versions of the description._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datatjeneste: dokumentasjon (foaf:page) [[Datatjeneste-dokumentasjon]]
+=== Datatjeneste – dokumentasjon (foaf:page) [[Datatjeneste-dokumentasjon]]
 [cols="30s,70d"]
 |===
-|Engelsk navn| page (documentation)
-|URI| foaf:page
-|Range| foaf:Document
-|Beskrivelse| Referanse til en side eller et dokument som beskriver datatjenesten.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
+| _English name_ | _documentation_
+| URI | foaf:page
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en side eller et dokument som beskriver datatjenesten.
+
+_This property is used to refer to a page or a document that describes the data service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
-=== Datatjeneste: følger (cpsv:follows) [[Datatjeneste-følger]]
-[cols="30s,70d"]
+=== Datatjeneste – følger (cpsv:follows) [[Datatjeneste-følger]]
+
+#_utgått_#
+
+=== Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation) [[Datatjeneste-gjeldendeLovgivning]]
+
+[cols="30s,70"]
 |===
-|Engelsk navn|follows
-|URI|cpsv:follows
-|Range|cpsv:Rule
-|Beskrivelse|Brukes til å referere til en regel som definerer den juridiske rammen for datatjenesten.
-|Multiplisitet|0..n
-|Kravsnivå|Valgfri
+| _English name_ | _applicable legislation_
+| URI | dcatap:applicableLegislation
+| Verdiområde / _Range_ | eli:LegalResource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller forvaltning av datatjenesten.
+
+_This property is used to refer to the legislation that mandates the creation or management of the Data Service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
-=== Datatjeneste: i samsvar med (dct:conformsTo) [[Datatjeneste-i-samsvar-med]]
-[cols="30s,70d"]
-|===
-|Engelsk navn| conforms to
-|URI| dct:conformsTo
-|Range| dct:Standard
-|Beskrivelse| Referanse til en spesifikasjon eller standard som datatjenesten implementerer.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|===
-
-=== Datatjeneste: landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
-[cols="30s,70d"]
-|===
-|Engelsk navn| landing page
-|URI| dcat:landingPage
-|Range| foaf:Document
-|Beskrivelse| Referanse til nettside som gir tilgang til datatjenesten og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|===
-
-=== Datatjeneste: lisens (dct:license) [[Datatjeneste-lisens]]
-[cols="30s,70d"]
-|===
-|Engelsk navn| licence
-|URI| dct:license
-|Range| dct:LicenseDocument
-|Beskrivelse| Inneholder lisensen som datatjenesten blir gjort tilgjengelig under.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|===
-
-=== Datatjeneste: medietype (dcat:mediaType) [[Datatjeneste-medietype]]
+=== Datatjeneste – i samsvar med (dct:conformsTo) [[Datatjeneste-i-samsvar-med]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| media type
-|URI| dcat:mediaType
-|Range| dct:MediaType
-|Beskrivelse| Opplysning om datatjenestens medietype. Kan gjentas for API-er og sluttbrukerapplikasjoner som leverer data i flere medietyper.
-|Multiplisitet| 0..n
-|Kravsnivå| Valgfri
-|Kommentar| Norsk utvidelse - Denne egenskapen finnes ikke i BRegDCAT-AP. Føyet til for å kunne uttrykke medietype(r) en datatjeneste kan tilby (istedenfor å måtte gå omveien via Distribusjon)
+| _English name_ | _application profile_
+| URI | dct:conformsTo
+| Verdiområde / _Range_ | dct:Standard
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en etablert (teknisk) standard som datatjenesten er i samsvar med.
+
+_This property is used to refer to an established (technical) standard to which the Data Service conforms._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datatjeneste: tilgangsrettigheter (dct:accessRights) [[Datatjeneste-tilgangsrettigheter]]
+=== Datatjeneste – landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
 [cols="30s,70d"]
 |===
-|Engelsk navn| access rights
-|URI| dct:accessRights
-|Range| dct:RightsStatement
-|Beskrivelse| Denne egenskapen kan inkludere informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
+| _English name_ | _landing page_
+| URI | dcat:landingPage
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til nettside som gir tilgang til datatjenesten og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige tilbyderen av datatjenesten.
+
+_This property is used to refer to a web page that provides access to the Data Service and/or additional information. It is intended to point to a landing page at the original data service provider, not to a page on a site of a third party, such as an aggregator._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datatjeneste: type (dct:type) [[Datatjeneste-type]]
+=== Datatjeneste – lisens (dct:license) [[Datatjeneste-lisens]]
 [cols="30s,70d"]
 |===
-|Engelsk navn| type
-|URI| dct:type
-|Range| skos:Concept
-|Beskrivelse| Referanse til et begrep som identifiserer datatjenestens type.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
+| _English name_ | _licence_
+| URI | dct:license
+| Verdiområde / _Range_ | dct:LicenseDocument
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lisensen som datatjenesten blir gjort tilgjengelig under.
+
+_This property is used to refer to a licence under which the data service is made available._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | (#Norsk utvidelse#) Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
+
+__(Norwegian extension) The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
+|===
+
+=== Datatjeneste – medietype (dcat:mediaType) [[Datatjeneste-medietype]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _media type_
+| URI | dcat:mediaType
+| Verdiområde / _Range_ | dct:MediaType
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi datatjenestens medietype. 
+
+_This property is used to specify media type of the data service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP.
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
+|===
+
+=== Datatjeneste – tilgangsrettigheter (dct:accessRights) [[Datatjeneste-tilgangsrettigheter]]
+[cols="30s,70d"]
+|===
+| _English name_ | _access rights_
+| URI | dct:accessRights
+| Verdiområde / _Range_ | dct:RightsStatement
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi informasjon angående tilgang eller begrensninger basert på personvern, sikkerhet eller andre retningslinjer.
+
+_This property is used to provide information regarding access or restrictions based on privacy, security, or other policies._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Verdien SKAL være `:PUBLIC`, `:RESTRICTED` eller `:NON_PUBLIC` fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[__Access right__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value MUST be `:PUBLIC`, `:RESTRICTED` or `:NON_PUBLIC` from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[Access right &#x29C9;, window="_blank", role="ext-link"].__
+|===
+
+=== Datatjeneste – type (dct:type) [[Datatjeneste-type]]
+[cols="30s,70d"]
+|===
+| _English name_ | _type_
+| URI | dct:type
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et begrep som identifiserer datatjenestens type.
+
+_This property is used to specify the type of the data service._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
 |===

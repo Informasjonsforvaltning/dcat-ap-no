@@ -1,0 +1,12 @@
+= Klassen Geometri (locn:Geometry) [[Geometri]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ | _Geometry_
+| URI | dct:Frequency
+| Anvendelse / _Usage note_ | Klassen brukes til å identifisere en lokasjon som et punkt, en linje, et polygon osv. uttrykt ved å bruke koordinater i noen koordinatsystemer. 
+
+_This class is used to to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system._
+|===

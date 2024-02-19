@@ -1,0 +1,12 @@
+= Klassen Ressurs (rdfs:Resource) [[Ressurs]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _Resource_
+| URI | rdfs:Resource
+| Anvendelse / _Usage note_ | Klassen brukes til å representere alt som er beskrevet vha. RDF.
+
+_This class is used to represent anything described by RDF._
+|===

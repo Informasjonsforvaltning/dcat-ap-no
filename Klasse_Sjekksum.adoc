@@ -1,29 +1,43 @@
-= Sjekksum (spdx:Checksum) [[Sjekksum]]
+= Klassen Sjekksum (spdx:Checksum) [[Sjekksum]]
 
-Klassen _Sjekksum_ er valgfri.
+[cols="30s,70d"]
+|===
+| _English name_ | _Checksum_
+| URI | spdx:Checksum
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en verdi som muliggjør autentisering av innholdet i en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
+
+_This class is used to represent a value that allows the contents of a file to be authenticated. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented._
+|===
 
 == Obligatoriske egenskaper for klassen _Sjekksum_ [[Sjekksum-obligatoriske-egenskaper]]
 
-=== Sjekksum: algoritme (spdx:algorithm) [[Sjekksum-algoritme]]
+=== Sjekksum – algoritme (spdx:algorithm) [[Sjekksum-algoritme]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| algorithm
-|URI|spdx:algorithm
-|Range| spdx:checksumAlgorithm_sha1
-|Beskrivelse| Identifiserer algoritmen som er brukt til å produsere sjekksum. For øyeblikket er SHA-1 den eneste algoritmen som er støttet. Det er forventet støtte for andre algoritmer på et senere tidspunkt.
-|Multiplisitet| 1..1
-|Kravsnivå| Obligatorisk
+| _English name_ | _algorithm_
+| URI |spdx:algorithm
+| Verdiområde / _Range_ | spdx:ChecksumAlgorithm
+| Anvendelse / _Usage note_ | Egenskapen brukes til å identifisere algoritmen som er brukt til å produsere sjekksummen. 
+
+_This property is used to refer to the algorithm used to produce the checksum._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Verdien SKAL velges blant https://spdx.org/rdf/terms/#d4e2129[__Checksum algorithm members__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value MUST be chosen among https://spdx.org/rdf/terms/#d4e2129[Checksum algorithm members &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
-=== Sjekksum: sjekksumverdi (spdx:checksumValue) [[Sjekksum-sjekksumverdi]]
+=== Sjekksum – sjekksumverdi (spdx:checksumValue) [[Sjekksum-sjekksumverdi]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| checksum value
-|URI| spdx:checksumValue
-|Range| rdfs:Literal typed as xsd:hexBinary
-|Beskrivelse| Denne egenskapen brukes til å oppgi en heksadesimal-kodet verdi med små bokstaver, produsert ved hjelp av en spesifikk algoritme.
-|Multiplisitet| 1..1
-|Kravsnivå| Obligatorisk
+| _English name_ | _checksum value_
+| URI | spdx:checksumValue
+| Verdiområde / _Range_ | xsd:hexBinary
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en heksadesimal-kodet verdi med små bokstaver, produsert ved hjelp av en spesifikk algoritme.
+
+_This property is used to specify a lower case hexadecimal encoded digest value produced using a specific algorithm._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===

@@ -1,0 +1,3 @@
+= Klassen Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
+
+#_hele klassen utgått_#

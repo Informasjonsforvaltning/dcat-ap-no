@@ -1,31 +1,50 @@
-= Dokument (foaf:Document) [[Dokument]]
+= Klassen Dokument (foaf:Document) [[Dokument]]
 
-Klassen _Dokument_ er valgfri.
+[cols="30s,70d"]
+|===
+| _English name_ | _Document_
+| URI | foaf:Document
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en tekstlig ressurs som inneholder informasjon beregnet på mennesker. For eksempel en nettside om et datasett.
+
+_This class is used to represent a textual resource intended for human consumption that contains information, e.g. a web page about a Dataset._
+|===
+
 
 == Anbefalte egenskaper for klassen _Dokument_ [[Dokument-anbefalte-egenskaper]]
 
-=== Dokument: språk (dct:language) [[Dokument-språk]]
+=== Dokument – språk (dct:language) [[Dokument-språk]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| language
-|URI| dct:language
-|Range| dct:LinguisticSystem
-|Beskrivelse| Brukes til å referere til språket som dokumentet er i.
-|Multiplisitet| 0..1
-|Kravsnivå| Anbefalt
-|Kommentar| Norsk utvidelse - egenskapen er eksplisitt tatt med for å kunne oppgi språket for dokumentet.
+| _English name_ | _language_
+| URI | dct:language
+| Verdiområde / _Range_ | dct:LinguisticSystem
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til språket som dokumentet er på.
+
+_This property is used to specify the language of the document._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP.
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
+| Merknad 2 / _Note 2_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[__Language__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
-=== Dokument: tittel (dct:title) [[Dokument-tittel]]
+=== Dokument – tittel (dct:title) [[Dokument-tittel]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| title
-|URI| dct:title
-|Range| rdfs:Literal
-|Beskrivelse| Brukes til å referere til tittel for dokumentet. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
-|Multiplisitet| 0..n
-|Kravsnivå| Anbefalt
-|Kommentar| Norsk utvidelse - egenskapen er eksplisitt tatt med for å kunne oppgi tittel for dokumentet.
+| _English name_ | _title_
+| URI | dct:title
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi tittel for dokumentet. Egenskapen bør gjentas når tittelen finnes i flere ulike språk/målformer.
+
+_This property is used to specify the title of the document. This property can be repeated for parallel language versions of the title._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP.
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
