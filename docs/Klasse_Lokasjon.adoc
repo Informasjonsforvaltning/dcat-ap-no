@@ -1,45 +1,58 @@
-= Lokasjon (dct:Location) [[Lokasjon]]
+= Klassen Lokasjon (dct:Location) [[Lokasjon]]
 
-Klassen _Lokasjon_ er valgfri.
+[cols="30s,70d"]
+|===
+| _English name_ | _Location_
+| URI | dct:Location
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en region eller et navngitt sted. Det kan representeres ved hjelp av et kontrollert vokabular eller med geografiske koordinater. I sistnevnte tilfelle anbefales bruk av EUs https://semiceu.github.io/Core-Location-Vocabulary/[__Core Location Vocabulary__ &#x29C9;, window="_blank", role="ext-link"], ved å følge fremgangsmåten beskrevet i https://semiceu.github.io/GeoDCAT-AP/releases/[GeoDCAT-AP spesifikasjonen &#x29C9;, window="_blank", role="ext-link"].
+
+__This class is used to refer to a spatial region or named place. It can be represented using a controlled vocabulary or with geographic coordinates. In the latter case, the use of the https://semiceu.github.io/Core-Location-Vocabulary/[Core Location Vocabulary &#x29C9;, window="_blank", role="ext-link"] is recommended, following the approach described in the https://semiceu.github.io/GeoDCAT-AP/releases/[GeoDCAT-AP specification &#x29C9;, window="_blank", role="ext-link"].__
+|===
+
 
 == Anbefalte egenskaper for klassen _Lokasjon_ [[Lokasjon-anbefalte-egenskaper]]
 
-=== Lokasjon: område (dcat:bbox) [[Lokasjon-område]]
+=== Lokasjon – område (dcat:bbox) [[Lokasjon-område]]
 [cols="30s,70d"]
 |===
-|Engelsk navn| bounding box
-|URI| dcat:bbox
-|Range| rdfs:Literal
-|Beskrivelse| Refererer til et avgrenset område (bounding box) for en ressurs.
-|Multiplisitet| 0..1
-|Kravsnivå| Anbefalt
+| _English name_ | _bbox_
+| URI | dcat:bbox
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et avgrenset område (bounding box) for en ressurs.
+
+_This property is used to refer to a geographic bounding box of a resource._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
-=== Lokasjon: geografisk midtpunkt (dcat:centroid) [[Lokasjon-geografisk-midtpunkt]]
+=== Lokasjon – geografisk midtpunkt (dcat:centroid) [[Lokasjon-geografisk-midtpunkt]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| centroid
-|URI| dcat:centroid
-|Range| rdfs:Literal
-|Beskrivelse| Refererer til et geografisk midtpunkt (centroid) for en ressurs.
-|Multiplisitet| 0..1
-|Kravsnivå| Anbefalt
+| _English name_ | _centroid_
+| URI | dcat:centroid
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et geografisk midtpunkt (centroid) for en ressurs.
+
+_This property is used to refer to the geographic center (centroid) of a resource._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
 == Valgfrie egenskaper for klassen _Lokasjon_
 
-=== Lokasjon: geometri (locn:geometry) [[Lokasjon-geometri]]
+=== Lokasjon – geometri (locn:geometry) [[Lokasjon-geometri]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| geometry
-|URI| locn:geometry
-|Range| rdfs:Literal
-|Beskrivelse| Denne egenskapen knytter ressursen til tilhørende geometri.
-|Multiplisitet| 0..1
-|Kravsnivå| Valgfri
-|===
+| _English name_ | _geometry_
+| URI | locn:geometry
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å knytte ressursen til tilhørende geometri.
 
-NOTE: Vær oppmerksom på rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. +
+_This property is used to refer to the corresponding geometry for a resource._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri
+| Merknad / _Note_ | Vær oppmerksom på rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. +
 Eksempel: hvis dekningsområde er et område, bruk område (`dcat:bbox`), ellers bruk geometri (`locn:geometry`).
+|===

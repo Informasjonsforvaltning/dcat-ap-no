@@ -22,6 +22,10 @@ Disse kriteriene er ikke tenkt å definere et sett med krav til kontrollerte vok
 
 Under følger en oversikt over kontrollerte vokabular som *skal* brukes (= obligatorisk) for egenskapene i listen, dette for å sikre et minimum av samhandlingsevne.
 
+#I kommende versjon skal krav til bruk av kontrollerte vokabularer tas med under spesifikasjonen til de aktuelle egenskapene#
+
+#Kravene her etter er ikke oppdatert, og skal flyttes/slettes#
+
 === For egenskapen dct:accessRights [[Skal-brukes-for-accessRights]]
 
 [cols="30s,70d"]

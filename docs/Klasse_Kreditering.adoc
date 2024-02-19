@@ -1,0 +1,12 @@
+= Klassen Kreditering (prov:Attribution) [[Kreditering]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ | _Attribution_
+| URI | vcard:Kind
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en kreditering til en aktør som har en eller annen form for ansvar for en ressurs. 
+
+_This class is used to represent an attribution, i.e. the ascribing of an entity to an agent._
+|===

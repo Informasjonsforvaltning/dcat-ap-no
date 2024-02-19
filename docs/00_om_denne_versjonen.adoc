@@ -1,0 +1,8 @@
+= Om denne versjonen
+
+Denne standarden, DCAT-AP-NO, er under revisjon.
+
+Dette er utkast til kommende høringsversjon til den reviderte DCAT-AP-NO. 
+
+Denne versjonen er basert på https://semiceu.github.io/DCAT-AP/releases/3.0.0-draft/[EUs utkast til DCAT-AP v.3 &#x29C9;, window="_blank", role="ext-link"] som for tiden er #under høring#. 
+

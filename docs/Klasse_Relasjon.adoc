@@ -1,0 +1,41 @@
+= Klassen Relasjon (dcat:Relationship) [[Relasjon]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _Relationship_
+| URI | dcat:Relationship
+| Anvendelse / _Usage note_ | Brukes til å knytte tilleggsinformasjon til en relasjon mellom ressurser.
+
+_This class is used to attach additional information to a relationship between DCAT Resources._
+|===
+
+== Obligatoriske egenskaper for klassen _Relasjon_ [[Relasjon-obligatoriske-egenskaper]]
+
+=== Relasjon – har rolle (dcat:hadRole) [[Relasjon-harRolle]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _had role_
+| URI | dcat:hadRole
+| Verdiområde / _Range_ | dcat:Role
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til funksjonen til en entitet eller aktør i forhold til en annen enhet eller ressurs.
+
+_This property is used to refer to a function of an entity or agent with respect to another entity or resource._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+|===
+
+=== Relasjon – relasjon (dct:relation) [[Relasjon-relasjon]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _relation_
+| URI | dct:relation
+| Verdiområde / _Range_ | rdfs:Resource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til ressursen som har relasjon til kilderessursen.
+
+_This property is used to refer to a resource related to the source resource._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+|===
+

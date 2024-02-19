@@ -1,0 +1,13 @@
+= Klassen Rolle (dcat:Role) [[Rolle]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _Role_
+| URI |  dcat:Role
+| Subklasse av / _Subclass of_ | skos:Concept
+| Anvendelse / _Usage note_ | Klassen brukes til å representere funksjonen til en ressurs eller aktør i relasjon til en annen ressurs, i konteksten av ressurskreditering eller ressursrelasjon.
+
+_This property is used to represent the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships._
+|===

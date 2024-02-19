@@ -1,0 +1,3 @@
+= Om bruk av kontrollerte vokabularer [[Kontrollerte-vokabularer]]
+
+_#hele kapitlet utgått, fordi krav til bruk av kontrollerte vokabularer er sammen med spesifikasjonen til den aktuelle egenskapen#_

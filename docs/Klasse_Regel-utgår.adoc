@@ -1,0 +1,3 @@
+= Klassen Regel (cpsv:Rule) [[Regel]]
+
+#_hele klassen utgått_#

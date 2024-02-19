@@ -1,0 +1,13 @@
+= Klassen Medietype (dct:MediaType) [[Medietype]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ | _Media type_
+| URI | dct:MediaType
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en medietype, for eksempel formatet til en datafil.
+
+_This class is used to represent a media type, e.g. the format of a computer file._
+|===
+

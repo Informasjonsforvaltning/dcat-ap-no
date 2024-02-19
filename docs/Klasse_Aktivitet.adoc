@@ -1,0 +1,17 @@
+= Klassen Aktivitet (prov:Activity) [[Aktivitet]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70"]
+|===
+| _English name_ | _Activity_ 
+| URI | prov:Activity
+|Anvendelse / _Usage note_ | 
+Denne klassen brukes til å representere en aktivitet, dvs. ting som har skjedd over en periode og som handler på eller med en entitet. Det kan inkludere konsumering, prosessering, transformering, modifisering, flytting, bruk, eller generering av entiteter.
+
+__This class is used to represent an activity, i.e., something that occurs over a period of time and acts upon or with entities; it main include consuming, processing, transforming, modifying, relocating, using, or generating entities.__
+| Merknad / _Note_ | Denne standarden spesifiserer ingen eksplisitt krav til egenskaper til denne klassen.
+
+__This specification does not impose any additional requirements to properties for this entity.__
+| Eksempel | Det kontrollerte vokabularet https://data.norge.no/vocabulary/provenance-activity-type[Proveniensaktivitetstype &#x29C9;, window="_blank", role="ext-link"] inneholder tre predefinerte instanser av denne klassen: vedtak, innhenting fra tredjepart, innhenting fra brukeren. 
+|===
