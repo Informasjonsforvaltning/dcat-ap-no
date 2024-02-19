@@ -22,7 +22,7 @@ __It is recommended to avoid Dataset Series without a dataset in the collection.
 | _English name_ | _contact point_
 | URI | dcat:contactPoint
 | Verdiområde / _Range_ | vcard:Kind
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentar datasettserien.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentarer om datasettserien.
 
 _This property is used to specify contact information that can be used concerning questions and comments about the Dataset serie._
 | Multiplisitet / _Multiplicity_ | 1..n

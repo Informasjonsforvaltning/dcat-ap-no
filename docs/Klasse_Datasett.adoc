@@ -54,7 +54,7 @@ _Norwegian extension: The requirement level changed from optional to mandatory_
 | _English name_ | _contact point_
 | URI | dcat:contactPoint
 | Verdiområde / _Range_ | vcard:Kind
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentar datasettet.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentarer om datasettet.
 
 _This property is used to specify contact information that can be used concerning questions and comments about the Dataset._
 | Multiplisitet / _Multiplicity_ | 1..n
