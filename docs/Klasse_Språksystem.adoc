@@ -1,0 +1,14 @@
+= Klassen Språksystem (dct:LinguisticSystem) [[Språksystem]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ | _Linguistic system_
+| URI | dct:LinguisticSystem
+| Anvendelse / _Usage note_ | Klassen brukes til å representere et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk.
+
+_This class is used to represent a system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language._
+| Eksempel | Se EUs kontrollerte vokabular for https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language[__Language__ &#x29C9;, window="_blank", role="ext-link"]. 
+|===
+

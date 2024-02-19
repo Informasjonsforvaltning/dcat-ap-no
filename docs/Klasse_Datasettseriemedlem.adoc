@@ -1,0 +1,5 @@
+= Klassen Datasettseriemedlem (dcat:Dataset) [[Datasettseriemedlem]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+#_avventer EU, siden dette er et av diskusjonspunktene i arbeidsgruppen#_

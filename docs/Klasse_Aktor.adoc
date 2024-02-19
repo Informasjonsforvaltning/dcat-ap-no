@@ -1,46 +1,73 @@
-= Aktør (foaf:Agent) [[Aktør]]
+= Klassen Aktør (foaf:Agent) [[Aktør]]
 
-Klassen _Aktør_ er obligatorisk.
+[cols="30s,70"]
+|===
+| _English name_ | _Agent_
+| URI | foaf:Agent
+|Anvendelse / _Usage note_ | Klassen brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. Dersom aktøren er en organisasjon er det anbefalt å bruke http://www.w3.org/TR/vocab-org/[_Organization Ontology_ &#x29C9;, window="_blank", role="ext-link"].
 
-Det anbefales at URI til Aktør (foaf:Agent) er identisk med den URI som Enhetsregisteret (Brønnøysundregistrene) har på
-enheten/virksomheten dersom den finnes i registeret, f.eks. `dct:publisher <\https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/974760673>`.
+__This class is used to represent any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources. If the Agent is an organisation, the use of the http://www.w3.org/TR/vocab-org/[Organization Ontology &#x29C9;, window="_blank", role="ext-link"] is recommended.__
+|===
+
 
 == Obligatoriske egenskaper for klassen _Aktør_ [[Aktør-obligatoriske-egenskaper]]
 
-=== Aktør: navn (foaf:name) [[Aktør-navn]]
+=== Aktør – navn (foaf:name) [[Aktør-navn]]
 
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| name
-|URI| foaf:name
-|Range| rdfs:Literal
-|Beskrivelse| Navn på aktøren. Denne egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
+| _English name_ |  _name_
+| URI | foaf:name
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet på aktøren. Egenskapen kan gjentas for ulike versjoner av navnet (som navnet på forskjellige språk).
+
+__This property contains the name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages).__
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
+
+Eksempel i RDF Turtle
+-----
+<exAgent> a foaf:Agent ;
+   foaf:name "English name"@en, "Norsk navn"@nb ;
+   .
+-----
 
 == Anbefalte egenskaper for klassen _Aktør_
 
-=== Aktør: organisasjonsidentifikator (dct:identifier) [[Aktør-organisasjonsidentifikator]]
+=== Aktør – organisasjonsidentifikator (dct:identifier) [[Aktør-organisasjonsidentifikator]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| identifier
-|URI| dct:identifier
-|Range| rdfs:Literal
-|Beskrivelse| Egenskap som angir organisasjonens identifikasjonsnummer, for eksempel i henhold til Enhetsregisterets organisasjonsnummer.
-|Multiplisitet| 0..1
-|Kravsnivå| Anbefalt
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å angi aktørens identifikasjonsnummer.
+
+__This property contains the identifier for the Agent.__
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Når aktøren har et organisasjonsnummer registrert i Enhetsregisteret, BØR identifikatoren oppgis som en URI med f.eks. følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: \https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn.
+
+__When the agent has an organization number registered in the Central Coordinating Register for Legal Entities (CCR), the identifier SHOULD be given as a URI with e.g. the following pattern where "nnnnnnnnn" is the organization number: \https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn.__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: ikke eksplisitt spesifisert i DCAT-AP. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
-=== Aktør: utgivertype (dct:type) [[Aktør-utgivertype]]
+=== Aktør – type (dct:type) [[Aktør-type]]
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| type
-|URI| dct:type
-|Range| skos:Concept
-|Beskrivelse| Refererer til type aktør som gjør katalogen og/eller ressursen tilgjengelig.
-|Multiplisitet| 0..1
-|Kravsnivå| Anbefalt
+| _English name_ | _type_
+| URI | dct:type
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til type aktør.
+
+_This property is used to specify the nature of the agent._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Verdien SKAL velges fra https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/AD[_ADMS publisher type_ &#x29C9;, window="_blank", role="ext-link"] (lenket ressurs er i RDF).
+
+__The value SHALL be chosen from https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/AD[ADMS publisher type &#x29C9;, window="_blank", role="ext-link"] (the ressurs linked is in RDF).__
 |===

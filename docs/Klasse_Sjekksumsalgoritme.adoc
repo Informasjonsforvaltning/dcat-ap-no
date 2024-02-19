@@ -1,0 +1,13 @@
+= Klassen Sjekksumsalgoritme (spdx:ChecksumAlgorithm) [[Sjekksumsalgoritme]]
+
+#_ny, eksplisitt spesifisert klasse_# 
+
+[cols="30s,70d"]
+|===
+| _English name_ | _Checksum algorithm_
+| URI | spdx:Checksum
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en sjekksumsalgoritme.
+
+_This class is used to represent an algorithm for Checksums._
+| Eksempel | Se https://spdx.org/rdf/terms/#d4e2129[__Checksum algorithm members__ &#x29C9;, window="_blank", role="ext-link"] for predefinerte medlemmer av sjekksumsalgoritmer.
+|===

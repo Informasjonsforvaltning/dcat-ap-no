@@ -1,8 +1,8 @@
-= UML-diagram [[UML-diagram]] #(ikke oppdatert)#
+= UML-diagram [[UML-diagram]] 
 
-UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 2.1 #(ikke oppdatert)#
+UML-diagram over alle klassene og egenskapene i DCAT-AP-NO v. 3 #(_kommer_)#
 
-[link=images/DCAT-AP-NO2_20210903.png]
-image::images/DCAT-AP-NO2_20210903.png[]
+// [link=images/DCAT-AP-NO2_20210903.png]
+// image::images/DCAT-AP-NO2_20210903.png[]
 
-Last ned modell: link:images/DCAT-AP-NO2_20210903.png[png] |  link:files/DCAT-AP-NO2_20210903.eap[XMI for EA]
+// Last ned modell: link:images/DCAT-AP-NO2_20210903.png[png] |  link:files/DCAT-AP-NO2_20210903.eap[XMI for EA]

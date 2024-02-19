@@ -1,17 +1,17 @@
-= Tematisk skjema (skos:ConceptScheme) [[TematiskSkjema]]
+= Klassen Tematisk skjema (skos:ConceptScheme) [[TematiskSkjema]]
 
-Klassen _Tematisk skjema_ er obligatorisk.
-
-== Obligatoriske egenskaper for klassen _Tematisk skjema_ [[TematiskSkjema-obligatoriske-egenskaper]]
-
-=== Tematisk skjema: tittel (dct:title) [[TematiskSkjema-tittel]]
-
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| title
-|URI| dct:title
-|Range| rdfs:Literal
-|Beskrivelse| Tittel for det tematiske skjemaet. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
+| _English name_ | _Concept Scheme_
+| URI | skos:ConceptScheme
+| Anvendelse / _Usage note_ | Klassen brukes til å representere et tematisk skjema, også kalt en klassifikasjon, et kontrollert vokabular etc. 
+
+_This class is used to represent a concept scheme, also known as a classification, a controlled vocabulary etc._
+| Merknad 1 / _Note 1_ | Se https://data.norge.no/specification/xkos-ap-no[Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;, window="_blank", role="ext-link"] for hva som skal/bør/kan tas med i beskrivelsen av en klassifikasjon, et kontrollert vokabular el.l.
+
+__See https://data.norge.no/specification/xkos-ap-no[Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of XKOS) for what shall/should/may be included i the description of a classification, a controlled vocabulary or suchlike.__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Her henvises det til denne aktuelle nasjonale spesifikasjonen som stiller strengere krav enn DCAT-AP.
+
+_Norwegian extension: This application profile refers to the relevant national specification which imposes more restrictive requirements than DCAT-AP._
 |===
+

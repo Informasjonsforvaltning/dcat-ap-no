@@ -1,17 +1,29 @@
-= Identifikator (adms:Identifier) [[Identifikator]]
+= Klassen Identifikator (adms:Identifier) [[Identifikator]]
 
-Klassen _Identifikator_ er valgfri.
-
-== Obligatoriske egenskaper for klassen _Identifikator_ [[Identifikator-obligatoriske-egenskaper]]
-
-=== Identifikator: notasjon (skos:notation) [[Identifikator-notasjon]]
+_#NB! Har gitt innspill til EU at noe ikke stemmer med denne klassen. Klassen må gjennomgåes etter at EU er ferdig med DCAT-AP.#_
 
 [cols="30s,70d"]
 |===
-|Engelsk navn| notation
-|URI| skos:notation
-|Range| rdfs:Literal typed with the URI of one of the members of the DataCite Resource Identifier Scheme
-|Beskrivelse| Identifikator i henhold til nevnte identifikatorskjema.
-|Multiplisitet| 1..1
-|Kravsnivå| Obligatorisk
+| _English name_ | _Identifier_
+| URI | adms:Identifier
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en identifikator i en bestemt kontekst, bestående av strengen som er identifikatoren; en valgfri identifikator for identifikatorsystemet; en valgfri identifikator for versjonen av identifikatorsystemet; en valgfri identifikator for etaten som administrerer identifikatorsystemet.
+
+_This class is used to represent an identifier in a particular context, consisting of the content string that is the identifier; an optional identifier for the identifier scheme; an optional identifier for the version of the identifier scheme; an optional identifier for the agency that manages the identifier scheme._
+|===
+
+
+== Obligatoriske egenskaper for klassen _Identifikator_ [[Identifikator-obligatoriske-egenskaper]]
+
+=== Identifikator – notasjon (skos:notation) [[Identifikator-notasjon]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _notation_
+| URI | skos:notation
+| Verdiområde / _Range_ | rdfs:Literal 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator i henhold til nevnte identifikatorsystem.
+
+_This property contains a string that is an identifier in the context of the identifier scheme referenced by its datatype._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===

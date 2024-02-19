@@ -1,17 +1,17 @@
-= Tema (skos:Concept) [[Tema]]
+= Klassen Tema (skos:Concept) [[Tema]]
 
-Klassen _Tema_ er obligatorisk.
-
-== Obligatoriske egenskaper for klassen _Tema_ [[Tema-obligatoriske-egenskaper]]
-
-=== Tema: foretrukket tittel (skos:prefLabel) [[Tema-foretrukketTittel]]
-
-[cols="30s,70d"]
+[cols="30s,70"]
 |===
-|Engelsk navn| preferred label
-|URI| skos:prefLabel
-|Range| rdfs:Literal
-|Beskrivelse| Foretrukket tittel for kategorien. Bør gjentas når tittelen finnes i flere ulike språk/målformer.
-|Multiplisitet| 1..n
-|Kravsnivå| Obligatorisk
+| _English name_ | _Concept_
+| URI | skos:Concept
+| Anvendelse / _Usage note_ | Klassen brukes til å representere et tema (i et tematisk skjema), også kalt en kategori (i en klassifikasjon, et kontrollert vokabular osv.). 
+
+_This class is used to represent a concept (in a concept scheme), also known as a category (in a classification, a controlled vocabulary etc.)._
+| Merknad 1 / _Note 1_ | Se https://data.norge.no/specification/xkos-ap-no[Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;, window="_blank", role="ext-link"] for hva som skal/bør/kan tas med i beskrivelsen av en kategori i en klassifikasjon.
+
+__See https://data.norge.no/specification/xkos-ap-no[Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of XKOS) for what shall/should/may be included i the description of a category in a classification.__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Her henvises det til denne aktuelle nasjonale spesifikasjonen som stiller strengere krav enn DCAT-AP.
+
+_Norwegian extension: This application profile refers to the relevant national specification which imposes more restrictive requirements than DCAT-AP._
 |===
+
