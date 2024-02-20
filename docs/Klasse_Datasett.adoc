@@ -42,9 +42,9 @@ _This property is used to specify a free-text account of the Dataset.This proper
 _This property is used to specify the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri til obligatorisk. 
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n. 
 
-_Norwegian extension: The requirement level changed from optional to mandatory_
+_Norwegian extension: The requirement level changed from optional to mandatory, thus also the multiplicity from 0..n to 1..n._
 |===
 
 === Datasett – kontaktpunkt (dcat:contactPoint) [[Datasett-kontaktpunkt]]
@@ -383,9 +383,9 @@ _#utgått (invers egenskap)#_
 _This property is used to refer to another dataset that this dataset replaces._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
 === Datasett – erstattes av (dct:isReplacedBy) [[Datasett-erstattesAv]]
@@ -614,6 +614,9 @@ _This property is used to refer to a statement about the lineage of a Dataset._
 _This property is used to refer to an entity responsible for producing the dataset._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | #Norsk utvidelse#: Multiplisiteten endret fra 0..n til 0..1.
+
+_Norwegian extension: The multiplicity changed from 0..n to 0..1._
 |===
 
 === Datasett – relatert ressurs (dct:relation) [[Datasett-relatertRessurs]]

@@ -12,19 +12,6 @@ __This class is used to refer to a spatial region or named place. It can be repr
 
 == Anbefalte egenskaper for klassen _Lokasjon_ [[Lokasjon-anbefalte-egenskaper]]
 
-=== Lokasjon – område (dcat:bbox) [[Lokasjon-område]]
-[cols="30s,70d"]
-|===
-| _English name_ | _bbox_
-| URI | dcat:bbox
-| Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et avgrenset område (bounding box) for en ressurs.
-
-_This property is used to refer to a geographic bounding box of a resource._
-| Multiplisitet / _Multiplicity_ | 0..1
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-|===
-
 === Lokasjon – geografisk midtpunkt (dcat:centroid) [[Lokasjon-geografisk-midtpunkt]]
 
 [cols="30s,70d"]
@@ -35,6 +22,19 @@ _This property is used to refer to a geographic bounding box of a resource._
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et geografisk midtpunkt (centroid) for en ressurs.
 
 _This property is used to refer to the geographic center (centroid) of a resource._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+|===
+
+=== Lokasjon – område (dcat:bbox) [[Lokasjon-område]]
+[cols="30s,70d"]
+|===
+| _English name_ | _bbox_
+| URI | dcat:bbox
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et avgrenset område (bounding box) for en ressurs.
+
+_This property is used to refer to a geographic bounding box of a resource._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
