@@ -239,6 +239,23 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 
 == Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
 
+=== Katalog – datasettserie (dcat:datasetSeries) [[Katalog-datasettserie]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _dataset_
+| URI | dcat:datasetSeries 
+| Verdiområde / _Range_ | dcat:DatasetSeries
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasettserie som er en del av katalogen.
+
+_This property is used to refer to a Dataset series that is part of the Catalogue._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+
+_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
+|===
+
 === Katalog – datatjeneste (dcat:service) [[Katalog-datatjeneste]]
 
 [cols="30s,70d"]
