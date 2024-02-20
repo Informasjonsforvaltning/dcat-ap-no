@@ -239,12 +239,12 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 
 == Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
 
-=== Katalog – datasettserie (dcat:datasetSeries) [[Katalog-datasettserie]]
+=== Katalog – datasettserie (dcatap:datasetSeries) [[Katalog-datasettserie]]
 
 [cols="30s,70d"]
 |===
-| _English name_ |  _dataset_
-| URI | dcat:datasetSeries 
+| _English name_ |  _dataset series_
+| URI | dcatap:datasetSeries 
 | Verdiområde / _Range_ | dcat:DatasetSeries
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasettserie som er en del av katalogen.
 
