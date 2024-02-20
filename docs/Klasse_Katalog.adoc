@@ -343,3 +343,18 @@ _This property is used to refer to a statement that specifies rights associated 
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
+
+=== Katalog – tidsrom (dct:temporal) [[Katalog-tidsrom]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _temporal coverage_
+| URI | dct:temporal
+| Verdiområde / _Range_ | dct:PeriodOfTime
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et tidsrom som er dekket av katalogen.
+
+_This property is used to specify a temporal period that the Catalogue covers._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
