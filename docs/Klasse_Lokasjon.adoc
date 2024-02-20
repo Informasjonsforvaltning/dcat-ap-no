@@ -47,12 +47,12 @@ _This property is used to refer to the geographic center (centroid) of a resourc
 |===
 | _English name_ | _geometry_
 | URI | locn:geometry
-| Verdiområde / _Range_ | rdfs:Literal
+| Verdiområde / _Range_ | locn:Geometry
 | Anvendelse / _Usage note_ | Egenskapen brukes til å knytte ressursen til tilhørende geometri.
 
 _This property is used to refer to the corresponding geometry for a resource._
 | Multiplisitet / _Multiplicity_ | 0..1
-| Kravnivå / _Requirement level_ | Valgfri
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 | Merknad / _Note_ | Vær oppmerksom på rekkefølgen på bruken av disse: bruk den mest spesifikke geografiske angivelsen du ønsker å oppgi. +
 Eksempel: hvis dekningsområde er et område, bruk område (`dcat:bbox`), ellers bruk geometri (`locn:geometry`).
 |===

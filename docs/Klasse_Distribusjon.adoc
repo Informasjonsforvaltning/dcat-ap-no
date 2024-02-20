@@ -57,9 +57,12 @@ _Norwegian extension: The requirement level changed from optional to recommended
 _This property is used to specify the file format of the Distribution._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[__File type__ &#x29C9;, window="_blank", role="ext-link"].
+| Merknad 1 / _Note 1_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[__File type__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[File type &#x29C9;, window="_blank", role="ext-link"].__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Multiplisiteten endret fra 0..1 til 0..n. 
+
+_Norwegian extension: The multiplicity changed from 0..1 to 0..n._
 |===
 
 === Distribusjon – lisens (dct:license) [[Distribusjon-lisens]]

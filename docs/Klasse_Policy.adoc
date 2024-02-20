@@ -5,8 +5,8 @@
 [cols="30s,70d"]
 |===
 | _English name_ | _Policy_
+| URI | odrl:Policy
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en ikke-tom gruppe av tillatelser og/eller forbud.
 
 _This class is used to represent a non-empty group of Permissions and/or Prohibitions.#_
-| URI | odrl:Policy
 |===

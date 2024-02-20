@@ -37,6 +37,7 @@ Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (#_
 | Datasett - følger | cpsv:follows | utgått | Følger DCAT-AP. Behovet dekkes av en egen utvidelse til DCAT-AP som kommer senere. 
 | Datasett – har kvalitetsnote | dqv:hasQualityAnnotation | utgått | Dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"]
 | Datasett – har måleresultat | dqv:hasQualityMeasurement | utgått | Dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"]
+| Datasett – har versjon | dcat:hasVersion | URIen endret fra dct:hasVersion til dcat:hasVersion | Følger DCAT-AP. 
 | Datasett – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til anbefalt; multiplisiteten endret tilsvarende fra 1..n til 0..n. | Følger DCAT-AP.
 | Datasett – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Datasett – krever | dct:requires | utgått | Følger DCAT-AP (ingen reell bruk).
@@ -46,6 +47,7 @@ Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (#_
 | Datasett – versjon | dcat:version | Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP.
 |  Datasett serie | dcat:DatasetSeries | Datasettserie er subklasse av Katalogisert ressurs istedenfor Datasett | Følger DCAT-AP. 
 | Datasettserie – første |dcat:first | Kravnivået endret fra obligatorisk til anbefalt | #???#
+| Datatjeneste – i samsvar med | dct:conformsTo | Kravnivået endret fra obligatorisk til anbefalt | Følger DCAT-AP. 
 | Datasettserie – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige.
 | Datatjeneste – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Distribusjon – filstørrelse | dcat:byteSize | Verdiområdet endret fra xsd:decimal til  xsd:nonNegativeInteger | Følger DCAT-AP.
@@ -56,6 +58,7 @@ Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (#_
 | Katalog – temaer | dcat:themeTaxonomy | Krav til obligatorisk bruk av EUs EuroVoc utgått. | Følger DCAT-AP.
 | Katalogpost – i samsvar med | dct:conformsTo| Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP. 
 | Kreditering | prov:Attribution | ny - eksplisitt spesifisert | Følger DCAT-AP.
+| Lokasjon – geometri | locn:geometry | Verdiområdet endret fra rdfs:Literal til locn:Geometry | Følger DCAT-AP. 
 | Offentlig organisasjon | cv:PublicOrganisation | utgått | Følger DCAT-AP. Behovet dekkes av en egen utvidelse til DCAT-AP som kommer senere. 
 | Offentlig tjeneste | cpsv:PublicService | utgått | Følger DCAT-AP. Behovet dekkes av en egen utvidelse til DCAT-AP som kommer senere.
 | Regel | cpsv:Rule | utgått | Følger DCAT-AP. Behovet dekkes av en egen utvidelse til DCAT-AP som kommer senere.
