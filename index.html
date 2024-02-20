@@ -598,7 +598,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-harDel">Datasett – har del (dct:hasPart)</a></li>
 <li><a href="#Datasett-harKvalitetsnote">Datasett – har kvalitetsnote (dqv:hasQualityAnnotation)</a></li>
 <li><a href="#Datasett-harMåleresultat">Datasett – har måleresultat (dqv:hasQualityMeasurement)</a></li>
-<li><a href="#Datasett-harVersjon">Datasett – har versjon (dct:hasVersion)</a></li>
+<li><a href="#Datasett-harVersjon">Datasett – har versjon (dcat:hasVersion)</a></li>
 <li><a href="#Datasett-iSamsvarMed">Datasett – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a></li>
 <li><a href="#Datasett-kilde">Datasett – kilde (dct:source)</a></li>
@@ -665,6 +665,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-emneord">Datatjeneste – emneord (dcat:keyword)</a></li>
 <li><a href="#Datatjeneste-endepunktsbeskrivelse">Datatjeneste – endepunktsbeskrivelse (dcat:endpointDescription)</a></li>
 <li><a href="#Datatjeneste-format">Datatjeneste – format (dct:format)</a></li>
+<li><a href="#Datatjeneste-i-samsvar-med">Datatjeneste – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datatjeneste-tema">Datatjeneste – tema (dcat:theme)</a></li>
 <li><a href="#Datatjeneste-tilgjengeliggjor-datasett">Datatjeneste – tilgjengeliggjør datasett (dcat:servesDataset)</a></li>
 <li><a href="#Datatjeneste-utgiver">Datatjeneste – utgiver (dct:publisher)</a></li>
@@ -676,7 +677,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-dokumentasjon">Datatjeneste – dokumentasjon (foaf:page)</a></li>
 <li><a href="#Datatjeneste-følger">Datatjeneste – følger (cpsv:follows)</a></li>
 <li><a href="#Datatjeneste-gjeldendeLovgivning">Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation)</a></li>
-<li><a href="#Datatjeneste-i-samsvar-med">Datatjeneste – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datatjeneste-landingsside">Datatjeneste – landingsside (dcat:landingPage)</a></li>
 <li><a href="#Datatjeneste-lisens">Datatjeneste – lisens (dct:license)</a></li>
 <li><a href="#Datatjeneste-medietype">Datatjeneste – medietype (dcat:mediaType)</a></li>
@@ -2781,7 +2781,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </div>
 <div class="sect3">
-<h4 id="Datasett-harVersjon"><a class="anchor" href="#Datasett-harVersjon"></a>Datasett – har versjon (dct:hasVersion)</h4>
+<h4 id="Datasett-harVersjon"><a class="anchor" href="#Datasett-harVersjon"></a>Datasett – har versjon (dcat:hasVersion)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2794,7 +2794,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:hasVersion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:hasVersion</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
@@ -4393,6 +4393,42 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect3">
+<h4 id="Datatjeneste-i-samsvar-med"><a class="anchor" href="#Datatjeneste-i-samsvar-med"></a>Datatjeneste – i samsvar med (dct:conformsTo)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>application profile</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Standard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en etablert (teknisk) standard som datatjenesten er i samsvar med.</p>
+<p class="tableblock"><em>This property is used to refer to an established (technical) standard to which the Data Service conforms.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
 <h4 id="Datatjeneste-tema"><a class="anchor" href="#Datatjeneste-tema"></a>Datatjeneste – tema (dcat:theme)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4426,16 +4462,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em> &#x29C9;</a>.</p>
 <p class="tableblock"><mark>Norsk utvidelse</mark>: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg. <mark>NB! Los er under revisjon.</mark></p>
 <p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>.</em></p>
 <p class="tableblock"><em>Norwegian extension: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Ikke eksplisitt spesifisert i DCAT-AP.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -4635,42 +4666,6 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Datatjeneste-i-samsvar-med"><a class="anchor" href="#Datatjeneste-i-samsvar-med"></a>Datatjeneste – i samsvar med (dct:conformsTo)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>application profile</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Standard</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en etablert (teknisk) standard som datatjenesten er i samsvar med.</p>
-<p class="tableblock"><em>This property is used to refer to an established (technical) standard to which the Data Service conforms.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -5018,9 +5013,14 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type" class="ext-link" target="_blank" rel="noopener"><em>File type</em> &#x29C9;</a>.</p>
 <p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type" class="ext-link" target="_blank" rel="noopener">File type &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Multiplisiteten endret fra 0..1 til 0..n.</p>
+<p class="tableblock"><em>Norwegian extension: The multiplicity changed from 0..1 to 0..n.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -6014,7 +6014,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Frequency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">locn:Geometry</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7612,7 +7612,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">locn:Geometry</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -7625,7 +7625,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -7700,13 +7700,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Provenance statement</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:ProvenanceStatement</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.</p>
 <p class="tableblock"><em>This class is used to represent a statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity and interpretation.#</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:ProvenanceStatement</p></td>
 </tr>
 </tbody>
 </table>
@@ -7729,13 +7729,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Policy</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrl:Policy</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en ikke-tom gruppe av tillatelser og/eller forbud.</p>
 <p class="tableblock"><em>This class is used to represent a non-empty group of Permissions and/or Prohibitions.#</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">odrl:Policy</p></td>
 </tr>
 </tbody>
 </table>
@@ -9019,6 +9019,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dekket av <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har versjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:hasVersion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">URIen endret fra dct:hasVersion til dcat:hasVersion</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – identifikator</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til anbefalt; multiplisiteten endret tilsvarende fra 1..n til 0..n.</p></td>
@@ -9071,6 +9077,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til anbefalt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><mark>???</mark></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – i samsvar med</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til anbefalt</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – kontaktpunkt</p></td>
@@ -9133,6 +9145,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon – geometri</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">locn:geometry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet endret fra rdfs:Literal til locn:Geometry</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig organisasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
@@ -9182,7 +9200,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-02-19 13:56:57 UTC
+Sist oppdatert 2024-02-20 08:31:51 UTC
 </div>
 </div>
 </body>

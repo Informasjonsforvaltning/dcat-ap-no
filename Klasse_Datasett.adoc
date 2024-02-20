@@ -451,12 +451,12 @@ _#utgått (dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO])#_
 
 _#utgått (dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO])#_
 
-=== Datasett – har versjon (dct:hasVersion) [[Datasett-harVersjon]]
+=== Datasett – har versjon (dcat:hasVersion) [[Datasett-harVersjon]]
 
 [cols="30s,70"]
 |===
 | _English name_ | _has version_
-| URI | dct:hasVersion
+| URI | dcat:hasVersion
 | Verdiområde / _Range_ | dcat:Dataset
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet. 
 
