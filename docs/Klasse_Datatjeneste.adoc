@@ -126,6 +126,20 @@ _This property is used to specify the structure that can be returned by querying
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
+=== Datatjeneste – i samsvar med (dct:conformsTo) [[Datatjeneste-i-samsvar-med]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _application profile_
+| URI | dct:conformsTo
+| Verdiområde / _Range_ | dct:Standard
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en etablert (teknisk) standard som datatjenesten er i samsvar med.
+
+_This property is used to refer to an established (technical) standard to which the Data Service conforms._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+|===
+
 === Datatjeneste – tema (dcat:theme) [[Datatjeneste-tema]]
 
 [cols="30s,70d"]
@@ -138,7 +152,7 @@ _Norwegian extension: The requirement level changed from optional to recommended
 _This property is used to refer to themes for the data service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"]. 
+| Merknad / _Note_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"]. 
 
 
 #Norsk utvidelse#: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
@@ -146,9 +160,6 @@ _This property is used to refer to themes for the data service._
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].__
 
 __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
-
-_Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
 === Datatjeneste – tilgjengeliggjør datasett (dcat:servesDataset) [[Datatjeneste-tilgjengeliggjor-datasett]]
@@ -230,20 +241,6 @@ _Norwegian extension: Not explicitly specified in DCAT-AP._
 _This property is used to refer to the legislation that mandates the creation or management of the Data Service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-|===
-
-=== Datatjeneste – i samsvar med (dct:conformsTo) [[Datatjeneste-i-samsvar-med]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _application profile_
-| URI | dct:conformsTo
-| Verdiområde / _Range_ | dct:Standard
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en etablert (teknisk) standard som datatjenesten er i samsvar med.
-
-_This property is used to refer to an established (technical) standard to which the Data Service conforms._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 === Datatjeneste – landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
