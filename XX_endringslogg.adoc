@@ -51,6 +51,7 @@ Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (#_
 | Datasettserie – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige.
 | Datatjeneste – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Distribusjon – filstørrelse | dcat:byteSize | Verdiområdet endret fra xsd:decimal til  xsd:nonNegativeInteger | Følger DCAT-AP.
+| Katalog - datasettserie | dcatap:datasetSeries | ny | Følger DCAT-AP. #NB! p.t. ikke i DCAT-AP.#
 | Katalog – er del av | dct:isPartOf | utgått | Følger DCAT-AP (invers egenskap).  
 | Katalog – frekvens | dct:accrualPeriodicity | utgått | Følger DCAT-AP.
 | Katalog – gjeldende lovgivning | dcatap:applicableLegislation | ny | Følger DCAT-AP.
