@@ -56,6 +56,7 @@ Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (#_
 | Katalog – gjeldende lovgivning | dcatap:applicableLegislation | ny | Følger DCAT-AP.
 | Katalog – opphav | dct:provenance | utgått | Følger DCAT-AP. 
 | Katalog – temaer | dcat:themeTaxonomy | Krav til obligatorisk bruk av EUs EuroVoc utgått. | Følger DCAT-AP.
+| Katalog – tidsrom | dct:temporal | ny | Følger DCAT-AP. 
 | Katalogpost – i samsvar med | dct:conformsTo| Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP. 
 | Kreditering | prov:Attribution | ny - eksplisitt spesifisert | Følger DCAT-AP.
 | Lokasjon – geometri | locn:geometry | Verdiområdet endret fra rdfs:Literal til locn:Geometry | Følger DCAT-AP. 

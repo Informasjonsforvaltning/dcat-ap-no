@@ -121,7 +121,27 @@ _This property is used to specify a description of the services available via th
 _This property is used to specify the structure that can be returned by querying the endpointURL._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | #Norsk utvidelse#: Kravnivå endret fra valgfri til anbefalt. 
+| Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[_File type_ &#x29C9;, window="_blank", role="ext-link"]. 
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[File type &#x29C9;, window="_blank", role="ext-link"].__
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivå endret fra valgfri til anbefalt. 
+
+_Norwegian extension: The requirement level changed from optional to recommended._
+|===
+
+=== Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation) [[Datatjeneste-gjeldendeLovgivning]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _applicable legislation_
+| URI | dcatap:applicableLegislation
+| Verdiområde / _Range_ | eli:LegalResource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller forvaltning av datatjenesten.
+
+_This property is used to refer to the legislation that mandates the creation or management of the Data Service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri til anbefalt. 
 
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
@@ -188,11 +208,7 @@ _This property is used to refer to a collection of data that this data service c
 _This property is used to refer the the agent (organisation) responsible for making the data service available._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad  / _Note_ | (Lite aktuelt for bruk i Norge) Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"] for EU-institusjoner og noen internasjonale organisasjoner. 
-
-__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
 |===
-
 
 == Valgfrie egenskaper for klassen _Datatjeneste_ [[Datatjeneste-valgfrie-egenskaper]]
 
@@ -228,20 +244,6 @@ _Norwegian extension: Not explicitly specified in DCAT-AP._
 === Datatjeneste – følger (cpsv:follows) [[Datatjeneste-følger]]
 
 #_utgått_#
-
-=== Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation) [[Datatjeneste-gjeldendeLovgivning]]
-
-[cols="30s,70"]
-|===
-| _English name_ | _applicable legislation_
-| URI | dcatap:applicableLegislation
-| Verdiområde / _Range_ | eli:LegalResource
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller forvaltning av datatjenesten.
-
-_This property is used to refer to the legislation that mandates the creation or management of the Data Service._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-|===
 
 === Datatjeneste – landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
 [cols="30s,70d"]
