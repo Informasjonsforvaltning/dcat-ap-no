@@ -144,10 +144,6 @@ _This property is used to specify the most recent date on which the Catalogue wa
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
 
-=== Katalog – frekvens (dct:accrualPeriodicity) [[Katalog-frekvens]]
-
-_#utgått#_
-
 === Katalog – hjemmeside (foaf:homepage) [[Katalog-hjemmeside]]
 
 [cols="30s,70d"]
@@ -178,10 +174,6 @@ _This property is used to refer to a licence under which the Catalogue can be us
 
 __(Norwegian extension) The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
 |===
-
-=== Katalog – opphav (dct:provenance) [[Katalog-opphav]]
-
-#utgått#
 
 === Katalog – språk (dct:language) [[Katalog-språk]]
 
@@ -272,10 +264,6 @@ _This property is used to refer to a Data Service that is listed in the Catalogu
 
 _Norwegian extension: The requirement level changed from recommended to optional._
 |===
-
-=== Katalog – er del av (dct:isPartOf) [[Katalog-er-del-av]]
-
-#_utgått, invers egenskap_#
 
 === Katalog – gjeldende lovgivning (dcatap:applicableLegislation) [[Katalog-gjeldendeLovgivning]]
 

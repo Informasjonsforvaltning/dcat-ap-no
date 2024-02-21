@@ -1,7 +1,5 @@
 = Klassen Språksystem (dct:LinguisticSystem) [[Språksystem]]
 
-#_ny, eksplisitt spesifisert klasse_# 
-
 [cols="30s,70d"]
 |===
 | _English name_ | _Linguistic system_

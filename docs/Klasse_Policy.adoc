@@ -1,7 +1,5 @@
 = Klassen Policy (odrl:Policy) [[Policy]]
 
-#_ny, eksplisitt spesifisert klasse_# 
-
 [cols="30s,70d"]
 |===
 | _English name_ | _Policy_

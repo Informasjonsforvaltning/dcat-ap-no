@@ -1,7 +1,5 @@
 = Klassen Katalogisert ressurs (dcat:Resource) [[KatalogisertRessurs]]
 
-#_ny, eksplisitt spesifisert klasse_# 
-
 [cols="30s,70d"]
 |===
 | _English name_ | _Catalogued resource_

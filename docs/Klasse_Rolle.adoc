@@ -1,7 +1,5 @@
 = Klassen Rolle (dcat:Role) [[Rolle]]
 
-#_ny, eksplisitt spesifisert klasse_# 
-
 [cols="30s,70d"]
 |===
 | _English name_ |  _Role_

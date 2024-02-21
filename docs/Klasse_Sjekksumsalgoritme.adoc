@@ -1,7 +1,5 @@
 = Klassen Sjekksumsalgoritme (spdx:ChecksumAlgorithm) [[Sjekksumsalgoritme]]
 
-#_ny, eksplisitt spesifisert klasse_# 
-
 [cols="30s,70d"]
 |===
 | _English name_ | _Checksum algorithm_
