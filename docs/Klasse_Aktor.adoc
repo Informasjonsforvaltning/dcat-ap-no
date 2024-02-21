@@ -26,10 +26,10 @@ __This property contains the name of the agent. This property can be repeated fo
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
-Eksempel i RDF Turtle
+Eksempel i RDF Turtle:
 -----
-<exAgent> a foaf:Agent ;
-   foaf:name "English name"@en, "Norsk navn"@nb ;
+<digdir> a foaf:Agent ;
+   foaf:name "Norwegian Digitalisation Agency"@en, "Digitaliseringsdirektoratet"@nb ;
    .
 -----
 
@@ -47,13 +47,20 @@ Eksempel i RDF Turtle
 __This property contains the identifier for the Agent.__
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Når aktøren har et organisasjonsnummer registrert i Enhetsregisteret, BØR identifikatoren oppgis som en URI med f.eks. følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: \https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn.
+| Merknad 1 / _Note 1_ | Når aktøren har et organisasjonsnummer registrert i Enhetsregisteret, BØR identifikatoren oppgis som en URI med f.eks. følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`.
 
-__When the agent has an organization number registered in the Central Coordinating Register for Legal Entities (CCR), the identifier SHOULD be given as a URI with e.g. the following pattern where "nnnnnnnnn" is the organization number: \https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn.__
+__When the agent has an organization number registered in the Central Coordinating Register for Legal Entities (CCR), the identifier SHOULD be given as a URI with e.g. the following pattern where "nnnnnnnnn" is the organization number: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`.__
 | Merknad 2 / _Note 2_ | #Norsk utvidelse#: ikke eksplisitt spesifisert i DCAT-AP. 
 
 _Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<digdir> a foaf:Agent ;
+   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827"@xsd:anyURI ;
+   .
+-----
 
 === Aktør – type (dct:type) [[Aktør-type]]
 
@@ -67,7 +74,14 @@ _Norwegian extension: Not explicitly specified in DCAT-AP._
 _This property is used to specify the nature of the agent._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Verdien SKAL velges fra https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/AD[_ADMS publisher type_ &#x29C9;, window="_blank", role="ext-link"] (lenket ressurs er i RDF).
+| Merknad / _Note_ | Verdien SKAL velges fra http://purl.org/adms/publishertype/1.0[_ADMS publisher type_ &#x29C9;, window="_blank", role="ext-link"] (lenket ressurs er i RDF).
 
-__The value SHALL be chosen from https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/AD[ADMS publisher type &#x29C9;, window="_blank", role="ext-link"] (the ressurs linked is in RDF).__
+__The value SHALL be chosen from http://purl.org/adms/publishertype/1.0[ADMS publisher type &#x29C9;, window="_blank", role="ext-link"] (the ressurs linked is in RDF).__
 |===
+
+Eksempel i RDF Turtle:
+-----
+<digdir> a foaf:Agent ;
+   dct:type <http://purl.org/adms/publishertype/NationalAuthority> ;
+   .
+-----
