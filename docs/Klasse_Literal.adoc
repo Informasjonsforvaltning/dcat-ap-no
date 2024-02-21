@@ -1,8 +1,5 @@
 = Klassen Literal (rdfs:Literal) [[Literal]]
 
-#_ny, eksplisitt spesifisert klasse_# 
-
-
 [cols="30s,70d"]
 |===
 | _English name_ | _Literal_

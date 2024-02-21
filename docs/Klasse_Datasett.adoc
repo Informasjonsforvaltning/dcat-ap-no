@@ -8,9 +8,6 @@
 | Anvendelse / _Usage note_ | Klassen brukes til å representere et datasett, dvs. en konseptuell entitet som representerer publisert informasjon.
 
 _This class is used to represent a conceptual entity that represents the information published._
-| Merknad / _Note_ | _#hva betyr egentlig den engelske teksten "the properties listed below can be used additionally ..."? De fleste egenskapene under er jo for "vanlige datasett".#_
-
-_If a Dataset is used as part of a Dataset Series, the properties listed below can be used additionally, or slightly differently to those listed for the Dataset outside of a Dataset Series. For this usage, consult the guidelines in section #@@@@ General usage guidelines#._
 |===
 
 
@@ -226,10 +223,6 @@ _This property is used to specify a keyword or tag describing the Dataset._
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
-=== Datasett – følger (cpsv:follows) [[Datasett-følger]]
-
-_#utgått#_
-
 === Datasett – gjeldende lovgivning (dcatap:applicableLegislation) [[Datasett-gjeldendeLovgivning]]
 
 [cols="30s,70"]
@@ -343,16 +336,6 @@ _This property is used to specify the most recent date on which the Dataset was 
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
 
-=== Datasett – er del av (dct:isPartOf) [[Datasett-erDelAv]]
-
-_#utgått (invers egenskap)#_
-
-
-=== Datasett – er påkrevd av (dct:isRequiredBy) [[Datasett-erPåkrevdAv]]
-
-_#utgått (invers egenskap)#_
-
-
 === Datasett – er referert av (dct:isReferencedBy) [[Datasett-erReferertAv]]
 
 [cols="30s,70"]
@@ -366,10 +349,6 @@ _This property is used to refer to a related resource, such as a publication, th
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
-
-=== Datasett – er versjon av (dct:isVersionOf) [[Datasett-erVersjonAv]]
-
-_#utgått (invers egenskap)#_
 
 === Datasett – erstatter (dct:replaces) [[Datasett-erstatter]]
 
@@ -387,10 +366,6 @@ _This property is used to refer to another dataset that this dataset replaces._
 
 _(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
-
-=== Datasett – erstattes av (dct:isReplacedBy) [[Datasett-erstattesAv]]
-
-_#utgått (invers egenskap)#_ 
 
 === Datasett – forrige (dcat:prev) [[Datasett-forrige]]
 
@@ -442,14 +417,6 @@ _This property is used to refer to another dataset that is a part of this datase
 
 _(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
-
-=== Datasett – har kvalitetsnote (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsnote]]
-
-_#utgått (dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO])#_
-
-=== Datasett – har måleresultat (dqv:hasQualityMeasurement) [[Datasett-harMåleresultat]]
-
-_#utgått (dekket av https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO])#_
 
 === Datasett – har versjon (dcat:hasVersion) [[Datasett-harVersjon]]
 
@@ -540,11 +507,6 @@ _This property is used to refer to a related Dataset from which the described Da
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
-
-=== Datasett – krever (dct:requires) [[Datasett-krever]]
-
-_#utgått (ingen reell bruk)#_
-
 
 === Datasett – kvalifisert kreditering (prov:qualifiedAttribution) [[Datasett-kvalifisertKreditering]]
 

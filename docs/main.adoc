@@ -87,17 +87,17 @@ include::Klasse_Lokasjon.adoc[]
 include::Klasse_Medietype.adoc[]
 
 // include::Klasse_Offentlig_organisasjon.adoc[]
-include::Klasse_Offentlig_organisasjon-utgår.adoc[]
+// include::Klasse_Offentlig_organisasjon-utgår.adoc[]
 
 // include::Klasse_Offentlig_tjeneste.adoc[]
-include::Klasse_Offentlig_tjeneste-utgår.adoc[]
+// include::Klasse_Offentlig_tjeneste-utgår.adoc[]
 
 include::Klasse_Opphavsbeskrivelse.adoc[]
 
 include::Klasse_Policy.adoc[]
 
 // include::Klasse_Regel.adoc[]
-include::Klasse_Regel-utgår.adoc[]
+// include::Klasse_Regel-utgår.adoc[]
 
 include::Klasse_Regulativ_ressurs.adoc[]
 // include::Klasse_Regulativ_ressurs-utgår.adoc[]
@@ -128,9 +128,9 @@ include::Klasse_Tidsrom.adoc[]
 // :leveloffset: -1
 
 // include::22_Kontrollerte_vokabular.adoc[]
-include::22_Kontrollerte_vokabular-utgår.adoc[]
+// include::22_Kontrollerte_vokabular-utgår.adoc[]
 
 // include::02_Avvik.adoc[]
-include::02_Avvik-utgår.adoc[]
+// include::02_Avvik-utgår.adoc[]
 
 include::XX_endringslogg.adoc[]

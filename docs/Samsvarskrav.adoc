@@ -1,7 +1,5 @@
 = Krav til samsvar [[Samsvarskrav]]
 
-#_nytt kapittel_# 
-
 == Krav til applikasjoner som leverer metadata
 
 For å være i samsvar med denne standarden, SKAL en applikasjon som levere metadata:

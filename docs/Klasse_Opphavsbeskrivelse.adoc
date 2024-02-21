@@ -1,7 +1,5 @@
 = Klassen Opphavsbeskrivelse (dct:ProvenanceStatement) [[Opphavsbeskrivelse]]
 
-#_ny, eksplisitt spesifisert klasse_# 
-
 [cols="30s,70d"]
 |===
 | _English name_ | _Provenance statement_

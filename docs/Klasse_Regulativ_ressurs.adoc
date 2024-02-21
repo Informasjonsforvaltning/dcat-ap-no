@@ -1,7 +1,5 @@
 = Klassen Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
 
-#_NB! klassebeskrivelsen er feil i DCAT-AP-draft. Sjekk etter Public Review._#
-
 [cols="30s,70d"]
 |===
 | _English name_ |  _Legal resource_

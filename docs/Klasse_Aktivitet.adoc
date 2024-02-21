@@ -1,7 +1,5 @@
 = Klassen Aktivitet (prov:Activity) [[Aktivitet]]
 
-#_ny, eksplisitt spesifisert klasse_# 
-
 [cols="30s,70"]
 |===
 | _English name_ | _Activity_ 
