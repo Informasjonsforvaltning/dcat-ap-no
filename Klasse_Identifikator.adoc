@@ -1,7 +1,5 @@
 = Klassen Identifikator (adms:Identifier) [[Identifikator]]
 
-_#NB! Har gitt innspill til EU at noe ikke stemmer med denne klassen. Klassen må gjennomgåes etter at EU er ferdig med DCAT-AP.#_
-
 [cols="30s,70d"]
 |===
 | _English name_ | _Identifier_

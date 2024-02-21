@@ -241,10 +241,6 @@ _This property is used to refer to a page or a document that describes the data 
 _Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
-=== Datatjeneste – følger (cpsv:follows) [[Datatjeneste-følger]]
-
-#_utgått_#
-
 === Datatjeneste – landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
 [cols="30s,70d"]
 |===

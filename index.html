@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 2.0.20">
+<meta name="generator" content="Asciidoctor 2.0.21">
 <title>Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
 <style>
@@ -140,7 +140,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #content::before{content:none}
 #header>h1:first-child{color:rgba(0,0,0,.85);margin-top:2.25rem;margin-bottom:0}
 #header>h1:first-child+#toc{margin-top:8px;border-top:1px solid #dddddf}
-#header>h1:only-child,body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
+#header>h1:only-child{border-bottom:1px solid #dddddf;padding-bottom:8px}
 #header .details{border-bottom:1px solid #dddddf;line-height:1.45;padding-top:.25em;padding-bottom:.25em;padding-left:.25em;color:rgba(0,0,0,.6);display:flex;flex-flow:row wrap}
 #header .details span:first-child{margin-left:-.125em}
 #header .details span.email a{color:rgba(0,0,0,.85)}
@@ -162,6 +162,7 @@ p a>code:hover{color:rgba(0,0,0,.9)}
 #toctitle{color:#7a2518;font-size:1.2em}
 @media screen and (min-width:768px){#toctitle{font-size:1.375em}
 body.toc2{padding-left:15em;padding-right:0}
+body.toc2 #header>h1:nth-last-child(2){border-bottom:1px solid #dddddf;padding-bottom:8px}
 #toc.toc2{margin-top:0!important;background:#f8f8f7;position:fixed;width:15em;left:0;top:0;border-right:1px solid #e7e7e9;border-top-width:0!important;border-bottom-width:0!important;z-index:1000;padding:1.25em 1em;height:100%;overflow:auto}
 #toc.toc2 #toctitle{margin-top:0;margin-bottom:.8rem;font-size:1.2em}
 #toc.toc2>ul{font-size:.9em;margin-bottom:0}
@@ -327,7 +328,7 @@ a.image{text-decoration:none;display:inline-block}
 a.image object{pointer-events:none}
 sup.footnote,sup.footnoteref{font-size:.875em;position:static;vertical-align:super}
 sup.footnote a,sup.footnoteref a{text-decoration:none}
-sup.footnote a:active,sup.footnoteref a:active{text-decoration:underline}
+sup.footnote a:active,sup.footnoteref a:active,#footnotes .footnote a:first-of-type:active{text-decoration:underline}
 #footnotes{padding-top:.75em;padding-bottom:.75em;margin-bottom:.625em}
 #footnotes hr{width:20%;min-width:6.25em;margin:-.25em 0 .75em;border-width:1px 0 0}
 #footnotes .footnote{padding:0 .375em 0 .225em;line-height:1.3334;font-size:.875em;margin-left:1.2em;margin-bottom:.2em}
@@ -575,7 +576,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-datasettdistribusjon">Datasett – datasettdistribusjon (dcat:distribution)</a></li>
 <li><a href="#Datasett-dekningsområde">Datasett – dekningsområde (dct:spatial)</a></li>
 <li><a href="#Datasett-emneord">Datasett – emneord (dcat:keyword)</a></li>
-<li><a href="#Datasett-følger">Datasett – følger (cpsv:follows)</a></li>
 <li><a href="#Datasett-gjeldendeLovgivning">Datasett – gjeldende lovgivning (dcatap:applicableLegislation)</a></li>
 <li><a href="#Datasett-tidsrom">Datasett – tidsrom (dct:temporal)</a></li>
 <li><a href="#Datasett-tilgangsnivå">Datasett – tilgangsnivå (dct:accessRights)</a></li>
@@ -587,22 +587,15 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-dokumentasjon">Datasett – dokumentasjon (foaf:page)</a></li>
 <li><a href="#Datasett-eksempeldata">Datasett – eksempeldata (adms:sample)</a></li>
 <li><a href="#Datasett-endringsdato">Datasett – endringsdato (dct:modified)</a></li>
-<li><a href="#Datasett-erDelAv">Datasett – er del av (dct:isPartOf)</a></li>
-<li><a href="#Datasett-erPåkrevdAv">Datasett – er påkrevd av (dct:isRequiredBy)</a></li>
 <li><a href="#Datasett-erReferertAv">Datasett – er referert av (dct:isReferencedBy)</a></li>
-<li><a href="#Datasett-erVersjonAv">Datasett – er versjon av (dct:isVersionOf)</a></li>
 <li><a href="#Datasett-erstatter">Datasett – erstatter (dct:replaces)</a></li>
-<li><a href="#Datasett-erstattesAv">Datasett – erstattes av (dct:isReplacedBy)</a></li>
 <li><a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a></li>
 <li><a href="#Datasett-frekvens">Datasett – frekvens (dct:accrualPeriodicity)</a></li>
 <li><a href="#Datasett-harDel">Datasett – har del (dct:hasPart)</a></li>
-<li><a href="#Datasett-harKvalitetsnote">Datasett – har kvalitetsnote (dqv:hasQualityAnnotation)</a></li>
-<li><a href="#Datasett-harMåleresultat">Datasett – har måleresultat (dqv:hasQualityMeasurement)</a></li>
 <li><a href="#Datasett-harVersjon">Datasett – har versjon (dcat:hasVersion)</a></li>
 <li><a href="#Datasett-iSamsvarMed">Datasett – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a></li>
 <li><a href="#Datasett-kilde">Datasett – kilde (dct:source)</a></li>
-<li><a href="#Datasett-krever">Datasett – krever (dct:requires)</a></li>
 <li><a href="#Datasett-kvalifisertKreditering">Datasett – kvalifisert kreditering (prov:qualifiedAttribution)</a></li>
 <li><a href="#Datasett-kvalifisertRelasjon">Datasett – kvalifisert relasjon (dcat:qualifiedRelation)</a></li>
 <li><a href="#Datasett-landingsside">Datasett – landingsside (dcat:landingPage)</a></li>
@@ -676,7 +669,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Datatjeneste-beskrivelse">Datatjeneste – beskrivelse (dct:description)</a></li>
 <li><a href="#Datatjeneste-dokumentasjon">Datatjeneste – dokumentasjon (foaf:page)</a></li>
-<li><a href="#Datatjeneste-følger">Datatjeneste – følger (cpsv:follows)</a></li>
 <li><a href="#Datatjeneste-landingsside">Datatjeneste – landingsside (dcat:landingPage)</a></li>
 <li><a href="#Datatjeneste-lisens">Datatjeneste – lisens (dct:license)</a></li>
 <li><a href="#Datatjeneste-medietype">Datatjeneste – medietype (dcat:mediaType)</a></li>
@@ -763,10 +755,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Katalog-datasett">Katalog – datasett (dcat:dataset)</a></li>
 <li><a href="#Katalog-dekningsområde">Katalog – dekningsområde (dct:spatial)</a></li>
 <li><a href="#Katalog-endringsdato">Katalog – endringsdato (dct:modified)</a></li>
-<li><a href="#Katalog-frekvens">Katalog – frekvens (dct:accrualPeriodicity)</a></li>
 <li><a href="#Katalog-hjemmeside">Katalog – hjemmeside (foaf:homepage)</a></li>
 <li><a href="#Katalog-lisens">Katalog – lisens (dct:license)</a></li>
-<li><a href="#Katalog-opphav">Katalog – opphav (dct:provenance)</a></li>
 <li><a href="#Katalog-språk">Katalog – språk (dct:language)</a></li>
 <li><a href="#Katalog-temaer">Katalog – temaer (dcat:themeTaxonomy)</a></li>
 <li><a href="#Katalog-utgivelsesdato">Katalog – utgivelsesdato (dct:issued)</a></li>
@@ -776,7 +766,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Katalog-datasettserie">Katalog – datasettserie (dcatap:datasetSeries)</a></li>
 <li><a href="#Katalog-datatjeneste">Katalog – datatjeneste (dcat:service)</a></li>
-<li><a href="#Katalog-er-del-av">Katalog – er del av (dct:isPartOf)</a></li>
 <li><a href="#Katalog-gjeldendeLovgivning">Katalog – gjeldende lovgivning (dcatap:applicableLegislation)</a></li>
 <li><a href="#Katalog-har-del">Katalog – har del (dct:hasPart)</a></li>
 <li><a href="#Katalog-katalog">Katalog – katalog (dcat:catalog)</a></li>
@@ -842,11 +831,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#Medietype">Klassen Medietype (dct:MediaType)</a></li>
-<li><a href="#OffentligOrganisasjon">Klassen Offentlig organisasjon (cv:PublicOrganisation)</a></li>
-<li><a href="#OffentligTjeneste">Klassen Offentlig tjeneste (cpsv:PublicService)</a></li>
 <li><a href="#Opphavsbeskrivelse">Klassen Opphavsbeskrivelse (dct:ProvenanceStatement)</a></li>
 <li><a href="#Policy">Klassen Policy (odrl:Policy)</a></li>
-<li><a href="#Regel">Klassen Regel (cpsv:Rule)</a></li>
 <li><a href="#RegulativRessurs">Klassen Regulativ ressurs (eli:LegalResource)</a>
 <ul class="sectlevel2">
 <li><a href="#RegulativRessurs-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Regulativ ressurs</em></a>
@@ -928,8 +914,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Kontrollerte-vokabularer">Om bruk av kontrollerte vokabularer</a></li>
-<li><a href="#Avvik-fra-EU-Standard">Avvik fra EU-standarden BRegDCAT-AP</a></li>
 <li><a href="#Endringslogg">Endringslogg</a>
 <ul class="sectlevel2">
 <li><a href="#_strukturendringer_fra_versjon_2_2_til_denne_versjonen">Strukturendringer fra versjon 2.2 til denne versjonen</a></li>
@@ -1105,9 +1089,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 <div class="sect2">
 <h3 id="Samsvarskrav"><a class="anchor" href="#Samsvarskrav"></a>Krav til samsvar</h3>
-<div class="paragraph">
-<p><mark><em>nytt kapittel</em></mark></p>
-</div>
 <div class="sect3">
 <h4 id="_krav_til_applikasjoner_som_leverer_metadata"><a class="anchor" href="#_krav_til_applikasjoner_som_leverer_metadata"></a>Krav til applikasjoner som leverer metadata</h4>
 <div class="paragraph">
@@ -1161,9 +1142,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 <div class="sect2">
 <h3 id="Leserveiledning"><a class="anchor" href="#Leserveiledning"></a>Hvordan du leser denne standarden</h3>
-<div class="paragraph">
-<p><mark><em>nytt kapittel</em></mark></p>
-</div>
 <div class="paragraph">
 <p><mark><em>husk å sjekke mot EUs "profile guidelines" hvorvidt/hvordan indikere om en egenskap er "reuse as-is", "reuse with extension" osv.</em></mark></p>
 </div>
@@ -1559,9 +1537,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="sect1">
 <h2 id="Aktivitet"><a class="anchor" href="#Aktivitet"></a>Klassen Aktivitet (prov:Activity)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -1784,11 +1759,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et datasett, dvs. en konseptuell entitet som representerer publisert informasjon.</p>
 <p class="tableblock"><em>This class is used to represent a conceptual entity that represents the information published.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em><mark>hva betyr egentlig den engelske teksten "the properties listed below can be used additionally &#8230;&#8203;"? De fleste egenskapene under er jo for "vanlige datasett".</mark></em></p>
-<p class="tableblock"><em>If a Dataset is used as part of a Dataset Series, the properties listed below can be used additionally, or slightly differently to those listed for the Dataset outside of a Dataset Series. For this usage, consult the guidelines in section <mark>@@@@ General usage guidelines</mark>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2266,12 +2236,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </table>
 </div>
 <div class="sect3">
-<h4 id="Datasett-følger"><a class="anchor" href="#Datasett-følger"></a>Datasett – følger (cpsv:follows)</h4>
-<div class="paragraph">
-<p><em><mark>utgått</mark></em></p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="Datasett-gjeldendeLovgivning"><a class="anchor" href="#Datasett-gjeldendeLovgivning"></a>Datasett – gjeldende lovgivning (dcatap:applicableLegislation)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2547,18 +2511,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </table>
 </div>
 <div class="sect3">
-<h4 id="Datasett-erDelAv"><a class="anchor" href="#Datasett-erDelAv"></a>Datasett – er del av (dct:isPartOf)</h4>
-<div class="paragraph">
-<p><em><mark>utgått (invers egenskap)</mark></em></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Datasett-erPåkrevdAv"><a class="anchor" href="#Datasett-erPåkrevdAv"></a>Datasett – er påkrevd av (dct:isRequiredBy)</h4>
-<div class="paragraph">
-<p><em><mark>utgått (invers egenskap)</mark></em></p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="Datasett-erReferertAv"><a class="anchor" href="#Datasett-erReferertAv"></a>Datasett – er referert av (dct:isReferencedBy)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2593,12 +2545,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 </tbody>
 </table>
-</div>
-<div class="sect3">
-<h4 id="Datasett-erVersjonAv"><a class="anchor" href="#Datasett-erVersjonAv"></a>Datasett – er versjon av (dct:isVersionOf)</h4>
-<div class="paragraph">
-<p><em><mark>utgått (invers egenskap)</mark></em></p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Datasett-erstatter"><a class="anchor" href="#Datasett-erstatter"></a>Datasett – erstatter (dct:replaces)</h4>
@@ -2640,12 +2586,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 </tbody>
 </table>
-</div>
-<div class="sect3">
-<h4 id="Datasett-erstattesAv"><a class="anchor" href="#Datasett-erstattesAv"></a>Datasett – erstattes av (dct:isReplacedBy)</h4>
-<div class="paragraph">
-<p><em><mark>utgått (invers egenskap)</mark></em></p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Datasett-forrige"><a class="anchor" href="#Datasett-forrige"></a>Datasett – forrige (dcat:prev)</h4>
@@ -2769,18 +2709,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 </tbody>
 </table>
-</div>
-<div class="sect3">
-<h4 id="Datasett-harKvalitetsnote"><a class="anchor" href="#Datasett-harKvalitetsnote"></a>Datasett – har kvalitetsnote (dqv:hasQualityAnnotation)</h4>
-<div class="paragraph">
-<p><em><mark>utgått (dekket av <a href="https://data.norge.no/specification/dqv-ap-no">DQV-AP-NO</a>)</mark></em></p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Datasett-harMåleresultat"><a class="anchor" href="#Datasett-harMåleresultat"></a>Datasett – har måleresultat (dqv:hasQualityMeasurement)</h4>
-<div class="paragraph">
-<p><em><mark>utgått (dekket av <a href="https://data.norge.no/specification/dqv-ap-no">DQV-AP-NO</a>)</mark></em></p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Datasett-harVersjon"><a class="anchor" href="#Datasett-harVersjon"></a>Datasett – har versjon (dcat:hasVersion)</h4>
@@ -2962,12 +2890,6 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
-</div>
-<div class="sect3">
-<h4 id="Datasett-krever"><a class="anchor" href="#Datasett-krever"></a>Datasett – krever (dct:requires)</h4>
-<div class="paragraph">
-<p><em><mark>utgått (ingen reell bruk)</mark></em></p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Datasett-kvalifisertKreditering"><a class="anchor" href="#Datasett-kvalifisertKreditering"></a>Datasett – kvalifisert kreditering (prov:qualifiedAttribution)</h4>
@@ -4677,12 +4599,6 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect3">
-<h4 id="Datatjeneste-følger"><a class="anchor" href="#Datatjeneste-følger"></a>Datatjeneste – følger (cpsv:follows)</h4>
-<div class="paragraph">
-<p><mark><em>utgått</em></mark></p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="Datatjeneste-landingsside"><a class="anchor" href="#Datatjeneste-landingsside"></a>Datatjeneste – landingsside (dcat:landingPage)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5978,9 +5894,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect1">
 <h2 id="Frekvens"><a class="anchor" href="#Frekvens"></a>Klassen Frekvens (dct:Frequency)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6011,9 +5924,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect1">
 <h2 id="Geometri"><a class="anchor" href="#Geometri"></a>Klassen Geometri (locn:Geometry)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6040,9 +5950,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect1">
 <h2 id="Identifikator"><a class="anchor" href="#Identifikator"></a>Klassen Identifikator (adms:Identifier)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><em><mark>NB! Har gitt innspill til EU at noe ikke stemmer med denne klassen. Klassen må gjennomgåes etter at EU er ferdig med DCAT-AP.</mark></em></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6450,12 +6357,6 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect3">
-<h4 id="Katalog-frekvens"><a class="anchor" href="#Katalog-frekvens"></a>Katalog – frekvens (dct:accrualPeriodicity)</h4>
-<div class="paragraph">
-<p><em><mark>utgått</mark></em></p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="Katalog-hjemmeside"><a class="anchor" href="#Katalog-hjemmeside"></a>Katalog – hjemmeside (foaf:homepage)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6531,12 +6432,6 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
-</div>
-<div class="sect3">
-<h4 id="Katalog-opphav"><a class="anchor" href="#Katalog-opphav"></a>Katalog – opphav (dct:provenance)</h4>
-<div class="paragraph">
-<p><mark>utgått</mark></p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Katalog-språk"><a class="anchor" href="#Katalog-språk"></a>Katalog – språk (dct:language)</h4>
@@ -6750,12 +6645,6 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
-</div>
-<div class="sect3">
-<h4 id="Katalog-er-del-av"><a class="anchor" href="#Katalog-er-del-av"></a>Katalog – er del av (dct:isPartOf)</h4>
-<div class="paragraph">
-<p><mark><em>utgått, invers egenskap</em></mark></p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="Katalog-gjeldendeLovgivning"><a class="anchor" href="#Katalog-gjeldendeLovgivning"></a>Katalog – gjeldende lovgivning (dcatap:applicableLegislation)</h4>
@@ -7015,9 +6904,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect1">
 <h2 id="KatalogisertRessurs"><a class="anchor" href="#KatalogisertRessurs"></a>Klassen Katalogisert ressurs (dcat:Resource)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7423,9 +7309,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect1">
 <h2 id="Kontaktopplysning"><a class="anchor" href="#Kontaktopplysning"></a>Klassen Kontaktopplysning (vcard:Kind)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7457,9 +7340,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect1">
 <h2 id="Kreditering"><a class="anchor" href="#Kreditering"></a>Klassen Kreditering (prov:Attribution)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7556,9 +7436,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect1">
 <h2 id="Literal"><a class="anchor" href="#Literal"></a>Klassen Literal (rdfs:Literal)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7730,9 +7607,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect1">
 <h2 id="Medietype"><a class="anchor" href="#Medietype"></a>Klassen Medietype (dct:MediaType)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7757,27 +7631,8 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </div>
 </div>
 <div class="sect1">
-<h2 id="OffentligOrganisasjon"><a class="anchor" href="#OffentligOrganisasjon"></a>Klassen Offentlig organisasjon (cv:PublicOrganisation)</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>hele klassen utgått</em></mark></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="OffentligTjeneste"><a class="anchor" href="#OffentligTjeneste"></a>Klassen Offentlig tjeneste (cpsv:PublicService)</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>hele klassen utgått</em></mark></p>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="Opphavsbeskrivelse"><a class="anchor" href="#Opphavsbeskrivelse"></a>Klassen Opphavsbeskrivelse (dct:ProvenanceStatement)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7804,9 +7659,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect1">
 <h2 id="Policy"><a class="anchor" href="#Policy"></a>Klassen Policy (odrl:Policy)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -7831,19 +7683,8 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </div>
 </div>
 <div class="sect1">
-<h2 id="Regel"><a class="anchor" href="#Regel"></a>Klassen Regel (cpsv:Rule)</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>hele klassen utgått</em></mark></p>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="RegulativRessurs"><a class="anchor" href="#RegulativRessurs"></a>Klassen Regulativ ressurs (eli:LegalResource)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>NB! klassebeskrivelsen er feil i DCAT-AP-draft. Sjekk etter Public Review.</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8279,9 +8120,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect1">
 <h2 id="Ressurs"><a class="anchor" href="#Ressurs"></a>Klassen Ressurs (rdfs:Resource)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8308,9 +8146,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect1">
 <h2 id="Rettighetsutsagn"><a class="anchor" href="#Rettighetsutsagn"></a>Klassen Rettighetsutsagn (dct:RightsStatement)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8337,9 +8172,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect1">
 <h2 id="Rolle"><a class="anchor" href="#Rolle"></a>Klassen Rolle (dcat:Role)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8476,9 +8308,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect1">
 <h2 id="Sjekksumsalgoritme"><a class="anchor" href="#Sjekksumsalgoritme"></a>Klassen Sjekksumsalgoritme (spdx:ChecksumAlgorithm)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8509,9 +8338,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <div class="sect1">
 <h2 id="Språksystem"><a class="anchor" href="#Språksystem"></a>Klassen Språksystem (dct:LinguisticSystem)</h2>
 <div class="sectionbody">
-<div class="paragraph">
-<p><mark><em>ny, eksplisitt spesifisert klasse</em></mark></p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8968,22 +8794,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </div>
 <div class="sect1">
-<h2 id="Kontrollerte-vokabularer"><a class="anchor" href="#Kontrollerte-vokabularer"></a>Om bruk av kontrollerte vokabularer</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em><mark>hele kapitlet utgått, fordi krav til bruk av kontrollerte vokabularer er sammen med spesifikasjonen til den aktuelle egenskapen</mark></em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Avvik-fra-EU-Standard"><a class="anchor" href="#Avvik-fra-EU-Standard"></a>Avvik fra EU-standarden BRegDCAT-AP</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><em><mark>hele kapitlet utgår, avvikene blir kommentert (som merknader) under spesifikasjonen til den aktuelle klassen/egenskapen</mark></em></p>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="Endringslogg"><a class="anchor" href="#Endringslogg"></a>Endringslogg</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -9301,7 +9111,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-02-20 15:20:15 UTC
+Sist oppdatert 2024-02-21 10:44:39 UTC
 </div>
 </div>
 </body>
