@@ -4,8 +4,8 @@
 
 [[img-KlassenDatasett]]
 .Klassen Datasett og klassene den refererer til.
-[link=images/Klassen-datasett.png]
-image::images/Klassen-datasett.png[]
+[link=images/Klassen-Datasett.png]
+image::images/Klassen-Datasett.png[]
 
 [cols="30s,70"]
 |===

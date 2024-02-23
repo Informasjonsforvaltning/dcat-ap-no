@@ -1,5 +1,12 @@
 = Klassen Distribusjon (dcat:Distribution) [[Distribusjon]]
 
+<<img-KlassenDistribusjon>> viser klassen Distribusjon og dens egenskaper, samt klassen den refererer til.  
+
+[[img-KlassenDistribusjon]]
+.Klassen Distribusjon og klassen den refererer til.
+[link=images/Klassen-Distribusjon.png]
+image::images/Klassen-Distribusjon.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ | _Distribution_
@@ -334,7 +341,7 @@ _This property is used to refer to a language used in the Distribution. This pro
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
-=== Distribusjon – tidsoppløsning (dcat:temporalResolution [[Distribusjon-tidsoppløsning]])
+=== Distribusjon – tidsoppløsning (dcat:temporalResolution) [[Distribusjon-tidsoppløsning]]
 
 [cols="30s,70d"]
 |===
