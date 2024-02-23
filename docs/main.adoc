@@ -11,6 +11,7 @@ ifdef::backend-pdf[:toc: macro]
 :sectanchors:
 :table-stripes: even
 :title-logo-image: image:images/digitaliseringsdirektoratet.png[pdfwidth=30vw]
+:xrefstyle: short
 
 image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
