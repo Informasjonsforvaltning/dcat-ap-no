@@ -10,10 +10,10 @@ ifdef::backend-pdf[:toc: macro]
 // :sectlinks:
 :sectanchors:
 :table-stripes: even
-:title-logo-image: image:images/Digdir.png[pdfwidth=30vw]
+:title-logo-image: image:images/Digdir.png[alt="Digdir-logo", pdfwidth=30vw]
 :xrefstyle: short
 
-image::images/Digdir.png[width=50%, pdfwidth=30vw]
+image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
 
 include::shared/download.adoc[]
 
