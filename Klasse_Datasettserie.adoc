@@ -1,5 +1,12 @@
 = Klassen Datasettserie (dcat:DatasetSeries) [[Datasettserie]]
 
+<<img-KlassenDatasettserie>> viser klassen Datasettserie og dens egenskaper, samt klassen den refererer til.  
+
+[[img-KlassenDatasettserie]]
+.Klassen Datasettserie og klassene den refererer til.
+[link=images/Klassen-Datasettserie.png]
+image::images/Klassen-Datasettserie.png[]
+
 [cols="30s,70"]
 |===
 | _English name_ | _Dataset series_
