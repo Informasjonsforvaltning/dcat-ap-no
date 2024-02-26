@@ -1,6 +1,6 @@
 = Klassen Aktør (foaf:Agent) [[Aktør]]
 
-<<img-KlassenAktør>> viser klassen Aktør.  
+<<img-KlassenAktør>> viser klassen Aktør og dens egenskaper.  
 
 [[img-KlassenAktør]]
 .Klassen Aktør.

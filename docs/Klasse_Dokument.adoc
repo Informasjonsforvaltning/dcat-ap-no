@@ -1,5 +1,12 @@
 = Klassen Dokument (foaf:Document) [[Dokument]]
 
+<<img-KlassenDokument>> viser klassen Dokument og dens egenskaper.  
+
+[[img-KlassenDokument]]
+.Klassen Aktør.
+[link=images/Klassen-Dokument.png]
+image::images/Klassen-Dokument.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ | _Document_
