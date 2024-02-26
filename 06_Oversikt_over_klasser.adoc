@@ -2,6 +2,8 @@
 
 Hovedklassene og støtteklassene vil bli spesifisert videre i standarden, i alfabetisk rekkefølge etter norske klassenavn. 
 
+_#@@@@@@ vurder om "tomme" klasser samt datatyper skal droppes siden de gir ikke noe merverdi#_
+
 == Hovedklasser ("_main entities_") [[Hovedklasser]] 
 
 Hovedklasser er de klassene som utgjør kjernen av denne applikasjonsprofilen. 
@@ -50,7 +52,7 @@ Støtteklasser er de klassene som støtter hovedklassene i denne applikasjonspro
 
 Følgende datatyper er brukt i denne applikasjonsprofilen. 
 
-#_foreløpig i samme rekkefølge som i DCAT-AP3.0, skal sorteres etter norske klassenavn etter at innholdet er stabilt_#
+#_@@@@@@ foreløpig i samme rekkefølge som i DCAT-AP3.0, skal sorteres etter norske klassenavn etter at innholdet er stabilt_#
 
 .Datatyper brukt i standarden
 [cols="30,70"]

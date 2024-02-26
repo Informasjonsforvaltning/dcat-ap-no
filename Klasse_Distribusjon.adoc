@@ -235,7 +235,7 @@ _This property is used to refer to the media type of the Distribution as defined
 | Merknad 1 / _Note 1_ | Verdien SKAL velges fra https://www.iana.org/assignments/media-types/media-types.xhtml[__IANA Media Types__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from https://www.iana.org/assignments/media-types/media-types.xhtml[IANA Media Types &#x29C9;, window="_blank", role="ext-link"].__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse# - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike medietyper. #Skal det tillates flere ulike medietyper for en og samme distribusjon? Ref. klassedefinisjonen i innledningen til kapitlet.# 
+| Merknad 2 / _Note 2_ | #Norsk utvidelse# - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike medietyper. _#@@@@@@ Skal det tillates flere ulike medietyper for en og samme distribusjon? Ref. klassedefinisjonen i innledningen til kapitlet.#_ 
 
 __Norwegian extension: The multiplicity changed from 0..1 to 0..n.__
 |===
