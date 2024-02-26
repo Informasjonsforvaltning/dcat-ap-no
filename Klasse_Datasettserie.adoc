@@ -260,16 +260,20 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 
 == Om bruk av klassen _Datasettserie_ [[Om-Datasettserie]]
 
-_#Ikke ennå sjekket/justert mot https://semiceu.github.io/DCAT-AP/releases/3.0.0-draft/#usage-guide-on-dataset-series["Usage guide on Dataset Series" i DCAT-AP]#_
+_Datasett_ (`dcat:Dataset`) inkluderes i en _datasettserie_ (`dcat:DatasetSeries`) ved hjelp av datasettegenskapen <<Datasett-iSerie>>. 
 
-Datasett kobles til en _datasettserie_ ved hjelp av `dcat:inSeries` og rekkefølgen i serien defineres ved hjelp av datasettegenskapen `dcat:prev`. I beskrivelsen av selve serien kan en i tillegg definere første og siste datasett i serien ved hjelp av `dcat:first` og `dcat:last`.
+For å harmonisere bruk av datasettserier, skal følgende tas hensyn til: 
 
-Bruken av enkelte egenskaper fra datasett-klassen endres noe i en serie-kontekst:
+* Datasettserie brukes bare når utgiveren ønsker å forvalte en samling av flere datasett. Datasettserie med kun ett datasett bør unngås. 
+* Datasettserie uten datasett bør unngås. Det kan imidlertid hende at en datasettserie over tid blir tom (f.eks. at datasettene i serien blir trukket tilbake). Utgiveren bør i slike tilfeller også vurdere å trekke tilbake selve serien. 
+* __#sjekk om https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-dataset-series[de andre kulepunkter fra EUs DCAT-AP 3.0.0-Draft] som trengs omskriving (jf. https://github.com/SEMICeu/DCAT-AP/issues/354[Issue #354]), er aktuelle her#__
 
-- _Oppdateringsfrekvens_ skal samsvare med frekvensen en legger til nye underordnede datasett med.
-- _Tidsrom_ skal samsvare med tidsommet for hele serien, altså fra det første definerte tidsommet for et underdatasett til det siste.
-- _Dekningsområde_ skal omfatte summen av dekningsområde for alle underdatasett.
-- _Utgivelsesdato_ (dct:issued) av datasettserien skal tilsvare den tidligste publiseringsdatoen for de underordnede datasettene.
-- _Endringsdato_ (dct:modified) for datasettserien skal samsvare med siste publiserings- eller oppdateringsdato for de underordnede datasettene.
+Generelt er det forventet at datasettene i en datasettserie er sterkt relatert til hverandre. Det fins imidlertid ingen felles kriterier eller regler for hvordan datasettene i en datasettserie bør relateres til hverandre. Det kan f.eks. være datasett om noe som utvikler seg over tid og/eller rom, f.eks. ulvebestandstatus, budsjett, regnskap. Versjoneringsterminologi («forrige»/«neste», «første»/«siste») kan f.eks. brukes til å uttrykke rekkefølge i tid. 
 
-Øvrige egenskaper fra klassen _Datasett_ bør bare benyttes dersom de er identiske for alle underdatasett i serien.
+<<img-FigurOrdnetDatasettserie>> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <<Datasett-forrige>>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <<Datasettserie-første>> hhv. <<Datasettserie-siste>>. 
+
+[[img-FigurOrdnetDatasettserie]]
+.Illustrasjon av en ordnet datasettserie.
+[link=images/Figur-ordnet-datasetserie.png]
+image::images/Figur-ordnet-datasetserie.png[]
+
