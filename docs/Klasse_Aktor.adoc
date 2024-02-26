@@ -1,5 +1,12 @@
 = Klassen Aktør (foaf:Agent) [[Aktør]]
 
+<<img-KlassenAktør>> viser klassen Aktør.  
+
+[[img-KlassenAktør]]
+.Klassen Aktør.
+[link=images/Klassen-Aktør.png]
+image::images/Klassen-Aktør.png[]
+
 [cols="30s,70"]
 |===
 | _English name_ | _Agent_
