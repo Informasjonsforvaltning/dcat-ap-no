@@ -1,8 +1,8 @@
 = Klassen Datatjeneste (dcat:DataService) [[Datatjeneste]]
 
-<<img-KlassenDatatjeneste>> viser klassen Datatjeneste og dens egenskaper, samt klassene den refererer til.  
+<<diagram-KlassenDatatjeneste>> viser klassen Datatjeneste og dens egenskaper, samt klassene den refererer til.  
 
-[[img-KlassenDatatjeneste]]
+[[diagram-KlassenDatatjeneste]]
 .Klassen Datatjeneste og klassene den refererer til.
 [link=images/Klassen-Datatjeneste.png]
 image::images/Klassen-Datatjeneste.png[]

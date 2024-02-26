@@ -1,5 +1,12 @@
 = Klassen Identifikator (adms:Identifier) [[Identifikator]]
 
+<<diagram-KlassenIdentifikator>> viser klassen Identifikator og dens egenskap.  
+
+[[diagram-KlassenIdentifikator]]
+.Klassen Identifikator.
+[link=images/Klassen-Identifikator.png]
+image::images/Klassen-Identifikator.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ | _Identifier_

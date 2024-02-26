@@ -1,8 +1,8 @@
 = Klassen Distribusjon (dcat:Distribution) [[Distribusjon]]
 
-<<img-KlassenDistribusjon>> viser klassen Distribusjon og dens egenskaper, samt klassen den refererer til.  
+<<diagram-KlassenDistribusjon>> viser klassen Distribusjon og dens egenskaper, samt klassen den refererer til.  
 
-[[img-KlassenDistribusjon]]
+[[diagram-KlassenDistribusjon]]
 .Klassen Distribusjon og klassen den refererer til.
 [link=images/Klassen-Distribusjon.png]
 image::images/Klassen-Distribusjon.png[]
