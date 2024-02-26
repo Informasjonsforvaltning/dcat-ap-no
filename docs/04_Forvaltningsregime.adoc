@@ -1,6 +1,6 @@
 = Forvaltningsregime [[Forvaltningsregime]]
 
-#_kapitlet bør leses gjennom og ev. oppdateres_#
+#_@@@@@@ kapitlet bør leses gjennom og ev. oppdateres_#
 
 
 Utarbeidelse av nye versjoner av denne standarden initieres av Digitaliseringsdirektoratet. Den primære kilden til nye versjoner vil være endringer i EU-standarden https://semiceu.github.io/DCAT-AP/releases/3.0.0/[DCAT-AP &#x29C9;, window="_blank", role="ext-link"] som denne standarden baseres på. Digitaliseringsdirektoratet vil derfor ha ansvar for å følge med på EUs bruk av, og endringsarbeid knyttet til, DCAT-AP. Arbeidet med en ny versjon av den nasjonale standarden skal som vanlig forankres i relevante organer via høring og behandling i Arkitektur- og standardiseringsrådet.

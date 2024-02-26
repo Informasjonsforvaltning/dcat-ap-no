@@ -2,7 +2,7 @@
 
 Navnerom for denne standarden er  \https://data.norge.no/vocabulary/dcatno#, vanligvis ved prefiks `dcatno`. 
 
-#_tabllen under oppdateres etter at innholdet er blitt stabilt_#
+#_@@@@@@ tabllen under oppdateres etter at innholdet er blitt stabilt_#
 
 [cols="10s,45d,45d"]
 |===

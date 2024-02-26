@@ -21,7 +21,7 @@ Denne versjonen er basert på EUs DCAT-AP, istedenfor EUs BRegDCAT-AP som forrig
 
 Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <<Samsvarskrav>> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP. 
 
-Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (#_NB! tabellen er under løpende oppdatering!_#). 
+Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (_#@@@@@@ NB! tabellen er under løpende oppdatering!#_). 
 
 .Endringer av objekter og egenskaper fra versjon 2.2 til denne versjonen
 [cols="15,15,35,35"]
@@ -46,12 +46,12 @@ Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (#_
 | Datasett – versjon | dcat:version | URIen endret fra owl:versionInfo til dcat:version | Følger DCAT-AP.
 | Datasett – versjon | dcat:version | Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP.
 |  Datasett serie | dcat:DatasetSeries | Datasettserie er subklasse av Katalogisert ressurs istedenfor Datasett | Følger DCAT-AP. 
-| Datasettserie – første |dcat:first | Kravnivået endret fra obligatorisk til anbefalt | #???#
+| Datasettserie – første |dcat:first | Kravnivået endret fra obligatorisk til anbefalt | _#@@@@@@ ???#_
 | Datatjeneste – i samsvar med | dct:conformsTo | Kravnivået endret fra obligatorisk til anbefalt | Følger DCAT-AP. 
 | Datasettserie – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige.
 | Datatjeneste – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Distribusjon – filstørrelse | dcat:byteSize | Verdiområdet endret fra xsd:decimal til  xsd:nonNegativeInteger | Følger DCAT-AP.
-| Katalog - datasettserie | dcatap:datasetSeries | ny | Følger DCAT-AP. #NB! p.t. ikke i DCAT-AP.#
+| Katalog - datasettserie | dcatap:datasetSeries | ny | Følger DCAT-AP. _#@@@@@@ NB! p.t. ikke i DCAT-AP.#_
 | Katalog – er del av | dct:isPartOf | utgått | Følger DCAT-AP (invers egenskap).  
 | Katalog – frekvens | dct:accrualPeriodicity | utgått | Følger DCAT-AP.
 | Katalog – gjeldende lovgivning | dcatap:applicableLegislation | ny | Følger DCAT-AP.
