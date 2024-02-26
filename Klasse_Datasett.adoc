@@ -1,8 +1,8 @@
 = Klassen Datasett (dcat:Dataset) [[Datasett]]
 
-<<img-KlassenDatasett>> viser klassen Datasett og dens egenskaper, samt klassene den refererer til.  
+<<diagram-KlassenDatasett>> viser klassen Datasett og dens egenskaper, samt klassene den refererer til.  
 
-[[img-KlassenDatasett]]
+[[diagram-KlassenDatasett]]
 .Klassen Datasett og klassene den refererer til.
 [link=images/Klassen-Datasett.png]
 image::images/Klassen-Datasett.png[]
