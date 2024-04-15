@@ -19,7 +19,7 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Upload rdf to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.0.0
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
         id: upload-rdf
         with:
           ontology-type: "vocabulary"
