@@ -856,7 +856,8 @@
         sh:path foaf:homepage ;
         sh:severity sh:Violation
     ], [ # klassifisering
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:path org:classification ;
         sh:severity sh:Violation
     ] ;
@@ -1329,7 +1330,8 @@
     rdfs:comment "Place restriction" ;
     rdfs:label "Place restriction" ;
     sh:property [
-        sh:class skos:ConceptScheme ;
+#        sh:class skos:ConceptScheme ;
+        sh:nodeKind sh:IRI ;
         sh:or (
           [sh:hasValue <http://publications.europa.eu/resource/authority/place>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/place>] ) ;
@@ -1343,7 +1345,8 @@
     rdfs:comment "Publisher type restriction" ;
     rdfs:label "Publisher type restriction" ;
     sh:property [
-        sh:class skos:ConceptScheme ;
+#        sh:class skos:ConceptScheme ;
+        sh:nodeKind sh:IRI ;
         sh:or (
           [sh:hasValue <http://purl.org/adms/publishertype/1.0>]
           [sh:hasValue <https://purl.org/adms/publishertype/1.0>] ) ;
@@ -1357,7 +1360,8 @@
     rdfs:comment "Status restriction" ;
     rdfs:label "Status restriction" ;
     sh:property [
-        sh:class skos:ConceptScheme ;
+#        sh:class skos:ConceptScheme ;
+        sh:nodeKind sh:IRI ;
         sh:or (
           [sh:hasValue <http://purl.org/adms/status/1.0>]
           [sh:hasValue <https://purl.org/adms/status/1.0>] );
@@ -1371,7 +1375,8 @@
     rdfs:comment "Legal Resource Type restriction" ;
     rdfs:label "Legal Resource Type restriction" ;
     sh:property [
-        sh:class skos:ConceptScheme ;
+#        sh:class skos:ConceptScheme ;
+        sh:nodeKind sh:IRI ;
         sh:or (
           [sh:hasValue <http://publications.europa.eu/resource/authority/resource-type>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/resource-type>] );
