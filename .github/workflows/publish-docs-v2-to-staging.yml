@@ -15,7 +15,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           ref: v2
 
@@ -33,7 +33,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload rdf to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.1.0
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
         id: upload-rdf
         with:
           ontology-type: "specification"
