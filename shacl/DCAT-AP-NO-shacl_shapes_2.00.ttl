@@ -132,7 +132,8 @@
         sh:path dct:subject ;
         sh:severity sh:Violation
     ], [ # ble generert ved 
-        sh:class prov:Activity ;
+#        sh:class prov:Activity ;
+        sh:nodeKind sh:IRI ;
         sh:path prov:wasGeneratedBy ;
         sh:severity sh:Violation
     ], [ # datasettdistribusjon
