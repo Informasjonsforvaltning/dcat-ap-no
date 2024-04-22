@@ -1067,28 +1067,30 @@
  .
 
 # Tema (skos:Concept)
-:Category_Shape
-    a sh:NodeShape ;
-    rdfs:label "Theme"@en , "Tema"@nb ;
-    sh:property [ # foretrukket tittel
-        sh:minCount 1 ;
-        sh:nodeKind sh:Literal ;
-        sh:path skos:prefLabel ;
-        sh:severity sh:Violation
-    ] ;
-    sh:targetClass skos:Concept .
+# Ikke sjekk, fordi det skal velges fra et kontrollert vokab
+# :Category_Shape
+#     a sh:NodeShape ;
+#     rdfs:label "Theme"@en , "Tema"@nb ;
+#    sh:property [ # foretrukket tittel
+#        sh:minCount 1 ;
+#         sh:nodeKind sh:Literal ;
+#         sh:path skos:prefLabel ;
+#         sh:severity sh:Violation
+#     ] ;
+#    sh:targetClass skos:Concept .
 
 # Tematisk skjema (skos:ConceptScheme)
-:CategoryScheme_Shape
-    a sh:NodeShape ;
-    rdfs:label "Thematic Scheme"@en , "Tematisk skjema"@nb ;
-    sh:property [ # tittel
-        sh:minCount 1 ;
-        sh:nodeKind sh:Literal ;
-        sh:path dct:title ;
-        sh:severity sh:Violation
-    ] ;
-    sh:targetClass skos:ConceptScheme .
+# Ikke sjekk, fordi det skal velges fra et kontrollert vokab
+# :CategoryScheme_Shape
+#     a sh:NodeShape ;
+#     rdfs:label "Thematic Scheme"@en , "Tematisk skjema"@nb ;
+#     sh:property [ # tittel
+#         sh:minCount 1 ;
+#         sh:nodeKind sh:Literal ;
+#         sh:path dct:title ;
+#         sh:severity sh:Violation
+#     ] ;
+#     sh:targetClass skos:ConceptScheme .
 
 # Tidsrom (dct:PeriodOfTime)
 :PeriodOfTime_Shape
