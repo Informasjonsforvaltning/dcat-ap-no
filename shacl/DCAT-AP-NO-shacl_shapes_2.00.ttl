@@ -31,7 +31,7 @@
 <https://data.norge.no/specification/dcat-ap-no/#shacl>
     dcat:accessURL <https://github.com/Informasjonsforvaltning/dcat-ap-no/tree/develop/shacl>;
     dcat:downloadURL <https://github.com/Informasjonsforvaltning/dcat-ap-no/tree/develop/shacl/DCAT-AP-NO-shacl_shapes_2.00.ttl> ;
-    dcatap:availability <http://data.europa.eu/r5r/draft> ;
+    dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/STABLE> ;
     dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ;
     dct:conformsTo <https://www.w3.org/TR/shacl> ;
     dct:creator [
@@ -45,14 +45,16 @@
         foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet"@nb ;
         foaf:page <https://www.digdir.no> ;
     ] ;
-    dct:license <https://creativecommons.org/licenses/by/4.0> ;
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ;
     cc:attributionURL <http://ec.europa.eu/> ;
-    dct:publisher <https://organization-catalogue.fellesdatakatalog.digdir.no/organizations/991825827> ;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ;
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes of DCAT-AP-NO, expressed by in SHACL."@en ;
     dct:title "SHACL-shapes for DCAT-AP-NO"@en ;
-    dct:modified "2023-09-21"^^xsd:date ;
-    owl:versionInfo "2.2.009" ;
+    dct:modified "2024-04-22"^^xsd:date ;
+    dcat:version "2.2.010" ;
+    adms:versionNotes "This version doesn't check the class, but only if the value is an IRI, when the value should be from a Controlled Vocabulary (since not all Controlled Vocabularies are typed as DCAT requires)"@en ,
+        "This incl. also ref. to external resources, e.g. foaf:Document, skos:Concept etc."@en ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     .
 
@@ -75,7 +77,8 @@
         sh:path dct:identifier ;
         sh:severity sh:Violation
     ], [ # utgivertype
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:type ;
         sh:severity sh:Violation
@@ -107,7 +110,8 @@
         sh:path dct:identifier ;
         sh:severity sh:Violation
     ], [ # tema
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:minCount 1 ; # Norwegian extension: Added minCount 1
         sh:path dcat:theme ;
         sh:severity sh:Violation
@@ -117,7 +121,8 @@
         sh:path dct:title ;
         sh:severity sh:Violation
     ], [ # utgiver
-        sh:class foaf:Agent ;
+#        sh:class foaf:Agent ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:minCount 1 ; # Norwegian extension: Added minCount 1
         sh:path dct:publisher ;
@@ -135,7 +140,8 @@
         sh:path dcat:distribution ;
         sh:severity sh:Violation
     ], [ # dekningsområde
-        sh:class dct:Location ;
+#        sh:class dct:Location ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
         sh:severity sh:Violation
     ], [ # emneord
@@ -157,7 +163,8 @@
         sh:path dct:temporal ;
         sh:severity sh:Violation
     ], [ # tilgangsnivå
-        sh:class dct:RightsStatement ;
+#        sh:class dct:RightsStatement ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:accessRights ;
         sh:severity sh:Violation
@@ -166,7 +173,8 @@
         sh:path adms:identifier ;
         sh:severity sh:Violation
     ], [ # dokumentasjon
-        sh:class foaf:Document ;
+#        sh:class foaf:Document ;
+        sh:nodeKind sh:IRI ;
         sh:path foaf:page ;
         sh:severity sh:Violation
     ], [ # eksempeldata 
@@ -208,7 +216,8 @@
         sh:path dcat:prev ;
         sh:severity sh:Violation
     ], [ # frekvens
-        sh:class dct:Frequency ;
+#        sh:class dct:Frequency ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:accrualPeriodicity ;
         sh:severity sh:Violation
@@ -253,7 +262,8 @@
         sh:path dcat:qualifiedRelation ;
         sh:severity sh:Violation
     ], [ # landingsside
-        sh:class foaf:Document ;
+#        sh:class foaf:Document ;
+        sh:nodeKind sh:IRI ;
         sh:path dcat:landingPage ;
         sh:severity sh:Violation
     ], [ # opphav
@@ -261,7 +271,8 @@
         sh:path dct:provenance ;
         sh:severity sh:Violation
     ], [ # produsent
-        sh:class foaf:Agent ;
+#        sh:class foaf:Agent ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:creator ;
         sh:severity sh:Violation
@@ -278,7 +289,8 @@
         sh:path dcat:spatialResolutionInMeters ;
         sh:severity sh:Violation
     ], [ # språk
-        sh:class dct:LinguisticSystem ;
+#        sh:class dct:LinguisticSystem ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [ # tidsoppløsning
@@ -286,7 +298,8 @@
         sh:path dcat:temporalResolution ;
         sh:severity sh:Violation
     ], [ # type
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ; 
         sh:path dct:type ;
         sh:severity sh:Violation
@@ -354,7 +367,8 @@
         sh:path dcat:endpointDescription ;
         sh:severity sh:Violation
     ], [ # format, Norwegian extension: Added dct:format
-        sh:class dct:MediaTypeOrExtent ;
+#        sh:class dct:MediaTypeOrExtent ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:format ;
         sh:severity sh:Violation
     ], [ ## format, Norwegian extension, check Controlled Vocab for dct:format
@@ -369,7 +383,8 @@
         sh:path dcat:contactPoint ;
         sh:severity sh:Violation 
      ], [ # tema 
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:path dcat:theme ;
         sh:severity sh:Violation 
      ], [ # tilgjengeliggjør datasett
@@ -378,7 +393,8 @@
         sh:severity sh:Violation
     ], [ # utgiver
         sh:minCount 1 ;
-        sh:class foaf:Agent ;
+#        sh:class foaf:Agent ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:publisher ;
         sh:severity sh:Violation
     ], [ # beskrivelse
@@ -386,7 +402,8 @@
         sh:path dct:description ;
         sh:severity sh:Violation
     ], [ # dokumentasjon
-        sh:class foaf:Document ;
+#        sh:class foaf:Document ;
+        sh:nodeKind sh:IRI ;
         sh:path foaf:page ;
         sh:severity sh:Violation
     ], [ # følger
@@ -399,27 +416,32 @@
         sh:severity sh:Violation
     ], [ # landingsside  
         sh:maxCount 1 ;
-        sh:class foaf:Document ;
+#        sh:class foaf:Document ;
+        sh:nodeKind sh:IRI ;
         sh:path dcat:landingPage ;
         sh:severity sh:Violation
     ], [ # lisens 
-        sh:class dct:LicenseDocument ;
+#        sh:class dct:LicenseDocument ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation
    ], [ # medietype, Norwegian extension: Added dcat:mediaType
-        sh:class dct:MediaType ;
+#        sh:class dct:MediaType ;
+        sh:nodeKind sh:IRI ;
         sh:path dcat:mediaType ;
         sh:severity sh:Violation
     ], [ # tilgangsrettigheter
-        sh:class dct:RightsStatement ;
+#        sh:class dct:RightsStatement ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:accessRights ;
         sh:severity sh:Violation
     ], [ # type
         sh:maxCount 1 ;
         sh:path dct:type ;
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:severity sh:Violation
     ];
     sh:targetClass dcat:DataService .
@@ -438,18 +460,21 @@
         sh:path dct:description ;
         sh:severity sh:Violation
     ], [ # format
-        sh:class dct:MediaTypeOrExtent ;
+#        sh:class dct:MediaTypeOrExtent ;
+        sh:nodeKind sh:IRI ;
         # sh:maxCount 1 ; # Norwegian extension 0..n
         sh:path dct:format ;
         sh:severity sh:Violation
     ], [ # lisens, sjekker kun klasse her
-        sh:class dct:LicenseDocument ;
+#        sh:class dct:LicenseDocument ;
+        sh:nodeKind sh:IRI ;
 #        sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Range: Det som dct:license peker på er ikke en instans av dct:LicenseDocument."@nb ;
+        sh:message "Range: Det som dct:license peker på er ikke en instans av dct:LicenseDocument, dvs. en IRI."@nb ;
     ], [ # lisens, sjekker kun maks. antall her
 #        sh:class dct:LicenseDocument ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
@@ -461,17 +486,20 @@
         sh:severity sh:Warning ;
         sh:message "Kravsnivå: Fant ingen lisens (dct:license). Lisens er anbefalt egenskap for Distribusjon."@nb ;
     ], [ # status 
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path adms:status ;
         sh:severity sh:Violation
     ], [ # tilgjengelighet
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dcatap:availability ;
         sh:severity sh:Violation
     ], [ # dokumentasjon 
-        sh:class foaf:Document ;
+#        sh:class foaf:Document ;
+        sh:nodeKind sh:IRI ;
         sh:path foaf:page ;
         sh:severity sh:Violation
     ], [ # endringsdato 
@@ -489,12 +517,14 @@
         sh:path dct:conformsTo ;
         sh:severity sh:Violation
     ], [ # kompremeringsformat 
-        sh:class dct:MediaType ;
+#        sh:class dct:MediaType ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dcat:compressFormat ;
         sh:severity sh:Violation
     ], [ # medietype 
-        sh:class dct:MediaType ;
+#        sh:class dct:MediaType ;
+        sh:nodeKind sh:IRI ;
         sh:path dcat:mediaType ;
         sh:severity sh:Violation
     ], [ # nedlastsingslenke
@@ -502,7 +532,8 @@
         sh:path dcat:downloadURL ;
         sh:severity sh:Violation
     ], [ # pakkeformat 
-        sh:class dct:MediaType ;
+#        sh:class dct:MediaType ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dcat:packageFormat ;
         sh:severity sh:Violation
@@ -526,7 +557,8 @@
         sh:path spdx:checksum ;
         sh:severity sh:Violation
     ], [ # språk
-        sh:class dct:LinguisticSystem ;
+#        sh:class dct:LinguisticSystem ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [ # tidsoppløsning 
@@ -554,7 +586,8 @@
     a sh:NodeShape ;
     rdfs:label "Document"@en , "Dokument"@nb ;
     sh:property [ # språk
-        sh:datatype dct:LinguisticSystem ;
+#        sh:datatype dct:LinguisticSystem ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:language ;
         sh:severity sh:Violation
@@ -600,7 +633,8 @@
         sh:path dct:title ;
         sh:severity sh:Violation
     ], [ # utgiver
-        sh:class foaf:Agent ;
+#        sh:class foaf:Agent ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:path dct:publisher ;
@@ -613,7 +647,8 @@
         sh:path dcat:dataset ;
         sh:severity sh:Violation
     ], [ # dekningsområde 
-        sh:class dct:Location ;
+#        sh:class dct:Location ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
         sh:severity sh:Violation
     ], [ # endringsdato 
@@ -622,17 +657,20 @@
         sh:path dct:modified ;
         sh:severity sh:Violation
     ], [ # frekvens 
-        sh:class dct:Frequency ;
+#        sh:class dct:Frequency ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:accrualPeriodicity ;
         sh:severity sh:Violation
     ],  [ # hjemmeside 
-        sh:class foaf:Document ;
+#        sh:class foaf:Document ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path foaf:homepage ;
         sh:severity sh:Violation
     ], [ # lisens 
-        sh:class dct:LicenseDocument ;
+#        sh:class dct:LicenseDocument ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation
@@ -641,11 +679,13 @@
         sh:path dct:provenance ;
         sh:severity sh:Violation
     ], [ # språk 
-        sh:class dct:LinguisticSystem ;
+#        sh:class dct:LinguisticSystem ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [ # temaer 
-        sh:class skos:ConceptScheme ;
+#        sh:class skos:ConceptScheme ;
+        sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
         sh:severity sh:Violation
     ], [ # utgivelsesdato 
@@ -675,7 +715,8 @@
         sh:path dcat:record ;
         sh:severity sh:Violation
     ], [ # produsent 
-        sh:class foaf:Agent ;
+#        sh:class foaf:Agent ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:creator ;
         sh:severity sh:Violation
@@ -709,7 +750,8 @@
         sh:path dct:conformsTo ;
         sh:severity sh:Violation
     ], [ # status 
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path adms:status ;
         sh:severity sh:Violation
@@ -728,7 +770,8 @@
         sh:path dct:source ;
         sh:severity sh:Violation
     ], [ # språk 
-        sh:class dct:LinguisticSystem ;
+#        sh:class dct:LinguisticSystem ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [ # tittel 
@@ -743,7 +786,8 @@
     a sh:NodeShape ;
     rdfs:label "License Document"@en , "Lisensdokument"@nb ;
     sh:property [ # lisenstype 
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:type ;
         sh:severity sh:Violation
     ] ;
@@ -776,7 +820,8 @@
     a sh:NodeShape ;
     rdfs:label "Public Organisation"@en , "Offentlig organisasjon"@nb ;
     sh:property [ # dekningsområde
-        sh:class dct:Location ;
+#        sh:class dct:Location ;
+        sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:path dct:spatial ;
         sh:severity sh:Violation
@@ -802,7 +847,8 @@
         sh:path locn:address ;
         sh:severity sh:Violation
     ], [ # hjemmeside
-        sh:class foaf:Document ;
+#        sh:class foaf:Document ;
+        sh:nodeKind sh:IRI ;
         # Norwegian extension: deleted maxCount 1
         # sh:maxCount 1 ;
         sh:path foaf:homepage ;
@@ -840,7 +886,8 @@
         sh:path dct:title ;
         sh:severity sh:Violation
     ], [ # dekningsområde 
-        sh:class dct:Location ;
+#        sh:class dct:Location ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
         sh:severity sh:Violation
     ], [ # er del av
@@ -852,7 +899,8 @@
         sh:path dct:hasPart ;
         sh:severity sh:Violation
     ], [ # hjemmeside 
-        sh:class foaf:Document ;
+#        sh:class foaf:Document ;
+        sh:nodeKind sh:IRI ;
         # Norwegian extension: deleted maxCount 1
         # sh:maxCount 1 ;
         sh:path foaf:homepage ;
@@ -862,16 +910,19 @@
         sh:path cpsv:produces ;
         sh:severity sh:Violation
     ], [ # status
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path adms:status ;
         sh:severity sh:Violation
     ], [ # temaområde 
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:path cv:thematicArea ;
         sh:severity sh:Violation
     ], [ # type 
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:type ;
         sh:severity sh:Violation
     ], [ # følger 
@@ -914,11 +965,13 @@
         sh:path cpsv:implements ;
         sh:severity sh:Violation
     ], [ # språk
-        sh:class dct:LinguisticSystem ;
+#        sh:class dct:LinguisticSystem ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
         sh:severity sh:Violation
     ], [ # type 
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:type ;
         sh:severity sh:Violation
     ] ;
@@ -930,7 +983,8 @@
     rdfs:label "Legal Resource"@en , "Regulativ ressurs"@nb ;
     sh:property [ # type
         sh:minCount 1 ;
-        sh:class eli:ResourceType ;
+#        sh:class eli:ResourceType ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:type ;
         sh:severity sh:Violation
     ], [ # beskrivelse
