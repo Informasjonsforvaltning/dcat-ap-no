@@ -128,7 +128,8 @@
         sh:path dct:publisher ;
         sh:severity sh:Violation
     ], [ # begrep, Norwegian extension: Added this property
-        sh:class skos:Concept ;
+#        sh:class skos:Concept ;
+        sh:nodeKind sh:IRI ;
         sh:path dct:subject ;
         sh:severity sh:Violation
     ], [ # ble generert ved 
