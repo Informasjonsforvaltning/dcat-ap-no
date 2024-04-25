@@ -51,10 +51,11 @@
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes of DCAT-AP-NO, expressed by in SHACL."@en ;
     dct:title "SHACL-shapes for DCAT-AP-NO"@en ;
-    dct:modified "2024-04-22"^^xsd:date ;
-    dcat:version "2.2.010" ;
+    dct:modified "2024-04-25"^^xsd:date ;
+    dcat:version "2.2.011" ;
     adms:versionNotes "This version doesn't check the class, but only if the value is an IRI, when the value should be from a Controlled Vocabulary (since not all Controlled Vocabularies are typed as DCAT requires)"@en ,
-        "This incl. also ref. to external resources, e.g. foaf:Document, skos:Concept etc."@en ;
+        "This incl. also ref. to external resources, e.g. foaf:Document, skos:Concept etc."@en, 
+        "Added also user-friendly sh:message"@en ;
     rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     .
 
@@ -70,17 +71,20 @@
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path foaf:name ;
+        sh:message "foaf:name skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # organisasjonsidentifikator
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:identifier ;
+        sh:message "dct:identifier kan ha maks. én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # utgivertype
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:type ;
+        sh:message "dct:type kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:and (
@@ -103,221 +107,268 @@
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:message "dct:description skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # identifikator
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:identifier ;
+        sh:message "dcat:identfier skal ha minst én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tema
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ; # Norwegian extension: Added minCount 1
         sh:path dcat:theme ;
+        sh:message "dcat:theme skal ha minst én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tittel
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
-        sh:severity sh:Violation
+        sh:message "dct:title skal ha minst én verdi som skal være Literal"@nb ;
+        sh:severity sh:Violation 
     ], [ # utgiver
 #        sh:class foaf:Agent ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:minCount 1 ; # Norwegian extension: Added minCount 1
         sh:path dct:publisher ;
+        sh:message "dct:publisher skal ha én og bare én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # begrep, Norwegian extension: Added this property
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:path dct:subject ;
+        sh:message "dct:subject skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # ble generert ved 
 #        sh:class prov:Activity ;
         sh:nodeKind sh:IRI ;
         sh:path prov:wasGeneratedBy ;
+        sh:message "prov:wasGeneratedBy skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # datasettdistribusjon
         sh:class dcat:Distribution ;
         sh:path dcat:distribution ;
+        sh:message "dcat:distribution skal referere til en instans av dcat:Distribution"@nb ;
         sh:severity sh:Violation
     ], [ # dekningsområde
 #        sh:class dct:Location ;
         sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
+        sh:message "dct:spatial skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # emneord
         sh:nodeKind sh:Literal ;
         sh:path dcat:keyword ;
+        sh:message "dcat:keywork skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # følger
         sh:class cpsv:Rule ;
         sh:path cpsv:follows ;
+        sh:message "cpsv:follows skal referere til en instans av cpsv:Rule"@nb ;
         sh:severity sh:Violation
     ], [ # kontaktpunkt
         sh:or (
             [ sh:class vcard:Kind ]
             [ sh:class vcard:Organization ] ) ;
         sh:path dcat:contactPoint ;
+        sh:message "dcat:contactPoint skal referere til en instans av vcard:Kind eller vcard:Organization"@nb ;
         sh:severity sh:Violation
     ], [ # tidsrom
 	    sh:class dct:PeriodOfTime ;
         sh:path dct:temporal ;
+        sh:message "dct:temporal skal referere til en instans av dct:PeriodOfTime"@nb ;
         sh:severity sh:Violation
     ], [ # tilgangsnivå
 #        sh:class dct:RightsStatement ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:accessRights ;
+        sh:message "dct:accessRights kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # annen identifikator
         sh:class adms:Identifier ;
         sh:path adms:identifier ;
+        sh:message "adms:identifier skal referere til en instans av adms:Identifier"@nb ;
         sh:severity sh:Violation
     ], [ # dokumentasjon
 #        sh:class foaf:Document ;
         sh:nodeKind sh:IRI ;
         sh:path foaf:page ;
+        sh:message "foaf:page skal være en IRI"@nb ;
         sh:severity sh:Violation
     ], [ # eksempeldata 
         sh:class dcat:Distribution ;
         sh:path adms:sample ;
+        sh:message "adms:sample skal referere til en instans av dcat:Distribution"@nb ;
         sh:severity sh:Violation
     ], [ # endringsdato
         sh:maxCount 1 ;
         sh:path dct:modified ;
+        sh:message "dct:modified kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation ;
-        sh:node :DateOrDateTimeDataType_Shape
     ], [ # er del av
         sh:class dcat:Dataset ;
         sh:path dct:isPartOf ;
+        sh:message "dct:isPartOf skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # er påkrevd av 
         sh:class dcat:Dataset ;
         sh:path dct:isRequiredBy ;
+        sh:message "dct:isRequiredBy skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # er referert av
         sh:nodeKind sh:BlankNodeOrIRI ;
         sh:path dct:isReferencedBy ;
+        sh:message "dct:isReferencedBy skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # er versjon av
         sh:class dcat:Dataset ;
         sh:path dct:isVersionOf ;
+        sh:message "dct:isVersionOf skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # erstatter 
         sh:class dcat:Dataset ;
         sh:path dct:replaces ;
+        sh:message "dct:replaces skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # erstattes av
         sh:class dcat:Dataset ;
         sh:path dct:isReplacedBy ;
+        sh:message "dct:isReplacedBy skal referere til en intans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # forrige 
         sh:maxCount 1 ;
         sh:class dcat:Dataset ;
         sh:path dcat:prev ;
+        sh:message "dcat:prev kan ha maks. én verdi som skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # frekvens
 #        sh:class dct:Frequency ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:accrualPeriodicity ;
+        sh:message "dct:accrualPeriodicity kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # har del
         sh:class dcat:Dataset ;
         sh:path dct:hasPart ;
+        sh:message "dct:hasPart skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # har kvalitetsnote
         sh:class dqv:QualityAnnotation ;
         sh:path dqv:hasQualityAnnotation ;
+        sh:message "dqv:hasQualityAnnotation skal referere til en instans av dqv:QualityAnnotation"@nb ;
         sh:severity sh:Violation
     ], [ # har måleresultat
         sh:class dqv:QualityMeasurement ;
         sh:path dqv:hasQualityMeasurement ;
+        sh:message "dqv:hasQualityMeasurement skal referere til en instans av dqv:QualityMeasurement"@nb ;
         sh:severity sh:Violation
     ], [ # har versjon
         sh:class dcat:Dataset ;
         sh:path dct:hasVersion ;
+        sh:message "dct:hasVersion skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # i samsvar med
-        sh:class dct:Standard ;
+#        sh:class dct:Standard ;
+        sh:nodeKind sh:BlankNodeOrIRI ;
         sh:path dct:conformsTo ;
+        sh:message "dct:conformsTo skal være en blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # i serie
         sh:class dcat:DatasetSeries ;
         sh:path dcat:inSeries ;
+        sh:message "dcat:inSeries skal referere til en instans av dcat:DatasetSeries"@nb ;
         sh:severity sh:Violation
     ], [ # kilde 
         sh:class dcat:Dataset ;
         sh:path dct:source ;
+        sh:message "dct:source skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # krever 
         sh:class dcat:Dataset ;
         sh:path dct:requires ;
+        sh:message "dct:requires skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # kvalifisert kreditering
         sh:class prov:Attribution ;
         sh:path prov:qualifiedAttribution ;
+        sh:message "prov:qualifiedAttribution skal referere til en instans av prov:Attribution"@nb ;
         sh:severity sh:Violation
     ], [ # kvalifisert relasjon
         sh:class dcat:Relationship ;
         sh:path dcat:qualifiedRelation ;
+        sh:message "dcat:qualifiedRelation skal referere til en instans av dcat:Relationship"@nb ;
         sh:severity sh:Violation
     ], [ # landingsside
 #        sh:class foaf:Document ;
         sh:nodeKind sh:IRI ;
         sh:path dcat:landingPage ;
+        sh:message "dcat:landingPage skal være en IRI"@nb ; 
         sh:severity sh:Violation
     ], [ # opphav
         sh:class dct:ProvenanceStatement ;
         sh:path dct:provenance ;
+        sh:message "dct:provenance skal referere til en instans av dct:ProvenanceStatement"@nb ;
         sh:severity sh:Violation
     ], [ # produsent
 #        sh:class foaf:Agent ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:creator ;
+        sh:message "dct:creator skal være en IRI"@nb ;
         sh:severity sh:Violation
     ], [ # refererer til 
         sh:nodeKind sh:BlankNodeOrIRI ;
         sh:path dct:references ;
+        sh:message "dct:references skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # relatert ressurs 
         sh:nodeKind sh:BlankNodeOrIRI ;
         sh:path dct:relation ;
+        sh:message "dct:relation skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # romlig oppløsning
         sh:datatype xsd:decimal ;
         sh:path dcat:spatialResolutionInMeters ;
+        sh:message "dcat:spatialResolutionInMeters skal være av type xsd:decimal"@nb ;
         sh:severity sh:Violation
     ], [ # språk
 #        sh:class dct:LinguisticSystem ;
         sh:nodeKind sh:IRI ;
         sh:path dct:language ;
+        sh:message "dct:language skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tidsoppløsning
         sh:datatype xsd:duration ;
         sh:path dcat:temporalResolution ;
+        sh:message "dcat:temporalResolution skal være av type xsd:duration"@nb ;
         sh:severity sh:Violation
     ], [ # type
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ; 
         sh:path dct:type ;
+        sh:message "dct:type kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # utgivelsesdato
         sh:maxCount 1 ;
         sh:path dct:issued ;
+        sh:message "dct:issued kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation ;
-        sh:node :DateOrDateTimeDataType_Shape
     ], [ # versjon 
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path owl:versionInfo ;
+        sh:message "owl:versionInfo kan ha maks. én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # versjonsnote 
         sh:nodeKind sh:Literal ;
         sh:path adms:versionNotes ;
+        sh:message "adms:versionNotes skal være Literal"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dcat:Dataset .
@@ -331,11 +382,13 @@
         sh:maxCount 1 ;
         sh:class dcat:Dataset ; 
         sh:path dcat:first ;
+        sh:message "dcat:first skal ha én og bare én verdi som skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation ;
     ], [ # siste 
         sh:maxCount 1 ;
         sh:class dcat:Dataset ; 
         sh:path dcat:last ;
+        sh:message "dcat:last kan ha maks. én verdi som skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation ;
     ] ;
     sh:targetClass dcat:DatasetSeries .
@@ -349,101 +402,122 @@
         sh:minCount 1 ;
         sh:nodeKind sh:BlankNodeOrIRI ;
         sh:path dcat:endpointURL ;
+        sh:message "dcat:endpointURL skal ha én og bare én verdi som skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # identifikator
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:identifier ;
+        sh:message "dct:identifier skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # tittel
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal ha minst én verdi som skal være Literal"@nb ; 
         sh:severity sh:Violation
     ], [ # emneord
         sh:nodeKind sh:Literal ;
         sh:path dcat:keyword ; 
+        sh:message "dcat:keyword skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # endepunktsbeskrivelse
         sh:nodeKind sh:BlankNodeOrIRI ;
         sh:path dcat:endpointDescription ;
+        sh:message "dcat:endpointDescription skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # format, Norwegian extension: Added dct:format
 #        sh:class dct:MediaTypeOrExtent ;
         sh:nodeKind sh:IRI ;
         sh:path dct:format ;
+        sh:message "dct:format skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ ## format, Norwegian extension, check Controlled Vocab for dct:format
         sh:node :FileTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:format ;
+        sh:message "dct:format skal være IRI"@nb ;
         sh:severity sh:Violation
      ], [ # kontaktpunkt 
         sh:or (
             [ sh:class vcard:Kind ]
             [ sh:class vcard:Organization ] ) ;
         sh:path dcat:contactPoint ;
+        sh:message "dcat:contactPoint skal referere til en instans av vcard:Kind eller vcard:Organization"@nb ;
         sh:severity sh:Violation 
      ], [ # tema 
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:path dcat:theme ;
+        sh:message "dcat:theme skal være IRI"@nb ;
         sh:severity sh:Violation 
      ], [ # tilgjengeliggjør datasett
         sh:class dcat:Dataset ;
         sh:path dcat:servesDataset ;
+        sh:message "dcat:servesDataset skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # utgiver
         sh:minCount 1 ;
 #        sh:class foaf:Agent ;
         sh:nodeKind sh:IRI ;
         sh:path dct:publisher ;
+        sh:message "dct:publisher skal ha minst én verdi som skal være IRI"@nb ; 
         sh:severity sh:Violation
     ], [ # beskrivelse
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:message "dct:description skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # dokumentasjon
 #        sh:class foaf:Document ;
         sh:nodeKind sh:IRI ;
         sh:path foaf:page ;
+        sh:message "foaf:page skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # følger
         sh:class cpsv:Rule ;
         sh:path cpsv:follows ;
+        sh:message "cpsv:follows skal referere til en instans av cpsv:Rule"@nb ;
         sh:severity sh:Violation
     ], [ # i samsvar med 
-        sh:class dct:Standard ;
+#        sh:class dct:Standard ;
+        sh:nodeKind sh:BlankNodeOrIRI ;
         sh:path dct:conformsTo ;
+        sh:message "dct:conformsTo skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # landingsside  
         sh:maxCount 1 ;
 #        sh:class foaf:Document ;
         sh:nodeKind sh:IRI ;
         sh:path dcat:landingPage ;
+        sh:message "dcat:landingPage kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # lisens 
 #        sh:class dct:LicenseDocument ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:license ;
+        sh:message "dct:license kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
    ], [ # medietype, Norwegian extension: Added dcat:mediaType
 #        sh:class dct:MediaType ;
         sh:nodeKind sh:IRI ;
         sh:path dcat:mediaType ;
+        sh:message "dcat:mediaType skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tilgangsrettigheter
 #        sh:class dct:RightsStatement ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:accessRights ;
+        sh:message "dct:accessRights kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # type
         sh:maxCount 1 ;
         sh:path dct:type ;
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
+        sh:message "dct:type kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ];
     sh:targetClass dcat:DataService .
@@ -456,129 +530,150 @@
         sh:minCount 1 ;
         sh:nodeKind sh:BlankNodeOrIRI;
         sh:path dcat:accessURL ;
+        sh:message "dcat:accessURL skal ha minst én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # beskrivelse
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:message "dct:description skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # format
 #        sh:class dct:MediaTypeOrExtent ;
         sh:nodeKind sh:IRI ;
         # sh:maxCount 1 ; # Norwegian extension 0..n
         sh:path dct:format ;
+        sh:message "dct:format skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # lisens, sjekker kun klasse her
 #        sh:class dct:LicenseDocument ;
         sh:nodeKind sh:IRI ;
 #        sh:maxCount 1 ;
         sh:path dct:license ;
+        sh:message "dct:license skal være IRI"@nb ;
         sh:severity sh:Violation ;
-        sh:message "Range: Det som dct:license peker på er ikke en instans av dct:LicenseDocument, dvs. en IRI."@nb ;
     ], [ # lisens, sjekker kun maks. antall her
 #        sh:class dct:LicenseDocument ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Multiplisitet: dct:license kan ha maks. 1 verdi."@nb ;
+        sh:message "dct:license kan ha maks. én verdi som skal være IRI"@nb ;
     ], [ # lisens, sjekker kun min. antall her, fordi dct:license er anbefalt, warning hvis ikke med
 #        sh:class dct:LicenseDocument ;
         sh:minCount 1 ;
         sh:path dct:license ;
         sh:severity sh:Warning ;
-        sh:message "Kravsnivå: Fant ingen lisens (dct:license). Lisens er anbefalt egenskap for Distribusjon."@nb ;
+        sh:message "Varsel: Fant ingen lisens (dct:license). Lisens er anbefalt egenskap for Distribusjon."@nb ;
     ], [ # status 
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path adms:status ;
+        sh:message "adms:status kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tilgjengelighet
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dcatap:availability ;
+        sh:message "dcatap:availability kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # dokumentasjon 
 #        sh:class foaf:Document ;
         sh:nodeKind sh:IRI ;
         sh:path foaf:page ;
+        sh:message "foaf:page skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # endringsdato 
         sh:maxCount 1 ;
-        sh:node :DateOrDateTimeDataType_Shape ;
         sh:path dct:modified ;
+        sh:message "dct:modified kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation
     ], [ # filstørrelse 
         sh:datatype xsd:decimal ;
         sh:maxCount 1 ;
         sh:path dcat:byteSize ;
+        sh:message "dcat:byteSize kan ha maks. én verdi som skal være av type xsd:decimal"@nb ;
         sh:severity sh:Violation
     ], [ # i samsvar med  
-        sh:class dct:Standard ;
+#        sh:class dct:Standard ;
+        sh:nodeKind sh:BlankNodeOrIRI ;
         sh:path dct:conformsTo ;
+        sh:message "dct:conformsTo skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # kompremeringsformat 
 #        sh:class dct:MediaType ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dcat:compressFormat ;
+        sh:message "dcat:compressFormat kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # medietype 
 #        sh:class dct:MediaType ;
         sh:nodeKind sh:IRI ;
         sh:path dcat:mediaType ;
+        sh:message "dcat:mediaType skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # nedlastsingslenke
         sh:nodeKind sh:BlankNodeOrIRI;
         sh:path dcat:downloadURL ;
+        sh:message "dcat:downloadURL skal være blank node eller IRI"@nb ; 
         sh:severity sh:Violation
     ], [ # pakkeformat 
 #        sh:class dct:MediaType ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dcat:packageFormat ;
+        sh:message "dcat:packageFormat kan ha maks. én verdi som skal være IRI"@nb ; 
         sh:severity sh:Violation
     ], [ # policy
         sh:class odrl:Policy ;
         sh:maxCount 1 ;
         sh:path odrl:hasPolicy ;
+        sh:message "odrl:hasPolicy kan ha maks. én verdi som skal referere til en instans av odrl:Policy"@nb ;
         sh:severity sh:Violation
     ], [ # rettigheter 
         sh:class dct:RightsStatement ;
         sh:maxCount 1 ;
         sh:path dct:rights ;
+        sh:message "dct:rights kan ha maks. én verdi som skal referere til en instans av dct:RightsStatement"@nb ;
         sh:severity sh:Violation
     ], [ # romlig oppløsning
         sh:datatype xsd:decimal ;
         sh:path dcat:spatialResolutionInMeters ;
+        sh:message "dcat:spatialResolutionInMeters skal væer av type xsd:desimal"@nb ;
         sh:severity sh:Violation
     ], [ # sjekksum 
         sh:class spdx:Checksum ;
         sh:maxCount 1 ;
         sh:path spdx:checksum ;
+        sh:message "spdx:checksum kan ha maks. én verdi som skal referere til en instans av spdx:Checksum"@nb ;
         sh:severity sh:Violation
     ], [ # språk
 #        sh:class dct:LinguisticSystem ;
         sh:nodeKind sh:IRI ;
         sh:path dct:language ;
+        sh:message "dct:language skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tidsoppløsning 
         sh:datatype xsd:duration ;
         sh:path dcat:temporalResolution ;
+        sh:message "dcat:temporalResolution skal være av type xsd:duration"@nb ;
         sh:severity sh:Violation
     ], [ # tilgangstjeneste 
         sh:class dcat:DataService ;
         sh:path dcat:accessService ;
+        sh:message "dcat:acessService skal referere til en instans av dcat:DataService"@nb ;
         sh:severity sh:Violation
     ], [ # tittel 
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # utgivelsesdato 
         sh:maxCount 1 ;
-        sh:node :DateOrDateTimeDataType_Shape ;
         sh:path dct:issued ;
+        sh:message "dct:issued kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dcat:Distribution .
@@ -592,10 +687,12 @@
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:language ;
+        sh:message "dct:language kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tittel
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal være Literal"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass foaf:Document .
@@ -608,6 +705,7 @@
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:path skos:notation ;
+        sh:message "skos:notation skal ha én og bare én verd"@nb ;
         sh:severity sh:Violation
     ] ;
     # sh:targetClass adms:Identifier ;
@@ -622,17 +720,20 @@
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:message "dct:description skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # identifikator
         sh:nodeKind sh:Literal ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:path dct:identifier ;
+        sh:message "dct:identifier skal ha én og bare én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # tittel
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # utgiver
 #        sh:class foaf:Agent ;
@@ -640,6 +741,7 @@
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:path dct:publisher ;
+        sh:message "dct:publisher skal ha én og bare én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # datasett
         sh:or (
@@ -647,85 +749,100 @@
             [ sh:class dcat:DatasetSeries ]
         ) ; 
         sh:path dcat:dataset ;
+        sh:message "dcat:dataset skal referere til en instans av dcat:Dataset eller dcat:DatasetSeries"@nb ;
         sh:severity sh:Violation
     ], [ # dekningsområde 
 #        sh:class dct:Location ;
         sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
+        sh:message "dct:spatial skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # endringsdato 
         sh:maxCount 1 ;
-        sh:node :DateOrDateTimeDataType_Shape ;
         sh:path dct:modified ;
+        sh:message "dct:modified kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation
     ], [ # frekvens 
 #        sh:class dct:Frequency ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:accrualPeriodicity ;
+        sh:message "dct:accrualPeriodicity kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ],  [ # hjemmeside 
 #        sh:class foaf:Document ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path foaf:homepage ;
+        sh:message "foaf:homepage kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # lisens 
 #        sh:class dct:LicenseDocument ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:license ;
+        sh:message "dct:license kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # opphav 
         sh:class dct:ProvenanceStatement ;
         sh:path dct:provenance ;
+        sh:message "dct:provenance skal referere til en instans av dct:ProvenanceStatement"@nb ;
         sh:severity sh:Violation
     ], [ # språk 
 #        sh:class dct:LinguisticSystem ;
         sh:nodeKind sh:IRI ;
         sh:path dct:language ;
+        sh:message "dct:language skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # temaer 
 #        sh:class skos:ConceptScheme ;
         sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
+        sh:message "dcat:themeTaxonomy skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # utgivelsesdato 
         sh:maxCount 1 ;
-        sh:node :DateOrDateTimeDataType_Shape ;
         sh:path dct:issued ;
+        sh:message "dct:issued kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation
     ], [ # datatjeneste 
         sh:class dcat:DataService ;
         sh:path dcat:service ;
+        sh:message "dcat:service skal referere til en instans av dcat:DataServcie"@nb ;
         sh:severity sh:Violation
     ], [ # er del av 
         sh:class dcat:Catalog ;
         sh:maxCount 1 ;
         sh:path dct:isPartOf ;
+        sh:message "dct:isPartOf kan ha maks. én verdi som skal referere til en instnas av dcat:Catalog"@nb ;
         sh:severity sh:Violation
     ], [ # har del 
         sh:class dcat:Catalog ;
         sh:path dct:hasPart ;
+        sh:message "dct:hasPart skal referere til en instnas av dcat:Catalog"@nb ;
         sh:severity sh:Violation
     ], [ # katalog 
         sh:class dcat:Catalog ;
         sh:path dcat:catalog ;
+        sh:message "dcat:catalog skal referere til en instans av dcat:Catalog"@nb ;
         sh:severity sh:Violation
     ], [ # katalogpost 
         sh:class dcat:CatalogRecord ;
         sh:path dcat:record ;
+        sh:message "dcat:record skal referere til en instans av dcat:CatalogRecord"@nb ;
         sh:severity sh:Violation
     ], [ # produsent 
 #        sh:class foaf:Agent ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:creator ;
+        sh:message "dct:creator kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # rettigheter
         sh:class dct:RightsStatement ;
         sh:maxCount 1 ;
         sh:path dct:rights ;
+        sh:message "dct:rights kan ha maks. én verdi som skal referere til en instans av dct:RightsStatement"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dcat:Catalog .
@@ -739,46 +856,54 @@
         sh:minCount 1 ;
         sh:path dct:modified ;
         sh:severity sh:Violation ;
-        sh:node :DateOrDateTimeDataType_Shape
+        sh:message "dct:modified skal ha én og bare én verdi"@nb ;
     ], [ # primærtema 
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:node :DcatResource_Shape ;
         sh:path foaf:primaryTopic ;
+        sh:message "foaf:primaryTopic skal ha én og bare én verdi"@nb ;
         sh:severity sh:Violation
     ], [ # i samsvar med  
-        sh:class dct:Standard ;
+#        sh:class dct:Standard ;
+        sh:nodeKind sh:BlankNodeOrIRI ;
         sh:maxCount 1 ;
         sh:path dct:conformsTo ;
+        sh:message "dct:conformsTo kan ha maks. én verdi som skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # status 
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path adms:status ;
+        sh:message "adms:status kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # utgivelsesdato 
         sh:maxCount 1 ;
-        sh:node :DateOrDateTimeDataType_Shape ;
         sh:path dct:issued ;
+        sh:message "dct:issued kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation
     ], [ # beskrivelse 
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:message "dct:description skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # kilde 
         sh:class dcat:CatalogRecord ;
         sh:maxCount 1 ;
         sh:path dct:source ;
+        sh:message "dct:source kan ha maks. én verdi som skal referere til en instans av dcat:CatalogRecord"@nb ;
         sh:severity sh:Violation
     ], [ # språk 
 #        sh:class dct:LinguisticSystem ;
         sh:nodeKind sh:IRI ;
         sh:path dct:language ;
+        sh:message "dct:language skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tittel 
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal være Literal"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dcat:CatalogRecord .
@@ -791,6 +916,7 @@
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:path dct:type ;
+        sh:message "dct:type skal være IRI"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dct:LicenseDocument .
@@ -803,16 +929,19 @@
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dcat:bbox ;
+        sh:message "dcat:bbox kan ha maks. én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # geografisk midtpunkt
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dcat:centroid ;
+        sh:message "dcat:centroid kan ha maks. én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # geometri
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path locn:geometry ;
+        sh:message "locn:geometry kan ha maks. én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dct:Location .
@@ -826,27 +955,32 @@
         sh:nodeKind sh:IRI ;
         sh:minCount 1 ;
         sh:path dct:spatial ;
+        sh:message "dct:spatial skal ha minst én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # foretrukket navn
         sh:nodeKind sh:Literal ;
         sh:minCount 1 ;
         sh:path skos:prefLabel ;
+        sh:message "skos:prefLabel skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # identifikator
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:identifier ;
+        sh:message "dct:identifier skal ha én og bare én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [  # navn
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal ha én og bare én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # adresse
         sh:class locn:Address ;
         sh:path locn:address ;
+        sh:message "locn:address skal referere til en instans av locn:Address"@nb ;
         sh:severity sh:Violation
     ], [ # hjemmeside
 #        sh:class foaf:Document ;
@@ -854,11 +988,13 @@
         # Norwegian extension: deleted maxCount 1
         # sh:maxCount 1 ;
         sh:path foaf:homepage ;
+        sh:message "foaf:homepage skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # klassifisering
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:path org:classification ;
+        sh:message "org:classification skal være IRI"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass cv:PublicOrganisation .
@@ -871,35 +1007,42 @@
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:message "dct:description skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # har kompetent organ 
         sh:minCount 1 ;
         sh:class cv:PublicOrganisation ;
         sh:path cv:hasCompetentAuthority ;
+        sh:message "cv:hasCompetentAuthority skal ha minst én verdi som skal referere til en instans av cv:PublicOrganisation"@nb ;
         sh:severity sh:Violation
     ], [ # identifikator 
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:identifier ;
+        sh:message "dct:identifier skal ha én og bare én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # tittel
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # dekningsområde 
 #        sh:class dct:Location ;
         sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
+        sh:message "dct:spatial skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # er del av
         sh:class cpsv:PublicService ;
         sh:path dct:isPartOf ;
+        sh:message "dct:isPartOf skal referere til en instans av cpsv:PublicService"@nb ;
         sh:severity sh:Violation
     ], [ # har del
         sh:class cpsv:PublicService ;
         sh:path dct:hasPart ;
+        sh:message "dct:hasPart skal referere til en instans av cpsv:PublicService"@nb ;
         sh:severity sh:Violation
     ], [ # hjemmeside 
 #        sh:class foaf:Document ;
@@ -907,6 +1050,7 @@
         # Norwegian extension: deleted maxCount 1
         # sh:maxCount 1 ;
         sh:path foaf:homepage ;
+        sh:message "foaf:homepage skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # produserer 
         sh:node :DcatResource_Shape ;
@@ -917,28 +1061,34 @@
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path adms:status ;
+        sh:message "adms:status kan ha maks. én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # temaområde 
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:path cv:thematicArea ;
+        sh:message "cv:thematicArea skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # type 
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:path dct:type ;
+        sh:message "dct:type skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # følger 
         sh:class cpsv:Rule ;
         sh:path cpsv:follows ;
+        sh:message "cpsv:follows skal referere til en instans av cpsv:Rule"@nb ;
         sh:severity sh:Violation
     ], [ # har kontaktpunkt
         sh:class schema:ContactPoint ;
         sh:path cv:hasContactPoint ;
+        sh:message "cv:hasContactPoint skal referere til en instans av schema:ContactPoint"@nb ;
         sh:severity sh:Violation
     ], [ # har regulativ ressurs
         sh:class eli:LegalResource ;
         sh:path cv:hasLegalResouce ;
+        sh:message "cv:hasLegalResource skal referere til en instans av eli:LegalResource"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass cpsv:PublicService .
@@ -951,31 +1101,37 @@
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:message "dct:description skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # identifikator
         sh:nodeKind sh:Literal ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:path dct:identifier ;
+        sh:message "dct:identifier skal ha én og bare én verdi om skal være Literal"@nb ; 
         sh:severity sh:Violation
     ], [ # tittel
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # implementerer
         sh:class eli:LegalResource ;
         sh:path cpsv:implements ;
+        sh:message "cpsv:implements skal referere til en instans av eli:LegalResource"@nb ;
         sh:severity sh:Violation
     ], [ # språk
 #        sh:class dct:LinguisticSystem ;
         sh:nodeKind sh:IRI ;
         sh:path dct:language ;
+        sh:message "dct:language skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # type 
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
         sh:path dct:type ;
+        sh:message "dct:type skal være IRI"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass cpsv:Rule .
@@ -989,22 +1145,27 @@
 #        sh:class eli:ResourceType ;
         sh:nodeKind sh:IRI ;
         sh:path dct:type ;
+        sh:message "dct:type skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # beskrivelse
         sh:nodeKind sh:Literal ;
         sh:path dct:description ;
+        sh:message "dct:description skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # identifikator
         sh:nodeKind sh:Literal ;
         sh:path dct:identifier ;
+        sh:message "dct:identifier skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # referanse
         sh:nodeKind sh:BlankNodeOrIRI;
         sh:path rdfs:seeAlso ;
+        sh:message "rdfs:seeAlso skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # relatert regulativ ressurs
         sh:class eli:LegalResource ;
         sh:path dct:relation ;
+        sh:message "dct:relation skal referere til en instans av eli:LegalResource"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass eli:LegalResource .
@@ -1017,11 +1178,13 @@
         sh:node :DcatResource_Shape ;
         sh:minCount 1 ;
         sh:path dct:relation ;
+        sh:message "dct:relation skal ha minst én verdi"@nb ;
         sh:severity sh:Violation
     ], [ # rolle
         sh:minCount 1 ;
         sh:class dcat:Role ;
         sh:path dcat:hadRole ;
+        sh:message "dcat:hadRole skal ha minst én verdi som skal referere til en instans av dcat:Role"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dcat:Relationship .
@@ -1035,12 +1198,14 @@
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:path spdx:algorithm ;
+        sh:message "spdx:algorithm skal ha én og bare én vedi som skal være spdx:checksumAlgorithm_sha1"@nb ;
         sh:severity sh:Violation
     ], [ # sjekksumverdi
         sh:datatype xsd:hexBinary ;
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:path spdx:checksumValue ;
+        sh:message "spdx:checksumValue skal ha én og bare én verdi som skal være av type xsd:hexBinary"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass spdx:Checksum .
@@ -1053,15 +1218,18 @@
         sh:minCount 1;
         sh:nodeKind sh:Literal ;
         sh:path dct:title ;
+        sh:message "dct:title skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
    ], [ # har referanse
         sh:nodeKind sh:BlankNodeOrIRI;
         sh:path rdfs:seeAlso ;
+        sh:message "rdfs:seeAlso skal være blank node eller IRI"@nb ;
         sh:severity sh:Violation
     ], [ # har versjonsnummer
         sh:maxCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path owl:versionInfo ;
+        sh:message "owl:versionInfo kan ha maks. én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
      ] ;
     sh:targetObjectsOf dct:conformsTo ;
@@ -1097,47 +1265,65 @@
 :PeriodOfTime_Shape
     a sh:NodeShape ;
     rdfs:label "Period of Time"@en , "Tidsrom"@nb ;
-    sh:property [ # sluttdato/tid
+    sh:property [ # sluttdato/tid, kardinalitet
         sh:maxCount 1 ;
         sh:path dcat:endDate ;
         sh:severity sh:Violation ;
-        sh:node :DateOrDateTimeDataType_Shape
-    ], [ # startdato/tid
+        sh:message "dcat:endData kan ha maks. én verdi"@nb ;
+    ], [ # sluttdato/tid, datatype
+        sh:or ( [sh:datatype xsd:date]  [sh:datatype xsd:dateTime]  );        
+        sh:path dcat:endDate ;
+        sh:severity sh:Violation ;
+        sh:message "dcat:endDate skal være av type xsd:date eller xsd:dateTime"@nb ;
+    ] , [ # startdato/tid
         sh:maxCount 1 ;
         sh:path dcat:startDate ;
         sh:severity sh:Violation ;
-        sh:node :DateOrDateTimeDataType_Shape
-    ], [ # begynnelse
+        sh:message "dcat:startDate kan ha maks. én verdi"@nb ;
+    ], [ # startdato/tid, datatype
+        sh:or ( [sh:datatype xsd:date]  [sh:datatype xsd:dateTime]  );        
+        sh:path dcat:startDate ;
+        sh:severity sh:Violation ;
+        sh:message "dcat:startDate skal være av type xsd:date eller xsd:dateTime"@nb ;
+    ] ,[ # begynnelse
         sh:class time:Instant ;
         sh:maxCount 1 ;
         sh:path time:hasBeginning ;
+        sh:message "time:hasBeginning kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation
     ], [ # slutt
         sh:class time:Instant ;
         sh:maxCount 1 ;
         sh:path time:hasEnd ;
+        sh:message "time:hasEnd kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dct:PeriodOfTime .
 
-:DateOrDateTimeDataType_Shape
+# datatype xsd:date / xsd:dateTime 
+
+:DateTime_Shape # check xsd:date / xsd:dateTime
     a sh:NodeShape ;
-    rdfs:comment "Date time date disjunction shape checks that a datatype property receives a date or a dateTime literal" ;
-    rdfs:label "Date time date disjunction" ;
-    sh:message "The values must be data typed as either xsd:date or xsd:dateTime"@en ;
-    sh:or ([
-            sh:datatype xsd:date
-        ]
-        [
-            sh:datatype xsd:dateTime
-        ]
-    ) .
+    rdfs:comment "Check if the data type is xsd:date or xsd:dateTime" ;
+    sh:property [
+        sh:or ( [sh:datatype xsd:date]  [sh:datatype xsd:dateTime]  );        
+        sh:path dct:modified ;
+        sh:severity sh:Violation ;
+        sh:message "dct:modified skal være av type xsd:date eller xsd:dateTime"@nb ;
+    ], [
+        sh:or ([ sh:datatype xsd:date ] [ sh:datatype xsd:dateTime ] );
+        sh:path dct:issued ;
+        sh:severity sh:Violation ;
+        sh:message "dct:issued skal være av type xsd:date eller xsd:dateTime"@nb ;
+    ] ;
+    sh:targetClass dcat:Dataset, dcat:Distribution, dcat:Catalog, dcat:CatalogRecord ;
+    .
 
 :DcatResource_Shape
     a sh:NodeShape ;
     rdfs:comment "the union of Catalog, Dataset and DataService" ;
     rdfs:label "dcat:Resource" ;
-    sh:message "The node is either a Catalog, Dataset or a DataService"@en ;
+    sh:message "Verdien skal referere til en instans av dcat:Catalog, dcat:Dataset eller dcat:DataService"@nb ;
     sh:or ([
             sh:class dcat:Catalog
         ]
@@ -1168,6 +1354,7 @@
         ) ;
         sh:minCount 1 ;
         sh:nodeKind sh:IRI ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://publications.europa.eu/resource/authority/access-right"@nb ;
         sh:path skos:inScheme
     ] .
 
@@ -1180,33 +1367,7 @@
           [sh:hasValue <http://data.europa.eu/r5r/availability/1.0>]
           [sh:hasValue <https://data.europa.eu/r5r/availability/1.0>] ) ;
         sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
-        sh:path skos:inScheme
-    ] .
-
-:ContinentRestriction
-    a sh:NodeShape ;
-    rdfs:comment "Continent restriction" ;
-    rdfs:label "Continent restriction" ;
-    sh:property [
-        sh:or (
-          [sh:hasValue <http://publications.europa.eu/resource/authority/continent>]
-          [sh:hasValue <https://publications.europa.eu/resource/authority/continent>] ) ;
-        sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
-        sh:path skos:inScheme
-    ] .
-
-:CountryRestriction
-    a sh:NodeShape ;
-    rdfs:comment "Country restriction" ;
-    rdfs:label "Country restriction" ;
-    sh:property [
-        sh:or (
-          [sh:hasValue <http://publications.europa.eu/resource/authority/country>]
-          [sh:hasValue <https://publications.europa.eu/resource/authority/country>] ) ;
-        sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://data.europa.eu/r5r/availability/1.0"@nb ;
         sh:path skos:inScheme
     ] .
 
@@ -1214,11 +1375,25 @@
     a sh:NodeShape ;
     rdfs:comment "Spatial Restriction" ;
     rdfs:label "Spatial Restriction" ;
-    sh:or (:CountryRestriction
-                :PlaceRestriction
-                :ContinentRestriction
-                :GeoNamesRestriction
+    sh:property [ 
+        sh:or ( # Et av følgende kontrollerte vokabularer er tillatt         
+            sh:or (  # Country
+                [sh:hasValue <http://publications.europa.eu/resource/authority/country>]
+                [sh:hasValue <https://publications.europa.eu/resource/authority/country>] ) 
+            sh:or ( # Continent
+                [sh:hasValue <http://publications.europa.eu/resource/authority/continent>]
+                [sh:hasValue <https://publications.europa.eu/resource/authority/continent>] )            
+            sh:or ( # Geonames
+                [sh:hasValue <http://sws.geonames.org>]
+                [sh:hasValue <https://sws.geonames.org>] )
+            sh:or ( # Places
+                [sh:hasValue <http://publications.europa.eu/resource/authority/place>]
+                [sh:hasValue <https://publications.europa.eu/resource/authority/place>] ) 
             ) ;
+            sh:minCount 1 ;
+            sh:path skos:inScheme ;
+        ] ;
+     sh:message "Verdien skal hentes fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ;
      .
 
 :DataThemeRestriction
@@ -1230,7 +1405,6 @@
           [sh:hasValue <http://publications.europa.eu/resource/authority/data-theme>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/data-theme>] ) ;
         sh:MinCount 1 ;
-        sh:nodeKind sh:IRI ;
         sh:path skos:inScheme ;
     ] .
 
@@ -1243,18 +1417,19 @@
           [sh:pattern "^http://eurovoc.europa.eu/.+$"]
           [sh:pattern "^https://eurovoc.europa.eu/.+$"] ) ;
         sh:MinCount 1 ;
-        sh:nodeKind sh:IRI ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://eurovoc.europa.eu/"@nb ;
         sh:path skos:inScheme
     ] .
 
+# følgende brukes ikke ???
 :nonMandatoryThemeRestriction_ShapeCV
     a sh:NodeShape ;
     rdfs:comment "At least Data-theme is used, when dcat:theme is used"@en ;
-    rdfs:label "DataThemeRestriction when dcat:theme is not mandatory" ;
+    rdfs:label "DataThemeRestriction when dcat:theme is not mandatory"@en ;
     sh:property [
         sh:qualifiedValueShape [ sh:node :DataThemeRestriction ] ;
         sh:qualifiedMinCount 1 ;
-        sh:nodeKind sh:IRI ;
+        sh:message "Minst én verdi skal hentes fra kontrollert vokabular http://publications.europa.eu/resource/authority/data-theme"@nb ;
         sh:path skos:inScheme ;
     ] ;
     .
@@ -1267,7 +1442,8 @@
         sh:or (
           [sh:hasValue <http://publications.europa.eu/resource/authority/file-type>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/file-type>] ) ;
-        sh:nodeKind sh:IRI ;
+        sh:minCount 1 ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://publications.europa.eu/resource/authority/file-type"@nb ;
         sh:path skos:inScheme
     ] .
 
@@ -1280,20 +1456,7 @@
           [sh:hasValue <http://publications.europa.eu/resource/authority/frequency>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/frequency>] ) ;
         sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
-        sh:path skos:inScheme
-    ] .
-
-:GeoNamesRestriction
-    a sh:NodeShape ;
-    rdfs:comment "Geo names restriction" ;
-    rdfs:label "Geo names restriction" ;
-    sh:property [
-        sh:or (
-          [sh:hasValue <http://sws.geonames.org>]
-          [sh:hasValue <https://sws.geonames.org>] ) ;
-        sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://publications.europa.eu/resource/authority/frequency"@nb ;
         sh:path skos:inScheme
     ] .
 
@@ -1306,7 +1469,7 @@
           [sh:hasValue <http://publications.europa.eu/resource/authority/language>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/language>] ) ;
         sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://publications.europa.eu/resource/authority/language"@nb ;
         sh:path skos:inScheme
     ] .
 
@@ -1319,25 +1482,8 @@
           [sh:hasValue <http://publications.europa.eu/resource/authority/licence>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/licence>] ) ;
         sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
         sh:path skos:inScheme ;
-# sh:message plassert her blir ikke brukt, ser det ut til
-#        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
-    ] .
-
-:PlaceRestriction
-    a sh:NodeShape ;
-    rdfs:comment "Place restriction" ;
-    rdfs:label "Place restriction" ;
-    sh:property [
-#        sh:class skos:ConceptScheme ;
-        sh:nodeKind sh:IRI ;
-        sh:or (
-          [sh:hasValue <http://publications.europa.eu/resource/authority/place>]
-          [sh:hasValue <https://publications.europa.eu/resource/authority/place>] ) ;
-        sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
-        sh:path skos:inScheme
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://publications.europa.eu/resource/authority/licence"@nb ;
     ] .
 
 :PublisherTypeRestriction
@@ -1351,7 +1497,7 @@
           [sh:hasValue <http://purl.org/adms/publishertype/1.0>]
           [sh:hasValue <https://purl.org/adms/publishertype/1.0>] ) ;
         sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://purl.org/adms/publishertype/1.0"@nb ;
         sh:path skos:inScheme
     ] .
 
@@ -1366,7 +1512,7 @@
           [sh:hasValue <http://purl.org/adms/status/1.0>]
           [sh:hasValue <https://purl.org/adms/status/1.0>] );
         sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://purl.org/adms/status/1.0"@nb ;
         sh:path skos:inScheme
     ] .
 
@@ -1381,7 +1527,7 @@
           [sh:hasValue <http://publications.europa.eu/resource/authority/resource-type>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/resource-type>] );
         sh:minCount 1 ;
-        sh:nodeKind sh:IRI ;
+        sh:message "Verdien skal hentes fra kontrollert vokabular http://publications.europa.eu/resource/authority/resource-type"@nb ;
         sh:path skos:inScheme
     ] .
 
@@ -1390,38 +1536,36 @@
     a sh:NodeShape ;
     sh:property [
         sh:node :AccessRightsRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:accessRights ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:accessRights skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/access-right"@nb ;
     ], [
         sh:node :FrequencyRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:accrualPeriodicity ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:accrualPeriodicity skal ha verdi hentet verdi fra kontrollert vokabular http://publications.europa.eu/resource/authority/frequency"@nb ;
     ], [
         sh:node :LanguageRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:language skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/language"@nb ;
     ], [
-        sh:node :SpatialRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
         sh:severity sh:Warning ;
-        sh:message "A non managed concept is used to indicate a spatial description, check if a corresponding exist"@en ;
+        sh:node :SpatialRestriction ;
+        sh:message "dct:spatial skal ha minst én verdi hentet fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ;
     ], [ # Norwegian extension
         sh:node :LicenseTypeRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
+        sh:message "dct:license skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/licence"@nb ;
     ] ;
     sh:property [
         sh:path dcat:theme ;
         sh:qualifiedValueShape [ sh:node :DataThemeRestriction ] ; # NB! kun sjekk på Data-theme, ikke Eurovoc
         sh:qualifiedMinCount 1 ;
         sh:severity sh:Warning ;
-        sh:message "Data-themes fra EU skal brukes for dcat:theme"@nb ;
+        sh:message "dcat:theme skal ha minst én verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/data-theme"@nb ;
     ] ;
     sh:targetClass dcat:Dataset.
 
@@ -1430,9 +1574,9 @@
     a sh:NodeShape ;
     sh:property [
         sh:node :AccessRightsRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:accessRights ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:accessRights skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/access-right"@nb ;
     ] ;
 #--- denne virker ikke helt etter hensikt nå:
 #    sh:property [
@@ -1453,40 +1597,39 @@
     a sh:NodeShape ;
     sh:property [
         sh:node :AccessRightsRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:accessRights ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:accessRights skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/access-right"@nb ;
     ], [
         sh:node :FileTypeRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:format ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "Verdct:format dien skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/file-type"@nb ;
     ], [
         sh:node :LanguageRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:language en skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/language"@nb ;
     ], [
         sh:node :LicenseTypeRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:license ;
         sh:severity sh:Violation ;
-        sh:message "Bruk av Kontrollert Vokabular: Det som dct:license peker på finnes ikke i EU sin liste over predefinerte lisenser (http(s)://publications.europa.eu/resource/authority/licence)."@nb ;
+        sh:message "dct:license skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/licence"@nb ;
     ], [
         sh:node :StatusRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path adms:status ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "adms:status skal ha verdi hentet fra kontrollert vokabular http://purl.org/adms/status/1.0"@nb ;
     ], [
         sh:node :AvailabilityRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dcatap:availability ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dcatap:availability skal ha verdi hentet fra kontrollert vokabular http://data.europa.eu/r5r/availability/1.0"@nb ;
     ], [ ## Norwegian extension
         sh:node :FileTypeRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:format ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:format skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/file-type"@nb ;
     ] ;
     sh:targetClass dcat:Distribution.
 
@@ -1495,38 +1638,35 @@
     a sh:NodeShape ;
     sh:property [
         sh:node :AccessRightsRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:accessRights ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:accessRights skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/access-right"@nb ;
     ], [
         sh:node :FrequencyRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:accrualPeriodicity ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:accrualPeriodicity skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/frequency"@nb ;
     ], [
         sh:node :LanguageRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:language skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/language"@nb ;
     ], [
         sh:node :SpatialRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
         sh:severity sh:Warning ;
-        sh:message "A non managed concept is used to indicate a spatial description, check if a corresponding exist"@en ;
+        sh:message "dct:spatial skal ha minst én verdi hentet fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ;
     ], [
         sh:node :StatusRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path adms:status ;
-        sh:maxCount 1 ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "adms:status skal ha verdi hentet fra kontrollert vokabular http://purl.org/adms/status/1.0"@nb ;
     ], [
         sh:or (
           [sh:pattern "^http://eurovoc.europa.eu/.+$"]
           [sh:pattern "^https://eurovoc.europa.eu/.+$"] ) ;
-        sh:nodeKind sh:IRI ;
         sh:path dcat:themeTaxonomy ;
-    	  sh:description "Multiple themes can be used but at least <http://eurovoc.europa.eu/.+> should be present" ;
+    	sh:description "dcat:themeTaxonomy bør ha verdi fra <http://eurovoc.europa.eu/.+>"@nb ;
         sh:severity sh:Warning ;
     ] ;
     sh:targetClass dcat:Catalog.
@@ -1536,9 +1676,9 @@
     a sh:NodeShape ;
     sh:property [
         sh:node :LegalResourceTypeRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:type ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:type skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/resource-type"@nb ;
     ] ;
     sh:targetClass eli:LegalResource .
 
@@ -1547,20 +1687,19 @@
     a sh:NodeShape ;
     sh:property [
         sh:node :SpatialRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:spatial ;
         sh:severity sh:Warning ;
-        sh:message "A non managed concept is used to indicate a spatial description, check if a corresponding exist"@en ;
+        sh:message "dct:spatial skal ha minst én verdi hentet fra kontrollerte vokabularer http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place eller http://sws.geonames.org"@nb ;
     ], [
         sh:node :StatusRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path adms:status ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "adms:status skal ha verdi hentet fra kontrollert vokabular http://purl.org/adms/status/1.0"@nb ;
     ], [
         sh:node :EurovocThemeRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path cv:thematicArea ;
-        sh:severity sh:Warning
+        sh:severity sh:Warning ;
+        sh:message "cv:thematicArea skal ha verdi hentet fra kontrollert vokabular http://eurovoc.europa.eu/"@nb ;
     ] ;
     sh:targetClass cpsv:PublicService .
 
@@ -1569,9 +1708,9 @@
     a sh:NodeShape ;
     sh:property [
         sh:node :LanguageRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:language ;
-        sh:severity sh:Warning
+        sh:severity sh:Warning ;
+        sh:message "dct:language skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/language"@nb ;
     ] ;
     sh:targetClass cpsv:Rule.
 
@@ -1581,8 +1720,8 @@
     a sh:NodeShape ;
     sh:property [
         sh:node :PublisherTypeRestriction ;
-        sh:nodeKind sh:IRI ;
         sh:path dct:type ;
-        sh:severity sh:Violation
+        sh:severity sh:Violation ;
+        sh:message "dct:type skal ha verdi hentet fra kontrollert vokabular http://purl.org/adms/publishertype/1.0"@nb ;
     ] .
 
