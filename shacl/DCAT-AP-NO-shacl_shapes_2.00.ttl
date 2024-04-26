@@ -113,7 +113,7 @@
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:identifier ;
-        sh:message "dcat:identfier skal ha minst én verdi som skal være IRI"@nb ;
+        sh:message "dct:identfier skal ha minst én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # tema
 #        sh:class skos:Concept ;
@@ -1604,7 +1604,7 @@
         sh:node :FileTypeRestriction ;
         sh:path dct:format ;
         sh:severity sh:Violation ;
-        sh:message "Verdct:format dien skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/file-type"@nb ;
+        sh:message "dct:format skal ha verdi hentet fra kontrollert vokabular http://publications.europa.eu/resource/authority/file-type"@nb ;
     ], [
         sh:node :LanguageRestriction ;
         sh:path dct:language ;
@@ -1724,4 +1724,3 @@
         sh:severity sh:Violation ;
         sh:message "dct:type skal ha verdi hentet fra kontrollert vokabular http://purl.org/adms/publishertype/1.0"@nb ;
     ] .
-
