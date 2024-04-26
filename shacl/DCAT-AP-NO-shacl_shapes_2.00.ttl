@@ -113,7 +113,7 @@
         sh:minCount 1 ;
         sh:nodeKind sh:Literal ;
         sh:path dct:identifier ;
-        sh:message "dct:identfier skal ha minst én verdi som skal være IRI"@nb ;
+        sh:message "dct:identfier skal ha minst én verdi som skal være Literal"@nb ;
         sh:severity sh:Violation
     ], [ # tema
 #        sh:class skos:Concept ;
