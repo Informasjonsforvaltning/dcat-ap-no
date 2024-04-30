@@ -534,14 +534,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#URIer-i-bruk">URIer som er i bruk</a></li>
 <li><a href="#UML-diagram">Forenklet modell av DCAT-AP-NO</a></li>
-<li><a href="#Klasser-i-standarden">Oversikt over klasser og datatyper i standarden</a>
-<ul class="sectlevel2">
-<li><a href="#Hovedklasser">Hovedklasser ("<em>main entities</em>")</a></li>
-<li><a href="#Støtteklasser">Støtteklasser ("<em>supportive entities</em>")</a></li>
-<li><a href="#Datatyper">Datatyper ("<em>datatypes</em>")</a></li>
-</ul>
-</li>
-<li><a href="#Aktivitet">Klassen Aktivitet (prov:Activity)</a></li>
 <li><a href="#Aktør">Klassen Aktør (foaf:Agent)</a>
 <ul class="sectlevel2">
 <li><a href="#Aktør-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Aktør</em></a>
@@ -730,8 +722,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Frekvens">Klassen Frekvens (dct:Frequency)</a></li>
-<li><a href="#Geometri">Klassen Geometri (locn:Geometry)</a></li>
 <li><a href="#Identifikator">Klassen Identifikator (adms:Identifier)</a>
 <ul class="sectlevel2">
 <li><a href="#Identifikator-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Identifikator</em></a>
@@ -806,7 +796,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#Kontaktopplysning">Klassen Kontaktopplysning (vcard:Kind)</a></li>
-<li><a href="#Kreditering">Klassen Kreditering (prov:Attribution)</a></li>
 <li><a href="#Lisensdokument">Klassen Lisensdokument (dct:LicenseDocument)</a>
 <ul class="sectlevel2">
 <li><a href="#Lisensdokument-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Lisensdokument</em></a>
@@ -816,7 +805,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Literal">Klassen Literal (rdfs:Literal)</a></li>
 <li><a href="#Lokasjon">Klassen Lokasjon (dct:Location)</a>
 <ul class="sectlevel2">
 <li><a href="#Lokasjon-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Lokasjon</em></a>
@@ -832,9 +820,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Medietype">Klassen Medietype (dct:MediaType)</a></li>
-<li><a href="#Opphavsbeskrivelse">Klassen Opphavsbeskrivelse (dct:ProvenanceStatement)</a></li>
-<li><a href="#Policy">Klassen Policy (odrl:Policy)</a></li>
 <li><a href="#RegulativRessurs">Klassen Regulativ ressurs (eli:LegalResource)</a>
 <ul class="sectlevel2">
 <li><a href="#RegulativRessurs-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Regulativ ressurs</em></a>
@@ -864,9 +849,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Ressurs">Klassen Ressurs (rdfs:Resource)</a></li>
-<li><a href="#Rettighetsutsagn">Klassen Rettighetsutsagn (dct:RightsStatement)</a></li>
-<li><a href="#Rolle">Klassen Rolle (dcat:Role)</a></li>
 <li><a href="#Sjekksum">Klassen Sjekksum (spdx:Checksum)</a>
 <ul class="sectlevel2">
 <li><a href="#Sjekksum-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Sjekksum</em></a>
@@ -877,8 +859,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Sjekksumsalgoritme">Klassen Sjekksumsalgoritme (spdx:ChecksumAlgorithm)</a></li>
-<li><a href="#Språksystem">Klassen Språksystem (dct:LinguisticSystem)</a></li>
 <li><a href="#Standard">Klassen Standard (dct:Standard)</a>
 <ul class="sectlevel2">
 <li><a href="#Standard-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Standard</em></a>
@@ -898,8 +878,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Tema">Klassen Tema (skos:Concept)</a></li>
-<li><a href="#TematiskSkjema">Klassen Tematisk skjema (skos:ConceptScheme)</a></li>
 <li><a href="#Tidsrom">Klassen Tidsrom (dct:PeriodOfTime)</a>
 <ul class="sectlevel2">
 <li><a href="#Tidsrom-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Tidsrom</em></a>
@@ -1142,10 +1120,13 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="sect2">
 <h3 id="Leserveiledning"><a class="anchor" href="#Leserveiledning"></a>Hvordan du leser denne standarden</h3>
 <div class="paragraph">
-<p><mark><em>@@@@@@ sjekk mot EUs "profile guidelines" hvorvidt/hvordan indikere om en egenskap er "reuse as-is", "reuse with extension" osv.</em></mark></p>
+<p>Kravene til hver klasse er spesifisert i hvert sitt kapittel. Kapitlene er sortert alfabetisk etter norske klassenavn. I hvert kapittel er klassens egenskaper først gruppert inn i obligatoriske, anbefalte og valgfrie egenskaper, og deretter sortert alfabetisk etter norske egenskapsnavn.</p>
 </div>
 <div class="paragraph">
-<p>Alle krav i denne standarden uttrykkes i form av RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.</p>
+<p>Alle kravene i denne standarden uttrykkes i form av RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.</p>
+</div>
+<div class="paragraph">
+<p>«Norsk utvidelse» i merknad betyr avvik mellom DCAT-AP-NO og summen av EU sin DCAT-AP og W3C sin DCAT. EU har valgt å ikke gjenta egenskaper fra DCAT i DCAT-AP når det ikke er foretatt endringer/tilpasninger, hvilket betyr at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. For å øke brukervennlighet har vi i DCAT-AP-NO valgt å gjenta egenskaper fra DCAT-AP og DCAT som vi trenger for å dekke norske behov. Der det ikke står noe om «norsk utvidelse» i merknad til en egenskap, er egenskapen brukt slik den er spesifisert i enten DCAT-AP eller DCAT. Der det står «norsk utvidelse» i merknad til en egenskap, er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken DCAT-AP eller DCAT (f.eks. med forklaring "Ikke eksplisitt spesifisert i DCAT-AP/DCAT").</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1341,240 +1322,8 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="content">
 <a class="image" href="images/DCAT-AP-NO-forenklet-modell.png"><img src="images/DCAT-AP-NO-forenklet-modell.png" alt="DCAT AP NO forenklet modell"></a>
 </div>
-<div class="title">Figur 1. Forenklet modell av DCAT-AP-NO.</div>
+<div class="title">Figur 1. Meget forenklet modell av DCAT-AP-NO, men kun noen få klasser tatt med i tegningen.</div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Klasser-i-standarden"><a class="anchor" href="#Klasser-i-standarden"></a>Oversikt over klasser og datatyper i standarden</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>Hovedklassene og støtteklassene vil bli spesifisert videre i standarden, i alfabetisk rekkefølge etter norske klassenavn.</p>
-</div>
-<div class="paragraph">
-<p><em><mark>@@@@@@ vurder om "tomme" klasser samt datatyper skal droppes siden de gir ikke noe merverdi</mark></em></p>
-</div>
-<div class="sect2">
-<h3 id="Hovedklasser"><a class="anchor" href="#Hovedklasser"></a>Hovedklasser ("<em>main entities</em>")</h3>
-<div class="paragraph">
-<p>Hovedklasser er de klassene som utgjør kjernen av denne applikasjonsprofilen.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#Aktør"><em>Klassen Aktør (foaf:Agent)</em></a></p>
-</li>
-<li>
-<p><a href="#Datasett"><em>Klassen Datasett (dcat:Dataset)</em></a></p>
-</li>
-<li>
-<p><a href="#Datasettserie"><em>Klassen Datasettserie (dcat:DatasetSeries)</em></a></p>
-</li>
-<li>
-<p><a href="#Datatjeneste"><em>Klassen Datatjeneste (dcat:DataService)</em></a></p>
-</li>
-<li>
-<p><a href="#Distribusjon"><em>Klassen Distribusjon (dcat:Distribution)</em></a></p>
-</li>
-<li>
-<p><a href="#Katalog"><em>Klassen Katalog (dcat:Catalog)</em></a></p>
-</li>
-<li>
-<p><a href="#KatalogisertRessurs"><em>Klassen Katalogisert ressurs (dcat:Resource)</em></a></p>
-</li>
-<li>
-<p><a href="#Katalogpost"><em>Klassen Katalogpost (dcat:CatalogRecord)</em></a></p>
-</li>
-<li>
-<p><a href="#Kontaktopplysning"><em>Klassen Kontaktopplysning (vcard:Kind)</em></a></p>
-</li>
-<li>
-<p><a href="#Lisensdokument"><em>Klassen Lisensdokument (dct:LicenseDocument)</em></a></p>
-</li>
-<li>
-<p><a href="#Lokasjon"><em>Klassen Lokasjon (dct:Location)</em></a></p>
-</li>
-<li>
-<p><a href="#Relasjon"><em>Klassen Relasjon (dcat:Relationship)</em></a></p>
-</li>
-<li>
-<p><a href="#Sjekksum"><em>Klassen Sjekksum (spdx:Checksum)</em></a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Støtteklasser"><a class="anchor" href="#Støtteklasser"></a>Støtteklasser ("<em>supportive entities</em>")</h3>
-<div class="paragraph">
-<p>Støtteklasser er de klassene som støtter hovedklassene i denne applikasjonsprofilen. De er inkludert fordi de utgjør verdiområde (<em>range</em>) til egenskaper.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#Aktivitet"><em>Klassen Aktivitet (prov:Activity)</em></a></p>
-</li>
-<li>
-<p><a href="#Dokument"><em>Klassen Dokument (foaf:Document)</em></a></p>
-</li>
-<li>
-<p><a href="#Frekvens"><em>Klassen Frekvens (dct:Frequency)</em></a></p>
-</li>
-<li>
-<p><a href="#Geometri"><em>Klassen Geometri (locn:Geometry)</em></a></p>
-</li>
-<li>
-<p><a href="#Identifikator"><em>Klassen Identifikator (adms:Identifier)</em></a></p>
-</li>
-<li>
-<p><a href="#Kreditering"><em>Klassen Kreditering (prov:Attribution)</em></a></p>
-</li>
-<li>
-<p><a href="#Literal"><em>Klassen Literal (rdfs:Literal)</em></a></p>
-</li>
-<li>
-<p><a href="#Medietype"><em>Klassen Medietype (dct:MediaType)</em></a></p>
-</li>
-<li>
-<p><a href="#Opphavsbeskrivelse"><em>Klassen Opphavsbeskrivelse (dct:ProvenanceStatement)</em></a></p>
-</li>
-<li>
-<p><a href="#Policy"><em>Klassen Policy (odrl:Policy)</em></a></p>
-</li>
-<li>
-<p><a href="#RegulativRessurs"><em>Klassen Regulativ ressurs (eli:LegalResource)</em></a></p>
-</li>
-<li>
-<p><a href="#Ressurs"><em>Klassen Ressurs (rdfs:Resource)</em></a></p>
-</li>
-<li>
-<p><a href="#Rettighetsutsagn"><em>Klassen Rettighetsutsagn (dct:RightsStatement)</em></a></p>
-</li>
-<li>
-<p><a href="#Rolle"><em>Klassen Rolle (dcat:Role)</em></a></p>
-</li>
-<li>
-<p><a href="#Sjekksumsalgoritme"><em>Klassen Sjekksumsalgoritme (spdx:ChecksumAlgorithm)</em></a></p>
-</li>
-<li>
-<p><a href="#Språksystem"><em>Klassen Språksystem (dct:LinguisticSystem)</em></a></p>
-</li>
-<li>
-<p><a href="#Standard"><em>Klassen Standard (dct:Standard)</em></a></p>
-</li>
-<li>
-<p><a href="#Tema"><em>Klassen Tema (skos:Concept)</em></a></p>
-</li>
-<li>
-<p><a href="#TematiskSkjema"><em>Klassen Tematisk skjema (skos:ConceptScheme)</em></a></p>
-</li>
-<li>
-<p><a href="#Tidsrom"><em>Klassen Tidsrom (dct:PeriodOfTime)</em></a></p>
-</li>
-</ul>
-</div>
-</div>
-<div class="sect2">
-<h3 id="Datatyper"><a class="anchor" href="#Datatyper"></a>Datatyper ("<em>datatypes</em>")</h3>
-<div class="paragraph">
-<p>Følgende datatyper er brukt i denne applikasjonsprofilen.</p>
-</div>
-<div class="paragraph">
-<p><mark><em>@@@@@@ foreløpig i samme rekkefølge som i DCAT-AP3.0, skal sorteres etter norske klassenavn etter at innholdet er stabilt</em></mark></p>
-</div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 1. Datatyper brukt i standarden</caption>
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Klasse</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Forklaring / <em>Explanation</em></strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#MediaType" class="ext-link" target="_blank" rel="noopener">Medietype / <em>Media type</em> &#x29C9;</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Filformat eller fysisk medium.</p>
-<p class="tableblock"><em>A file format or physical medium.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/#MediaTypeOrExtent" class="ext-link" target="_blank" rel="noopener">Medietype eller <mark>???</mark> / <em>Media Type or Extent</em> &#x29C9;</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>norsk ???</mark></p>
-<p class="tableblock"><em>A media type or extent.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2000/01/rdf-schema#Literal" class="ext-link" target="_blank" rel="noopener"><mark>Tidsliteral (???)</mark> / <em>Temporal Literal</em>  &#x29C9;</a> (lenket ressurs i RDF)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>norsk ???</mark></p>
-<p class="tableblock"><em>rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string and typed using the appropriate XML Schema datatype (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime).</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2006/time#Instant" class="ext-link" target="_blank" rel="noopener">Tidspunkt / Time instant  &#x29C9;</a> (lenket ressurs i RDF)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tidsenhet med null varighet <mark>(???)</mark>.</p>
-<p class="tableblock"><em>A temporal entity with zero extent or duration.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2001/XMLSchema#dateTime" class="ext-link" target="_blank" rel="noopener">xsd:dateTime &#x29C9;</a> (lenket ressurs i RDF)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>norsk</mark></p>
-<p class="tableblock"><em>Object with integer-valued year, month, day, hour and minute properties, a decimal-valued second property, and a boolean timezoned property.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2001/XMLSchema#decimal" class="ext-link" target="_blank" rel="noopener">xsd:decimal &#x29C9;</a> (lenket ressurs i RDF)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>norsk</mark></p>
-<p class="tableblock"><em>Decimal represents a subset of the real numbers, which can be represented by decimal numerals. The ·value space· of decimal is the set of numbers that can be obtained by multiplying an integer by a non-positive power of ten, i.e., expressible as i × 10^-n where i and n are integers and n &gt;= 0.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2001/XMLSchema#duration" class="ext-link" target="_blank" rel="noopener">xsd:duration  &#x29C9;</a> (lenket ressurs i RDF)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>norsk</mark></p>
-<p class="tableblock"><em>Duration represents a duration of time. The ·value space· of duration is a six-dimensional space where the coordinates designate the Gregorian year, month, day, hour, minute, and second components defined in § 5.5.3.2 of <a href="https://www.iso.org/standard/70907.html" class="ext-link" target="_blank" rel="noopener">ISO8601 &#x29C9;</a>, respectively.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2001/XMLSchema#hexBinary" class="ext-link" target="_blank" rel="noopener">xsd:hexBinary &#x29C9;</a> (lenket ressurs i RDF)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>norsk</mark></p>
-<p class="tableblock"><em>Hex-encoded binary data. The ·value space· of hexBinary is the set of finite-length sequences of binary octets.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/2001/XMLSchema#nonNegativeInteger" class="ext-link" target="_blank" rel="noopener">xsd:nonNegativeInteger  &#x29C9;</a> (lenket ressurs i RDF)</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>norsk</mark></p>
-<p class="tableblock"><em>Number derived from integer by setting the value of minInclusive to be 0.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Aktivitet"><a class="anchor" href="#Aktivitet"></a>Klassen Aktivitet (prov:Activity)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Activity</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prov:Activity</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne klassen brukes til å representere en aktivitet, dvs. ting som har skjedd over en periode og som handler på eller med en entitet. Det kan inkludere konsumering, prosessering, transformering, modifisering, flytting, bruk, eller generering av entiteter.</p>
-<p class="tableblock"><em>This class is used to represent an activity, i.e., something that occurs over a period of time and acts upon or with entities; it main include consuming, processing, transforming, modifying, relocating, using, or generating entities.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne standarden spesifiserer ingen eksplisitt krav til egenskaper til denne klassen.</p>
-<p class="tableblock"><em>This specification does not impose any additional requirements to properties for this entity.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Det kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/provenance-activity-type" class="ext-link" target="_blank" rel="noopener">Proveniensaktivitetstype &#x29C9;</a> inneholder tre predefinerte instanser av denne klassen: vedtak, innhenting fra tredjepart, innhenting fra brukeren.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="sect1">
@@ -6079,62 +5828,6 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect1">
-<h2 id="Frekvens"><a class="anchor" href="#Frekvens"></a>Klassen Frekvens (dct:Frequency)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Frequency</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Frequency</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å beskrive hvor ofte noe skjer, for eksempel publisering av et datasett.</p>
-<p class="tableblock"><em>This class is used to describe a rate at which something recurs, e.g. the publication of a Dataset.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/frequency" class="ext-link" target="_blank" rel="noopener"><em>Frequency</em> &#x29C9;</a> inneholder et sett med predefinerte verdier for frekvens.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Geometri"><a class="anchor" href="#Geometri"></a>Klassen Geometri (locn:Geometry)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Geometry</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locn:Geometry</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å identifisere en lokasjon som et punkt, en linje, et polygon osv. uttrykt ved å bruke koordinater i noen koordinatsystemer.</p>
-<p class="tableblock"><em>This class is used to to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
 <h2 id="Identifikator"><a class="anchor" href="#Identifikator"></a>Klassen Identifikator (adms:Identifier)</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -7543,32 +7236,6 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect1">
-<h2 id="Kreditering"><a class="anchor" href="#Kreditering"></a>Klassen Kreditering (prov:Attribution)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Attribution</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:Kind</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en kreditering til en aktør som har en eller annen form for ansvar for en ressurs.</p>
-<p class="tableblock"><em>This class is used to represent an attribution, i.e. the ascribing of an entity to an agent.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
 <h2 id="Lisensdokument"><a class="anchor" href="#Lisensdokument"></a>Klassen Lisensdokument (dct:LicenseDocument)</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -7636,32 +7303,6 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Literal"><a class="anchor" href="#Literal"></a>Klassen Literal (rdfs:Literal)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Literal</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som inneholder maskinlesbar tekst har en valgfri språk-tag, definert av <a href="https://www.rfc-editor.org/rfc/bcp/bcp47.txt" class="ext-link" target="_blank" rel="noopener">BCP47 &#x29C9;</a> (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk).</p>
-<p class="tableblock"><em>This class is used to represent a literal value such as a string or integer; Literals may be typed, e.g. as a date according to xsd:date. Literals that contain human-readable text have an optional language tag as defined by BCP 47.</em></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="sect1">
@@ -7807,84 +7448,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Medietype"><a class="anchor" href="#Medietype"></a>Klassen Medietype (dct:MediaType)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Media type</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:MediaType</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en medietype, for eksempel formatet til en datafil.</p>
-<p class="tableblock"><em>This class is used to represent a media type, e.g. the format of a computer file.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Opphavsbeskrivelse"><a class="anchor" href="#Opphavsbeskrivelse"></a>Klassen Opphavsbeskrivelse (dct:ProvenanceStatement)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Provenance statement</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:ProvenanceStatement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en beskrivelse av enhver endring i eierskap og forvaltning av en ressurs (fra den ble opprettet) som har betydning for autentisitet, integritet og fortolkning.</p>
-<p class="tableblock"><em>This class is used to represent a statement of any changes in ownership and custody of a resource since its creation that are significant for its authenticity, integrity and interpretation.#</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Policy"><a class="anchor" href="#Policy"></a>Klassen Policy (odrl:Policy)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Policy</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">odrl:Policy</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en ikke-tom gruppe av tillatelser og/eller forbud.</p>
-<p class="tableblock"><em>This class is used to represent a non-empty group of Permissions and/or Prohibitions.#</em></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="sect1">
@@ -8323,88 +7886,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </div>
 </div>
 <div class="sect1">
-<h2 id="Ressurs"><a class="anchor" href="#Ressurs"></a>Klassen Ressurs (rdfs:Resource)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Resource</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere alt som er beskrevet vha. RDF.</p>
-<p class="tableblock"><em>This class is used to represent anything described by RDF.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Rettighetsutsagn"><a class="anchor" href="#Rettighetsutsagn"></a>Klassen Rettighetsutsagn (dct:RightsStatement)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rights statement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:RightsStatement</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.</p>
-<p class="tableblock"><em>This property is used to represent a statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Rolle"><a class="anchor" href="#Rolle"></a>Klassen Rolle (dcat:Role)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Role</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Role</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere funksjonen til en ressurs eller aktør i relasjon til en annen ressurs, i konteksten av ressurskreditering eller ressursrelasjon.</p>
-<p class="tableblock"><em>This property is used to represent the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
 <h2 id="Sjekksum"><a class="anchor" href="#Sjekksum"></a>Klassen Sjekksum (spdx:Checksum)</h2>
 <div class="sectionbody">
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -8508,66 +7989,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Sjekksumsalgoritme"><a class="anchor" href="#Sjekksumsalgoritme"></a>Klassen Sjekksumsalgoritme (spdx:ChecksumAlgorithm)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Checksum algorithm</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">spdx:Checksum</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en sjekksumsalgoritme.</p>
-<p class="tableblock"><em>This class is used to represent an algorithm for Checksums.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://spdx.org/rdf/terms/#d4e2129" class="ext-link" target="_blank" rel="noopener"><em>Checksum algorithm members</em> &#x29C9;</a> for predefinerte medlemmer av sjekksumsalgoritmer.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Språksystem"><a class="anchor" href="#Språksystem"></a>Klassen Språksystem (dct:LinguisticSystem)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Linguistic system</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:LinguisticSystem</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk.</p>
-<p class="tableblock"><em>This class is used to represent a system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se EUs kontrollerte vokabular for <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/language" class="ext-link" target="_blank" rel="noopener"><em>Language</em> &#x29C9;</a>.</p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="sect1">
@@ -8726,78 +8147,6 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 </table>
 </div>
 </div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="Tema"><a class="anchor" href="#Tema"></a>Klassen Tema (skos:Concept)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Concept</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et tema (i et tematisk skjema), også kalt en kategori (i en klassifikasjon, et kontrollert vokabular osv.).</p>
-<p class="tableblock"><em>This class is used to represent a concept (in a concept scheme), also known as a category (in a classification, a controlled vocabulary etc.).</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://data.norge.no/specification/xkos-ap-no" class="ext-link" target="_blank" rel="noopener">Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;</a> for hva som skal/bør/kan tas med i beskrivelsen av en kategori i en klassifikasjon.</p>
-<p class="tableblock"><em>See <a href="https://data.norge.no/specification/xkos-ap-no" class="ext-link" target="_blank" rel="noopener">Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;</a> (the Norwegian application profile of XKOS) for what shall/should/may be included i the description of a category in a classification.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Her henvises det til denne aktuelle nasjonale spesifikasjonen som stiller strengere krav enn DCAT-AP.</p>
-<p class="tableblock"><em>Norwegian extension: This application profile refers to the relevant national specification which imposes more restrictive requirements than DCAT-AP.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<div class="sect1">
-<h2 id="TematiskSkjema"><a class="anchor" href="#TematiskSkjema"></a>Klassen Tematisk skjema (skos:ConceptScheme)</h2>
-<div class="sectionbody">
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Concept Scheme</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere et tematisk skjema, også kalt en klassifikasjon, et kontrollert vokabular etc.</p>
-<p class="tableblock"><em>This class is used to represent a concept scheme, also known as a classification, a controlled vocabulary etc.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://data.norge.no/specification/xkos-ap-no" class="ext-link" target="_blank" rel="noopener">Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;</a> for hva som skal/bør/kan tas med i beskrivelsen av en klassifikasjon, et kontrollert vokabular el.l.</p>
-<p class="tableblock"><em>See <a href="https://data.norge.no/specification/xkos-ap-no" class="ext-link" target="_blank" rel="noopener">Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;</a> (the Norwegian application profile of XKOS) for what shall/should/may be included i the description of a classification, a controlled vocabulary or suchlike.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Her henvises det til denne aktuelle nasjonale spesifikasjonen som stiller strengere krav enn DCAT-AP.</p>
-<p class="tableblock"><em>Norwegian extension: This application profile refers to the relevant national specification which imposes more restrictive requirements than DCAT-AP.</em></p></td>
-</tr>
-</tbody>
-</table>
 </div>
 </div>
 <div class="sect1">
@@ -9048,7 +8397,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (<em><mark>@@@@@@ NB! tabellen er under løpende oppdatering!</mark></em>).</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 2. Endringer av objekter og egenskaper fra versjon 2.2 til denne versjonen</caption>
+<caption class="title">Tabell 1. Endringer av objekter og egenskaper fra versjon 2.2 til denne versjonen</caption>
 <colgroup>
 <col style="width: 15%;">
 <col style="width: 15%;">
@@ -9304,7 +8653,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-04-30 09:48:10 UTC
+Sist oppdatert 2024-04-30 12:24:07 UTC
 </div>
 </div>
 </body>
