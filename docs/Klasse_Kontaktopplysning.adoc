@@ -1,5 +1,12 @@
 = Klassen Kontaktopplysning (vcard:Kind) [[Kontaktopplysning]]
 
+<<diagram-KlassenKontaktopplysning>> viser klassen Kontaktopplysning og dens subklasser.  
+
+[[diagram-KlassenKontaktopplysning]]
+.Klassen Kontaktopplysning og dens subklasser.
+[link=images/Klassen-Kontaktopplysning.png]
+image::images/Klassen-Kontaktopplysning.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ | _Kind_
