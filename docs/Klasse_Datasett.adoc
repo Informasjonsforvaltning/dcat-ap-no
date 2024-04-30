@@ -425,6 +425,55 @@ _This property is used to refer to another dataset that is a part of this datase
 _(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
+=== Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsmerknad]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _has quality annotation_
+| URI | dqv:hasQualityAnnotation
+| Verdiområde / _Range_ | dqv:QualityAnnotation
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en kvalitetsmerknad. 
+
+_This property is used to refer to a quality annotation._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Se https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;, window="_blank", role="ext-link"] for bruk av klassen Kvalitetsnote/Kvalitetsmerknad (`dqv:QualityAnnotation`) og dens subklasser Brukertilbakemelding (`dqv:UserQualityFeedback`) og Kvalitetssertifikat (`dqv:QualityCertificate`).
+
+__See the Norwegian application profile of DQV, https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"], for the usage of the class Quality annotation (`dqv:QualityAnnotation`) and its subclasses User quality feedback (`dqv:UserQualityFeedback`) and Quality certificate (`dqv:QualityCertificate`).__ 
+|===
+
+Eksempel i RDF Turtle: 
+-----
+:dataset1
+   a dcat:Dataset ;
+   dqv:hasQualityAnnotation :qualityAnnotation1, :userFeedBack1, dqvno:isAuthoritative .
+-----
+hvor `dqvno:isAuthoritative` er en predefinert instans av klassen Kvalitetssertifikat (`dqv:QualityCertificate`). 
+
+=== Datasett – har måleresultat (dqv:hasQualityMeasurement) [[Datasett-harMåleresultat]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _has quality measurement_
+| URI | dqv:hasQualityMeasurement
+| Verdiområde / _Range_ | dqv:QualityMeasurement
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en måleresultat. 
+
+_This property is used to refer to a quality measurement._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Se https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;, window="_blank", role="ext-link"] for bruk av klassen Måleresultat (`dqv:QualityMeasurement`).
+
+__See the Norwegian application profile of DQV, https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"], for the usage of the class Quality measurement (`dqv:QualityMeasurement`).__ 
+|===
+
+Eksempel i RDF Turtle: 
+-----
+:dataset1
+   a dcat:Dataset ;
+   dqv:hasQualityMeasurement :qualityMeasurement1 .
+----- 
+
 === Datasett – har versjon (dcat:hasVersion) [[Datasett-harVersjon]]
 
 [cols="30s,70"]
