@@ -46,11 +46,11 @@ include::07_Oversikt_over_URIer.adoc[]
 
 include::07b_diagram.adoc[]
 
-include::06_Oversikt_over_klasser.adoc[]
+// include::06_Oversikt_over_klasser.adoc[]
 
 // include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
 
-include::Klasse_Aktivitet.adoc[]
+// include::Klasse_Aktivitet.adoc[]
 
 include::Klasse_Aktor.adoc[]
 
@@ -66,9 +66,9 @@ include::Klasse_Distribusjon.adoc[]
 
 include::Klasse_Dokument.adoc[]
 
-include::Klasse_Frekvens.adoc[]
+// include::Klasse_Frekvens.adoc[]
 
-include::Klasse_Geometri.adoc[]
+// include::Klasse_Geometri.adoc[]
 
 include::Klasse_Identifikator.adoc[]
 
@@ -80,15 +80,15 @@ include::Klasse_Katalogpost.adoc[]
 
 include::Klasse_Kontaktopplysning.adoc[]
 
-include::Klasse_Kreditering.adoc[]
+// include::Klasse_Kreditering.adoc[]
 
 include::Klasse_Lisensdokument.adoc[]
 
-include::Klasse_Literal.adoc[]
+// include::Klasse_Literal.adoc[]
 
 include::Klasse_Lokasjon.adoc[]
 
-include::Klasse_Medietype.adoc[]
+// include::Klasse_Medietype.adoc[]
 
 // include::Klasse_Offentlig_organisasjon.adoc[]
 // include::Klasse_Offentlig_organisasjon-utgår.adoc[]
@@ -96,9 +96,9 @@ include::Klasse_Medietype.adoc[]
 // include::Klasse_Offentlig_tjeneste.adoc[]
 // include::Klasse_Offentlig_tjeneste-utgår.adoc[]
 
-include::Klasse_Opphavsbeskrivelse.adoc[]
+// include::Klasse_Opphavsbeskrivelse.adoc[]
 
-include::Klasse_Policy.adoc[]
+// include::Klasse_Policy.adoc[]
 
 // include::Klasse_Regel.adoc[]
 // include::Klasse_Regel-utgår.adoc[]
@@ -108,23 +108,23 @@ include::Klasse_Regulativ_ressurs.adoc[]
 
 include::Klasse_Relasjon.adoc[]
 
-include::Klasse_Ressurs.adoc[]
+// include::Klasse_Ressurs.adoc[]
 
-include::Klasse_Rettighetsutsagn.adoc[]
+// include::Klasse_Rettighetsutsagn.adoc[]
 
-include::Klasse_Rolle.adoc[]
+// include::Klasse_Rolle.adoc[]
 
 include::Klasse_Sjekksum.adoc[]
 
-include::Klasse_Sjekksumsalgoritme.adoc[]
+// include::Klasse_Sjekksumsalgoritme.adoc[]
 
-include::Klasse_Språksystem.adoc[]
+// include::Klasse_Språksystem.adoc[]
 
 include::Klasse_Standard.adoc[]
 
-include::Klasse_Tema.adoc[]
+// include::Klasse_Tema.adoc[]
 
-include::Klasse_Tematisk_skjema.adoc[]
+// include::Klasse_Tematisk_skjema.adoc[]
 
 include::Klasse_Tidsrom.adoc[]
 
