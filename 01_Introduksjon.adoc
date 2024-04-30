@@ -1,14 +1,11 @@
 = Innledning [[Innledning]]
 
-#_@@@@@@ kapitlet bør leses gjennom og ev. oppdateres_#
-
 Formålet med standarden er å legge til rette for utveksling av beskrivelser av datasett og datatjenester, og å lette søk etter datasett og datatjenester.
 
-Standarden gjør det mulig å beskrive datasett og datatjenester i en katalog ved hjelp av en felles modell med kontrollerte støttevokabularer. Dette letter maskinell utveksling, og sammenstilling av metadata fra flere kataloger, og bidrar til at flere datasett og datatjenester blir oppdaget og brukt. Standarden gjør det også mulig å ha en desentralisert tilnærming til publisering av datakataloger og gjør at en kan søke etter datasett og datatjenester på tvers av kataloger på flere nettsteder ved å bruke samme spørremekanisme og struktur.
+Standarden gjør det mulig å beskrive datasett og datatjenester i en katalog ved hjelp av en felles modell med kontrollerte vokabularer. Dette letter maskinell utveksling, og sammenstilling av metadata fra flere kataloger, og bidrar til at flere datasett og datatjenester blir oppdaget og brukt. Standarden gjør det også mulig å ha en desentralisert tilnærming til publisering av datakataloger og gjør at en kan søke etter datasett og datatjenester på tvers av kataloger på flere nettsteder ved å bruke samme spørremekanisme og struktur.
 
 Standarden bør benyttes når offentlige virksomheter skal etablere og utveksle oversikt over datasett og datatjenester i en katalog.
-Kravet i digitaliseringsrundskrivet om at offentlige virksomheter skal registrere datasett i Felles datakatalog (data.norge.no) er ivaretatt ved at en eksponerer en DCAT-AP-NO-katalog på internett og administrerer innhøsting av denne på data.norge.no.
+Kravet i Digitaliseringsrundskrivet om at offentlige virksomheter skal registrere datasett i Felles datakatalog (https://data.norge.no/[data.norge.no &#x29C9;, window="_blank", role="ext-link"]) er ivaretatt ved at en på internett eksponerer en katalog utformet i henhold til DCAT-AP-NO, og administrerer innhøsting av denne på https://data.norge.no/publishing[data.norge.no/publishing &#x29C9;, window="_blank", role="ext-link"].
 
 Ettersom standarden anbefaler formater som er beregnet for bruk i et Lenkede data-miljø, bør utgivere vurdere følgende anbefalinger fra W3C: http://www.w3.org/TR/swbp-vocab-pub/[__Best Practice Recipes for Publishing RDF Vocabularies__ &#x29C9;, window="_blank", role="ext-link"], http://www.w3.org/TR/ld-bp[__Best Practices for Publishing Linked Data__ &#x29C9;, window="_blank", role="ext-link"] og ISA-rapporten https://joinup.ec.europa.eu/community/semic/document/10-rules-persistent-uris[__10 Rules for Persistent URIs__ &#x29C9;, window="_blank", role="ext-link"]. Utgivere bør også vurdere å tildele URIer til alle forekomster av klassene som er beskrevet i standarden, se https://www.digdir.no/standarder/peikarar-til-offentlege-ressursar-pa-nett/1492[anbefalt standard for pekere til offentlige ressurser på nett i Referansekatalogen &#x29C9;, window="_blank", role="ext-link"].
 
-Klasser og egenskaper er i denne standarden gitt norske navn. Siden standarden legger til rette for internasjonal utveksling, skal engelske egenskapsnavn i form av URIer benyttes.

@@ -15,9 +15,12 @@ ifdef::backend-pdf[:toc: macro]
 
 image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
 
+WARNING: Dette er #utkast# til neste versjon (v3.0) av DCAT-AP-NO. 
+
 include::shared/download.adoc[]
 
-WARNING: Dette er #utkast# til neste versjon (v3.0) av DCAT-AP-NO. Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/dcat-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+NOTE: *Innmelding av feil og mangler:* +
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/dcat-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
 
 *Status*: #Redaktørens utkast# +
