@@ -592,6 +592,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a></li>
 <li><a href="#Datasett-frekvens">Datasett – frekvens (dct:accrualPeriodicity)</a></li>
 <li><a href="#Datasett-harDel">Datasett – har del (dct:hasPart)</a></li>
+<li><a href="#Datasett-harKvalitetsmerknad">Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</a></li>
+<li><a href="#Datasett-harMåleresultat">Datasett – har måleresultat (dqv:hasQualityMeasurement)</a></li>
 <li><a href="#Datasett-harVersjon">Datasett – har versjon (dcat:hasVersion)</a></li>
 <li><a href="#Datasett-iSamsvarMed">Datasett – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a></li>
@@ -2756,6 +2758,111 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 </tbody>
 </table>
+</div>
+<div class="sect3">
+<h4 id="Datasett-harKvalitetsmerknad"><a class="anchor" href="#Datasett-harKvalitetsmerknad"></a>Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has quality annotation</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dqv:hasQualityAnnotation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dqv:QualityAnnotation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en kvalitetsmerknad.</p>
+<p class="tableblock"><em>This property is used to refer to a quality annotation.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;</a> for bruk av klassen Kvalitetsnote/Kvalitetsmerknad (<code>dqv:QualityAnnotation</code>) og dens subklasser Brukertilbakemelding (<code>dqv:UserQualityFeedback</code>) og Kvalitetssertifikat (<code>dqv:QualityCertificate</code>).</p>
+<p class="tableblock"><em>See the Norwegian application profile of DQV, <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a>, for the usage of the class Quality annotation (<code>dqv:QualityAnnotation</code>) and its subclasses User quality feedback (<code>dqv:UserQualityFeedback</code>) and Quality certificate (<code>dqv:QualityCertificate</code>).</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>:dataset1
+   a dcat:Dataset ;
+   dqv:hasQualityAnnotation :qualityAnnotation1, :userFeedBack1, dqvno:isAuthoritative .</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>hvor <code>dqvno:isAuthoritative</code> er en predefinert instans av klassen Kvalitetssertifikat (<code>dqv:QualityCertificate</code>).</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Datasett-harMåleresultat"><a class="anchor" href="#Datasett-harMåleresultat"></a>Datasett – har måleresultat (dqv:hasQualityMeasurement)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has quality measurement</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dqv:hasQualityMeasurement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dqv:QualityMeasurement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en måleresultat.</p>
+<p class="tableblock"><em>This property is used to refer to a quality measurement.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;</a> for bruk av klassen Måleresultat (<code>dqv:QualityMeasurement</code>).</p>
+<p class="tableblock"><em>See the Norwegian application profile of DQV, <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a>, for the usage of the class Quality measurement (<code>dqv:QualityMeasurement</code>).</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>:dataset1
+   a dcat:Dataset ;
+   dqv:hasQualityMeasurement :qualityMeasurement1 .</pre>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Datasett-harVersjon"><a class="anchor" href="#Datasett-harVersjon"></a>Datasett – har versjon (dcat:hasVersion)</h4>
@@ -9004,19 +9111,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett - følger</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:follows</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP. Behovet dekkes av en egen utvidelse til DCAT-AP som kommer senere.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har kvalitetsnote</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dqv:hasQualityAnnotation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dekket av <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har måleresultat</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dqv:hasQualityMeasurement</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dekket av <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har versjon</p></td>
@@ -9076,7 +9171,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – første</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til anbefalt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em><mark>@@@@@@ ???</mark></em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke alle datasettserier er ordnet.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – i samsvar med</p></td>
@@ -9166,19 +9261,19 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig organisasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP. Behovet dekkes av en egen utvidelse til DCAT-AP som kommer senere.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig tjeneste</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP. Behovet dekkes av en egen utvidelse til DCAT-AP som kommer senere.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Regel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP. Behovet dekkes av en egen utvidelse til DCAT-AP som kommer senere.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – type</p></td>
@@ -9202,7 +9297,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Standard – har versjonsnummer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URIen endret fra owl:versionInfo til dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger EU.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 </tbody>
 </table>
@@ -9212,7 +9307,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-04-12 11:14:47 UTC
+Sist oppdatert 2024-04-30 06:26:18 UTC
 </div>
 </div>
 </body>
