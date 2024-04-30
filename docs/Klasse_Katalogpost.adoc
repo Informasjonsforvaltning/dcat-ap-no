@@ -1,5 +1,12 @@
 = Klassen Katalogpost (dcat:CatalogRecord) [[Katalogpost]]
 
+<<diagram-KlassenKatalogpost>> viser klassen KlassenKatalogpost og dens egenskaper, samt klassene den refererer til.  
+
+[[diagram-KlassenKatalogpost]]
+.Klassen KlassenKatalogpost og klassene den refererer til.
+[link=images/Klassen-KlassenKatalogpost.png]
+image::images/Klassen-KlassenKatalogpost.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ |  _Catalogue record_
