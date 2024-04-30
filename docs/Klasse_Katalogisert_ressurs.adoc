@@ -1,5 +1,12 @@
 = Klassen Katalogisert ressurs (dcat:Resource) [[KatalogisertRessurs]]
 
+<<diagram-KlassenKatalogisertRessurs>> viser klassen Katalogisert ressurs og dens subklasser.  
+
+[[diagram-KlassenKatalogisertRessurs]]
+.Klassen Katalogisert ressurs og dens subklasser.
+[link=images/Klassen-KatalogisertRessurs.png]
+image::images/Klassen-KatalogisertRessurs.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ | _Catalogued resource_
