@@ -1,5 +1,12 @@
 = Klassen Tidsrom (dct:PeriodOfTime) [[Tidsrom]]
 
+<<diagram-KlassenTidsrom>> viser klassen Tidsrom og dens egenskaper.  
+
+[[diagram-KlassenTidsrom]]
+.Klassen Tidsrom og dens egenskap.
+[link=images/Klassen-Tidsrom.png]
+image::images/Klassen-Tidsrom.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ | _Period of time_
