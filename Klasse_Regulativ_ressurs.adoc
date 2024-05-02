@@ -1,6 +1,6 @@
 = Klassen Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
 
-<<diagram-KlassenRegulativRessurs>> viser Regulativ ressurs og dens egenskaper.  
+<<diagram-KlassenRegulativRessurs>> viser klassen Regulativ ressurs og dens egenskaper.  
 
 [[diagram-KlassenRegulativRessurs]]
 .Klassen Regulativ ressurs og dens egenskap.
