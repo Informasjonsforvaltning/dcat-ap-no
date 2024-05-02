@@ -1,5 +1,12 @@
 = Klassen Standard (dct:Standard) [[Standard]]
 
+<<diagram-KlassenStandard>> viser klassen Standard og dens egenskaper.  
+
+[[diagram-KlassenStandard]]
+.Klassen Standard og dens egenskap.
+[link=images/Klassen-Standard.png]
+image::images/Klassen-Standard.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ |  _Standard_
