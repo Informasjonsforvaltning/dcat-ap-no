@@ -1,5 +1,12 @@
 = Klassen Sjekksum (spdx:Checksum) [[Sjekksum]]
 
+<<diagram-KlassenSjekksum>> viser klassen Sjekksum og dens egenskaper.  
+
+[[diagram-KlassenSjekksum]]
+.Klassen Sjekksum og dens egenskap.
+[link=images/Klassen-Sjekksum.png]
+image::images/Klassen-Sjekksum.png[]
+
 [cols="30s,70d"]
 |===
 | _English name_ | _Checksum_

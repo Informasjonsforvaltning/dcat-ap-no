@@ -1,6 +1,6 @@
 = Klassen Relasjon (dcat:Relationship) [[Relasjon]]
 
-<<diagram-KlassenRelasjon>> viser Relasjon og dens egenskaper.  
+<<diagram-KlassenRelasjon>> viser klassen Relasjon og dens egenskaper.  
 
 [[diagram-KlassenRelasjon]]
 .Klassen Relasjon og dens egenskap.
