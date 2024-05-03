@@ -54,7 +54,6 @@ Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (_#
 | Distribusjon – filstørrelse | dcat:byteSize | Verdiområdet endret fra xsd:decimal til  xsd:nonNegativeInteger | Følger DCAT-AP.
 | Distribusjon – format | dct:format | Multiplisitet endret fra 0..n til 0..1 | Følger DCAT-AP.
 | Distribusjon – medietype | dcat:mediaType | Multiplisitet endret fra 0..n til 0..1 | Følger DCAT-AP.
-| Katalog - datasettserie | dcatap:datasetSeries | ny | Følger DCAT-AP. _#@@@@@@ NB! p.t. ikke i DCAT-AP.#_
 | Katalog – datatjeneste | dcat:service | Kravnivået endret fra valgfri til anbefalt | Følger DCAT-AP. 
 | Katalog – er del av | dct:isPartOf | utgått | Følger DCAT-AP (invers egenskap).  
 | Katalog – frekvens | dct:accrualPeriodicity | utgått | Følger DCAT-AP.
