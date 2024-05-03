@@ -668,6 +668,8 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-medietype">Datatjeneste – medietype (dcat:mediaType)</a></li>
 <li><a href="#Datatjeneste-tilgangsrettigheter">Datatjeneste – tilgangsrettigheter (dct:accessRights)</a></li>
 <li><a href="#Datatjeneste-type">Datatjeneste – type (dct:type)</a></li>
+<li><a href="#Datatjeneste-versjon">Datatjeneste – versjon (dcat:version)</a></li>
+<li><a href="#Datatjeneste-versjonsmerknad">Datatjeneste – versjonsmerknad (adms:versionNotes)</a></li>
 </ul>
 </li>
 </ul>
@@ -4685,6 +4687,78 @@ ex:budget-2020 a dcat:Dataset ;
 </tbody>
 </table>
 </div>
+<div class="sect3">
+<h4 id="Datatjeneste-versjon"><a class="anchor" href="#Datatjeneste-versjon"></a>Datatjeneste – versjon (dcat:version)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>version</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi et versjonsnummer eller annen versjonsbetegnelse for ressursen.</p>
+<p class="tableblock"><em>This property is used to specify the version indicator (name or identifier) of a resource.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Datatjeneste-versjonsmerknad"><a class="anchor" href="#Datatjeneste-versjonsmerknad"></a>Datatjeneste – versjonsmerknad (adms:versionNotes)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>version notes</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:versionNotes</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskap brukes til å beskrive forskjellene mellom denne og en tidligere versjon av datatjenesten. Bør gjentas når merknaden finnes i flere ulike språk.</p>
+<p class="tableblock"><em>This property is used to specify a description of the differences between this version and a previous version of the Data service. This property can be repeated for parallel language versions of the version notes.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
 </div>
 </div>
 </div>
@@ -8520,7 +8594,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett serie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – versjonsmerknad</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:versionNotes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk egenskapsnavn endret (fra versjonsnote)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bedre norsk oversettelse.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DatasetSeries</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie er subklasse av Katalogisert ressurs istedenfor Datasett</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
@@ -8550,124 +8630,131 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette for å kunne ta kontakt med den ansvarlige.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – versjon</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Behov for å oppgi versjon til et API.
+Datatjeneste – versjonsmerknad</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:versionNotes</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Behov for å beskrive en versjon til et API.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – filstørrelse</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:byteSize</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet endret fra xsd:decimal til  xsd:nonNegativeInteger</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – format</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – format</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..n til 0..1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – medietype</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – medietype</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:mediaType</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..n til 0..1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – datatjeneste</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – datatjeneste</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:service</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – er del av</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – er del av</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (invers egenskap).</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – frekvens</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – frekvens</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:accrualPeriodicity</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – gjeldende lovgivning</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – gjeldende lovgivning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:applicableLegislation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ny</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – opphav</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – opphav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:provenance</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – temaer</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – temaer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:themeTaxonomy</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Krav til obligatorisk bruk av EUs EuroVoc utgått.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – tidsrom</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – tidsrom</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:temporal</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ny</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalogpost – i samsvar med</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalogpost – i samsvar med</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..1 til 0..n</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditering</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditering</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">prov:Attribution</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ny - eksplisitt spesifisert</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon – geometri</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon – geometri</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">locn:geometry</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet endret fra rdfs:Literal til locn:Geometry</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig organisasjon</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig organisasjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig tjeneste</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig tjeneste</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regel</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – type</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – type</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivå endret fra obligatorisk til anbefalt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Samkjører med CPSV-AP-NO.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – språk</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – språk</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne oppgi språk ressursen er tilgjengelig på.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – tittel</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – tittel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne oppgi tittel til ressursen.</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Standard – har versjonsnummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URIen endret fra owl:versionInfo til dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 </tbody>
 </table>
@@ -8677,7 +8764,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-03 11:26:52 UTC
+Sist oppdatert 2024-05-03 11:31:11 UTC
 </div>
 </div>
 </body>
