@@ -44,9 +44,9 @@ _This property is used to specify a free-text account of the Catalogue. This pro
 _This property is used to specify the identifier of the catalogue._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1. 
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+__Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.__
 |===
 
 === Katalog – kontaktpunkt (dcat:contactPoint) [[Katalog-kontaktpunkt]]
@@ -61,9 +61,9 @@ _Norwegian extension: Not explicitly specified in DCAT-AP._
 _This property is used to specify contact information that can be used concerning questions and comments about the Catalog._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1. 
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+__Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.__
 |===
 
 === Katalog – tittel (dct:title) [[Katalog-tittel]]
@@ -106,9 +106,23 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | _English name_ |  _dataset_
 | URI | dcat:dataset
 | Verdiområde / _Range_ | dcat:Dataset
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som er en del av katalogen.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som er en del av katalogen. Gjelder også datasettserie som er subklasse av datasett. (#@@@@@@ NB! Sjekk hva EU endelig velger her! #)
 
-_This property is used to refer to a Dataset that is part of the Catalogue._
+_This property is used to refer to a Dataset that is part of the Catalogue. This also applies to Dataset series which is a subclass of Dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+|===
+
+=== Katalog – datatjeneste (dcat:service) [[Katalog-datatjeneste]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _service_
+| URI | dcat:service
+| Verdiområde / _Range_ | dcat:DataService
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en datatjeneste som er oppført i katalogen.
+
+_This property is used to refer to a Data Service that is listed in the Catalogue._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
@@ -237,40 +251,6 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 |===
 
 == Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
-
-=== Katalog – datasettserie (dcatap:datasetSeries) [[Katalog-datasettserie]]
-
-[cols="30s,70d"]
-|===
-| _English name_ |  _dataset series_
-| URI | dcatap:datasetSeries 
-| Verdiområde / _Range_ | dcat:DatasetSeries
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasettserie som er en del av katalogen.
-
-_This property is used to refer to a Dataset series that is part of the Catalogue._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
-
-_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
-|===
-
-=== Katalog – datatjeneste (dcat:service) [[Katalog-datatjeneste]]
-
-[cols="30s,70d"]
-|===
-| _English name_ |  _service_
-| URI | dcat:service
-| Verdiområde / _Range_ | dcat:DataService
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en datatjeneste som er oppført i katalogen.
-
-_This property is used to refer to a Data Service that is listed in the Catalogue._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået er endret fra anbefalt til valgfri. _#@@@@@@ NB! Sjekk mot profile-guidelines om det er lov å senke kravnivået, hvis det virkelig ønskes et avvik.#_
-
-_Norwegian extension: The requirement level changed from recommended to optional._
-|===
 
 === Katalog – gjeldende lovgivning (dcatap:applicableLegislation) [[Katalog-gjeldendeLovgivning]]
 
