@@ -49,9 +49,9 @@ _Norwegian extension: The multiplicity is changed from 1..n to 1..1._
 _This property is used to specify the identifier to the data service._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..n til 1..n. 
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._ 
+__Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..n to 1..n.__ 
 |===
 
 === Datatjeneste – kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
@@ -243,9 +243,9 @@ _This property is used to specify a free-text account of the Data Service. This 
 _This property is used to refer to a page or a document that describes the data service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Datatjeneste – landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
@@ -289,9 +289,9 @@ __(Norwegian extension) The value MUST be chosen from EU's controlled vocabulary
 _This property is used to specify media type of the data service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP.
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Datatjeneste – tilgangsrettigheter (dct:accessRights) [[Datatjeneste-tilgangsrettigheter]]
@@ -321,7 +321,4 @@ __The value MUST be `:PUBLIC`, `:RESTRICTED` or `:NON_PUBLIC` from EU's controll
 _This property is used to specify the type of the data service._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
-
-_Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
