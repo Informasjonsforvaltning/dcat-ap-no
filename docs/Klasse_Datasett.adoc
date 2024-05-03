@@ -141,9 +141,9 @@ _Norwegian extension: The requirement level is changed from recommended to manda
 _This property is used to refer to concepts that are important to understand and interpret the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP.
+| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Datasett – ble generert ved (prov:wasGeneratedBy) [[Datasett-bleGenerertVed]]
@@ -369,9 +369,6 @@ _This property is used to refer to a related resource, such as a publication, th
 _This property is used to refer to another dataset that this dataset replaces._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
-
-_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
 === Datasett – forrige (dcat:prev) [[Datasett-forrige]]
@@ -386,9 +383,6 @@ _(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
 _This property is used to refer to the previous resource (before the current one) in an ordered collection or series of resources._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP.
-
-_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
 === Datasett – frekvens (dct:accrualPeriodicity) [[Datasett-frekvens]]
@@ -420,9 +414,9 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _This property is used to refer to another dataset that is a part of this dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
+| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
-_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
+_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsmerknad]]
@@ -630,11 +624,8 @@ _This property is used to refer to a statement about the lineage of a Dataset._
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til aktøren som er produsent av datasettet.
 
 _This property is used to refer to an entity responsible for producing the dataset._
-| Multiplisitet / _Multiplicity_ | 0..1
+| Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | #Norsk utvidelse#: Multiplisiteten endret fra 0..n til 0..1.
-
-_Norwegian extension: The multiplicity changed from 0..n to 0..1._
 |===
 
 === Datasett – relatert ressurs (dct:relation) [[Datasett-relatertRessurs]]
