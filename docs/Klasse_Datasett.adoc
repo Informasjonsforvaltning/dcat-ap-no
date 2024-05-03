@@ -753,7 +753,7 @@ _This property is used to specify the version indicator (name or identifier) of 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett – versjonsnote (adms:versionNotes) [[Datasett-versjonsnote]]
+=== Datasett – versjonsmerknad (adms:versionNotes) [[Datasett-versjonsmerknad]]
 
 [cols="30s,70d"]
 |===
