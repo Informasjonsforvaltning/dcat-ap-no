@@ -62,14 +62,11 @@ _Norwegian extension: The requirement level changed from optional to recommended
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi opplysning om distribusjonens filformat. 
 
 _This property is used to specify the file format of the Distribution._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[__File type__ &#x29C9;, window="_blank", role="ext-link"].
+| Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[__File type__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[File type &#x29C9;, window="_blank", role="ext-link"].__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Multiplisiteten endret fra 0..1 til 0..n. 
-
-_Norwegian extension: The multiplicity changed from 0..1 to 0..n._
 |===
 
 === Distribusjon – lisens (dct:license) [[Distribusjon-lisens]]
@@ -230,14 +227,11 @@ __It SHOULD be expressed using a media type as defined in the official register 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til medietype av en distribusjon.
 
 _This property is used to refer to the media type of the Distribution as defined in the official register of media types managed by IANA._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad 1 / _Note 1_ | Verdien SKAL velges fra https://www.iana.org/assignments/media-types/media-types.xhtml[__IANA Media Types__ &#x29C9;, window="_blank", role="ext-link"].
+| Merknad / _Note_ | Verdien SKAL velges fra https://www.iana.org/assignments/media-types/media-types.xhtml[__IANA Media Types__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from https://www.iana.org/assignments/media-types/media-types.xhtml[IANA Media Types &#x29C9;, window="_blank", role="ext-link"].__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse# - Multiplisitet er endret fra 0..1 til 0..n, for å kunne ta høyde for at en distribusjon kan være i flere ulike medietyper. _#@@@@@@ Skal det tillates flere ulike medietyper for en og samme distribusjon? Ref. klassedefinisjonen i innledningen til kapitlet.#_ 
-
-__Norwegian extension: The multiplicity changed from 0..1 to 0..n.__
 |===
 
 === Distribusjon – nedlastningslenke (dcat:downloadURL) [[Distribusjon-nedlastningslenke]]
