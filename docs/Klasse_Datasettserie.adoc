@@ -11,7 +11,7 @@ image::images/Klassen-Datasettserie.png[]
 |===
 | _English name_ | _Dataset series_
 | URI | dcat:DatasetSeries
-| Subklasse av / _Subclass of_ | dcat:Resource
+| Subklasse av / _Subclass of_ | dcat:Dataset (#@@@@@@ NB! Sjekk hva EU endelig velger å si her!#)
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en samling av datasett som publiseres separat, men som deler noen felles egenskaper som gjør at de er gruppert sammen.
 
 _This class is used to represent a collection of datasets that are published separately, but share some characteristics that group them._ 
@@ -59,9 +59,9 @@ _This property is used to specify the category of the dataset serie. A Dataset  
 __The values to be used for this property are the URIs of the concepts in the vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].__
 
 __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP.
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 |===
 
 === Datasettserie – tittel (dct:title) [[Datasettserie-tittel]]
@@ -93,9 +93,9 @@ _This property is used to specify the entity (organisation) responsible for maki
 | Merknad 1 / _Note 1_ | (Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"]. 
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået endret fra anbefalt til obligatorisk.
+| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
-_Norwegian extension: The requirement level changed from recommended to mandatory._
+__Norwegian extension: The requirement level changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1.__
 |===
 
 == Anbefalte egenskaper for klassen _Datasettserie_ [[Datasettserie-anbefalte-egenskaper]]
@@ -149,10 +149,7 @@ __Norwegian extension: To specify spatial coverage in Norway, the Norwegian Mapp
 
 _This property is used to refer to the first resource in an ordered collection or series of resources, to which the current resource belongs._
 | Multiplisitet / _Multiplicity_ | 0..1
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ #NB! Obligatorisk i v.2.2#
-| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
-
-_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
 |===
 
 === Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation) [[Datasettserie-gjeldendeLovgivning]]
@@ -184,9 +181,6 @@ _Norwegian extension: The requirement level changed from optional to recommended
 _This property is used to refer to the last resource in an ordered collection or series of resources, to which the current resource belongs._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | (#inntil videre#) #Norsk utvidelse#: Ikke eksplisitt spesifisert i DCAT-AP. 
-
-_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP._
 |===
 
 === Datasettserie – tidsrom (dct:temporal) [[Datasettserie-tidsrom]]
