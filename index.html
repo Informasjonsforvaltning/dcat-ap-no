@@ -745,6 +745,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Katalog-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Katalog</em></a>
 <ul class="sectlevel3">
 <li><a href="#Katalog-datasett">Katalog – datasett (dcat:dataset)</a></li>
+<li><a href="#Katalog-datatjeneste">Katalog – datatjeneste (dcat:service)</a></li>
 <li><a href="#Katalog-dekningsområde">Katalog – dekningsområde (dct:spatial)</a></li>
 <li><a href="#Katalog-endringsdato">Katalog – endringsdato (dct:modified)</a></li>
 <li><a href="#Katalog-hjemmeside">Katalog – hjemmeside (foaf:homepage)</a></li>
@@ -756,8 +757,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Katalog-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Katalog</em></a>
 <ul class="sectlevel3">
-<li><a href="#Katalog-datasettserie">Katalog – datasettserie (dcatap:datasetSeries)</a></li>
-<li><a href="#Katalog-datatjeneste">Katalog – datatjeneste (dcat:service)</a></li>
 <li><a href="#Katalog-gjeldendeLovgivning">Katalog – gjeldende lovgivning (dcatap:applicableLegislation)</a></li>
 <li><a href="#Katalog-har-del">Katalog – har del (dct:hasPart)</a></li>
 <li><a href="#Katalog-katalog">Katalog – katalog (dcat:catalog)</a></li>
@@ -5982,8 +5981,8 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Ikke eksplisitt spesifisert i DCAT-AP.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.</p>
+<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -6023,8 +6022,8 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Ikke eksplisitt spesifisert i DCAT-AP.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.</p>
+<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -6131,8 +6130,44 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til datasett som er en del av katalogen.</p>
-<p class="tableblock"><em>This property is used to refer to a Dataset that is part of the Catalogue.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til datasett som er en del av katalogen. Gjelder også datasettserie som er subklasse av datasett. (#@@@@@@ NB! Sjekk hva EU endelig velger her! #)</p>
+<p class="tableblock"><em>This property is used to refer to a Dataset that is part of the Catalogue. This also applies to Dataset series which is a subclass of Dataset.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Katalog-datatjeneste"><a class="anchor" href="#Katalog-datatjeneste"></a>Katalog – datatjeneste (dcat:service)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>service</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:service</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DataService</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en datatjeneste som er oppført i katalogen.</p>
+<p class="tableblock"><em>This property is used to refer to a Data Service that is listed in the Catalogue.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -6437,88 +6472,6 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 <div class="sect2">
 <h3 id="Katalog-valgfrie-egenskaper"><a class="anchor" href="#Katalog-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Katalog</em></h3>
-<div class="sect3">
-<h4 id="Katalog-datasettserie"><a class="anchor" href="#Katalog-datasettserie"></a>Katalog – datasettserie (dcatap:datasetSeries)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>dataset series</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:datasetSeries</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DatasetSeries</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til datasettserie som er en del av katalogen.</p>
-<p class="tableblock"><em>This property is used to refer to a Dataset series that is part of the Catalogue.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(<mark>inntil videre</mark>) <mark>Norsk utvidelse</mark>: Ikke eksplisitt spesifisert i DCAT-AP.</p>
-<p class="tableblock"><em>(<mark>currently</mark>) Norwegian extension: Not explicitly specified in DCAT-AP.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Katalog-datatjeneste"><a class="anchor" href="#Katalog-datatjeneste"></a>Katalog – datatjeneste (dcat:service)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>service</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:service</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:DataService</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en datatjeneste som er oppført i katalogen.</p>
-<p class="tableblock"><em>This property is used to refer to a Data Service that is listed in the Catalogue.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><mark>Norsk utvidelse</mark>: Kravnivået er endret fra anbefalt til valgfri. <em><mark>@@@@@@ NB! Sjekk mot profile-guidelines om det er lov å senke kravnivået, hvis det virkelig ønskes et avvik.</mark></em></p>
-<p class="tableblock"><em>Norwegian extension: The requirement level changed from recommended to optional.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
 <div class="sect3">
 <h4 id="Katalog-gjeldendeLovgivning"><a class="anchor" href="#Katalog-gjeldendeLovgivning"></a>Katalog – gjeldende lovgivning (dcatap:applicableLegislation)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -8718,7 +8671,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-03 05:17:52 UTC
+Sist oppdatert 2024-05-03 05:35:45 UTC
 </div>
 </div>
 </body>
