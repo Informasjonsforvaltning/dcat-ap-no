@@ -2,7 +2,7 @@
 
 Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsbeskrivelser, lenker osv.) beskrives ikke her.
 
-== Strukturendringer fra versjon 2.2 til denne versjonen 
+== Endringer av dokumentstrukturen fra versjon 2.2 til denne versjonen 
 
 Dokumentstrukturen er endret:
 
@@ -17,9 +17,11 @@ Tabeller som brukes til å spesifisere klasser og egenskaper er endret:
 
 == Endringer av klasser og egenskaper fra versjon 2.2 til denne versjonen
 
-Denne versjonen er basert på EUs DCAT-AP, istedenfor EUs BRegDCAT-AP som forrige versjon var basert på. EU har plan om å ha BRegDCAT-AP som et tillegg til DCAT-AP, som vi vil vurdere inkorporert når det foreligger fra EU.  
+Denne versjonen er basert på EUs DCAT-AP, istedenfor EUs BRegDCAT-AP som forrige versjon var basert på. EU har plan om å ha BRegDCAT-AP som et tillegg til DCAT-AP, som vi vil vurdere inkorporert når det foreligger fra EU.  EU har begynt å ikke ta med valgfrie egenskaper fra DCAT med mindre EU gjør tilpasninger, men presiserer samtidig at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT.  
 
 Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <<Samsvarskrav>> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP. 
+
+Vi følger DCAT-AP som følger DCAT med hensyn til inverse egenskaper (se https://www.w3.org/TR/vocab-dcat-3/#inverse-properties[§ 7 i DCAT &#x29C9;, window="_blank", role="ext-link"]), at bare primæregenskapene (og ikke deres inverse egenskaper) tas med i spesifikasjonen. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man _kan_ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_  primæregenskapen. 
 
 Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (_#@@@@@@ NB! tabellen er under løpende oppdatering!#_). 
 
