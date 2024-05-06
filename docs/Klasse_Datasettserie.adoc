@@ -112,7 +112,7 @@ __Norwegian extension: The requirement level changed from recommended to mandato
 _This property is used to specify a free-text account of the Dataset serie.This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | #Norsk utvidelse#: kravnivået endret fra valgfri til anbefalt.
+| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri til anbefalt.
 
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===

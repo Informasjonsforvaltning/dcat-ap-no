@@ -137,4 +137,6 @@ include::Klasse_Tidsrom.adoc[]
 // include::02_Avvik.adoc[]
 // include::02_Avvik-utgår.adoc[]
 
+include::Oversikt_over_norske_utvidelser.adoc[]
+
 include::XX_endringslogg.adoc[]

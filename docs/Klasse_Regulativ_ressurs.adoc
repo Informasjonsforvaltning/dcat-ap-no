@@ -30,9 +30,9 @@ _This class is used to represent the legislation, policy or policies that lie be
 _This property contains descriptive textual information about the Legal Resource. This property should be repeated in case there are various versions of the text in different languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert DCAT-AP.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Regulativ ressurs – identifikator (dct:identifier) [[RegulativRessurs-identifikator]]
@@ -47,9 +47,9 @@ _Norwegian extension: Not explicitly specified in DCAT-AP._
 _This property contains an identifier for the resource._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert DCAT-AP.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Regulativ ressurs – referanse (rdfs:seeAlso) [[RegulativRessurs-referanse]]
@@ -67,9 +67,9 @@ _This property is used to specify the reference(s) to the legal resource._
 | Merknad 1 / _Note 1_ | For referanse til Lovdata bør ELI-URI brukes, se https://lovdata.no/eli/[beskrivelsen hos Lovdata &#x29C9;, window="_blank", role="ext-link"].
 
 __For references to Lovdata, ELI-URI should be used, see https://lovdata.no/eli/[the explanation at Lovdata &#x29C9;, window="_blank", role="ext-link"]__.
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert DCAT-AP.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Regulativ ressurs – språk (dct:language) [[RegulativRessurs-språk]]
@@ -87,9 +87,9 @@ _This property is used to specify the language in which the legal resource is av
 | Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[_Language_ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from Eu's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert DCAT-AP.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Regulativ ressurs – tittel (dct:title) [[RegulativRessurs-tittel]]
@@ -104,9 +104,9 @@ _Norwegian extension: Not explicitly specified in DCAT-AP._
 _This property is used to specify the title of the legal resource. This property should be repeated when the title is in several parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert DCAT-AP.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Regulativ ressurs – type (dct:type) [[RegulativRessurs-type]]
@@ -124,9 +124,9 @@ _This property refers to the type of a legal resource (e.g. "Directive", "Règle
 | Merknad 1 / _Note 1_ |  Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/legal-resource-type[Regulativ ressurs type &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
 __The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/legal-resource-type[Legal resource type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert DCAT-AP.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 == Valgfrie egenskaper for klassen _Regulativ ressurs_ [[RegulativRessurs-valgfrie-egenskaper]]
@@ -143,7 +143,7 @@ _Norwegian extension: Not explicitly specified in DCAT-AP._
 _This property represents another instance of the Legal Resource class that is related to a particular Legal Resource being described._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | #Norsk utvidelse#: Ikke eksplisitt spesifisert DCAT-AP.
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-_Norwegian extension: Not explicitly specified in DCAT-AP._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
