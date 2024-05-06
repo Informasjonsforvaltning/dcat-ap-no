@@ -163,7 +163,7 @@ _This property is used to refer to an activity that generated, or provides the b
 __Norwegian extension: The value SHOULD be chosen from the controlled vocabulary https://data.norge.no/vocabulary/provenance-activity-type[Provenance activity type &#x29C9;, window="_blank", role="ext-link"].__
 | Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået er endret fra valgfri til anbefalt.
 
-_The requirement level is changed from optional to recommended._
+_Norwegian extension: The requirement level is changed from optional to recommended._
 |===
 
 Eksempel i RDF Turtle: 

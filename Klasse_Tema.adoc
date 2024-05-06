@@ -10,7 +10,7 @@ _This class is used to represent a concept (in a concept scheme), also known as 
 | Merknad 1 / _Note 1_ | Se https://data.norge.no/specification/xkos-ap-no[Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;, window="_blank", role="ext-link"] for hva som skal/bør/kan tas med i beskrivelsen av en kategori i en klassifikasjon.
 
 __See https://data.norge.no/specification/xkos-ap-no[Spesifikasjon for klassifikasjonsbeskrivelser (XKOS-AP-NO) &#x29C9;, window="_blank", role="ext-link"] (the Norwegian application profile of XKOS) for what shall/should/may be included i the description of a category in a classification.__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Her henvises det til denne aktuelle nasjonale spesifikasjonen som stiller strengere krav enn DCAT-AP.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Her henvises det til denne aktuelle nasjonale spesifikasjonen som stiller strengere krav enn DCAT-AP.
 
 _Norwegian extension: This application profile refers to the relevant national specification which imposes more restrictive requirements than DCAT-AP._
 |===
