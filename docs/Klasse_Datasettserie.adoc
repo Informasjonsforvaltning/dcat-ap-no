@@ -34,7 +34,7 @@ __It is recommended to avoid Dataset Series without a dataset in the collection.
 _This property is used to specify contact information that can be used concerning questions and comments about the Dataset serie._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
+| Merknad / _Note_ | Norsk utvidelse: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
 
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 |===
@@ -54,12 +54,12 @@ _This property is used to specify the category of the dataset serie. A Dataset  
 | Merknad 1 / _Note 1_ | Verdiene for denne egenskapen er URIer til begrepene i vokabularet https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"]. 
 
 
-#Norsk utvidelse#: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
+Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
 
 __The values to be used for this property are the URIs of the concepts in the vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].__
 
 __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
 
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 |===
@@ -93,7 +93,7 @@ _This property is used to specify the entity (organisation) responsible for maki
 | Merknad 1 / _Note 1_ | (Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"]. 
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
-| Merknad 2 / _Note 2_ | #Norsk utvidelse#: Kravnivået endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
 __Norwegian extension: The requirement level changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1.__
 |===
@@ -112,7 +112,7 @@ __Norwegian extension: The requirement level changed from recommended to mandato
 _This property is used to specify a free-text account of the Dataset serie.This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri til anbefalt.
+| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.
 
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
@@ -131,7 +131,7 @@ _This property is used to refer to a geographic region that is covered by the Da
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabularer https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[__Continent__ &#x29C9;, window="_blank", role="ext-link"], https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[__Countries and territories__ &#x29C9;, window="_blank", role="ext-link"] eller https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[__Place__ &#x29C9;, window="_blank", role="ext-link"], HVIS den finnes på listene; https://sws.geonames.org/[__GeoNames__ &#x29C9;, window="_blank", role="ext-link"] SKAL i andre tilfeller brukes. 
 
-#Norsk utvidelse#: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
+Norsk utvidelse: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
 
 __The value MUST be chosen from EU's controlled vocabularies https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent &#x29C9;, window="_blank", role="ext-link"], https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Countries and territories &#x29C9;, window="_blank", role="ext-link"] or https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place &#x29C9;, window="_blank", role="ext-link"], IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, https://sws.geonames.org/[GeoNames &#x29C9;, window="_blank", role="ext-link"] URIs MUST be used.__
 
@@ -164,7 +164,7 @@ _This property is used to refer to the first resource in an ordered collection o
 _This property is used to refer to the legislation that mandates the creation or management of the Dataset serie._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | #Norsk utvidelse#: Kravnivået endret fra valgfri til anbefalt. 
+| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt. 
 
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
@@ -212,7 +212,7 @@ _This property is used to specify a temporal period that the Dataset serie cover
 _This property is used to specify the most recent date on which the Dataset serie was changed or modified._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
-| Merknad / _Note_ | #Norsk utvidelse#: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
+| Merknad / _Note_ | Norsk utvidelse: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
 
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
@@ -246,7 +246,7 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _This property is used to specify the date of formal issuance (e.g., publication) of the Dataset serie._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | #Norsk utvidelse#: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
+| Merknad / _Note_ | Norsk utvidelse: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
 
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
