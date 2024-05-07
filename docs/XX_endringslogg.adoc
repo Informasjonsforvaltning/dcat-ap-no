@@ -23,22 +23,18 @@ Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) fo
 
 Vi følger DCAT-AP som følger DCAT med hensyn til inverse egenskaper (se https://www.w3.org/TR/vocab-dcat-3/#inverse-properties[§ 7 i DCAT &#x29C9;, window="_blank", role="ext-link"]), at bare primæregenskapene (og ikke deres inverse egenskaper) tas med i spesifikasjonen. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_  primæregenskapen. 
 
-Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (_#@@@@@@ NB! tabellen er under løpende oppdatering!#_). 
+Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper. 
 
 .Endringer av objekter og egenskaper fra versjon 2.2 til denne versjonen
 [cols="15,15,35,35"]
 |===
 |*Klasse-/egenskapsnavn* |*URI* |*Endring* |*Begrunnelse*
-| Aktivitet | prov:Activity | ny - eksplisitt spesifisert | Følger DCAT-AP.
-| Begrep | skos:Concept | ny - eksplisitt spesifisert | Følger DCAT-AP.
-| Begrepssamling | skos:ConceptScheme | ny - eksplisitt spesifisert | Følger DCAT-AP.
 | Datasett – er del av | dct:isPartOf | utgått | Følger DCAT-AP (invers egenskap). 
 | Datasett – er påkrevd av | dct:isRequiredBy | utgått | Følger DCAT-AP (ingen reell bruk).
 | Datasett – er versjon av | dct:isVersionOf | utgått | Følger DCAT-AP (invers egenskap).
 | Datasett – erstattes av | dct:isReplacedBy | utgått | Følger DCAT-AP (invers egenskap).
 | Datasett - følger | cpsv:follows | utgått | Følger DCAT-AP. 
 | Datasett – har versjon | dcat:hasVersion | URIen endret fra dct:hasVersion til dcat:hasVersion | Følger DCAT-AP. 
-| Datasett – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til anbefalt; multiplisiteten endret tilsvarende fra 1..n til 0..n. | Følger DCAT-AP.
 | Datasett – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Datasett – produsent | dct:creator | Multiplisiteten endret fra 0..1 til 0..n | Følger DCAT-AP. 
 | Datasett – krever | dct:requires | utgått | Følger DCAT-AP (ingen reell bruk).

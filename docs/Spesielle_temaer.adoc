@@ -19,6 +19,6 @@ Generelt er det forventet at datasettene i en datasettserie er sterkt relatert t
 [link=images/Figur-ordnet-datasetserie.png]
 image::images/Figur-ordnet-datasetserie.png[]
 
-== Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights) [[Om-lisens-tilgang-rettigheter]]
+== Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights) [[Om-lisens-tilgang-rettigheter]]
 
 __#@@@@@@ mer tekst kommer, noe a la https://www.w3.org/TR/vocab-dcat-3/#license-rights[W3C/DCAT 9. License and rights statements]#__

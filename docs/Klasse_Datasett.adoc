@@ -83,7 +83,7 @@ _This property is used to specify the category of the dataset. A Dataset may be 
 | Merknad 1 / _Note 1_ | Verdiene for denne egenskapen er URIer til begrepene i vokabularet https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]. 
 
 
-Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
+Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __The values to be used for this property are the URIs of the concepts in the vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].__
 
@@ -409,14 +409,14 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | _English name_ | _has part_
 | URI | dct:hasPart
 | Verdiområde / _Range_ | dcat:Dataset
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet datasett som er en del av dette datasettet.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et annet datasett som er en del av dette datasettet. Det bør vurderes om <<Datasettserie>> kan dekke behovet. 
 
 _This property is used to refer to another dataset that is a part of this dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | (#inntil videre#) Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
-_(#currently#) Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsmerknad]]
@@ -700,11 +700,9 @@ _This property is used to specify the minimum time period resolvable in the data
 _This property is used to specify the type of the Dataset._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Verdien KAN velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[__Dataset type__ &#x29C9;, window="_blank", role="ext-link"].
+| Merknad / _Note_ | Norsk utvidelse: Verdien KAN velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[__Dataset type__ &#x29C9;, window="_blank", role="ext-link"].
 
-#NB! EU skriver "A recommended controlled vocabulary data-type is foreseen."# 
-
-__The value MAY be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[Dataset type &#x29C9;, window="_blank", role="ext-link"].__
+__Norwegian extension: The value MAY be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[Dataset type &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
 Eksempel i RDF Turtle:
