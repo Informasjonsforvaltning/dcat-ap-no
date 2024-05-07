@@ -634,7 +634,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasettserie-utgivelsesdato">Datasettserie – utgivelsesdato (dct:issued)</a></li>
 </ul>
 </li>
-<li><a href="#Om-Datasettserie">Om bruk av klassen <em>Datasettserie</em></a></li>
 </ul>
 </li>
 <li><a href="#Datatjeneste">Klassen Datatjeneste (dcat:DataService)</a>
@@ -850,6 +849,26 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#Rettighetserklæring">Klassen Rettighetserklæring (odrs:RightsStatement)</a>
+<ul class="sectlevel2">
+<li><a href="#Rettighetserklæring-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Rettighetserklæring</em></a>
+<ul class="sectlevel3">
+<li><a href="#Rettighetserklæring-anvendelsesretningslinjer">Rettighetserklæring – anvendelsesretningslinjer (odrs:reuserGuidelines) </a></li>
+<li><a href="#Rettighetserklæring-jurisdiksjon">Rettighetserklæring – jurisdiksjon (odrs:jurisdiction) </a></li>
+<li><a href="#Rettighetserklæring-krediteringstekst">Rettighetserklæring – krediteringstekst (odrs:attributionText) </a></li>
+<li><a href="#Rettighetserklæring-krediteringsURL">Rettighetserklæring – krediteringsURL (odrs:attributionURL) </a></li>
+<li><a href="#Rettighetserklæring-opphavsrettserklæring">Rettighetserklæring – opphavsrettserkæring (odrs:copyrightStatement) </a></li>
+<li><a href="#Rettighetserklæring-opphavsrettsinnehaver">Rettighetserklæring – opphavsrettsinnehaver (odrs:copyrightHolder) </a></li>
+</ul>
+</li>
+<li><a href="#Rettighetserklæring-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Rettighetserklæring</em></a>
+<ul class="sectlevel3">
+<li><a href="#Rettighetserklæring-opphavsrettsnotis">Rettighetserklæring – opphavsrettsnotis (odrs:copyrightNotice) </a></li>
+<li><a href="#Rettighetserklæring-opphavsrettsår">Rettighetserklæring – opphavsrettsår (odrs:copyrightYear) </a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Sjekksum">Klassen Sjekksum (spdx:Checksum)</a>
 <ul class="sectlevel2">
 <li><a href="#Sjekksum-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Sjekksum</em></a>
@@ -893,6 +912,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Tidsrom-slutt">Tidsrom – slutt (time:hasEnd)</a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li><a href="#Spesielle-temaer">Noen spesielle temaer</a>
+<ul class="sectlevel2">
+<li><a href="#Om-Datasettserie">Om bruk av klassen <em>Datasettserie</em></a></li>
+<li><a href="#Om-lisens-tilgang-rettigheter">Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a></li>
 </ul>
 </li>
 <li><a href="#Oversikt-norske-utvidelser">Oversikt over norske utvidelser</a></li>
@@ -1267,14 +1292,19 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/" class="ext-link" target="_blank" rel="noopener">Core Location Vocabulary &#x29C9;</a></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>odrl</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">http://www.w3.org/ns/odrl/2/</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/odrl-vocab/" class="ext-link" target="_blank" rel="noopener">ODRL Vocabulary &amp; Expression &#x29C9;</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>odrs</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">http://schema.theodi.org/odrs#</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://schema.theodi.org/odrs/" class="ext-link" target="_blank" rel="noopener">Open Data Rights Statement Vocabulary &#x29C9;</a></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>owl</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">http://www.w3.org/2002/07/owl#</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://www.w3.org/TR/owl-guide/" class="ext-link" target="_blank" rel="noopener">OWL Web Ontology Language &#x29C9;</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>odrl</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">http://www.w3.org/ns/odrl/2/</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://odrl.net/" class="ext-link" target="_blank" rel="noopener">The Open Digital Rights Language (ODRL) &#x29C9;</a></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>prov</strong></p></td>
@@ -3867,53 +3897,19 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 </div>
-<div class="sect2">
-<h3 id="Om-Datasettserie"><a class="anchor" href="#Om-Datasettserie"></a>Om bruk av klassen <em>Datasettserie</em></h3>
-<div class="paragraph">
-<p><em>Datasett</em> (<code>dcat:Dataset</code>) inkluderes i en <em>datasettserie</em> (<code>dcat:DatasetSeries</code>) ved hjelp av datasettegenskapen <a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a>.</p>
-</div>
-<div class="paragraph">
-<p>For å harmonisere bruk av datasettserier, skal følgende tas hensyn til:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Datasettserie brukes bare når utgiveren ønsker å forvalte en samling av flere datasett. Datasettserie med kun ett datasett bør unngås.</p>
-</li>
-<li>
-<p>Datasettserie uten datasett bør unngås. Det kan imidlertid hende at en datasettserie over tid blir tom (f.eks. at datasettene i serien blir trukket tilbake). Utgiveren bør i slike tilfeller også vurdere å trekke tilbake selve serien.</p>
-</li>
-<li>
-<p><em><mark>@@@@@@ sjekk om <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-dataset-series">de andre kulepunkter fra EUs DCAT-AP 3.0.0-Draft</a> som trengs omskriving (jf. <a href="https://github.com/SEMICeu/DCAT-AP/issues/354">Issue #354</a>), er aktuelle her</mark></em></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Generelt er det forventet at datasettene i en datasettserie er sterkt relatert til hverandre. Det fins imidlertid ingen felles kriterier eller regler for hvordan datasettene i en datasettserie bør relateres til hverandre. Det kan f.eks. være datasett om noe som utvikler seg over tid og/eller rom, f.eks. ulvebestandstatus, budsjett, regnskap. Versjoneringsterminologi («forrige»/«neste», «første»/«siste») kan f.eks. brukes til å uttrykke rekkefølge i tid.</p>
-</div>
-<div class="paragraph">
-<p><a href="#figur-OrdnetDatasettserie">Figur 5</a> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a> hhv. <a href="#Datasettserie-siste">Datasettserie – siste (dcat:last)</a>.</p>
-</div>
-<div id="figur-OrdnetDatasettserie" class="imageblock">
-<div class="content">
-<a class="image" href="images/Figur-ordnet-datasetserie.png"><img src="images/Figur-ordnet-datasetserie.png" alt="Figur ordnet datasetserie"></a>
-</div>
-<div class="title">Figur 5. Illustrasjon av en ordnet datasettserie.</div>
-</div>
-</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="Datatjeneste"><a class="anchor" href="#Datatjeneste"></a>Klassen Datatjeneste (dcat:DataService)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenDatatjeneste">Figur 6</a> viser klassen Datatjeneste og dens egenskaper, samt klassene den refererer til.</p>
+<p><a href="#diagram-KlassenDatatjeneste">Figur 5</a> viser klassen Datatjeneste og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-KlassenDatatjeneste" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Datatjeneste.png"><img src="images/Klassen-Datatjeneste.png" alt="Klassen Datatjeneste"></a>
 </div>
-<div class="title">Figur 6. Klassen Datatjeneste og klassene den refererer til.</div>
+<div class="title">Figur 5. Klassen Datatjeneste og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -4768,13 +4764,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Distribusjon"><a class="anchor" href="#Distribusjon"></a>Klassen Distribusjon (dcat:Distribution)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenDistribusjon">Figur 7</a> viser klassen Distribusjon og dens egenskaper, samt klassen den refererer til.</p>
+<p><a href="#diagram-KlassenDistribusjon">Figur 6</a> viser klassen Distribusjon og dens egenskaper, samt klassen den refererer til.</p>
 </div>
 <div id="diagram-KlassenDistribusjon" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Distribusjon.png"><img src="images/Klassen-Distribusjon.png" alt="Klassen Distribusjon"></a>
 </div>
-<div class="title">Figur 7. Klassen Distribusjon og klassen den refererer til.</div>
+<div class="title">Figur 6. Klassen Distribusjon og klassen den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5475,6 +5471,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det anbefales å bruke <a href="#Rettighetserklæring"><em>Klassen Rettighetserklæring (odrs:RightsStatement)</em></a> som er en subklasse av <code>dct:RightsStatement</code>. Se også <a href="#Om-lisens-tilgang-rettigheter">Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a>.</p>
+<p class="tableblock"><em>It is recommended to use the class <a href="#Rettighetserklæring">Rights statement (odrs:RightsStatement)</a> which is a subclass of <code>dct:RightsStatement</code>.</em></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -5747,13 +5748,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Dokument"><a class="anchor" href="#Dokument"></a>Klassen Dokument (foaf:Document)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenDokument">Figur 8</a> viser klassen Dokument og dens egenskaper.</p>
+<p><a href="#diagram-KlassenDokument">Figur 7</a> viser klassen Dokument og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenDokument" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Dokument.png"><img src="images/Klassen-Dokument.png" alt="Klassen Dokument"></a>
 </div>
-<div class="title">Figur 8. Klassen Aktør.</div>
+<div class="title">Figur 7. Klassen Aktør.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5872,13 +5873,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Identifikator"><a class="anchor" href="#Identifikator"></a>Klassen Identifikator (adms:Identifier)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenIdentifikator">Figur 9</a> viser klassen Identifikator og dens egenskap.</p>
+<p><a href="#diagram-KlassenIdentifikator">Figur 8</a> viser klassen Identifikator og dens egenskap.</p>
 </div>
 <div id="diagram-KlassenIdentifikator" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Identifikator.png"><img src="images/Klassen-Identifikator.png" alt="Klassen Identifikator"></a>
 </div>
-<div class="title">Figur 9. Klassen Identifikator.</div>
+<div class="title">Figur 8. Klassen Identifikator.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5946,13 +5947,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Katalog"><a class="anchor" href="#Katalog"></a>Klassen Katalog (dcat:Catalog)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenKatalog">Figur 10</a> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.</p>
+<p><a href="#diagram-KlassenKatalog">Figur 9</a> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-KlassenKatalog" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Katalog.png"><img src="images/Klassen-Katalog.png" alt="Klassen Katalog"></a>
 </div>
-<div class="title">Figur 10. Klassen Katalog og klassene den refererer til.</div>
+<div class="title">Figur 9. Klassen Katalog og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6752,6 +6753,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det anbefales å bruke <a href="#Rettighetserklæring"><em>Klassen Rettighetserklæring (odrs:RightsStatement)</em></a> som er en subklasse av <code>dct:RightsStatement</code>. Se også <a href="#Om-lisens-tilgang-rettigheter">Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a>.</p>
+<p class="tableblock"><em>It is recommended to use the class <a href="#Rettighetserklæring">Rights statement (odrs:RightsStatement)</a> which is a subclass of <code>dct:RightsStatement</code>.</em></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -6798,13 +6804,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="KatalogisertRessurs"><a class="anchor" href="#KatalogisertRessurs"></a>Klassen Katalogisert ressurs (dcat:Resource)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenKatalogisertRessurs">Figur 11</a> viser klassen Katalogisert ressurs og dens subklasser.</p>
+<p><a href="#diagram-KlassenKatalogisertRessurs">Figur 10</a> viser klassen Katalogisert ressurs og dens subklasser.</p>
 </div>
 <div id="diagram-KlassenKatalogisertRessurs" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-KatalogisertRessurs.png"><img src="images/Klassen-KatalogisertRessurs.png" alt="Klassen KatalogisertRessurs"></a>
 </div>
-<div class="title">Figur 11. Klassen Katalogisert ressurs og dens subklasser.</div>
+<div class="title">Figur 10. Klassen Katalogisert ressurs og dens subklasser.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6838,13 +6844,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Katalogpost"><a class="anchor" href="#Katalogpost"></a>Klassen Katalogpost (dcat:CatalogRecord)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenKatalogpost">Figur 12</a> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til.</p>
+<p><a href="#diagram-KlassenKatalogpost">Figur 11</a> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-KlassenKatalogpost" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Katalogpost.png"><img src="images/Klassen-Katalogpost.png" alt="Klassen Katalogpost"></a>
 </div>
-<div class="title">Figur 12. Klassen Katalogpost og klassene den refererer til.</div>
+<div class="title">Figur 11. Klassen Katalogpost og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7221,13 +7227,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Kontaktopplysning"><a class="anchor" href="#Kontaktopplysning"></a>Klassen Kontaktopplysning (vcard:Kind)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenKontaktopplysning">Figur 13</a> viser klassen Kontaktopplysning og dens subklasser.</p>
+<p><a href="#diagram-KlassenKontaktopplysning">Figur 12</a> viser klassen Kontaktopplysning og dens subklasser.</p>
 </div>
 <div id="diagram-KlassenKontaktopplysning" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Kontaktopplysning.png"><img src="images/Klassen-Kontaktopplysning.png" alt="Klassen Kontaktopplysning"></a>
 </div>
-<div class="title">Figur 13. Klassen Kontaktopplysning og dens subklasser.</div>
+<div class="title">Figur 12. Klassen Kontaktopplysning og dens subklasser.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7261,13 +7267,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Lisensdokument"><a class="anchor" href="#Lisensdokument"></a>Klassen Lisensdokument (dct:LicenseDocument)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenLisensdokument">Figur 14</a> viser klassen Lisensdokument og dens egenskap.</p>
+<p><a href="#diagram-KlassenLisensdokument">Figur 13</a> viser klassen Lisensdokument og dens egenskap.</p>
 </div>
 <div id="diagram-KlassenLisensdokument" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Lisensdokument.png"><img src="images/Klassen-Lisensdokument.png" alt="Klassen Lisensdokument"></a>
 </div>
-<div class="title">Figur 14. Klassen Lisensdokument og dens egenskap.</div>
+<div class="title">Figur 13. Klassen Lisensdokument og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7340,13 +7346,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Lokasjon"><a class="anchor" href="#Lokasjon"></a>Klassen Lokasjon (dct:Location)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenLokasjon">Figur 15</a> viser klassen Lokasjon og dens egenskaper.</p>
+<p><a href="#diagram-KlassenLokasjon">Figur 14</a> viser klassen Lokasjon og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenLokasjon" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Lokasjon.png"><img src="images/Klassen-Lokasjon.png" alt="Klassen Lokasjon"></a>
 </div>
-<div class="title">Figur 15. Klassen Lokasjon og dens egenskap.</div>
+<div class="title">Figur 14. Klassen Lokasjon og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7494,13 +7500,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <h2 id="RegulativRessurs"><a class="anchor" href="#RegulativRessurs"></a>Klassen Regulativ ressurs (eli:LegalResource)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenRegulativRessurs">Figur 16</a> viser klassen Regulativ ressurs og dens egenskaper.</p>
+<p><a href="#diagram-KlassenRegulativRessurs">Figur 15</a> viser klassen Regulativ ressurs og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenRegulativRessurs" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-RegulativRessurs.png"><img src="images/Klassen-RegulativRessurs.png" alt="Klassen RegulativRessurs"></a>
 </div>
-<div class="title">Figur 16. Klassen Regulativ ressurs og dens egenskap.</div>
+<div class="title">Figur 15. Klassen Regulativ ressurs og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7837,13 +7843,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <h2 id="Relasjon"><a class="anchor" href="#Relasjon"></a>Klassen Relasjon (dcat:Relationship)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenRelasjon">Figur 17</a> viser klassen Relasjon og dens egenskaper.</p>
+<p><a href="#diagram-KlassenRelasjon">Figur 16</a> viser klassen Relasjon og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenRelasjon" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Relasjon.png"><img src="images/Klassen-Relasjon.png" alt="Klassen Relasjon"></a>
 </div>
-<div class="title">Figur 17. Klassen Relasjon og dens egenskap.</div>
+<div class="title">Figur 16. Klassen Relasjon og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7936,6 +7942,389 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="Rettighetserklæring"><a class="anchor" href="#Rettighetserklæring"></a>Klassen Rettighetserklæring (odrs:RightsStatement)</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><a href="#diagram-KlassenLokasjon">Figur 14</a> viser klassen Rettighetserklæring og dens egenskaper.</p>
+</div>
+<div id="diagram-KlassenRettighetserklæring" class="imageblock">
+<div class="content">
+<a class="image" href="images/Klassen-Rettighetserklæring.png"><img src="images/Klassen-Rettighetserklæring.png" alt="Klassen Rettighetserklæring"></a>
+</div>
+<div class="title">Figur 17. Klassen Rettighetserklæring og dens egenskap.</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Rights statement</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:RightsStatement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:RightsStatement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en erklæring om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller erklæring om tilgangsrettigheter.</p>
+<p class="tableblock"><em>This property is used to represent a statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Hele klassen er ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: The whole class is not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Rettighetserklæring-anbefalte-egenskaper"><a class="anchor" href="#Rettighetserklæring-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Rettighetserklæring</em></h3>
+<div class="sect3">
+<h4 id="Rettighetserklæring-anvendelsesretningslinjer"><a class="anchor" href="#Rettighetserklæring-anvendelsesretningslinjer"></a>Rettighetserklæring – anvendelsesretningslinjer (odrs:reuserGuidelines) </h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>guidelines for re-users</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:reuserGuidelines</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å en lenke/URL til et dokument som gir retningslinjer for bruk av data dekket av rettighetserklæringen. Retningslinjer kan inneholde mer detaljer om kreditering, en mer fyldig versjon av opphavsrett, generell veiledning om hvordan data bør brukes.</p>
+<p class="tableblock"><em>This property is used to specify a link (URL) to a document that provides guidelines for re-users of data that is covered by a specific rights statement. The guidelines may include more detail on attribution guidelines, a fuller copyright statement, and general guidance on how the data might be re-used.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Rettighetserklæring-jurisdiksjon"><a class="anchor" href="#Rettighetserklæring-jurisdiksjon"></a>Rettighetserklæring – jurisdiksjon (odrs:jurisdiction) </h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>jurisdiction</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:jurisdiction</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Location</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til jurisdiksjonen under hvilken rettighetserklæringen gjelder. Det er anbefalt å bruke en URI for et land eller region.</p>
+<p class="tableblock"><em>This property is used to specify a reference (URI) to the jurisdiction in which copyright and/or database rights have been asserts. It is recommended that this refer to the URI for a country or region.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a> for land. For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter &#x29C9;</a> brukes i tillegg.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> for country. To specify coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Rettighetserklæring-krediteringstekst"><a class="anchor" href="#Rettighetserklæring-krediteringstekst"></a>Rettighetserklæring – krediteringstekst (odrs:attributionText) </h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>attribution text</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:attributionText</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en tekstlig kreditering. Egenskapen bør gjentas når teksten finnes på flere språk.</p>
+<p class="tableblock"><em>This property is used to specify an attribution text. This property should be repeated for parallel language versions of the text.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Rettighetserklæring-krediteringsURL"><a class="anchor" href="#Rettighetserklæring-krediteringsURL"></a>Rettighetserklæring – krediteringsURL (odrs:attributionURL) </h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>attribution URL</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:attributionURL</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en lenke/URL som bør brukes ved kreditering. URLen kan være referanse til datasettet eller utgivers hjemmeside, men kan også være en dedikert hjemmeside for kreditering.</p>
+<p class="tableblock"><em>This property is used to specify a link (URL) which should be used when attributing a data source. The URL could be a reference to the dataset or publisher homepage, but may also be a dedicated attribution page. This is useful when providing onward attribution to upstream sources.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Rettighetserklæring-opphavsrettserklæring"><a class="anchor" href="#Rettighetserklæring-opphavsrettserklæring"></a>Rettighetserklæring – opphavsrettserkæring (odrs:copyrightStatement) </h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>copyright statement</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:copyrightStatement</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et dokument som inneholder uttalelse om opphavsrett til innholdet i et datasett. Dokumentet (websiden) kan inneholde både selve opphavsrettsmerknad, og relevant veiledning til bruk.</p>
+<p class="tableblock"><em>This property is used to a link (URL) to a document that includes a statement about the copyright status of the content of a dataset. The web page might include both a copyright notice for a dataset, and any relevant guidance for re-users.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Rettighetserklæring-opphavsrettsinnehaver"><a class="anchor" href="#Rettighetserklæring-opphavsrettsinnehaver"></a>Rettighetserklæring – opphavsrettsinnehaver (odrs:copyrightHolder) </h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>copyright holder</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:copyrightHolder</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Agent</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en opphavsrettsinnehaver til innholdet i datasettet.</p>
+<p class="tableblock"><em>This property is used to refer to the agent/organization that holds copyright over the content of the dataset.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Rettighetserklæring-valgfrie-egenskaper"><a class="anchor" href="#Rettighetserklæring-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Rettighetserklæring</em></h3>
+<div class="sect3">
+<h4 id="Rettighetserklæring-opphavsrettsnotis"><a class="anchor" href="#Rettighetserklæring-opphavsrettsnotis"></a>Rettighetserklæring – opphavsrettsnotis (odrs:copyrightNotice) </h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>copyright notice</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:copyrightNotice</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en enkel tekstlig notis om opphavsretten. Egenskapen bør gjentas når teksten finnes på flere språk.</p>
+<p class="tableblock"><em>This property is used to specify the copyright notice associated with a rights statement. A notice must typically be preserved and displayed when acknowledging the source of some data. This property is expressed as a simple literal value and so is suitable for simple copyright notices. Where a data publisher needs to reference a larger copyright statement and/or related guidance then the copyrightStatement property should be used instead. This property should be repeated for parallel language versions of the text.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Rettighetserklæring-opphavsrettsår"><a class="anchor" href="#Rettighetserklæring-opphavsrettsår"></a>Rettighetserklæring – opphavsrettsår (odrs:copyrightYear) </h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>copyright year</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:copyrightYear</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi året fra hvilket opphavsretten gjelder.</p>
+<p class="tableblock"><em>This property is used to specify the year from which copyright over the content of the dataset is asserted.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -8433,6 +8822,51 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </div>
 <div class="sect1">
+<h2 id="Spesielle-temaer"><a class="anchor" href="#Spesielle-temaer"></a>Noen spesielle temaer</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="Om-Datasettserie"><a class="anchor" href="#Om-Datasettserie"></a>Om bruk av klassen <em>Datasettserie</em></h3>
+<div class="paragraph">
+<p><em>Datasett</em> (<code>dcat:Dataset</code>) inkluderes i en <em>datasettserie</em> (<code>dcat:DatasetSeries</code>) ved hjelp av datasettegenskapen <a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a>.</p>
+</div>
+<div class="paragraph">
+<p>For å harmonisere bruk av datasettserier, skal følgende tas hensyn til:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Datasettserie brukes bare når utgiveren ønsker å forvalte en samling av flere datasett. Datasettserie med kun ett datasett bør unngås.</p>
+</li>
+<li>
+<p>Datasettserie uten datasett bør unngås. Det kan imidlertid hende at en datasettserie over tid blir tom (f.eks. at datasettene i serien blir trukket tilbake). Utgiveren bør i slike tilfeller også vurdere å trekke tilbake selve serien.</p>
+</li>
+<li>
+<p><em><mark>@@@@@@ sjekk om <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-dataset-series">de andre kulepunkter fra EUs DCAT-AP 3.0.0-Draft</a> som trengs omskriving (jf. <a href="https://github.com/SEMICeu/DCAT-AP/issues/354">Issue #354</a>), er aktuelle her</mark></em></p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Generelt er det forventet at datasettene i en datasettserie er sterkt relatert til hverandre. Det fins imidlertid ingen felles kriterier eller regler for hvordan datasettene i en datasettserie bør relateres til hverandre. Det kan f.eks. være datasett om noe som utvikler seg over tid og/eller rom, f.eks. ulvebestandstatus, budsjett, regnskap. Versjoneringsterminologi («forrige»/«neste», «første»/«siste») kan f.eks. brukes til å uttrykke rekkefølge i tid.</p>
+</div>
+<div class="paragraph">
+<p><a href="#figur-OrdnetDatasettserie">Figur 21</a> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a> hhv. <a href="#Datasettserie-siste">Datasettserie – siste (dcat:last)</a>.</p>
+</div>
+<div id="figur-OrdnetDatasettserie" class="imageblock">
+<div class="content">
+<a class="image" href="images/Figur-ordnet-datasetserie.png"><img src="images/Figur-ordnet-datasetserie.png" alt="Figur ordnet datasetserie"></a>
+</div>
+<div class="title">Figur 21. Illustrasjon av en ordnet datasettserie.</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Om-lisens-tilgang-rettigheter"><a class="anchor" href="#Om-lisens-tilgang-rettigheter"></a>Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</h3>
+<div class="paragraph">
+<p><em><mark>@@@@@@ mer tekst kommer, noe a la <a href="https://www.w3.org/TR/vocab-dcat-3/#license-rights">W3C/DCAT 9. License and rights statements</a></mark></em></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="Oversikt-norske-utvidelser"><a class="anchor" href="#Oversikt-norske-utvidelser"></a>Oversikt over norske utvidelser</h2>
 <div class="sectionbody">
 <div class="paragraph">
@@ -8452,8 +8886,8 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </colgroup>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskapsnavn / <em>Property name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>EgenskapsURI / <em>PropertyURI</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskaps-/klassenavn / <em>Property/class name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskaps-/klasseURI / <em>Property/class URI</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Norsk utvidelse / <em>Norwegian extension</em></strong></p></td>
 </tr>
 <tr>
@@ -8797,6 +9231,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:relation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
 <p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rettighetsuttalelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">odrs:RightsStatement</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hele klassen er ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>The whole class is not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Standard – har tittel</p></td>
@@ -9172,7 +9612,7 @@ Datatjeneste – versjonsmerknad</p></td>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-06 12:06:34 UTC
+Sist oppdatert 2024-05-07 12:56:35 UTC
 </div>
 </div>
 </body>

@@ -10,7 +10,7 @@ Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene de aktue
 
 [cols="20,20,60"]
 |===
-|*Egenskapsnavn / _Property name_* |*EgenskapsURI / _PropertyURI_*| *Norsk utvidelse / _Norwegian extension_* 
+|*Egenskaps-/klassenavn / _Property/class name_* |*Egenskaps-/klasseURI / _Property/class URI_*| *Norsk utvidelse / _Norwegian extension_* 
 | Aktør – organisasjonsidentifikator | dct:identifier |  
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
@@ -239,6 +239,10 @@ __Not explicitly specified in DCAT-AP/DCAT.__
 Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 __Not explicitly specified in DCAT-AP/DCAT.__
+| Rettighetsuttalelse | odrs:RightsStatement | 
+Hele klassen er ikke eksplisitt spesifisert DCAT-AP/DCAT.
+
+__The whole class is not explicitly specified in DCAT-AP/DCAT.__
 | Standard – har tittel | dct:title |
 Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 

@@ -110,7 +110,7 @@ include::Klasse_Relasjon.adoc[]
 
 // include::Klasse_Ressurs.adoc[]
 
-// include::Klasse_Rettighetsutsagn.adoc[]
+include::Klasse_Rettighetserklæring.adoc[]
 
 // include::Klasse_Rolle.adoc[]
 
@@ -136,6 +136,8 @@ include::Klasse_Tidsrom.adoc[]
 
 // include::02_Avvik.adoc[]
 // include::02_Avvik-utgår.adoc[]
+
+include::Spesielle_temaer.adoc[]
 
 include::Oversikt_over_norske_utvidelser.adoc[]
 

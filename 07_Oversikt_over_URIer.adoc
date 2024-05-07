@@ -21,8 +21,9 @@ Navnerom for denne standarden er  \https://data.norge.no/vocabulary/dcatno#, van
 | eli | \http://data.europa.eu/eli/ontology# | https://eur-lex.europa.eu/eli-register/about.html[European Legislation Identifier &#x29C9;, window="_blank", role="ext-link"]
 |foaf| \http://xmlns.com/foaf/0.1/| http://xmlns.com/foaf/spec/[FOAF Vocabulary &#x29C9;, window="_blank", role="ext-link"]
 |locn| \http://www.w3.org/ns/locn#| https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/[Core Location Vocabulary &#x29C9;, window="_blank", role="ext-link"]
+|odrl| \http://www.w3.org/ns/odrl/2/ | https://www.w3.org/TR/odrl-vocab/[ODRL Vocabulary & Expression &#x29C9;, window="_blank", role="ext-link"]
+|odrs| \http://schema.theodi.org/odrs# | https://schema.theodi.org/odrs/[Open Data Rights Statement Vocabulary &#x29C9;, window="_blank", role="ext-link"]
 |owl| \http://www.w3.org/2002/07/owl# | https://www.w3.org/TR/owl-guide/[OWL Web Ontology Language &#x29C9;, window="_blank", role="ext-link"]
-|odrl| \http://www.w3.org/ns/odrl/2/ | https://odrl.net/[The Open Digital Rights Language (ODRL) &#x29C9;, window="_blank", role="ext-link"]
 |prov| \http://www.w3.org/ns/prov#| https://www.w3.org/TR/prov-o/[PROV-O: The PROV Ontology &#x29C9;, window="_blank", role="ext-link"]
 // |provno| \https://data.norge.no/vocabulary/provno#| Norsk applikasjonsprofil av PROV-O
 // |qb| \http://purl.org/linked-data/cube#| https://www.w3.org/TR/vocab-data-cube/[Data Cube Vocabulary &#x29C9;, window="_blank", role="ext-link"]
