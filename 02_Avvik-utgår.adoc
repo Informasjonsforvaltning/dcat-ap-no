@@ -1,3 +1,0 @@
-= Avvik fra EU-standarden BRegDCAT-AP [[Avvik-fra-EU-Standard]]
-
-_#hele kapitlet utgår, avvikene blir kommentert (som merknader) under spesifikasjonen til den aktuelle klassen/egenskapen#_
