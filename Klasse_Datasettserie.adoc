@@ -11,7 +11,7 @@ image::images/Klassen-Datasettserie.png[]
 |===
 | _English name_ | _Dataset series_
 | URI | dcat:DatasetSeries
-| Subklasse av / _Subclass of_ | dcat:Dataset (#@@@@@@ NB! Sjekk hva EU endelig velger å si her!#)
+| Subklasse av / _Subclass of_ | dcat:Dataset (#@@@@@@ NB! Sjekk hva EU endelig velger å si her! Foreløpig er dette et avvik#)
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en samling av datasett som publiseres separat, men som deler noen felles egenskaper som gjør at de er gruppert sammen.
 
 _This class is used to represent a collection of datasets that are published separately, but share some characteristics that group them._ 
@@ -54,7 +54,7 @@ _This property is used to specify the category of the dataset serie. A Dataset  
 | Merknad 1 / _Note 1_ | Verdiene for denne egenskapen er URIer til begrepene i vokabularet https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"]. 
 
 
-Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
+Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __The values to be used for this property are the URIs of the concepts in the vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].__
 

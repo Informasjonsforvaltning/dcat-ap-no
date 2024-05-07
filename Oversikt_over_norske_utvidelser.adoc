@@ -6,8 +6,6 @@
 
 Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene de aktuelle egenskapene der det står (ev. mangler) «norsk utvidelse» blir rettet opp, har merknadene forrang.
 
-#_NB! Listen blir løpende oppdatert!_#
-
 [cols="20,20,60"]
 |===
 |*Egenskaps-/klassenavn / _Property/class name_* |*Egenskaps-/klasseURI / _Property/class URI_*| *Norsk utvidelse / _Norwegian extension_* 
@@ -24,7 +22,7 @@ Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multipl
 
 _The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 | Datasett – tema | dcat:theme |
-https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
+https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 | Datasett – tema | dcat:theme |
@@ -51,6 +49,10 @@ __The requirement level is changed from optional to recommended.__
 For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
 
 __To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
+| Datasett – har del | dct:hasPart |
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Not explicitly specified in DCAT-AP/DCAT.__
 | Datasett – gjeldende lovgivning | dcatap:applicableLegislation |
 Kravnivået endret fra valgfri til anbefalt.
 
@@ -67,6 +69,10 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 __Not explicitly specified in DCAT-AP/DCAT.__
+| Datasett – type | dct:type |
+Verdien BØR velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[__Dataset type__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value SHOULD be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[Dataset type &#x29C9;, window="_blank", role="ext-link"].__
 | Datasett – utgivelsesdato | dct:issued | 
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
@@ -76,7 +82,7 @@ Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multipl
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
 | Datasettserie – tema | dcat:theme | 
-https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
+https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 | Datasettserie – tema | dcat:theme | 
@@ -128,7 +134,7 @@ Kravnivået endret fra valgfri til anbefalt.
 
 __The requirement level changed from optional to recommended.__
 | Datatjeneste – tema | dcat:theme |
-https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. #NB! Los er under revisjon.#
+https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 | Datatjeneste – dokumentasjon | foaf:page |
@@ -192,7 +198,7 @@ Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/e
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
 | Katalog – temaer | dcat:themeTaxonomy |
-https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes. #NB! Los er under revisjon.#
+https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes. 
 
 __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used.__
 | Katalog – utgivelsesdato | dct:issued |

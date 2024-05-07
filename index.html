@@ -532,7 +532,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Leserveiledning">Hvordan du leser denne standarden</a></li>
 </ul>
 </li>
-<li><a href="#URIer-i-bruk">URIer som er i bruk</a></li>
+<li><a href="#URIer-i-bruk">URIer som brukes i standarden</a></li>
 <li><a href="#UML-diagram">Forenklet modell av DCAT-AP-NO</a></li>
 <li><a href="#Aktør">Klassen Aktør (foaf:Agent)</a>
 <ul class="sectlevel2">
@@ -917,7 +917,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Spesielle-temaer">Noen spesielle temaer</a>
 <ul class="sectlevel2">
 <li><a href="#Om-Datasettserie">Om bruk av klassen <em>Datasettserie</em></a></li>
-<li><a href="#Om-lisens-tilgang-rettigheter">Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a></li>
+<li><a href="#Om-lisens-tilgang-rettigheter">Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a></li>
 </ul>
 </li>
 <li><a href="#Oversikt-norske-utvidelser">Oversikt over norske utvidelser</a></li>
@@ -1174,7 +1174,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi en unik identifikator til klassen eller egenskapen.</p>
 <p class="tableblock">Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne standarden.</p>
-<p class="tableblock">Eksempel: <code>skos:Concept</code> er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i <code>skos</code> (<a href="#URIer-i-bruk"><em>URIer som er i bruk</em></a> viser hva <code>skos</code> står for).</p></td>
+<p class="tableblock">Eksempel: <code>skos:Concept</code> er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i <code>skos</code> (<a href="#URIer-i-bruk"><em>URIer som brukes i standarden</em></a> viser hva <code>skos</code> står for).</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
@@ -1216,13 +1216,10 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </div>
 <div class="sect1">
-<h2 id="URIer-i-bruk"><a class="anchor" href="#URIer-i-bruk"></a>URIer som er i bruk</h2>
+<h2 id="URIer-i-bruk"><a class="anchor" href="#URIer-i-bruk"></a>URIer som brukes i standarden</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Navnerom for denne standarden er  https://data.norge.no/vocabulary/dcatno#, vanligvis ved prefiks <code>dcatno</code>.</p>
-</div>
-<div class="paragraph">
-<p><mark><em>@@@@@@ tabllen under oppdateres etter at innholdet er blitt stabilt</em></mark></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1746,7 +1743,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiene for denne egenskapen er URIer til begrepene i vokabularet <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em>  &#x29C9;</a>.</p>
-<p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg. <mark>NB! Los er under revisjon.</mark></p>
+<p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg.</p>
 <p class="tableblock"><em>The values to be used for this property are the URIs of the concepts in the vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>.</em></p>
 <p class="tableblock"><em>Norwegian extension: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
@@ -2509,7 +2506,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet datasett som er en del av dette datasettet.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet datasett som er en del av dette datasettet. Det bør vurderes om <a href="#Datasettserie"><em>Klassen Datasettserie (dcat:DatasetSeries)</em></a> kan dekke behovet.</p>
 <p class="tableblock"><em>This property is used to refer to another dataset that is a part of this dataset.</em></p></td>
 </tr>
 <tr>
@@ -2522,8 +2519,8 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(<mark>inntil videre</mark>) Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>(<mark>currently</mark>) Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -3178,9 +3175,8 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien KAN velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener"><em>Dataset type</em> &#x29C9;</a>.</p>
-<p class="tableblock"><mark>NB! EU skriver "A recommended controlled vocabulary data-type is foreseen."</mark></p>
-<p class="tableblock"><em>The value MAY be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener">Dataset type &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien KAN velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener"><em>Dataset type</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>Norwegian extension: The value MAY be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener">Dataset type &#x29C9;</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -3347,7 +3343,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset (<mark>@@@@@@ NB! Sjekk hva EU endelig velger å si her!</mark>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset (<mark>@@@@@@ NB! Sjekk hva EU endelig velger å si her! Foreløpig er dette et avvik</mark>)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -3440,7 +3436,7 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiene for denne egenskapen er URIer til begrepene i vokabularet <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em> &#x29C9;</a>.</p>
-<p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg. <mark>NB! Los er under revisjon.</mark></p>
+<p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg.</p>
 <p class="tableblock"><em>The values to be used for this property are the URIs of the concepts in the vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>.</em></p>
 <p class="tableblock"><em>Norwegian extension: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
@@ -4331,7 +4327,7 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em> &#x29C9;</a>.</p>
-<p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg. <mark>NB! Los er under revisjon.</mark></p>
+<p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg.</p>
 <p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>.</em></p>
 <p class="tableblock"><em>Norwegian extension: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
@@ -5473,7 +5469,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Det anbefales å bruke <a href="#Rettighetserklæring"><em>Klassen Rettighetserklæring (odrs:RightsStatement)</em></a> som er en subklasse av <code>dct:RightsStatement</code>. Se også <a href="#Om-lisens-tilgang-rettigheter">Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a>.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det anbefales å bruke <a href="#Rettighetserklæring"><em>Klassen Rettighetserklæring (odrs:RightsStatement)</em></a> som er en subklasse av <code>dct:RightsStatement</code>. Se også <a href="#Om-lisens-tilgang-rettigheter">Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a>.</p>
 <p class="tableblock"><em>It is recommended to use the class <a href="#Rettighetserklæring">Rights statement (odrs:RightsStatement)</a> which is a subclass of <code>dct:RightsStatement</code>.</em></p></td>
 </tr>
 </tbody>
@@ -6485,7 +6481,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes. <mark>NB! Los er under revisjon.</mark></p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes.</p>
 <p class="tableblock"><em>Norwegian extension: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used.</em></p></td>
 </tr>
 <tr>
@@ -6755,7 +6751,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Det anbefales å bruke <a href="#Rettighetserklæring"><em>Klassen Rettighetserklæring (odrs:RightsStatement)</em></a> som er en subklasse av <code>dct:RightsStatement</code>. Se også <a href="#Om-lisens-tilgang-rettigheter">Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a>.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det anbefales å bruke <a href="#Rettighetserklæring"><em>Klassen Rettighetserklæring (odrs:RightsStatement)</em></a> som er en subklasse av <code>dct:RightsStatement</code>. Se også <a href="#Om-lisens-tilgang-rettigheter">Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a>.</p>
 <p class="tableblock"><em>It is recommended to use the class <a href="#Rettighetserklæring">Rights statement (odrs:RightsStatement)</a> which is a subclass of <code>dct:RightsStatement</code>.</em></p></td>
 </tr>
 </tbody>
@@ -8859,7 +8855,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </div>
 <div class="sect2">
-<h3 id="Om-lisens-tilgang-rettigheter"><a class="anchor" href="#Om-lisens-tilgang-rettigheter"></a>Om egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</h3>
+<h3 id="Om-lisens-tilgang-rettigheter"><a class="anchor" href="#Om-lisens-tilgang-rettigheter"></a>Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</h3>
 <div class="paragraph">
 <p><em><mark>@@@@@@ mer tekst kommer, noe a la <a href="https://www.w3.org/TR/vocab-dcat-3/#license-rights">W3C/DCAT 9. License and rights statements</a></mark></em></p>
 </div>
@@ -8874,9 +8870,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div class="paragraph">
 <p>Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene de aktuelle egenskapene der det står (ev. mangler) «norsk utvidelse» blir rettet opp, har merknadene forrang.</p>
-</div>
-<div class="paragraph">
-<p><mark><em>NB! Listen blir løpende oppdatert!</em></mark></p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8911,7 +8904,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – tema</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:theme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg. <mark>NB! Los er under revisjon.</mark></p>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg.</p>
 <p class="tableblock"><em><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
@@ -8951,6 +8944,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har del</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:hasPart</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – gjeldende lovgivning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:applicableLegislation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
@@ -8975,6 +8974,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien BØR velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener"><em>Dataset type</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value SHOULD be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener">Dataset type &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – utgivelsesdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:issued</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet er eksplisitt spesifisert som <code>xsd:date or xsd:dateTime</code>, istedenfor å referere til den generiske datatype Temporal literal.</p>
@@ -8989,7 +8994,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – tema</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:theme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg. <mark>NB! Los er under revisjon.</mark></p>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg.</p>
 <p class="tableblock"><em><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
@@ -9067,7 +9072,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – tema</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:theme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg. <mark>NB! Los er under revisjon.</mark></p>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg.</p>
 <p class="tableblock"><em><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
@@ -9163,7 +9168,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – temaer</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:themeTaxonomy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes. <mark>NB! Los er under revisjon.</mark></p>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes.</p>
 <p class="tableblock"><em><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used.</em></p></td>
 </tr>
 <tr>
@@ -9322,7 +9327,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Vi følger DCAT-AP som følger DCAT med hensyn til inverse egenskaper (se <a href="https://www.w3.org/TR/vocab-dcat-3/#inverse-properties" class="ext-link" target="<em>blank">§ 7 i DCAT &#x29C9;</a>), at bare primæregenskapene (og ikke deres inverse egenskaper) tas med i spesifikasjonen. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man <em>kan</em> bruke en invers egenskap, _i tillegg til</em> og <em>ikke istedenfor</em>  primæregenskapen.</p>
 </div>
 <div class="paragraph">
-<p>Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper (<em><mark>@@@@@@ NB! tabellen er under løpende oppdatering!</mark></em>).</p>
+<p>Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper.</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Tabell 1. Endringer av objekter og egenskaper fra versjon 2.2 til denne versjonen</caption>
@@ -9338,24 +9343,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Endring</strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Begrunnelse</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Aktivitet</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prov:Activity</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny - eksplisitt spesifisert</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begrep</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny - eksplisitt spesifisert</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Begrepssamling</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:ConceptScheme</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny - eksplisitt spesifisert</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – er del av</p></td>
@@ -9391,12 +9378,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har versjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:hasVersion</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URIen endret fra dct:hasVersion til dcat:hasVersion</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – identifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til anbefalt; multiplisiteten endret tilsvarende fra 1..n til 0..n.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
@@ -9617,7 +9598,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-07 13:02:53 UTC
+Sist oppdatert 2024-05-07 13:40:25 UTC
 </div>
 </div>
 </body>

@@ -1,8 +1,6 @@
-= URIer som er i bruk [[URIer-i-bruk]]
+= URIer som brukes i standarden [[URIer-i-bruk]]
 
 Navnerom for denne standarden er  \https://data.norge.no/vocabulary/dcatno#, vanligvis ved prefiks `dcatno`. 
-
-#_@@@@@@ tabllen under oppdateres etter at innholdet er blitt stabilt_#
 
 [cols="10s,45d,45d"]
 |===
