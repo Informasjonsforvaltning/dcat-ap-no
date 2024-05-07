@@ -1,5 +1,7 @@
 = Ord, uttrykk og forkortelser [[Ord-uttrykk-og-forkortelser]]
 
+// Dette brukes ikke lenger
+
 WARNING: Ikke oppdatert (oppdateres til slutt)
 
 Datakatalog::

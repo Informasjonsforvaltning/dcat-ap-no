@@ -5,7 +5,7 @@ __som beskrives med tanke på oppføring i en
 katalog eller «inventarliste» (intern eller ekstern)__. Standarden er
 ikke tenkt brukt for å beskrive fagsystem.
 
-DCAT-AP-NO er en applikasjonsprofil og ikke en direkte oversettelse av EU sin https://semiceu.github.io/DCAT-AP/releases/3.0.0/[DCAT-AP &#x29C9;, window="_blank", role="ext-link"] og W3C sin https://www.w3.org/TR/vocab-dcat-3/[DCAT &#x29C9;, window="_blank", role="ext-link"]. I tillegg til å beskrive hvordan klasser og egenskaper i DCAT-AP og DCAT brukes, tilpasses også DCAT-AP  og DCAT til norske forhold ved å bruke norske utvidelser.
+DCAT-AP-NO er en applikasjonsprofil og ikke en direkte oversettelse av EU sin https://semiceu.github.io/DCAT-AP/releases/3.0.0/[DCAT-AP &#x29C9;, window="_blank", role="ext-link"] og W3C sin https://www.w3.org/TR/vocab-dcat-3/[DCAT &#x29C9;, window="_blank", role="ext-link"]. I tillegg til å beskrive hvordan klasser og egenskaper i DCAT-AP og DCAT brukes, tilpasses også DCAT-AP  og DCAT til norske forhold ved å bruke norske utvidelser (se <<Oversikt-norske-utvidelser>>).
 
 Istedenfor å ha alt spesifisert i denne standarden, er det etablert flere andre spesifikasjoner for å beskrive ulike aspekter ved datasett/datatjenester:
 
