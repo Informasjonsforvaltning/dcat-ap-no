@@ -12,7 +12,7 @@ image::images/Klassen-Datasettserie.png[]
 | _English name_ | _Dataset series_
 | URI | dcat:DatasetSeries
 | Subklasse av / _Subclass of_ | dcat:Dataset (#@@@@@@ NB! Sjekk hva EU endelig velger å si her! Foreløpig er dette et avvik#)
-| Anvendelse / _Usage note_ | Klassen brukes til å representere en samling av datasett som publiseres separat, men som deler noen felles egenskaper som gjør at de er gruppert sammen.
+| Anvendelse / _Usage note_ | Klassen brukes til å representere en samling av datasett som publiseres separat, men som deler noen felles egenskaper som gjør at de er gruppert sammen. Se også <<Om-Datasettserie>>.
 
 _This class is used to represent a collection of datasets that are published separately, but share some characteristics that group them._ 
 | Merknad / _Note_ | Datasettserie uten datasett bør unngås. En datasettserie bør derfor refereres til fra minst ett datasett, ved bruk av egenskapen <<Datasett-iSerie>>.
