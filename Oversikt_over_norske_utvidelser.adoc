@@ -53,6 +53,10 @@ __To specify spatial coverage in Norway, the Norwegian Mapping Authority’s con
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 __Not explicitly specified in DCAT-AP/DCAT.__
+| Datasett – har gebyr | cv:hasCost | 
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Not explicitly specified in DCAT-AP/DCAT.__
 | Datasett – gjeldende lovgivning | dcatap:applicableLegislation |
 Kravnivået endret fra valgfri til anbefalt.
 
@@ -178,6 +182,10 @@ Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __Not explicitly specified in DCAT-AP/DCAT.__
 | Dokument – tittel | dct:title |
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
+
+__Not explicitly specified in DCAT-AP/DCAT.__
+| Gebyr | cv:Cost | 
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __Not explicitly specified in DCAT-AP/DCAT.__

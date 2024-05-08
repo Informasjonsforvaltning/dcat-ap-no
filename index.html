@@ -5927,6 +5927,9 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect1">
 <h2 id="Gebyr"><a class="anchor" href="#Gebyr"></a>Klassen Gebyr (cv:Cost)</h2>
 <div class="sectionbody">
+<div class="paragraph">
+<p><a href="#img-KlassenGebyr">Figur 8</a> viser klassen Gebyr og dens egenskaper, samt klassen den refererer til.</p>
+</div>
 <div id="img-KlassenGebyr" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Gebyr.png"><img src="images/Klassen-Gebyr.png" alt="UML-diagram med klassen Gebyr, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
@@ -9345,6 +9348,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har gebyr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCost</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – gjeldende lovgivning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:applicableLegislation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
@@ -9533,6 +9542,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dokument – tittel</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gebyr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
 <p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
@@ -9770,6 +9785,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har gebyr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCost</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne oppgi prisinformasjon.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har versjon</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:hasVersion</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">URIen endret fra dct:hasVersion til dcat:hasVersion</p></td>
@@ -9876,6 +9897,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:mediaType</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..n til 0..1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gebyr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">hele klassen er ny</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne oppgi prisinformasjon.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – datatjeneste</p></td>
@@ -9987,7 +10014,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-08 13:05:09 UTC
+Sist oppdatert 2024-05-08 13:13:35 UTC
 </div>
 </div>
 </body>
