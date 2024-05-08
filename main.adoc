@@ -68,6 +68,8 @@ include::Klasse_Dokument.adoc[]
 
 // include::Klasse_Frekvens.adoc[]
 
+include::Klasse_Gebyr.adoc[]
+
 // include::Klasse_Geometri.adoc[]
 
 include::Klasse_Identifikator.adoc[]

@@ -724,6 +724,27 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
+<li><a href="#Gebyr">Klassen Gebyr (cv:Cost)</a>
+<ul class="sectlevel2">
+<li><a href="#Gebyr-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Gebyr</em></a>
+<ul class="sectlevel4">
+<li><a href="#Gebyr-identifikator">Gebyr – identifikator (dct:identifier)</a></li>
+<li><a href="#Gebyr-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Gebyr</em></a>
+<ul class="sectlevel4">
+<li><a href="#Gebyr-beløp">Gebyr – beløp (cv:hasValue)</a></li>
+<li><a href="#Gebyr-beskrivelse">Gebyr – beskrivelse (dct:description)</a></li>
+<li><a href="#Gebyr-valuta">Gebyr – valuta (cv:currency)</a></li>
+</ul>
+</li>
+<li><a href="#Gebyr-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Gebyr</em></a>
+<ul class="sectlevel4">
+<li><a href="#Gebyr-erBestemtAv">Gebyr – er bestemt av (cv:isDefinedBy)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Identifikator">Klassen Identifikator (adms:Identifier)</a>
 <ul class="sectlevel2">
 <li><a href="#Identifikator-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Identifikator</em></a>
@@ -5904,16 +5925,272 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect1">
+<h2 id="Gebyr"><a class="anchor" href="#Gebyr"></a>Klassen Gebyr (cv:Cost)</h2>
+<div class="sectionbody">
+<div id="img-KlassenGebyr" class="imageblock">
+<div class="content">
+<a class="image" href="images/Klassen-Gebyr.png"><img src="images/Klassen-Gebyr.png" alt="UML-diagram med klassen Gebyr, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
+</div>
+<div class="title">Figur 8. Klassen Gebyr og klassen den refererer til.</div>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Cost</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere gebyr.</p>
+<p class="tableblock"><em>This class is used to represent any costs.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect2">
+<h3 id="Gebyr-obligatoriske-egenskaper"><a class="anchor" href="#Gebyr-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Gebyr</em></h3>
+<div class="sect4">
+<h5 id="Gebyr-identifikator"><a class="anchor" href="#Gebyr-identifikator"></a>Gebyr – identifikator (dct:identifier)</h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>identifier</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en identifikator til gebyret.</p>
+<p class="tableblock"><em>This property is used to specify an Identifier for the Cost.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Gebyr-anbefalte-egenskaper"><a class="anchor" href="#Gebyr-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Gebyr</em></h4>
+<div class="sect4">
+<h5 id="Gebyr-beløp"><a class="anchor" href="#Gebyr-beløp"></a>Gebyr – beløp (cv:hasValue)</h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>value</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasValue</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:double</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi gebyrbeløpet.</p>
+<p class="tableblock"><em>This property is used to specify a numeric value indicating the amount of the Cost.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Gebyr-beskrivelse"><a class="anchor" href="#Gebyr-beskrivelse"></a>Gebyr – beskrivelse (dct:description)</h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en tekstlig beskrivelse av gebyret. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.</p>
+<p class="tableblock"><em>This property is used to specify a free text description of the Cost. This property should be repeated when the description is in parallel languages.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Gebyr-valuta"><a class="anchor" href="#Gebyr-valuta"></a>Gebyr – valuta (cv:currency)</h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>currency</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:currency</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi valutatype av gebyret.</p>
+<p class="tableblock"><em>This property is used to specify the currency in which the Cost.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency" class="ext-link" target="_blank" rel="noopener">Valuta &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency" class="ext-link" target="_blank" rel="noopener">Currency &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="Gebyr-valgfrie-egenskaper"><a class="anchor" href="#Gebyr-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Gebyr</em></h4>
+<div class="sect4">
+<h5 id="Gebyr-erBestemtAv"><a class="anchor" href="#Gebyr-erBestemtAv"></a>Gebyr – er bestemt av (cv:isDefinedBy)</h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>is defined by</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDefinedBy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere organisasjoner som bestemmer gebyret.</p>
+<p class="tableblock"><em>This property is used to refer to the organisation(s) defining the costs.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
 <h2 id="Identifikator"><a class="anchor" href="#Identifikator"></a>Klassen Identifikator (adms:Identifier)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenIdentifikator">Figur 8</a> viser klassen Identifikator og dens egenskap.</p>
+<p><a href="#diagram-KlassenIdentifikator">Figur 9</a> viser klassen Identifikator og dens egenskap.</p>
 </div>
 <div id="diagram-KlassenIdentifikator" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Identifikator.png"><img src="images/Klassen-Identifikator.png" alt="Klassen Identifikator"></a>
 </div>
-<div class="title">Figur 8. Klassen Identifikator.</div>
+<div class="title">Figur 9. Klassen Identifikator.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -5981,13 +6258,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Katalog"><a class="anchor" href="#Katalog"></a>Klassen Katalog (dcat:Catalog)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenKatalog">Figur 9</a> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.</p>
+<p><a href="#diagram-KlassenKatalog">Figur 10</a> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-KlassenKatalog" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Katalog.png"><img src="images/Klassen-Katalog.png" alt="Klassen Katalog"></a>
 </div>
-<div class="title">Figur 9. Klassen Katalog og klassene den refererer til.</div>
+<div class="title">Figur 10. Klassen Katalog og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6838,13 +7115,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="KatalogisertRessurs"><a class="anchor" href="#KatalogisertRessurs"></a>Klassen Katalogisert ressurs (dcat:Resource)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenKatalogisertRessurs">Figur 10</a> viser klassen Katalogisert ressurs og dens subklasser.</p>
+<p><a href="#diagram-KlassenKatalogisertRessurs">Figur 11</a> viser klassen Katalogisert ressurs og dens subklasser.</p>
 </div>
 <div id="diagram-KlassenKatalogisertRessurs" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-KatalogisertRessurs.png"><img src="images/Klassen-KatalogisertRessurs.png" alt="Klassen KatalogisertRessurs"></a>
 </div>
-<div class="title">Figur 10. Klassen Katalogisert ressurs og dens subklasser.</div>
+<div class="title">Figur 11. Klassen Katalogisert ressurs og dens subklasser.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6878,13 +7155,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Katalogpost"><a class="anchor" href="#Katalogpost"></a>Klassen Katalogpost (dcat:CatalogRecord)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenKatalogpost">Figur 11</a> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til.</p>
+<p><a href="#diagram-KlassenKatalogpost">Figur 12</a> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-KlassenKatalogpost" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Katalogpost.png"><img src="images/Klassen-Katalogpost.png" alt="Klassen Katalogpost"></a>
 </div>
-<div class="title">Figur 11. Klassen Katalogpost og klassene den refererer til.</div>
+<div class="title">Figur 12. Klassen Katalogpost og klassene den refererer til.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7261,13 +7538,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Kontaktopplysning"><a class="anchor" href="#Kontaktopplysning"></a>Klassen Kontaktopplysning (vcard:Kind)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenKontaktopplysning">Figur 12</a> viser klassen Kontaktopplysning og dens subklasser.</p>
+<p><a href="#diagram-KlassenKontaktopplysning">Figur 13</a> viser klassen Kontaktopplysning og dens subklasser.</p>
 </div>
 <div id="diagram-KlassenKontaktopplysning" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Kontaktopplysning.png"><img src="images/Klassen-Kontaktopplysning.png" alt="Klassen Kontaktopplysning"></a>
 </div>
-<div class="title">Figur 12. Klassen Kontaktopplysning og dens subklasser.</div>
+<div class="title">Figur 13. Klassen Kontaktopplysning og dens subklasser.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7301,13 +7578,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Lisensdokument"><a class="anchor" href="#Lisensdokument"></a>Klassen Lisensdokument (dct:LicenseDocument)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenLisensdokument">Figur 13</a> viser klassen Lisensdokument og dens egenskap.</p>
+<p><a href="#diagram-KlassenLisensdokument">Figur 14</a> viser klassen Lisensdokument og dens egenskap.</p>
 </div>
 <div id="diagram-KlassenLisensdokument" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Lisensdokument.png"><img src="images/Klassen-Lisensdokument.png" alt="Klassen Lisensdokument"></a>
 </div>
-<div class="title">Figur 13. Klassen Lisensdokument og dens egenskap.</div>
+<div class="title">Figur 14. Klassen Lisensdokument og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7380,13 +7657,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Lokasjon"><a class="anchor" href="#Lokasjon"></a>Klassen Lokasjon (dct:Location)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenLokasjon">Figur 14</a> viser klassen Lokasjon og dens egenskaper.</p>
+<p><a href="#diagram-KlassenLokasjon">Figur 15</a> viser klassen Lokasjon og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenLokasjon" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Lokasjon.png"><img src="images/Klassen-Lokasjon.png" alt="Klassen Lokasjon"></a>
 </div>
-<div class="title">Figur 14. Klassen Lokasjon og dens egenskap.</div>
+<div class="title">Figur 15. Klassen Lokasjon og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7534,13 +7811,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <h2 id="RegulativRessurs"><a class="anchor" href="#RegulativRessurs"></a>Klassen Regulativ ressurs (eli:LegalResource)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenRegulativRessurs">Figur 15</a> viser klassen Regulativ ressurs og dens egenskaper.</p>
+<p><a href="#diagram-KlassenRegulativRessurs">Figur 16</a> viser klassen Regulativ ressurs og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenRegulativRessurs" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-RegulativRessurs.png"><img src="images/Klassen-RegulativRessurs.png" alt="Klassen RegulativRessurs"></a>
 </div>
-<div class="title">Figur 15. Klassen Regulativ ressurs og dens egenskap.</div>
+<div class="title">Figur 16. Klassen Regulativ ressurs og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7877,13 +8154,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <h2 id="Relasjon"><a class="anchor" href="#Relasjon"></a>Klassen Relasjon (dcat:Relationship)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenRelasjon">Figur 16</a> viser klassen Relasjon og dens egenskaper.</p>
+<p><a href="#diagram-KlassenRelasjon">Figur 17</a> viser klassen Relasjon og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenRelasjon" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Relasjon.png"><img src="images/Klassen-Relasjon.png" alt="Klassen Relasjon"></a>
 </div>
-<div class="title">Figur 16. Klassen Relasjon og dens egenskap.</div>
+<div class="title">Figur 17. Klassen Relasjon og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -7987,13 +8264,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <h2 id="Rettighetserklæring"><a class="anchor" href="#Rettighetserklæring"></a>Klassen Rettighetserklæring (odrs:RightsStatement)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenLokasjon">Figur 14</a> viser klassen Rettighetserklæring og dens egenskaper.</p>
+<p><a href="#diagram-KlassenLokasjon">Figur 15</a> viser klassen Rettighetserklæring og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenRettighetserklæring" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Rettighetserklæring.png"><img src="images/Klassen-Rettighetserklæring.png" alt="Klassen Rettighetserklæring"></a>
 </div>
-<div class="title">Figur 17. Klassen Rettighetserklæring og dens egenskap.</div>
+<div class="title">Figur 18. Klassen Rettighetserklæring og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8370,13 +8647,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <h2 id="Sjekksum"><a class="anchor" href="#Sjekksum"></a>Klassen Sjekksum (spdx:Checksum)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenSjekksum">Figur 18</a> viser klassen Sjekksum og dens egenskaper.</p>
+<p><a href="#diagram-KlassenSjekksum">Figur 19</a> viser klassen Sjekksum og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenSjekksum" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Sjekksum.png"><img src="images/Klassen-Sjekksum.png" alt="Klassen Sjekksum"></a>
 </div>
-<div class="title">Figur 18. Klassen Sjekksum og dens egenskap.</div>
+<div class="title">Figur 19. Klassen Sjekksum og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8485,13 +8762,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <h2 id="Standard"><a class="anchor" href="#Standard"></a>Klassen Standard (dct:Standard)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenStandard">Figur 19</a> viser klassen Standard og dens egenskaper.</p>
+<p><a href="#diagram-KlassenStandard">Figur 20</a> viser klassen Standard og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenStandard" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Standard.png"><img src="images/Klassen-Standard.png" alt="Klassen Standard"></a>
 </div>
-<div class="title">Figur 19. Klassen Standard og dens egenskap.</div>
+<div class="title">Figur 20. Klassen Standard og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8652,13 +8929,13 @@ Eksempel: hvis dekningsområde er et område, bruk område (<code>dcat:bbox</cod
 <h2 id="Tidsrom"><a class="anchor" href="#Tidsrom"></a>Klassen Tidsrom (dct:PeriodOfTime)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-KlassenTidsrom">Figur 20</a> viser klassen Tidsrom og dens egenskaper.</p>
+<p><a href="#diagram-KlassenTidsrom">Figur 21</a> viser klassen Tidsrom og dens egenskaper.</p>
 </div>
 <div id="diagram-KlassenTidsrom" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Tidsrom.png"><img src="images/Klassen-Tidsrom.png" alt="Klassen Tidsrom"></a>
 </div>
-<div class="title">Figur 20. Klassen Tidsrom og dens egenskap.</div>
+<div class="title">Figur 21. Klassen Tidsrom og dens egenskap.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -8905,13 +9182,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Generelt er det forventet at datasettene i en datasettserie er sterkt relatert til hverandre. Det fins imidlertid ingen felles kriterier eller regler for hvordan datasettene i en datasettserie bør relateres til hverandre. Det kan f.eks. være datasett om noe som utvikler seg over tid og/eller rom, f.eks. ulvebestandstatus, budsjett, regnskap. Versjoneringsterminologi («forrige»/«neste», «første»/«siste») kan f.eks. brukes til å uttrykke rekkefølge i tid.</p>
 </div>
 <div class="paragraph">
-<p><a href="#figur-OrdnetDatasettserie">Figur 21</a> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a> hhv. <a href="#Datasettserie-siste">Datasettserie – siste (dcat:last)</a>.</p>
+<p><a href="#figur-OrdnetDatasettserie">Figur 22</a> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a> hhv. <a href="#Datasettserie-siste">Datasettserie – siste (dcat:last)</a>.</p>
 </div>
 <div id="figur-OrdnetDatasettserie" class="imageblock">
 <div class="content">
 <a class="image" href="images/Figur-ordnet-datasetserie.png"><img src="images/Figur-ordnet-datasetserie.png" alt="Figur ordnet datasetserie"></a>
 </div>
-<div class="title">Figur 21. Illustrasjon av en ordnet datasettserie.</div>
+<div class="title">Figur 22. Illustrasjon av en ordnet datasettserie.</div>
 </div>
 </div>
 <div class="sect2">
@@ -9710,7 +9987,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-08 12:58:31 UTC
+Sist oppdatert 2024-05-08 13:05:09 UTC
 </div>
 </div>
 </body>
