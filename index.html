@@ -584,6 +584,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a></li>
 <li><a href="#Datasett-frekvens">Datasett – frekvens (dct:accrualPeriodicity)</a></li>
 <li><a href="#Datasett-harDel">Datasett – har del (dct:hasPart)</a></li>
+<li><a href="#Datasett-har-gebyr">Datasett – har gebyr (cv:hasCost)</a></li>
 <li><a href="#Datasett-harKvalitetsmerknad">Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</a></li>
 <li><a href="#Datasett-harMåleresultat">Datasett – har måleresultat (dqv:hasQualityMeasurement)</a></li>
 <li><a href="#Datasett-harVersjon">Datasett – har versjon (dcat:hasVersion)</a></li>
@@ -2522,6 +2523,42 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Datasett-har-gebyr"><a class="anchor" href="#Datasett-har-gebyr"></a>Datasett – har gebyr (cv:hasCost)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has cost</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (<code>cv:Cost</code>), for å oppgi prisinfomasjonen og utrekningsgrunnlaget for gebyr for bruk av datasettet.</p>
+<p class="tableblock"><em>This property is used to refer to one or more instances of the Cost class, to specify information about the cost for reusing the dataset.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -9673,7 +9710,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-08 09:21:47 UTC
+Sist oppdatert 2024-05-08 12:58:31 UTC
 </div>
 </div>
 </body>
