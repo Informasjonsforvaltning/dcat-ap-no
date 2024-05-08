@@ -916,8 +916,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Spesielle-temaer">Noen spesielle temaer</a>
 <ul class="sectlevel2">
-<li><a href="#Om-Datasettserie">Om bruk av klassen <em>Datasettserie</em></a></li>
 <li><a href="#Om-lisens-tilgang-rettigheter">Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</a></li>
+<li><a href="#Om-Datasettserie">Om bruk av klassen <em>Datasettserie</em></a></li>
+<li><a href="#Om-inverse-egenskaper">Om bruk av inverse egenskaper</a></li>
 </ul>
 </li>
 <li><a href="#Oversikt-norske-utvidelser">Oversikt over norske utvidelser</a></li>
@@ -2172,8 +2173,8 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL være <code>:PUBLIC</code>, <code>:RESTRICTED</code> eller <code>:NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>.</p>
-<p class="tableblock"><em>The value MUST be <code>:PUBLIC</code>, <code>:RESTRICTED</code> or <code>:NON_PUBLIC</code> from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener">Access right &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be <code>PUBLIC</code>, <code>RESTRICTED</code> or <code>NON_PUBLIC</code> from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener">Access right &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
@@ -4639,8 +4640,8 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL være <code>:PUBLIC</code>, <code>:RESTRICTED</code> eller <code>:NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>.</p>
-<p class="tableblock"><em>The value MUST be <code>:PUBLIC</code>, <code>:RESTRICTED</code> or <code>:NON_PUBLIC</code> from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener">Access right &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be <code>PUBLIC</code>, <code>RESTRICTED</code> or <code>NON_PUBLIC</code> from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener">Access right &#x29C9;</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -8821,6 +8822,28 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <h2 id="Spesielle-temaer"><a class="anchor" href="#Spesielle-temaer"></a>Noen spesielle temaer</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="Om-lisens-tilgang-rettigheter"><a class="anchor" href="#Om-lisens-tilgang-rettigheter"></a>Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</h3>
+<div class="paragraph">
+<p>DCAT-AP-NO støtter følgende tre hovedscenarier der man trenger å beskrive tilgang og/eller brukervilkår til en ressurs (f.eks. et datasett): 1) behov for å referere til en lisens, 2) behov for å spesifisere tilgangsrettigheter og 3) andre behov enn ovennevnte, for å uttrykke rettigheter eller brukervilkår, f.eks. opphavsrett.</p>
+</div>
+<div class="paragraph">
+<p>DCAT-AP-NO støtter disse scenariene på følgende måte:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>dct:license</code> SKAL brukes til å referere til en lisens, og verdien SKAL hentes fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener"><em>Licence</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datatjeneste-lisens">Datatjeneste – lisens (dct:license)</a>, <a href="#Distribusjon-lisens">Distribusjon – lisens (dct:license)</a> og <a href="#Katalog-lisens">Katalog – lisens (dct:license)</a>.</p>
+</li>
+<li>
+<p><code>dct:accessRights</code> SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datasett-tilgangsnivå">Datasett – tilgangsnivå (dct:accessRights)</a> og <a href="#Datatjeneste-tilgangsrettigheter">Datatjeneste – tilgangsrettigheter (dct:accessRights)</a>.</p>
+</li>
+<li>
+<p><code>dct:rights</code> KAN brukes til å uttrykke alle andre typer rettigheter og brukervilkår, bl.a. opphavsrett. Det er anbefalt å bruke <a href="#Rettighetserklæring"><em>Klassen Rettighetserklæring (odrs:RightsStatement)</em></a> til å ha en strukturert beskrivelse av rettigheter og brukervilkår. Dette gjelder egenskapene <a href="#Distribusjon-rettigheter">Distribusjon – rettigheter (dct:rights)</a> og <a href="#Katalog-rettigheter">Katalog – rettigheter (brukervilkår) (dct:rights)</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
 <h3 id="Om-Datasettserie"><a class="anchor" href="#Om-Datasettserie"></a>Om bruk av klassen <em>Datasettserie</em></h3>
 <div class="paragraph">
 <p><em>Datasett</em> (<code>dcat:Dataset</code>) inkluderes i en <em>datasettserie</em> (<code>dcat:DatasetSeries</code>) ved hjelp av datasettegenskapen <a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a>.</p>
@@ -8855,10 +8878,68 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </div>
 <div class="sect2">
-<h3 id="Om-lisens-tilgang-rettigheter"><a class="anchor" href="#Om-lisens-tilgang-rettigheter"></a>Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights)</h3>
+<h3 id="Om-inverse-egenskaper"><a class="anchor" href="#Om-inverse-egenskaper"></a>Om bruk av inverse egenskaper</h3>
 <div class="paragraph">
-<p><em><mark>@@@@@@ mer tekst kommer, noe a la <a href="https://www.w3.org/TR/vocab-dcat-3/#license-rights">W3C/DCAT 9. License and rights statements</a></mark></em></p>
+<p>I klassebeskrivelsene foran er inverse egenskaper bevisst utelatt, i tråd med DCAT-AP og DCAT.</p>
 </div>
+<div class="paragraph">
+<p>Også i tråd med DCAT-AP og DCAT, tillater DCAT-AP-NO å bruke inverse egenskaper når de trengs, men under forutsetning av at de brukes i tillegg til, og <em>ikke</em> istedenfor, egenskapene som er eksplisitt tatt med i klassebeskrivelsene ovenfor.</p>
+</div>
+<div class="paragraph">
+<p>Følgende inverse egenskaper kan brukes:</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Egenskap i DCAT-AP-NO</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invers egenskap som kan brukes i tillegg</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcat:prev</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:next</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcat:previousVersion</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:nextVersion</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcat:distribution</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:isDistributionOf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct:hasPart</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct:replaces</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isReplacedBy</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dct:isReferencedBy</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:references</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcat:hasVersion</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:isVersionOf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>dcat:inSeries</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:seriesMember</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>foaf:primaryTopic</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:isPrimaryTopicOf</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>prov:wasGeneratedBy</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prov:generated</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 </div>
@@ -9324,10 +9405,10 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Denne versjonen spesifiserer <em>ikke</em> kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <a href="#Samsvarskrav">Krav til samsvar</a> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP.</p>
 </div>
 <div class="paragraph">
-<p>Vi følger DCAT-AP som følger DCAT med hensyn til inverse egenskaper (se <a href="https://www.w3.org/TR/vocab-dcat-3/#inverse-properties" class="ext-link" target="<em>blank">§ 7 i DCAT &#x29C9;</a>), at bare primæregenskapene (og ikke deres inverse egenskaper) tas med i spesifikasjonen. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man <em>kan</em> bruke en invers egenskap, _i tillegg til</em> og <em>ikke istedenfor</em>  primæregenskapen.</p>
+<p>Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper (se <a href="https://www.w3.org/TR/vocab-dcat-3/#inverse-properties" class="ext-link" target="<em>blank">§ 7 i DCAT &#x29C9;</a>), at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man <em>kan</em> bruke en invers egenskap, _i tillegg til</em> og <em>ikke istedenfor</em> egenskapen som er eksplisitt tatt med i standarden. Se <a href="#Om-inverse-egenskaper">Om bruk av inverse egenskaper</a>.</p>
 </div>
 <div class="paragraph">
-<p>Tabellen under viser hva som er nye, utgåtte, endrede klasser og egenskaper.</p>
+<p>Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper.</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <caption class="title">Tabell 1. Endringer av objekter og egenskaper fra versjon 2.2 til denne versjonen</caption>
@@ -9598,7 +9679,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-07 13:54:08 UTC
+Sist oppdatert 2024-05-08 05:53:36 UTC
 </div>
 </div>
 </body>
