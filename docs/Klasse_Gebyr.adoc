@@ -1,5 +1,7 @@
 = Klassen Gebyr (cv:Cost) [[Gebyr]]
 
+<<img-KlassenGebyr>> viser klassen Gebyr og dens egenskaper, samt klassen den refererer til.  
+
 [[img-KlassenGebyr]]
 .Klassen Gebyr og klassen den refererer til.
 [link=images/Klassen-Gebyr.png]
