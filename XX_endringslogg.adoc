@@ -1,6 +1,6 @@
 = Endringslogg [[Endringslogg]]
 
-Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsbeskrivelser, lenker osv.) beskrives ikke her.
+Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbeskrivelser, lenker osv.) beskrives ikke her.
 
 == Endringer av dokumentstrukturen fra versjon 2.2 til denne versjonen 
 
@@ -42,7 +42,6 @@ Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper.
 | Datasett – type | dct:type | Kravet til bruk av EUs kontrollerte vokabular "Dataset type" er endret fra SKAL til KAN brukes | Følger DCAT-AP.
 | Datasett – versjon | dcat:version | URIen endret fra owl:versionInfo til dcat:version | Følger DCAT-AP.
 | Datasett – versjon | dcat:version | Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP.
-| Datasett – versjonsmerknad | adms:versionNotes | Norsk egenskapsnavn endret (fra versjonsnote) | Bedre norsk oversettelse.
 |  Datasettserie | dcat:DatasetSeries | Datasettserie er subklasse av Katalogisert ressurs istedenfor Datasett | Følger DCAT-AP. 
 | Datasettserie – første |dcat:first | Kravnivået endret fra obligatorisk til anbefalt | Ikke alle datasettserier er ordnet.
 | Datatjeneste – i samsvar med | dct:conformsTo | Kravnivået endret fra obligatorisk til anbefalt | Følger DCAT-AP. 

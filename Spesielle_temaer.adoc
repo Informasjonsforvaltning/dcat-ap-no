@@ -1,6 +1,6 @@
 = Noen spesielle temaer [[Spesielle-temaer]]
 
-== Om bruk av egenskapene lisens (dct:license), tilgang (dct:accessRights) og rettigheter (dct:rights) [[Om-lisens-tilgang-rettigheter]]
+== Om bruk av egenskapene lisens (dct:license), tilgangsrettigheter (dct:accessRights) og rettigheter/brukervilkår (dct:rights) [[Om-lisens-tilgang-rettigheter]]
 
 DCAT-AP-NO støtter følgende tre hovedscenarier der man trenger å beskrive tilgang og/eller brukervilkår til en ressurs (f.eks. et datasett): 1) behov for å referere til en lisens, 2) behov for å spesifisere tilgangsrettigheter og 3) andre behov enn ovennevnte, for å uttrykke rettigheter eller brukervilkår, f.eks. opphavsrett. 
 
@@ -8,7 +8,7 @@ DCAT-AP-NO støtter disse scenariene på følgende måte:
 
 . `dct:license` SKAL brukes til å referere til en lisens, og verdien SKAL hentes fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"]. Dette gjelder egenskapene <<Datatjeneste-lisens>>, <<Distribusjon-lisens>> og <<Katalog-lisens>>. 
 
-. `dct:accessRights` SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være `PUBLIC`, `RESTRICTED` eller `NON_PUBLIC` fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[__Access right__ &#x29C9;, window="_blank", role="ext-link"]. Dette gjelder egenskapene <<Datasett-tilgangsnivå>> og <<Datatjeneste-tilgangsrettigheter>>.
+. `dct:accessRights` SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være `PUBLIC`, `RESTRICTED` eller `NON_PUBLIC` fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[__Access right__ &#x29C9;, window="_blank", role="ext-link"]. Dette gjelder egenskapene <<Datasett-tilgangsrettigheter>> og <<Datatjeneste-tilgangsrettigheter>>.
 
 . `dct:rights` KAN brukes til å uttrykke alle andre typer rettigheter og brukervilkår, bl.a. opphavsrett. Det er anbefalt å bruke <<Rettighetserklæring>> til å ha en strukturert beskrivelse av rettigheter og brukervilkår. Dette gjelder egenskapene <<Distribusjon-rettigheter>> og <<Katalog-rettigheter>>.
 

@@ -261,7 +261,7 @@ _This property is used to specify a temporal period that the Dataset covers._
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
 |===
 
-=== Datasett – tilgangsnivå (dct:accessRights) [[Datasett-tilgangsnivå]]
+=== Datasett – tilgangsrettigheter (dct:accessRights) [[Datasett-tilgangsrettigheter]]
 
 [cols="30s,70"]
 |===
