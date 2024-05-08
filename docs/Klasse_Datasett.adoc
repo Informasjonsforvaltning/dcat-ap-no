@@ -419,6 +419,20 @@ _This property is used to refer to another dataset that is a part of this datase
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+=== Datasett – har gebyr (cv:hasCost) [[Datasett-har-gebyr]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _has cost_
+| URI | cv:hasCost
+| Verdiområde / _Range_ | cv:Cost
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (`cv:Cost`), for å oppgi prisinfomasjonen og utrekningsgrunnlaget for gebyr for bruk av datasettet.
+
+_This property is used to refer to one or more instances of the Cost class, to specify information about the cost for reusing the dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
 === Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsmerknad]]
 
 [cols="30s,70"]
