@@ -48,7 +48,7 @@ Se ellers kapitlet <<Datatjeneste>> for andre opplysninger som BØR og KAN tas m
 
 == Minste krav til en distribusjonsbeskrivelse (dcat:Distribution)
 
-Det er anbefalt, dvs. ikke obligatorisk, å hvordan et datasett distribueres, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av en distribusjon til et datasett (dcat:Distribution):
+Det er anbefalt, dvs. ikke obligatorisk, å beskrive hvordan et datasett distribueres, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av en distribusjon til et datasett (dcat:Distribution):
 
 * #mer kommer#
 
