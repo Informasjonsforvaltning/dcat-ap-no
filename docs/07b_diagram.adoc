@@ -34,7 +34,11 @@ Se ellers kapitlet <<Katalog>> for andre opplysninger som BØR og KAN tas med i 
 
 Det er anbefalt, dvs. ikke obligatorisk, å ha beskrivelse av et eller flere datasett i en katalog, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av et datasett:  
 
-* #mer kommer#
+* fritekst-beskrivelse av datasettet
+* kontaktopplysninger som kan brukes vedrørende spørsmål og kommentarer om datasettet
+* hovedtema for datasettet, og verdien SKAL dessuten velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]
+* navnet på datasettet
+* aktøren (organisasjonen) som er ansvarlig for å gjøre datasettet tilgjengelig 
 
 Se ellers kapitlet <<Datasett>> for andre opplysninger som BØR og KAN tas med i beskrivelsen av et datasett, samt tekniske krav til hvordan opplysningene SKAL uttrykkes. 
 
@@ -42,7 +46,9 @@ Se ellers kapitlet <<Datasett>> for andre opplysninger som BØR og KAN tas med i
 
 Det er anbefalt, dvs. ikke obligatorisk, å ha beskrivelse av en eller flere datatjenester i en katalog, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av en datatjeneste (dcat:DataService):
 
-* #mer kommer#
+* rotplassering eller primært endepunkt for tjenesten
+* kontaktopplysninger som kan brukes vedrørende spørsmål og kommentarer om tjenesten
+* navnet på tjenesten
 
 Se ellers kapitlet <<Datatjeneste>> for andre opplysninger som BØR og KAN tas med i beskrivelsen av en datatjeneste, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.
 
@@ -50,6 +56,6 @@ Se ellers kapitlet <<Datatjeneste>> for andre opplysninger som BØR og KAN tas m
 
 Det er anbefalt, dvs. ikke obligatorisk, å beskrive hvordan et datasett distribueres, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av en distribusjon til et datasett (dcat:Distribution):
 
-* #mer kommer#
+* tilgangsURL, dvs. URL som gir tilgang til en distribusjonen av datasettet
 
 Se ellers kapitlet <<Distribusjon>> for andre opplysninger som BØR og KAN tas med i beskrivelsen av en distribusjon, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.
