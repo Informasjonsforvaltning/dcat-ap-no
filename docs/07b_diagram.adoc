@@ -17,7 +17,7 @@ Figuren illustrerer følgende:
 * En datatjeneste BØR brukes til å tilgjengeliggjøre et eller flere datasett. 
 ** Merk: selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett.  
 
-#_@@@@@ det bør vurderes, i et vedlegg, å ha en oversikt/tegning over alle klasser og relasjoner mellom dem_#
+#_@@@@@ det bør vurderes, i et vedlegg, å ha en oversikt/tegning over alle klasser og relasjoner mellom dem (i så fall med relasjoner på kryss og tvers), eller bare referere til EU sin tegning direkte?_#
 
 == Minste krav til en katalog (dcat:Catalog)
 
