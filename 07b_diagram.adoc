@@ -12,10 +12,10 @@ image::images/DCAT-AP-NO-forenklet-modell.png[]
 Figuren illustrerer følgende:
 
 * En katalog BØR inneholde beskrivelse av et eller flere datasett og/eller en eller flere datatjenester. 
-** Merk: selv om beskrivelse av hverken datasett eller datatjeneste er obligatorisk, BØR man unngå å ha tom katalog. 
+** Merk at selv om beskrivelse av hverken datasett eller datatjeneste er obligatorisk, BØR man unngå å ha tom katalog. 
 * Et datasett BØR tilgjengeliggjøres som en eller flere distribusjoner, og en distribusjon KAN nås via en eller flere datatjenester. 
 * En datatjeneste BØR brukes til å tilgjengeliggjøre et eller flere datasett. 
-** Merk: selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett.  
+** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett.  
 
 #_@@@@@ det bør vurderes, i et vedlegg, å ha en oversikt/tegning over alle klasser og relasjoner mellom dem (i så fall med relasjoner på kryss og tvers), eller bare referere til EU sin tegning direkte?_#
 
