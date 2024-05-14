@@ -46,7 +46,7 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | _English name_ | _title_
 | URI | dct:title
 | Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi tittel for dokumentet. Egenskapen bør gjentas når tittelen finnes i flere ulike språk/målformer.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi tittel for dokumentet. Egenskapen bør gjentas når tittelen finnes på flere ulike språk.
 
 _This property is used to specify the title of the document. This property can be repeated for parallel language versions of the title._
 | Multiplisitet / _Multiplicity_ | 0..n
