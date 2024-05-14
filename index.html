@@ -735,17 +735,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#Gebyr-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Gebyr</em></a>
 <ul class="sectlevel4">
-<li><a href="#Gebyr-identifikator">Gebyr – identifikator (dct:identifier)</a></li>
+<li><a href="#Gebyr-beløp">Gebyr – beløp (cv:hasValue)</a></li>
+<li><a href="#Gebyr-valuta">Gebyr – valuta (cv:currency)</a></li>
 <li><a href="#Gebyr-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Gebyr</em></a>
 <ul class="sectlevel4">
-<li><a href="#Gebyr-beløp">Gebyr – beløp (cv:hasValue)</a></li>
 <li><a href="#Gebyr-beskrivelse">Gebyr – beskrivelse (dct:description)</a></li>
-<li><a href="#Gebyr-valuta">Gebyr – valuta (cv:currency)</a></li>
-</ul>
-</li>
-<li><a href="#Gebyr-valgfrie-egenskaper">Valgfrie egenskaper for klassen <em>Gebyr</em></a>
-<ul class="sectlevel4">
-<li><a href="#Gebyr-erBestemtAv">Gebyr – er bestemt av (cv:isDefinedBy)</a></li>
 </ul>
 </li>
 </ul>
@@ -6059,13 +6053,13 @@ ex:budget-2020 a dcat:Dataset ;
 <h2 id="Gebyr"><a class="anchor" href="#Gebyr"></a>Klassen Gebyr (cv:Cost)</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#img-KlassenGebyr">Figur 8</a> viser klassen Gebyr og dens egenskaper, samt klassen den refererer til.</p>
+<p><a href="#img-KlassenGebyr">Figur 8</a> viser klassen Gebyr og dens egenskaper.</p>
 </div>
 <div id="img-KlassenGebyr" class="imageblock">
 <div class="content">
 <a class="image" href="images/Klassen-Gebyr.png"><img src="images/Klassen-Gebyr.png" alt="UML-diagram med klassen Gebyr, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."></a>
 </div>
-<div class="title">Figur 8. Klassen Gebyr og klassen den refererer til.</div>
+<div class="title">Figur 8. Klassen Gebyr.</div>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6096,49 +6090,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Gebyr-obligatoriske-egenskaper"><a class="anchor" href="#Gebyr-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Gebyr</em></h3>
 <div class="sect4">
-<h5 id="Gebyr-identifikator"><a class="anchor" href="#Gebyr-identifikator"></a>Gebyr – identifikator (dct:identifier)</h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>identifier</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en identifikator til gebyret.</p>
-<p class="tableblock"><em>This property is used to specify an Identifier for the Cost.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
-<h4 id="Gebyr-anbefalte-egenskaper"><a class="anchor" href="#Gebyr-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Gebyr</em></h4>
-<div class="sect4">
 <h5 id="Gebyr-beløp"><a class="anchor" href="#Gebyr-beløp"></a>Gebyr – beløp (cv:hasValue)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6165,52 +6116,11 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="Gebyr-beskrivelse"><a class="anchor" href="#Gebyr-beskrivelse"></a>Gebyr – beskrivelse (dct:description)</h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en tekstlig beskrivelse av gebyret. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.</p>
-<p class="tableblock"><em>This property is used to specify a free text description of the Cost. This property should be repeated when the description is in parallel languages.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -6247,11 +6157,11 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
@@ -6266,11 +6176,10 @@ ex:budget-2020 a dcat:Dataset ;
 </tbody>
 </table>
 </div>
-</div>
 <div class="sect3">
-<h4 id="Gebyr-valgfrie-egenskaper"><a class="anchor" href="#Gebyr-valgfrie-egenskaper"></a>Valgfrie egenskaper for klassen <em>Gebyr</em></h4>
+<h4 id="Gebyr-anbefalte-egenskaper"><a class="anchor" href="#Gebyr-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Gebyr</em></h4>
 <div class="sect4">
-<h5 id="Gebyr-erBestemtAv"><a class="anchor" href="#Gebyr-erBestemtAv"></a>Gebyr – er bestemt av (cv:isDefinedBy)</h5>
+<h5 id="Gebyr-beskrivelse"><a class="anchor" href="#Gebyr-beskrivelse"></a>Gebyr – beskrivelse (dct:description)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6279,20 +6188,20 @@ ex:budget-2020 a dcat:Dataset ;
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>is defined by</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:isDefinedBy</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">org:Organization</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere organisasjoner som bestemmer gebyret.</p>
-<p class="tableblock"><em>This property is used to refer to the organisation(s) defining the costs.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en tekstlig beskrivelse av gebyret. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.</p>
+<p class="tableblock"><em>This property is used to specify a free text description of the Cost. This property should be repeated when the description is in parallel languages.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -6300,7 +6209,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
@@ -10145,7 +10054,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-13 13:16:45 UTC
+Sist oppdatert 2024-05-14 07:20:44 UTC
 </div>
 </div>
 </body>
