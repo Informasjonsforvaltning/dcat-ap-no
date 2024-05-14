@@ -32,23 +32,6 @@ _This property is used to specify a free-text account of the Catalogue. This pro
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
-=== Katalog – identifikator (dct:identifier) [[Katalog-identifikator]]
-
-[cols="30s,70d"]
-|===
-| _English name_ |  _identifier_
-| URI | dct:identifier
-| Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikatoren av katalogen.
-
-_This property is used to specify the identifier of the catalogue._
-| Multiplisitet / _Multiplicity_ | 1..1
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1. 
-
-__Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.__
-|===
-
 === Katalog – kontaktpunkt (dcat:contactPoint) [[Katalog-kontaktpunkt]]
 
 [cols="30s,70"]
@@ -277,6 +260,20 @@ _This property is used to refer to the legislation that mandates the creation or
 
 _This property is used to refer to a related Catalogue that is physically or logically included in the described Catalogue._
 | Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
+=== Katalog – identifikator (dct:identifier) [[Katalog-identifikator]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikatoren av katalogen.
+
+_This property is used to specify the identifier of the catalogue._
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
