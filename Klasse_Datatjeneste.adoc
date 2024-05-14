@@ -37,23 +37,6 @@ _This property is used to refer to the root location or primary endpoint of the 
 _Norwegian extension: The multiplicity is changed from 1..n to 1..1._
 |===
 
-=== Datatjeneste – identifikator (dct:identifier) [[Datatjeneste-identifikator]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _identifier_
-| URI | dct:identifier
-| Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator til datatjenesten.
-
-_This property is used to specify the identifier to the data service._
-| Multiplisitet / _Multiplicity_ | 1..n
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..n til 1..n. 
-
-__Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..n to 1..n.__ 
-|===
-
 === Datatjeneste – kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
 
 [cols="30s,70d"]
@@ -246,6 +229,20 @@ _This property is used to refer to a page or a document that describes the data 
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+|===
+
+=== Datatjeneste – identifikator (dct:identifier) [[Datatjeneste-identifikator]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator til datatjenesten.
+
+_This property is used to specify the identifier to the data service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 === Datatjeneste – landingsside (dcat:landingPage) [[Datatjeneste-landingsside]]
