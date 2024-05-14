@@ -818,7 +818,22 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Kontaktopplysning">Klassen Kontaktopplysning (vcard:Kind)</a></li>
+<li><a href="#Kontaktopplysning">Klassen Kontaktopplysning (vcard:Kind)</a>
+<ul class="sectlevel2">
+<li><a href="#Kontaktopplysning-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Kontaktopplysning</em></a>
+<ul class="sectlevel3">
+<li><a href="#Kontaktopplysning-navn">Kontaktopplysning – navn (vcard:fn)</a></li>
+<li><a href="#Kontaktopplysning-harEPost">Kontaktopplysning – har e-post (vcard:hasEmail)</a></li>
+</ul>
+</li>
+<li><a href="#Kontaktopplysning-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Kontaktopplysning</em></a>
+<ul class="sectlevel3">
+<li><a href="#Kontaktopplysning-harTelefon">Kontaktopplysning – har telefon (vcard:hasTelephone)</a></li>
+<li><a href="#Kontaktopplysning-hjemmeside">Kontaktopplysning – hjemmeside (foaf:homepage)</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><a href="#Lisensdokument">Klassen Lisensdokument (dct:LicenseDocument)</a>
 <ul class="sectlevel2">
 <li><a href="#Lisensdokument-anbefalte-egenskaper">Anbefalte egenskaper for klassen <em>Lisensdokument</em></a>
@@ -7593,11 +7608,161 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.</p>
-<p class="tableblock"><em>Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group).</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Merk at dette er en abstrakt klasse som ikke skal brukes direkte. Det er en av subklassene som skal brukes. Vi anbefaler sterkt å unngå bruk av Individ som kontaktpunkt.</p>
+<p class="tableblock"><em>Note that this class is an abstract class which should be be used directly, It is one of the subclasses that should be used. We strongly recommended not to use Individual as contact points.</em></p></td>
 </tr>
 </tbody>
 </table>
+<div class="sect2">
+<h3 id="Kontaktopplysning-obligatoriske-egenskaper"><a class="anchor" href="#Kontaktopplysning-obligatoriske-egenskaper"></a>Obligatoriske egenskaper for klassen <em>Kontaktopplysning</em></h3>
+<div class="sect3">
+<h4 id="Kontaktopplysning-navn"><a class="anchor" href="#Kontaktopplysning-navn"></a>Kontaktopplysning – navn (vcard:fn)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>formatted name</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:fn</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi navnet til kontaktpunktet. Egenskapen bør gjentas når navnet finnes på flere språk.</p>
+<p class="tableblock"><em>This property is used to specify the name of the contact point. This property can be repeated for parallel language versions of the name.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Kontaktopplysning-harEPost"><a class="anchor" href="#Kontaktopplysning-harEPost"></a>Kontaktopplysning – har e-post (vcard:hasEmail)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has email</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">xsd:anyURI</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet.</p>
+<p class="tableblock"><em>This property is used to specify an email address to the contact point.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Kontaktopplysning-anbefalte-egenskaper"><a class="anchor" href="#Kontaktopplysning-anbefalte-egenskaper"></a>Anbefalte egenskaper for klassen <em>Kontaktopplysning</em></h3>
+<div class="sect3">
+<h4 id="Kontaktopplysning-harTelefon"><a class="anchor" href="#Kontaktopplysning-harTelefon"></a>Kontaktopplysning – har telefon (vcard:hasTelephone)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has telephone</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasTelephone</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi et telefonnummer til kontaktpunktet.</p>
+<p class="tableblock"><em>This property is used to specify a telephone number to the contact point.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Kontaktopplysning-hjemmeside"><a class="anchor" href="#Kontaktopplysning-hjemmeside"></a>Kontaktopplysning – hjemmeside (foaf:homepage)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>homepage</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:homepage</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en hjemmeside til kontaktpunktet.</p>
+<p class="tableblock"><em>This property is used to specify a homepage to the contact point.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -10047,7 +10212,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-14 14:00:59 UTC
+Sist oppdatert 2024-05-14 14:07:24 UTC
 </div>
 </div>
 </body>
