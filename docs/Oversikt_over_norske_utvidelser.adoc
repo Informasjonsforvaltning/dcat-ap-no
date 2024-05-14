@@ -117,10 +117,6 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
-| Datatjeneste – identifikator | dct:identifier |
-Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..n til 1..n.
-
-__The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..n to 1..n.__
 | Datatjeneste – kontaktpunkt | dcat:contactPoint |
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 

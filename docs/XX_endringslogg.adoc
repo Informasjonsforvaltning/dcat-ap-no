@@ -35,18 +35,19 @@ Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper.
 | Datasett – erstattes av | dct:isReplacedBy | utgått | Følger DCAT-AP (invers egenskap).
 | Datasett - følger | cpsv:follows | utgått | Følger DCAT-AP. 
 | Datasett – har gebyr | cv:hasCost | ny egenskap | For å kunne oppgi prisinformasjon. 
-| Datasett – har versjon | dcat:hasVersion | URIen endret fra dct:hasVersion til dcat:hasVersion | Følger DCAT-AP. 
-| Datasett – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisitet fra 1..n til 0..n | Følger DCAT-AP
-| Datasett – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
-| Datasett – produsent | dct:creator | Multiplisiteten endret fra 0..1 til 0..n | Følger DCAT-AP. 
+| Datasett – har versjon | dcat:hasVersion | URIen er endret fra dct:hasVersion til dcat:hasVersion. | Følger DCAT-AP. 
+| Datasett – identifikator | dct:identifier | Kravnivået er endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..n til 0..n. | Følger DCAT-AP
+| Datasett – kontaktpunkt | dcat:contactPoint | Kravnivået er endret fra anbefalt til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n. | Dette for å kunne ta kontakt med den ansvarlige. 
+| Datasett – produsent | dct:creator | Multiplisiteten er endret fra 0..1 til 0..n | Følger DCAT-AP. 
 | Datasett – krever | dct:requires | utgått | Følger DCAT-AP (ingen reell bruk).
 | Datasett – refererer til | dct:references | utgått | Følger DCAT-AP (invers egenskap).
-| Datasett – type | dct:type | Kravet til bruk av EUs kontrollerte vokabular "Dataset type" er endret fra SKAL til KAN brukes | Følger DCAT-AP.
-| Datasett – versjon | dcat:version | URIen endret fra owl:versionInfo til dcat:version | Følger DCAT-AP.
-| Datasett – versjon | dcat:version | Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP.
-|  Datasettserie | dcat:DatasetSeries | Datasettserie er subklasse av Katalogisert ressurs istedenfor Datasett | Følger DCAT-AP. 
+| Datasett – type | dct:type | Kravet til bruk av EUs kontrollerte vokabular "Dataset type" er endret fra SKAL til KAN brukes. | Følger DCAT-AP.
+| Datasett – versjon | dcat:version | URIen er endret fra owl:versionInfo til dcat:version. | Følger DCAT-AP.
+| Datasett – versjon | dcat:version | Multiplisiteten er endret fra 0..1 til 0..n. | Følger DCAT-AP.
+// | Datasettserie | dcat:DatasetSeries | Datasettserie er subklasse av Katalogisert ressurs istedenfor Datasett | Følger DCAT-AP. 
 | Datasettserie – første |dcat:first | Kravnivået endret fra obligatorisk til anbefalt | Ikke alle datasettserier er ordnet.
-| Datatjeneste – i samsvar med | dct:conformsTo | Kravnivået endret fra obligatorisk til anbefalt | Følger DCAT-AP. 
+| Datatjeneste – i samsvar med | dct:conformsTo | Kravnivået endret fra obligatorisk til anbefalt, dermed også multiplisiteten fra 1..n til 0..n. | Følger DCAT-AP. 
+| Datatjeneste – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..n til 0..n. | Følger DCAT-AP. 
 | Datasettserie – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige.
 | Datatjeneste – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Datatjeneste – versjon | dcat:version | ny egenskap | Behov for å oppgi versjon til et API.
