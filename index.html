@@ -3534,11 +3534,6 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en samling av datasett som publiseres separat, men som deler noen felles egenskaper som gjør at de er gruppert sammen. Se også <a href="#Om-Datasettserie">Om bruk av klassen <em>Datasettserie</em></a>.</p>
 <p class="tableblock"><em>This class is used to represent a collection of datasets that are published separately, but share some characteristics that group them.</em></p></td>
 </tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie uten datasett bør unngås. En datasettserie bør derfor refereres til fra minst ett datasett, ved bruk av egenskapen <a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a>.</p>
-<p class="tableblock"><em>It is recommended to avoid Dataset Series without a dataset in the collection. Therefore at least one Dataset should refer to a Dataset Series using the property in series (dcat:inSeries).</em></p></td>
-</tr>
 </tbody>
 </table>
 <div class="sect2">
@@ -9217,6 +9212,22 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Datasettserie uten datasett bør unngås. Det kan imidlertid hende at en datasettserie over tid blir tom (f.eks. at datasettene i serien blir trukket tilbake). Utgiveren bør i slike tilfeller også vurdere å trekke tilbake selve serien.</p>
 </li>
 <li>
+<p>Klassen Datasettserie (dcat:DatasetSeries) er en subklasse av Datasett (dcat:Dataset). Rent modelleringsmessig kan derfor klassen Datasettserie arve alle egenskapene fra klassen Datasett. Man skal allikevel vurdere om det faglig sett er hensiktsmessig å bruke en egenskap fra Datasett. Vi anbefaler sterkt at</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Man ikke bruker egenskapen <a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a> på en datasettserie, ettersom egenskapen er ment for å uttrykke rekkefølge mellom datasett i en datasettserie.</p>
+</li>
+<li>
+<p>Man unngår å bruke egenskapen <a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a> eller <a href="#Datasett-harDel">Datasett – har del (dct:hasPart)</a> på en datasettserie, slik at man unngår nøstede datasettserier.</p>
+</li>
+<li>
+<p>Man unngår å bruke egenskapen <a href="#Datasett-datasettdistribusjon">Datasett – datasettdistribusjon (dcat:distribution)</a> eller <a href="#Datasett-eksempeldata">Datasett – eksempeldata (adms:sample)</a> på en datasettserie, men at distribusjoner (dcat:Distribution) knyttes til datasettene som inngår i datasettserien.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
 <p><em><mark>@@@@@@ sjekk om <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-dataset-series">de andre kulepunkter fra EUs DCAT-AP 3.0.0-Draft</a> som trengs omskriving (jf. <a href="https://github.com/SEMICeu/DCAT-AP/issues/354">Issue #354</a>), er aktuelle her</mark></em></p>
 </li>
 </ul>
@@ -10054,7 +10065,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-14 10:37:08 UTC
+Sist oppdatert 2024-05-14 11:17:59 UTC
 </div>
 </div>
 </body>
