@@ -243,7 +243,7 @@ __Note! The namespace for IANA that returns RDF resource, is `\https://www.w3.or
 |===
 
 === Distribusjon – nedlastningslenke (dcat:downloadURL) [[Distribusjon-nedlastningslenke]]
-
+f
 [cols="30s,70d"]
 |===
 | _English name_ | _download URL_
@@ -295,15 +295,12 @@ __This property is used to refer to the policy that describes the rights related
 |===
 | _English name_ | _rights_
 | URI | dct:rights
-| Verdiområde / _Range_ | dct:RightsStatement
+| Verdiområde / _Range_ | odrs:RightsStatement
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en uttalelse som angir rettigheter knyttet til distribusjonen.
 
 _This property is used to refer to a statement that specifies rights associated with the Distribution._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Det anbefales å bruke <<Rettighetserklæring>> som er en subklasse av `dct:RightsStatement`. Se også <<Om-lisens-tilgang-rettigheter>>. 
-
-__It is recommended to use the class <<Rettighetserklæring, Rights statement (odrs:RightsStatement)>> which is a subclass of `dct:RightsStatement`.__
 |===
 
 === Distribusjon – romlig oppløsning (dcat:spatialResolutionInMeters) [[Distribusjon-romlig-oppløsning]]
