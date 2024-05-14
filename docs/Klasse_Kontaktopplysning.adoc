@@ -14,7 +14,67 @@ image::images/Klassen-Kontaktopplysning.png[]
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en beskrivelse av en kontaktopplysning i henhold til vCard-spesifikasjonen. Her kan man for eksempel oppgi telefonnummer og/eller epost. 
 
 _This class is used to represent a description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point._
-| Merknad / _Note_ | Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.
+| Merknad / _Note_ | Merk at dette er en abstrakt klasse som ikke skal brukes direkte. Det er en av subklassene som skal brukes. Vi anbefaler sterkt å unngå bruk av Individ som kontaktpunkt. 
 
-_Note that the class Kind is the parent class for the four explicit types of vCards (Individual, Organization, Location, Group)._
+__Note that this class is an abstract class which should be be used directly, It is one of the subclasses that should be used. We strongly recommended not to use Individual as contact points.__
+|===
+
+== Obligatoriske egenskaper for klassen _Kontaktopplysning_ [[Kontaktopplysning-obligatoriske-egenskaper]]
+
+=== Kontaktopplysning – navn (vcard:fn) [[Kontaktopplysning-navn]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _formatted name_
+| URI | vcard:fn
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet til kontaktpunktet. Egenskapen bør gjentas når navnet finnes på flere språk. 
+
+_This property is used to specify the name of the contact point. This property can be repeated for parallel language versions of the name._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+|===
+
+=== Kontaktopplysning – har e-post (vcard:hasEmail) [[Kontaktopplysning-harEPost]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _has email_
+| URI | vcard:hasEmail
+| Verdiområde / _Range_ | xsd:anyURI
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet. 
+
+_This property is used to specify an email address to the contact point._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+|===
+
+== Anbefalte egenskaper for klassen _Kontaktopplysning_ [[Kontaktopplysning-anbefalte-egenskaper]]
+
+=== Kontaktopplysning – har telefon (vcard:hasTelephone) [[Kontaktopplysning-harTelefon]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _has telephone_
+| URI | vcard:hasTelephone
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et telefonnummer til kontaktpunktet. 
+
+_This property is used to specify a telephone number to the contact point._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+|===
+
+=== Kontaktopplysning – hjemmeside (foaf:homepage) [[Kontaktopplysning-hjemmeside]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _homepage_
+| URI | foaf:homepage
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en hjemmeside til kontaktpunktet. 
+
+_This property is used to specify a homepage to the contact point._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
