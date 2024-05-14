@@ -11,7 +11,7 @@ Klassen _Regel_ er anbefalt.
 |Engelsk navn|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av regelen. Denne egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk/målformer.
+|Beskrivelse|Brukes til å oppgi en tekstlig beskrivelse av regelen. Denne egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk
 |===
@@ -35,7 +35,7 @@ Klassen _Regel_ er anbefalt.
 |Engelsk navn|title
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi en beskrivende tittel eller navn for regelen. Denne egenskapen bør gjentas når tittelen/navnet finnes i flere ulike språk/målformer.
+|Beskrivelse|Brukes til å oppgi en beskrivende tittel eller navn for regelen. Denne egenskapen bør gjentas når tittelen/navnet finnes på flere ulike språk.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk
 |===
@@ -60,7 +60,7 @@ Klassen _Regel_ er anbefalt.
 |Engelsk navn|language
 |URI|dct:language
 |Range|dct:LinguisticSystem
-|Beskrivelse|Brukes til å referere til språk/målform som regelen er tilgjengelig i.
+|Beskrivelse|Brukes til å referere til språk som regelen er tilgjengelig på.
 |Multiplisitet|0..n
 |Kravnivå|Anbefalt
 |===

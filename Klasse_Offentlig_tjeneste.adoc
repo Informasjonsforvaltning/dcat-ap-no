@@ -11,7 +11,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Engelsk navn|description
 |URI|dct:description
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å beskrive tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes i flere ulike språk/målformer.
+|Beskrivelse|Brukes til å beskrive tjenesten. Denne egenskapen kan gjentas når beskrivelsen finnes på flere ulike språk.
 |Multiplisitet|1..n
 |===
 
@@ -47,7 +47,7 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Engelsk navn|title
 |URI|dct:title
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes i flere ulike språk/målformer.
+|Beskrivelse|Brukes til det offisielle navnet på tjenesten. Denne egenskapen kan gjentas når navnet finnes på flere ulike språk.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk
 |===
@@ -97,10 +97,10 @@ Klassen _Offentlig tjeneste_ er anbefalt.
 |Engelsk navn|homepage
 |URI|foaf:homepage
 |Range|foaf:Document
-|Beskrivelse|Brukes til å referere til hjemmesiden til tjenesten. Bør gjentas når tjenesten er beskrevet i flere ulike språk/målformer.
+|Beskrivelse|Brukes til å referere til hjemmesiden til tjenesten. Bør gjentas når tjenesten er beskrevet på flere ulike språk.
 |Multiplisitet|0..n
 |Kravnivå|Anbefalt
-|Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer.
+|Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider på ulike språk.
 |===
 
 === Offentlig tjeneste – produserer (dataressurser) (cpsv:produces) [[OffentligTjeneste-produserer]]

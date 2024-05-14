@@ -42,7 +42,7 @@ _This property is used to refer to a URL that gives access to a Distribution of 
 | _English name_ | _description_
 | URI | dct:description
 | Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi fritekstbeskrivelse av distribusjonen. Egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi fritekstbeskrivelse av distribusjonen. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.
 
 _This property is used to specify a free-text account of the Distribution. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n
@@ -382,7 +382,7 @@ _This property is used to refer to a data service that gives access to the distr
 | _English name_ | _title_
 | URI | dct:title
 | Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn på distribusjonen. Egenskapen bør gjentas når tittelen finnes i flere ulike språk.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn på distribusjonen. Egenskapen bør gjentas når tittelen finnes på flere ulike språk.
 
 _This property is used to specify a name given to the Distribution. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n

@@ -22,7 +22,7 @@ Klassen _Offentlig organisasjon_ er anbefalt.
 |Engelsk navn|preferred label
 |URI|skos:prefLabel
 |Range|rdfs:Literal
-|Beskrivelse|Brukes til å oppgi det foretrukne navnet til organisasjonen. Denne egenskapen bør gjentas når navnet finnes i flere ulike språk/målformer.
+|Beskrivelse|Brukes til å oppgi det foretrukne navnet til organisasjonen. Denne egenskapen bør gjentas når navnet finnes på flere ulike språk.
 |Multiplisitet|1..n
 |Kravnivå|Obligatorisk
 |Kommentar| I BRegDCAT-AP er både denne egenskap (`skos:prefLabel`) og <<OffentligOrganisasjon-navn>> (`dct:title`) obligatoriske. For at DCAT-AP-NO skal være kompatibel med BRegDCAT-AP er begge disse også obligatoriske i DCAT-AP-NO. Vi anbefaler å bruke denne egenskapen (`skos:prefLabel`) primært og gjenta navnet i <<OffentligOrganisasjon-navn>> (`dct:title`). Gjentagelsen kan typisk håndteres av en dataapplikajson.
@@ -76,10 +76,10 @@ Se kommentaren til <<OffentligOrganisasjon-foretrukketNavn>>.
 |Engelsk navn|homepage
 |URI|foaf:homepage
 |Range|foaf:Document
-|Beskrivelse|Brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes i flere ulike språk/målformer.
+|Beskrivelse|Brukes til å referere til hjemmesiden til organisasjonen. Bør gjentas når hjemmesiden finnes på flere ulike språk/målformer.
 |Multiplisitet|0..n
 |Kravnivå|Anbefalt
-|Kommentar||Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider i ulike språk/målformer.
+Kommentar|Norsk utvidelse - multiplisitet er endret fra 0..1 til 0..n, for å kunne referere til ulike hjemmesider på ulike språk.
 |===
 
 === Offentlig organisasjon – klassifisering (org:classification) [[OffentligOrganisasjon-klassifisering]]

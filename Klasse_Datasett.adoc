@@ -677,7 +677,7 @@ _This property is used to specify the minimum spatial separation resolvable in a
 | _English name_ | _language_
 | URI | dct:language
 | Verdiområde / _Range_ | dct:LinguisticSystem
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi språket som datasettet er på. Kan repeteres dersom det er flere språk i datasettet.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi språket som datasettet er på. Egenskapen Kan gjentas dersom det er flere språk i datasettet.
 
 _This property is used to specify a language of the Dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
@@ -772,7 +772,7 @@ _This property is used to specify the version indicator (name or identifier) of 
 | _English name_ | _version notes_
 | URI | adms:versionNotes
 | Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskap brukes til å beskrive forskjellene mellom denne og en tidligere versjon av datasettet. Bør gjentas når merknaden finnes i flere ulike språk.
+| Anvendelse / _Usage note_ | Egenskap brukes til å beskrive forskjellene mellom denne og en tidligere versjon av datasettet. Egenskapen bør gjentas når merknaden finnes på flere ulike språk.
 
 _This property is used to specify a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes._
 | Multiplisitet / _Multiplicity_ | 0..n
