@@ -760,7 +760,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Katalog-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Katalog</em></a>
 <ul class="sectlevel3">
 <li><a href="#Katalog-beskrivelse">Katalog – beskrivelse (dct:description)</a></li>
-<li><a href="#Katalog-identifikator">Katalog – identifikator (dct:identifier)</a></li>
 <li><a href="#Katalog-kontaktpunkt">Katalog – kontaktpunkt (dcat:contactPoint)</a></li>
 <li><a href="#Katalog-tittel">Katalog – tittel (dct:title)</a></li>
 <li><a href="#Katalog-utgiver">Katalog – utgiver (dct:publisher)</a></li>
@@ -783,6 +782,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Katalog-gjeldendeLovgivning">Katalog – gjeldende lovgivning (dcatap:applicableLegislation)</a></li>
 <li><a href="#Katalog-har-del">Katalog – har del (dct:hasPart)</a></li>
+<li><a href="#Katalog-identifikator">Katalog – identifikator (dct:identifier)</a></li>
 <li><a href="#Katalog-katalog">Katalog – katalog (dcat:catalog)</a></li>
 <li><a href="#Katalog-katalogpost">Katalog – katalogpost (dcat:record)</a></li>
 <li><a href="#Katalog-produsent">Katalog – produsent (dct:creator)</a></li>
@@ -6357,47 +6357,6 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect3">
-<h4 id="Katalog-identifikator"><a class="anchor" href="#Katalog-identifikator"></a>Katalog – identifikator (dct:identifier)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>identifier</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi identifikatoren av katalogen.</p>
-<p class="tableblock"><em>This property is used to specify the identifier of the catalogue.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.</p>
-<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
 <h4 id="Katalog-kontaktpunkt"><a class="anchor" href="#Katalog-kontaktpunkt"></a>Katalog – kontaktpunkt (dcat:contactPoint)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -6946,6 +6905,42 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="Katalog-identifikator"><a class="anchor" href="#Katalog-identifikator"></a>Katalog – identifikator (dct:identifier)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>identifier</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi identifikatoren av katalogen.</p>
+<p class="tableblock"><em>This property is used to specify the identifier of the catalogue.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -9584,12 +9579,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – identifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.</p>
-<p class="tableblock"><em>The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.</em></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – kontaktpunkt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.</p>
@@ -9967,6 +9956,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – identifikator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..1 til 0..n.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – opphav</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:provenance</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
@@ -10052,7 +10047,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-14 11:58:43 UTC
+Sist oppdatert 2024-05-14 12:14:23 UTC
 </div>
 </div>
 </body>

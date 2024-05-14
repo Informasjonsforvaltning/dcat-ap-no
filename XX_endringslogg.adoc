@@ -60,6 +60,7 @@ Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper.
 | Katalog – er del av | dct:isPartOf | utgått | Følger DCAT-AP (invers egenskap).  
 | Katalog – frekvens | dct:accrualPeriodicity | utgått | Følger DCAT-AP.
 | Katalog – gjeldende lovgivning | dcatap:applicableLegislation | ny | Følger DCAT-AP.
+| Katalog – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..1 til 0..n. | Følger DCAT-AP. 
 | Katalog – opphav | dct:provenance | utgått | Følger DCAT-AP. 
 | Katalog – temaer | dcat:themeTaxonomy | Krav til obligatorisk bruk av EUs EuroVoc utgått. | Følger DCAT-AP.
 | Katalog – tidsrom | dct:temporal | ny | Følger DCAT-AP. 

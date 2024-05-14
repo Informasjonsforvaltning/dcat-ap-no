@@ -181,10 +181,6 @@ __Not explicitly specified in DCAT-AP/DCAT.__
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __Not explicitly specified in DCAT-AP/DCAT.__
-| Katalog – identifikator | dct:identifier |
-Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
-
-__The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.__
 | Katalog – kontaktpunkt | dcat:contactPoint |
 Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
