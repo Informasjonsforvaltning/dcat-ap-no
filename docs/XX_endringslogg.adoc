@@ -36,6 +36,7 @@ Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper.
 | Datasett - følger | cpsv:follows | utgått | Følger DCAT-AP. 
 | Datasett – har gebyr | cv:hasCost | ny egenskap | For å kunne oppgi prisinformasjon. 
 | Datasett – har versjon | dcat:hasVersion | URIen endret fra dct:hasVersion til dcat:hasVersion | Følger DCAT-AP. 
+| Datasett – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisitet fra 1..n til 0..n | Følger DCAT-AP
 | Datasett – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
 | Datasett – produsent | dct:creator | Multiplisiteten endret fra 0..1 til 0..n | Følger DCAT-AP. 
 | Datasett – krever | dct:requires | utgått | Følger DCAT-AP (ingen reell bruk).

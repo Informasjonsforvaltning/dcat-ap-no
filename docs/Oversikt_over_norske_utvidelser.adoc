@@ -13,10 +13,6 @@ Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene de aktue
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
  _Not explicitly specified in DCAT-AP/DCAT._
-| Datasett – identifikator | dct:identifier | 
-Kravnivået endret fra valgfri til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n. 
-
-_Norwegian extension: The requirement level changed from optional to mandatory, thus also the multiplicity from 0..n to 1..n._
 | Datasett – kontaktpunkt | dcat:contactPoint |
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
 

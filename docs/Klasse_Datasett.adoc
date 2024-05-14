@@ -34,23 +34,6 @@ _This property is used to specify a free-text account of the Dataset.This proper
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
-=== Datasett – identifikator (dct:identifier) [[Datasett-identifikator]]
-
-[cols="30s,70"]
-|===
-| _English name_ | _identifier_
-| URI | dct:identifier
-| Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og unik innen konteksten av katalogen.
-
-_This property is used to specify the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue._
-| Multiplisitet / _Multiplicity_ | 1..n
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n. 
-
-_Norwegian extension: The requirement level changed from optional to mandatory, thus also the multiplicity from 0..n to 1..n._
-|===
-
 === Datasett – kontaktpunkt (dcat:contactPoint) [[Datasett-kontaktpunkt]]
 
 [cols="30s,70"]
@@ -557,6 +540,23 @@ ex:budget-2020 a dcat:Dataset ;
   dcat:prev ex:budget-2019 ;
   .
 -----
+
+=== Datasett – identifikator (dct:identifier) [[Datasett-identifikator]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _identifier_
+| URI | dct:identifier
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og unik innen konteksten av katalogen.
+
+_This property is used to specify the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n. 
+
+_Norwegian extension: The requirement level changed from optional to mandatory, thus also the multiplicity from 0..n to 1..n._
+|===
 
 === Datasett – kilde (dct:source) [[Datasett-kilde]]
 
