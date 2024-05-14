@@ -561,7 +561,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Datasett</em></a>
 <ul class="sectlevel3">
 <li><a href="#Datasett-beskrivelse">Datasett – beskrivelse (dct:description)</a></li>
-<li><a href="#Datasett-identifikator">Datasett – identifikator (dct:identifier)</a></li>
 <li><a href="#Datasett-kontaktpunkt">Datasett – kontaktpunkt (dcat:contactPoint)</a></li>
 <li><a href="#Datasett-tema">Datasett – tema (dcat:theme)</a></li>
 <li><a href="#Datasett-tittel">Datasett – tittel (dct:title)</a></li>
@@ -597,6 +596,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-harVersjon">Datasett – har versjon (dcat:hasVersion)</a></li>
 <li><a href="#Datasett-iSamsvarMed">Datasett – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a></li>
+<li><a href="#Datasett-identifikator">Datasett – identifikator (dct:identifier)</a></li>
 <li><a href="#Datasett-kilde">Datasett – kilde (dct:source)</a></li>
 <li><a href="#Datasett-kvalifisertKreditering">Datasett – kvalifisert kreditering (prov:qualifiedAttribution)</a></li>
 <li><a href="#Datasett-kvalifisertRelasjon">Datasett – kvalifisert relasjon (dcat:qualifiedRelation)</a></li>
@@ -1774,47 +1774,6 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </table>
 </div>
 <div class="sect3">
-<h4 id="Datasett-identifikator"><a class="anchor" href="#Datasett-identifikator"></a>Datasett – identifikator (dct:identifier)</h4>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>identifier</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og unik innen konteksten av katalogen.</p>
-<p class="tableblock"><em>This property is used to specify the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n.</p>
-<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to mandatory, thus also the multiplicity from 0..n to 1..n.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect3">
 <h4 id="Datasett-kontaktpunkt"><a class="anchor" href="#Datasett-kontaktpunkt"></a>Datasett – kontaktpunkt (dcat:contactPoint)</h4>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -2958,6 +2917,47 @@ ex:budget-2020 a dcat:Dataset ;
   .</pre>
 </div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="Datasett-identifikator"><a class="anchor" href="#Datasett-identifikator"></a>Datasett – identifikator (dct:identifier)</h4>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>identifier</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og unik innen konteksten av katalogen.</p>
+<p class="tableblock"><em>This property is used to specify the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n.</p>
+<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to mandatory, thus also the multiplicity from 0..n to 1..n.</em></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect3">
 <h4 id="Datasett-kilde"><a class="anchor" href="#Datasett-kilde"></a>Datasett – kilde (dct:source)</h4>
@@ -9328,12 +9328,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"> <em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – identifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n.</p>
-<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to mandatory, thus also the multiplicity from 0..n to 1..n.</em></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – kontaktpunkt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.</p>
@@ -9837,6 +9831,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – identifikator</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisitet fra 1..n til 0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – kontaktpunkt</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra anbefalt til obligatorisk.</p></td>
@@ -10054,7 +10054,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-14 07:20:44 UTC
+Sist oppdatert 2024-05-14 10:37:08 UTC
 </div>
 </div>
 </body>
