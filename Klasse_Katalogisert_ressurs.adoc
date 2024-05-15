@@ -14,8 +14,8 @@ image::images/Klassen-KatalogisertRessurs.png[]
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en ressurs som er beskrevet i en katalog.
 
 _This class is used to represent a resource published or curated by a single agent._
-| Merknad / _Note_ |  Dette er en abstrakt klasse. I en konkret anvendelse/serialisering bør bare subklassene <<Datasett>>, <<Datasettserie>> eller <<Datatjeneste>> brukes.
+| Merknad / _Note_ |  Dette er en abstrakt klasse. I en konkret anvendelse/serialisering BØR bare subklassene <<Datasett>>, <<Datasettserie>> eller <<Datatjeneste>> brukes.
 
-_This class Catalogued Record is an abstract class for DCAT-AP. Therefore only subclasses dcat:Dataset, dcat:DatasetSeries or dcat:DataService should be used in a data exchange._
+_This class Catalogued Record is an abstract class for DCAT-AP. Therefore only subclasses dcat:Dataset, dcat:DatasetSeries or dcat:DataService SHOULD be used in a data exchange._
 |===
 
