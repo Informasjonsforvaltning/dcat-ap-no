@@ -1,11 +1,15 @@
 = Klassen Regulativ ressurs (eli:LegalResource) [[RegulativRessurs]]
 
+:xrefstyle: short
+
 <<diagram-KlassenRegulativRessurs>> viser klassen Regulativ ressurs og dens egenskaper.  
 
 [[diagram-KlassenRegulativRessurs]]
 .Klassen Regulativ ressurs og dens egenskap.
 [link=images/Klassen-RegulativRessurs.png]
 image::images/Klassen-RegulativRessurs.png[]
+
+:xrefstyle: full
 
 [cols="30s,70d"]
 |===

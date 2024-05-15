@@ -1,11 +1,15 @@
 = Klassen Distribusjon (dcat:Distribution) [[Distribusjon]]
 
+:xrefstyle: short
+
 <<diagram-KlassenDistribusjon>> viser klassen Distribusjon og dens egenskaper, samt klassen den refererer til.  
 
 [[diagram-KlassenDistribusjon]]
 .Klassen Distribusjon og klassen den refererer til.
 [link=images/Klassen-Distribusjon.png]
 image::images/Klassen-Distribusjon.png[]
+
+:xrefstyle: full
 
 [cols="30s,70d"]
 |===

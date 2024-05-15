@@ -1,11 +1,15 @@
 = Klassen Katalog (dcat:Catalog) [[Katalog]]
 
+:xrefstyle: short
+
 <<diagram-KlassenKatalog>> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.  
 
 [[diagram-KlassenKatalog]]
 .Klassen Katalog og klassene den refererer til.
 [link=images/Klassen-Katalog.png]
 image::images/Klassen-Katalog.png[]
+
+:xrefstyle: full
 
 [cols="30s,70d"]
 |===

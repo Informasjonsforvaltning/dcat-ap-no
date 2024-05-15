@@ -1,11 +1,15 @@
 = Klassen Relasjon (dcat:Relationship) [[Relasjon]]
 
+:xrefstyle: short
+
 <<diagram-KlassenRelasjon>> viser klassen Relasjon og dens egenskaper.  
 
 [[diagram-KlassenRelasjon]]
 .Klassen Relasjon og dens egenskap.
 [link=images/Klassen-Relasjon.png]
 image::images/Klassen-Relasjon.png[]
+
+:xrefstyle: full
 
 [cols="30s,70d"]
 |===
