@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenKatalogisertRessurs>> viser klassen Katalogisert ressurs og dens subklasser.  
+<<diagram-Klassen-KatalogisertRessurs>> viser klassen Katalogisert ressurs og dens subklasser.  
 
-[[diagram-KlassenKatalogisertRessurs]]
+[[diagram-Klassen-KatalogisertRessurs]]
 .Klassen Katalogisert ressurs og dens subklasser.
 [link=images/Klassen-KatalogisertRessurs.png]
 image::images/Klassen-KatalogisertRessurs.png[]

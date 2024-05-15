@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenKatalogpost>> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til.  
+<<diagram-Klassen-Katalogpost>> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til.  
 
-[[diagram-KlassenKatalogpost]]
+[[diagram-Klassen-Katalogpost]]
 .Klassen Katalogpost og klassene den refererer til.
 [link=images/Klassen-Katalogpost.png]
 image::images/Klassen-Katalogpost.png[]

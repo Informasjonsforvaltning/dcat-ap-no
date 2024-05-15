@@ -30,12 +30,12 @@ Generelt er det forventet at datasettene i en datasettserie er sterkt relatert t
 
 :xrefstyle: short
 
-<<figur-OrdnetDatasettserie>> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <<Datasett-forrige>>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <<Datasettserie-første>> hhv. <<Datasettserie-siste>>. 
+<<figur-Ordnet-datasettserie>> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <<Datasett-forrige>>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <<Datasettserie-første>> hhv. <<Datasettserie-siste>>. 
 
-[[figur-OrdnetDatasettserie]]
+[[figur-Ordnet-datasettserie]]
 .Illustrasjon av en ordnet datasettserie.
-[link=images/Figur-ordnet-datasetserie.png]
-image::images/Figur-ordnet-datasetserie.png[]
+[link=images/Figur-ordnet-datasettserie.png]
+image::images/Figur-ordnet-datasettserie.png[]
 
 :xrefstyle: full
 

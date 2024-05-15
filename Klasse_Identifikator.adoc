@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenIdentifikator>> viser klassen Identifikator og dens egenskap.  
+<<diagram-Klassen-Identifikator>> viser klassen Identifikator og dens egenskap.  
 
-[[diagram-KlassenIdentifikator]]
+[[diagram-Klassen-Identifikator]]
 .Klassen Identifikator.
 [link=images/Klassen-Identifikator.png]
 image::images/Klassen-Identifikator.png[]

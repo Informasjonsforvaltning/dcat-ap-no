@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenDistribusjon>> viser klassen Distribusjon og dens egenskaper, samt klassen den refererer til.  
+<<diagram-Klassen-Distribusjon>> viser klassen Distribusjon og dens egenskaper, samt klassen den refererer til.  
 
-[[diagram-KlassenDistribusjon]]
+[[diagram-Klassen-Distribusjon]]
 .Klassen Distribusjon og klassen den refererer til.
 [link=images/Klassen-Distribusjon.png]
 image::images/Klassen-Distribusjon.png[]

@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenRelasjon>> viser klassen Relasjon og dens egenskaper.  
+<<diagram-Klassen-Relasjon>> viser klassen Relasjon og dens egenskaper.  
 
-[[diagram-KlassenRelasjon]]
+[[diagram-Klassen-Relasjon]]
 .Klassen Relasjon og dens egenskap.
 [link=images/Klassen-Relasjon.png]
 image::images/Klassen-Relasjon.png[]

@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenAktør>> viser klassen Aktør og dens egenskaper.  
+<<diagram-Klassen-Aktør>> viser klassen Aktør og dens egenskaper.  
 
-[[diagram-KlassenAktør]]
+[[diagram-Klassen-Aktør]]
 .Klassen Aktør.
 [link=images/Klassen-Aktør.png]
 image::images/Klassen-Aktør.png[]

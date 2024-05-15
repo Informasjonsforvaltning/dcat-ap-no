@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenLokasjon>> viser klassen Lokasjon og dens egenskaper.  
+<<diagram-Klassen-Lokasjon>> viser klassen Lokasjon og dens egenskaper.  
 
-[[diagram-KlassenLokasjon]]
+[[diagram-Klassen-Lokasjon]]
 .Klassen Lokasjon og dens egenskap.
 [link=images/Klassen-Lokasjon.png]
 image::images/Klassen-Lokasjon.png[]

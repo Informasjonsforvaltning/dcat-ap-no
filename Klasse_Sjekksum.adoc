@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenSjekksum>> viser klassen Sjekksum og dens egenskaper.  
+<<diagram-Klassen-Sjekksum>> viser klassen Sjekksum og dens egenskaper.  
 
-[[diagram-KlassenSjekksum]]
+[[diagram-Klassen-Sjekksum]]
 .Klassen Sjekksum og dens egenskap.
 [link=images/Klassen-Sjekksum.png]
 image::images/Klassen-Sjekksum.png[]
