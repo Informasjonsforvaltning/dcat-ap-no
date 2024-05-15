@@ -1,6 +1,6 @@
 = Noen spesielle temaer [[Spesielle-temaer]]
 
-== Om bruk av egenskapene lisens (dct:license), tilgangsrettigheter (dct:accessRights) og rettigheter/brukervilkår (dct:rights) [[Om-lisens-tilgang-rettigheter]]
+== Om bruk av egenskapene _lisens (dct:license)_, _tilgangsrettigheter (dct:accessRights)_ og _rettigheter/brukervilkår (dct:rights)_ [[Om-lisens-tilgang-rettigheter]]
 
 DCAT-AP-NO støtter følgende tre hovedscenarier der man trenger å beskrive tilgang og/eller brukervilkår til en ressurs (f.eks. et datasett): 1) behov for å referere til en lisens, 2) behov for å spesifisere tilgangsrettigheter og 3) andre behov enn ovennevnte, for å uttrykke rettigheter eller brukervilkår, f.eks. opphavsrett. 
 
@@ -12,7 +12,7 @@ DCAT-AP-NO støtter disse scenariene på følgende måte:
 
 . `dct:rights` KAN brukes til å uttrykke alle andre typer rettigheter og brukervilkår, bl.a. opphavsrett. Det er anbefalt å bruke <<Rettighetserklæring>> til å ha en strukturert beskrivelse av rettigheter og brukervilkår. Dette gjelder egenskapene <<Distribusjon-rettigheter>> og <<Katalog-rettigheter>>.
 
-== Om bruk av klassen _Datasettserie_ [[Om-Datasettserie]]
+== Om bruk av klassen _Datasettserie (dcat:DatasetSeries)_ [[Om-Datasettserie]]
 
 _Datasett_ (`dcat:Dataset`) inkluderes i en _datasettserie_ (`dcat:DatasetSeries`) ved hjelp av datasettegenskapen <<Datasett-iSerie>>. 
 

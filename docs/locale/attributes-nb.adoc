@@ -4,6 +4,8 @@
 :caution-caption: OBS
 :chapter-label: Kapittel
 :chapter-refsig: {chapter-label}
+:section-label:
+:section-refsig: {section-label}
 :example-caption: Eksempel
 :figure-caption: Figur
 :important-caption: Viktig
