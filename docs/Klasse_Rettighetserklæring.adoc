@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenLokasjon>> viser klassen Rettighetserklæring og dens egenskaper.  
+<<diagram-Klassen-Rettighetserklæring>> viser klassen Rettighetserklæring og dens egenskaper.  
 
-[[diagram-KlassenRettighetserklæring]]
+[[diagram-Klassen-Rettighetserklæring]]
 .Klassen Rettighetserklæring og dens egenskap.
 [link=images/Klassen-Rettighetserklæring.png]
 image::images/Klassen-Rettighetserklæring.png[]

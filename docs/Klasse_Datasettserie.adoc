@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenDatasettserie>> viser klassen Datasettserie og dens egenskaper, samt klassen den refererer til.  
+<<diagram-Klassen-Datasettserie>> viser klassen Datasettserie og dens egenskaper, samt klassen den refererer til.  
 
-[[diagram-KlassenDatasettserie]]
+[[diagram-Klassen-Datasettserie]]
 .Klassen Datasettserie og klassene den refererer til.
 [link=images/Klassen-Datasettserie.png]
 image::images/Klassen-Datasettserie.png[]

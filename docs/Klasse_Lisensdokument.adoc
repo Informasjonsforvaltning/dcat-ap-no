@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenLisensdokument>> viser klassen Lisensdokument og dens egenskap.  
+<<diagram-Klassen-Lisensdokument>> viser klassen Lisensdokument og dens egenskap.  
 
-[[diagram-KlassenLisensdokument]]
+[[diagram-Klassen-Lisensdokument]]
 .Klassen Lisensdokument og dens egenskap.
 [link=images/Klassen-Lisensdokument.png]
 image::images/Klassen-Lisensdokument.png[]

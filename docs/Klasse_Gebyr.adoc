@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<img-KlassenGebyr>> viser klassen Gebyr og dens egenskaper.  
+<<img-Klassen-Gebyr>> viser klassen Gebyr og dens egenskaper.  
 
-[[img-KlassenGebyr]]
+[[img-Klassen-Gebyr]]
 .Klassen Gebyr.
 [link=images/Klassen-Gebyr.png]
 image::images/Klassen-Gebyr.png[alt="UML-diagram med klassen Gebyr, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]

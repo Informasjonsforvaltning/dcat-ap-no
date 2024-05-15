@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenDokument>> viser klassen Dokument og dens egenskaper.  
+<<diagram-Klassen-Dokument>> viser klassen Dokument og dens egenskaper.  
 
-[[diagram-KlassenDokument]]
+[[diagram-Klassen-Dokument]]
 .Klassen Aktør.
 [link=images/Klassen-Dokument.png]
 image::images/Klassen-Dokument.png[]

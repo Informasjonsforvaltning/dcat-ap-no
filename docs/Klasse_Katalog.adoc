@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenKatalog>> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.  
+<<diagram-Klassen-Katalog>> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.  
 
-[[diagram-KlassenKatalog]]
+[[diagram-Klassen-Katalog]]
 .Klassen Katalog og klassene den refererer til.
 [link=images/Klassen-Katalog.png]
 image::images/Klassen-Katalog.png[]

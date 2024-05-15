@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-NoenKlasser>> viser en oversikt over noen av de klassene i DCAT-AP-NO og relasjoner mellom dem.   
+<<diagram-Noen-DCAT-AP-NO-klasser>> viser en oversikt over noen av de klassene i DCAT-AP-NO og relasjoner mellom dem.   
 
-[[diagram-NoenKlasser]]
+[[diagram-Noen-DCAT-AP-NO-klasser]]
 .Oversikt over noen av klassene i DCAT-AP-NO og relasjoner mellom dem.
 [link=images/DCAT-AP-NO-noen-klasser.png]
 image::images/DCAT-AP-NO-noen-klasser.png[]

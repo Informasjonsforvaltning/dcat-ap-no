@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenStandard>> viser klassen Standard og dens egenskaper.  
+<<diagram-Klassen-Standard>> viser klassen Standard og dens egenskaper.  
 
-[[diagram-KlassenStandard]]
+[[diagram-Klassen-Standard]]
 .Klassen Standard og dens egenskap.
 [link=images/Klassen-Standard.png]
 image::images/Klassen-Standard.png[]

@@ -2,9 +2,9 @@
 
 :xrefstyle: short
 
-<<diagram-KlassenRegulativRessurs>> viser klassen Regulativ ressurs og dens egenskaper.  
+<<diagram-Klassen-RegulativRessurs>> viser klassen Regulativ ressurs og dens egenskaper.  
 
-[[diagram-KlassenRegulativRessurs]]
+[[diagram-Klassen-RegulativRessurs]]
 .Klassen Regulativ ressurs og dens egenskap.
 [link=images/Klassen-RegulativRessurs.png]
 image::images/Klassen-RegulativRessurs.png[]
