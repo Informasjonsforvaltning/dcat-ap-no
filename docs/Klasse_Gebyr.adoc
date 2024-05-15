@@ -21,7 +21,7 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 
 == Obligatoriske egenskaper for klassen _Gebyr_ [[Gebyr-obligatoriske-egenskaper]]
 
-==== Gebyr – beløp (cv:hasValue) [[Gebyr-beløp]]
+=== Gebyr – beløp (cv:hasValue) [[Gebyr-beløp]]
 
 [cols="30s,70d"]
 |===
@@ -38,7 +38,7 @@ _This property is used to specify a numeric value indicating the amount of the C
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
-==== Gebyr – valuta (cv:currency) [[Gebyr-valuta]]
+=== Gebyr – valuta (cv:currency) [[Gebyr-valuta]]
 
 [cols="30s,70d"]
 |===
@@ -58,9 +58,9 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
-=== Anbefalte egenskaper for klassen _Gebyr_ [[Gebyr-anbefalte-egenskaper]]
+== Anbefalte egenskaper for klassen _Gebyr_ [[Gebyr-anbefalte-egenskaper]]
 
-==== Gebyr – beskrivelse (dct:description) [[Gebyr-beskrivelse]]
+=== Gebyr – beskrivelse (dct:description) [[Gebyr-beskrivelse]]
 
 [cols="30s,70d"]
 |===
