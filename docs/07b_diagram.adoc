@@ -1,61 +1,28 @@
-= Forenklet modell av DCAT-AP-NO [[UML-diagram]] 
+= Forenklet fremstilling av kravene i DCAT-AP-NO [[Forenklet-fremstilling]] 
 
-<<img-ForenkletModell>> viser en meget forenklet modell av DCAT-AP-NO. Den viser ikke alle klasser i standarden, heller ikke alle relasjoner og egenskaper. Modellen er ikke ment som en formell representasjon av standarden, men kun for å gi en visuell oversikt over noen av klassene og relasjoner mellom dem. Før eventuell uoverensstemmelse mellom tegningen og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen av klassene/egenskapene forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige beskrivelser og tegninger i resten av standarden. 
+<<img-ForenkletModell>> viser en forenklet fremstilling av kravene i DCAT-AP-NO. Den viser bare obligatoriske og anbefalte krav. Modellen er ikke ment som en formell representasjon av standarden, men kun for å gi en visuell oversikt over noen av klassene og relasjoner mellom dem. Tekniske krav til hvordan klassene og egenskapene/relasjoner skal uttrykkes i RDF er spesifisert videre i standarden. Før eventuell uoverensstemmelse mellom tegningen og den tekstlige spesifikasjonen blir rettet opp, har den tekstlige spesifikasjonen av klassene/egenskapene forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige spesifikasjoner og tegninger i resten av standarden. 
 
 [[img-ForenkletModell]]
-.Meget forenklet modell av DCAT-AP-NO, men kun noen få klasser tatt med i tegningen.
-[link=images/DCAT-AP-NO-forenklet-modell.png]
-image::images/DCAT-AP-NO-forenklet-modell.png[]
+.Forenklet fremstilling av kravene i DCAT-AP-NO, men kun obligatoriske og anbefalte krav.
+[link=images/DCAT-AP-NO-forenklet-fremstilling.png]
+image::images/DCAT-AP-NO-forenklet-fremstilling.png[]
 
 // Last ned modell: link:images/DCAT-AP-NO2_20210903.png[png] |  link:files/DCAT-AP-NO2_20210903.eap[XMI for EA]
 
-Figuren illustrerer følgende:
+Helt overordnet illustrerer figuren bl.a. følgende:
 
-* En katalog BØR inneholde beskrivelse av et eller flere datasett og/eller en eller flere datatjenester. 
-** Merk at selv om beskrivelse av hverken datasett eller datatjeneste er obligatorisk, BØR man unngå å ha tom katalog. 
-* Et datasett BØR tilgjengeliggjøres som en eller flere distribusjoner, og en distribusjon KAN nås via en eller flere datatjenester. 
-* En datatjeneste BØR brukes til å tilgjengeliggjøre et eller flere datasett. 
-** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett.  
+* En *katalog* 
+** SKAL alltid inneholde opplysninger om utgiveren av katalogen og kontaktpunkter 
+** BØR inneholde beskrivelse av datasett og/eller datatjenester
+*** Merk at selv om hverken datasettbeskrivelse eller datatjenestebeskrivelse er obligatorisk, BØR man unngå å ha tomme kataloger. 
+* En **datasett**beskrivelse 
+** SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktpunkter
+** BØR tilgjengeliggjøres vha. distribusjoner
+** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller behandling av datasettet 
+* En **datatjeneste**beskrivelse 
+** SKAL alltid inneholde opplysninger om kontaktpunker
+** BØR brukes til å tilgjengeliggjøre datasett 
+*** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett. 
+** BØR inneholde opplysninger om utgiveren av datatjenesten
+** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller forvaltning av datatjenesten
 
-#_@@@@@ det bør vurderes, i et vedlegg, å ha en oversikt/tegning over alle klasser og relasjoner mellom dem (i så fall med relasjoner på kryss og tvers), eller bare referere til EU sin tegning direkte?_#
-
-== Minste krav til en katalog (dcat:Catalog)
-
-Følgende obligatoriske opplysninger SKAL tas med i en Katalog:
-
-* fritekst-beskrivelse av inneholdet i katalogen 
-* kontaktopplysninger som kan brukes vedrørende spørsmål og kommentarer om katalogen
-* navnet på katalogen
-* aktøren (organisasjonen) som er ansvarlig for å gjøre katalogen tilgjengelig 
-
-Se ellers kapitlet <<Katalog>> for andre opplysninger som BØR og KAN tas med i en katalog, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.
-
-== Minste krav til en datasettbeskrivelse (dcat:Dataset)
-
-Det er anbefalt, dvs. ikke obligatorisk, å ha beskrivelse av et eller flere datasett i en katalog, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av et datasett:  
-
-* fritekst-beskrivelse av datasettet
-* kontaktopplysninger som kan brukes vedrørende spørsmål og kommentarer om datasettet
-* hovedtema for datasettet, og verdien SKAL dessuten velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]
-* navnet på datasettet
-* aktøren (organisasjonen) som er ansvarlig for å gjøre datasettet tilgjengelig 
-
-Se ellers kapitlet <<Datasett>> for andre opplysninger som BØR og KAN tas med i beskrivelsen av et datasett, samt tekniske krav til hvordan opplysningene SKAL uttrykkes. 
-
-== Minste krav til en datatjenestebeskrivelse (dcat:DataService)
-
-Det er anbefalt, dvs. ikke obligatorisk, å ha beskrivelse av en eller flere datatjenester i en katalog, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av en datatjeneste (dcat:DataService):
-
-* rotplassering eller primært endepunkt for tjenesten
-* kontaktopplysninger som kan brukes vedrørende spørsmål og kommentarer om tjenesten
-* navnet på tjenesten
-
-Se ellers kapitlet <<Datatjeneste>> for andre opplysninger som BØR og KAN tas med i beskrivelsen av en datatjeneste, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.
-
-== Minste krav til en distribusjonsbeskrivelse (dcat:Distribution)
-
-Det er anbefalt, dvs. ikke obligatorisk, å beskrive hvordan et datasett distribueres, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av en distribusjon til et datasett (dcat:Distribution):
-
-* tilgangsURL, dvs. URL som gir tilgang til en distribusjonen av datasettet
-
-Se ellers kapitlet <<Distribusjon>> for andre opplysninger som BØR og KAN tas med i beskrivelsen av en distribusjon, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.
