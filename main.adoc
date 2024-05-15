@@ -11,7 +11,8 @@ ifdef::backend-pdf[:toc: macro]
 :sectanchors:
 :table-stripes: even
 :title-logo-image: image:images/Digdir.png[alt="Digdir-logo", pdfwidth=30vw]
-:xrefstyle: short
+// :xrefstyle: short
+:xrefstyle: full
 
 image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
 
@@ -40,15 +41,27 @@ include::00_om_denne_versjonen.adoc[]
 
 toc::[]
 
+// section number on
+:sectnums:
+:sectnumlevels: 5
+
 include::01_Om_denne_standarden.adoc[]
 
+:leveloffset: +1
+
 include::07_Oversikt_over_URIer.adoc[]
+
+:leveloffset: -1
 
 include::07b_diagram.adoc[]
 
 // include::06_Oversikt_over_klasser.adoc[]
 
 // include::Krav_om_å_bruke_kontrollerte_vokabularer.adoc[]
+
+include::Spesifikasjon_per_klasse.adoc[]
+
+:leveloffset: +1
 
 // include::Klasse_Aktivitet.adoc[]
 
@@ -130,6 +143,7 @@ include::Klasse_Standard.adoc[]
 
 include::Klasse_Tidsrom.adoc[]
 
+:leveloffset: -1
 
 // :leveloffset: -1
 
@@ -140,6 +154,9 @@ include::Klasse_Tidsrom.adoc[]
 // include::02_Avvik-utgår.adoc[]
 
 include::Spesielle_temaer.adoc[]
+
+// Appendix, section number off
+:sectnums!:
 
 include::Oversikt_over_norske_utvidelser.adoc[]
 
