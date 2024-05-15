@@ -533,14 +533,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </ul>
 </li>
 <li><a href="#URIer-i-bruk">URIer som brukes i standarden</a></li>
-<li><a href="#UML-diagram">Forenklet modell av DCAT-AP-NO</a>
-<ul class="sectlevel2">
-<li><a href="#_minste_krav_til_en_katalog_dcatcatalog">Minste krav til en katalog (dcat:Catalog)</a></li>
-<li><a href="#_minste_krav_til_en_datasettbeskrivelse_dcatdataset">Minste krav til en datasettbeskrivelse (dcat:Dataset)</a></li>
-<li><a href="#_minste_krav_til_en_datatjenestebeskrivelse_dcatdataservice">Minste krav til en datatjenestebeskrivelse (dcat:DataService)</a></li>
-<li><a href="#_minste_krav_til_en_distribusjonsbeskrivelse_dcatdistribution">Minste krav til en distribusjonsbeskrivelse (dcat:Distribution)</a></li>
-</ul>
-</li>
+<li><a href="#Forenklet-fremstilling">Forenklet fremstilling av kravene i DCAT-AP-NO</a></li>
 <li><a href="#Aktør">Klassen Aktør (foaf:Agent)</a>
 <ul class="sectlevel2">
 <li><a href="#Aktør-obligatoriske-egenskaper">Obligatoriske egenskaper for klassen <em>Aktør</em></a>
@@ -1382,37 +1375,67 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </div>
 <div class="sect1">
-<h2 id="UML-diagram"><a class="anchor" href="#UML-diagram"></a>Forenklet modell av DCAT-AP-NO</h2>
+<h2 id="Forenklet-fremstilling"><a class="anchor" href="#Forenklet-fremstilling"></a>Forenklet fremstilling av kravene i DCAT-AP-NO</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#img-ForenkletModell">Figur 1</a> viser en meget forenklet modell av DCAT-AP-NO. Den viser ikke alle klasser i standarden, heller ikke alle relasjoner og egenskaper. Modellen er ikke ment som en formell representasjon av standarden, men kun for å gi en visuell oversikt over noen av klassene og relasjoner mellom dem. Før eventuell uoverensstemmelse mellom tegningen og den tekstlige beskrivelsen blir rettet opp, har den tekstlige beskrivelsen av klassene/egenskapene forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige beskrivelser og tegninger i resten av standarden.</p>
+<p><a href="#img-ForenkletModell">Figur 1</a> viser en forenklet fremstilling av kravene i DCAT-AP-NO. Den viser bare obligatoriske og anbefalte krav. Modellen er ikke ment som en formell representasjon av standarden, men kun for å gi en visuell oversikt over noen av klassene og relasjoner mellom dem. Tekniske krav til hvordan klassene og egenskapene/relasjoner skal uttrykkes i RDF er spesifisert videre i standarden. Før eventuell uoverensstemmelse mellom tegningen og den tekstlige spesifikasjonen blir rettet opp, har den tekstlige spesifikasjonen av klassene/egenskapene forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige spesifikasjoner og tegninger i resten av standarden.</p>
 </div>
 <div id="img-ForenkletModell" class="imageblock">
 <div class="content">
-<a class="image" href="images/DCAT-AP-NO-forenklet-modell.png"><img src="images/DCAT-AP-NO-forenklet-modell.png" alt="DCAT AP NO forenklet modell"></a>
+<a class="image" href="images/DCAT-AP-NO-forenklet-fremstilling.png"><img src="images/DCAT-AP-NO-forenklet-fremstilling.png" alt="DCAT AP NO forenklet fremstilling"></a>
 </div>
-<div class="title">Figur 1. Meget forenklet modell av DCAT-AP-NO, men kun noen få klasser tatt med i tegningen.</div>
+<div class="title">Figur 1. Forenklet fremstilling av kravene i DCAT-AP-NO, men kun obligatoriske og anbefalte krav.</div>
 </div>
 <div class="paragraph">
-<p>Figuren illustrerer følgende:</p>
+<p>Helt overordnet illustrerer figuren bl.a. følgende:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>En katalog BØR inneholde beskrivelse av et eller flere datasett og/eller en eller flere datatjenester.</p>
+<p>En <strong>katalog</strong></p>
 <div class="ulist">
 <ul>
 <li>
-<p>Merk at selv om beskrivelse av hverken datasett eller datatjeneste er obligatorisk, BØR man unngå å ha tom katalog.</p>
+<p>SKAL alltid inneholde opplysninger om utgiveren av katalogen og kontaktpunkter</p>
+</li>
+<li>
+<p>BØR inneholde beskrivelse av datasett og/eller datatjenester</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Merk at selv om hverken datasettbeskrivelse eller datatjenestebeskrivelse er obligatorisk, BØR man unngå å ha tomme kataloger.</p>
+</li>
+</ul>
+</div>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Et datasett BØR tilgjengeliggjøres som en eller flere distribusjoner, og en distribusjon KAN nås via en eller flere datatjenester.</p>
+<p>En <strong>datasett</strong>beskrivelse</p>
+<div class="ulist">
+<ul>
+<li>
+<p>SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktpunkter</p>
 </li>
 <li>
-<p>En datatjeneste BØR brukes til å tilgjengeliggjøre et eller flere datasett.</p>
+<p>BØR tilgjengeliggjøres vha. distribusjoner</p>
+</li>
+<li>
+<p>BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller behandling av datasettet</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>En <strong>datatjeneste</strong>beskrivelse</p>
+<div class="ulist">
+<ul>
+<li>
+<p>SKAL alltid inneholde opplysninger om kontaktpunker</p>
+</li>
+<li>
+<p>BØR brukes til å tilgjengeliggjøre datasett</p>
 <div class="ulist">
 <ul>
 <li>
@@ -1421,101 +1444,16 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </ul>
 </div>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p><mark><em>@@@@@ det bør vurderes, i et vedlegg, å ha en oversikt/tegning over alle klasser og relasjoner mellom dem (i så fall med relasjoner på kryss og tvers), eller bare referere til EU sin tegning direkte?</em></mark></p>
-</div>
-<div class="sect2">
-<h3 id="_minste_krav_til_en_katalog_dcatcatalog"><a class="anchor" href="#_minste_krav_til_en_katalog_dcatcatalog"></a>Minste krav til en katalog (dcat:Catalog)</h3>
-<div class="paragraph">
-<p>Følgende obligatoriske opplysninger SKAL tas med i en Katalog:</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
-<p>fritekst-beskrivelse av inneholdet i katalogen</p>
+<p>BØR inneholde opplysninger om utgiveren av datatjenesten</p>
 </li>
 <li>
-<p>kontaktopplysninger som kan brukes vedrørende spørsmål og kommentarer om katalogen</p>
-</li>
-<li>
-<p>navnet på katalogen</p>
-</li>
-<li>
-<p>aktøren (organisasjonen) som er ansvarlig for å gjøre katalogen tilgjengelig</p>
+<p>BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller forvaltning av datatjenesten</p>
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>Se ellers kapitlet <a href="#Katalog"><em>Klassen Katalog (dcat:Catalog)</em></a> for andre opplysninger som BØR og KAN tas med i en katalog, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_minste_krav_til_en_datasettbeskrivelse_dcatdataset"><a class="anchor" href="#_minste_krav_til_en_datasettbeskrivelse_dcatdataset"></a>Minste krav til en datasettbeskrivelse (dcat:Dataset)</h3>
-<div class="paragraph">
-<p>Det er anbefalt, dvs. ikke obligatorisk, å ha beskrivelse av et eller flere datasett i en katalog, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av et datasett:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>fritekst-beskrivelse av datasettet</p>
-</li>
-<li>
-<p>kontaktopplysninger som kan brukes vedrørende spørsmål og kommentarer om datasettet</p>
-</li>
-<li>
-<p>hovedtema for datasettet, og verdien SKAL dessuten velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em>  &#x29C9;</a></p>
-</li>
-<li>
-<p>navnet på datasettet</p>
-</li>
-<li>
-<p>aktøren (organisasjonen) som er ansvarlig for å gjøre datasettet tilgjengelig</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>Se ellers kapitlet <a href="#Datasett"><em>Klassen Datasett (dcat:Dataset)</em></a> for andre opplysninger som BØR og KAN tas med i beskrivelsen av et datasett, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_minste_krav_til_en_datatjenestebeskrivelse_dcatdataservice"><a class="anchor" href="#_minste_krav_til_en_datatjenestebeskrivelse_dcatdataservice"></a>Minste krav til en datatjenestebeskrivelse (dcat:DataService)</h3>
-<div class="paragraph">
-<p>Det er anbefalt, dvs. ikke obligatorisk, å ha beskrivelse av en eller flere datatjenester i en katalog, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av en datatjeneste (dcat:DataService):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>rotplassering eller primært endepunkt for tjenesten</p>
-</li>
-<li>
-<p>kontaktopplysninger som kan brukes vedrørende spørsmål og kommentarer om tjenesten</p>
-</li>
-<li>
-<p>navnet på tjenesten</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Se ellers kapitlet <a href="#Datatjeneste"><em>Klassen Datatjeneste (dcat:DataService)</em></a> for andre opplysninger som BØR og KAN tas med i beskrivelsen av en datatjeneste, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_minste_krav_til_en_distribusjonsbeskrivelse_dcatdistribution"><a class="anchor" href="#_minste_krav_til_en_distribusjonsbeskrivelse_dcatdistribution"></a>Minste krav til en distribusjonsbeskrivelse (dcat:Distribution)</h3>
-<div class="paragraph">
-<p>Det er anbefalt, dvs. ikke obligatorisk, å beskrive hvordan et datasett distribueres, men når det gjøres, SKAL følgende obligatoriske opplysninger tas med i beskrivelsen av en distribusjon til et datasett (dcat:Distribution):</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>tilgangsURL, dvs. URL som gir tilgang til en distribusjonen av datasettet</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Se ellers kapitlet <a href="#Distribusjon"><em>Klassen Distribusjon (dcat:Distribution)</em></a> for andre opplysninger som BØR og KAN tas med i beskrivelsen av en distribusjon, samt tekniske krav til hvordan opplysningene SKAL uttrykkes.</p>
-</div>
 </div>
 </div>
 </div>
@@ -10212,7 +10150,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-15 05:07:06 UTC
+Sist oppdatert 2024-05-15 05:58:39 UTC
 </div>
 </div>
 </body>
