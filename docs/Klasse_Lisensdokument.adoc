@@ -1,11 +1,15 @@
 = Klassen Lisensdokument (dct:LicenseDocument) [[Lisensdokument]]
 
+:xrefstyle: short
+
 <<diagram-KlassenLisensdokument>> viser klassen Lisensdokument og dens egenskap.  
 
 [[diagram-KlassenLisensdokument]]
 .Klassen Lisensdokument og dens egenskap.
 [link=images/Klassen-Lisensdokument.png]
 image::images/Klassen-Lisensdokument.png[]
+
+:xrefstyle: full
 
 [cols="30s,70d"]
 |===

@@ -1,11 +1,15 @@
 = Klassen Dokument (foaf:Document) [[Dokument]]
 
+:xrefstyle: short
+
 <<diagram-KlassenDokument>> viser klassen Dokument og dens egenskaper.  
 
 [[diagram-KlassenDokument]]
 .Klassen Aktør.
 [link=images/Klassen-Dokument.png]
 image::images/Klassen-Dokument.png[]
+
+:xrefstyle: full
 
 [cols="30s,70d"]
 |===

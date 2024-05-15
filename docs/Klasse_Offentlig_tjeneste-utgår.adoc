@@ -1,3 +1,0 @@
-= Klassen Offentlig tjeneste (cpsv:PublicService) [[OffentligTjeneste]]
-
-#_hele klassen utgått_#

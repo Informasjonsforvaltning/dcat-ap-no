@@ -28,12 +28,16 @@ For å harmonisere bruk av datasettserier, skal følgende tas hensyn til:
 
 Generelt er det forventet at datasettene i en datasettserie er sterkt relatert til hverandre. Det fins imidlertid ingen felles kriterier eller regler for hvordan datasettene i en datasettserie bør relateres til hverandre. Det kan f.eks. være datasett om noe som utvikler seg over tid og/eller rom, f.eks. ulvebestandstatus, budsjett, regnskap. Versjoneringsterminologi («forrige»/«neste», «første»/«siste») kan f.eks. brukes til å uttrykke rekkefølge i tid. 
 
+:xrefstyle: short
+
 <<figur-OrdnetDatasettserie>> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <<Datasett-forrige>>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <<Datasettserie-første>> hhv. <<Datasettserie-siste>>. 
 
 [[figur-OrdnetDatasettserie]]
 .Illustrasjon av en ordnet datasettserie.
 [link=images/Figur-ordnet-datasetserie.png]
 image::images/Figur-ordnet-datasetserie.png[]
+
+:xrefstyle: full
 
 == Om bruk av inverse egenskaper [[Om-inverse-egenskaper]]
 

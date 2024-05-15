@@ -1,11 +1,15 @@
 = Klassen Rettighetserklæring (odrs:RightsStatement) [[Rettighetserklæring]]
 
+:xrefstyle: short
+
 <<diagram-KlassenLokasjon>> viser klassen Rettighetserklæring og dens egenskaper.  
 
 [[diagram-KlassenRettighetserklæring]]
 .Klassen Rettighetserklæring og dens egenskap.
 [link=images/Klassen-Rettighetserklæring.png]
 image::images/Klassen-Rettighetserklæring.png[]
+
+:xrefstyle: full
 
 [cols="30s,70d"]
 |===

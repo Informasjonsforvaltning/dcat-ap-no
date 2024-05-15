@@ -1,11 +1,15 @@
 = Klassen Datasettserie (dcat:DatasetSeries) [[Datasettserie]]
 
+:xrefstyle: short
+
 <<diagram-KlassenDatasettserie>> viser klassen Datasettserie og dens egenskaper, samt klassen den refererer til.  
 
 [[diagram-KlassenDatasettserie]]
 .Klassen Datasettserie og klassene den refererer til.
 [link=images/Klassen-Datasettserie.png]
 image::images/Klassen-Datasettserie.png[]
+
+:xrefstyle: full
 
 [cols="30s,70"]
 |===

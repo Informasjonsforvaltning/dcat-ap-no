@@ -1,11 +1,15 @@
 = Klassen Lokasjon (dct:Location) [[Lokasjon]]
 
+:xrefstyle: short
+
 <<diagram-KlassenLokasjon>> viser klassen Lokasjon og dens egenskaper.  
 
 [[diagram-KlassenLokasjon]]
 .Klassen Lokasjon og dens egenskap.
 [link=images/Klassen-Lokasjon.png]
 image::images/Klassen-Lokasjon.png[]
+
+:xrefstyle: full
 
 [cols="30s,70d"]
 |===
