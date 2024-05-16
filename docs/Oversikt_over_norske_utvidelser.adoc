@@ -1,4 +1,4 @@
-= Vedlegg A - Oversikt over norske utvidelser [[Oversikt-norske-utvidelser]]
+= Vedlegg B - Oversikt over norske utvidelser [[Oversikt-norske-utvidelser]]
 
 // kommentar: dette er ren klipp-og-lim fra kapitlene for å gjenta norske utvidelser i en samlet oversikt
 
@@ -8,7 +8,7 @@ Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene de aktue
 
 [cols="20,20,60"]
 |===
-|*Egenskaps-/klassenavn / _Property/class name_* |*Egenskaps-/klasseURI / _Property/class URI_*| *Norsk utvidelse / _Norwegian extension_* 
+|*Egenskaps-/klassenavn / _Norwegian name_* |*Egenskaps-/klasseURI / _Property/class URI_*| *Norsk utvidelse / _Norwegian extension_* 
 | Aktør – organisasjonsidentifikator | dct:identifier |  
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 

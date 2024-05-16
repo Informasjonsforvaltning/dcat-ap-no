@@ -24,7 +24,6 @@ For å harmonisere bruk av datasettserier, skal følgende tas hensyn til:
 ** Man ikke bruker egenskapen <<Datasett-forrige>> på en datasettserie, ettersom egenskapen er ment for å uttrykke rekkefølge mellom datasett i en datasettserie. 
 ** Man unngår å bruke egenskapen <<Datasett-iSerie>> eller <<Datasett-harDel>> på en datasettserie, slik at man unngår nøstede datasettserier. 
 ** Man unngår å bruke egenskapen <<Datasett-datasettdistribusjon>> eller <<Datasett-eksempeldata>> på en datasettserie, men at distribusjoner (dcat:Distribution) knyttes til datasettene som inngår i datasettserien. 
-* __#@@@@@@ sjekk om https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-dataset-series[de andre kulepunkter fra EUs DCAT-AP 3.0.0-Draft] som trengs omskriving (jf. https://github.com/SEMICeu/DCAT-AP/issues/354[Issue #354]), er aktuelle her#__
 
 Generelt er det forventet at datasettene i en datasettserie er sterkt relatert til hverandre. Det fins imidlertid ingen felles kriterier eller regler for hvordan datasettene i en datasettserie bør relateres til hverandre. Det kan f.eks. være datasett om noe som utvikler seg over tid og/eller rom, f.eks. ulvebestandstatus, budsjett, regnskap. Versjoneringsterminologi («forrige»/«neste», «første»/«siste») kan f.eks. brukes til å uttrykke rekkefølge i tid. 
 
@@ -41,9 +40,9 @@ image::images/Figur-ordnet-datasettserie.png[]
 
 == Om bruk av inverse egenskaper [[Om-inverse-egenskaper]]
 
-I klassebeskrivelsene foran er inverse egenskaper bevisst utelatt, i tråd med DCAT-AP og DCAT. 
+I spesifikasjon til klassene foran er inverse egenskaper bevisst utelatt, i tråd med DCAT-AP og DCAT. 
 
-Også i tråd med DCAT-AP og DCAT, tillater DCAT-AP-NO å bruke inverse egenskaper når de trengs, men under forutsetning av at de brukes i tillegg til, og _ikke_ istedenfor, egenskapene som er eksplisitt tatt med i klassebeskrivelsene ovenfor. 
+Også i tråd med DCAT-AP og DCAT, tillater DCAT-AP-NO å bruke inverse egenskaper når de trengs, under forutsetning av at de brukes _i tillegg til_, og _ikke istedenfor_, egenskapene som er eksplisitt tatt med i spesifikasjonene ovenfor. 
 
 Følgende inverse egenskaper kan brukes: 
 
