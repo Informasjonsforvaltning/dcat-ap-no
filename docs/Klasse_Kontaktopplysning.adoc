@@ -42,53 +42,36 @@ _This property is used to specify the name of the contact point. This property c
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
 
+== Anbefalte egenskaper for klassen _Kontaktopplysning_ [[Kontaktopplysning-anbefalte-egenskaper]]
+
 === Kontaktopplysning – har e-post (vcard:hasEmail) [[Kontaktopplysning-harEPost]]
 
 [cols="30s,70d"]
 |===
 | _English name_ |  _has email_
 | URI | vcard:hasEmail
-| Verdiområde / _Range_ | xsd:anyURI
+| Verdiområde / _Range_ | rdfs:Resource
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet. 
 
 _This property is used to specify an email address to the contact point._
-| Multiplisitet / _Multiplicity_ | 1..n
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
-
-__Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
-|===
-
-== Anbefalte egenskaper for klassen _Kontaktopplysning_ [[Kontaktopplysning-anbefalte-egenskaper]]
-
-=== Kontaktopplysning – har telefon (vcard:hasTelephone) [[Kontaktopplysning-harTelefon]]
-
-[cols="30s,70d"]
-|===
-| _English name_ |  _has telephone_
-| URI | vcard:hasTelephone
-| Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et telefonnummer til kontaktpunktet. 
-
-_This property is used to specify a telephone number to the contact point._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
 
-=== Kontaktopplysning – hjemmeside (foaf:homepage) [[Kontaktopplysning-hjemmeside]]
+=== Kontaktopplysning – har kontaktside (vcard:hasURL) [[Kontaktopplysning-kontaktside]]
 
 [cols="30s,70d"]
 |===
-| _English name_ |  _homepage_
+| _English name_ |  _contact page_
 | URI | foaf:homepage
-| Verdiområde / _Range_ | foaf:Document
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en hjemmeside til kontaktpunktet. 
+| Verdiområde / _Range_ | rdfs:Resource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi f.eks. et kontaktskjema eller en side med kontaktinformasjon. 
 
-_This property is used to specify a homepage to the contact point._
-| Multiplisitet / _Multiplicity_ | 0..n
+_This property is used to specify a webpage that either allows to make contact (i.e. a webform) or the information contains how to get into contact._
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
