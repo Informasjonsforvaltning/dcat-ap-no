@@ -77,7 +77,8 @@ include::Klasse_Datatjeneste.adoc[]
 
 include::Klasse_Distribusjon.adoc[]
 
-include::Klasse_Dokument.adoc[]
+// Dokument trengs ikke spesifisert, fordi det er bare eksterne dok. som pekes på og som dermed er utenfor brukerens kontroll 
+// include::Klasse_Dokument.adoc[]
 
 // include::Klasse_Frekvens.adoc[]
 
@@ -97,11 +98,13 @@ include::Klasse_Kontaktopplysning.adoc[]
 
 // include::Klasse_Kreditering.adoc[]
 
-include::Klasse_Lisensdokument.adoc[]
+// Lisensdokument brukes ikke, pga. obl. krav til å bruke kontrollert vokab
+// include::Klasse_Lisensdokument.adoc[]
 
 // include::Klasse_Literal.adoc[]
 
-include::Klasse_Lokasjon.adoc[]
+// Lokasjon brukes ikke, pga. obl. krav til å bruke kontrollert vokab
+// include::Klasse_Lokasjon.adoc[]
 
 // include::Klasse_Medietype.adoc[]
 
