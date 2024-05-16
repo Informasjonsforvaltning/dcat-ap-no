@@ -209,6 +209,22 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
 __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
+| Kontaktopplysning – navn  | vcard:fn | 
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Not explicitly specified in DCAT-AP/DCAT.__
+| Kontaktopplysning – har e-post | vcard:hasEmail |
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Not explicitly specified in DCAT-AP/DCAT.__
+| Kontaktopplysning – har telefon | vcard:hasTelephone |
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Not explicitly specified in DCAT-AP/DCAT.__
+| Kontaktopplysning – hjemmeside | foaf:homepage | 
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Not explicitly specified in DCAT-AP/DCAT.__
 | Lisensdokument – lisenstype | dct:type |
 Verdien SKAL velges fra kontrollerte vokabular https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/ADMS_SKOS_v1.00.rdf[__ADMS licence type__ &#x29C9;, window="_blank", role="ext-link"]  (lenket ressurs er i RDF).
 

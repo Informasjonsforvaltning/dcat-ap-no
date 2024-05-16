@@ -37,6 +37,9 @@ __Note that this class is an abstract class which should be be used directly, It
 _This property is used to specify the name of the contact point. This property can be repeated for parallel language versions of the name._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
 
 === Kontaktopplysning – har e-post (vcard:hasEmail) [[Kontaktopplysning-harEPost]]
@@ -51,6 +54,9 @@ _This property is used to specify the name of the contact point. This property c
 _This property is used to specify an email address to the contact point._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
 
 == Anbefalte egenskaper for klassen _Kontaktopplysning_ [[Kontaktopplysning-anbefalte-egenskaper]]
@@ -67,6 +73,9 @@ _This property is used to specify an email address to the contact point._
 _This property is used to specify a telephone number to the contact point._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
 
 === Kontaktopplysning – hjemmeside (foaf:homepage) [[Kontaktopplysning-hjemmeside]]
@@ -81,4 +90,7 @@ _This property is used to specify a telephone number to the contact point._
 _This property is used to specify a homepage to the contact point._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
