@@ -26,7 +26,7 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 * En **datatjeneste**beskrivelse 
 ** SKAL alltid inneholde opplysninger om kontaktpunker
 ** BØR brukes til å tilgjengeliggjøre datasett 
-*** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett. 
+*** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett. Unntaket er rene dataprosesseringstjenester.
 ** BØR inneholde opplysninger om utgiveren av datatjenesten
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller forvaltning av datatjenesten
 

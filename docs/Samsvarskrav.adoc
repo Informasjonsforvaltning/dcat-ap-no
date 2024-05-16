@@ -27,4 +27,4 @@ For å være i samsvar med denne standarden, SKAL en applikasjon som mottar meta
 * Prosessere informasjon for alle kontrollerte vokabularer som er eksplisitt spesifisert for de enkelte egenskapene. 
 
 
-I konteksten datadeling og datautveksling, betyr det «å prosessere» at den mottakende applikasjon aksepterer innkommende data og transparent videreformidler dataene til aktuelle applikasjoner og tjenester. 
+I konteksten av denne standarden, betyr det «å prosessere» at den mottakende applikasjon aksepterer innkommende data og transparent videreformidler dataene til aktuelle applikasjoner og tjenester. 
