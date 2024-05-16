@@ -529,12 +529,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#_krav_til_applikasjoner_som_mottar_metadata">1.5.2. Krav til applikasjoner som mottar metadata</a></li>
 </ul>
 </li>
-<li><a href="#Leserveiledning">1.6. Hvordan du leser denne standarden</a></li>
-<li><a href="#URIer-i-bruk">1.7. URIer som brukes i standarden</a></li>
+<li><a href="#URIer-i-bruk">1.6. URIer som brukes i standarden</a></li>
 </ul>
 </li>
 <li><a href="#Forenklet-fremstilling">2. Forenklet fremstilling av kravene i DCAT-AP-NO</a></li>
-<li><a href="#Spesifikasjon-per-klasse">3. Spesifikasjon per klasse</a>
+<li><a href="#Spesifikasjon-per-klasse">3. Krav til RDF-representasjon av klassene i DCAT-AP-NO</a>
 <ul class="sectlevel2">
 <li><a href="#Aktør">3.1. Klassen Aktør (foaf:Agent)</a>
 <ul class="sectlevel3">
@@ -1019,7 +1018,6 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no/v1.1/" class="bare">https://data.norge.no/specification/dcat-ap-no/v1.1/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/" class="bare">https://informasjonsforvaltning.github.io/dcat-ap-no/</a><br>
-<strong>Veileder</strong>: <a href="https://data.norge.no/guide/veileder-beskrivelse-av-datasett/" class="bare">https://data.norge.no/guide/veileder-beskrivelse-av-datasett/</a><br>
 <strong>Valideringsverktøy</strong>: <a href="https://data.norge.no/validator" class="bare">https://data.norge.no/validator</a></p>
 </div>
 </div>
@@ -1138,22 +1136,22 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="ulist">
 <ul>
 <li>
-<p>Levere en beskrivelse av katalogen, som minimum med de obligatoriske egenskapene spesifisert for <a href="#Katalog"> 3.9, &#8220;Klassen Katalog (dcat:Catalog)&#8221;</a>.</p>
+<p>Levere en beskrivelse av katalogen, som minimum med de obligatoriske egenskapene spesifisert i <a href="#Katalog"> 3.9, &#8220;Klassen Katalog (dcat:Catalog)&#8221;</a>.</p>
 </li>
 <li>
 <p>Levere informasjon for obligatoriske egenskaper for <a href="#Katalogpost"> 3.11, &#8220;Klassen Katalogpost (dcat:CatalogRecord)&#8221;</a>, hvis informasjonen finnes, vel å merke at bruken av <a href="#Katalogpost"> 3.11, &#8220;Klassen Katalogpost (dcat:CatalogRecord)&#8221;</a> er frivillig.</p>
 </li>
 <li>
-<p>Levere beskrivelser av datasettene som er i katalogen, som minimum med de obligatoriske egenskapene spesifisert for <a href="#Datasett"> 3.2, &#8220;Klassen Datasett (dcat:Dataset)&#8221;</a>.</p>
+<p>Levere beskrivelser av datasettene som er i katalogen, som minimum med de obligatoriske egenskapene spesifisert i <a href="#Datasett"> 3.2, &#8220;Klassen Datasett (dcat:Dataset)&#8221;</a>.</p>
 </li>
 <li>
-<p>Levere beskrivelser av distribusjoner, hvis noen, av datasett i katalogen, som minimum med de obligatoriske egenskapene spesifisert for <a href="#Distribusjon"> 3.5, &#8220;Klassen Distribusjon (dcat:Distribution)&#8221;</a>.</p>
+<p>Levere beskrivelser av distribusjoner, hvis noen, av datasett i katalogen, som minimum med de obligatoriske egenskapene spesifisert i <a href="#Distribusjon"> 3.5, &#8220;Klassen Distribusjon (dcat:Distribution)&#8221;</a>.</p>
 </li>
 <li>
-<p>Levere beskrivelser av datatjenester, hvis noen, av datasett i katalogen, som minimum med de obligatoriske egenskapene spesifisert for <a href="#Datatjeneste"> 3.4, &#8220;Klassen Datatjeneste (dcat:DataService)&#8221;</a>.</p>
+<p>Levere beskrivelser av datatjenester, hvis noen, av datasett i katalogen, som minimum med de obligatoriske egenskapene spesifisert i <a href="#Datatjeneste"> 3.4, &#8220;Klassen Datatjeneste (dcat:DataService)&#8221;</a>.</p>
 </li>
 <li>
-<p>Levere informasjon om alle organisasjoner/aktører som er involvert i beskrivelsene av katalogen, datasettene osv., som minimum med de obligatoriske egenskapene spesifisert for <a href="#Aktør"> 3.1, &#8220;Klassen Aktør (foaf:Agent)&#8221;</a>.</p>
+<p>Levere informasjon om alle organisasjoner/aktører som er involvert i beskrivelsene av katalogen, datasettene osv., som minimum med de obligatoriske egenskapene spesifisert i <a href="#Aktør"> 3.1, &#8220;Klassen Aktør (foaf:Agent)&#8221;</a>.</p>
 </li>
 <li>
 <p>Bruke de kontrollerte vokabularene som er beskrevet i Merknad til den enkelte egenskapen. Andre kontrollerte vokabularer KAN brukes i tillegg.</p>
@@ -1182,75 +1180,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </div>
 <div class="sect2">
-<h3 id="Leserveiledning"><a class="anchor" href="#Leserveiledning"></a>1.6. Hvordan du leser denne standarden</h3>
-<div class="paragraph">
-<p>Kravene til hver klasse er spesifisert i hvert sitt kapittel. Kapitlene er sortert alfabetisk etter norske klassenavn. I hvert kapittel er klassens egenskaper først gruppert inn i obligatoriske, anbefalte og valgfrie egenskaper, og deretter sortert alfabetisk etter norske egenskapsnavn.</p>
-</div>
-<div class="paragraph">
-<p>Alle kravene i denne standarden uttrykkes i form av RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.</p>
-</div>
-<div class="paragraph">
-<p>«Norsk utvidelse» i merknad betyr avvik mellom DCAT-AP-NO og summen av EU sin DCAT-AP og W3C sin DCAT. EU har valgt å ikke gjenta egenskaper fra DCAT i DCAT-AP når det ikke er foretatt endringer/tilpasninger, hvilket betyr at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. For å øke leservennlighet har vi i DCAT-AP-NO valgt å gjenta egenskaper fra DCAT-AP og DCAT som vi trenger for å dekke norske behov. Der det ikke står noe om «norsk utvidelse» i merknad til en egenskap, er egenskapen brukt slik den er spesifisert i enten DCAT-AP eller DCAT. Der det står «norsk utvidelse» i merknad til en egenskap, er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken DCAT-AP eller DCAT (f.eks. med forklaring "Ikke eksplisitt spesifisert i DCAT-AP/DCAT"). Se også <a href="#Oversikt-norske-utvidelser"><em>Vedlegg A - Oversikt over norske utvidelser</em></a>.</p>
-</div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ledetekst i tabellen</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Hensikt med raden i tabellen</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi klasse- eller egenskapsnavn på engelsk, primært ment for engelsktalende utviklere av verktøystøtte.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi en unik identifikator til klassen eller egenskapen.</p>
-<p class="tableblock">Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne standarden.</p>
-<p class="tableblock">Eksempel: <code>skos:Concept</code> er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i <code>skos</code> (<a href="#URIer-i-bruk"> 1.7, &#8220;URIer som brukes i standarden&#8221;</a> viser hva <code>skos</code> står for).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en klasse, til å referere til klassen som denne klassen ev. er subklasse av.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av / <em>Subproperty of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å referere til egenskapen som denne egenskapen ev. er subegenskap av.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlige verdier. Disse angis ved henvisning til en klasse eller datatype.</p>
-<p class="tableblock">Eksempel: Verdiområde <code>skos:Concept</code> betyr at verdien til egenskapen skal være en instans av klassen <code>skos:Concept</code>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne standarden. Forklaringen er også skrevet på engelsk (<em>Usage note</em>, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/bør/kan ha.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Om-kravene"> 1.4, &#8220;Om kravnivåene i denne standarden&#8221;</a>.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til merknader knyttet til bruk av klassen eller egenskapen, f.eks. restriksjoner hvis noen. Merknadene er også skrevet på engelsk (<em>Note</em>, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å gi eksempel på bruken av klassen/egenskapen, i prosatekst.</p>
-<p class="tableblock">Eksempel i RDF Turtle, er tatt med under den aktuelle tabellen.</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect2">
-<h3 id="URIer-i-bruk"><a class="anchor" href="#URIer-i-bruk"></a>1.7. URIer som brukes i standarden</h3>
+<h3 id="URIer-i-bruk"><a class="anchor" href="#URIer-i-bruk"></a>1.6. URIer som brukes i standarden</h3>
 <div class="paragraph">
 <p>Navnerom for denne standarden er  https://data.norge.no/vocabulary/dcatno#, vanligvis ved prefiks <code>dcatno</code>.</p>
 </div>
@@ -1460,20 +1390,82 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </div>
 <div class="sect1">
-<h2 id="Spesifikasjon-per-klasse"><a class="anchor" href="#Spesifikasjon-per-klasse"></a>3. Spesifikasjon per klasse</h2>
+<h2 id="Spesifikasjon-per-klasse"><a class="anchor" href="#Spesifikasjon-per-klasse"></a>3. Krav til RDF-representasjon av klassene i DCAT-AP-NO</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><a href="#diagram-Noen-DCAT-AP-NO-klasser">Figur 2</a> viser en oversikt over noen av de klassene i DCAT-AP-NO og relasjoner mellom dem.</p>
+<p><a href="#diagram-DCAT-AP-NO-klasser">Figur 2</a> viser en oversikt over klassene som er spesifisert i DCAT-AP-NO samt relasjoner mellom noen av nøkkelklassene. Med tanke på lesbarhet er flere klasser bare listet opp for oversikts skyld, uten at relasjoner til/fra dem er vist i figuren.</p>
 </div>
-<div id="diagram-Noen-DCAT-AP-NO-klasser" class="imageblock">
+<div id="diagram-DCAT-AP-NO-klasser" class="imageblock">
 <div class="content">
-<a class="image" href="images/DCAT-AP-NO-noen-klasser.png"><img src="images/DCAT-AP-NO-noen-klasser.png" alt="DCAT AP NO noen klasser"></a>
+<a class="image" href="images/DCAT-AP-NO-klasser.png"><img src="images/DCAT-AP-NO-klasser.png" alt="DCAT AP NO klasser"></a>
 </div>
-<div class="title">Figur 2. Oversikt over noen av klassene i DCAT-AP-NO og relasjoner mellom dem.</div>
+<div class="title">Figur 2. Oversikt klassene i DCAT-AP-NO og relasjoner mellom dem.</div>
 </div>
 <div class="paragraph">
 <p>Hver klasse med dens egenskaper er spesifisert videre i dette kapitlet. Klassene er sortert alfabetisk etter norske klassenavn, og egenskapene i hver klasse gruppert først inn i obligatoriske, anbefalte og valgfrie egenskaper, og der under alfabetisk etter norske egenskapsnavn.</p>
 </div>
+<div class="paragraph">
+<p>Alle kravene i denne standarden uttrykkes i form av RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.</p>
+</div>
+<div class="paragraph">
+<p>«Norsk utvidelse» i merknad betyr avvik mellom DCAT-AP-NO og summen av EU sin DCAT-AP og W3C sin DCAT. EU har valgt å ikke gjenta egenskaper fra DCAT i DCAT-AP når det ikke er foretatt endringer/tilpasninger, hvilket betyr at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. For å øke leservennlighet har vi i DCAT-AP-NO valgt å gjenta egenskaper fra DCAT-AP og DCAT som vi trenger for å dekke norske behov. Der det ikke står noe om «norsk utvidelse» i merknad til en egenskap, er egenskapen brukt slik den er spesifisert i enten DCAT-AP eller DCAT. Der det står «norsk utvidelse» i merknad til en egenskap, er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken DCAT-AP eller DCAT (f.eks. med forklaring "Ikke eksplisitt spesifisert i DCAT-AP/DCAT"). Se også <a href="#Oversikt-norske-utvidelser"><em>Vedlegg A - Oversikt over norske utvidelser</em></a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Ledetekst i tabellen</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Hensikt med raden i tabellen</strong></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi klasse- eller egenskapsnavn på engelsk, primært ment for engelsktalende utviklere av verktøystøtte.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å angi en unik identifikator til klassen eller egenskapen.</p>
+<p class="tableblock">Det er dette som skal benyttes i RDF-basert utveksling/tilgjengeliggjøring av beskrivelser som er utformet i henhold til denne standarden.</p>
+<p class="tableblock">Eksempel: <code>skos:Concept</code> er identifikatoren til klassen Begrep (Concept), slik klassen er spesifisert i <code>skos</code> (<a href="#URIer-i-bruk"> 1.6, &#8220;URIer som brukes i standarden&#8221;</a> viser hva <code>skos</code> står for).</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en klasse, til å referere til klassen som denne klassen ev. er subklasse av.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av / <em>Subproperty of</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å referere til egenskapen som denne egenskapen ev. er subegenskap av.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere lovlige verdier. Disse angis ved henvisning til en klasse eller datatype.</p>
+<p class="tableblock">Eksempel: Verdiområde <code>skos:Concept</code> betyr at verdien til egenskapen skal være en instans av klassen <code>skos:Concept</code>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å forklare hva klassen eller egenskapen er ment å brukes til, i kontekst av denne standarden. Forklaringen er også skrevet på engelsk (<em>Usage note</em>, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere minimum og maksimum antall verdier egenskapen skal/bør/kan ha.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å spesifisere om egenskapen er obligatorisk, anbefalt eller valgfri. Se også <a href="#Om-kravene"> 1.4, &#8220;Om kravnivåene i denne standarden&#8221;</a>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til merknader knyttet til bruk av klassen eller egenskapen, f.eks. restriksjoner hvis noen. Merknadene er også skrevet på engelsk (<em>Note</em>, kursivert), primært ment for engelsktalende utviklere av verktøystøtte.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Brukes til å gi eksempel på bruken av klassen/egenskapen, i prosatekst.</p>
+<p class="tableblock">Eksempel i RDF Turtle, er tatt med under den aktuelle tabellen.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="sect2">
 <h3 id="Aktør"><a class="anchor" href="#Aktør"></a>3.1. Klassen Aktør (foaf:Agent)</h3>
 <div class="paragraph">
@@ -10129,7 +10121,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-15 11:56:14 UTC
+Sist oppdatert 2024-05-16 05:19:05 UTC
 </div>
 </div>
 </body>
