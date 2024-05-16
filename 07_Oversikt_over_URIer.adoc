@@ -1,10 +1,10 @@
-= URIer som brukes i standarden [[URIer-i-bruk]]
+= Vedlegg A - URIer som brukes i standarden [[URIer-i-bruk]]
 
 Navnerom for denne standarden er  \https://data.norge.no/vocabulary/dcatno#, vanligvis ved prefiks `dcatno`. 
 
 [cols="10s,45d,45d"]
 |===
-| Prefiks |*Navnerom*|*RDF-vokabular*
+| Prefiks | *Navnerom* | *RDF-vokabular*
 | adms | \http://www.w3.org/ns/adms#| https://semiceu.github.io/ADMS/releases/2.00/[Asset Description Metadata Schema &#x29C9;, window="_blank", role="ext-link"]
 | cv | \http://data.europa.eu/m8g/| https://op.europa.eu/en/web/eu-vocabularies/corevocs[Core Vocabulary &#x29C9;, window="_blank", role="ext-link"]
 | cpsv | \http://purl.org/vocab/cpsv#| https://joinup.ec.europa.eu/collection/semic-support-centre/solution/core-public-service-vocabulary-application-profile?f%5B0%5D=solution_content_bundle%3Aasset_release[Core Public Service Vocabulary &#x29C9;, window="_blank", role="ext-link"]
@@ -17,20 +17,20 @@ Navnerom for denne standarden er  \https://data.norge.no/vocabulary/dcatno#, van
 | dqv | \http://www.w3.org/ns/dqv#| https://www.w3.org/TR/vocab-dqv/[Data Quality Vocabulary &#x29C9;, window="_blank", role="ext-link"]
 // |dqvno| \https://data.norge.no/vocabulary/dqvno#| https://data.norge.no/specification/dqv-ap-no[Norsk applikasjonsprofil av DQV (Data Quality Vocabulary) &#x29C9;, window="_blank", role="ext-link"]
 | eli | \http://data.europa.eu/eli/ontology# | https://eur-lex.europa.eu/eli-register/about.html[European Legislation Identifier &#x29C9;, window="_blank", role="ext-link"]
-|foaf| \http://xmlns.com/foaf/0.1/| http://xmlns.com/foaf/spec/[FOAF Vocabulary &#x29C9;, window="_blank", role="ext-link"]
-|locn| \http://www.w3.org/ns/locn#| https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/[Core Location Vocabulary &#x29C9;, window="_blank", role="ext-link"]
-|odrl| \http://www.w3.org/ns/odrl/2/ | https://www.w3.org/TR/odrl-vocab/[ODRL Vocabulary & Expression &#x29C9;, window="_blank", role="ext-link"]
-|odrs| \http://schema.theodi.org/odrs# | https://schema.theodi.org/odrs/[Open Data Rights Statement Vocabulary &#x29C9;, window="_blank", role="ext-link"]
-|owl| \http://www.w3.org/2002/07/owl# | https://www.w3.org/TR/owl-guide/[OWL Web Ontology Language &#x29C9;, window="_blank", role="ext-link"]
-|prov| \http://www.w3.org/ns/prov#| https://www.w3.org/TR/prov-o/[PROV-O: The PROV Ontology &#x29C9;, window="_blank", role="ext-link"]
-// |provno| \https://data.norge.no/vocabulary/provno#| Norsk applikasjonsprofil av PROV-O
-// |qb| \http://purl.org/linked-data/cube#| https://www.w3.org/TR/vocab-data-cube/[Data Cube Vocabulary &#x29C9;, window="_blank", role="ext-link"]
-|rdfs| \http://www.w3.org/2000/01/rdf-schema#| https://www.w3.org/TR/rdf-schema/[RDF Vocabulary Description Language 1.0: RDF Schema &#x29C9;, window="_blank", role="ext-link"]
-// |schema| \http://schema.org/| https://schema.org/[schema.org &#x29C9;, window="_blank", role="ext-link"]
-|skos| \http://www.w3.org/2004/02/skos/core#| https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System &#x29C9;, window="_blank", role="ext-link"]
-|spdx| \http://spdx.org/rdf/terms#| https://spdx.dev/[Software Package Data Exchange® &#x29C9;, window="_blank", role="ext-link"]
-|time |  \http://www.w3.org/2006/time# | https://www.w3.org/TR/owl-time/[Time Ontology in OWL &#x29C9;, window="_blank", role="ext-link"]
-|vcard| \http://www.w3.org/2006/vcard/ns#| https://www.w3.org/TR/vcard-rdf/[vCard Ontology &#x29C9;, window="_blank", role="ext-link"]
-// |voaf| \http://purl.org/vocommons/voaf#| Vocabulary of a Friend (VOAF)
-|xsd| \http://www.w3.org/2001/XMLSchema#| https://www.w3.org/TR/xmlschema-2/[XML Schema &#x29C9;, window="_blank", role="ext-link"]
+| foaf | \http://xmlns.com/foaf/0.1/| http://xmlns.com/foaf/spec/[FOAF Vocabulary &#x29C9;, window="_blank", role="ext-link"]
+| locn | \http://www.w3.org/ns/locn#| https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/[Core Location Vocabulary &#x29C9;, window="_blank", role="ext-link"]
+| odrl | \http://www.w3.org/ns/odrl/2/ | https://www.w3.org/TR/odrl-vocab/[ODRL Vocabulary & Expression &#x29C9;, window="_blank", role="ext-link"]
+| odrs | \http://schema.theodi.org/odrs# | https://schema.theodi.org/odrs/[Open Data Rights Statement Vocabulary &#x29C9;, window="_blank", role="ext-link"]
+| owl | \http://www.w3.org/2002/07/owl# | https://www.w3.org/TR/owl-guide/[OWL Web Ontology Language &#x29C9;, window="_blank", role="ext-link"]
+| prov | \http://www.w3.org/ns/prov#| https://www.w3.org/TR/prov-o/[PROV-O: The PROV Ontology &#x29C9;, window="_blank", role="ext-link"]
+// | provno | \https://data.norge.no/vocabulary/provno#| Norsk applikasjonsprofil av PROV-O
+// | qb | \http://purl.org/linked-data/cube#| https://www.w3.org/TR/vocab-data-cube/[Data Cube Vocabulary &#x29C9;, window="_blank", role="ext-link"]
+| rdfs | \http://www.w3.org/2000/01/rdf-schema#| https://www.w3.org/TR/rdf-schema/[RDF Vocabulary Description Language 1.0: RDF Schema &#x29C9;, window="_blank", role="ext-link"]
+// | schema | \http://schema.org/| https://schema.org/[schema.org &#x29C9;, window="_blank", role="ext-link"]
+| skos | \http://www.w3.org/2004/02/skos/core#| https://www.w3.org/TR/skos-reference/[SKOS Simple Knowledge Organization System &#x29C9;, window="_blank", role="ext-link"]
+| spdx | \http://spdx.org/rdf/terms#| https://spdx.dev/[Software Package Data Exchange® &#x29C9;, window="_blank", role="ext-link"]
+| time | \http://www.w3.org/2006/time# | https://www.w3.org/TR/owl-time/[Time Ontology in OWL &#x29C9;, window="_blank", role="ext-link"]
+| vcard | \http://www.w3.org/2006/vcard/ns#| https://www.w3.org/TR/vcard-rdf/[vCard Ontology &#x29C9;, window="_blank", role="ext-link"]
+// | voaf | \http://purl.org/vocommons/voaf#| Vocabulary of a Friend (VOAF)
+| xsd | \http://www.w3.org/2001/XMLSchema#| https://www.w3.org/TR/xmlschema-2/[XML Schema &#x29C9;, window="_blank", role="ext-link"]
 |===

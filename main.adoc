@@ -47,11 +47,6 @@ toc::[]
 
 include::01_Om_denne_standarden.adoc[]
 
-:leveloffset: +1
-
-include::07_Oversikt_over_URIer.adoc[]
-
-:leveloffset: -1
 
 include::07b_diagram.adoc[]
 
@@ -70,8 +65,6 @@ include::Klasse_Aktor.adoc[]
 include::Klasse_Datasett.adoc[]
 
 include::Klasse_Datasettserie.adoc[]
-
-// include::Klasse_Datasettseriemedlem.adoc[]
 
 include::Klasse_Datatjeneste.adoc[]
 
@@ -109,20 +102,16 @@ include::Klasse_Kontaktopplysning.adoc[]
 // include::Klasse_Medietype.adoc[]
 
 // include::Klasse_Offentlig_organisasjon.adoc[]
-// include::Klasse_Offentlig_organisasjon-utgår.adoc[]
 
 // include::Klasse_Offentlig_tjeneste.adoc[]
-// include::Klasse_Offentlig_tjeneste-utgår.adoc[]
 
 // include::Klasse_Opphavsbeskrivelse.adoc[]
 
 // include::Klasse_Policy.adoc[]
 
 // include::Klasse_Regel.adoc[]
-// include::Klasse_Regel-utgår.adoc[]
 
 include::Klasse_Regulativ_ressurs.adoc[]
-// include::Klasse_Regulativ_ressurs-utgår.adoc[]
 
 include::Klasse_Relasjon.adoc[]
 
@@ -148,18 +137,14 @@ include::Klasse_Tidsrom.adoc[]
 
 :leveloffset: -1
 
-// :leveloffset: -1
-
 // include::22_Kontrollerte_vokabular.adoc[]
-// include::22_Kontrollerte_vokabular-utgår.adoc[]
-
-// include::02_Avvik.adoc[]
-// include::02_Avvik-utgår.adoc[]
 
 include::Spesielle_temaer.adoc[]
 
 // Appendix, section number off
 :sectnums!:
+
+include::07_Oversikt_over_URIer.adoc[]
 
 include::Oversikt_over_norske_utvidelser.adoc[]
 
