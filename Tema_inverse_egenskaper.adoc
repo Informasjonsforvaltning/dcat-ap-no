@@ -1,0 +1,24 @@
+== Om bruk av inverse egenskaper [[Om-inverse-egenskaper]]
+
+I spesifikasjon til klassene foran er inverse egenskaper bevisst utelatt, i tråd med DCAT-AP og DCAT. 
+
+Også i tråd med DCAT-AP og DCAT, tillater DCAT-AP-NO å bruke inverse egenskaper når de trengs, under forutsetning av at de brukes _i tillegg til_, og _ikke istedenfor_, egenskapene som er eksplisitt tatt med i spesifikasjonene ovenfor. 
+
+Følgende inverse egenskaper kan brukes: 
+
+[cols="50s,50"]
+|===
+| Egenskap i DCAT-AP-NO | Invers egenskap som kan brukes i tillegg
+| dcat:prev | dcat:next
+| dcat:previousVersion | dcat:nextVersion
+| dcat:distribution | dcat:isDistributionOf
+| dct:hasPart | dct:isPartOf
+// | dcat:resource | dcat:inCatalog
+| dct:replaces | dct:isReplacedBy
+| dct:isReferencedBy | dct:references
+| dcat:hasVersion | dcat:isVersionOf
+| dcat:inSeries | dcat:seriesMember
+| foaf:primaryTopic | foaf:isPrimaryTopicOf
+| prov:wasGeneratedBy | prov:generated
+|===
+

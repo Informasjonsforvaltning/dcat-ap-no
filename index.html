@@ -915,9 +915,10 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Spesielle-temaer">4. Noen spesielle temaer</a>
 <ul class="sectlevel2">
-<li><a href="#Om-lisens-tilgang-rettigheter">4.1. Om bruk av egenskapene <em>lisens (dct:license)</em>, <em>tilgangsrettigheter (dct:accessRights)</em> og <em>rettigheter/brukervilkår (dct:rights)</em></a></li>
+<li><a href="#_om_datasett_datatjeneste_og_distribusjon">4.1. Om datasett, datatjeneste og distribusjon</a></li>
 <li><a href="#Om-Datasettserie">4.2. Om bruk av klassen <em>Datasettserie (dcat:DatasetSeries)</em></a></li>
-<li><a href="#Om-inverse-egenskaper">4.3. Om bruk av inverse egenskaper</a></li>
+<li><a href="#Om-lisens-tilgang-rettigheter">4.3. Om bruk av egenskapene <em>lisens (dct:license)</em>, <em>tilgangsrettigheter (dct:accessRights)</em> og <em>rettigheter/brukervilkår (dct:rights)</em></a></li>
+<li><a href="#Om-inverse-egenskaper">4.4. Om bruk av inverse egenskaper</a></li>
 </ul>
 </li>
 <li><a href="#URIer-i-bruk">Vedlegg A - URIer som brukes i standarden</a></li>
@@ -8740,25 +8741,9 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <h2 id="Spesielle-temaer"><a class="anchor" href="#Spesielle-temaer"></a>4. Noen spesielle temaer</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="Om-lisens-tilgang-rettigheter"><a class="anchor" href="#Om-lisens-tilgang-rettigheter"></a>4.1. Om bruk av egenskapene <em>lisens (dct:license)</em>, <em>tilgangsrettigheter (dct:accessRights)</em> og <em>rettigheter/brukervilkår (dct:rights)</em></h3>
+<h3 id="_om_datasett_datatjeneste_og_distribusjon"><a class="anchor" href="#_om_datasett_datatjeneste_og_distribusjon"></a>4.1. Om datasett, datatjeneste og distribusjon</h3>
 <div class="paragraph">
-<p>DCAT-AP-NO støtter følgende tre hovedscenarier der man trenger å beskrive tilgang og/eller brukervilkår til en ressurs (f.eks. et datasett): 1) behov for å referere til en lisens, 2) behov for å spesifisere tilgangsrettigheter og 3) andre behov enn ovennevnte, for å uttrykke rettigheter eller brukervilkår, f.eks. opphavsrett.</p>
-</div>
-<div class="paragraph">
-<p>DCAT-AP-NO støtter disse scenariene på følgende måte:</p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p><code>dct:license</code> SKAL brukes til å referere til en lisens, og verdien SKAL hentes fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener"><em>Licence</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datatjeneste-lisens"> 3.4.3.5, &#8220;Datatjeneste – lisens (dct:license)&#8221;</a>, <a href="#Distribusjon-lisens"> 3.5.2.3, &#8220;Distribusjon – lisens (dct:license)&#8221;</a> og <a href="#Katalog-lisens"> 3.8.2.6, &#8220;Katalog – lisens (dct:license)&#8221;</a>.</p>
-</li>
-<li>
-<p><code>dct:accessRights</code> SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datasett-tilgangsrettigheter"> 3.2.2.8, &#8220;Datasett – tilgangsrettigheter (dct:accessRights)&#8221;</a> og <a href="#Datatjeneste-tilgangsrettigheter"> 3.4.3.7, &#8220;Datatjeneste – tilgangsrettigheter (dct:accessRights)&#8221;</a>.</p>
-</li>
-<li>
-<p><code>dct:rights</code> KAN brukes til å uttrykke alle andre typer rettigheter og brukervilkår, bl.a. opphavsrett. Det er anbefalt å bruke <a href="#Rettighetserklæring"> 3.14, &#8220;Klassen Rettighetserklæring (odrs:RightsStatement)&#8221;</a> til å ha en strukturert beskrivelse av rettigheter og brukervilkår. Dette gjelder egenskapene <a href="#Distribusjon-rettigheter"> 3.5.3.11, &#8220;Distribusjon – rettigheter (dct:rights)&#8221;</a> og <a href="#Katalog-rettigheter"> 3.8.3.7, &#8220;Katalog – rettigheter (brukervilkår) (dct:rights)&#8221;</a>.</p>
-</li>
-</ol>
+<p><em><mark>@@@@@@ mer komme, ref. EU <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-datasets-distributions-and-data-services" class="ext-link" target="_blank" rel="noopener">14.1 Usage guide on Datasets</a></mark></em></p>
 </div>
 </div>
 <div class="sect2">
@@ -8809,7 +8794,29 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </div>
 <div class="sect2">
-<h3 id="Om-inverse-egenskaper"><a class="anchor" href="#Om-inverse-egenskaper"></a>4.3. Om bruk av inverse egenskaper</h3>
+<h3 id="Om-lisens-tilgang-rettigheter"><a class="anchor" href="#Om-lisens-tilgang-rettigheter"></a>4.3. Om bruk av egenskapene <em>lisens (dct:license)</em>, <em>tilgangsrettigheter (dct:accessRights)</em> og <em>rettigheter/brukervilkår (dct:rights)</em></h3>
+<div class="paragraph">
+<p>DCAT-AP-NO støtter følgende tre hovedscenarier der man trenger å beskrive tilgang og/eller brukervilkår til en ressurs (f.eks. et datasett): 1) behov for å referere til en lisens, 2) behov for å spesifisere tilgangsrettigheter og 3) andre behov enn ovennevnte, for å uttrykke rettigheter eller brukervilkår, f.eks. opphavsrett.</p>
+</div>
+<div class="paragraph">
+<p>DCAT-AP-NO støtter disse scenariene på følgende måte:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p><code>dct:license</code> SKAL brukes til å referere til en lisens, og verdien SKAL hentes fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener"><em>Licence</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datatjeneste-lisens"> 3.4.3.5, &#8220;Datatjeneste – lisens (dct:license)&#8221;</a>, <a href="#Distribusjon-lisens"> 3.5.2.3, &#8220;Distribusjon – lisens (dct:license)&#8221;</a> og <a href="#Katalog-lisens"> 3.8.2.6, &#8220;Katalog – lisens (dct:license)&#8221;</a>.</p>
+</li>
+<li>
+<p><code>dct:accessRights</code> SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datasett-tilgangsrettigheter"> 3.2.2.8, &#8220;Datasett – tilgangsrettigheter (dct:accessRights)&#8221;</a> og <a href="#Datatjeneste-tilgangsrettigheter"> 3.4.3.7, &#8220;Datatjeneste – tilgangsrettigheter (dct:accessRights)&#8221;</a>.</p>
+</li>
+<li>
+<p><code>dct:rights</code> KAN brukes til å uttrykke alle andre typer rettigheter og brukervilkår, bl.a. opphavsrett. Det er anbefalt å bruke <a href="#Rettighetserklæring"> 3.14, &#8220;Klassen Rettighetserklæring (odrs:RightsStatement)&#8221;</a> til å ha en strukturert beskrivelse av rettigheter og brukervilkår. Dette gjelder egenskapene <a href="#Distribusjon-rettigheter"> 3.5.3.11, &#8220;Distribusjon – rettigheter (dct:rights)&#8221;</a> og <a href="#Katalog-rettigheter"> 3.8.3.7, &#8220;Katalog – rettigheter (brukervilkår) (dct:rights)&#8221;</a>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="Om-inverse-egenskaper"><a class="anchor" href="#Om-inverse-egenskaper"></a>4.4. Om bruk av inverse egenskaper</h3>
 <div class="paragraph">
 <p>I spesifikasjon til klassene foran er inverse egenskaper bevisst utelatt, i tråd med DCAT-AP og DCAT.</p>
 </div>
@@ -9481,7 +9488,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Denne versjonen spesifiserer <em>ikke</em> kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <a href="#Samsvarskrav"> 1.5, &#8220;Krav til samsvar&#8221;</a> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP.</p>
 </div>
 <div class="paragraph">
-<p>Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper (se <a href="https://www.w3.org/TR/vocab-dcat-3/#inverse-properties" class="ext-link" target="<em>blank">§ 7 i DCAT &#x29C9;</a>), at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man <em>kan</em> bruke en invers egenskap, _i tillegg til</em> og <em>ikke istedenfor</em> egenskapen som er eksplisitt tatt med i standarden. Se <a href="#Om-inverse-egenskaper"> 4.3, &#8220;Om bruk av inverse egenskaper&#8221;</a>.</p>
+<p>Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper (se <a href="https://www.w3.org/TR/vocab-dcat-3/#inverse-properties" class="ext-link" target="<em>blank">§ 7 i DCAT &#x29C9;</a>), at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man <em>kan</em> bruke en invers egenskap, _i tillegg til</em> og <em>ikke istedenfor</em> egenskapen som er eksplisitt tatt med i standarden. Se <a href="#Om-inverse-egenskaper"> 4.4, &#8220;Om bruk av inverse egenskaper&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper.</p>
@@ -9773,7 +9780,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-16 08:35:30 UTC
+Sist oppdatert 2024-05-16 08:50:15 UTC
 </div>
 </div>
 </body>
