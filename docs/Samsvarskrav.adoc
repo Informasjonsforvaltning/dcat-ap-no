@@ -4,17 +4,17 @@
 
 For å være i samsvar med denne standarden, SKAL en applikasjon som levere metadata:
 
-* Levere en beskrivelse av katalogen, som minimum med de obligatoriske egenskapene spesifisert for <<Katalog>>. 
+* Levere en beskrivelse av katalogen, som minimum med de obligatoriske egenskapene spesifisert i <<Katalog>>. 
 
-* Levere informasjon for obligatoriske egenskaper for <<Katalogpost>>, hvis informasjonen finnes, vel å merke at bruken av <<Katalogpost>> er frivillig.  
+* Levere informasjon for obligatoriske egenskaper for <<Katalogpost>>, hvis informasjonen finnes, vel å merke at bruken av <<Katalogpost>> er frivillig. 
 
-* Levere beskrivelser av datasettene som er i katalogen, som minimum med de obligatoriske egenskapene spesifisert for <<Datasett>>. 
+* Levere beskrivelser av datasettene som er i katalogen, som minimum med de obligatoriske egenskapene spesifisert i <<Datasett>>. 
 
-* Levere beskrivelser av distribusjoner, hvis noen, av datasett i katalogen, som minimum med de obligatoriske egenskapene spesifisert for <<Distribusjon>>. 
+* Levere beskrivelser av distribusjoner, hvis noen, av datasett i katalogen, som minimum med de obligatoriske egenskapene spesifisert i <<Distribusjon>>. 
 
-* Levere beskrivelser av datatjenester, hvis noen, av datasett i katalogen, som minimum med de obligatoriske egenskapene spesifisert for <<Datatjeneste>>. 
+* Levere beskrivelser av datatjenester, hvis noen, av datasett i katalogen, som minimum med de obligatoriske egenskapene spesifisert i <<Datatjeneste>>. 
 
-* Levere informasjon om alle organisasjoner/aktører som er involvert i beskrivelsene av katalogen, datasettene osv., som minimum med de obligatoriske egenskapene spesifisert for <<Aktør>>. 
+* Levere informasjon om alle organisasjoner/aktører som er involvert i beskrivelsene av katalogen, datasettene osv., som minimum med de obligatoriske egenskapene spesifisert i <<Aktør>>. 
 
 * Bruke de kontrollerte vokabularene som er beskrevet i Merknad til den enkelte egenskapen. Andre kontrollerte vokabularer KAN brukes i tillegg.
 
