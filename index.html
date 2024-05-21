@@ -914,7 +914,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Spesielle-temaer">4. Noen spesielle temaer</a>
 <ul class="sectlevel2">
-<li><a href="#_om_datasett_datatjeneste_og_distribusjon">4.1. Om datasett, datatjeneste og distribusjon</a></li>
+<li><a href="#_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution">4.1. Om bruk av klassene Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution)</a></li>
 <li><a href="#Om-Datasettserie">4.2. Om bruk av klassen <em>Datasettserie (dcat:DatasetSeries)</em></a></li>
 <li><a href="#Om-lisens-tilgang-rettigheter">4.3. Om bruk av egenskapene <em>lisens (dct:license)</em>, <em>tilgangsrettigheter (dct:accessRights)</em> og <em>rettigheter/brukervilkår (dct:rights)</em></a></li>
 <li><a href="#Om-inverse-egenskaper">4.4. Om bruk av inverse egenskaper</a></li>
@@ -8699,9 +8699,51 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <h2 id="Spesielle-temaer"><a class="anchor" href="#Spesielle-temaer"></a>4. Noen spesielle temaer</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_om_datasett_datatjeneste_og_distribusjon"><a class="anchor" href="#_om_datasett_datatjeneste_og_distribusjon"></a>4.1. Om datasett, datatjeneste og distribusjon</h3>
+<h3 id="_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution"><a class="anchor" href="#_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution"></a>4.1. Om bruk av klassene Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution)</h3>
 <div class="paragraph">
-<p><em><mark>@@@@@@ mer kommer, ref. EU <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-datasets-distributions-and-data-services" class="ext-link" target="_blank" rel="noopener">14.1 Usage guide on Datasets &#8230;&#8203; &#x29C9;</a></mark></em></p>
+<p><em>Dette er en forkortet og fornorsket versjon av EU <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-datasets-distributions-and-data-services" class="ext-link" target="_blank" rel="noopener">Usage guide on Datasets, Distributions and Data Services</a>.</em></p>
+</div>
+<div class="paragraph">
+<p><strong>Avhengighet</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Avhengighet til datasett: En distribusjon distribusjon er en spesifikk representasjon av et gitt datasett og SKAL derfor alltid knyttes til et datasett. En datatjeneste SKAL knyttes til datasett <em>når</em> den gir tilgang til datasett. En datatjeneste <em>kan</em> også brukes til å gi dataprosesseringsfunksjoner, og trenger i å fall ikke å være knyttet til noen datasett.</p>
+</li>
+<li>
+<p>Avhengighet mellom distribusjon og datatjeneste: En distribusjon <em>kan</em>, men trenger ikke å, være resultat av en datatjenesteoperasjon.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Egenskaper</strong> til Distribusjon og Datatjeneste:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Mange av egenskapene i klassen Distribusjon (dcat:Distribution) er filorientert (f.eks. nedlastingsURL (dcat:downloadURL), format (dct:format), filstørrelse (dcat:byteSize), sjekksum (spdx:checksum), endringsdato (dct:modified) osv.)</p>
+</li>
+<li>
+<p>Relevansen av tilsvarende egenskaper er redusert for datatjenester (dcat:DataService), og egenskapene som brukes kan ha anderledes betydning. For eksempel,  datatjenester foretar (eller på forespørsel kan foreta) format-, språk- og skjematransformasjoner, mens for en gitt distribusjon er format, språk osv. gitt. Håndtering av tillit er forskjellig også: endring i nedlastbart innhold i en distribusjon oppdages ved å bruke sjekksum, mens datatjenester ofte bruker en pålitelig kanal ved å bruke sikkerhetsmekanisme som autentisering og kryptering.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Retningslinjer</strong>:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Et datasett (dcat:Dataset) er den konseptuelle entiteten for en samling av data.</p>
+</li>
+<li>
+<p>En Distribusjon (dcat:Distribution) er en spesifikk representasjon av et datasett, beskrevet med den hensikt å lette levering av data som fil. TilgangsURL (dcat:accessURL), helst nedlastingslenke (dcat:downloadURL), gir en enkel måte å få tak i (laste ned) innholdet i datasettet i den spesifikke representasjonen som angitt i distribusjonsbeskrivelsen. Det nedlastede innholdet er fullstendig bestemt av utgiveren av distribusjonen.</p>
+</li>
+<li>
+<p>Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en datatjeneste. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på.</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -9738,7 +9780,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-05-16 10:54:44 UTC
+Sist oppdatert 2024-05-21 06:58:32 UTC
 </div>
 </div>
 </body>
