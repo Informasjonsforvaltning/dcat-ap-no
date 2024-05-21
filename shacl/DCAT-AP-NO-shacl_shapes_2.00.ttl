@@ -51,8 +51,8 @@
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes of DCAT-AP-NO, expressed by in SHACL."@en ;
     dct:title "SHACL-shapes for DCAT-AP-NO"@en ;
-    dct:modified "2024-04-25"^^xsd:date ;
-    dcat:version "2.2.011" ;
+    dct:modified "2024-05-21"^^xsd:date ;
+    dcat:version "2.2.012" ;
     adms:versionNotes "This version doesn't check the class, but only if the value is an IRI, when the value should be from a Controlled Vocabulary (since not all Controlled Vocabularies are typed as DCAT requires)"@en ,
         "This incl. also ref. to external resources, e.g. foaf:Document, skos:Concept etc."@en, 
         "Added also user-friendly sh:message"@en ;
@@ -428,12 +428,6 @@
         sh:severity sh:Violation
     ], [ # format, Norwegian extension: Added dct:format
 #        sh:class dct:MediaTypeOrExtent ;
-        sh:nodeKind sh:IRI ;
-        sh:path dct:format ;
-        sh:message "dct:format skal være IRI"@nb ;
-        sh:severity sh:Violation
-    ], [ ## format, Norwegian extension, check Controlled Vocab for dct:format
-        sh:node :FileTypeRestriction ;
         sh:nodeKind sh:IRI ;
         sh:path dct:format ;
         sh:message "dct:format skal være IRI"@nb ;
