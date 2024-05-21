@@ -1,5 +1,20 @@
-== Om datasett, datatjeneste og distribusjon
+== Om bruk av klassene Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution)
 
-_#@@@@@@ mer kommer, ref. EU https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-datasets-distributions-and-data-services[14.1 Usage guide on Datasets ... &#x29C9;, window="_blank", role="ext-link"]#_
+__Dette er en forkortet og fornorsket versjon av EU https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-datasets-distributions-and-data-services["Usage guide on Datasets, Distributions and Data Services" &#x29C9;, window="_blank", role="ext-link"].__
 
+*Avhengighet*:
+
+* Avhengighet til datasett: En distribusjon distribusjon er en spesifikk representasjon av et gitt datasett og SKAL derfor alltid knyttes til et datasett. En datatjeneste SKAL knyttes til datasett _når_ den gir tilgang til datasett. En datatjeneste _kan_ også brukes til å gi dataprosesseringsfunksjoner, og trenger i å fall ikke å være knyttet til noen datasett. 
+* Avhengighet mellom distribusjon og datatjeneste: En distribusjon _kan_, men trenger ikke å, være resultat av en datatjenesteoperasjon.
+
+*Egenskaper* til Distribusjon og Datatjeneste:
+
+* Mange av egenskapene i klassen Distribusjon (dcat:Distribution) er filorientert (f.eks. nedlastingsURL (dcat:downloadURL), format (dct:format), filstørrelse (dcat:byteSize), sjekksum (spdx:checksum), endringsdato (dct:modified) osv.)
+* Relevansen av tilsvarende egenskaper er redusert for datatjenester (dcat:DataService), og egenskapene som brukes kan ha anderledes betydning. For eksempel,  datatjenester foretar (eller på forespørsel kan foreta) format-, språk- og skjematransformasjoner, mens for en gitt distribusjon er format, språk osv. gitt. Håndtering av tillit er forskjellig også: endring i nedlastbart innhold i en distribusjon oppdages ved å bruke sjekksum, mens datatjenester ofte bruker en pålitelig kanal ved å bruke sikkerhetsmekanisme som autentisering og kryptering. 
+
+*Retningslinjer*: 
+
+* Et datasett (dcat:Dataset) er den konseptuelle entiteten for en samling av data.
+* En Distribusjon (dcat:Distribution) er en spesifikk representasjon av et datasett, beskrevet med den hensikt å lette levering av data som fil. TilgangsURL (dcat:accessURL), helst nedlastingslenke (dcat:downloadURL), gir en enkel måte å få tak i (laste ned) innholdet i datasettet i den spesifikke representasjonen som angitt i distribusjonsbeskrivelsen. Det nedlastede innholdet er fullstendig bestemt av utgiveren av distribusjonen. 
+* Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en datatjeneste. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på.     
 
