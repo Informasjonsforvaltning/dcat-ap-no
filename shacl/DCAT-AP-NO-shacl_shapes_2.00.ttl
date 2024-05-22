@@ -51,8 +51,8 @@
     dct:relation <http://joinup.ec.europa.eu/collection/access-base-registries/solution/abr-specification-registry-registries/release/200> ;
     dct:description "This document specifies the constraints on properties and classes of DCAT-AP-NO, expressed by in SHACL."@en ;
     dct:title "SHACL-shapes for DCAT-AP-NO"@en ;
-    dct:modified "2024-05-21"^^xsd:date ;
-    dcat:version "2.2.012" ;
+    dct:modified "2024-05-22"^^xsd:date ;
+    dcat:version "2.2.013" ;
     adms:versionNotes "This version doesn't check the class, but only if the value is an IRI, when the value should be from a Controlled Vocabulary (since not all Controlled Vocabularies are typed as DCAT requires)"@en ,
         "This incl. also ref. to external resources, e.g. foaf:Document, skos:Concept etc."@en, 
         "Added also user-friendly sh:message"@en ;
@@ -319,7 +319,7 @@
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:creator ;
-        sh:message "dct:creator skal være en IRI og kan ha maks. én verdi"@nb ;
+        sh:message "dct:creator kan ha maks. én verdi som skal være en IRI"@nb ;
         sh:severity sh:Violation
     ], [ # refererer til 
         sh:nodeKind sh:BlankNodeOrIRI ;
@@ -628,7 +628,7 @@
     ], [ # romlig oppløsning
         sh:datatype xsd:decimal ;
         sh:path dcat:spatialResolutionInMeters ;
-        sh:message "dcat:spatialResolutionInMeters skal væer av type xsd:desimal"@nb ;
+        sh:message "dcat:spatialResolutionInMeters skal være av type xsd:desimal"@nb ;
         sh:severity sh:Violation
     ], [ # sjekksum 
         sh:class spdx:Checksum ;
