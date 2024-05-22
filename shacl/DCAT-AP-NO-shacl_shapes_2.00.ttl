@@ -171,11 +171,11 @@
         sh:severity sh:Violation
     ], [ # kontaktpunkt
         sh:or (
-            [ sh:class vcard:Kind ]
+            [ sh:class vcard:Group ]
             [ sh:class vcard:Organization ] ) ;
         sh:path dcat:contactPoint ;
-        sh:message "dcat:contactPoint skal referere til en instans av vcard:Kind eller vcard:Organization"@nb ;
-        sh:severity sh:Violation
+        sh:message "dcat:contactPoint skal referere til en instans av vcard:Group eller vcard:Organization"@nb ;
+        sh:severity sh:Warning ;
     ], [ # tidsrom
 	    sh:class dct:PeriodOfTime ;
         sh:path dct:temporal ;
@@ -319,7 +319,7 @@
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
         sh:path dct:creator ;
-        sh:message "dct:creator skal være en IRI"@nb ;
+        sh:message "dct:creator skal være en IRI og kan ha maks. én verdi"@nb ;
         sh:severity sh:Violation
     ], [ # refererer til 
         sh:nodeKind sh:BlankNodeOrIRI ;
@@ -434,11 +434,11 @@
         sh:severity sh:Violation
      ], [ # kontaktpunkt 
         sh:or (
-            [ sh:class vcard:Kind ]
+            [ sh:class vcard:Group ]
             [ sh:class vcard:Organization ] ) ;
         sh:path dcat:contactPoint ;
-        sh:message "dcat:contactPoint skal referere til en instans av vcard:Kind eller vcard:Organization"@nb ;
-        sh:severity sh:Violation 
+        sh:message "dcat:contactPoint skal referere til en instans av vcard:Group eller vcard:Organization"@nb ;
+        sh:severity sh:Warning; 
      ], [ # tema 
 #        sh:class skos:Concept ;
         sh:nodeKind sh:IRI ;
@@ -451,11 +451,11 @@
         sh:message "dcat:servesDataset skal referere til en instans av dcat:Dataset"@nb ;
         sh:severity sh:Violation
     ], [ # utgiver
-        sh:minCount 1 ;
+        sh:maxCount 1 ;
 #        sh:class foaf:Agent ;
         sh:nodeKind sh:IRI ;
         sh:path dct:publisher ;
-        sh:message "dct:publisher skal ha minst én verdi som skal være IRI"@nb ; 
+        sh:message "dct:publisher kan ha maks. én verdi som skal være IRI"@nb ; 
         sh:severity sh:Violation
     ], [ # beskrivelse
         sh:nodeKind sh:Literal ;
@@ -524,7 +524,7 @@
         sh:minCount 1 ;
         sh:nodeKind sh:BlankNodeOrIRI;
         sh:path dcat:accessURL ;
-        sh:message "dcat:accessURL skal ha minst én verdi som skal være IRI"@nb ;
+        sh:message "dcat:accessURL skal ha minst én verdi som skal være IRI eller Blank node"@nb ;
         sh:severity sh:Violation
     ], [ # beskrivelse
         sh:nodeKind sh:Literal ;
@@ -538,14 +538,7 @@
         sh:path dct:format ;
         sh:message "dct:format skal være IRI"@nb ;
         sh:severity sh:Violation
-    ], [ # lisens, sjekker kun klasse her
-#        sh:class dct:LicenseDocument ;
-        sh:nodeKind sh:IRI ;
-#        sh:maxCount 1 ;
-        sh:path dct:license ;
-        sh:message "dct:license skal være IRI"@nb ;
-        sh:severity sh:Violation ;
-    ], [ # lisens, sjekker kun maks. antall her
+    ], [ # lisens, sjekker type og maks. antall her
 #        sh:class dct:LicenseDocument ;
         sh:nodeKind sh:IRI ;
         sh:maxCount 1 ;
@@ -699,7 +692,7 @@
         sh:minCount 1 ;
         sh:maxCount 1 ;
         sh:path skos:notation ;
-        sh:message "skos:notation skal ha én og bare én verd"@nb ;
+        sh:message "skos:notation skal ha én og bare én verdi"@nb ;
         sh:severity sh:Violation
     ] ;
     # sh:targetClass adms:Identifier ;
@@ -808,12 +801,12 @@
         sh:class dcat:Catalog ;
         sh:maxCount 1 ;
         sh:path dct:isPartOf ;
-        sh:message "dct:isPartOf kan ha maks. én verdi som skal referere til en instnas av dcat:Catalog"@nb ;
+        sh:message "dct:isPartOf kan ha maks. én verdi som skal referere til en instans av dcat:Catalog"@nb ;
         sh:severity sh:Violation
     ], [ # har del 
         sh:class dcat:Catalog ;
         sh:path dct:hasPart ;
-        sh:message "dct:hasPart skal referere til en instnas av dcat:Catalog"@nb ;
+        sh:message "dct:hasPart skal referere til en instans av dcat:Catalog"@nb ;
         sh:severity sh:Violation
     ], [ # katalog 
         sh:class dcat:Catalog ;
@@ -1139,7 +1132,7 @@
 #        sh:class eli:ResourceType ;
         sh:nodeKind sh:IRI ;
         sh:path dct:type ;
-        sh:message "dct:type skal være IRI"@nb ;
+        sh:message "dct:type skal ha minst én verdi som skal være IRI"@nb ;
         sh:severity sh:Violation
     ], [ # beskrivelse
         sh:nodeKind sh:Literal ;
@@ -1192,7 +1185,7 @@
         sh:maxCount 1 ;
         sh:minCount 1 ;
         sh:path spdx:algorithm ;
-        sh:message "spdx:algorithm skal ha én og bare én vedi som skal være spdx:checksumAlgorithm_sha1"@nb ;
+        sh:message "spdx:algorithm skal ha én og bare én verdi som skal være spdx:checksumAlgorithm_sha1"@nb ;
         sh:severity sh:Violation
     ], [ # sjekksumverdi
         sh:datatype xsd:hexBinary ;
@@ -1283,13 +1276,13 @@
         sh:class time:Instant ;
         sh:maxCount 1 ;
         sh:path time:hasBeginning ;
-        sh:message "time:hasBeginning kan ha maks. én verdi"@nb ;
+        sh:message "time:hasBeginning kan ha maks. én verdi som skal referere til en instans av time:Instant"@nb ;
         sh:severity sh:Violation
     ], [ # slutt
         sh:class time:Instant ;
         sh:maxCount 1 ;
         sh:path time:hasEnd ;
-        sh:message "time:hasEnd kan ha maks. én verdi"@nb ;
+        sh:message "time:hasEnd kan ha maks. én verdi som skal referere til en instans av time:Instant"@nb ;
         sh:severity sh:Violation
     ] ;
     sh:targetClass dct:PeriodOfTime .
@@ -1490,7 +1483,6 @@
         sh:or (
           [sh:hasValue <http://purl.org/adms/publishertype/1.0>]
           [sh:hasValue <https://purl.org/adms/publishertype/1.0>] ) ;
-        sh:minCount 1 ;
         sh:message "Verdien skal hentes fra kontrollert vokabular http://purl.org/adms/publishertype/1.0"@nb ;
         sh:path skos:inScheme
     ] .
@@ -1505,7 +1497,6 @@
         sh:or (
           [sh:hasValue <http://purl.org/adms/status/1.0>]
           [sh:hasValue <https://purl.org/adms/status/1.0>] );
-        sh:minCount 1 ;
         sh:message "Verdien skal hentes fra kontrollert vokabular http://purl.org/adms/status/1.0"@nb ;
         sh:path skos:inScheme
     ] .
@@ -1520,7 +1511,6 @@
         sh:or (
           [sh:hasValue <http://publications.europa.eu/resource/authority/resource-type>]
           [sh:hasValue <https://publications.europa.eu/resource/authority/resource-type>] );
-        sh:minCount 1 ;
         sh:message "Verdien skal hentes fra kontrollert vokabular http://publications.europa.eu/resource/authority/resource-type"@nb ;
         sh:path skos:inScheme
     ] .
