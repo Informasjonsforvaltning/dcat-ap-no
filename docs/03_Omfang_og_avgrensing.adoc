@@ -1,4 +1,4 @@
-= Omfang og avgrensing [[Omfang-og-avgresing]]
+= Omfang og avgrensing [[Omfang-og-avgrensing]]
 
 Standarden er anbefalt brukt for å beskrive datasett og datatjenester, samt kataloger med datasett og datatjenester. Den vil gjelde for alle datasett (inkludert åpne data) og datatjenester i offentlig sektor
 __som beskrives med tanke på oppføring i en
