@@ -5,7 +5,7 @@
 <<diagram-Klassen-Sjekksum>> viser klassen Sjekksum og dens egenskaper.  
 
 [[diagram-Klassen-Sjekksum]]
-.Klassen Sjekksum og dens egenskap.
+.Klassen Sjekksum og dens egenskaper.
 [link=images/Klassen-Sjekksum.png]
 image::images/Klassen-Sjekksum.png[]
 

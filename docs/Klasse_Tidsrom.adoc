@@ -5,7 +5,7 @@
 <<diagram-Klassen-Tidsrom>> viser klassen Tidsrom og dens egenskaper.  
 
 [[diagram-Klassen-Tidsrom]]
-.Klassen Tidsrom og dens egenskap.
+.Klassen Tidsrom og dens egenskaper.
 [link=images/Klassen-Tidsrom.png]
 image::images/Klassen-Tidsrom.png[]
 
