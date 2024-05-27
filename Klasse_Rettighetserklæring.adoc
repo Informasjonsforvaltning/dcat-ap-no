@@ -5,7 +5,7 @@
 <<diagram-Klassen-Rettighetserklæring>> viser klassen Rettighetserklæring og dens egenskaper.  
 
 [[diagram-Klassen-Rettighetserklæring]]
-.Klassen Rettighetserklæring og dens egenskap.
+.Klassen Rettighetserklæring og dens egenskaper.
 [link=images/Klassen-Rettighetserklæring.png]
 image::images/Klassen-Rettighetserklæring.png[]
 
