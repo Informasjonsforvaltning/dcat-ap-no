@@ -23,7 +23,7 @@ include::shared/download.adoc[]
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/dcat-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
 
-*Lisens*: https://creativecommons.org/licenses/by/4.0/[CC-BY 4.0] +
+*Lisens*: https://creativecommons.org/licenses/by/4.0/[CC-BY 4.0 &#x29C9;, window="_blank", role="ext-link"] +
 *Status*: #Redaktørens utkast# +
 *Versjon*: #Utkast til høringsversjon# (se <<Endringslogg>>) +
 *Oppdatert*: #løpende oppdateres#  +
