@@ -21,7 +21,7 @@ Denne versjonen er basert på EUs DCAT-AP, istedenfor EUs BRegDCAT-AP som forrig
 
 Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <<Samsvarskrav>> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP. 
 
-Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper (se https://www.w3.org/TR/vocab-dcat-3/#inverse-properties[§ 7 i DCAT &#x29C9;, window="_blank", role="ext-link"]), at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
+Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper, at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
 
 Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper. 
 
