@@ -144,7 +144,7 @@ include::Spesielle_temaer.adoc[]
 // Appendix, section number off
 :sectnums!:
 
-include::07_Oversikt_over_URIer.adoc[]
+include::Navnerom.adoc[]
 
 include::Oversikt_over_norske_utvidelser.adoc[]
 

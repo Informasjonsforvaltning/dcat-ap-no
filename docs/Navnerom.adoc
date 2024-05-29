@@ -1,4 +1,4 @@
-= Vedlegg A - URIer som brukes i standarden [[URIer-i-bruk]]
+= Vedlegg A - Navnerom som brukes i standarden [[URIer-i-bruk]]
 
 Navnerom for denne standarden er  \https://data.norge.no/vocabulary/dcatno#, vanligvis ved prefiks `dcatno`. 
 
