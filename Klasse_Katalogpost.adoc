@@ -45,7 +45,7 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 |===
 | _English name_ |  _primary topic_
 | URI | foaf:primaryTopic
-| Verdiområde / _Range_ | dcat:Resource
+| Verdiområde / _Range_ | <<KatalogisertRessurs, dcat:Resource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å lenke katalogposten til ressursen som er beskrevet i katalogposten.
 
 _This property is used to link to the resource (Dataset, Data service etc.) described in the record._
@@ -61,7 +61,7 @@ _This property is used to link to the resource (Dataset, Data service etc.) desc
 |===
 | _English name_ |  _application profile_
 | URI | dct:conformsTo
-| Verdiområde / _Range_ | dct:Standard
+| Verdiområde / _Range_ | <<Standard, dct:Standard>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en applikasjonsprofil som den katalogiserte ressursens metadata er i samsvar med.
 
 _This property is used to refer to an Application Profile that the Catalogued Resource's metadata conforms to._

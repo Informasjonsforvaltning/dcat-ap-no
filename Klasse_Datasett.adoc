@@ -15,7 +15,7 @@ image::images/Klassen-Datasett.png[]
 |===
 | _English name_ | _Dataset_
 | URI | dcat:Dataset
-| Subklasse av / _Subclass of_ | dcat:Resource
+| Subklasse av / _Subclass of_ | <<KatalogisertRessurs, dcat:Resource>>
 | Anvendelse / _Usage note_ | Klassen brukes til å representere et datasett, dvs. en konseptuell entitet som representerer publisert informasjon.
 
 _This class is used to represent a conceptual entity that represents the information published._
@@ -44,7 +44,7 @@ _This property is used to specify a free-text account of the Dataset.This proper
 |===
 | _English name_ | _contact point_
 | URI | dcat:contactPoint
-| Verdiområde / _Range_ | vcard:Kind
+| Verdiområde / _Range_ | <<Kontaktopplysning, vcard:Kind>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentarer om datasettet.
 
 _This property is used to specify contact information that can be used concerning questions and comments about the Dataset._
@@ -100,7 +100,7 @@ _This property is used to specify a name given to the dataset. This property can
 |===
 | _English name_ | _publisher_
 | URI |  dct:publisher
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
 
 _This property is used to specify the entity (organisation) responsible for making the Dataset available._
@@ -174,7 +174,7 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _dataset distribution_
 | URI | dcat:distribution
-| Verdiområde / _Range_ | dcat:Distribution
+| Verdiområde / _Range_ | <<Distribusjon, dcat:Distribution>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tilgjengelig distribusjon for datasettet.
 
 _This property is used to refer to an available Distribution for the Dataset._
@@ -223,7 +223,7 @@ _This property is used to specify a keyword or tag describing the Dataset._
 |===
 | _English name_ | _applicable legislation_
 | URI | dcatap:applicableLegislation
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller behandling av datasettet.
 
 _This property is used to refer to the legislation that mandates the creation or management of the Dataset._
@@ -240,7 +240,7 @@ _Norwegian extension: The requirement level changed from optional to recommended
 |===
 | _English name_ | _temporal coverage_
 | URI | dct:temporal
-| Verdiområde / _Range_ | dct:PeriodOfTime
+| Verdiområde / _Range_ | <<Tidsrom, dct:PeriodOfTime>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et tidsrom som er dekket av datasettet.
 
 _This property is used to specify a temporal period that the Dataset covers._
@@ -277,7 +277,7 @@ _Norwegian extension: The requirement level is changed from optional to recommen
 |===
 | _English name_ | _other identifier_
 | URI | adms:identifier
-| Verdiområde / _Range_ | adms:Identifier
+| Verdiområde / _Range_ | <<Identifikator, adms:Identifier>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en sekundær identifikator av datasettet som http://archive.stsci.edu/pub_dsn.html[MAST/ADS &#x29C9;, window="_blank", role="ext-link"], https://datacite.org/[DataCite &#x29C9;, window="_blank", role="ext-link"], http://www.doi.org/[DOI &#x29C9;, window="_blank", role="ext-link"], https://ezid.cdlib.org/[EZID &#x29C9;, window="_blank", role="ext-link"] eller https://w3id.org/[W3ID &#x29C9;, window="_blank", role="ext-link"].
 
 __This property is used to specify a secondary identifier of the Dataset, such as http://archive.stsci.edu/pub_dsn.html[MAST/ADS &#x29C9;, window="_blank", role="ext-link"], https://datacite.org/[DataCite &#x29C9;, window="_blank", role="ext-link"], http://www.doi.org/[DOI &#x29C9;, window="_blank", role="ext-link"], https://ezid.cdlib.org/[EZID &#x29C9;, window="_blank", role="ext-link"] or https://w3id.org/[W3ID &#x29C9;, window="_blank", role="ext-link"].__
@@ -305,7 +305,7 @@ _This property is used to refer to a page or document about this Dataset._
 |===
 | _English name_ | _sample_
 | URI | adms:sample
-| Verdiområde / _Range_ | dcat:Distribution
+| Verdiområde / _Range_ | <<Distribusjon, dcat:Distribution>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til eksempeldata.
 
 _This property is used to refer to a sample distribution of the dataset._
@@ -412,7 +412,7 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 | _English name_ | _has cost_
 | URI | cv:hasCost
-| Verdiområde / _Range_ | cv:Cost
+| Verdiområde / _Range_ | <<Gebyr, cv:Cost>>
 | Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (`cv:Cost`), for å oppgi prisinfomasjonen og utrekningsgrunnlaget for gebyr for bruk av datasettet.
 
 _This property is used to refer to one or more instances of the Cost class, to specify information about the cost for reusing the dataset._
@@ -426,7 +426,7 @@ _This property is used to refer to one or more instances of the Cost class, to s
 |===
 | _English name_ | _has quality annotation_
 | URI | dqv:hasQualityAnnotation
-| Verdiområde / _Range_ | dqv:QualityAnnotation
+| Verdiområde / _Range_ | https://data.norge.no/specification/dqv-ap-no#Kvalitetsnote[dqv:QualityAnnotation &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en kvalitetsmerknad. 
 
 _This property is used to refer to a quality annotation._
@@ -451,7 +451,7 @@ hvor `dqvno:isAuthoritative` er en predefinert instans av klassen Kvalitetsserti
 |===
 | _English name_ | _has quality measurement_
 | URI | dqv:hasQualityMeasurement
-| Verdiområde / _Range_ | dqv:QualityMeasurement
+| Verdiområde / _Range_ | https://data.norge.no/specification/dqv-ap-no#M%C3%A5leresultat[dqv:QualityMeasurement &#x29C9;, window="_blank", role="ext-link"]
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en måleresultat. 
 
 _This property is used to refer to a quality measurement._
@@ -489,7 +489,7 @@ _This property is used to refer to a related Dataset that is a version, edition,
 |===
 | _English name_ | _conforms to_
 | URI | dct:conformsTo
-| Verdiområde / _Range_ | dct:Standard
+| Verdiområde / _Range_ | <<Standard, dct:Standard>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en implementasjonsregel eller annen spesifikasjon, som ligger til grunn for opprettelsen av datasettet.
 
 _This property is used to refer to an implementing rule or other specification._
@@ -503,7 +503,7 @@ _This property is used to refer to an implementing rule or other specification._
 |===
 | _English name_ | _in series_
 | URI | dcat:inSeries
-| Verdiområde / _Range_ | dcat:DatasetSeries
+| Verdiområde / _Range_ | <<Datasettserie, dcat:DatasetSeries>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en datasett serie som dette datasett er del av.
 
 _This property is used to refer to a dataset series of which the dataset is part._
@@ -596,7 +596,7 @@ _This property is used to refer to an Agent having some form of responsibility f
 |===
 | _English name_ | _qualified relation_
 | URI | dcat:qualifiedRelation
-| Verdiområde / _Range_ | dcat:Relationship
+| Verdiområde / _Range_ | <<Relasjon, dcat:Relationship>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en beskrivelse av en relasjon til en annen ressurs.
 
 _This property is used to refer to a description of a relationship with another resource._
@@ -638,7 +638,7 @@ _This property is used to refer to a statement about the lineage of a Dataset._
 |===
 | _English name_ | _creator_
 | URI | dct:creator
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til aktøren som er produsent av datasettet.
 
 _This property is used to refer to an entity responsible for producing the dataset._
