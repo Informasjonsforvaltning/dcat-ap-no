@@ -42,7 +42,7 @@ _This property is used to specify a free-text account of the Catalogue. This pro
 |===
 | _English name_ | _contact point_
 | URI | dcat:contactPoint
-| Verdiområde / _Range_ | vcard:Kind
+| Verdiområde / _Range_ | <<Kontaktopplysning, vcard:Kind>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentarer om katalogen.
 
 _This property is used to specify contact information that can be used concerning questions and comments about the Catalog._
@@ -73,7 +73,7 @@ _This property is used to specify a name given to the Catalogue. This property c
 |===
 | _English name_ | _publisher_
 | URI | dct:publisher
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Verdien bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
 
 _This property is used to refer to an entity (organisation) responsible for making the Catalogue available._
@@ -92,7 +92,7 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 |===
 | _English name_ |  _dataset_
 | URI | dcat:dataset
-| Verdiområde / _Range_ | dcat:Dataset
+| Verdiområde / _Range_ | <<Datasett, dcat:Dataset>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som er en del av katalogen. Gjelder også datasettserie som er subklasse av datasett. (#@@@@@@ NB! Sjekk hva EU endelig velger her! #)
 
 _This property is used to refer to a Dataset that is part of the Catalogue. This also applies to Dataset series which is a subclass of Dataset._
@@ -106,7 +106,7 @@ _This property is used to refer to a Dataset that is part of the Catalogue. This
 |===
 | _English name_ |  _service_
 | URI | dcat:service
-| Verdiområde / _Range_ | dcat:DataService
+| Verdiområde / _Range_ | <<Datatjeneste, dcat:DataService>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en datatjeneste som er oppført i katalogen.
 
 _This property is used to refer to a Data Service that is listed in the Catalogue._
@@ -245,7 +245,7 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 |===
 | _English name_ | _applicable legislation_
 | URI | dcatap:applicableLegislation
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller forvaltning av katalogen.
 
 _This property is used to refer to the legislation that mandates the creation or management of the Catalogue._
@@ -301,7 +301,7 @@ _This property is used to refer to a catalogue whose contents are of interest in
 |===
 | _English name_ |  _record_
 | URI | dcat:record
-| Verdiområde / _Range_ | dcat:CatalogRecord
+| Verdiområde / _Range_ | <<Katalogpost, dcat:CatalogRecord>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en katalogpost som er del av katalogen.
 
 _This property is used to refer to a Catalogue Record that is part of the Catalogue._
@@ -315,7 +315,7 @@ _This property is used to refer to a Catalogue Record that is part of the Catalo
 |===
 | _English name_ |  _creator_
 | URI | dct:creator
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til aktøren som er hovedansvarlig for å produsere katalogen.
 
 _This property is used to refer to an entity responsible for the creation of the catalogue._
@@ -329,7 +329,7 @@ _This property is used to refer to an entity responsible for the creation of the
 |===
 | _English name_ |  _rights (use terms)_
 | URI | dct:rights
-| Verdiområde / _Range_ | odrs:RightsStatement
+| Verdiområde / _Range_ | <<Rettighetserklæring, odrs:RightsStatement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere uttalelse som spesifiserer brukervilkår knyttet til katalogen.
 
 _This property is used to refer to a statement that specifies rights associated with the Catalogue._
@@ -343,7 +343,7 @@ _This property is used to refer to a statement that specifies rights associated 
 |===
 | _English name_ | _temporal coverage_
 | URI | dct:temporal
-| Verdiområde / _Range_ | dct:PeriodOfTime
+| Verdiområde / _Range_ | <<Tidsrom, dct:PeriodOfTime>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et tidsrom som er dekket av katalogen.
 
 _This property is used to specify a temporal period that the Catalogue covers._

@@ -184,7 +184,7 @@ _This property is used to specify the size of a Distribution in bytes._
 |===
 | _English name_ | _applicable legislation_
 | URI | dcatap:applicableLegislation
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller forvaltning av distribusjonen.
 
 _This property is used to refer to the legislation that mandates the creation or management of the Distribution._
@@ -198,7 +198,7 @@ _This property is used to refer to the legislation that mandates the creation or
 |===
 | _English name_ | _linked schemas_
 | URI | dct:conformsTo
-| Verdiområde / _Range_ | dct:Standard
+| Verdiområde / _Range_ | <<Standard, dct:Standard>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et etablert skjema som distribusjonen er i samsvar med.
 
 _This property is used to refer to an established schema to which the described Distribution conforms._
@@ -299,7 +299,7 @@ __This property is used to refer to the policy that describes the rights related
 |===
 | _English name_ | _rights_
 | URI | dct:rights
-| Verdiområde / _Range_ | odrs:RightsStatement
+| Verdiområde / _Range_ | <<Rettighetserklæring, odrs:RightsStatement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en uttalelse som angir rettigheter knyttet til distribusjonen.
 
 _This property is used to refer to a statement that specifies rights associated with the Distribution._
@@ -326,7 +326,7 @@ _This property is used to refer to the minimum spatial separation resolvable in 
 |===
 | _English name_ | _checksum_
 | URI | spdx:checksum
-| Verdiområde / _Range_ | spdx:Checksum
+| Verdiområde / _Range_ | <<Sjekksum, spdx:Checksum>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til sjekksuminformasjon (en mekanisme for å verifisere at innhold i en distribusjon ikke har endret seg). Sjekksummen er relatert til nedlastningslenken. 
 
 _This property is used to refer to a mechanism that can be used to verify that the contents of a distribution have not changed. The checksum is related to the downloadURL._
@@ -371,7 +371,7 @@ _This property is used to refer specify the minimum time period resolvable in th
 |===
 | _English name_ | _access service_
 | URI | dcat:accessService
-| Verdiområde / _Range_ | dcat:DataService
+| Verdiområde / _Range_ | <<Datatjeneste, dcat:DataService>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en datatjeneste som gir tilgang til distribusjonen av datasettet.
 
 _This property is used to refer to a data service that gives access to the distribution of the dataset._

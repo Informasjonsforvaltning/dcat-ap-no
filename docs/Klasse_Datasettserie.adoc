@@ -15,7 +15,7 @@ image::images/Klassen-Datasettserie.png[]
 |===
 | _English name_ | _Dataset series_
 | URI | dcat:DatasetSeries
-| Subklasse av / _Subclass of_ | dcat:Dataset
+| Subklasse av / _Subclass of_ | <<Datasett, dcat:Dataset>>
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en samling av datasett som publiseres separat, men som deler noen felles egenskaper som gjør at de er gruppert sammen. Se også <<Om-Datasettserie>>.
 
 _This class is used to represent a collection of datasets that are published separately, but share some characteristics that group them._ 
@@ -29,7 +29,7 @@ _This class is used to represent a collection of datasets that are published sep
 |===
 | _English name_ | _contact point_
 | URI | dcat:contactPoint
-| Verdiområde / _Range_ | vcard:Kind
+| Verdiområde / _Range_ | <<Kontaktopplysning, vcard:Kind>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentarer om datasettserien.
 
 _This property is used to specify contact information that can be used concerning questions and comments about the Dataset serie._
@@ -85,7 +85,7 @@ _This property is used to specify a name given to the Dataset Series. This prope
 |===
 | _English name_ | _publisher_
 | URI |  dct:publisher
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettserien tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
 
 _This property is used to specify the entity (organisation) responsible for making the Dataset serie available._
@@ -145,7 +145,7 @@ __Norwegian extension: To specify spatial coverage in Norway, the Norwegian Mapp
 |===
 | _English name_ | _first_
 | URI | dcat:first
-| Verdiområde / _Range_ | dcat:Dataset
+| Verdiområde / _Range_ | <<Datasett, dcat:Dataset>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til den første ressursen i en ordnet samling eller serie av datasett.
 
 _This property is used to refer to the first resource in an ordered collection or series of resources, to which the current resource belongs._
@@ -159,7 +159,7 @@ _This property is used to refer to the first resource in an ordered collection o
 |===
 | _English name_ | _applicable legislation_
 | URI | dcatap:applicableLegislation
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller behandling av datasettserien.
 
 _This property is used to refer to the legislation that mandates the creation or management of the Dataset serie._
@@ -176,7 +176,7 @@ _Norwegian extension: The requirement level changed from optional to recommended
 |===
 | _English name_ | _last_
 | URI | dcat:last
-| Verdiområde / _Range_ | dcat:Dataset
+| Verdiområde / _Range_ | <<Datasett, dcat:Dataset>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til den siste ressursen i en ordnet samling eller serie av datasett.
 
 _This property is used to refer to the last resource in an ordered collection or series of resources, to which the current resource belongs._
@@ -190,7 +190,7 @@ _This property is used to refer to the last resource in an ordered collection or
 |===
 | _English name_ | _temporal coverage_
 | URI | dct:temporal
-| Verdiområde / _Range_ | dct:PeriodOfTime
+| Verdiområde / _Range_ | <<Tidsrom, dct:PeriodOfTime>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et tidsrom som er dekket av datasettserien.
 
 _This property is used to specify a temporal period that the Dataset serie covers._

@@ -15,7 +15,7 @@ image::images/Klassen-Datatjeneste.png[]
 |===
 | _English name_ | _Data service_
 | URI | dcat:DataService
-| Subklasse av / _Subclass of_ | dcat:Resource
+| Subklasse av / _Subclass of_ | <<KatalogisertRessurs, dcat:Resource>>
 | Beskrivelse | Klassen brukes til å representere en datatjeneste, dvs. en samling av operasjoner som gir tilgang til ett eller flere datasett eller databehandlingsfunksjoner.
 
 _This class is used to represent a data service, i.e., a collection of operations that provides access to one or more datasets or data processing functions._
@@ -47,7 +47,7 @@ _Norwegian extension: The multiplicity is changed from 1..n to 1..1._
 |===
 | _English name_ | _contact point_
 | URI | dcat:contactPoint
-| Verdiområde / _Range_ | vcard:Kind
+| Verdiområde / _Range_ | <<Kontaktopplysning, vcard:Kind>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
 
 _This property is used to specify contact information that can be used for sending comments about the Data Service._
@@ -129,7 +129,7 @@ _Norwegian extension: The requirement level changed from optional to recommended
 |===
 | _English name_ | _applicable legislation_
 | URI | dcatap:applicableLegislation
-| Verdiområde / _Range_ | eli:LegalResource
+| Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller forvaltning av datatjenesten.
 
 _This property is used to refer to the legislation that mandates the creation or management of the Data Service._
@@ -146,7 +146,7 @@ _Norwegian extension: The requirement level changed from optional to recommended
 |===
 | _English name_ | _application profile_
 | URI | dct:conformsTo
-| Verdiområde / _Range_ | dct:Standard
+| Verdiområde / _Range_ | <<Standard, dct:Standard>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en etablert (teknisk) standard som datatjenesten er i samsvar med.
 
 _This property is used to refer to an established (technical) standard to which the Data Service conforms._
@@ -182,7 +182,7 @@ __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, wind
 |===
 | _English name_ | _serves dataset_
 | URI | dcat:servesDataset
-| Verdiområde / _Range_ | dcat:Dataset
+| Verdiområde / _Range_ | <<Datasett, dcat:Dataset>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som datatjenesten kan distribuere.
 
 _This property is used to refer to a collection of data that this data service can distribute._
@@ -196,7 +196,7 @@ _This property is used to refer to a collection of data that this data service c
 |===
 | _English name_ | _publisher_
 | URI | dct:publisher
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
 
 _This property is used to refer the the agent (organisation) responsible for making the data service available._
