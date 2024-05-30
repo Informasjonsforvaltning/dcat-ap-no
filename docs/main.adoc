@@ -1,5 +1,6 @@
 include::locale/attributes.adoc[]
 = Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
+Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency
 :doctype: book
 :docinfo: shared
 :icons: font
