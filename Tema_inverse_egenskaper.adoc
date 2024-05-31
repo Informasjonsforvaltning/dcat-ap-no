@@ -8,7 +8,7 @@ Følgende inverse egenskaper kan brukes:
 
 [cols="50s,50"]
 |===
-| Egenskap i DCAT-AP-NO | Invers egenskap som kan brukes i tillegg
+| Egenskap i DCAT-AP-NO | **Invers egenskap som kan brukes i tillegg**
 | dcat:prev | dcat:next
 | dcat:previousVersion | dcat:nextVersion
 | dcat:distribution | dcat:isDistributionOf
