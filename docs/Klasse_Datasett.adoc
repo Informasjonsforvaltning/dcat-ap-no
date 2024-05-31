@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Datasett>> viser klassen Datasett og dens egenskaper, samt klassene den refererer til.  
+<<diagram-Klassen-Datasett>> viser klassen Datasett og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult. 
 
 [[diagram-Klassen-Datasett]]
 .Klassen Datasett og klassene den refererer til.

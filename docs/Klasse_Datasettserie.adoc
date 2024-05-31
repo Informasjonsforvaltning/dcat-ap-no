@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Datasettserie>> viser klassen Datasettserie og dens egenskaper, samt klassene den refererer til.  
+<<diagram-Klassen-Datasettserie>> viser klassen Datasettserie og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.  
 
 [[diagram-Klassen-Datasettserie]]
 .Klassen Datasettserie og klassene den refererer til.

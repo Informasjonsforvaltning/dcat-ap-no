@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-DCAT-AP-NO-klasser>> viser en oversikt over klassene som er spesifisert i DCAT-AP-NO samt relasjoner mellom noen av nøkkelklassene. Med tanke på lesbarhet er flere klasser bare listet opp for oversikts skyld, uten at relasjoner til/fra dem er vist i figuren. 
+<<diagram-DCAT-AP-NO-klasser>> viser en oversikt over klassene som er spesifisert i DCAT-AP-NO samt relasjoner mellom noen av nøkkelklassene. I tegningen er norske utvidelser markert i gult. Med tanke på lesbarhet er flere klasser bare listet opp for oversikts skyld, uten at relasjoner til/fra dem er vist i figuren. 
 
 [[diagram-DCAT-AP-NO-klasser]]
 .Oversikt klassene i DCAT-AP-NO og relasjoner mellom dem.
