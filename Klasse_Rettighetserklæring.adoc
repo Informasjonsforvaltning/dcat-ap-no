@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Rettighetserklæring>> viser klassen Rettighetserklæring og dens egenskaper.  
+<<diagram-Klassen-Rettighetserklæring>> viser klassen Rettighetserklæring og dens egenskaper. I tegningen er norske utvidelser markert i gult.   
 
 [[diagram-Klassen-Rettighetserklæring]]
 .Klassen Rettighetserklæring og dens egenskaper.

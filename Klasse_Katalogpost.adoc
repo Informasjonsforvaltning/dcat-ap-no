@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Katalogpost>> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til.  
+<<diagram-Klassen-Katalogpost>> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.  
 
 [[diagram-Klassen-Katalogpost]]
 .Klassen Katalogpost og klassene den refererer til.

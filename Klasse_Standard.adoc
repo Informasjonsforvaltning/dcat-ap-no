@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Standard>> viser klassen Standard og dens egenskaper.  
+<<diagram-Klassen-Standard>> viser klassen Standard og dens egenskaper. I tegningen er norske utvidelser markert i gult.  
 
 [[diagram-Klassen-Standard]]
 .Klassen Standard og dens egenskaper.

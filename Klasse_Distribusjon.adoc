@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Distribusjon>> viser klassen Distribusjon og dens egenskaper, samt klassene den refererer til.  
+<<diagram-Klassen-Distribusjon>> viser klassen Distribusjon og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.  
 
 [[diagram-Klassen-Distribusjon]]
 .Klassen Distribusjon og klassene den refererer til.
