@@ -120,7 +120,7 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 | _English name_ | _copyright holder_
 | URI | odrs:copyrightHolder
-| Verdiområde / _Range_ | foaf:Agent
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en opphavsrettsinnehaver til innholdet i datasettet. 
 
 _This property is used to refer to the agent/organization that holds copyright over the content of the dataset._
