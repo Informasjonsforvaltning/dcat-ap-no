@@ -1,5 +1,7 @@
 = Noen spesielle temaer [[Spesielle-temaer]]
 
+_Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen._
+
 include::Tema_datasett_datatjeneste_distribusjon.adoc[]
 
 include::Tema_datasettserie.adoc[]
