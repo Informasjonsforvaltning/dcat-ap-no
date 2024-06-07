@@ -6,11 +6,11 @@ Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbesk
 
 :xrefstyle: short
 
-Standarden inneholder nå tre hoveddeler i tillegg til vedleggene:
+Standarden inneholder nå tre hoveddeler i tillegg til det innledende kapittelet og vedleggene:
 
-* <<Forenklet-fremstilling>> som inneholder en forenklet fremstilling av de viktigste kravene i standarden. Denne delen er ment for den ikke-tekniske målgruppen. 
+* <<Forenklet-fremstilling>>  inneholder en forenklet fremstilling av de viktigste kravene i standarden. Denne delen er ment for den ikke-tekniske målgruppen. 
 
-* <<Spesifikasjon-per-klasse>> som inneholder tekniske krav til hvordan beskrivelser av datasett, datatjenester osv. skal representeres i RDF. Denne delen er ment for den tekniske målgruppen.  
+* <<Spesifikasjon-per-klasse>>  inneholder tekniske krav til hvordan beskrivelser av datasett, datatjenester osv. skal representeres i RDF. Denne delen er ment for den tekniske målgruppen.  
 ** Hver klasse og dens egenskaper er samlet i samme kapittel, istedenfor to separate kapitler i forrige versjon.
 ** Krav til bruk av kontrollerte vokabularer er nå tatt med som merknader til de aktuelle egenskapene, istedenfor i eget kapittel i forrige versjon. 
 ** Eventuelle norske utvidelser sammenlignet med DCAT-AP og DCAT, er dokumentert sammen med spesifikasjonen av den aktuelle klassen/egenskapen, i tillegg til en samlet oversikt i <<Oversikt-norske-utvidelser>>. 
@@ -20,13 +20,13 @@ Standarden inneholder nå tre hoveddeler i tillegg til vedleggene:
 *** Tabellene har fått nye ledetekster.
 *** Det er nå også tatt med engelsk tekst, primært ment for engelsktalende utviklere av verktøystøtte. 
 
-* <<Spesielle-temaer>> som inneholder forklaring/veiledning til hvordan DCAT-AP-NO er tenkt brukt i noen spesifikke brukstilfeller. Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen. Sammen med eksemplene gitt i <<Spesifikasjon-per-klasse>>, skal denne delen erstatte en separat veileder for hvordan standarden skal brukes.   
+* <<Spesielle-temaer>> inneholder forklaring/veiledning til hvordan DCAT-AP-NO er tenkt brukt i noen spesifikke brukstilfeller. Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen. Denne delen sammen med eksemplene gitt i standarden, skal (over tid) erstatte en separat veileder for hvordan standarden er tenkt brukt. 
 
 :xrefstyle: full
 
 == Endringer av klasser og egenskaper fra versjon 2.2 til denne versjonen
 
-Denne versjonen er basert på EUs DCAT-AP, istedenfor EUs BRegDCAT-AP som forrige versjon var basert på. EU har plan om å ha BRegDCAT-AP som et tillegg til DCAT-AP, som vi vil vurdere inkorporert når det foreligger fra EU.  EU har begynt å ikke ta med valgfrie egenskaper fra DCAT med mindre EU gjør tilpasninger, men presiserer samtidig at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT.  
+EU har begynt å ikke gjenta valgfrie egenskaper fra W3Cs DCAT med mindre EU gjør tilpasninger, men presiserer samtidig at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT (istedenfor BRegDCAT-AP som den gang inneholdt hele DCAT-AP med utvidelser). 
 
 Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <<Samsvarskrav>> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP. 
 
