@@ -49,7 +49,7 @@ toc::[]
 include::01_Om_denne_standarden.adoc[]
 
 
-include::07b_diagram.adoc[]
+include::Forenklet_fremstilling.adoc[]
 
 // include::06_Oversikt_over_klasser.adoc[]
 

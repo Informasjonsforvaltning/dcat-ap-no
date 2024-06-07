@@ -1,5 +1,7 @@
 = Forenklet fremstilling av kravene i DCAT-AP-NO [[Forenklet-fremstilling]] 
 
+_Denne delen er primært ment for den ikke-tekniske målgruppen._ 
+
 :xrefstyle: short
 
 <<img-ForenkletModell>> viser en forenklet fremstilling av kravene i DCAT-AP-NO. Den viser bare obligatoriske og anbefalte krav. Modellen er ikke ment som en formell representasjon av standarden, men kun for å gi en visuell oversikt over noen av klassene og relasjoner mellom dem. Tekniske krav til hvordan klassene og egenskapene/relasjoner skal uttrykkes i RDF er spesifisert videre i standarden. Før eventuell uoverensstemmelse mellom tegningen og den tekstlige spesifikasjonen blir rettet opp, har den tekstlige spesifikasjonen av klassene/egenskapene forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige spesifikasjoner og tegninger i resten av standarden. 
