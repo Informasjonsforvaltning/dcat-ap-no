@@ -4,8 +4,6 @@ Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbesk
 
 == Endringer av dokumentstrukturen fra versjon 2.2 til denne versjonen 
 
-Dokumentstrukturen er endret:
-
 :xrefstyle: short
 
 Standarden inneholder nå tre hoveddeler i tillegg til vedleggene:
