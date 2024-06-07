@@ -6,14 +6,25 @@ Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbesk
 
 Dokumentstrukturen er endret:
 
-* Hver klasse og dens egenskaper er samlet i samme kapittel, istedenfor to separate kapitler i forrige versjon.
-* Krav til bruk av kontrollerte vokabularer er nå tatt med som merknader til de aktuelle egenskapene, istedenfor i eget kapittel i forrige versjon. 
-* Eventuelle avvik ift. DCAT-AP er dokumentert sammen med spesifikasjonen av den aktuelle klassen/egenskapen, istedenfor i et eget kapittel i tidligere versjon. 
+:xrefstyle: short
 
-Tabeller som brukes til å spesifisere klasser og egenskaper er endret:
+Standarden inneholder nå tre hoveddeler i tillegg til vedleggene:
 
-* Tabellene har fått nye ledetekster.
-* Det er nå også tatt med engelsk tekst, primært ment for engelsktalende utviklere av verktøystøtte. 
+* <<Forenklet-fremstilling>> som inneholder en forenklet fremstilling av de viktigste kravene i standarden. Denne delen er ment for den ikke-tekniske målgruppen. 
+
+* <<Spesifikasjon-per-klasse>> som inneholder tekniske krav til hvordan beskrivelser av datasett, datatjenester osv. skal representeres i RDF. Denne delen er ment for den tekniske målgruppen.  
+** Hver klasse og dens egenskaper er samlet i samme kapittel, istedenfor to separate kapitler i forrige versjon.
+** Krav til bruk av kontrollerte vokabularer er nå tatt med som merknader til de aktuelle egenskapene, istedenfor i eget kapittel i forrige versjon. 
+** Eventuelle norske utvidelser sammenlignet med DCAT-AP og DCAT, er dokumentert sammen med spesifikasjonen av den aktuelle klassen/egenskapen, i tillegg til en samlet oversikt i <<Oversikt-norske-utvidelser>>. 
+
+** Tabeller som brukes til å spesifisere klasser og egenskaper er endret:
+
+*** Tabellene har fått nye ledetekster.
+*** Det er nå også tatt med engelsk tekst, primært ment for engelsktalende utviklere av verktøystøtte. 
+
+* <<Spesielle-temaer>> som inneholder forklaring/veiledning til hvordan DCAT-AP-NO er tenkt brukt i noen spesifikke brukstilfeller. Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen. Sammen med eksemplene gitt i <<Spesifikasjon-per-klasse>>, skal denne delen erstatte en separat veileder for hvordan standarden skal brukes.   
+
+:xrefstyle: full
 
 == Endringer av klasser og egenskaper fra versjon 2.2 til denne versjonen
 
