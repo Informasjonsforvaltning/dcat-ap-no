@@ -177,7 +177,7 @@ __Norwegian extension: To specify spatial coverage in Norway, the Norwegian Mapp
 Eksempel i RDF Turtle:
 -----
 <aDatasetSeries> a dcat:DatasetSeries ; 
-   dcat:dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ; 
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ; 
    .
 -----
 
