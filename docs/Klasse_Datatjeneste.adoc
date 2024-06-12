@@ -41,6 +41,13 @@ _This property is used to refer to the root location or primary endpoint of the 
 _Norwegian extension: The multiplicity is changed from 1..n to 1..1._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dcat:endpointURL <anEndpointURL> ; 
+   .
+-----
+
 === Datatjeneste – kontaktpunkt (dcat:contactPoint) [[Datatjeneste-kontaktpunkt]]
 
 [cols="30s,70d"]
@@ -58,6 +65,13 @@ _This property is used to specify contact information that can be used for sendi
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dcat:contactPoint <aContactPoint> ; 
+   .
+-----
+
 === Datatjeneste – tittel (dct:title) [[Datatjeneste-tittel]]
 
 [cols="30s,70d"]
@@ -72,6 +86,12 @@ _This property is used to specify the name to the data service. This property ca
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dct:title "Eksempeldatatjeneste"@nb , "Example Data Service"@en ; 
+   .
+-----
 
 == Anbefalte egenskaper for klassen _Datatjeneste_ [[Datatjeneste-anbefalte-egenskaper]]
 
@@ -89,6 +109,13 @@ _This property is used to specify keywords or tags that describe the data servic
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dcat:keyword "eksempel"@nb , "datatjeneste"@nb , "example"@en , "data service"@en ; 
+   .
+-----
+
 === Datatjeneste – endepunktsbeskrivelse (dcat:endpointDescription) [[Datatjeneste-endepunktsbeskrivelse]]
 
 [cols="30s,70d"]
@@ -102,6 +129,13 @@ _This property is used to specify a description of the services available via th
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dcat:endpointURL <anEndpointDescription> ; 
+   .
+-----
 
 === Datatjeneste – format (dct:format) [[Datatjeneste-format]]
 
@@ -123,6 +157,13 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ; 
+   .
+-----
+
 === Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation) [[Datatjeneste-gjeldendeLovgivning]]
 
 [cols="30s,70"]
@@ -140,6 +181,13 @@ _This property is used to refer to the legislation that mandates the creation or
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dcatap:applicableLegislation <https://lovdata.no/eli/lov/2006/05/19/16> ; 
+   .
+-----
+
 === Datatjeneste – i samsvar med (dct:conformsTo) [[Datatjeneste-i-samsvar-med]]
 
 [cols="30s,70d"]
@@ -153,6 +201,13 @@ _This property is used to refer to an established (technical) standard to which 
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dct:conformsTo <https://www.w3.org/TR/sparql11-protocol/> ; 
+   .
+-----
 
 === Datatjeneste – tema (dcat:theme) [[Datatjeneste-tema]]
 
@@ -176,6 +231,13 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; 
+   .
+-----
+
 === Datatjeneste – tilgjengeliggjør datasett (dcat:servesDataset) [[Datatjeneste-tilgjengeliggjor-datasett]]
 
 [cols="30s,70d"]
@@ -190,6 +252,13 @@ _This property is used to refer to a collection of data that this data service c
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dcat:servesDataset <aDataset> ; 
+   .
+-----
+
 === Datatjeneste – utgiver (dct:publisher) [[Datatjeneste-utgiver]]
 
 [cols="30s,70d"]
@@ -203,6 +272,13 @@ _This property is used to refer the the agent (organisation) responsible for mak
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Datatjeneste_ [[Datatjeneste-valgfrie-egenskaper]]
 
