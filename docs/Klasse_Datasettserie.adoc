@@ -40,6 +40,13 @@ _This property is used to specify contact information that can be used concernin
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dcat:contactPoint <aContactPoint> ; 
+   .
+-----
+
 === Datasettserie – tema (dcat:theme) [[Datasettserie-tema]]
 
 [cols="30s,70"]
@@ -65,6 +72,13 @@ __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, wind
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; 
+   .
+-----
+
 === Datasettserie – tittel (dct:title) [[Datasettserie-tittel]]
 
 [cols="30s,70"]
@@ -78,6 +92,13 @@ _This property is used to specify a name given to the Dataset Series. This prope
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dct:title "Eksempeldatasettserie"@nb , "Example Dataset Series"@en ; 
+   .
+-----
 
 === Datasettserie – utgiver (dct:publisher) [[Datasettserie-utgiver]]
 
@@ -99,6 +120,13 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 __Norwegian extension: The requirement level changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; 
+   .
+-----
+
 == Anbefalte egenskaper for klassen _Datasettserie_ [[Datasettserie-anbefalte-egenskaper]]
 
 === Datasettserie – beskrivelse (dct:description) [[Datasettserie-beskrivelse]]
@@ -117,6 +145,13 @@ _This property is used to specify a free-text account of the Dataset serie.This 
 
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dct:description "Et eksempeldatasett"@nb , "An example dataset"@en ; 
+   .
+-----
 
 === Datasettserie – dekningsområde (dct:spatial) [[Datasettserie-dekningsområde]]
 
@@ -139,6 +174,13 @@ __The value MUST be chosen from EU's controlled vocabularies https://op.europa.e
 __Norwegian extension: To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dcat:dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ; 
+   .
+-----
+
 === Datasettserie – første (dcat:first) [[Datasettserie-første]]
 
 [cols="30s,70"]
@@ -152,6 +194,13 @@ _This property is used to refer to the first resource in an ordered collection o
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dcat:first <aDataset> ; 
+   .
+-----
 
 === Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation) [[Datasettserie-gjeldendeLovgivning]]
 
@@ -170,6 +219,13 @@ _This property is used to refer to the legislation that mandates the creation or
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dcatap:applicableLegislation <https://lovdata.no/eli/lov/2006/05/19/16> ; 
+   .
+-----
+
 === Datasettserie – siste (dcat:last) [[Datasettserie-siste]]
 
 [cols="30s,70"]
@@ -183,6 +239,13 @@ _This property is used to refer to the last resource in an ordered collection or
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dcat:last <aDataset> ; 
+   .
+-----
 
 === Datasettserie – tidsrom (dct:temporal) [[Datasettserie-tidsrom]]
 
@@ -198,6 +261,12 @@ _This property is used to specify a temporal period that the Dataset serie cover
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dct:temporal <aPeriodOfTime> ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Datasettserie_ [[Datasettserie-valgfrie-egenskaper]]
 
