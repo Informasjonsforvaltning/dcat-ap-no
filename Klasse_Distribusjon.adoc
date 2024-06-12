@@ -37,6 +37,13 @@ _This property is used to refer to a URL that gives access to a Distribution of 
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDistribution> a dcat:Distribution ; 
+   dcat:accessURL <anAccessURL> ; 
+   .
+-----
+
 == Anbefalte egenskaper for klassen _Distribusjon_ [[Distribusjon-anbefalte-egenskaper]]
 
 === Distribusjon – beskrivelse (dct:description) [[Distribusjon-beskrivelse]]
@@ -56,6 +63,13 @@ _This property is used to specify a free-text account of the Distribution. This 
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDistribution> a dcat:Distribution ; 
+   dct:description "En eksempeldistribunsjon"@nb , "An Example Distribution"@en ; 
+   .
+-----
+
 === Distribusjon – format (dct:format) [[Distribusjon-format]]
 
 [cols="30s,70d"]
@@ -73,6 +87,13 @@ _This property is used to specify the file format of the Distribution._
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[File type &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDistribution> a dcat:Distribution ; 
+   dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE> ; 
+   .
+-----
+
 === Distribusjon – lisens (dct:license) [[Distribusjon-lisens]]
 
 [cols="30s,70d"]
@@ -89,6 +110,13 @@ _This property is used to refer to a licence under which the Distribution is mad
 
 __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDistribution> a dcat:Distribution ; 
+   dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ; 
+   .
+-----
 
 === Distribusjon – status (adms:status) [[Distribusjon-status]]
 
@@ -110,6 +138,13 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDistribution> a dcat:Distribution ; 
+   adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ; 
+   .
+-----
+
 === Distribusjon – tilgjengelighet (dcatap:availability) [[Distribusjon-tilgjengelighet]]
 
 [cols="30s,70d"]
@@ -130,6 +165,12 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDistribution> a dcat:Distribution ; 
+   dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/STABLE> ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Distribusjon_ [[Distribusjon-valgfrie-egenskaper]]
 
