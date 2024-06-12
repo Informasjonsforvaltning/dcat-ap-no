@@ -23,7 +23,7 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 *** Merk at selv om hverken datasettbeskrivelse eller datatjenestebeskrivelse er obligatorisk, BØR man unngå å ha tomme kataloger. 
 * En **datasett**beskrivelse 
 ** SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktpunkter
-** BØR tilgjengeliggjøres vha. distribusjoner
+** BØR tilgjengeliggjøres vha. distribusjoner og/eller datatjenester/APIer (se neste punkt om datatjenestebeskrivelse)
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller behandling av datasettet 
 * En **datatjeneste**beskrivelse 
 ** SKAL alltid inneholde opplysninger om kontaktpunker
