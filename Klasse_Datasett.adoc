@@ -38,6 +38,13 @@ _This property is used to specify a free-text account of the Dataset.This proper
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dct:description "Et eksempeldatasett"@nb , "An example dataset"@en ; 
+   .
+-----
+
 === Datasett – kontaktpunkt (dcat:contactPoint) [[Datasett-kontaktpunkt]]
 
 [cols="30s,70"]
@@ -54,6 +61,13 @@ _This property is used to specify contact information that can be used concernin
 
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dcat:contactPoint <aContactPoint> ; 
+   .
+-----
 
 === Datasett – tema (dcat:theme) [[Datasett-tema]]
 
@@ -80,6 +94,13 @@ __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, wind
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; 
+   .
+-----
+
 === Datasett – tittel (dct:title) [[Datasett-tittel]]
 
 [cols="30s,70"]
@@ -93,6 +114,13 @@ _This property is used to specify a name given to the dataset. This property can
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dct:title "Eksempeldatasett"@nb , "Example Dataset"@en ; 
+   .
+-----
 
 === Datasett – utgiver (dct:publisher) [[Datasett-utgiver]]
 
@@ -114,6 +142,13 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; 
+   .
+-----
+
 == Anbefalte egenskaper for klassen _Datasett_ [[Datasett-anbefalte-egenskaper]]
 
 === Datasett – begrep (dct:subject) [[Datasett-begrep]]
@@ -132,6 +167,13 @@ _This property is used to refer to concepts that are important to understand and
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dct:subject <https://w3id.org/demo-resources/demo-concepts#demoCpt1> ; 
+   .
+-----
 
 === Datasett – ble generert ved (prov:wasGeneratedBy) [[Datasett-bleGenerertVed]]
 
@@ -182,6 +224,13 @@ _This property is used to refer to an available Distribution for the Dataset._
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dcat:distribution <aDistribution> ; 
+   .
+-----
+
 === Datasett – dekningsområde (dct:spatial) [[Datasett-dekningsområde]]
 
 [cols="30s,70"]
@@ -203,6 +252,13 @@ __The value MUST be chosen from EU's controlled vocabularies https://op.europa.e
 __Norwegian extension: To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dcat:dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ; 
+   .
+-----
+
 === Datasett – emneord (dcat:keyword) [[Datasett-emneord]]
 
 [cols="30s,70"]
@@ -216,6 +272,13 @@ _This property is used to specify a keyword or tag describing the Dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dcat:keyword "eksempel"@nb , "example"@en ; 
+   .
+-----
 
 === Datasett – gjeldende lovgivning (dcatap:applicableLegislation) [[Datasett-gjeldendeLovgivning]]
 
@@ -234,6 +297,13 @@ _This property is used to refer to the legislation that mandates the creation or
 _Norwegian extension: The requirement level changed from optional to recommended._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dcatap:applicableLegislation <https://lovdata.no/eli/lov/2006/05/19/16> ; 
+   .
+-----
+
 === Datasett – tidsrom (dct:temporal) [[Datasett-tidsrom]]
 
 [cols="30s,70"]
@@ -247,6 +317,13 @@ _This property is used to specify a temporal period that the Dataset covers._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dct:temporal <aPeriodOfTime> ; 
+   .
+-----
 
 === Datasett – tilgangsrettigheter (dct:accessRights) [[Datasett-tilgangsrettigheter]]
 
@@ -268,6 +345,12 @@ __The value MUST be `PUBLIC`, `RESTRICTED` or `NON_PUBLIC` from EU's controlled 
 _Norwegian extension: The requirement level is changed from optional to recommended._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Datasett_ [[Datasett-valgfrie-egenskaper]]
 

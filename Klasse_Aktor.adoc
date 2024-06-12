@@ -40,7 +40,7 @@ __This property contains the name of the agent. This property can be repeated fo
 Eksempel i RDF Turtle:
 -----
 <digdir> a foaf:Agent ;
-   foaf:name "Norwegian Digitalisation Agency"@en, "Digitaliseringsdirektoratet"@nb ;
+   foaf:name "Norwegian Digitalisation Agency"@en , "Digitaliseringsdirektoratet"@nb ;
    .
 -----
 
