@@ -39,6 +39,13 @@ _This property is used to specify the most recent date on which the Catalogue en
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:CatalogRecord ; 
+   dct:modified "2024-06-30"^^xsd:date ; 
+   .
+-----
+
 === Katalogpost – primærtema (foaf:primaryTopic) [[Katalogpost-primærtema]]
 
 [cols="30s,70d"]
@@ -52,6 +59,13 @@ _This property is used to link to the resource (Dataset, Data service etc.) desc
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:CatalogRecord ; 
+   foaf:primaryTopic <aDataset> ; 
+   .
+-----
 
 == Anbefalte egenskaper for klassen _Katalogpost_ [[Katalogpost-anbefalte-egenskaper]]
 
@@ -69,6 +83,13 @@ _This property is used to refer to an Application Profile that the Catalogued Re
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:CatalogRecord ; 
+   dct:conformsTo <https://data.norge.no/vocabulary/dcatno#> ; 
+   .
+-----
+
 === Katalogpost – status (adms:status) [[Katalogpost-status]]
 
 [cols="30s,70d"]
@@ -81,7 +102,17 @@ _This property is used to refer to an Application Profile that the Catalogued Re
 _This property is used to specify the status of the catalogue record in the context of editorial flow of the dataset and data service descriptions._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:CatalogRecord ; 
+   adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ; 
+   .
+-----
 
 === Katalogpost – utgivelsesdato (dct:issued) [[Katalogpost-utgivelsesdato]]
 
@@ -99,6 +130,13 @@ _This property is used to specify the date on which the description of the resou
 
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:CatalogRecord ; 
+   dct:issued "2020-06-30"^^xsd:date ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Katalogpost_ [[Katalogpost-valgfrie-egenskaper]]
 
