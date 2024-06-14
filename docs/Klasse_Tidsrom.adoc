@@ -41,6 +41,13 @@ _This property is used to specify the end of the period._
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aPeriodOfTime> a dct:PeriodOfTime ; 
+   dcat:endDate "2024-06-30"^^xsd:date ; 
+   .
+-----
+
 === Tidsrom – startdato/tid (dcat:startDate) [[Tidsrom-startdato]]
 [cols="30s,70d"]
 |===
@@ -56,6 +63,13 @@ _This property is used to specify the start of the period._
 
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aPeriodOfTime> a dct:PeriodOfTime ; 
+   dcat:startDate "2020-06-30"^^xsd:date ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Tidsrom_ [[Tidsrom-valgfrie-egenskaper]]
 
