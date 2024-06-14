@@ -36,6 +36,13 @@ _This property is used to specify a free-text account of the Catalogue. This pro
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dct:description "Eksempelkatalog, kun for demo formål"@nb , "Example catalog, for demo purposes only"@en ; 
+   .
+-----
+
 === Katalog – kontaktpunkt (dcat:contactPoint) [[Katalog-kontaktpunkt]]
 
 [cols="30s,70"]
@@ -53,6 +60,13 @@ _This property is used to specify contact information that can be used concernin
 __Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dcat:contactPoint <aContactPoint> ; 
+   .
+-----
+
 === Katalog – tittel (dct:title) [[Katalog-tittel]]
 
 [cols="30s,70d"]
@@ -66,6 +80,13 @@ _This property is used to specify a name given to the Catalogue. This property c
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dct:title "Demokatalog"@nb , "Demo Catalog"@en ; 
+   .
+-----
 
 === Katalog – utgiver (dct:publisher) [[Katalog-utgiver]]
 
@@ -84,6 +105,13 @@ _This property is used to refer to an entity (organisation) responsible for maki
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; 
+   .
+-----
+
 == Anbefalte egenskaper for klassen _Katalog_ [[Katalog-anbefalte-egenskaper]]
 
 === Katalog – datasett (dcat:dataset) [[Katalog-datasett]]
@@ -100,6 +128,13 @@ _This property is used to refer to a Dataset that is part of the Catalogue. This
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dcat:dataset <aDataset> ; 
+   .
+-----
+
 === Katalog – datatjeneste (dcat:service) [[Katalog-datatjeneste]]
 
 [cols="30s,70d"]
@@ -113,6 +148,13 @@ _This property is used to refer to a Data Service that is listed in the Catalogu
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dcat:service <aDataService> ; 
+   .
+-----
 
 === Katalog – dekningsområde (dct:spatial) [[Katalog-dekningsområde]]
 
@@ -135,6 +177,13 @@ __The value MUST be chosen from EU's controlled vocabularies https://op.europa.e
 __To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dct:spatial <http://publications.europa.eu/resource/authority/country/NOR> ; 
+   .
+-----
+
 === Katalog – endringsdato (dct:modified) [[Katalog-endringsdato]]
 
 [cols="30s,70d"]
@@ -152,6 +201,13 @@ _This property is used to specify the most recent date on which the Catalogue wa
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dct:modified "2024-06-30"^^xsd:date ; 
+   .
+-----
+
 === Katalog – hjemmeside (foaf:homepage) [[Katalog-hjemmeside]]
 
 [cols="30s,70d"]
@@ -165,6 +221,13 @@ _This property is used to refer to a web page that acts as the main page for the
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   foaf:homepage <https://example.org> ; 
+   .
+-----
 
 === Katalog – lisens (dct:license) [[Katalog-lisens]]
 
@@ -183,6 +246,13 @@ _This property is used to refer to a licence under which the Catalogue can be us
 __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0> ; 
+   .
+-----
+
 === Katalog – språk (dct:language) [[Katalog-språk]]
 
 [cols="30s,70d"]
@@ -200,6 +270,13 @@ _This property is used to refer to a language used in the textual metadata descr
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[Language &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ; 
+   .
+-----
+
 === Katalog – temaer (dcat:themeTaxonomy) [[Katalog-temaer]]
 
 [cols="30s,70d"]
@@ -212,13 +289,20 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _This property is used to refer to a knowledge organization system used to classify the resources in the catalogue._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes. 
+| Merknad 1 / _Note 1_ | Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes. 
 
 __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used.__
-| Merknad / _Note_ | Siden EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"] er obligatorisk for egenskap dcat:theme i datasettbeskrivelser, skal denne egenskapen inneholde som minimum referanse til EUs Data theme, når katalogen inneholder datasettbeskrivelser. 
+| Merknad 2 / _Note 2_ | Siden EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"] er obligatorisk for egenskap dcat:theme i datasettbeskrivelser, skal denne egenskapen inneholde som minimum referanse til EUs Data theme, når katalogen inneholder datasettbeskrivelser. 
 
 __It must have at least the value NAL:data-theme as this is the mandatory controlled vocabulary for dcat:theme.__
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dcat:themeTaxonomy <http://publications.europa.eu/resource/authority/data-theme> ; 
+   .
+-----
 
 === Katalog – utgivelsesdato (dct:issued) [[Katalog-utgivelsesdato]]
 
@@ -236,6 +320,13 @@ _This property is used to specify the date of formal issuance (e.g., publication
 
 _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal._ 
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCatalog> a dcat:Catalog ; 
+   dct:issued "2020-06-30"^^xsd:date ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Katalog_ [[Katalog-valgfrie-egenskaper]]
 
