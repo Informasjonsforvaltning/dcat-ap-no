@@ -7999,7 +7999,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:homepage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasURL</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
@@ -8031,7 +8031,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aContactPoint&gt; a vcard:Organization ;
-   vcard:hasEmail &lt;https://data.norge.no/about&gt; ;
+   vcard:hasURL &lt;https://data.norge.no/about&gt; ;
    .</pre>
 </div>
 </div>
@@ -8112,6 +8112,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aLegalResource&gt; a eli:LegalResource ;
+   dct:description &lt;https://data.norge.no/about&gt; ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="RegulativRessurs-identifikator"><a class="anchor" href="#RegulativRessurs-identifikator"></a>3.12.1.2. Regulativ ressurs – identifikator (dct:identifier)</h5>
@@ -10466,7 +10476,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-06-14 14:24:57 UTC
+Sist oppdatert 2024-06-14 14:30:15 UTC
 </div>
 </div>
 </body>

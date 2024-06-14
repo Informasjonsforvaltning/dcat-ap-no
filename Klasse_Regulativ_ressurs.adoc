@@ -39,6 +39,13 @@ _This property contains descriptive textual information about the Legal Resource
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aLegalResource> a eli:LegalResource ; 
+   dct:description <https://data.norge.no/about> ; 
+   .
+-----
+
 === Regulativ ressurs – identifikator (dct:identifier) [[RegulativRessurs-identifikator]]
 
 [cols="30s,70d"]

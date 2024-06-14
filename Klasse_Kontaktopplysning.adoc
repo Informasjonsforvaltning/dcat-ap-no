@@ -80,7 +80,7 @@ Eksempel i RDF Turtle:
 [cols="30s,70d"]
 |===
 | _English name_ |  _contact page_
-| URI | foaf:homepage
+| URI | vcard:hasURL
 | Verdiområde / _Range_ | rdfs:Resource
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi f.eks. et kontaktskjema eller en side med kontaktinformasjon. 
 
@@ -95,6 +95,6 @@ __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 Eksempel i RDF Turtle:
 -----
 <aContactPoint> a vcard:Organization ; 
-   vcard:hasEmail <https://data.norge.no/about> ; 
+   vcard:hasURL <https://data.norge.no/about> ; 
    .
 -----
