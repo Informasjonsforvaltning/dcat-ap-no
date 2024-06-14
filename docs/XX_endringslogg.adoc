@@ -74,6 +74,7 @@ Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper.
 | Katalog – temaer | dcat:themeTaxonomy | Krav til obligatorisk bruk av EUs EuroVoc utgått. | Følger DCAT-AP.
 | Katalog – tidsrom | dct:temporal | ny | Følger DCAT-AP. 
 | Katalogpost – i samsvar med | dct:conformsTo| Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP. 
+| Kontaktopplysning | vcard:Kind | alle egenskapene er nye | For å kunne ha felles måte å oppgi kontaktopplysninger på
 | Kreditering | prov:Attribution | ny - eksplisitt spesifisert | Følger DCAT-AP.
 | Lokasjon – geometri | locn:geometry | Verdiområdet endret fra rdfs:Literal til locn:Geometry | Følger DCAT-AP. 
 | Offentlig organisasjon | cv:PublicOrganisation | utgått | Følger DCAT-AP. 

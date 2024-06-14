@@ -42,7 +42,8 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 Eksempel i RDF Turtle:
 -----
 <aLegalResource> a eli:LegalResource ; 
-   dct:description <https://data.norge.no/about> ; 
+   dct:description "Et eksempel på en regulativ ressurs, kun for demoformål"@nb, 
+      "An example of a legal resource, for demo purposes only"@en ; 
    .
 -----
 
@@ -62,6 +63,13 @@ _This property contains an identifier for the resource._
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aLegalResource> a eli:LegalResource ; 
+   dct:identifier "lr1234" ; 
+   .
+-----
 
 === Regulativ ressurs – referanse (rdfs:seeAlso) [[RegulativRessurs-referanse]]
 
@@ -83,6 +91,13 @@ __For references to Lovdata, ELI-URI should be used, see https://lovdata.no/eli/
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aLegalResource> a eli:LegalResource ; 
+   rdfs:seeAlso <https://exmample.org/eli/act/lr1234> ; 
+   .
+-----
+
 === Regulativ ressurs – språk (dct:language) [[RegulativRessurs-språk]]
 
 [cols="30s,70d"]
@@ -103,6 +118,13 @@ __The value MUST be chosen from Eu's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aLegalResource> a eli:LegalResource ; 
+   dct:language <http://publications.europa.eu/resource/authority/language/NOB> ; 
+   .
+-----
+
 === Regulativ ressurs – tittel (dct:title) [[RegulativRessurs-tittel]]
 
 [cols="30s,70d"]
@@ -119,6 +141,13 @@ _This property is used to specify the title of the legal resource. This property
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aLegalResource> a eli:LegalResource ; 
+   dct:title "Eksempellov"@nb , "Example Act"@en ; 
+   .
+-----
 
 === Regulativ ressurs – type (dct:type) [[RegulativRessurs-type]]
 
@@ -139,6 +168,13 @@ __The value shall be chosen from the common controlled vocabulary https://data.n
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aLegalResource> a eli:LegalResource ; 
+   dct:type <https://data.norge.no/vocabulary/legal-resource-type#act> ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Regulativ ressurs_ [[RegulativRessurs-valgfrie-egenskaper]]
 
