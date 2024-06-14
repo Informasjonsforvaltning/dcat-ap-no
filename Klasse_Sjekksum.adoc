@@ -27,7 +27,7 @@ _This class is used to represent a value that allows the contents of a file to b
 [cols="30s,70d"]
 |===
 | _English name_ | _algorithm_
-| URI |spdx:algorithm
+| URI | spdx:algorithm
 | Verdiområde / _Range_ | spdx:ChecksumAlgorithm
 | Anvendelse / _Usage note_ | Egenskapen brukes til å identifisere algoritmen som er brukt til å produsere sjekksummen. 
 
@@ -38,6 +38,13 @@ _This property is used to refer to the algorithm used to produce the checksum._
 
 __The value MUST be chosen among https://spdx.org/rdf/terms/#d4e2129[Checksum algorithm members &#x29C9;, window="_blank", role="ext-link"].__
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aChecksum> a spdx:Checksum ; 
+   spdx:algorithm <http://spdx.org/rdf/terms#checksumAlgorithm_sha256> ; 
+   .
+-----
 
 === Sjekksum – sjekksumverdi (spdx:checksumValue) [[Sjekksum-sjekksumverdi]]
 
@@ -52,3 +59,11 @@ _This property is used to specify a lower case hexadecimal encoded digest value 
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aChecksum> a spdx:Checksum ; 
+   spdx:checksumValue "30a4985fd07730d5876254998e8808d5836629394cc43b15ad6beee1dce1995b"^^xsd:hexBinary ; 
+   .
+-----
+
