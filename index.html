@@ -8118,7 +8118,8 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aLegalResource&gt; a eli:LegalResource ;
-   dct:description &lt;https://data.norge.no/about&gt; ;
+   dct:description "Et eksempel på en regulativ ressurs, kun for demoformål"@nb,
+      "An example of a legal resource, for demo purposes only"@en ;
    .</pre>
 </div>
 </div>
@@ -8163,6 +8164,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aLegalResource&gt; a eli:LegalResource ;
+   dct:identifier "lr1234" ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="RegulativRessurs-referanse"><a class="anchor" href="#RegulativRessurs-referanse"></a>3.12.1.3. Regulativ ressurs – referanse (rdfs:seeAlso)</h5>
@@ -8209,6 +8220,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aLegalResource&gt; a eli:LegalResource ;
+   rdfs:seeAlso &lt;https://exmample.org/eli/act/lr1234&gt; ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="RegulativRessurs-språk"><a class="anchor" href="#RegulativRessurs-språk"></a>3.12.1.4. Regulativ ressurs – språk (dct:language)</h5>
@@ -8255,6 +8276,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aLegalResource&gt; a eli:LegalResource ;
+   dct:language &lt;http://publications.europa.eu/resource/authority/language/NOB&gt; ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="RegulativRessurs-tittel"><a class="anchor" href="#RegulativRessurs-tittel"></a>3.12.1.5. Regulativ ressurs – tittel (dct:title)</h5>
@@ -8296,6 +8327,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aLegalResource&gt; a eli:LegalResource ;
+   dct:title "Eksempellov"@nb , "Example Act"@en ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="RegulativRessurs-type"><a class="anchor" href="#RegulativRessurs-type"></a>3.12.1.6. Regulativ ressurs – type (dct:type)</h5>
@@ -8342,6 +8383,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aLegalResource&gt; a eli:LegalResource ;
+   dct:type &lt;https://data.norge.no/vocabulary/legal-resource-type#act&gt; ;
+   .</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -10415,6 +10466,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontaktopplysning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:Kind</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">alle egenskapene er nye</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne ha felles måte å oppgi kontaktopplysninger på</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kreditering</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">prov:Attribution</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ny - eksplisitt spesifisert</p></td>
@@ -10476,7 +10533,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-06-14 14:30:15 UTC
+Sist oppdatert 2024-06-14 14:42:01 UTC
 </div>
 </div>
 </body>
