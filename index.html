@@ -7479,6 +7479,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
+   dct:modified "2024-06-30"^^xsd:date ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="Katalogpost-primærtema"><a class="anchor" href="#Katalogpost-primærtema"></a>3.10.1.2. Katalogpost – primærtema (foaf:primaryTopic)</h5>
@@ -7515,6 +7525,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
+   foaf:primaryTopic &lt;aDataset&gt; ;
+   .</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -7554,6 +7574,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
+   dct:conformsTo &lt;https://data.norge.no/vocabulary/dcatno#&gt; ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="Katalogpost-status"><a class="anchor" href="#Katalogpost-status"></a>3.10.2.2. Katalogpost – status (adms:status)</h5>
@@ -7588,8 +7618,23 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener"><em>Distribution status</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener">Distribution status &#x29C9;</a>.</em></p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
+   adms:status &lt;http://publications.europa.eu/resource/authority/distribution-status/COMPLETED&gt; ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="Katalogpost-utgivelsesdato"><a class="anchor" href="#Katalogpost-utgivelsesdato"></a>3.10.2.3. Katalogpost – utgivelsesdato (dct:issued)</h5>
@@ -7631,6 +7676,16 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
+   dct:issued "2020-06-30"^^xsd:date ;
+   .</pre>
+</div>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -9824,6 +9879,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – status</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener"><em>Distribution status</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener">Distribution status &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivå endret fra valgfri til anbefalt, fordi status på distribusjon er viktig å vite når man skal vurdere om en distribusjon skal/kan brukes.</p>
 <p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
 </tr>
@@ -9898,6 +9959,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:modified</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet er eksplisitt spesifisert som <code>xsd:date or xsd:dateTime</code>, istedenfor å referere til den generiske datatype Temporal literal.</p>
 <p class="tableblock"><em>The range is explicitly specified as <code>xsd:date or xsd:dateTime</code>, instead of referring to the generic datatype Temporal Literal.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalogpost – status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener"><em>Distribution status</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener">Distribution status &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalogpost – utgivelsesdato</p></td>
@@ -10369,7 +10436,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-06-14 14:07:54 UTC
+Sist oppdatert 2024-06-14 14:19:02 UTC
 </div>
 </div>
 </body>
