@@ -43,6 +43,13 @@ _This property is used to specify a link (URL) to a document that provides guide
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aRightsStatement> a odrs:RightsStatement ; 
+   odrs:reuserGuidelines <https://example.org/aRightsStatement> ; 
+   .
+-----
+
 === Rettighetserklæring – jurisdiksjon (odrs:jurisdiction)  [[Rettighetserklæring-jurisdiksjon]]
 
 [cols="30s,70"]
@@ -63,6 +70,13 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Countries and territories &#x29C9;, window="_blank", role="ext-link"] for country. To specify coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aRightsStatement> a odrs:RightsStatement ; 
+   odrs:jurisdiction <http://publications.europa.eu/resource/authority/country/NOR> ; 
+   .
+-----
+
 === Rettighetserklæring – krediteringstekst (odrs:attributionText)  [[Rettighetserklæring-krediteringstekst]]
 
 [cols="30s,70"]
@@ -79,6 +93,13 @@ _This property is used to specify an attribution text. This property should be r
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aRightsStatement> a odrs:RightsStatement ; 
+   odrs:attributionText "Crowd sourced data community"@en ; 
+   .
+-----
 
 === Rettighetserklæring – krediteringsURL (odrs:attributionURL)  [[Rettighetserklæring-krediteringsURL]]
 
@@ -97,6 +118,13 @@ _This property is used to specify a link (URL) which should be used when attribu
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aRightsStatement> a odrs:RightsStatement ; 
+   odrs:attributionURL <https://example.org/attribution/> ; 
+   .
+-----
+
 === Rettighetserklæring – opphavsrettserkæring (odrs:copyrightStatement)  [[Rettighetserklæring-opphavsrettserklæring]]
 
 [cols="30s,70"]
@@ -114,6 +142,13 @@ _This property is used to a link (URL) to a document that includes a statement a
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aRightsStatement> a odrs:RightsStatement ; 
+   odrs:copyrightStatement <https://example.org/copyRightsStatement/> ; 
+   .
+-----
+
 === Rettighetserklæring – opphavsrettsinnehaver (odrs:copyrightHolder)  [[Rettighetserklæring-opphavsrettsinnehaver]]
 
 [cols="30s,70"]
@@ -130,6 +165,13 @@ _This property is used to refer to the agent/organization that holds copyright o
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aRightsStatement> a odrs:RightsStatement ; 
+   odrs:copyrightHolder <digdir> ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Rettighetserklæring_ [[Rettighetserklæring-valgfrie-egenskaper]]
 
