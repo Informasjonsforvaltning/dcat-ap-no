@@ -42,6 +42,13 @@ _This property is used to specify the name of the contact point. This property c
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aContactPoint> a vcard:Organization ; 
+   vcard:fn "Brukerstøtte"@nb , "User support"@en ; 
+   .
+-----
+
 == Anbefalte egenskaper for klassen _Kontaktopplysning_ [[Kontaktopplysning-anbefalte-egenskaper]]
 
 === Kontaktopplysning – har e-post (vcard:hasEmail) [[Kontaktopplysning-harEPost]]
@@ -61,6 +68,13 @@ _This property is used to specify an email address to the contact point._
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aContactPoint> a vcard:Organization ; 
+   vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ; 
+   .
+-----
+
 === Kontaktopplysning – har kontaktside (vcard:hasURL) [[Kontaktopplysning-kontaktside]]
 
 [cols="30s,70d"]
@@ -77,3 +91,10 @@ _This property is used to specify a webpage that either allows to make contact (
 
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aContactPoint> a vcard:Organization ; 
+   vcard:hasEmail <https://data.norge.no/about> ; 
+   .
+-----
