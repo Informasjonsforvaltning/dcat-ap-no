@@ -40,6 +40,13 @@ _This property is used to specify a name to the standard/specification. This pro
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aStandard> a dct:Standard ; 
+   dct:title "Eksempelstandard"@nb , "Example Standard"@en ; 
+   .
+-----
+
 == Anbefalte egenskaper for klassen _Standard_ [[Standard-anbefalte-egenskaper]]
 
 === Standard – har referanse (rdfs:seeAlso)  [[Standard-harReferanse]]
@@ -58,6 +65,13 @@ _This property is used to specify a reference to the standard/specification._
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aStandard> a dct:Standard ; 
+   rdfs:seeAlso <https://example.org/example-standard> ; 
+   .
+-----
 
 == Valgfrie egenskaper for klassen _Standard_ [[Standard-valgfrie-egenskaper]]
 
