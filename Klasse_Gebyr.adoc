@@ -42,6 +42,13 @@ _This property is used to specify a numeric value indicating the amount of the C
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCost> a cv:Cost ; 
+   cv:hasValue "100.00"^^xsd:double ; 
+   .
+-----
+
 === Gebyr – valuta (cv:currency) [[Gebyr-valuta]]
 
 [cols="30s,70d"]
@@ -62,6 +69,13 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+Eksempel i RDF Turtle:
+-----
+<aCost> a cv:Cost ; 
+   cv:currency <http://publications.europa.eu/resource/authority/currency/NOK> ; 
+   .
+-----
+
 == Anbefalte egenskaper for klassen _Gebyr_ [[Gebyr-anbefalte-egenskaper]]
 
 === Gebyr – beskrivelse (dct:description) [[Gebyr-beskrivelse]]
@@ -80,4 +94,11 @@ _This property is used to specify a free text description of the Cost. This prop
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aCost> a cv:Cost ; 
+   dct:description "Behandlingsgebyr"@nb , "Handling fee"@en ; 
+   .
+-----
 
