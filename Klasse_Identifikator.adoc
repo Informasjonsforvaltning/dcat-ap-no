@@ -36,3 +36,11 @@ _This property contains a string that is an identifier in the context of the ide
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
+
+Eksempel i RDF Turtle:
+-----
+<anId> a adms:Identifier ; 
+   skos:notation "1234" ; 
+   .
+-----
+
