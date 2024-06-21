@@ -638,11 +638,8 @@ ex:budget-2020 a dcat:Dataset ;
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og unik innen konteksten av katalogen.
 
 _This property is used to specify the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue._
-| Multiplisitet / _Multiplicity_ | 1..n
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n. 
-
-_Norwegian extension: The requirement level changed from optional to mandatory, thus also the multiplicity from 0..n to 1..n._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
 === Datasett – kilde (dct:source) [[Datasett-kilde]]
