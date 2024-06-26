@@ -616,6 +616,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Datasettserie-obligatoriske-egenskaper">3.3.1. Obligatoriske egenskaper for klassen <em>Datasettserie</em></a>
 <ul class="sectlevel4">
+<li><a href="#Datasettserie-beskrivelse">Datasettserie – beskrivelse (dct:description)</a></li>
 <li><a href="#Datasettserie-kontaktpunkt">Datasettserie – kontaktpunkt (dcat:contactPoint)</a></li>
 <li><a href="#Datasettserie-tema">Datasettserie – tema (dcat:theme)</a></li>
 <li><a href="#Datasettserie-tittel">Datasettserie – tittel (dct:title)</a></li>
@@ -624,7 +625,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Datasettserie-anbefalte-egenskaper">3.3.2. Anbefalte egenskaper for klassen <em>Datasettserie</em></a>
 <ul class="sectlevel4">
-<li><a href="#Datasettserie-beskrivelse">Datasettserie – beskrivelse (dct:description)</a></li>
 <li><a href="#Datasettserie-dekningsområde">Datasettserie – dekningsområde (dct:spatial)</a></li>
 <li><a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a></li>
 <li><a href="#Datasettserie-gjeldendeLovgivning">Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)</a></li>
@@ -950,7 +950,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <i class="fa icon-warning" title="Advarsel"></i>
 </td>
 <td class="content">
-Dette er <mark>utkast</mark> til neste versjon (v3.0) av DCAT-AP-NO.
+Dette er <mark>utkast</mark> til høringsversjonen til den reviderte versjon (v3.0) av DCAT-AP-NO.
 </td>
 </tr>
 </table>
@@ -1682,7 +1682,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdiene for denne egenskapen er URIer til begrepene i vokabularet <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em>  &#x29C9;</a>.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em>  &#x29C9;</a>.</p>
 <p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg.</p>
 <p class="tableblock"><em>The values to be used for this property are the URIs of the concepts in the vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>.</em></p>
 <p class="tableblock"><em>Norwegian extension: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
@@ -2598,6 +2598,11 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
 </tbody>
 </table>
 </div>
@@ -3166,7 +3171,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -3243,7 +3248,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -3279,7 +3284,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -3287,8 +3292,8 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien KAN velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener"><em>Dataset type</em> &#x29C9;</a>.</p>
-<p class="tableblock"><em>Norwegian extension: The value MAY be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener">Dataset type &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien KAN velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener"><em>Dataset type</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MAY be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener">Dataset type &#x29C9;</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -3379,7 +3384,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -3465,7 +3470,53 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect3">
 <h4 id="Datasettserie-obligatoriske-egenskaper"><a class="anchor" href="#Datasettserie-obligatoriske-egenskaper"></a>3.3.1. Obligatoriske egenskaper for klassen <em>Datasettserie</em></h4>
 <div class="sect4">
-<h5 id="Datasettserie-kontaktpunkt"><a class="anchor" href="#Datasettserie-kontaktpunkt"></a>3.3.1.1. Datasettserie – kontaktpunkt (dcat:contactPoint)</h5>
+<h5 id="Datasettserie-beskrivelse"><a class="anchor" href="#Datasettserie-beskrivelse"></a>3.3.1.1. Datasettserie – beskrivelse (dct:description)</h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettserien. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.</p>
+<p class="tableblock"><em>This property is used to specify a free-text account of the Dataset serie.This property can be repeated for parallel language versions of the description.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aDatasetSeries&gt; a dcat:DatasetSeries ;
+   dct:description "Et eksempeldatasett"@nb , "An example dataset"@en ;
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Datasettserie-kontaktpunkt"><a class="anchor" href="#Datasettserie-kontaktpunkt"></a>3.3.1.2. Datasettserie – kontaktpunkt (dcat:contactPoint)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3516,7 +3567,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-tema"><a class="anchor" href="#Datasettserie-tema"></a>3.3.1.2. Datasettserie – tema (dcat:theme)</h5>
+<h5 id="Datasettserie-tema"><a class="anchor" href="#Datasettserie-tema"></a>3.3.1.3. Datasettserie – tema (dcat:theme)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3550,7 +3601,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdiene for denne egenskapen er URIer til begrepene i vokabularet <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em> &#x29C9;</a>.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em>  &#x29C9;</a>.</p>
 <p class="tableblock">Norsk utvidelse: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> BØR brukes i tillegg.</p>
 <p class="tableblock"><em>The values to be used for this property are the URIs of the concepts in the vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener">Data theme &#x29C9;</a>.</em></p>
 <p class="tableblock"><em>Norwegian extension: <a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
@@ -3574,7 +3625,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-tittel"><a class="anchor" href="#Datasettserie-tittel"></a>3.3.1.3. Datasettserie – tittel (dct:title)</h5>
+<h5 id="Datasettserie-tittel"><a class="anchor" href="#Datasettserie-tittel"></a>3.3.1.4. Datasettserie – tittel (dct:title)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3620,7 +3671,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-utgiver"><a class="anchor" href="#Datasettserie-utgiver"></a>3.3.1.4. Datasettserie – utgiver (dct:publisher)</h5>
+<h5 id="Datasettserie-utgiver"><a class="anchor" href="#Datasettserie-utgiver"></a>3.3.1.5. Datasettserie – utgiver (dct:publisher)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3679,58 +3730,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect3">
 <h4 id="Datasettserie-anbefalte-egenskaper"><a class="anchor" href="#Datasettserie-anbefalte-egenskaper"></a>3.3.2. Anbefalte egenskaper for klassen <em>Datasettserie</em></h4>
 <div class="sect4">
-<h5 id="Datasettserie-beskrivelse"><a class="anchor" href="#Datasettserie-beskrivelse"></a>3.3.2.1. Datasettserie – beskrivelse (dct:description)</h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>description</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettserien. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.</p>
-<p class="tableblock"><em>This property is used to specify a free-text account of the Dataset serie.This property can be repeated for parallel language versions of the description.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.</p>
-<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aDatasetSeries&gt; a dcat:DatasetSeries ;
-   dct:description "Et eksempeldatasett"@nb , "An example dataset"@en ;
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="Datasettserie-dekningsområde"><a class="anchor" href="#Datasettserie-dekningsområde"></a>3.3.2.2. Datasettserie – dekningsområde (dct:spatial)</h5>
+<h5 id="Datasettserie-dekningsområde"><a class="anchor" href="#Datasettserie-dekningsområde"></a>3.3.2.1. Datasettserie – dekningsområde (dct:spatial)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3783,7 +3783,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-første"><a class="anchor" href="#Datasettserie-første"></a>3.3.2.3. Datasettserie – første (dcat:first)</h5>
+<h5 id="Datasettserie-første"><a class="anchor" href="#Datasettserie-første"></a>3.3.2.2. Datasettserie – første (dcat:first)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3815,6 +3815,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.</p>
+<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -3829,7 +3834,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-gjeldendeLovgivning"><a class="anchor" href="#Datasettserie-gjeldendeLovgivning"></a>3.3.2.4. Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)</h5>
+<h5 id="Datasettserie-gjeldendeLovgivning"><a class="anchor" href="#Datasettserie-gjeldendeLovgivning"></a>3.3.2.3. Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3880,7 +3885,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-siste"><a class="anchor" href="#Datasettserie-siste"></a>3.3.2.5. Datasettserie – siste (dcat:last)</h5>
+<h5 id="Datasettserie-siste"><a class="anchor" href="#Datasettserie-siste"></a>3.3.2.4. Datasettserie – siste (dcat:last)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3912,6 +3917,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.</p>
+<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -3926,7 +3936,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-tidsrom"><a class="anchor" href="#Datasettserie-tidsrom"></a>3.3.2.6. Datasettserie – tidsrom (dct:temporal)</h5>
+<h5 id="Datasettserie-tidsrom"><a class="anchor" href="#Datasettserie-tidsrom"></a>3.3.2.5. Datasettserie – tidsrom (dct:temporal)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3957,6 +3967,11 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.</p>
+<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -4665,6 +4680,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body" class="ext-link" target="_blank" rel="noopener"><em>Corporate body</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body" class="ext-link" target="_blank" rel="noopener">Corporate body &#x29C9;</a> for European institutions and a small set of international organisations.</em></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -4821,7 +4841,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -4980,7 +5000,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -5178,11 +5198,6 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.</p>
-<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -5389,14 +5404,9 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability" class="ext-link" target="_blank" rel="noopener"><em>Planned availability</em> &#x29C9;</a>.</p>
 <p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability" class="ext-link" target="_blank" rel="noopener">Planned availability &#x29C9;</a>.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt.</p>
-<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -5687,9 +5697,6 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 <div class="sect4">
 <h5 id="Distribusjon-nedlastningslenke"><a class="anchor" href="#Distribusjon-nedlastningslenke"></a>3.5.3.8. Distribusjon – nedlastningslenke (dcat:downloadURL)</h5>
-<div class="paragraph">
-<p>f</p>
-</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5866,7 +5873,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -5979,7 +5986,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
@@ -6746,9 +6753,9 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabularer <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent" class="ext-link" target="_blank" rel="noopener"><em>Continent</em> &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a> eller <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place" class="ext-link" target="_blank" rel="noopener"><em>Place</em> &#x29C9;</a>, HVIS den finnes på listene; <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener"><em>GeoNames</em> &#x29C9;</a> SKAL i andre tilfeller brukes.</p>
-<p class="tableblock">For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter &#x29C9;</a> brukes i tillegg.</p>
+<p class="tableblock">Norsk utvidelse: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter &#x29C9;</a> brukes i tillegg.</p>
 <p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/continent" class="ext-link" target="_blank" rel="noopener">Continent &#x29C9;</a>, <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/dataset/-/resource?uri=http://publications.europa.eu/resource/dataset/place" class="ext-link" target="_blank" rel="noopener">Place &#x29C9;</a>, IF it is in the lists;  if a particular location is not in one of the mentioned Named Authority Lists, <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">GeoNames &#x29C9;</a> URIs MUST be used.</em></p>
-<p class="tableblock"><em>To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
+<p class="tableblock"><em>Norwegian extension: To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -7003,7 +7010,7 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Siden EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em> &#x29C9;</a> er obligatorisk for egenskap dcat:theme i datasettbeskrivelser, skal denne egenskapen inneholde som minimum referanse til EUs Data theme, når katalogen inneholder datasettbeskrivelser.</p>
-<p class="tableblock"><em>It must have at least the value NAL:data-theme as this is the mandatory controlled vocabulary for dcat:theme.</em></p></td>
+<p class="tableblock"><em>It must have at least the value NAL:data-theme when the catalog contains datasets, as this is the mandatory controlled vocabulary for dcat:theme.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -7615,8 +7622,8 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener"><em>Distribution status</em> &#x29C9;</a>.</p>
-<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener">Distribution status &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener"><em>Distribution status</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener">Distribution status &#x29C9;</a>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -9641,7 +9648,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Generelt er det forventet at datasettene i en datasettserie er sterkt relatert til hverandre. Det fins imidlertid ingen felles kriterier eller regler for hvordan datasettene i en datasettserie bør relateres til hverandre. Det kan f.eks. være datasett om noe som utvikler seg over tid og/eller rom, f.eks. ulvebestandstatus, budsjett, regnskap. Versjoneringsterminologi («forrige»/«neste», «første»/«siste») kan f.eks. brukes til å uttrykke rekkefølge i tid.</p>
 </div>
 <div class="paragraph">
-<p><a href="#figur-Ordnet-datasettserie">Figur 20</a> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <a href="#Datasett-forrige"> 3.2.3.7</a>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <a href="#Datasettserie-første"> 3.3.2.3</a> hhv. <a href="#Datasettserie-siste"> 3.3.2.5</a>.</p>
+<p><a href="#figur-Ordnet-datasettserie">Figur 20</a> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved hjelp av datasettegenskapen <a href="#Datasett-forrige"> 3.2.3.7</a>. I beskrivelsen av selve datasettserien er det i tillegg oppgitt første og siste datasett i serien, ved hjelp av datasettserieegenskapene <a href="#Datasettserie-første"> 3.3.2.2</a> hhv. <a href="#Datasettserie-siste"> 3.3.2.4</a>.</p>
 </div>
 <div id="figur-Ordnet-datasettserie" class="imageblock">
 <div class="content">
@@ -9874,6 +9881,9 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="paragraph">
 <p>Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene de aktuelle egenskapene der det står (ev. mangler) «norsk utvidelse» blir rettet opp, har merknadene forrang.</p>
 </div>
+<div class="paragraph">
+<p>Tabellen nedenfor er sortert i samme rekkefølge som klassene/egenskapene er spesifisert i <a href="#Spesifikasjon-per-klasse">Kapittel 3, <em>Krav til RDF-representasjon av klassene i DCAT-AP-NO</em></a>.</p>
+</div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 20%;">
@@ -9941,12 +9951,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har del</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:hasPart</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har gebyr</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCost</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
@@ -9959,7 +9963,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – tilgangsnivå</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – tilgangsrettigheter</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:accessRights</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået er endret fra valgfri til anbefalt.</p>
 <p class="tableblock"><em>The requirement level is changed from optional to recommended.</em></p></td>
@@ -9977,10 +9981,10 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien BØR velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener"><em>Dataset type</em> &#x29C9;</a>.</p>
-<p class="tableblock"><em>The value SHOULD be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type" class="ext-link" target="_blank" rel="noopener">Dataset type &#x29C9;</a>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har gebyr</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCost</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – utgivelsesdato</p></td>
@@ -10013,20 +10017,32 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>The requirement level changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – beskrivelse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
-<p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – dekningsområde</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter &#x29C9;</a> brukes i tillegg.</p>
 <p class="tableblock"><em>To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – første</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
+<p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – gjeldende lovgivning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:applicableLegislation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
+<p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – siste</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:last</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
+<p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – tidsrom</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:temporal</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
 <p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
 </tr>
@@ -10045,8 +10061,8 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – endepunktsURL</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:endpointURL</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.</p>
-<p class="tableblock"><em>The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester.</p>
+<p class="tableblock"><em>The multiplicity is changed from 1..n to 1..1.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – kontaktpunkt</p></td>
@@ -10091,12 +10107,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – beskrivelse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivå endret fra valgfri til anbefalt.</p>
-<p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – lisens</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:license</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener"><em>Licence</em> &#x29C9;</a>.</p>
@@ -10133,22 +10143,16 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>The range is explicitly specified as <code>xsd:date or xsd:dateTime</code>, instead of referring to the generic datatype Temporal Literal.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dokument – språk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dokument – tittel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Gebyr</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hele klassen: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>The whole class: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – dekningsområde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:spatial</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter &#x29C9;</a> brukes i tillegg.</p>
+<p class="tableblock"><em>To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – kontaktpunkt</p></td>
@@ -10199,100 +10203,28 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>The range is explicitly specified as <code>xsd:date or xsd:dateTime</code>, instead of referring to the generic datatype Temporal Literal.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kontaktopplysning – navn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:fn</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kontaktopplysning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:Kind</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alle egenskaper i klasse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>All properties in the class: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kontaktopplysning – har e-post</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kontaktopplysning – har telefon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasTelephone</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kontaktopplysning – hjemmeside</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:homepage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lisensdokument – lisenstype</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra kontrollerte vokabular <a href="https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/ADMS_SKOS_v1.00.rdf" class="ext-link" target="_blank" rel="noopener"><em>ADMS licence type</em> &#x29C9;</a>  (lenket ressurs er i RDF).</p>
-<p class="tableblock"><em>The value MUST be chosen from the controlled vocabulary <a href="https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/ADMS_SKOS_v1.00.rdf" class="ext-link" target="_blank" rel="noopener">ADMS licence type &#x29C9;</a> (the linked resource is in RDF).</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – beskrivelse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – identifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – referanse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:seeAlso</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – språk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – tittel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – relatert regulativ ressurs</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:relation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">eli:LegalResource</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>All properties in the class: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Rettighetsuttalelse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">odrs:RightsStatement</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hele klassen er ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>The whole class is not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hele klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>The whole class: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Standard – har tittel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Standard – har referanse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:seeAlso</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Standard – har versjonsnummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>All properties in the class: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Tidsrom – sluttdato/tid</p></td>
@@ -10457,15 +10389,33 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (ingen reell bruk).</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – romlig oppløsning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten endret fra 0..n til 0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – refererer til</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:references</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (invers egenskap).</p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – tidsoppløsning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:temporalResolution</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten endret fra 0..n til 0..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – type</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravet til bruk av EUs kontrollerte vokabular "Dataset type" er endret fra SKAL til KAN brukes.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten endret fra 0..1 til 0..n</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
@@ -10509,6 +10459,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra anbefalt til obligatorisk.</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dette for å kunne ta kontakt med den ansvarlige.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – landingsside</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:landingPage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..1 til 0..n</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – versjon</p></td>
@@ -10668,7 +10624,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-06-21 16:43:07 UTC
+Sist oppdatert 2024-06-26 17:48:36 UTC
 </div>
 </div>
 </body>

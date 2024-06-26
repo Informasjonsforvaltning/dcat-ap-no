@@ -6,6 +6,8 @@
 
 Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene de aktuelle egenskapene der det står (ev. mangler) «norsk utvidelse» blir rettet opp, har merknadene forrang.
 
+Tabellen nedenfor er sortert i samme rekkefølge som klassene/egenskapene er spesifisert i <<Spesifikasjon-per-klasse>>. 
+
 [cols="20,20,60"]
 |===
 |*Egenskaps-/klassenavn / _Norwegian name_* |*Egenskaps-/klasseURI / _Property/class URI_*| *Norsk utvidelse / _Norwegian extension_* 
@@ -45,10 +47,6 @@ __The requirement level is changed from optional to recommended.__
 For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
 
 __To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Datasett – har del | dct:hasPart |
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
-
-__Not explicitly specified in DCAT-AP/DCAT.__
 | Datasett – har gebyr | cv:hasCost | 
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
@@ -57,7 +55,7 @@ __Not explicitly specified in DCAT-AP/DCAT.__
 Kravnivået endret fra valgfri til anbefalt.
 
 __The requirement level changed from optional to recommended.__
-| Datasett – tilgangsnivå | dct:accessRights |
+| Datasett – tilgangsrettigheter | dct:accessRights |
 Kravnivået er endret fra valgfri til anbefalt.
 
 __The requirement level is changed from optional to recommended.__
@@ -65,14 +63,14 @@ __The requirement level is changed from optional to recommended.__
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
 __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
-| Datasett – har del | dct:hasPart | 
+| Datasett – har del | dct:hasPart |
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 __Not explicitly specified in DCAT-AP/DCAT.__
-| Datasett – type | dct:type |
-Verdien BØR velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[__Dataset type__ &#x29C9;, window="_blank", role="ext-link"].
+| Datasett – har gebyr | cv:hasCost | 
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
-__The value SHOULD be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[Dataset type &#x29C9;, window="_blank", role="ext-link"].__
+__Not explicitly specified in DCAT-AP/DCAT.__
 | Datasett – utgivelsesdato | dct:issued | 
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
@@ -93,15 +91,23 @@ __The requirement level is changed from recommended to mandatory, thus also the 
 Kravnivået endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
 __The requirement level changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1.__
-| Datasettserie – beskrivelse | dct:description |
-Kravnivået endret fra valgfri til anbefalt.
-
-__The requirement level changed from optional to recommended.__
 | Datasettserie – dekningsområde | dct:spatial | 
 For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
 
 __To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
+| Datasettserie – første | dcat:first | 
+Kravnivået endret fra valgfri til anbefalt.
+
+__The requirement level changed from optional to recommended.__
 | Datasettserie – gjeldende lovgivning | dcatap:applicableLegislation |
+Kravnivået endret fra valgfri til anbefalt.
+
+__The requirement level changed from optional to recommended.__
+| Datasettserie – siste | dcat:last |
+Kravnivået endret fra valgfri til anbefalt.
+
+__The requirement level changed from optional to recommended.__
+| Datasettserie – tidsrom | dct:temporal | 
 Kravnivået endret fra valgfri til anbefalt.
 
 __The requirement level changed from optional to recommended.__
@@ -114,9 +120,9 @@ Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenf
 
 __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
 | Datatjeneste – endepunktsURL | dcat:endpointURL |
-Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
+Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike endepunktsURLer bør betraktes som flere ulike datatjenester.
 
-__The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
+__The multiplicity is changed from 1..n to 1..1.__
 | Datatjeneste – kontaktpunkt | dcat:contactPoint |
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
@@ -145,10 +151,6 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __Not explicitly specified in DCAT-AP/DCAT.__
-| Distribusjon – beskrivelse | dct:description |
-Kravnivå endret fra valgfri til anbefalt.
-
-__The requirement level changed from optional to recommended.__
 | Distribusjon – lisens | dct:license| 
 Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
 
@@ -173,18 +175,14 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
 __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
-| Dokument – språk | dct:language |
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Dokument – tittel | dct:title |
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
 | Gebyr | cv:Cost | 
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
+Hele klassen: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
-__Not explicitly specified in DCAT-AP/DCAT.__
+__The whole class: Not explicitly specified in DCAT-AP/DCAT.__
+| Katalog – dekningsområde | dct:spatial | 
+Norsk utvidelse: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
+
+__To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 | Katalog – kontaktpunkt | dcat:contactPoint |
 Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
@@ -217,70 +215,22 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
 __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
-| Kontaktopplysning – navn  | vcard:fn | 
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+| Kontaktopplysning   | vcard:Kind | 
+Alle egenskaper i klasse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Kontaktopplysning – har e-post | vcard:hasEmail |
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+__All properties in the class: Not explicitly specified in DCAT-AP/DCAT.__
+| Regulativ ressurs | eli:LegalResource |
+Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Kontaktopplysning – har telefon | vcard:hasTelephone |
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Kontaktopplysning – hjemmeside | foaf:homepage | 
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Lisensdokument – lisenstype | dct:type |
-Verdien SKAL velges fra kontrollerte vokabular https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/ADMS_SKOS_v1.00.rdf[__ADMS licence type__ &#x29C9;, window="_blank", role="ext-link"]  (lenket ressurs er i RDF).
-
-__The value MUST be chosen from the controlled vocabulary https://raw.githubusercontent.com/SEMICeu/ADMS-AP/master/purl.org/ADMS_SKOS_v1.00.rdf[ADMS licence type &#x29C9;, window="_blank", role="ext-link"] (the linked resource is in RDF).__
-| Regulativ ressurs – beskrivelse | dct:description |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Regulativ ressurs – identifikator | dct:identifier |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Regulativ ressurs – referanse | rdfs:seeAlso |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Regulativ ressurs – språk | dct:language |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Regulativ ressurs – tittel | dct:title |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Regulativ ressurs – type | dct:type |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Regulativ ressurs – relatert regulativ ressurs | dct:relation |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
+__All properties in the class: Not explicitly specified in DCAT-AP/DCAT.__
 | Rettighetsuttalelse | odrs:RightsStatement | 
-Hele klassen er ikke eksplisitt spesifisert DCAT-AP/DCAT.
+Hele klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-__The whole class is not explicitly specified in DCAT-AP/DCAT.__
-| Standard – har tittel | dct:title |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
+__The whole class: Not explicitly specified in DCAT-AP/DCAT.__
+| Standard | dct:Standard |
+Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Standard – har referanse | rdfs:seeAlso |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
-| Standard – har versjonsnummer | dcat:version |
-Ikke eksplisitt spesifisert DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
+__All properties in the class: Not explicitly specified in DCAT-AP/DCAT.__
 | Tidsrom – sluttdato/tid | dcat:endDate |
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 

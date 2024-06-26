@@ -17,7 +17,7 @@ ifdef::backend-pdf[:toc: macro]
 
 image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
 
-WARNING: Dette er #utkast# til neste versjon (v3.0) av DCAT-AP-NO. 
+WARNING: Dette er #utkast# til høringsversjonen til den reviderte versjon (v3.0) av DCAT-AP-NO. 
 
 include::shared/download.adoc[]
 
