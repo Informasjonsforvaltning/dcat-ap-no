@@ -81,7 +81,7 @@ Eksempel i RDF Turtle:
 _This property is used to specify the category of the dataset. A Dataset may be associated with multiple themes._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad 1 / _Note 1_ | Verdiene for denne egenskapen er URIer til begrepene i vokabularet https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]. 
+| Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]. 
 
 
 Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
@@ -501,6 +501,9 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 _This property is used to refer to one or more instances of the Cost class, to specify information about the cost for reusing the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation) [[Datasett-harKvalitetsmerknad]]
@@ -750,7 +753,7 @@ _This property is used to refer to a related resource._
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi den minste romlige oppløsningen for et datasett målt i meter.
 
 _This property is used to specify the minimum spatial separation resolvable in a dataset, measured in meters._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
@@ -782,7 +785,7 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til den minste oppløsningen for tidsperiode i datasettet.
 
 _This property is used to specify the minimum time period resolvable in the dataset._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
@@ -796,11 +799,11 @@ _This property is used to specify the minimum time period resolvable in the data
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et begrep som identifiserer datasettets type.
 
 _This property is used to specify the type of the Dataset._
-| Multiplisitet / _Multiplicity_ | 0..1
+| Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Verdien KAN velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[__Dataset type__ &#x29C9;, window="_blank", role="ext-link"].
+| Merknad / _Note_ | Verdien KAN velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[__Dataset type__ &#x29C9;, window="_blank", role="ext-link"].
 
-__Norwegian extension: The value MAY be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[Dataset type &#x29C9;, window="_blank", role="ext-link"].__
+__The value MAY be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[Dataset type &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
 Eksempel i RDF Turtle:
@@ -845,7 +848,7 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et versjonsnummer eller annen versjonsbetegnelse for ressursen.
 
 _This property is used to specify the version indicator (name or identifier) of a resource._
-| Multiplisitet / _Multiplicity_ | 0..n
+| Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 

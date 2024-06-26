@@ -23,6 +23,27 @@ _This class is used to represent a collection of datasets that are published sep
 
 == Obligatoriske egenskaper for klassen _Datasettserie_ [[Datasettserie-obligatoriske-egenskaper]]
 
+=== Datasettserie – beskrivelse (dct:description) [[Datasettserie-beskrivelse]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _description_
+| URI | dct:description
+| Verdiområde / _Range_ | rdfs:Literal
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettserien. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.
+
+_This property is used to specify a free-text account of the Dataset serie.This property can be repeated for parallel language versions of the description._
+| Multiplisitet / _Multiplicity_ | 1..n
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aDatasetSeries> a dcat:DatasetSeries ; 
+   dct:description "Et eksempeldatasett"@nb , "An example dataset"@en ; 
+   .
+-----
+
 === Datasettserie – kontaktpunkt (dcat:contactPoint) [[Datasettserie-kontaktpunkt]]
 
 [cols="30s,70"]
@@ -59,7 +80,7 @@ Eksempel i RDF Turtle:
 _This property is used to specify the category of the dataset serie. A Dataset  serie may be associated with multiple themes._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad 1 / _Note 1_ | Verdiene for denne egenskapen er URIer til begrepene i vokabularet https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"]. 
+| Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]. 
 
 
 Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
@@ -129,30 +150,6 @@ Eksempel i RDF Turtle:
 
 == Anbefalte egenskaper for klassen _Datasettserie_ [[Datasettserie-anbefalte-egenskaper]]
 
-=== Datasettserie – beskrivelse (dct:description) [[Datasettserie-beskrivelse]]
-
-[cols="30s,70"]
-|===
-| _English name_ | _description_
-| URI | dct:description
-| Verdiområde / _Range_ | rdfs:Literal
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettserien. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.
-
-_This property is used to specify a free-text account of the Dataset serie.This property can be repeated for parallel language versions of the description._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.
-
-_Norwegian extension: The requirement level changed from optional to recommended._
-|===
-
-Eksempel i RDF Turtle:
------
-<aDatasetSeries> a dcat:DatasetSeries ; 
-   dct:description "Et eksempeldatasett"@nb , "An example dataset"@en ; 
-   .
------
-
 === Datasettserie – dekningsområde (dct:spatial) [[Datasettserie-dekningsområde]]
 
 [cols="30s,70"]
@@ -193,6 +190,9 @@ Eksempel i RDF Turtle:
 _This property is used to refer to the first resource in an ordered collection or series of resources, to which the current resource belongs._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
+| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.
+
+__Norwegian extension: The requirement level changed from optional to recommended.__
 |===
 
 Eksempel i RDF Turtle:
@@ -238,6 +238,9 @@ Eksempel i RDF Turtle:
 _This property is used to refer to the last resource in an ordered collection or series of resources, to which the current resource belongs._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.
+
+__Norwegian extension: The requirement level changed from optional to recommended.__
 |===
 
 Eksempel i RDF Turtle:
@@ -259,6 +262,9 @@ Eksempel i RDF Turtle:
 _This property is used to specify a temporal period that the Dataset serie covers._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
+| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.
+
+__Norwegian extension: The requirement level changed from optional to recommended.__
 |===
 
 Eksempel i RDF Turtle:

@@ -271,6 +271,9 @@ Eksempel i RDF Turtle:
 _This property is used to refer the the agent (organisation) responsible for making the data service available._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | (Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"]. 
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
 |===
 
 Eksempel i RDF Turtle:
@@ -334,7 +337,7 @@ _This property is used to specify the identifier to the data service._
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til nettside som gir tilgang til datatjenesten og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige tilbyderen av datatjenesten.
 
 _This property is used to refer to a web page that provides access to the Data Service and/or additional information. It is intended to point to a landing page at the original data service provider, not to a page on a site of a third party, such as an aggregator._
-| Multiplisitet / _Multiplicity_ | 0..1
+| Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
@@ -396,7 +399,7 @@ __The value MUST be `PUBLIC`, `RESTRICTED` or `NON_PUBLIC` from EU's controlled 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et begrep som identifiserer datatjenestens type.
 
 _This property is used to specify the type of the data service._
-| Multiplisitet / _Multiplicity_ | 0..1
+| Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
