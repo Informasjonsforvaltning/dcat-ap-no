@@ -252,11 +252,11 @@ _This property is used to refer to an established schema to which the described 
 _This property is used to specify the format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Verdien BØR være en medietype fra det offisielle registeret av https://www.iana.org/assignments/media-types/media-types.xhtml[medietyper forvaltet av IANA &#x29C9;, window="_blank", role="ext-link"]. 
+| Merknad / _Note_ | Norsk utvidelse: Verdien BØR være en medietype fra det offisielle registeret av https://www.iana.org/assignments/media-types/media-types.xhtml[medietyper forvaltet av IANA &#x29C9;, window="_blank", role="ext-link"]. 
 
 NB! Navnerommet til IANA som returnerer RDF-ressurs, er `\https://www.w3.org/ns/iana/media-types/`, f.eks. `\https://www.w3.org/ns/iana/media-types/application/zip`.
 
-__It SHOULD be expressed using a media type as defined in the official register of https://www.iana.org/assignments/media-types/media-types.xhtml[media types managed by IANA &#x29C9;, window="_blank", role="ext-link"].__
+__Norwegian extension: It SHOULD be expressed using a media type as defined in the official register of https://www.iana.org/assignments/media-types/media-types.xhtml[media types managed by IANA &#x29C9;, window="_blank", role="ext-link"].__
 
 __Note! The namespace for IANA that returns RDF resource, is `\https://www.w3.org/ns/iana/media-types/`, e.g. `\https://www.w3.org/ns/iana/media-types/application/zip`.__
 |===
@@ -306,11 +306,11 @@ _This property is used to specify a URL that is a direct link to a downloadable 
 _This property is used to refer to the format of the file in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Verdien BØR være en medietype fra det offisielle registeret av https://www.iana.org/assignments/media-types/media-types.xhtml[medietyper forvaltet av IANA &#x29C9;, window="_blank", role="ext-link"]. 
+| Merknad / _Note_ | Norsk utvidelse: Verdien BØR være en medietype fra det offisielle registeret av https://www.iana.org/assignments/media-types/media-types.xhtml[medietyper forvaltet av IANA &#x29C9;, window="_blank", role="ext-link"]. 
 
 NB! Navnerommet til IANA som returnerer RDF-ressurs, er `\https://www.w3.org/ns/iana/media-types/`, f.eks. `\https://www.w3.org/ns/iana/media-types/application/zip`.
 
-__It SHOULD be expressed using a media type as defined in the official register of https://www.iana.org/assignments/media-types/media-types.xhtml[media types managed by IANA &#x29C9;, window="_blank", role="ext-link"].__
+__Norwegian extension: It SHOULD be expressed using a media type as defined in the official register of https://www.iana.org/assignments/media-types/media-types.xhtml[media types managed by IANA &#x29C9;, window="_blank", role="ext-link"].__
 
 __Note! The namespace for IANA that returns RDF resource, is `\https://www.w3.org/ns/iana/media-types/`, e.g. `\https://www.w3.org/ns/iana/media-types/application/zip`.__
 |===
