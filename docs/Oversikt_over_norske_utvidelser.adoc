@@ -20,13 +20,13 @@ Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multipl
 
 _The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 | Datasett – tema | dcat:theme |
-https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
-
-__https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Datasett – tema | dcat:theme |
 Kravnivå er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
+| Datasett – tema | dcat:theme |
+https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
+
+__https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 | Datasett – utgiver | dct:publisher |
 Kravnivået er endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
@@ -36,21 +36,17 @@ Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __Not explicitly specified in DCAT-AP/DCAT.__
 | Datasett – ble generert ved | prov:wasGeneratedBy |
-Verdien BØR velges fra kontrollert vokabular https://data.norge.no/vocabulary/provenance-activity-type[Proveniensaktivitetstype &#x29C9;, window="_blank", role="ext-link"].
-
-__The value SHOULD be chosen from the controlled vocabulary https://data.norge.no/vocabulary/provenance-activity-type[Provenance activity type &#x29C9;, window="_blank", role="ext-link"].__
-| Datasett – ble generert ved | prov:wasGeneratedBy |
 Kravnivået er endret fra valgfri til anbefalt.
 
 __The requirement level is changed from optional to recommended.__
+| Datasett – ble generert ved | prov:wasGeneratedBy |
+Verdien BØR velges fra kontrollert vokabular https://data.norge.no/vocabulary/provenance-activity-type[Proveniensaktivitetstype &#x29C9;, window="_blank", role="ext-link"].
+
+__The value SHOULD be chosen from the controlled vocabulary https://data.norge.no/vocabulary/provenance-activity-type[Provenance activity type &#x29C9;, window="_blank", role="ext-link"].__
 | Datasett – dekningsområde | dct:spatial | 
 For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
 
 __To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Datasett – har gebyr | cv:hasCost | 
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
-
-__Not explicitly specified in DCAT-AP/DCAT.__
 | Datasett – gjeldende lovgivning | dcatap:applicableLegislation |
 Kravnivået endret fra valgfri til anbefalt.
 
@@ -80,13 +76,13 @@ Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multipl
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
 | Datasettserie – tema | dcat:theme | 
-https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
-
-__https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Datasettserie – tema | dcat:theme | 
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
+| Datasettserie – tema | dcat:theme | 
+https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
+
+__https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 | Datasettserie – utgiver | dct:publisher |
 Kravnivået endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
@@ -139,10 +135,6 @@ __The requirement level changed from optional to recommended.__
 https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Datatjeneste – dokumentasjon | foaf:page |
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
 | Datatjeneste – lisens | dct:license |
 Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
 
@@ -151,26 +143,34 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __Not explicitly specified in DCAT-AP/DCAT.__
+| Datatjeneste – type | dct:type |
+Multiplisiteten endret fra 0..n til 0..1.
+
+__The multiplicity changed from 0..n to 0..1.__
 | Distribusjon – lisens | dct:license| 
 Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
 | Distribusjon – status | adms:status |
-Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
-
-__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
-| Distribusjon – status | adms:status |
 Kravnivå endret fra valgfri til anbefalt, fordi status på distribusjon er viktig å vite når man skal vurdere om en distribusjon skal/kan brukes.
 
 __The requirement level changed from optional to recommended.__
-| Distribusjon – tilgjengelighet | dcatap:availability |
-Kravnivå endret fra valgfri til anbefalt.
+| Distribusjon – status | adms:status |
+Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
 
-__The requirement level changed from optional to recommended.__
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
 | Distribusjon – endringsdato | dct:modified |
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
 __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
+| Distribusjon – komprimeringsformat | dcat:compressFormat | 
+Verdien BØR være en medietype fra det offisielle registeret av https://www.iana.org/assignments/media-types/media-types.xhtml[medietyper forvaltet av IANA &#x29C9;, window="_blank", role="ext-link"].
+
+__It SHOULD be expressed using a media type as defined in the official register of https://www.iana.org/assignments/media-types/media-types.xhtml[media types managed by IANA &#x29C9;, window="_blank", role="ext-link"].__
+| Distribusjon – pakkeformat | dcat:packageFormat | 
+Verdien BØR være en medietype fra det offisielle registeret av https://www.iana.org/assignments/media-types/media-types.xhtml[medietyper forvaltet av IANA &#x29C9;, window="_blank", role="ext-link"].
+
+__It SHOULD be expressed using a media type as defined in the official register of https://www.iana.org/assignments/media-types/media-types.xhtml[media types managed by IANA &#x29C9;, window="_blank", role="ext-link"].__
 | Distribusjon – utgivelsesdato | dct:issued |
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
@@ -179,14 +179,14 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 Hele klassen: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __The whole class: Not explicitly specified in DCAT-AP/DCAT.__
-| Katalog – dekningsområde | dct:spatial | 
-Norsk utvidelse: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
-
-__To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 | Katalog – kontaktpunkt | dcat:contactPoint |
 Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
 __The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.__
+| Katalog – dekningsområde | dct:spatial | 
+Norsk utvidelse: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
+
+__To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
 | Katalog – endringsdato | dct:modified |
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal. 
 
@@ -224,9 +224,9 @@ Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 __All properties in the class: Not explicitly specified in DCAT-AP/DCAT.__
 | Rettighetsuttalelse | odrs:RightsStatement | 
-Hele klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
+Hele klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT. `odrs:RightsStatement` er en subklasse av `dct:RightsStatement` brukt i DCAT-AP. 
 
-__The whole class: Not explicitly specified in DCAT-AP/DCAT.__
+__The whole class: Not explicitly specified in DCAT-AP/DCAT. `odrs:RightsStatement` is a subclass of `dct:RightsStatement` used in DCAT-AP._
 | Standard | dct:Standard |
 Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
