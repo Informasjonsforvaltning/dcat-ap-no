@@ -19,9 +19,9 @@ image::images/Klassen-Rettighetserklæring.png[]
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en erklæring om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller erklæring om tilgangsrettigheter.
 
 _This property is used to represent a statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights._
-| Merknad / _Note_ | Norsk utvidelse: Hele klassen er ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+| Merknad / _Note_ | Norsk utvidelse: Hele klassen er ikke eksplisitt spesifisert i DCAT-AP/DCAT. `odrs:RightsStatement` er imidlertid en subklasse av `dct:RightsStatement` brukt i DCAT-AP. 
 
-_Norwegian extension: The whole class is not explicitly specified in DCAT-AP/DCAT._ 
+_Norwegian extension: The whole class is not explicitly specified in DCAT-AP/DCAT. `odrs:RightsStatement` is though a subclass of `dct:RightsStatement` used in DCAT-AP._ 
 |===
 
 == Anbefalte egenskaper for klassen _Rettighetserklæring_ [[Rettighetserklæring-anbefalte-egenskaper]]
