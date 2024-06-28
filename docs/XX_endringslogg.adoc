@@ -52,59 +52,89 @@ Oversikt over *endrede krav i eksisterende klasser*:
 
 * <<Datasett>>: 
 ** Nye egenskaper:
-*** <<Datasett-har-gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av datasettet.
 *** <<Datasett-gjeldendeLovgivning>>, for å kunne knytte datasettet til ev. gjeldende lovgivning.
+*** <<Datasett-har-gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av datasettet.
+
 ** Utgåtte egenskaper: 
 *** er del av (dct:isPartOf): Følger DCAT-AP.
 *** er påkrevd av (dct:isRequiredBy): Følger DCAT-AP.
 *** er versjon av (dct:isVersionOf): Følger DCAT-AP.
 *** erstattes av (dct:isReplacedBy): Følger DCAT-AP.
+*** følger (cpsv:follows): Følger DCAT-AP.
 *** krever (dct:requires): Følger DCAT-AP.
 *** refererer til (dct:references): Følger DCAT-AP.
-*** følger (cpsv:follows): Følger DCAT-AP.
 
 ** Endrede kravnivå og/eller multiplisitet: 
 *** <<Datasett-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
 *** <<Datasett-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri. Dette for å følge DCAT-AP. 
-*** <<Datasett-produsent>>: Multiplisiteten er endret fra 0..1 til 0..n. Dette for å følge DCAT-AP. 
 *** <<Datasett-romligOppløsning>>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP. 
+*** <<Datasett-produsent>>: Multiplisiteten er endret fra 0..1 til 0..n. Dette for å følge DCAT-AP. 
 *** <<Datasett-tidsoppløsning>>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP. 
 *** <<Datasett-type>>: Multiplisiteten er endret fra 0..1 til 0..n1. Dette for å følge DCAT-AP. 
 
 ** Endrede krav til bruk av kontrollerte vokabularer: 
-*** <<Datasett-tema>>: EuroVoc er utgått fra krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
-*** <<Datasett-produsent>>: Det er ikke lenger krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.
 *** <<Datasett-bleGenerertVed>>: Nytt krav til bruk av kontrollerte vokabular Proveniensaktivitetstype. Dette for å kunne standardisere. 
+*** <<Datasett-produsent>>: Det er ikke lenger krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.
+*** <<Datasett-tema>>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
 
 * <<Datasettserie>>: 
 ** Nye egenskaper:
-*** __#kommer#__ 
+*** <<Datasettserie-beskrivelse>>: Følger DCAT-AP/DCAT. 
+*** <<Datasettserie-endringsdato>>: Følger DCAT-AP/DCAT. 
+*** <<Datasettserie-frekvens>>: Følger DCAT-AP/DCAT. 
+*** <<Datasettserie-gjeldendeLovgivning>>: Følger DCAT-AP/DCAT.
+*** <<Datasettserie-kontaktpunkt>>: Følger DCAT-AP/DCAT. 
+*** <<Datasettserie-tema>>: Følger DCAT-AP/DCAT. 
+*** <<Datasettserie-tittel>>: Følger DCAT-AP/DCAT. 
+** <<Datasettserie-utgivelsesdato>>: Følger DCAT-AP/DCAT. 
+*** <<Datasettseire-utgiver>>: Følger DCAT-AP/DCAT. 
+*** <<Datasettserie-tidsrom>>: Følger DCAT-AP/DCAT.
+
 ** Utgåtte egenskaper: 
-*** _#kommer#_
+*** følger (cpsv:follows): Følger DCAT-AP.
+
 ** Endrede kravnivå og/eller multiplisitet: 
-*** _#kommer#_
+*** <<Datasettserie-første>>: Kravnivået endret fra obligatorisk til anbefalt og dermed også multiplisiteten fra 1..1 til 0..1. Dette fordi ikke alle datasettserier er ordnede.   
+
 ** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+*** _ingen_
 
 * <<Datatjeneste>>: 
 ** Nye egenskaper:
-*** __#kommer#__ 
+*** <<Datatjeneste-gjeldendeLovgivning>>: Følger DCAT-AP/DCAT.
+*** <<Datatjeneste-versjon>>: Følger DCAT-AP/DCAT.
+*** <<Datatjeneste-versjonsmerknad>>: Følger DCAT-AP/DCAT.
+
 ** Utgåtte egenskaper: 
-*** _#kommer#_
+*** _ingen_
+
 ** Endrede kravnivå og/eller multiplisitet: 
-*** _#kommer#_
+*** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
+*** <<Datatjeneste-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri. Dette for å følge DCAT-AP/DCAT.
+*** <<Datatjeneste-i-samsvar-med>>: Kravnivået er endret fra valgfri til anbefalt. Dette for å følge DCAT-AP/DCAT.
+
 ** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+*** <<Datatjeneste-tema>>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
 
 * <<Distribusjon>>: 
 ** Nye egenskaper:
-*** __#kommer#__ 
+*** <<Distribusjon-gjeldendeLovgivning>>: Følger DCAT-AP/DCAT.
+
 ** Utgåtte egenskaper: 
-*** _#kommer#_
+*** _ingen_
+
 ** Endrede kravnivå og/eller multiplisitet: 
-*** _#kommer#_
+*** <<Distribusjon-medietype>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
+*** <<Distribusjon-romlig-oppløsning>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
+*** <<Distribusjon-tidsoppløsning>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
+*** <<Distribusjon-format>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
+
 ** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+*** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen. 
+*** <<Distribusjon-pakkeformat>>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen.  
+
+*** <<Distribusjon-status>>: ADMS status vocabulary er erstattet med EUs kontrollerte vokabular for Distribution status. 
+
 
 * <<Katalog>>: 
 ** Nye egenskaper:
