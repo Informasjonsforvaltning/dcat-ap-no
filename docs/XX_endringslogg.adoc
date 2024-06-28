@@ -32,61 +32,110 @@ Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) fo
 
 Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper, at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
 
-Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper. 
+Følgende klasser er nye, dvs. enten helt nye eller nå i denne versjonen eksplisitt spesifisert med egenskaper: 
 
-.Endringer av objekter og egenskaper fra versjon 2.2 til denne versjonen
-[cols="15,15,35,35"]
-|===
-|*Klasse-/egenskapsnavn* |*URI* |*Endring* |*Begrunnelse*
-| Datasett – er del av | dct:isPartOf | utgått | Følger DCAT-AP (invers egenskap). 
-| Datasett – er påkrevd av | dct:isRequiredBy | utgått | Følger DCAT-AP (ingen reell bruk).
-| Datasett – er versjon av | dct:isVersionOf | utgått | Følger DCAT-AP (invers egenskap).
-| Datasett – erstattes av | dct:isReplacedBy | utgått | Følger DCAT-AP (invers egenskap).
-| Datasett - følger | cpsv:follows | utgått | Følger DCAT-AP. 
-| Datasett – har gebyr | cv:hasCost | ny egenskap | For å kunne oppgi prisinformasjon. 
-| Datasett – har versjon | dcat:hasVersion | URIen er endret fra dct:hasVersion til dcat:hasVersion. | Følger DCAT-AP. 
-| Datasett – identifikator | dct:identifier | Kravnivået er endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..n til 0..n. | Følger DCAT-AP
-| Datasett – kontaktpunkt | dcat:contactPoint | Kravnivået er endret fra anbefalt til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n. | Dette for å kunne ta kontakt med den ansvarlige. 
-| Datasett – produsent | dct:creator | Multiplisiteten er endret fra 0..1 til 0..n | Følger DCAT-AP. 
-| Datasett – krever | dct:requires | utgått | Følger DCAT-AP (ingen reell bruk).
-| Datasett – romlig oppløsning | dcat:spatialResolutionInMeters | Multiplisiteten endret fra 0..n til 0..1 | Følger DCAT-AP.
-| Datasett – refererer til | dct:references | utgått | Følger DCAT-AP (invers egenskap).
-| Datasett – tidsoppløsning | dcat:temporalResolution | Multiplisiteten endret fra 0..n til 0..1 | Følger DCAT-AP.
-| Datasett – type | dct:type | Kravet til bruk av EUs kontrollerte vokabular "Dataset type" er endret fra SKAL til KAN brukes. | Følger DCAT-AP.
-| Datasett – type | dct:type | Multiplisiteten endret fra 0..1 til 0..n | Følger DCAT-AP.
-| Datasett – versjon | dcat:version | URIen er endret fra owl:versionInfo til dcat:version. | Følger DCAT-AP.
-| Datasett – versjon | dcat:version | Multiplisiteten er endret fra 0..1 til 0..n. | Følger DCAT-AP.
-// | Datasettserie | dcat:DatasetSeries | Datasettserie er subklasse av Katalogisert ressurs istedenfor Datasett | Følger DCAT-AP. 
-| Datasettserie – første |dcat:first | Kravnivået endret fra obligatorisk til anbefalt | Ikke alle datasettserier er ordnet.
-| Datatjeneste – i samsvar med | dct:conformsTo | Kravnivået endret fra obligatorisk til anbefalt, dermed også multiplisiteten fra 1..n til 0..n. | Følger DCAT-AP. 
-| Datatjeneste – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..n til 0..n. | Følger DCAT-AP. 
-| Datasettserie – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige.
-| Datatjeneste – kontaktpunkt | dcat:contactPoint | Kravnivået endret fra anbefalt til obligatorisk. | Dette for å kunne ta kontakt med den ansvarlige. 
-| Datatjeneste – landingsside | dcat:landingPage | Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP.
-| Datatjeneste – versjon | dcat:version | ny egenskap | Behov for å oppgi versjon til et API.
-| Datatjeneste – versjonsmerknad | adms:versionNotes | ny egenskap | Behov for å beskrive en versjon til et API. 
-| Distribusjon – filstørrelse | dcat:byteSize | Verdiområdet endret fra xsd:decimal til  xsd:nonNegativeInteger | Følger DCAT-AP.
-| Distribusjon – format | dct:format | Multiplisitet endret fra 0..n til 0..1 | Følger DCAT-AP.
-| Distribusjon – medietype | dcat:mediaType | Multiplisitet endret fra 0..n til 0..1 | Følger DCAT-AP.
-| Gebyr | cv:Cost | hele klassen er ny | For å kunne oppgi prisinformasjon. 
-| Katalog – datatjeneste | dcat:service | Kravnivået endret fra valgfri til anbefalt | Følger DCAT-AP. 
-| Katalog – er del av | dct:isPartOf | utgått | Følger DCAT-AP (invers egenskap).  
-| Katalog – frekvens | dct:accrualPeriodicity | utgått | Følger DCAT-AP.
-| Katalog – gjeldende lovgivning | dcatap:applicableLegislation | ny | Følger DCAT-AP.
-| Katalog – identifikator | dct:identifier | Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..1 til 0..n. | Følger DCAT-AP. 
-| Katalog – opphav | dct:provenance | utgått | Følger DCAT-AP. 
-| Katalog – temaer | dcat:themeTaxonomy | Krav til obligatorisk bruk av EUs EuroVoc utgått. | Følger DCAT-AP.
-| Katalog – tidsrom | dct:temporal | ny | Følger DCAT-AP. 
-| Katalogpost – i samsvar med | dct:conformsTo| Multiplisitet endret fra 0..1 til 0..n | Følger DCAT-AP. 
-| Kontaktopplysning | vcard:Kind | alle egenskapene er nye | For å kunne ha felles måte å oppgi kontaktopplysninger på
-| Kreditering | prov:Attribution | ny - eksplisitt spesifisert | Følger DCAT-AP.
-| Lokasjon – geometri | locn:geometry | Verdiområdet endret fra rdfs:Literal til locn:Geometry | Følger DCAT-AP. 
-| Offentlig organisasjon | cv:PublicOrganisation | utgått | Følger DCAT-AP. 
-| Offentlig tjeneste | cpsv:PublicService | utgått | Følger DCAT-AP. 
-| Regel | cpsv:Rule | utgått | Følger DCAT-AP. 
-| Regulativ ressurs – type | dct:type | Kravnivå endret fra obligatorisk til anbefalt | Samkjører med CPSV-AP-NO.
-| Regulativ ressurs – språk | dct:language | ny egenskap | For å kunne oppgi språk ressursen er tilgjengelig på. 
-| Regulativ ressurs – tittel | dct:title | ny egenskap | For å kunne oppgi tittel til ressursen. 
-| Standard – har versjonsnummer | dcat:version | URIen endret fra owl:versionInfo til dcat:version | Følger DCAT-AP.  
-|===
- 
+* <<Gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av et datasett, med standardiserte egenskaper.
+* <<Kontaktopplysning>>, for å kunne beskrive et kontaktpunkt, med standardiserte egenskaper
+* <<Rettighetserklæring>>, for å kunne beskrive ev. rettigheter knyttet til et datasett, med standardiserte egenskaper
+
+Følgende klasser er utgått, dvs. at det i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper: 
+
+* Lisensdokument (dct:LicenseDocument): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
+* Lokasjon (dct:Location): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
+* Offentlig organisasjon (cv:PublicOrganisation): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]. 
+* Offentlig tjeneste (cpsv:PublicService): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
+* Regel (cpsv:Rule): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
+* Tema (skos:Concept): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
+* Tematisk skjema (skos:ConceptScheme): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
+
+Følgende klasser har endrede krav: 
+
+* <<Datasett>>: 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** kontaktpunkt (dcat:contactPoint) er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
+
+* <<Datasettserie>>: 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** _#kommer#_
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
+
+* <<Datatjeneste>>: 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** _#kommer#_
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
+
+* <<Distribusjon>>: 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** _#kommer#_
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
+
+* <<Katalog>>: 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** _#kommer#_
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
+
+* <<Katalogpost>>: 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** _#kommer#_
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
+
+* <<RegulativRessurs>>: 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** _#kommer#_
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
+
+* <<Sjekksum>>: 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** _#kommer#_
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
+
+* <<Standard>> 
+** Nye egenskaper:
+*** __#kommer#__ 
+** Utgåtte egenskaper: 
+*** _#kommer#_
+** Endrede kravnivå og/eller multiplisitet: 
+*** _#kommer#_
+** Endrede krav til bruk av kontrollerte vokabularer: 
+*** _#kommer#_
