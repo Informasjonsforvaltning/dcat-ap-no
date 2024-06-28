@@ -52,13 +52,29 @@ Oversikt over *endrede krav i eksisterende klasser*:
 
 * <<Datasett>>: 
 ** Nye egenskaper:
-*** __#kommer#__ 
+*** <<Datasett-har-gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av datasettet.
+*** <<Datasett-gjeldendeLovgivning>>, for å kunne knytte datasettet til ev. gjeldende lovgivning.
 ** Utgåtte egenskaper: 
-*** _#kommer#_
+*** er del av (dct:isPartOf): Følger DCAT-AP.
+*** er påkrevd av (dct:isRequiredBy): Følger DCAT-AP.
+*** er versjon av (dct:isVersionOf): Følger DCAT-AP.
+*** erstattes av (dct:isReplacedBy): Følger DCAT-AP.
+*** krever (dct:requires): Følger DCAT-AP.
+*** refererer til (dct:references): Følger DCAT-AP.
+*** følger (cpsv:follows): Følger DCAT-AP.
+
 ** Endrede kravnivå og/eller multiplisitet: 
-*** kontaktpunkt (dcat:contactPoint) er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
+*** <<Datasett-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
+*** <<Datasett-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri. Dette for å følge DCAT-AP. 
+*** <<Datasett-produsent>>: Multiplisiteten er endret fra 0..1 til 0..n. Dette for å følge DCAT-AP. 
+*** <<Datasett-romligOppløsning>>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP. 
+*** <<Datasett-tidsoppløsning>>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP. 
+*** <<Datasett-type>>: Multiplisiteten er endret fra 0..1 til 0..n1. Dette for å følge DCAT-AP. 
+
 ** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+*** <<Datasett-tema>>: EuroVoc er utgått fra krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
+*** <<Datasett-produsent>>: Det er ikke lenger krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.
+*** <<Datasett-bleGenerertVed>>: Nytt krav til bruk av kontrollerte vokabular Proveniensaktivitetstype. Dette for å kunne standardisere. 
 
 * <<Datasettserie>>: 
 ** Nye egenskaper:
