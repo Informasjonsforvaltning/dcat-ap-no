@@ -10305,326 +10305,486 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper, at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man <em>kan</em> bruke en invers egenskap, <em>i tillegg til</em> og <em>ikke istedenfor</em> egenskapen som er eksplisitt tatt med i standarden. Se <a href="#Om-inverse-egenskaper"> 4.4, &#8220;Om bruk av inverse egenskaper&#8221;</a>.</p>
 </div>
 <div class="paragraph">
-<p>Tabellen under viser hva som er nye, utgåtte og endrede klasser og egenskaper.</p>
+<p>Følgende klasser er nye, dvs. enten helt nye eller nå i denne versjonen eksplisitt spesifisert med egenskaper:</p>
 </div>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<caption class="title">Tabell 1. Endringer av objekter og egenskaper fra versjon 2.2 til denne versjonen</caption>
-<colgroup>
-<col style="width: 15%;">
-<col style="width: 15%;">
-<col style="width: 35%;">
-<col style="width: 35%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Klasse-/egenskapsnavn</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Endring</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Begrunnelse</strong></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – er del av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (invers egenskap).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – er påkrevd av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isRequiredBy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (ingen reell bruk).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – er versjon av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isVersionOf</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (invers egenskap).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – erstattes av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isReplacedBy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (invers egenskap).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett - følger</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:follows</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har gebyr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCost</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne oppgi prisinformasjon.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har versjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:hasVersion</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URIen er endret fra dct:hasVersion til dcat:hasVersion.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – identifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået er endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..n til 0..n.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – kontaktpunkt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået er endret fra anbefalt til obligatorisk, dermed også multiplisiteten fra 0..n til 1..n.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette for å kunne ta kontakt med den ansvarlige.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – produsent</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:creator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten er endret fra 0..1 til 0..n</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – krever</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:requires</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (ingen reell bruk).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – romlig oppløsning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:spatialResolutionInMeters</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten endret fra 0..n til 0..1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – refererer til</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:references</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (invers egenskap).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – tidsoppløsning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:temporalResolution</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten endret fra 0..n til 0..1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravet til bruk av EUs kontrollerte vokabular "Dataset type" er endret fra SKAL til KAN brukes.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten endret fra 0..1 til 0..n</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – versjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URIen er endret fra owl:versionInfo til dcat:version.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – versjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten er endret fra 0..1 til 0..n.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – første</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til anbefalt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke alle datasettserier er ordnet.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – i samsvar med</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til anbefalt, dermed også multiplisiteten fra 1..n til 0..n.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – identifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..n til 0..n.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – kontaktpunkt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra anbefalt til obligatorisk.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette for å kunne ta kontakt med den ansvarlige.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – kontaktpunkt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:contactPoint</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra anbefalt til obligatorisk.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Dette for å kunne ta kontakt med den ansvarlige.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – landingsside</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:landingPage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..1 til 0..n</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – versjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Behov for å oppgi versjon til et API.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – versjonsmerknad</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">adms:versionNotes</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Behov for å beskrive en versjon til et API.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – filstørrelse</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:byteSize</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet endret fra xsd:decimal til  xsd:nonNegativeInteger</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – format</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..n til 0..1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – medietype</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:mediaType</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..n til 0..1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gebyr</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:Cost</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">hele klassen er ny</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne oppgi prisinformasjon.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – datatjeneste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:service</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – er del av</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:isPartOf</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP (invers egenskap).</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – frekvens</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:accrualPeriodicity</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – gjeldende lovgivning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:applicableLegislation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – identifikator</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:identifier</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra obligatorisk til valgfri, dermed også multiplisiteten fra 1..1 til 0..n.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – opphav</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:provenance</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – temaer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:themeTaxonomy</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Krav til obligatorisk bruk av EUs EuroVoc utgått.</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalog – tidsrom</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:temporal</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Katalogpost – i samsvar med</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:conformsTo</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisitet endret fra 0..1 til 0..n</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kontaktopplysning</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:Kind</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">alle egenskapene er nye</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne ha felles måte å oppgi kontaktopplysninger på</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kreditering</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prov:Attribution</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny - eksplisitt spesifisert</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lokasjon – geometri</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">locn:geometry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet endret fra rdfs:Literal til locn:Geometry</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig organisasjon</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:PublicOrganisation</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Offentlig tjeneste</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:PublicService</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cpsv:Rule</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">utgått</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:type</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivå endret fra obligatorisk til anbefalt</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Samkjører med CPSV-AP-NO.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – språk</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:language</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne oppgi språk ressursen er tilgjengelig på.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Regulativ ressurs – tittel</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ny egenskap</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For å kunne oppgi tittel til ressursen.</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Standard – har versjonsnummer</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">URIen endret fra owl:versionInfo til dcat:version</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Følger DCAT-AP.</p></td>
-</tr>
-</tbody>
-</table>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Gebyr"> 3.6, &#8220;Klassen Gebyr (cv:Cost)&#8221;</a>, for å kunne beskrive ev. kostnader knyttet til bruk av et datasett, med standardiserte egenskaper.</p>
+</li>
+<li>
+<p><a href="#Kontaktopplysning"> 3.11, &#8220;Klassen Kontaktopplysning (vcard:Kind)&#8221;</a>, for å kunne beskrive et kontaktpunkt, med standardiserte egenskaper</p>
+</li>
+<li>
+<p><a href="#Rettighetserklæring"> 3.14, &#8220;Klassen Rettighetserklæring (odrs:RightsStatement)&#8221;</a>, for å kunne beskrive ev. rettigheter knyttet til et datasett, med standardiserte egenskaper</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Følgende klasser er utgått, dvs. at det i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Lisensdokument (dct:LicenseDocument): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.</p>
+</li>
+<li>
+<p>Lokasjon (dct:Location): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.</p>
+</li>
+<li>
+<p>Offentlig organisasjon (cv:PublicOrganisation): Behovet er dekket av <a href="https://data.norge.no/specification/cpsv-ap-no" class="ext-link" target="_blank" rel="noopener">CPSV-AP-NO &#x29C9;</a>.</p>
+</li>
+<li>
+<p>Offentlig tjeneste (cpsv:PublicService): Behovet er dekket av <a href="https://data.norge.no/specification/cpsv-ap-no" class="ext-link" target="_blank" rel="noopener">CPSV-AP-NO &#x29C9;</a>.</p>
+</li>
+<li>
+<p>Regel (cpsv:Rule): Behovet er dekket av <a href="https://data.norge.no/specification/cpsv-ap-no" class="ext-link" target="_blank" rel="noopener">CPSV-AP-NO &#x29C9;</a>.</p>
+</li>
+<li>
+<p>Tema (skos:Concept): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.</p>
+</li>
+<li>
+<p>Tematisk skjema (skos:ConceptScheme): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Følgende klasser har endrede krav:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Datasett"> 3.2, &#8220;Klassen Datasett (dcat:Dataset)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>kontaktpunkt (dcat:contactPoint) er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#Datasettserie"> 3.3, &#8220;Klassen Datasettserie (dcat:DatasetSeries)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#Datatjeneste"> 3.4, &#8220;Klassen Datatjeneste (dcat:DataService)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#Distribusjon"> 3.5, &#8220;Klassen Distribusjon (dcat:Distribution)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#Katalog"> 3.8, &#8220;Klassen Katalog (dcat:Catalog)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#Katalogpost"> 3.10, &#8220;Klassen Katalogpost (dcat:CatalogRecord)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#RegulativRessurs"> 3.12, &#8220;Klassen Regulativ ressurs (eli:LegalResource)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#Sjekksum"> 3.15, &#8220;Klassen Sjekksum (spdx:Checksum)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#Standard"> 3.16, &#8220;Klassen Standard (dct:Standard)&#8221;</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Nye egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Utgåtte egenskaper:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede kravnivå og/eller multiplisitet:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><em><mark>kommer</mark></em></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-06-27 11:41:07 UTC
+Sist oppdatert 2024-06-28 12:41:08 UTC
 </div>
 </div>
 </body>
