@@ -10362,10 +10362,10 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Datasett-har-gebyr"> 3.2.3.10, &#8220;Datasett – har gebyr (cv:hasCost)&#8221;</a>, for å kunne beskrive ev. kostnader knyttet til bruk av datasettet.</p>
+<p><a href="#Datasett-gjeldendeLovgivning"> 3.2.2.6, &#8220;Datasett – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, for å kunne knytte datasettet til ev. gjeldende lovgivning.</p>
 </li>
 <li>
-<p><a href="#Datasett-gjeldendeLovgivning"> 3.2.2.6, &#8220;Datasett – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, for å kunne knytte datasettet til ev. gjeldende lovgivning.</p>
+<p><a href="#Datasett-har-gebyr"> 3.2.3.10, &#8220;Datasett – har gebyr (cv:hasCost)&#8221;</a>, for å kunne beskrive ev. kostnader knyttet til bruk av datasettet.</p>
 </li>
 </ul>
 </div>
@@ -10387,13 +10387,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>erstattes av (dct:isReplacedBy): Følger DCAT-AP.</p>
 </li>
 <li>
+<p>følger (cpsv:follows): Følger DCAT-AP.</p>
+</li>
+<li>
 <p>krever (dct:requires): Følger DCAT-AP.</p>
 </li>
 <li>
 <p>refererer til (dct:references): Følger DCAT-AP.</p>
-</li>
-<li>
-<p>følger (cpsv:follows): Følger DCAT-AP.</p>
 </li>
 </ul>
 </div>
@@ -10409,10 +10409,10 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datasett-identifikator"> 3.2.3.16, &#8220;Datasett – identifikator (dct:identifier)&#8221;</a>: Kravnivået er endret fra obligatorisk til valgfri. Dette for å følge DCAT-AP.</p>
 </li>
 <li>
-<p><a href="#Datasett-produsent"> 3.2.3.22, &#8220;Datasett – produsent (dct:creator)&#8221;</a>: Multiplisiteten er endret fra 0..1 til 0..n. Dette for å følge DCAT-AP.</p>
+<p><a href="#Datasett-romligOppløsning"> 3.2.3.24, &#8220;Datasett – romlig oppløsning (dcat:spatialResolutionInMeters)&#8221;</a>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP.</p>
 </li>
 <li>
-<p><a href="#Datasett-romligOppløsning"> 3.2.3.24, &#8220;Datasett – romlig oppløsning (dcat:spatialResolutionInMeters)&#8221;</a>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP.</p>
+<p><a href="#Datasett-produsent"> 3.2.3.22, &#8220;Datasett – produsent (dct:creator)&#8221;</a>: Multiplisiteten er endret fra 0..1 til 0..n. Dette for å følge DCAT-AP.</p>
 </li>
 <li>
 <p><a href="#Datasett-tidsoppløsning"> 3.2.3.26, &#8220;Datasett – tidsoppløsning (dcat:temporalResolution)&#8221;</a>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP.</p>
@@ -10428,13 +10428,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Datasett-tema"> 3.2.1.3, &#8220;Datasett – tema (dcat:theme)&#8221;</a>: EuroVoc er utgått fra krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.</p>
+<p><a href="#Datasett-bleGenerertVed"> 3.2.2.2, &#8220;Datasett – ble generert ved (prov:wasGeneratedBy)&#8221;</a>: Nytt krav til bruk av kontrollerte vokabular Proveniensaktivitetstype. Dette for å kunne standardisere.</p>
 </li>
 <li>
 <p><a href="#Datasett-produsent"> 3.2.3.22, &#8220;Datasett – produsent (dct:creator)&#8221;</a>: Det er ikke lenger krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.</p>
 </li>
 <li>
-<p><a href="#Datasett-bleGenerertVed"> 3.2.2.2, &#8220;Datasett – ble generert ved (prov:wasGeneratedBy)&#8221;</a>: Nytt krav til bruk av kontrollerte vokabular Proveniensaktivitetstype. Dette for å kunne standardisere.</p>
+<p><a href="#Datasett-tema"> 3.2.1.3, &#8220;Datasett – tema (dcat:theme)&#8221;</a>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.</p>
 </li>
 </ul>
 </div>
@@ -10451,7 +10451,38 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Datasettserie-beskrivelse"> 3.3.1.1, &#8220;Datasettserie – beskrivelse (dct:description)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datasettserie-endringsdato"> 3.3.3.1, &#8220;Datasettserie – endringsdato (dct:modified)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datasettserie-frekvens"> 3.3.3.2, &#8220;Datasettserie – frekvens (dct:accrualPeriodicity)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datasettserie-gjeldendeLovgivning"> 3.3.2.3, &#8220;Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datasettserie-kontaktpunkt"> 3.3.1.2, &#8220;Datasettserie – kontaktpunkt (dcat:contactPoint)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datasettserie-tema"> 3.3.1.3, &#8220;Datasettserie – tema (dcat:theme)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datasettserie-tittel"> 3.3.1.4, &#8220;Datasettserie – tittel (dct:title)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#Datasettserie-utgivelsesdato"> 3.3.3.3, &#8220;Datasettserie – utgivelsesdato (dct:issued)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Datasettseire-utgiver">[Datasettseire-utgiver]</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datasettserie-tidsrom"> 3.3.2.5, &#8220;Datasettserie – tidsrom (dct:temporal)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10461,7 +10492,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p>følger (cpsv:follows): Følger DCAT-AP.</p>
 </li>
 </ul>
 </div>
@@ -10471,7 +10502,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Datasettserie-første"> 3.3.2.2, &#8220;Datasettserie – første (dcat:first)&#8221;</a>: Kravnivået endret fra obligatorisk til anbefalt og dermed også multiplisiteten fra 1..1 til 0..1. Dette fordi ikke alle datasettserier er ordnede.</p>
 </li>
 </ul>
 </div>
@@ -10481,7 +10512,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><em>ingen</em></p>
 </li>
 </ul>
 </div>
@@ -10498,7 +10529,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Datatjeneste-gjeldendeLovgivning"> 3.4.2.4, &#8220;Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datatjeneste-versjon"> 3.4.3.9, &#8220;Datatjeneste – versjon (dcat:version)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.10, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10508,7 +10545,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><em>ingen</em></p>
 </li>
 </ul>
 </div>
@@ -10518,7 +10555,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Datatjeneste-kontaktpunkt"> 3.4.1.2, &#8220;Datatjeneste – kontaktpunkt (dcat:contactPoint)&#8221;</a>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.</p>
+</li>
+<li>
+<p><a href="#Datatjeneste-identifikator"> 3.4.3.3, &#8220;Datatjeneste – identifikator (dct:identifier)&#8221;</a>: Kravnivået er endret fra obligatorisk til valgfri. Dette for å følge DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datatjeneste-i-samsvar-med"> 3.4.2.5, &#8220;Datatjeneste – i samsvar med (dct:conformsTo)&#8221;</a>: Kravnivået er endret fra valgfri til anbefalt. Dette for å følge DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10528,7 +10571,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Datatjeneste-tema"> 3.4.2.6, &#8220;Datatjeneste – tema (dcat:theme)&#8221;</a>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.</p>
 </li>
 </ul>
 </div>
@@ -10545,7 +10588,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Distribusjon-gjeldendeLovgivning"> 3.5.3.4, &#8220;Distribusjon – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10555,7 +10598,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><em>ingen</em></p>
 </li>
 </ul>
 </div>
@@ -10565,7 +10608,16 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Distribusjon-medietype"> 3.5.3.7, &#8220;Distribusjon – medietype (dcat:mediaType)&#8221;</a>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Distribusjon-romlig-oppløsning"> 3.5.3.12, &#8220;Distribusjon – romlig oppløsning (dcat:spatialResolutionInMeters)&#8221;</a>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Distribusjon-tidsoppløsning"> 3.5.3.15, &#8220;Distribusjon – tidsoppløsning (dcat:temporalResolution)&#8221;</a>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Distribusjon-format"> 3.5.2.2, &#8220;Distribusjon – format (dct:format)&#8221;</a>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10575,7 +10627,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Distribusjon-komprimeringsformat"> 3.5.3.6, &#8220;Distribusjon – komprimeringsformat (dcat:compressFormat)&#8221;</a>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen.</p>
+</li>
+<li>
+<p><a href="#Distribusjon-pakkeformat"> 3.5.3.9, &#8220;Distribusjon – pakkeformat (dcat:packageFormat)&#8221;</a>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen.</p>
+</li>
+<li>
+<p><a href="#Distribusjon-status"> 3.5.2.4, &#8220;Distribusjon – status (adms:status)&#8221;</a>: ADMS status vocabulary er erstattet med EUs kontrollerte vokabular for Distribution status.</p>
 </li>
 </ul>
 </div>
@@ -10826,7 +10884,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-06-28 14:34:13 UTC
+Sist oppdatert 2024-06-28 18:59:32 UTC
 </div>
 </div>
 </body>
