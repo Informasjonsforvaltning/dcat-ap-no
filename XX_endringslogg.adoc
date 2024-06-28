@@ -32,13 +32,13 @@ Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) fo
 
 Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper, at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
 
-Følgende klasser er nye, dvs. enten helt nye eller nå i denne versjonen eksplisitt spesifisert med egenskaper: 
+Oversikt over *nye klasser*, dvs. enten helt nye eller nå i denne versjonen eksplisitt spesifisert med egenskaper: 
 
 * <<Gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av et datasett, med standardiserte egenskaper.
 * <<Kontaktopplysning>>, for å kunne beskrive et kontaktpunkt, med standardiserte egenskaper
 * <<Rettighetserklæring>>, for å kunne beskrive ev. rettigheter knyttet til et datasett, med standardiserte egenskaper
 
-Følgende klasser er utgått, dvs. at det i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper: 
+Oversikt over *utgåtte klasser*, dvs. klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper: 
 
 * Lisensdokument (dct:LicenseDocument): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
 * Lokasjon (dct:Location): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
@@ -48,7 +48,7 @@ Følgende klasser er utgått, dvs. at det i denne versjonen ikke lenger er ekspl
 * Tema (skos:Concept): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
 * Tematisk skjema (skos:ConceptScheme): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
 
-Følgende klasser har endrede krav: 
+Oversikt over *endrede krav i eksisterende klasser*: 
 
 * <<Datasett>>: 
 ** Nye egenskaper:
