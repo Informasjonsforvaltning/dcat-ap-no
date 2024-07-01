@@ -929,7 +929,14 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Endringslogg">Vedlegg C - Endringslogg</a>
 <ul class="sectlevel2">
 <li><a href="#_endringer_av_dokumentstrukturen_fra_versjon_2_2_til_denne_versjonen">Endringer av dokumentstrukturen fra versjon 2.2 til denne versjonen</a></li>
-<li><a href="#_endringer_av_klasser_og_egenskaper_fra_versjon_2_2_til_denne_versjonen">Endringer av klasser og egenskaper fra versjon 2.2 til denne versjonen</a></li>
+<li><a href="#_endringer_av_klasser_og_egenskaper_fra_versjon_2_2_til_denne_versjonen">Endringer av klasser og egenskaper fra versjon 2.2 til denne versjonen</a>
+<ul class="sectlevel3">
+<li><a href="#_overordnede_endringer">Overordnede endringer</a></li>
+<li><a href="#_nye_klasser">Nye klasser</a></li>
+<li><a href="#_utgåtte_klasser">Utgåtte klasser</a></li>
+<li><a href="#_endrede_krav_i_eksisterende_klasser">Endrede krav i eksisterende klasser</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -10256,10 +10263,10 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Forenklet-fremstilling">Kapittel 2</a>  inneholder en forenklet fremstilling av de viktigste kravene i standarden. Denne delen er ment for den ikke-tekniske målgruppen.</p>
+<p><a href="#Forenklet-fremstilling">Kapittel 2</a>  inneholder en forenklet fremstilling av de viktigste kravene i standarden. Denne delen er primært ment for den ikke-tekniske målgruppen.</p>
 </li>
 <li>
-<p><a href="#Spesifikasjon-per-klasse">Kapittel 3</a>  inneholder tekniske krav til hvordan beskrivelser av datasett, datatjenester osv. skal representeres i RDF. Denne delen er ment for den tekniske målgruppen.</p>
+<p><a href="#Spesifikasjon-per-klasse">Kapittel 3</a>  inneholder tekniske krav til hvordan beskrivelser av datasett, datatjenester osv. skal representeres i RDF. Denne delen er primært ment for den tekniske målgruppen.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -10295,8 +10302,10 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div class="sect2">
 <h3 id="_endringer_av_klasser_og_egenskaper_fra_versjon_2_2_til_denne_versjonen"><a class="anchor" href="#_endringer_av_klasser_og_egenskaper_fra_versjon_2_2_til_denne_versjonen"></a>Endringer av klasser og egenskaper fra versjon 2.2 til denne versjonen</h3>
+<div class="sect3">
+<h4 id="_overordnede_endringer"><a class="anchor" href="#_overordnede_endringer"></a>Overordnede endringer</h4>
 <div class="paragraph">
-<p>EU har begynt å ikke gjenta valgfrie egenskaper fra W3Cs DCAT med mindre EU gjør tilpasninger, men presiserer samtidig at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT (istedenfor BRegDCAT-AP som den gang inneholdt hele DCAT-AP med utvidelser).</p>
+<p>EU har begynt å ikke gjenta valgfrie egenskaper fra W3Cs DCAT når det ikke er gjort noen tilpasninger. EU presiserer samtidig at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT (istedenfor BRegDCAT-AP som forrige versjon var basert på og som den gang inneholdt hele DCAT-AP med utvidelser).</p>
 </div>
 <div class="paragraph">
 <p>Denne versjonen spesifiserer <em>ikke</em> kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <a href="#Samsvarskrav"> 1.5, &#8220;Krav til samsvar&#8221;</a> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP.</p>
@@ -10304,8 +10313,11 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="paragraph">
 <p>Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper, at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man <em>kan</em> bruke en invers egenskap, <em>i tillegg til</em> og <em>ikke istedenfor</em> egenskapen som er eksplisitt tatt med i standarden. Se <a href="#Om-inverse-egenskaper"> 4.4, &#8220;Om bruk av inverse egenskaper&#8221;</a>.</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_nye_klasser"><a class="anchor" href="#_nye_klasser"></a>Nye klasser</h4>
 <div class="paragraph">
-<p>Oversikt over <strong>nye klasser</strong>, dvs. enten helt nye eller nå i denne versjonen eksplisitt spesifisert med egenskaper:</p>
+<p>Følgende er klasser som er enten helt nye eller nå eksplisitt spesifisert med egenskaper i denne versjonen:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -10320,8 +10332,11 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </li>
 </ul>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_utgåtte_klasser"><a class="anchor" href="#_utgåtte_klasser"></a>Utgåtte klasser</h4>
 <div class="paragraph">
-<p>Oversikt over <strong>utgåtte klasser</strong>, dvs. klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper:</p>
+<p>Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -10348,9 +10363,9 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>Oversikt over <strong>endrede krav i eksisterende klasser</strong>:</p>
 </div>
+<div class="sect3">
+<h4 id="_endrede_krav_i_eksisterende_klasser"><a class="anchor" href="#_endrede_krav_i_eksisterende_klasser"></a>Endrede krav i eksisterende klasser</h4>
 <div class="ulist">
 <ul>
 <li>
@@ -10358,7 +10373,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Nye egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -10371,35 +10386,45 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </li>
 <li>
-<p>Utgåtte egenskaper:</p>
+<p><strong>Utgåtte egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>er del av (dct:isPartOf): Følger DCAT-AP.</p>
+<p>er del av (dct:isPartOf), for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p>er påkrevd av (dct:isRequiredBy): Følger DCAT-AP.</p>
+<p>er påkrevd av (dct:isRequiredBy), for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p>er versjon av (dct:isVersionOf): Følger DCAT-AP.</p>
+<p>er versjon av (dct:isVersionOf), for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p>erstattes av (dct:isReplacedBy): Følger DCAT-AP.</p>
+<p>erstattes av (dct:isReplacedBy), for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p>følger (cpsv:follows): Følger DCAT-AP.</p>
+<p>følger (cpsv:follows), for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p>krever (dct:requires): Følger DCAT-AP.</p>
+<p>krever (dct:requires), for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p>refererer til (dct:references): Følger DCAT-AP.</p>
+<p>refererer til (dct:references), for å følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
+<p><strong>Endrede egenskapsURIer</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Datasett-versjon"> 3.2.3.29, &#8220;Datasett – versjon (dcat:version)&#8221;</a>: EgenskapsURIen endret fra owl:versionInfo til dcat:version.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Endrede kravnivå og/eller multiplisitet</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -10424,7 +10449,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </li>
 <li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<p><strong>Endrede krav til bruk av kontrollerte vokabularer</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -10447,72 +10472,62 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Nye egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Datasettserie-beskrivelse"> 3.3.1.1, &#8220;Datasettserie – beskrivelse (dct:description)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-beskrivelse"> 3.3.1.1, &#8220;Datasettserie – beskrivelse (dct:description)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-endringsdato"> 3.3.3.1, &#8220;Datasettserie – endringsdato (dct:modified)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-endringsdato"> 3.3.3.1, &#8220;Datasettserie – endringsdato (dct:modified)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-frekvens"> 3.3.3.2, &#8220;Datasettserie – frekvens (dct:accrualPeriodicity)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-frekvens"> 3.3.3.2, &#8220;Datasettserie – frekvens (dct:accrualPeriodicity)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-gjeldendeLovgivning"> 3.3.2.3, &#8220;Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-gjeldendeLovgivning"> 3.3.2.3, &#8220;Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-kontaktpunkt"> 3.3.1.2, &#8220;Datasettserie – kontaktpunkt (dcat:contactPoint)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-kontaktpunkt"> 3.3.1.2, &#8220;Datasettserie – kontaktpunkt (dcat:contactPoint)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-tema"> 3.3.1.3, &#8220;Datasettserie – tema (dcat:theme)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-tema"> 3.3.1.3, &#8220;Datasettserie – tema (dcat:theme)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-tittel"> 3.3.1.4, &#8220;Datasettserie – tittel (dct:title)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-tittel"> 3.3.1.4, &#8220;Datasettserie – tittel (dct:title)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p><a href="#Datasettserie-utgivelsesdato"> 3.3.3.3, &#8220;Datasettserie – utgivelsesdato (dct:issued)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-utgivelsesdato"> 3.3.3.3, &#8220;Datasettserie – utgivelsesdato (dct:issued)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Datasettseire-utgiver">[Datasettseire-utgiver]</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettseire-utgiver">[Datasettseire-utgiver]</a>, for å følger DCAT-AP/DCAT..</p>
 </li>
 <li>
-<p><a href="#Datasettserie-tidsrom"> 3.3.2.5, &#8220;Datasettserie – tidsrom (dct:temporal)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-tidsrom"> 3.3.2.5, &#8220;Datasettserie – tidsrom (dct:temporal)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Utgåtte egenskaper:</p>
+<p><strong>Utgåtte egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>følger (cpsv:follows): Følger DCAT-AP.</p>
+<p>følger (cpsv:follows), for å følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
+<p><strong>Endrede kravnivå og/eller multiplisitet</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
 <p><a href="#Datasettserie-første"> 3.3.2.2, &#8220;Datasettserie – første (dcat:first)&#8221;</a>: Kravnivået endret fra obligatorisk til anbefalt og dermed også multiplisiteten fra 1..1 til 0..1. Dette fordi ikke alle datasettserier er ordnede.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>ingen</em></p>
 </li>
 </ul>
 </div>
@@ -10525,33 +10540,23 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Nye egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Datatjeneste-gjeldendeLovgivning"> 3.4.2.4, &#8220;Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datatjeneste-gjeldendeLovgivning"> 3.4.2.4, &#8220;Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-versjon"> 3.4.3.9, &#8220;Datatjeneste – versjon (dcat:version)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datatjeneste-versjon"> 3.4.3.9, &#8220;Datatjeneste – versjon (dcat:version)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.10, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.10, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Utgåtte egenskaper:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>ingen</em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
+<p><strong>Endrede kravnivå og/eller multiplisitet</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -10567,7 +10572,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </li>
 <li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<p><strong>Endrede krav til bruk av kontrollerte vokabularer</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -10584,27 +10589,17 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Nye egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Distribusjon-gjeldendeLovgivning"> 3.5.3.4, &#8220;Distribusjon – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>: Følger DCAT-AP/DCAT.</p>
+<p><a href="#Distribusjon-gjeldendeLovgivning"> 3.5.3.4, &#8220;Distribusjon – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, for å følger DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Utgåtte egenskaper:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em>ingen</em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
+<p><strong>Endrede kravnivå og/eller multiplisitet</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -10623,7 +10618,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </li>
 <li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<p><strong>Endrede krav til bruk av kontrollerte vokabularer</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
@@ -10646,41 +10641,56 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Nye egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Katalog-kontaktpunkt"> 3.8.1.2, &#8220;Katalog – kontaktpunkt (dcat:contactPoint)&#8221;</a>, for å kunne oppgi kontaktopplysninger til den ansvarlige.</p>
+</li>
+<li>
+<p><a href="#Katalog-gjeldendeLovgivning"> 3.8.3.1, &#8220;Katalog – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, for å følge DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Katalog-tidsrom"> 3.8.3.8, &#8220;Katalog – tidsrom (dct:temporal)&#8221;</a>, for å følge DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Utgåtte egenskaper:</p>
+<p><strong>Utgåtte egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p>er del av (dct:isPartOf), for å følge DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p>frekvens (dct:accrualPeriodicity), for å følge DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p>opphav (dct:provenance), for å følge DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
+<p><strong>Endrede kravnivå og/eller multiplisitet</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Katalog-identifikator"> 3.8.3.3, &#8220;Katalog – identifikator (dct:identifier)&#8221;</a>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1. Dette for å følge DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
+<p><strong>Endrede krav til bruk av kontrollerte vokabularer</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Katalog-produsent"> 3.8.3.6, &#8220;Katalog – produsent (dct:creator)&#8221;</a>: Kravet om bruk av EUs kontrollerte vokabular Corporate body utgått. Dette for å følge DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Katalog-temaer"> 3.8.2.8, &#8220;Katalog – temaer (dcat:themeTaxonomy)&#8221;</a>: EuroVoc utgått og Data theme tilføyet i kravet om bruk av kontrollerte vokabularer.</p>
 </li>
 </ul>
 </div>
@@ -10693,41 +10703,21 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Endrede kravnivå og/eller multiplisitet</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Katalogpost-i-samsvar-med"> 3.10.2.1, &#8220;Katalogpost – i samsvar med (dct:conformsTo)&#8221;</a>: Multiplisiteten endret fra 0..1 til 0..n. Dette for å følge DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Utgåtte egenskaper:</p>
+<p><strong>Endrede krav til bruk av kontrollerte vokabularer</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Katalogpost-status"> 3.10.2.2, &#8220;Katalogpost – status (adms:status)&#8221;</a>: ADMS status vocabulary er erstattet av EUs kontrollerte vokabular for Distribution status. Dette for å samkjøre med tilsvarende egenskaper i de andre klassene.</p>
 </li>
 </ul>
 </div>
@@ -10740,41 +10730,27 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Nye egenskaper</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#RegulativRessurs-språk"> 3.12.1.4, &#8220;Regulativ ressurs – språk (dct:language)&#8221;</a>, for å kunne oppgi språk.</p>
+</li>
+<li>
+<p><a href="#RegulativRessurs-tittel"> 3.12.1.5, &#8220;Regulativ ressurs – tittel (dct:title)&#8221;</a>, for å kunne oppgi tittel.</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Utgåtte egenskaper:</p>
+<p><strong>Endrede kravnivå og/eller multiplisitet</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
+<p><a href="#RegulativRessurs-identifikator"> 3.12.1.2, &#8220;Regulativ ressurs – identifikator (dct:identifier)&#8221;</a>: Multiplisiteten endret fra 0..n til 0..1. Denne type ressurser bør ha maks. én identifikator. Dette også for å samkjøre med <a href="https://data.norge.no/specification/cpsv-ap-no" class="ext-link" target="_blank" rel="noopener">CPSV-AP-NO &#x29C9;</a>.</p>
 </li>
 <li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#RegulativRessurs-type"> 3.12.1.6, &#8220;Regulativ ressurs – type (dct:type)&#8221;</a>: Kravnivået endret fra obligatorisk til anbefalt, og multiplisiteten fra 0..n til 0..1 (denne type ressurser bør være av maks. én type). Dette for å samkjøre med <a href="https://data.norge.no/specification/cpsv-ap-no" class="ext-link" target="_blank" rel="noopener">CPSV-AP-NO &#x29C9;</a>.</p>
 </li>
 </ul>
 </div>
@@ -10787,41 +10763,11 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Endrede krav til bruk av kontrollerte vokabularer</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Utgåtte egenskaper:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Sjekksum-algoritme"> 3.15.1.1, &#8220;Sjekksum – algoritme (spdx:algorithm)&#8221;</a>: Føyet til krav om å velge en av algoritmene, istedenfor å referere til en gitt algoritme som verdiområde/range. Dette for å følge DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10834,41 +10780,11 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Nye egenskaper:</p>
+<p><strong>Endrede egenskapsURIer</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Utgåtte egenskaper:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede kravnivå og/eller multiplisitet:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Endrede krav til bruk av kontrollerte vokabularer:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><em><mark>kommer</mark></em></p>
+<p><a href="#Standard-harVersjonsnummer"> 3.16.3.1, &#8220;Standard – har versjonsnummer (dcat:version) &#8221;</a>: EgenskapsURIen endret fra owl:versionInfo til dcat:version. Dette for å samkjøre med tilsvarende egenskaper i de andre klassene.</p>
 </li>
 </ul>
 </div>
@@ -10877,6 +10793,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </li>
 </ul>
+</div>
 </div>
 </div>
 </div>
@@ -10884,7 +10801,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-06-28 18:59:32 UTC
+Sist oppdatert 2024-07-01 11:44:19 UTC
 </div>
 </div>
 </body>
