@@ -8,9 +8,9 @@ Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbesk
 
 Standarden inneholder nå tre hoveddeler i tillegg til det innledende kapittelet og vedleggene:
 
-* <<Forenklet-fremstilling>>  inneholder en forenklet fremstilling av de viktigste kravene i standarden. Denne delen er ment for den ikke-tekniske målgruppen. 
+* <<Forenklet-fremstilling>>  inneholder en forenklet fremstilling av de viktigste kravene i standarden. Denne delen er primært ment for den ikke-tekniske målgruppen. 
 
-* <<Spesifikasjon-per-klasse>>  inneholder tekniske krav til hvordan beskrivelser av datasett, datatjenester osv. skal representeres i RDF. Denne delen er ment for den tekniske målgruppen.  
+* <<Spesifikasjon-per-klasse>>  inneholder tekniske krav til hvordan beskrivelser av datasett, datatjenester osv. skal representeres i RDF. Denne delen er primært ment for den tekniske målgruppen.  
 ** Hver klasse og dens egenskaper er samlet i samme kapittel, istedenfor to separate kapitler i forrige versjon.
 ** Krav til bruk av kontrollerte vokabularer er nå tatt med som merknader til de aktuelle egenskapene, istedenfor i eget kapittel i forrige versjon. 
 ** Eventuelle norske utvidelser sammenlignet med DCAT-AP og DCAT, er dokumentert sammen med spesifikasjonen av den aktuelle klassen/egenskapen, i tillegg til en samlet oversikt i <<Oversikt-norske-utvidelser>>. 
@@ -26,19 +26,25 @@ Standarden inneholder nå tre hoveddeler i tillegg til det innledende kapittelet
 
 == Endringer av klasser og egenskaper fra versjon 2.2 til denne versjonen
 
-EU har begynt å ikke gjenta valgfrie egenskaper fra W3Cs DCAT med mindre EU gjør tilpasninger, men presiserer samtidig at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT (istedenfor BRegDCAT-AP som den gang inneholdt hele DCAT-AP med utvidelser). 
+=== Overordnede endringer
+
+EU har begynt å ikke gjenta valgfrie egenskaper fra W3Cs DCAT når det ikke er gjort noen tilpasninger. EU presiserer samtidig at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT (istedenfor BRegDCAT-AP som forrige versjon var basert på og som den gang inneholdt hele DCAT-AP med utvidelser). 
 
 Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <<Samsvarskrav>> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP. 
 
 Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper, at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
 
-Oversikt over *nye klasser*, dvs. enten helt nye eller nå i denne versjonen eksplisitt spesifisert med egenskaper: 
+=== Nye klasser
+
+Følgende er klasser som er enten helt nye eller nå eksplisitt spesifisert med egenskaper i denne versjonen: 
 
 * <<Gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av et datasett, med standardiserte egenskaper.
 * <<Kontaktopplysning>>, for å kunne beskrive et kontaktpunkt, med standardiserte egenskaper
 * <<Rettighetserklæring>>, for å kunne beskrive ev. rettigheter knyttet til et datasett, med standardiserte egenskaper
 
-Oversikt over *utgåtte klasser*, dvs. klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper: 
+=== Utgåtte klasser
+
+Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper: 
 
 * Lisensdokument (dct:LicenseDocument): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
 * Lokasjon (dct:Location): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
@@ -48,23 +54,26 @@ Oversikt over *utgåtte klasser*, dvs. klasser som i denne versjonen ikke lenger
 * Tema (skos:Concept): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
 * Tematisk skjema (skos:ConceptScheme): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
 
-Oversikt over *endrede krav i eksisterende klasser*: 
+=== Endrede krav i eksisterende klasser
 
 * <<Datasett>>: 
-** Nye egenskaper:
+** *Nye egenskaper*:
 *** <<Datasett-gjeldendeLovgivning>>, for å kunne knytte datasettet til ev. gjeldende lovgivning.
 *** <<Datasett-har-gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av datasettet.
 
-** Utgåtte egenskaper: 
-*** er del av (dct:isPartOf): Følger DCAT-AP.
-*** er påkrevd av (dct:isRequiredBy): Følger DCAT-AP.
-*** er versjon av (dct:isVersionOf): Følger DCAT-AP.
-*** erstattes av (dct:isReplacedBy): Følger DCAT-AP.
-*** følger (cpsv:follows): Følger DCAT-AP.
-*** krever (dct:requires): Følger DCAT-AP.
-*** refererer til (dct:references): Følger DCAT-AP.
+** *Utgåtte egenskaper*: 
+*** er del av (dct:isPartOf), for å følger DCAT-AP/DCAT.
+*** er påkrevd av (dct:isRequiredBy), for å følger DCAT-AP/DCAT.
+*** er versjon av (dct:isVersionOf), for å følger DCAT-AP/DCAT.
+*** erstattes av (dct:isReplacedBy), for å følger DCAT-AP/DCAT.
+*** følger (cpsv:follows), for å følger DCAT-AP/DCAT.
+*** krever (dct:requires), for å følger DCAT-AP/DCAT.
+*** refererer til (dct:references), for å følger DCAT-AP/DCAT.
 
-** Endrede kravnivå og/eller multiplisitet: 
+** *Endrede egenskapsURIer*: 
+*** <<Datasett-versjon>>: EgenskapsURIen endret fra owl:versionInfo til dcat:version.
+
+** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Datasett-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
 *** <<Datasett-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri. Dette for å følge DCAT-AP. 
 *** <<Datasett-romligOppløsning>>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP. 
@@ -72,64 +81,56 @@ Oversikt over *endrede krav i eksisterende klasser*:
 *** <<Datasett-tidsoppløsning>>: Multiplisiteten er endret fra 0..n til 0..1. Dette for å følge DCAT-AP. 
 *** <<Datasett-type>>: Multiplisiteten er endret fra 0..1 til 0..n1. Dette for å følge DCAT-AP. 
 
-** Endrede krav til bruk av kontrollerte vokabularer: 
+** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Datasett-bleGenerertVed>>: Nytt krav til bruk av kontrollerte vokabular Proveniensaktivitetstype. Dette for å kunne standardisere. 
 *** <<Datasett-produsent>>: Det er ikke lenger krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.
 *** <<Datasett-tema>>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
 
 * <<Datasettserie>>: 
-** Nye egenskaper:
-*** <<Datasettserie-beskrivelse>>: Følger DCAT-AP/DCAT. 
-*** <<Datasettserie-endringsdato>>: Følger DCAT-AP/DCAT. 
-*** <<Datasettserie-frekvens>>: Følger DCAT-AP/DCAT. 
-*** <<Datasettserie-gjeldendeLovgivning>>: Følger DCAT-AP/DCAT.
-*** <<Datasettserie-kontaktpunkt>>: Følger DCAT-AP/DCAT. 
-*** <<Datasettserie-tema>>: Følger DCAT-AP/DCAT. 
-*** <<Datasettserie-tittel>>: Følger DCAT-AP/DCAT. 
-** <<Datasettserie-utgivelsesdato>>: Følger DCAT-AP/DCAT. 
-*** <<Datasettseire-utgiver>>: Følger DCAT-AP/DCAT. 
-*** <<Datasettserie-tidsrom>>: Følger DCAT-AP/DCAT.
+** *Nye egenskaper*:
+*** <<Datasettserie-beskrivelse>>, for å følger DCAT-AP/DCAT. 
+*** <<Datasettserie-endringsdato>>, for å følger DCAT-AP/DCAT. 
+*** <<Datasettserie-frekvens>>, for å følger DCAT-AP/DCAT. 
+*** <<Datasettserie-gjeldendeLovgivning>>, for å følger DCAT-AP/DCAT.
+*** <<Datasettserie-kontaktpunkt>>, for å følger DCAT-AP/DCAT. 
+*** <<Datasettserie-tema>>, for å følger DCAT-AP/DCAT. 
+*** <<Datasettserie-tittel>>, for å følger DCAT-AP/DCAT. 
+** <<Datasettserie-utgivelsesdato>>, for å følger DCAT-AP/DCAT. 
+*** <<Datasettseire-utgiver>>, for å følger DCAT-AP/DCAT.. 
+*** <<Datasettserie-tidsrom>>, for å følger DCAT-AP/DCAT.
 
-** Utgåtte egenskaper: 
-*** følger (cpsv:follows): Følger DCAT-AP.
+** *Utgåtte egenskaper*: 
+*** følger (cpsv:follows), for å følger DCAT-AP/DCAT.
 
-** Endrede kravnivå og/eller multiplisitet: 
+** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Datasettserie-første>>: Kravnivået endret fra obligatorisk til anbefalt og dermed også multiplisiteten fra 1..1 til 0..1. Dette fordi ikke alle datasettserier er ordnede.   
 
-** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _ingen_
 
 * <<Datatjeneste>>: 
-** Nye egenskaper:
-*** <<Datatjeneste-gjeldendeLovgivning>>: Følger DCAT-AP/DCAT.
-*** <<Datatjeneste-versjon>>: Følger DCAT-AP/DCAT.
-*** <<Datatjeneste-versjonsmerknad>>: Følger DCAT-AP/DCAT.
+** *Nye egenskaper*:
+*** <<Datatjeneste-gjeldendeLovgivning>>, for å følger DCAT-AP/DCAT.
+*** <<Datatjeneste-versjon>>, for å følger DCAT-AP/DCAT.
+*** <<Datatjeneste-versjonsmerknad>>, for å følger DCAT-AP/DCAT.
 
-** Utgåtte egenskaper: 
-*** _ingen_
-
-** Endrede kravnivå og/eller multiplisitet: 
+** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
 *** <<Datatjeneste-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri. Dette for å følge DCAT-AP/DCAT.
 *** <<Datatjeneste-i-samsvar-med>>: Kravnivået er endret fra valgfri til anbefalt. Dette for å følge DCAT-AP/DCAT.
 
-** Endrede krav til bruk av kontrollerte vokabularer: 
+** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Datatjeneste-tema>>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
 
 * <<Distribusjon>>: 
-** Nye egenskaper:
-*** <<Distribusjon-gjeldendeLovgivning>>: Følger DCAT-AP/DCAT.
+** *Nye egenskaper*:
+*** <<Distribusjon-gjeldendeLovgivning>>, for å følger DCAT-AP/DCAT.
 
-** Utgåtte egenskaper: 
-*** _ingen_
-
-** Endrede kravnivå og/eller multiplisitet: 
+** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Distribusjon-medietype>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
 *** <<Distribusjon-romlig-oppløsning>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
 *** <<Distribusjon-tidsoppløsning>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
 *** <<Distribusjon-format>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
 
-** Endrede krav til bruk av kontrollerte vokabularer: 
+** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen. 
 *** <<Distribusjon-pakkeformat>>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen.  
 
@@ -137,51 +138,41 @@ Oversikt over *endrede krav i eksisterende klasser*:
 
 
 * <<Katalog>>: 
-** Nye egenskaper:
-*** __#kommer#__ 
-** Utgåtte egenskaper: 
-*** _#kommer#_
-** Endrede kravnivå og/eller multiplisitet: 
-*** _#kommer#_
-** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+** *Nye egenskaper*:
+*** <<Katalog-kontaktpunkt>>, for å kunne oppgi kontaktopplysninger til den ansvarlige.
+*** <<Katalog-gjeldendeLovgivning>>, for å følge DCAT-AP/DCAT.
+*** <<Katalog-tidsrom>>, for å følge DCAT-AP/DCAT.
+
+** *Utgåtte egenskaper*: 
+*** er del av (dct:isPartOf), for å følge DCAT-AP/DCAT.
+*** frekvens (dct:accrualPeriodicity), for å følge DCAT-AP/DCAT.
+*** opphav (dct:provenance), for å følge DCAT-AP/DCAT.
+
+** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<Katalog-identifikator>>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1. Dette for å følge DCAT-AP/DCAT.
+
+** *Endrede krav til bruk av kontrollerte vokabularer*: 
+*** <<Katalog-produsent>>: Kravet om bruk av EUs kontrollerte vokabular Corporate body utgått. Dette for å følge DCAT-AP/DCAT.
+*** <<Katalog-temaer>>: EuroVoc utgått og Data theme tilføyet i kravet om bruk av kontrollerte vokabularer. 
 
 * <<Katalogpost>>: 
-** Nye egenskaper:
-*** __#kommer#__ 
-** Utgåtte egenskaper: 
-*** _#kommer#_
-** Endrede kravnivå og/eller multiplisitet: 
-*** _#kommer#_
-** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<Katalogpost-i-samsvar-med>>: Multiplisiteten endret fra 0..1 til 0..n. Dette for å følge DCAT-AP/DCAT.
+** *Endrede krav til bruk av kontrollerte vokabularer*: 
+*** <<Katalogpost-status>>: ADMS status vocabulary er erstattet av EUs kontrollerte vokabular for Distribution status. Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
 
 * <<RegulativRessurs>>: 
-** Nye egenskaper:
-*** __#kommer#__ 
-** Utgåtte egenskaper: 
-*** _#kommer#_
-** Endrede kravnivå og/eller multiplisitet: 
-*** _#kommer#_
-** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+** *Nye egenskaper*:
+*** <<RegulativRessurs-språk>>, for å kunne oppgi språk. 
+***  <<RegulativRessurs-tittel>>, for å kunne oppgi tittel. 
+** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<RegulativRessurs-identifikator>>: Multiplisiteten endret fra 0..n til 0..1. Denne type ressurser bør ha maks. én identifikator. Dette også for å samkjøre med https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]. 
+*** <<RegulativRessurs-type>>: Kravnivået endret fra obligatorisk til anbefalt, og multiplisiteten fra 0..n til 0..1 (denne type ressurser bør være av maks. én type). Dette for å samkjøre med https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
 
 * <<Sjekksum>>: 
-** Nye egenskaper:
-*** __#kommer#__ 
-** Utgåtte egenskaper: 
-*** _#kommer#_
-** Endrede kravnivå og/eller multiplisitet: 
-*** _#kommer#_
-** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+** *Endrede krav til bruk av kontrollerte vokabularer*: 
+*** <<Sjekksum-algoritme>>: Føyet til krav om å velge en av algoritmene, istedenfor å referere til en gitt algoritme som verdiområde/range. Dette for å følge DCAT-AP/DCAT. 
 
 * <<Standard>> 
-** Nye egenskaper:
-*** __#kommer#__ 
-** Utgåtte egenskaper: 
-*** _#kommer#_
-** Endrede kravnivå og/eller multiplisitet: 
-*** _#kommer#_
-** Endrede krav til bruk av kontrollerte vokabularer: 
-*** _#kommer#_
+** *Endrede egenskapsURIer*:
+*** <<Standard-harVersjonsnummer>>: EgenskapsURIen endret fra owl:versionInfo til dcat:version. Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
