@@ -82,7 +82,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasett-type>>: Multiplisiteten er endret fra 0..1 til 0..n1. Dette for å følge DCAT-AP. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Datasett-bleGenerertVed>>: Nytt krav til bruk av kontrollerte vokabular Proveniensaktivitetstype. Dette for å kunne standardisere. 
+*** <<Datasett-bleGenerertVed>>: Nytt krav til bruk av kontrollerte vokabular «Proveniensaktivitetstype». Dette for å kunne ha standardiserte verdier av denne egenskapen. 
 *** <<Datasett-produsent>>: Det er ikke lenger krav til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP.
 *** <<Datasett-tema>>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
 
@@ -95,8 +95,8 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasettserie-kontaktpunkt>>, for å følger DCAT-AP/DCAT. 
 *** <<Datasettserie-tema>>, for å følger DCAT-AP/DCAT. 
 *** <<Datasettserie-tittel>>, for å følger DCAT-AP/DCAT. 
-** <<Datasettserie-utgivelsesdato>>, for å følger DCAT-AP/DCAT. 
-*** <<Datasettseire-utgiver>>, for å følger DCAT-AP/DCAT.. 
+*** <<Datasettserie-utgivelsesdato>>, for å følger DCAT-AP/DCAT. 
+*** <<Datasettserie-utgiver>>, for å følger DCAT-AP/DCAT.. 
 *** <<Datasettserie-tidsrom>>, for å følger DCAT-AP/DCAT.
 
 ** *Utgåtte egenskaper*: 
@@ -118,7 +118,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datatjeneste-i-samsvar-med>>: Kravnivået er endret fra valgfri til anbefalt. Dette for å følge DCAT-AP/DCAT.
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Datatjeneste-tema>>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
+*** <<Datatjeneste-tema>>: "EuroVoc" er utgått fra kravet til bruk av kontrollerte vokabularer. Dette for å følge DCAT-AP. 
 
 * <<Distribusjon>>: 
 ** *Nye egenskaper*:
@@ -131,9 +131,9 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Distribusjon-format>>: Multiplisiteten endret fra 0..n til 0..1. Dette for å følge DCAT-AP/DCAT.
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen. 
-*** <<Distribusjon-pakkeformat>>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen.  
-*** <<Distribusjon-status>>: ADMS status vocabulary er erstattet med EUs kontrollerte vokabular for Distribution status. 
+*** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular "IANA Medida Types", som et felles vokabular for denne egenskapen. 
+*** <<Distribusjon-pakkeformat>>: Tilføyet kravet til å bruke kontrollert vokabular "IANA Medida Types", som et felles vokabular for denne egenskapen.  
+*** <<Distribusjon-status>>: "ADMS status vocabulary" er erstattet med EUs kontrollerte vokabular for "Distribution status". 
 
 
 * <<Katalog>>: 
@@ -151,14 +151,14 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Katalog-identifikator>>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1. Dette for å følge DCAT-AP/DCAT.
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Katalog-produsent>>: Kravet om bruk av EUs kontrollerte vokabular Corporate body utgått. Dette for å følge DCAT-AP/DCAT.
-*** <<Katalog-temaer>>: EuroVoc utgått og Data theme tilføyet i kravet om bruk av kontrollerte vokabularer. 
+*** <<Katalog-produsent>>: Kravet om bruk av EUs kontrollerte vokabular "Corporate body" utgått. Dette for å følge DCAT-AP/DCAT.
+*** <<Katalog-temaer>>: "EuroVoc" utgått og "Data theme" tilføyet i kravet om bruk av kontrollerte vokabularer. 
 
 * <<Katalogpost>>: 
 ** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Katalogpost-i-samsvar-med>>: Multiplisiteten endret fra 0..1 til 0..n. Dette for å følge DCAT-AP/DCAT.
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Katalogpost-status>>: "A"DMS status vocabulary" er erstattet av EUs kontrollerte vokabular for "Distribution status". Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
+*** <<Katalogpost-status>>: "ADMS status vocabulary" er erstattet av EUs kontrollerte vokabular for "Distribution status". Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
 
 * <<RegulativRessurs>>: 
 ** *Nye egenskaper*:
@@ -170,7 +170,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 
 * <<Sjekksum>>: 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Sjekksum-algoritme>>: Føyet til krav om å velge en av algoritmene, istedenfor å referere til en gitt algoritme som verdiområde/range. Dette for å følge DCAT-AP/DCAT. 
+*** <<Sjekksum-algoritme>>: Føyet til krav om å velge en av de forhåndsdefinerte algoritmene, istedenfor å referere til én og bare én gitt algoritme som verdiområde/range. Dette for å følge DCAT-AP/DCAT. 
 
 * <<Standard>> 
 ** *Endrede egenskapsURIer*:
