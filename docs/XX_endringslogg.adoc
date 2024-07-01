@@ -44,15 +44,15 @@ Følgende er klasser som er enten helt nye eller nå eksplisitt spesifisert med 
 
 === Utgåtte klasser
 
-Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper: 
+Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper, og som derfor ikke tas med i denne versjonen: 
 
-* Lisensdokument (dct:LicenseDocument): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
-* Lokasjon (dct:Location): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
+* Lisensdokument (dct:LicenseDocument): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
+* Lokasjon (dct:Location): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
 * Offentlig organisasjon (cv:PublicOrganisation): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]. 
 * Offentlig tjeneste (cpsv:PublicService): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
 * Regel (cpsv:Rule): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
-* Tema (skos:Concept): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
-* Tematisk skjema (skos:ConceptScheme): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruke denne klassen som range skal referere til kontrollerte vokabularer.
+* Tema (skos:Concept): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
+* Tematisk skjema (skos:ConceptScheme): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
 
 === Endrede krav i eksisterende klasser
 
