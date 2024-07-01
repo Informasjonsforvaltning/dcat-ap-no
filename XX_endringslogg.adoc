@@ -46,32 +46,32 @@ Følgende er klasser som er enten helt nye eller nå eksplisitt spesifisert med 
 
 Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper, og som derfor ikke tas med i denne versjonen: 
 
-* Lisensdokument (dct:LicenseDocument): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
-* Lokasjon (dct:Location): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
-* Offentlig organisasjon (cv:PublicOrganisation): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]. 
-* Offentlig tjeneste (cpsv:PublicService): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
+* Lisensdokument (`dct:LicenseDocument`): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
+* Lokasjon (`dct:Location`): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
+* Offentlig organisasjon (`cv:PublicOrganisation`): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]. 
+* Offentlig tjeneste (`cpsv:PublicService`): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
 * Regel (cpsv:Rule): Behovet er dekket av https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
-* Tema (skos:Concept): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
-* Tematisk skjema (skos:ConceptScheme): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
+* Tema (`skos:Concept`): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
+* Tematisk skjema (`skos:ConceptScheme`): Det ikke er behov for å lage egne instanser av denne klasse fordi egenskapene som bruker denne klassen som verdiområde skal referere til kontrollerte vokabularer.
 
 === Endrede krav i eksisterende klasser
 
 * <<Datasett>>: 
 ** *Nye egenskaper*:
-*** <<Datasett-gjeldendeLovgivning>>, for å kunne knytte datasettet til ev. gjeldende lovgivning.
+*** <<Datasett-gjeldendeLovgivning>>, for å kunne knytte datasettet til ev. gjeldende lovgivning, for for å følge DCAT-AP/DCAT.
 *** <<Datasett-har-gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av datasettet.
 
 ** *Utgåtte egenskaper*: 
-*** er del av (dct:isPartOf), for å følger DCAT-AP/DCAT.
-*** er påkrevd av (dct:isRequiredBy), for å følger DCAT-AP/DCAT.
-*** er versjon av (dct:isVersionOf), for å følger DCAT-AP/DCAT.
-*** erstattes av (dct:isReplacedBy), for å følger DCAT-AP/DCAT.
-*** følger (cpsv:follows), for å følger DCAT-AP/DCAT.
-*** krever (dct:requires), for å følger DCAT-AP/DCAT.
-*** refererer til (dct:references), for å følger DCAT-AP/DCAT.
+*** er del av (`dct:isPartOf`), for å følger DCAT-AP/DCAT.
+*** er påkrevd av (`dct:isRequiredBy`), for å følger DCAT-AP/DCAT.
+*** er versjon av (`dct:isVersionOf`), for å følger DCAT-AP/DCAT.
+*** erstattes av (`dct:isReplacedBy`), for å følger DCAT-AP/DCAT.
+*** følger (`cpsv:follows`), for å følger DCAT-AP/DCAT.
+*** krever (`dct:requires`), for å følger DCAT-AP/DCAT.
+*** refererer til (`dct:references`), for å følger DCAT-AP/DCAT.
 
 ** *Endrede egenskapsURIer*: 
-*** <<Datasett-versjon>>: EgenskapsURIen endret fra owl:versionInfo til dcat:version.
+*** <<Datasett-versjon>>: EgenskapsURIen er endret fra `owl:versionInfo` til `dcat:version`.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Datasett-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
@@ -100,7 +100,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasettserie-tidsrom>>, for å følger DCAT-AP/DCAT.
 
 ** *Utgåtte egenskaper*: 
-*** følger (cpsv:follows), for å følger DCAT-AP/DCAT.
+*** følger (`cpsv:follows`), for å følger DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Datasettserie-første>>: Kravnivået endret fra obligatorisk til anbefalt og dermed også multiplisiteten fra 1..1 til 0..1. Dette fordi ikke alle datasettserier er ordnede.   
@@ -133,7 +133,6 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen. 
 *** <<Distribusjon-pakkeformat>>: Tilføyet kravet til å bruke kontrollert vokabular IANA Medida Types, som et felles vokabular for denne egenskapen.  
-
 *** <<Distribusjon-status>>: ADMS status vocabulary er erstattet med EUs kontrollerte vokabular for Distribution status. 
 
 
@@ -144,9 +143,9 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Katalog-tidsrom>>, for å følge DCAT-AP/DCAT.
 
 ** *Utgåtte egenskaper*: 
-*** er del av (dct:isPartOf), for å følge DCAT-AP/DCAT.
-*** frekvens (dct:accrualPeriodicity), for å følge DCAT-AP/DCAT.
-*** opphav (dct:provenance), for å følge DCAT-AP/DCAT.
+*** er del av (`dct:isPartOf`), for å følge DCAT-AP/DCAT.
+*** frekvens (`dct:accrualPeriodicity`), for å følge DCAT-AP/DCAT.
+*** opphav (`dct:provenance`), for å følge DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Katalog-identifikator>>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1. Dette for å følge DCAT-AP/DCAT.
@@ -159,7 +158,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 ** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Katalogpost-i-samsvar-med>>: Multiplisiteten endret fra 0..1 til 0..n. Dette for å følge DCAT-AP/DCAT.
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Katalogpost-status>>: ADMS status vocabulary er erstattet av EUs kontrollerte vokabular for Distribution status. Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
+*** <<Katalogpost-status>>: "A"DMS status vocabulary" er erstattet av EUs kontrollerte vokabular for "Distribution status". Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
 
 * <<RegulativRessurs>>: 
 ** *Nye egenskaper*:
@@ -175,4 +174,4 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 
 * <<Standard>> 
 ** *Endrede egenskapsURIer*:
-*** <<Standard-harVersjonsnummer>>: EgenskapsURIen endret fra owl:versionInfo til dcat:version. Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
+*** <<Standard-harVersjonsnummer>>: EgenskapsURIen endret fra `owl:versionInfo` til `dcat:version`. Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
