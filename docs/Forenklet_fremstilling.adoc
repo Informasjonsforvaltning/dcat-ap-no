@@ -18,17 +18,96 @@ image::images/DCAT-AP-NO-forenklet-fremstilling.png[]
 Helt overordnet illustrerer figuren bl.a. følgende:
 
 * En *katalog* 
-** SKAL alltid inneholde opplysninger om utgiveren av katalogen og kontaktpunkter 
+** SKAL alltid inneholde opplysninger om utgiveren av katalogen og kontaktpunkter, samt beskrivelse og tittel 
 ** BØR inneholde beskrivelse av datasett og/eller datatjenester
 *** Merk at selv om hverken datasettbeskrivelse eller datatjenestebeskrivelse er obligatorisk, BØR man unngå å ha tomme kataloger. 
 * En **datasett**beskrivelse 
-** SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktpunkter
+** SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktpunkter, samt beskrivelse, tittel og tema(er) som datasettet skal sorteres innunder
 ** BØR tilgjengeliggjøres vha. distribusjoner og/eller datatjenester/APIer (se neste punkt om datatjenestebeskrivelse)
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller behandling av datasettet 
 * En **datatjeneste**beskrivelse 
-** SKAL alltid inneholde opplysninger om kontaktpunker
+** SKAL alltid inneholde opplysninger om kontaktpunker, samt tittel og endepunktsURL
 ** BØR brukes til å tilgjengeliggjøre datasett 
 *** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett. Unntaket er rene dataprosesseringstjenester.
 ** BØR inneholde opplysninger om utgiveren av datatjenesten
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller forvaltning av datatjenesten
 
+Et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, der minimumsopplysninger er uthevet: 
+
+* katalog123:
+** *Tittel*: Eksempelkatalog
+** *Beskrivelse*: Et eksempelkatalog kun for illustrasjonsformål.
+** *Utgiver*: 991825827 (organisasjonsnummeret til Digdir)
+** *Kontaktopplysninger*: 
+*** *Navn*: Digdir
+*** e-post: informasjonsforvaltning@digdir.no
+** Innholder beskrivelse av følgende datasett:
+*** datasett456
+** Inneholder beskrivelse av følgende datatjenester:
+*** api789
+* datasett456
+** *Tittel*: Eksempeldatasett
+** *Beskrivelse*: Et eksempeldatasett kun for illustrasjonsformål.
+** *Tema*: Forvaltning og offentlig sektor
+** *Utgiver*: 991825827 (organisasjonsnummeret til Digdir)
+** *Kontaktopplysninger*: 
+*** *Navn*: Digdir
+*** e-post: informasjonsforvaltning@digdir.no
+** Gjeldende lovgivning: Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)
+** Distribusjon: 
+*** TilgangsURL: \https://ikke-eksisterende.example.org/eksempelDistribusjon
+* api789
+** *Tittel*: EksempelAPI
+** *EndepunktsURL*: \https://ikke-eksisterende.example.org/eksempelAPI
+** *Kontaktopplysninger*: 
+*** *Navn*: Digitaliseringsdirektoratet
+*** e-post: informasjonsforvaltning@digdir.no
+** Tilgjengeliggjør datasett: datasett456
+
+.For teknisk interessert: klikk for å se eksemplene ovenfor i RDF Turtle
+[%collapsible]
+====
+Et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, representert i RDF Turtle: 
+-----
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@base <ikke-eksisterende.example.org/> .
+
+<katalog123> a dcat:Catalog ; # en katalog
+   dct:title "Eksempelkatalog"@nb ; # tittel
+   dct:description "Et eksempelkatalog kun for illustrasjonsformål."@nb ; # beskrivelse
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
+   dcat:contactPoint <kontaktpunktDigdir> ; 
+   dcat:dataset <datasett456> ; # inneholder datasett
+   dcat:service <api789> ; # inneholder datatjenester 
+   .
+
+<datasett456> a dcat:Dataset ; # et datasett
+   dct:title "Eksempeldatasett"@nb ; # tittel
+   dct:description "Et eksempeldatasett kun for illustrasjonsformål."@nb ; # beskrivelse
+   dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; # tema
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
+   dcat:contactPoint <kontaktpunktDigdir> ; 
+   dcatap:applicableLegislation <https://lovdata.no/eli/lov/2006/05/19/16> ; # gjeldende lovgivning
+   dcat:distribution <distribusjon321> ;
+   .
+   
+<distribusjon321> a dcat:Distribution ; # en distribusjon
+   dcat:accessURL  <https://ikke-eksisterende.example.org/eksempelDistribusjon> ;  
+   .
+
+<api789> a dcat:DataService ; # en datatjeneste
+   dct:title "EksempelAPI"@nb ; 
+   dcat:endpointURL <https://ikke-eksisterende.example.org/eksempelAPI> ; 
+   dcat:contactPoint <kontaktpunktDigdir> ; 
+   dcat:servesDataset <datasett456> ;
+   .
+
+<kontaktpunktDigdir> a vcard:Organization ;
+   vcard:fn "Digitaliseringsdirektoratet"@nb ;
+   vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no> ;
+   .
+-----
+====
