@@ -1255,10 +1255,10 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Tittel</strong>: Eksempelkatalog</p>
+<p><strong>Tittel</strong>: Eksempelkatalog (bokmål) / <em>Example Catalog (English)</em></p>
 </li>
 <li>
-<p><strong>Beskrivelse</strong>: Et eksempelkatalog kun for illustrasjonsformål.</p>
+<p><strong>Beskrivelse</strong>: Et eksempelkatalog kun for illustrasjonsformål. (bokmål) / <em>An example catalog for illustration purposes only. (English)</em></p>
 </li>
 <li>
 <p><strong>Utgiver</strong>: 991825827 (organisasjonsnummeret til Digdir)</p>
@@ -1268,7 +1268,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Navn</strong>: Digdir</p>
+<p><strong>Navn</strong>: Digitaliseringsdirektoratet (bokmål) / <em>Norwegian Digitalisation Agency (English)</em></p>
 </li>
 <li>
 <p>e-post: <a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p>
@@ -1304,10 +1304,10 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Tittel</strong>: Eksempeldatasett</p>
+<p><strong>Tittel</strong>: Eksempeldatasett (bokmål) / <em>Example Dataset (English)</em></p>
 </li>
 <li>
-<p><strong>Beskrivelse</strong>: Et eksempeldatasett kun for illustrasjonsformål.</p>
+<p><strong>Beskrivelse</strong>: Et eksempeldatasett kun for illustrasjonsformål. (bokmål) / <em>An example dataset for illustration purposes only (English)</em></p>
 </li>
 <li>
 <p><strong>Tema</strong>: Forvaltning og offentlig sektor</p>
@@ -1320,7 +1320,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Navn</strong>: Digdir</p>
+<p><strong>Navn</strong>: Digitaliseringsdirektoratet (bokmål) / <em>Norwegian Digitalisation Agency (English)</em></p>
 </li>
 <li>
 <p>e-post: <a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p>
@@ -1349,7 +1349,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Tittel</strong>: EksempelAPI</p>
+<p><strong>Tittel</strong>: EksempelAPI (bokmål) / <em>Example API (English)</em></p>
 </li>
 <li>
 <p><strong>EndepunktsURL</strong>: https://ikke-eksisterende.example.org/eksempelAPI</p>
@@ -1359,7 +1359,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Navn</strong>: Digitaliseringsdirektoratet</p>
+<p><strong>Navn</strong>: Digitaliseringsdirektoratet (bokmål) / <em>Norwegian Digitalisation Agency (English)</em></p>
 </li>
 <li>
 <p>e-post: <a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p>
@@ -1390,8 +1390,8 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 @base &lt;ikke-eksisterende.example.org/&gt; .
 
 &lt;katalog123&gt; a dcat:Catalog ; # en katalog
-   dct:title "Eksempelkatalog"@nb ; # tittel
-   dct:description "Et eksempelkatalog kun for illustrasjonsformål."@nb ; # beskrivelse
+   dct:title "Eksempelkatalog"@nb , "Example Catalog"@en ; # tittel
+   dct:description "Et eksempelkatalog kun for illustrasjonsformål."@nb , "An example catalog for illustration purposes only."@en ; # beskrivelse
    dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
    dcat:contactPoint &lt;kontaktpunktDigdir&gt; ;
    dcat:dataset &lt;datasett456&gt; ; # inneholder datasett
@@ -1399,8 +1399,8 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
    .
 
 &lt;datasett456&gt; a dcat:Dataset ; # et datasett
-   dct:title "Eksempeldatasett"@nb ; # tittel
-   dct:description "Et eksempeldatasett kun for illustrasjonsformål."@nb ; # beskrivelse
+   dct:title "Eksempeldatasett"@nb , "Example Dataset"@en ; # tittel
+   dct:description "Et eksempeldatasett kun for illustrasjonsformål."@nb , "An example dataset for illustration purposes only."@en; # beskrivelse
    dcat:theme &lt;http://publications.europa.eu/resource/authority/data-theme/GOVE&gt; ; # tema
    dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
    dcat:contactPoint &lt;kontaktpunktDigdir&gt; ;
@@ -1413,14 +1413,14 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
    .
 
 &lt;api789&gt; a dcat:DataService ; # en datatjeneste
-   dct:title "EksempelAPI"@nb ;
+   dct:title "EksempelAPI"@nb , "Example API"@en ;
    dcat:endpointURL &lt;https://ikke-eksisterende.example.org/eksempelAPI&gt; ;
    dcat:contactPoint &lt;kontaktpunktDigdir&gt; ;
    dcat:servesDataset &lt;datasett456&gt; ;
    .
 
 &lt;kontaktpunktDigdir&gt; a vcard:Organization ;
-   vcard:fn "Digitaliseringsdirektoratet"@nb ;
+   vcard:fn "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
    vcard:hasEmail &lt;mailto:informasjonsforvaltning@digdir.no&gt; ;
    .</pre>
 </div>
@@ -10982,7 +10982,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-07-02 16:25:52 UTC
+Sist oppdatert 2024-07-02 16:38:43 UTC
 </div>
 </div>
 </body>

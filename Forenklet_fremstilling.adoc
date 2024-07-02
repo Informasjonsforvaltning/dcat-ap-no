@@ -35,32 +35,32 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 Et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, der minimumsopplysninger er uthevet: 
 
 * katalog123:
-** *Tittel*: Eksempelkatalog
-** *Beskrivelse*: Et eksempelkatalog kun for illustrasjonsformål.
+** *Tittel*: Eksempelkatalog (bokmål) / _Example Catalog (English)_
+** *Beskrivelse*: Et eksempelkatalog kun for illustrasjonsformål. (bokmål) / _An example catalog for illustration purposes only. (English)_
 ** *Utgiver*: 991825827 (organisasjonsnummeret til Digdir)
 ** *Kontaktopplysninger*: 
-*** *Navn*: Digdir
+*** *Navn*: Digitaliseringsdirektoratet (bokmål) / _Norwegian Digitalisation Agency (English)_
 *** e-post: informasjonsforvaltning@digdir.no
 ** Innholder beskrivelse av følgende datasett:
 *** datasett456
 ** Inneholder beskrivelse av følgende datatjenester:
 *** api789
 * datasett456
-** *Tittel*: Eksempeldatasett
-** *Beskrivelse*: Et eksempeldatasett kun for illustrasjonsformål.
-** *Tema*: Forvaltning og offentlig sektor
+** *Tittel*: Eksempeldatasett (bokmål) / _Example Dataset (English)_
+** *Beskrivelse*: Et eksempeldatasett kun for illustrasjonsformål. (bokmål) / _An example dataset for illustration purposes only (English)_
+** *Tema*: Forvaltning og offentlig sektor 
 ** *Utgiver*: 991825827 (organisasjonsnummeret til Digdir)
 ** *Kontaktopplysninger*: 
-*** *Navn*: Digdir
+*** *Navn*: Digitaliseringsdirektoratet (bokmål) / _Norwegian Digitalisation Agency (English)_
 *** e-post: informasjonsforvaltning@digdir.no
 ** Gjeldende lovgivning: Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)
 ** Distribusjon: 
 *** TilgangsURL: \https://ikke-eksisterende.example.org/eksempelDistribusjon
 * api789
-** *Tittel*: EksempelAPI
+** *Tittel*: EksempelAPI (bokmål) / _Example API (English)_
 ** *EndepunktsURL*: \https://ikke-eksisterende.example.org/eksempelAPI
 ** *Kontaktopplysninger*: 
-*** *Navn*: Digitaliseringsdirektoratet
+*** *Navn*: Digitaliseringsdirektoratet (bokmål) / _Norwegian Digitalisation Agency (English)_
 *** e-post: informasjonsforvaltning@digdir.no
 ** Tilgjengeliggjør datasett: datasett456
 
@@ -76,8 +76,8 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 @base <ikke-eksisterende.example.org/> .
 
 <katalog123> a dcat:Catalog ; # en katalog
-   dct:title "Eksempelkatalog"@nb ; # tittel
-   dct:description "Et eksempelkatalog kun for illustrasjonsformål."@nb ; # beskrivelse
+   dct:title "Eksempelkatalog"@nb , "Example Catalog"@en ; # tittel
+   dct:description "Et eksempelkatalog kun for illustrasjonsformål."@nb , "An example catalog for illustration purposes only."@en ; # beskrivelse
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
    dcat:contactPoint <kontaktpunktDigdir> ; 
    dcat:dataset <datasett456> ; # inneholder datasett
@@ -85,8 +85,8 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
    .
 
 <datasett456> a dcat:Dataset ; # et datasett
-   dct:title "Eksempeldatasett"@nb ; # tittel
-   dct:description "Et eksempeldatasett kun for illustrasjonsformål."@nb ; # beskrivelse
+   dct:title "Eksempeldatasett"@nb , "Example Dataset"@en ; # tittel
+   dct:description "Et eksempeldatasett kun for illustrasjonsformål."@nb , "An example dataset for illustration purposes only."@en; # beskrivelse
    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; # tema
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
    dcat:contactPoint <kontaktpunktDigdir> ; 
@@ -95,18 +95,18 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
    .
    
 <distribusjon321> a dcat:Distribution ; # en distribusjon
-   dcat:accessURL  <https://ikke-eksisterende.example.org/eksempelDistribusjon> ;  
+   dcat:accessURL  <https://ikke-eksisterende.example.org/eksempelDistribusjon> ; 
    .
 
 <api789> a dcat:DataService ; # en datatjeneste
-   dct:title "EksempelAPI"@nb ; 
+   dct:title "EksempelAPI"@nb , "Example API"@en ; 
    dcat:endpointURL <https://ikke-eksisterende.example.org/eksempelAPI> ; 
    dcat:contactPoint <kontaktpunktDigdir> ; 
    dcat:servesDataset <datasett456> ;
    .
 
 <kontaktpunktDigdir> a vcard:Organization ;
-   vcard:fn "Digitaliseringsdirektoratet"@nb ;
+   vcard:fn "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
    vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no> ;
    .
 -----
