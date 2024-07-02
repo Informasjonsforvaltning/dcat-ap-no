@@ -16,7 +16,7 @@ Generelt er det forventet at datasettene i en datasettserie er sterkt relatert t
 
 :xrefstyle: short
 
-<<figur-Ordnet-datasettserie>> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved å bruke datasettegenskapen «forrige» spesifisert i <<Datasett-forrige>>. I eksemplet er det i tillegg oppgitt første og siste datasett i serien, ved å bruke datasettserieegenskapene «første» spesifisert i <<Datasettserie-første>> hhv. «siste» spesifisert i <<Datasettserie-siste>>. 
+<<figur-Ordnet-datasettserie>> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved å bruke datasettegenskapen <<Datasett-forrige, Datasett – forrige (dcat:prev)>>. I eksemplet er det i tillegg oppgitt første og siste datasett i serien, ved å bruke datasettserieegenskapene <<Datasettserie-første, Datasettserie – første (dcat:first)>> hhv. <<Datasettserie-siste, Datasettserie – siste (dcat:last)>>. 
 
 [[figur-Ordnet-datasettserie]]
 .Illustrasjon av en ordnet datasettserie.
