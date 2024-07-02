@@ -37,7 +37,7 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 * katalog123:
 ** *Tittel*: Eksempelkatalog (bokmål) / _Example Catalog (English)_
 ** *Beskrivelse*: Et eksempelkatalog kun for illustrasjonsformål. (bokmål) / _An example catalog for illustration purposes only. (English)_
-** *Utgiver*: 991825827 (organisasjonsnummeret til Digdir)
+** *Utgiver*: 991825827 (organisasjonsnummeret til Digitaliseringsdirektoratet)
 ** *Kontaktopplysninger*: 
 *** *Navn*: Digitaliseringsdirektoratet (bokmål) / _Norwegian Digitalisation Agency (English)_
 *** e-post: informasjonsforvaltning@digdir.no
@@ -47,9 +47,9 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 *** api789
 * datasett456:
 ** *Tittel*: Eksempeldatasett (bokmål) / _Example Dataset (English)_
-** *Beskrivelse*: Et eksempeldatasett kun for illustrasjonsformål. (bokmål) / _An example dataset for illustration purposes only (English)_
-** *Tema*: Forvaltning og offentlig sektor 
-** *Utgiver*: 991825827 (organisasjonsnummeret til Digdir)
+** *Beskrivelse*: Et eksempeldatasett kun for illustrasjonsformål. (bokmål) / _An example dataset for illustration purposes only. (English)_
+** *Tema*: Forvaltning og offentlig sektor (bokmål) / _Government and public sector (English)_
+** *Utgiver*: 991825827 (organisasjonsnummeret til Digitaliseringsdirektoratet)
 ** *Kontaktopplysninger*: 
 *** *Navn*: Digitaliseringsdirektoratet (bokmål) / _Norwegian Digitalisation Agency (English)_
 *** e-post: informasjonsforvaltning@digdir.no
