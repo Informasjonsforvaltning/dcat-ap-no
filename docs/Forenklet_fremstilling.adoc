@@ -45,7 +45,7 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 *** datasett456
 ** Inneholder beskrivelse av følgende datatjenester:
 *** api789
-* datasett456
+* datasett456:
 ** *Tittel*: Eksempeldatasett (bokmål) / _Example Dataset (English)_
 ** *Beskrivelse*: Et eksempeldatasett kun for illustrasjonsformål. (bokmål) / _An example dataset for illustration purposes only (English)_
 ** *Tema*: Forvaltning og offentlig sektor 
@@ -55,16 +55,16 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 *** e-post: informasjonsforvaltning@digdir.no
 ** Gjeldende lovgivning: Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)
 ** Distribusjon: 
-*** TilgangsURL: \https://ikke-eksisterende.example.org/eksempelDistribusjon
-* api789
+*** *TilgangsURL*: \https://example.org/exDistribution
+* api789:
 ** *Tittel*: EksempelAPI (bokmål) / _Example API (English)_
-** *EndepunktsURL*: \https://ikke-eksisterende.example.org/eksempelAPI
+** *EndepunktsURL*: \https://example.org/exAPI
 ** *Kontaktopplysninger*: 
 *** *Navn*: Digitaliseringsdirektoratet (bokmål) / _Norwegian Digitalisation Agency (English)_
 *** e-post: informasjonsforvaltning@digdir.no
 ** Tilgjengeliggjør datasett: datasett456
 
-.For teknisk interessert: klikk for å se eksemplene ovenfor i RDF Turtle
+.For teknisk interessert: klikk her for å se eksemplene ovenfor representert i RDF Turtle
 [%collapsible]
 ====
 Et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, representert i RDF Turtle: 
@@ -73,7 +73,7 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dcatap: <http://data.europa.eu/r5r/> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
-@base <ikke-eksisterende.example.org/> .
+@base <https://example.org/> .
 
 <katalog123> a dcat:Catalog ; # en katalog
    dct:title "Eksempelkatalog"@nb , "Example Catalog"@en ; # tittel
@@ -95,12 +95,12 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
    .
    
 <distribusjon321> a dcat:Distribution ; # en distribusjon
-   dcat:accessURL  <https://ikke-eksisterende.example.org/eksempelDistribusjon> ; 
+   dcat:accessURL <https://example.org/exDistribution> ; 
    .
 
 <api789> a dcat:DataService ; # en datatjeneste
    dct:title "EksempelAPI"@nb , "Example API"@en ; 
-   dcat:endpointURL <https://ikke-eksisterende.example.org/eksempelAPI> ; 
+   dcat:endpointURL <https://example.org/exlAPI> ; 
    dcat:contactPoint <kontaktpunktDigdir> ; 
    dcat:servesDataset <datasett456> ;
    .
