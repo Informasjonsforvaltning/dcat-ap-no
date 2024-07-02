@@ -3250,8 +3250,8 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til den minste oppløsningen for tidsperiode i datasettet.</p>
-<p class="tableblock"><em>This property is used to specify the minimum time period resolvable in the dataset.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til den minste oppløsningen for tidsperiode i datasettet, og det minste mellomrom mellom datasettene i en datasettserie når egenskapen brukes på en datasettserie.</p>
+<p class="tableblock"><em>This property is used to specify the minimum time period resolvable in the dataset. If the dataset is a time-series this should correspond to the spacing of items in the series.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -9634,17 +9634,20 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Datasettserie uten datasett bør unngås. Det kan imidlertid hende at en datasettserie over tid blir tom (f.eks. at datasettene i serien blir trukket tilbake). Utgiveren bør i slike tilfeller også vurdere å trekke tilbake selve serien.</p>
 </li>
 <li>
-<p>Klassen Datasettserie (dcat:DatasetSeries) er en subklasse av Datasett (dcat:Dataset). Rent modelleringsmessig kan derfor klassen Datasettserie arve alle egenskapene fra klassen Datasett. Man skal allikevel vurdere om det faglig sett er hensiktsmessig å bruke en egenskap fra Datasett. Vi anbefaler sterkt at</p>
+<p>Klassen Datasettserie (dcat:DatasetSeries) er en subklasse av Datasett (dcat:Dataset). Rent modelleringsmessig kan derfor klassen Datasettserie arve alle egenskapene fra klassen Datasett. Man skal allikevel vurdere om det faglig sett er hensiktsmessig å bruke en egenskap fra Datasett. Vi anbefaler sterkt å</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Man ikke bruker egenskapen <a href="#Datasett-forrige"> 3.2.3.7, &#8220;Datasett – forrige (dcat:prev)&#8221;</a> på en datasettserie, ettersom egenskapen er ment for å uttrykke rekkefølge mellom datasett i en datasettserie.</p>
+<p>Ikke bruke egenskapen <a href="#Datasett-forrige"> 3.2.3.7, &#8220;Datasett – forrige (dcat:prev)&#8221;</a> på en datasettserie, ettersom egenskapen er ment for å uttrykke rekkefølge mellom datasett i en datasettserie.</p>
 </li>
 <li>
-<p>Man unngår å bruke egenskapen <a href="#Datasett-iSerie"> 3.2.3.15, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a> eller <a href="#Datasett-harDel"> 3.2.3.9, &#8220;Datasett – har del (dct:hasPart)&#8221;</a> på en datasettserie, slik at man unngår nøstede datasettserier.</p>
+<p>Unngå å bruke egenskapen <a href="#Datasett-iSerie"> 3.2.3.15, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a> eller <a href="#Datasett-harDel"> 3.2.3.9, &#8220;Datasett – har del (dct:hasPart)&#8221;</a> på en datasettserie, slik at man unngår nøstede datasettserier.</p>
 </li>
 <li>
-<p>Man unngår å bruke egenskapen <a href="#Datasett-datasettdistribusjon"> 3.2.2.3, &#8220;Datasett – datasettdistribusjon (dcat:distribution)&#8221;</a> eller <a href="#Datasett-eksempeldata"> 3.2.3.3, &#8220;Datasett – eksempeldata (adms:sample)&#8221;</a> på en datasettserie, men at distribusjoner (dcat:Distribution) knyttes til datasettene som inngår i datasettserien.</p>
+<p>Unngå å bruke egenskapen <a href="#Datasett-datasettdistribusjon"> 3.2.2.3, &#8220;Datasett – datasettdistribusjon (dcat:distribution)&#8221;</a> eller <a href="#Datasett-eksempeldata"> 3.2.3.3, &#8220;Datasett – eksempeldata (adms:sample)&#8221;</a> på en datasettserie, men at distribusjoner (dcat:Distribution) knyttes til datasettene som inngår i datasettserien.</p>
+</li>
+<li>
+<p>Være oppmerksom på at semantikken av en egenskap kan være forskjellig avhengig av om den er for en datasettserie eller et datasett i en datasettserie.</p>
 </li>
 </ul>
 </div>
@@ -10797,7 +10800,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-07-02 10:11:50 UTC
+Sist oppdatert 2024-07-02 10:33:06 UTC
 </div>
 </div>
 </body>
