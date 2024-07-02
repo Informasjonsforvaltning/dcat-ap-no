@@ -782,9 +782,9 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | _English name_ | _temporal resolution_
 | URI | dcat:temporalResolution
 | Verdiområde / _Range_ | xsd:duration
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til den minste oppløsningen for tidsperiode i datasettet.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til den minste oppløsningen for tidsperiode i datasettet, og det minste mellomrom mellom datasettene i en datasettserie når egenskapen brukes på en datasettserie.
 
-_This property is used to specify the minimum time period resolvable in the dataset._
+_This property is used to specify the minimum time period resolvable in the dataset. If the dataset is a time-series this should correspond to the spacing of items in the series._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
