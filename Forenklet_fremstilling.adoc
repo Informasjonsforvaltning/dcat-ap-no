@@ -26,7 +26,7 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 ** BØR tilgjengeliggjøres vha. distribusjoner og/eller datatjenester/APIer (se neste punkt om datatjenestebeskrivelse)
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller behandling av datasettet 
 * En **datatjeneste**beskrivelse 
-** SKAL alltid inneholde opplysninger om kontaktpunker, samt tittel og endepunktsURL
+** SKAL alltid inneholde opplysninger om utgiveren av tjenesten og kontaktpunker, samt tittel og endepunktsURL
 ** BØR brukes til å tilgjengeliggjøre datasett 
 *** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett. Unntaket er rene dataprosesseringstjenester.
 ** BØR inneholde opplysninger om utgiveren av datatjenesten
@@ -45,6 +45,7 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 *** datasett456
 ** Inneholder beskrivelse av følgende datatjenester:
 *** api789
+
 * datasett456:
 ** *Tittel*: Eksempeldatasett (bokmål) / _Example Dataset (English)_
 ** *Beskrivelse*: Et eksempeldatasett kun for illustrasjonsformål. (bokmål) / _An example dataset for illustration purposes only. (English)_
@@ -56,9 +57,11 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 ** Gjeldende lovgivning: Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)
 ** Distribusjon: 
 *** *TilgangsURL*: \https://example.org/exDistribution
+
 * api789:
 ** *Tittel*: EksempelAPI (bokmål) / _Example API (English)_
 ** *EndepunktsURL*: \https://example.org/exAPI
+** *Utgiver*: 991825827 (organisasjonsnummeret til Digitaliseringsdirektoratet)
 ** *Kontaktopplysninger*: 
 *** *Navn*: Digitaliseringsdirektoratet (bokmål) / _Norwegian Digitalisation Agency (English)_
 *** e-post: informasjonsforvaltning@digdir.no
@@ -101,6 +104,7 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
 <api789> a dcat:DataService ; # en datatjeneste
    dct:title "EksempelAPI"@nb , "Example API"@en ; 
    dcat:endpointURL <https://example.org/exlAPI> ; 
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
    dcat:contactPoint <kontaktpunktDigdir> ; 
    dcat:servesDataset <datasett456> ;
    .

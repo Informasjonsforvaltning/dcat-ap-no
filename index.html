@@ -648,6 +648,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-endepunktsurl">Datatjeneste – endepunktsURL (dcat:endpointURL)</a></li>
 <li><a href="#Datatjeneste-kontaktpunkt">Datatjeneste – kontaktpunkt (dcat:contactPoint)</a></li>
 <li><a href="#Datatjeneste-tittel">Datatjeneste – tittel (dct:title)</a></li>
+<li><a href="#Datatjeneste-utgiver">Datatjeneste – utgiver (dct:publisher)</a></li>
 </ul>
 </li>
 <li><a href="#Datatjeneste-anbefalte-egenskaper">3.4.2. Anbefalte egenskaper for klassen <em>Datatjeneste</em></a>
@@ -659,7 +660,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-i-samsvar-med">Datatjeneste – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datatjeneste-tema">Datatjeneste – tema (dcat:theme)</a></li>
 <li><a href="#Datatjeneste-tilgjengeliggjor-datasett">Datatjeneste – tilgjengeliggjør datasett (dcat:servesDataset)</a></li>
-<li><a href="#Datatjeneste-utgiver">Datatjeneste – utgiver (dct:publisher)</a></li>
 </ul>
 </li>
 <li><a href="#Datatjeneste-valgfrie-egenskaper">3.4.3. Valgfrie egenskaper for klassen <em>Datatjeneste</em></a>
@@ -1222,7 +1222,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="ulist">
 <ul>
 <li>
-<p>SKAL alltid inneholde opplysninger om kontaktpunker, samt tittel og endepunktsURL</p>
+<p>SKAL alltid inneholde opplysninger om utgiveren av tjenesten og kontaktpunker, samt tittel og endepunktsURL</p>
 </li>
 <li>
 <p>BØR brukes til å tilgjengeliggjøre datasett</p>
@@ -1355,6 +1355,9 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <p><strong>EndepunktsURL</strong>: https://example.org/exAPI</p>
 </li>
 <li>
+<p><strong>Utgiver</strong>: 991825827 (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
+</li>
+<li>
 <p><strong>Kontaktopplysninger</strong>:</p>
 <div class="ulist">
 <ul>
@@ -1415,6 +1418,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 &lt;api789&gt; a dcat:DataService ; # en datatjeneste
    dct:title "EksempelAPI"@nb , "Example API"@en ;
    dcat:endpointURL &lt;https://example.org/exlAPI&gt; ;
+   dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
    dcat:contactPoint &lt;kontaktpunktDigdir&gt; ;
    dcat:servesDataset &lt;datasett456&gt; ;
    .
@@ -4489,6 +4493,62 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 </div>
+<div class="sect4">
+<h5 id="Datatjeneste-utgiver"><a class="anchor" href="#Datatjeneste-utgiver"></a>3.4.1.4. Datatjeneste – utgiver (dct:publisher)</h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>publisher</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:publisher</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: <code>dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673&gt;</code>.</p>
+<p class="tableblock"><em>This property is used to refer the the agent (organisation) responsible for making the data service available.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">(Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body" class="ext-link" target="_blank" rel="noopener"><em>Corporate body</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body" class="ext-link" target="_blank" rel="noopener">Corporate body &#x29C9;</a> for European institutions and a small set of international organisations.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1.</p>
+<p class="tableblock"><em>Norwegian extension: The requirement level changed from recommended to mandatory and thus also the multiplicity from 0..1 to 1..1.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aDataService&gt; a dcat:DataService ;
+   dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ;
+   .</pre>
+</div>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="Datatjeneste-anbefalte-egenskaper"><a class="anchor" href="#Datatjeneste-anbefalte-egenskaper"></a>3.4.2. Anbefalte egenskaper for klassen <em>Datatjeneste</em></h4>
@@ -4832,57 +4892,6 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="content">
 <pre>&lt;aDataService&gt; a dcat:DataService ;
    dcat:servesDataset &lt;aDataset&gt; ;
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="Datatjeneste-utgiver"><a class="anchor" href="#Datatjeneste-utgiver"></a>3.4.2.8. Datatjeneste – utgiver (dct:publisher)</h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>publisher</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:publisher</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Aktør">foaf:Agent</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: <code>dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673&gt;</code>.</p>
-<p class="tableblock"><em>This property is used to refer the the agent (organisation) responsible for making the data service available.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">(Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body" class="ext-link" target="_blank" rel="noopener"><em>Corporate body</em> &#x29C9;</a>.</p>
-<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body" class="ext-link" target="_blank" rel="noopener">Corporate body &#x29C9;</a> for European institutions and a small set of international organisations.</em></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aDataService&gt; a dcat:DataService ;
-   dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ;
    .</pre>
 </div>
 </div>
@@ -10257,6 +10266,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – utgiver</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:publisher</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1.</p>
+<p class="tableblock"><em>The requirement level changed from recommended to mandatory and thus also the multiplicity from 0..1 to 1..1.</em></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – format</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:format</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivå endret fra valgfri til anbefalt.</p>
@@ -10749,6 +10764,9 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <li>
 <p><a href="#Datatjeneste-i-samsvar-med"> 3.4.2.5, &#8220;Datatjeneste – i samsvar med (dct:conformsTo)&#8221;</a>: Kravnivået er endret fra valgfri til anbefalt, i samsvar med DCAT-AP/DCAT.</p>
 </li>
+<li>
+<p><a href="#Datatjeneste-utgiver"> 3.4.1.4, &#8220;Datatjeneste – utgiver (dct:publisher)&#8221;</a>: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. Dette for å kunne gruppere datatjenester/APIer under virksomhet i GUIen i data.norge.no.</p>
+</li>
 </ul>
 </div>
 </li>
@@ -10982,7 +11000,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-07-02 21:14:54 UTC
+Sist oppdatert 2024-07-03 09:51:55 UTC
 </div>
 </div>
 </body>

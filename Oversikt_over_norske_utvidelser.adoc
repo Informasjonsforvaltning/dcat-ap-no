@@ -123,6 +123,10 @@ __The multiplicity is changed from 1..n to 1..1.__
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
+| Datatjeneste – utgiver | dct:publisher |
+Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. 
+
+__The requirement level changed from recommended to mandatory and thus also the multiplicity from 0..1 to 1..1.__
 | Datatjeneste – format | dct:format |
 Kravnivå endret fra valgfri til anbefalt.
 
