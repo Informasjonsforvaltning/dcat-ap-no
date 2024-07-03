@@ -40,7 +40,7 @@ Følgende er klasser som er enten helt nye eller eksplisitt spesifisert med egen
 
 * <<Gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av et datasett, med standardiserte egenskaper.
 * <<Kontaktopplysning>>, for å kunne beskrive et kontaktpunkt, med standardiserte egenskaper.
-* <<Rettighetserklæring>>, for å kunne beskrive ev. rettigheter knyttet til et datasett, med standardiserte egenskaper.
+* <<Rettighetserklæring>>, for å kunne beskrive ev. rettigheter knyttet til et datasett osv., med standardiserte egenskaper.
 
 === Utgåtte klasser
 
