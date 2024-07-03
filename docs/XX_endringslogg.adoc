@@ -28,15 +28,15 @@ Standarden inneholder nå tre hoveddeler i tillegg til det innledende kapittelet
 
 === Overordnede endringer
 
-EU har begynt å ikke gjenta valgfrie egenskaper fra W3Cs DCAT når det ikke er gjort noen tilpasninger. EU presiserer samtidig at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT (istedenfor BRegDCAT-AP som forrige versjon var basert på og som den gang inneholdt hele DCAT-AP med utvidelser). 
+Revisjon fra versjon 2.2 til denne versjon 3.0 av DCAT-AP-NO er trigget av EUs utgivelse av DCAT-AP hovedversjon 3.0. Hensikten med revisjonen er å gjøre DCAT-AP-NO mest mulig i samsvar med den nye versjonen av DCAT-AP. EU har begynt å ikke gjenta valgfrie egenskaper fra W3Cs DCAT når det ikke gjøres tilpasninger i DCAT-AP. Dette medfører at DCAT-AP må brukes sammen med DCAT. Denne versjonen av DCAT-AP-NO er derfor basert på summen av DCAT-AP og DCAT (istedenfor BRegDCAT-AP som forrige versjon var basert på og som den gang inneholdt hele DCAT-AP med utvidelser). Norske utvidelser/avvik er derfor også i forhold til summen av DCAT-AP og DCAT. 
 
 Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <<Samsvarskrav>> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP. 
 
-Vi følger DCAT-AP som følger DCAT når det gjelder inverse egenskaper, at inverse egenskaper ikke tas med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
+I henhold til DCAT-AP som følger DCAT når det gjelder inverse egenskaper, er inverse egenskaper ikke tatt med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
 
 === Nye klasser
 
-Følgende er klasser som er enten helt nye eller nå eksplisitt spesifisert med egenskaper i denne versjonen: 
+Følgende er klasser som er enten helt nye eller eksplisitt spesifisert med egenskaper i denne versjonen: 
 
 * <<Gebyr>>, for å kunne beskrive ev. kostnader knyttet til bruk av et datasett, med standardiserte egenskaper.
 * <<Kontaktopplysning>>, for å kunne beskrive et kontaktpunkt, med standardiserte egenskaper.
