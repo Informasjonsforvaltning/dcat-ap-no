@@ -93,6 +93,33 @@ Eksempel i RDF Turtle:
    .
 -----
 
+=== Datatjeneste – utgiver (dct:publisher) [[Datatjeneste-utgiver]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _publisher_
+| URI | dct:publisher
+| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
+
+_This property is used to refer the the agent (organisation) responsible for making the data service available._
+| Multiplisitet / _Multiplicity_ | 1..1
+| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad 1 / _Note 1_ | (Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"]. 
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. 
+
+__Norwegian extension: The requirement level changed from recommended to mandatory and thus also the multiplicity from 0..1 to 1..1.__
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; 
+   .
+-----
+
 == Anbefalte egenskaper for klassen _Datatjeneste_ [[Datatjeneste-anbefalte-egenskaper]]
 
 === Datatjeneste – emneord (dcat:keyword) [[Datatjeneste-emneord]]
@@ -256,30 +283,6 @@ Eksempel i RDF Turtle:
 -----
 <aDataService> a dcat:DataService ; 
    dcat:servesDataset <aDataset> ; 
-   .
------
-
-=== Datatjeneste – utgiver (dct:publisher) [[Datatjeneste-utgiver]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _publisher_
-| URI | dct:publisher
-| Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
-
-_This property is used to refer the the agent (organisation) responsible for making the data service available._
-| Multiplisitet / _Multiplicity_ | 0..1
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | (Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"]. 
-
-__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
-|===
-
-Eksempel i RDF Turtle:
------
-<aDataService> a dcat:DataService ; 
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; 
    .
 -----
 

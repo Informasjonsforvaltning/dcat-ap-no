@@ -116,6 +116,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
 *** <<Datatjeneste-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-i-samsvar-med>>: Kravnivået er endret fra valgfri til anbefalt, i samsvar med DCAT-AP/DCAT.
+*** <<Datatjeneste-utgiver>>: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. Dette for å kunne gruppere datatjenester/APIer under virksomhet i GUIen i data.norge.no. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Datatjeneste-tema>>: "EuroVoc" er utgått fra kravet til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT. 
