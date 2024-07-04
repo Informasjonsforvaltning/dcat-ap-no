@@ -26,10 +26,9 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 ** BØR tilgjengeliggjøres vha. distribusjoner og/eller datatjenester/APIer (se neste punkt om datatjenestebeskrivelse)
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller behandling av datasettet 
 * En **datatjeneste**beskrivelse 
-** SKAL alltid inneholde opplysninger om utgiveren av tjenesten og kontaktpunktopplysninger, samt tittel og endepunktsURL
+** SKAL alltid inneholde opplysninger om utgiveren av datatjenesten og kontaktpunktopplysninger, samt tittel og endepunktsURL til datatjenesten
 ** BØR brukes til å tilgjengeliggjøre datasett 
 *** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett. Unntaket er rene dataprosesseringstjenester.
-** BØR inneholde opplysninger om utgiveren av datatjenesten
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller forvaltning av datatjenesten
 
 == Et illustrativt eksempel [[Illustrativt-eksempel]]
