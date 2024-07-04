@@ -535,7 +535,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 </ul>
 </li>
-<li><a href="#Forenklet-fremstilling">2. Forenklet fremstilling av kravene i DCAT-AP-NO</a></li>
+<li><a href="#Forenklet-fremstilling">2. Forenklet fremstilling av kravene i DCAT-AP-NO</a>
+<ul class="sectlevel2">
+<li><a href="#Noen-krav">2.1. Opplysninger som skal og bør tas med om en katalog, et datasett og en datatjeneste</a></li>
+<li><a href="#Illustrativt-eksempel">2.2. Et illustrativt eksempel</a></li>
+</ul>
+</li>
 <li><a href="#Spesifikasjon-per-klasse">3. Krav til RDF-representasjon av klassene i DCAT-AP-NO</a>
 <ul class="sectlevel2">
 <li><a href="#Aktør">3.1. Klassen Aktør (foaf:Agent)</a>
@@ -1167,6 +1172,8 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="paragraph">
 <p><em>Denne delen er primært ment for den ikke-tekniske målgruppen.</em></p>
 </div>
+<div class="sect2">
+<h3 id="Noen-krav"><a class="anchor" href="#Noen-krav"></a>2.1. Opplysninger som skal og bør tas med om en katalog, et datasett og en datatjeneste</h3>
 <div class="paragraph">
 <p><a href="#img-ForenkletModell">Figur 1</a> viser en forenklet fremstilling av kravene i DCAT-AP-NO. Den viser bare obligatoriske og anbefalte krav. Modellen er ikke ment som en formell representasjon av standarden, men kun for å gi en visuell oversikt over noen av klassene og relasjoner mellom dem. Tekniske krav til hvordan klassene og egenskapene/relasjoner skal uttrykkes i RDF er spesifisert videre i standarden. Før eventuell uoverensstemmelse mellom tegningen og den tekstlige spesifikasjonen blir rettet opp, har den tekstlige spesifikasjonen av klassene/egenskapene forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige spesifikasjoner og tegninger i resten av standarden.</p>
 </div>
@@ -1245,30 +1252,33 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </li>
 </ul>
 </div>
+</div>
+<div class="sect2">
+<h3 id="Illustrativt-eksempel"><a class="anchor" href="#Illustrativt-eksempel"></a>2.2. Et illustrativt eksempel</h3>
 <div class="paragraph">
 <p>Et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, der minimumsopplysninger er uthevet:</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>katalog123:</p>
+<p>&lt;katalog123&gt;:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Tittel</strong>: Eksempelkatalog (bokmål) / <em>Example Catalog (English)</em></p>
+<p><strong>Tittel</strong>: «Eksempelkatalog» (bokmål) / <em>"Example Catalog" (English)</em></p>
 </li>
 <li>
-<p><strong>Beskrivelse</strong>: Et eksempelkatalog kun for illustrasjonsformål. (bokmål) / <em>An example catalog for illustration purposes only. (English)</em></p>
+<p><strong>Beskrivelse</strong>: «Et eksempelkatalog kun for illustrasjonsformål.» (bokmål) / <em>"An example catalog for illustration purposes only." (English)</em></p>
 </li>
 <li>
-<p><strong>Utgiver</strong>: 991825827 (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
+<p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="ext-link" target="_blank" rel="noopener">991825827 &#x29C9;</a> (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
 </li>
 <li>
 <p><strong>Kontaktopplysninger</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Navn</strong>: Digitaliseringsdirektoratet (bokmål) / <em>Norwegian Digitalisation Agency (English)</em></p>
+<p><strong>Navn</strong>: «Digitaliseringsdirektoratet» (bokmål) / <em>"Norwegian Digitalisation Agency" (English)</em></p>
 </li>
 <li>
 <p>e-post: <a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p>
@@ -1277,50 +1287,36 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </li>
 <li>
-<p>Innholder beskrivelse av følgende datasett:</p>
-<div class="ulist">
-<ul>
+<p>Innholder beskrivelse av følgende datasett: &lt;datasett456&gt;</p>
+</li>
 <li>
-<p>datasett456</p>
+<p>Inneholder beskrivelse av følgende datatjenester: &lt;api789&gt;</p>
 </li>
 </ul>
 </div>
 </li>
 <li>
-<p>Inneholder beskrivelse av følgende datatjenester:</p>
+<p>&lt;datasett456&gt;:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>api789</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
+<p><strong>Tittel</strong>: «Eksempeldatasett» (bokmål) / <em>"Example Dataset" (English)</em></p>
 </li>
 <li>
-<p>datasett456:</p>
-<div class="ulist">
-<ul>
-<li>
-<p><strong>Tittel</strong>: Eksempeldatasett (bokmål) / <em>Example Dataset (English)</em></p>
+<p><strong>Beskrivelse</strong>: «Et eksempeldatasett kun for illustrasjonsformål.» (bokmål) / <em>"An example dataset for illustration purposes only." (English)</em></p>
 </li>
 <li>
-<p><strong>Beskrivelse</strong>: Et eksempeldatasett kun for illustrasjonsformål. (bokmål) / <em>An example dataset for illustration purposes only. (English)</em></p>
+<p><strong>Tema</strong>: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/GOVE" class="ext-link" target="_blank" rel="noopener">Forvaltning og offentlig sektor &#x29C9;</a></p>
 </li>
 <li>
-<p><strong>Tema</strong>: Forvaltning og offentlig sektor (bokmål) / <em>Government and public sector (English)</em></p>
-</li>
-<li>
-<p><strong>Utgiver</strong>: 991825827 (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
+<p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="ext-link" target="_blank" rel="noopener">991825827 &#x29C9;</a> (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
 </li>
 <li>
 <p><strong>Kontaktopplysninger</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Navn</strong>: Digitaliseringsdirektoratet (bokmål) / <em>Norwegian Digitalisation Agency (English)</em></p>
+<p><strong>Navn</strong>: «Digitaliseringsdirektoratet» (bokmål) / <em>"Norwegian Digitalisation Agency" (English)</em></p>
 </li>
 <li>
 <p>e-post: <a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p>
@@ -1329,7 +1325,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </li>
 <li>
-<p>Gjeldende lovgivning: Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova)</p>
+<p>Gjeldende lovgivning: <a href="https://lovdata.no/eli/lov/2006/05/19/16" class="ext-link" target="_blank" rel="noopener">Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;</a></p>
 </li>
 <li>
 <p>Distribusjon:</p>
@@ -1345,24 +1341,24 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </li>
 <li>
-<p>api789:</p>
+<p>&lt;api789&gt;:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Tittel</strong>: EksempelAPI (bokmål) / <em>Example API (English)</em></p>
+<p><strong>Tittel</strong>: «EksempelAPI» (bokmål) / <em>"Example API" (English)</em></p>
 </li>
 <li>
 <p><strong>EndepunktsURL</strong>: https://example.org/exAPI</p>
 </li>
 <li>
-<p><strong>Utgiver</strong>: 991825827 (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
+<p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="ext-link" target="_blank" rel="noopener">991825827 &#x29C9;</a> (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
 </li>
 <li>
 <p><strong>Kontaktopplysninger</strong>:</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Navn</strong>: Digitaliseringsdirektoratet (bokmål) / <em>Norwegian Digitalisation Agency (English)</em></p>
+<p><strong>Navn</strong>: «Digitaliseringsdirektoratet» (bokmål) / <em>"Norwegian Digitalisation Agency" (English)</em></p>
 </li>
 <li>
 <p>e-post: <a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p>
@@ -1371,7 +1367,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </li>
 <li>
-<p>Tilgjengeliggjør datasett: datasett456</p>
+<p>Tilgjengeliggjør datasett: &lt;datasett456&gt;</p>
 </li>
 </ul>
 </div>
@@ -1406,31 +1402,32 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
    dct:description "Et eksempeldatasett kun for illustrasjonsformål."@nb , "An example dataset for illustration purposes only."@en; # beskrivelse
    dcat:theme &lt;http://publications.europa.eu/resource/authority/data-theme/GOVE&gt; ; # tema
    dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
-   dcat:contactPoint &lt;kontaktpunktDigdir&gt; ;
+   dcat:contactPoint &lt;kontaktpunktDigdir&gt; ; # kontaktpunkt
    dcatap:applicableLegislation &lt;https://lovdata.no/eli/lov/2006/05/19/16&gt; ; # gjeldende lovgivning
-   dcat:distribution &lt;distribusjon321&gt; ;
+   dcat:distribution &lt;distribusjon321&gt; ; # datasettdistribusjon
    .
 
 &lt;distribusjon321&gt; a dcat:Distribution ; # en distribusjon
-   dcat:accessURL &lt;https://example.org/exDistribution&gt; ;
+   dcat:accessURL &lt;https://example.org/exDistribution&gt; ; # tilgangsURL
    .
 
 &lt;api789&gt; a dcat:DataService ; # en datatjeneste
-   dct:title "EksempelAPI"@nb , "Example API"@en ;
-   dcat:endpointURL &lt;https://example.org/exlAPI&gt; ;
+   dct:title "EksempelAPI"@nb , "Example API"@en ; # tittel
+   dcat:endpointURL &lt;https://example.org/exlAPI&gt; ; # endepunktsURL
    dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
-   dcat:contactPoint &lt;kontaktpunktDigdir&gt; ;
-   dcat:servesDataset &lt;datasett456&gt; ;
+   dcat:contactPoint &lt;kontaktpunktDigdir&gt; ; # kontaktpunkt
+   dcat:servesDataset &lt;datasett456&gt; ; # tilgjengeliggjør datasett
    .
 
-&lt;kontaktpunktDigdir&gt; a vcard:Organization ;
-   vcard:fn "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
-   vcard:hasEmail &lt;mailto:informasjonsforvaltning@digdir.no&gt; ;
+&lt;kontaktpunktDigdir&gt; a vcard:Organization ; # et kontaktpunkt
+   vcard:fn "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ; # navn
+   vcard:hasEmail &lt;mailto:informasjonsforvaltning@digdir.no&gt; ; # har e-post
    .</pre>
 </div>
 </div>
 </div>
 </details>
+</div>
 </div>
 </div>
 <div class="sect1">
@@ -11000,7 +10997,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-07-03 18:19:38 UTC
+Sist oppdatert 2024-07-04 10:11:36 UTC
 </div>
 </div>
 </body>
