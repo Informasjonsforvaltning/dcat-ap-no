@@ -814,12 +814,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Kontaktopplysning-obligatoriske-egenskaper">3.11.1. Obligatoriske egenskaper for klassen <em>Kontaktopplysning</em></a>
 <ul class="sectlevel4">
+<li><a href="#Kontaktopplysning-harEPost">Kontaktopplysning – har e-post (vcard:hasEmail)</a></li>
 <li><a href="#Kontaktopplysning-navn">Kontaktopplysning – navn (vcard:fn)</a></li>
 </ul>
 </li>
 <li><a href="#Kontaktopplysning-anbefalte-egenskaper">3.11.2. Anbefalte egenskaper for klassen <em>Kontaktopplysning</em></a>
 <ul class="sectlevel4">
-<li><a href="#Kontaktopplysning-harEPost">Kontaktopplysning – har e-post (vcard:hasEmail)</a></li>
 <li><a href="#Kontaktopplysning-kontaktside">Kontaktopplysning – har kontaktside (vcard:hasURL)</a></li>
 </ul>
 </li>
@@ -8078,7 +8078,58 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect3">
 <h4 id="Kontaktopplysning-obligatoriske-egenskaper"><a class="anchor" href="#Kontaktopplysning-obligatoriske-egenskaper"></a>3.11.1. Obligatoriske egenskaper for klassen <em>Kontaktopplysning</em></h4>
 <div class="sect4">
-<h5 id="Kontaktopplysning-navn"><a class="anchor" href="#Kontaktopplysning-navn"></a>3.11.1.1. Kontaktopplysning – navn (vcard:fn)</h5>
+<h5 id="Kontaktopplysning-harEPost"><a class="anchor" href="#Kontaktopplysning-harEPost"></a>3.11.1.1. Kontaktopplysning – har e-post (vcard:hasEmail)</h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has email</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet.</p>
+<p class="tableblock"><em>This property is used to specify an email address to the contact point.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aContactPoint&gt; a vcard:Organization ;
+   vcard:hasEmail &lt;mailto:fellesdatakatalog@digdir.no&gt; ;
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Kontaktopplysning-navn"><a class="anchor" href="#Kontaktopplysning-navn"></a>3.11.1.2. Kontaktopplysning – navn (vcard:fn)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8132,58 +8183,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect3">
 <h4 id="Kontaktopplysning-anbefalte-egenskaper"><a class="anchor" href="#Kontaktopplysning-anbefalte-egenskaper"></a>3.11.2. Anbefalte egenskaper for klassen <em>Kontaktopplysning</em></h4>
 <div class="sect4">
-<h5 id="Kontaktopplysning-harEPost"><a class="anchor" href="#Kontaktopplysning-harEPost"></a>3.11.2.1. Kontaktopplysning – har e-post (vcard:hasEmail)</h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has email</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet.</p>
-<p class="tableblock"><em>This property is used to specify an email address to the contact point.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aContactPoint&gt; a vcard:Organization ;
-   vcard:hasEmail &lt;mailto:fellesdatakatalog@digdir.no&gt; ;
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="Kontaktopplysning-kontaktside"><a class="anchor" href="#Kontaktopplysning-kontaktside"></a>3.11.2.2. Kontaktopplysning – har kontaktside (vcard:hasURL)</h5>
+<h5 id="Kontaktopplysning-kontaktside"><a class="anchor" href="#Kontaktopplysning-kontaktside"></a>3.11.2.1. Kontaktopplysning – har kontaktside (vcard:hasURL)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -10997,7 +10997,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-07-04 10:44:38 UTC
+Sist oppdatert 2024-07-04 11:32:32 UTC
 </div>
 </div>
 </body>
