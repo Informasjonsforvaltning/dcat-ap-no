@@ -1,4 +1,4 @@
-= Forenklet fremstilling av kravene i DCAT-AP-NO [[Forenklet-fremstilling]] 
+= Forenklet fremstilling av noen av kravene i DCAT-AP-NO [[Forenklet-fremstilling]] 
 
 _Denne delen er primært ment for den ikke-tekniske målgruppen._ 
 
@@ -6,16 +6,14 @@ _Denne delen er primært ment for den ikke-tekniske målgruppen._
 
 :xrefstyle: short
 
-<<img-ForenkletModell>> viser en forenklet fremstilling av kravene i DCAT-AP-NO. Den viser bare obligatoriske og anbefalte krav. Modellen er ikke ment som en formell representasjon av standarden, men kun for å gi en visuell oversikt over noen av klassene og relasjoner mellom dem. Tekniske krav til hvordan klassene og egenskapene/relasjoner skal uttrykkes i RDF er spesifisert videre i standarden. Før eventuell uoverensstemmelse mellom tegningen og den tekstlige spesifikasjonen blir rettet opp, har den tekstlige spesifikasjonen av klassene/egenskapene forrang. Samme forrang gjelder også når det gjelder eventuelle uoverensstemmelser mellom tekstlige spesifikasjoner og tegninger i resten av standarden. 
+<<img-ForenkletModell>> viser en forenklet fremstilling av noen av kravene i DCAT-AP-NO. Den viser bare opplysninger som skal (obligatorisk) og bør (anbefalt) tas med i en beskrivelse av en katalog, et datasett eller en datatjeneste (også kalt API). Krav til hvordan opplysningene skal  representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert videre i standarden.  
 
 [[img-ForenkletModell]]
-.Forenklet fremstilling av kravene i DCAT-AP-NO, med kun obligatoriske og anbefalte krav.
+.Forenklet fremstilling av noen av kravene i DCAT-AP-NO.
 [link=images/DCAT-AP-NO-forenklet-fremstilling.png]
 image::images/DCAT-AP-NO-forenklet-fremstilling.png[]
 
 :xrefstyle: full
-
-// Last ned modell: link:images/DCAT-AP-NO2_20210903.png[png] |  link:files/DCAT-AP-NO2_20210903.eap[XMI for EA]
 
 Helt overordnet illustrerer figuren bl.a. følgende:
 
@@ -36,7 +34,7 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 
 == Et illustrativt eksempel [[Illustrativt-eksempel]]
 
-Et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, der minimumsopplysninger er uthevet: 
+Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, der minimumsopplysninger er uthevet: 
 
 * <katalog123>:
 ** *Tittel*: «Eksempelkatalog» (bokmål) / _"Example Catalog" (English)_
