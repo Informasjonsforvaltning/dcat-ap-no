@@ -1,12 +1,12 @@
 = Forenklet fremstilling av noen av kravene i DCAT-AP-NO [[Forenklet-fremstilling]] 
 
-_Denne delen er primært ment for den ikke-tekniske målgruppen._ 
+_Denne delen av standarden er primært ment for den ikke-tekniske målgruppen._ 
 
 == Opplysninger som skal og bør tas med om en katalog, et datasett og en datatjeneste [[Noen-krav]]
 
 :xrefstyle: short
 
-<<img-ForenkletModell>> viser en forenklet fremstilling av noen av kravene i DCAT-AP-NO. Den viser bare opplysninger som skal (obligatorisk) og bør (anbefalt) tas med i en beskrivelse av en katalog, et datasett eller en datatjeneste (også kalt API). Krav til hvordan opplysningene skal  representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert videre i standarden.  
+<<img-ForenkletModell>> viser en forenklet fremstilling av noen av kravene i DCAT-AP-NO. Den viser bare opplysninger som skal (obligatorisk) og bør (anbefalt) tas med i en beskrivelse av en katalog, et datasett og en datatjeneste (også kalt API). Krav til hvordan opplysningene skal  representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert videre i standarden.  
 
 [[img-ForenkletModell]]
 .Forenklet fremstilling av noen av kravene i DCAT-AP-NO.
@@ -18,15 +18,15 @@ image::images/DCAT-AP-NO-forenklet-fremstilling.png[]
 Helt overordnet illustrerer figuren bl.a. følgende:
 
 * En *katalog* 
-** SKAL alltid inneholde opplysninger om utgiveren av katalogen og kontaktpunkter, samt beskrivelse og tittel 
+** SKAL alltid inneholde opplysninger om utgiveren av katalogen og kontaktpunktopplysninger, samt beskrivelse og tittel 
 ** BØR inneholde beskrivelse av datasett og/eller datatjenester
 *** Merk at selv om hverken datasettbeskrivelse eller datatjenestebeskrivelse er obligatorisk, BØR man unngå å ha tomme kataloger. 
 * En **datasett**beskrivelse 
-** SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktpunkter, samt beskrivelse, tittel og tema(er) som datasettet skal sorteres innunder
+** SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktpunktopplysninger, samt beskrivelse, tittel og tema som datasettet skal grupperes innunder
 ** BØR tilgjengeliggjøres vha. distribusjoner og/eller datatjenester/APIer (se neste punkt om datatjenestebeskrivelse)
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller behandling av datasettet 
 * En **datatjeneste**beskrivelse 
-** SKAL alltid inneholde opplysninger om utgiveren av tjenesten og kontaktpunker, samt tittel og endepunktsURL
+** SKAL alltid inneholde opplysninger om utgiveren av tjenesten og kontaktpunktopplysninger, samt tittel og endepunktsURL
 ** BØR brukes til å tilgjengeliggjøre datasett 
 *** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett. Unntaket er rene dataprosesseringstjenester.
 ** BØR inneholde opplysninger om utgiveren av datatjenesten
@@ -40,9 +40,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 ** *Tittel*: «Eksempelkatalog» (bokmål) / _"Example Catalog" (English)_
 ** *Beskrivelse*: «Et eksempelkatalog kun for illustrasjonsformål.» (bokmål) / _"An example catalog for illustration purposes only." (English)_
 ** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
-** *Kontaktopplysninger*: 
-*** *Navn*: «Digitaliseringsdirektoratet» (bokmål) / _"Norwegian Digitalisation Agency" (English)_
-*** e-post: informasjonsforvaltning@digdir.no
+** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
 ** Innholder beskrivelse av følgende datasett: <datasett456>
 ** Inneholder beskrivelse av følgende datatjenester: <api789>
 
@@ -51,9 +49,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 ** *Beskrivelse*: «Et eksempeldatasett kun for illustrasjonsformål.» (bokmål) / _"An example dataset for illustration purposes only." (English)_
 ** *Tema*: https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/GOVE[Forvaltning og offentlig sektor &#x29C9;, window="_blank", role="ext-link"]
 ** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
-** *Kontaktopplysninger*: 
-*** *Navn*: «Digitaliseringsdirektoratet» (bokmål) / _"Norwegian Digitalisation Agency" (English)_
-*** e-post: informasjonsforvaltning@digdir.no
+** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
 ** Gjeldende lovgivning: https://lovdata.no/eli/lov/2006/05/19/16[Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;, window="_blank", role="ext-link"]
 ** Distribusjon: 
 *** *TilgangsURL*: \https://example.org/exDistribution
@@ -62,10 +58,11 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 ** *Tittel*: «EksempelAPI» (bokmål) / _"Example API" (English)_
 ** *EndepunktsURL*: \https://example.org/exAPI
 ** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
-** *Kontaktopplysninger*: 
+** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
+** Tilgjengeliggjør datasett: <datasett456>
+* <kontaktpunktDigdir>: 
 *** *Navn*: «Digitaliseringsdirektoratet» (bokmål) / _"Norwegian Digitalisation Agency" (English)_
 *** e-post: informasjonsforvaltning@digdir.no
-** Tilgjengeliggjør datasett: <datasett456>
 
 .For teknisk interessert: klikk her for å se eksemplene ovenfor representert i RDF Turtle
 [%collapsible]
