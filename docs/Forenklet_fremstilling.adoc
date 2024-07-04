@@ -37,7 +37,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 
 * <katalog123>:
 ** *Tittel*: «Eksempelkatalog» (bokmål) / _"Example Catalog" (English)_
-** *Beskrivelse*: «Et eksempelkatalog kun for illustrasjonsformål.» (bokmål) / _"An example catalog for illustration purposes only." (English)_
+** *Beskrivelse*: «En eksempelkatalog kun for illustrasjonsformål.» (bokmål) / _"An example catalog for illustration purposes only." (English)_
 ** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
 ** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
 ** Innholder beskrivelse av følgende datasett: <datasett456>
