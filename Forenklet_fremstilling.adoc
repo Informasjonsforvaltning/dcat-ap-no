@@ -18,17 +18,17 @@ image::images/DCAT-AP-NO-forenklet-fremstilling.png[]
 Helt overordnet illustrerer figuren bl.a. følgende:
 
 * En *katalog* 
-** SKAL alltid inneholde opplysninger om utgiveren av katalogen og kontaktpunktopplysninger, samt beskrivelse og tittel 
+** SKAL alltid inneholde opplysninger om utgiveren av katalogen og kontaktopplysninger, samt beskrivelse og tittel 
 ** BØR inneholde beskrivelse av datasett og/eller datatjenester
 *** Merk at selv om hverken datasettbeskrivelse eller datatjenestebeskrivelse er obligatorisk, BØR man unngå å ha tomme kataloger. 
 * En **datasett**beskrivelse 
-** SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktpunktopplysninger, samt beskrivelse, tittel og tema som datasettet skal grupperes innunder
+** SKAL alltid inneholde opplysninger om utgiveren av datasettet og kontaktopplysninger, samt beskrivelse, tittel og tema som datasettet skal grupperes innunder
 ** BØR tilgjengeliggjøres vha. distribusjoner og/eller datatjenester/APIer (se neste punkt om datatjenestebeskrivelse)
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller behandling av datasettet 
 * En **datatjeneste**beskrivelse 
-** SKAL alltid inneholde opplysninger om utgiveren av datatjenesten og kontaktpunktopplysninger, samt tittel og endepunktsURL til datatjenesten
+** SKAL alltid inneholde opplysninger om utgiveren av datatjenesten og kontaktopplysninger, samt tittel og endepunktsURL til datatjenesten
 ** BØR brukes til å tilgjengeliggjøre datasett 
-*** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjeneste som ikke tilgjengeliggjør datasett. Unntaket er rene dataprosesseringstjenester.
+*** Merk at selv om det ikke er obligatorisk å knytte en datatjeneste til datasett, BØR man unngå å ha datatjenester som ikke tilgjengeliggjør datasett. Unntaket er rene dataprosesseringstjenester.
 ** BØR inneholde opplysninger om gjeldende lovgivning som gir mandat til opprettelse eller forvaltning av datatjenesten
 
 == Et illustrativt eksempel [[Illustrativt-eksempel]]
@@ -63,10 +63,9 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 *** *Navn*: «Digitaliseringsdirektoratet» (bokmål) / _"Norwegian Digitalisation Agency" (English)_
 *** e-post: informasjonsforvaltning@digdir.no
 
-.For deg som er teknisk interessert: klikk her for å se eksemplene ovenfor representert i RDF Turtle, i henhold til kravene spesifisert videre i standarden.
+.For deg som er teknisk interessert: klikk her for å se beskrivelsene ovenfor representert i RDF Turtle, og i henhold til kravene spesifisert videre i standarden.
 [%collapsible]
 ====
-Et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, representert i RDF Turtle: 
 -----
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix dcat: <http://www.w3.org/ns/dcat#> .
@@ -78,7 +77,7 @@ Et illustrativt eksempel på en katalog som inneholder beskrivelse av et dataset
    dct:title "Eksempelkatalog"@nb , "Example Catalog"@en ; # tittel
    dct:description "Et eksempelkatalog kun for illustrasjonsformål."@nb , "An example catalog for illustration purposes only."@en ; # beskrivelse
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
-   dcat:contactPoint <kontaktpunktDigdir> ; 
+   dcat:contactPoint <kontaktpunktDigdir> ; # kontaktpunkt
    dcat:dataset <datasett456> ; # inneholder datasett
    dcat:service <api789> ; # inneholder datatjenester 
    .
