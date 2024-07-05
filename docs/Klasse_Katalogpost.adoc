@@ -105,6 +105,7 @@ _This property is used to specify the status of the catalogue record in the cont
 | Merknad / _Note_ | Norsk utvidelse: Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
 
 __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status/COMPLETED[ferdigstilt &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
