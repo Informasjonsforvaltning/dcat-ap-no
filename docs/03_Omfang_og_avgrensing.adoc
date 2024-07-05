@@ -1,17 +1,17 @@
 = Omfang og avgrensing [[Omfang-og-avgrensing]]
 
-Standarden er anbefalt brukt for å beskrive datasett og datatjenester, samt kataloger med datasett og datatjenester. Den vil gjelde for alle datasett (inkludert åpne data) og datatjenester i offentlig sektor
+Standarden DCAT-AP-NO er anbefalt brukt for å beskrive datasett og datatjenester, samt kataloger med beskrivelser av datasett og datatjenester. Den vil gjelde for alle datasett (inkludert åpne data) og datatjenester i offentlig sektor
 __som beskrives med tanke på oppføring i en
 katalog eller «inventarliste» (intern eller ekstern)__. Standarden er
 ikke tenkt brukt for å beskrive fagsystem.
 
-DCAT-AP-NO er en applikasjonsprofil og ikke en direkte oversettelse av EU sin https://semiceu.github.io/DCAT-AP/releases/3.0.0/[DCAT-AP &#x29C9;, window="_blank", role="ext-link"] og W3C sin https://www.w3.org/TR/vocab-dcat-3/[DCAT &#x29C9;, window="_blank", role="ext-link"]. I tillegg til å beskrive hvordan klasser og egenskaper i DCAT-AP og DCAT brukes, tilpasses også DCAT-AP  og DCAT til norske forhold ved å bruke norske utvidelser (se <<Oversikt-norske-utvidelser>>).
+DCAT-AP-NO er en applikasjonsprofil og ikke en direkte oversettelse av EU sin https://semiceu.github.io/DCAT-AP/releases/3.0.0/[DCAT-AP &#x29C9;, window="_blank", role="ext-link"] og W3C sin https://www.w3.org/TR/vocab-dcat-3/[DCAT &#x29C9;, window="_blank", role="ext-link"]. I tillegg til å beskrive hvordan DCAT-AP og DCAT brukes, tilpasses også DCAT-AP og DCAT til norske forhold ved å bruke norske utvidelser (se <<Oversikt-norske-utvidelser>>).
 
 Istedenfor å ha alt spesifisert i denne standarden, er det etablert flere andre spesifikasjoner for å beskrive ulike aspekter ved datasett/datatjenester:
 
-* *Datasett med høy verdi (High Value Datasets, HVD)*: Det er en egen standard, https://informasjonsforvaltning.github.io/hvd-dcat-ap-no/[HVD-DCAT-AP-NO  &#x29C9;, window="_blank", role="ext-link"] (til høring sammen med denne), som gjelder for datasett med høy verdi. 
+* *Datasett med høy verdi (_High Value Datasets_, HVD)*: Det er en egen standard, https://informasjonsforvaltning.github.io/hvd-dcat-ap-no/[HVD-DCAT-AP-NO  &#x29C9;, window="_blank", role="ext-link"] (p.t. til høring sammen med denne), som gjelder for beskrivelse av datasett med høy verdi. 
 
-* *Kvalitetsbeskrivelser*: Det er etablert en https://data.norge.no/specification/dqv-ap-no/[norsk applikasjonsprofil av DQV (DQV-AP-NO) &#x29C9;, window="_blank", role="ext-link"] som spesifiserer hva skal/bør/kan tas med når datakvalitet beskrives. 
+* *Kvalitetsbeskrivelser*: Det er etablert en norsk applikasjonsprofil av DQV, https://data.norge.no/specification/dqv-ap-no/[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"], som spesifiserer hva skal/bør/kan tas med når datakvalitet beskrives. 
 
 * *Informasjonsmodeller*: Det er etablert en norsk applikasjonsprofil av DCAT for beskrivelse og utveksling av informasjonsmodeller, https://data.norge.no/specification/modelldcat-ap-no/[ModellDCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"]. I ModellDCAT-AP-NO er informasjonsmodell subklasse av `dct:Standard`. Ved å bruke egenskapen `dct:conformsTo` kan et datasett eller en datatjeneste referere til en informasjonsmodell.
 
