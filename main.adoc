@@ -17,8 +17,6 @@ ifdef::backend-pdf[:toc: macro]
 
 image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
 
-WARNING: Dette er #utkast# til høringsversjonen til den reviderte versjon (v3.0) av DCAT-AP-NO. 
-
 include::shared/download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
@@ -27,12 +25,12 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] +
 *Status*: #Redaktørens utkast# +
 *Versjon*: #Utkast til høringsversjon# (se <<Endringslogg>>) +
-*Oppdatert*: #løpende oppdateres#  +
+*Oppdatert*: #løpende oppdateres før utsending av høringen#  +
 *Gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no +
 *Forrige versjon*: https://data.norge.no/specification/dcat-ap-no/v1.1/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/ +
 // *Veileder*: https://data.norge.no/guide/veileder-beskrivelse-av-datasett/ +
-*Valideringsverktøy*: https://data.norge.no/validator
+// *Valideringsverktøy*: https://data.norge.no/validator
 
 
 
