@@ -58,12 +58,13 @@ Eksempel i RDF Turtle:
 _This property is used to specify a free-text account of the Distribution. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Eksempel / _Example_ | «En eksempeldistribunsjon kun for illustrasjonsformål» (bokmål) / __"An example distribution for illustration purposes only." (English)__
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aDistribution> a dcat:Distribution ; 
-   dct:description "En eksempeldistribunsjon"@nb , "An Example Distribution"@en ; 
+   dct:description "En eksempeldistribunsjon kun for illustrasjonsformål."@nb , "An example distribution for illustration purposes only."@en ; 
    .
 -----
 
@@ -82,6 +83,8 @@ _This property is used to specify the file format of the Distribution._
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[__File type__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[File type &#x29C9;, window="_blank", role="ext-link"].__
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE[RDF Turtle &#x29C9;, window="_blank", role="ext-link"]
+| Eksempel / _Example_ | https://lovdata.no/eli/lov/2006/05/19/16[Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -106,6 +109,7 @@ _This property is used to refer to a licence under which the Distribution is mad
 | Merknad / _Note_ | Norsk utvidelse: Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
 
 __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/licence/CC_BY_4_0[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -133,6 +137,7 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå endret fra valgfri til anbefalt, fordi status på distribusjon er viktig å vite når man skal vurdere om en distribusjon skal/kan brukes.
 
 _Norwegian extension: The requirement level changed from optional to recommended._
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status/COMPLETED[ferdigstilt &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -157,6 +162,7 @@ _This property is used to specify how long it is planned to keep the Distributio
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability[__Planned availability__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability[Planned availability &#x29C9;, window="_blank", role="ext-link"].__
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability/STABLE[stabil &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
