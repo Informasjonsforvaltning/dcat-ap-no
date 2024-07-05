@@ -40,6 +40,7 @@ _This property is used to specify a numeric value indicating the amount of the C
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | 100,00
 |===
 
 Eksempel i RDF Turtle:
@@ -67,6 +68,7 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/currency/NOK[Norske kroner &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -93,6 +95,7 @@ _This property is used to specify a free text description of the Cost. This prop
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | «Behandlingsgebyr» (bokmål) / __"Handling fee" (English)__
 |===
 
 Eksempel i RDF Turtle:
