@@ -1401,7 +1401,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <h2 id="Spesifikasjon-per-klasse"><a class="anchor" href="#Spesifikasjon-per-klasse"></a>3. Krav til RDF-representasjon av klassene i DCAT-AP-NO</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>Denne delen er er ment for den tekniske målgruppen.</em></p>
+<p><em>Denne delen av standarden er primært ment for den tekniske målgruppen.</em></p>
 </div>
 <div class="paragraph">
 <p><a href="#diagram-DCAT-AP-NO-klasser">Figur 2</a> viser en oversikt over klassene som er spesifisert i DCAT-AP-NO samt relasjoner mellom noen av nøkkelklassene. I tegningen er norske utvidelser markert i gult. Med tanke på lesbarhet er flere klasser bare listet opp for oversikts skyld, uten at relasjoner til/fra dem er vist i figuren.</p>
@@ -1410,16 +1410,16 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="content">
 <a class="image" href="images/DCAT-AP-NO-klasser.png"><img src="images/DCAT-AP-NO-klasser.png" alt="DCAT AP NO klasser"></a>
 </div>
-<div class="title">Figur 2. Oversikt klassene i DCAT-AP-NO og relasjoner mellom dem.</div>
+<div class="title">Figur 2. Oversikt over klassene i DCAT-AP-NO og noen relasjoner mellom dem.</div>
 </div>
 <div class="paragraph">
 <p>Hver klasse med dens egenskaper er spesifisert videre i dette kapitlet. Klassene er sortert alfabetisk etter norske klassenavn, og egenskapene i hver klasse gruppert først inn i obligatoriske, anbefalte og valgfrie egenskaper, og der under alfabetisk etter norske egenskapsnavn.</p>
 </div>
 <div class="paragraph">
-<p>Alle kravene i denne standarden uttrykkes i form av RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.</p>
+<p>Kravene i denne delen av standarden spesifiserer hvordan beskrivelsene skal representeres i RDF. Hvert krav er spesifisert i en tabell som inneholder syntaks og forklaring. Radene i tabellene er beskrevet nedenfor. Noen tabeller har færre rader. Engelske navn og tekster som er tatt med i tabellene, er ikke alle nødvendigvis ordrette sitater fra engelske kilder. Vi kan ha valgt en annen engelsk tekst til å formidle det samme budskapet, med mindre vi eksplisitt sier at det er et avvik.</p>
 </div>
 <div class="paragraph">
-<p>«Norsk utvidelse» i merknad betyr avvik mellom DCAT-AP-NO og summen av EU sin DCAT-AP og W3C sin DCAT. EU har valgt å ikke gjenta egenskaper fra DCAT i DCAT-AP når det ikke er foretatt endringer/tilpasninger, hvilket betyr at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. For å øke leservennlighet har vi i DCAT-AP-NO valgt å gjenta egenskaper fra DCAT-AP og DCAT som vi trenger for å dekke norske behov. Der det ikke står noe om «norsk utvidelse» i merknad til en egenskap, er egenskapen brukt slik den er spesifisert i enten DCAT-AP eller DCAT. Der det står «norsk utvidelse» i merknad til en egenskap, er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken DCAT-AP eller DCAT (f.eks. med forklaring "Ikke eksplisitt spesifisert i DCAT-AP/DCAT"). Se også <a href="#Oversikt-norske-utvidelser"><em>Vedlegg B - Oversikt over norske utvidelser</em></a>.</p>
+<p>«Norsk utvidelse» i merknad betyr avvik mellom DCAT-AP-NO og summen av EUs DCAT-AP og W3Cs DCAT. EU har valgt å ikke gjenta valgfrie egenskaper fra DCAT når det i DCAT-AP ikke gjøres tilpasninger. Dette betyr at nasjonale applikasjonsprofiler som DCAT-AP-NO, kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. For å øke leservennlighet har vi i DCAT-AP-NO valgt å gjenta egenskaper fra DCAT-AP og DCAT som vi trenger for å dekke norske behov. Der det ikke står noe om «norsk utvidelse» i merknad til en egenskap, er egenskapen brukt slik den er spesifisert i enten DCAT-AP eller DCAT. Der det står «norsk utvidelse» i merknad til en egenskap, er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken DCAT-AP eller DCAT (f.eks. med forklaring "Ikke eksplisitt spesifisert i DCAT-AP/DCAT"). Se også <a href="#Oversikt-norske-utvidelser"><em>Vedlegg B - Oversikt over norske utvidelser</em></a>.</p>
 </div>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
@@ -1443,11 +1443,11 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subklasse av / <em>Subclass of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en klasse, til å referere til klassen som denne klassen ev. er subklasse av.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en klasse, til å referere til klassen som den aktuelle klassen ev. er subklasse av.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Subegenskap av / <em>Subproperty of</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å referere til egenskapen som denne egenskapen ev. er subegenskap av.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne brukes bare i spesifikasjon av en egenskap, til å referere til egenskapen som den aktuelle egenskapen ev. er subegenskap av.</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
@@ -1544,6 +1544,10 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«Digitaliseringsdirektoratet» (bokmål) / <em>"Norwegian Digitalisation Agency" (English)</em></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -1603,6 +1607,10 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For Digitaliseringsdirektoratet som har organisasjonsnummer 991825827, blir dette <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="bare">https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827</a></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -1653,6 +1661,10 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra <a href="http://purl.org/adms/publishertype/1.0" class="ext-link" target="_blank" rel="noopener"><em>ADMS publisher type</em> &#x29C9;</a> (lenket ressurs er i RDF).</p>
 <p class="tableblock"><em>The value SHALL be chosen from <a href="http://purl.org/adms/publishertype/1.0" class="ext-link" target="_blank" rel="noopener">ADMS publisher type &#x29C9;</a> (the ressurs linked is in RDF).</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>"National authority"</em> (http://purl.org/adms/publishertype/NationalAuthority).</p></td>
 </tr>
 </tbody>
 </table>
@@ -10964,7 +10976,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-07-05 18:32:04 UTC
+Sist oppdatert 2024-07-05 18:32:39 UTC
 </div>
 </div>
 </body>
