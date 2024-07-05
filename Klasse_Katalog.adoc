@@ -121,9 +121,9 @@ Eksempel i RDF Turtle:
 | _English name_ |  _dataset_
 | URI | dcat:dataset
 | Verdiområde / _Range_ | <<Datasett, dcat:Dataset>>
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som er en del av katalogen. Gjelder også datasettserie som er subklasse av datasett. (#@@@@@@ NB! Sjekk hva EU endelig velger her! #)
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som er en del av katalogen. 
 
-_This property is used to refer to a Dataset that is part of the Catalogue. This also applies to Dataset series which is a subclass of Dataset._
+_This property is used to refer to a Dataset that is part of the Catalogue._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
