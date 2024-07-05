@@ -37,6 +37,7 @@ _This property is used to refer to the algorithm used to produce the checksum._
 | Merknad / _Note_ | Verdien SKAL velges blant https://spdx.org/rdf/terms/#d4e2129[__Checksum algorithm members__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen among https://spdx.org/rdf/terms/#d4e2129[Checksum algorithm members &#x29C9;, window="_blank", role="ext-link"].__
+| Eksempel / _Example_ | SHA-256
 |===
 
 Eksempel i RDF Turtle:
