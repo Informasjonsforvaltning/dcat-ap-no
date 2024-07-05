@@ -63,7 +63,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 *** *Navn*: «Digitaliseringsdirektoratet» (bokmål) / _"Norwegian Digitalisation Agency" (English)_
 *** e-post: informasjonsforvaltning@digdir.no
 
-.For de teknisk interesserte: klikk her for å se eksemplene ovenfor representert i RDF Turtle, som er i henhold til kravene spesifisert videre i standarden.  
+.For deg som er teknisk interessert: klikk her for å se eksemplene ovenfor representert i RDF Turtle, i henhold til kravene spesifisert videre i standarden.
 [%collapsible]
 ====
 Et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, representert i RDF Turtle: 
