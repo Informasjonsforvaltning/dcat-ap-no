@@ -37,13 +37,14 @@ _This property contains descriptive textual information about the Legal Resource
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | «Et eksempel på en regulativ ressurs, kun for illustrasjonsformål.» (bokmål) / __"An example of a legal resource, for illustration purposes only." (English)__
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aLegalResource> a eli:LegalResource ; 
-   dct:description "Et eksempel på en regulativ ressurs, kun for demoformål"@nb, 
-      "An example of a legal resource, for demo purposes only"@en ; 
+   dct:description "Et eksempel på en regulativ ressurs, kun for illustrasjonsformål."@nb, 
+      "An example of a legal resource, for illustration purposes only."@en ; 
    .
 -----
 
@@ -116,6 +117,7 @@ __The value MUST be chosen from Eu's controlled vocabulary https://op.europa.eu/
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/language/NOB[Norsk bokmål &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -140,6 +142,7 @@ _This property is used to specify the title of the legal resource. This property
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | «Eksempellov» (bokmål) / __"Example Act" (English)__
 |===
 
 Eksempel i RDF Turtle:
@@ -167,6 +170,7 @@ __The value shall be chosen from the common controlled vocabulary https://data.n
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | https://data.norge.no/vocabulary/legal-resource-type#act[lov &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
