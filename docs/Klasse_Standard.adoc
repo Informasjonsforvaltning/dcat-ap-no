@@ -38,6 +38,7 @@ _This property is used to specify a name to the standard/specification. This pro
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | «Eksempelstandard» (bokmål) / __"Example Standard" (English)__
 |===
 
 Eksempel i RDF Turtle:
