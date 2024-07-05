@@ -40,12 +40,13 @@ _This property is used to specify an email address to the contact point._
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
+| Eksempel / _Example_ | informasjonsforvaltning@digdir.no
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aContactPoint> a vcard:Organization ; 
-   vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ; 
+   vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no> ; 
    .
 -----
 
@@ -64,12 +65,13 @@ _This property is used to specify the name of the contact point. This property c
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
+| Eksempel / _Example_ | «Digitaliseringsdirektoratet» (bokmål) / _"Norwegian Digitalisation Agency" (English)_
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aContactPoint> a vcard:Organization ; 
-   vcard:fn "Brukerstøtte"@nb , "User support"@en ; 
+   vcard:fn "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ; 
    .
 -----
 
