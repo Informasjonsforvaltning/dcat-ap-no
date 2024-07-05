@@ -35,6 +35,7 @@ _This class is used to represent an identifier in a particular context, consisti
 _This property contains a string that is an identifier in the context of the identifier scheme referenced by its datatype._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Eksempel / _Example_ | 1234
 |===
 
 Eksempel i RDF Turtle:
