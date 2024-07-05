@@ -36,12 +36,13 @@ _This class is used to represent a conceptual entity that represents the informa
 _This property is used to specify a free-text account of the Dataset.This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Eksempel / _Example_ | «Et eksempeldatasett kun for illustrasjonsformål.» (bokmål) / __"An example dataset for illustration purposes only." (English)__
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aDataset> a dcat:Dataset ; 
-   dct:description "Et eksempeldatasett"@nb , "An example dataset"@en ; 
+   dct:description "Et eksempeldatasett kun for illustrasjonsformål."@nb , "An example dataset for illustration purposes only."@en ; 
    .
 -----
 
@@ -92,6 +93,7 @@ __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, wind
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
+| Eksempel / _Example_ | Temaet https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/GOVE[Forvaltning og offentlig sektor &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -113,6 +115,7 @@ Eksempel i RDF Turtle:
 _This property is used to specify a name given to the dataset. This property can be repeated for parallel language versions of the name._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Eksempel / _Example_ | «Eksempeldatasett» (bokmål) / __"Example Dataset" (English)__
 |===
 
 Eksempel i RDF Turtle:
@@ -140,6 +143,7 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået er endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1._
+| Eksempel / _Example_ | Digitaliseringsdirektoratet med organisasjonsnummer 991825827
 |===
 
 Eksempel i RDF Turtle:
@@ -166,6 +170,7 @@ _This property is used to refer to concepts that are important to understand and
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | https://data.norge.no/showroom/skos-ap-no/demo-concepts#demoCpt1[demobegrep 1 &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -193,20 +198,18 @@ __Norwegian extension: The value SHOULD be chosen from the controlled vocabulary
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået er endret fra valgfri til anbefalt.
 
 _Norwegian extension: The requirement level is changed from optional to recommended._
+| Eksempel / _Example_ | <dataset1>: https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision[vedtak &#x29C9;, window="_blank", role="ext-link"]; <dataset2>: https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-third-party[innhenting fra tredjepart &#x29C9;, window="_blank", role="ext-link"]; <dataset3>: https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-user[innhenting frå brukaren &#x29C9;, window="_blank", role="ext-link"]. 
 |===
 
 Eksempel i RDF Turtle: 
 ----
-:dataset1
-   a dcat:Dataset ;
+<dataset1> a dcat:Dataset ;
    prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision> .
 
-:dataset2
-   a dcat:Dataset ;
+<dataset2> a dcat:Dataset ;
    prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-third-party> .
 
-:dataset3
-   a dcat:Dataset ;
+<dataset3> a dcat:Dataset ;
    prov:wasGeneratedBy <https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-user> .
 ----
 
@@ -250,6 +253,7 @@ Norsk utvidelse: For å angi dekningsområde i Norge, BØR Kartverkets kontrolle
 __The value MUST be chosen from EU's controlled vocabularies https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[Continent &#x29C9;, window="_blank", role="ext-link"], https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[Countries and territories &#x29C9;, window="_blank", role="ext-link"] or https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[Place &#x29C9;, window="_blank", role="ext-link"], IF it is in one of the lists;  if a particular location is not in one of the mentioned Named Authority Lists, https://sws.geonames.org/[GeoNames &#x29C9;, window="_blank", role="ext-link"] URIs MUST be used.__
 
 __Norwegian extension: To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/country/NOR[Norge &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -271,12 +275,13 @@ Eksempel i RDF Turtle:
 _This property is used to specify a keyword or tag describing the Dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Eksempel / _Example_ | «illustrasjon» (bokmål) / __"illustration" (English)__
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aDataset> a dcat:Dataset ; 
-   dcat:keyword "eksempel"@nb , "example"@en ; 
+   dcat:keyword "illustrasjon"@nb , "illustration"@en ; 
    .
 -----
 
@@ -295,6 +300,7 @@ _This property is used to refer to the legislation that mandates the creation or
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt. 
 
 _Norwegian extension: The requirement level changed from optional to recommended._
+| Eksempel / _Example_ | https://lovdata.no/eli/lov/2006/05/19/16[Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
@@ -343,6 +349,7 @@ __The value MUST be `PUBLIC`, `RESTRICTED` or `NON_PUBLIC` from EU's controlled 
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået er endret fra valgfri til anbefalt.
 
 _Norwegian extension: The requirement level is changed from optional to recommended._
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/access-right/PUBLIC[Alment tilgjengelig &#x29C9;, window="_blank", role="ext-link"]
 |===
 
 Eksempel i RDF Turtle:
