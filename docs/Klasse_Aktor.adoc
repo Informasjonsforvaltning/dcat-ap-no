@@ -35,6 +35,7 @@ __This class is used to represent any entity carrying out actions with respect t
 __This property contains the name of the agent. This property can be repeated for different versions of the name (e.g. the name in different languages).__
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Eksempel / _Example_ | «Digitaliseringsdirektoratet» (bokmål) / _"Norwegian Digitalisation Agency" (English)_
 |===
 
 Eksempel i RDF Turtle:
@@ -64,6 +65,7 @@ __When the agent has an organization number registered in the Central Coordinati
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Eksempel / _Example_ | For Digitaliseringsdirektoratet som har organisasjonsnummer 991825827, blir dette https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827
 |===
 
 Eksempel i RDF Turtle:
@@ -88,6 +90,7 @@ _This property is used to specify the nature of the agent._
 | Merknad / _Note_ | Verdien SKAL velges fra http://purl.org/adms/publishertype/1.0[_ADMS publisher type_ &#x29C9;, window="_blank", role="ext-link"] (lenket ressurs er i RDF).
 
 __The value SHALL be chosen from http://purl.org/adms/publishertype/1.0[ADMS publisher type &#x29C9;, window="_blank", role="ext-link"] (the ressurs linked is in RDF).__
+| Eksempel / _Example_ | _"National authority"_ (\http://purl.org/adms/publishertype/NationalAuthority).
 |===
 
 Eksempel i RDF Turtle:
