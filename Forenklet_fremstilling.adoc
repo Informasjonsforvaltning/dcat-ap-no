@@ -37,7 +37,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 
 * <katalog123>:
 ** *Tittel*: «Eksempelkatalog» (bokmål) / _"Example Catalog" (English)_
-** *Beskrivelse*: «En eksempelkatalog kun for illustrasjonsformål.» (bokmål) / _"An example catalog for illustration purposes only." (English)_
+** *Beskrivelse*: «En eksempelkatalog, kun for illustrasjonsformål.» (bokmål) / _"An example catalog, for illustration purposes only." (English)_
 ** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
 ** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
 ** Innholder beskrivelse av følgende datasett: <datasett456>
@@ -45,7 +45,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 
 * <datasett456>:
 ** *Tittel*: «Eksempeldatasett» (bokmål) / _"Example Dataset" (English)_
-** *Beskrivelse*: «Et eksempeldatasett kun for illustrasjonsformål.» (bokmål) / _"An example dataset for illustration purposes only." (English)_
+** *Beskrivelse*: «Et eksempeldatasett, kun for illustrasjonsformål.» (bokmål) / _"An example dataset, for illustration purposes only." (English)_
 ** *Tema*: https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/GOVE[Forvaltning og offentlig sektor &#x29C9;, window="_blank", role="ext-link"]
 ** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
 ** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
@@ -75,7 +75,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 
 <katalog123> a dcat:Catalog ; # en katalog
    dct:title "Eksempelkatalog"@nb , "Example Catalog"@en ; # tittel
-   dct:description "Et eksempelkatalog kun for illustrasjonsformål."@nb , "An example catalog for illustration purposes only."@en ; # beskrivelse
+   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb , "An example catalog, for illustration purposes only."@en ; # beskrivelse
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
    dcat:contactPoint <kontaktpunktDigdir> ; # kontaktpunkt
    dcat:dataset <datasett456> ; # inneholder datasett
@@ -84,7 +84,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 
 <datasett456> a dcat:Dataset ; # et datasett
    dct:title "Eksempeldatasett"@nb , "Example Dataset"@en ; # tittel
-   dct:description "Et eksempeldatasett kun for illustrasjonsformål."@nb , "An example dataset for illustration purposes only."@en; # beskrivelse
+   dct:description "Et eksempeldatasett, kun for illustrasjonsformål."@nb , "An example dataset, for illustration purposes only."@en; # beskrivelse
    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; # tema
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
    dcat:contactPoint <kontaktpunktDigdir> ; # kontaktpunkt

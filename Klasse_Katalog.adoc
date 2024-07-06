@@ -34,13 +34,13 @@ _This class is used to represent a catalogue or repository that hosts the Datase
 _This property is used to specify a free-text account of the Catalogue. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Eksempel / _Example_ | «En eksempelkatalog, kun for demo formål.» (bokmål) / __"An example catalog, for demo purposes only." (English)__
+| Eksempel / _Example_ | «En eksempelkatalog, kun for illustrasjonsformål.» (bokmål) / __"An example catalog, for illustration purposes only." (English)__
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aCatalog> a dcat:Catalog ; 
-   dct:description "En eksempelkatalog, kun for demo formål."@nb , "An example catalog, for demo purposes only."@en ; 
+   dct:description "En eksempelkatalog, kun for illustrasjonsformål."@nb , "An example catalog, for illustration purposes only."@en ; 
    .
 -----
 
