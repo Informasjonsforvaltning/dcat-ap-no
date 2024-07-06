@@ -275,13 +275,13 @@ Eksempel i RDF Turtle:
 _This property is used to specify a keyword or tag describing the Dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Eksempel / _Example_ | «illustrasjon» (bokmål) / __"illustration" (English)__
+| Eksempel / _Example_ | «eksempel», «datasett» (bokmål) / __"example", "dataset" (English)__
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aDataset> a dcat:Dataset ; 
-   dcat:keyword "illustrasjon"@nb , "illustration"@en ; 
+   dcat:keyword "eksempel"@nb , "datasett"@nb , "example"@en , "dataset"@en ; 
    .
 -----
 

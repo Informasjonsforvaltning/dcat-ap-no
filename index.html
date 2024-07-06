@@ -2253,7 +2253,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">«illustrasjon» (bokmål) / <em>"illustration" (English)</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">«eksempel», «datasett» (bokmål) / <em>"example", "dataset" (English)</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -2263,7 +2263,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aDataset&gt; a dcat:Dataset ;
-   dcat:keyword "illustrasjon"@nb , "illustration"@en ;
+   dcat:keyword "eksempel"@nb , "datasett"@nb , "example"@en , "dataset"@en ;
    .</pre>
 </div>
 </div>
@@ -9059,12 +9059,12 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a> for land. For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter &#x29C9;</a> brukes i tillegg.</p>
-<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> for country. To specify coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien SKAL velges fra EU&#8217;s kontrollerte vokabularer <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener"><em>Continent</em> &#x29C9;</a> eller <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener"><em>Countries and territories</em> &#x29C9;</a>. For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular <a href="https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163" class="ext-link" target="_blank" rel="noopener">Administrative enheter &#x29C9;</a> brukes i tillegg.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabularies <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent" class="ext-link" target="_blank" rel="noopener"></em>Continent<em> &#x29C9;</a> or <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country" class="ext-link" target="_blank" rel="noopener">Countries and territories &#x29C9;</a> for country. To specify coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/country/NOR" class="ext-link" target="_blank" rel="noopener">Norge &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/continent/EUROPE" class="ext-link" target="_blank" rel="noopener">Europa &#x29C9;</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -9074,7 +9074,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aRightsStatement&gt; a odrs:RightsStatement ;
-   odrs:jurisdiction &lt;http://publications.europa.eu/resource/authority/country/NOR&gt; ;
+   odrs:jurisdiction &lt;http://publications.europa.eu/resource/authority/continent/EUROPE&gt; ;
    .</pre>
 </div>
 </div>
@@ -11173,7 +11173,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-07-06 09:18:48 UTC
+Sist oppdatert 2024-07-06 09:36:53 UTC
 </div>
 </div>
 </body>
