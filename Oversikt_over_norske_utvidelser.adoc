@@ -2,15 +2,15 @@
 
 // kommentar: dette er ren klipp-og-lim fra kapitlene for å gjenta norske utvidelser i en samlet oversikt
 
-«Norsk utvidelse» i konteksten av denne standarden betyr avvik mellom DCAT-AP-NO og summen av EU sin DCAT-AP og W3C sin DCAT. EU har valgt å ikke gjenta egenskaper fra DCAT i DCAT-AP når det ikke er foretatt endringer/tilpasninger, hvilket betyr at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. For å øke leservennlighet har vi i DCAT-AP-NO valgt å gjenta egenskaper fra DCAT-AP og DCAT som vi trenger for å dekke norske behov. Der det ikke står «norsk utvidelse» betyr at egenskapen er brukt slik den er spesifisert i enten DCAT-AP eller DCAT. Der det står «norsk utvidelse», er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken DCAT-AP eller DCAT (f.eks. med forklaring "Ikke eksplisitt spesifisert i DCAT-AP/DCAT").
+«Norsk utvidelse» i konteksten av denne standarden betyr avvik mellom DCAT-AP-NO og summen av EUs DCAT-AP og W3Cs DCAT. EU har valgt å ikke gjenta egenskaper fra DCAT i DCAT-AP når det ikke er foretatt endringer/tilpasninger, hvilket betyr at nasjonale applikasjonsprofiler kan bruke egenskaper fra DCAT uten å bryte med DCAT-AP. For å øke leservennlighet har vi i DCAT-AP-NO valgt å gjenta egenskaper fra DCAT-AP og DCAT som vi trenger for å dekke norske behov. Der det ikke står «norsk utvidelse» betyr at egenskapen er brukt slik den er spesifisert i enten DCAT-AP eller DCAT. Der det står «norsk utvidelse», er kravet til egenskapen endret (f.eks. med forklaringen noe a la "Kravnivået er endret fra valgfri til anbefalt"), eller at egenskapen ikke er å finne i hverken DCAT-AP eller DCAT (f.eks. med forklaring "Ikke eksplisitt spesifisert i DCAT-AP/DCAT").
 
-Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene de aktuelle egenskapene der det står (ev. mangler) «norsk utvidelse» blir rettet opp, har merknadene forrang.
+Inntil eventuell uoverensstemmelse mellom listen nedenfor og merknadene i de aktuelle egenskapene der det står (ev. mangler) «norsk utvidelse» blir rettet opp, har merknadene forrang.
 
 Tabellen nedenfor er sortert i samme rekkefølge som klassene/egenskapene er spesifisert i <<Spesifikasjon-per-klasse>>. 
 
 [cols="20,20,60"]
 |===
-|*Egenskaps-/klassenavn / _Norwegian name_* |*Egenskaps-/klasseURI / _Property/class URI_*| *Norsk utvidelse / _Norwegian extension_* 
+|*Klasse-/egenskapsnavn / _Class/property name_* |*Klasse-/egenskapsURI / _Class/property URI_*| *Norsk utvidelse / _Norwegian extension_* 
 | Aktør – organisasjonsidentifikator | dct:identifier |  
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 

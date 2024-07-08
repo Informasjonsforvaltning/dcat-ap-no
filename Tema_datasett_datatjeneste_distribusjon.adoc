@@ -10,11 +10,14 @@ __Dette er en forkortet og fornorsket versjon av EU https://semiceu.github.io/DC
 *Egenskaper* til Distribusjon og Datatjeneste:
 
 * Mange av egenskapene i klassen Distribusjon (dcat:Distribution) er filorientert (f.eks. nedlastingsURL (dcat:downloadURL), format (dct:format), filstørrelse (dcat:byteSize), sjekksum (spdx:checksum), endringsdato (dct:modified) osv.)
+
 * Relevansen av tilsvarende egenskaper er redusert for datatjenester (dcat:DataService), og egenskapene som brukes kan ha anderledes betydning. For eksempel,  datatjenester foretar (eller på forespørsel kan foreta) format-, språk- og skjematransformasjoner, mens for en gitt distribusjon er format, språk osv. gitt. Håndtering av tillit er forskjellig også: endring i nedlastbart innhold i en distribusjon oppdages ved å bruke sjekksum, mens datatjenester ofte bruker en pålitelig kanal ved å bruke sikkerhetsmekanisme som autentisering og kryptering. 
 
 *Retningslinjer*: 
 
 * Et datasett (dcat:Dataset) er den konseptuelle entiteten for en samling av data.
-* En Distribusjon (dcat:Distribution) er en spesifikk representasjon av et datasett, beskrevet med den hensikt å lette levering av data som fil. TilgangsURL (dcat:accessURL), helst nedlastingslenke (dcat:downloadURL), gir en enkel måte å få tak i (laste ned) innholdet i datasettet i den spesifikke representasjonen som angitt i distribusjonsbeskrivelsen. Det nedlastede innholdet er fullstendig bestemt av utgiveren av distribusjonen. 
+
+* En distribusjon (dcat:Distribution) er en spesifikk representasjon av et datasett, beskrevet med den hensikt å lette levering av data som fil. TilgangsURL (dcat:accessURL), helst nedlastingslenke (dcat:downloadURL), gir en enkel måte å få tak i (laste ned) innholdet i datasettet i den spesifikke representasjonen som angitt i distribusjonsbeskrivelsen. Det nedlastede innholdet er fullstendig bestemt av utgiveren av distribusjonen. 
+
 * Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en datatjeneste. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på.     
 
