@@ -67,6 +67,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** er versjon av (`dct:isVersionOf`), i samsvar med DCAT-AP/DCAT.
 *** erstattes av (`dct:isReplacedBy`), i samsvar med DCAT-AP/DCAT.
 *** følger (`cpsv:follows`), i samsvar med DCAT-AP/DCAT.
+*** har del (`dct:hasPart`), i samsvar med DCAT-AP/DCAT.
 *** krever (`dct:requires`), i samsvar med DCAT-AP/DCAT.
 *** refererer til (`dct:references`), i samsvar med DCAT-AP/DCAT.
 

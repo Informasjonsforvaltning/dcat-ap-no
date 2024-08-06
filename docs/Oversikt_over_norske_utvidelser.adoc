@@ -59,10 +59,6 @@ __The requirement level is changed from optional to recommended.__
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
 __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
-| Datasett – har del | dct:hasPart |
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
-
-__Not explicitly specified in DCAT-AP/DCAT.__
 | Datasett – har gebyr | cv:hasCost | 
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
