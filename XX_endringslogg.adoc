@@ -62,12 +62,12 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasett-har-gebyr>>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.
 
 ** *Utgåtte egenskaper*: 
-*** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT.
+*** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. Behovet er dessuten dekket av Datasettserie.
 *** er påkrevd av (`dct:isRequiredBy`), i samsvar med DCAT-AP/DCAT.
 *** er versjon av (`dct:isVersionOf`), i samsvar med DCAT-AP/DCAT.
 *** erstattes av (`dct:isReplacedBy`), i samsvar med DCAT-AP/DCAT.
 *** følger (`cpsv:follows`), i samsvar med DCAT-AP/DCAT.
-*** har del (`dct:hasPart`), i samsvar med DCAT-AP/DCAT.
+*** har del (`dct:hasPart`), i samsvar med DCAT-AP/DCAT. Behovet er dessuten dekket av Datasettserie.
 *** krever (`dct:requires`), i samsvar med DCAT-AP/DCAT.
 *** refererer til (`dct:references`), i samsvar med DCAT-AP/DCAT.
 
