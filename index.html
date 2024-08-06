@@ -591,7 +591,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-erstatter">Datasett – erstatter (dct:replaces)</a></li>
 <li><a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a></li>
 <li><a href="#Datasett-frekvens">Datasett – frekvens (dct:accrualPeriodicity)</a></li>
-<li><a href="#Datasett-harDel">Datasett – har del (dct:hasPart)</a></li>
 <li><a href="#Datasett-har-gebyr">Datasett – har gebyr (cv:hasCost)</a></li>
 <li><a href="#Datasett-harKvalitetsmerknad">Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</a></li>
 <li><a href="#Datasett-harMåleresultat">Datasett – har måleresultat (dqv:hasQualityMeasurement)</a></li>
@@ -2731,48 +2730,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-harDel"><a class="anchor" href="#Datasett-harDel"></a>3.2.3.9. Datasett – har del (dct:hasPart)</h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has part</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:hasPart</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:Dataset</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et annet datasett som er en del av dette datasettet. Det bør vurderes om <a href="#Datasettserie"> 3.3, &#8220;Klassen Datasettserie (dcat:DatasetSeries)&#8221;</a> kan dekke behovet.</p>
-<p class="tableblock"><em>This property is used to refer to another dataset that is a part of this dataset.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="Datasett-har-gebyr"><a class="anchor" href="#Datasett-har-gebyr"></a>3.2.3.10. Datasett – har gebyr (cv:hasCost)</h5>
+<h5 id="Datasett-har-gebyr"><a class="anchor" href="#Datasett-har-gebyr"></a>3.2.3.9. Datasett – har gebyr (cv:hasCost)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2813,7 +2771,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-harKvalitetsmerknad"><a class="anchor" href="#Datasett-harKvalitetsmerknad"></a>3.2.3.11. Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</h5>
+<h5 id="Datasett-harKvalitetsmerknad"><a class="anchor" href="#Datasett-harKvalitetsmerknad"></a>3.2.3.10. Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2867,7 +2825,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasett-harMåleresultat"><a class="anchor" href="#Datasett-harMåleresultat"></a>3.2.3.12. Datasett – har måleresultat (dqv:hasQualityMeasurement)</h5>
+<h5 id="Datasett-harMåleresultat"><a class="anchor" href="#Datasett-harMåleresultat"></a>3.2.3.11. Datasett – har måleresultat (dqv:hasQualityMeasurement)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2918,7 +2876,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasett-harVersjon"><a class="anchor" href="#Datasett-harVersjon"></a>3.2.3.13. Datasett – har versjon (dcat:hasVersion)</h5>
+<h5 id="Datasett-harVersjon"><a class="anchor" href="#Datasett-harVersjon"></a>3.2.3.12. Datasett – har versjon (dcat:hasVersion)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2954,7 +2912,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-iSamsvarMed"><a class="anchor" href="#Datasett-iSamsvarMed"></a>3.2.3.14. Datasett – i samsvar med (dct:conformsTo)</h5>
+<h5 id="Datasett-iSamsvarMed"><a class="anchor" href="#Datasett-iSamsvarMed"></a>3.2.3.13. Datasett – i samsvar med (dct:conformsTo)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2990,7 +2948,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-iSerie"><a class="anchor" href="#Datasett-iSerie"></a>3.2.3.15. Datasett – i serie (dcat:inSeries)</h5>
+<h5 id="Datasett-iSerie"><a class="anchor" href="#Datasett-iSerie"></a>3.2.3.14. Datasett – i serie (dcat:inSeries)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3063,7 +3021,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasett-identifikator"><a class="anchor" href="#Datasett-identifikator"></a>3.2.3.16. Datasett – identifikator (dct:identifier)</h5>
+<h5 id="Datasett-identifikator"><a class="anchor" href="#Datasett-identifikator"></a>3.2.3.15. Datasett – identifikator (dct:identifier)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3099,7 +3057,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-kilde"><a class="anchor" href="#Datasett-kilde"></a>3.2.3.17. Datasett – kilde (dct:source)</h5>
+<h5 id="Datasett-kilde"><a class="anchor" href="#Datasett-kilde"></a>3.2.3.16. Datasett – kilde (dct:source)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3135,7 +3093,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-kvalifisertKreditering"><a class="anchor" href="#Datasett-kvalifisertKreditering"></a>3.2.3.18. Datasett – kvalifisert kreditering (prov:qualifiedAttribution)</h5>
+<h5 id="Datasett-kvalifisertKreditering"><a class="anchor" href="#Datasett-kvalifisertKreditering"></a>3.2.3.17. Datasett – kvalifisert kreditering (prov:qualifiedAttribution)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3171,7 +3129,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-kvalifisertRelasjon"><a class="anchor" href="#Datasett-kvalifisertRelasjon"></a>3.2.3.19. Datasett – kvalifisert relasjon (dcat:qualifiedRelation)</h5>
+<h5 id="Datasett-kvalifisertRelasjon"><a class="anchor" href="#Datasett-kvalifisertRelasjon"></a>3.2.3.18. Datasett – kvalifisert relasjon (dcat:qualifiedRelation)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3207,7 +3165,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-landingsside"><a class="anchor" href="#Datasett-landingsside"></a>3.2.3.20. Datasett – landingsside (dcat:landingPage)</h5>
+<h5 id="Datasett-landingsside"><a class="anchor" href="#Datasett-landingsside"></a>3.2.3.19. Datasett – landingsside (dcat:landingPage)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3243,7 +3201,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-opphav"><a class="anchor" href="#Datasett-opphav"></a>3.2.3.21. Datasett – opphav (dct:provenance)</h5>
+<h5 id="Datasett-opphav"><a class="anchor" href="#Datasett-opphav"></a>3.2.3.20. Datasett – opphav (dct:provenance)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3279,7 +3237,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-produsent"><a class="anchor" href="#Datasett-produsent"></a>3.2.3.22. Datasett – produsent (dct:creator)</h5>
+<h5 id="Datasett-produsent"><a class="anchor" href="#Datasett-produsent"></a>3.2.3.21. Datasett – produsent (dct:creator)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3315,7 +3273,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-relatertRessurs"><a class="anchor" href="#Datasett-relatertRessurs"></a>3.2.3.23. Datasett – relatert ressurs (dct:relation)</h5>
+<h5 id="Datasett-relatertRessurs"><a class="anchor" href="#Datasett-relatertRessurs"></a>3.2.3.22. Datasett – relatert ressurs (dct:relation)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3351,7 +3309,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-romligOppløsning"><a class="anchor" href="#Datasett-romligOppløsning"></a>3.2.3.24. Datasett – romlig oppløsning (dcat:spatialResolutionInMeters)</h5>
+<h5 id="Datasett-romligOppløsning"><a class="anchor" href="#Datasett-romligOppløsning"></a>3.2.3.23. Datasett – romlig oppløsning (dcat:spatialResolutionInMeters)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3387,7 +3345,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-språk"><a class="anchor" href="#Datasett-språk"></a>3.2.3.25. Datasett – språk (dct:language)</h5>
+<h5 id="Datasett-språk"><a class="anchor" href="#Datasett-språk"></a>3.2.3.24. Datasett – språk (dct:language)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3428,7 +3386,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-tidsoppløsning"><a class="anchor" href="#Datasett-tidsoppløsning"></a>3.2.3.26. Datasett – tidsoppløsning (dcat:temporalResolution)</h5>
+<h5 id="Datasett-tidsoppløsning"><a class="anchor" href="#Datasett-tidsoppløsning"></a>3.2.3.25. Datasett – tidsoppløsning (dcat:temporalResolution)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3464,7 +3422,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-type"><a class="anchor" href="#Datasett-type"></a>3.2.3.27. Datasett – type (dct:type)</h5>
+<h5 id="Datasett-type"><a class="anchor" href="#Datasett-type"></a>3.2.3.26. Datasett – type (dct:type)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3523,7 +3481,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasett-utgivelsesdato"><a class="anchor" href="#Datasett-utgivelsesdato"></a>3.2.3.28. Datasett – utgivelsesdato (dct:issued)</h5>
+<h5 id="Datasett-utgivelsesdato"><a class="anchor" href="#Datasett-utgivelsesdato"></a>3.2.3.27. Datasett – utgivelsesdato (dct:issued)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3564,7 +3522,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-versjon"><a class="anchor" href="#Datasett-versjon"></a>3.2.3.29. Datasett – versjon (dcat:version)</h5>
+<h5 id="Datasett-versjon"><a class="anchor" href="#Datasett-versjon"></a>3.2.3.28. Datasett – versjon (dcat:version)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3600,7 +3558,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-versjonsmerknad"><a class="anchor" href="#Datasett-versjonsmerknad"></a>3.2.3.30. Datasett – versjonsmerknad (adms:versionNotes)</h5>
+<h5 id="Datasett-versjonsmerknad"><a class="anchor" href="#Datasett-versjonsmerknad"></a>3.2.3.29. Datasett – versjonsmerknad (adms:versionNotes)</h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -9984,7 +9942,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="sect2">
 <h3 id="Om-Datasettserie"><a class="anchor" href="#Om-Datasettserie"></a>4.2. Om bruk av klassen <em>Datasettserie (dcat:DatasetSeries)</em></h3>
 <div class="paragraph">
-<p><em>Datasett</em> (<code>dcat:Dataset</code>) inkluderes i en <em>datasettserie</em> (<code>dcat:DatasetSeries</code>) ved hjelp av datasettegenskapen <a href="#Datasett-iSerie"> 3.2.3.15, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a>.</p>
+<p><em>Datasett</em> (<code>dcat:Dataset</code>) inkluderes i en <em>datasettserie</em> (<code>dcat:DatasetSeries</code>) ved hjelp av datasettegenskapen <a href="#Datasett-iSerie"> 3.2.3.14, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>For å harmonisere bruk av datasettserier, skal følgende tas hensyn til:</p>
@@ -10005,7 +9963,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Ikke bruke egenskapen <a href="#Datasett-forrige"> 3.2.3.7, &#8220;Datasett – forrige (dcat:prev)&#8221;</a> på en datasettserie, ettersom egenskapen er ment for å uttrykke rekkefølge mellom datasett i en datasettserie.</p>
 </li>
 <li>
-<p>Unngå å bruke egenskapen <a href="#Datasett-iSerie"> 3.2.3.15, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a> eller <a href="#Datasett-harDel"> 3.2.3.9, &#8220;Datasett – har del (dct:hasPart)&#8221;</a> på en datasettserie, slik at man unngår nøstede datasettserier.</p>
+<p>Unngå å bruke egenskapen <a href="#Datasett-iSerie"> 3.2.3.14, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a> eller <a href="#Datasett-harDel">[Datasett-harDel]</a> på en datasettserie, slik at man unngår nøstede datasettserier.</p>
 </li>
 <li>
 <p>Unngå å bruke egenskapen <a href="#Datasett-datasettdistribusjon"> 3.2.2.3, &#8220;Datasett – datasettdistribusjon (dcat:distribution)&#8221;</a> eller <a href="#Datasett-eksempeldata"> 3.2.3.3, &#8220;Datasett – eksempeldata (adms:sample)&#8221;</a> på en datasettserie, men at distribusjoner (dcat:Distribution) knyttes til datasettene som inngår i datasettserien.</p>
@@ -10341,12 +10299,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:modified</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet er eksplisitt spesifisert som <code>xsd:date or xsd:dateTime</code>, istedenfor å referere til den generiske datatype Temporal literal.</p>
 <p class="tableblock"><em>The range is explicitly specified as <code>xsd:date or xsd:dateTime</code>, instead of referring to the generic datatype Temporal Literal.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har del</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dct:hasPart</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasett – har gebyr</p></td>
@@ -10753,7 +10705,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datasett-gjeldendeLovgivning"> 3.2.2.6, &#8220;Datasett – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasett-har-gebyr"> 3.2.3.10, &#8220;Datasett – har gebyr (cv:hasCost)&#8221;</a>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.</p>
+<p><a href="#Datasett-har-gebyr"> 3.2.3.9, &#8220;Datasett – har gebyr (cv:hasCost)&#8221;</a>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.</p>
 </li>
 </ul>
 </div>
@@ -10778,6 +10730,9 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>følger (<code>cpsv:follows</code>), i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
+<p>har del (<code>dct:hasPart</code>), i samsvar med DCAT-AP/DCAT.</p>
+</li>
+<li>
 <p>krever (<code>dct:requires</code>), i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
@@ -10791,7 +10746,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Datasett-versjon"> 3.2.3.29, &#8220;Datasett – versjon (dcat:version)&#8221;</a>: EgenskapsURIen er endret fra <code>owl:versionInfo</code> til <code>dcat:version</code>, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasett-versjon"> 3.2.3.28, &#8220;Datasett – versjon (dcat:version)&#8221;</a>: EgenskapsURIen er endret fra <code>owl:versionInfo</code> til <code>dcat:version</code>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10804,19 +10759,19 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datasett-kontaktpunkt"> 3.2.1.2, &#8220;Datasett – kontaktpunkt (dcat:contactPoint)&#8221;</a>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasett-identifikator"> 3.2.3.16, &#8220;Datasett – identifikator (dct:identifier)&#8221;</a>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasett-identifikator"> 3.2.3.15, &#8220;Datasett – identifikator (dct:identifier)&#8221;</a>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasett-romligOppløsning"> 3.2.3.24, &#8220;Datasett – romlig oppløsning (dcat:spatialResolutionInMeters)&#8221;</a>: Multiplisiteten er endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasett-romligOppløsning"> 3.2.3.23, &#8220;Datasett – romlig oppløsning (dcat:spatialResolutionInMeters)&#8221;</a>: Multiplisiteten er endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasett-produsent"> 3.2.3.22, &#8220;Datasett – produsent (dct:creator)&#8221;</a>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasett-produsent"> 3.2.3.21, &#8220;Datasett – produsent (dct:creator)&#8221;</a>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasett-tidsoppløsning"> 3.2.3.26, &#8220;Datasett – tidsoppløsning (dcat:temporalResolution)&#8221;</a>: Multiplisiteten er endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasett-tidsoppløsning"> 3.2.3.25, &#8220;Datasett – tidsoppløsning (dcat:temporalResolution)&#8221;</a>: Multiplisiteten er endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasett-type"> 3.2.3.27, &#8220;Datasett – type (dct:type)&#8221;</a>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasett-type"> 3.2.3.26, &#8220;Datasett – type (dct:type)&#8221;</a>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10829,7 +10784,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datasett-bleGenerertVed"> 3.2.2.2, &#8220;Datasett – ble generert ved (prov:wasGeneratedBy)&#8221;</a>: Nytt krav til bruk av kontrollerte vokabular «Proveniensaktivitetstype». Dette for å kunne ha standardiserte verdier av denne egenskapen.</p>
 </li>
 <li>
-<p><a href="#Datasett-produsent"> 3.2.3.22, &#8220;Datasett – produsent (dct:creator)&#8221;</a>: Det er ikke lenger krav til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasett-produsent"> 3.2.3.21, &#8220;Datasett – produsent (dct:creator)&#8221;</a>: Det er ikke lenger krav til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
 <p><a href="#Datasett-tema"> 3.2.1.3, &#8220;Datasett – tema (dcat:theme)&#8221;</a>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT.</p>
@@ -11173,7 +11128,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-07-08 14:11:42 UTC
+Sist oppdatert 2024-08-06 17:41:17 UTC
 </div>
 </div>
 </body>
