@@ -8,7 +8,7 @@ For å harmonisere bruk av datasettserier, skal følgende tas hensyn til:
 * Datasettserie uten datasett bør unngås. Det kan imidlertid hende at en datasettserie over tid blir tom (f.eks. at datasettene i serien blir trukket tilbake). Utgiveren bør i slike tilfeller også vurdere å trekke tilbake selve serien. 
 * Klassen Datasettserie (dcat:DatasetSeries) er en subklasse av Datasett (dcat:Dataset). Rent modelleringsmessig kan derfor klassen Datasettserie arve alle egenskapene fra klassen Datasett. Man skal allikevel vurdere om det faglig sett er hensiktsmessig å bruke en egenskap fra Datasett. Vi anbefaler sterkt å
 ** Ikke bruke egenskapen <<Datasett-forrige>> på en datasettserie, ettersom egenskapen er ment for å uttrykke rekkefølge mellom datasett i en datasettserie.
-** Unngå å bruke egenskapen <<Datasett-iSerie>> eller <<Datasett-harDel>> på en datasettserie, slik at man unngår nøstede datasettserier.
+** Unngå å bruke egenskapen <<Datasett-iSerie>> på en datasettserie, slik at man unngår nøstede datasettserier.
 ** Unngå å bruke egenskapen <<Datasett-datasettdistribusjon>> eller <<Datasett-eksempeldata>> på en datasettserie, men at distribusjoner (dcat:Distribution) knyttes til datasettene som inngår i datasettserien.
 ** Være oppmerksom på at semantikken av en egenskap kan være forskjellig avhengig av om den er for en datasettserie eller et datasett i en datasettserie.  
 
