@@ -367,23 +367,6 @@ _This property is used to refer to a licence under which the data service is mad
 __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
-=== Datatjeneste – medietype (dcat:mediaType) [[Datatjeneste-medietype]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _media type_
-| URI | dcat:mediaType
-| Verdiområde / _Range_ | dct:MediaType
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi datatjenestens medietype. 
-
-_This property is used to specify media type of the data service._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
-
-_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
-|===
-
 === Datatjeneste – tilgangsrettigheter (dct:accessRights) [[Datatjeneste-tilgangsrettigheter]]
 [cols="30s,70d"]
 |===
