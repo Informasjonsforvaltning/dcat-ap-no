@@ -383,19 +383,6 @@ _This property is used to provide information regarding access or restrictions b
 __The value MUST be `PUBLIC`, `RESTRICTED` or `NON_PUBLIC` from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[Access right &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
-=== Datatjeneste – type (dct:type) [[Datatjeneste-type]]
-[cols="30s,70d"]
-|===
-| _English name_ | _type_
-| URI | dct:type
-| Verdiområde / _Range_ | skos:Concept
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et begrep som identifiserer datatjenestens type.
-
-_This property is used to specify the type of the data service._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|===
-
 === Datatjeneste – versjon (dcat:version) [[Datatjeneste-versjon]]
 
 [cols="30s,70d"]

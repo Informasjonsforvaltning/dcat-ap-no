@@ -115,6 +115,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 
 ** *Utgåtte egenskaper*:
 *** medietype (dcat:mediaType), i samsvar med DCAT-AP/DCAT.
+*** type (dct:type), ikke i bruk i dag, uklar bruksområder. 
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
