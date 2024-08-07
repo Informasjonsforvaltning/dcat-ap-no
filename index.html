@@ -7701,8 +7701,8 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
-   dct:modified "2024-06-30"^^xsd:date ;
+<pre>&lt;aCatalogRecord&gt; a dcat:CatalogRecord ;
+   dct:modified "2020-07-30"^^xsd:date ;
    .</pre>
 </div>
 </div>
@@ -7747,8 +7747,8 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
-   foaf:primaryTopic &lt;aDataset&gt; ;
+<pre>&lt;aCatalogRecord&gt; a dcat:CatalogRecord ;
+   foaf:primaryTopic &lt;aCatalog&gt; ;
    .</pre>
 </div>
 </div>
@@ -7789,6 +7789,10 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Katalogen <code>&lt;aCatalog&gt;</code> er i samsvar med DCAT-AP-NO v.1.1</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -7796,8 +7800,9 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
-   dct:conformsTo &lt;https://data.norge.no/vocabulary/dcatno#&gt; ;
+<pre>&lt;aCatalogRecord&gt; a dcat:CatalogRecord ;
+   foaf:primaryTopic &lt;aCatalog&gt; ;
+   dct:conformsTo &lt;https://data.norge.no/specification/dcat-ap-no/v1.1&gt; ;
    .</pre>
 </div>
 </div>
@@ -7851,7 +7856,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
+<pre>&lt;aCatalogRecord&gt; a dcat:CatalogRecord ;
    adms:status &lt;http://publications.europa.eu/resource/authority/distribution-status/COMPLETED&gt; ;
    .</pre>
 </div>
@@ -7902,7 +7907,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;aCatalog&gt; a dcat:CatalogRecord ;
+<pre>&lt;aCatalogRecord&gt; a dcat:CatalogRecord ;
    dct:issued "2020-06-30"^^xsd:date ;
    .</pre>
 </div>
@@ -11059,7 +11064,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-07 10:57:29 UTC
+Sist oppdatert 2024-08-07 11:29:10 UTC
 </div>
 </div>
 </body>
