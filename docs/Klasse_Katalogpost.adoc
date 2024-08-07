@@ -41,8 +41,8 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 
 Eksempel i RDF Turtle:
 -----
-<aCatalog> a dcat:CatalogRecord ; 
-   dct:modified "2024-06-30"^^xsd:date ; 
+<aCatalogRecord> a dcat:CatalogRecord ; 
+   dct:modified "2020-07-30"^^xsd:date ; 
    .
 -----
 
@@ -62,8 +62,8 @@ _This property is used to link to the resource (Dataset, Data service etc.) desc
 
 Eksempel i RDF Turtle:
 -----
-<aCatalog> a dcat:CatalogRecord ; 
-   foaf:primaryTopic <aDataset> ; 
+<aCatalogRecord> a dcat:CatalogRecord ; 
+   foaf:primaryTopic <aCatalog> ; 
    .
 -----
 
@@ -81,12 +81,14 @@ Eksempel i RDF Turtle:
 _This property is used to refer to an Application Profile that the Catalogued Resource's metadata conforms to._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Eksempel | Katalogen `<aCatalog>` er i samsvar med DCAT-AP-NO v.1.1 
 |===
 
 Eksempel i RDF Turtle:
 -----
-<aCatalog> a dcat:CatalogRecord ; 
-   dct:conformsTo <https://data.norge.no/vocabulary/dcatno#> ; 
+<aCatalogRecord> a dcat:CatalogRecord ; 
+   foaf:primaryTopic <aCatalog> ;
+   dct:conformsTo <https://data.norge.no/specification/dcat-ap-no/v1.1> ; 
    .
 -----
 
@@ -110,7 +112,7 @@ __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary 
 
 Eksempel i RDF Turtle:
 -----
-<aCatalog> a dcat:CatalogRecord ; 
+<aCatalogRecord> a dcat:CatalogRecord ; 
    adms:status <http://publications.europa.eu/resource/authority/distribution-status/COMPLETED> ; 
    .
 -----
@@ -134,7 +136,7 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 
 Eksempel i RDF Turtle:
 -----
-<aCatalog> a dcat:CatalogRecord ; 
+<aCatalogRecord> a dcat:CatalogRecord ; 
    dct:issued "2020-06-30"^^xsd:date ; 
    .
 -----
