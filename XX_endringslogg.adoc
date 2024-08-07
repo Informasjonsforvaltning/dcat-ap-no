@@ -113,6 +113,9 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datatjeneste-versjon>>, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-versjonsmerknad>>, i samsvar med DCAT-AP/DCAT.
 
+** *Utgåtte egenskaper*:
+*** medietype (dcat:mediaType), i samsvar med DCAT-AP/DCAT.
+
 ** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
 *** <<Datatjeneste-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT.

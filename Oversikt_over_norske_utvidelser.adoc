@@ -139,10 +139,6 @@ __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ex
 Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"]__
-| Datatjeneste – medietype | dcat:mediaType |
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
-
-__Not explicitly specified in DCAT-AP/DCAT.__
 | Datatjeneste – type | dct:type |
 Multiplisiteten endret fra 0..n til 0..1.
 
