@@ -28,3 +28,11 @@ For å være i samsvar med denne standarden, SKAL en applikasjon som mottar meta
 
 
 I konteksten av denne standarden, betyr det «å prosessere» at den mottakende applikasjon aksepterer innkommende data og transparent videreformidler dataene til aktuelle applikasjoner og tjenester. 
+
+== Spesielt om forholdet mellom DCAT-AP-NO og DCAT-AP/DCAT
+
+DCAT-AP-NO er basert på summen av EUs DCAT-AP og W3Cs DCAT. 
+
+For å dekke norske behov som ikke er dekket av DCAT-AP/DCAT, gjenbruker DCAT-AP-NO klasser og egenskaper fra andre velkjente vokabularer. Utvidelsene er dokumentert med merknader a la «Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT». Klasser og egenskaper som finnes eksplisitt spesifisert i DCAT-AP eller DCAT, men som det ennå ikke er klare nasjonale behov/bruksområder for, er på den annen side ikke eksplisitt tatt med i DCAT-AP-NO. 
+
+For at en applikasjon skal være i samsvar med DCAT-AP-NO, SKAL klasser og egenskaper som er eksplisitt spesifisert i DCAT-AP-NO brukes slik de er spesifisert. En applikasjon kan også bruke klasser og egenskaper som ikke er eksplisitt spesifisert i DCAT-AP-NO men som finnes spesifisert i DCAT-AP/DCAT, og allikevel være i samsvar med DCAT-AP-NO, så lenge klassene og egenskapene brukes slik de er spesifisert i DCAT-AP/DCAT. 
