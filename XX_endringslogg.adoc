@@ -62,14 +62,14 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasett-har-gebyr>>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.
 
 ** *Utgåtte egenskaper*: 
-*** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. Behovet er dessuten dekket av Datasettserie.
+*** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
 *** er påkrevd av (`dct:isRequiredBy`), i samsvar med DCAT-AP/DCAT.
-*** er versjon av (`dct:isVersionOf`), i samsvar med DCAT-AP/DCAT.
-*** erstattes av (`dct:isReplacedBy`), i samsvar med DCAT-AP/DCAT.
-*** følger (`cpsv:follows`), i samsvar med DCAT-AP/DCAT.
-*** har del (`dct:hasPart`), i samsvar med DCAT-AP/DCAT. Behovet er dessuten dekket av Datasettserie.
-*** krever (`dct:requires`), i samsvar med DCAT-AP/DCAT.
-*** refererer til (`dct:references`), i samsvar med DCAT-AP/DCAT.
+*** er versjon av (`dct:isVersionOf`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
+*** erstattes av (`dct:isReplacedBy`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
+*** følger (`cpsv:follows`), i samsvar med DCAT-AP/DCAT. 
+*** har del (`dct:hasPart`), i samsvar med DCAT-AP/DCAT. Behovet er dessuten dekket av Datasettserie. 
+*** krever (`dct:requires`), i samsvar med DCAT-AP/DCAT. 
+*** refererer til (`dct:references`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
 
 ** *Endrede egenskapsURIer*: 
 *** <<Datasett-versjon>>: EgenskapsURIen er endret fra `owl:versionInfo` til `dcat:version`, i samsvar med DCAT-AP/DCAT.
@@ -145,7 +145,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Katalog-tidsrom>>, i samsvar med DCAT-AP/DCAT.
 
 ** *Utgåtte egenskaper*: 
-*** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT.
+*** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
 *** frekvens (`dct:accrualPeriodicity`), i samsvar med DCAT-AP/DCAT.
 *** opphav (`dct:provenance`), i samsvar med DCAT-AP/DCAT.
 
