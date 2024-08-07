@@ -137,8 +137,8 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Distribusjon-format>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular "IANA Medida Types",for å ha standardiserte verdier for denne egenskapen. 
-*** <<Distribusjon-pakkeformat>>: Tilføyet kravet til å bruke kontrollert vokabular "IANA Medida Types", for å ha standardiserte verdier for denne egenskapen.  
+*** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular "File type",for å ha standardiserte verdier for denne egenskapen. 
+*** <<Distribusjon-pakkeformat>>: Tilføyet kravet til å bruke kontrollert vokabular "File type", for å ha standardiserte verdier for denne egenskapen.  
 *** <<Distribusjon-status>>: "ADMS status vocabulary" er erstattet med EUs kontrollerte vokabular for "Distribution status", i samsvar med DCAT-AP/DCAT.  
 
 
