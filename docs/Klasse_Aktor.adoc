@@ -71,7 +71,7 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 
 Eksempel i RDF Turtle:
 -----
-<digdir> a a org:Organization ;
+<digdir> a org:Organization ;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827"@xsd:anyURI ;
    .
 -----
@@ -96,7 +96,7 @@ __The value SHALL be chosen from http://purl.org/adms/publishertype/1.0[ADMS pub
 
 Eksempel i RDF Turtle:
 -----
-<digdir> a a org:Organization ;
+<digdir> a org:Organization ;
    dct:type <http://purl.org/adms/publishertype/NationalAuthority> ;
    .
 -----
