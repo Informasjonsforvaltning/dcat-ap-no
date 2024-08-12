@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Aktør>> viser klassen Aktør og dens egenskaper. I tegningen er norske utvidelser markert i gult.  
+<<diagram-Klassen-Aktør>> viser klassen Aktør og dens egenskaper og subklasser. I tegningen er norske utvidelser markert i gult.  
 
 [[diagram-Klassen-Aktør]]
 .Klassen Aktør.
@@ -15,9 +15,10 @@ image::images/Klassen-Aktør.png[]
 |===
 | _English name_ | _Agent_
 | URI | foaf:Agent
-|Anvendelse / _Usage note_ | Klassen brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. Dersom aktøren er en organisasjon er det anbefalt å bruke http://www.w3.org/TR/vocab-org/[_Organization Ontology_ &#x29C9;, window="_blank", role="ext-link"].
+|Anvendelse / _Usage note_ | Klassen brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. 
 
-__This class is used to represent any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources. If the Agent is an organisation, the use of the http://www.w3.org/TR/vocab-org/[Organization Ontology &#x29C9;, window="_blank", role="ext-link"] is recommended.__
+__This class is used to represent any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.__
+| Merknad / _Note_ | Subklassen Organisasjon (`org:Organization`), Gruppe (`foaf:Group`) eller Person (`foaf:Person`) BØR brukes istedenfor klassen Aktør (`foaf:Agent`), når aktøren er en organisasjon, gruppe eller person. 
 |===
 
 
@@ -40,14 +41,14 @@ __This property contains the name of the agent. This property can be repeated fo
 
 Eksempel i RDF Turtle:
 -----
-<digdir> a foaf:Agent ;
+<digdir> a org:Organization ;
    foaf:name "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
    .
 -----
 
 == Anbefalte egenskaper for klassen _Aktør_
 
-=== Aktør – organisasjonsidentifikator (dct:identifier) [[Aktør-organisasjonsidentifikator]]
+=== Aktør – identifikator (dct:identifier) [[Aktør-identifikator]]
 
 [cols="30s,70d"]
 |===
@@ -59,7 +60,7 @@ Eksempel i RDF Turtle:
 __This property contains the identifier for the Agent.__
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Når aktøren har et organisasjonsnummer registrert i Enhetsregisteret, BØR identifikatoren oppgis som en URI med f.eks. følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`.
+| Merknad 1 / _Note 1_ | Når aktøren har et organisasjonsnummer registrert i Enhetsregisteret, BØR identifikatoren oppgis som en URI med f.eks. følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`. 
 
 __When the agent has an organization number registered in the Central Coordinating Register for Legal Entities (CCR), the identifier SHOULD be given as a URI with e.g. the following pattern where "nnnnnnnnn" is the organization number: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`.__
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
@@ -70,7 +71,7 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 
 Eksempel i RDF Turtle:
 -----
-<digdir> a foaf:Agent ;
+<digdir> a a org:Organization ;
    dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827"@xsd:anyURI ;
    .
 -----
@@ -95,7 +96,7 @@ __The value SHALL be chosen from http://purl.org/adms/publishertype/1.0[ADMS pub
 
 Eksempel i RDF Turtle:
 -----
-<digdir> a foaf:Agent ;
+<digdir> a a org:Organization ;
    dct:type <http://purl.org/adms/publishertype/NationalAuthority> ;
    .
 -----
