@@ -87,6 +87,14 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
 __The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Datasettserie – beskrivelse | dct:description |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Datasettserie – beskrivelse | dct:description |
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Datasettserie – kontaktpunkt | dcat:contactPoint |
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
@@ -99,6 +107,14 @@ __The requirement level is changed from recommended to mandatory, thus also the 
 https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
+| Datasettserie – tittel | dct:title | 
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Datasettserie – tittel | dct:title | 
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Datasettserie – utgiver | dct:publisher |
 Kravnivået endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
