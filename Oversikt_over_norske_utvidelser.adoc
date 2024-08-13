@@ -259,10 +259,36 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 Hele klassen: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __The whole class: Not explicitly specified in DCAT-AP/DCAT.__
+| Katalog – beskrivelse | dct:description |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+| Katalog – beskrivelse | dct:description |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+| Katalog – beskrivelse | dct:description |
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Katalog – kontaktpunkt | dcat:contactPoint |
 Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.
 
 __The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.__
+| Katalog – tittel | dct:title |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+| Katalog – tittel | dct:title |
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Katalog – dekningsområde | dct:spatial | 
 Norsk utvidelse: For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
 

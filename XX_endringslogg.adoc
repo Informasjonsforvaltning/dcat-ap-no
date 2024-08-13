@@ -76,13 +76,13 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasett-versjon>>: EgenskapsURIen er endret fra `owl:versionInfo` til `dcat:version`, i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
-*** <<Datasett-beskrivelse>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+*** <<Datasett-beskrivelse>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Datasett-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar *** <<Datasett-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n, i samsvar med DCAT-AP/DCAT.
 med DCAT-AP/DCAT. 
 *** <<Datasett-romligOppløsning>>: Multiplisiteten er endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT. 
 *** <<Datasett-produsent>>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT. 
 *** <<Datasett-tidsoppløsning>>: Multiplisiteten er endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT. 
-*** <<Datasett-tittel>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+*** <<Datasett-tittel>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Datasett-type>>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT. 
 
 ** *Endrede verdiområder*: 
@@ -129,13 +129,13 @@ med DCAT-AP/DCAT.
 *** type (dct:type), ikke i bruk i dag, uklar bruksområder. 
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
-*** <<Datatjeneste-beskrivelse>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+*** <<Datatjeneste-beskrivelse>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Datatjeneste-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-i-samsvar-med>>: Kravnivået er endret fra valgfri til anbefalt, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
-*** <<Datatjeneste-tittel>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+*** <<Datatjeneste-tittel>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Datatjeneste-utgiver>>: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. Dette for å kunne gruppere datatjenester/APIer under virksomhet i GUIen i data.norge.no. 
-*** <<Datatjeneste-versjonsmerknad>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+*** <<Datatjeneste-versjonsmerknad>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 
 ** *Endrede verdiområder*: 
 *** <<Datatjeneste-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
@@ -151,12 +151,12 @@ med DCAT-AP/DCAT.
 *** <<Distribusjon-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
-*** <<Distribusjon-beskrivelse>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+*** <<Distribusjon-beskrivelse>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Distribusjon-format>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-medietype>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-romlig-oppløsning>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-tidsoppløsning>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
-*** <<Distribusjon-tittel>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+*** <<Distribusjon-tittel>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 
 ** *Endrede verdiområder*: 
 *** <<Distribusjon-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
@@ -180,7 +180,13 @@ med DCAT-AP/DCAT.
 *** opphav (`dct:provenance`), i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<Katalog-beskrivelse>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Katalog-identifikator>>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1, i samsvar med DCAT-AP/DCAT.
+*** <<Katalog-tittel>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
+
+** *Endrede verdiområder*: 
+*** <<Katalog-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Katalog-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Katalog-produsent>>: Kravet om bruk av EUs kontrollerte vokabular "Corporate body" utgått, i samsvar med DCAT-AP/DCAT.
@@ -202,7 +208,7 @@ med DCAT-AP/DCAT.
 
 * <<Sjekksum>>: 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Sjekksum-algoritme>>: Føyet til krav om å velge en av de forhåndsdefinerte algoritmene, istedenfor å referere til én og bare én gitt algoritme som verdiområde/range, i samsvar med DCAT-AP/DCAT. 
+*** <<Sjekksum-algoritme>>: Tilføyet krav om å velge en av de forhåndsdefinerte algoritmene, istedenfor å referere til én og bare én gitt algoritme som verdiområde/range, i samsvar med DCAT-AP/DCAT. 
 
 * <<Standard>> 
 ** *Endrede egenskapsURIer*:
