@@ -542,11 +542,11 @@ __See the Norwegian application profile of DQV, https://data.norge.no/specificat
 |===
 
 Eksempel i RDF Turtle: 
------
+------
 :dataset1
    a dcat:Dataset ;
    dqv:hasQualityMeasurement :qualityMeasurement1 .
------ 
+------
 
 === Datasett – har versjon (dcat:hasVersion) [[Datasett-harVersjon]]
 
@@ -780,6 +780,23 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 _This property is used to specify the minimum time period resolvable in the dataset. If the dataset is a time-series this should correspond to the spacing of items in the series._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
+=== Datasett – tilgangsforespørselsURL (dcatno:accessRequestURL) [[Datasett-tilgangsForespørselsURL]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _access request URL_
+| URI | dcatno:accessRequestURL
+| Verdiområde / _Range_ | foaf:Document
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en side eller tjeneste som håndterer forespørsel om tilgang til datasettet.
+
+_This property is used to refer to a webpage or service that handles a request for access to the Dataset._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
+
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
 === Datasett – type (dct:type) [[Datasett-type]]
