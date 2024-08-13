@@ -111,9 +111,10 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 * <<Datatjeneste>>: 
 ** *Nye egenskaper*:
 *** <<Datatjeneste-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
+*** <<Datatjeneste-status>>, for å kunne dekke behov for å angi status.
+*** <<Datatjeneste-tilgangsForespørselsURL>>, for å kunne dekke behov for å oppgi siden eller tjenesten som håndterer tilgangsforespørsel. 
 *** <<Datatjeneste-versjon>>, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-versjonsmerknad>>, i samsvar med DCAT-AP/DCAT.
-*** <<Datatjeneste-tilgangsForespørselsURL>>, for å kunne dekke behov for å oppgi siden eller tjenesten som håndterer tilgangsforespørsel. 
 
 ** *Utgåtte egenskaper*:
 *** medietype (dcat:mediaType), i samsvar med DCAT-AP/DCAT.
