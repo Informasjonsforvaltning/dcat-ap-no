@@ -1614,8 +1614,8 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Når aktøren har et organisasjonsnummer registrert i Enhetsregisteret, BØR identifikatoren oppgis som en URI med f.eks. følgende mønster der "nnnnnnnnn" er organisasjonsnummeret: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>.</p>
-<p class="tableblock"><em>When the agent has an organization number registered in the Central Coordinating Register for Legal Entities (CCR), the identifier SHOULD be given as a URI with e.g. the following pattern where "nnnnnnnnn" is the organization number: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>.</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Når aktøren har et organisasjonsnummer registrert i Enhetsregisteret, BØR organisasjonsnummeret brukes her.</p>
+<p class="tableblock"><em>When the agent has an organization number registered in the Central Coordinating Register for Legal Entities (CCR), the organization number SHOULD be used here.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
@@ -1624,7 +1624,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">For Digitaliseringsdirektoratet som har organisasjonsnummer 991825827, blir dette <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="bare">https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Digitaliseringsdirektoratet har organisasjonsnummer 991825827</p></td>
 </tr>
 </tbody>
 </table>
@@ -1634,7 +1634,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <div class="listingblock">
 <div class="content">
 <pre>&lt;digdir&gt; a org:Organization ;
-   dct:identifier "https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827"@xsd:anyURI ;
+   dct:identifier "991825827" ;
    .</pre>
 </div>
 </div>
@@ -11069,7 +11069,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-13 09:55:04 UTC
+Sist oppdatert 2024-08-13 14:03:51 UTC
 </div>
 </div>
 </body>
