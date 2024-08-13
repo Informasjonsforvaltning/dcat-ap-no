@@ -104,7 +104,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** følger (`cpsv:follows`), i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
-*** <<Datasettserie-første>>: Kravnivået endret fra obligatorisk til anbefalt og dermed også multiplisiteten fra 1..1 til 0..1. Dette fordi ikke alle datasettserier er ordnede.   
+*** <<Datasettserie-første>>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1, i samsvar med DCAT-AP/DCAT. Dette fordi ikke alle datasettserier er ordnede.   
 
 
 * <<Datatjeneste>>: 
