@@ -8615,7 +8615,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -8631,9 +8631,14 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det SKAL være maks. 1 verdi per språk.</p>
+<p class="tableblock"><em>There MUST be max. 1 value per language.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -8838,7 +8843,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -8854,9 +8859,14 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det SKAL være maks. 1 verdi per språk.</p>
+<p class="tableblock"><em>There MUST be max. 1 value per language.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -10949,7 +10959,7 @@ Det SKAL være maks. 1 verdi per språk.</p>
 <p class="tableblock"><em>All properties in the class: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Rettighetsuttalelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rettighetserklæring</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">odrs:RightsStatement</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hele klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT. <code>odrs:RightsStatement</code> er imidlertid en subklasse av <code>dct:RightsStatement</code> brukt i DCAT-AP.</p>
 <p class="tableblock"><em>_The whole class: Not explicitly specified in DCAT-AP/DCAT. <code>odrs:RightsStatement</code> is though a subclass of <code>dct:RightsStatement</code> used in DCAT-AP.</em></p></td>
@@ -11606,10 +11616,23 @@ med DCAT-AP/DCAT.</p>
 <div class="ulist">
 <ul>
 <li>
+<p><a href="#RegulativRessurs-beskrivelse"> 3.12.1.1, &#8220;Regulativ ressurs – beskrivelse (dct:description)&#8221;</a>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.</p>
+</li>
+<li>
 <p><a href="#RegulativRessurs-identifikator"> 3.12.1.2, &#8220;Regulativ ressurs – identifikator (dct:identifier)&#8221;</a>: Multiplisiteten endret fra 0..n til 0..1. Denne type ressurser bør ha maks. én identifikator. Dette også for å samkjøre med <a href="https://data.norge.no/specification/cpsv-ap-no" class="ext-link" target="_blank" rel="noopener">CPSV-AP-NO &#x29C9;</a>.</p>
 </li>
 <li>
 <p><a href="#RegulativRessurs-type"> 3.12.1.6, &#8220;Regulativ ressurs – type (dct:type)&#8221;</a>: Kravnivået endret fra obligatorisk til anbefalt, og multiplisiteten fra 0..n til 0..1 (denne type ressurser bør være av maks. én type). Dette for å samkjøre med <a href="https://data.norge.no/specification/cpsv-ap-no" class="ext-link" target="_blank" rel="noopener">CPSV-AP-NO &#x29C9;</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Endrede verdiområder</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#RegulativRessurs-beskrivelse"> 3.12.1.1, &#8220;Regulativ ressurs – beskrivelse (dct:description)&#8221;</a>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal.</p>
 </li>
 </ul>
 </div>
@@ -11660,7 +11683,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-13 18:34:24 UTC
+Sist oppdatert 2024-08-13 18:45:37 UTC
 </div>
 </div>
 </body>

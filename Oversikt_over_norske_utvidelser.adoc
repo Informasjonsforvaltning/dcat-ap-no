@@ -342,7 +342,7 @@ __All properties in the class: Not explicitly specified in DCAT-AP/DCAT.__
 Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 __All properties in the class: Not explicitly specified in DCAT-AP/DCAT.__
-| Rettighetsuttalelse | odrs:RightsStatement | 
+| Rettighetserklæring | odrs:RightsStatement | 
 Hele klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT. `odrs:RightsStatement` er imidlertid en subklasse av `dct:RightsStatement` brukt i DCAT-AP. 
 
 __The whole class: Not explicitly specified in DCAT-AP/DCAT. `odrs:RightsStatement` is though a subclass of `dct:RightsStatement` used in DCAT-AP._
