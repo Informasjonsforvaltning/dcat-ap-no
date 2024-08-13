@@ -209,8 +209,11 @@ med DCAT-AP/DCAT.
 *** <<RegulativRessurs-språk>>, for å kunne oppgi språk. 
 ***  <<RegulativRessurs-tittel>>, for å kunne oppgi tittel. 
 ** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<RegulativRessurs-beskrivelse>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<RegulativRessurs-identifikator>>: Multiplisiteten endret fra 0..n til 0..1. Denne type ressurser bør ha maks. én identifikator. Dette også for å samkjøre med https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"]. 
 *** <<RegulativRessurs-type>>: Kravnivået endret fra obligatorisk til anbefalt, og multiplisiteten fra 0..n til 0..1 (denne type ressurser bør være av maks. én type). Dette for å samkjøre med https://data.norge.no/specification/cpsv-ap-no[CPSV-AP-NO &#x29C9;, window="_blank", role="ext-link"].
+** *Endrede verdiområder*: 
+*** <<RegulativRessurs-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 * <<Sjekksum>>: 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
