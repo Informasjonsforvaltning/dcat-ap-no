@@ -675,6 +675,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-identifikator">Datatjeneste – identifikator (dct:identifier)</a></li>
 <li><a href="#Datatjeneste-landingsside">Datatjeneste – landingsside (dcat:landingPage)</a></li>
 <li><a href="#Datatjeneste-lisens">Datatjeneste – lisens (dct:license)</a></li>
+<li><a href="#Datatjeneste-status">Datatjeneste – status (adms:status)</a></li>
 <li><a href="#Datatjeneste-tilgangsForespørselsURL">Datatjeneste – tilgangsforespørselsURL (dcatno:accessRequestURL)</a></li>
 <li><a href="#Datatjeneste-tilgangsrettigheter">Datatjeneste – tilgangsrettigheter (dct:accessRights)</a></li>
 <li><a href="#Datatjeneste-versjon">Datatjeneste – versjon (dcat:version)</a></li>
@@ -5172,7 +5173,53 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-tilgangsForespørselsURL"><a class="link" href="#Datatjeneste-tilgangsForespørselsURL">3.4.3.6. Datatjeneste – tilgangsforespørselsURL (dcatno:accessRequestURL)</a></h5>
+<h5 id="Datatjeneste-status"><a class="link" href="#Datatjeneste-status">3.4.3.6. Datatjeneste – status (adms:status)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>status</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi tjenestens modenhet.</p>
+<p class="tableblock"><em>This property is used to specify the status of the service in the context of maturity lifecycle.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Multiplisiteten endret fra 0..n i DCAT til 0..1.</p>
+<p class="tableblock"><em>Norwegian extension: The multiplicity changed from 0..n in DCAT to 0..1</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener"><em>Distribution status</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>Norwegian extension: The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener">Distribution status &#x29C9;</a>.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Datatjeneste-tilgangsForespørselsURL"><a class="link" href="#Datatjeneste-tilgangsForespørselsURL">3.4.3.7. Datatjeneste – tilgangsforespørselsURL (dcatno:accessRequestURL)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5213,7 +5260,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-tilgangsrettigheter"><a class="link" href="#Datatjeneste-tilgangsrettigheter">3.4.3.7. Datatjeneste – tilgangsrettigheter (dct:accessRights)</a></h5>
+<h5 id="Datatjeneste-tilgangsrettigheter"><a class="link" href="#Datatjeneste-tilgangsrettigheter">3.4.3.8. Datatjeneste – tilgangsrettigheter (dct:accessRights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5254,7 +5301,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-versjon"><a class="link" href="#Datatjeneste-versjon">3.4.3.8. Datatjeneste – versjon (dcat:version)</a></h5>
+<h5 id="Datatjeneste-versjon"><a class="link" href="#Datatjeneste-versjon">3.4.3.9. Datatjeneste – versjon (dcat:version)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5290,7 +5337,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-versjonsmerknad"><a class="link" href="#Datatjeneste-versjonsmerknad">3.4.3.9. Datatjeneste – versjonsmerknad (adms:versionNotes)</a></h5>
+<h5 id="Datatjeneste-versjonsmerknad"><a class="link" href="#Datatjeneste-versjonsmerknad">3.4.3.10. Datatjeneste – versjonsmerknad (adms:versionNotes)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -10032,7 +10079,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><code>dct:license</code> SKAL brukes til å referere til en lisens, og verdien SKAL hentes fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener"><em>Licence</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datatjeneste-lisens"> 3.4.3.5, &#8220;Datatjeneste – lisens (dct:license)&#8221;</a>, <a href="#Distribusjon-lisens"> 3.5.2.3, &#8220;Distribusjon – lisens (dct:license)&#8221;</a> og <a href="#Katalog-lisens"> 3.8.2.6, &#8220;Katalog – lisens (dct:license)&#8221;</a>.</p>
 </li>
 <li>
-<p><code>dct:accessRights</code> SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datasett-tilgangsrettigheter"> 3.2.2.8, &#8220;Datasett – tilgangsrettigheter (dct:accessRights)&#8221;</a> og <a href="#Datatjeneste-tilgangsrettigheter"> 3.4.3.7, &#8220;Datatjeneste – tilgangsrettigheter (dct:accessRights)&#8221;</a>.</p>
+<p><code>dct:accessRights</code> SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datasett-tilgangsrettigheter"> 3.2.2.8, &#8220;Datasett – tilgangsrettigheter (dct:accessRights)&#8221;</a> og <a href="#Datatjeneste-tilgangsrettigheter"> 3.4.3.8, &#8220;Datatjeneste – tilgangsrettigheter (dct:accessRights)&#8221;</a>.</p>
 </li>
 <li>
 <p><code>dct:rights</code> KAN brukes til å uttrykke alle andre typer rettigheter og brukervilkår, bl.a. opphavsrett. Det er anbefalt å bruke <a href="#Rettighetserklæring"> 3.14, &#8220;Klassen Rettighetserklæring (odrs:RightsStatement)&#8221;</a> til å ha en strukturert beskrivelse av rettigheter og brukervilkår. Dette gjelder egenskapene <a href="#Distribusjon-rettigheter"> 3.5.3.11, &#8220;Distribusjon – rettigheter (dct:rights)&#8221;</a> og <a href="#Katalog-rettigheter"> 3.8.3.7, &#8220;Katalog – rettigheter (brukervilkår) (dct:rights)&#8221;</a>.</p>
@@ -10448,6 +10495,18 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:license</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener"><em>Licence</em> &#x29C9;</a>.</p>
 <p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener">Licence &#x29C9;</a></em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Multiplisiteten endret fra 0..n i DCAT til 0..1.</p>
+<p class="tableblock"><em>The multiplicity changed from 0..n in DCAT to 0..1</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">adms:status</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener"><em>Distribution status</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status" class="ext-link" target="_blank" rel="noopener">Distribution status &#x29C9;</a>.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – tilgangsforespørselsURL</p></td>
@@ -10897,13 +10956,16 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datatjeneste-gjeldendeLovgivning"> 3.4.2.4, &#8220;Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-versjon"> 3.4.3.8, &#8220;Datatjeneste – versjon (dcat:version)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datatjeneste-status"> 3.4.3.6, &#8220;Datatjeneste – status (adms:status)&#8221;</a>, for å kunne dekke behov for å angi status.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.9, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datatjeneste-tilgangsForespørselsURL"> 3.4.3.7, &#8220;Datatjeneste – tilgangsforespørselsURL (dcatno:accessRequestURL)&#8221;</a>, for å kunne dekke behov for å oppgi siden eller tjenesten som håndterer tilgangsforespørsel.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-tilgangsForespørselsURL"> 3.4.3.6, &#8220;Datatjeneste – tilgangsforespørselsURL (dcatno:accessRequestURL)&#8221;</a>, for å kunne dekke behov for å oppgi siden eller tjenesten som håndterer tilgangsforespørsel.</p>
+<p><a href="#Datatjeneste-versjon"> 3.4.3.9, &#8220;Datatjeneste – versjon (dcat:version)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.10, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -11170,7 +11232,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-13 15:45:43 UTC
+Sist oppdatert 2024-08-13 15:56:15 UTC
 </div>
 </div>
 </body>

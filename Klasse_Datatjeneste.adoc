@@ -370,6 +370,26 @@ _This property is used to refer to a licence under which the data service is mad
 __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
+=== Datatjeneste – status (adms:status) [[Datatjeneste-status]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _status_
+| URI | adms:status
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi tjenestens modenhet.
+
+_This property is used to specify the status of the service in the context of maturity lifecycle._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Multiplisiteten endret fra 0..n i DCAT til 0..1.
+
+__Norwegian extension: The multiplicity changed from 0..n in DCAT to 0..1__
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
+
+__Norwegian extension: The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
+|===
+
 === Datatjeneste – tilgangsforespørselsURL (dcatno:accessRequestURL) [[Datatjeneste-tilgangsForespørselsURL]]
 
 [cols="30s,70d"]
