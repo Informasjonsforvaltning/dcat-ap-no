@@ -5560,7 +5560,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -5574,6 +5574,16 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal.</p>
+<p class="tableblock"><em>Norwegian extension: The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Det SKAL være maks. 1 verdi per språk.</p>
+<p class="tableblock"><em>Norwegian extension: There MUST be max. 1 value per language.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -6441,7 +6451,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Literal</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdf:langString</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
@@ -6455,6 +6465,16 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal.</p>
+<p class="tableblock"><em>Norwegian extension: The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Det SKAL være maks. 1 verdi per språk.</p>
+<p class="tableblock"><em>Norwegian extension: There MUST be max. 1 value per language.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -10708,6 +10728,18 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>There MUST be max. 1 value per language.</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – beskrivelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal.</p>
+<p class="tableblock">__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – beskrivelse</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det SKAL være maks. 1 verdi per språk.</p>
+<p class="tableblock"><em>There MUST be max. 1 value per language.</em></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – endringsdato</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:modified</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet er eksplisitt spesifisert som <code>xsd:date or xsd:dateTime</code>, istedenfor å referere til den generiske datatype Temporal literal.</p>
@@ -10724,6 +10756,18 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcat:packageFormat</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien BØR velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type" class="ext-link" target="_blank" rel="noopener"><em>File type</em> &#x29C9;</a>.</p>
 <p class="tableblock"><em>The value SHOULD be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type" class="ext-link" target="_blank" rel="noopener">File type &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – tittel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal.</p>
+<p class="tableblock">__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – tittel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dct:title</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Det SKAL være maks. 1 verdi per språk.</p>
+<p class="tableblock"><em>There MUST be max. 1 value per language.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Distribusjon – utgivelsesdato</p></td>
@@ -11260,6 +11304,9 @@ med DCAT-AP/DCAT.</p>
 <div class="ulist">
 <ul>
 <li>
+<p><a href="#Distribusjon-beskrivelse"> 3.5.2.1, &#8220;Distribusjon – beskrivelse (dct:description)&#8221;</a>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.</p>
+</li>
+<li>
 <p><a href="#Distribusjon-format"> 3.5.2.2, &#8220;Distribusjon – format (dct:format)&#8221;</a>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
@@ -11270,6 +11317,22 @@ med DCAT-AP/DCAT.</p>
 </li>
 <li>
 <p><a href="#Distribusjon-tidsoppløsning"> 3.5.3.15, &#8220;Distribusjon – tidsoppløsning (dcat:temporalResolution)&#8221;</a>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.</p>
+</li>
+<li>
+<p><a href="#Distribusjon-tittel"> 3.5.3.17, &#8220;Distribusjon – tittel (dct:title)&#8221;</a>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><strong>Endrede verdiområder</strong>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#Distribusjon-beskrivelse"> 3.5.2.1, &#8220;Distribusjon – beskrivelse (dct:description)&#8221;</a>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal.</p>
+</li>
+<li>
+<p><a href="#Distribusjon-tittel"> 3.5.3.17, &#8220;Distribusjon – tittel (dct:title)&#8221;</a>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal.</p>
 </li>
 </ul>
 </div>
@@ -11458,7 +11521,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-13 17:55:11 UTC
+Sist oppdatert 2024-08-13 18:05:14 UTC
 </div>
 </div>
 </body>
