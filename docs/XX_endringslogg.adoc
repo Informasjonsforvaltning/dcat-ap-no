@@ -194,9 +194,15 @@ med DCAT-AP/DCAT.
 
 * <<Katalogpost>>: 
 ** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<Katalogpost-beskrivelse>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Katalogpost-i-samsvar-med>>: Multiplisiteten endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT.
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Katalogpost-status>>: "ADMS status vocabulary" er erstattet av EUs kontrollerte vokabular for "Distribution status". Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
+*** <<Katalogpost-tittel>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
+
+** *Endrede verdiområder*: 
+*** <<Katalogpost-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Katalogpost-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 * <<RegulativRessurs>>: 
 ** *Nye egenskaper*:

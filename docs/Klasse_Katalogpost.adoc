@@ -149,12 +149,18 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ |  _description_
 | URI | dct:description
-| Verdiområde / _Range_ | rdfs:Literal
+| Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av katalogposten. Bør gjentas når beskrivelsen finnes på flere ulike språk.
 
 _This property is used to specify a free-text account of the record. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__Norwegian extension: The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Det SKAL være maks. 1 verdi per språk. 
+
+__Norwegian extension: There MUST be max. 1 value per language.__
 |===
 
 === Katalogpost – kilde (dct:source) [[Katalogpost-kilde]]
@@ -194,10 +200,16 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 |===
 | _English name_ |  _title_
 | URI | dct:title
-| Verdiområde / _Range_ | rdfs:Literal
+| Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navnet på katalogen. Egenskapen bør gjentas når navnet finnes på flere ulike språk.
 
 _This property is used to specify a name given to the Catalogue Record. This property can be repeated for parallel language versions of the name._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__Norwegian extension: The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Det SKAL være maks. 1 verdi per språk. 
+
+__Norwegian extension: There MUST be max. 1 value per language.__
 |===
