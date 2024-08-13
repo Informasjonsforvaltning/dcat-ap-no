@@ -151,11 +151,11 @@ __The multiplicity is changed from 1..n to 1..1.__
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
-| Datasettserie – tittel | dct:title |
+| Datatjeneste – tittel | dct:title |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
 __The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
-| Datasettserie – tittel | dct:title | 
+| Datatjeneste – tittel | dct:title | 
 Det SKAL være maks. 1 verdi per språk. 
 
 __There MUST be max. 1 value per language.__
@@ -262,11 +262,7 @@ __The whole class: Not explicitly specified in DCAT-AP/DCAT.__
 | Katalog – beskrivelse | dct:description |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
-__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
-| Katalog – beskrivelse | dct:description |
-Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
-
-__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Katalog – beskrivelse | dct:description |
 Det SKAL være maks. 1 verdi per språk. 
 
@@ -281,7 +277,7 @@ __The requirement level changed from optional (in DCAT) to mandatory, thus also 
 | Katalog – tittel | dct:title |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
-__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Katalog – tittel | dct:title |
 Det SKAL være maks. 1 verdi per språk. 
 
@@ -321,7 +317,7 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 | Katalogpost – beskrivelse | dct:description |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
-__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Katalogpost – beskrivelse | dct:description |
 Det SKAL være maks. 1 verdi per språk. 
 
@@ -329,7 +325,7 @@ __There MUST be max. 1 value per language.__
 | Katalogpost – tittel | dct:title |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
-__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Katalogpost – tittel | dct:title |
 Det SKAL være maks. 1 verdi per språk. 
 
