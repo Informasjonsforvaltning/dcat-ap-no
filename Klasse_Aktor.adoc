@@ -19,6 +19,8 @@ image::images/Klassen-Aktør.png[]
 
 __This class is used to represent any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.__
 | Merknad / _Note_ | Subklassen Organisasjon (`org:Organization`), Gruppe (`foaf:Group`) eller Person (`foaf:Person`) BØR brukes istedenfor klassen Aktør (`foaf:Agent`), når aktøren er en organisasjon, gruppe eller person. 
+
+__The subclass Organization (`org:Organization`), Group (`foaf:Group`) or Person (`foaf:Person`) SHOULD be used instead of the class Agent (`foaf:Agent`), when the agent is an organization, group of person.__ 
 |===
 
 
