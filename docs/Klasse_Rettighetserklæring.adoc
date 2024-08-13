@@ -84,15 +84,18 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _attribution text_
 | URI | odrs:attributionText
-| Verdiområde / _Range_ | rdfs:Literal
+| Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en tekstlig kreditering. Egenskapen bør gjentas når teksten finnes på flere språk.
 
 _This property is used to specify an attribution text. This property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Merknad 2 / _Note 2_ | Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Eksempel / _Example_ | _"Crowd sourced data community" (English)_
 |===
 
@@ -183,15 +186,18 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _copyright notice_
 | URI | odrs:copyrightNotice
-| Verdiområde / _Range_ | rdfs:Literal
+| Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en enkel tekstlig notis om opphavsretten. Egenskapen bør gjentas når teksten finnes på flere språk. 
 
 _This property is used to specify the copyright notice associated with a rights statement. A notice must typically be preserved and displayed when acknowledging the source of some data. This property is expressed as a simple literal value and so is suitable for simple copyright notices. Where a data publisher needs to reference a larger copyright statement and/or related guidance then the copyrightStatement property should be used instead. This property should be repeated for parallel language versions of the text._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Merknad 2 / _Note 2_ | Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 |===
 
 === Rettighetserklæring – opphavsrettsår (odrs:copyrightYear)  [[Rettighetserklæring-opphavsrettsår]]
