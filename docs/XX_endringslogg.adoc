@@ -151,10 +151,16 @@ med DCAT-AP/DCAT.
 *** <<Distribusjon-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<Distribusjon-beskrivelse>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Distribusjon-format>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-medietype>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-romlig-oppløsning>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-tidsoppløsning>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
+*** <<Distribusjon-tittel>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+
+** *Endrede verdiområder*: 
+*** <<Distribusjon-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Distribusjon-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular "File type",for å ha standardiserte verdier for denne egenskapen. 
