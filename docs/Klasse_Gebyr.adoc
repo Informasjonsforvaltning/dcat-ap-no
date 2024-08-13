@@ -86,15 +86,18 @@ Eksempel i RDF Turtle:
 |===
 | _English name_ | _description_
 | URI | dct:description
-| Verdiområde / _Range_ | rdfs:Literal
+| Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en tekstlig beskrivelse av gebyret. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
 
 _This property is used to specify a free text description of the Cost. This property should be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+| Merknad 2 / _Note 2_ | Det SKAL være maks. 1 verdi per språk. 
+
+_There MUST be max. 1 value per language._
 | Eksempel / _Example_ | «Behandlingsgebyr» (bokmål) / __"Handling fee" (English)__
 |===
 
