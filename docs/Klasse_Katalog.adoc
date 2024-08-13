@@ -97,14 +97,17 @@ Eksempel i RDF Turtle:
 | _English name_ | _publisher_
 | URI | dct:publisher
 | Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Verdien bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. 
 
 _This property is used to refer to an entity (organisation) responsible for making the Catalogue available._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | (Lite aktuelt for bruk i Norge) Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"] for EU-institusjoner og noen internasjonale organisasjoner. 
+| Merknad 1 / _Note 1_ | (Lite aktuelt for bruk i Norge) Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"] for EU-institusjoner og noen internasjonale organisasjoner. 
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[Corporate body &#x29C9;, window="_blank", role="ext-link"] for European institutions and a small set of international organisations.__
+| Merknad 2 / _Note 2_ | Inntil Brønnøysundregistrene har fastsatt det endelige URI-mønsteret som unikt og varig identifiserer en virksomhet registrert i Enhetsregisteret, kan følgende mønster (som dessverre ikke er i henhold til beste praksis for URI) brukes til å referere til en virksomhet registrert i Enhetsregisteret, der `nnnnnnnnn` er organisasjonsnummeret til virksomheten: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`. Digdir vil i en overgangsperiode sørge for at både nytt og gammelt mønster støttes og håndteres korrekt i Felles datakatalog data.norge.no. 
+
+__Until the Brønnøysund Register Centre has determined the final URI pattern that uniquely and persistently identifies an enterprise registered in the Central Coordinating Register for Legal Entities (CCR), the following pattern (which is unfortunately not in accordance with best practices for URI) can be used to refer to an enterprise registered in the CCR, where `nnnnnnnnn` is the organization number of the enterprise: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`. During a transitional period, Digdir will ensure that both new and old patterns are supported and processed correctly in the National Data Portal data.norge.no.__
 | Eksempel / _Example_ | Digitaliseringsdirektoratet med organisasjonsnummer 991825827
 |===
 

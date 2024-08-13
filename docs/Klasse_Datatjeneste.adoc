@@ -101,7 +101,7 @@ Eksempel i RDF Turtle:
 | _English name_ | _publisher_
 | URI | dct:publisher
 | Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: `dct:publisher <\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673>`.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. 
 
 _This property is used to refer the the agent (organisation) responsible for making the data service available._
 | Multiplisitet / _Multiplicity_ | 1..1
@@ -112,6 +112,9 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. 
 
 __Norwegian extension: The requirement level changed from recommended to mandatory and thus also the multiplicity from 0..1 to 1..1.__
+| Merknad 3 / _Note 3_ | Inntil Brønnøysundregistrene har fastsatt det endelige URI-mønsteret som unikt og varig identifiserer en virksomhet registrert i Enhetsregisteret, kan følgende mønster (som dessverre ikke er i henhold til beste praksis for URI) brukes til å referere til en virksomhet registrert i Enhetsregisteret, der `nnnnnnnnn` er organisasjonsnummeret til virksomheten: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`. Digdir vil i en overgangsperiode sørge for at både nytt og gammelt mønster støttes og håndteres korrekt i Felles datakatalog data.norge.no. 
+
+__Until the Brønnøysund Register Centre has determined the final URI pattern that uniquely and persistently identifies an enterprise registered in the Central Coordinating Register for Legal Entities (CCR), the following pattern (which is unfortunately not in accordance with best practices for URI) can be used to refer to an enterprise registered in the CCR, where `nnnnnnnnn` is the organization number of the enterprise: `\https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn`. During a transitional period, Digdir will ensure that both new and old patterns are supported and processed correctly in the National Data Portal data.norge.no.__
 | Eksempel / _Example_ | Digitaliseringsdirektoratet med organisasjonsnummer 991825827
 |===
 
