@@ -60,6 +60,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 ** *Nye egenskaper*:
 *** <<Datasett-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
 *** <<Datasett-har-gebyr>>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.
+*** <<Datasett-tilgangsForespørselsURL>>, for å kunne dekke behov for å oppgi siden eller tjenesten som håndterer tilgangsforespørsel. 
 
 ** *Utgåtte egenskaper*: 
 *** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
@@ -112,6 +113,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datatjeneste-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-versjon>>, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-versjonsmerknad>>, i samsvar med DCAT-AP/DCAT.
+*** <<Datatjeneste-tilgangsForespørselsURL>>, for å kunne dekke behov for å oppgi siden eller tjenesten som håndterer tilgangsforespørsel. 
 
 ** *Utgåtte egenskaper*:
 *** medietype (dcat:mediaType), i samsvar med DCAT-AP/DCAT.
