@@ -77,18 +77,18 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
 *** <<Datasett-beskrivelse>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
-*** <<Datasett-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n, i samsvar med DCAT-AP/DCAT.
-*** <<Datasett-tittel>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
-*** <<Datasett-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT. 
+*** <<Datasett-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar *** <<Datasett-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n, i samsvar med DCAT-AP/DCAT.
+med DCAT-AP/DCAT. 
 *** <<Datasett-romligOppløsning>>: Multiplisiteten er endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT. 
 *** <<Datasett-produsent>>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT. 
 *** <<Datasett-tidsoppløsning>>: Multiplisiteten er endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT. 
+*** <<Datasett-tittel>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Datasett-type>>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT. 
 
 ** *Endrede verdiområder*: 
 *** <<Datasett-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
-*** <<Datasett-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 *** <<Datasett-emneord>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datasett-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 *** <<Datasett-versjonsmerknad>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
@@ -129,10 +129,19 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** type (dct:type), ikke i bruk i dag, uklar bruksområder. 
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
-*** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
+*** <<Datatjeneste-beskrivelse>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Datatjeneste-identifikator>>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-i-samsvar-med>>: Kravnivået er endret fra valgfri til anbefalt, i samsvar med DCAT-AP/DCAT.
+*** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
+*** <<Datatjeneste-tittel>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Datatjeneste-utgiver>>: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. Dette for å kunne gruppere datatjenester/APIer under virksomhet i GUIen i data.norge.no. 
+*** <<Datatjeneste-versjonsmerknad>>: Føyet til følgende krav: Det SKAL være maks. 1 verdi per språk.
+
+** *Endrede verdiområder*: 
+*** <<Datatjeneste-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datatjeneste-emneord>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datatjeneste-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datatjeneste-versjonsmerknad>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Datatjeneste-tema>>: "EuroVoc" er utgått fra kravet til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT. 
@@ -142,10 +151,10 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Distribusjon-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<Distribusjon-format>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-medietype>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-romlig-oppløsning>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 *** <<Distribusjon-tidsoppløsning>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
-*** <<Distribusjon-format>>: Multiplisiteten endret fra 0..n til 0..1, i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Distribusjon-komprimeringsformat>>: Tilføyet kravet til å bruke kontrollert vokabular "File type",for å ha standardiserte verdier for denne egenskapen. 
@@ -155,8 +164,8 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 
 * <<Katalog>>: 
 ** *Nye egenskaper*:
-*** <<Katalog-kontaktpunkt>>, i samsvar med DCAT-AP/DCAT.
 *** <<Katalog-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
+*** <<Katalog-kontaktpunkt>>, i samsvar med DCAT-AP/DCAT.
 *** <<Katalog-tidsrom>>, i samsvar med DCAT-AP/DCAT.
 
 ** *Utgåtte egenskaper*: 
