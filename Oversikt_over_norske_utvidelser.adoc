@@ -11,10 +11,18 @@ Tabellen nedenfor er sortert i samme rekkefølge som klassene/egenskapene er spe
 [cols="20,20,60"]
 |===
 |*Klasse-/egenskapsnavn / _Class/property name_* |*Klasse-/egenskapsURI / _Class/property URI_*| *Norsk utvidelse / _Norwegian extension_* 
-| Aktør – organisasjonsidentifikator | dct:identifier |  
+| Aktør – identifikator | dct:identifier |  
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
  _Not explicitly specified in DCAT-AP/DCAT._
+| Datasett – beskrivelse | dct:description |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Datasett – beskrivelse | dct:description |
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Datasett – kontaktpunkt | dcat:contactPoint |
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
 
@@ -35,6 +43,10 @@ __The requirement level is changed from recommended to mandatory, thus also the 
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 __Not explicitly specified in DCAT-AP/DCAT.__
+| Datasett – emneord  | dcat:keyword |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Datasett – ble generert ved | prov:wasGeneratedBy |
 Kravnivået er endret fra valgfri til anbefalt.
 
@@ -71,6 +83,10 @@ _Not explicitly specified in DCAT-AP/DCAT._
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
 __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
+| Datasett – versjonsmerknad | adms:versionNotes |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Datasettserie – kontaktpunkt | dcat:contactPoint |
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
