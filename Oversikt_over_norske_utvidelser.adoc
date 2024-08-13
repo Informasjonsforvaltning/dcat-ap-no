@@ -151,10 +151,22 @@ __The multiplicity is changed from 1..n to 1..1.__
 Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
+| Datasettserie – tittel | dct:title |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Datasettserie – tittel | dct:title | 
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Datatjeneste – utgiver | dct:publisher |
 Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. 
 
 __The requirement level changed from recommended to mandatory and thus also the multiplicity from 0..1 to 1..1.__
+| Datatjeneste – emneord | dcat:keyword |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Datatjeneste – format | dct:format |
 Kravnivå endret fra valgfri til anbefalt.
 
@@ -167,6 +179,14 @@ __The requirement level changed from optional to recommended.__
 https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
+| Datatjeneste – beskrivelse | dct:description |
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Datatjeneste – beskrivelse | dct:description |
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Datatjeneste – lisens | dct:license |
 Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
 
@@ -195,6 +215,14 @@ __The requirement level changed from optional to recommended.__
 Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
+|  Datatjeneste – versjonsmerknad | adms:versionNotes | 
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+|  Datatjeneste – versjonsmerknad | adms:versionNotes | 
+Det SKAL være maks. 1 verdi per språk. 
+
+__There MUST be max. 1 value per language.__
 | Distribusjon – endringsdato | dct:modified |
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
