@@ -1969,7 +1969,7 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. <code>dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673&gt;</code>.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig.</p>
 <p class="tableblock"><em>This property is used to specify the entity (organisation) responsible for making the Dataset available.</em></p></td>
 </tr>
 <tr>
@@ -1989,6 +1989,11 @@ korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået er endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.</p>
 <p class="tableblock"><em>Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inntil Brønnøysundregistrene har fastsatt det endelige URI-mønsteret som unikt og varig identifiserer en virksomhet registrert i Enhetsregisteret, kan følgende mønster (som dessverre ikke er i henhold til beste praksis for URI) brukes til å referere til en virksomhet registrert i Enhetsregisteret, der <code>nnnnnnnnn</code> er organisasjonsnummeret til virksomheten: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>. Digdir vil i en overgangsperiode sørge for at både nytt og gammelt mønster støttes og håndteres korrekt i Felles datakatalog data.norge.no.</p>
+<p class="tableblock"><em>Until the Brønnøysund Register Centre has determined the final URI pattern that uniquely and persistently identifies an enterprise registered in the Central Coordinating Register for Legal Entities (CCR), the following pattern (which is unfortunately not in accordance with best practices for URI) can be used to refer to an enterprise registered in the CCR, where <code>nnnnnnnnn</code> is the organization number of the enterprise: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>. During a transitional period, Digdir will ensure that both new and old patterns are supported and processed correctly in the National Data Portal data.norge.no.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -3884,7 +3889,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettserien tilgjengelig. Bør være autoritativ URI for aktøren, f.eks. <code>dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673&gt;</code>.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettserien tilgjengelig.</p>
 <p class="tableblock"><em>This property is used to specify the entity (organisation) responsible for making the Dataset serie available.</em></p></td>
 </tr>
 <tr>
@@ -3904,6 +3909,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra anbefalt til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.</p>
 <p class="tableblock"><em>Norwegian extension: The requirement level changed from recommended to mandatory, thus also the multiplicity from 0..1 to 1..1.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inntil Brønnøysundregistrene har fastsatt det endelige URI-mønsteret som unikt og varig identifiserer en virksomhet registrert i Enhetsregisteret, kan følgende mønster (som dessverre ikke er i henhold til beste praksis for URI) brukes til å referere til en virksomhet registrert i Enhetsregisteret, der <code>nnnnnnnnn</code> er organisasjonsnummeret til virksomheten: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>. Digdir vil i en overgangsperiode sørge for at både nytt og gammelt mønster støttes og håndteres korrekt i Felles datakatalog data.norge.no.</p>
+<p class="tableblock"><em>Until the Brønnøysund Register Centre has determined the final URI pattern that uniquely and persistently identifies an enterprise registered in the Central Coordinating Register for Legal Entities (CCR), the following pattern (which is unfortunately not in accordance with best practices for URI) can be used to refer to an enterprise registered in the CCR, where <code>nnnnnnnnn</code> is the organization number of the enterprise: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>. During a transitional period, Digdir will ensure that both new and old patterns are supported and processed correctly in the National Data Portal data.norge.no.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -4530,7 +4540,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig. Bør være autoritativ URI for aktøren, f.eks.: <code>dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/974760673&gt;</code>.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datatjenesten tilgjengelig.</p>
 <p class="tableblock"><em>This property is used to refer the the agent (organisation) responsible for making the data service available.</em></p></td>
 </tr>
 <tr>
@@ -4550,6 +4560,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1.</p>
 <p class="tableblock"><em>Norwegian extension: The requirement level changed from recommended to mandatory and thus also the multiplicity from 0..1 to 1..1.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inntil Brønnøysundregistrene har fastsatt det endelige URI-mønsteret som unikt og varig identifiserer en virksomhet registrert i Enhetsregisteret, kan følgende mønster (som dessverre ikke er i henhold til beste praksis for URI) brukes til å referere til en virksomhet registrert i Enhetsregisteret, der <code>nnnnnnnnn</code> er organisasjonsnummeret til virksomheten: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>. Digdir vil i en overgangsperiode sørge for at både nytt og gammelt mønster støttes og håndteres korrekt i Felles datakatalog data.norge.no.</p>
+<p class="tableblock"><em>Until the Brønnøysund Register Centre has determined the final URI pattern that uniquely and persistently identifies an enterprise registered in the Central Coordinating Register for Legal Entities (CCR), the following pattern (which is unfortunately not in accordance with best practices for URI) can be used to refer to an enterprise registered in the CCR, where <code>nnnnnnnnn</code> is the organization number of the enterprise: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>. During a transitional period, Digdir will ensure that both new and old patterns are supported and processed correctly in the National Data Portal data.norge.no.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -6793,7 +6808,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig. Verdien bør være autoritativ URI for aktøren, sekundært organisasjonsnummer.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre katalogen tilgjengelig.</p>
 <p class="tableblock"><em>This property is used to refer to an entity (organisation) responsible for making the Catalogue available.</em></p></td>
 </tr>
 <tr>
@@ -6805,9 +6820,14 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(Lite aktuelt for bruk i Norge) Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body" class="ext-link" target="_blank" rel="noopener"><em>Corporate body</em> &#x29C9;</a> for EU-institusjoner og noen internasjonale organisasjoner.</p>
 <p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body" class="ext-link" target="_blank" rel="noopener">Corporate body &#x29C9;</a> for European institutions and a small set of international organisations.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Inntil Brønnøysundregistrene har fastsatt det endelige URI-mønsteret som unikt og varig identifiserer en virksomhet registrert i Enhetsregisteret, kan følgende mønster (som dessverre ikke er i henhold til beste praksis for URI) brukes til å referere til en virksomhet registrert i Enhetsregisteret, der <code>nnnnnnnnn</code> er organisasjonsnummeret til virksomheten: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>. Digdir vil i en overgangsperiode sørge for at både nytt og gammelt mønster støttes og håndteres korrekt i Felles datakatalog data.norge.no.</p>
+<p class="tableblock"><em>Until the Brønnøysund Register Centre has determined the final URI pattern that uniquely and persistently identifies an enterprise registered in the Central Coordinating Register for Legal Entities (CCR), the following pattern (which is unfortunately not in accordance with best practices for URI) can be used to refer to an enterprise registered in the CCR, where <code>nnnnnnnnn</code> is the organization number of the enterprise: <code>https://organization-catalog.fellesdatakatalog.digdir.no/organizations/nnnnnnnnn</code>. During a transitional period, Digdir will ensure that both new and old patterns are supported and processed correctly in the National Data Portal data.norge.no.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -11069,7 +11089,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-13 14:03:51 UTC
+Sist oppdatert 2024-08-13 14:32:35 UTC
 </div>
 </div>
 </body>
