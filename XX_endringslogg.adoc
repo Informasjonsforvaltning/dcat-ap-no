@@ -135,7 +135,6 @@ med DCAT-AP/DCAT.
 *** <<Datatjeneste-kontaktpunkt>>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n. Dette for å kunne ta kontakt med den ansvarlige.
 *** <<Datatjeneste-tittel>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 *** <<Datatjeneste-utgiver>>: Kravnivået endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..1 til 1..1. Dette for å kunne gruppere datatjenester/APIer under virksomhet i GUIen i data.norge.no. 
-*** <<Datatjeneste-versjonsmerknad>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
 
 ** *Endrede verdiområder*: 
 *** <<Datatjeneste-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
