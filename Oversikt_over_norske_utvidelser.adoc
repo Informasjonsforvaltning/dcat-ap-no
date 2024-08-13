@@ -203,6 +203,10 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
 
 _Not explicitly specified in DCAT-AP/DCAT._
+|  Datatjeneste – versjonsmerknad | adms:versionNotes | 
+Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Distribusjon – lisens | dct:license| 
 Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
 
@@ -215,10 +219,6 @@ __The requirement level changed from optional to recommended.__
 Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
-|  Datatjeneste – versjonsmerknad | adms:versionNotes | 
-Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
-
-__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Distribusjon – beskrivelse | dct:description |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
@@ -334,7 +334,7 @@ __All properties in the class: Not explicitly specified in DCAT-AP/DCAT.__
 | Rettighetserklæring | odrs:RightsStatement | 
 Hele klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT. `odrs:RightsStatement` er imidlertid en subklasse av `dct:RightsStatement` brukt i DCAT-AP. 
 
-__The whole class: Not explicitly specified in DCAT-AP/DCAT. `odrs:RightsStatement` is though a subclass of `dct:RightsStatement` used in DCAT-AP._
+__The whole class: Not explicitly specified in DCAT-AP/DCAT. `odrs:RightsStatement` is though a subclass of `dct:RightsStatement` used in DCAT-AP.__
 | Standard | dct:Standard |
 Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
