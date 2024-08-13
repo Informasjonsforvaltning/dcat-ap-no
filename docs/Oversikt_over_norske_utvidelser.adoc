@@ -219,14 +219,10 @@ __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
 __The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
-|  Datatjeneste – versjonsmerknad | adms:versionNotes | 
-Det SKAL være maks. 1 verdi per språk. 
-
-__There MUST be max. 1 value per language.__
 | Distribusjon – beskrivelse | dct:description |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
-__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Distribusjon – beskrivelse | dct:description |
 Det SKAL være maks. 1 verdi per språk. 
 
@@ -246,7 +242,7 @@ __The value SHOULD be chosen from EU's controlled vocabulary https://op.europa.e
 | Distribusjon – tittel | dct:title |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
-__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.
+__The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Distribusjon – tittel | dct:title |
 Det SKAL være maks. 1 verdi per språk. 
 
@@ -264,9 +260,6 @@ Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av 
 
 __The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
 | Katalog – beskrivelse | dct:description |
-Det SKAL være maks. 1 verdi per språk. 
-
-__There MUST be max. 1 value per language.__
 Det SKAL være maks. 1 verdi per språk. 
 
 __There MUST be max. 1 value per language.__
