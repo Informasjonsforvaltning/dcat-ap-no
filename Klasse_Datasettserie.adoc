@@ -186,30 +186,6 @@ Eksempel i RDF Turtle:
    .
 -----
 
-=== Datasettserie – første (dcat:first) [[Datasettserie-første]]
-
-[cols="30s,70"]
-|===
-| _English name_ | _first_
-| URI | dcat:first
-| Verdiområde / _Range_ | <<Datasett, dcat:Dataset>>
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til den første ressursen i en ordnet samling eller serie av datasett.
-
-_This property is used to refer to the first resource in an ordered collection or series of resources, to which the current resource belongs._
-| Multiplisitet / _Multiplicity_ | 0..1
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
-| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.
-
-__Norwegian extension: The requirement level changed from optional to recommended.__
-|===
-
-Eksempel i RDF Turtle:
------
-<aDatasetSeries> a dcat:DatasetSeries ; 
-   dcat:first <aDataset> ; 
-   .
------
-
 === Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation) [[Datasettserie-gjeldendeLovgivning]]
 
 [cols="30s,70"]
@@ -318,6 +294,21 @@ _This property is used to specify the frequency at which the Dataset serie is up
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[Frequency &#x29C9;, window="_blank", role="ext-link"]__.
 |===
+
+=== Datasettserie – første (dcat:first) [[Datasettserie-første]]
+
+[cols="30s,70"]
+|===
+| _English name_ | _first_
+| URI | dcat:first
+| Verdiområde / _Range_ | <<Datasett, dcat:Dataset>>
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til den første ressursen i en ordnet samling eller serie av datasett.
+
+_This property is used to refer to the first resource in an ordered collection or series of resources, to which the current resource belongs._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
+|===
+
 
 === Datasettserie – utgivelsesdato (dct:issued) [[Datasettserie-utgivelsesdato]]
 

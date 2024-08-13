@@ -631,7 +631,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasettserie-anbefalte-egenskaper">3.3.2. Anbefalte egenskaper for klassen <em>Datasettserie</em></a>
 <ul class="sectlevel4">
 <li><a href="#Datasettserie-dekningsområde">Datasettserie – dekningsområde (dct:spatial)</a></li>
-<li><a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a></li>
 <li><a href="#Datasettserie-gjeldendeLovgivning">Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)</a></li>
 <li><a href="#Datasettserie-siste">Datasettserie – siste (dcat:last)</a></li>
 <li><a href="#Datasettserie-tidsrom">Datasettserie – tidsrom (dct:temporal)</a></li>
@@ -641,6 +640,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel4">
 <li><a href="#Datasettserie-endringsdato">Datasettserie – endringsdato (dct:modified)</a></li>
 <li><a href="#Datasettserie-frekvens">Datasettserie – frekvens (dct:accrualPeriodicity)</a></li>
+<li><a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a></li>
 <li><a href="#Datasettserie-utgivelsesdato">Datasettserie – utgivelsesdato (dct:issued)</a></li>
 </ul>
 </li>
@@ -3993,58 +3993,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-første"><a class="link" href="#Datasettserie-første">3.3.2.2. Datasettserie – første (dcat:first)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>first</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Datasett">dcat:Dataset</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til den første ressursen i en ordnet samling eller serie av datasett.</p>
-<p class="tableblock"><em>This property is used to refer to the first resource in an ordered collection or series of resources, to which the current resource belongs.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.</p>
-<p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aDatasetSeries&gt; a dcat:DatasetSeries ;
-   dcat:first &lt;aDataset&gt; ;
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="Datasettserie-gjeldendeLovgivning"><a class="link" href="#Datasettserie-gjeldendeLovgivning">3.3.2.3. Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)</a></h5>
+<h5 id="Datasettserie-gjeldendeLovgivning"><a class="link" href="#Datasettserie-gjeldendeLovgivning">3.3.2.2. Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4099,7 +4048,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-siste"><a class="link" href="#Datasettserie-siste">3.3.2.4. Datasettserie – siste (dcat:last)</a></h5>
+<h5 id="Datasettserie-siste"><a class="link" href="#Datasettserie-siste">3.3.2.3. Datasettserie – siste (dcat:last)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4150,7 +4099,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-tidsrom"><a class="link" href="#Datasettserie-tidsrom">3.3.2.5. Datasettserie – tidsrom (dct:temporal)</a></h5>
+<h5 id="Datasettserie-tidsrom"><a class="link" href="#Datasettserie-tidsrom">3.3.2.4. Datasettserie – tidsrom (dct:temporal)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -4286,7 +4235,43 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasettserie-utgivelsesdato"><a class="link" href="#Datasettserie-utgivelsesdato">3.3.3.3. Datasettserie – utgivelsesdato (dct:issued)</a></h5>
+<h5 id="Datasettserie-første"><a class="link" href="#Datasettserie-første">3.3.3.3. Datasettserie – første (dcat:first)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>first</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Datasett">dcat:Dataset</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til den første ressursen i en ordnet samling eller serie av datasett.</p>
+<p class="tableblock"><em>This property is used to refer to the first resource in an ordered collection or series of resources, to which the current resource belongs.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Datasettserie-utgivelsesdato"><a class="link" href="#Datasettserie-utgivelsesdato">3.3.3.4. Datasettserie – utgivelsesdato (dct:issued)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -10303,12 +10288,6 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em>To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary <a href="https://sws.geonames.org/" class="ext-link" target="_blank" rel="noopener">Administrative units &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – første</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:first</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
-<p class="tableblock"><em>The requirement level changed from optional to recommended.</em></p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datasettserie – gjeldende lovgivning</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:applicableLegislation</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Kravnivået endret fra valgfri til anbefalt.</p>
@@ -10761,7 +10740,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datasettserie-frekvens"> 3.3.3.2, &#8220;Datasettserie – frekvens (dct:accrualPeriodicity)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-gjeldendeLovgivning"> 3.3.2.3, &#8220;Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-gjeldendeLovgivning"> 3.3.2.2, &#8220;Datasettserie – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
 <p><a href="#Datasettserie-kontaktpunkt"> 3.3.1.2, &#8220;Datasettserie – kontaktpunkt (dcat:contactPoint)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
@@ -10773,13 +10752,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datasettserie-tittel"> 3.3.1.4, &#8220;Datasettserie – tittel (dct:title)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-utgivelsesdato"> 3.3.3.3, &#8220;Datasettserie – utgivelsesdato (dct:issued)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-utgivelsesdato"> 3.3.3.4, &#8220;Datasettserie – utgivelsesdato (dct:issued)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
 <p><a href="#Datasettserie-utgiver"> 3.3.1.5, &#8220;Datasettserie – utgiver (dct:publisher)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasettserie-tidsrom"> 3.3.2.5, &#8220;Datasettserie – tidsrom (dct:temporal)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datasettserie-tidsrom"> 3.3.2.4, &#8220;Datasettserie – tidsrom (dct:temporal)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -10799,7 +10778,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p><a href="#Datasettserie-første"> 3.3.2.2, &#8220;Datasettserie – første (dcat:first)&#8221;</a>: Kravnivået endret fra obligatorisk til anbefalt og dermed også multiplisiteten fra 1..1 til 0..1. Dette fordi ikke alle datasettserier er ordnede.</p>
+<p><a href="#Datasettserie-første"> 3.3.3.3, &#8220;Datasettserie – første (dcat:first)&#8221;</a>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1, i samsvar med DCAT-AP/DCAT. Dette fordi ikke alle datasettserier er ordnede.</p>
 </li>
 </ul>
 </div>
@@ -11089,7 +11068,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-13 14:32:35 UTC
+Sist oppdatert 2024-08-13 14:41:53 UTC
 </div>
 </div>
 </body>

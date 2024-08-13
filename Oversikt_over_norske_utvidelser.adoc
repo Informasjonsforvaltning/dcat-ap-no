@@ -87,10 +87,6 @@ __The requirement level changed from recommended to mandatory, thus also the mul
 For å angi dekningsområde i Norge, BØR Kartverkets kontrollerte vokabular https://data.geonorge.no/administrativeEnheter/nasjon/doc/173163[Administrative enheter &#x29C9;, window="_blank", role="ext-link"] brukes i tillegg.
 
 __To specify spatial coverage in Norway, the Norwegian Mapping Authority’s controlled vocabulary https://sws.geonames.org/[Administrative units &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Datasettserie – første | dcat:first | 
-Kravnivået endret fra valgfri til anbefalt.
-
-__The requirement level changed from optional to recommended.__
 | Datasettserie – gjeldende lovgivning | dcatap:applicableLegislation |
 Kravnivået endret fra valgfri til anbefalt.
 
