@@ -86,10 +86,10 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasett-type>>: Multiplisiteten er endret fra 0..1 til 0..n, i samsvar med DCAT-AP/DCAT. 
 
 ** *Endrede verdiområder*: 
-*** <<Datasett-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Litereal. 
-*** <<Datasett-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Litereal. 
-*** <<Datasett-emneord>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Litereal. 
-*** <<Datasett-versjonsmerknad>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Litereal. 
+*** <<Datasett-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datasett-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datasett-emneord>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datasett-versjonsmerknad>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Datasett-bleGenerertVed>>: Nytt krav til bruk av kontrollerte vokabular «Proveniensaktivitetstype». Dette for å kunne ha standardiserte verdier av denne egenskapen. 
@@ -113,7 +113,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** følger (`cpsv:follows`), i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
-*** <<Datasettserie-første>>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1, i samsvar med DCAT-AP/DCAT. Dette fordi ikke alle datasettserier er ordnede.   
+*** <<Datasettserie-første>>: Kravnivået endret fra obligatorisk til valgfri og dermed også multiplisiteten fra 1..1 til 0..1, i samsvar med DCAT-AP/DCAT. Dette fordi ikke alle datasettserier er ordnede. 
 
 
 * <<Datatjeneste>>: 
