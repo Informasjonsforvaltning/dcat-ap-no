@@ -222,3 +222,8 @@ med DCAT-AP/DCAT.
 * <<Standard>> 
 ** *Endrede egenskapsURIer*:
 *** <<Standard-harVersjonsnummer>>: EgenskapsURIen endret fra `owl:versionInfo` til `dcat:version`. Dette for å samkjøre med tilsvarende egenskaper i de andre klassene. 
+** *Endrede kravnivå og/eller multiplisitet*: 
+*** <<Standard--tittel>>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.
+** *Endrede verdiområder*: 
+*** <<Standard--tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+
