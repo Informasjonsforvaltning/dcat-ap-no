@@ -376,7 +376,7 @@ __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary 
 |===
 | _English name_ | _access request URL_
 | URI | dcatno:accessRequestURL
-| Verdiområde / _Range_ | foaf:Document
+| Verdiområde / _Range_ | rdfs:Resource
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en side eller tjeneste som håndterer forespørsel om tilgang til tjenesten.
 
 _This property is used to refer to a webpage or service that handles a request for access to the service._
