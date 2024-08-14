@@ -84,7 +84,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et hovedtema for datasettserien. En datasettserien kan assosieres med flere tema.
 
-_This property is used to specify the category of the dataset serie. A aataset  series may be associated with multiple themes._
+_This property is used to specify the category of the dataset serie. A dataset  series may be associated with multiple themes._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]. 

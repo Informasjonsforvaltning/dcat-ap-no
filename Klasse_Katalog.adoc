@@ -17,7 +17,7 @@ image::images/Klassen-Katalog.png[]
 | URI | dcat:Catalog
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en katalog eller repository som inneholder beskrivelser av ressurser som f.eks. datasett og datatjenester.
 
-_This class is used to represent a catalogue or repository that hosts the Datasets or Data Services being described._
+_This class is used to represent a catalogue or repository that hosts the datasets or data services being described._
 |===
 
 == Obligatoriske egenskaper for klassen _Katalog_ [[Katalog-obligatoriske-egenskaper]]
@@ -59,7 +59,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Kontaktopplysning, vcard:Kind>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentarer om katalogen.
 
-_This property is used to specify contact information that can be used concerning questions and comments about the Catalog._
+_This property is used to specify contact information that can be used concerning questions and comments about the catalogue._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1. 
@@ -141,7 +141,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Datasett, dcat:Dataset>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til datasett som er en del av katalogen. 
 
-_This property is used to refer to a Dataset that is part of the catalogue._
+_This property is used to refer to a dataset that is part of the catalogue._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
@@ -162,7 +162,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Datatjeneste, dcat:DataService>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en datatjeneste som er oppført i katalogen.
 
-_This property is used to refer to a Data Service that is listed in the catalogue._
+_This property is used to refer to a data service that is listed in the catalogue._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
@@ -282,7 +282,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | dct:LinguisticSystem
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et språk som brukes i tekstlige metadata som beskriver ressursene i katalogen. Egenskapen kan gjentas hvis metadata er gitt på flere språk.
 
-_This property is used to refer to a language used in the textual metadata describing titles, descriptions, etc. of the resources (e.g. Datasets, Data services) in the catalogue. This property can be repeated if the metadata is provided in multiple languages._
+_This property is used to refer to a language used in the textual metadata describing titles, descriptions, etc. of the resources (e.g. datasets, data services) in the catalogue. This property can be repeated if the metadata is provided in multiple languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[__Language__ &#x29C9;, window="_blank", role="ext-link"].
