@@ -6,6 +6,6 @@
 | URI | spdx:Checksum
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en sjekksumsalgoritme.
 
-_This class is used to represent an algorithm for Checksums._
+_This class is used to represent an algorithm for checksums._
 | Eksempel | Se https://spdx.org/rdf/terms/#d4e2129[__Checksum algorithm members__ &#x29C9;, window="_blank", role="ext-link"] for predefinerte medlemmer av sjekksumsalgoritmer.
 |===

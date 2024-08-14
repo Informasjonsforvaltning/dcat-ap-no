@@ -57,7 +57,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Kontaktopplysning, vcard:Kind>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til kontaktpunkt med kontaktopplysninger. Disse kan brukes til å sende kommentarer om datatjenesten.
 
-_This property is used to specify contact information that can be used for sending comments about the Data Service._
+_This property is used to specify contact information that can be used for sending comments about the data service._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
@@ -216,7 +216,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller forvaltning av datatjenesten.
 
-_This property is used to refer to the legislation that mandates the creation or management of the Data Service._
+_This property is used to refer to the legislation that mandates the creation or management of the data service._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt. 
@@ -241,7 +241,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Standard, dct:Standard>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en etablert (teknisk) standard som datatjenesten er i samsvar med.
 
-_This property is used to refer to an established (technical) standard to which the Data Service conforms._
+_This property is used to refer to an established (technical) standard to which the data service conforms._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Eksempel / _Example_ | SPARQL
@@ -315,7 +315,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datatjenesten. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.
 
-_This property is used to specify a free-text account of the Data Service. This property can be repeated for parallel language versions of the description._
+_This property is used to specify a free-text account of the data service. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
@@ -364,7 +364,7 @@ _This property is used to specify the identifier to the data service._
 | Verdiområde / _Range_ | foaf:Document
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til nettside som gir tilgang til datatjenesten og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige tilbyderen av datatjenesten.
 
-_This property is used to refer to a web page that provides access to the Data Service and/or additional information. It is intended to point to a landing page at the original data service provider, not to a page on a site of a third party, such as an aggregator._
+_This property is used to refer to a web page that provides access to the data service and/or additional information. It is intended to point to a landing page at the original data service provider, not to a page on a site of a third party, such as an aggregator._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -461,7 +461,7 @@ _This property is used to specify the version indicator (name or identifier) of 
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskap brukes til å beskrive forskjellene mellom denne og en tidligere versjon av datatjenesten. Egenskapen bør gjentas når merknaden finnes på flere ulike språk.
 
-_This property is used to specify a description of the differences between this version and a previous version of the Data service. This property can be repeated for parallel language versions of the version notes._
+_This property is used to specify a description of the differences between this version and a previous version of the data service. This property can be repeated for parallel language versions of the version notes._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 

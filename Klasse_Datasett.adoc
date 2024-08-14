@@ -33,7 +33,7 @@ _This class is used to represent a conceptual entity that represents the informa
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettet. Egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk.
 
-_This property is used to specify a free-text account of the Dataset.This property can be repeated for parallel language versions of the description._
+_This property is used to specify a free-text account of the dataset.This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
@@ -61,7 +61,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Kontaktopplysning, vcard:Kind>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentarer om datasettet.
 
-_This property is used to specify contact information that can be used concerning questions and comments about the Dataset._
+_This property is used to specify contact information that can be used concerning questions and comments about the dataset._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
@@ -146,7 +146,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettet tilgjengelig. 
 
-_This property is used to specify the entity (organisation) responsible for making the Dataset available._
+_This property is used to specify the entity (organisation) responsible for making the dataset available._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | (Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"]. 
@@ -237,7 +237,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Distribusjon, dcat:Distribution>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tilgjengelig distribusjon for datasettet.
 
-_This property is used to refer to an available Distribution for the Dataset._
+_This property is used to refer to an available Distribution for the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===
@@ -258,7 +258,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | dct:Location
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et geografisk område som er dekket av datasettet.
 
-_This property is used to refer to a geographic region that is covered by the Dataset._
+_This property is used to refer to a geographic region that is covered by the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabularer https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[__Continent__ &#x29C9;, window="_blank", role="ext-link"], https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[__Countries and territories__ &#x29C9;, window="_blank", role="ext-link"] eller https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[__Place__ &#x29C9;, window="_blank", role="ext-link"], HVIS den finnes på listene; https://sws.geonames.org/[__GeoNames__ &#x29C9;, window="_blank", role="ext-link"] SKAL i andre tilfeller brukes. 
@@ -287,7 +287,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi emneord (eller tag) som beskriver datasettet. 
 
-_This property is used to specify a keyword or tag describing the Dataset._
+_This property is used to specify a keyword or tag describing the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
@@ -312,7 +312,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller behandling av datasettet.
 
-_This property is used to refer to the legislation that mandates the creation or management of the Dataset._
+_This property is used to refer to the legislation that mandates the creation or management of the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt. 
@@ -337,7 +337,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Tidsrom, dct:PeriodOfTime>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et tidsrom som er dekket av datasettet.
 
-_This property is used to specify a temporal period that the Dataset covers._
+_This property is used to specify a temporal period that the dataset covers._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
 |===
@@ -358,7 +358,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | dct:RightsStatement
 | Anvendelse / _Usage note_ | Egenskapen brukes til å angi om det er allmenn tilgang, betinget tilgang eller ikke-allmenn tilgang til datasettet.
 
-_This property is used to specify information that indicates whether the Dataset is publicly accessible, has access restrictions or is not public._
+_This property is used to specify information that indicates whether the dataset is publicly accessible, has access restrictions or is not public._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | Verdien SKAL være `PUBLIC`, `RESTRICTED` eller `NON_PUBLIC` fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[__Access right__ &#x29C9;, window="_blank", role="ext-link"].
@@ -402,7 +402,7 @@ __This property is used to specify a secondary identifier of the Dataset, such a
 | Verdiområde / _Range_ | foaf:Document
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en side eller et dokument som beskriver datasettet.
 
-_This property is used to refer to a page or document about this Dataset._
+_This property is used to refer to a page or document about this dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
@@ -430,7 +430,7 @@ _This property is used to refer to a sample distribution of the dataset._
 | Verdiområde / _Range_ | xsd:date or xsd:dateTime
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato for siste oppdatering av datasettet.
 
-_This property is used to specify the most recent date on which the Dataset was changed or modified._
+_This property is used to specify the most recent date on which the dataset was changed or modified._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
@@ -489,7 +489,7 @@ _This property is used to refer to the previous resource (before the current one
 | Verdiområde / _Range_ | dct:Frequency
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi oppdateringsfrekvensen for datasettet.
 
-_This property is used to specify the frequency at which the Dataset is updated._
+_This property is used to specify the frequency at which the dataset is updated._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 | Merknad / _Note_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[__Frequency__ &#x29C9;, window="_blank", role="ext-link"].
@@ -572,7 +572,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | dcat:Dataset
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som er en versjon, utgave, eller tilpasning av det beskrevne datasettet. 
 
-_This property is used to refer to a related Dataset that is a version, edition, or adaptation of the described Dataset._
+_This property is used to refer to a related Dataset that is a version, edition, or adaptation of the described dataset._
 | Multiplisitet / _Multiplicity_ | 0..n 
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
@@ -648,7 +648,7 @@ ex:budget-2020 a dcat:Dataset ;
 | Verdiområde / _Range_ | rdfs:Literal
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi identifikator for datasettet, for eksempel en URI eller annen identifikator som er stabil og unik innen konteksten av katalogen.
 
-_This property is used to specify the main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue._
+_This property is used to specify the main identifier for the dataset, e.g. the URI or other unique identifier in the context of the catalogue._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -662,7 +662,7 @@ _This property is used to specify the main identifier for the Dataset, e.g. the 
 | Verdiområde / _Range_ | dcat:Dataset
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et datasett som gjeldende datasett er avledet fra.
 
-_This property is used to refer to a related Dataset from which the described Dataset is derived._
+_This property is used to refer to a related dataset from which the described dataset is derived._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
@@ -676,7 +676,7 @@ _This property is used to refer to a related Dataset from which the described Da
 | Verdiområde / _Range_ | prov:Attribution
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør som har en eller annen form for ansvar for ressursen.
 
-_This property is used to refer to an Agent having some form of responsibility for the resource._
+_This property is used to refer to an agent having some form of responsibility for the resource._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
@@ -704,7 +704,7 @@ _This property is used to refer to a description of a relationship with another 
 | Verdiområde / _Range_ | foaf:Document
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
 
-_This property is used to refer to a web page that provides access to the Dataset, its Distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator._
+_This property is used to refer to a web page that provides access to the dataset, its distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -718,7 +718,7 @@ _This property is used to refer to a web page that provides access to the Datase
 | Verdiområde / _Range_ | dct:ProvenanceStatement
 | Anvendelse / _Usage note_ | Egenskapen brukes itl å referere til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
 
-_This property is used to refer to a statement about the lineage of a Dataset._
+_This property is used to refer to a statement about the lineage of a dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -774,7 +774,7 @@ _This property is used to specify the minimum spatial separation resolvable in a
 | Verdiområde / _Range_ | dct:LinguisticSystem
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi språket som datasettet er på. Egenskapen Kan gjentas dersom det er flere språk i datasettet.
 
-_This property is used to specify a language of the Dataset._
+_This property is used to specify a language of the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[__Language__ &#x29C9;, window="_blank", role="ext-link"].
@@ -823,7 +823,7 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 | Verdiområde / _Range_ | skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et begrep som identifiserer datasettets type.
 
-_This property is used to specify the type of the Dataset._
+_This property is used to specify the type of the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Verdien KAN velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/dataset-type[__Dataset type__ &#x29C9;, window="_blank", role="ext-link"].
@@ -855,7 +855,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | xsd:date or xsd:dateTime
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato for den formelle utgivelsen av datasettet.
 
-_This property is used to specify the date of formal issuance (e.g., publication) of the Dataset._
+_This property is used to specify the date of formal issuance (e.g., publication) of the dataset._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
@@ -886,7 +886,7 @@ _This property is used to specify the version indicator (name or identifier) of 
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskap brukes til å beskrive forskjellene mellom denne og en tidligere versjon av datasettet. Egenskapen bør gjentas når merknaden finnes på flere ulike språk.
 
-_This property is used to specify a description of the differences between this version and a previous version of the Dataset. This property can be repeated for parallel language versions of the version notes._
+_This property is used to specify a description of the differences between this version and a previous version of the dataset. This property can be repeated for parallel language versions of the version notes._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
