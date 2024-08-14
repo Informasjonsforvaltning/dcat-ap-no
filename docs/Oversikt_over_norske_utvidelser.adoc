@@ -24,11 +24,11 @@ Det SKAL være maks. 1 verdi per språk.
 
 __There MUST be max. 1 value per language.__
 | Datasett – kontaktpunkt | dcat:contactPoint |
-Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
+Kravnivået er endret fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
 
 _The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 | Datasett – tema | dcat:theme |
-Kravnivå er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
+Kravnivå er endret fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
 | Datasett – tema | dcat:theme |
@@ -96,11 +96,11 @@ Det SKAL være maks. 1 verdi per språk.
 
 __There MUST be max. 1 value per language.__
 | Datasettserie – kontaktpunkt | dcat:contactPoint |
-Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
+Kravnivået er endret fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
 | Datasettserie – tema | dcat:theme | 
-Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
+Kravnivået er endret fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
 | Datasettserie – tema | dcat:theme | 
@@ -148,7 +148,7 @@ Multiplisiteten endret fra 1..n til 1..1, fordi Datatjeneste med flere ulike end
 
 __The multiplicity is changed from 1..n to 1..1.__
 | Datatjeneste – kontaktpunkt | dcat:contactPoint |
-Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
+Kravnivået er endret fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 __The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n.__
 | Datatjeneste – tittel | dct:title |
