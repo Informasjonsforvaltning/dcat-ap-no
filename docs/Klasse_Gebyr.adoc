@@ -34,7 +34,7 @@ _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 | Verdiområde / _Range_ |  xsd:double
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi gebyrbeløpet.
 
-_This property is used to specify a numeric value indicating the amount of the Cost._
+_This property is used to specify a numeric value indicating the amount of the cost._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
@@ -59,7 +59,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ |  skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi valutatype av gebyret.
 
-_This property is used to specify the currency in which the Cost._
+_This property is used to specify the currency in which the cost._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency[Valuta &#x29C9;, window="_blank", role="ext-link"].
@@ -89,7 +89,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en tekstlig beskrivelse av gebyret. Egenskapen bør gjentas når beskrivelsen finnes på flere språk.
 
-_This property is used to specify a free text description of the Cost. This property should be repeated when the description is in parallel languages._
+_This property is used to specify a free text description of the cost. This property should be repeated when the description is in parallel languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.

@@ -17,7 +17,7 @@ image::images/Klassen-Aktør.png[]
 | URI | foaf:Agent
 |Anvendelse / _Usage note_ | Klassen brukes til å representere en aktør som er assosiert med katalogen og/eller ressursene beskrevet i katalogen. 
 
-__This class is used to represent any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.__
+__This class is used to represent any entity carrying out actions with respect to the entities catalogue and the catalogued resources.__
 | Merknad / _Note_ | Subklassen Organisasjon (`org:Organization`), Gruppe (`foaf:Group`) eller Person (`foaf:Person`) BØR brukes istedenfor klassen Aktør (`foaf:Agent`), når aktøren er en organisasjon, gruppe eller person. 
 
 __The subclass Organization (`org:Organization`), Group (`foaf:Group`) or Person (`foaf:Person`) SHOULD be used instead of the class Agent (`foaf:Agent`), when the agent is an organization, group of person.__ 
@@ -59,7 +59,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdfs:Literal
 | Anvendelse / _Usage note_ | Egenskapen brukes til å angi aktørens identifikasjonsnummer.
 
-__This property contains the identifier for the Agent.__
+__This property contains the identifier for the agent.__
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | Når aktøren har et organisasjonsnummer registrert i Enhetsregisteret, BØR organisasjonsnummeret brukes her. 

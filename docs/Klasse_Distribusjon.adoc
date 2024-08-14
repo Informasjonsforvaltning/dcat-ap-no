@@ -17,7 +17,7 @@ image::images/Klassen-Distribusjon.png[]
 | URI | dcat:Distribution
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en fysisk representasjon av datasettet i et bestemt format.
 
-_This class is used to represent a distribution, i.e., a physical embodiment of the Dataset in a particular format._
+_This class is used to represent a distribution, i.e., a physical embodiment of the dataset in a particular format._
 |===
 
 
@@ -32,7 +32,7 @@ _This class is used to represent a distribution, i.e., a physical embodiment of 
 | Verdiområde / _Range_ | rdfs:Resource
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi URL som gir tilgang til en distribusjon av datasettet. Ressursen det pekes til kan gi informasjon om hvordan en kan få tilgang til datasettet.
 
-_This property is used to refer to a URL that gives access to a Distribution of the Dataset. The resource at the access URL may contain information about how to get the Dataset._
+_This property is used to refer to a URL that gives access to a distribution of the dataset. The resource at the access URL may contain information about how to get the dataset._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 |===
@@ -55,7 +55,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi fritekstbeskrivelse av distribusjonen. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.
 
-_This property is used to specify a free-text account of the Distribution. This property can be repeated for parallel language versions of the description._
+_This property is used to specify a free-text account of the distribution. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
@@ -83,7 +83,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | dct:MediaTypeOrExtent
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi opplysning om distribusjonens filformat. 
 
-_This property is used to specify the file format of the Distribution._
+_This property is used to specify the file format of the distribution._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/file-type[__File type__ &#x29C9;, window="_blank", role="ext-link"].
@@ -108,7 +108,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | dct:LicenseDocument
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lisensen som distribusjonen er gjort tilgjengelig under.
 
-_This property is used to refer to a licence under which the Distribution is made available._
+_This property is used to refer to a licence under which the distribution is made available._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
@@ -161,7 +161,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å angi hvor lenge det er planlagt å holde distribusjonen av datasettet tilgjengelig.
 
-_This property is used to specify how long it is planned to keep the Distribution of the Dataset available._
+_This property is used to specify how long it is planned to keep the distribution of the dataset available._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability[__Planned availability__ &#x29C9;, window="_blank", role="ext-link"].
@@ -188,7 +188,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | foaf:Document
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en side eller et dokument som beskriver distribusjonen.
 
-_This property is used to refer to a page or document about this Distribution._
+_This property is used to refer to a page or document about this distribution._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -202,7 +202,7 @@ _This property is used to refer to a page or document about this Distribution._
 | Verdiområde / _Range_ | xsd:date or xsd:dateTime
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato for siste endring av distribusjonen.
 
-_This property is used to specify the most recent date on which the Distribution was changed or modified._
+_This property is used to specify the most recent date on which the distribution was changed or modified._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
@@ -219,7 +219,7 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 | Verdiområde / _Range_ | xsd:nonNegativeInteger
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi distribusjonens størrelse oppgitt i bytes.
 
-_This property is used to specify the size of a Distribution in bytes._
+_This property is used to specify the size of a distribution in bytes._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -233,7 +233,7 @@ _This property is used to specify the size of a Distribution in bytes._
 | Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller forvaltning av distribusjonen.
 
-_This property is used to refer to the legislation that mandates the creation or management of the Distribution._
+_This property is used to refer to the legislation that mandates the creation or management of the distribution._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -247,7 +247,7 @@ _This property is used to refer to the legislation that mandates the creation or
 | Verdiområde / _Range_ | <<Standard, dct:Standard>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et etablert skjema som distribusjonen er i samsvar med.
 
-_This property is used to refer to an established schema to which the described Distribution conforms._
+_This property is used to refer to an established schema to which the described distribution conforms._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -276,7 +276,7 @@ __Norwegian extension: The value SHOULD be chosen from EU's controlled vocabular
 | Verdiområde / _Range_ | dct:MediaType
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til medietype av en distribusjon.
 
-_This property is used to refer to the media type of the Distribution as defined in the official register of media types managed by IANA._
+_This property is used to refer to the media type of the distribution as defined in the official register of media types managed by IANA._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Verdien SKAL velges fra https://www.iana.org/assignments/media-types/media-types.xhtml[__IANA Media Types__ &#x29C9;, window="_blank", role="ext-link"].
@@ -340,7 +340,7 @@ __This property is used to refer to the policy that describes the rights related
 | Verdiområde / _Range_ | <<Rettighetserklæring, odrs:RightsStatement>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en uttalelse som angir rettigheter knyttet til distribusjonen.
 
-_This property is used to refer to a statement that specifies rights associated with the Distribution._
+_This property is used to refer to a statement that specifies rights associated with the distribution._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
@@ -381,7 +381,7 @@ _This property is used to refer to a mechanism that can be used to verify that t
 | Verdiområde / _Range_ | dct:LinguisticSystem
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til språk som er brukt i distribusjonen.
 
-_This property is used to refer to a language used in the Distribution. This property can be repeated if the metadata is provided in multiple languages._
+_This property is used to refer to a language used in the distribution. This property can be repeated if the metadata is provided in multiple languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/language[__Language__ &#x29C9;, window="_blank", role="ext-link"].
@@ -426,7 +426,7 @@ _This property is used to refer to a data service that gives access to the distr
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi navn på distribusjonen. Egenskapen bør gjentas når tittelen finnes på flere ulike språk.
 
-_This property is used to specify a name given to the Distribution. This property can be repeated for parallel language versions of the description._
+_This property is used to specify a name given to the distribution. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
@@ -446,7 +446,7 @@ __Norwegian extension: There MUST be max. 1 value per language.__
 | Verdiområde / _Range_ | xsd:date or xsd:dateTime
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato for formell utgivelse/publisering av distribusjonen.
 
-_This property is used to specify the date of formal issuance (e.g., publication) of the Distribution._
+_This property is used to specify the date of formal issuance (e.g., publication) of the distribution._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  

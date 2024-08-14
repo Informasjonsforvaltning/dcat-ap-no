@@ -32,7 +32,7 @@ _This class is used to represent a collection of datasets that are published sep
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettserien. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.
 
-_This property is used to specify a free-text account of the Dataset serie.This property can be repeated for parallel language versions of the description._
+_This property is used to specify a free-text account of the dataset series.This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
@@ -60,7 +60,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Kontaktopplysning, vcard:Kind>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi kontaktopplysninger, som kan brukes vedr. spørsmål og kommentarer om datasettserien.
 
-_This property is used to specify contact information that can be used concerning questions and comments about the Dataset serie._
+_This property is used to specify contact information that can be used concerning questions and comments about the dataset series._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n. 
@@ -84,7 +84,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et hovedtema for datasettserien. En datasettserien kan assosieres med flere tema.
 
-_This property is used to specify the category of the dataset serie. A Dataset  serie may be associated with multiple themes._
+_This property is used to specify the category of the dataset serie. A aataset  series may be associated with multiple themes._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]. 
@@ -117,7 +117,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til oppgi navnet på datasettserien. Egenskapen bør gjentas når navnet finnes på flere ulike språk.
 
-_This property is used to specify a name given to the Dataset Series. This property can be repeated for parallel language versions of the name._
+_This property is used to specify a name given to the dataset series. This property can be repeated for parallel language versions of the name._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Eksempel / _Example_ | «Eksempeldatasettserie» (bokmål) / __"Example Dataset Series" (English)__
@@ -145,7 +145,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Aktør, foaf:Agent>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en aktør (organisasjon) som er ansvarlig for å gjøre datasettserien tilgjengelig. 
 
-_This property is used to specify the entity (organisation) responsible for making the Dataset serie available._
+_This property is used to specify the entity (organisation) responsible for making the dataset series available._
 | Multiplisitet / _Multiplicity_ | 1..1
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | (Lite aktuelt for bruk i Norge)  For EU-institusjoner og noen internasjonale organisasjoner SKAL verdien velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/corporate-body[__Corporate body__ &#x29C9;, window="_blank", role="ext-link"]. 
@@ -178,7 +178,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | dct:Location
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et geografisk område som er dekket av datasettserien.
 
-_This property is used to refer to a geographic region that is covered by the Dataset serie._
+_This property is used to refer to a geographic region that is covered by the dataset series._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Verdien SKAL velges fra EU's kontrollerte vokabularer https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/continent[__Continent__ &#x29C9;, window="_blank", role="ext-link"], https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/country[__Countries and territories__ &#x29C9;, window="_blank", role="ext-link"] eller https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/place[__Place__ &#x29C9;, window="_blank", role="ext-link"], HVIS den finnes på listene; https://sws.geonames.org/[__GeoNames__ &#x29C9;, window="_blank", role="ext-link"] SKAL i andre tilfeller brukes. 
@@ -207,7 +207,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<RegulativRessurs, eli:LegalResource>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til lovgivningen som gir mandat til opprettelse eller behandling av datasettserien.
 
-_This property is used to refer to the legislation that mandates the creation or management of the Dataset serie._
+_This property is used to refer to the legislation that mandates the creation or management of the dataset series._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt. 
@@ -256,7 +256,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Tidsrom, dct:PeriodOfTime>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi et tidsrom som er dekket av datasettserien.
 
-_This property is used to specify a temporal period that the Dataset serie covers._
+_This property is used to specify a temporal period that the dataset series covers._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_ 
 | Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.
@@ -282,7 +282,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | xsd:date or xsd:dateTime
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato for siste oppdatering av datasettserien.
 
-_This property is used to specify the most recent date on which the Dataset serie was changed or modified._
+_This property is used to specify the most recent date on which the dataset series was changed or modified._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  
@@ -299,7 +299,7 @@ _Norwegian extension: The range is explicitly specified as `xsd:date or xsd:date
 | Verdiområde / _Range_ | dct:Frequency
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi oppdateringsfrekvensen for datasettserien.
 
-_This property is used to specify the frequency at which the Dataset serie is updated._
+_This property is used to specify the frequency at which the dataset series is updated._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 | Merknad / _Note_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/frequency[__Frequency__ &#x29C9;, window="_blank", role="ext-link"].
@@ -331,7 +331,7 @@ _This property is used to refer to the first resource in an ordered collection o
 | Verdiområde / _Range_ | xsd:date or xsd:dateTime
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi dato for den formelle utgivelsen av datasettserien.
 
-_This property is used to specify the date of formal issuance (e.g., publication) of the Dataset serie._
+_This property is used to specify the date of formal issuance (e.g., publication) of the dataset series._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.  

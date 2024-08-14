@@ -31,7 +31,7 @@ _This class is used to represent the legislation, policy or policies that lie be
 | Verdiområde / _Range_ |  rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en tekstlig beskrivelse av ressursen. Egenskapen bør gjentas når den finnes på flere språk.
 
-_This property contains descriptive textual information about the Legal Resource. This property should be repeated in case there are various versions of the text in different languages._
+_This property contains descriptive textual information about the legal resource. This property should be repeated in case there are various versions of the text in different languages._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
@@ -197,7 +197,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | eli:LegalResource
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en annen relatert regulativ ressurs.
 
-_This property represents another instance of the Legal Resource class that is related to a particular Legal Resource being described._
+_This property represents another instance of the Legal Resource class that is related to a particular legal resource being described._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
