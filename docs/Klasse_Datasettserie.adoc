@@ -32,7 +32,7 @@ _This class is used to represent a collection of datasets that are published sep
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettserien. Egenskapen bør gjentas når beskrivelsen finnes på flere ulike språk.
 
-_This property is used to specify a free-text account of the dataset series.This property can be repeated for parallel language versions of the description._
+_This property is used to specify a free-text account of the dataset series. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
