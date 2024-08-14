@@ -806,7 +806,7 @@ _This property is used to specify the minimum time period resolvable in the data
 | Verdiområde / _Range_ | rdfs:Resource
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en side eller tjeneste som håndterer forespørsel om tilgang til datasettet.
 
-_This property is used to refer to a webpage or service that handles a request for access to the Dataset._
+_This property is used to refer to a webpage or service that handles a request for access to the dataset._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 | Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
