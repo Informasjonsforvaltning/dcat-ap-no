@@ -20,6 +20,6 @@ image::images/Klassen-KatalogisertRessurs.png[]
 _This class is used to represent a resource published or curated by a single agent._
 | Merknad / _Note_ |  Dette er en abstrakt klasse. I en konkret anvendelse/serialisering BØR bare subklassene <<Datasett>>, <<Datasettserie>> eller <<Datatjeneste>> brukes.
 
-_This class Catalogue Record is an abstract class for DCAT-AP. Therefore only subclasses dcat:Dataset, dcat:DatasetSeries or dcat:DataService SHOULD be used in a data exchange._
+_This class is an abstract class. Therefore only subclasses dcat:Dataset, dcat:DatasetSeries or dcat:DataService SHOULD be used in a data exchange._
 |===
 

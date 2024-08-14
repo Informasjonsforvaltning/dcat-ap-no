@@ -33,7 +33,7 @@ _This class is used to represent a conceptual entity that represents the informa
 | Verdiområde / _Range_ | rdf:langString
 | Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en fritekstbeskrivelse av datasettet. Egenskapen bør gjentas når beskrivelsen finnes i flere ulike språk.
 
-_This property is used to specify a free-text account of the dataset.This property can be repeated for parallel language versions of the description._
+_This property is used to specify a free-text account of the dataset. This property can be repeated for parallel language versions of the description._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
@@ -85,7 +85,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | skos:Concept
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til et hovedtema for datasettet. Et datasett kan assosieres med flere tema.
 
-_This property is used to specify the category of the dataset. A Dataset may be associated with multiple themes._
+_This property is used to specify the category of the dataset. A dataset may be associated with multiple themes._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
 | Merknad 1 / _Note 1_ | Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__  &#x29C9;, window="_blank", role="ext-link"]. 
@@ -237,7 +237,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Distribusjon, dcat:Distribution>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tilgjengelig distribusjon for datasettet.
 
-_This property is used to refer to an available Distribution for the dataset._
+_This property is used to refer to an available distribution for the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 |===

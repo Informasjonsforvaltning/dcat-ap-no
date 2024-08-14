@@ -78,7 +78,7 @@ Eksempel i RDF Turtle:
 | Verdiområde / _Range_ | <<Standard, dct:Standard>>
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en applikasjonsprofil som den katalogiserte ressursens metadata er i samsvar med.
 
-_This property is used to refer to an Application Profile that the catalogued resource's metadata conforms to._
+_This property is used to refer to an application profile that the catalogued resource's metadata conforms to._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Eksempel | Katalogen `<aCatalog>` er i samsvar med DCAT-AP-NO v.1.1 
