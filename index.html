@@ -925,7 +925,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Spesielle-temaer">4. Noen spesielle temaer</a>
 <ul class="sectlevel2">
 <li><a href="#_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution">4.1. Om bruk av klassene Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution)</a></li>
-<li><a href="#Om-Datasettserie">4.2. Om bruk av klassen <em>Datasettserie (dcat:DatasetSeries)</em></a></li>
+<li><a href="#Om-Datasettserie">4.2. Om bruk av datasettserie</a></li>
 <li><a href="#Om-lisens-tilgang-rettigheter">4.3. Om bruk av egenskapene <em>lisens (dct:license)</em>, <em>tilgangsrettigheter (dct:accessRights)</em> og <em>rettigheter/brukervilkår (dct:rights)</em></a></li>
 <li><a href="#Om-inverse-egenskaper">4.4. Om bruk av inverse egenskaper</a></li>
 </ul>
@@ -1063,14 +1063,13 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="sect2">
 <h3 id="Forvaltningsregime"><a class="link" href="#Forvaltningsregime">1.3. Forvaltningsregime</a></h3>
 <div class="paragraph">
-<p>Dersom det oppdages mindre feil i standarden (stavefeil, lenkefeil, upresis formulering osv.), vil ikke
-korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid dokumenteres.</p>
+<p>Dersom det oppdages mindre feil i standarden (stavefeil, lenkefeil, upresis formulering osv.), vil ikke korrigering av disse utløse en ny versjon. Disse korrigeringene skal imidlertid dokumenteres.</p>
 </div>
 <div class="paragraph">
 <p>Utarbeidelse av nye versjoner av denne standarden initieres av Digitaliseringsdirektoratet. Den primære kilden til nye versjoner vil være endringer i EU-standarden <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/" class="ext-link" target="_blank" rel="noopener">DCAT-AP &#x29C9;</a> og W3C-standarden <a href="https://www.w3.org/TR/vocab-dcat-3/" class="ext-link" target="_blank" rel="noopener">DCAT &#x29C9;</a> som denne standarden baseres på. Digitaliseringsdirektoratet vil derfor ha ansvar for å følge med på utviklingen av DCAT-AP og DCAT.</p>
 </div>
 <div class="paragraph">
-<p>Digitaliseringsdirektoratet vil i forbindelse med nye versjoner av ovennevnte EU-standarden og/eller W3C-standarden avgjøre om endringene er så store at det bør nedsettes en egen arbeidsgruppe bestående av relevante aktører, eller om revisjonen kan utføres av Digitaliseringsdirektoratet selv. Forslaget til ny versjon sendes uansett på høring. De innkomne høringskommentarene behandles hos Digitaliseringsdirektoratet, og resulterer i et forslag som oversendes <a href="https://www.digdir.no/standarder/arkitektur-og-standardiseringsradet/3918" class="ext-link" target="_blank" rel="noopener">Arkitektur- og standardiseringsrådet &#x29C9;</a>. I lys av anbefalinger fra rådet vil Digitaliseringsdirektoratet fatte beslutning om den reviderte versjonen av standarden skal være gjeldende eller forkastes.</p>
+<p>Digitaliseringsdirektoratet vil i forbindelse med nye versjoner av ovennevnte EU-standarden og/eller W3C-standarden avgjøre om endringene er så store at det bør nedsettes en egen arbeidsgruppe bestående av relevante aktører, eller om revisjonen kan utføres av Digitaliseringsdirektoratet selv. Forslaget til ny hovedversjon (engelsk "<em>major release</em>") sendes uansett på høring. De innkomne høringskommentarene behandles hos Digitaliseringsdirektoratet, og resulterer i et forslag som oversendes <a href="https://www.digdir.no/standarder/arkitektur-og-standardiseringsradet/3918" class="ext-link" target="_blank" rel="noopener">Arkitektur- og standardiseringsrådet &#x29C9;</a>. I lys av anbefalinger fra rådet vil Digitaliseringsdirektoratet fatte beslutning om den reviderte hovedversjonen av standarden skal være gjeldende eller forkastes.</p>
 </div>
 <div class="paragraph">
 <p>Gjeldende og eventuelle tidligere versjoner av standarden skal være tilgjengelige på Digitaliseringsdirektoratets nettsider, slik at det er enkelt å finne ut når tidligere versjoner var gyldige, og hvilke endringer som er foretatt mellom to versjoner.</p>
@@ -3721,7 +3720,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en samling av datasett som publiseres separat, men som deler noen felles egenskaper som gjør at de er gruppert sammen. Se også <a href="#Om-Datasettserie"> 4.2, &#8220;Om bruk av klassen <em>Datasettserie (dcat:DatasetSeries)</em>&#8221;</a>.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en samling av datasett som publiseres separat, men som deler noen felles egenskaper som gjør at de er gruppert sammen. Se også <a href="#Om-Datasettserie"> 4.2, &#8220;Om bruk av datasettserie&#8221;</a>.</p>
 <p class="tableblock"><em>This class is used to represent a collection of datasets that are published separately, but share some characteristics that group them.</em></p></td>
 </tr>
 </tbody>
@@ -10186,7 +10185,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 </div>
 <div class="sect2">
-<h3 id="Om-Datasettserie"><a class="link" href="#Om-Datasettserie">4.2. Om bruk av klassen <em>Datasettserie (dcat:DatasetSeries)</em></a></h3>
+<h3 id="Om-Datasettserie"><a class="link" href="#Om-Datasettserie">4.2. Om bruk av datasettserie</a></h3>
 <div class="paragraph">
 <p><em>Datasett</em> (<code>dcat:Dataset</code>) inkluderes i en <em>datasettserie</em> (<code>dcat:DatasetSeries</code>) ved hjelp av datasettegenskapen <a href="#Datasett-iSerie"> 3.2.3.14, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a>.</p>
 </div>
@@ -11696,7 +11695,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-14 14:50:53 UTC
+Sist oppdatert 2024-08-15 10:51:08 UTC
 </div>
 </div>
 </body>
