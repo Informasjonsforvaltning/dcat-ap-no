@@ -414,6 +414,23 @@ _This property is used to refer to a licence under which the data service is mad
 __Norwegian extension: The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"].__
 |===
 
+=== Datatjeneste – rettigheter (dct:rights) [[Datatjeneste-rettigheter]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _rights_
+| URI | dct:rights
+| Verdiområde / _Range_ | <<Rettighetserklæring, odrs:RightsStatement>>
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en uttalelse som angir rettigheter knyttet til datatjenesten.
+
+_This property is used to refer to a statement that specifies rights associated with the data service._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Merknad / _Note_ | Norsk utvidelse: Multiplisiteten er endret til 0..1 fra 0..n i DCAT. 
+
+__Norwegian extension: The multiplicity is changed to 0..1 from 0..n in DCAT.__
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
 === Datatjeneste – status (adms:status) [[Datatjeneste-status]]
 
 [cols="30s,70d"]
