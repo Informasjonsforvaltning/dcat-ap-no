@@ -96,7 +96,7 @@ Norsk utvidelse: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_b
 __The values to be used for this property are the URIs of the concepts in the vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[Data theme &#x29C9;, window="_blank", role="ext-link"].__
 
 __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
-| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivå er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
+| Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået er endret til fra anbefalt til obligatorisk, og dermed også multiplisitet til 1..n.
 
 _Norwegian extension: The requirement level is changed from recommended to mandatory, thus also the multiplicity to 1..n._
 | Eksempel / _Example_ | Temaet https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/GOVE[Forvaltning og offentlig sektor &#x29C9;, window="_blank", role="ext-link"]
@@ -833,16 +833,13 @@ __The value MAY be chosen from EU's controlled vocabulary https://op.europa.eu/e
 
 Eksempel i RDF Turtle:
 ----
-:aCodeList
-   a dcat:Dataset ;
+:aCodeList a dcat:Dataset ;
    dct:type <http://publications.europa.eu/resource/authority/dataset-type/CODE_LIST> .
 
-:aTestDataset
-   a dcat:Dataset ;
+:aTestDataset a dcat:Dataset ;
    dct:type <http://publications.europa.eu/resource/authority/dataset-type/TEST_DATA> .
 
-:aSyntheticDataset
-   a dcat:Dataset ;
+:aSyntheticDataset a dcat:Dataset ;
    dct:type <http://publications.europa.eu/resource/authority/dataset-type/SYNTHETIC_DATA> .
 ----
 
