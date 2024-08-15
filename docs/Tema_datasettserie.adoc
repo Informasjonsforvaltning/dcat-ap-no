@@ -1,4 +1,4 @@
-== Om bruk av klassen _Datasettserie (dcat:DatasetSeries)_ [[Om-Datasettserie]]
+== Om bruk av datasettserie [[Om-Datasettserie]]
 
 _Datasett_ (`dcat:Dataset`) inkluderes i en _datasettserie_ (`dcat:DatasetSeries`) ved hjelp av datasettegenskapen <<Datasett-iSerie>>. 
 
