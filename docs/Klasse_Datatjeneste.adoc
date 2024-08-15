@@ -305,6 +305,35 @@ Eksempel i RDF Turtle:
    .
 -----
 
+=== Datatjeneste – tilgjengelighet (dcatap:availability) [[Datatjeneste-tilgjengelighet]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _availability_
+| URI | dcatap:availability
+| Verdiområde / _Range_ | skos:Concept
+| Anvendelse / _Usage note_ | Egenskapen brukes til å angi hvor lenge det er planlagt å holde datatjenesten tilgjengelig.
+
+_This property is used to specify how long it is planned to keep the data service available._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability[__Planned availability__ &#x29C9;, window="_blank", role="ext-link"].
+
+__The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability[Planned availability &#x29C9;, window="_blank", role="ext-link"].__
+| Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability/STABLE[stabil &#x29C9;, window="_blank", role="ext-link"]
+| Merknad 2 / _Note 2_ | 
+Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aDataService> a dcat:DataService ; 
+   dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/STABLE> ; 
+   .
+-----
+
 == Valgfrie egenskaper for klassen _Datatjeneste_ [[Datatjeneste-valgfrie-egenskaper]]
 
 === Datatjeneste – beskrivelse (dct:description) [[Datatjeneste-beskrivelse]]
