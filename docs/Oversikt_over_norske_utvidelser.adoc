@@ -195,6 +195,10 @@ __There MUST be max. 1 value per language.__
 Verdien SKAL velges fra EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[__Licence__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence[Licence &#x29C9;, window="_blank", role="ext-link"]__
+| Datatjeneste – rettigheter | dct:rights | 
+Multiplisiteten er endret til 0..1 fra 0..n i DCAT. 
+
+__The multiplicity is changed to 0..1 from 0..n in DCAT.__
 | Datatjeneste – status | adms:status | 
 Multiplisiteten endret fra 0..n i DCAT til 0..1.
 

@@ -119,9 +119,10 @@ med DCAT-AP/DCAT.
 * <<Datatjeneste>>: 
 ** *Nye egenskaper*:
 *** <<Datatjeneste-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
+*** <<Datatjeneste-rettigheter>>, for å kunne oppgi rettigheter knyttet til datatjenesten. 
 *** <<Datatjeneste-status>>, for å kunne dekke behov for å angi status.
 *** <<Datatjeneste-tilgangsForespørselsURL>>, for å kunne dekke behov for å oppgi siden eller tjenesten som håndterer tilgangsforespørsel. 
-*** <<Datatjeneste-tilgjengelighet>>, for åp kunne oppgi planlagt tilgjengelig av datatjenesten.
+*** <<Datatjeneste-tilgjengelighet>>, for å kunne oppgi planlagt tilgjengelig av datatjenesten.
 *** <<Datatjeneste-versjon>>, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-versjonsmerknad>>, i samsvar med DCAT-AP/DCAT.
 
