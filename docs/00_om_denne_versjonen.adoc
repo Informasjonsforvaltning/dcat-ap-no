@@ -1,4 +1,4 @@
 = Om denne versjonen
 
-WARNING: Dette er #utkast# til høringsversjonen til den reviderte versjon (v3.0) av DCAT-AP-NO. 
+Dette er høringsversjonen til den reviderte versjonen (v3.0) av DCAT-AP-NO. 
 
