@@ -666,6 +666,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datatjeneste-i-samsvar-med">Datatjeneste – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datatjeneste-tema">Datatjeneste – tema (dcat:theme)</a></li>
 <li><a href="#Datatjeneste-tilgjengeliggjor-datasett">Datatjeneste – tilgjengeliggjør datasett (dcat:servesDataset)</a></li>
+<li><a href="#Datatjeneste-tilgjengelighet">Datatjeneste – tilgjengelighet (dcatap:availability)</a></li>
 </ul>
 </li>
 <li><a href="#Datatjeneste-valgfrie-egenskaper">3.4.3. Valgfrie egenskaper for klassen <em>Datatjeneste</em></a>
@@ -5039,6 +5040,66 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="content">
 <pre>&lt;aDataService&gt; a dcat:DataService ;
    dcat:servesDataset &lt;aDataset&gt; ;
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Datatjeneste-tilgjengelighet"><a class="link" href="#Datatjeneste-tilgjengelighet">3.4.2.8. Datatjeneste – tilgjengelighet (dcatap:availability)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>availability</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:availability</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å angi hvor lenge det er planlagt å holde datatjenesten tilgjengelig.</p>
+<p class="tableblock"><em>This property is used to specify how long it is planned to keep the data service available.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability" class="ext-link" target="_blank" rel="noopener"><em>Planned availability</em> &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability" class="ext-link" target="_blank" rel="noopener">Planned availability &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/planned-availability/STABLE" class="ext-link" target="_blank" rel="noopener">stabil &#x29C9;</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aDataService&gt; a dcat:DataService ;
+   dcatap:availability &lt;http://publications.europa.eu/resource/authority/planned-availability/STABLE&gt; ;
    .</pre>
 </div>
 </div>
@@ -10726,6 +10787,12 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p class="tableblock"><em><a href="https://psi.norge.no/los/struktur.html" class="ext-link" target="_blank" rel="noopener">Los &#x29C9;</a> SHOULD be used in addition.</em></p></td>
 </tr>
 <tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – tilgjengelighet</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcatap:availability</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Datatjeneste – beskrivelse</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">dct:description</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal.</p>
@@ -11310,6 +11377,9 @@ med DCAT-AP/DCAT.</p>
 <p><a href="#Datatjeneste-tilgangsForespørselsURL"> 3.4.3.7, &#8220;Datatjeneste – tilgangsforespørselsURL (dcatno:accessRequestURL)&#8221;</a>, for å kunne dekke behov for å oppgi siden eller tjenesten som håndterer tilgangsforespørsel.</p>
 </li>
 <li>
+<p><a href="#Datatjeneste-tilgjengelighet"> 3.4.2.8, &#8220;Datatjeneste – tilgjengelighet (dcatap:availability)&#8221;</a>, for åp kunne oppgi planlagt tilgjengelig av datatjenesten.</p>
+</li>
+<li>
 <p><a href="#Datatjeneste-versjon"> 3.4.3.9, &#8220;Datatjeneste – versjon (dcat:version)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
@@ -11695,7 +11765,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-08-15 10:51:08 UTC
+Sist oppdatert 2024-08-15 14:43:47 UTC
 </div>
 </div>
 </body>

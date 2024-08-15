@@ -179,6 +179,10 @@ __The requirement level changed from optional to recommended.__
 https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] BØR brukes i tillegg. 
 
 __https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used in addition.__
+| Datatjeneste – tilgjengelighet | dcatap:availability |
+Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
+
+_Not explicitly specified in DCAT-AP/DCAT._
 | Datatjeneste – beskrivelse | dct:description |
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
