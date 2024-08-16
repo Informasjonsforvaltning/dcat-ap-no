@@ -1,4 +1,4 @@
 = Om denne versjonen
 
-Dette er høringsversjonen til den reviderte versjonen (v3.0) av DCAT-AP-NO. 
+Dette er høringsversjonen til den kommende reviderte v.3.0 av DCAT-AP-NO. 
 
