@@ -24,8 +24,8 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 *Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] +
 *Status*: #Til høring# +
 *Versjon*: #Høringsversjon til kommende v.3.0# (se <<Endringslogg>>) +
-*Publisert*: #ikke ennå# +
-*Oppdatert*: #løpende oppdateres før utsending av høringen#  +
+*Publisert*: 2024-08-16 +
+*Oppdatert*: 2024-08-16 +
 *Gjeldende versjon*: https://data.norge.no/specification/dcat-ap-no +
 *Forrige versjon*: https://data.norge.no/specification/dcat-ap-no/v1.1/ +
 *Redaktørens utkast*: https://informasjonsforvaltning.github.io/dcat-ap-no/ +
