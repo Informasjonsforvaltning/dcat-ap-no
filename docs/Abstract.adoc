@@ -1,0 +1,9 @@
+= __Abstract in English__
+
+.__**English speaking readers, you may click here** to read what this standard is about and how you may read it.__
+[%collapsible]
+====
+__This standard, DCAT-AP-NO, is the Norwegian application profile of https://semiceu.github.io/DCAT-AP/releases/3.0.0/[EUs DCAT-AP &#x29C9;, window="_blank", role="ext-link"]. It specifies how to describe datasets, data services and data catalogs, and how to make the descriptions available in machine-readable RDF-based formats.__ 
+
+__The standard is mainly in Norwegian. However, in <<Spesifikasjon-per-klasse, Chap. 3>> which requires a certain level of knowledge in RDF, the specification of the classes and properties is in both Norwegian and English. Norwegian extensions (compared to DCAT-AP/DCAT) are also documented as "Note" to the class/property in concern.__
+====

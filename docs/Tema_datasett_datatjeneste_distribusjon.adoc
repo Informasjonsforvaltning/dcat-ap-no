@@ -4,7 +4,7 @@ __Dette er en forkortet og fornorsket versjon av EU https://semiceu.github.io/DC
 
 *Avhengighet*:
 
-* Avhengighet til datasett: En distribusjon distribusjon er en spesifikk representasjon av et gitt datasett og SKAL derfor alltid knyttes til et datasett. En datatjeneste SKAL knyttes til datasett _når_ den gir tilgang til datasett. En datatjeneste _kan_ også brukes til å gi dataprosesseringsfunksjoner, og trenger i å fall ikke å være knyttet til noen datasett. 
+* Avhengighet til datasett: En distribusjon er en spesifikk representasjon av et gitt datasett og SKAL derfor alltid knyttes til et datasett. En datatjeneste SKAL knyttes til datasett _når_ den gir tilgang til datasett. En datatjeneste _kan_ også brukes til å gi dataprosesseringsfunksjoner, og trenger i å fall ikke å være knyttet til noen datasett. 
 * Avhengighet mellom distribusjon og datatjeneste: En distribusjon _kan_, men trenger ikke å, være resultat av en datatjenesteoperasjon.
 
 *Egenskaper* til Distribusjon og Datatjeneste:

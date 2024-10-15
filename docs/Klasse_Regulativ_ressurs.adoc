@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-RegulativRessurs>> viser klassen Regulativ ressurs og dens egenskaper. I tegningen er norske utvidelser markert i gult.  
+<<diagram-Klassen-RegulativRessurs>> viser klassen Regulativ ressurs og dens egenskaper.   
 
 [[diagram-Klassen-RegulativRessurs]]
 .Klassen Regulativ ressurs og dens egenskap.
@@ -172,7 +172,7 @@ _This property refers to the type of a legal resource (e.g. "Directive", "Règle
 | Kravnivå / _Requirement level_ |  Anbefalt / _Recommended_
 | Merknad 1 / _Note 1_ |  Verdien skal velges fra det felles kontrollerte vokabularet https://data.norge.no/vocabulary/legal-resource-type[Regulativ ressurs type &#x29C9;, window="_blank", role="ext-link"], når verdien finnes i vokabularet.
 
-__The value shall be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/legal-resource-type[Legal resource type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
+__The value MUST be chosen from the common controlled vocabulary https://data.norge.no/vocabulary/legal-resource-type[Legal resource type &#x29C9;, window="_blank", role="ext-link"], when the value is in the vocabulary.__
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._

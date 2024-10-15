@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Katalog>> viser klassen Katalog og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.  
+<<diagram-Klassen-Katalog>> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.   
 
 [[diagram-Klassen-Katalog]]
 .Klassen Katalog og klassene den refererer til.

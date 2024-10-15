@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Kontaktopplysning>> viser klassen Kontaktopplysning og dens subklasser. I tegningen er norske utvidelser markert i gult.   
+<<diagram-Klassen-Kontaktopplysning>> viser klassen Kontaktopplysning og dens subklasser.   
 
 [[diagram-Klassen-Kontaktopplysning]]
 .Klassen Kontaktopplysning og dens subklasser.

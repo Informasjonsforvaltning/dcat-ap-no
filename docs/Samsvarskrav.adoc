@@ -1,12 +1,12 @@
 = Krav til samsvar [[Samsvarskrav]]
 
-== Krav til applikasjoner som leverer metadata
+== Krav til applikasjoner som leverer metadata [[Samsvarskrav-leverer-metadata]]
 
-For å være i samsvar med denne standarden, SKAL en applikasjon som levere metadata:
+For å være i samsvar med denne standarden, SKAL en applikasjon som leverer metadata:
 
 * Levere en beskrivelse av katalogen, som minimum med de obligatoriske egenskapene spesifisert i <<Katalog>>. 
 
-* Levere informasjon for obligatoriske egenskaper for <<Katalogpost>>, hvis informasjonen finnes, vel å merke at bruken av <<Katalogpost>> er frivillig. 
+* Levere informasjon for obligatoriske egenskaper spesifisert i <<Katalogpost>>, vel å merke at bruken av <<Katalogpost>> er frivillig. 
 
 * Levere beskrivelser av datasettene som er i katalogen, som minimum med de obligatoriske egenskapene spesifisert i <<Datasett>>. 
 
@@ -16,9 +16,9 @@ For å være i samsvar med denne standarden, SKAL en applikasjon som levere meta
 
 * Levere informasjon om alle organisasjoner/aktører som er involvert i beskrivelsene av katalogen, datasettene osv., som minimum med de obligatoriske egenskapene spesifisert i <<Aktør>>. 
 
-* Bruke de kontrollerte vokabularene som er beskrevet i Merknad til den enkelte egenskapen. Andre kontrollerte vokabularer KAN brukes i tillegg.
+* Bruke de kontrollerte vokabularene som er beskrevet i Merknad til de enkelte egenskapene. Andre kontrollerte vokabularer KAN brukes i tillegg.
 
-== Krav til applikasjoner som mottar metadata
+== Krav til applikasjoner som mottar metadata [[Samsvarskrav-mottar-metadata]]
 
 For å være i samsvar med denne standarden, SKAL en applikasjon som mottar metadata:
 
@@ -29,10 +29,12 @@ For å være i samsvar med denne standarden, SKAL en applikasjon som mottar meta
 
 I konteksten av denne standarden, betyr det «å prosessere» at den mottakende applikasjon aksepterer innkommende data og transparent videreformidler dataene til aktuelle applikasjoner og tjenester. 
 
-== Spesielt om forholdet mellom DCAT-AP-NO og DCAT-AP/DCAT
+== Spesielt om forholdet mellom DCAT-AP-NO og DCAT-AP/DCAT [[Forholdet-dcatno-dcatap-dcat]]
 
 DCAT-AP-NO er basert på summen av EUs DCAT-AP og W3Cs DCAT. 
 
 For å dekke norske behov som ikke er dekket av DCAT-AP/DCAT, gjenbruker DCAT-AP-NO klasser og egenskaper fra andre velkjente vokabularer. Utvidelsene er dokumentert med merknader a la «Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT». Klasser og egenskaper som finnes eksplisitt spesifisert i DCAT-AP eller DCAT, men som det ennå ikke er klare nasjonale behov/bruksområder for, er på den annen side ikke eksplisitt tatt med i DCAT-AP-NO. 
 
-For at en applikasjon skal være i samsvar med DCAT-AP-NO, SKAL klasser og egenskaper som er eksplisitt spesifisert i DCAT-AP-NO brukes slik de er spesifisert. En applikasjon kan også bruke klasser og egenskaper som ikke er eksplisitt spesifisert i DCAT-AP-NO men som finnes spesifisert i DCAT-AP/DCAT, og allikevel være i samsvar med DCAT-AP-NO, så lenge klassene og egenskapene brukes slik de er spesifisert i DCAT-AP/DCAT. 
+For at en applikasjon skal være i samsvar med DCAT-AP-NO, SKAL klasser og egenskaper som er eksplisitt spesifisert i DCAT-AP-NO brukes slik de er spesifisert. En applikasjon KAN også bruke klasser og egenskaper som ikke er eksplisitt spesifisert i DCAT-AP-NO men som finnes spesifisert i DCAT-AP/DCAT, og allikevel være i samsvar med DCAT-AP-NO, så lenge klassene og egenskapene brukes slik de er spesifisert i DCAT-AP/DCAT. 
+
+En applikasjon KAN bruke klasser og egenskaper som ikke er eksplisitt spesifisert i hverken DCAT-AP-NO, DCAT-AP eller DCAT. DCAT-AP-NO stiller imidlertid ingen krav til at informasjon for slike klasser og egenskaper skal kunne prosesseres av mottakende applikasjoner, jf. <<Samsvarskrav-mottar-metadata>>. 
