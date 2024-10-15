@@ -7,7 +7,7 @@
 [[img-Klassen-Gebyr]]
 .Klassen Gebyr.
 [link=images/Klassen-Gebyr.png]
-image::images/Klassen-Gebyr.png[alt="UML-diagram med klassen Gebyr, dens egenskaper og dens relasjoner til to andre klasser. Norske utvidelser er gulet ut. Innholdet i diagrammet er forklart i teksten."]
+image::images/Klassen-Gebyr.png[alt="Tegning med 1 klasse og dens egenskaper. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

@@ -9,7 +9,7 @@ _Denne delen av standarden er primært ment for den tekniske målgruppen._
 [[diagram-DCAT-AP-NO-klasser]]
 .Oversikt over klassene i DCAT-AP-NO og noen relasjoner mellom dem.
 [link=images/DCAT-AP-NO-klasser.png]
-image::images/DCAT-AP-NO-klasser.png[]
+image::images/DCAT-AP-NO-klasser.png[alt="Tegning med 17 klasser og relasjoner i mellom disse. Innholdet er forklart i dokumentet."]
 
 :xrefstyle: full
 

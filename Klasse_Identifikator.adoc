@@ -7,7 +7,7 @@
 [[diagram-Klassen-Identifikator]]
 .Klassen Identifikator.
 [link=images/Klassen-Identifikator.png]
-image::images/Klassen-Identifikator.png[]
+image::images/Klassen-Identifikator.png[alt="Tegning med 1 klasse og dens egenskaper. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

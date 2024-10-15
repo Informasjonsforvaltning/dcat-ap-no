@@ -7,7 +7,7 @@
 [[diagram-Klassen-Distribusjon]]
 .Klassen Distribusjon og klassene den refererer til.
 [link=images/Klassen-Distribusjon.png]
-image::images/Klassen-Distribusjon.png[]
+image::images/Klassen-Distribusjon.png[alt="Tegning med 4 klasser og relasjoner mellom disse. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 
