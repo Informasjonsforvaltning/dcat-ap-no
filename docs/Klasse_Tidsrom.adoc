@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Tidsrom>> viser klassen Tidsrom og dens egenskaper. I tegningen er norske utvidelser markert i gult.  
+<<diagram-Klassen-Tidsrom>> viser klassen Tidsrom og dens egenskaper.   
 
 [[diagram-Klassen-Tidsrom]]
 .Klassen Tidsrom og dens egenskaper.

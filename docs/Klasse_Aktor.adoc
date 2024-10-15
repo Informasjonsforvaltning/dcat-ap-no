@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Aktør>> viser klassen Aktør og dens egenskaper og subklasser. I tegningen er norske utvidelser markert i gult.  
+<<diagram-Klassen-Aktør>> viser klassen Aktør og dens egenskaper og subklasser.   
 
 [[diagram-Klassen-Aktør]]
 .Klassen Aktør.

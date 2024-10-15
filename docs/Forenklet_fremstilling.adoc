@@ -6,7 +6,7 @@ _Denne delen av standarden er primært ment for den ikke-tekniske målgruppen._
 
 :xrefstyle: short
 
-<<img-ForenkletModell>> viser en forenklet fremstilling av noen av kravene i DCAT-AP-NO. Den viser bare opplysninger som skal (obligatorisk) og bør (anbefalt) tas med i en beskrivelse av en katalog, et datasett og en datatjeneste (også kalt API). Krav til hvordan opplysningene skal  representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]) er spesifisert videre i standarden.  
+<<img-ForenkletModell>> viser en forenklet fremstilling av noen av kravene i DCAT-AP-NO. Den viser bare opplysninger som skal (obligatorisk) og bør (anbefalt) tas med i en beskrivelse av en katalog, et datasett og en datatjeneste (også kalt API). Krav til hvordan opplysningene skal representeres teknisk er spesifisert videre i standarden.  
 
 [[img-ForenkletModell]]
 .Forenklet fremstilling av noen av kravene i DCAT-AP-NO.

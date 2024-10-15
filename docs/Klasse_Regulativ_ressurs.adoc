@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-RegulativRessurs>> viser klassen Regulativ ressurs og dens egenskaper. I tegningen er norske utvidelser markert i gult.  
+<<diagram-Klassen-RegulativRessurs>> viser klassen Regulativ ressurs og dens egenskaper.   
 
 [[diagram-Klassen-RegulativRessurs]]
 .Klassen Regulativ ressurs og dens egenskap.
