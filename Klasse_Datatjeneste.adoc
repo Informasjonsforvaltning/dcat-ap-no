@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Datatjeneste>> viser klassen Datatjeneste og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.  
+<<diagram-Klassen-Datatjeneste>> viser klassen Datatjeneste og dens egenskaper, samt klassene den refererer til.  
 
 [[diagram-Klassen-Datatjeneste]]
 .Klassen Datatjeneste og klassene den refererer til.

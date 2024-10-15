@@ -521,6 +521,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toctitle">Innholdsfortegnelse</div>
 <ul class="sectlevel1">
 <li><a href="#_om_denne_versjonen">Om denne versjonen</a></li>
+<li><a href="#_abstract_in_english"><em>Abstract in English</em></a></li>
 <li><a href="#_om_denne_standarden">1. Om denne standarden</a>
 <ul class="sectlevel2">
 <li><a href="#Innledning">1.1. Innledning</a></li>
@@ -529,9 +530,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Om-kravene">1.4. Om kravnivåene i denne standarden</a></li>
 <li><a href="#Samsvarskrav">1.5. Krav til samsvar</a>
 <ul class="sectlevel3">
-<li><a href="#_krav_til_applikasjoner_som_leverer_metadata">1.5.1. Krav til applikasjoner som leverer metadata</a></li>
-<li><a href="#_krav_til_applikasjoner_som_mottar_metadata">1.5.2. Krav til applikasjoner som mottar metadata</a></li>
-<li><a href="#_spesielt_om_forholdet_mellom_dcat_ap_no_og_dcat_apdcat">1.5.3. Spesielt om forholdet mellom DCAT-AP-NO og DCAT-AP/DCAT</a></li>
+<li><a href="#Samsvarskrav-leverer-metadata">1.5.1. Krav til applikasjoner som leverer metadata</a></li>
+<li><a href="#Samsvarskrav-mottar-metadata">1.5.2. Krav til applikasjoner som mottar metadata</a></li>
+<li><a href="#Forholdet-dcatno-dcatap-dcat">1.5.3. Spesielt om forholdet mellom DCAT-AP-NO og DCAT-AP/DCAT</a></li>
 </ul>
 </li>
 </ul>
@@ -1001,6 +1002,22 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="paragraph">
 <p>Dette er et <mark>utkast</mark> til den kommende reviderte v.3.0 av DCAT-AP-NO, som er <mark>under arbeid</mark> og som <mark>løpende oppdateres</mark> inntil den endelige v.3.0 blir ferdigstilt og publisert (tentativt i løpet av det siste kvartalet av 2024). Dette utkastet bygger på forslaget til v.3.0 (høringsversjonen) som var til høring (med høringsfrist 1. okt. 2024), og tar inn endringer som følger av høringsinnspill, etter hvert som innspillene blir håndtert av en redaksjonsgruppe ved Digdir.</p>
 </div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_abstract_in_english"><a class="link" href="#_abstract_in_english"><em>Abstract in English</em></a></h2>
+<div class="sectionbody">
+<details>
+<summary class="title"><em><strong>English speaking readers, you may click here</strong> to read what this standard is about and how you may read it.</em></summary>
+<div class="content">
+<div class="paragraph">
+<p><em>This standard, DCAT-AP-NO, is the Norwegian application profile of <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/" class="ext-link" target="_blank" rel="noopener">EUs DCAT-AP &#x29C9;</a>. It specifies how to describe datasets, data services and data catalogs, and how to make the descriptions available in machine-readable RDF-based formats.</em></p>
+</div>
+<div class="paragraph">
+<p><em>The standard is mainly in Norwegian. However, in <a href="#Spesifikasjon-per-klasse">Chap. 3</a> which requires a certain level of knowledge in RDF, the specification of the classes and properties is in both Norwegian and English. Norwegian extensions (compared to DCAT-AP/DCAT) are also documented as "Note" to the class/property in concern.</em></p>
+</div>
+</div>
+</details>
 <!-- toc disabled -->
 </div>
 </div>
@@ -1049,7 +1066,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <p><strong>Informasjonsmodeller</strong>: Det er etablert en norsk applikasjonsprofil av DCAT for beskrivelse og utveksling av informasjonsmodeller, <a href="https://data.norge.no/specification/modelldcat-ap-no/" class="ext-link" target="_blank" rel="noopener">ModellDCAT-AP-NO &#x29C9;</a>. I ModellDCAT-AP-NO er informasjonsmodell subklasse av <code>dct:Standard</code>. Ved å bruke egenskapen <code>dct:conformsTo</code> kan et datasett eller en datatjeneste referere til en informasjonsmodell.</p>
 </li>
 <li>
-<p><strong>Begrepsbeskrivelser</strong>: Det er etablert en <a href="https://data.norge.no/specification/skos-ap-no-begrep" class="ext-link" target="_blank" rel="noopener">Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep) &#x29C9;</a>, som skal sikre at begrepene forvaltet av offentlig sektor, beskrives på en felles, strukturert måte. ved å bruke egenskapen <code>dct:subject</code> kan f.eks. et datasett referere til begreper som er viktige for å forstå datasettet.</p>
+<p><strong>Begrepsbeskrivelser</strong>: Det er etablert en <a href="https://data.norge.no/specification/skos-ap-no-begrep" class="ext-link" target="_blank" rel="noopener">Forvaltningsstandard for begrepsbeskrivelser (SKOS-AP-NO-Begrep) &#x29C9;</a>, som spesifiserer hva skal/bør/kan tas med i beskrivelser av begrep og begrepskataloger. Ved å bruke egenskapen <code>dct:subject</code> kan f.eks. et datasett referere til begreper som er viktige for å forstå datasettet.</p>
 </li>
 </ul>
 </div>
@@ -1098,9 +1115,9 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="sect2">
 <h3 id="Samsvarskrav"><a class="link" href="#Samsvarskrav">1.5. Krav til samsvar</a></h3>
 <div class="sect3">
-<h4 id="_krav_til_applikasjoner_som_leverer_metadata"><a class="link" href="#_krav_til_applikasjoner_som_leverer_metadata">1.5.1. Krav til applikasjoner som leverer metadata</a></h4>
+<h4 id="Samsvarskrav-leverer-metadata"><a class="link" href="#Samsvarskrav-leverer-metadata">1.5.1. Krav til applikasjoner som leverer metadata</a></h4>
 <div class="paragraph">
-<p>For å være i samsvar med denne standarden, SKAL en applikasjon som levere metadata:</p>
+<p>For å være i samsvar med denne standarden, SKAL en applikasjon som leverer metadata:</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1108,7 +1125,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <p>Levere en beskrivelse av katalogen, som minimum med de obligatoriske egenskapene spesifisert i <a href="#Katalog"> 3.8, &#8220;Klassen Katalog (dcat:Catalog)&#8221;</a>.</p>
 </li>
 <li>
-<p>Levere informasjon for obligatoriske egenskaper for <a href="#Katalogpost"> 3.10, &#8220;Klassen Katalogpost (dcat:CatalogRecord)&#8221;</a>, hvis informasjonen finnes, vel å merke at bruken av <a href="#Katalogpost"> 3.10, &#8220;Klassen Katalogpost (dcat:CatalogRecord)&#8221;</a> er frivillig.</p>
+<p>Levere informasjon for obligatoriske egenskaper spesifisert i <a href="#Katalogpost"> 3.10, &#8220;Klassen Katalogpost (dcat:CatalogRecord)&#8221;</a>, vel å merke at bruken av <a href="#Katalogpost"> 3.10, &#8220;Klassen Katalogpost (dcat:CatalogRecord)&#8221;</a> er frivillig.</p>
 </li>
 <li>
 <p>Levere beskrivelser av datasettene som er i katalogen, som minimum med de obligatoriske egenskapene spesifisert i <a href="#Datasett"> 3.2, &#8220;Klassen Datasett (dcat:Dataset)&#8221;</a>.</p>
@@ -1123,13 +1140,13 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <p>Levere informasjon om alle organisasjoner/aktører som er involvert i beskrivelsene av katalogen, datasettene osv., som minimum med de obligatoriske egenskapene spesifisert i <a href="#Aktør"> 3.1, &#8220;Klassen Aktør (foaf:Agent)&#8221;</a>.</p>
 </li>
 <li>
-<p>Bruke de kontrollerte vokabularene som er beskrevet i Merknad til den enkelte egenskapen. Andre kontrollerte vokabularer KAN brukes i tillegg.</p>
+<p>Bruke de kontrollerte vokabularene som er beskrevet i Merknad til de enkelte egenskapene. Andre kontrollerte vokabularer KAN brukes i tillegg.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_krav_til_applikasjoner_som_mottar_metadata"><a class="link" href="#_krav_til_applikasjoner_som_mottar_metadata">1.5.2. Krav til applikasjoner som mottar metadata</a></h4>
+<h4 id="Samsvarskrav-mottar-metadata"><a class="link" href="#Samsvarskrav-mottar-metadata">1.5.2. Krav til applikasjoner som mottar metadata</a></h4>
 <div class="paragraph">
 <p>For å være i samsvar med denne standarden, SKAL en applikasjon som mottar metadata:</p>
 </div>
@@ -1148,7 +1165,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_spesielt_om_forholdet_mellom_dcat_ap_no_og_dcat_apdcat"><a class="link" href="#_spesielt_om_forholdet_mellom_dcat_ap_no_og_dcat_apdcat">1.5.3. Spesielt om forholdet mellom DCAT-AP-NO og DCAT-AP/DCAT</a></h4>
+<h4 id="Forholdet-dcatno-dcatap-dcat"><a class="link" href="#Forholdet-dcatno-dcatap-dcat">1.5.3. Spesielt om forholdet mellom DCAT-AP-NO og DCAT-AP/DCAT</a></h4>
 <div class="paragraph">
 <p>DCAT-AP-NO er basert på summen av EUs DCAT-AP og W3Cs DCAT.</p>
 </div>
@@ -1156,7 +1173,10 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <p>For å dekke norske behov som ikke er dekket av DCAT-AP/DCAT, gjenbruker DCAT-AP-NO klasser og egenskaper fra andre velkjente vokabularer. Utvidelsene er dokumentert med merknader a la «Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT». Klasser og egenskaper som finnes eksplisitt spesifisert i DCAT-AP eller DCAT, men som det ennå ikke er klare nasjonale behov/bruksområder for, er på den annen side ikke eksplisitt tatt med i DCAT-AP-NO.</p>
 </div>
 <div class="paragraph">
-<p>For at en applikasjon skal være i samsvar med DCAT-AP-NO, SKAL klasser og egenskaper som er eksplisitt spesifisert i DCAT-AP-NO brukes slik de er spesifisert. En applikasjon kan også bruke klasser og egenskaper som ikke er eksplisitt spesifisert i DCAT-AP-NO men som finnes spesifisert i DCAT-AP/DCAT, og allikevel være i samsvar med DCAT-AP-NO, så lenge klassene og egenskapene brukes slik de er spesifisert i DCAT-AP/DCAT.</p>
+<p>For at en applikasjon skal være i samsvar med DCAT-AP-NO, SKAL klasser og egenskaper som er eksplisitt spesifisert i DCAT-AP-NO brukes slik de er spesifisert. En applikasjon KAN også bruke klasser og egenskaper som ikke er eksplisitt spesifisert i DCAT-AP-NO men som finnes spesifisert i DCAT-AP/DCAT, og allikevel være i samsvar med DCAT-AP-NO, så lenge klassene og egenskapene brukes slik de er spesifisert i DCAT-AP/DCAT.</p>
+</div>
+<div class="paragraph">
+<p>En applikasjon KAN bruke klasser og egenskaper som ikke er eksplisitt spesifisert i hverken DCAT-AP-NO, DCAT-AP eller DCAT. DCAT-AP-NO stiller imidlertid ingen krav til at informasjon for slike klasser og egenskaper skal kunne prosesseres av mottakende applikasjoner, jf. <a href="#Samsvarskrav-mottar-metadata"> 1.5.2, &#8220;Krav til applikasjoner som mottar metadata&#8221;</a>.</p>
 </div>
 </div>
 </div>
@@ -1171,7 +1191,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="sect2">
 <h3 id="Noen-krav"><a class="link" href="#Noen-krav">2.1. Opplysninger som skal og bør tas med om en katalog, et datasett og en datatjeneste</a></h3>
 <div class="paragraph">
-<p><a href="#img-ForenkletModell">Figur 1</a> viser en forenklet fremstilling av noen av kravene i DCAT-AP-NO. Den viser bare opplysninger som skal (obligatorisk) og bør (anbefalt) tas med i en beskrivelse av en katalog, et datasett og en datatjeneste (også kalt API). Krav til hvordan opplysningene skal  representeres teknisk i RDF (<a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">Resource Description Framework &#x29C9;</a>) er spesifisert videre i standarden.</p>
+<p><a href="#img-ForenkletModell">Figur 1</a> viser en forenklet fremstilling av noen av kravene i DCAT-AP-NO. Den viser bare opplysninger som skal (obligatorisk) og bør (anbefalt) tas med i en beskrivelse av en katalog, et datasett og en datatjeneste (også kalt API). Krav til hvordan opplysningene skal representeres teknisk er spesifisert videre i standarden.</p>
 </div>
 <div id="img-ForenkletModell" class="imageblock">
 <div class="content">
@@ -1410,7 +1430,10 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <p><em>Denne delen av standarden er primært ment for den tekniske målgruppen.</em></p>
 </div>
 <div class="paragraph">
-<p><a href="#diagram-DCAT-AP-NO-klasser">Figur 2</a> viser en oversikt over klassene som er spesifisert i DCAT-AP-NO samt relasjoner mellom noen av nøkkelklassene. I tegningen er norske utvidelser markert i gult. Med tanke på lesbarhet er flere klasser bare listet opp for oversikts skyld, uten at relasjoner til/fra dem er vist i figuren.</p>
+<p>I tillegg til å stille krav til hva skal/bør/kan tas med i beskrivelser av datasett, datatjenester og datakataloger, spesifiserer dette kapittelet også hvordan beskrivelsene SKAL representeres i RDF (<a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">Resource Description Framework &#x29C9;</a>).</p>
+</div>
+<div class="paragraph">
+<p><a href="#diagram-DCAT-AP-NO-klasser">Figur 2</a> viser en oversikt over klassene som er spesifisert i DCAT-AP-NO samt relasjoner mellom noen av nøkkelklassene. Med tanke på lesbarhet er flere klasser bare listet opp for oversikts skyld, uten at relasjoner til/fra dem er vist i figuren.</p>
 </div>
 <div id="diagram-DCAT-AP-NO-klasser" class="imageblock">
 <div class="content">
@@ -1486,7 +1509,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="sect2">
 <h3 id="Aktør"><a class="link" href="#Aktør">3.1. Klassen Aktør (foaf:Agent)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Aktør">Figur 3</a> viser klassen Aktør og dens egenskaper og subklasser. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Aktør">Figur 3</a> viser klassen Aktør og dens egenskaper og subklasser.</p>
 </div>
 <div id="diagram-Klassen-Aktør" class="imageblock">
 <div class="content">
@@ -1671,7 +1694,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra <a href="http://purl.org/adms/publishertype/1.0" class="ext-link" target="_blank" rel="noopener"><em>ADMS publisher type</em> &#x29C9;</a> (lenket ressurs er i RDF).</p>
-<p class="tableblock"><em>The value SHALL be chosen from <a href="http://purl.org/adms/publishertype/1.0" class="ext-link" target="_blank" rel="noopener">ADMS publisher type &#x29C9;</a> (the ressurs linked is in RDF).</em></p></td>
+<p class="tableblock"><em>The value MUST be chosen from <a href="http://purl.org/adms/publishertype/1.0" class="ext-link" target="_blank" rel="noopener">ADMS publisher type &#x29C9;</a> (the ressurs linked is in RDF).</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -1695,7 +1718,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="sect2">
 <h3 id="Datasett"><a class="link" href="#Datasett">3.2. Klassen Datasett (dcat:Dataset)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Datasett">Figur 4</a> viser klassen Datasett og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Datasett">Figur 4</a> viser klassen Datasett og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-Klassen-Datasett" class="imageblock">
 <div class="content">
@@ -2850,6 +2873,10 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;</a> for bruk av klassen Kvalitetsnote/Kvalitetsmerknad (<code>dqv:QualityAnnotation</code>) og dens subklasser Brukertilbakemelding (<code>dqv:UserQualityFeedback</code>) og Kvalitetssertifikat (<code>dqv:QualityCertificate</code>).</p>
 <p class="tableblock"><em>See the Norwegian application profile of DQV, <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a>, for the usage of the class Quality annotation (<code>dqv:QualityAnnotation</code>) and its subclasses User quality feedback (<code>dqv:UserQualityFeedback</code>) and Quality certificate (<code>dqv:QualityCertificate</code>).</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For å uttrykke at et datasett er autoritativt, kan man bruke denne egenskapen til å referere til <code>dqvno:isAuthoritative</code> som er en predefinert instans av klassen Kvalitetssertifikat (<code>dqv:QualityCertificate</code>).</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -3683,7 +3710,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Datasettserie"><a class="link" href="#Datasettserie">3.3. Klassen Datasettserie (dcat:DatasetSeries)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Datasettserie">Figur 5</a> viser klassen Datasettserie og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Datasettserie">Figur 5</a> viser klassen Datasettserie og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-Klassen-Datasettserie" class="imageblock">
 <div class="content">
@@ -4400,7 +4427,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Datatjeneste"><a class="link" href="#Datatjeneste">3.4. Klassen Datatjeneste (dcat:DataService)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Datatjeneste">Figur 6</a> viser klassen Datatjeneste og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Datatjeneste">Figur 6</a> viser klassen Datatjeneste og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-Klassen-Datatjeneste" class="imageblock">
 <div class="content">
@@ -5548,7 +5575,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Distribusjon"><a class="link" href="#Distribusjon">3.5. Klassen Distribusjon (dcat:Distribution)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Distribusjon">Figur 7</a> viser klassen Distribusjon og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Distribusjon">Figur 7</a> viser klassen Distribusjon og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-Klassen-Distribusjon" class="imageblock">
 <div class="content">
@@ -6611,7 +6638,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Gebyr"><a class="link" href="#Gebyr">3.6. Klassen Gebyr (cv:Cost)</a></h3>
 <div class="paragraph">
-<p><a href="#img-Klassen-Gebyr">Figur 8</a> viser klassen Gebyr og dens egenskaper. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#img-Klassen-Gebyr">Figur 8</a> viser klassen Gebyr og dens egenskaper.</p>
 </div>
 <div id="img-Klassen-Gebyr" class="imageblock">
 <div class="content">
@@ -6916,7 +6943,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Katalog"><a class="link" href="#Katalog">3.8. Klassen Katalog (dcat:Catalog)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Katalog">Figur 10</a> viser klassen Katalog og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Katalog">Figur 10</a> viser klassen Katalog og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-Klassen-Katalog" class="imageblock">
 <div class="content">
@@ -7982,7 +8009,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Katalogpost"><a class="link" href="#Katalogpost">3.10. Klassen Katalogpost (dcat:CatalogRecord)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Katalogpost">Figur 12</a> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Katalogpost">Figur 12</a> viser klassen Katalogpost og dens egenskaper, samt klassene den refererer til.</p>
 </div>
 <div id="diagram-Klassen-Katalogpost" class="imageblock">
 <div class="content">
@@ -8447,7 +8474,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Kontaktopplysning"><a class="link" href="#Kontaktopplysning">3.11. Klassen Kontaktopplysning (vcard:Kind)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Kontaktopplysning">Figur 13</a> viser klassen Kontaktopplysning og dens subklasser. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Kontaktopplysning">Figur 13</a> viser klassen Kontaktopplysning og dens subklasser.</p>
 </div>
 <div id="diagram-Klassen-Kontaktopplysning" class="imageblock">
 <div class="content">
@@ -8652,7 +8679,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="RegulativRessurs"><a class="link" href="#RegulativRessurs">3.12. Klassen Regulativ ressurs (eli:LegalResource)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-RegulativRessurs">Figur 14</a> viser klassen Regulativ ressurs og dens egenskaper. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-RegulativRessurs">Figur 14</a> viser klassen Regulativ ressurs og dens egenskaper.</p>
 </div>
 <div id="diagram-Klassen-RegulativRessurs" class="imageblock">
 <div class="content">
@@ -9007,7 +9034,7 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Verdien skal velges fra det felles kontrollerte vokabularet <a href="https://data.norge.no/vocabulary/legal-resource-type" class="ext-link" target="_blank" rel="noopener">Regulativ ressurs type &#x29C9;</a>, når verdien finnes i vokabularet.</p>
-<p class="tableblock"><em>The value shall be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/legal-resource-type" class="ext-link" target="_blank" rel="noopener">Legal resource type &#x29C9;</a>, when the value is in the vocabulary.</em></p></td>
+<p class="tableblock"><em>The value MUST be chosen from the common controlled vocabulary <a href="https://data.norge.no/vocabulary/legal-resource-type" class="ext-link" target="_blank" rel="noopener">Legal resource type &#x29C9;</a>, when the value is in the vocabulary.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
@@ -9208,7 +9235,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Rettighetserklæring"><a class="link" href="#Rettighetserklæring">3.14. Klassen Rettighetserklæring (odrs:RightsStatement)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Rettighetserklæring">Figur 16</a> viser klassen Rettighetserklæring og dens egenskaper. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Rettighetserklæring">Figur 16</a> viser klassen Rettighetserklæring og dens egenskaper.</p>
 </div>
 <div id="diagram-Klassen-Rettighetserklæring" class="imageblock">
 <div class="content">
@@ -9804,7 +9831,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Standard"><a class="link" href="#Standard">3.16. Klassen Standard (dct:Standard)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Standard">Figur 18</a> viser klassen Standard og dens egenskaper. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Standard">Figur 18</a> viser klassen Standard og dens egenskaper.</p>
 </div>
 <div id="diagram-Klassen-Standard" class="imageblock">
 <div class="content">
@@ -9998,7 +10025,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect2">
 <h3 id="Tidsrom"><a class="link" href="#Tidsrom">3.17. Klassen Tidsrom (dct:PeriodOfTime)</a></h3>
 <div class="paragraph">
-<p><a href="#diagram-Klassen-Tidsrom">Figur 19</a> viser klassen Tidsrom og dens egenskaper. I tegningen er norske utvidelser markert i gult.</p>
+<p><a href="#diagram-Klassen-Tidsrom">Figur 19</a> viser klassen Tidsrom og dens egenskaper.</p>
 </div>
 <div id="diagram-Klassen-Tidsrom" class="imageblock">
 <div class="content">
@@ -10239,7 +10266,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Avhengighet til datasett: En distribusjon distribusjon er en spesifikk representasjon av et gitt datasett og SKAL derfor alltid knyttes til et datasett. En datatjeneste SKAL knyttes til datasett <em>når</em> den gir tilgang til datasett. En datatjeneste <em>kan</em> også brukes til å gi dataprosesseringsfunksjoner, og trenger i å fall ikke å være knyttet til noen datasett.</p>
+<p>Avhengighet til datasett: En distribusjon er en spesifikk representasjon av et gitt datasett og SKAL derfor alltid knyttes til et datasett. En datatjeneste SKAL knyttes til datasett <em>når</em> den gir tilgang til datasett. En datatjeneste <em>kan</em> også brukes til å gi dataprosesseringsfunksjoner, og trenger i å fall ikke å være knyttet til noen datasett.</p>
 </li>
 <li>
 <p>Avhengighet mellom distribusjon og datatjeneste: En distribusjon <em>kan</em>, men trenger ikke å, være resultat av en datatjenesteoperasjon.</p>
@@ -11805,7 +11832,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-10-15 09:05:07 UTC
+Sist oppdatert 2024-10-15 12:52:42 UTC
 </div>
 </div>
 </body>

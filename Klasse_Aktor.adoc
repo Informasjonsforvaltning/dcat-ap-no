@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Aktør>> viser klassen Aktør og dens egenskaper og subklasser. I tegningen er norske utvidelser markert i gult.  
+<<diagram-Klassen-Aktør>> viser klassen Aktør og dens egenskaper og subklasser.   
 
 [[diagram-Klassen-Aktør]]
 .Klassen Aktør.
@@ -92,7 +92,7 @@ _This property is used to specify the nature of the agent._
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
 | Merknad / _Note_ | Verdien SKAL velges fra http://purl.org/adms/publishertype/1.0[_ADMS publisher type_ &#x29C9;, window="_blank", role="ext-link"] (lenket ressurs er i RDF).
 
-__The value SHALL be chosen from http://purl.org/adms/publishertype/1.0[ADMS publisher type &#x29C9;, window="_blank", role="ext-link"] (the ressurs linked is in RDF).__
+__The value MUST be chosen from http://purl.org/adms/publishertype/1.0[ADMS publisher type &#x29C9;, window="_blank", role="ext-link"] (the ressurs linked is in RDF).__
 | Eksempel / _Example_ | For Digitaliseringsdirektoratet blir dette \http://purl.org/adms/publishertype/NationalAuthority (_National authority_).
 |===
 

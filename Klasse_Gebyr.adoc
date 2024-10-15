@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<img-Klassen-Gebyr>> viser klassen Gebyr og dens egenskaper. I tegningen er norske utvidelser markert i gult.  
+<<img-Klassen-Gebyr>> viser klassen Gebyr og dens egenskaper.   
 
 [[img-Klassen-Gebyr]]
 .Klassen Gebyr.

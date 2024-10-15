@@ -2,7 +2,7 @@
 
 :xrefstyle: short
 
-<<diagram-Klassen-Datasett>> viser klassen Datasett og dens egenskaper, samt klassene den refererer til. I tegningen er norske utvidelser markert i gult. 
+<<diagram-Klassen-Datasett>> viser klassen Datasett og dens egenskaper, samt klassene den refererer til. 
 
 [[diagram-Klassen-Datasett]]
 .Klassen Datasett og klassene den refererer til.
@@ -529,6 +529,7 @@ _This property is used to refer to a quality annotation._
 | Merknad / _Note_ | Se https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;, window="_blank", role="ext-link"] for bruk av klassen Kvalitetsnote/Kvalitetsmerknad (`dqv:QualityAnnotation`) og dens subklasser Brukertilbakemelding (`dqv:UserQualityFeedback`) og Kvalitetssertifikat (`dqv:QualityCertificate`).
 
 __See the Norwegian application profile of DQV, https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"], for the usage of the class Quality annotation (`dqv:QualityAnnotation`) and its subclasses User quality feedback (`dqv:UserQualityFeedback`) and Quality certificate (`dqv:QualityCertificate`).__ 
+| Eksempel | For å uttrykke at et datasett er autoritativt, kan man bruke denne egenskapen til å referere til `dqvno:isAuthoritative` som er en predefinert instans av klassen Kvalitetssertifikat (`dqv:QualityCertificate`). 
 |===
 
 Eksempel i RDF Turtle: 
