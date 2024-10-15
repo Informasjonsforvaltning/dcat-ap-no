@@ -7,7 +7,7 @@
 [[diagram-Klassen-Aktør]]
 .Klassen Aktør.
 [link=images/Klassen-Aktør.png]
-image::images/Klassen-Aktør.png[]
+image::images/Klassen-Aktør.png[alt="Tegning med 4 klasser og relasjoner mellom disse. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

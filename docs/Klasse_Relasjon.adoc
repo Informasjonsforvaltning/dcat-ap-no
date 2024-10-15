@@ -7,7 +7,7 @@
 [[diagram-Klassen-Relasjon]]
 .Klassen Relasjon og dens egenskap.
 [link=images/Klassen-Relasjon.png]
-image::images/Klassen-Relasjon.png[]
+image::images/Klassen-Relasjon.png[alt="Tegning med 1 klasse og dens egenskaper. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

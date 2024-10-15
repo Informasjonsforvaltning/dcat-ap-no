@@ -7,7 +7,7 @@
 [[diagram-Klassen-Katalogpost]]
 .Klassen Katalogpost og klassene den refererer til.
 [link=images/Klassen-Katalogpost.png]
-image::images/Klassen-Katalogpost.png[]
+image::images/Klassen-Katalogpost.png[alt="Tegning med 2 klasser og relasjoner mellom disse. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

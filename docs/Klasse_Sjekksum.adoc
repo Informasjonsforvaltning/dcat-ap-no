@@ -7,7 +7,7 @@
 [[diagram-Klassen-Sjekksum]]
 .Klassen Sjekksum og dens egenskaper.
 [link=images/Klassen-Sjekksum.png]
-image::images/Klassen-Sjekksum.png[]
+image::images/Klassen-Sjekksum.png[alt="Tegning med 1 klasse og dens egenskaper. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

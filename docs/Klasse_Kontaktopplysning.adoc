@@ -7,7 +7,7 @@
 [[diagram-Klassen-Kontaktopplysning]]
 .Klassen Kontaktopplysning og dens subklasser.
 [link=images/Klassen-Kontaktopplysning.png]
-image::images/Klassen-Kontaktopplysning.png[]
+image::images/Klassen-Kontaktopplysning.png[alt="Tegning med 4 klasser og relasjoner mellom disse. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

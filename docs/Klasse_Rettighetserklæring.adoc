@@ -7,7 +7,7 @@
 [[diagram-Klassen-Rettighetserklæring]]
 .Klassen Rettighetserklæring og dens egenskaper.
 [link=images/Klassen-Rettighetserklæring.png]
-image::images/Klassen-Rettighetserklæring.png[]
+image::images/Klassen-Rettighetserklæring.png[alt="Tegning med 3 klasser og relasjoner mellom disse. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

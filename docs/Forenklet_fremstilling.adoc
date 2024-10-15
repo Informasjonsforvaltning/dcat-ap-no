@@ -11,7 +11,7 @@ _Denne delen av standarden er primært ment for den ikke-tekniske målgruppen._
 [[img-ForenkletModell]]
 .Forenklet fremstilling av noen av kravene i DCAT-AP-NO.
 [link=images/DCAT-AP-NO-forenklet-fremstilling.png]
-image::images/DCAT-AP-NO-forenklet-fremstilling.png[]
+image::images/DCAT-AP-NO-forenklet-fremstilling.png[alt="Tegning med 7 klasser, deres egenskaper og relasjoner i mellom, der obligatoriske egenskaper/relasjoner er uthevet. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 
