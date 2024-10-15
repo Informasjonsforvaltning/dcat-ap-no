@@ -7,7 +7,7 @@
 [[diagram-Klassen-Katalog]]
 .Klassen Katalog og klassene den refererer til.
 [link=images/Klassen-Katalog.png]
-image::images/Klassen-Katalog.png[]
+image::images/Klassen-Katalog.png[alt="Tegning med 8 klasser og relasjoner mellom disse. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

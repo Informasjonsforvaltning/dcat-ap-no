@@ -7,7 +7,7 @@
 [[diagram-Klassen-Tidsrom]]
 .Klassen Tidsrom og dens egenskaper.
 [link=images/Klassen-Tidsrom.png]
-image::images/Klassen-Tidsrom.png[]
+image::images/Klassen-Tidsrom.png[alt="Tegning med 1 klasse og dens egenskaper. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 

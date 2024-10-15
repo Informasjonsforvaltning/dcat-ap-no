@@ -7,7 +7,7 @@
 [[diagram-Klassen-KatalogisertRessurs]]
 .Klassen Katalogisert ressurs og dens subklasser.
 [link=images/Klassen-KatalogisertRessurs.png]
-image::images/Klassen-KatalogisertRessurs.png[]
+image::images/Klassen-KatalogisertRessurs.png[alt="Tegning med 4 klasser og relasjoner mellom disse. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 
