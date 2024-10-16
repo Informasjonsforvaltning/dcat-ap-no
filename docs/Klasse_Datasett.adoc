@@ -213,7 +213,7 @@ __Norwegian extension: The value SHOULD be chosen from the controlled vocabulary
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Kravnivået er endret fra valgfri til anbefalt.
 
 _Norwegian extension: The requirement level is changed from optional to recommended._
-| Eksempel / _Example_ | <dataset1>: https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision[vedtak &#x29C9;, window="_blank", role="ext-link"]; <dataset2>: https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-third-party[innhenting fra tredjepart &#x29C9;, window="_blank", role="ext-link"]; <dataset3>: https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-user[innhenting frå brukaren &#x29C9;, window="_blank", role="ext-link"]. 
+| Eksempel / _Example_ | <dataset1>: https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision[vedtak &#x29C9;, window="_blank", role="ext-link"]; <dataset2>: https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-third-party[innhenting fra tredjepart &#x29C9;, window="_blank", role="ext-link"]; <dataset3>: https://data.norge.no/vocabulary/provenance-activity-type#collecting-from-user[innhenting fra brukeren &#x29C9;, window="_blank", role="ext-link"]. 
 |===
 
 Eksempel i RDF Turtle: 
