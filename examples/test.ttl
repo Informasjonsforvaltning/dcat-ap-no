@@ -41,7 +41,7 @@
 	      "Test av relasjon til omgrep"@nn ;
     dcat:distribution <https://example.com/test/relasjon/begrep/testDistribusjon1>,
 		      <https://example.com/test/relasjon/begrep/testDistribusjon2>,
-		      <https://example.com/test/relasjon/begrep/testDdistribusjon3>,
+		      <https://example.com/test/relasjon/begrep/testDistribusjon3>,
 		      <https://example.com/test/relasjon/begrep/testDistribusjon4> ;
     dcat:contactPoint [ a vcard:Organization ;
             vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ;
