@@ -75,10 +75,6 @@ __The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of re
 Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 __Not explicitly specified in DCAT-AP/DCAT.__
-| Datasett – tilgangsforespørselsURL | dcatno:accessRequestURL | 
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
-
-_Not explicitly specified in DCAT-AP/DCAT._
 | Datasett – utgivelsesdato | dct:issued | 
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
@@ -207,10 +203,6 @@ __The multiplicity changed from 0..n in DCAT to 0..1__
 Verdien SKAL velges fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[__Distribution status__ &#x29C9;, window="_blank", role="ext-link"].
 
 __The value MUST be chosen from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/distribution-status[Distribution status &#x29C9;, window="_blank", role="ext-link"].__
-| Datatjeneste – tilgangsforespørselsURL | dcatno:accessRequestURL | 
-Ikke eksplisitt spesifisert i DCAT-AP/DCAT.
-
-_Not explicitly specified in DCAT-AP/DCAT._
 |  Datatjeneste – versjonsmerknad | adms:versionNotes | 
 Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
 
