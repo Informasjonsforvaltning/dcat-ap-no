@@ -595,7 +595,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-frekvens">Datasett – frekvens (dct:accrualPeriodicity)</a></li>
 <li><a href="#Datasett-har-gebyr">Datasett – har gebyr (cv:hasCost)</a></li>
 <li><a href="#Datasett-harKvalitetsmerknad">Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</a></li>
-<li><a href="#Datasett-harMåleresultat">Datasett – har måleresultat (dqv:hasQualityMeasurement)</a></li>
+<li><a href="#Datasett-harKvalitetsmåling">Datasett – har kvalitetsmåling (dqv:hasQualityMeasurement)</a></li>
 <li><a href="#Datasett-harVersjon">Datasett – har versjon (dcat:hasVersion)</a></li>
 <li><a href="#Datasett-iSamsvarMed">Datasett – i samsvar med (dct:conformsTo)</a></li>
 <li><a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a></li>
@@ -2895,7 +2895,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasett-harMåleresultat"><a class="link" href="#Datasett-harMåleresultat">3.2.3.11. Datasett – har måleresultat (dqv:hasQualityMeasurement)</a></h5>
+<h5 id="Datasett-harKvalitetsmåling"><a class="link" href="#Datasett-harKvalitetsmåling">3.2.3.11. Datasett – har kvalitetsmåling (dqv:hasQualityMeasurement)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2916,7 +2916,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en måleresultat.</p>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en kvalitetsmåling.</p>
 <p class="tableblock"><em>This property is used to refer to a quality measurement.</em></p></td>
 </tr>
 <tr>
@@ -2929,8 +2929,8 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;</a> for bruk av klassen Måleresultat (<code>dqv:QualityMeasurement</code>).</p>
-<p class="tableblock"><em>See the Norwegian application profile of DQV, <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a>, for the usage of the class Quality measurement (<code>dqv:QualityMeasurement</code>).</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;</a> for bruk av klassen <code>dqv:QualityMeasurement</code>.</p>
+<p class="tableblock"><em>See the Norwegian application profile of DQV, <a href="https://data.norge.no/specification/dqv-ap-no" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a>, for the usage of the class <code>dqv:QualityMeasurement</code>.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -11160,7 +11160,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>er del av (<code>dct:isPartOf</code>), i samsvar med DCAT-AP/DCAT. Se også <a href="#Om-inverse-egenskaper"> 4.4, &#8220;Om bruk av inverse egenskaper&#8221;</a>.</p>
+<p>er del av (<code>dct:isPartOf</code>), i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
 <p>er påkrevd av (<code>dct:isRequiredBy</code>), i samsvar med DCAT-AP/DCAT.</p>
@@ -11733,7 +11733,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-10-25 13:21:16 UTC
+Sist oppdatert 2024-11-01 14:53:40 UTC
 </div>
 </div>
 </body>

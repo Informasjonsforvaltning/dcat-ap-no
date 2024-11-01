@@ -540,21 +540,21 @@ Eksempel i RDF Turtle:
 -----
 hvor `dqvno:isAuthoritative` er en predefinert instans av klassen Kvalitetssertifikat (`dqv:QualityCertificate`). 
 
-=== Datasett – har måleresultat (dqv:hasQualityMeasurement) [[Datasett-harMåleresultat]]
+=== Datasett – har kvalitetsmåling (dqv:hasQualityMeasurement) [[Datasett-harKvalitetsmåling]]
 
 [cols="30s,70"]
 |===
 | _English name_ | _has quality measurement_
 | URI | dqv:hasQualityMeasurement
 | Verdiområde / _Range_ | https://data.norge.no/specification/dqv-ap-no#M%C3%A5leresultat[dqv:QualityMeasurement &#x29C9;, window="_blank", role="ext-link"]
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en måleresultat. 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en kvalitetsmåling. 
 
 _This property is used to refer to a quality measurement._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
-| Merknad / _Note_ | Se https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;, window="_blank", role="ext-link"] for bruk av klassen Måleresultat (`dqv:QualityMeasurement`).
+| Merknad / _Note_ | Se https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO (norsk applikasjonsprofil av DQV) &#x29C9;, window="_blank", role="ext-link"] for bruk av klassen `dqv:QualityMeasurement`.
 
-__See the Norwegian application profile of DQV, https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"], for the usage of the class Quality measurement (`dqv:QualityMeasurement`).__ 
+__See the Norwegian application profile of DQV, https://data.norge.no/specification/dqv-ap-no[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"], for the usage of the class `dqv:QualityMeasurement`.__ 
 |===
 
 Eksempel i RDF Turtle: 
