@@ -62,7 +62,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasett-har-gebyr>>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.
 
 ** *Utgåtte egenskaper*: 
-*** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
+*** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. 
 *** er påkrevd av (`dct:isRequiredBy`), i samsvar med DCAT-AP/DCAT.
 *** er versjon av (`dct:isVersionOf`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
 *** erstattes av (`dct:isReplacedBy`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
