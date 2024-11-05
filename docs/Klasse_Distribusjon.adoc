@@ -409,7 +409,7 @@ _This property is used to refer specify the minimum time period resolvable in th
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Distribusjon – tilgangstjeneste (dcat:accessService) [[Distribusjon-tilganstjeneste]]
+=== Distribusjon – tilgangstjeneste (dcat:accessService) [[Distribusjon-tilgangstjeneste]]
 
 [cols="30s,70d"]
 |===
