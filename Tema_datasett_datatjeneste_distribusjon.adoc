@@ -1,5 +1,27 @@
 == Om bruk av datasett, datatjeneste og distribusjon [[Om-datasett-datatjeneste-distribusjon]]
 
+=== Forholdet mellom datasett, datatjeneste og distribusjon
+
+Et datasett kan gjøres tilgjengelig som nedlasting og/eller via en datatjeneste/API. 
+
+:xrefstyle: short
+
+[[diagram-datasett-distribusjon-datatjeneste]]
+.Datasett, Distribusjon og Datatjeneste.
+[link=images/datasett-distribusjon-datatjeneste.png]
+image::images/datasett-distribusjon-datatjeneste.png[]
+
+<<diagram-datasett-distribusjon-datatjeneste>> illustrerer hvordan nedlastinger og API-tilgang skal beskrives: 
+
+:xrefstyle: full
+
+* Nedlastinger skal beskrives som **distribusjon**er, ved å bruke datasettegenskapen <<Datasett-datasettdistribusjon>> fra datasettbeskrivelsen. 
+** En nedlasting kan gjøres tilgjengelig via API, ved å bruke distribusjonsegenskapen <<Distribusjon-tilgangstjeneste>>. 
+
+* API-tilgang beskrives ved at det i beskrivelsen av det aktuelle APIet (**datatjenesten**) refereres til datasettet ved å bruke datatjenesteegenskapen <<Datatjeneste-tilgjengeliggjor-datasett>>. 
+
+=== Forskjell mellom distribusjon og datatjeneste
+
 *Avhengighet*:
 
 * Avhengighet til datasett: En distribusjon er en spesifikk representasjon av et gitt datasett og SKAL derfor alltid knyttes til et datasett. En datatjeneste SKAL knyttes til datasett _når_ den gir tilgang til datasett. En datatjeneste _kan_ også brukes til å gi dataprosesseringsfunksjoner, og trenger i å fall ikke å være knyttet til noen datasett. 
@@ -21,5 +43,5 @@
 ** Når distribusjonen bare er tilgjengelig via landingssiden til datasettet, skal datasettes landingsside (dvs. verdien til datasettegenskapen <<Datasett-landingsside>>) oppgis som verdi til distribusjonsegenskapen <<Distribusjon-tilgangsurl>> (som er obligatorisk). 
 ** Når distribusjonen er tilgjengelig via en datatjeneste/API, skal den samme verdien til datatjenesteegenskapen <<Datatjeneste-endepunktsurl>> oppgis som verdi til distribusjonsegenskapen <<Distribusjon-tilgangsurl>> (som er obligatorisk). 
 
-* Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en *datatjeneste*. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på.     
+* Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en *datatjeneste*. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på. 
 

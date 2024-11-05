@@ -718,7 +718,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Distribusjon-sjekksum">Distribusjon – sjekksum (spdx:checksum)</a></li>
 <li><a href="#Distribusjon-språk">Distribusjon – språk (dct:language)</a></li>
 <li><a href="#Distribusjon-tidsoppløsning">Distribusjon – tidsoppløsning (dcat:temporalResolution)</a></li>
-<li><a href="#Distribusjon-tilganstjeneste">Distribusjon – tilgangstjeneste (dcat:accessService)</a></li>
+<li><a href="#Distribusjon-tilgangstjeneste">Distribusjon – tilgangstjeneste (dcat:accessService)</a></li>
 <li><a href="#Distribusjon-tittel">Distribusjon – tittel (dct:title)</a></li>
 <li><a href="#Distribusjon-utgivelsesdato">Distribusjon – utgivelsesdato (dct:issued)</a></li>
 </ul>
@@ -925,7 +925,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Spesielle-temaer">4. Noen spesielle temaer</a>
 <ul class="sectlevel2">
-<li><a href="#Om-datasett-datatjeneste-distribusjon">4.1. Om bruk av datasett, datatjeneste og distribusjon</a></li>
+<li><a href="#Om-datasett-datatjeneste-distribusjon">4.1. Om bruk av datasett, datatjeneste og distribusjon</a>
+<ul class="sectlevel3">
+<li><a href="#_forholdet_mellom_datasett_datatjeneste_og_distribusjon">4.1.1. Forholdet mellom datasett, datatjeneste og distribusjon</a></li>
+<li><a href="#_forskjell_mellom_distribusjon_og_datatjeneste">4.1.2. Forskjell mellom distribusjon og datatjeneste</a></li>
+</ul>
+</li>
 <li><a href="#Om-Datasettserie">4.2. Om bruk av datasettserie</a></li>
 <li><a href="#Om-lisens-tilgang-rettigheter">4.3. Om bruk av egenskapene <em>lisens (dct:license)</em>, <em>tilgangsrettigheter (dct:accessRights)</em> og <em>rettigheter/brukervilkår (dct:rights)</em></a></li>
 <li><a href="#Om-inverse-egenskaper">4.4. Om bruk av inverse egenskaper</a></li>
@@ -6440,7 +6445,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Distribusjon-tilganstjeneste"><a class="link" href="#Distribusjon-tilganstjeneste">3.5.3.16. Distribusjon – tilgangstjeneste (dcat:accessService)</a></h5>
+<h5 id="Distribusjon-tilgangstjeneste"><a class="link" href="#Distribusjon-tilgangstjeneste">3.5.3.16. Distribusjon – tilgangstjeneste (dcat:accessService)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -10186,6 +10191,40 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </div>
 <div class="sect2">
 <h3 id="Om-datasett-datatjeneste-distribusjon"><a class="link" href="#Om-datasett-datatjeneste-distribusjon">4.1. Om bruk av datasett, datatjeneste og distribusjon</a></h3>
+<div class="sect3">
+<h4 id="_forholdet_mellom_datasett_datatjeneste_og_distribusjon"><a class="link" href="#_forholdet_mellom_datasett_datatjeneste_og_distribusjon">4.1.1. Forholdet mellom datasett, datatjeneste og distribusjon</a></h4>
+<div class="paragraph">
+<p>Et datasett kan gjøres tilgjengelig som nedlasting og/eller via en datatjeneste/API.</p>
+</div>
+<div id="diagram-datasett-distribusjon-datatjeneste" class="imageblock">
+<div class="content">
+<a class="image" href="images/datasett-distribusjon-datatjeneste.png"><img src="images/datasett-distribusjon-datatjeneste.png" alt="datasett distribusjon datatjeneste"></a>
+</div>
+<div class="title">Figur 20. Datasett, Distribusjon og Datatjeneste.</div>
+</div>
+<div class="paragraph">
+<p><a href="#diagram-datasett-distribusjon-datatjeneste">Figur 20</a> illustrerer hvordan nedlastinger og API-tilgang skal beskrives:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Nedlastinger skal beskrives som <strong>distribusjon</strong>er, ved å bruke datasettegenskapen <a href="#Datasett-datasettdistribusjon"> 3.2.2.3, &#8220;Datasett – datasettdistribusjon (dcat:distribution)&#8221;</a> fra datasettbeskrivelsen.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>En nedlasting kan gjøres tilgjengelig via API, ved å bruke distribusjonsegenskapen <a href="#Distribusjon-tilgangstjeneste"> 3.5.3.16, &#8220;Distribusjon – tilgangstjeneste (dcat:accessService)&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>API-tilgang beskrives ved at det i beskrivelsen av det aktuelle APIet (<strong>datatjenesten</strong>) refereres til datasettet ved å bruke datatjenesteegenskapen <a href="#Datatjeneste-tilgjengeliggjor-datasett"> 3.4.2.7, &#8220;Datatjeneste – tilgjengeliggjør datasett (dcat:servesDataset)&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_forskjell_mellom_distribusjon_og_datatjeneste"><a class="link" href="#_forskjell_mellom_distribusjon_og_datatjeneste">4.1.2. Forskjell mellom distribusjon og datatjeneste</a></h4>
 <div class="paragraph">
 <p><strong>Avhengighet</strong>:</p>
 </div>
@@ -10245,6 +10284,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 </ul>
 </div>
 </div>
+</div>
 <div class="sect2">
 <h3 id="Om-Datasettserie"><a class="link" href="#Om-Datasettserie">4.2. Om bruk av datasettserie</a></h3>
 <div class="paragraph">
@@ -10280,13 +10320,13 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Generelt er det forventet at datasettene i en datasettserie er sterkt relatert til hverandre. Det fins imidlertid ingen felles kriterier eller regler for hvordan datasettene i en datasettserie bør relateres til hverandre. Det kan f.eks. være datasett om noe som utvikler seg over tid og/eller rom, f.eks. ulvebestandstatus, budsjett, regnskap. Versjoneringsterminologi («forrige»/«neste», «første»/«siste») kan f.eks. brukes til å uttrykke rekkefølge i tid.</p>
 </div>
 <div class="paragraph">
-<p><a href="#figur-Ordnet-datasettserie">Figur 20</a> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved å bruke datasettegenskapen <a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a>. I eksemplet er det i tillegg oppgitt første og siste datasett i serien, ved å bruke datasettserieegenskapene <a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a> hhv. <a href="#Datasettserie-siste">Datasettserie – siste (dcat:last)</a>.</p>
+<p><a href="#figur-Ordnet-datasettserie">Figur 21</a> illustrerer en datasettserie der rekkefølgen mellom datasettene i serien er oppgitt. Rekkefølgen mellom datasettene oppgis ved å bruke datasettegenskapen <a href="#Datasett-forrige">Datasett – forrige (dcat:prev)</a>. I eksemplet er det i tillegg oppgitt første og siste datasett i serien, ved å bruke datasettserieegenskapene <a href="#Datasettserie-første">Datasettserie – første (dcat:first)</a> hhv. <a href="#Datasettserie-siste">Datasettserie – siste (dcat:last)</a>.</p>
 </div>
 <div id="figur-Ordnet-datasettserie" class="imageblock">
 <div class="content">
 <a class="image" href="images/Figur-ordnet-datasettserie.png"><img src="images/Figur-ordnet-datasettserie.png" alt="Figur ordnet datasettserie"></a>
 </div>
-<div class="title">Figur 20. Illustrasjon av en ordnet datasettserie.</div>
+<div class="title">Figur 21. Illustrasjon av en ordnet datasettserie.</div>
 </div>
 </div>
 <div class="sect2">
@@ -11750,7 +11790,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-05 14:52:15 UTC
+Sist oppdatert 2024-11-05 15:22:32 UTC
 </div>
 </div>
 </body>
