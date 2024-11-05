@@ -10225,7 +10225,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="sect2">
 <h3 id="Om-Datasettserie"><a class="link" href="#Om-Datasettserie">4.2. Om bruk av datasettserie</a></h3>
 <div class="paragraph">
-<p><em>Datasett</em> (<code>dcat:Dataset</code>) inkluderes i en <em>datasettserie</em> (<code>dcat:DatasetSeries</code>) ved hjelp av datasettegenskapen <a href="#Datasett-iSerie"> 3.2.3.14, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a>.</p>
+<p>Datasettserien (<code>dcat:DatasetSeries</code>) brukes til å beskrive en samling av datasett (<code>dcat:Dataset</code>) som er sterkt relatert til hverandre. En datasettserie trenger ikke å være ordnet, dvs. at det ikke trenger å være noen rekkefølge mellom datasettene i en datasettserie. Et datasett inkluderes i en datasettserie ved hjelp av datasettegenskapen <a href="#Datasett-iSerie"> 3.2.3.14, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>For å harmonisere bruk av datasettserier, skal følgende tas hensyn til:</p>
@@ -10239,20 +10239,14 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p>Datasettserie uten datasett bør unngås. Det kan imidlertid hende at en datasettserie over tid blir tom (f.eks. at datasettene i serien blir trukket tilbake). Utgiveren bør i slike tilfeller også vurdere å trekke tilbake selve serien.</p>
 </li>
 <li>
-<p>Klassen Datasettserie (dcat:DatasetSeries) er en subklasse av Datasett (dcat:Dataset). Rent modelleringsmessig kan derfor klassen Datasettserie arve alle egenskapene fra klassen Datasett. Man skal allikevel vurdere om det faglig sett er hensiktsmessig å bruke en egenskap fra Datasett. Vi anbefaler sterkt å</p>
+<p>Alle egenskaper i klassen <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series" class="ext-link" target="_blank" rel="noopener">Dataset Series (dcat:DatasetSeries) i W3C/DCAT &#x29C9;</a> kan i teori brukes. Vi anbefaler sterkt å</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Ikke bruke egenskapen <a href="#Datasett-forrige"> 3.2.3.7, &#8220;Datasett – forrige (dcat:prev)&#8221;</a> på en datasettserie, ettersom egenskapen er ment for å uttrykke rekkefølge mellom datasett i en datasettserie.</p>
+<p>Unngå å bruke egenskapen <em>in series (dcat:inSeries)</em> på en datasettserie, slik at man unngår nøstede datasettserier.</p>
 </li>
 <li>
-<p>Unngå å bruke egenskapen <a href="#Datasett-iSerie"> 3.2.3.14, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a> på en datasettserie, slik at man unngår nøstede datasettserier.</p>
-</li>
-<li>
-<p>Unngå å bruke egenskapen <a href="#Datasett-datasettdistribusjon"> 3.2.2.3, &#8220;Datasett – datasettdistribusjon (dcat:distribution)&#8221;</a> eller <a href="#Datasett-eksempeldata"> 3.2.3.3, &#8220;Datasett – eksempeldata (adms:sample)&#8221;</a> på en datasettserie, men at distribusjoner (dcat:Distribution) knyttes til datasettene som inngår i datasettserien.</p>
-</li>
-<li>
-<p>Være oppmerksom på at semantikken av en egenskap kan være forskjellig avhengig av om den er for en datasettserie eller et datasett i en datasettserie.</p>
+<p>Unngå å bruke egenskapen <em>distribution (dcat:distribution)</em> på en datasettserie, men at distribusjoner (dcat:Distribution) knyttes til datasettene som inngår i datasettserien.</p>
 </li>
 </ul>
 </div>
@@ -11733,7 +11727,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-01 14:53:40 UTC
+Sist oppdatert 2024-11-05 14:01:53 UTC
 </div>
 </div>
 </body>
