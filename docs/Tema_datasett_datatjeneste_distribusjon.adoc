@@ -1,6 +1,4 @@
-== Om bruk av klassene Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution)
-
-__Dette er en forkortet og fornorsket versjon av EU https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-datasets-distributions-and-data-services["Usage guide on Datasets, Distributions and Data Services" &#x29C9;, window="_blank", role="ext-link"].__
+== Om bruk av datasett, datatjeneste og distribusjon [[Om-datasett-datatjeneste-distribusjon]]
 
 *Avhengighet*:
 
@@ -15,9 +13,13 @@ __Dette er en forkortet og fornorsket versjon av EU https://semiceu.github.io/DC
 
 *Retningslinjer*: 
 
-* Et datasett (dcat:Dataset) er den konseptuelle entiteten for en samling av data.
+* Et *datasett* (dcat:Dataset) er den konseptuelle entiteten for en samling av data.
 
-* En distribusjon (dcat:Distribution) er en spesifikk representasjon av et datasett, beskrevet med den hensikt å lette levering av data som fil. TilgangsURL (dcat:accessURL), helst nedlastingslenke (dcat:downloadURL), gir en enkel måte å få tak i (laste ned) innholdet i datasettet i den spesifikke representasjonen som angitt i distribusjonsbeskrivelsen. Det nedlastede innholdet er fullstendig bestemt av utgiveren av distribusjonen. 
+* En *distribusjon* (dcat:Distribution) er en spesifikk representasjon av et datasett, beskrevet med den hensikt å lette levering av data som fil. TilgangsURL (dcat:accessURL), helst nedlastingslenke (dcat:downloadURL), gir en enkel måte å få tak i (laste ned) innholdet i datasettet i den spesifikke representasjonen som angitt i distribusjonsbeskrivelsen. Det nedlastede innholdet er fullstendig bestemt av utgiveren av distribusjonen. Vær spesielt oppmerksom på følgende ang. bruk av egenskapene <<Distribusjon-tilgangsurl>> og <<Distribusjon-nedlastningslenke>>:
+** Når distribusjonen bare er tilgjengelig via en nedlastingslenke, skal nedlastingslenken oppgis som verdi til _både_ distribusjonsegenskapen <<Distribusjon-nedlastningslenke>> (selv om egenskapen er valgfri), _og_ distribusjonsegenskapen <<Distribusjon-tilgangsurl>> (som er obligatorisk).
+** Når distribusjonen er tilgjengelig via en webside (f.eks. et webskjema), skal adressen til websiden oppgis som verdi til distribusjonsegenskapen <<Distribusjon-tilgangsurl>> (som er obligatorisk). 
+** Når distribusjonen bare er tilgjengelig via landingssiden til datasettet, skal datasettes landingsside (dvs. verdien til datasettegenskapen <<Datasett-landingsside>>) oppgis som verdi til distribusjonsegenskapen <<Distribusjon-tilgangsurl>> (som er obligatorisk). 
+** Når distribusjonen er tilgjengelig via en datatjeneste/API, skal den samme verdien til datatjenesteegenskapen <<Datatjeneste-endepunktsurl>> oppgis som verdi til distribusjonsegenskapen <<Distribusjon-tilgangsurl>> (som er obligatorisk). 
 
-* Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en datatjeneste. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på.     
+* Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en *datatjeneste*. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på.     
 
