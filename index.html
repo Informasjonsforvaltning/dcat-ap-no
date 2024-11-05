@@ -925,7 +925,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Spesielle-temaer">4. Noen spesielle temaer</a>
 <ul class="sectlevel2">
-<li><a href="#_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution">4.1. Om bruk av klassene Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution)</a></li>
+<li><a href="#Om-datasett-datatjeneste-distribusjon">4.1. Om bruk av datasett, datatjeneste og distribusjon</a></li>
 <li><a href="#Om-Datasettserie">4.2. Om bruk av datasettserie</a></li>
 <li><a href="#Om-lisens-tilgang-rettigheter">4.3. Om bruk av egenskapene <em>lisens (dct:license)</em>, <em>tilgangsrettigheter (dct:accessRights)</em> og <em>rettigheter/brukervilkår (dct:rights)</em></a></li>
 <li><a href="#Om-inverse-egenskaper">4.4. Om bruk av inverse egenskaper</a></li>
@@ -5558,6 +5558,11 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se også under <a href="#Om-datasett-datatjeneste-distribusjon"> 4.1, &#8220;Om bruk av datasett, datatjeneste og distribusjon&#8221;</a> for hvordan denne egenskapen er ment å brukes.</p>
+<p class="tableblock"><em>See also under <a href="#Om-datasett-datatjeneste-distribusjon"> 4.1, &#8220;Om bruk av datasett, datatjeneste og distribusjon&#8221;</a> (in Norwegian only) for how this property is meant to be used.</em></p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -6163,6 +6168,11 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Se også under <a href="#Om-datasett-datatjeneste-distribusjon"> 4.1, &#8220;Om bruk av datasett, datatjeneste og distribusjon&#8221;</a> for hvordan denne egenskapen er ment å brukes.</p>
+<p class="tableblock"><em>See also under <a href="#Om-datasett-datatjeneste-distribusjon"> 4.1, &#8220;Om bruk av datasett, datatjeneste og distribusjon&#8221;</a> (in Norwegian only) for how this property is meant to be used.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -10175,10 +10185,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><em>Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen.</em></p>
 </div>
 <div class="sect2">
-<h3 id="_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution"><a class="link" href="#_om_bruk_av_klassene_datasett_dcatdataset_datatjeneste_dcatdataservice_og_distribusjon_dcatdistribution">4.1. Om bruk av klassene Datasett (dcat:Dataset), Datatjeneste (dcat:DataService) og Distribusjon (dcat:Distribution)</a></h3>
-<div class="paragraph">
-<p><em>Dette er en forkortet og fornorsket versjon av EU <a href="https://semiceu.github.io/DCAT-AP/releases/3.0.0/#usage-guide-on-datasets-distributions-and-data-services" class="ext-link" target="_blank" rel="noopener">Usage guide on Datasets, Distributions and Data Services</a>.</em></p>
-</div>
+<h3 id="Om-datasett-datatjeneste-distribusjon"><a class="link" href="#Om-datasett-datatjeneste-distribusjon">4.1. Om bruk av datasett, datatjeneste og distribusjon</a></h3>
 <div class="paragraph">
 <p><strong>Avhengighet</strong>:</p>
 </div>
@@ -10211,13 +10218,29 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>Et datasett (dcat:Dataset) er den konseptuelle entiteten for en samling av data.</p>
+<p>Et <strong>datasett</strong> (dcat:Dataset) er den konseptuelle entiteten for en samling av data.</p>
 </li>
 <li>
-<p>En distribusjon (dcat:Distribution) er en spesifikk representasjon av et datasett, beskrevet med den hensikt å lette levering av data som fil. TilgangsURL (dcat:accessURL), helst nedlastingslenke (dcat:downloadURL), gir en enkel måte å få tak i (laste ned) innholdet i datasettet i den spesifikke representasjonen som angitt i distribusjonsbeskrivelsen. Det nedlastede innholdet er fullstendig bestemt av utgiveren av distribusjonen.</p>
+<p>En <strong>distribusjon</strong> (dcat:Distribution) er en spesifikk representasjon av et datasett, beskrevet med den hensikt å lette levering av data som fil. TilgangsURL (dcat:accessURL), helst nedlastingslenke (dcat:downloadURL), gir en enkel måte å få tak i (laste ned) innholdet i datasettet i den spesifikke representasjonen som angitt i distribusjonsbeskrivelsen. Det nedlastede innholdet er fullstendig bestemt av utgiveren av distribusjonen. Vær spesielt oppmerksom på følgende ang. bruk av egenskapene <a href="#Distribusjon-tilgangsurl"> 3.5.1.1, &#8220;Distribusjon – tilgangsURL (dcat:accessURL)&#8221;</a> og <a href="#Distribusjon-nedlastningslenke"> 3.5.3.8, &#8220;Distribusjon – nedlastningslenke (dcat:downloadURL)&#8221;</a>:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Når distribusjonen bare er tilgjengelig via en nedlastingslenke, skal nedlastingslenken oppgis som verdi til <em>både</em> distribusjonsegenskapen <a href="#Distribusjon-nedlastningslenke"> 3.5.3.8, &#8220;Distribusjon – nedlastningslenke (dcat:downloadURL)&#8221;</a> (selv om egenskapen er valgfri), <em>og</em> distribusjonsegenskapen <a href="#Distribusjon-tilgangsurl"> 3.5.1.1, &#8220;Distribusjon – tilgangsURL (dcat:accessURL)&#8221;</a> (som er obligatorisk).</p>
 </li>
 <li>
-<p>Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en datatjeneste. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på.</p>
+<p>Når distribusjonen er tilgjengelig via en webside (f.eks. et webskjema), skal adressen til websiden oppgis som verdi til distribusjonsegenskapen <a href="#Distribusjon-tilgangsurl"> 3.5.1.1, &#8220;Distribusjon – tilgangsURL (dcat:accessURL)&#8221;</a> (som er obligatorisk).</p>
+</li>
+<li>
+<p>Når distribusjonen bare er tilgjengelig via landingssiden til datasettet, skal datasettes landingsside (dvs. verdien til datasettegenskapen <a href="#Datasett-landingsside"> 3.2.3.19, &#8220;Datasett – landingsside (dcat:landingPage)&#8221;</a>) oppgis som verdi til distribusjonsegenskapen <a href="#Distribusjon-tilgangsurl"> 3.5.1.1, &#8220;Distribusjon – tilgangsURL (dcat:accessURL)&#8221;</a> (som er obligatorisk).</p>
+</li>
+<li>
+<p>Når distribusjonen er tilgjengelig via en datatjeneste/API, skal den samme verdien til datatjenesteegenskapen <a href="#Datatjeneste-endepunktsurl"> 3.4.1.1, &#8220;Datatjeneste – endepunktsURL (dcat:endpointURL)&#8221;</a> oppgis som verdi til distribusjonsegenskapen <a href="#Distribusjon-tilgangsurl"> 3.5.1.1, &#8220;Distribusjon – tilgangsURL (dcat:accessURL)&#8221;</a> (som er obligatorisk).</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Alt som ikke har til hensikt å gi en nedlastbar representasjon av et datasett, er en <strong>datatjeneste</strong>. Datatjenester tilbyr smartere og mer interaktive måter å få tilgang til data på.</p>
 </li>
 </ul>
 </div>
@@ -11727,7 +11750,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-05 14:01:53 UTC
+Sist oppdatert 2024-11-05 14:52:15 UTC
 </div>
 </div>
 </body>

@@ -35,6 +35,9 @@ _This class is used to represent a distribution, i.e., a physical embodiment of 
 _This property is used to refer to a URL that gives access to a distribution of the dataset. The resource at the access URL may contain information about how to get the dataset._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
+| Merknad / _Note_ | Se også under <<Om-datasett-datatjeneste-distribusjon>> for hvordan denne egenskapen er ment å brukes.
+
+__See also under <<Om-datasett-datatjeneste-distribusjon>> (in Norwegian only) for how this property is meant to be used.__
 |===
 
 Eksempel i RDF Turtle:
@@ -300,6 +303,9 @@ __Note! The namespace for IANA that returns RDF resource, is `\https://www.w3.or
 _This property is used to specify a URL that is a direct link to a downloadable file in a given format._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Se også under <<Om-datasett-datatjeneste-distribusjon>> for hvordan denne egenskapen er ment å brukes.
+
+__See also under <<Om-datasett-datatjeneste-distribusjon>> (in Norwegian only) for how this property is meant to be used.__
 |===
 
 === Distribusjon – pakkeformat (dcat:packageFormat) [[Distribusjon-pakkeformat]]
