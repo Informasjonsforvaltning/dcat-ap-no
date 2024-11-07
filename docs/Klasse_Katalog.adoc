@@ -62,9 +62,12 @@ Eksempel i RDF Turtle:
 _This property is used to specify contact information that can be used concerning questions and comments about the catalogue._
 | Multiplisitet / _Multiplicity_ | 1..n
 | Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1. 
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1. 
 
 __Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.__
+| Merknad 2 / _Note 2_ | Hvis katalogen skal automatisk høstes til andre kataloger, SKAL egenskapen <<Kontaktopplysning-harEPost>> for kontaktpunktet brukes, slik at det er mulig f.eks. å automatisk varsle katalogeieren om høstefeil eller lignende. 
+
+__If the catalogue is automatically harvested to other catalogues, the property <<Kontaktopplysning-harEPost>> for the contact point MUST be used, such that it is possible to automatically warn the catalogue owner about harvesting errors and such like.__
 |===
 
 Eksempel i RDF Turtle:
@@ -315,7 +318,7 @@ _This property is used to refer to a knowledge organization system used to class
 __Norwegian extension: https://psi.norge.no/los/struktur.html[Los &#x29C9;, window="_blank", role="ext-link"] SHOULD be used.__
 | Merknad 2 / _Note 2_ | Siden EUs kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"] er obligatorisk for egenskap dcat:theme i datasettbeskrivelser, skal denne egenskapen inneholde som minimum referanse til EUs Data theme, når katalogen inneholder datasettbeskrivelser. 
 
-__It must have at least the value NAL:data-theme when the catalog contains datasets, as this is the mandatory controlled vocabulary for dcat:theme.__
+__It must have at least the value NAL:data-theme when the catalogue contains datasets, as this is the mandatory controlled vocabulary for dcat:theme.__
 | Eksempel / _Example_ | https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme[__Data theme__ &#x29C9;, window="_blank", role="ext-link"]
 |===
 
