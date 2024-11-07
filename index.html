@@ -816,12 +816,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel3">
 <li><a href="#Kontaktopplysning-obligatoriske-egenskaper">3.11.1. Obligatoriske egenskaper for klassen <em>Kontaktopplysning</em></a>
 <ul class="sectlevel4">
-<li><a href="#Kontaktopplysning-harEPost">Kontaktopplysning – har e-post (vcard:hasEmail)</a></li>
 <li><a href="#Kontaktopplysning-navn">Kontaktopplysning – navn (vcard:fn)</a></li>
 </ul>
 </li>
 <li><a href="#Kontaktopplysning-anbefalte-egenskaper">3.11.2. Anbefalte egenskaper for klassen <em>Kontaktopplysning</em></a>
 <ul class="sectlevel4">
+<li><a href="#Kontaktopplysning-harEPost">Kontaktopplysning – har e-post (vcard:hasEmail)</a></li>
 <li><a href="#Kontaktopplysning-kontaktside">Kontaktopplysning – har kontaktside (vcard:hasURL)</a></li>
 </ul>
 </li>
@@ -1284,10 +1284,10 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Tittel</strong>: «Eksempelkatalog» (bokmål) / <em>"Example Catalog" (English)</em></p>
+<p><strong>Tittel</strong>: «Eksempelkatalog» (bokmål) / <em>"Example Catalogue" (English)</em></p>
 </li>
 <li>
-<p><strong>Beskrivelse</strong>: «En eksempelkatalog, kun for illustrasjonsformål.» (bokmål) / <em>"An example catalog, for illustration purposes only." (English)</em></p>
+<p><strong>Beskrivelse</strong>: «En eksempelkatalog, kun for illustrasjonsformål.» (bokmål) / <em>"An example catalogue, for illustration purposes only." (English)</em></p>
 </li>
 <li>
 <p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="ext-link" target="_blank" rel="noopener">991825827 &#x29C9;</a> (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
@@ -1388,8 +1388,8 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 @base &lt;https://example.org/&gt; .
 
 &lt;katalog123&gt; a dcat:Catalog ; # en katalog
-   dct:title "Eksempelkatalog"@nb , "Example Catalog"@en ; # tittel
-   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb , "An example catalog, for illustration purposes only."@en ; # beskrivelse
+   dct:title "Eksempelkatalog"@nb , "Example Catalogue"@en ; # tittel
+   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb , "An example catalogue, for illustration purposes only."@en ; # beskrivelse
    dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
    dcat:contactPoint &lt;kontaktpunktDigdir&gt; ; # kontaktpunkt
    dcat:dataset &lt;datasett456&gt; ; # inneholder datasett
@@ -7002,9 +7002,14 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri (i DCAT) til obligatorisk, dermed også multiplisitet fra 0..1 til 1..1.</p>
 <p class="tableblock"><em>Norwegian extension: The requirement level changed from optional (in DCAT) to mandatory, thus also the multiplicity from 0..1 to 1..1.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hvis katalogen skal automatisk høstes til andre kataloger, SKAL egenskapen <a href="#Kontaktopplysning-harEPost"> 3.11.2.1, &#8220;Kontaktopplysning – har e-post (vcard:hasEmail)&#8221;</a> for kontaktpunktet brukes, slik at det er mulig f.eks. å automatisk varsle katalogeieren om høstefeil eller lignende.</p>
+<p class="tableblock"><em>If the catalogue is automatically harvested to other catalogues, the property <a href="#Kontaktopplysning-harEPost"> 3.11.2.1, &#8220;Kontaktopplysning – har e-post (vcard:hasEmail)&#8221;</a> for the contact point MUST be used, such that it is possible to automatically warn the catalogue owner about harvesting errors and such like.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -7539,7 +7544,7 @@ ex:budget-2020 a dcat:Dataset ;
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Siden EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme" class="ext-link" target="_blank" rel="noopener"><em>Data theme</em> &#x29C9;</a> er obligatorisk for egenskap dcat:theme i datasettbeskrivelser, skal denne egenskapen inneholde som minimum referanse til EUs Data theme, når katalogen inneholder datasettbeskrivelser.</p>
-<p class="tableblock"><em>It must have at least the value NAL:data-theme when the catalog contains datasets, as this is the mandatory controlled vocabulary for dcat:theme.</em></p></td>
+<p class="tableblock"><em>It must have at least the value NAL:data-theme when the catalogue contains datasets, as this is the mandatory controlled vocabulary for dcat:theme.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
@@ -8445,62 +8450,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect3">
 <h4 id="Kontaktopplysning-obligatoriske-egenskaper"><a class="link" href="#Kontaktopplysning-obligatoriske-egenskaper">3.11.1. Obligatoriske egenskaper for klassen <em>Kontaktopplysning</em></a></h4>
 <div class="sect4">
-<h5 id="Kontaktopplysning-harEPost"><a class="link" href="#Kontaktopplysning-harEPost">3.11.1.1. Kontaktopplysning – har e-post (vcard:hasEmail)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has email</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet.</p>
-<p class="tableblock"><em>This property is used to specify an email address to the contact point.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aContactPoint&gt; a vcard:Organization ;
-   vcard:hasEmail &lt;mailto:informasjonsforvaltning@digdir.no&gt; ;
-   .</pre>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="Kontaktopplysning-navn"><a class="link" href="#Kontaktopplysning-navn">3.11.1.2. Kontaktopplysning – navn (vcard:fn)</a></h5>
+<h5 id="Kontaktopplysning-navn"><a class="link" href="#Kontaktopplysning-navn">3.11.1.1. Kontaktopplysning – navn (vcard:fn)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8558,7 +8508,67 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="sect3">
 <h4 id="Kontaktopplysning-anbefalte-egenskaper"><a class="link" href="#Kontaktopplysning-anbefalte-egenskaper">3.11.2. Anbefalte egenskaper for klassen <em>Kontaktopplysning</em></a></h4>
 <div class="sect4">
-<h5 id="Kontaktopplysning-kontaktside"><a class="link" href="#Kontaktopplysning-kontaktside">3.11.2.1. Kontaktopplysning – har kontaktside (vcard:hasURL)</a></h5>
+<h5 id="Kontaktopplysning-harEPost"><a class="link" href="#Kontaktopplysning-harEPost">3.11.2.1. Kontaktopplysning – har e-post (vcard:hasEmail)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has email</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">vcard:hasEmail</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">rdfs:Resource</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet.</p>
+<p class="tableblock"><em>This property is used to specify an email address to the contact point.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selv om hverken denne eller <a href="#Kontaktopplysning-kontaktside"> 3.11.2.2, &#8220;Kontaktopplysning – har kontaktside (vcard:hasURL)&#8221;</a> er obligatorisk, SKAL minst én av dem brukes når klassen brukes.</p>
+<p class="tableblock"><em>Although neither this nor <a href="#Kontaktopplysning-kontaktside"> 3.11.2.2, &#8220;Kontaktopplysning – har kontaktside (vcard:hasURL)&#8221;</a> is mandatory, one of them MUST be used when the class is used.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aContactPoint&gt; a vcard:Organization ;
+   vcard:hasEmail &lt;mailto:informasjonsforvaltning@digdir.no&gt; ;
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Kontaktopplysning-kontaktside"><a class="link" href="#Kontaktopplysning-kontaktside">3.11.2.2. Kontaktopplysning – har kontaktside (vcard:hasURL)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -8591,9 +8601,14 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selv om hverken denne eller <a href="#Kontaktopplysning-harEPost"> 3.11.2.1, &#8220;Kontaktopplysning – har e-post (vcard:hasEmail)&#8221;</a> er obligatorisk, SKAL minst én av dem brukes når klassen brukes.</p>
+<p class="tableblock"><em>Although neither this nor <a href="#Kontaktopplysning-harEPost"> 3.11.2.1, &#8220;Kontaktopplysning – har e-post (vcard:hasEmail)&#8221;</a> is mandatory, one of them MUST be used when the class is used.</em></p></td>
 </tr>
 </tbody>
 </table>
@@ -8603,7 +8618,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aContactPoint&gt; a vcard:Organization ;
-   vcard:hasURL &lt;https://data.norge.no/about&gt; ;
+   vcard:hasURL &lt;https://https://data.norge.no/nb/contact&gt; ;
    .</pre>
 </div>
 </div>
@@ -11790,7 +11805,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-05 15:31:42 UTC
+Sist oppdatert 2024-11-07 14:42:20 UTC
 </div>
 </div>
 </body>

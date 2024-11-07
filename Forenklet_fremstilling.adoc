@@ -37,8 +37,8 @@ Helt overordnet illustrerer figuren bl.a. følgende:
 Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse av et datasett og en datatjeneste, der minimumsopplysninger er uthevet: 
 
 * <katalog123>:
-** *Tittel*: «Eksempelkatalog» (bokmål) / _"Example Catalog" (English)_
-** *Beskrivelse*: «En eksempelkatalog, kun for illustrasjonsformål.» (bokmål) / _"An example catalog, for illustration purposes only." (English)_
+** *Tittel*: «Eksempelkatalog» (bokmål) / _"Example Catalogue" (English)_
+** *Beskrivelse*: «En eksempelkatalog, kun for illustrasjonsformål.» (bokmål) / _"An example catalogue, for illustration purposes only." (English)_
 ** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
 ** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
 ** Innholder beskrivelse av følgende datasett: <datasett456>
@@ -75,8 +75,8 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 @base <https://example.org/> .
 
 <katalog123> a dcat:Catalog ; # en katalog
-   dct:title "Eksempelkatalog"@nb , "Example Catalog"@en ; # tittel
-   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb , "An example catalog, for illustration purposes only."@en ; # beskrivelse
+   dct:title "Eksempelkatalog"@nb , "Example Catalogue"@en ; # tittel
+   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb , "An example catalogue, for illustration purposes only."@en ; # beskrivelse
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
    dcat:contactPoint <kontaktpunktDigdir> ; # kontaktpunkt
    dcat:dataset <datasett456> ; # inneholder datasett
