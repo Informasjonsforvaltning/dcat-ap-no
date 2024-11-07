@@ -69,7 +69,7 @@ _This property is used to specify an email address to the contact point._
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 | Merknad 2 / _Note 2_ | Selv om hverken denne eller <<Kontaktopplysning-kontaktside>> er obligatorisk, SKAL minst én av dem brukes når klassen brukes.  
 
-__Although neither this nor <<Kontaktopplysning-kontaktside>> is mandatory, one of them MUST be used when the class is used.__
+__Although neither this nor <<Kontaktopplysning-kontaktside>> is mandatory, at least one of them MUST be used when the class is used.__
 | Eksempel / _Example_ | informasjonsforvaltning@digdir.no
 |===
 
@@ -97,7 +97,7 @@ _This property is used to specify a webpage that either allows to make contact (
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
 | Merknad 2 / _Note 2_ | Selv om hverken denne eller <<Kontaktopplysning-harEPost>> er obligatorisk, SKAL minst én av dem brukes når klassen brukes.  
 
-__Although neither this nor <<Kontaktopplysning-harEPost>> is mandatory, one of them MUST be used when the class is used.__
+__Although neither this nor <<Kontaktopplysning-harEPost>> is mandatory, at least one of them MUST be used when the class is used.__
 |===
 
 Eksempel i RDF Turtle:
