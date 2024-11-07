@@ -25,31 +25,6 @@ __Note that this class is an abstract class which should be be used directly, It
 
 == Obligatoriske egenskaper for klassen _Kontaktopplysning_ [[Kontaktopplysning-obligatoriske-egenskaper]]
 
-=== Kontaktopplysning – har e-post (vcard:hasEmail) [[Kontaktopplysning-harEPost]]
-
-[cols="30s,70d"]
-|===
-| _English name_ |  _has email_
-| URI | vcard:hasEmail
-| Verdiområde / _Range_ | rdfs:Resource
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet. 
-
-_This property is used to specify an email address to the contact point._
-| Multiplisitet / _Multiplicity_ | 1..1
-| Kravnivå / _Requirement level_ | Obligatorisk / _Mandatory_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
-
-__Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
-| Eksempel / _Example_ | informasjonsforvaltning@digdir.no
-|===
-
-Eksempel i RDF Turtle:
------
-<aContactPoint> a vcard:Organization ; 
-   vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no> ; 
-   .
------
-
 === Kontaktopplysning – navn (vcard:fn) [[Kontaktopplysning-navn]]
 
 [cols="30s,70d"]
@@ -77,6 +52,34 @@ Eksempel i RDF Turtle:
 
 == Anbefalte egenskaper for klassen _Kontaktopplysning_ [[Kontaktopplysning-anbefalte-egenskaper]]
 
+=== Kontaktopplysning – har e-post (vcard:hasEmail) [[Kontaktopplysning-harEPost]]
+
+[cols="30s,70d"]
+|===
+| _English name_ |  _has email_
+| URI | vcard:hasEmail
+| Verdiområde / _Range_ | rdfs:Resource
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi en e-postadresse til kontaktpunktet. 
+
+_This property is used to specify an email address to the contact point._
+| Multiplisitet / _Multiplicity_ | 0..1
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+__Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
+| Merknad 2 / _Note 2_ | Selv om hverken denne eller <<Kontaktopplysning-kontaktside>> er obligatorisk, SKAL minst én av dem brukes når klassen brukes.  
+
+__Although neither this nor <<Kontaktopplysning-kontaktside>> is mandatory, one of them MUST be used when the class is used.__
+| Eksempel / _Example_ | informasjonsforvaltning@digdir.no
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aContactPoint> a vcard:Organization ; 
+   vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no> ; 
+   .
+-----
+
 === Kontaktopplysning – har kontaktside (vcard:hasURL) [[Kontaktopplysning-kontaktside]]
 
 [cols="30s,70d"]
@@ -89,14 +92,17 @@ Eksempel i RDF Turtle:
 _This property is used to specify a webpage that either allows to make contact (i.e. a webform) or the information contains how to get into contact._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+| Merknad 1 / _Note 1_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
 
 __Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.__
+| Merknad 2 / _Note 2_ | Selv om hverken denne eller <<Kontaktopplysning-harEPost>> er obligatorisk, SKAL minst én av dem brukes når klassen brukes.  
+
+__Although neither this nor <<Kontaktopplysning-harEPost>> is mandatory, one of them MUST be used when the class is used.__
 |===
 
 Eksempel i RDF Turtle:
 -----
 <aContactPoint> a vcard:Organization ; 
-   vcard:hasURL <https://data.norge.no/about> ; 
+   vcard:hasURL <https://https://data.norge.no/nb/contact> ; 
    .
 -----
