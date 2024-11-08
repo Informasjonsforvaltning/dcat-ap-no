@@ -67,6 +67,9 @@ __The requirement level changed from optional to recommended.__
 Kravnivået er endret fra valgfri til anbefalt.
 
 __The requirement level is changed from optional to recommended.__
+| Datasett – tilgangsrettigheter | dct:accessRights | Når verdien er begrenset tilgang (`RESTRICTED`) eller ikke-allmenn tilgang (`NON_PUBLIC`), BØR egenskapen <<Datasett-gjeldendeLovgivning>> brukes. 
+
+__When then value is `RESTRICTED` or `NON_PUBLIC`, the property <<Datasett-gjeldendeLovgivning>> SHOULD be used.__
 | Datasett – endringsdato | dct:modified |
 Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
 
