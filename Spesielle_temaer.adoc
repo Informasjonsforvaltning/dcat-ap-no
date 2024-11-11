@@ -9,3 +9,5 @@ include::Tema_datasettserie.adoc[]
 include::Tema_lisens_tilgang_rettigheter.adoc[]
 
 include::Tema_inverse_egenskaper.adoc[]
+
+include::Tema_identifikator.adoc[]
