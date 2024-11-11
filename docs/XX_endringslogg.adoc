@@ -32,7 +32,7 @@ Revisjon fra versjon 2.2 til denne versjon 3.0 av DCAT-AP-NO er trigget av EUs u
 
 Denne versjonen spesifiserer _ikke_ kravnivå (obligatorisk/anbefalt/valgfri) for klassene, se imidlertid <<Samsvarskrav>> for hva applikasjonene skal kunne håndtere. Dette i henhold til EUs DCAT-AP. 
 
-I henhold til DCAT-AP som følger DCAT når det gjelder inverse egenskaper, er inverse egenskaper ikke tatt med i standarden. Alle inverse egenskaper er derfor utgått fra denne versjonen av DCAT-AP-NO. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
+I henhold til DCAT-AP som følger DCAT når det gjelder inverse egenskaper, er inverse egenskaper ikke eksplisitt tatt med i standarden. Man __kan__ bruke en invers egenskap, _i tillegg til_ og _ikke istedenfor_ egenskapen som er eksplisitt tatt med i standarden. Se <<Om-inverse-egenskaper>>.
 
 === Nye klasser
 
@@ -42,7 +42,7 @@ Følgende er klasser som er enten helt nye eller eksplisitt spesifisert med egen
 * <<Kontaktopplysning>>, for å kunne beskrive et kontaktpunkt, med standardiserte egenskaper.
 * <<Rettighetserklæring>>, for å kunne beskrive ev. rettigheter knyttet til et datasett osv., med standardiserte egenskaper.
 
-=== Utgåtte klasser
+=== Klasser som ikke er eksplisitt spesifisert
 
 Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert med egenskaper, og som derfor ikke tas med i denne versjonen: 
 
@@ -61,7 +61,7 @@ Følgende er klasser som i denne versjonen ikke lenger er eksplisitt spesifisert
 *** <<Datasett-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
 *** <<Datasett-har-gebyr>>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.
 
-** *Utgåtte egenskaper*: 
+** *Egenskaper som ikke er eksplisitt spesifisert, og som dermed ikke er tatt med i denne versjonen*: 
 *** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. 
 *** er påkrevd av (`dct:isRequiredBy`), i samsvar med DCAT-AP/DCAT.
 *** er versjon av (`dct:isVersionOf`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
@@ -93,7 +93,7 @@ med DCAT-AP/DCAT.
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
 *** <<Datasett-bleGenerertVed>>: Nytt krav til bruk av kontrollerte vokabular «Proveniensaktivitetstype». Dette for å kunne ha standardiserte verdier av denne egenskapen. 
 *** <<Datasett-produsent>>: Det er ikke lenger krav til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT.
-*** <<Datasett-tema>>: EuroVoc er utgått fra kravet til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT.
+*** <<Datasett-tema>>: EuroVoc er ikke lenger med i kravet til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT.
 
 * <<Datasettserie>>: 
 ** *Nye egenskaper*:
@@ -108,7 +108,7 @@ med DCAT-AP/DCAT.
 *** <<Datasettserie-utgiver>>, i samsvar med DCAT-AP/DCAT. 
 *** <<Datasettserie-tidsrom>>, i samsvar med DCAT-AP/DCAT.
 
-** *Utgåtte egenskaper*: 
+** *Egenskaper som ikke er eksplisitt spesifisert, og som dermed ikke er tatt med i denne versjonen*: 
 *** følger (`cpsv:follows`), i samsvar med DCAT-AP/DCAT.
 
 ** *Endrede kravnivå og/eller multiplisitet*: 
@@ -125,7 +125,7 @@ med DCAT-AP/DCAT.
 *** <<Datatjeneste-versjon>>, i samsvar med DCAT-AP/DCAT.
 *** <<Datatjeneste-versjonsmerknad>>, i samsvar med DCAT-AP/DCAT.
 
-** *Utgåtte egenskaper*:
+** *Egenskaper som ikke er eksplisitt spesifisert, og som dermed ikke er tatt med i denne versjonen*:
 *** medietype (dcat:mediaType), i samsvar med DCAT-AP/DCAT.
 *** type (dct:type), ikke i bruk i dag, uklar bruksområder. 
 
@@ -144,7 +144,7 @@ med DCAT-AP/DCAT.
 *** <<Datatjeneste-versjonsmerknad>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Datatjeneste-tema>>: "EuroVoc" er utgått fra kravet til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT. 
+*** <<Datatjeneste-tema>>: "EuroVoc" er ikke lenger med i kravet til bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT. 
 
 * <<Distribusjon>>: 
 ** *Nye egenskaper*:
@@ -174,7 +174,7 @@ med DCAT-AP/DCAT.
 *** <<Katalog-kontaktpunkt>>, i samsvar med DCAT-AP/DCAT.
 *** <<Katalog-tidsrom>>, i samsvar med DCAT-AP/DCAT.
 
-** *Utgåtte egenskaper*: 
+** *Egenskaper som ikke er eksplisitt spesifisert, og som dermed ikke er tatt med i denne versjonen*: 
 *** er del av (`dct:isPartOf`), i samsvar med DCAT-AP/DCAT. Se også <<Om-inverse-egenskaper>>.
 *** frekvens (`dct:accrualPeriodicity`), i samsvar med DCAT-AP/DCAT.
 *** opphav (`dct:provenance`), i samsvar med DCAT-AP/DCAT.
@@ -189,8 +189,8 @@ med DCAT-AP/DCAT.
 *** <<Katalog-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
 ** *Endrede krav til bruk av kontrollerte vokabularer*: 
-*** <<Katalog-produsent>>: Kravet om bruk av EUs kontrollerte vokabular "Corporate body" utgått, i samsvar med DCAT-AP/DCAT.
-*** <<Katalog-temaer>>: "EuroVoc" utgått og "Data theme" tilføyet i kravet om bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT. 
+*** <<Katalog-produsent>>: Kravet om bruk av EUs kontrollerte vokabular "Corporate body" tatt bort, i samsvar med DCAT-AP/DCAT.
+*** <<Katalog-temaer>>: "EuroVoc" er ikke lenger med, og "Data theme" tilføyet, i kravet om bruk av kontrollerte vokabularer, i samsvar med DCAT-AP/DCAT. 
 
 * <<Katalogpost>>: 
 ** *Endrede kravnivå og/eller multiplisitet*: 
