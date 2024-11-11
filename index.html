@@ -673,6 +673,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel4">
 <li><a href="#Datatjeneste-beskrivelse">Datatjeneste – beskrivelse (dct:description)</a></li>
 <li><a href="#Datatjeneste-dokumentasjon">Datatjeneste – dokumentasjon (foaf:page)</a></li>
+<li><a href="#Datatjeneste-har-gebyr">Datatjeneste – har gebyr (cv:hasCost)</a></li>
 <li><a href="#Datatjeneste-identifikator">Datatjeneste – identifikator (dct:identifier)</a></li>
 <li><a href="#Datatjeneste-landingsside">Datatjeneste – landingsside (dcat:landingPage)</a></li>
 <li><a href="#Datatjeneste-lisens">Datatjeneste – lisens (dct:license)</a></li>
@@ -727,15 +728,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Gebyr">3.6. Klassen Gebyr (cv:Cost)</a>
 <ul class="sectlevel3">
-<li><a href="#Gebyr-obligatoriske-egenskaper">3.6.1. Obligatoriske egenskaper for klassen <em>Gebyr</em></a>
+<li><a href="#Gebyr-anbefalte-egenskaper">3.6.1. Anbefalte egenskaper for klassen <em>Gebyr</em></a>
 <ul class="sectlevel4">
 <li><a href="#Gebyr-beløp">Gebyr – beløp (cv:hasValue)</a></li>
-<li><a href="#Gebyr-valuta">Gebyr – valuta (cv:currency)</a></li>
-</ul>
-</li>
-<li><a href="#Gebyr-anbefalte-egenskaper">3.6.2. Anbefalte egenskaper for klassen <em>Gebyr</em></a>
-<ul class="sectlevel4">
 <li><a href="#Gebyr-beskrivelse">Gebyr – beskrivelse (dct:description)</a></li>
+<li><a href="#Gebyr-dokumentasjon">Gebyr – dokumentasjon (foaf:page)</a></li>
+<li><a href="#Gebyr-valuta">Gebyr – valuta (cv:currency)</a></li>
 </ul>
 </li>
 </ul>
@@ -5182,7 +5180,48 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-identifikator"><a class="link" href="#Datatjeneste-identifikator">3.4.3.3. Datatjeneste – identifikator (dct:identifier)</a></h5>
+<h5 id="Datatjeneste-har-gebyr"><a class="link" href="#Datatjeneste-har-gebyr">3.4.3.3. Datatjeneste – har gebyr (cv:hasCost)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>has cost</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:hasCost</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Gebyr">cv:Cost</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (<code>cv:Cost</code>), for å oppgi prisinfomasjonen og utrekningsgrunnlaget for gebyr for bruk av datatjenesten.</p>
+<p class="tableblock"><em>This property is used to refer to one or more instances of the Cost class, to specify information about the cost for reusing the data service.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Datatjeneste-identifikator"><a class="link" href="#Datatjeneste-identifikator">3.4.3.4. Datatjeneste – identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5218,7 +5257,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-landingsside"><a class="link" href="#Datatjeneste-landingsside">3.4.3.4. Datatjeneste – landingsside (dcat:landingPage)</a></h5>
+<h5 id="Datatjeneste-landingsside"><a class="link" href="#Datatjeneste-landingsside">3.4.3.5. Datatjeneste – landingsside (dcat:landingPage)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5254,7 +5293,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-lisens"><a class="link" href="#Datatjeneste-lisens">3.4.3.5. Datatjeneste – lisens (dct:license)</a></h5>
+<h5 id="Datatjeneste-lisens"><a class="link" href="#Datatjeneste-lisens">3.4.3.6. Datatjeneste – lisens (dct:license)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5295,7 +5334,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-rettigheter"><a class="link" href="#Datatjeneste-rettigheter">3.4.3.6. Datatjeneste – rettigheter (dct:rights)</a></h5>
+<h5 id="Datatjeneste-rettigheter"><a class="link" href="#Datatjeneste-rettigheter">3.4.3.7. Datatjeneste – rettigheter (dct:rights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5336,7 +5375,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-status"><a class="link" href="#Datatjeneste-status">3.4.3.7. Datatjeneste – status (adms:status)</a></h5>
+<h5 id="Datatjeneste-status"><a class="link" href="#Datatjeneste-status">3.4.3.8. Datatjeneste – status (adms:status)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5382,7 +5421,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-tilgangsrettigheter"><a class="link" href="#Datatjeneste-tilgangsrettigheter">3.4.3.8. Datatjeneste – tilgangsrettigheter (dct:accessRights)</a></h5>
+<h5 id="Datatjeneste-tilgangsrettigheter"><a class="link" href="#Datatjeneste-tilgangsrettigheter">3.4.3.9. Datatjeneste – tilgangsrettigheter (dct:accessRights)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5423,7 +5462,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-versjon"><a class="link" href="#Datatjeneste-versjon">3.4.3.9. Datatjeneste – versjon (dcat:version)</a></h5>
+<h5 id="Datatjeneste-versjon"><a class="link" href="#Datatjeneste-versjon">3.4.3.10. Datatjeneste – versjon (dcat:version)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -5459,7 +5498,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datatjeneste-versjonsmerknad"><a class="link" href="#Datatjeneste-versjonsmerknad">3.4.3.10. Datatjeneste – versjonsmerknad (adms:versionNotes)</a></h5>
+<h5 id="Datatjeneste-versjonsmerknad"><a class="link" href="#Datatjeneste-versjonsmerknad">3.4.3.11. Datatjeneste – versjonsmerknad (adms:versionNotes)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6612,7 +6651,7 @@ ex:budget-2020 a dcat:Dataset ;
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="Gebyr-obligatoriske-egenskaper"><a class="link" href="#Gebyr-obligatoriske-egenskaper">3.6.1. Obligatoriske egenskaper for klassen <em>Gebyr</em></a></h4>
+<h4 id="Gebyr-anbefalte-egenskaper"><a class="link" href="#Gebyr-anbefalte-egenskaper">3.6.1. Anbefalte egenskaper for klassen <em>Gebyr</em></a></h4>
 <div class="sect4">
 <h5 id="Gebyr-beløp"><a class="link" href="#Gebyr-beløp">3.6.1.1. Gebyr – beløp (cv:hasValue)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
@@ -6640,14 +6679,24 @@ ex:budget-2020 a dcat:Dataset ;
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selv om hverken denne egenskapen eller egenskapen <a href="#Gebyr-dokumentasjon"> 3.6.1.3, &#8220;Gebyr – dokumentasjon (foaf:page)&#8221;</a> er obligatorisk, SKAL minst én av dem brukes når denne klassen brukes.</p>
+<p class="tableblock"><em>Although neither this property nor the property <a href="#Gebyr-dokumentasjon"> 3.6.1.3, &#8220;Gebyr – dokumentasjon (foaf:page)&#8221;</a> is mandatory, one of them MUST be used when the class is used. </em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Når denne egenskapen brukes, SKAL egenskapen <a href="#Gebyr-valuta"> 3.6.1.4, &#8220;Gebyr – valuta (cv:currency)&#8221;</a> også brukes.</p>
+<p class="tableblock"><em>When this property is used, the property <a href="#Gebyr-valuta"> 3.6.1.4, &#8220;Gebyr – valuta (cv:currency)&#8221;</a> MUST also be used.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 3 / <em>Note 3</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
 <p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
 </tr>
@@ -6669,70 +6718,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Gebyr-valuta"><a class="link" href="#Gebyr-valuta">3.6.1.2. Gebyr – valuta (cv:currency)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>currency</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">cv:currency</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi valutatype av gebyret.</p>
-<p class="tableblock"><em>This property is used to specify the currency in which the cost.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1..1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obligatorisk / <em>Mandatory</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency" class="ext-link" target="_blank" rel="noopener">Valuta &#x29C9;</a>.</p>
-<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency" class="ext-link" target="_blank" rel="noopener">Currency &#x29C9;</a>.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
-<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/currency/NOK" class="ext-link" target="_blank" rel="noopener">Norske kroner &#x29C9;</a></p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Eksempel i RDF Turtle:</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>&lt;aCost&gt; a cv:Cost ;
-   cv:currency &lt;http://publications.europa.eu/resource/authority/currency/NOK&gt; ;
-   .</pre>
-</div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="Gebyr-anbefalte-egenskaper"><a class="link" href="#Gebyr-anbefalte-egenskaper">3.6.2. Anbefalte egenskaper for klassen <em>Gebyr</em></a></h4>
-<div class="sect4">
-<h5 id="Gebyr-beskrivelse"><a class="link" href="#Gebyr-beskrivelse">3.6.2.1. Gebyr – beskrivelse (dct:description)</a></h5>
+<h5 id="Gebyr-beskrivelse"><a class="link" href="#Gebyr-beskrivelse">3.6.1.2. Gebyr – beskrivelse (dct:description)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -6787,6 +6773,112 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="content">
 <pre>&lt;aCost&gt; a cv:Cost ;
    dct:description "Behandlingsgebyr"@nb , "Handling fee"@en ;
+   .</pre>
+</div>
+</div>
+</div>
+<div class="sect4">
+<h5 id="Gebyr-dokumentasjon"><a class="link" href="#Gebyr-dokumentasjon">3.6.1.3. Gebyr – dokumentasjon (foaf:page)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>documentation</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:page</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">foaf:Document</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en side eller et dokument som beskriver prismodell/beregningsgrunnlag. I tillegg til å dokumentere beregningsgrunnlaget, kan denne egenskapen brukes i tilfeller der det ikke bare er ett beløp, men en komplisert prismodell avhengig av f.eks. mengde data, hyppighet av oppslag/nedlasting osv.</p>
+<p class="tableblock"><em>This property is used to refer to a page or document which describes the cost model.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selv om hverken denne egenskapen eller egenskapen <a href="#Gebyr-beløp"> 3.6.1.1, &#8220;Gebyr – beløp (cv:hasValue)&#8221;</a> er obligatorisk, SKAL minst én av dem brukes når denne klassen brukes.</p>
+<p class="tableblock"><em>Although neither this property nor the property <a href="#Gebyr-beløp"> 3.6.1.1, &#8220;Gebyr – beløp (cv:hasValue)&#8221;</a> is mandatory, one of them MUST be used when the class is used.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Gebyr-valuta"><a class="link" href="#Gebyr-valuta">3.6.1.4. Gebyr – valuta (cv:currency)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>currency</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">cv:currency</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">skos:Concept</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å oppgi valutatype av gebyret.</p>
+<p class="tableblock"><em>This property is used to specify the currency in which the cost.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Verdien SKAL velges fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency" class="ext-link" target="_blank" rel="noopener">Valuta &#x29C9;</a>.</p>
+<p class="tableblock"><em>The value MUST be chosen from EU&#8217;s controlled vocabulary <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/currency" class="ext-link" target="_blank" rel="noopener">Currency &#x29C9;</a>.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT.</p>
+<p class="tableblock"><em>Norwegian extension: Not explicitly specified in DCAT-AP/DCAT.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/currency/NOK" class="ext-link" target="_blank" rel="noopener">Norske kroner &#x29C9;</a></p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aCost&gt; a cv:Cost ;
+   cv:currency &lt;http://publications.europa.eu/resource/authority/currency/NOK&gt; ;
    .</pre>
 </div>
 </div>
@@ -10360,10 +10452,10 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><code>dct:license</code> SKAL brukes til å referere til en lisens, og verdien SKAL hentes fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener"><em>Licence</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datatjeneste-lisens"> 3.4.3.5, &#8220;Datatjeneste – lisens (dct:license)&#8221;</a>, <a href="#Distribusjon-lisens"> 3.5.2.3, &#8220;Distribusjon – lisens (dct:license)&#8221;</a> og <a href="#Katalog-lisens"> 3.8.2.6, &#8220;Katalog – lisens (dct:license)&#8221;</a>.</p>
+<p><code>dct:license</code> SKAL brukes til å referere til en lisens, og verdien SKAL hentes fra EUs kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/licence" class="ext-link" target="_blank" rel="noopener"><em>Licence</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datatjeneste-lisens"> 3.4.3.6, &#8220;Datatjeneste – lisens (dct:license)&#8221;</a>, <a href="#Distribusjon-lisens"> 3.5.2.3, &#8220;Distribusjon – lisens (dct:license)&#8221;</a> og <a href="#Katalog-lisens"> 3.8.2.6, &#8220;Katalog – lisens (dct:license)&#8221;</a>.</p>
 </li>
 <li>
-<p><code>dct:accessRights</code> SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datasett-tilgangsrettigheter"> 3.2.2.8, &#8220;Datasett – tilgangsrettigheter (dct:accessRights)&#8221;</a> og <a href="#Datatjeneste-tilgangsrettigheter"> 3.4.3.8, &#8220;Datatjeneste – tilgangsrettigheter (dct:accessRights)&#8221;</a>.</p>
+<p><code>dct:accessRights</code> SKAL brukes til å uttrykke tilgangsrettigheter, og verdien SKAL være <code>PUBLIC</code>, <code>RESTRICTED</code> eller <code>NON_PUBLIC</code> fra EU&#8217;s kontrollerte vokabular <a href="https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right" class="ext-link" target="_blank" rel="noopener"><em>Access right</em> &#x29C9;</a>. Dette gjelder egenskapene <a href="#Datasett-tilgangsrettigheter"> 3.2.2.8, &#8220;Datasett – tilgangsrettigheter (dct:accessRights)&#8221;</a> og <a href="#Datatjeneste-tilgangsrettigheter"> 3.4.3.9, &#8220;Datatjeneste – tilgangsrettigheter (dct:accessRights)&#8221;</a>.</p>
 </li>
 <li>
 <p><code>dct:rights</code> KAN brukes til å uttrykke alle andre typer rettigheter og brukervilkår, bl.a. opphavsrett. Det er anbefalt å bruke <a href="#Rettighetserklæring"> 3.14, &#8220;Klassen Rettighetserklæring (odrs:RightsStatement)&#8221;</a> til å ha en strukturert beskrivelse av rettigheter og brukervilkår. Dette gjelder egenskapene <a href="#Distribusjon-rettigheter"> 3.5.3.11, &#8220;Distribusjon – rettigheter (dct:rights)&#8221;</a> og <a href="#Katalog-rettigheter"> 3.8.3.7, &#8220;Katalog – rettigheter (brukervilkår) (dct:rights)&#8221;</a>.</p>
@@ -11422,19 +11514,22 @@ med DCAT-AP/DCAT.</p>
 <p><a href="#Datatjeneste-gjeldendeLovgivning"> 3.4.2.4, &#8220;Datatjeneste – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-rettigheter"> 3.4.3.6, &#8220;Datatjeneste – rettigheter (dct:rights)&#8221;</a>, for å kunne oppgi rettigheter knyttet til datatjenesten.</p>
+<p><a href="#Datatjeneste-har-gebyr"> 3.4.3.3, &#8220;Datatjeneste – har gebyr (cv:hasCost)&#8221;</a>, for å kunne oppgi ev. kostnader knyttet til bruk av datatjenesten.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-status"> 3.4.3.7, &#8220;Datatjeneste – status (adms:status)&#8221;</a>, for å kunne dekke behov for å angi status.</p>
+<p><a href="#Datatjeneste-rettigheter"> 3.4.3.7, &#8220;Datatjeneste – rettigheter (dct:rights)&#8221;</a>, for å kunne oppgi rettigheter knyttet til datatjenesten.</p>
+</li>
+<li>
+<p><a href="#Datatjeneste-status"> 3.4.3.8, &#8220;Datatjeneste – status (adms:status)&#8221;</a>, for å kunne dekke behov for å angi status.</p>
 </li>
 <li>
 <p><a href="#Datatjeneste-tilgjengelighet"> 3.4.2.8, &#8220;Datatjeneste – tilgjengelighet (dcatap:availability)&#8221;</a>, for å kunne oppgi planlagt tilgjengelig av datatjenesten.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-versjon"> 3.4.3.9, &#8220;Datatjeneste – versjon (dcat:version)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datatjeneste-versjon"> 3.4.3.10, &#8220;Datatjeneste – versjon (dcat:version)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.10, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.11, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 </ul>
 </div>
@@ -11460,7 +11555,7 @@ med DCAT-AP/DCAT.</p>
 <p><a href="#Datatjeneste-beskrivelse"> 3.4.3.1, &#8220;Datatjeneste – beskrivelse (dct:description)&#8221;</a>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-identifikator"> 3.4.3.3, &#8220;Datatjeneste – identifikator (dct:identifier)&#8221;</a>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT.</p>
+<p><a href="#Datatjeneste-identifikator"> 3.4.3.4, &#8220;Datatjeneste – identifikator (dct:identifier)&#8221;</a>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
 <p><a href="#Datatjeneste-i-samsvar-med"> 3.4.2.5, &#8220;Datatjeneste – i samsvar med (dct:conformsTo)&#8221;</a>: Kravnivået er endret fra valgfri til anbefalt, i samsvar med DCAT-AP/DCAT.</p>
@@ -11491,7 +11586,7 @@ med DCAT-AP/DCAT.</p>
 <p><a href="#Datatjeneste-tittel"> 3.4.1.3, &#8220;Datatjeneste – tittel (dct:title)&#8221;</a>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal.</p>
 </li>
 <li>
-<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.10, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal.</p>
+<p><a href="#Datatjeneste-versjonsmerknad"> 3.4.3.11, &#8220;Datatjeneste – versjonsmerknad (adms:versionNotes)&#8221;</a>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal.</p>
 </li>
 </ul>
 </div>
@@ -11816,7 +11911,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-08 14:32:04 UTC
+Sist oppdatert 2024-11-11 10:10:33 UTC
 </div>
 </div>
 </body>
