@@ -240,7 +240,7 @@ Eksempel i RDF Turtle:
 _This property is used to refer to an available distribution for the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Eksempel | http://vegkart.no er en distribusjon av datasettet Nasjonal vegdatabank (NVDB), i html (menneskelesbar visning).
+| Eksempel | http://vegkart.no[http://vegkart.no &#x29C9;, window="_blank", role="ext-link"] er en distribusjon av datasettet Nasjonal vegdatabank (NVDB), i html (menneskelesbar visning).
 |===
 
 Eksempel i RDF Turtle:
