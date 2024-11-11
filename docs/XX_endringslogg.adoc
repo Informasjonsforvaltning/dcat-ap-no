@@ -118,6 +118,7 @@ med DCAT-AP/DCAT.
 * <<Datatjeneste>>: 
 ** *Nye egenskaper*:
 *** <<Datatjeneste-gjeldendeLovgivning>>, i samsvar med DCAT-AP/DCAT.
+*** <<Datatjeneste-har-gebyr>>, for å kunne oppgi ev. kostnader knyttet til bruk av datatjenesten.
 *** <<Datatjeneste-rettigheter>>, for å kunne oppgi rettigheter knyttet til datatjenesten. 
 *** <<Datatjeneste-status>>, for å kunne dekke behov for å angi status.
 *** <<Datatjeneste-tilgjengelighet>>, for å kunne oppgi planlagt tilgjengelig av datatjenesten.
