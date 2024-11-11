@@ -371,6 +371,23 @@ _This property is used to refer to a page or a document that describes the data 
 _Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
 |===
 
+=== Datatjeneste – har gebyr (cv:hasCost) [[Datatjeneste-har-gebyr]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _has cost_
+| URI | cv:hasCost
+| Verdiområde / _Range_ | <<Gebyr, cv:Cost>>
+| Anvendelse / _Usage note_ |  Egenskapen brukes til å referere til en eller flere instanser av klassen Gebyr (`cv:Cost`), for å oppgi prisinfomasjonen og utrekningsgrunnlaget for gebyr for bruk av datatjenesten.
+
+_This property is used to refer to one or more instances of the Cost class, to specify information about the cost for reusing the data service._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Norsk utvidelse: Ikke eksplisitt spesifisert i DCAT-AP/DCAT. 
+
+_Norwegian extension: Not explicitly specified in DCAT-AP/DCAT._
+|===
+
 === Datatjeneste – identifikator (dct:identifier) [[Datatjeneste-identifikator]]
 
 [cols="30s,70d"]
