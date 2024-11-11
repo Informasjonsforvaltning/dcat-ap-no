@@ -1,0 +1,14 @@
+== Om bruk av egenskapen «identifikator (dct:identifier)»
+
+I utgangspunktet har alle ressurser i RDF allerede en identifikator, nemlig URIen til ressursen, eller sagt på en annen måte «subjektet» i en RDF-trippel. Den kan legges til grunn i sporing av data, beslutningsgrunnlag m.m.
+
+I tidligere versjoner av DCAT-AP-NO og DCAT-AP var egenskapen «identifikator (`dct:identifier`)» obligatorisk for bl.a. klassen «Datasett (`dcat:Dataset`)». Praksis til nå har derfor vært å duplisere ressursens URI i den obligatoriske egenskapen `dct:identifier`, noe som er unødvendig når det er snakk om ressurser i RDF. EU har fra v.3.0.0 av DCAT-AP begynt å ikke kreve obligatorisk bruk av `dct:identifier`, som DCAT-AP-NO også følger. `dct:identifier` kan brukes til andre typer identifikatorer, som f.eks. et ISBN (https://www.nb.no/en/service/isbn-norway/[__International Standard Book Number__ &#x29C9;, window="_blank", role="ext-link"]) eller en DOI (https://www.doi.org/[__Digital Object Identifier__ &#x29C9;, window="_blank", role="ext-link"]). 
+
+I eksemplet under er `\https://data.eksempel.no/datasets/12345678`  URIen og dermed identifikatoren til datasettet som beskrives.  `dct:identifier` er i tillegg brukt til å referere til en DOI.
+
+Eksempel i RDF Turtle, på bruk av `dct:identifier`:
+-----
+<https://data.eksempel.no/datasets/12345678> a dcat:Dataset ;
+    dct:identifier <aDOI> ; 
+    .
+-----
