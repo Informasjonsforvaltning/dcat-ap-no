@@ -235,17 +235,23 @@ Eksempel i RDF Turtle:
 | _English name_ | _dataset distribution_
 | URI | dcat:distribution
 | Verdiområde / _Range_ | <<Distribusjon, dcat:Distribution>>
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tilgjengelig distribusjon for datasettet.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en tilgjengelig distribusjon for datasettet. 
 
 _This property is used to refer to an available distribution for the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Eksempel | http://vegkart.no er en distribusjon av datasettet Nasjonal vegdatabank (NVDB), i html (menneskelesbar visning).
 |===
 
 Eksempel i RDF Turtle:
 -----
-<aDataset> a dcat:Dataset ; 
-   dcat:distribution <aDistribution> ; 
+<datasettNVDB> a dcat:Dataset ; 
+   dcat:distribution <htmlNVDB> ; 
+   .
+
+<htmlNVDB> a dcat:Distribution ; 
+   dcat:accessURL <http://vegkart.no> ; 
+   dct:format <http://publications.europa.eu/resource/authority/file-type/HTML> ;
    .
 -----
 

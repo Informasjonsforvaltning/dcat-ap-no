@@ -18,6 +18,7 @@ image::images/Klassen-Distribusjon.png[alt="Tegning med 4 klasser og relasjoner 
 | Anvendelse / _Usage note_ | Klassen brukes til å representere en fysisk representasjon av datasettet i et bestemt format.
 
 _This class is used to represent a distribution, i.e., a physical embodiment of the dataset in a particular format._
+| Eksempel | En nedlastbar fil i csv eller en menneskelesbar html-visning av et datasett.  
 |===
 
 
