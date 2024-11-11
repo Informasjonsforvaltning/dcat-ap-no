@@ -2211,6 +2211,10 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="http://vegkart.no" class="bare">http://vegkart.no</a> er en distribusjon av datasettet Nasjonal vegdatabank (NVDB), i html (menneskelesbar visning).</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -2218,8 +2222,13 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre>&lt;aDataset&gt; a dcat:Dataset ;
-   dcat:distribution &lt;aDistribution&gt; ;
+<pre>&lt;datasettNVDB&gt; a dcat:Dataset ;
+   dcat:distribution &lt;htmlNVDB&gt; ;
+   .
+
+&lt;htmlNVDB&gt; a dcat:Distribution ;
+   dcat:accessURL &lt;http://vegkart.no&gt; ;
+   dct:format &lt;http://publications.europa.eu/resource/authority/file-type/HTML&gt; ;
    .</pre>
 </div>
 </div>
@@ -5569,6 +5578,10 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Klassen brukes til å representere en fysisk representasjon av datasettet i et bestemt format.</p>
 <p class="tableblock"><em>This class is used to represent a distribution, i.e., a physical embodiment of the dataset in a particular format.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En nedlastbar fil i csv eller en menneskelesbar html-visning av et datasett.</p></td>
 </tr>
 </tbody>
 </table>
@@ -11911,7 +11924,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-11 10:30:07 UTC
+Sist oppdatert 2024-11-11 14:13:45 UTC
 </div>
 </div>
 </body>
