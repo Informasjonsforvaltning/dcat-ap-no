@@ -67,7 +67,7 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 *** kontaktside: https://data.norge.no/contact[https://data.norge.no/contact &#x29C9;, window="_blank", role="ext-link"]
 
 * <kontaktpunktSVV>: 
-*** *Navn*: «Statens vegvesen» / _"Norwegian Public Roads Administration" (English)_
+*** *Navn*: «Statens vegvesen» (bokmål) / _"Norwegian Public Roads Administration" (English)_
 *** e-post: firmapost@vegvesen.no
 
 .For deg som er teknisk interessert: klikk her for å se beskrivelsene ovenfor representert i RDF Turtle, og i henhold til kravene spesifisert videre i standarden.
