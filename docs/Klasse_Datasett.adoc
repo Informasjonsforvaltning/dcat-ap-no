@@ -370,7 +370,7 @@ Eksempel i RDF Turtle:
 _This property is used to specify information that indicates whether the dataset is publicly accessible, has access restrictions or is not public._
 | Multiplisitet / _Multiplicity_ | 0..1
 | Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad 1 / _Note 1_ | Verdien SKAL være `PUBLIC`, `RESTRICTED` eller `NON_PUBLIC` fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[__Access right__ &#x29C9;, window="_blank", role="ext-link"].
+| Merknad 1 / _Note 1_ | Verdien SKAL være `PUBLIC`, `RESTRICTED` eller `NON_PUBLIC` fra EU's kontrollerte vokabular https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[__Access right__ &#x29C9;, window="_blank", role="ext-link"]. Se forklaring på disse tre tilgangsnivåene i https://www.digdir.no/informasjonsforvaltning/steg-4-vurdere-tilgangsniva/2723[Steg 4 i Veileder for orden i eget hus &#x29C9;, window="_blank", role="ext-link"], der allmenn tilgang («grønn») svaret til `PUBLIC`, betinget tilgang («gul») svarer til `RESTRICTED` og ikke-allmenn tilgang («rød») svarer til `NON_PUBLIC`.
 
 __The value MUST be `PUBLIC`, `RESTRICTED` or `NON_PUBLIC` from EU's controlled vocabulary https://op.europa.eu/en/web/eu-vocabularies/concept-scheme/-/resource?uri=http://publications.europa.eu/resource/authority/access-right[Access right &#x29C9;, window="_blank", role="ext-link"].__
 | Merknad 2 / _Note 2_ | Norsk utvidelse: Når verdien er begrenset tilgang (`RESTRICTED`) eller ikke-allmenn tilgang (`NON_PUBLIC`), BØR egenskapen <<Datasett-gjeldendeLovgivning>> brukes. 
