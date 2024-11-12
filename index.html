@@ -1292,7 +1292,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="ext-link" target="_blank" rel="noopener">991825827 &#x29C9;</a> (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
 </li>
 <li>
-<p><strong>Kontaktopplysninger</strong>: se &lt;kontaktpunktDigdir&gt;</p>
+<p><strong>Kontaktopplysninger</strong>: se &lt;kontaktpunktDigdirFDK&gt;</p>
 </li>
 <li>
 <p>Innholder beskrivelse av følgende datasett: &lt;datasett456&gt;</p>
@@ -1314,16 +1314,16 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <p><strong>Beskrivelse</strong>: «Et eksempeldatasett, kun for illustrasjonsformål.» (bokmål) / <em>"An example dataset, for illustration purposes only." (English)</em></p>
 </li>
 <li>
-<p><strong>Tema</strong>: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/GOVE" class="ext-link" target="_blank" rel="noopener">Forvaltning og offentlig sektor &#x29C9;</a></p>
+<p><strong>Tema</strong>: <a href="https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/TRAN" class="ext-link" target="_blank" rel="noopener">Transport &#x29C9;</a></p>
 </li>
 <li>
-<p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="ext-link" target="_blank" rel="noopener">991825827 &#x29C9;</a> (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
+<p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971032081" class="ext-link" target="_blank" rel="noopener">971032081 &#x29C9;</a> (organisasjonsnummeret til Statens vegvesen)</p>
 </li>
 <li>
-<p><strong>Kontaktopplysninger</strong>: se &lt;kontaktpunktDigdir&gt;</p>
+<p><strong>Kontaktopplysninger</strong>: se &lt;kontaktpunktSVV&gt;</p>
 </li>
 <li>
-<p>Gjeldende lovgivning: <a href="https://lovdata.no/eli/lov/2006/05/19/16" class="ext-link" target="_blank" rel="noopener">Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;</a></p>
+<p>Gjeldende lovgivning: <a href="https://lovdata.no/dokument/SF/forskrift/2016-12-15-1600" class="ext-link" target="_blank" rel="noopener">Forskrift om tilgjengeliggjøring av sanntids veg- og trafikkinformasjonstjenester &#x29C9;</a></p>
 </li>
 <li>
 <p>Distribusjon:</p>
@@ -1349,10 +1349,10 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <p><strong>EndepunktsURL</strong>: https://example.org/exAPI</p>
 </li>
 <li>
-<p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827" class="ext-link" target="_blank" rel="noopener">991825827 &#x29C9;</a> (organisasjonsnummeret til Digitaliseringsdirektoratet)</p>
+<p><strong>Utgiver</strong>: <a href="https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971032081" class="ext-link" target="_blank" rel="noopener">971032081 &#x29C9;</a> (organisasjonsnummeret til Statens vegvesen)</p>
 </li>
 <li>
-<p><strong>Kontaktopplysninger</strong>: se &lt;kontaktpunktDigdir&gt;</p>
+<p><strong>Kontaktopplysninger</strong>: se &lt;kontaktpunktSVV&gt;</p>
 </li>
 <li>
 <p>Tilgjengeliggjør datasett: &lt;datasett456&gt;</p>
@@ -1361,14 +1361,30 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </div>
 </li>
 <li>
-<p>&lt;kontaktpunktDigdir&gt;:</p>
+<p>&lt;kontaktpunktDigdirFDK&gt;:</p>
 <div class="ulist">
 <ul>
 <li>
 <p><strong>Navn</strong>: «Digitaliseringsdirektoratet» (bokmål) / <em>"Norwegian Digitalisation Agency" (English)</em></p>
 </li>
 <li>
-<p>e-post: <a href="mailto:informasjonsforvaltning@digdir.no">informasjonsforvaltning@digdir.no</a></p>
+<p>e-post: <a href="mailto:fellesdatakatalog@digdir.no">fellesdatakatalog@digdir.no</a></p>
+</li>
+<li>
+<p>kontaktside: <a href="https://data.norge.no/contact" class="ext-link" target="_blank" rel="noopener">https://data.norge.no/contact &#x29C9;</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>&lt;kontaktpunktSVV&gt;:</p>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Navn</strong>: «Statens vegvesen» / <em>"Norwegian Public Roads Administration" (English)</em></p>
+</li>
+<li>
+<p>e-post: <a href="mailto:firmapost@vegvesen.no">firmapost@vegvesen.no</a></p>
 </li>
 </ul>
 </div>
@@ -1388,20 +1404,22 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 
 &lt;katalog123&gt; a dcat:Catalog ; # en katalog
    dct:title "Eksempelkatalog"@nb , "Example Catalogue"@en ; # tittel
-   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb , "An example catalogue, for illustration purposes only."@en ; # beskrivelse
+   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb ,
+      "An example catalogue, for illustration purposes only."@en ; # beskrivelse
    dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
-   dcat:contactPoint &lt;kontaktpunktDigdir&gt; ; # kontaktpunkt
+   dcat:contactPoint &lt;kontaktpunktDigdirFDK&gt; ; # kontaktpunkt
    dcat:dataset &lt;datasett456&gt; ; # inneholder datasett
    dcat:service &lt;api789&gt; ; # inneholder datatjenester
    .
 
 &lt;datasett456&gt; a dcat:Dataset ; # et datasett
    dct:title "Eksempeldatasett"@nb , "Example Dataset"@en ; # tittel
-   dct:description "Et eksempeldatasett, kun for illustrasjonsformål."@nb , "An example dataset, for illustration purposes only."@en; # beskrivelse
+   dct:description "Et eksempeldatasett, kun for illustrasjonsformål."@nb ,
+      "An example dataset, for illustration purposes only."@en; # beskrivelse
    dcat:theme &lt;http://publications.europa.eu/resource/authority/data-theme/GOVE&gt; ; # tema
-   dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
-   dcat:contactPoint &lt;kontaktpunktDigdir&gt; ; # kontaktpunkt
-   dcatap:applicableLegislation &lt;https://lovdata.no/eli/lov/2006/05/19/16&gt; ; # gjeldende lovgivning
+   dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971032081&gt; ; # utgiver
+   dcat:contactPoint &lt;kontaktpunktSVV&gt; ; # kontaktpunkt
+   dcatap:applicableLegislation &lt;https://lovdata.no/eli/forskrift/2016/12/15/1600&gt; ; # gjeldende lovgivning
    dcat:distribution &lt;distribusjon321&gt; ; # datasettdistribusjon
    .
 
@@ -1412,14 +1430,20 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 &lt;api789&gt; a dcat:DataService ; # en datatjeneste
    dct:title "EksempelAPI"@nb , "Example API"@en ; # tittel
    dcat:endpointURL &lt;https://example.org/exlAPI&gt; ; # endepunktsURL
-   dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827&gt; ; # utgiver
-   dcat:contactPoint &lt;kontaktpunktDigdir&gt; ; # kontaktpunkt
+   dct:publisher &lt;https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971032081&gt; ; # utgiver
+   dcat:contactPoint &lt;kontaktpunktSVV&gt; ; # kontaktpunkt
    dcat:servesDataset &lt;datasett456&gt; ; # tilgjengeliggjør datasett
    .
 
-&lt;kontaktpunktDigdir&gt; a vcard:Organization ; # et kontaktpunkt
+&lt;kontaktpunktDigdirFDK&gt; a vcard:Organization ; # et kontaktpunkt
    vcard:fn "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ; # navn
-   vcard:hasEmail &lt;mailto:informasjonsforvaltning@digdir.no&gt; ; # har e-post
+   vcard:hasEmail &lt;mailto:fellesdatakatalog@digdir.no&gt; ; # har e-post
+   vcard:hasURL &lt;https://data.norge.no/contact&gt; ; # har kontaktside
+   .
+
+&lt;kontaktpunktSVV&gt; a vcard:Organization ; # et kontaktpunkt
+   vcard:fn "Statens vegvesen"@nb , "Norwegian Public Roads Administration"@en ; # navn
+   vcard:hasEmail &lt;mailto:firmapost@vegvesen.no&gt; ; # har e-post
    .</pre>
 </div>
 </div>
@@ -2380,13 +2404,18 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For referanse til Lovdata bør ELI-URI brukes, se <a href="https://lovdata.no/eli/" class="ext-link" target="_blank" rel="noopener">beskrivelsen hos Lovdata &#x29C9;</a>.</p>
+<p class="tableblock"><em>For references to Lovdata, ELI-URI should be used, see <a href="https://lovdata.no/eli/" class="ext-link" target="_blank" rel="noopener">the explanation at Lovdata &#x29C9;</a></em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.</p>
 <p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lovdata.no/eli/lov/2006/05/19/16" class="ext-link" target="_blank" rel="noopener">Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lovdata.no/dokument/SF/forskrift/2016-12-15-1600" class="ext-link" target="_blank" rel="noopener">Forskrift om tilgjengeliggjøring av sanntids veg- og trafikkinformasjonstjenester &#x29C9;</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -2396,7 +2425,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aDataset&gt; a dcat:Dataset ;
-   dcatap:applicableLegislation &lt;https://lovdata.no/eli/lov/2006/05/19/16&gt; ;
+   dcatap:applicableLegislation &lt;https://lovdata.no/eli/forskrift/2016/12/15/1600&gt; ;
    .</pre>
 </div>
 </div>
@@ -4115,13 +4144,18 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For referanse til Lovdata bør ELI-URI brukes, se <a href="https://lovdata.no/eli/" class="ext-link" target="_blank" rel="noopener">beskrivelsen hos Lovdata &#x29C9;</a>.</p>
+<p class="tableblock"><em>For references to Lovdata, ELI-URI should be used, see <a href="https://lovdata.no/eli/" class="ext-link" target="_blank" rel="noopener">the explanation at Lovdata &#x29C9;</a></em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Not 2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.</p>
 <p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lovdata.no/eli/lov/2006/05/19/16" class="ext-link" target="_blank" rel="noopener">Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lovdata.no/dokument/SF/forskrift/2016-12-15-1600" class="ext-link" target="_blank" rel="noopener">Forskrift om tilgjengeliggjøring av sanntids veg- og trafikkinformasjonstjenester &#x29C9;</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4131,7 +4165,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aDatasetSeries&gt; a dcat:DatasetSeries ;
-   dcatap:applicableLegislation &lt;https://lovdata.no/eli/lov/2006/05/19/16&gt; ;
+   dcatap:applicableLegislation &lt;https://lovdata.no/eli/forskrift/2016/12/15/1600&gt; ;
    .</pre>
 </div>
 </div>
@@ -4865,13 +4899,18 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock">Anbefalt / <em>Recommended</em></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 1 / <em>Note 1</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For referanse til Lovdata bør ELI-URI brukes, se <a href="https://lovdata.no/eli/" class="ext-link" target="_blank" rel="noopener">beskrivelsen hos Lovdata &#x29C9;</a>.</p>
+<p class="tableblock"><em>For references to Lovdata, ELI-URI should be used, see <a href="https://lovdata.no/eli/" class="ext-link" target="_blank" rel="noopener">the explanation at Lovdata &#x29C9;</a></em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad 2 / <em>Note 2</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Norsk utvidelse: Kravnivået endret fra valgfri til anbefalt.</p>
 <p class="tableblock"><em>Norwegian extension: The requirement level changed from optional to recommended.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lovdata.no/eli/lov/2006/05/19/16" class="ext-link" target="_blank" rel="noopener">Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lovdata.no/dokument/SF/forskrift/2016-12-15-1600" class="ext-link" target="_blank" rel="noopener">Forskrift om tilgjengeliggjøring av sanntids veg- og trafikkinformasjonstjenester &#x29C9;</a></p></td>
 </tr>
 </tbody>
 </table>
@@ -4881,7 +4920,7 @@ ex:budget-2020 a dcat:Dataset ;
 <div class="listingblock">
 <div class="content">
 <pre>&lt;aDataService&gt; a dcat:DataService ;
-   dcatap:applicableLegislation &lt;https://lovdata.no/eli/lov/2006/05/19/16&gt; ;
+   dcatap:applicableLegislation &lt;https://lovdata.no/eli/forskrift/2016/12/15/1600&gt; ;
    .</pre>
 </div>
 </div>
@@ -6076,8 +6115,27 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">For referanse til Lovdata bør ELI-URI brukes, se <a href="https://lovdata.no/eli/" class="ext-link" target="_blank" rel="noopener">beskrivelsen hos Lovdata &#x29C9;</a>.</p>
+<p class="tableblock"><em>For references to Lovdata, ELI-URI should be used, see <a href="https://lovdata.no/eli/" class="ext-link" target="_blank" rel="noopener">the explanation at Lovdata &#x29C9;</a></em>.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Eksempel / <em>Example</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="https://lovdata.no/dokument/SF/forskrift/2016-12-15-1600" class="ext-link" target="_blank" rel="noopener">Forskrift om tilgjengeliggjøring av sanntids veg- og trafikkinformasjonstjenester &#x29C9;</a></p></td>
+</tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Eksempel i RDF Turtle:</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>&lt;aDistribution&gt; a dcat:Distribution ;
+   dcatap:applicableLegislation &lt;https://lovdata.no/eli/forskrift/2016/12/15/1600&gt; ;
+   .</pre>
+</div>
+</div>
 </div>
 <div class="sect4">
 <h5 id="Distribusjon-i-samsvar-med"><a class="link" href="#Distribusjon-i-samsvar-med">3.5.3.5. Distribusjon – i samsvar med (dct:conformsTo)</a></h5>
@@ -11947,7 +12005,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-11 15:21:01 UTC
+Sist oppdatert 2024-11-12 14:16:13 UTC
 </div>
 </div>
 </body>

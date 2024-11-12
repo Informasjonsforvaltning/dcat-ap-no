@@ -240,7 +240,18 @@ _This property is used to specify the size of a distribution in bytes._
 _This property is used to refer to the legislation that mandates the creation or management of the distribution._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | For referanse til Lovdata bør ELI-URI brukes, se https://lovdata.no/eli/[beskrivelsen hos Lovdata &#x29C9;, window="_blank", role="ext-link"].
+
+__For references to Lovdata, ELI-URI should be used, see https://lovdata.no/eli/[the explanation at Lovdata &#x29C9;, window="_blank", role="ext-link"]__.
+| Eksempel / _Example_ | https://lovdata.no/dokument/SF/forskrift/2016-12-15-1600[Forskrift om tilgjengeliggjøring av sanntids veg- og trafikkinformasjonstjenester &#x29C9;, window="_blank", role="ext-link"]
 |===
+
+Eksempel i RDF Turtle:
+-----
+<aDistribution> a dcat:Distribution ; 
+   dcatap:applicableLegislation <https://lovdata.no/eli/forskrift/2016/12/15/1600> ; 
+   .
+-----
 
 === Distribusjon – i samsvar med (dct:conformsTo) [[Distribusjon-i-samsvar-med]]
 

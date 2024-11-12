@@ -40,29 +40,35 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 ** *Tittel*: «Eksempelkatalog» (bokmål) / _"Example Catalogue" (English)_
 ** *Beskrivelse*: «En eksempelkatalog, kun for illustrasjonsformål.» (bokmål) / _"An example catalogue, for illustration purposes only." (English)_
 ** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
-** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
+** *Kontaktopplysninger*: se <kontaktpunktDigdirFDK> 
 ** Innholder beskrivelse av følgende datasett: <datasett456>
 ** Inneholder beskrivelse av følgende datatjenester: <api789>
 
 * <datasett456>:
 ** *Tittel*: «Eksempeldatasett» (bokmål) / _"Example Dataset" (English)_
 ** *Beskrivelse*: «Et eksempeldatasett, kun for illustrasjonsformål.» (bokmål) / _"An example dataset, for illustration purposes only." (English)_
-** *Tema*: https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/GOVE[Forvaltning og offentlig sektor &#x29C9;, window="_blank", role="ext-link"]
-** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
-** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
-** Gjeldende lovgivning: https://lovdata.no/eli/lov/2006/05/19/16[Lov om rett til innsyn i dokument i offentleg verksemd (offentleglova) &#x29C9;, window="_blank", role="ext-link"]
+** *Tema*: https://op.europa.eu/en/web/eu-vocabularies/concept/-/resource?uri=http://publications.europa.eu/resource/authority/data-theme/TRAN[Transport &#x29C9;, window="_blank", role="ext-link"]
+** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971032081[971032081 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Statens vegvesen)
+** *Kontaktopplysninger*: se <kontaktpunktSVV> 
+** Gjeldende lovgivning: https://lovdata.no/dokument/SF/forskrift/2016-12-15-1600[Forskrift om tilgjengeliggjøring av sanntids veg- og trafikkinformasjonstjenester &#x29C9;, window="_blank", role="ext-link"]
 ** Distribusjon: 
 *** *TilgangsURL*: \https://example.org/exDistribution
 
 * <api789>:
 ** *Tittel*: «EksempelAPI» (bokmål) / _"Example API" (English)_
 ** *EndepunktsURL*: \https://example.org/exAPI
-** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827[991825827 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Digitaliseringsdirektoratet)
-** *Kontaktopplysninger*: se <kontaktpunktDigdir> 
+** *Utgiver*: https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971032081[971032081 &#x29C9;, window="_blank", role="ext-link"] (organisasjonsnummeret til Statens vegvesen)
+** *Kontaktopplysninger*: se <kontaktpunktSVV> 
 ** Tilgjengeliggjør datasett: <datasett456>
-* <kontaktpunktDigdir>: 
+
+* <kontaktpunktDigdirFDK>: 
 *** *Navn*: «Digitaliseringsdirektoratet» (bokmål) / _"Norwegian Digitalisation Agency" (English)_
-*** e-post: informasjonsforvaltning@digdir.no
+*** e-post: fellesdatakatalog@digdir.no
+*** kontaktside: https://data.norge.no/contact[https://data.norge.no/contact &#x29C9;, window="_blank", role="ext-link"]
+
+* <kontaktpunktSVV>: 
+*** *Navn*: «Statens vegvesen» / _"Norwegian Public Roads Administration" (English)_
+*** e-post: firmapost@vegvesen.no
 
 .For deg som er teknisk interessert: klikk her for å se beskrivelsene ovenfor representert i RDF Turtle, og i henhold til kravene spesifisert videre i standarden.
 [%collapsible]
@@ -76,20 +82,22 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 
 <katalog123> a dcat:Catalog ; # en katalog
    dct:title "Eksempelkatalog"@nb , "Example Catalogue"@en ; # tittel
-   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb , "An example catalogue, for illustration purposes only."@en ; # beskrivelse
+   dct:description "Et eksempelkatalog, kun for illustrasjonsformål."@nb , 
+      "An example catalogue, for illustration purposes only."@en ; # beskrivelse
    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
-   dcat:contactPoint <kontaktpunktDigdir> ; # kontaktpunkt
+   dcat:contactPoint <kontaktpunktDigdirFDK> ; # kontaktpunkt
    dcat:dataset <datasett456> ; # inneholder datasett
    dcat:service <api789> ; # inneholder datatjenester 
    .
 
 <datasett456> a dcat:Dataset ; # et datasett
    dct:title "Eksempeldatasett"@nb , "Example Dataset"@en ; # tittel
-   dct:description "Et eksempeldatasett, kun for illustrasjonsformål."@nb , "An example dataset, for illustration purposes only."@en; # beskrivelse
+   dct:description "Et eksempeldatasett, kun for illustrasjonsformål."@nb , 
+      "An example dataset, for illustration purposes only."@en; # beskrivelse
    dcat:theme <http://publications.europa.eu/resource/authority/data-theme/GOVE> ; # tema
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
-   dcat:contactPoint <kontaktpunktDigdir> ; # kontaktpunkt
-   dcatap:applicableLegislation <https://lovdata.no/eli/lov/2006/05/19/16> ; # gjeldende lovgivning
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971032081> ; # utgiver
+   dcat:contactPoint <kontaktpunktSVV> ; # kontaktpunkt
+   dcatap:applicableLegislation <https://lovdata.no/eli/forskrift/2016/12/15/1600> ; # gjeldende lovgivning
    dcat:distribution <distribusjon321> ; # datasettdistribusjon
    .
    
@@ -100,14 +108,20 @@ Følgende er et illustrativt eksempel på en katalog som inneholder beskrivelse 
 <api789> a dcat:DataService ; # en datatjeneste
    dct:title "EksempelAPI"@nb , "Example API"@en ; # tittel
    dcat:endpointURL <https://example.org/exlAPI> ; # endepunktsURL
-   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827> ; # utgiver
-   dcat:contactPoint <kontaktpunktDigdir> ; # kontaktpunkt
+   dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/971032081> ; # utgiver
+   dcat:contactPoint <kontaktpunktSVV> ; # kontaktpunkt
    dcat:servesDataset <datasett456> ; # tilgjengeliggjør datasett
    .
 
-<kontaktpunktDigdir> a vcard:Organization ; # et kontaktpunkt
+<kontaktpunktDigdirFDK> a vcard:Organization ; # et kontaktpunkt
    vcard:fn "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ; # navn
-   vcard:hasEmail <mailto:informasjonsforvaltning@digdir.no> ; # har e-post
+   vcard:hasEmail <mailto:fellesdatakatalog@digdir.no> ; # har e-post
+   vcard:hasURL <https://data.norge.no/contact> ; # har kontaktside
+   .
+
+<kontaktpunktSVV> a vcard:Organization ; # et kontaktpunkt
+   vcard:fn "Statens vegvesen"@nb , "Norwegian Public Roads Administration"@en ; # navn
+   vcard:hasEmail <mailto:firmapost@vegvesen.no> ; # har e-post
    .
 -----
 ====
