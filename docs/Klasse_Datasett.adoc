@@ -419,6 +419,20 @@ _This property is used to refer to a page or document about this dataset._
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_ 
 |===
 
+=== Datasett – eierskapshistorikk (dct:provenance) [[Datasett-eierskapshistorikk]]
+
+[cols="30s,70d"]
+|===
+| _English name_ | _provenance_
+| URI | dct:provenance
+| Verdiområde / _Range_ | dct:ProvenanceStatement
+| Anvendelse / _Usage note_ | Egenskapen brukes itl å referere til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
+
+_This property is used to refer to a statement about the lineage of a dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Valgfri / _Optional_
+|===
+
 === Datasett – eksempeldata (adms:sample) [[Datasett-eksempeldata]]
 
 [cols="30s,70"]
@@ -718,20 +732,6 @@ _This property is used to refer to a description of a relationship with another 
 | Anvendelse / _Usage note_ | Egenskapen brukes til å referere til nettside som gir tilgang til datasettet, dets distribusjoner og/eller tilleggsinformasjon. Intensjonen er å peke til en landingsside hos den opprinnelige datautgiveren.
 
 _This property is used to refer to a web page that provides access to the dataset, its distributions and/or additional information. It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Valgfri / _Optional_
-|===
-
-=== Datasett – eierskapshistorikk (dct:provenance) [[Datasett-opphav]]
-
-[cols="30s,70d"]
-|===
-| _English name_ | _provenance_
-| URI | dct:provenance
-| Verdiområde / _Range_ | dct:ProvenanceStatement
-| Anvendelse / _Usage note_ | Egenskapen brukes itl å referere til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
-
-_This property is used to refer to a statement about the lineage of a dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
