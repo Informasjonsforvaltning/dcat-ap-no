@@ -1,0 +1,7 @@
+= Hvordan du leser standarden
+
+<<Forenklet-fremstilling>> inneholder en forenklet fremstilling av noen av kravene i standarden. Denne delen er ment for alle, uavhengig av teknisk bakgrunn. Kravene er formulert uavhengig av hvordan de implementeres. 
+
+<<Spesifikasjon-per-klasse>> spesifiserer hvilke opplysninger som skal/kan/bør tas med i beskrivelsene, samt hvordan beskrivelsene skal representeres teknisk i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]). Det forutsettes kjennskap til RDF (å kunne lese RDF) og informasjonsmodellering (å kunne forstå en informasjonsmodell). Denne delen er primært ment for deg som skal utvikle/tilpasse verktøystøtte for beskrivelser i henhold til denne standarden, sekundært deg som skal beskrive datasett, datatjenester og datakataloger. 
+
+<<Spesielle-temaer>> inneholder forklaring/veiledning til hvordan standarden er tenkt brukt i noen spesifikke brukstilfeller. Avhengig av brukstilfelle/tema som diskuteres, kan det forutsettes noe kjennskap til RDF (å kunne lese RDF), og fagforståelse av det som skal beskrives (det faglige innholdet i det som skal beskrives). Denne delen kan derfor med fordel brukes av tverrfaglige team. 

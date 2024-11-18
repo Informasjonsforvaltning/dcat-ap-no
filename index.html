@@ -535,6 +535,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Forholdet-dcatno-dcatap-dcat">1.5.3. Spesielt om forholdet mellom DCAT-AP-NO og DCAT-AP/DCAT</a></li>
 </ul>
 </li>
+<li><a href="#_hvordan_du_leser_standarden">1.6. Hvordan du leser standarden</a></li>
 </ul>
 </li>
 <li><a href="#Forenklet-fremstilling">2. Forenklet fremstilling av noen av kravene i DCAT-AP-NO</a>
@@ -604,7 +605,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-kvalifisertKreditering">Datasett – kvalifisert kreditering (prov:qualifiedAttribution)</a></li>
 <li><a href="#Datasett-kvalifisertRelasjon">Datasett – kvalifisert relasjon (dcat:qualifiedRelation)</a></li>
 <li><a href="#Datasett-landingsside">Datasett – landingsside (dcat:landingPage)</a></li>
-<li><a href="#Datasett-opphav">Datasett – opphav (dct:provenance)</a></li>
+<li><a href="#Datasett-opphav">Datasett – eierskapshistorikk (dct:provenance)</a></li>
 <li><a href="#Datasett-produsent">Datasett – produsent (dct:creator)</a></li>
 <li><a href="#Datasett-relatertRessurs">Datasett – relatert ressurs (dct:relation)</a></li>
 <li><a href="#Datasett-romligOppløsning">Datasett – romlig oppløsning (dcat:spatialResolutionInMeters)</a></li>
@@ -1059,7 +1060,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Datasett med høy verdi (<em>High Value Datasets</em>, HVD)</strong>: Det er en egen standard, <a href="https://informasjonsforvaltning.github.io/hvd-dcat-ap-no/" class="ext-link" target="_blank" rel="noopener">HVD-DCAT-AP-NO  &#x29C9;</a> (p.t. til høring sammen med denne), som gjelder for beskrivelse av datasett med høy verdi.</p>
+<p><strong>Datasett med høy verdi (<em>High Value Datasets</em>, HVD)</strong>: Det er en egen standard, <a href="https://informasjonsforvaltning.github.io/hvd-dcat-ap-no/" class="ext-link" target="_blank" rel="noopener">HVD-DCAT-AP-NO  &#x29C9;</a>, som gjelder for beskrivelse av datasett med høy verdi.</p>
 </li>
 <li>
 <p><strong>Kvalitetsbeskrivelser</strong>: Det er etablert en norsk applikasjonsprofil av DQV, <a href="https://data.norge.no/specification/dqv-ap-no/" class="ext-link" target="_blank" rel="noopener">DQV-AP-NO &#x29C9;</a>, som spesifiserer hva skal/bør/kan tas med når datakvalitet beskrives.</p>
@@ -1182,13 +1183,25 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </div>
 </div>
 </div>
+<div class="sect2">
+<h3 id="_hvordan_du_leser_standarden"><a class="link" href="#_hvordan_du_leser_standarden">1.6. Hvordan du leser standarden</a></h3>
+<div class="paragraph">
+<p><a href="#Forenklet-fremstilling">Kapittel 2, <em>Forenklet fremstilling av noen av kravene i DCAT-AP-NO</em></a> inneholder en forenklet fremstilling av noen av kravene i standarden. Denne delen er ment for alle, uavhengig av teknisk bakgrunn. Kravene er formulert uavhengig av hvordan de implementeres.</p>
+</div>
+<div class="paragraph">
+<p><a href="#Spesifikasjon-per-klasse">Kapittel 3, <em>Krav til RDF-representasjon av klassene i DCAT-AP-NO</em></a> spesifiserer hvilke opplysninger som skal/kan/bør tas med i beskrivelsene, samt hvordan beskrivelsene skal representeres teknisk i RDF (<a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">Resource Description Framework &#x29C9;</a>). Det forutsettes kjennskap til RDF (å kunne lese RDF) og informasjonsmodellering (å kunne forstå en informasjonsmodell). Denne delen er primært ment for deg som skal utvikle/tilpasse verktøystøtte for beskrivelser i henhold til denne standarden, sekundært deg som skal beskrive datasett, datatjenester og datakataloger.</p>
+</div>
+<div class="paragraph">
+<p><a href="#Spesielle-temaer">Kapittel 4, <em>Noen spesielle temaer</em></a> inneholder forklaring/veiledning til hvordan standarden er tenkt brukt i noen spesifikke brukstilfeller. Avhengig av brukstilfelle/tema som diskuteres, kan det forutsettes noe kjennskap til RDF (å kunne lese RDF), og fagforståelse av det som skal beskrives (det faglige innholdet i det som skal beskrives). Denne delen kan derfor med fordel brukes av tverrfaglige team.</p>
+</div>
+</div>
 </div>
 </div>
 <div class="sect1">
 <h2 id="Forenklet-fremstilling"><a class="link" href="#Forenklet-fremstilling">2. Forenklet fremstilling av noen av kravene i DCAT-AP-NO</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>Denne delen av standarden er primært ment for den ikke-tekniske målgruppen.</em></p>
+<p><em>Denne delen av standarden er ment for alle, uavhengig av teknisk bakgrunn.</em></p>
 </div>
 <div class="sect2">
 <h3 id="Noen-krav"><a class="link" href="#Noen-krav">2.1. Opplysninger som skal og bør tas med om en katalog, et datasett og en datatjeneste</a></h3>
@@ -1456,10 +1469,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <h2 id="Spesifikasjon-per-klasse"><a class="link" href="#Spesifikasjon-per-klasse">3. Krav til RDF-representasjon av klassene i DCAT-AP-NO</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>Denne delen av standarden er primært ment for den tekniske målgruppen.</em></p>
-</div>
-<div class="paragraph">
-<p>I tillegg til å stille krav til hva skal/bør/kan tas med i beskrivelser av datasett, datatjenester og datakataloger, spesifiserer dette kapittelet også hvordan beskrivelsene SKAL representeres i RDF (<a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">Resource Description Framework &#x29C9;</a>).</p>
+<p>I tillegg til å stille krav til hva skal/bør/kan tas med i beskrivelser av datasett, datatjenester og datakataloger, spesifiserer denne delen av standarden også hvordan beskrivelsene skal representeres til RDF (<a href="https://www.w3.org/RDF/" class="ext-link" target="_blank" rel="noopener">Resource Description Framework &#x29C9;</a>). Det forutsettes derfor kjennskap til RDF (å kunne lese RDF) og informasjonsmodellering (å kunne forstå en informasjonsmodell).</p>
 </div>
 <div class="paragraph">
 <p><a href="#diagram-DCAT-AP-NO-klasser">Figur 2</a> viser en oversikt over klassene som er spesifisert i DCAT-AP-NO samt relasjoner mellom noen av nøkkelklassene. Med tanke på lesbarhet er flere klasser bare listet opp for oversikts skyld, uten at relasjoner til/fra dem er vist i figuren.</p>
@@ -3318,7 +3328,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-opphav"><a class="link" href="#Datasett-opphav">3.2.3.20. Datasett – opphav (dct:provenance)</a></h5>
+<h5 id="Datasett-opphav"><a class="link" href="#Datasett-opphav">3.2.3.20. Datasett – eierskapshistorikk (dct:provenance)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -10371,7 +10381,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <h2 id="Spesielle-temaer"><a class="link" href="#Spesielle-temaer">4. Noen spesielle temaer</a></h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p><em>Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen.</em></p>
+<p>Denne delen av standarden inneholder forklaring/veiledning til hvordan standarden er tenkt brukt i noen spesifikke brukstilfeller. Avhengig av brukstilfelle/tema som diskuteres, kan det forutsettes noe kjennskap til RDF (å kunne lese RDF), og fagforståelse av det som skal beskrives (det faglige innholdet i det som skal beskrives).</p>
 </div>
 <div class="sect2">
 <h3 id="Om-datasett-datatjeneste-distribusjon"><a class="link" href="#Om-datasett-datatjeneste-distribusjon">4.1. Om bruk av datasett, datatjeneste og distribusjon</a></h3>
@@ -12005,7 +12015,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-12 14:48:48 UTC
+Sist oppdatert 2024-11-18 13:35:55 UTC
 </div>
 </div>
 </body>

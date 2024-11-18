@@ -1,6 +1,6 @@
 = Noen spesielle temaer [[Spesielle-temaer]]
 
-_Denne delen er ment for både den ikke-tekniske og den tekniske målgruppen, fortrinnsvis sammen._
+Denne delen av standarden inneholder forklaring/veiledning til hvordan standarden er tenkt brukt i noen spesifikke brukstilfeller. Avhengig av brukstilfelle/tema som diskuteres, kan det forutsettes noe kjennskap til RDF (å kunne lese RDF), og fagforståelse av det som skal beskrives (det faglige innholdet i det som skal beskrives). 
 
 include::Tema_datasett_datatjeneste_distribusjon.adoc[]
 

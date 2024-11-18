@@ -1,8 +1,6 @@
 = Krav til RDF-representasjon av klassene i DCAT-AP-NO [[Spesifikasjon-per-klasse]]
 
-_Denne delen av standarden er primært ment for den tekniske målgruppen._ 
-
-I tillegg til å stille krav til hva skal/bør/kan tas med i beskrivelser av datasett, datatjenester og datakataloger, spesifiserer dette kapittelet også hvordan beskrivelsene SKAL representeres i RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]). 
+I tillegg til å stille krav til hva skal/bør/kan tas med i beskrivelser av datasett, datatjenester og datakataloger, spesifiserer denne delen av standarden også hvordan beskrivelsene skal representeres til RDF (https://www.w3.org/RDF/[Resource Description Framework &#x29C9;, window="_blank", role="ext-link"]). Det forutsettes derfor kjennskap til RDF (å kunne lese RDF) og informasjonsmodellering (å kunne forstå en informasjonsmodell). 
 
 :xrefstyle: short
 
