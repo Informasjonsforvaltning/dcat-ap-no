@@ -722,7 +722,7 @@ _This property is used to refer to a web page that provides access to the datase
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
 |===
 
-=== Datasett – opphav (dct:provenance) [[Datasett-opphav]]
+=== Datasett – eierskapshistorikk (dct:provenance) [[Datasett-opphav]]
 
 [cols="30s,70d"]
 |===

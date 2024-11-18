@@ -1,6 +1,6 @@
 = Forenklet fremstilling av noen av kravene i DCAT-AP-NO [[Forenklet-fremstilling]] 
 
-_Denne delen av standarden er primært ment for den ikke-tekniske målgruppen._ 
+_Denne delen av standarden er ment for alle, uavhengig av teknisk bakgrunn._ 
 
 == Opplysninger som skal og bør tas med om en katalog, et datasett og en datatjeneste [[Noen-krav]]
 

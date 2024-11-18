@@ -9,7 +9,7 @@ DCAT-AP-NO er en applikasjonsprofil og ikke en direkte oversettelse av EU sin ht
 
 Istedenfor å ha alt spesifisert i denne standarden, er det etablert flere andre spesifikasjoner for å beskrive ulike aspekter ved datasett/datatjenester:
 
-* *Datasett med høy verdi (_High Value Datasets_, HVD)*: Det er en egen standard, https://informasjonsforvaltning.github.io/hvd-dcat-ap-no/[HVD-DCAT-AP-NO  &#x29C9;, window="_blank", role="ext-link"] (p.t. til høring sammen med denne), som gjelder for beskrivelse av datasett med høy verdi. 
+* *Datasett med høy verdi (_High Value Datasets_, HVD)*: Det er en egen standard, https://informasjonsforvaltning.github.io/hvd-dcat-ap-no/[HVD-DCAT-AP-NO  &#x29C9;, window="_blank", role="ext-link"], som gjelder for beskrivelse av datasett med høy verdi. 
 
 * *Kvalitetsbeskrivelser*: Det er etablert en norsk applikasjonsprofil av DQV, https://data.norge.no/specification/dqv-ap-no/[DQV-AP-NO &#x29C9;, window="_blank", role="ext-link"], som spesifiserer hva skal/bør/kan tas med når datakvalitet beskrives. 
 

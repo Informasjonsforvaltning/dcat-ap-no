@@ -13,6 +13,8 @@ include::04b_Om_kravene.adoc[]
 
 include::Samsvarskrav.adoc[]
 
+include::Hvordan_du_leser_standarden.adoc[]
+
 // include::Leseveiledning.adoc[]
 
 :leveloffset: -1
