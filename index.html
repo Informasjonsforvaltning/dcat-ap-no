@@ -586,7 +586,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#Datasett-valgfrie-egenskaper">3.2.3. Valgfrie egenskaper for klassen <em>Datasett</em></a>
 <ul class="sectlevel4">
+<li><a href="#Datasett-annenAnsvarligAktør">Datasett – annen ansvarlig aktør (prov:qualifiedAttribution)</a></li>
 <li><a href="#Datasett-annenIdentifikator">Datasett – annen identifikator (adms:identifier)</a></li>
+<li><a href="#Datasett-annenSpesifikkRelasjon">Datasett – annen spesifikk relasjon (dcat:qualifiedRelation)</a></li>
 <li><a href="#Datasett-dokumentasjon">Datasett – dokumentasjon (foaf:page)</a></li>
 <li><a href="#Datasett-eierskapshistorikk">Datasett – eierskapshistorikk (dct:provenance)</a></li>
 <li><a href="#Datasett-eksempeldata">Datasett – eksempeldata (adms:sample)</a></li>
@@ -603,8 +605,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#Datasett-iSerie">Datasett – i serie (dcat:inSeries)</a></li>
 <li><a href="#Datasett-identifikator">Datasett – identifikator (dct:identifier)</a></li>
 <li><a href="#Datasett-kilde">Datasett – kilde (dct:source)</a></li>
-<li><a href="#Datasett-kvalifisertKreditering">Datasett – kvalifisert kreditering (prov:qualifiedAttribution)</a></li>
-<li><a href="#Datasett-kvalifisertRelasjon">Datasett – kvalifisert relasjon (dcat:qualifiedRelation)</a></li>
 <li><a href="#Datasett-landingsside">Datasett – landingsside (dcat:landingPage)</a></li>
 <li><a href="#Datasett-produsent">Datasett – produsent (dct:creator)</a></li>
 <li><a href="#Datasett-relatertRessurs">Datasett – relatert ressurs (dct:relation)</a></li>
@@ -2555,7 +2555,48 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 <div class="sect3">
 <h4 id="Datasett-valgfrie-egenskaper"><a class="link" href="#Datasett-valgfrie-egenskaper">3.2.3. Valgfrie egenskaper for klassen <em>Datasett</em></a></h4>
 <div class="sect4">
-<h5 id="Datasett-annenIdentifikator"><a class="link" href="#Datasett-annenIdentifikator">3.2.3.1. Datasett – annen identifikator (adms:identifier)</a></h5>
+<h5 id="Datasett-annenAnsvarligAktør"><a class="link" href="#Datasett-annenAnsvarligAktør">3.2.3.1. Datasett – annen ansvarlig aktør (prov:qualifiedAttribution)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>qualified attribution</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prov:qualifiedAttribution</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">prov:Attribution</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør som har en eller annen form for ansvar for datasettet, men som ikke er en <a href="#Datasett-utgiver">utgiver</a> eller <a href="#Datasett-produsent">produsent</a> av datasettet.</p>
+<p class="tableblock"><em>This property is used to refer to an agent that has some form of responsibility for the dataset, but which is not a <a href="#Datasett-utgiver">publisher</a> nor a <a href="#Datasett-produsent">creator</a> of the datasett.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Denne egenskapen er ment å brukes til å referere til en aktør som har en gitt rolle, annen enn utgiver, produsent osv., f.eks. distributør. Se <a href="https://www.w3.org/TR/vocab-dcat-3/#qualified-attribution" class="ext-link" target="_blank" rel="noopener">forklaring og eksempler i W3C/DCAT &#x29C9;</a>.</p>
+<p class="tableblock"><em>This property is meant to be used to refer to an agent that has a given role, other than publisher, creator etc., e.g., a distributor. See <a href="https://www.w3.org/TR/vocab-dcat-3/#qualified-attribution" class="ext-link" target="_blank" rel="noopener">explanations and examples in W3C/DCAT &#x29C9;</a>.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Datasett-annenIdentifikator"><a class="link" href="#Datasett-annenIdentifikator">3.2.3.2. Datasett – annen identifikator (adms:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2591,7 +2632,48 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-dokumentasjon"><a class="link" href="#Datasett-dokumentasjon">3.2.3.2. Datasett – dokumentasjon (foaf:page)</a></h5>
+<h5 id="Datasett-annenSpesifikkRelasjon"><a class="link" href="#Datasett-annenSpesifikkRelasjon">3.2.3.3. Datasett – annen spesifikk relasjon (dcat:qualifiedRelation)</a></h5>
+<table class="tableblock frame-all grid-all stripes-even stretch">
+<colgroup>
+<col style="width: 30%;">
+<col style="width: 70%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>qualified relation</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:qualifiedRelation</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Relasjon">dcat:Relationship</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en beskrivelse av en spesifikk relasjon som datasettet har til en annen ressurs, og som ikke kan uttrykkes ved bruk av egenskapene <a href="#Datasett-erstatter">erstatter</a>, <a href="#Datasett-kilde">kilde</a>, <a href="#Datasett-erReferertAv">er referert av</a> osv.</p>
+<p class="tableblock"><em>This property is used to refer to a description of a relationship that the dataset has with another resource, and which can not be expressed using properties <a href="#Datasett-erstatter">replaces</a>, <a href="#Datasett-kilde">source</a>, <a href="#Datasett-erReferertAv">is referenced by</a> etc.</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Merknad / <em>Note</em></strong></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen er ment for å brukes til å uttrykke relasjoner som ikke kan uttrykkes ved bruk av egenskapene <a href="#Datasett-erstatter"> 3.2.3.9, &#8220;Datasett – erstatter (dct:replaces)&#8221;</a>, <a href="#Datasett-erReferertAv"> 3.2.3.8, &#8220;Datasett – er referert av (dct:isReferencedBy)&#8221;</a>, <a href="#Datasett-forrige"> 3.2.3.10, &#8220;Datasett – forrige (dcat:prev)&#8221;</a>, <a href="#Datasett-harVersjon"> 3.2.3.15, &#8220;Datasett – har versjon (dcat:hasVersion)&#8221;</a>, <a href="#Datasett-kilde"> 3.2.3.19, &#8220;Datasett – kilde (dct:source)&#8221;</a> osv., og når man ønsker å unngå å bruke den uspesifikke relasjonen <a href="#Datasett-relatertRessurs"> 3.2.3.22, &#8220;Datasett – relatert ressurs (dct:relation)&#8221;</a>. Se <a href="https://www.w3.org/TR/vocab-dcat-3/#qualified-relationship" class="ext-link" target="_blank" rel="noopener">forklaring og eksempler i W3C/DCAT &#x29C9;</a>.</p>
+<p class="tableblock"><em>This property is meant to be used to express relationships that can not be expressed using the properties <a href="#Datasett-erstatter"> 3.2.3.9, &#8220;Datasett – erstatter (dct:replaces)&#8221;</a>, <a href="#Datasett-erReferertAv"> 3.2.3.8, &#8220;Datasett – er referert av (dct:isReferencedBy)&#8221;</a>, <a href="#Datasett-forrige"> 3.2.3.10, &#8220;Datasett – forrige (dcat:prev)&#8221;</a>, <a href="#Datasett-harVersjon"> 3.2.3.15, &#8220;Datasett – har versjon (dcat:hasVersion)&#8221;</a>, <a href="#Datasett-kilde"> 3.2.3.19, &#8220;Datasett – kilde (dct:source)&#8221;</a> etc., and when avoiding using the unspecific relation <a href="#Datasett-relatertRessurs"> 3.2.3.22, &#8220;Datasett – relatert ressurs (dct:relation)&#8221;</a>. See <a href="https://www.w3.org/TR/vocab-dcat-3/#qualified-relationship" class="ext-link" target="_blank" rel="noopener">explanations and examples in W3C/DCAT &#x29C9;</a>.</em></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect4">
+<h5 id="Datasett-dokumentasjon"><a class="link" href="#Datasett-dokumentasjon">3.2.3.4. Datasett – dokumentasjon (foaf:page)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2627,7 +2709,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-eierskapshistorikk"><a class="link" href="#Datasett-eierskapshistorikk">3.2.3.3. Datasett – eierskapshistorikk (dct:provenance)</a></h5>
+<h5 id="Datasett-eierskapshistorikk"><a class="link" href="#Datasett-eierskapshistorikk">3.2.3.5. Datasett – eierskapshistorikk (dct:provenance)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2663,7 +2745,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-eksempeldata"><a class="link" href="#Datasett-eksempeldata">3.2.3.4. Datasett – eksempeldata (adms:sample)</a></h5>
+<h5 id="Datasett-eksempeldata"><a class="link" href="#Datasett-eksempeldata">3.2.3.6. Datasett – eksempeldata (adms:sample)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2699,7 +2781,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-endringsdato"><a class="link" href="#Datasett-endringsdato">3.2.3.5. Datasett – endringsdato (dct:modified)</a></h5>
+<h5 id="Datasett-endringsdato"><a class="link" href="#Datasett-endringsdato">3.2.3.7. Datasett – endringsdato (dct:modified)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2740,7 +2822,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-erReferertAv"><a class="link" href="#Datasett-erReferertAv">3.2.3.6. Datasett – er referert av (dct:isReferencedBy)</a></h5>
+<h5 id="Datasett-erReferertAv"><a class="link" href="#Datasett-erReferertAv">3.2.3.8. Datasett – er referert av (dct:isReferencedBy)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2776,7 +2858,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-erstatter"><a class="link" href="#Datasett-erstatter">3.2.3.7. Datasett – erstatter (dct:replaces)</a></h5>
+<h5 id="Datasett-erstatter"><a class="link" href="#Datasett-erstatter">3.2.3.9. Datasett – erstatter (dct:replaces)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2812,7 +2894,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-forrige"><a class="link" href="#Datasett-forrige">3.2.3.8. Datasett – forrige (dcat:prev)</a></h5>
+<h5 id="Datasett-forrige"><a class="link" href="#Datasett-forrige">3.2.3.10. Datasett – forrige (dcat:prev)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2848,7 +2930,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-frekvens"><a class="link" href="#Datasett-frekvens">3.2.3.9. Datasett – frekvens (dct:accrualPeriodicity)</a></h5>
+<h5 id="Datasett-frekvens"><a class="link" href="#Datasett-frekvens">3.2.3.11. Datasett – frekvens (dct:accrualPeriodicity)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2889,7 +2971,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-har-gebyr"><a class="link" href="#Datasett-har-gebyr">3.2.3.10. Datasett – har gebyr (cv:hasCost)</a></h5>
+<h5 id="Datasett-har-gebyr"><a class="link" href="#Datasett-har-gebyr">3.2.3.12. Datasett – har gebyr (cv:hasCost)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2930,7 +3012,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-harKvalitetsmerknad"><a class="link" href="#Datasett-harKvalitetsmerknad">3.2.3.11. Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</a></h5>
+<h5 id="Datasett-harKvalitetsmerknad"><a class="link" href="#Datasett-harKvalitetsmerknad">3.2.3.13. Datasett – har kvalitetsmerknad (dqv:hasQualityAnnotation)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -2988,7 +3070,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasett-harKvalitetsmåling"><a class="link" href="#Datasett-harKvalitetsmåling">3.2.3.12. Datasett – har kvalitetsmåling (dqv:hasQualityMeasurement)</a></h5>
+<h5 id="Datasett-harKvalitetsmåling"><a class="link" href="#Datasett-harKvalitetsmåling">3.2.3.14. Datasett – har kvalitetsmåling (dqv:hasQualityMeasurement)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3039,7 +3121,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasett-harVersjon"><a class="link" href="#Datasett-harVersjon">3.2.3.13. Datasett – har versjon (dcat:hasVersion)</a></h5>
+<h5 id="Datasett-harVersjon"><a class="link" href="#Datasett-harVersjon">3.2.3.15. Datasett – har versjon (dcat:hasVersion)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3075,7 +3157,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-iSamsvarMed"><a class="link" href="#Datasett-iSamsvarMed">3.2.3.14. Datasett – i samsvar med (dct:conformsTo)</a></h5>
+<h5 id="Datasett-iSamsvarMed"><a class="link" href="#Datasett-iSamsvarMed">3.2.3.16. Datasett – i samsvar med (dct:conformsTo)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3111,7 +3193,7 @@ ikke tenkt brukt for å beskrive fagsystem.</p>
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-iSerie"><a class="link" href="#Datasett-iSerie">3.2.3.15. Datasett – i serie (dcat:inSeries)</a></h5>
+<h5 id="Datasett-iSerie"><a class="link" href="#Datasett-iSerie">3.2.3.17. Datasett – i serie (dcat:inSeries)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3184,7 +3266,7 @@ ex:budget-2020 a dcat:Dataset ;
 </div>
 </div>
 <div class="sect4">
-<h5 id="Datasett-identifikator"><a class="link" href="#Datasett-identifikator">3.2.3.16. Datasett – identifikator (dct:identifier)</a></h5>
+<h5 id="Datasett-identifikator"><a class="link" href="#Datasett-identifikator">3.2.3.18. Datasett – identifikator (dct:identifier)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3220,7 +3302,7 @@ ex:budget-2020 a dcat:Dataset ;
 </table>
 </div>
 <div class="sect4">
-<h5 id="Datasett-kilde"><a class="link" href="#Datasett-kilde">3.2.3.17. Datasett – kilde (dct:source)</a></h5>
+<h5 id="Datasett-kilde"><a class="link" href="#Datasett-kilde">3.2.3.19. Datasett – kilde (dct:source)</a></h5>
 <table class="tableblock frame-all grid-all stripes-even stretch">
 <colgroup>
 <col style="width: 30%;">
@@ -3243,78 +3325,6 @@ ex:budget-2020 a dcat:Dataset ;
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til et datasett som gjeldende datasett er avledet fra.</p>
 <p class="tableblock"><em>This property is used to refer to a related dataset from which the described dataset is derived.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="Datasett-kvalifisertKreditering"><a class="link" href="#Datasett-kvalifisertKreditering">3.2.3.18. Datasett – kvalifisert kreditering (prov:qualifiedAttribution)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>qualified attribution</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prov:qualifiedAttribution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">prov:Attribution</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en aktør som har en eller annen form for ansvar for ressursen.</p>
-<p class="tableblock"><em>This property is used to refer to an agent having some form of responsibility for the resource.</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0..n</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Kravnivå / <em>Requirement level</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Valgfri / <em>Optional</em></p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="Datasett-kvalifisertRelasjon"><a class="link" href="#Datasett-kvalifisertRelasjon">3.2.3.19. Datasett – kvalifisert relasjon (dcat:qualifiedRelation)</a></h5>
-<table class="tableblock frame-all grid-all stripes-even stretch">
-<colgroup>
-<col style="width: 30%;">
-<col style="width: 70%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong><em>English name</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><em>qualified relation</em></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>URI</strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">dcat:qualifiedRelation</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Verdiområde / <em>Range</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#Relasjon">dcat:Relationship</a></p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Anvendelse / <em>Usage note</em></strong></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Egenskapen brukes til å referere til en beskrivelse av en relasjon til en annen ressurs.</p>
-<p class="tableblock"><em>This property is used to refer to a description of a relationship with another resource.</em></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><strong>Multiplisitet / <em>Multiplicity</em></strong></p></td>
@@ -10482,7 +10492,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="sect2">
 <h3 id="Om-Datasettserie"><a class="link" href="#Om-Datasettserie">4.2. Om bruk av datasettserie</a></h3>
 <div class="paragraph">
-<p>Datasettserien (<code>dcat:DatasetSeries</code>) brukes til å beskrive en samling av datasett (<code>dcat:Dataset</code>) som er sterkt relatert til hverandre. En datasettserie trenger ikke å være ordnet, dvs. at det ikke trenger å være noen rekkefølge mellom datasettene i en datasettserie. Et datasett inkluderes i en datasettserie ved hjelp av datasettegenskapen <a href="#Datasett-iSerie"> 3.2.3.15, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a>.</p>
+<p>Datasettserien (<code>dcat:DatasetSeries</code>) brukes til å beskrive en samling av datasett (<code>dcat:Dataset</code>) som er sterkt relatert til hverandre. En datasettserie trenger ikke å være ordnet, dvs. at det ikke trenger å være noen rekkefølge mellom datasettene i en datasettserie. Et datasett inkluderes i en datasettserie ved hjelp av datasettegenskapen <a href="#Datasett-iSerie"> 3.2.3.17, &#8220;Datasett – i serie (dcat:inSeries)&#8221;</a>.</p>
 </div>
 <div class="paragraph">
 <p>For å harmonisere bruk av datasettserier, skal følgende tas hensyn til:</p>
@@ -11429,7 +11439,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datasett-gjeldendeLovgivning"> 3.2.2.6, &#8220;Datasett – gjeldende lovgivning (dcatap:applicableLegislation)&#8221;</a>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
 <li>
-<p><a href="#Datasett-har-gebyr"> 3.2.3.10, &#8220;Datasett – har gebyr (cv:hasCost)&#8221;</a>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.</p>
+<p><a href="#Datasett-har-gebyr"> 3.2.3.12, &#8220;Datasett – har gebyr (cv:hasCost)&#8221;</a>, for å kunne oppgi ev. kostnader knyttet til bruk av datasettet.</p>
 </li>
 </ul>
 </div>
@@ -11483,7 +11493,7 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><a href="#Datasett-beskrivelse"> 3.2.1.1, &#8220;Datasett – beskrivelse (dct:description)&#8221;</a>: Tilføyet følgende krav: Det SKAL være maks. 1 verdi per språk.</p>
 </li>
 <li>
-<p><a href="#Datasett-identifikator"> 3.2.3.16, &#8220;Datasett – identifikator (dct:identifier)&#8221;</a>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar <strong>*</strong> <a href="#Datasett-kontaktpunkt"> 3.2.1.2, &#8220;Datasett – kontaktpunkt (dcat:contactPoint)&#8221;</a>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n, i samsvar med DCAT-AP/DCAT.
+<p><a href="#Datasett-identifikator"> 3.2.3.18, &#8220;Datasett – identifikator (dct:identifier)&#8221;</a>: Kravnivået er endret fra obligatorisk til valgfri, i samsvar <strong>*</strong> <a href="#Datasett-kontaktpunkt"> 3.2.1.2, &#8220;Datasett – kontaktpunkt (dcat:contactPoint)&#8221;</a>: Kravnivået er endret fra anbefalt til obligatorisk og dermed også multiplisiteten fra 0..n til 1..n, i samsvar med DCAT-AP/DCAT.
 med DCAT-AP/DCAT.</p>
 </li>
 <li>
@@ -12015,7 +12025,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2024-11-18 13:43:15 UTC
+Sist oppdatert 2024-11-19 10:32:17 UTC
 </div>
 </div>
 </body>
