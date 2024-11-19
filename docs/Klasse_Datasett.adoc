@@ -763,11 +763,14 @@ _This property is used to refer to an entity responsible for producing the datas
 | _English name_ | _related resource_
 | URI | dct:relation
 | Verdiområde / _Range_ | rdfs:Resource
-| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en beslektet ressurs.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til en beslektet ressurs, uten nærmere angivelse av type relasjon.
 
-_This property is used to refer to a related resource._
+_This property is used to refer to a related resource, without specifying further type of the relationship._
 | Multiplisitet / _Multiplicity_ | 0..n
 | Kravnivå / _Requirement level_ | Valgfri / _Optional_
+| Merknad / _Note_ | Denne egenskapen brukes når det ikke er behov for nærmere angivelse av type relasjon datasettet har med den andre ressursen. Bruk heller egenskapene <<Datasett-erstatter>>, <<Datasett-erReferertAv>>, <<Datasett-forrige>>, <<Datasett-harVersjon>>, <<Datasett-kilde>> osv., eller <<Datasett-annenSpesifikkRelasjon>>, når det er behov for å angi type relasjon. 
+
+__This property is used when there is no need for further specifying type of the relationship that the dataset has with the other resource. Use rather properties <<Datasett-erstatter>>, <<Datasett-erReferertAv>>, <<Datasett-forrige>>, <<Datasett-harVersjon>>, <<Datasett-kilde>> etc., or <<Datasett-annenSpesifikkRelasjon>>, when the type of the relationship needs to be specified.__
 |===
 
 === Datasett – romlig oppløsning (dcat:spatialResolutionInMeters) [[Datasett-romligOppløsning]]
