@@ -1,4 +1,4 @@
-== Om bruk av egenskapene _lisens (dct:license)_, _tilgangsrettigheter (dct:accessRights)_ og _rettigheter/brukervilkår (dct:rights)_ [[Om-lisens-tilgang-rettigheter]]
+== Om bruk av egenskapene _lisens (dct:license)_, _tilgangsrettigheter (dct:accessRights)_, _rettigheter/brukervilkår (dct:rights)_ og _policy (odrl:hasPolicy)_ [[Om-lisens-tilgang-rettigheter-policy]]
 
 DCAT-AP-NO støtter følgende tre hovedscenarier der man trenger å beskrive tilgang og/eller brukervilkår til en ressurs (f.eks. et datasett): 1) behov for å referere til en lisens, 2) behov for å spesifisere tilgangsrettigheter og 3) andre behov enn ovennevnte, for å uttrykke rettigheter eller brukervilkår, f.eks. opphavsrett. 
 
@@ -10,3 +10,4 @@ DCAT-AP-NO støtter disse scenariene på følgende måte:
 
 . `dct:rights` KAN brukes til å uttrykke alle andre typer rettigheter og brukervilkår, bl.a. opphavsrett. Det er anbefalt å bruke <<Rettighetserklæring>> til å ha en strukturert beskrivelse av rettigheter og brukervilkår. Dette gjelder egenskapene <<Distribusjon-rettigheter>> og <<Katalog-rettigheter>>.
 
+W3C/DCAT anbefaler bruk av https://www.w3.org/TR/odrl-vocab/[ODRL (Open Digital Rights Language) &#x29C9;, window="_blank", role="ext-link"] til å spesifisere spesielle bruksvilkår/-regler, som kan refereres til ved å bruke egenskapen  <<Distribusjon-policy>>. Se https://www.w3.org/TR/vocab-dcat-3/#ex-odrl-policy[dette eksemplet i W3C/DCAT &#x29C9;, window="_blank", role="ext-link"], som illustrerer bruken av __ODRL policy__ til å uttrykke hva som er tillatt og ikke tillatt. 
