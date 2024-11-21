@@ -1,0 +1,68 @@
+name: build adocs and publish v2 to production (.../v.2.2)
+
+on:
+  push:
+    branches:
+      - v3
+    paths:
+      - docs/**
+  workflow_dispatch:
+
+jobs:
+  adoc_build:
+    runs-on: ubuntu-latest
+    name: asciidoctor build
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: v3
+
+      - name: Build html
+        id: adocbuild_html
+        uses: tonynv/asciidoctor-action@master
+        with:
+          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+
+      - name: Build pdf
+        id: adocbuild_pdf
+        uses: tonynv/asciidoctor-action@master
+        with:
+            program: "asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc"
+        continue-on-error: true
+
+      - name: Upload files to static-rdf-server
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
+        id: upload-files
+        with:
+          ontology-type: "specification"
+          ontology: "dcat-ap-no"
+          host: "https://data.norge.no"
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+          files: |
+            docs/index.html text/html nb
+            docs/files/dcat-ap-no.pdf application/pdf nb files/dcat-ap-no.pdf
+            docs/images/Digdir.png image/png nb images/Digdir.png
+            docs/images/datasett-distribusjon-datatjeneste.png image/png nb images/datasett-distribusjon-datatjeneste.png
+            docs/images/DCAT-AP-NO-forenklet-fremstilling.png image/png nb images/DCAT-AP-NO-forenklet-fremstilling.png
+            docs/images/DCAT-AP-NO-klasser.png image/png nb images/DCAT-AP-NO-klasser.png
+            docs/images/Figur-ordnet-datasettserie.png image/png nb images/Figur-ordnet-datasettserie.png
+            docs/images/Klassen-Aktør.png image/png nb images/Klassen-Aktør.png
+            docs/images/Klassen-Datasett.png image/png nb images/Klassen-Datasett.png
+            docs/images/Klassen-Datasettserie.png image/png nb images/Klassen-Datasettserie.png
+            docs/images/Klassen-Datatjeneste.png image/png nb images/Klassen-Datatjeneste.png
+            docs/images/Klassen-Distribusjon.png image/png nb images/Klassen-Distribusjon.png
+            docs/images/Klassen-Gebyr.png image/png nb images/Klassen-Gebyr.png
+            docs/images/Klassen-Identifikator.png image/png nb images/Klassen-Identifikator.png
+            docs/images/Klassen-Katalog.png image/png nb images/Klassen-Katalog.png
+            docs/images/Klassen-KatalogisertRessurs.png image/png nb images/Klassen-KatalogisertRessurs.png
+            docs/images/Klassen-Katalogpost.png image/png nb images/Klassen-Katalogpost.png
+            docs/images/Klassen-Kontaktopplysning.png image/png nb images/Klassen-Kontaktopplysning.png
+            docs/images/Klassen-RegulativRessurs.png image/png nb images/Klassen-RegulativRessurs.png
+            docs/images/Klassen-Relasjon.png image/png nb images/Klassen-Relasjon.png
+            docs/images/Klassen-Rettighetserklæring.png image/png nb images/Klassen-Rettighetserklæring.png
+            docs/images/Klassen-Sjekksum.png image/png nb images/Klassen-Sjekksum.png
+            docs/images/Klassen-Standard.png image/png nb images/Klassen-Standard.png
+            docs/images/Klassen-Tidsrom.png image/png nb images/Klassen-Tidsrom.png
+

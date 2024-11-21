@@ -16,12 +16,12 @@ jobs:
         uses: actions/checkout@v4
       - name: Build html
         id: adocbuild
-        uses: avattathil/asciidoctor-action@master
+        uses: tonynv/asciidoctor-action@master
         with:
           program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
       - name: Build pdf
         id: adocbuild_pdf
-        uses: avattathil/asciidoctor-action@master
+        uses: tonynv/asciidoctor-action@master
         with:
           program: "asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc"
         continue-on-error: true

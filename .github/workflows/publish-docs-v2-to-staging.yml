@@ -21,16 +21,9 @@ jobs:
 
       - name: Build html
         id: adocbuild
-        uses: avattathil/asciidoctor-action@master
+        uses: tonynv/asciidoctor-action@master
         with:
           program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
-
-      - name: Build pdf
-        id: adocbuild_pdf
-        uses: avattathil/asciidoctor-action@master
-        with:
-          program: "asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc"
-        continue-on-error: true
 
       - name: Upload rdf to static-rdf-server
         uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
@@ -38,6 +31,7 @@ jobs:
         with:
           ontology-type: "specification"
           ontology: "dcat-ap-no"
+          version: "v2.2"
           host: "https://staging.fellesdatakatalog.digdir.no"
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
           files: |
