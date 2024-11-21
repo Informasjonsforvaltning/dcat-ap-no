@@ -36,7 +36,6 @@ jobs:
           api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
           files: |
             docs/index.html text/html nb
-            docs/files/dcat-ap-no.pdf application/pdf nb files/dcat-ap-no.pdf
             docs/files/DCAT-AP-NO2_20210903.eap application/octet-stream nb files/DCAT-AP-NO2_20210903.eap
             docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
             docs/images/DCAT-AP-NO2_20210903.png image/png nb images/DCAT-AP-NO2_20210903.png
