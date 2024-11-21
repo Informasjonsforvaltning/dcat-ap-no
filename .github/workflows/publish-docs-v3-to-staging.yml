@@ -39,7 +39,7 @@ jobs:
           ontology-type: "specification"
           ontology: "dcat-ap-no"
           host: "https://staging.fellesdatakatalog.digdir.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
+          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
           files: |
             docs/index.html text/html nb
             docs/files/dcat-ap-no.pdf application/pdf nb files/dcat-ap-no.pdf
