@@ -14,13 +14,9 @@ ifdef::backend-pdf[:toc: macro]
 
 image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 
-include::shared/download.adoc[]
+CAUTION: Denne versjonen av DCAT-AP-NO er på vei ut og vil ikke bli vedlikeholdt (inkl. ev. kjente feil/mangler). Vi oppfordrer sterkt til å bruke https://data.norge.no/specification/dcat-ap-no/[den til enhver tid gjeldende versjon av DCAT-AP-NO].
 
-NOTE: *Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/difi/dcat-ap-no/issues[Github Issues]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
-
-
-*Status*: Gjeldende +
+*Status*: #Fases ut# +
 *Versjon*: 2.2 (se <<Endringslogg, endringsloggen>>) +
 *Publisert*: 2021-06-10 (v.2.1), 2020-10-29 (v.2.0) +
 *Oppdatert*: 2022-05-25  +
