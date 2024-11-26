@@ -3,7 +3,7 @@ name: build adocs and publish v3 to staging
 on:
   push:
     branches:
-      - develop
+      - v3
     paths:
       - docs/**
   workflow_dispatch:
