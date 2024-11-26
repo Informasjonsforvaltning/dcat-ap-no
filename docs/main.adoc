@@ -15,7 +15,7 @@ ifdef::backend-pdf[:toc: macro]
 :xrefstyle: full
 
 image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
-
+ 
 include::shared/download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
