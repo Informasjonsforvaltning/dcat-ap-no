@@ -19,7 +19,7 @@ Generelt er det forventet at datasettene i en datasettserie er sterkt relatert t
 [[figur-Ordnet-datasettserie]]
 .Illustrasjon av en ordnet datasettserie.
 [link=images/Figur-ordnet-datasettserie.png]
-image::images/Figur-ordnet-datasettserie.png[]
+image::images/Figur-ordnet-datasettserie.png[alt="Tegning av en graf med 4 noder og relasjoner mellom dem. Innholdet er forklart i teksten."]
 
 :xrefstyle: full
 
