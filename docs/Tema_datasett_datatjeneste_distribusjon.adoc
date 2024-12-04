@@ -9,7 +9,7 @@ Et datasett kan gjøres tilgjengelig som nedlasting og/eller via en datatjeneste
 [[diagram-datasett-distribusjon-datatjeneste]]
 .Datasett, Distribusjon og Datatjeneste.
 [link=images/datasett-distribusjon-datatjeneste.png]
-image::images/datasett-distribusjon-datatjeneste.png[]
+image::images/datasett-distribusjon-datatjeneste.png[alt="Tegning med 3 klasser og relasjoner mellom dem. Innholdet er forklart i teksten."]
 
 <<diagram-datasett-distribusjon-datatjeneste>> illustrerer hvordan nedlastinger og API-tilgang skal beskrives: 
 
