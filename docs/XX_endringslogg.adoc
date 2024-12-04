@@ -2,7 +2,7 @@
 
 Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbeskrivelser, lenker osv.) beskrives ikke her.
 
-== Endringer fra v.3.0.0 til v3.0.x
+== Endringer fra v.3.0.0 til v.3.0.x
 
 Kun redaksjonelle justeringer: 
 
