@@ -9,8 +9,10 @@
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix odrs: <http://schema.theodi.org/odrs#> .
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> . 
 @prefix schema: <http://schema.org/> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
@@ -1337,7 +1339,7 @@ dcatap:availability <http://publications.europa.eu/resource/authority/planned-av
 
 :hasMin0MaxNShape-dcatapApplicableLegislation a sh:PropertyShape;
   sh:name "applicable legislation"@en, "gjeldende lovgivning"@nb;
-  sh:path dcatap:applicableLegislation
+  sh:path dcatap:applicableLegislation;
   sh:class eli:LegalResource;
   sh:message "The property dcatap:applicableLegislation MUST refer to an instance of eli:LegalResource"@en ,
     "Egenskapen dcatap:applicableLegislation SKAL referere til en instans av eli:LegalResource"@nb ;
