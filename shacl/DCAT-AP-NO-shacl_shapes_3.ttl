@@ -55,7 +55,7 @@ dcatap:availability <http://publications.europa.eu/resource/authority/planned-av
     dct:modified "2025-01-30"^^xsd:date ;
     dcat:version "3.000" ;
     adms:versionNotes "Draft version aligned with DCAT-AP-NO v3.0.x"@en ;
-    rdfs:commet "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
+    rdfs:comment "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en ;
     .
 
 ### ... Class shapes:
