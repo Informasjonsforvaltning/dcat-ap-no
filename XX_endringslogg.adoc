@@ -6,7 +6,7 @@ Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbesk
 
 Kun redaksjonelle justeringer: 
 
-* fra v.3.0.0 til v.3.0.1: lagt inn alternativ tekst til figurene som manglet den.  
+* fra v.3.0.0 til v.3.0.2: Retter opp en del feil og mangler mtp. UU-krav (bl.a. lagt inn alternativ tekst til figurene som manglet den).  
 
 == Endringer fra v.2.2 til v.3.0.0 [[Endringer-fra-v2-til-v3]]
 
