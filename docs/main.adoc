@@ -17,12 +17,10 @@ image::images/digitaliseringsdirektoratet.png[width=50%, pdfwidth=30vw]
 // markere denne versjonen som "utfases" med fixed textbox her kodet direkte i html
 ++++
 <div style="position: fixed; top: 40%; left: 50%; transform: translateX(-50%); background-color: #ffffff; border: 1px solid black; padding: 15px; box-shadow: 15px 15px 15px red; opacity: 0.85">
-  <p> <b>NB! Denne versjonen av DCAT-AP-NO er under utfasing og vil ikke bli vedlikeholdt (inkl. ev. kjente feil/mangler).</b> <br>
-   Vi oppfordrer sterkt til å bruke <a href=https://data.norge.no/specification/dcat-ap-no>den til enhver tid gjeldende versjon av DCAT-AP-NO</a>. </b> </p>
+  <p> <strong>NB! Denne versjonen av DCAT-AP-NO er under utfasing og vil ikke bli vedlikeholdt (inkl. ev. kjente feil/mangler). <br>
+   Vi oppfordrer sterkt til å bruke <a href=https://data.norge.no/specification/dcat-ap-no>den til enhver tid gjeldende versjon av DCAT-AP-NO</a>. </strong> </p>
 </div>
 ++++
-
-// CAUTION: Denne versjonen av DCAT-AP-NO er på vei ut og vil ikke bli vedlikeholdt (inkl. ev. kjente feil/mangler). Vi oppfordrer sterkt til å bruke https://data.norge.no/specification/dcat-ap-no/[den til enhver tid gjeldende versjon av DCAT-AP-NO].
 
 *Status*: #Fases ut# +
 *Versjon*: 2.2 (se <<Endringslogg, endringsloggen>>) +
