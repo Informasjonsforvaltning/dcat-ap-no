@@ -1,0 +1,311 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix cc: <http://creativecommons.org/ns#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix locn: <http://www.w3.org/ns/locn#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix odrs: <http://schema.theodi.org/odrs#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix dcatap: <http://data.europa.eu/r5r> .
+@prefix breg: <http://data.europa.eu/breg> .
+@prefix cpsv: <http://purl.org/vocab/cpsv#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix dqv: <http://www.w3.org/ns/dqv#> .
+
+# Controlled vocabularies
+PREFIX activityType: <https://data.norge.no/vocabulary/provenance-activity-type#>
+
+@prefix : <https://data.norge.no/vocabulary/dcatno/shacl/ranges#> .
+
+
+# Checking correct usage of controlled vocabularies with pattern checks
+
+:AgentRangesShape a sh:NodeShape ;
+    rdfs:label "Agent Ranges - Controlled Vocabulary and Types"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of foaf:Agent match pattern-wise with the correct controlled vocabulary"@en ;
+    sh:property :hasShapeCVPublisherTypePattern-dctType ;
+    sh:targetClass foaf:Agent .
+
+:CatalogRangesShape a sh:NodeShape ;
+    rdfs:label "Catalog Ranges - Controlled Vocabulary and Types"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of dcat:Catalog match pattern-wise with the correct controlled vocabulary, as well as Types of some referenced Nodes"@en ;
+    sh:property :hasShapeCV-dctSpatial ,
+                :hasShapeCVPattern-dctLicense ,
+                :hasShapeCVPattern-dctLanguage ,
+                :hasRangeShape-dctTemporal ;
+    sh:targetClass dcat:Catalog .
+
+:CostRangesShape a sh:NodeShape ;
+    rdfs:label "Cost Ranges - Controlled Vocabulary"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of cv:Cost match pattern-wise with the correct controlled vocabulary"@en ;
+    sh:property :hasShapeCV-currency ;
+    sh:targetClass dcat:Catalog .
+
+:CatalogRecordRangesShape a sh:NodeShape ;
+    rdfs:label "Catalog Record Ranges - Controlled Vocabulary and Types"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of dcat:CatalogRecord match pattern-wise with the correct controlled vocabulary, as well as Types of some referenced Nodes"@en ;
+    sh:property :hasShapeCVPattern-admsStatus ,
+                :hasShapeCVPattern-dctLanguage ;
+    sh:targetClass dcat:CatalogRecord .
+
+:DatasetRangesShape a sh:NodeShape ;
+    rdfs:label "Dataset Ranges - Controlled Vocabulary and Types"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of dcat:Dataset match pattern-wise with the correct controlled vocabulary, as well as Types of some referenced Nodes"@en ;
+    sh:property :hasAtLeast1DataThemePattern-dcatTheme ,
+                :hasShapeCVPattern-provWasGeneratedBy ,
+                :hasShapeCV-dctSpatial ,
+                :hasRangeShape-dctTemporal ,
+                :hasShapeCVPattern-dctAccrualPeriodicity ,
+                :hasShapeCVPattern-dctLanguage ,
+                :hasShapeCVDatasetTypePattern-dctType ;
+    sh:targetClass dcat:Dataset .
+
+:DataServiceRangesShape a sh:NodeShape ;
+    rdfs:label "Data Service Ranges - Controlled Vocabulary and Types"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of dcat:DataService match pattern-wise with the correct controlled vocabulary, as well as Types of some referenced Nodes"@en ;
+    sh:property :hasShapeCVPattern-dctFormat ,
+                :hasShapeCVPattern-dcatapAvailability ,
+                :hasShapeCVPattern-dctLicense ,
+                :hasRangeShape-dctRights ,
+                :hasShapeCVPattern-admsStatus ;
+    sh:targetClass dcat:DataService .
+
+:DistributionRangesShape a sh:NodeShape ;
+    rdfs:label "Distribution Ranges - Controlled Vocabulary and Types"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of dcat:Distribution match pattern-wise with the correct controlled vocabulary, as well as Types of some referenced Nodes"@en ;
+    sh:property :hasShapeCVPattern-dctFormat ,
+                :hasShapeCVPattern-dctLicense ,
+                :hasShapeCVPattern-admsStatus ,
+                :hasShapeCVPattern-dcatapAvailability ,
+                :hasShapeCVPattern-dcatCompressFormat ,
+                :hasShapeCVPattern-mediaType ,
+                :hasShapeCVPattern-dcatPackageFormat ,
+                :hasRangeShape-odrlHasPolicy ,
+                :hasRangeShape-dctRights ,
+                :hasRangeShape-spdxChecksum ,
+                :hasShapeCVPattern-dctLanguage ;
+    sh:targetClass dcat:Distribution .
+
+:DatasetSeriesRangesShape a sh:NodeShape ;
+    rdfs:label "Dataset Series Ranges - Controlled Vocabulary and Types"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of dcat:DatasetSeries match pattern-wise with the correct controlled vocabulary, as well as Types of some referenced Nodes"@en ;
+    sh:property :hasAtLeast1DataThemePattern-dcatTheme ,
+                :hasShapeCV-dctSpatial ,
+                :hasRangeShape-dctTemporal ,
+                :hasShapeCVPattern-dctAccrualPeriodicity ;
+    sh:targetClass dcat:DatasetSeries .
+
+:LegalResourceShape a sh:NodeShape ;
+    rdfs:label "Legal Resource Ranges - Controlled Vocabulary and Types"@en ;
+    rdfs:comment "Check that the URIs referenced from instances of eli:LegalResource match pattern-wise with the correct controlled vocabulary, as well as Types of some referenced Nodes"@en ;
+    sh:property :hasShapeCVPattern-dctLanguage,
+                :hasShapeCVELegalResourceTypePattern-dctType ;
+    sh:targetClass eli:LegalResource .
+
+:DataServiceRangeShape-theme a sh:NodeShape ;
+    rdfs:label "Data Service Theme Range"@en ;
+    rdfs:comment "Check that at least one code on dcat:theme is from the controlled vocabulary Data Theme"@en ;
+    sh:targetClass dcat:DataService ;
+    sh:or (
+        [ sh:not [ sh:path dcat:theme; sh:minCount 1; ]]        # either unused
+        [ sh:property :hasAtLeast1DataThemePattern-dcatTheme ]  # or at least 1 Data Theme
+    );
+    sh:message "If used, dcat:theme MUST refer to AT LEAST 1 instance of skos:Concept from the the controlled vocabulary Data Theme (ex: http://publications.europa.eu/resource/authority/data-theme/GOVE)"@en ;
+    sh:severity sh:Violation .
+
+:CostRangeShape-cvCurrency a sh:NodeShape ;
+    rdfs:label "Cost Currency Range"@en ;
+    rdfs:comment "Check that cv:currency exists when cv:hasValue is used"@en ;
+    sh:targetClass cv:Cost ;
+    sh:or (
+        [ sh:not [ sh:path cv:hasValue; sh:minCount 1; ]]        # either unused
+        [ sh:property [ sh:path cv:currency; sh:minCount 1; ] ]  # or cv:currency is also used
+    );
+    sh:message "If cv:hasValue is used on cv:Cost, cv:currency MUST also used"@en ;
+    sh:severity sh:Violation .
+
+:hasRangeShape-spdxChecksum a sh:PropertyShape ;
+    sh:name "checksum"@en, "sjekksum"@nb ;
+    sh:description "Must refer to instance of spdx:Checksum"@en;
+    sh:path spdx:checksum;
+    sh:class spdx:Checksum;
+    sh:message "spdx:checksum MUST refer to an instance of spdx:Checksum"@en;
+    sh:severity sh:Violation .
+
+:hasShapeCV-currency a sh:PropertyShape ;
+    sh:name "currency"@en, "valuta"@nb;
+    sh:description "Code must come from Controlled Vocabulary Currency"@en;
+    sh:path cv:currency ;
+    sh:pattern "http://publications.europa.eu/resource/authority/currency/" ;
+    sh:message "The value of property cv:currency MUST come from the the controlled vocabulary Currency (ex: http://publications.europa.eu/resource/authority/currency/NOK)"@en ;
+    sh:severity sh:Violation .
+
+:hasAtLeast1DataThemePattern-dcatTheme a sh:PropertyShape ;
+    sh:name "theme"@en, "tema"@nb ;
+    sh:description "At least 1 value from Data Theme"@en ;
+    sh:path dcat:theme ;
+    sh:qualifiedValueShape [
+        sh:pattern "^http://publications.europa.eu/resource/authority/data-theme";
+    ] ;
+    sh:qualifiedMinCount 1 .
+
+:hasShapeCVPattern-dcatapAvailability a sh:PropertyShape ;
+    sh:name "availability"@en, "tilgjengelighet"@nb;
+    sh:description "Code must come from Controlled Vocabulary Planned Availability"@en;
+    sh:path dcatap:availability ;
+    sh:pattern "http://publications.europa.eu/resource/authority/planned-availability/" ;
+    sh:message "The value of property dcatap:availability MUST come from the controlled vocabulary Planned Availability (ex: http://publications.europa.eu/resource/authority/planned-availability/AVAILABLE)"@en ;
+    sh:severity sh:Violation .
+
+:hasShapeCVPattern-dctFormat a sh:PropertyShape ;
+    sh:name "format"@en, "format"@nb ;
+    sh:description "Code must come from Controlled Vocabulary File Type"@en;
+    sh:path dct:format ;
+    sh:pattern "^http://publications.europa.eu/resource/authority/file-type" ;
+    sh:message "The value of property dct:format MUST come from the controlled vocabulary File Type (ex: http://publications.europa.eu/resource/authority/file-type/JSON)"@en ;
+    sh:severity sh:Violation .
+
+:hasShapeCVPattern-dctAccrualPeriodicity a sh:PropertyShape ;
+    sh:name "frequency"@en, "frekvens"@nb ;
+    sh:description "Code must come from Controlled Vocabulary Frequency"@en;
+    sh:path dct:accrualPeriodicity ;
+    sh:pattern "^http://publications.europa.eu/resource/authority/frequency";
+    sh:message "The value of property dct:accrualPeriodicity MUST come from the controlled vocabulary Frequency (ex: http://publications.europa.eu/resource/authority/frequency/DAILY)"@en ;
+    sh:severity sh:Violation .
+
+:hasRangeShape-odrlHasPolicy a sh:PropertyShape ;
+    sh:name "has policy"@en, "policy"@nb ;
+    sh:description "Must refer to instance of odrl:Policy"@en;
+    sh:path odrl:hasPolicy;
+    sh:class odrl:Policy;
+    sh:message "The property odrl:hasPolicy MUST refer to an instance of odrl:Policy"@en;
+    sh:severity sh:Violation .
+
+:hasShapeCVPattern-dctLanguage a sh:PropertyShape ;
+    sh:name "language"@en, "språk"@nb ;
+    sh:description "Code must come from Controlled Vocabulary Language"@en;
+    sh:path dct:language;
+    sh:pattern "^http://publications.europa.eu/resource/authority/language";
+    sh:message "The value of property dct:language MUST come from the controlled vocabulary Language (ex: http://publications.europa.eu/resource/authority/language/NOR)"@en ;
+    sh:severity sh:Violation .
+
+:hasShapeCVPattern-dctLicense a sh:PropertyShape ;
+    sh:name "license"@en, "lisens"@nb ;
+    sh:description "Code must come from Controlled Vocabulary License"@en;
+    sh:path dct:license;
+    sh:pattern "^http://publications.europa.eu/resource/authority/licence";
+    sh:message "The value of property dct:license MUST come from the controlled vocabulary Licence (ex: http://publications.europa.eu/resource/authority/licence/CC0)"@en ;
+    sh:severity sh:Violation .
+
+:hasShapeCVPattern-mediaType a sh:PropertyShape ;
+    sh:name "media type"@en, "medietype"@nb ;
+    sh:description "Code must refer to a IANA Media Type"@en;
+    sh:path dcat:mediaType;
+    sh:pattern "^https://www.w3.org/ns/iana/media-types/application/*";
+    sh:message "The value of property dcat:mediaType MUST come from IANA Media Types (ex: https://www.w3.org/ns/iana/media-types/application/json)"@en ;
+    sh:severity sh:Violation .
+
+:hasShapeCVPattern-provWasGeneratedBy a sh:PropertyShape ;
+    sh:name "was generated by"@en, "ble generert ved"@nb ;
+    sh:description "Code should come from the controlled vocabulary Provenance Activity Type"@en;
+    sh:path prov:wasGeneratedBy;
+    sh:in (
+      activityType:administrative-decision
+      activityType:collecting-from-third-party
+      activityType:collecting-from-user
+      activityType:ai-creation
+    );
+    sh:message "The value of property prov:wasGeneratedBy SHOULD come from the controlled Vocabulary Provenance Activity Type (ex: https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision)"@en ;
+    sh:severity sh:Warning .
+
+:hasRangeShape-dctRights a sh:PropertyShape ;
+    sh:name "rights"@en, "rettigheter"@nb ;
+    sh:description "Must refer to instance of odrs:RightsStatement"@en;
+    sh:path dct:rights;
+    sh:class odrs:RightsStatement;
+    sh:message "dct:rights MUST refer to an instance of odrs:RightsStatement"@en;
+    sh:severity sh:Violation .
+
+:hasShapeCV-dctSpatial a sh:PropertyShape;
+    sh:name "spatial"@en, "dekningsområde"@nb;
+    sh:path dct:spatial;
+    sh:or (
+        [sh:pattern "^http://publications.europa.eu/resource/authority/country/"]
+        [sh:pattern "^http://publications.europa.eu/resource/authority/continent/"]
+        [sh:pattern "^http://sws.geonames.org/"]
+        [sh:pattern "^http://publications.europa.eu/resource/authority/place/"]
+        [sh:pattern "^https://data.geonorge.no/administrativeEnheter/"]
+    );
+    sh:message "The value of dct:spatial MUST be chosen from the controlled vocabularies http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org"@en ;
+    sh:severity sh:Violation .
+
+:hasShapeCVPattern-admsStatus a sh:PropertyShape ;
+    sh:name "status"@en ;
+    sh:description "Code must come from Controlled Vocabulary Distribution Status"@en;
+    sh:path adms:status;
+    sh:pattern "^http://publications.europa.eu/resource/authority/distribution-status";
+    sh:message "The value of adms:status MUST come from the controlled vocabulary Distribution Status (ex: http://publications.europa.eu/resource/authority/distribution-status/DEVELOP)"@en ;
+    sh:severity sh:Violation .
+
+:hasRangeShape-dctTemporal a sh:PropertyShape;
+  sh:name "temporal"@en, "tidsrom"@nb;
+  sh:path dct:temporal;
+  sh:class dct:PeriodOfTime;
+  sh:message "The value of property dct:temporal MUST be an instance of dct:PeriodOfTime"@en;
+  sh:severity sh:Violation .
+
+:hasShapeCVPublisherTypePattern-dctType a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb;
+  sh:path dct:type;
+  sh:pattern "^http://purl.org/adms/publishertype/";
+  sh:message "The value of property dct:type MUST come from the controlled vocabulary Publisher Types (ex: http://purl.org/adms/publishertype/NationalAuthority)"@en;
+  sh:severity sh:Violation .
+
+# SHOULD requirements - gives Warning or Info
+
+:hasShapeCVPattern-dcatCompressFormat a sh:PropertyShape ;
+    sh:name "compression format"@en ;
+    sh:description "Code should refer to a IANA Media Type"@en;
+    sh:path dcat:compressFormat;
+    sh:pattern "^https://www.w3.org/ns/iana/media-types/application/*";
+    sh:message "The value of dcat:compressFormat SHOULD be a value from IANA Media Types (ex: https://www.w3.org/ns/iana/media-types/application/zip)"@en ;
+    sh:severity sh:Warning .
+
+:hasShapeCVPattern-dcatPackageFormat a sh:PropertyShape ;
+    sh:name "package format"@en ;
+    sh:description "Code should refer to a IANA Media Type"@en;
+    sh:path dcat:packageFormat;
+    sh:pattern "^https://www.w3.org/ns/iana/media-types/application/*";
+    sh:message "The value of property dcat:packageFormat SHOULD come from IANA Media Types (ex: https://www.w3.org/ns/iana/media-types/application/gzip)"@en ;
+    sh:severity sh:Warning .
+
+:hasShapeCVDatasetTypePattern-dctType a sh:PropertyShape ;
+    sh:name "type"@en ;
+    sh:description "Code may come from the controlled vocabulary Dataset Type"@en;
+    sh:path dct:type ;
+    sh:pattern "^http://publications.europa.eu/resource/authority/dataset-type" ;
+    sh:message "The value of dct:type MAY come from the controlled vocabulary Dataset Type (ex: http://publications.europa.eu/resource/authority/dataset-type/TEST_DATA)"@en ;
+    sh:severity sh:Info .
+
+:hasShapeCVELegalResourceTypePattern-dctType a sh:PropertyShape ;
+    sh:name "type"@en ;
+    sh:description "Code MUST come from the controlled vocabulary Legal Resource Type if it exists in vocabulary"@en;
+    sh:path dct:type ;
+    sh:pattern "^https://data.norge.no/vocabulary/legal-resource-type#" ;
+    sh:message "The value of dct:type MUST come from the controlled vocabulary Legal Resource Type if it exists in vocabulary (ex: https://data.norge.no/vocabulary/legal-resource-type#act)"@en ;
+    sh:severity sh:Info .
