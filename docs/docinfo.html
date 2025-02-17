@@ -1,10 +1,10 @@
 <!-- this docinfo contains several modifications to the default asciidoc-CSS -->
 
-<!-- 1) Generate a nice TOC, with modification -->
+<!-- 1) Generate a collapsible TOC -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
-<!-- We do not need the tocify CSS because the asciidoc CSS already provides most of what we neeed -->
+<!-- We do not need the tocify CSS because the asciidoc CSS already provides most of what we need -->
 
 <style>
 .tocify-header {
@@ -45,6 +45,33 @@
             ignoreSelector: ".discrete"
         });
 
+        // Make TOC items focusable
+        $("#generated-toc").find("a").attr("tabindex", "0");
+        // Make TOC items focusable
+        $("#generated-toc").find("a").attr("tabindex", "0");
+        // Collapse TOC initially, showing only level 1 headings
+        $("#generated-toc").find(".tocify-subheader").hide();
+        $("#generated-toc").find(".tocify-header").addClass("collapsed");
+        // Toggle collapse on click
+        $("#generated-toc").on("click", ".tocify-header", function() {
+          $(this).nextUntil(".tocify-header").toggle();
+          $(this).toggleClass("collapsed");
+        });
+
+/*
+        // Make TOC items focusable
+        toc.find("a").attr("tabindex", "0");
+
+        // Collapse TOC initially, showing only level 1 headings
+        toc.find(".tocify-subheader").hide();
+        toc.find(".tocify-header").addClass("collapsed");
+
+        // Toggle collapse on click
+        toc.on("click", ".tocify-header", function() {
+          $(this).nextUntil(".tocify-header").toggle();
+          $(this).toggleClass("collapsed");
+        });
+*/ 
         // Switch between static asciidoc toc and dynamic tocify toc based on browser size
         // This is set to match the media selectors in the asciidoc CSS
         // Without this, we keep the dynamic toc even if it is moved from the side to preamble
@@ -65,61 +92,18 @@
         $(window).resize(handleTocOnResize);
         handleTocOnResize();
     });
-
-    /* the following is suggested by CoPilot */
-    $(document).ready(function() {
-    var toc = $("#generated-toc").tocify({
-      context: ".content",
-      selectors: "h1, h2, h3, h4, h5, h6",
-      showAndHide: true,
-      extendPage: false,
-      scrollTo: 0,
-      highlightDefault: true,
-      theme: "bootstrap",
-      smoothScroll: true,
-      scrollHistory: true,
-      hashGenerator: "compact"
-    }).attr("role", "navigation")
-      .attr("aria-label", "Table of Contents");
-
-    // Make TOC items focusable
-    toc.find("a").attr("tabindex", "0");
-
-    // Keyboard navigation
-    toc.on("keydown", "a", function(e) {
-      switch (e.key) {
-        case "ArrowDown":
-          $(this).next("a").focus();
-          break;
-        case "ArrowUp":
-          $(this).prev("a").focus();
-          break;
-        case "Enter":
-        case " ":
-          $(this).click();
-          break;
-      }
-    });
-
-    // Collapse TOC initially, showing only level 1 headings
-    toc.find(".tocify-subheader").hide();
-    toc.find(".tocify-header").addClass("collapsed");
-
-    // Toggle collapse on click
-    toc.on("click", ".tocify-header", function() {
-      $(this).nextUntil(".tocify-header").toggle();
-      $(this).toggleClass("collapsed");
-    });
-  });
 </script>
 
 
-<!-- 2) To make collapsible blocks outlined when focused, based on DeepSeek suggestion -->
+<!-- 2) To make collapsible blocks outlined when focused -->
  
 <style>
     /* Add outline to the summary element when focused */
     details summary:focus {
         outline: thin dotted; /* Adjust thickness and color as needed */
+        outline-offset: -2px; /* Adjust the offset to fit the text width */
+        display: inline-block; /* Ensure the element is inline-block */
+        width: auto /* Ensure the width is auto to fit the text */
     }
 </style>
     
