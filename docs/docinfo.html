@@ -1,8 +1,10 @@
-<!-- Generate a nice TOC -->
+<!-- this docinfo contains several modifications to the default asciidoc-CSS -->
+
+<!-- 1) Generate a collapsible TOC -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
-<!-- We do not need the tocify CSS because the asciidoc CSS already provides most of what we neeed -->
+<!-- We do not need the tocify CSS because the asciidoc CSS already provides most of what we need -->
 
 <style>
 .tocify-header {
@@ -17,15 +19,6 @@
 .tocify ul {
     margin: 0;
  }
-
-.tocify-focus {
-    color: #7a2518;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
-.tocify-focus > a {
-    color: #7a2518;
-}
 </style>
 
 <script type="text/javascript">
@@ -52,6 +45,33 @@
             ignoreSelector: ".discrete"
         });
 
+        // Make TOC items focusable
+        $("#generated-toc").find("a").attr("tabindex", "0");
+        // Make TOC items focusable
+        $("#generated-toc").find("a").attr("tabindex", "0");
+        // Collapse TOC initially, showing only level 1 headings
+        $("#generated-toc").find(".tocify-subheader").hide();
+        $("#generated-toc").find(".tocify-header").addClass("collapsed");
+        // Toggle collapse on click
+        $("#generated-toc").on("click", ".tocify-header", function() {
+          $(this).nextUntil(".tocify-header").toggle();
+          $(this).toggleClass("collapsed");
+        });
+
+/*
+        // Make TOC items focusable
+        toc.find("a").attr("tabindex", "0");
+
+        // Collapse TOC initially, showing only level 1 headings
+        toc.find(".tocify-subheader").hide();
+        toc.find(".tocify-header").addClass("collapsed");
+
+        // Toggle collapse on click
+        toc.on("click", ".tocify-header", function() {
+          $(this).nextUntil(".tocify-header").toggle();
+          $(this).toggleClass("collapsed");
+        });
+*/ 
         // Switch between static asciidoc toc and dynamic tocify toc based on browser size
         // This is set to match the media selectors in the asciidoc CSS
         // Without this, we keep the dynamic toc even if it is moved from the side to preamble
@@ -71,5 +91,31 @@
 
         $(window).resize(handleTocOnResize);
         handleTocOnResize();
+    });
+</script>
+
+
+<!-- 2) To make collapsible blocks outlined when focused -->
+ 
+<style>
+    /* Add outline to the summary element when focused */
+    details summary:focus {
+        outline: thin dotted; /* Adjust thickness and color as needed */
+        outline-offset: -2px; /* Adjust the offset to fit the text width */
+        display: inline-block; /* Ensure the element is inline-block */
+        width: auto /* Ensure the width is auto to fit the text */
+    }
+</style>
+    
+<script>
+    // Add focus and blur event listeners to the summary element
+    document.querySelectorAll('details summary').forEach(el => {
+        el.setAttribute('tabindex', '0'); // Make it focusable
+        el.addEventListener('focus', () => {
+            el.classList.add('focus-outline'); // Add the outline class on focus
+        });
+        el.addEventListener('blur', () => {
+            el.classList.remove('focus-outline'); // Remove the outline class on blur
+        });
     });
 </script>
