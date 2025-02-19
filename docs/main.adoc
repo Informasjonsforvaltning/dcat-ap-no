@@ -72,3 +72,6 @@ include::16_Egenskaper_for_klassen_Tidsperiode.adoc[]
 :leveloffset: -1
 
 include::17_Kontrollerte_vokabular.adoc[]
+
+// Analytics:
+include::shared/analytics.adoc[]
