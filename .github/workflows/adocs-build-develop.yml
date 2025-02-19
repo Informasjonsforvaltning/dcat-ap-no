@@ -14,17 +14,22 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          submodules: true
+
       - name: Build html
         id: adocbuild
         uses: tonynv/asciidoctor-action@master
         with:
           program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
+
       - name: Build pdf
         id: adocbuild_pdf
         uses: tonynv/asciidoctor-action@master
         with:
           program: "asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc"
         continue-on-error: true
+        
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
