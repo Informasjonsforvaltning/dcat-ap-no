@@ -150,3 +150,6 @@ include::Navnerom.adoc[]
 include::Oversikt_over_norske_utvidelser.adoc[]
 
 include::XX_endringslogg.adoc[]
+
+// Analytics:
+include::shared/analytics.adoc[]
