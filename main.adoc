@@ -104,3 +104,6 @@ include::22_Kontrollerte_vokabular.adoc[]
 include::02_Avvik.adoc[]
 
 include::XX_endringslogg.adoc[]
+
+// Analytics
+include::./shared/analytics.adoc[]
