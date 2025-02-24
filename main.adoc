@@ -16,7 +16,7 @@ ifdef::backend-pdf[:toc: macro]
 
 image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
  
-include::shared/download.adoc[]
+include::download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
 Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/dcat-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
@@ -150,3 +150,6 @@ include::Navnerom.adoc[]
 include::Oversikt_over_norske_utvidelser.adoc[]
 
 include::XX_endringslogg.adoc[]
+
+// Analytics:
+include::shared/analytics.adoc[]
