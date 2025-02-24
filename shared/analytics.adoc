@@ -1,0 +1,9 @@
+ifeval::["{backend}" == "html5"]
+
+++++
+<!-- Site Improve -->
+<script async src="https://siteimproveanalytics.com/js/siteanalyze_6255470.js" />
+<!-- End Site Improve -->
+++++
+
+endif::[]
