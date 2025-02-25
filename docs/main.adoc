@@ -73,5 +73,5 @@ include::16_Egenskaper_for_klassen_Tidsperiode.adoc[]
 
 include::17_Kontrollerte_vokabular.adoc[]
 
-// Analytics:
+// Analytics
 include::shared/analytics.adoc[]
