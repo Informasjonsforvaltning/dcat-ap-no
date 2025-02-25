@@ -18,7 +18,13 @@ jobs:
         uses: actions/checkout@v4
         with:
           submodules: true
+          fetch-depth: 0
           ref: v2
+
+      - name: Update submodules to latest main
+        run: |
+          git submodule foreach --recursive git fetch origin
+          git submodule foreach --recursive git checkout origin/main
 
       - name: Build html
         id: adocbuild

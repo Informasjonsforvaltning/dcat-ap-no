@@ -9,11 +9,19 @@ on:
 
 jobs:
   build_html:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     name: html build
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
+        with:
+          submodules: true
+          fetch-depth: 0
+
+      - name: Update submodules to latest main
+        run: |
+          git submodule foreach --recursive git fetch origin
+          git submodule foreach --recursive git checkout origin/main
 
       - name: make build directory
         run: |
@@ -32,7 +40,7 @@ jobs:
           target: "ontology/build/dcatno.ttl"
 
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: dcatno-v2_vocabulary
