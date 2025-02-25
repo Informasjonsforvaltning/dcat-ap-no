@@ -1,0 +1,20 @@
+[[summary]]
+Summary
+-------
+
+* link:introduksjon.md[Introduksjon]
+* link:03_Omfang%20og%20avgrensing.md[Omfang og avgrensing]
+* link:04_Forvaltningsregime.md[Forvaltningsregime]
+* link:05_Ord_uttrykk_forkortelser.adoc[Ord, uttrykk og forkortelser]
+* link:06_Oversikt_over_klasser_i_standarden.md[Klasser i standarden]
+* link:07_Oversikt_over_URIer_i_bruk.md[URIer som er i bruk]
+* link:08_Egenskaper_for_klassen_datakatalog.md[Katalog]
+* link:09_Egenskaper_for_klassen_Katalogpost.md[Katalogpost]
+* link:10_Egenskaper_for_klassen_Datasett.md[Datasett]
+* link:11_Egenskaper_for_klassen_Distribusjon.md[Distribusjon]
+* link:12_Egenskaper-for_klassen_Enhet.md[Enhet]
+* link:13_Egenskaper_for_klassen_Kategoriskjema.md[Kategoriskjema]
+* link:14_Egenskaper_for_klassen_Kategori.md[Kategori]
+* link:15_Egenskaper_for_klassen_Lisensdokument.md[Lisensdokument]
+* link:16_Egenskaper_for_klassen_Tidsperiode.md[Tidsperiode]
+* link:17_Kontrollerte_vokabular.md[Krav til kontrollerte vokabular]

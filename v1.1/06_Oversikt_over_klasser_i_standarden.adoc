@@ -1,0 +1,265 @@
+= Klasser i standarden
+
+== Enhet
+
+[cols="30s,70d"]
+|===
+|Engelsk| Agent
+|Beskrivelse| Enhet som er assosiert med katalogen og/eller datasettene. Dersom enheten er en organisasjon er det anbefalt å bruke «Organization Ontology»
+|URI| foaf:Agent
+|Referanse| http://xmlns.com/foaf/spec/#term_Agent , http://www.w3.org/TR/vocab-org/
+|Status| Obligatorisk
+|===
+
+== Kategori
+
+[cols="30s,70d"]
+|===
+|Engelsk| Category
+|Beskrivelse| Et emne for et datasett
+|URI| SKOS:Concept
+|Referanse| http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+|Status| Obligatorisk
+|===
+
+== Kategoriskjema
+
+[cols="30s,70d"]
+|===
+|Engelsk| Category scheme
+|Beskrivelse| En samling begreper (for eksempel et kontrollert vokabular) hvor kategorien er definert
+|URI| SKOS:ConceptScheme
+|Referanse| http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-category-and-category-scheme
+|Status| Obligatorisk
+|===
+
+== Katalog
+
+[cols="30s,70d"]
+|===
+|Engelsk| Catalogue
+|Beskrivelse| En katalog eller repository som inneholder beskrivelsene av datasettene som er beskrevet.
+|URI| dcat:Catalog
+|Referanse| http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog
+|Status| Obligatorisk
+|===
+
+== Datasett
+
+[cols="30s,70d"]
+|===
+|Engelsk| Dataset
+|Beskrivelse| En konseptuell enhet som representerer informasjonen som publiseres
+|URI| dcat:Dataset
+|Referanse| http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-dataset
+|Status| Obligatorisk
+|===
+
+== Literal
+
+[cols="30s,70d"]
+|===
+|Engelsk| Literal
+|Beskrivelse| En literal-verdi slik som en streng eller heltall (integer). Literaler kan inneholde datatype, og for eksempel være formatert som en dato. Literaler som innholder maskinlesbar tekst har en valgfri språk-tag, definert av BCP47 (no=norsk, nb=bokmål, nn=nynorsk, en=engelsk)
+|URI| rdfs:Literal
+|Referanse| https://www.w3.org/TR/2014/REC-rdf11-concepts-20140225/#section-Graph-Literal
+|Status| Obligatorisk
+|===
+
+== Ressurs
+
+[cols="30s,70d"]
+|===
+|Engelsk| Resource
+|Beskrivelse| Hva som helst som er beskrevet med RDF
+|URI| rdfs:Resource
+|Referanse| http://www.w3.org/TR/rdf-schema/#ch_resource
+|Status| Obligatorisk
+|===
+
+== Distribusjon
+
+[cols="30s,70d"]
+|===
+|Engelsk| Distribution
+|Beskrivelse| En fysisk utførelse av datasettet i et bestemt format.
+|URI| dcat:Distribution
+|Referanse| http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-distribution
+|Status| Anbefalt
+|===
+
+== Lisensdokument
+
+[cols="30s,70d"]
+|===
+|Engelsk| License document
+|Beskrivelse| En juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs.
+|URI| dct:LicenseDocument
+|Referanse| http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=terms#LicenseDocument
+|Status| Anbefalt
+|===
+
+== Katalogpost
+
+[cols="30s,70d"]
+|===
+|Engelsk| Catalogue Record
+|Beskrivelse| En beskrivelse av en datasettoppføring i katalogen.
+|URI| dcat:CatalogRecord
+|Referanse| http://www.w3.org/TR/2013/WD-vocab-dcat-20130312/#class-catalog-record
+|Status| Valgfri
+|===
+
+== Sjekksum
+
+[cols="30s,70d"]
+|===
+|Engelsk| Checksum
+|Beskrivelse| En beskrivelse som muliggjør autentisering av en fil. Flere sjekksumtyper og kryptografiske algoritmer kan brukes.
+|URI| spdx:Checksum
+|Referanse| http://spdx.org/rdf/terms#Checksum
+|Status| Valgfri
+|===
+
+== Dokument
+
+[cols="30s,70d"]
+|===
+|Engelsk| Document
+|Beskrivelse| En tekstlig ressurs beregnet på mennesker som inneholder informasjon. For eksempel en nettside om et datasett.
+|URI| foaf:Document
+|Referanse| http://xmlns.com/foaf/spec/#term_Document
+|Status| Valgfri
+|===
+
+== Frekvens
+
+[cols="30s,70d"]
+|===
+|Engelsk| Frequency
+|Beskrivelse| Hvor ofte noe skjer, for eksempel publisering av et datasett.
+|URI| dct:Frequency
+|Referanse| http://dublincore.org/documents/dcmi-terms/#terms-Frequency
+|Status| Valgfri
+|===
+
+== Identifikator
+
+[cols="30s,70d"]
+|===
+|Engelsk| Identifier
+|Beskrivelse| En identifikator i en bestemt kontekst, bestående av strengen som er identifikatoren; en valgfri identifikator for identifikatorsystemet; en valgfri identifikator for versjonen av identifikatorsystemet; en valgfri identifikator for etaten som administrerer identifikatorsystemet
+|URI| adms:Identifier
+|Referanse| http://www.w3.org/TR/vocab-adms/#identifier
+|Status| Valgfri
+|===
+
+== Kontaktpunkt
+
+[cols="30s,70d"]
+|===
+|Engelsk| Kind
+|Beskrivelse| En beskrivelse av et kontaktpunkt i henhold til vCard spesifikasjonen. Her kan man for eksempel oppgi telefonnr og/eller epost. Merk at beskrivelsen må være en instans av en av fire typer: individ, organisasjon, lokasjon eller gruppe.
+|URI| vcard:Kind
+|Referanse| http://www.w3.org/TR/2014/NOTE-vcard-rdf-20140522/#d4e181
+|Status| Valgfri
+|===
+
+== Språksystem
+
+[cols="30s,70d"]
+|===
+|Engelsk| Linguistic system
+|Beskrivelse| Et system av tegn, symboler, lyder, gester, eller regler som brukes i kommunikasjon, for eksempel et språk
+|URI| dct:LinguisticSystem
+|Referanse| http://dublincore.org/documents/dcmi-terms/#terms-LinguisticSystem
+|Status| Valgfri
+|===
+
+== Lokasjon
+
+[cols="30s,70d"]
+|===
+|Engelsk| Location
+|Beskrivelse| En region eller et navngitt sted. Det kan representeres ved hjelp av et kontrollert vokabular eller med geografiske koordinater.
+|URI| dct:Location
+|Referanse| http://dublincore.org/documents/dcmi-terms/#terms-Location
+|Status| Valgfri
+|===
+
+== Mediatype eller omfang
+
+[cols="30s,70d"]
+|===
+|Engelsk| Media type or extent
+|Beskrivelse| En medietype eller omfang, for eksempel formatet til en datafil
+|URI| dct:MediaTypeOrExtent
+|Referanse| http://dublincore.org/documents/dcmi-terms/#terms-MediaTypeOrExtent
+|Status| Valgfri
+|===
+
+== Tidsrom
+
+[cols="30s,70d"]
+|===
+|Engelsk| Period of time
+|Beskrivelse| Et tidsintervall som er navngitt eller definert av en start- og sluttdato.
+|URI| dct:PeriodOfTime
+|Referanse| http://dublincore.org/documents/dcmi-terms/#terms-PeriodOfTime
+|Status| Valgfri
+|===
+
+== Utgivertype
+
+[cols="30s,70d"]
+|===
+|Engelsk| Publisher type
+|Beskrivelse| Type organisasjon som fungerer som en utgiver
+|URI| skos:Concept
+|Referanse| http://www.w3.org/TR/vocab-adms/#dcterms-type
+|Status| Valgfri
+|===
+
+== Rettighetsutsagn
+
+[cols="30s,70d"]
+|===
+|Engelsk| Rights statement
+|Beskrivelse| En utsagn om immaterielle rettigheter knyttet til en ressurs, et juridisk dokument som gir offisiell tillatelse til å gjøre noe med en ressurs, eller en uttalelse om tilgangsrettigheter.
+|URI| dct:RightsStatement
+|Referanse| http://dublincore.org/documents/dcmi-terms/#terms-RightsStatement
+|Status| Valgfri
+|===
+
+== Standard
+
+[cols="30s,70d"]
+|===
+|Engelsk| Standard
+|Beskrivelse| En standard eller annen spesifikasjon som et datasett er i samsvar med
+|URI| dct:Standard
+|Referanse| http://dublincore.org/documents/dcmi-terms/#terms-Standard
+|Status| Valgfri
+|===
+
+== Status
+
+[cols="30s,70d"]
+|===
+|Engelsk| Status
+|Beskrivelse| En indikasjon på modenhet for en distribusjon
+|URI| skos:Concept
+|Referanse| http://www.w3.org/TR/vocab-adms/#status
+|Status| Valgfri
+|===
+
+== Opphav
+
+[cols="30s,70d"]
+|===
+|Engelsk| ProvenanceStatement
+|Beskrivelse| En beskrivelse av opphavet, eierforhold og endringer i eierforholdet til en ressurs. Skal brukes til å vurdere autentisitet, integritet og autorisasjon.
+|URI| skos:Concept
+|Referanse| http://www.w3.org/TR/vocab-adms/#status
+|Status| Valgfri
+|===
