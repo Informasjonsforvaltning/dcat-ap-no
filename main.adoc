@@ -106,4 +106,4 @@ include::02_Avvik.adoc[]
 include::XX_endringslogg.adoc[]
 
 // Analytics
-include::./shared/analytics.adoc[]
+include::shared/analytics.adoc[]
