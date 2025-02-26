@@ -1,0 +1,26 @@
+= dcatno
+Digitaliseringsdirektoratet (Digdir)
+:description: Ontologien som definerer klasser og egenskaper spesifisert i DCAT-AP-NO
+:doctype: article
+:docinfo: shared
+:icons: font
+:toc: left
+ifdef::backend-pdf[:toc: macro]
+:toclevels: 2
+:sectlinks:
+:table-stripes: odd
+:xrefstyle: full
+:title-logo-image: image:../docs/images/Digdir.png[alt="Digdir-logo", pdfwidth=30vw]
+
+image::../docs/images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https://digdir.no/]
+
+NOTE: Følgende er en html-visning av ontologien `dcatno` uttrykt i RDF Turtle, som definerer klasser og egenskaper spesifisert i https://data.norge.no/specification/dcat-ap-no[DCAT-AP-NO &#x29C9;, window="_blank", role="ext-link"] +
+ +
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/dcat-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis.
+
+-----
+include::dcatno.ttl[]
+-----
+
+// Analytics
+include::../docs/shared/analytics.adoc[]
