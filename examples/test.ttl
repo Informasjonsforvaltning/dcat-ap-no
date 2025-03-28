@@ -4,6 +4,10 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix dcatap: <http://data.europa.eu/r5r/> .
+@prefix odrl: <http://www.w3.org/ns/odrl/2/> .
+@prefix spdx: <http://spdx.org/rdf/terms#> .
 
 <https://example.com/test/relasjon/testKatalog> a dcat:Catalog ;
     dct:identifier "https://example.com/test/relasjon/testKatalog" ;
