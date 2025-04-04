@@ -460,7 +460,7 @@ _This property is used to refer to a page or document about this dataset._
 | _English name_ | _provenance_
 | URI | dct:provenance
 | Verdiområde / _Range_ | dct:ProvenanceStatement
-| Anvendelse / _Usage note_ | Egenskapen brukes itl å referere til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til beskrivelse av endring i eierskap og forvaltning av datasett (fra det ble skapt) som har betydning for autentisitet, integritet og fortolkning.
 
 _This property is used to refer to a statement about the lineage of a dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
@@ -533,7 +533,7 @@ _This property is used to refer to another dataset that this dataset replaces._
 | _English name_ | _previous_
 | URI | dcat:prev
 | Verdiområde / _Range_ | dcat:Dataset
-| Anvendelse / _Usage note_ | Egenskapen brukes itl å referere til det forrige datasettet i en ordnet samling eller serie av datasett.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å referere til det forrige datasettet i en ordnet samling eller serie av datasett.
 
 _This property is used to refer to the previous resource (before the current one) in an ordered collection or series of resources._
 | Multiplisitet / _Multiplicity_ | 0..1
