@@ -1,0 +1,1460 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX adms: <http://www.w3.org/ns/adms#>
+PREFIX cc: <http://creativecommons.org/ns#>
+PREFIX dc: <http://purl.org/dc/elements/1.1/>
+PREFIX dcat: <http://www.w3.org/ns/dcat#>
+PREFIX dct: <http://purl.org/dc/terms/>
+PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX locn: <http://www.w3.org/ns/locn#>
+PREFIX org: <http://www.w3.org/ns/org#>
+PREFIX owl: <http://www.w3.org/2002/07/owl#>
+PREFIX odrl: <http://www.w3.org/ns/odrl/2/>
+PREFIX odrs: <http://schema.theodi.org/odrs#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rov: <http://www.w3.org/ns/regorg#>
+PREFIX schema: <http://schema.org/>
+PREFIX sh: <http://www.w3.org/ns/shacl#>
+PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
+PREFIX spdx: <http://spdx.org/rdf/terms#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX vcard: <http://www.w3.org/2006/vcard/ns#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX dcatap: <http://data.europa.eu/r5r>
+PREFIX breg: <http://data.europa.eu/breg>
+PREFIX cpsv: <http://purl.org/vocab/cpsv#>
+PREFIX eli: <http://data.europa.eu/eli/ontology#>
+PREFIX cv: <http://data.europa.eu/m8g/>
+PREFIX dqv: <http://www.w3.org/ns/dqv#>
+PREFIX datatheme: <http://publications.europa.eu/resource/authority/data-theme/>
+
+PREFIX : <https://data.norge.no/vocabulary/dcatno/shacl/core#>
+
+# About this SHACL:
+<https://data.norge.no/specification/dcat-ap-no/#shacl>
+    dcat:accessURL <https://github.com/Informasjonsforvaltning/dcat-ap-no/tree/develop/shacl>;
+    dcat:downloadURL <https://raw.githubusercontent.com/Informasjonsforvaltning/dcat-ap-no/refs/heads/develop/shacl/DCAT-AP-NO-shacl_shapes_3.ttl>;
+    # dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/STABLE>;
+    dcatap:availability <http://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL>;
+    dct:format <http://publications.europa.eu/resource/authority/file-type/RDF_TURTLE>;
+    dct:conformsTo <https://www.w3.org/TR/shacl>;
+    dct:creator [
+        foaf:homepage <https://www.digdir.no/>;
+        foaf:name "Digitaliseringsdirektoratet"@nb ,
+           "Norwegian Digitalisation Agency"@en;
+    ];
+    foaf:homepage <https://github.com/Informasjonsforvaltning/dcat-ap-no/tree/develop/shacl>;
+    foaf:maker [
+        foaf:mbox <mailto:informasjonsforvaltning@digdir.no>;
+        foaf:name "Informasjonsforvaltning, Digitaliseringsdirektoratet"@nb;
+        foaf:page <https://www.digdir.no>;
+    ];
+    dct:license <http://publications.europa.eu/resource/authority/licence/CC_BY_4_0>;
+    cc:attributionURL <http://ec.europa.eu/>;
+    dct:publisher <https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827>;
+    dct:relation <https://github.com/SEMICeu/DCAT-AP>;
+    dct:description "This document specifies the constraints on properties and classes of DCAT-AP-NO, expressed in SHACL"@en;
+    dct:title "SHACL-shapes for DCAT-AP-NO"@en;
+    dct:modified "2025-01-30"^^xsd:date;
+    dcat:version "3.000";
+    adms:versionNotes "Draft version aligned with DCAT-AP-NO v3.0.x"@en;
+    rdfs:comment "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en;
+    .
+
+
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# -------------- Class shapes -------------
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+
+# Klassen Aktør (foaf:Agent)
+:AgentShape a sh:NodeShape;
+  rdfs:label "Agent"@en , "Aktør"@nb;
+  sh:property
+  # mandatory properties:
+    :hasMin1MaxNShape-foafName,  # navn (foaf:name)
+    :hasNodeKindShape-foafName,  # navn (foaf:name)
+  # recommended properties:
+    :hasNodeKindShape-dctIdentifier,  # identifikator (dct:identifier)
+    :hasMin0Max1Shape-dctIdentifier,  # identifikator (dct:identifier)
+    :hasMin0Max1Shape-dctType,        # type (dct:type)
+    :hasNodeKindShape-dctType;        # type (dct:type)
+  sh:targetClass foaf:Agent .
+
+:CatalogShape a sh:NodeShape;
+  rdfs:label "Catalog"@en , "Katalog"@nb;
+  sh:property
+  # mandatory properties:
+    :hasMin1MaxNShape-dctDescription,    # beskrivelse (dct:description)
+    :hasDatatypeShape-dctDescription,    # beskrivelse (dct:description)
+    :hasUniqueLangShape-dctDescription,  # beskrivelse (dct:description)
+    :hasMin1MaxNShape-dcatContactPoint,  # kontaktpunkt (dcat:contactPoint)
+    :hasNodeKindShape-dcatContactPoint,  # kontaktpunkt (dcat:contactPoint)
+    :hasMin1MaxNShape-dctTitle,          # tittel (dct:title)
+    :hasDatatypeShape-dctTitle,          # tittel (dct:title)
+    :hasUniqueLangShape-dctTitle,        # tittel (dct:title)
+    :hasMin1Max1Shape-dctPublisher,      # utgiver (dct:publisher)
+    :hasNodeKindShape-dctPublisher,      # utgiver (dct:publisher)
+  # recommended properties:
+    :hasNodeKindShape-dcatDataset,        # datasett (dcat:dataset)
+    :hasNodeKindShape-dcatService,        # datatjeneste (dcat:service)
+    :hasNodeKindShape-dctSpatial,         # dekningsområde (dct:spatial)
+    :hasMin0Max1Shape-dctModified,        # endringsdato (dct:modified)
+    :hasDatatypeShape-dctModified,        # endringsdato (dct:modified)
+    :hasMin0Max1Shape-foafHomepage,       # hjemmeside (foaf:page)
+    :hasNodeKindShape-foafHomepage,       # hjemmeside (foaf:page)
+    :hasMin0Max1Shape-dctLicense,         # lisens (dct:license)
+    :hasNodeKindShape-dctLicense,         # lisens (dct:license)
+    :hasNodeKindShape-dctLanguage,        # språk (dct:language)
+    :hasNodeKindShape-dcatThemeTaxonomy,  # temaer (dcat:themeTaxonomy)
+    :hasMin0Max1Shape-dctIssued,          # utgivelsesdato (dct:issued)
+    :hasDatatypeShape-dctIssued,          # utgivelsesdato (dct:issued)
+  # optional properties:
+    :hasNodeKindShape-dcatapApplicableLegislation,  # gjeldende lovgivning (dcatap:applicableLegislation)
+    :hasNodeKindShape-dctHasPart,                   # har del (dct:hasPart)
+    :hasNodeKindShape-dctIdentifier,                # identifikator (dct:identifier)
+    :hasNodeKindShape-dcatCatalog,                  # katalog (dcat:catalog)
+    :hasNodeKindShape-dcatRecord,                   # katalogpost (dcat:record)
+    :hasMin0Max1Shape-dctCreator,                   # produsent (dct:creator)
+    :hasNodeKindShape-dctCreator,                   # produsent (dct:creator)
+    :hasMin0Max1Shape-dctRights,                    # rettigheter (dct:rights)
+    :hasNodeKindShape-dctRights,                    # rettigheter (dct:rights)
+    :hasNodeKindShape-dctTemporal;                  # tidsrom (dct:temporal)
+  sh:targetClass dcat:Catalog .
+
+# Klassen Datasett (dcat:Dataset)
+:DatasetShape a sh:NodeShape;
+  rdfs:label "Dataset"@en , "Datasett"@nb;
+  sh:property
+  # mandatory properties:
+    :hasMin1MaxNShape-dctDescription,    # beskrivelse (dct:description)
+    :hasDatatypeShape-dctDescription,    # beskrivelse (dct:description)
+    :hasUniqueLangShape-dctDescription,  # beskrivelse (dct:description)
+    :hasMin1MaxNShape-dcatContactPoint,  # kontaktpunkt (dcat:contactPoint)
+    :hasNodeKindShape-dcatContactPoint,  # kontaktpunkt (dcat:contactPoint)
+    :hasMin1MaxNShape-dcatTheme,         # tema (dcat:theme)
+    :hasNodeKindShape-dcatTheme,         # tema (dcat:theme)
+    :hasShapeCV-dcatTheme,               # tema (dcat:theme)
+    :hasMin1MaxNShape-dctTitle,          # tittel (dct:title)
+    :hasDatatypeShape-dctTitle,          # tittel (dct:title)
+    :hasUniqueLangShape-dctTitle,        # tittel (dct:title)
+    :hasMin1Max1Shape-dctPublisher,      # utgiver (dct:publisher)
+    :hasNodeKindShape-dctPublisher,      # utgiver (dct:publisher)
+  # recommended properties:
+    :hasNodeKindShape-dctSubject,                   # begrep (dct:subject)
+    :hasNodeKindShape-provWasGeneratedBy,           # ble generert ved (prov:wasGeneratedBy)
+    :hasNodeKindShape-dcatDistribution,             # distribusjon (dcat:distribution)
+    :hasNodeKindShape-dctSpatial,                   # dekningsområde (dct:spatial)
+    :hasDatatypeShape-dcatKeyword,                  # emneord (dcat:keyword)
+    :hasNodeKindShape-dcatapApplicableLegislation,  # gjeldende lovgivning (dcatap:applicableLegislation)
+    :hasNodeKindShape-dctTemporal,                  # tidsrom (dct:temporal)
+    :hasMin0Max1Shape-dctAccessRights,              # tilgangsrettigheter (dct:accessRights)
+    :hasShapeCV-dctAccessRights,                    # tilgangsrettigheter (dct:accessRights), sjekker bruk av Controlled Vocab
+  # optional properties:
+    :hasNodeKindShape-provQualifiedAttribution,       # annen ansvarlig aktør (prov:qualifiedAttribution)
+    :hasNodeKindShape-admsIdentifier,                 # annen identifikator (adms:identifier)
+    :hasNodeKindShape-dcatQualifiedRelation,          # annen spesifikk relasjon (dcat:qualifiedRelation)
+    :hasNodeKindShape-foafPage,                       # dokumentasjon (foaf:page)
+    :hasNodeKindShape-dctProvenance,                  # eierskapshistorikk (dct:provenance)
+    :hasNodeKindShape-admsSample,                     # eksempeldata (adms:sample)
+    :hasMin0Max1Shape-dctModified,                    # endringsdato (dct:modified)
+    :hasDatatypeShape-dctModified,                    # endringsdato (dct:modified)
+    :hasNodeKindShape-dctIsReferencedBy,              # er referert av (dct:isReferencedBy)
+    :hasNodeKindShape-dctReplaces,                    # erstatter (dct:replaces)
+    :hasMin0Max1Shape-dcatPrev,                       # forrige (dcat:prev)
+    :hasNodeKindShape-dcatPrev,                       # forrige (dcat:prev)
+    :hasMin0Max1Shape-dctAccrualPeriodicity,          # frekvens (dct:accrualPeriodicity)
+    :hasNodeKindShape-dctAccrualPeriodicity,          # frekvens (dct:accrualPeriodicity)
+    :hasNodeKindShape-cvHasCost,                      # har gebyr (cv:hasCost)
+    :hasNodeKindShape-dqvHasQualityAnnotation,        # har kvalitetsmerknad (dqv:hasQualityAnnotation)
+    :hasNodeKindShape-dqvHasQualityMeasurement,       # har kvalitetsmåling (dqv:hasQualityMeasurement)
+    :hasNodeKindShape-dcatHasVersion,                 # har versjon (dcat:hasVersion)
+    :hasNodeKindShape-dctConformsTo,                  # i samsvar med (dct:conformsTo)
+    :hasNodeKindShape-dcatInSeries,                   # i serie (dcat:inSeries)
+    :hasNodeKindShape-dctIdentifier,                  # identifikator (dct:identifier)
+    :hasNodeKindShape-dctSource,                      # kilde (dct:source)
+    :hasNodeKindShape-dcatLandingPage,                # landingsside (dcat:landingPage)
+    :hasNodeKindShape-dctCreator,                     # produsent (dct:creator)
+    :hasNodeKindShape-dctRelation,                    # relatert ressurs (dct:relation)
+    :hasMin0Max1Shape-dcatSpatialResolutionInMeters,  # romlig oppløsning (dcat:spatialResolutionInMeters)
+    :hasDatatypeShape-dcatSpatialResolutionInMeters,  # romlig oppløsning (dcat:spatialResolutionInMeters)
+    :hasNodeKindShape-dctLanguage,                    # språk (dct:language)
+    :hasMin0Max1Shape-dcatTemporalResolution,         # tidsoppløsning (dcat:temporalResolution)
+    :hasDatatypeShape-dcatTemporalResolution,         # tidsoppløsning (dcat:temporalResolution)
+    :hasNodeKindShape-dctType,                        # type (dct:type)
+    :hasMin0Max1Shape-dctIssued,                      # utgivelsesdato (dct:issued)
+    :hasDatatypeShape-dctIssued,                      # utgivelsesdato (dct:issued)
+    :hasMin0Max1Shape-dcatVersion,                    # versjon (dcat:version)
+    :hasNodeKindShape-dcatVersion,                    # versjon (dcat:version)
+    :hasDatatypeShape-admsVersionNotes;               # versjonsmerknad (adms:versionNotes)
+  sh:targetClass dcat:Dataset .
+
+# Klassen Datasettserie (dcat:DatasetSeries)
+:DatasetSeriesShape a sh:NodeShape;
+  rdfs:label "Dataset series"@en , "Datasettserie"@nb;
+  sh:property
+  # mandatory properties:
+    :hasMin1MaxNShape-dctDescription,    # beskrivelse (dct:description)
+    :hasDatatypeShape-dctDescription,    # beskrivelse (dct:description)
+    :hasUniqueLangShape-dctDescription,  # beskrivelse (dct:description)
+    :hasMin1MaxNShape-dcatContactPoint,  # kontaktpunkt (dcat:contactPoint)
+    :hasNodeKindShape-dcatContactPoint,  # kontaktpunkt (dcat:contactPoint)
+    :hasMin1MaxNShape-dcatTheme,         # tema (dcat:theme)
+    :hasNodeKindShape-dcatTheme,         # tema (dcat:theme)
+    :hasMin1MaxNShape-dctTitle,          # tittel (dct:title)
+    :hasDatatypeShape-dctTitle,          # tittel (dct:title)
+    :hasUniqueLangShape-dctTitle,        # tittel (dct:title)
+    :hasMin1Max1Shape-dctPublisher,      # utgiver (dct:publisher)
+    :hasNodeKindShape-dctPublisher,      # utgiver (dct:publisher)
+  # recommended properties:
+    :hasNodeKindShape-dctSpatial,                   # dekningsområde (dct:spatial), sjekker Controlled Vocab
+    :hasNodeKindShape-dcatapApplicableLegislation,  # gjeldende lovgivning (dcatap:applicableLegislation)
+    :hasNodeKindShape-dctTemporal,                  # tidsrom (dct:temporal)
+  # optional properties:
+    :hasMin0Max1Shape-dctModified,            # endringsdato (dct:modified)
+    :hasDatatypeShape-dctModified,            # endringsdato (dct:modified)
+    :hasMin0Max1Shape-dctAccrualPeriodicity,  # frekvens (dct:accrualPeriodicity)
+    :hasNodeKindShape-dctAccrualPeriodicity,  # frekvens (dct:accrualPeriodicity)
+    :hasMin0Max1Shape-dctIssued,              # utgivelsesdato (dct:issued)
+    :hasDatatypeShape-dctIssued;              # utgivelsesdato (dct:issued)
+  sh:targetClass dcat:DatasetSeries .
+
+
+# Klassen Datatjeneste (dcat:DataService)
+:DataServiceShape a sh:NodeShape;
+  rdfs:label "Data Service"@en , "Datatjeneste"@nb;
+  sh:property
+  # mandatory properties:
+    :hasMin1Max1Shape-dcatEndpointURL,   # endepunkts-URL (dcat:endpointURL)
+    :hasNodeKindShape-dcatEndpointURL,   # endepunkts-URL (dcat:endpointURL)
+    :hasMin1MaxNShape-dcatContactPoint,  # kontaktpunkt (dcat:contactPoint)
+    :hasNodeKindShape-dcatContactPoint,  # kontaktpunkt (dcat:contactPoint)
+    :hasMin1MaxNShape-dctTitle,          # tittel (dct:title)
+    :hasDatatypeShape-dctTitle,          # tittel (dct:title)
+    :hasUniqueLangShape-dctTitle,        # tittel (dct:title)
+    :hasMin1Max1Shape-dctPublisher,      # utgiver (dct:publisher)
+    :hasNodeKindShape-dctPublisher,      # utgiver (dct:publisher)
+  # recommended properties:
+    :hasDatatypeShape-dcatKeyword,                  # emneord (dcat:keyword)
+    :hasNodeKindShape-dcatEndpointDescription,      # endepunktsbeskrivelse (dcat:endpointDescription)
+    :hasNodeKindShape-dctFormat,                    # format (dct:format)
+    :hasNodeKindShape-dcatapApplicableLegislation,  # gjeldende lovgivning (dcatap:applicableLegislation)
+    :hasNodeKindShape-dctConformsTo,                # i samsvar med (dct:conformsTo)
+    :hasNodeKindShape-dcatTheme,                    # tema (dcat:theme)
+    :hasNodeKindShape-dcatServesDataset,            # tilgjengeliggjør datasett (dcat:servesDataset)
+    :hasMin0Max1Shape-dcatapAvailability,           # tilgjengelighet (dcatap:availability)
+    :hasNodeKindShape-dcatapAvailability,           # tilgjengelighet (dcatap:availability)
+  # optional properties:
+    :hasDatatypeShape-dctDescription,     # beskrivelse (dct:description)
+    :hasUniqueLangShape-dctDescription,   # beskrivelse (dct:description)
+    :hasNodeKindShape-foafPage,           # dokumentasjon (foaf:page)
+    :hasNodeKindShape-cvHasCost,          # har gebyr (cv:hasCost)
+    :hasNodeKindShape-dctIdentifier,      # identifikator (dct:identifier)
+    :hasNodeKindShape-dcatLandingPage,    # landingsside (dcat:landingPage)
+    :hasMin0Max1Shape-dctLicense,         # lisens (dct:license)
+    :hasNodeKindShape-dctLicense,         # lisens (dct:license)
+    :hasMin0Max1Shape-dctRights,          # rettigheter (dct:rights)
+    :hasNodeKindShape-dctRights,          # rettigheter (dct:rights)
+    :hasMin0Max1Shape-admsStatus,         # status (adms:status)
+    :hasNodeKindShape-admsStatus,         # status (adms:status)
+    :hasMin0Max1Shape-dctAccessRights,    # tilgangsrettigheter (dct:accessRights)
+    :hasShapeCV-dctAccessRights,          # tilgangsrettigheter (dct:accessRights)
+    :hasNodeKindShape-dcatVersion,        # versjon (dcat:version)
+    :hasDatatypeShape-admsVersionNotes;   # versjonsmerknad (adms:versionNotes)
+  sh:targetClass dcat:DataService .
+
+# Klassen Distribusjon (dcat:Distribution)
+:DistributionShape a sh:NodeShape;
+  rdfs:label "Distribution"@en , "Distribusjon"@nb;
+  sh:property
+    # mandatory properties:
+    :hasMin1MaxNShape-dcatAccessURL,        # tilgangsURL (dcat:accessURL)
+    # recommended properties:
+    :hasDatatypeShape-dctDescription,       # beskrivelse (dct:description)
+    :hasUniqueLangShape-dctDescription,     # beskrivelse (dct:description)
+    :hasMin0Max1Shape-dctFormat,            # format (dct:format)
+    :hasNodeKindShape-dctFormat,            # format (dct:format)
+    :hasMin0Max1Shape-dctLicense,           # lisens (dct:license)
+    :hasNodeKindShape-dctLicense,           # lisens (dct:license)
+    :hasMin0Max1Shape-admsStatus,           # status (adms:status)
+    :hasNodeKindShape-admsStatus,           # status (adms:status)
+    :hasMin0Max1Shape-dcatapAvailability,   # tilgjengelighet (dcatap:availability)
+    :hasNodeKindShape-dcatapAvailability,   # tilgjengelighet (dcatap:availability)
+    # optional properties:
+    :hasNodeKindShape-foafPage,                       # dokumentasjon (foaf:page)
+    :hasMin0Max1Shape-dctModified,                    # endringsdato (dct:modified)
+    :hasDatatypeShape-dctModified,                    # endringsdato (dct:modified)
+    :hasMin0Max1Shape-dcatByteSize,                   # filstørrelse (dcat:byteSize)
+    :hasDatatypeShape-dcatByteSize,                   # filstørrelse (dcat:byteSize)
+    :hasNodeKindShape-dcatapApplicableLegislation,    # gjeldende lovgivning (dcatap:applicableLegislation)
+    :hasNodeKindShape-dctConformsTo,                  # i samsvar med (dct:conformsTo)
+    :hasMin0Max1Shape-dcatCompressFormat,             # komprimeringsformat (dcat:compressFormat)
+    :hasNodeKindShape-dcatCompressFormat,             # komprimeringsformat (dcat:compressFormat)
+    :hasMin0Max1Shape-dcatMediaType,                  # medietype (dcat:mediaType)
+    :hasNodeKindShape-dcatMediaType,                  # medietype (dcat:mediaType)
+    :hasNodeKindShape-dcatDownloadURL,                # nedlastingslenke (dcat:downloadURL)
+    :hasMin0Max1Shape-dcatPackageFormat,              # pakkeformat (dcat:packageFormat)
+    :hasNodeKindShape-dcatPackageFormat,              # pakkeformat (dcat:packageFormat)
+    :hasMin0Max1Shape-odrlHasPolicy,                  # policy (odrl:hasPolicy)
+    :hasNodeKindShape-odrlHasPolicy,                  # policy (odrl:hasPolicy)
+    :hasMin0Max1Shape-dctRights,                      # rettigheter (dct:rights)
+    :hasNodeKindShape-dctRights,                      # rettigheter (dct:rights)
+    :hasMin0Max1Shape-dcatSpatialResolutionInMeters,  # romlig oppløsning (dcat:spatialResolutionInMeters)
+    :hasDatatypeShape-dcatSpatialResolutionInMeters,  # romlig oppløsning (dcat:spatialResolutionInMeters)
+    :hasMin0Max1Shape-spdxChecksum,                   # sjekksum (spdx:checksum)
+    :hasNodeKindShape-spdxChecksum,                   # sjekksum (spdx:checksum)
+    :hasNodeKindShape-dctLanguage,                    # språk (dct:language)
+    :hasMin0Max1Shape-dcatTemporalResolution,         # tidsoppløsning (dcat:temporalResolution)
+    :hasDatatypeShape-dcatTemporalResolution,         # tidsoppløsning (dcat:temporalResolution)
+    :hasNodeKindShape-dcatAccessService,              # tilgangstjeneste (dcat:accessService)
+    :hasDatatypeShape-dctTitle,                       # tittel (dct:title)
+    :hasUniqueLangShape-dctTitle,                     # tittel (dct:title)
+    :hasMin0Max1Shape-dctIssued,                      # utgivelsesdato (dct:issued)
+    :hasDatatypeShape-dctIssued;                      # utgivelsesdato (dct:issued)
+  sh:targetClass dcat:Distribution .
+
+# Klassen Kontaktpunkt (vcard:Kind)
+:KindShape a sh:NodeShape;
+  rdfs:label "Kind"@en , "Kontaktoppysning"@nb;
+  sh:property
+    # mandatory properties:
+    :hasMin1MaxNShape-vcardFn,                   # navn (vcard:fn)
+    :hasNodeKindShape-vcardFn,                   # navn (vcard:fn)
+    :hasMin1Shape-vcardHasEmail-OR-vcardHasURL,
+    :hasNodeKindShape-vcardHasEmail,             # har e-post (vcard:hasEmail)
+    :hasNodeKindShape-vcardHasURL;               # har kontaktside (vcard:hasURL)
+  sh:targetClass vcard:Kind , vcard:Group , vcard:Individual , vcard:Organization .
+
+# Klassen Gebyr (cv:Cost)
+:CostShape a sh:NodeShape;
+  rdfs:label "Cost"@en , "Gebyr"@nb;
+  sh:property
+    :hasMin1Shape-cvHasValue-OR-foafPage, 
+    :hasMin0Max1Shape-cvHasValue,         # beløp (cv:hasValue)
+    :hasDatatypeShape-cvHasValue,         # beløp (cv:hasValue)
+    :hasDatatypeShape-dctDescription,     # beskrivelse (dct:description)
+    :hasNodeKindShape-foafPage,           # dokumentasjon (foaf:page)
+    :hasMin0Max1Shape-cvCurrency,         # valuta (cv:currency)
+    :hasNodeKindShape-cvCurrency;         # valuta (cv:currency)
+  sh:targetClass cv:Cost .
+
+:hasMin1Shape-cvHasValue-OR-foafPage a sh:PropertyShape ;
+  sh:name "has value OR documentation"@en, "har beløp ELLER dokumentasjon";
+  sh:path [ sh:alternativePath (cv:hasValue foaf:page) ];
+  sh:minCount 1;
+  sh:message "Instances of cv:Cost MUST have a value which is EITHER cv:hasValue OR foaf:page"@en;
+  sh:severity sh:Violation .
+
+# Klassen Identifikator (adms:Identifier)
+:IdentifierShape a sh:NodeShape;
+  rdfs:label "Identifier"@en , "Identifikator"@nb;
+  sh:property
+    :hasMin1Max1Shape-skosNotation,  # notasjon (skos:notation)
+    :hasNodeKindShape-skosNotation;  # notasjon (skos:notation)
+  sh:targetObjectsOf adms:identifier .
+
+# Katalogpost (dcat:CatalogRecord)
+:CatalogRecordShape a sh:NodeShape;
+  rdfs:label "Catalogue Record"@en , "Katalogpost"@nb;
+  sh:property
+  # mandatory properties
+    :hasMin1Max1Shape-dctModified,       # endringsdato (dct:modified)
+    :hasDatatypeShape-dctModified,       # endringsdato (dct:modified)
+    :hasMin1MaxNShape-foafPrimaryTopic,  # primærtema (foaf:primaryTopic)
+    :hasNodeKindShape-foafPrimaryTopic,  # primærtema (foaf:primaryTopic)
+  # recommended properties
+    :hasNodeKindShape-dctConformsTo,  # i samsvar med (dct:conformsTo)
+    :hasMin0Max1Shape-admsStatus,     # status (adms:status)
+    :hasNodeKindShape-admsStatus,     # status (adms:status)
+    :hasMin0Max1Shape-dctIssued,      # utgivelsesdato (dct:issued)
+    :hasDatatypeShape-dctIssued,      # utgivelsesdato (dct:issued)
+  # optional properties
+    :hasDatatypeShape-dctDescription,    # beskrivelse (dct:description)
+    :hasUniqueLangShape-dctDescription,  # beskrivelse (dct:description)
+    :hasMin0Max1Shape-dctSource,         # kilde (dct:source)
+    :hasNodeKindShape-dctSource,         # kilde (dct:source)
+    :hasNodeKindShape-dctLanguage,       # språk (dct:language)
+    :hasDatatypeShape-dctTitle,          # tittel (dct:title)
+    :hasUniqueLangShape-dctTitle;        # tittel (dct:title)
+    sh:targetClass dcat:CatalogRecord .
+
+# Regulativ ressurs (eli:LegalResource)
+:LegalResourceShape a sh:NodeShape;
+  rdfs:label "Legal Resource"@en , "Regulativ ressurs"@nb;
+  sh:property
+    :hasDatatypeShape-dctDescription,    # beskrivelse (dct:description)
+    :hasUniqueLangShape-dctDescription,  # beskrivelse (dct:description)
+    :hasMin0Max1Shape-dctIdentifier,     # identifikator (dct:identifier)
+    :hasNodeKindShape-dctIdentifier,     # identifikator (dct:identifier)
+    :hasNodeKindShape-rdfsSeeAlso,       # referanse (rdfs:seeAlso)
+    :hasNodeKindShape-dctLanguage,       # språk (dct:language)
+    :hasDatatypeShape-dctTitle,          # tittel (dct:title)
+    :hasUniqueLangShape-dctTitle,        # tittel (dct:title)
+    :hasMin0Max1Shape-dctType,           # type (dct:type)
+    :hasNodeKindShape-dctType,           # type (dct:type)
+    :hasNodeKindShape-dctRelation;       # relatert regulativ ressurs (dct:relation)
+  sh:targetClass eli:LegalResource .
+
+# Relasjon (dcat:Relationship)
+:RelationshipShape a sh:NodeShape;
+  rdfs:label "Relationship"@en , "Relasjon"@nb;
+  sh:property
+    :hasMin1MaxNShape-dcatHadRole,    # har rolle (dcat:hadRolle)
+    :hasNodeKindShape-dcatHadRole,    # har rolle (dcat:hadRolle)
+    :hasMin1MaxNShape-dctRelation,    # relasjon (dct:relation)
+    :hasNodeKindShape-dctRelation;    # relasjon (dct:relation)
+  sh:targetClass dcat:Relationship .
+
+# Sjekksum (spdx:Checksum)
+:ChecksumShape
+  a sh:NodeShape;
+  rdfs:label "Checksum"@en , "Sjekksum"@nb;
+  sh:property
+    :hasMin1Max1Shape-spdxAlgorithm,      # algoritme (spdx:algorithm)
+    :hasNodeKindShape-spdxAlgorithm,      # algoritme (spdx:algorithm)
+    :hasMin1Max1Shape-spdxChecksumValue,  # sjekksumverdi (spdx:checksumValue)
+    :hasDatatypeShape-spdxChecksumValue;  # algoritme (spdx:checksumValue)
+  sh:targetClass spdx:Checksum .
+
+# Tidsrom (dct:PeriodOfTime)
+:PeriodOfTimeShape a sh:NodeShape;
+  rdfs:label "Period of Time"@en , "Tidsrom"@nb;
+  sh:property
+    :hasMin0Max1Shape-dcatEndDate,       # sluttdato/tid (dcat:endDate)
+    :hasDatatypeShape-dcatEndDate,       # sluttdato/tid (dcat:endDate)
+    :hasMin0Max1Shape-dcatStartDate,     # startdato/tid (dcat:startDate)
+    :hasDatatypeShape-dcatStartDate,     # startdato/tid (dcat:startDate)
+    :hasMin0Max1Shape-timeHasBeginning,  # begynnelse (time:hasBeginning)
+    :hasNodeKindShape-timeHasBeginning,  # begynnelse (time:hasBeginning)
+    :hasMin0Max1Shape-timeHasEnd,        # slutt (time:hasBeginning)
+    :hasNodeKindShape-timeHasEnd;        # slutt (time:hasBeginning)
+  sh:targetClass dct:PeriodOfTime .
+
+:DcatResourceShape
+    a sh:NodeShape;
+    rdfs:label "dcat:Resource"@en;
+    rdfs:comment "The union of Catalog, Dataset and DataService"@en;
+    sh:or (
+      [ sh:class dcat:Catalog ]
+      [ sh:class dcat:Dataset ]
+      [ sh:class dcat:DataService ]
+      [ sh:class dcat:DatasetSeries ]
+    ) .
+
+
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# ------------- Property Shapes -------------
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+
+### adms properties:
+
+:hasNodeKindShape-admsIdentifier a sh:PropertyShape;
+  sh:name "other identifier"@en, "annen identifikator"@nb;
+  sh:path adms:identifier;
+  sh:class adms:Identifier;
+  sh:message "The value of property adms:identifier MUST be an instance of adms:Identifier"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-admsSample a sh:PropertyShape;
+  sh:name "sample"@en, "eksempeldata"@nb;
+  sh:path adms:sample;
+  sh:class dcat:Distribution;
+  sh:message "The value of property adms:sample MUST be an instance of dcat:Distribution"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-admsStatus a sh:PropertyShape;
+  sh:name "status"@en, "status"@nb;
+  sh:path adms:status;
+  sh:maxCount 1;
+  sh:message "The property adms:status may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-admsStatus a sh:PropertyShape;
+  sh:name "status"@en, "status"@nb;
+  sh:path adms:status;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property adms:status MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-admsVersionNotes a sh:PropertyShape;
+  sh:name "version notes"@en, "versjonsmerknad"@nb;
+  sh:path adms:versionNotes;
+  sh:datatype rdf:langString;
+  sh:message "The value of property adms:versionNotes MUST be of datatype rdf:langString"@en;
+  sh:severity sh:Violation .
+
+### cv properties:
+
+:hasNodeKindShape-cvHasCost a sh:PropertyShape;
+  sh:name "has cost"@en, "har gebyr"@nb;
+  sh:path cv:hasCost;
+  sh:class cv:Cost;
+  sh:message "The value of property cv:hasCost MUST be an instance of cv:Cost"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-cvHasValue a sh:PropertyShape;
+  sh:name "value"@en, "beløp"@nb;
+  sh:path cv:hasValue;
+  sh:maxCount 1;
+  sh:message "The property cv:hasValue may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-cvHasValue a sh:PropertyShape;
+  sh:name "value"@en, "beløp"@nb;
+  sh:path cv:hasValue;
+  sh:datatype xsd:double;
+  sh:message "The value of property cv:hasValue MUST be of datatype xsd:double"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-cvCurrency a sh:PropertyShape;
+  sh:name "currency"@en, "valuta"@nb;
+  sh:path cv:currency;
+  sh:maxCount 1;
+  sh:message "The property cv:currency may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-cvCurrency a sh:PropertyShape;
+  sh:name "currency"@en, "valuta"@nb;
+  sh:path cv:currency;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property cv:currency MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+### dcat properties:
+
+:hasNodeKindShape-dcatAccessService a sh:PropertyShape;
+  sh:name "access service"@en, "tilgangstjeneste"@nb;
+  sh:path dcat:accessService;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:accessService MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-dcatAccessURL a sh:PropertyShape;
+  sh:name "access URL"@en, "tilgangsURL"@nb;
+  sh:path dcat:accessURL;
+  sh:nodeKind sh:IRI;
+  sh:minCount 1;
+  sh:message "The property dcat:accessURL MUST have min. 1 value which MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatByteSize a sh:PropertyShape;
+  sh:name "byte size"@en, "filstørrelse"@nb;
+  sh:path dcat:byteSize;
+  sh:maxCount 1;
+  sh:message "The property dcat:byteSize may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dcatByteSize a sh:PropertyShape;
+  sh:name "byte size"@en, "filstørrelse"@nb;
+  sh:path dcat:byteSize;
+  sh:datatype xsd:nonNegativeInteger;
+  sh:message "The value of property dcat:byteSize MUST be of datatype xsd:nonNegativeInteger"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatCatalog a sh:PropertyShape;
+  sh:name "catalogue"@en, "katalog"@nb;
+  sh:path dcat:catalog;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of dcat:catalog MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatCompressFormat a sh:PropertyShape;
+  sh:name "compression format"@en, "komprimeringsformat"@nb;
+  sh:path dcat:compressFormat;
+  sh:maxCount 1;
+  sh:message "The property dcat:compressFormat may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatCompressFormat a sh:PropertyShape;
+  sh:name "compression format"@en, "komprimeringsformat"@nb;
+  sh:path dcat:compressFormat;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:compressFormat MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-dcatContactPoint a sh:PropertyShape;
+  sh:name "contact point"@en, "kontaktpunkt"@nb;
+  sh:path dcat:contactPoint;
+  sh:minCount 1;
+  sh:message "The property dcat:contactPoint MUST have min. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatContactPoint a sh:PropertyShape;
+  sh:name "contact point"@en, "kontaktpunkt"@nb;
+  sh:path dcat:contactPoint;
+  sh:or (
+      [sh:class vcard:Group]
+      [sh:class vcard:Individual]
+      [sh:class vcard:Organization]
+   );
+  sh:message "The value of property dcat:contactPoint MUST be an instance of one of the subclasses of vcard:Kind (i.e. vcard:Group, vcard:Individual or vcard:Organization)"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatDataset a sh:PropertyShape;
+  sh:name "dataset"@en, "datasett"@nb;
+  sh:path dcat:dataset;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of dcat:dataset MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatDistribution  a sh:PropertyShape;
+  sh:name "publisher"@en, "utgiver"@nb;
+  sh:path dcat:distribution;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:message "The property dcat:distribution MUST be a URI or Blank Node"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatDownloadURL a sh:PropertyShape;
+  sh:name "download URL"@en, "nedlastingslenke"@nb;
+  sh:path dcat:downloadURL;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:downloadURL MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatEndDate a sh:PropertyShape;
+  sh:name "end date"@en, "sluttdato/tid"@nb;
+  sh:path dcat:endDate;
+  sh:maxCount 1;
+  sh:message "The property dcat:endDate may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dcatEndDate a sh:PropertyShape;
+  sh:name "end date"@en, "sluttdato/tid"@nb;
+  sh:path dcat:endDate;
+  sh:or (
+    [sh:datatype xsd:date]
+    [sh:datatype xsd:dateTime]
+  );
+  sh:maxCount 1;
+  sh:message "The value of property dcat:endDate MUST be of datatype xsd:date or xsd:dateTime"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatEndpointDescription a sh:PropertyShape;
+  sh:name "endpoint description"@en, "endepunktsbeskrivelse"@nb;
+  sh:path dcat:endpointDescription;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:endpointDescription MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin1Max1Shape-dcatEndpointURL a sh:PropertyShape;
+  sh:name "endpoint URL"@en , "endepunktsURL"@nb;
+  sh:path dcat:endpointURL;
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:message "The property dcat:endpointURL MUST have exactly 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatEndpointURL a sh:PropertyShape;
+  sh:name "endpoint URL"@en , "endepunktsURL"@nb;
+  sh:path dcat:endpointURL;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:endpointURL MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatHasVersion a sh:PropertyShape;
+  sh:name "has version"@en, "har versjon"@nb;
+  sh:path dcat:hasVersion;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:hasVersion MUST be the URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-dcatHadRole a sh:PropertyShape;
+  sh:name "had rolle"@en, "har rolle"@nb;
+  sh:path dcat:hadRole;
+  sh:minCount 1;
+  sh:message "The property dcat:hadRole MUST have min. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatHadRole a sh:PropertyShape;
+  sh:name "had rolle"@en, "har rolle"@nb;
+  sh:path dcat:hadRole;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:message "The value of property dcat:hadRole MUST be a URI or Blank Node"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatPackageFormat a sh:PropertyShape;
+  sh:name "package format"@en, "pakkeformat"@nb;
+  sh:path dcat:packageFormat;
+  sh:maxCount 1;
+  sh:message "The property dcat:packageFormat may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatPackageFormat a sh:PropertyShape;
+  sh:name "package format"@en, "pakkeformat"@nb;
+  sh:path dcat:packageFormat;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:packageFormat MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatInSeries a sh:PropertyShape;
+  sh:name "in series"@en, "i serie"@nb;
+  sh:path dcat:inSeries;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:inSeries MUST be the URI of an instance of dcat:DatasetSeries"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dcatKeyword a sh:PropertyShape;
+  sh:name "keyword"@en, "nøkkelord/emneord"@nb;
+  sh:path dcat:keyword;
+  sh:datatype rdf:langString;
+  sh:message "The value of property dcat:keyword MUST be of datatype rdf:langString)"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatLandingPage a sh:PropertyShape;
+  sh:name "landing page"@en, "landingsside"@nb;
+  sh:path dcat:landingPage;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:landingPage MUST be a URI"@en;
+  sh:severity sh:Warning .
+
+:hasMin0Max1Shape-dcatMediaType a sh:PropertyShape;
+  sh:name "media type"@en, "medietype"@nb;
+  sh:path dcat:mediaType;
+  sh:maxCount 1;
+  sh:message "The property dcat:mediaType may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatMediaType a sh:PropertyShape;
+  sh:name "media type"@en, "medietype"@nb;
+  sh:path dcat:mediaType;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:mediaType MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatPrev a sh:PropertyShape;
+  sh:name "previous"@en, "forrige"@nb;
+  sh:path dcat:prev;
+  sh:maxCount 1;
+  sh:message "The property dcat:prev may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatPrev a sh:PropertyShape;
+  sh:name "previous"@en, "forrige"@nb;
+  sh:path dcat:prev;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:prev MUST be the URI of an instance of dcat:Dataset"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatQualifiedRelation a sh:PropertyShape;
+  sh:name "qualified relation"@en, "annen spesifikk relasjon"@nb;
+  sh:path dcat:qualifiedRelation;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:class dcat:Relationship;
+  sh:message "The value of property dcat:qualifiedRelation MUST be an instance of dcat:Relationship"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatRecord a sh:PropertyShape;
+  sh:name "record"@en, "katalogpost"@nb;
+  sh:path dcat:record;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:record MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatServesDataset a sh:PropertyShape;
+  sh:name "serves dataset"@en, "tilgjengeliggjør datasett"@nb;
+  sh:path dcat:servesDataset;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:servesDataset MUST be the URI of an instance of dcat:Dataset"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatService a sh:PropertyShape;
+  sh:name "service"@en, "datatjeneste"@nb;
+  sh:path dcat:service;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:service MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatSpatialResolutionInMeters a sh:PropertyShape;
+  sh:name "spatial resolution"@en, "romlig oppløsning"@nb;
+  sh:path dcat:spatialResolutionInMeters;
+  sh:maxCount 1;
+  sh:message "The property dcat:spatialResolutionInMeters may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dcatSpatialResolutionInMeters a sh:PropertyShape;
+  sh:name "spatial resolution"@en, "romlig oppløsning"@nb;
+  sh:path dcat:spatialResolutionInMeters;
+  sh:datatype xsd:decimal;
+  sh:message "The value of property dcat:spatialResolutionInMeters MUST be of datatype xsd:decimal"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatStartDate a sh:PropertyShape;
+  sh:name "start date"@en, "startdato/tid"@nb;
+  sh:path dcat:startDate;
+  sh:maxCount 1;
+  sh:message "The property dcat:startDate may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dcatStartDate a sh:PropertyShape;
+  sh:name "start date"@en, "startdato/tid"@nb;
+  sh:path dcat:startDate;
+  sh:or (
+    [sh:datatype xsd:date]
+    [sh:datatype xsd:dateTime]
+  );
+  sh:maxCount 1;
+  sh:message "The value of property dcat:startDate MUST be of datatype xsd:date or xsd:dateTime"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatTemporalResolution a sh:PropertyShape;
+  sh:name "temporal resolution"@en, "tidsoppløsning"@nb;
+  sh:path dcat:temporalResolution;
+  sh:maxCount 1;
+  sh:message "The property dcat:temporalResolution may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dcatTemporalResolution a sh:PropertyShape;
+  sh:name "temporal resolution"@en, "tidsoppløsning"@nb;
+  sh:path dcat:temporalResolution;
+  sh:datatype xsd:duration;
+  sh:message "The value of property dcat:temporalResolution MUST be of datatype xsd:duration"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-dcatTheme a sh:PropertyShape;
+  sh:name "theme"@en, "tema"@nb;
+  sh:path dcat:theme;
+  sh:minCount 1;
+  sh:message "The property dcat:theme MUST have min. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatTheme a sh:PropertyShape;
+  sh:name "theme"@en, "tema"@nb;
+  sh:path dcat:theme;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:theme MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatThemeTaxonomy a sh:PropertyShape;
+  sh:name "themes"@en, "temaer"@nb;
+  sh:path dcat:themeTaxonomy;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcat:themeTaxonomy MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatVersion a sh:PropertyShape;
+  sh:name "version"@en, "versjon"@nb;
+  sh:path dcat:version;
+  sh:maxCount 1;
+  sh:message "The property dcat:version may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatVersion a sh:PropertyShape;
+  sh:name "version"@en, "versjon"@nb;
+  sh:path dcat:version;
+  sh:nodeKind sh:Literal;
+  sh:message "The value of property dcat:version MUST be a Literal"@en;
+  sh:severity sh:Violation .
+
+### dcatap properties:
+
+:hasNodeKindShape-dcatapApplicableLegislation a sh:PropertyShape;
+  sh:name "applicable legislation"@en, "gjeldende lovgivning"@nb;
+  sh:path dcatap:applicableLegislation;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dcatap:applicableLegislation MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dcatapAvailability a sh:PropertyShape;
+  sh:name "availability"@en, "tilgjengelighet"@nb;
+  sh:maxCount 1;
+  sh:path dcatap:availability;
+  sh:message "The property dcatap:availability may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dcatapAvailability a sh:PropertyShape;
+  sh:name "availability"@en, "tilgjengelighet"@nb;
+  sh:nodeKind sh:IRI;
+  sh:path dcatap:availability;
+  sh:message "The value of dcatap:availability MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+### dct properties:
+
+:hasMin0Max1Shape-dctAccessRights a sh:PropertyShape;
+  sh:name "access rights"@en, "tilgangsrettigheter"@nb;
+  sh:path dct:accessRights;
+  sh:maxCount 1;
+  sh:message "The property dct:accessRights may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctAccrualPeriodicity a sh:PropertyShape;
+  sh:name "accrual periodicity"@en, "frekvens"@nb;
+  sh:path dct:accrualPeriodicity;
+  sh:maxCount 1;
+  sh:message "The property dct:accrualPeriodicity may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctAccrualPeriodicity a sh:PropertyShape;
+  sh:name "accrual periodicity"@en, "frekvens"@nb;
+  sh:path dct:accrualPeriodicity;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:accrualPeriodicity MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctConformsTo a sh:PropertyShape;
+  sh:name "conforms to"@en, "i samsvar med"@nb;
+  sh:path dct:conformsTo;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:conformsTo MUST be the URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctCreator a sh:PropertyShape;
+  sh:name "creator"@en, "produsent"@nb;
+  sh:path dct:creator;
+  sh:maxCount 1;
+  sh:message "The property dct:creator may have max. 1 value";
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctCreator a sh:PropertyShape;
+  sh:name "creator"@en, "produsent"@nb;
+  sh:path dct:creator;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:creator MUST be a URI (i.e. https://organization-catalog.fellesdatakatalog.digdir.no/organizations/991825827)"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-dctDescription a sh:PropertyShape;
+  sh:name "description"@en, "beskrivelse"@nb;
+  sh:path dct:description;
+  sh:minCount 1;
+  sh:message "The property dct:description MUST have min. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dctDescription a sh:PropertyShape;
+  sh:name "description"@en, "beskrivelse"@nb;
+  sh:path dct:description;
+  sh:datatype rdf:langString;
+  sh:message "The value of property dct:description MUST be of datatype rdf:langString"@en;
+  sh:severity sh:Violation .
+
+:hasUniqueLangShape-dctDescription a sh:PropertyShape;
+  sh:name "description"@en, "beskrivelse"@nb;
+  sh:path dct:description;
+  sh:uniqueLang true;
+  sh:message "The property dct:description may have max. 1 value per language"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctFormat a sh:PropertyShape;
+  sh:name "format"@en, "format"@nb;
+  sh:path dct:format;
+  sh:maxCount 1;
+  sh:message "The property dct:format may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctFormat a sh:PropertyShape;
+  sh:name "format"@en, "format"@nb;
+  sh:path dct:format;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:format MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctFormat a sh:PropertyShape;
+  sh:name "format"@en, "format"@nb;
+  sh:path dct:format;
+  sh:maxCount 1;
+  sh:message "The property dct:format may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctHasPart a sh:PropertyShape;
+  sh:name "has part"@en, "har del"@nb;
+  sh:path dct:hasPart;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:hasPart MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctIdentifier a sh:PropertyShape;
+  sh:name "identifier"@en, "identifikator"@nb;
+  sh:path dct:identifier;
+  sh:nodeKind sh:Literal;
+  sh:maxCount 1;
+  sh:message "The property dct:identifier may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctIdentifier a sh:PropertyShape;
+  sh:name "identifier"@en, "identifikator"@nb;
+  sh:path dct:identifier;
+  sh:nodeKind sh:Literal;
+  sh:message "The value of property dct:identifier MUST be a Literal"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctIsReferencedBy a sh:PropertyShape;
+  sh:name "is referenced by"@en, "er referert av"@nb;
+  sh:path dct:isReferencedBy;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:isReferencedBy MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctIssued a sh:PropertyShape;
+  sh:name "issued/release date"@en, "utgivelsesdato"@nb;
+  sh:path dct:issued;
+  sh:maxCount 1;
+  sh:message "The property dct:issued may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dctIssued a sh:PropertyShape;
+  sh:name "issued/release date"@en, "utgivelsesdato"@nb;
+  sh:path dct:issued;
+  sh:or (
+    [sh:datatype xsd:date]
+    [sh:datatype xsd:dateTime]
+  );
+  sh:message "The value of property dct:issued MUST be of datatype xsd:date or xsd:dateTime"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctLanguage a sh:PropertyShape;
+  sh:name "language"@en, "språk"@nb;
+  sh:path dct:language;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:language MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctLicense a sh:PropertyShape;
+  sh:name "license"@en, "lisens"@nb;
+  sh:path dct:license;
+  sh:maxCount 1;
+  sh:message "The property dct:identifier may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctLicense a sh:PropertyShape;
+  sh:name "license"@en, "lisens"@nb;
+  sh:path dct:license;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:identifier MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctModified a sh:PropertyShape;
+  sh:name "modification date"@en, "endringsdato"@nb;
+  sh:path dct:modified;
+  sh:maxCount 1;
+  sh:message "The property dct:modified may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasMin1Max1Shape-dctModified a sh:PropertyShape;
+  sh:name "modification date"@en, "endringsdato"@nb;
+  sh:path dct:modified;
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:message "The property dct:modified MUST have exactly 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dctModified a sh:PropertyShape;
+  sh:name "modification date"@en, "endringsdato"@nb;
+  sh:path dct:modified;
+  sh:or (
+    [sh:datatype xsd:date]
+    [sh:datatype xsd:dateTime]
+    );
+  sh:maxCount 1;
+  sh:message "The value of property dct:modified MUST be of datatype xsd:date or xsd:dateTime"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctProvenance a sh:PropertyShape;
+  sh:name "provenance"@en, "eierskapshistorikk"@nb;
+  sh:path dct:provenance;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:class dct:ProvenanceStatement;
+  sh:message "The value of property dct:provenance MUST be an instance of dct:ProvenanceStatement"@en;
+  sh:severity sh:Violation .
+
+:hasMin1Max1Shape-dctPublisher a sh:PropertyShape;
+  sh:name "publisher"@en, "utgiver"@nb;
+  sh:path dct:publisher;
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:message "The property dct:publisher MUST exactly 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctPublisher a sh:PropertyShape;
+  sh:name "publisher"@en, "utgiver"@nb;
+  sh:path dct:publisher;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:publisher MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-dctRelation a sh:PropertyShape;
+  sh:name "relation"@en, "relation"@nb;
+  sh:path dct:relation;
+  sh:minCount 1;
+  sh:message "The property dct:relation MUST have min. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctRelation a sh:PropertyShape;
+  sh:name "related resource"@en, "relatert ressurs"@nb;
+  sh:path dct:relation;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:relation MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctReplaces a sh:PropertyShape;
+  sh:name "replaces"@en, "erstatter"@nb;
+  sh:path dct:replaces;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:replaces MUST be the URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctRights  a sh:PropertyShape;
+  sh:name "rights"@en, "rettigheter"@nb;
+  sh:path dct:rights;
+  sh:maxCount 1;
+  sh:message "The property dct:rights may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctRights  a sh:PropertyShape;
+  sh:name "rights"@en, "rettigheter"@nb;
+  sh:path dct:rights;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:message "The value of property dct:rights MUST be either a URI or a Blank Node"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctSource a sh:PropertyShape;
+  sh:name "source"@en, "kilde"@nb;
+  sh:path dct:source;
+  sh:maxCount 1;
+  sh:message "The property dct:source may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctSource a sh:PropertyShape;
+  sh:name "source"@en, "kilde"@nb;
+  sh:path dct:source;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property dct:source MUST be the URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctSpatial a sh:PropertyShape;
+  sh:name "spatial"@en, "dekningsområde"@nb;
+  sh:path dct:spatial;
+  sh:nodeKind sh:IRI;
+  sh:message "The property of dct:spatial MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctSubject a sh:PropertyShape;
+  sh:name "concept"@en, "begrep"@nb;
+  sh:path dct:subject;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of dct:subject MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctTemporal a sh:PropertyShape;
+  sh:name "temporal"@en, "tidsrom"@nb;
+  sh:path dct:temporal;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:message "The value of property dct:temporal MUST be a URI or Blank Node"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-dctTitle a sh:PropertyShape;
+  sh:name "title/name"@en, "tittel/navn"@nb;
+  sh:path dct:title;
+  sh:minCount 1;
+  sh:message "The property dct:title may have min. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-dctTitle a sh:PropertyShape;
+  sh:name "title/name"@en, "tittel/navn"@nb;
+  sh:path dct:title;
+  sh:datatype rdf:langString;
+  sh:message "The value of property dct:title MUST be of datatype rdf:langString"@en;
+  sh:severity sh:Violation .
+
+:hasUniqueLangShape-dctTitle a sh:PropertyShape;
+  sh:name "title/name"@en, "tittel/navn"@nb;
+  sh:path dct:title;
+  sh:uniqueLang true;
+  sh:message "The property dct:title may have max. 1 value per language"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-dctType a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb;
+  sh:path dct:type;
+  sh:maxCount 1;
+  sh:message "The property dct:type may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dctType  a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb;
+  sh:path dct:type;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:message "The value of property dct:type MUST be a URI or Blank Node"@en;
+  sh:severity sh:Violation .
+
+### dqv properties:
+
+:hasNodeKindShape-dqvHasQualityAnnotation a sh:PropertyShape;
+  sh:name "has quality annotation"@en, "har kvalitetsmerknad"@nb;
+  sh:path dqv:hasQualityAnnotation;
+  sh:class dqv:QualityAnnotation;
+  sh:message "The value of property dqv:hasQualityAnnotation MUST be an instance of dqv:QualityAnnotation"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-dqvHasQualityMeasurement a sh:PropertyShape;
+  sh:name "as quality measurement"@en, "har kvalitetsmåling"@nb;
+  sh:path dqv:hasQualityMeasurement;
+  sh:class dqv:QualityMeasurement;
+  sh:message "The value of property dqv:hasQualityMeasurement MUST be an instance of dqv:QualityMeasurement"@en;
+  sh:severity sh:Violation .
+
+### foaf properties:
+
+:hasMin0Max1Shape-foafHomepage a sh:PropertyShape;
+  sh:name "homepage"@en, "hjemmeside"@nb;
+  sh:path foaf:homepage;
+  sh:maxCount 1;
+  sh:message "The property foaf:homepage may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-foafHomepage a sh:PropertyShape;
+  sh:name "homepage"@en, "hjemmeside"@nb;
+  sh:path foaf:homepage;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property foaf:homepage MUST be an URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-foafName a sh:PropertyShape;
+  sh:name "name"@en, "navn"@nb;
+  sh:path foaf:name;
+  sh:minCount 1;
+  sh:message "The property foaf:name MUST have min. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-foafName a sh:PropertyShape;
+  sh:name "name"@en, "navn"@nb;
+  sh:path foaf:name;
+  sh:nodeKind sh:Literal;
+  sh:message "The value of property foaf:name MUST be a Literal"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-foafPage a sh:PropertyShape;
+  sh:name "documentation"@en, "dokumentasjon"@nb;
+  sh:path foaf:page;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property foaf:page MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasMin1MaxNShape-foafPrimaryTopic a sh:PropertyShape;
+  sh:name "primary topic"@en, "primærtema"@nb;
+  sh:maxCount 1;
+  sh:minCount 1;
+  sh:path foaf:primaryTopic;
+  sh:message "The property foaf:primaryTopic MUST have exactly one value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-foafPrimaryTopic a sh:PropertyShape;
+  sh:name "primary topic"@en, "primærtema"@nb;
+  sh:node :DcatResourceShape;
+  sh:path foaf:primaryTopic;
+  sh:message "The value of foaf:primaryTopic MUST be an instance of dcat:Dataset, dcat:Catalog, dcat:DataService or dcat:DatasetSeries"@nb;
+  sh:severity sh:Violation .
+
+### odrl properties:
+
+:hasMin0Max1Shape-odrlHasPolicy a sh:PropertyShape;
+  sh:name "has policy"@en, "policy"@nb;
+  sh:path odrl:hasPolicy;
+  sh:maxCount 1;
+  sh:message "The property odrl:hasPolicy may have max. 1 value"@en;
+  sh:severity sh:Warning .
+
+:hasNodeKindShape-odrlHasPolicy a sh:PropertyShape;
+  sh:name "has policy"@en, "policy"@nb;
+  sh:path odrl:hasPolicy;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property odrl:hasPolicy MUST be a URI"@en;
+  sh:severity sh:Warning .
+
+### prov properties:
+
+:hasNodeKindShape-provQualifiedAttribution a sh:PropertyShape;
+  sh:name "qualified attribution"@en, "annen ansvarlig aktør"@nb;
+  sh:path prov:qualifiedAttribution;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:class prov:Attribution;
+  sh:message "The value of property prov:qualifiedAttribution MUST be an instance of prov:Attribution"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-provWasGeneratedBy a sh:PropertyShape;
+  sh:name "was generated by"@en, "ble generert ved"@nb;
+  sh:path prov:wasGeneratedBy;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property prov:wasGeneratedBy MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+### rdfs properties
+
+:hasNodeKindShape-rdfsSeeAlso a sh:PropertyShape ;
+  sh:name "reference"@en, "referanse"@nb;
+  sh:path rdfs:seeAlso;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property skos:notation MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+### skos properties:
+
+:hasMin1Max1Shape-skosNotation a sh:PropertyShape ;
+  sh:name "notation"@en, "notasjon"@nb;
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:path skos:notation;
+  sh:message "The property skos:notation MUST have exactly 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-skosNotation a sh:PropertyShape ;
+  sh:name "notation"@en, "notasjon"@nb;
+  sh:path skos:notation;
+  sh:nodeKind sh:Literal;
+  sh:message "The value of property skos:notation MUST be Literal"@en;
+  sh:severity sh:Violation .
+
+### spdx properties:
+
+:hasMin0Max1Shape-spdxChecksum a sh:PropertyShape;
+  sh:name "checksum"@en, "sjekksum"@nb;
+  sh:path spdx:checksum;
+  sh:maxCount 1;
+  sh:message "The property spdx:checksum may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-spdxChecksum a sh:PropertyShape;
+  sh:name "checksum"@en, "sjekksum"@nb;
+  sh:path spdx:checksum;
+  sh:nodeKind sh:BlankNodeOrIRI;
+  sh:message "The value of property spdx:checksum MUST be a URI or Blank Node"@en;
+  sh:severity sh:Violation .
+
+:hasMin1Max1Shape-spdxChecksumValue a sh:PropertyShape;
+  sh:name "checksum"@en, "sjekksum"@nb;
+  sh:path spdx:checksumValue;
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:message "The property spdx:checksum MUST have exactly 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasDatatypeShape-spdxChecksumValue a sh:PropertyShape;
+  sh:name "checksum"@en, "sjekksum"@nb;
+  sh:path spdx:checksumValue;
+  sh:datatype xsd:hexBinary;
+  sh:message "The value of property spdx:checksum MUST of datatype xsd:hexBinary"@en;
+  sh:severity sh:Violation .
+
+:hasMin1Max1Shape-spdxAlgorithm a sh:PropertyShape;
+  sh:name "algorithm"@en, "algoritme"@nb;
+  sh:path spdx:algorithm;
+  sh:minCount 1;
+  sh:maxCount 1;
+  sh:message "The property spdx:checksum MUST have exactly 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-spdxAlgorithm a sh:PropertyShape;
+  sh:name "algorithm"@en, "algoritme"@nb;
+  sh:path spdx:algorithm;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property spdx:checksum MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+### time properties:
+
+:hasMin0Max1Shape-timeHasBeginning a sh:PropertyShape;
+  sh:name "beginning"@en, "begynnelse"@nb;
+  sh:path time:hasBeginning;
+  sh:maxCount 1;
+  sh:message "The property time:hasBeginning may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-timeHasBeginning a sh:PropertyShape;
+  sh:name "beginning"@en, "begynnelse"@nb;
+  sh:path time:hasBeginning;
+  sh:class time:Instant;
+  sh:message "The value of property time:hasBeginning MUST be of type time:Instant"@en;
+  sh:severity sh:Violation .
+
+:hasMin0Max1Shape-timeHasEnd a sh:PropertyShape;
+  sh:name "end"@en, "slutt"@nb;
+  sh:path time:hasEnd;
+  sh:maxCount 1;
+  sh:message "The property time:hasEnd may have max. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-timeHasEnd a sh:PropertyShape;
+  sh:name "end"@en, "slutt"@nb;
+  sh:path time:hasEnd;
+  sh:class time:Instant;
+  sh:message "The value of property time:hasEnd MUST be of type time:Instant"@en;
+  sh:severity sh:Violation .
+
+### vcard properties:
+
+:hasMin1MaxNShape-vcardFn a sh:PropertyShape;
+  sh:name "formatted name"@en, "navn"@nb;
+  sh:path vcard:fn;
+  sh:minCount 1;
+  sh:message "The property vcard:fn MUST have min. 1 value"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-vcardFn a sh:PropertyShape;
+  sh:name "formatted name"@en, "navn"@nb;
+  sh:path vcard:fn;
+  sh:nodeKind sh:Literal;
+  sh:message "The value of property vcard:fn MUST be of type Literal"@en;
+  sh:severity sh:Violation .
+
+:hasMin1Shape-vcardHasEmail-OR-vcardHasURL a sh:PropertyShape;
+  sh:name "has email OR contact page"@en, "har e-post ELLER har kontaktside";
+  sh:path [ sh:alternativePath (vcard:hasEmail vcard:hasURL) ];
+  sh:minCount 1;
+  sh:message "Instances of vcard:Kind MUST have a value which is EITHER vcard:hasEmail OR a vcard:hasURL"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-vcardHasEmail a sh:PropertyShape ;
+  sh:name "has email"@en, "har e-post"@nb;
+  sh:path vcard:hasEmail;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property vcard:hasEmail MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+:hasNodeKindShape-vcardHasURL a sh:PropertyShape ;
+  sh:name "has URL"@en, "har kontaktside"@nb;
+  sh:path vcard:hasURL;
+  sh:nodeKind sh:IRI;
+  sh:message "The value of property vcard:hasURL MUST be a URI"@en;
+  sh:severity sh:Violation .
+
+### --- check usage of controlled vocabularies:
+
+:hasShapeCV-dcatTheme a sh:PropertyShape;
+  sh:name "theme controlled vocabulary"@en, "tema kontrollert vokabular"@nb;
+  sh:path dcat:theme;
+  sh:or (
+    # If value on dcat:theme matches path to Data Theme Vocabulary (or https:-path),
+    # then it should have exact match
+    [ sh:not [
+        sh:or (
+          [ sh:pattern "^http://publications.europa.eu/resource/authority/data-theme" ]
+          [ sh:pattern "^https://publications.europa.eu/resource/authority/data-theme"]  # catch usage of https
+        )
+      ] ]
+    [ sh:in (
+      datatheme:AGRI
+      datatheme:ECON
+      datatheme:EDUC
+      datatheme:ENER
+      datatheme:ENVI
+      datatheme:GOVE
+      datatheme:HEAL
+      datatheme:INTR
+      datatheme:JUST
+      datatheme:REGI
+      datatheme:SOCI
+      datatheme:TECH
+      datatheme:TRAN
+    )]
+  );
+  sh:message "A URI to a Data Theme code seems to be incorrect. Check that the URI of the Data Theme code is correct"@en;
+  sh:severity sh:Warning .
+
+:hasShapeCV-dctAccessRights a sh:PropertyShape;
+  sh:name "access rights"@en, "tilgangsrettigheter"@nb;
+  sh:path dct:accessRights;
+  sh:in (
+   <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC>
+   <http://publications.europa.eu/resource/authority/access-right/PUBLIC>
+   <http://publications.europa.eu/resource/authority/access-right/RESTRICTED>
+  );
+  sh:message "The value of property dct:accessRights MUST be one of the following values: <http://publications.europa.eu/resource/authority/access-right/NON_PUBLIC>, <http://publications.europa.eu/resource/authority/access-right/PUBLIC>, <http://publications.europa.eu/resource/authority/access-right/RESTRICTED>"@en;
+  sh:severity sh:Violation .
