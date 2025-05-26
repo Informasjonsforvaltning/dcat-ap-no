@@ -1040,9 +1040,9 @@ Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn 
 <div class="paragraph">
 <p><strong>Lisens</strong>: <a href="https://creativecommons.org/licenses/by/4.0/" class="ext-link" target="_blank" rel="noopener">CC BY 4.0 &#x29C9;</a><br>
 <strong>Status</strong>: Gjeldende fra 2025-01-01<br>
-<strong>Versjon</strong>: v.3.0.3 (se <a href="#Endringslogg"><em>Vedlegg C - Endringslogg</em></a>)<br>
+<strong>Versjon</strong>: v.3.0.4 (se <a href="#Endringslogg"><em>Vedlegg C - Endringslogg</em></a>)<br>
 <strong>Publisert</strong>: 2024-11-26 (v.3.0.0)<br>
-<strong>Oppdatert</strong>: 2025-04-04 (v.3.0.x)<br>
+<strong>Oppdatert</strong>: 2025-05-26 (v.3.0.x)<br>
 <strong>Gjeldende versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no" class="bare">https://data.norge.no/specification/dcat-ap-no</a><br>
 <strong>Forrige versjon</strong>: <a href="https://data.norge.no/specification/dcat-ap-no/v2.2/" class="bare">https://data.norge.no/specification/dcat-ap-no/v2.2/</a><br>
 <strong>Redaktørens utkast</strong>: <a href="https://informasjonsforvaltning.github.io/dcat-ap-no/" class="bare">https://informasjonsforvaltning.github.io/dcat-ap-no/</a><br></p>
@@ -11400,7 +11400,20 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <div class="ulist">
 <ul>
 <li>
-<p>fra v.3.0.0 til v.3.0.2: Retter opp en del feil og mangler mtp. UU-krav (bl.a. lagt inn alternativ tekst til figurene som manglet den).</p>
+<p>fra v.3.0.3 til v.3.0.4:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Rettet opp feil kardinalitet for egenskapen valuta (<code>cv:currency</code>) i <a href="#img-Klassen-Gebyr">Figur 8</a>.</p>
+</li>
+<li>
+<p>I endringsloggen føyet til info om at URIen for egenskapen <a href="#Datasett-harVersjon">Datasett – har versjon (<code>dcat:hasVersion</code>)</a> er endret fra <code>dct:hasVersion</code> til <code>dcat:hasVersion</code>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>fra v.3.0.0 til v.3.0.3: Rettet opp en del feil og mangler mtp. UU-krav (bl.a. lagt inn alternativ tekst til figurene som manglet den).</p>
 </li>
 </ul>
 </div>
@@ -11572,6 +11585,16 @@ Vær oppmerksom på at selv om begge egenskapene anbefales, SKAL en av de to væ
 <p><strong>Endrede egenskapsURIer</strong>:</p>
 <div class="ulist">
 <ul>
+<li>
+<p><a href="#Datasett-harVersjon"> 3.2.3.15, &#8220;Datasett – har versjon (dcat:hasVersion)&#8221;</a>: EgenskapsURIen er endret fra <code>dct:hasVersion</code> til <code>dcat:hasVersion</code>, i samsvar med DCAT-AP/DCAT.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>URIen for den inverse egenskapen er også endret tilsvarende, se under <a href="#Om-inverse-egenskaper"> 4.4, &#8220;Om bruk av inverse egenskaper&#8221;</a>.</p>
+</li>
+</ul>
+</div>
+</li>
 <li>
 <p><a href="#Datasett-versjon"> 3.2.3.28, &#8220;Datasett – versjon (dcat:version)&#8221;</a>: EgenskapsURIen er endret fra <code>owl:versionInfo</code> til <code>dcat:version</code>, i samsvar med DCAT-AP/DCAT.</p>
 </li>
@@ -12122,7 +12145,7 @@ med DCAT-AP/DCAT.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Sist oppdatert 2025-04-04 07:53:26 UTC
+Sist oppdatert 2025-05-26 08:31:54 UTC
 </div>
 </div>
 </body>
