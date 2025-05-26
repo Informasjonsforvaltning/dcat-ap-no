@@ -1,0 +1,336 @@
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix cpsv: <http://purl.org/vocab/cpsv#> .
+@prefix cv: <http://data.europa.eu/m8g/> .
+@prefix dcatap: <http://data.europa.eu/r5r> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix eli: <http://data.europa.eu/eli/ontology#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix rov: <http://www.w3.org/ns/regorg#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix : <https://data.norge.no/vocabulary/dcatno/shacl/vocabularies#> .
+
+:AgentShape-CV a sh:NodeShape ;
+    rdfs:label "Agent Controlled Vocabularies"@en ;
+    sh:property :hasPublisherTypeShapeCVInScheme-dctType;
+    sh:targetClass foaf:Agent, org:Organization, foaf:Group, foaf:Person .
+
+:CatalogShape-CV a sh:NodeShape ;
+    rdfs:label "Catalogue Controlled Vocabularies"@en ;
+    sh:property :hasClassShape-dctPublisher,
+                :hasShapeCVInScheme-dctLicense ,
+                :hasShapeCVInScheme-dctLanguage ,
+                :hasClassShape-dctCreator ;
+    sh:targetClass dcat:Catalog .
+
+:CatalogRecordShape-CV a sh:NodeShape ;
+    rdfs:label "Catalogue Record Controlled Vocabularies"@en ;
+    sh:property :hasShapeCVInScheme-admsStatus ,
+                :hasShapeCVInScheme-dctLanguage ;
+    sh:targetClass dcat:CatalogRecord .
+
+:DatasetShape-CV a sh:NodeShape ;
+    rdfs:label "Dataset Controlled Vocabularies"@en ;
+    sh:property :hasShapeCVInScheme-dcatThemeAtLeast1 ,
+                :hasClassShape-dctPublisher,
+                :hasClassShape-dctSubject ,
+                :hasShapeCVInScheme-provWasGeneratedBy ,
+                :hasShapeCVInScheme-dctAccessRights ,
+                :hasShapeCVInScheme-dctAccrualPeriodicity ,
+                :hasClassShape-dctCreator ,
+                :hasShapeCVInScheme-dctLanguage ;
+    sh:targetClass dcat:Dataset .
+
+:DataServiceShape-CV a sh:NodeShape ;
+    rdfs:label "Data Service Controlled Vocabularies"@en ;
+    sh:property :hasClassShape-dctPublisher,
+                :hasShapeCVInScheme-dctAccessRights,
+                :hasShapeCVInScheme-dcatapAvailability,
+                :hasShapeCVInScheme-dctFormat,
+                :hasShapeCVInScheme-dctLicense,
+                :hasShapeCVInScheme-admsStatus;
+    sh:targetClass dcat:DataService .
+
+:DataServiceShape-theme a sh:NodeShape ;
+    rdfs:label "Data Service theme from Controlled Vocabulary"@en ;
+    rdfs:comment "At least 1 value must come from the controlled vocabulary Data Theme"@en ;
+    sh:or (
+        [ sh:not [ sh:path dcat:theme; sh:minCount 1; ]]  # either unused
+        [ sh:property :hasShapeCVInScheme-dcatThemeAtLeast1 ]     # or at least 1 Data Theme
+    );
+    sh:message "If the property dcat:theme is used, AT LEAST 1 value of the property MUST come from the controlled vocabulary Data Theme (ex: http://publications.europa.eu/resource/authority/data-theme/GOVE)"@en ;
+    sh:severity sh:Violation ;
+    sh:targetClass dcat:DataService .
+
+:DistributionShape-CV a sh:NodeShape ;
+    rdfs:label "Distribution Controlled Vocabularies"@en ;
+    sh:property :hasShapeCVInScheme-dctFormat ,
+                :hasShapeCVInScheme-dctLicense ,
+                :hasShapeCVInScheme-admsStatus ,
+                :hasShapeCVInScheme-dcatapAvailability ,
+                :hasShapeCVInScheme-dctLanguage ;
+    sh:targetClass dcat:Distribution .
+
+:DatasetSeriesShape-CV a sh:NodeShape ;
+    rdfs:label "Dataset Series Controlled Vocabularies"@en ;
+    sh:property :hasShapeCVInScheme-dcatThemeAtLeast1 ,
+                :hasClassShape-dctPublisher ,
+                :hasShapeCVInScheme-dctSpatial ,
+                :hasShapeCVInScheme-dctAccrualPeriodicity ;
+    sh:targetClass dcat:DatasetSeries .
+
+:LegalResourceShape-CV a sh:NodeShape ;
+    rdfs:label "Legal Resource Controlled Vocabularies"@en ;
+    sh:property :hasLegalResourceTypeShapeCVInScheme-dctType ;
+    sh:targetClass eli:LegalResource .
+
+:hasLegalResourceTypeShapeCVInScheme-dctType a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb;
+  sh:path dct:type;
+  sh:class skos:Concept ;
+  sh:node :LegalResourceTypeRestriction ;
+  sh:message "The value on property dct:type MUST be an instance of skos:Concept from the controlled vocabulary Legal Resource Type if it is defined by the vocabulary (ex: https://data.norge.no/vocabulary/legal-resource-type#act)"@en;
+  sh:severity sh:Warning .
+
+:hasShapeCVInScheme-dctAccessRights a sh:PropertyShape;
+    sh:name "access rights"@en, "tilgangsrettigheter"@nb;
+    sh:path dct:accessRights ;
+    sh:class skos:Concept ;
+    sh:node :AccessRightsRestriction ;
+    sh:message "The value of dct:accessRights MUST be an instance of skos:Concept from the controlled vocabulary Access Right (ex: http://publications.europa.eu/resource/authority/access-right/PUBLIC)"@en ;
+    sh:severity sh:Violation .
+
+:hasShapeCVInScheme-dctAccrualPeriodicity a sh:PropertyShape;
+    sh:name "frequency"@en, "frekvens"@nb;
+    sh:path dct:accrualPeriodicity ;
+    sh:class skos:Concept ;
+    sh:node :FrequencyRestriction ;
+    sh:message "The value of dct:accrualPeriodicity MUST be an instance of skos:Concept from the controlled vocabulary Frequency (ex: http://publications.europa.eu/resource/authority/frequency/DAILY)"@en ;
+    sh:severity sh:Violation .
+
+:hasClassShape-dctCreator a sh:PropertyShape;
+  sh:name "creator"@en, "produsent"@nb ;
+  sh:path dct:creator;
+  sh:or (
+      [sh:class foaf:Agent]
+      [sh:class org:Organization]
+      [sh:class foaf:Group]
+      [sh:class foaf:Person]
+      [sh:class rov:RegisteredOrganization] );
+  sh:message "The value of property dct:creator MUST be an instance of foaf:Agent, org:Organization, foaf:Group or foaf:Person or rov:RegisteredOrganization"@en ;
+  sh:severity sh:Info .
+
+:hasShapeCVInScheme-dctFormat a sh:PropertyShape;
+    sh:name "format"@en, "format"@nb;
+    sh:path dct:format ;
+    sh:class skos:Concept ;
+    sh:node :FileTypeRestriction ;
+    sh:message "The value of property dct:format MUST be an instance of skos:Concept from the controlled vocabulary File Type (ex: http://publications.europa.eu/resource/authority/file-type/JSON)"@en;
+    sh:severity sh:Violation .
+
+:hasShapeCVInScheme-dcatapAvailability a sh:PropertyShape ;
+    sh:name "availability"@en, "tilgjengelighet"@nb;
+    sh:path dcatap:availability ;
+    sh:class skos:Concept ;
+    sh:node :PlannedAvailabilityShape ;
+    sh:message "The value of property dcatap:availability MUST be an instance of skos:Concept from the controlled vocabulary Planned Availability (ex: https://publications.europa.eu/resource/authority/planned-availability/EXPERIMENTAL)"@en;
+    sh:severity sh:Violation .
+
+:hasShapeCVInScheme-dctLanguage a sh:PropertyShape ;
+    sh:name "language"@en, "språk"@nb;
+    sh:path dct:language ;
+    sh:class skos:Concept ;
+    sh:node :LanguageRestriction ;
+    sh:message "The value of property dct:language MUST be an instance of skos:Concept from the controlled vocabulary Language (ex: http://publications.europa.eu/resource/authority/language/NOB)"@en;
+    sh:severity sh:Violation .
+
+:hasShapeCVInScheme-dctLicense a sh:PropertyShape ;
+    sh:name "license"@en, "lisens"@nb;
+    sh:path dct:license ;
+    sh:class skos:Concept ;
+    sh:node :LicenceRestriction ;
+    sh:message "The value of property dct:license MUST be an instance of skos:Concept from the controlled vocabulary License (ex: http://publications.europa.eu/resource/authority/licence/CC0)"@en;
+    sh:severity sh:Violation .
+
+:hasShapeCVInScheme-dctSpatial a sh:PropertyShape ;
+    sh:name "geographical coverage"@en, "dekningsområde"@nb;
+    sh:path dct:spatial ;
+    sh:class skos:Concept ;
+    sh:node :SpatialRestriction ;
+    sh:message "The value of property dct:spatial MUST be an instance of skos:Concept from one of the vocabularies Continent, Countries and Territories, Place or Geonames (http://publications.europa.eu/resource/authority/continent, http://publications.europa.eu/resource/authority/country, http://publications.europa.eu/resource/authority/place or http://sws.geonames.org)"@en ;
+    sh:severity sh:Violation .
+
+:hasShapeCVInScheme-admsStatus a sh:PropertyShape ;
+    sh:name "status"@en, "status"@nb;
+    sh:path adms:status ;
+    sh:class skos:Concept ;
+    sh:node :StatusRestriction ;
+    sh:message "The value of property adms:status MUST be an instance of skos:Concept from the controlled vocabulary Distribution Status (ex: http://publications.europa.eu/resource/authority/distribution-status/DEVELOP)"@en;
+    sh:severity sh:Violation .
+
+:hasShapeCVInScheme-dcatThemeAtLeast1 a sh:PropertyShape ;
+    sh:name "theme"@en, "tema"@nb ;
+    sh:path dcat:theme ;
+    sh:class skos:Concept ;
+    sh:qualifiedValueShape [
+        sh:hasValue <http://publications.europa.eu/resource/authority/data-theme> ;
+        sh:path skos:inScheme ;
+    ] ;
+    sh:qualifiedMinCount 1 ;
+    sh:severity sh:Violation .
+
+:hasPublisherTypeShapeCVInScheme-dctType a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb ;
+  sh:path dct:type;
+  sh:class skos:Concept ;
+  sh:node :PublisherTypeRestriction ;
+  sh:message "The value on property dct:type MUST be an instance of skos:Concept from the controlled vocabulary Publisher Type (ex: http://purl.org/adms/publishertype/NationalAuthority)"@en;
+  sh:severity sh:Violation .
+
+# ========== SHOULD and MAY Requirements - give Warnings or Info  ==========
+
+:hasShapeCVInScheme-provWasGeneratedBy a sh:PropertyShape;
+  sh:name "was generated by"@en, "ble generert ved"@nb ;
+  sh:path prov:wasGeneratedBy;
+  sh:class prov:Activity ;
+  sh:node :ProvenanceActivityTypeShape ;
+  sh:message "The value on property prov:wasGeneratedBy MUST be an instance of prov:Activity and SHOULD come from the controlled Vocabulary Provenance Activity Type (ex: https://data.norge.no/vocabulary/provenance-activity-type#administrative-decision)"@en;
+  sh:severity sh:Warning .
+
+:hasDatasetTypeShapeCVInScheme-dctType a sh:PropertyShape;
+  sh:name "type"@en, "type"@nb ;
+  sh:path dct:type;
+  sh:class skos:Concept ;
+  sh:node :DatasetTypeRestriction ;
+  sh:message "The value on property dct:type MUST be an instance of skos:Concept and MAY come from the controlled vocabulary Dataset Type (ex: http://publications.europa.eu/resource/authority/dataset-type/TEST_DATA)"@en;
+  sh:severity sh:Info .
+
+# ========== Check types for external resources ==========
+
+:hasClassShape-dctSubject a sh:PropertyShape ;
+    sh:name "subject"@en ;
+    sh:path dct:subject ;
+    sh:class skos:Concept ;
+    sh:message "The value of dct:subject should be of type skos:Concept"@en ;
+    sh:severity sh:Warning .
+
+:hasClassShape-dctPublisher a sh:PropertyShape ;
+    sh:name "publisher"@en ;
+    sh:path dct:publisher ;
+    sh:or ( # tar med subklasser av foaf:Agent for å unngå feilmelding
+      [sh:class foaf:Agent]
+      [sh:class org:Organization]
+      [sh:class foaf:Group]
+      [sh:class foaf:Person] );
+    sh:message "The value of property dct:publisher MUST be an instance of foaf:Agent, org:Organization, foaf:Group or foaf:Person"@en ;
+    sh:severity sh:Warning .
+
+
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# Sjekk av koder fra kontrollerte vokabularer
+# -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-
+# ------------------------------------------------------------------------------------------------------------------
+# The constraints for dcat:mediaType, dcat:compressFormat, dcat:packageFormat which are limited to the IANA codelist
+# cannot be expressed in SHACL unless a copy in RDF for the IANA codelist is being created
+# ------------------------------------------------------------------------------------------------------------------
+
+:AccessRightsRestriction a sh:NodeShape ;
+    rdfs:label "Access Rights Restriction"@en ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/access-right> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:DatasetTypeRestriction a sh:NodeShape ;
+    rdfs:label "Dataset Type Restriction"@en ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/dataset-type> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:FileTypeRestriction a sh:NodeShape ;
+    rdfs:label "File Type Restriction"@en ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/file-type> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:FrequencyRestriction a sh:NodeShape ;
+    rdfs:label "Frequency Restriction"@en ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/frequency> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:LanguageRestriction a sh:NodeShape ;
+    rdfs:comment "Language Restriction" ;
+    rdfs:label "Language Restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/language> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:LegalResourceTypeRestriction a sh:NodeShape ;
+    rdfs:comment "Legal Resource Type restriction" ;
+    rdfs:label "Legal Resource Type restriction" ;
+    sh:property [
+        sh:hasValue <https://data.norge.no/vocabulary/legal-resource-type#> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:LicenceRestriction a sh:NodeShape ;
+    rdfs:label "Licence Restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/licence> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:PlannedAvailabilityShape a sh:NodeShape ;
+    rdfs:label "Availability Restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/planned-availability> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:ProvenanceActivityTypeShape a sh:NodeShape ;
+    rdfs:label "Provenance Activity Type Restriction" ;
+    sh:property [
+        sh:hasValue <https://data.norge.no/vocabulary/provenance-activity-type> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:StatusRestriction a sh:NodeShape ;
+    rdfs:label "Status Restriction" ;
+    sh:property [
+        sh:hasValue <http://publications.europa.eu/resource/authority/distribution-status> ;
+        sh:path skos:inScheme ;
+    ] .
+    
+:PublisherTypeRestriction a sh:NodeShape ;
+    rdfs:label "Publisher type restriction" ;
+    sh:property [
+        sh:hasValue <http://purl.org/adms/publishertype/1.0> ;
+        sh:path skos:inScheme ;
+    ] .
+
+:SpatialRestriction
+    a sh:NodeShape ;
+    rdfs:label "Spatial Restriction" ;
+    sh:property [
+        sh:or ( # Et av følgende kontrollerte vokabularer er tillatt
+            [sh:hasValue <http://publications.europa.eu/resource/authority/country>]   # Country
+            [sh:hasValue <http://publications.europa.eu/resource/authority/continent>] # Continent
+            [sh:hasValue <http://sws.geonames.org>]                                    # Geonames
+            [sh:hasValue <http://publications.europa.eu/resource/authority/place>]     # Places
+        ) ;
+        sh:path skos:inScheme ;
+    ] ;
+     .
