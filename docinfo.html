@@ -1,3 +1,21 @@
+<!-- OpenGraph Meta Tags for Social Media Sharing -->
+<meta property="og:title" content="{og-title}" />
+<meta property="og:description" content="{og-description}" />
+<meta property="og:type" content="{og-type}" />
+<meta property="og:url" content="{og-url}" />
+<meta property="og:site_name" content="{og-site-name}" />
+<meta property="og:locale" content="{og-locale}" />
+
+<!-- Twitter Card Meta Tags -->
+<meta name="twitter:card" content="{twitter-card}" />
+<meta name="twitter:title" content="{og-title}" />
+<meta name="twitter:description" content="{og-description}" />
+
+<!-- Additional Meta Tags -->
+<meta name="description" content="{meta-description}" />
+<meta name="keywords" content="{meta-keywords}" />
+<meta name="author" content="{meta-author}" />
+
 <!-- this docinfo contains several modifications to the default asciidoc-CSS -->
 
 <!-- 1) Generate a collapsible TOC -->
@@ -7,58 +25,59 @@
 <!-- We do not need the tocify CSS because the asciidoc CSS already provides most of what we need -->
 
 <style>
-.tocify-header {
+  .tocify-header {
     font-style: italic;
-}
+  }
 
-.tocify-subheader {
+  .tocify-subheader {
     font-style: normal;
     font-size: 90%;
-}
+  }
 
-.tocify ul {
+  .tocify ul {
     margin: 0;
- }
+  }
 </style>
 
 <script type="text/javascript">
-    $(function () {
-        // Add a new container for the tocify toc into the existing toc so we can re-use its
-        // styling
-        $("#toc").append("<div id='generated-toc'></div>");
-        $("#generated-toc").tocify({
-            extendPage: true,
-            context: "#content",
-            highlightOnScroll: true,
-            hideEffect: "slideUp",
-            // Use the IDs that asciidoc already provides so that TOC links and intra-document
-            // links are the same. Anything else might confuse users when they create bookmarks.
-            hashGenerator: function(text, element) {
-                return $(element).attr("id");
-            },
-            // Smooth scrolling doesn't work properly if we use the asciidoc IDs
-            smoothScroll: false,
-            // Set to 'none' to use the tocify classes
-            theme: "none",
-            // Handle book (may contain h1) and article (only h2 deeper)
-            selectors: $( "#content" ).has( "h1" ).size() > 0 ? "h1,h2,h3,h4,h5" : "h2,h3,h4,h5",
-            ignoreSelector: ".discrete"
-        });
+  $(function () {
+    // Add a new container for the tocify toc into the existing toc so we can re-use its
+    // styling
+    $("#toc").append("<div id='generated-toc'></div>");
+    $("#generated-toc").tocify({
+      extendPage: true,
+      context: "#content",
+      highlightOnScroll: true,
+      hideEffect: "slideUp",
+      // Use the IDs that asciidoc already provides so that TOC links and intra-document
+      // links are the same. Anything else might confuse users when they create bookmarks.
+      hashGenerator: function (text, element) {
+        return $(element).attr("id");
+      },
+      // Smooth scrolling doesn't work properly if we use the asciidoc IDs
+      smoothScroll: false,
+      // Set to 'none' to use the tocify classes
+      theme: "none",
+      // Handle book (may contain h1) and article (only h2 deeper)
+      selectors:
+        $("#content").has("h1").size() > 0 ? "h1,h2,h3,h4,h5" : "h2,h3,h4,h5",
+      ignoreSelector: ".discrete",
+    });
 
-        // Make TOC items focusable
-        $("#generated-toc").find("a").attr("tabindex", "0");
-        // Make TOC items focusable
-        $("#generated-toc").find("a").attr("tabindex", "0");
-        // Collapse TOC initially, showing only level 1 headings
-        $("#generated-toc").find(".tocify-subheader").hide();
-        $("#generated-toc").find(".tocify-header").addClass("collapsed");
-        // Toggle collapse on click
-        $("#generated-toc").on("click", ".tocify-header", function() {
-          $(this).nextUntil(".tocify-header").toggle();
-          $(this).toggleClass("collapsed");
-        });
+    // Make TOC items focusable
+    $("#generated-toc").find("a").attr("tabindex", "0");
+    // Make TOC items focusable
+    $("#generated-toc").find("a").attr("tabindex", "0");
+    // Collapse TOC initially, showing only level 1 headings
+    $("#generated-toc").find(".tocify-subheader").hide();
+    $("#generated-toc").find(".tocify-header").addClass("collapsed");
+    // Toggle collapse on click
+    $("#generated-toc").on("click", ".tocify-header", function () {
+      $(this).nextUntil(".tocify-header").toggle();
+      $(this).toggleClass("collapsed");
+    });
 
-/*
+    /*
         // Make TOC items focusable
         toc.find("a").attr("tabindex", "0");
 
@@ -71,51 +90,49 @@
           $(this).nextUntil(".tocify-header").toggle();
           $(this).toggleClass("collapsed");
         });
-*/ 
-        // Switch between static asciidoc toc and dynamic tocify toc based on browser size
-        // This is set to match the media selectors in the asciidoc CSS
-        // Without this, we keep the dynamic toc even if it is moved from the side to preamble
-        // position which will cause odd scrolling behavior
-        var handleTocOnResize = function() {
-            if ($(document).width() < 768) {
-                $("#generated-toc").hide();
-                $(".sectlevel0").show();
-                $(".sectlevel1").show();
-            }
-            else {
-                $("#generated-toc").show();
-                $(".sectlevel0").hide();
-                $(".sectlevel1").hide();
-            }
-        }
+*/
+    // Switch between static asciidoc toc and dynamic tocify toc based on browser size
+    // This is set to match the media selectors in the asciidoc CSS
+    // Without this, we keep the dynamic toc even if it is moved from the side to preamble
+    // position which will cause odd scrolling behavior
+    var handleTocOnResize = function () {
+      if ($(document).width() < 768) {
+        $("#generated-toc").hide();
+        $(".sectlevel0").show();
+        $(".sectlevel1").show();
+      } else {
+        $("#generated-toc").show();
+        $(".sectlevel0").hide();
+        $(".sectlevel1").hide();
+      }
+    };
 
-        $(window).resize(handleTocOnResize);
-        handleTocOnResize();
-    });
+    $(window).resize(handleTocOnResize);
+    handleTocOnResize();
+  });
 </script>
 
-
 <!-- 2) To make collapsible blocks outlined when focused -->
- 
+
 <style>
-    /* Add outline to the summary element when focused */
-    details summary:focus {
-        outline: thin dotted; /* Adjust thickness and color as needed */
-        outline-offset: -2px; /* Adjust the offset to fit the text width */
-        display: inline-block; /* Ensure the element is inline-block */
-        width: auto /* Ensure the width is auto to fit the text */
-    }
+  /* Add outline to the summary element when focused */
+  details summary:focus {
+    outline: thin dotted; /* Adjust thickness and color as needed */
+    outline-offset: -2px; /* Adjust the offset to fit the text width */
+    display: inline-block; /* Ensure the element is inline-block */
+    width: auto; /* Ensure the width is auto to fit the text */
+  }
 </style>
-    
+
 <script>
-    // Add focus and blur event listeners to the summary element
-    document.querySelectorAll('details summary').forEach(el => {
-        el.setAttribute('tabindex', '0'); // Make it focusable
-        el.addEventListener('focus', () => {
-            el.classList.add('focus-outline'); // Add the outline class on focus
-        });
-        el.addEventListener('blur', () => {
-            el.classList.remove('focus-outline'); // Remove the outline class on blur
-        });
+  // Add focus and blur event listeners to the summary element
+  document.querySelectorAll("details summary").forEach((el) => {
+    el.setAttribute("tabindex", "0"); // Make it focusable
+    el.addEventListener("focus", () => {
+      el.classList.add("focus-outline"); // Add the outline class on focus
     });
+    el.addEventListener("blur", () => {
+      el.classList.remove("focus-outline"); // Remove the outline class on blur
+    });
+  });
 </script>

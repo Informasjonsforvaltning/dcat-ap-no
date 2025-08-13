@@ -1,6 +1,37 @@
 include::locale/attributes.adoc[]
 = Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
 Digitaliseringsdirektoratet (Digdir) / The Norwegian Digitalisation Agency
+
+// OpenGraph attributes - Language-aware
+ifdef::lang[nb]
+:og-title: Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
+:og-description: Norsk standard for beskrivelse av datasett, datatjenester og datakataloger basert på DCAT-AP
+:og-locale: nb_NO
+:meta-description: Norsk standard for beskrivelse av datasett, datatjenester og datakataloger basert på DCAT-AP
+:meta-keywords: DCAT, DCAT-AP, Norge, datakatalog, metadata, standard
+endif::[]
+ifdef::lang[en]
+:og-title: Standard for description of datasets, data services and data catalogs (DCAT-AP-NO)
+:og-description: Norwegian standard for describing datasets, data services and data catalogs based on DCAT-AP
+:og-locale: en_US
+:meta-description: Norwegian standard for describing datasets, data services and data catalogs based on DCAT-AP
+:meta-keywords: DCAT, DCAT-AP, Norway, data catalog, metadata, standard
+endif::[]
+ifndef::lang[]
+:og-title: Standard for beskrivelse av datasett, datatjenester og datakataloger (DCAT-AP-NO)
+:og-description: Norsk standard for beskrivelse av datasett, datatjenester og datakataloger basert på DCAT-AP
+:og-locale: nb_NO
+:meta-description: Norsk standard for beskrivelse av datasett, datatjenester og datakataloger basert på DCAT-AP
+:meta-keywords: DCAT, DCAT-AP, Norge, datakatalog, metadata, standard
+endif::[]
+
+// Common OpenGraph attributes
+:og-type: website
+:og-url: https://data.norge.no/specification/dcat-ap-no
+:og-site-name: DCAT-AP-NO
+:twitter-card: summary_large_image
+:meta-author: Digitaliseringsdirektoratet (Digdir)
+
 :doctype: book
 :docinfo: shared
 :icons: font
