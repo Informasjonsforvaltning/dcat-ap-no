@@ -33,7 +33,7 @@ endif::[]
 :meta-author: Digitaliseringsdirektoratet (Digdir)
 
 :doctype: book
-:docinfo: shared
+:docinfo:
 :icons: font
 :toc: left
 ifdef::backend-pdf[:toc: macro]

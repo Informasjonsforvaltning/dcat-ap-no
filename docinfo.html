@@ -16,13 +16,10 @@
 <meta name="keywords" content="{meta-keywords}" />
 <meta name="author" content="{meta-author}" />
 
-<!-- this docinfo contains several modifications to the default asciidoc-CSS -->
-
-<!-- 1) Generate a collapsible TOC -->
+<!-- Original docinfo content for TOC and styling -->
 <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
 <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tocify/1.9.0/javascripts/jquery.tocify.min.js"></script>
-<!-- We do not need the tocify CSS because the asciidoc CSS already provides most of what we need -->
 
 <style>
   .tocify-header {
@@ -77,20 +74,6 @@
       $(this).toggleClass("collapsed");
     });
 
-    /*
-        // Make TOC items focusable
-        toc.find("a").attr("tabindex", "0");
-
-        // Collapse TOC initially, showing only level 1 headings
-        toc.find(".tocify-subheader").hide();
-        toc.find(".tocify-header").addClass("collapsed");
-
-        // Toggle collapse on click
-        toc.on("click", ".tocify-header", function() {
-          $(this).nextUntil(".tocify-header").toggle();
-          $(this).toggleClass("collapsed");
-        });
-*/
     // Switch between static asciidoc toc and dynamic tocify toc based on browser size
     // This is set to match the media selectors in the asciidoc CSS
     // Without this, we keep the dynamic toc even if it is moved from the side to preamble
@@ -112,8 +95,7 @@
   });
 </script>
 
-<!-- 2) To make collapsible blocks outlined when focused -->
-
+<!-- To make collapsible blocks outlined when focused -->
 <style>
   /* Add outline to the summary element when focused */
   details summary:focus {
