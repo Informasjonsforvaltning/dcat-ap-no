@@ -8,6 +8,9 @@ Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbesk
 
 Kun redaksjonelle justeringer: 
 
+* fra v.3.0.5 til v.3.0.6:
+** Retter opp kravnivå for de to valgfrie egenskapene i klassen Rettighetserklæring (kravnivåene rettes fra Anbefalt til Valgfri)
+
 * fra v.3.0.3 til v.3.0.4:
 ** Rettet opp feil kardinalitet for egenskapen valuta (`cv:currency`) i <<img-Klassen-Gebyr>>.
 ** I endringsloggen føyet til info om at URIen for egenskapen <<Datasett-harVersjon, Datasett – har versjon (`dcat:hasVersion`)>> er endret fra `dct:hasVersion` til `dcat:hasVersion`.
