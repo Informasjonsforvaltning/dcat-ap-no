@@ -1,5 +1,8 @@
 name: Publish ontology to data.norge.no/vocabulary
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
