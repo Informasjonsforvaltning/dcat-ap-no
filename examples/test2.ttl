@@ -17,6 +17,7 @@
 <https://example.com/test/relasjon/begrep> a dcat:Dataset ;
     dct:creator <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:description "Dette er en test av å relatere til begrep i forbindelse med høsting av datasett."@nb ;
+    dct:accessRights <http://publications.europa.eu/resource/authority/access-right/PUBLIC> ;
     dct:language <http://publications.europa.eu/resource/authority/language/NOR> ;
     dct:publisher <https://data.brreg.no/enhetsregisteret/api/enheter/991825827> ;
     dct:subject <https://data.nav.no/begrep/BEGREP-261>,
