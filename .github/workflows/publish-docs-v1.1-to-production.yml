@@ -1,5 +1,8 @@
 name: build adocs and publish v1.1 to production
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
