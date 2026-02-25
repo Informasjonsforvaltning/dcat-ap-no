@@ -1,7 +1,7 @@
 name: build adocs
 
 permissions:
-  contents: read
+  contents: write
   pages: write
 
 on:

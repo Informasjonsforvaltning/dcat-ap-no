@@ -23,8 +23,8 @@
     "This document specifies the Norwegian extensions in DCAT-AP-NO, currently not the whole DCAT-AP-NO."@en ,
     "Denne versjonen spesifiserer norske utvidelser i DCAT-AP-NO, foreløpig ikke hele DCAT-AP-NO"@nb ;
   rdfs:isDefinedBy "Digitaliseringsdirektoratet"@nb , "Norwegian Digitalisation Agency"@en ;
-  dct:modified "2023-05-22"^^xsd:date ;
-  owl:versionIRI <dcatno:0.7> ;
+  dct:modified "2026-02-25"^^xsd:date ;
+  owl:versionIRI <dcatno:0.8> ;
   rdfs:comment
     "Only the extensions with the namespace dcatno are specified in this version"@en ,
     "Kun utvidelsene med navnerom dcatno er spesifisert i denne versjonen."@nb ;
@@ -46,8 +46,6 @@
 dcatno:containsService a owl:ObjectProperty , rdf:Property ;
   rdfs:subPropertyOf dct:hasPart , rdfs:member ;
   rdfs:label "contains service"@en , "inneholder tjeneste"@nb ;
-  rdfs:domain dcat:Catalog ;
-  rdfs:range cpsvno:Service, cpsv:PublicService ;
   rdfs:comment
     "To refer to a (public) service that is in the catalog."@en ,
     "Brukes til å referere til en (offentlig) tjeneste som er i katalogen."@nb ;
@@ -57,8 +55,6 @@ dcatno:containsService a owl:ObjectProperty , rdf:Property ;
 dcatno:containsEvent a owl:ObjectProperty , rdf:Property ;
   rdfs:subPropertyOf dct:hasPart , rdfs:member ;
   rdfs:label "contains event"@en , "inneholder hendelse"@nb ;
-  rdfs:domain dcat:Catalog;
-  rdfs:range cv:Event ;
   rdfs:comment
     "To refer to an event that is in the catalog."@en ,
     "Brukes til å referere til en hendelse som er i katalogen."@nb ;
