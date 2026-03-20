@@ -797,7 +797,7 @@ PREFIX : <https://data.norge.no/vocabulary/dcatno/shacl/core#>
     [sh:datatype xsd:dateTime]
   );
   sh:maxCount 1;
-  sh:message "The value of property dcat:endDate MUST be of datatype xsd:gYear, xsd:gYearMonth, xsd:date or xsd:dateTime"@en;
+  sh:message "The value of property dcat:startDate MUST be of datatype xsd:gYear, xsd:gYearMonth, xsd:date or xsd:dateTime"@en;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dcatTemporalResolution a sh:PropertyShape;
