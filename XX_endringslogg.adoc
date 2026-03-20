@@ -9,7 +9,7 @@ Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbesk
 Kun redaksjonelle justeringer: 
 
 * Fra v. 3.0.6 til v. 3.0.7: 
-** Verdiområdet/_range_ for egenskapene <<Tidsrom-sluttdato, Tidsrom – sluttdato/tid (`dcat:endDate`)>> og <<Tidsrom-startdato, Tidsrom – startdato/tid (`dcat:startDate`)>> er utvidet til også å kunne være `xsd:gYear` og `xsd:gYearMonth`, i tillegg til `xsd:date` og `xsd:dateTime`. Dette for å rette opp feilen at disse to var glemt å tas med ved overgangen fra versjon 2 til versjon 3.
+** Verdiområdet/_range_ for egenskapene <<Tidsrom-sluttdato, Tidsrom – sluttdato/tid (`dcat:endDate`)>> og <<Tidsrom-startdato, Tidsrom – startdato/tid (`dcat:startDate`)>> er utvidet til også å kunne være `xsd:gYear` og `xsd:gYearMonth`, i tillegg til `xsd:date` og `xsd:dateTime`. Dette for å rette opp feilen der disse to ble glemt ved overgangen fra versjon 2 til versjon 3.
 ** Det norske navnet på egenskapen `dcat:keyword` er endret fra «emneord» til «nøkkelord» for å være mer i samsvar med det engelske navnet "keyword", og å samkjøre med andre spesifikasjoner. 
 
 * fra v. 3.0.5 til v. 3.0.6:
