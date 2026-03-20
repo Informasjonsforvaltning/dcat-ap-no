@@ -284,14 +284,14 @@ Eksempel i RDF Turtle:
    .
 -----
 
-=== Datasett – emneord (dcat:keyword) [[Datasett-emneord]]
+=== Datasett – nøkkelord (dcat:keyword) [[Datasett-nøkkelord]]
 
 [cols="30s,70"]
 |===
 | _English name_ | keyword
 | URI | dcat:keyword
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi emneord (eller tag) som beskriver datasettet. 
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi nøkkelord som beskriver datasettet. 
 
 _This property is used to specify a keyword or tag describing the dataset._
 | Multiplisitet / _Multiplicity_ | 0..n
