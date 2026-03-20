@@ -342,13 +342,5 @@ __The whole class: Not explicitly specified in DCAT-AP/DCAT. `odrs:RightsStateme
 Alle egenskaper i klassen: Ikke eksplisitt spesifisert DCAT-AP/DCAT.
 
 __All properties in the class: Not explicitly specified in DCAT-AP/DCAT.__
-| Tidsrom – sluttdato/tid | dcat:endDate |
-Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
-
-__The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
-| Tidsrom – startdato/tid | dcat:startDate |
-Verdiområdet er eksplisitt spesifisert som `xsd:date or xsd:dateTime`, istedenfor å referere til den generiske datatype Temporal literal.
-
-__The range is explicitly specified as `xsd:date or xsd:dateTime`, instead of referring to the generic datatype Temporal Literal.__
 |===
 
