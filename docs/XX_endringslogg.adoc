@@ -8,18 +8,22 @@ Mindre redaksjonelle justeringer av tekster (f.eks. egenskapsnavn, egenskapsbesk
 
 Kun redaksjonelle justeringer: 
 
-* fra v.3.0.5 til v.3.0.6:
+* Fra v. 3.0.6 til v. 3.0.7: 
+** Verdiområdet/_range_ for egenskapene <<Tidsrom-sluttdato, Tidsrom – sluttdato/tid (`dcat:endDate`)>> og <<Tidsrom-startdato, Tidsrom – startdato/tid (`dcat:startDate`)>> er utvidet til også å kunne være `xsd:gYear` og `xsd:gYearMonth`, i tillegg til `xsd:date` og `xsd:dateTime`. Dette for å rette opp feilen der disse to ble glemt ved overgangen fra versjon 2 til versjon 3.
+** Det norske navnet på egenskapen `dcat:keyword` er endret fra «emneord» til «nøkkelord» for å være mer i samsvar med det engelske navnet "keyword", og å samkjøre med andre spesifikasjoner. 
+
+* fra v. 3.0.5 til v. 3.0.6:
 ** Retter opp kravnivå for de to valgfrie egenskapene i klassen Rettighetserklæring (kravnivåene rettes fra Anbefalt til Valgfri)
 
-* fra v.3.0.3 til v.3.0.4:
+* fra v. 3.0.3 til v. 3.0.4:
 ** Rettet opp feil kardinalitet for egenskapen valuta (`cv:currency`) i <<img-Klassen-Gebyr>>.
 ** I endringsloggen føyet til info om at URIen for egenskapen <<Datasett-harVersjon, Datasett – har versjon (`dcat:hasVersion`)>> er endret fra `dct:hasVersion` til `dcat:hasVersion`.
 
-* fra v.3.0.0 til v.3.0.3: Rettet opp en del feil og mangler mtp. UU-krav (bl.a. lagt inn alternativ tekst til figurene som manglet den).  
+* fra v. 3.0.0 til v.3.0.3: Rettet opp en del feil og mangler mtp. UU-krav (bl.a. lagt inn alternativ tekst til figurene som manglet den).  
 
-== Endringer fra v.2.2 til v.3.0.0 [[Endringer-fra-v2-til-v3]]
+== Endringer fra v. 2.2 til v.3.0.0 [[Endringer-fra-v2-til-v3]]
 
-=== Endringer av dokumentstrukturen fra versjon 2.2 til v.3.0.0 
+=== Endringer av dokumentstrukturen fra versjon 2.2 til v. 3.0.0 
 
 Standarden inneholder nå tre hoveddeler i tillegg til det innledende kapittelet og vedleggene:
 
@@ -103,7 +107,7 @@ med DCAT-AP/DCAT.
 
 ** *Endrede verdiområder*: 
 *** <<Datasett-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
-*** <<Datasett-emneord>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datasett-nøkkelord>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 *** <<Datasett-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 *** <<Datasett-versjonsmerknad>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 
@@ -156,7 +160,7 @@ med DCAT-AP/DCAT.
 
 ** *Endrede verdiområder*: 
 *** <<Datatjeneste-beskrivelse>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
-*** <<Datatjeneste-emneord>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
+*** <<Datatjeneste-nøkkelord>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 *** <<Datatjeneste-tittel>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 *** <<Datatjeneste-versjonsmerknad>>: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdfs:Literal. 
 

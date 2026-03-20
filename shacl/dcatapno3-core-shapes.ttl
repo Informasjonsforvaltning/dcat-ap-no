@@ -55,8 +55,8 @@ PREFIX : <https://data.norge.no/vocabulary/dcatno/shacl/core#>
     dct:relation <https://github.com/SEMICeu/DCAT-AP>;
     dct:description "This document specifies the constraints on properties and classes of DCAT-AP-NO, expressed in SHACL"@en;
     dct:title "SHACL-shapes for DCAT-AP-NO"@en;
-    dct:modified "2025-01-30"^^xsd:date;
-    dcat:version "3.000";
+    dct:modified "2026-03-20"^^xsd:date;
+    dcat:version "3.001";
     adms:versionNotes "Draft version aligned with DCAT-AP-NO v3.0.x"@en;
     rdfs:comment "Validated SUCCESS at https://www.itb.ec.europa.eu/shacl/shacl/upload"@en;
     .
@@ -145,7 +145,7 @@ PREFIX : <https://data.norge.no/vocabulary/dcatno/shacl/core#>
     :hasNodeKindShape-provWasGeneratedBy,           # ble generert ved (prov:wasGeneratedBy)
     :hasNodeKindShape-dcatDistribution,             # distribusjon (dcat:distribution)
     :hasNodeKindShape-dctSpatial,                   # dekningsområde (dct:spatial)
-    :hasDatatypeShape-dcatKeyword,                  # emneord (dcat:keyword)
+    :hasDatatypeShape-dcatKeyword,                  # nøkkelord (dcat:keyword)
     :hasNodeKindShape-dcatapApplicableLegislation,  # gjeldende lovgivning (dcatap:applicableLegislation)
     :hasNodeKindShape-dctTemporal,                  # tidsrom (dct:temporal)
     :hasMin0Max1Shape-dctAccessRights,              # tilgangsrettigheter (dct:accessRights)
@@ -235,7 +235,7 @@ PREFIX : <https://data.norge.no/vocabulary/dcatno/shacl/core#>
     :hasMin1Max1Shape-dctPublisher,      # utgiver (dct:publisher)
     :hasNodeKindShape-dctPublisher,      # utgiver (dct:publisher)
   # recommended properties:
-    :hasDatatypeShape-dcatKeyword,                  # emneord (dcat:keyword)
+    :hasDatatypeShape-dcatKeyword,                  # nøkkelord (dcat:keyword)
     :hasNodeKindShape-dcatEndpointDescription,      # endepunktsbeskrivelse (dcat:endpointDescription)
     :hasNodeKindShape-dctFormat,                    # format (dct:format)
     :hasNodeKindShape-dcatapApplicableLegislation,  # gjeldende lovgivning (dcatap:applicableLegislation)
@@ -622,11 +622,13 @@ PREFIX : <https://data.norge.no/vocabulary/dcatno/shacl/core#>
   sh:name "end date"@en, "sluttdato/tid"@nb;
   sh:path dcat:endDate;
   sh:or (
+    [sh:datatype xsd:gYear]
+    [sh:datatype xsd:gYearMonth]
     [sh:datatype xsd:date]
     [sh:datatype xsd:dateTime]
   );
   sh:maxCount 1;
-  sh:message "The value of property dcat:endDate MUST be of datatype xsd:date or xsd:dateTime"@en;
+  sh:message "The value of property dcat:endDate MUST be of datatype xsd:gYear, xsd:gYearMonth, xsd:date or xsd:dateTime"@en;
   sh:severity sh:Violation .
 
 :hasNodeKindShape-dcatEndpointDescription a sh:PropertyShape;
@@ -697,7 +699,7 @@ PREFIX : <https://data.norge.no/vocabulary/dcatno/shacl/core#>
   sh:name "keyword"@en, "nøkkelord/emneord"@nb;
   sh:path dcat:keyword;
   sh:datatype rdf:langString;
-  sh:message "The value of property dcat:keyword MUST be of datatype rdf:langString)"@en;
+  sh:message "The value of property dcat:keyword MUST be of datatype rdf:langString"@en;
   sh:severity sh:Violation .
 
 :hasNodeKindShape-dcatLandingPage a sh:PropertyShape;
@@ -789,11 +791,13 @@ PREFIX : <https://data.norge.no/vocabulary/dcatno/shacl/core#>
   sh:name "start date"@en, "startdato/tid"@nb;
   sh:path dcat:startDate;
   sh:or (
+    [sh:datatype xsd:gYear]
+    [sh:datatype xsd:gYearMonth]
     [sh:datatype xsd:date]
     [sh:datatype xsd:dateTime]
   );
   sh:maxCount 1;
-  sh:message "The value of property dcat:startDate MUST be of datatype xsd:date or xsd:dateTime"@en;
+  sh:message "The value of property dcat:startDate MUST be of datatype xsd:gYear, xsd:gYearMonth, xsd:date or xsd:dateTime"@en;
   sh:severity sh:Violation .
 
 :hasMin0Max1Shape-dcatTemporalResolution a sh:PropertyShape;
