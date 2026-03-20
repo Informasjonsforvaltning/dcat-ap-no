@@ -133,14 +133,14 @@ Eksempel i RDF Turtle:
 
 == Anbefalte egenskaper for klassen _Datatjeneste_ [[Datatjeneste-anbefalte-egenskaper]]
 
-=== Datatjeneste – emneord (dcat:keyword) [[Datatjeneste-emneord]]
+=== Datatjeneste – nøkkelord (dcat:keyword) [[Datatjeneste-nøkkelord]]
 
 [cols="30s,70d"]
 |===
 | _English name_ | _keyword_
 | URI | dcat:keyword
 | Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi emneord (eller tag) som beskriver datatjenesten.
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi nøkkelord som beskriver datatjenesten.
 
 _This property is used to specify keywords or tags that describe the data service._
 | Multiplisitet / _Multiplicity_ | 0..n
