@@ -19,7 +19,7 @@ image::images/Digdir.png[alt="Digdir-logo", width=30%, pdfwidth=30vw, link=https
 include::download.adoc[]
 
 NOTE: *Innmelding av feil og mangler:* +
-Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/dcat-ap-no/issues[Github Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på Github kan du opprette bruker gratis. 
+Dersom du finner feil eller mangler i dokumentet, ber vi om at dette meldes inn på https://github.com/Informasjonsforvaltning/dcat-ap-no/issues[GitHub Issues &#x29C9;, window="_blank", role="ext-link"]. Dersom du ikke allerede har bruker på GitHub kan du opprette bruker gratis. 
 
 *Lisens*: https://creativecommons.org/licenses/by/4.0/[CC BY 4.0 &#x29C9;, window="_blank", role="ext-link"] +
 *Status*: Gjeldende fra 2025-01-01 +
