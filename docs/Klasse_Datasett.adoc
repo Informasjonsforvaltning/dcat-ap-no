@@ -284,31 +284,6 @@ Eksempel i RDF Turtle:
    .
 -----
 
-=== Datasett – nøkkelord (dcat:keyword) [[Datasett-nøkkelord]]
-
-[cols="30s,70"]
-|===
-| _English name_ | keyword
-| URI | dcat:keyword
-| Verdiområde / _Range_ | rdf:langString
-| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi nøkkelord som beskriver datasettet. 
-
-_This property is used to specify a keyword or tag describing the dataset._
-| Multiplisitet / _Multiplicity_ | 0..n
-| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
-| Merknad / _Note_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
-
-__Norwegian extension: The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
-| Eksempel / _Example_ | «eksempel», «datasett» (bokmål) / __"example", "dataset" (English)__
-|===
-
-Eksempel i RDF Turtle:
------
-<aDataset> a dcat:Dataset ; 
-   dcat:keyword "eksempel"@nb , "datasett"@nb , "example"@en , "dataset"@en ; 
-   .
------
-
 === Datasett – gjeldende lovgivning (dcatap:applicableLegislation) [[Datasett-gjeldendeLovgivning]]
 
 [cols="30s,70"]
@@ -334,6 +309,31 @@ Eksempel i RDF Turtle:
 -----
 <aDataset> a dcat:Dataset ; 
    dcatap:applicableLegislation <https://lovdata.no/eli/forskrift/2016/12/15/1600> ; 
+   .
+-----
+
+=== Datasett – nøkkelord (dcat:keyword) [[Datasett-nøkkelord]]
+
+[cols="30s,70"]
+|===
+| _English name_ | keyword
+| URI | dcat:keyword
+| Verdiområde / _Range_ | rdf:langString
+| Anvendelse / _Usage note_ | Egenskapen brukes til å oppgi nøkkelord som beskriver datasettet. 
+
+_This property is used to specify a keyword or tag describing the dataset._
+| Multiplisitet / _Multiplicity_ | 0..n
+| Kravnivå / _Requirement level_ | Anbefalt / _Recommended_
+| Merknad / _Note_ | Norsk utvidelse: Verdiområdet endret fra rdfs:Literal til rdf:langString som er en subklasse av rdf:Literal. 
+
+__Norwegian extension: The range changed from rdfs:Literal to rdf:langString which is a subclass of rdfs:Literal.__
+| Eksempel / _Example_ | «eksempel», «datasett» (bokmål) / __"example", "dataset" (English)__
+|===
+
+Eksempel i RDF Turtle:
+-----
+<aDataset> a dcat:Dataset ; 
+   dcat:keyword "eksempel"@nb , "datasett"@nb , "example"@en , "dataset"@en ; 
    .
 -----
 
