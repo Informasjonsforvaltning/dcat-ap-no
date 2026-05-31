@@ -43,7 +43,7 @@ jobs:
         continue-on-error: true
 
       - name: Upload rdf to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@84beeeacd364f310ef6a253bc079354cdf62e5dd
+        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@f9b41f11e07006762215dbd80a6e09b97834f93c
         id: upload-rdf
         with:
           ontology-type: "specification"
