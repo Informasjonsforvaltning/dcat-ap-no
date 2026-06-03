@@ -12,45 +12,20 @@ on:
   workflow_dispatch:
 
 jobs:
-  test_uploading_of_file:
+  upload-files-to-production:
     name: Upload vocabulary to static-rdf-server
-    runs-on: ubuntu-latest
-    if: github.event.pull_request.draft == false
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd
-        with:
-          ref: v3
-          submodules: true
-          fetch-depth: 0
-
-      - name: Update submodules to latest main
-        run: |
-          git submodule foreach --recursive git fetch origin
-          git submodule foreach --recursive git checkout origin/main
-
-      - name: Build html en
-        id: adocbuild_html_en
-        uses: Analog-inc/asciidoctor-action@master
-        with:
-          shellcommand: "asciidoctor -a data-uri -D ontology -o index-en.html -a lang=en ontology/main-en.adoc"
-
-      - name: Build html nb
-        id: adocbuild_html_nb
-        uses: Analog-inc/asciidoctor-action@master
-        with:
-          shellcommand: "asciidoctor -a data-uri -D ontology -o index-nb.html -a lang=nb ontology/main-nb.adoc"
-
-      - name: Upload files to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@84beeeacd364f310ef6a253bc079354cdf62e5dd
-        id: upload-files
-        with:
-          ontology-type: "vocabulary"
-          ontology: "dcatno"
-          host: "https://data.norge.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
-          files: |
-            ontology/dcatno.ttl text/turtle en 
-            ontology/index-nb.html text/html nb
-            ontology/index-en.html text/html en
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    with:
+      ref: v3
+      program_html: |
+        asciidoctor -a data-uri -D ontology -o index-en.html -a lang=en ontology/main-en.adoc
+        asciidoctor -a data-uri -D ontology -o index-nb.html -a lang=nb ontology/main-nb.adoc
+      files: |
+        ontology/dcatno.ttl text/turtle en
+        ontology/index-nb.html text/html nb
+        ontology/index-en.html text/html en
+      host: https://data.norge.no
+      ontology: dcatno
+      ontology-type: vocabulary
+    secrets:
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY }}
