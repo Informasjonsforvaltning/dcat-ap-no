@@ -1,5 +1,8 @@
 name: build adocs and publish v1.1 to staging
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
@@ -9,49 +12,25 @@ on:
   workflow_dispatch:
 
 jobs:
-  adoc_build:
-    runs-on: ubuntu-latest
-    name: asciidoctor build
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          ref: v1.1
-          submodules: true
-          fetch-depth: 0
-
-      - name: Update submodules to latest main
-        run: |
-          git submodule foreach --recursive git fetch origin
-          git submodule foreach --recursive git checkout origin/main
-
-      - name: Build html
-        id: adocbuild
-        uses: tonynv/asciidoctor-action@master
-        with:
-          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
-
-      - name: Build pdf
-        id: adocbuild_pdf
-        uses: tonynv/asciidoctor-action@master
-        with:
-          program: "asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc"
-        continue-on-error: true
-
-      - name: Upload rdf to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
-        id: upload-rdf
-        with:
-          ontology-type: "specification"
-          ontology: "dcat-ap-no"
-          version: "v1.1"
-          host: "https://staging.fellesdatakatalog.digdir.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
-          files: |
-            docs/index.html text/html nb
-            docs/files/dcat-ap-no.pdf application/pdf nb files/dcat-ap-no.pdf
-            docs/files/dcat-ap-no-1.1p2.uxf text/xml nb files/dcat-ap-no-1.1p2.uxf
-            docs/files/dcat-ap-no-1.1p3.png image/png nb files/dcat-ap-no-1.1p3.png
-            docs/images/dcat-ap-no-1-1-diagram.png image/png nb images/dcat-ap-no-1-1-diagram.png
-            docs/images/dcat-ap-no-1.1p3.png image/png nb images/dcat-ap-no-1.1p3.png
+  upload-files-to-staging:
+    name: Upload specification to staging static-rdf-server
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    with:
+      ref: v1.1
+      program_html: |
+        asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc
+      program_pdf: |
+        asciidoctor-pdf -D docs -o files/dcat-ap-no.pdf -a lang=nb docs/main.adoc
+      files: |
+        docs/index.html text/html nb
+        docs/files/dcat-ap-no.pdf application/pdf nb files/dcat-ap-no.pdf
+        docs/files/dcat-ap-no-1.1p2.uxf text/xml nb files/dcat-ap-no-1.1p2.uxf
+        docs/files/dcat-ap-no-1.1p3.png image/png nb files/dcat-ap-no-1.1p3.png
+        docs/images/dcat-ap-no-1-1-diagram.png image/png nb images/dcat-ap-no-1-1-diagram.png
+        docs/images/dcat-ap-no-1.1p3.png image/png nb images/dcat-ap-no-1.1p3.png
+      host: https://staging.fellesdatakatalog.digdir.no
+      ontology: dcat-ap-no
+      ontology-type: specification
+      version: v1.1
+    secrets:
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
