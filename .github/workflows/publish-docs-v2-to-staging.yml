@@ -1,5 +1,8 @@
 name: build adocs and publish v2 to staging
 
+permissions:
+  contents: read
+
 on:
   push:
     branches:
@@ -9,40 +12,21 @@ on:
   workflow_dispatch:
 
 jobs:
-  adoc_build:
-    runs-on: ubuntu-latest
-    name: asciidoctor build
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-        with:
-          submodules: true
-          fetch-depth: 0
-          ref: v2
-
-      - name: Update submodules to latest main
-        run: |
-          git submodule foreach --recursive git fetch origin
-          git submodule foreach --recursive git checkout origin/main
-
-      - name: Build html
-        id: adocbuild
-        uses: tonynv/asciidoctor-action@master
-        with:
-          program: "asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc"
-
-      - name: Upload rdf to static-rdf-server
-        uses: Informasjonsforvaltning/upload-files-to-static-rdf-server-action@v3.2.0
-        id: upload-rdf
-        with:
-          ontology-type: "specification"
-          ontology: "dcat-ap-no"
-          version: "v2.2"
-          host: "https://staging.fellesdatakatalog.digdir.no"
-          api-key: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
-          files: |
-            docs/index.html text/html nb
-            docs/files/DCAT-AP-NO2_20210903.eap application/octet-stream nb files/DCAT-AP-NO2_20210903.eap
-            docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
-            docs/images/DCAT-AP-NO2_20210903.png image/png nb images/DCAT-AP-NO2_20210903.png
+  upload-files-to-staging:
+    name: Upload specification to staging static-rdf-server
+    uses: Informasjonsforvaltning/workflows/.github/workflows/specification-upload-files.yaml@main
+    with:
+      ref: v2
+      program_html: |
+        asciidoctor -D docs -o index.html -a lang=nb docs/main.adoc
+      files: |
+        docs/index.html text/html nb
+        docs/files/DCAT-AP-NO2_20210903.eap application/octet-stream nb files/DCAT-AP-NO2_20210903.eap
+        docs/images/digitaliseringsdirektoratet.png image/png nb images/digitaliseringsdirektoratet.png
+        docs/images/DCAT-AP-NO2_20210903.png image/png nb images/DCAT-AP-NO2_20210903.png
+      host: https://staging.fellesdatakatalog.digdir.no
+      ontology: dcat-ap-no
+      ontology-type: specification
+      version: v2.2
+    secrets:
+      STATIC_RDF_SERVER_API_KEY: ${{ secrets.STATIC_RDF_SERVER_API_KEY_STAGING }}
